@@ -1,0 +1,25 @@
+---
+id: ch10-fosso
+kind: diagram_code
+chapters:
+- 10
+editions:
+- pt
+- en
+file: assets/figures/ch10-fosso.png
+sha256: c2015247f0f2e2e9f66e8a7e3bde70f391cf97bb3f687f9a9fea91ff35b90309
+pixels:
+  width: 1920
+  height: 1260
+source: assets/charts/ch10-fosso.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch10-fosso.py
+  pt
+description: 'ch10-fosso: the moat moved — conceptual, not to scale, no numbers.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

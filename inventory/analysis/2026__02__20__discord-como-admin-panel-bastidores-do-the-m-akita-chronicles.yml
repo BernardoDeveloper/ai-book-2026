@@ -1,0 +1,42 @@
+id: "2026/02/20/discord-como-admin-panel-bastidores-do-the-m-akita-chronicles"
+source_sha256: "d6abbc062870e52f0e6f93050ae625547e691fbc2ceed6d3a75da629fa33282e"
+title_en: "Discord as an Admin Panel (Behind the Scenes of The M.Akita Chronicles)"
+ai_relevance: substantial
+ai_relevance_reason: "A Discord bot is the operating interface for an AI-assisted newsletter, including a chat command where an LLM calls tools (image generation, web search, fetch) with session memory and cost tracking; but most of the post is bot engineering."
+genre: tutorial
+themes: [coding-agents-tools, software-engineering-discipline, agent-memory-and-context]
+thesis: "For a one-person operation, a chat bot is the best admin interface; and giving an LLM tools and per-user session memory turns it from command executor into a co-pilot, provided failures are never silenced."
+summary: "Part 6 of the series. Akita replaces a web admin panel with a Discord bot (M.Arvin) for curating links, approving newsletters, checking jobs and costs. Patterns include parser-dispatcher separation, emoji reactions as status, rich embeds as dashboards, per-channel context, simple admin ID list, async operations with a 'Thinking...' placeholder, status notifications, an HTTP relay between two apps, and integrated cost tracking (tokens and estimated cost per AI call, shown via /cost). The AI-related parts: the /ask command uses RubyLLM tool calling so the LLM decides to call image generation, web search or page fetch; and a session store keeps conversation history per user and persona (volatile, in memory) so follow-up questions work. A key lesson learned in production: defensive code that returns empty lists on HTTP errors hid an expired token for weeks, so every failure must be logged and surface visibly in the interface. He also lists when not to use Discord as admin."
+key_claims:
+  - claim: "A chat bot can replace a web admin for command/response operations of a one-person project, giving auth, mobile and push notifications for free."
+    time_sensitive: false
+  - claim: "When an LLM has tools, it decides which one to call; the tool result goes back to the LLM, not to your code, so side channels are needed to pass outputs on."
+    time_sensitive: false
+  - claim: "A new chat object per request makes the LLM 'amnesiac'; persisting the conversation history (message list) gives multi-turn memory."
+    time_sensitive: false
+  - claim: "Swallowing errors (return empty on failure) is error hiding; failures need a log and a visible notification."
+    time_sensitive: false
+  - claim: "Each AI call's tokens and estimated cost can be tracked and queried from the bot."
+    time_sensitive: false
+fears_addressed: []
+reader_value: "Low to moderate. The lesson that silent failure is the worst failure, and that LLM 'memory' is just resending the conversation history, are useful, but most content is developer-specific."
+technical_depth: 5
+evergreen: 3
+book_use:
+  keep:
+    - "LLM memory is the stored message history resent each turn; a new chat object means amnesia"
+    - "Tool calling: the model chooses which tool to use"
+    - "Never fail silently: tokens expired for weeks with no error"
+  cut:
+    - "Discord API specifics, slash command registration, embed limits, Ruby code"
+jargon: [LLM, tool calling, session memory, bot, admin panel, embed, slash command, async job, token cost, relay, fire and forget]
+illustration_ideas:
+  - "Multi-turn memory: each request carries the stored message history to the model"
+  - "Tool calling loop: question, model picks tool, tool result back to model, answer"
+people_events: ["Discord", "RubyLLM", "Brave Search", "Gemini image generation"]
+related_posts:
+  - "2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles"
+  - "2026/02/19/jobs-asssincronos-que-sobrevivem-ao-caos-bastidores-do-the-m-akita-chronicles"
+prerequisites: ["What tool calling is"]
+series: "m-akita-chronicles"
+obsolescence: "Library versions (discordrb 3.7.2, RubyLLM) and Discord API limits are Feb 2026 snapshots."

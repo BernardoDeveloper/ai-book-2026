@@ -1,0 +1,52 @@
+id: "2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas"
+source_sha256: "c1c7d372d1654932a63455ef8c205e83209a4d5e9a2d6cf037ce6dae97aee041"
+title_en: "How to Protect Yourself From Your Agents Deleting Your Stuff"
+ai_relevance: core
+ai_relevance_reason: "About the risk of coding agents running destructive commands and layered defenses against it."
+genre: essay
+themes: [security-and-sandboxing, coding-agents-tools, software-engineering-discipline]
+thesis: "Agents deleting files is a test of your own discipline: layered defenses (sandbox, copy-on-write snapshots, external backup, no agent access to production, reproducible infrastructure as code, monitoring) make a single bad command recoverable, regardless of who or what issued it."
+summary: "After reports that GPT-5.6-Sol deleted most of one user's Mac files and another user's devnet, Akita says that in five months of heavy use in 'YOLO mode' (permission prompts off) no agent ever deleted anything unrequested, and he suspects vague prompts in many incident reports, while still not trusting LLMs. His defense in layers: ai-jail sandboxing so only the project directory is real; BTRFS snapshots with Timeshift/snapper and grub-btrfs so even a broken OS can boot a snapshot, with macOS APFS mentioned as an equivalent; and restic external backup to a NAS with retention. For companies he insists agents must never touch production, may work in staging, and should write versioned automation (Ansible, Kubernetes manifests, migrations) that a human promotes. He adds monitoring and concludes that vulnerability to one wrong command always existed."
+key_claims:
+  - claim: "Matt Shumer reported GPT-5.6-Sol accidentally deleted nearly all files on his Mac via a mis-expanded $HOME in a review subagent; another user reproduced a destructive rsync on a devnet (as cited from X posts, July 2026)."
+    time_sensitive: true
+  - claim: "In five months of YOLO mode (about 40 repos, 500K+ lines) no agent deleted a file the author did not ask about; his hypothesis is that incidents often come from vague prompts."
+    time_sensitive: true
+  - claim: "Copy-on-write filesystems (BTRFS, APFS) allow near-instant, near-free snapshots that make a deleted directory or even a broken OS recoverable in minutes."
+    time_sensitive: false
+  - claim: "Snapshots live on the same disk as the data, so an external, encrypted, deduplicated backup (restic to a NAS) is also needed."
+    time_sensitive: false
+  - claim: "No AI agent should have access to production; agents belong in staging and should write reproducible infrastructure code which a human promotes."
+    time_sensitive: false
+  - claim: "Never run in production anything you cannot recover from; maintenance SQL should be a versioned migration, not an ad-hoc command."
+    time_sensitive: false
+fears_addressed:
+  - "Will an AI agent delete my files or wreck my computer?"
+  - "How do I use agents safely at work?"
+reader_value: "High. Gives a balanced, non-panicked answer to the 'AI deleted my files' headlines and a practical safety-layers mental model, applicable to non-experts as 'backups and snapshots'."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep:
+    - "The right question: why can a single wrong command, from any source, cause irrecoverable loss?"
+    - "Layers: sandbox, snapshot, external backup"
+    - "Agents never touch production; they write recipes that humans promote"
+    - "YOLO mode explained; vague prompts as the likely culprit"
+  cut:
+    - "Command listings for Timeshift, snapper, restic, ai-jail, tmutil"
+    - "distrobox, Ansible and Kubernetes snippets and monitoring widget details"
+jargon: [agent, YOLO mode, sandbox, bubblewrap, filesystem, copy-on-write, snapshot, BTRFS, APFS, backup, NAS, restic, production, staging, Ansible, Kubernetes, migration, GitOps, idempotent]
+illustration_ideas:
+  - "Layered defense onion: sandbox, snapshot, external backup, no prod access"
+  - "How a copy-on-write snapshot shares blocks and costs almost nothing"
+  - "Human promotion gate between staging and production"
+people_events:
+  - "Matt Shumer (reported incident)"
+  - "goodalexander (reproduced incident)"
+  - "GPT-5.6-Sol"
+related_posts:
+  - "2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real"
+  - "2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory"
+prerequisites: [coding agent, filesystem]
+series: "ai-jail"
+obsolescence: "The incidents, model name and tooling are July 2026; the layered-defense principle is durable."

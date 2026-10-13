@@ -1,0 +1,10 @@
+references:
+  - id: zeff2024agi
+    type: "article-newspaper"
+    title: "Microsoft and OpenAI have a financial definition of AGI: Report"
+    author: [{family: "Zeff", given: "Maxwell"}]
+    container-title: "TechCrunch"
+    issued: {date-parts: [[2024, 12, 26]]}
+    URL: "https://techcrunch.com/2024/12/26/microsoft-and-openai-have-a-financial-definition-of-agi-report/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (key shared with ch14; TechCrunch reports The Information's original story)"

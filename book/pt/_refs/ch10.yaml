@@ -1,0 +1,50 @@
+references:
+  - id: subservient
+    type: "software"
+    title: "Subservient: fully automated subtitle synchronization suite"
+    author: [{literal: "N3xigen"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026]]}
+    URL: "https://github.com/N3xigen/Subservient"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle"
+  - id: cloudflare2026vinext
+    type: "post-weblog"
+    title: "How we rebuilt Next.js with AI in one week"
+    author: [{literal: "Cloudflare"}]
+    container-title: "The Cloudflare Blog"
+    issued: {date-parts: [[2026, 2, 24]]}
+    URL: "https://blog.cloudflare.com/vinext/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio"
+  - id: ogkalu2025bubble
+    type: "software"
+    title: "comic-text-and-bubble-detector"
+    author: [{literal: "ogkalu"}]
+    container-title: "Hugging Face"
+    issued: {date-parts: [[2025, 3, 13]]}
+    URL: "https://huggingface.co/ogkalu/comic-text-and-bubble-detector"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio (model named in the post without a link; verified online: ~11k comic images). Year of release not verified; 2025 is approximate."
+  - id: cottier2024rising
+    type: "article"
+    title: "The rising costs of training frontier AI models"
+    author: [{family: "Cottier", given: "Ben"}, {family: "Rahman", given: "Robi"}, {family: "Fattorini", given: "Loredana"}, {family: "Maslej", given: "Nestor"}, {family: "Besiroglu", given: "Tamay"}, {family: "Owen", given: "David"}]
+    container-title: "arXiv"
+    number: "arXiv:2405.21015"
+    DOI: "10.48550/arXiv.2405.21015"
+    issued: {date-parts: [[2024, 5, 31]]}
+    URL: "https://arxiv.org/abs/2405.21015"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio (Epoch AI 2.4x/year figure stated in the post without a link; verified online)"
+  - id: villalobos2024data
+    type: "article"
+    title: "Will we run out of data? Limits of LLM scaling based on human-generated data"
+    author: [{family: "Villalobos", given: "Pablo"}, {family: "Ho", given: "Anson"}, {family: "Sevilla", given: "Jaime"}, {family: "Besiroglu", given: "Tamay"}, {family: "Heim", given: "Lennart"}, {family: "Hobbhahn", given: "Marius"}]
+    container-title: "arXiv"
+    number: "arXiv:2211.04325"
+    DOI: "10.48550/arXiv.2211.04325"
+    issued: {date-parts: [[2024, 6, 4]]}
+    URL: "https://arxiv.org/abs/2211.04325"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio (Epoch AI data-exhaustion finding stated in the post without a link; verified online)"

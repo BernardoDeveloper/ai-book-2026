@@ -1,0 +1,46 @@
+references:
+  - id: akita2026aimemory
+    type: "software"
+    title: "ai-memory"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 5, 21]]}
+    URL: "https://github.com/akitaonrails/ai-memory"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory; current state checked against README at v2.6.6 (2026-10-13)"
+  - id: akita2026aiusagebar
+    type: "software"
+    title: "ai-usagebar"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 5, 24]]}
+    URL: "https://github.com/akitaonrails/ai-usagebar"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar; current state checked against README at v1.36.0 (2026-10-13)"
+  - id: mryll2026claudebar
+    type: "software"
+    title: "claudebar: Waybar module for Claude usage"
+    author: [{literal: "mryll"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 2, 18]]}
+    URL: "https://github.com/mryll/claudebar"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar"
+  - id: restic2026
+    type: "software"
+    title: "restic: backups done right"
+    author: [{literal: "restic authors"}]
+    container-title: "restic.net"
+    issued: {date-parts: [[2026]]}
+    URL: "https://restic.net/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas"
+  - id: antynea2026grubbtrfs
+    type: "software"
+    title: "grub-btrfs: include btrfs snapshots at boot options"
+    author: [{literal: "Antynea"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026]]}
+    URL: "https://github.com/Antynea/grub-btrfs"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas"

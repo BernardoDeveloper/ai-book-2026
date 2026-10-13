@@ -1,0 +1,50 @@
+id: "2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor"
+source_sha256: "90819aaee0a700994dc5dbcc83018b026811a12e9ea657a31c3e2d53c6270c0b"
+title_en: "Which Jev-style AI decision model/classifier is best?"
+ai_relevance: core
+ai_relevance_reason: "Own benchmark comparing 23 AI decision/classifier models, hosted and local."
+genre: benchmark
+themes: [benchmarks-model-comparison, open-vs-closed-and-local-models, hardware-and-infrastructure]
+thesis: "In the author's own English and Portuguese tests, two open-weight 27B models top the table, a hosted Microsoft model matches Jev at one third of the cost, tiny models are near chance out of the box, and the right choice depends on language, latency, cost and the user's own data."
+summary: "Akita built his own benchmark for typed decision models (classifiers), with 13 operational use cases in English and 7 tasks written in both English and Brazilian Portuguese, and ran 23 competitors: five hosted APIs (Jev, Clef, Clef-flash, OpenAI Decisions, Microsoft Decision-1) and eighteen open configurations on a Strix Halo home server. The Perplexity Decider 27B and the Decision 3.0 27B tied at 99.4% with identical labels, Jev and Microsoft Decision-1 at 97.6%, while the smallest models (Julia-1, Laya) performed near chance and made high-confidence errors. He converts price into cost per 10,000 support e-mails, noting price differences are negligible compared to the cost of errors, and gives situational recommendations. He documents setup pain on AMD hardware, language token cost (Portuguese costs about 14% more), pitfalls like truncation and confident wrong guesses, and concludes that deterministic rules should stay in code and users should test with their own data."
+key_claims:
+  - claim: "Perplexity Decider 27B and Decision 3.0 (27B) tied at 99.4% accuracy on compact cases with identical labels across 1,024 classifications; Jev and Microsoft Decision-1 scored 97.6%."
+    time_sensitive: true
+  - claim: "Microsoft Decision-1 was the cheapest hosted option (about US$0.065 per 10,000 decisions) and scored 100% in Portuguese on compact cases."
+    time_sensitive: true
+  - claim: "Tiny encoder models (Julia-1, Laya, Decision 3.0 Edge) are near chance out of the box and make confident errors; fine-tuning, not tested, is their intended use."
+    time_sensitive: true
+  - claim: "Price differences between hosted models are negligible compared to the cost of errors; at these prices a million decisions cost under R$100."
+    time_sensitive: true
+  - claim: "Portuguese costs about 14% more tokens than English and degrades mid-table models by 1-10 points."
+    time_sensitive: true
+  - claim: "Numeric-threshold and severity rules belong in deterministic code; use the model only to extract facts from free text."
+    time_sensitive: false
+  - claim: "Benchmark is small, synthetic, and AI-assisted; results are a snapshot, not general truth."
+    time_sensitive: false
+fears_addressed:
+  - "Which of the many new AI classifier products should I trust"
+  - "Is it worth paying for hosted AI versus running locally"
+reader_value: "Low-medium. A methodical example of honest benchmarking and limits, but mostly practical guidance for developers choosing classifiers."
+technical_depth: 4
+evergreen: 1
+book_use:
+  keep:
+    - "Cost of an error dwarfs the price difference between models"
+    - "Confident wrong answers: a model's confidence is not accuracy"
+    - "Keep deterministic rules in code; AI converts free text into structured facts"
+    - "Own, small, synthetic benchmark caveats stated plainly"
+  cut:
+    - "Full 23-row table, per-model verdicts"
+    - "Setup instructions for ROCm, Docker, curl examples"
+    - "Per-task and calibration details"
+jargon: [classifier, decision model, calibration, Brier score, ECE, confidence threshold, bootstrap confidence interval, open weights, LoRA, encoder, latency, token, ROCm, truncation, benchmark, fine-tuning]
+illustration_ideas:
+  - "accuracy vs latency scatter of 23 decision models"
+  - "cost of 10,000 classifications vs expected number of errors"
+  - "confidence threshold failure: a high-confidence wrong guess passes the filter"
+people_events: [Jev (TypeSafe), Clef (Cloudflare), Microsoft Decision-1, OpenAI Decisions, Perplexity Decider, vLLM Semantic Router, Strix Halo]
+related_posts: ["2026/10/03/entendendo-o-hype-do-jev-pra-que-serve", "2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam"]
+prerequisites: ["What a classifier is", "Jev post of 2026/10/03"]
+series: "jev"
+obsolescence: "Entire ranking, prices and versions are as of 10 Oct 2026; the untested checkpoints and fine-tuning are left to later work."

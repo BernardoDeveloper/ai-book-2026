@@ -1,0 +1,25 @@
+---
+id: apmecanica-mapa-de-sentidos
+kind: diagram_code
+chapters:
+- apmecanica
+editions:
+- pt
+- en
+file: assets/figures/apmecanica-mapa-de-sentidos.png
+sha256: f9b0011ada1b07150f3cd1ceb98a9e21a873339029798f5f0494fe9344df44f1
+pixels:
+  width: 1920
+  height: 1320
+source: assets/charts/apmecanica-mapa-de-sentidos.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/apmecanica-mapa-de-sentidos.py
+  pt
+description: 'apmecanica-mapa-de-sentidos: embeddings as a city map of meanings.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

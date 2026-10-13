@@ -1,0 +1,19 @@
+gateway:
+  term: Gateway
+  def: Programa que fica na porta de entrada entre a internet e os seus serviços. No caso dos agentes, recebe mensagens de aplicativos de conversa e as repassa a um modelo de IA que pode agir no seu computador.
+vulnerabilidade:
+  term: Vulnerabilidade
+  def: Falha num programa que permite a alguém de fora fazer o que não deveria, como ler dados alheios ou rodar comandos. Costuma ser classificada por gravidade, de baixa a crítica.
+seguranca-por-obscuridade:
+  term: Segurança por obscuridade
+  def: Proteção que só funciona enquanto ninguém descobre como ela é feita. Quando o segredo vaza ou alguém examina o programa, a proteção acaba.
+regressao:
+  term: Regressão
+  def: Algo que funcionava numa versão anterior de um programa e parou de funcionar depois de uma mudança.
+revisao-adversarial:
+  term: Revisão adversarial
+  def: Revisão feita por alguém (pessoa ou agente separado, com contexto limpo) cuja tarefa é procurar defeitos no trabalho de outro, em vez de confirmar que está certo.
+prompt-injection:
+  term: Injeção de prompt
+  long: Prompt injection
+  def: Ordens escondidas num texto que a IA vai ler (uma página, um e-mail, um arquivo de instruções), feitas pra que ela obedeça quem escreveu o texto em vez de quem está usando a ferramenta. Não tem cura conhecida; o que mais protege é limitar o que o agente pode fazer e exigir aprovação humana pras ações perigosas.

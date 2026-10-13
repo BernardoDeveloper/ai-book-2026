@@ -1,0 +1,17 @@
+one-shot-prompt:
+  term: One-shot prompt
+  def: A ideia de descrever tudo o que se quer num único pedido à IA e receber o sistema pronto, sem conversa nem correções depois. Serve pra demonstração; software de verdade não sai assim.
+deploy:
+  term: Deploy
+  def: O momento em que o software sai da máquina de quem programa e é instalado no servidor onde as pessoas de verdade vão usá-lo. Colocar no ar.
+condicao-de-corrida:
+  term: Condição de corrida
+  long: Race condition
+  def: Erro que só acontece quando duas operações chegam ao mesmo tempo e uma atropela a outra, como dois cliques simultâneos que leem o mesmo contador antes de qualquer um gravar o novo valor.
+circuit-breaker:
+  term: Circuit breaker
+  long: Disjuntor
+  def: Mecanismo que, quando um serviço externo falha ou reclama de excesso de pedidos, para de chamá-lo por um tempo em vez de insistir, evitando uma avalanche de tentativas repetidas.
+idempotencia:
+  term: Idempotência
+  def: Propriedade de uma operação que pode ser executada várias vezes seguidas com o mesmo resultado de uma execução só, sem duplicar nem estragar dados.

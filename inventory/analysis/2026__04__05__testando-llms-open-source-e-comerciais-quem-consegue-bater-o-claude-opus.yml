@@ -1,0 +1,46 @@
+id: "2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus"
+source_sha256: "6e03e1fcf81b0ab75eb74031ce2c338f5112558afc3475e637f746160a8e59ff"
+title_en: "Testing Open Source and Commercial LLMs: Who Can Beat Claude Opus?"
+ai_relevance: core
+ai_relevance_reason: "A benchmark of 33 LLMs as coding agents plus long explanations of VRAM, KV cache, quantization, distillation, reasoning and local-vs-cloud economics."
+genre: benchmark
+themes: [benchmarks-model-comparison, open-vs-closed-and-local-models, limits-of-llms, coding-agents-tools]
+thesis: "Only a few models (Claude Opus/Sonnet, GLM 5/5.1) produced working code for a gem-specific task, because the failure of the rest is factual API memory, not reasoning; local open-source models became viable on a fast-memory GPU, but distillation transfers style and not knowledge. The post is marked obsolete by its author, whose later audit changed the rankings."
+summary: "Akita builds an automated harness that asks 33 models to build the same Rails chat app using a specific Ruby gem, run through the opencode agent, to see whether anyone can beat Claude Opus. Eight of twelve cloud models invented non-existent APIs; only Claude Opus 4.6/4.7, Sonnet 4.6 and GLM 5/5.1 used the real API correctly, with GLM about 89% cheaper. GPT 5.4 via Codex built the most sophisticated architecture but spent 7.6M tokens (about 16 USD per run, roughly 15x Opus) and still got the call convention wrong, which he uses to argue that API knowledge is binary memory that more reasoning budget cannot buy. Long explainers cover VRAM, KV cache growth with context, memory bandwidth, why Ollama failed for unattended runs, reasoning models, quantization and distillation. A Claude-distilled Qwen copied Claude's code style but hallucinated the API entirely; 'Coder' fine-tunes did worse than general models; a RTX 5090 made local Qwen 3.5 35B-A3B fast enough (about 273 tok/s) to be a plausible option with 1-2 correction prompts, while a unified-memory AMD mini-PC was too slow. A banner at the top says the article is obsolete: on 2026-04-24 he re-audited against the gem's source, found some 'hallucinations' were valid API, and rankings changed (Kimi K2.6 and Gemini 3.1 Pro up, GLM 5.1 down); the canonical version is a later benchmark post."
+key_claims:
+  - claim: "In this single-task benchmark only Claude Opus 4.6/4.7, Sonnet 4.6 and GLM 5/5.1 produced code using the gem's real API correctly; 8 of 12 cloud models invented APIs (author later revised this after re-audit)."
+    time_sensitive: true
+  - claim: "GPT 5.4 via Codex at xhigh reasoning used 7.6M tokens (~16 USD/run, ~15x Opus) and still broke multi-turn chat; API knowledge is memory, not a function of thinking budget."
+    time_sensitive: true
+  - claim: "Distilling Claude's reasoning traces into a smaller model transferred style but not factual knowledge of libraries."
+    time_sensitive: true
+  - claim: "Models named 'Coder' did worse than the general model in agentic coding tasks, in this test."
+    time_sensitive: true
+  - claim: "KV cache grows linearly with context: a 128K-token context on a 70B model can use ~40 GB on top of the weights."
+    time_sensitive: false
+  - claim: "LLM inference speed is set by memory bandwidth; a 32GB RTX 5090 (1,792 GB/s) vs 256 GB/s LPDDR5x gave ~4-10x speedups; high-bandwidth GPUs make local models viable, low-bandwidth big-memory machines remain impractical."
+    time_sensitive: true
+  - claim: "A benchmark of this kind cost under 10 USD in tokens; running your own test for your use case is cheap."
+    time_sensitive: true
+  - claim: "Test count is a misleading metric: a model wrote 37 tests but none exercised real functionality because it mocked an invented API."
+    time_sensitive: false
+  - claim: "Open-source local hardware is a weekend hobby or compliance tool; for daily production work the cloud was still the rational choice (April 2026)."
+    time_sensitive: true
+  - claim: "Monthly subscriptions (Claude Max, ChatGPT Pro) can be several times cheaper than pay-per-token API for heavy coding."
+    time_sensitive: true
+  - claim: "OBSOLETE per author's banner: rankings and conclusions were superseded on 2026-04-24; some cataloged hallucinations were valid API."
+    time_sensitive: true
+fears_addressed: ["Is the open-source AI as good as the paid ones?", "Can I replace Claude/ChatGPT with a model at home?", "Do AI models make things up?", "Is a bigger or more expensive model always better?"]
+reader_value: "Moderate: the explanatory sections (VRAM, KV cache, quantization, distillation, hallucinated APIs as memory failure, why test counts mislead) translate well to a lay audience. The tier tables and model rankings are perishable and are explicitly retracted by the author."
+technical_depth: 4
+evergreen: 1
+book_use:
+  keep: ["Hallucination as missing memory, not missing reasoning: more thinking budget does not fix it", "Distilled model copies style, not knowledge", "Why local AI needs memory bandwidth and KV cache, in plain terms", "Lesson that the benchmark itself was wrong and the author published a retraction banner", "Run your own cheap test instead of trusting leaderboards"]
+  cut: ["Tier tables, tok/s tables, per-model verdicts", "Ollama vs llama.cpp configuration details", "Subscription price tables", "Hardware recommendations"]
+jargon: ["LLM", "benchmark", "agent", "tool calling", "VRAM", "KV cache", "context window", "token", "quantization", "distillation", "reasoning model", "chain-of-thought", "MoE", "hallucination", "prompt caching", "open-weights", "inference"]
+illustration_ideas: ["How the KV cache grows with context length and competes with model weights for VRAM", "Quantization: same weights at 16, 8, 4, 3 bits", "Distillation: teacher style transferred, knowledge not transferred", "Why hallucinated API calls look right but crash"]
+people_events: ["Claude Opus 4.6/4.7, Sonnet 4.6", "GPT 5.4 via Codex", "GLM 5/5.1 (Z.AI)", "Qwen 3.5/3.6", "Kimi K2.5", "DeepSeek V3.2", "Gemini 3.1 Pro", "Grok 4.20", "opencode / Crush (Charm)", "Ollama, llama.cpp, llama-swap", "Google TurboQuant"]
+related_posts: ["2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio", "2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395", "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo", "2026/01/29/vibe-code-qual-llm-é-a-melhor-vamos-falar-a-real"]
+prerequisites: ["What an LLM is", "What a coding agent is", "Local vs cloud models"]
+series: "llm-benchmark"
+obsolescence: "Marked obsolete by the author (banner dated 2026-04-24): rankings and conclusions superseded after re-auditing against the gem source; the canonical version is 2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo. All model versions, prices, tok/s numbers and tiers are perishable. Use only the conceptual explainers."

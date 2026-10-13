@@ -1,0 +1,55 @@
+id: "2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar"
+source_sha256: "c034c8d6f4ad01f1cb2a7189dba567aad28f547cd135a5104a48fdf97c5a88dc"
+title_en: "Akita's AI Tips and Toolkit: ai-jail, ai-memory, ai-usagebar"
+ai_relevance: core
+ai_relevance_reason: "A practical summary of 600+ hours of working with coding agents: tool choice, sandboxing, memory, refactoring, backups and mindset."
+genre: essay
+themes: [coding-agents-tools, vibe-coding-practice, security-and-sandboxing, software-engineering-discipline]
+thesis: "Using coding agents well is mostly old engineering discipline (tests, CI, refactoring, backups, documentation) plus a few safety tools; stop collecting agents, pick one or two, fence them in and measure instead of trusting opinions."
+summary: "After 600+ hours with coding agents, Akita collects his advice and small tools, repeating that most 'frank-*' repos are proofs of concept, not products. He says stop collecting agents: focus on Claude Code, Codex or opencode; Opus 4.7 and GPT 5.5 on subsidized flat-rate plans remain the benchmark, cheaper models like DeepSeek and Kimi are usable but less consistent, local models are fun but not practical for all-day work, and multi-model chains are not worth the complexity. He presents ai-jail, a sandbox wrapper (bubblewrap, Landlock) used with the agent's permission prompts off, noting a sandbox is not a VM; he says he has never had an agent destroy his system, and that the common real risk is leaking secrets into Git, mitigated by layers of backups (Btrfs snapshots, restic, NAS, offsite, Git, password manager). He covers ai-memory for cross-agent handoff, ai-usagebar for quotas, ghpending, asking explicitly for refactors and pre-release security audits, throwaway experiments in an experiments folder, documenting decisions, and automating deploys. He reveals this post itself was dictated as a messy brain dump to Claude and then edited. He closes with a rant against 'did you test X?' comments and says to bring data. Checklist ends: tools change, engineering does not."
+key_claims:
+  - claim: "Pick one or two mainstream coding agents (Claude Code, Codex, opencode) instead of collecting many."
+    time_sensitive: true
+  - claim: "As of May 2026, Opus 4.7 and GPT 5.5 on subsidized Pro/Plus/Max plans are the best cost-benefit for heavy coding; DeepSeek v4 and Kimi 2.6 are usable but less consistent."
+    time_sensitive: true
+  - claim: "A sandbox wrapper is an extra layer, not absolute security; for hostile workloads use a disposable VM."
+    time_sensitive: false
+  - claim: "In 600+ hours the author never had an agent destroy his system irrecoverably; agents usually ask before dangerous deletions, and the more common risk is the user leaking secrets into Git."
+    time_sensitive: false
+  - claim: "Real backups (snapshots, restic, NAS, offsite, Git remote, password manager) are what make agent mistakes survivable; no tool replaces backup."
+    time_sensitive: false
+  - claim: "Code is now cheap, so build throwaway prototypes to decide with data rather than opinion, and have the agent document decisions."
+    time_sensitive: false
+  - claim: "Agents are good at reviewing PRs, running tests, rebasing and deploying, but you must request refactors and security audits explicitly, ideally with more than one model."
+    time_sensitive: false
+  - claim: "AI amplifies existing habits: good habits produce more, bad habits produce mess faster."
+    time_sensitive: false
+fears_addressed:
+  - "Will an AI agent wipe my computer?"
+  - "Do I need many AI tools and complex agent setups?"
+  - "Is AI-assisted engineering just hype with no process?"
+reader_value: "Moderate to high: calm, practical counterweight to horror stories about agents deleting disks and to agent-collecting hype; stresses backups, Git, and judgment. Includes a candid admission that the post was written with AI assistance."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Layers of safety: sandbox, Git, backups, password manager; no tool replaces backups"
+    - "The realistic risk is leaking secrets into Git, not the AI going rogue"
+    - "Stop collecting agents; process beats tools"
+    - "Code is cheap: throwaway prototypes and documentation"
+    - "Post dictated as a brain dump and edited with AI, disclosed openly"
+    - "Bring data, not opinions or 'did you test X?' comments"
+  cut:
+    - "Tool details for ai-usagebar, ghpending and ai-jail flags"
+    - "Deploy script specifics"
+jargon: [coding agent, sandbox, bubblewrap, Landlock, VM, harness, handoff, MCP, FTS5, OAuth, quota, refactoring, CI, secrets, Git, Agile Vibe Coding, XP, benchmark, local model, subscription]
+illustration_ideas:
+  - "Defense in depth around an agent: sandbox, version control, backups, secrets vault"
+  - "Where an agent can and cannot write inside a sandbox (project dir read-write, rest of host read-only)"
+people_events:
+  - "ai-jail, ai-memory, ai-usagebar, ghpending (Akita projects)"
+  - "Claude Code, Codex, opencode, OpenClaw, Pi"
+related_posts: ["2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso", "2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory", "2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar", "2026/05/23/criei-cli-pra-checar-pendencias-github-ghpending", "2026/04/20/clean-code-para-agentes-de-ia", "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo", "2026/04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos", "2026/04/15/como-falar-com-o-claude-code-efetivamente", "2026/04/23/driveclub-shadps4-e-ia-como-aprender"]
+prerequisites: ["What a coding agent is"]
+series: "ai-toolkit"
+obsolescence: "Model and plan recommendations (Opus 4.7, GPT 5.5, DeepSeek v4, Kimi 2.6) and tool statuses (ai-memory in beta) are late-May 2026 snapshots; the engineering and safety advice is durable."

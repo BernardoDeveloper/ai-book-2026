@@ -1,0 +1,21 @@
+---
+id: ch02-memoria-em-camadas
+kind: chart_code
+file: assets/figures/ch02-memoria-em-camadas.png
+sha256: f619dac70bb5c6f2b00c91e03ce38f3d8779abe87b4c583febec9ee9aed853f6
+source: assets/charts/ch02-memoria-em-camadas.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I assets/charts/ch02-memoria-em-camadas.py
+    pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+chapters:
+- 2
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

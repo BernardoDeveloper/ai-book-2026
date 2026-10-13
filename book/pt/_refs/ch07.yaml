@@ -1,0 +1,28 @@
+references:
+  - id: akita2026frankmega
+    type: "software"
+    title: "FrankMega"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 2, 21]]}
+    URL: "https://github.com/akitaonrails/FrankMega"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server"
+  - id: akita2026franksherlock
+    type: "software"
+    title: "Frank Sherlock"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 2, 23]]}
+    URL: "https://github.com/akitaonrails/FrankSherlock"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias"
+  - id: mxtoolbox2026clipping
+    type: "webpage"
+    title: "What Is Email Message Clipping? What Is Gmail's Limit?"
+    author: [{literal: "MxToolbox"}]
+    container-title: "MxToolbox"
+    issued: {date-parts: [[2026]]}
+    URL: "https://mxtoolbox.com/dmarc/email/email-clipping"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito (102 KB limit stated in the post without a link; verified online; page has no date, issued set to access year)"

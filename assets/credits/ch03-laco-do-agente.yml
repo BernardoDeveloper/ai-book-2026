@@ -1,0 +1,20 @@
+---
+id: ch03-laco-do-agente
+kind: chart_code
+file: assets/figures/ch03-laco-do-agente.png
+sha256: a12b07799293d910411f0a3ca6990bde53614760198948aee978f6ffc4f0f959
+source: assets/charts/ch03-laco-do-agente.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I assets/charts/ch03-laco-do-agente.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+chapters:
+- 3
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

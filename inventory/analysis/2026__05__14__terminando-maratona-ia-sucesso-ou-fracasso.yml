@@ -1,0 +1,52 @@
+id: "2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso"
+source_sha256: "23ccf942d2fcc8114fb4b373b17acce392e0711e3556436f6cfe3aab97cc3ac2"
+title_en: "Finishing My AI Marathon: Success or Failure?"
+ai_relevance: core
+ai_relevance_reason: "A retrospective on 500+ hours of coding with AI agents across 24 projects, with an honest rating of the outcomes."
+genre: essay
+themes: [vibe-coding-practice, software-engineering-discipline, jobs-and-careers, personal-journey]
+thesis: "Frontier coding agents can sustain full-time programming, but without review and engineering discipline (XP, tests, CI) the output is slop; AI reflects and accelerates who you are."
+summary: "After roughly three months of intense work (500+ hours, nearly half a million lines of code and docs, 24 repositories) Akita answers whether he can code 100 percent with frontier LLMs: yes. He clarifies the projects are not meant to be perfect: they are disposable experiments across Ruby on Rails, Rust, Go, Python, Crystal, Tauri and Flutter, and he rates them honestly from 8/10 (ai-jail, his weekly podcast pipeline) down to 1/10 (several he never ran). LLMs worked smoothly with Rails, less with Flutter and Tauri, badly with Crystal. He argues a project becomes real only with users and feedback, software never finishes, and uploading imperfect code is fine. His lessons: coding 16 hours a day by vibe coding always produces slop unless reviewed commit by commit; the right way is 'Agile' vibe coding, meaning XP and normal engineering. He recommends Codex or Claude Code on subsidized plans, not per-token pricing, with 5x productivity (at most 10x including slop) and says cheaper models would have made the weak projects worse. Closing message: AI does not replace a good programmer; it accelerates good or bad code, and anyone building a business needs ten times more care."
+key_claims:
+  - claim: "It is possible to code essentially 100 percent of the time with frontier models from Anthropic and OpenAI."
+    time_sensitive: true
+  - claim: "Vibe coding 16 hours a day always yields slop unless each commit or PR is manually reviewed; he did that on only 2 or 3 of 24 projects."
+    time_sensitive: false
+  - claim: "Realistic productivity gain is about 5x, at most 10x including slop."
+    time_sensitive: true
+  - claim: "LLMs perform best on popular, convention-heavy stacks like Rails and worse on Flutter, Tauri and Crystal."
+    time_sensitive: true
+  - claim: "A project without users is dead; the first 'finished' version is really v0.1 and real feedback drives refactors and architecture changes."
+    time_sensitive: false
+  - claim: "Use subsidized subscription plans for Codex or Claude Code rather than paying per token."
+    time_sensitive: true
+  - claim: "AI does not replace a good programmer; it accelerates whatever quality you have."
+    time_sensitive: false
+fears_addressed:
+  - "Can AI really write all the code?"
+  - "Is the code AI produces good?"
+  - "Will AI replace good programmers?"
+reader_value: "A grounded, self-critical field report from someone who went all-in: shows what AI did well and badly, with candid ratings and the claim that hobby code is not production code. Helps readers calibrate claims of 10x productivity and 'AI built an app' demos."
+technical_depth: 2
+evergreen: 4
+book_use:
+  keep:
+    - "500+ hours, 24 repos, none rated 10/10"
+    - "Slop unless reviewed; AI does not replace good programmer, it reflects who you are"
+    - "Languages where LLMs do well versus badly (Rails vs Crystal)"
+    - "5x productivity, maybe 10x with slop"
+    - "Software never finishes; v0.1 is when feedback starts"
+  cut:
+    - "The per-project ranking details"
+    - "Private repo listing"
+jargon: [LLM, vibe coding, slop, frontier model, Codex, Claude Code, XP, CI, PR, repository, per-token pricing, subscription]
+illustration_ideas:
+  - "Experiment scoreboard: effort vs polish across 24 projects"
+  - "From v0.1 to usable: feedback loop with real users"
+people_events:
+  - "ai-jail, FrankMD, M.Akita Chronicles and other Akita projects"
+  - "OpenClaw (translated to Rust as FrankClaw)"
+related_posts: ["2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio", "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"]
+prerequisites: ["What vibe coding is"]
+series: "frank-projects"
+obsolescence: "Project ratings, model comparisons (Kimi v2.6, DeepSeek V4 Pro) and subscription advice are May 2026; the general lessons are durable."

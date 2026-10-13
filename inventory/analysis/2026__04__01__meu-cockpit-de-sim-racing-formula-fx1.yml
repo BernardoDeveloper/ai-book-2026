@@ -1,0 +1,28 @@
+id: "2026/04/01/meu-cockpit-de-sim-racing-formula-fx1"
+source_sha256: "4d0205344a9901722df43cc30122b9fb43083b7864e0c6b60c6710d6c6194f05"
+title_en: "My Sim Racing Cockpit: Formula FX1"
+ai_relevance: none
+ai_relevance_reason: "Personal hobby post about racing games and hardware; AI appears only in a passing aside (a 16-hour-a-day marathon testing AI agents, a bought RTX 5090 for local LLMs, and back pain)."
+genre: review
+themes: [personal-journey, non-ai]
+thesis: "A dedicated steel cockpit beats years of unstable stands; it is always ready and fits a solo, single-player sim-racing hobby."
+summary: "Akita recounts his lifelong love of racing games and cars, from arcade cabinets to Gran Turismo, Initial D and track days, and the evolution of his wheel setups (Logitech, Thrustmaster, Fanatec direct drive). He explains why he finally bought a Formula FX1 cockpit, describes the assembly, the steering wheel, the 4K OLED monitor, the audio chain and the mini-PC with an external GPU, and lists the total cost of about 57,000 reais. A short aside says he spent about 30 days of 16-hour days testing the newest AI agents from Anthropic and OpenAI, which gave him a back problem that coincided with the cockpit delivery. He bought a second GPU in 2025 because he was using more AI and local LLMs."
+key_claims:
+  - claim: "The aside: a roughly 30-day, 16-hour-per-day marathon testing new AI agents (early 2026) left him with severe back pain."
+    time_sensitive: true
+  - claim: "He bought an RTX 5090 in early 2025 because he was using more AI and local LLMs."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Hobby review. Only the aside about overworking with AI agents has any link to the book's themes (personal cost of the AI work frenzy)."
+technical_depth: 1
+evergreen: 2
+book_use:
+  keep: ["Optional human detail: the author injured his back during a 30-day, 16-hour-per-day AI agent marathon"]
+  cut: ["Everything else"]
+jargon: []
+illustration_ideas: []
+people_events: ["Fanatec", "Formula FX1 cockpit", "Gran Turismo 7", "Shuichi Shigeno (Initial D, MF Ghost)"]
+related_posts: []
+prerequisites: []
+series: ""
+obsolescence: "Prices and product lineup are time-bound."

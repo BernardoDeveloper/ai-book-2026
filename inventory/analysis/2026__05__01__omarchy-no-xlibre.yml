@@ -1,0 +1,32 @@
+id: "2026/05/01/omarchy-no-xlibre"
+source_sha256: "44718091e807c37d95d2842a9afa5d2e6e915668d6522b1e8713a659d7bf3fed"
+title_en: "NW-Omarchy: Bringing Omarchy to X11 with XLibre"
+ai_relevance: none
+ai_relevance_reason: "Linux desktop project announcement (X11 session for Omarchy); AI is not mentioned."
+genre: announcement
+themes: [non-ai, open-source-community]
+thesis: "A parallel X11 session (bspwm, picom, polybar, rofi, XLibre) can reproduce the Omarchy look and workflow on older hardware or X11-dependent setups where Wayland is not yet viable."
+summary: "Akita announces NW-Omarchy (Not Wayland Omarchy), an experimental sidecar project that adds an X11 session beside an existing Omarchy (Hyprland, Wayland) install. He explains XLibre, a 2025 fork of xorg-server that continues maintenance after Red Hat said it would stop supporting the upstream X server in RHEL 10. He maps each Omarchy component to an X11 equivalent (bspwm, sxhkd, picom, polybar, rofi, dunst and others), shows that the same theming pipeline and more than 70 key bindings work, and lists what is lost (fractional per-monitor scaling, HDR, tear-free by design, swipe previews). He gives install, upgrade and uninstall steps and positions the project as pragmatic: new machines should stay on Hyprland, older ones can use X11. It is described as version 1.0 but still experimental and seeking feedback."
+key_claims:
+  - claim: "XLibre is a drop-in fork of xorg-server with active maintenance, adopted by Artix and proposed for Fedora."
+    time_sensitive: true
+  - claim: "X11 retains advantages for legacy GPU drivers, ssh -X, automation tools and accessibility; Wayland has advantages in fractional scaling, HDR and tear-free rendering."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Pure Linux desktop tooling; no AI content."
+technical_depth: 5
+evergreen: 2
+book_use:
+  keep: []
+  cut:
+    - "Entire post: desktop environment porting, install steps, component mapping tables"
+jargon: []
+illustration_ideas: []
+people_events:
+  - "XLibre fork of xorg-server"
+  - "Red Hat dropping xorg-server from RHEL 10"
+  - "DHH / Omarchy"
+related_posts: ["2026/04/18/omarchy-no-thinkpad-t14-gen-6"]
+prerequisites: []
+series: "omarchy"
+obsolescence: "Version numbers, distro adoption of XLibre and project status (1.0, experimental) are early-May 2026."

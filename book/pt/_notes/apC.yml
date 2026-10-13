@@ -1,0 +1,8 @@
+notes:
+  - "apC distills ch11/ch12 (benchmark checklist, 11 items) and ch14 (announcement checklist, 11 items) without retelling stories; every item points to the chapter. It links @sec-como-ler-anuncio as the full list and @sec-ch04 for the chatbot-usage checklist (not duplicated)."
+  - "Only number used: the 9-point single-run variance (GPT 5.5 accidental clean re-run, 2026-09-30, 100 vs 91), stated without model name as 'em setembro de 2026, o mesmo modelo, repetido sem mudar nada, caiu nove pontos'; verified in llm-coding-benchmark docs/success_report.v4.combined.md (HEAD) line 77. Also mentions '95 a 100' as a saturation illustration (ch11's v3 band)."
+  - "Reuses citation key zeff2024agi (copied entry from _refs/ch14.yaml into _refs/apC.yaml; merge dedupes)."
+  - "No new glossary keys; marks existing keys benchmark, harness, rubrica, ruido-entre-execucoes, tier, contaminacao, mock, caixa-preta, ipo, agi, classificador, fonte-primaria."
+  - "If ch11/ch12/ch14 section facts change at integration (e.g. the harness 'impossível de medir ao topo' DeepSeek story in ch03/ch11, the 'perigoso demais' 2019 callback in ch01), recheck items 1 (tabela) and 2-3 (anúncio)."
+integration:
+  - "End-of-pass recheck after ch11-ch15 integration: @sec-como-ler-anuncio exists; every item's pointer matches (ch03/ch11 harness story, ch11 noise 100->91, cache-read and last-step cost errors, 95-100 saturation, METR SWE-bench maintainers, ch12 mock/gabarito/black-box, ch14 Microsoft AGI contract, regulation moat, classifier 'há décadas', 'quando a falta dela doer', ch12 three columns). No changes needed."

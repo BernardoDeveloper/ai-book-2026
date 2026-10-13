@@ -1,0 +1,25 @@
+---
+id: ch07-disjuntor
+kind: diagram_code
+chapters:
+- 7
+editions:
+- pt
+- en
+file: assets/figures/ch07-disjuntor.png
+sha256: bfbc98ae00720fcdef03f4b1299c30b1486006040b583427e66216d42b18d89f
+pixels:
+  width: 1920
+  height: 1500
+source: assets/charts/ch07-disjuntor.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch07-disjuntor.py
+  pt
+description: 'ch07-disjuntor: retrying forever vs. a circuit breaker.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

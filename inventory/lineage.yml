@@ -1,0 +1,104 @@
+# Which post supersedes which. Drafters MUST check this before using a post:
+# a "superseded" post may only contribute what `keep_from_old` says, and the
+# chapter tells the newer state (optionally the change itself as story).
+# Built from inventory/analysis/*.yml `obsolescence` + author banners in the posts.
+# Ids omit the "2026/" prefix for brevity; scripts prepend it.
+
+series:
+  llm-benchmark:
+    note: >-
+      The benchmark is itself a character: v1 (Rails+RubyLLM task, Apr-Jul),
+      re-audits that corrected scores and costs, v2 harder 3-phase (Jul 30),
+      v4 single evolving app with planted sabotage (Sep). The book tells the
+      methodology's evolution and only quotes the latest numbers as current.
+    members:
+      - {post: 01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig, era: pre-benchmark}
+      - {post: 01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim, era: pre-benchmark}
+      - {post: 04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus, era: v1-draft, status: superseded, by: 04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo, keep_from_old: "explainers on VRAM, KV cache, distillation (style not knowledge)"}
+      - {post: 04/18/llm-benchmarks-parte-2-multiplos-modelos, era: v1-draft, status: superseded, by: 04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos, keep_from_old: "same model, very different results across runs and harnesses"}
+      - {post: 04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo, era: v1, status: superseded, by: 07/30/novo-llm-benchmark-refiz-todos-os-testes, keep_from_old: "the audit-against-source story; harness matters"}
+      - {post: 04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos, era: v1, status: current-lesson, keep_from_old: "planner+executor does not pay off"}
+      - {post: 05/04/llm-benchmarks-deepseek-unlocked-deepclaude, era: v1, status: current-lesson, keep_from_old: "harness swap moved a model from unmeasurable to Tier A"}
+      - {post: 06/01/llm-benchmarks-grok-4-3-minimax-m3-opus-4-8, era: v1, status: superseded, by: 07/30/novo-llm-benchmark-refiz-todos-os-testes}
+      - {post: 06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic, era: v1, status: superseded-numbers, keep_from_old: "Mythos/Fable marketing campaign story"}
+      - {post: 06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local, era: v1, status: superseded, by: 08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7, keep_from_old: "local models blocked by memory supply"}
+      - {post: 07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra, era: v1, status: superseded-numbers, keep_from_old: "Sonnet 5 green build calling a non-existent API"}
+      - {post: 07/09/llm-benchmark-grok-4-5-gpt-5-6-sol, era: v1, status: superseded-numbers, keep_from_old: "blind re-audit dropped a score 96->85 and corrected costs ~6x: benchmarks are fallible"}
+      - {post: 07/17/llm-benchmarks-kimi-k3, era: v1, status: superseded, by: 07/30/novo-llm-benchmark-refiz-todos-os-testes}
+      - {post: 07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior, era: v1, status: current-lesson, keep_from_old: "read the top as a cluster; never outsource a decision to a table"}
+      - {post: 07/25/llm-benchmark-opus-5-e-bom, era: v1, status: superseded, by: 07/30/novo-llm-benchmark-refiz-todos-os-testes}
+      - {post: 07/30/novo-llm-benchmark-refiz-todos-os-testes, era: v2, status: superseded-numbers, by: 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1, keep_from_old: "why the old test saturated"}
+      - {post: 08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7, era: v2, status: superseded-numbers, keep_from_old: "models peek at answer keys and neighbours' work"}
+      - {post: 08/22/llm-benchmarks-os-ultimos-deepseek-v4-parem-de-perguntar, era: v2, status: superseded}
+      - {post: 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1, era: v4, status: current, keep_from_old: "methodology: one evolving app with planted sabotage"}
+      - {post: 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2, era: v4, status: current}
+      - {post: 09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7, era: v4, status: current}
+      - {post: 09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro, era: v4, status: superseded, by: 09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro}
+      - {post: 09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro, era: v4, status: current}
+    reference_check: "~/Projects/llm-coding-benchmark (latest results-v4.x, v5 in progress); the OpenCode cost-metrics bug before 2026-08-01 affects every earlier cost figure"
+
+  ai-memory:
+    members:
+      - {post: 05/18/como-memoria-de-agentes-funciona-e-como-melhorar, status: superseded-recommendation, by: 05/23/criei-sistema-memoria-agentes-codigo-ai-memory, keep_from_old: "conceptual explanation of context, compaction, LLM Wiki"}
+      - {post: 05/23/criei-sistema-memoria-agentes-codigo-ai-memory, status: superseded-details, by: 09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times, keep_from_old: "markdown + search + hooks design rationale"}
+      - {post: 06/14/ai-memory-arquitetura-emergente-e-software-maleavel, status: current-lesson}
+      - {post: 06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos, status: current-lesson}
+      - {post: 07/20/novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas-ias, status: superseded, by: 09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times, keep_from_old: "the session belongs to the developer, not the vendor"}
+      - {post: 09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times, status: current}
+    reference_check: "~/Projects/ai-memory README/CHANGELOG (2.6.x as of 2026-10)"
+
+  ai-jail:
+    members:
+      - {post: 01/10/ai-agents-garantindo-a-protecao-do-seu-sistema, status: superseded-implementation, by: 03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real, keep_from_old: "the principle: treat the agent as untrusted"}
+      - {post: 03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real, status: superseded-details, by: 07/25/ai-jail-update-seguranca-docker-opt-in}
+      - {post: 07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas, status: current}
+      - {post: 07/25/ai-jail-update-seguranca-docker-opt-in, status: current}
+    reference_check: "~/Projects/ai-jail README (network allowlist defaults changed; 'accident guard, not a fortress')"
+
+  vibe-coding-marathon:
+    note: "Jan-May 'marathon' of Frank projects; the book narrates it as Part II. Counts in later posts supersede earlier ones."
+    members:
+      - {post: 01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard, status: current-lesson}
+      - {post: 01/29/vibe-code-qual-llm-é-a-melhor-vamos-falar-a-real, status: current-lesson}
+      - {post: 02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1, status: merged-with, by: 02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2}
+      - {post: 02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, status: current-lesson}
+      - {post: 02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles, status: superseded-numbers, by: 02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles, keep_from_old: "'it already works' on day two is where amateurs stop"}
+      - {post: 02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles, status: current-lesson}
+      - {post: 02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias, status: superseded-details, by: 03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito}
+      - {post: 03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito, status: current-lesson}
+      - {post: 05/14/terminando-maratona-ia-sucesso-ou-fracasso, status: current, note: "the marathon's own conclusion"}
+
+  jev:
+    members:
+      - {post: 09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam, status: superseded-verdict, by: 10/03/entendendo-o-hype-do-jev-pra-que-serve, keep_from_old: "don't adopt an intermediary before you feel the pain"}
+      - {post: 10/03/entendendo-o-hype-do-jev-pra-que-serve, status: current}
+      - {post: 10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, status: superseded-numbers, by: "ref:jev-docs benchmark (local d3 and Perplexity lead at 99.4%)", keep_from_old: "small specialised models match big ones for closed decisions"}
+
+  languages-for-llms:
+    members:
+      - {post: 02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms, status: superseded-conclusion, by: 10/11/existem-linguagens-melhores-pra-programar-com-llms, keep_from_old: "the speculative LLM-native language idea, told as the hypothesis that the October test answered"}
+      - {post: 09/19/nova-linguagem-voltada-pra-ia-bend-2, status: current-lesson}
+      - {post: 10/11/existem-linguagens-melhores-pra-programar-com-llms, status: current}
+
+  open-source-and-ai:
+    members:
+      - {post: 06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao, status: current}
+      - {post: 07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito, status: current, note: "expands the Bun controversy from 06/05"}
+
+  claude-code-and-harnesses:
+    members:
+      - {post: 01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, status: superseded-details}
+      - {post: 01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity, status: current-lesson, keep_from_old: "agent = system prompt + tools + loop"}
+      - {post: 03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro, status: event}
+      - {post: 04/15/como-falar-com-o-claude-code-efetivamente, status: current-lesson, note: "harness ranking is dated 15 Apr; communication advice holds"}
+      - {post: 05/25/primeiras-impressoes-usando-oh-my-pi-e-opencode, status: current-lesson}
+      - {post: 10/12/llms-agentes-competente-o-suficiente, status: current, note: "author's own synthesis of the year; capstone"}
+
+# Facts the reference projects say the blog has wrong or stale (from the reference-project survey, kept privately).
+corrections:
+  - {topic: "OpenCode run costs before 2026-08-01", fix: "metrics bug understated cost 40-90x; never quote those costs"}
+  - {topic: "Opus 4.7 cost per benchmark run", fix: "~US$7, not ~US$1.10 (corrected 2026-07-09)"}
+  - {topic: "Strix Halo / MS-S1 Max VRAM", fix: "64 GB allocated since April, not 96 GB"}
+  - {topic: "ai-jail network default", fix: "now allows the agent's own API host and package registries"}
+  - {topic: "v4 model count", fix: "ranking table has 46 models; posts say 39 (count at publication)"}
+  - {topic: "Jev-class ranking", fix: "post of 10/10 superseded by jev-docs benchmark"}

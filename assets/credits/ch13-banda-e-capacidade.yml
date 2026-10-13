@@ -1,0 +1,26 @@
+---
+id: ch13-banda-e-capacidade
+kind: diagram_code
+chapters:
+- 13
+editions:
+- pt
+- en
+file: assets/figures/ch13-banda-e-capacidade.png
+sha256: f747ec9287d3750214bd223826f3a1796e3097c8d18001bac565c7b86ee45895
+pixels:
+  width: 1920
+  height: 1500
+source: assets/charts/ch13-banda-e-capacidade.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch13-banda-e-capacidade.py
+  pt
+description: 'ch13-banda-e-capacidade: bandwidth sets the speed, capacity sets what
+  fits.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

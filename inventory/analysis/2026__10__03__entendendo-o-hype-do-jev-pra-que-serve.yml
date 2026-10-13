@@ -1,0 +1,55 @@
+id: "2026/10/03/entendendo-o-hype-do-jev-pra-que-serve"
+source_sha256: "003d104009e3c6bf7c342a51aca0fbe971432cbbc44fc9e591946e9b68b67c8b"
+title_en: "Understanding the Jev hype: what is it for?"
+ai_relevance: core
+ai_relevance_reason: "Explains a new class of AI product (typed decision models/classifiers), audits its marketing claims, and compares open alternatives."
+genre: essay
+themes: [hype-and-marketing, what-llms-are, limits-of-llms, benchmarks-model-comparison]
+thesis: "Jev is a useful hosted classifier, not a breakthrough; the shock at its speed reveals that people had been misusing chat LLMs as expensive classifiers, and its calibration, safety and 'no hallucination' claims are overstated."
+summary: "Akita explains what a classifier is: a function that returns one of a fixed set of categories, classically trained on labeled examples and cheap and fast. Jev is a hosted classifier answering multiple typed questions per call, a real engineering win over a chat LLM writing paragraphs. He reproduces an essay by the CTO of a competing company (disclosed as a conflict of interest) that audits Jev: the headline 193x/444x comparisons use different rivals for each number, 'accuracy' is agreement with an average of two LLMs, it marks the first option on blind dice rolls with high confidence, its probabilities are miscalibrated and inflate rare events, 'does not hallucinate' only means valid format, and it is vulnerable to plausible unverified claims injected into text. He then compares open alternatives (Cloudflare Clef, Laya, others) and a public leaderboard showing open fine-tuned models matching Jev, and gives a decision framework: use these tools only for repeated, bounded, checkable decisions and measure on your own labeled data."
+key_claims:
+  - claim: "A classifier returns one of a fixed set of categories; this has existed for decades and is cheaper and faster than using a generative LLM for labeling."
+    time_sensitive: false
+  - claim: "Jev's headline speedups (193.6x faster, 444.6x cheaper) compare against different rivals chosen for each number; versus a cheap model that performs similarly it is about 8x cheaper."
+    time_sensitive: true
+  - claim: "'Zero hallucination' for a typed-output model means only valid format, not correct judgment."
+    time_sensitive: false
+  - claim: "In independent tests Jev picked the first option on blind random draws with high confidence and inflated rare-event probabilities, indicating poor calibration outside familiar data."
+    time_sensitive: true
+  - claim: "Decomposing a decision into small typed questions with logic in code improved all LLMs tested."
+    time_sensitive: false
+  - claim: "Within three weeks three open-weight alternatives appeared, and on a public leaderboard the top ten are open fine-tunes of 12-32B models (Jev narrowly first by 0.5 point)."
+    time_sensitive: true
+  - claim: "Use such tools only where decisions are repeated, bounded, and errors can be caught; never as the sole gate for destructive or security-sensitive actions."
+    time_sensitive: false
+  - claim: "The essay author runs a competing company and the post flags that discount."
+    time_sensitive: false
+fears_addressed:
+  - "Is a new 'revolutionary' AI product really revolutionary"
+  - "Can AI tools be trusted when they say they never hallucinate"
+reader_value: "Medium-high. Teaches how to dissect a startup's headline claims, explains classifiers vs generative models in plain terms, and shows how a confident AI can be confidently wrong (calibration)."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Classifier concept: choose from a fixed list of categories"
+    - "'Slow' benchmark comparisons using a convenient adversary for each headline number"
+    - "Valid format is not correct judgment; confidence is not accuracy"
+    - "The model that always picks answer A with 92% confidence"
+    - "Disclosure of a conflicted co-author"
+    - "Pilot checklist: measure on your own labeled examples"
+  cut:
+    - "Leaderboard table and open model comparisons"
+    - "Neuroscience detours (metacognition) and long source lists"
+    - "Install/run instructions for the Decision Index"
+jargon: [classifier, calibration, confidence, zero-shot, hallucination, LoRA, encoder, prompt injection, labeled data, benchmark, token, GPU, open weights, abstention]
+illustration_ideas:
+  - "confidence vs actual accuracy calibration curve"
+  - "chat LLM paragraph then extract label vs direct classifier call"
+  - "answer sheet where every answer is A with a 92% confidence stamp"
+  - "headline comparison against hand-picked adversaries"
+people_events: [Paulo Câmara, TypeSafe, Jev, Cloudflare Clef, Laya, Daniel Kahneman, Gary Klein, Stanford and Nvidia CLM-8B]
+related_posts: ["2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam", "2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro", "2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor"]
+prerequisites: ["What an LLM is", "What hallucination means"]
+series: "jev"
+obsolescence: "Leaderboard positions, prices and the open-model landscape are as of Oct 2026 and will shift; the follow-up 2026/10/10 post evaluates models in the same category."

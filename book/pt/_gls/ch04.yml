@@ -1,0 +1,10 @@
+rlhf:
+  term: RLHF
+  long: Reinforcement Learning from Human Feedback
+  def: Aprendizado por reforço com feedback humano. Etapa de treino em que pessoas avaliam respostas do modelo e ele é ajustado pra produzir mais do tipo que elas aprovaram. Deixa o chatbot mais agradável e, de brinde, mais bajulador.
+watermark:
+  term: Watermark
+  def: Marca d'água. Em texto gerado por IA, um viés estatístico e invisível nas escolhas de palavra, guiado por uma chave secreta, que permite ao fabricante estimar se o modelo dele esteve envolvido. Some quando outro modelo reescreve o texto.
+fonte-primaria:
+  term: Fonte primária
+  def: A origem de um dado ou afirmação, como o estudo original, a estatística oficial, a decisão judicial ou o contrato. Vale mais que qualquer número de textos que a repetem.

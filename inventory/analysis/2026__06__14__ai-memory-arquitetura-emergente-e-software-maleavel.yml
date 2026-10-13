@@ -1,0 +1,46 @@
+id: "2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel"
+source_sha256: "247f115ca025919eceb5edf4563a6ce71bc4e6747293dc33c7702dce92c0b3a4"
+title_en: "ai-memory: Emergent Architecture and Malleable Software"
+ai_relevance: substantial
+ai_relevance_reason: "The subject is an AI agent memory tool developed with agents and community PRs, but the post's lesson is about software design process."
+genre: essay
+themes: [software-engineering-discipline, agent-memory-and-context, open-source-community]
+thesis: "Good software is cultivated, not assembled: architecture should emerge from real use and be consolidated afterwards, following make it work, make it right, make it fast, instead of designing everything upfront."
+summary: "In 24 days the author's personal long-term memory tool for coding agents, ai-memory, grew from a single-user Linux MVP to a multi-user, cross-platform system with 482 commits, 26 contributors and 70 PRs. He gives the numbers, thanks contributors, and lists what they added (Windows and macOS, web API, multi-user, multi-workspace, more providers). He criticizes the 'Lego fallacy' of designing all architecture before building, which he says leads to over-engineering and rot. Only after the software ran for many people did he refactor the scattered scope logic into a central ScopeResolver, an abstraction extracted from working code. He invokes Kent Beck's 'make it work, make it right, make it fast' and the clay-sculpture metaphor for software."
+key_claims:
+  - claim: "ai-memory reached 482 commits, 26 contributors, 70 PRs (59 merged) and 27 issues all closed within 24 days of the first commit on 21 May 2026."
+    time_sensitive: true
+  - claim: "Designing the full architecture upfront leads to abstractions nobody uses and usually wrong because they guess the future."
+    time_sensitive: false
+  - claim: "Abstractions should be extracted from working code after the patterns repeat, not invented before use."
+    time_sensitive: false
+  - claim: "Software is never finished; it is malleable like clay and shaped while in use."
+    time_sensitive: false
+fears_addressed:
+  - "Can a hobby tool built with AI become real software?"
+  - "Do I need a perfect plan before building software?"
+reader_value: "Medium. Offers a plain-language philosophy of how software actually evolves, useful for understanding that AI-generated projects still need iteration, though the code blocks are niche."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep:
+    - "Lego fallacy vs clay: software grows and is reshaped by use"
+    - "Make it work, make it right, make it fast"
+    - "Abstraction extracted after use, not guessed before"
+  cut:
+    - "Before/after Rust code of ScopeResolver"
+    - "Contributor lists and commit stats details"
+jargon: [MVP, refactor, abstraction, MCP, multi-tenant, Agile, KISS, Rust crate, embeddings, handoff]
+illustration_ideas:
+  - "Lego tower vs clay sculpture: two ways of building software"
+  - "Timeline of ai-memory growth from MVP to multi-user over 24 days"
+people_events:
+  - "Kent Beck (make it work, right, fast)"
+  - "ai-memory contributors (Djalma Junior, wlech, Pedro de Freitas Jr and others)"
+related_posts:
+  - "2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory"
+  - "2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito"
+  - "2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos"
+prerequisites: [coding agent, open source]
+series: "ai-memory"
+obsolescence: "Statistics (commit counts, versions v1.0.x) are mid-June 2026 snapshots."

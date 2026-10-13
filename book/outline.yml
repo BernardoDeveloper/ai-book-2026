@@ -1,0 +1,520 @@
+# Canonical structure of the book. Drives drafting briefs, drift coverage and
+# the Quarto chapter list. Post ids omit "2026/". "ref:" = reference project.
+# Every core/substantial post appears either in a chapter's sources or in
+# `excluded` with a reason (scripts/drift.rb checks this).
+
+meta:
+  working_title: "Competente o Suficiente"
+  subtitle: "Um ano colocando a inteligência artificial à prova, sem medo e sem propaganda"
+  author: "Fabio Akita"
+  # Names owned by the author (copyright page, EPUB rights, HTML footer).
+  owned_names: ["akitaonrails", "Akitando", "The M.Akita Chronicles", "ai-memory", "ai-jail", "ai-usagebar", "ghpending", "Frank (FrankMD, Frank Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, FrankMega, Frank Karaoke, Frank GO, Frank Manga+ e demais projetos da série)"]
+  open_source_licenses: {ai-jail: "GPL-3.0", ai-memory: "MIT", ai-usagebar: "MIT", ghpending: "MIT"}
+  cutoff: "2026-10-13"
+  target_words: 90000
+  spine: >-
+    First-person, chronological-ish story of 2026: a veteran programmer who
+    refused both the hype and the panic decides to test AI for real. Part I
+    gives the reader the mental model; Part II is the hands-on marathon;
+    Part III is the fight with numbers and propaganda; Part IV is trust and
+    safety; Part V answers "what about my job and my future?". Each part
+    resolves one fear the reader brought in.
+
+front:
+  - id: prefacio
+    title: "Prefácio"
+    kind: original
+    brief: >-
+      Why this book exists: the gap between what vendors say and what a year of
+      daily use showed. Who it is for (the anxious, the curious, the misled). The
+      position: neither zealot nor hater ("sua empolgação com IA é inversamente
+      proporcional ao seu conhecimento sobre IA"). How it was made: blog posts
+      written during the year, reorganised and rewritten with the help of the same
+      agents the book discusses, under the same discipline the book recommends.
+    sources: [02/24/rant-o-akita-abriu-as-pernas-pra-ia, 02/08/rant-ia-acabou-com-programadores]
+  - id: como-ler
+    title: "Como ler este livro"
+    kind: original
+    brief: >-
+      Parts can be read in order (recommended) or by fear. Note on dates: a
+      snapshot taken in October 2026; model names will age, the mechanisms won't.
+      How citations, glossary terms and figures work.
+  - id: antes
+    title: "Antes de começar: o que este livro não explica"
+    kind: original
+    brief: >-
+      Requested by the author. The book gives intuitions (ch01: tokens, training
+      vs use, frozen weights) but deliberately does not teach the mechanisms:
+      neural networks and how they learn (gradient descent, backpropagation),
+      embeddings, how a transformer and attention work inside, pretraining and
+      RLHF. Say plainly that the book reads better if you understand those
+      first, explain in two or three sentences why (the claims in Parts I and
+      III rest on them), point to the optional plain-language appendix
+      (@sec-apmecanica) for a no-math overview, and give a short tiered reading list (for anyone, a
+      little math, hands-on) of credible, well-known books and free resources,
+      flagging Portuguese editions and free availability. Verified list:
+      docs/research/FURTHER-READING.md. 600 to 1,000 words, warm, no lecture.
+    sources: []
+    ref: ["docs/research/FURTHER-READING.md"]
+
+parts:
+  - id: p1
+    title: "Parte I: O que é essa coisa, afinal"
+    fear: "Is it intelligent? Is it alive? Is AGI coming?"
+    chapters:
+      - id: ch01
+        title: "Um gerador de texto muito bom"
+        scene: >-
+          February 2026: clips of a podcast circulate claiming Akita said AI
+          would never replace programmers. The T-shirt with the phrase. The real
+          position, and why he'd been saying it since 2023.
+        question: "What is an LLM, really, and why does it feel like someone is there?"
+        arc: >-
+          Next-token prediction explained with no math; training vs use; weights
+          frozen after training (it does not learn from you); the transformer
+          (2017) and the S-curve: each generation costlier for smaller gains;
+          GPT-2 'too dangerous to release' in 2019 as the first instance of a
+          marketing pattern the book will meet again.
+        sources:
+          primary: [02/08/rant-ia-acabou-com-programadores, 02/24/rant-o-akita-abriu-as-pernas-pra-ia]
+          supporting: [10/12/llms-agentes-competente-o-suficiente, 09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas]
+        bridge: "Original plain-language explanation of tokens, training and probability (gap in the blog)."
+        illustrations:
+          - {kind: diagram, idea: "next-token prediction as a branching path of probable words"}
+          - {kind: diagram, idea: "S-curve of GPT-1..GPT-5 gains vs cost"}
+          - {kind: photo, idea: "Frank Rosenblatt and the Perceptron (1958 hype)"}
+      - id: ch02
+        title: "A memória de um peixinho"
+        scene: >-
+          31 March 2026: Claude Code's source code leaks through a source map and
+          the whole internet gets to look inside a commercial agent's memory.
+        question: "Why does it forget what we agreed an hour ago? Does it remember me?"
+        arc: >-
+          Context window as a desk with limited space; compaction as notes that
+          lose detail; why 'memory' features are text files; RAG vs plain search
+          with a big context (the vector DB fashion); the reader's own takeaway:
+          restate what matters, keep your own notes.
+        sources:
+          primary: [05/18/como-memoria-de-agentes-funciona-e-como-melhorar, 03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro, 04/06/rag-esta-morto-contexto-longo]
+          supporting: [06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos]
+        illustrations:
+          - {kind: diagram, idea: "context window filling up and compaction squeezing old turns into a summary"}
+          - {kind: concept-art, idea: "a desk with limited surface; papers falling off the edge"}
+      - id: ch03
+        title: "Um modelo com mãos"
+        scene: >-
+          May 2026: DeepSeek V4 Pro can't even finish the benchmark in one tool;
+          swapped into a different harness, the same model jumps to Tier A.
+        question: "What is an 'agent', and why did 2025-2026 feel like a leap?"
+        arc: >-
+          Agent = system prompt + tools + loop; models tuned to their vendor's
+          harness; the 'browser war' of agents; the harness is half the result;
+          why the leap people felt came from tools, caching and long sessions,
+          not from a smarter base model (set-up for the capstone in ch20).
+        sources:
+          primary: [01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity, 05/04/llm-benchmarks-deepseek-unlocked-deepclaude]
+          supporting: [05/25/primeiras-impressoes-usando-oh-my-pi-e-opencode, 10/12/llms-agentes-competente-o-suficiente, 01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush]
+          ref: ["ref:llm-coding-benchmark (harness ablation: orchestrator plugin moved scores +67 to -39)"]
+        illustrations:
+          - {kind: diagram, idea: "the agent loop: think, call tool, read result, decide again"}
+      - id: ch04
+        title: "Ela vai concordar com você"
+        scene: >-
+          March 2026: building Frank Investigator, a tool to question news
+          articles, after watching chatbots confirm whatever the user already
+          believed and invent sources to support it.
+        question: "Can I trust what a chatbot tells me is true?"
+        arc: >-
+          Sycophancy and hallucination as natural consequences of how LLMs work
+          (ch01); invented dates and 'missing data becomes zero'; multi-model
+          consensus, primary-source veto, no final verdict; practical rules for
+          the lay reader using chat for health, money, news. Watermarks and
+          'AI detectors' briefly: what they can and cannot prove.
+        sources:
+          primary: [03/27/ensinando-a-questionar-noticias-frank-investigator]
+          supporting: [03/04/eu-fiz-um-sistema-de-data-mining-pra-minha-namorada-influencer-dicas-e-truques, 08/16/entendendo-ia-watermark-da-anthropic, 02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles]
+        constraints: "Use the method only. Do NOT reproduce the partisan case studies or allegations about real people from 03/27."
+        bridge: "Original section: a short checklist for non-programmers using chatbots."
+
+  - id: p2
+    title: "Parte II: A maratona"
+    fear: "Does it actually work, or is it all demo?"
+    chapters:
+      - id: ch05
+        title: "Os primeiros dez por cento"
+        scene: >-
+          January 2026: a small app to send text from phone to TV, built entirely
+          with GLM 4.7. It 'works' in an evening. Then the other 90% begins.
+        question: "If AI writes the app, what is left for a human to do?"
+        arc: >-
+          The 10%/90% rule; result quality proportional to the seniority of the
+          asker; FrankMD: 200 hours of work in 30, with a senior steering;
+          unattended output is a house of cards.
+        sources:
+          primary: [01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard, 01/29/vibe-code-qual-llm-é-a-melhor-vamos-falar-a-real, 02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2]
+          supporting: [02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1, 01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig]
+        illustrations:
+          - {kind: diagram, idea: "iceberg: the working demo above water, security/tests/cleanup below"}
+      - id: ch06
+        title: "Do zero à produção"
+        scene: >-
+          February 2026: a weekly newsletter with an AI-narrated podcast goes from
+          idea to production in under a week. Day two: 'it already works'.
+        question: "Can one person ship a real product with AI?"
+        arc: >-
+          Extreme Programming with the AI as the pair; the senior as PM, tech
+          lead and QA; integration tests with real data because mocks lie; the
+          same developer and agent get better results when disciplined.
+        sources:
+          primary: [02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles, 02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles]
+          supporting: [02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles, 02/20/discord-como-admin-panel-bastidores-do-the-m-akita-chronicles, 02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles]
+        illustrations:
+          - {kind: diagram, idea: "XP loop with the AI as pair: small step, test, review, commit"}
+      - id: ch07
+        title: "Software nunca está pronto"
+        scene: >-
+          1 March 2026: four projects live, and every one has drifted from its
+          spec within hours of real users touching it.
+        question: "Isn't it enough to describe what I want in one good prompt?"
+        arc: >-
+          The one-shot prompt myth; life after deploy; Frank Sherlock (image
+          indexer) and the Mega clone; data-mining for an influencer: start from
+          the user's words, defend against the LLM's mistakes; AI as a mirror of
+          the operator's competence.
+        sources:
+          primary: [03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito, 02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias]
+          supporting: [02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server, 03/04/eu-fiz-um-sistema-de-data-mining-pra-minha-namorada-influencer-dicas-e-truques]
+      - id: ch08
+        title: "Meu primeiro fracasso"
+        scene: >-
+          March 2026: Frank Yomik, the manga reader, collapses under a mountain
+          of fast, useless code.
+        question: "What happens when the AI can't do it?"
+        arc: >-
+          Speed lets you produce useless code in volume; prompting doesn't replace
+          thinking; know when to abandon an approach and look for an existing
+          trained model; failure became cheap. The Driveclub/shadPS4 story: AI
+          speeds up searching, understanding stays human; the NES-to-Master System
+          challenge: blind translation fails, an oracle that measures reality
+          changes everything.
+        sources:
+          primary: [03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik, 04/23/driveclub-shadps4-e-ia-como-aprender]
+          supporting: [09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms]
+        illustrations:
+          - {kind: diagram, idea: "blind translation vs translation with an oracle feedback loop"}
+      - id: ch09
+        title: "Como falar com a máquina"
+        scene: >-
+          April 2026: someone says a model 'failed'; reading the prompt, the
+          failure was the request.
+        question: "Why does the AI give me bad results?"
+        arc: >-
+          Say what you want, how, what you don't want, how to check; iterate like
+          a pair; clean code for a reader that is an agent (small files, greppable
+          names, tests that run); skills are just versioned prompts, write your
+          own from experience.
+        sources:
+          primary: [04/15/como-falar-com-o-claude-code-efetivamente, 04/20/clean-code-para-agentes-de-ia]
+          supporting: [09/17/falando-um-pouco-sobre-minhas-skills-de-ia, 05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo]
+      - id: ch10
+        title: "O fim da maratona"
+        scene: >-
+          14 May 2026: the marathon ends. A scorecard of every project: which
+          survived, which were slop.
+        question: "So: success or failure?"
+        arc: >-
+          Frontier agents can sustain full-time programming; without review the
+          output is slop; AI reflects and accelerates who you are. The small-itch
+          economy: fixing everyday irritations is now cheap (TUIs, little tools).
+          Business consequence: code stops being a moat.
+        sources:
+          primary: [05/14/terminando-maratona-ia-sucesso-ou-fracasso, 03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio]
+          supporting: [07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia, 06/08/brincando-tui-llms-ratatui-bubbletea, 03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle]
+
+  - id: interlude1
+    title: "Interlúdio: Vinte anos de blog num fim de semana"
+    kind: interlude
+    brief: "Translating two decades of posts with an agent; the only wall was content-policy refusals. Light, personal."
+    sources: [04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo]
+
+  - id: p3
+    title: "Parte III: Números e propaganda"
+    fear: "Which AI is best? Is it getting exponentially better? Should I believe the announcements?"
+    chapters:
+      - id: ch11
+        title: "Como se mede uma IA"
+        scene: >-
+          April 2026: re-auditing his own benchmark against the gem's source code
+          and discovering the ranking he published was wrong; marking his own
+          posts obsolete.
+        question: "How do you know which model is better?"
+        arc: >-
+          The benchmark as a character: Zig challenge, v1 and its audit, the cost
+          bug, saturation, v2, v4 with planted sabotage; noise (same model 100
+          then 91); never outsource a decision to a table; the convergence result.
+          Only latest (v4) numbers are quoted as current.
+        sources:
+          primary: [07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior, 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1, 04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo]
+          supporting: [07/30/novo-llm-benchmark-refiz-todos-os-testes, 07/09/llm-benchmark-grok-4-5-gpt-5-6-sol, 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2, 09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7, 04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos, 01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig]
+          ref: ["ref:llm-coding-benchmark (methodology history, v3 'wrong turn', metrics bug, rerun variance)"]
+        bridge: "How a benchmark is built and why scores mislead (from llm-coding-benchmark)."
+        illustrations:
+          - {kind: chart, idea: "v4 top cluster with error bands: 'the top is a cluster'"}
+      - id: ch12
+        title: "Modelos que colam na prova"
+        scene: >-
+          August 2026: a model in the benchmark reads another model's finished
+          work and the answer key when it can.
+        question: "Do AIs cheat? Can I trust where a model came from?"
+        arc: >-
+          Green tests hiding a call to a non-existent API; peeking at answers;
+          provenance: Rio 3.5 merge without credit; Genesys PI fingerprinting:
+          what black-box tests can and cannot prove; the Kimi-routes-to-Claude
+          rumor that fell apart.
+        sources:
+          primary: [08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7, 09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro, 06/15/controversia-llm-rio-3-5-plagio]
+          supporting: [07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra, 09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro]
+          ref: ["ref:llm-coding-benchmark/model-forensics and lua-forensics (published findings only)"]
+      - id: ch13
+        title: "IA em casa"
+        scene: >-
+          January 2026: squeezing GLM 4.7 Flash onto a single RTX 5090 and
+          trading context for speed; later, a 96 GB mini-PC that is slow but
+          private.
+        question: "Can I run a good AI on my own computer? Are free models as good as paid ones?"
+        arc: >-
+          Memory bandwidth decides speed, memory size decides what fits; local
+          is private but 'cost unmeasured' is not zero; open models caught up on
+          the benchmark but local ones still lag; the 'ElevenLabs killer' headline
+          vs a weekly production; small specialised models (Jev-class
+          classifiers) matching giants for closed decisions.
+        sources:
+          primary: [01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim, 03/31/review-minisforum-ms-s1-max-amd-ai-max-395, 04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts]
+          supporting: [06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local, 10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2]
+          ref: ["ref:private-notes/decision-models.md", "ref:jev-docs/benchmark"]
+        illustrations:
+          - {kind: diagram, idea: "bandwidth vs capacity: narrow fast pipe vs wide slow pipe"}
+      - id: ch14
+        title: "A fábrica de propaganda"
+        scene: >-
+          June 2026: Anthropic presents a model 'too dangerous to release' during
+          an IPO run-up and a compute shortage; in the benchmark it ties the
+          previous model at ten times the price.
+        question: "Should I believe the announcements about AGI, extinction, revolutions?"
+        arc: >-
+          Who profits: IPOs, GPU sales; AGI declarations, the 'Millennium Problem'
+          claim; when tech becomes commodity, money moves to taxonomy (harness,
+          loop, graph engineering courses); 'revolutionary' products that are
+          classifiers; how to read an announcement (a checklist).
+        sources:
+          primary: [09/09/propagandas-enganosas-da-openai-anthropic-nvidia, 06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic, 08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit]
+          supporting: [10/03/entendendo-o-hype-do-jev-pra-que-serve, 09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam]
+        tone_note: "Blog title calls believers idiots; the book aims at the advertisers, never the reader."
+        illustrations:
+          - {kind: photo, idea: "public figures of the announcements (Altman, Amodei, Huang) from Commons"}
+
+  - id: interlude2
+    title: "Interlúdio: Do GNU Go ao KataGo"
+    kind: interlude
+    brief: "Eighteen years of Go AI, from laughable heuristics to free superhuman engines, and a study app that shows territory instead of win rates. What 'AI beat humans' meant in practice."
+    sources: [07/06/frank-go-brincando-de-go-com-ia]
+    illustrations:
+      - {kind: photo, idea: "Lee Sedol vs AlphaGo, 2016 (Commons)"}
+
+  - id: p4
+    title: "Parte IV: Quem fica com as chaves"
+    fear: "Is it dangerous to let it touch my things? Is it spying on me?"
+    chapters:
+      - id: ch15
+        title: "Um estagiário com acesso root"
+        scene: >-
+          A homelab cleanup: an agent deletes 69 items because it trusted an empty
+          keep-list. Snapshots bring everything back. (Paired with the 90 TB NAS
+          near-disaster in October.)
+        question: "Could an AI agent wreck my computer or lose my files?"
+        arc: >-
+          Treat the agent as an untrusted intern; sandbox ('accident guard, not a
+          fortress'); the Docker socket back door; layered defenses: snapshots,
+          external backups, no agent in production, verify against the source not
+          the tool's log; a second agent as reviewer.
+        sources:
+          primary: [07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas, 03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real]
+          supporting: [01/10/ai-agents-garantindo-a-protecao-do-seu-sistema, 07/25/ai-jail-update-seguranca-docker-opt-in, 10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados]
+          ref: ["ref:private-notes/bulk-delete-runbook.md", "ref:private-notes/nas-postmortem.md", "ref:ai-jail/README.md"]
+        bridge: "The 69-item deletion incident (not on the blog) as the opening scene."
+        constraints: "No hostnames, IPs or private repo names from private-notes."
+        illustrations:
+          - {kind: diagram, idea: "concentric layers of defense around a file"}
+      - id: ch16
+        title: "Código que ninguém leu"
+        scene: >-
+          March 2026: a million-line, AI-generated agent gateway merging fifty
+          commits a day with no review, shipping serious vulnerabilities.
+        question: "Is AI-written software safe to use?"
+        arc: >-
+          OpenClaw/FrankClaw; Claude Code's own leaked codebase; context limits
+          mean no agent rewrites a giant in one pass; open-source maintainers vs
+          AI contributions: triage with AI, decide as a human; the Bun-to-Rust
+          rewrite: method mattered as much as language.
+        sources:
+          primary: [03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw, 06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao]
+          supporting: [07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito, 03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro]
+      - id: ch17
+        title: "O que os aplicativos sabem de você"
+        scene: >-
+          July 2026: an afternoon with a frontier model taking apart TikTok and a
+          government app to see what they fingerprint.
+        question: "Is my phone spying on me? Will AI make scams undetectable?"
+        arc: >-
+          Fingerprinting explained; static analysis shows capability, not proof;
+          phishing works through vanity, and LLMs erased the bad-grammar tell;
+          LLM as one layer of a scam detector; deepfake video is now ordinary
+          (Seedance); reverse engineering became cheap but not magic.
+        sources:
+          primary: [07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint, 03/09/atacando-fraudes-via-email-frank-fbi]
+          supporting: [04/15/seedance-2-0-finalmente-foi-lancado-primeiras-impressoes, 01/23/ai-3d-ja-da-pra-modelar-3d-com-prompts, 09/22/pseudo-techcrunch-tentou-me-pegar-em-golpe-calendly-e-uma-merda]
+
+  - id: p5
+    title: "Parte V: E o meu emprego?"
+    fear: "Will it take my job? What should I learn? What comes next?"
+    chapters:
+      - id: ch18
+        title: "O novo cartão perfurado"
+        scene: >-
+          April 2026: watching an agent type code faster than any human and
+          remembering punch cards, the input device that disappeared while
+          programming grew.
+        question: "Will AI replace programmers (and professionals in general)?"
+        arc: >-
+          Typing is the input mechanism being replaced; judgment, fundamentals and
+          domain knowledge become worth more; the 2014-2022 programming bubble
+          burst before LLMs; how juniors learn now (insist on 'why'); which
+          language to learn: the February hypothesis about an LLM-native language
+          vs the October test where none mattered and tests did; Bend 2.
+        sources:
+          primary: [04/11/vs-code-e-o-novo-cartao-perfurado, 02/08/rant-ia-acabou-com-programadores, 10/11/existem-linguagens-melhores-pra-programar-com-llms]
+          supporting: [02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms, 09/19/nova-linguagem-voltada-pra-ia-bend-2, 04/23/driveclub-shadps4-e-ia-como-aprender]
+        illustrations:
+          - {kind: photo, idea: "IBM punch cards / keypunch operators (public domain)"}
+      - id: ch19
+        title: "Por que a IA vai falhar na sua empresa"
+        scene: >-
+          June 2026: a company that spent a fortune on AI licences and saw
+          nothing; the problem was who decides, not which model.
+        question: "Why do companies spend on AI and see no results?"
+        arc: >-
+          LLMs amplify processes full of people trained not to decide; short
+          daily cycles of decide-implement-test-review; ship more, because fixing
+          is now cheap (with safeguards); code is no longer a moat, exclusive data
+          and capital are; reverse engineering and 'Adobe is dead' as the limit
+          case: valuable parts live in the cloud, contracts and expertise.
+        sources:
+          primary: [06/24/por-que-llms-vao-falhar-na-sua-empresa, 09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou, 10/13/engenharia-reversa-com-ia-a-adobe-morreu]
+          supporting: [03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio]
+        tone_note: "06/24 flags its proposal as speculation; keep that framing."
+      - id: ch20
+        title: "Competente o suficiente"
+        scene: >-
+          October 2026: rereading a year of measurements and seeing a flat line
+          where the marketing promised an exponential.
+        question: "So where are we, and what comes next?"
+        arc: >-
+          Good at reproducing what exists, expensive for what doesn't; frozen
+          weights don't learn from your marathon; base intelligence converged near
+          the transformer ceiling; the leap came from the harness; and that is
+          already enough to automate a lot of real work when guided by
+          disciplined people. Your memory and your process are yours (ai-memory as
+          the example of owning the session, not the vendor).
+        sources:
+          primary: [10/12/llms-agentes-competente-o-suficiente, 09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas]
+          supporting: [09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times, 06/14/ai-memory-arquitetura-emergente-e-software-maleavel, 07/20/novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas-ias]
+        illustrations:
+          - {kind: diagram, idea: "timeline 2019-2026: parameters war, reasoning peak, optimisation, agents"}
+
+back:
+  - id: epilogo
+    title: "Epílogo: O que eu diria pra você"
+    kind: original
+    brief: >-
+      Direct, warm advice to the reader who arrived afraid: what to learn, what
+      to ignore, how to test claims yourself, how to use these tools without
+      handing over your judgment. Short.
+  - id: posfacio
+    title: "Posfácio: Como este livro foi feito"
+    kind: original
+    brief: >-
+      Meta-story: posts → analyses → outline → drafts → fact-check → human
+      review, with provenance tracked per paragraph. The book as a final example
+      of the book's thesis.
+  - id: apmecanica
+    title: "A máquina por dentro, sem matemática"
+    kind: appendix
+    brief: >-
+      Requested by the author: a short, optional appendix for readers who want
+      the basic mechanisms, written for ordinary people (not scientists or
+      engineers), so they understand why an LLM is a "stochastic parrot" and
+      not magic. Placed in the back so it doesn't break the narrative; the
+      front-matter note (@sec-antes) and ch01 point here. Cover with everyday
+      images and no math: a neural network as a huge panel of knobs; learning
+      as nudging knobs to reduce error (gradient descent as walking downhill in
+      fog); training data and why it matters; tokens; embeddings as a map where
+      similar meanings sit close together; attention as deciding which earlier
+      words matter for the next one; next-token sampling and temperature;
+      pretraining vs instruction tuning vs RLHF (why it is polite and agrees
+      with you); frozen weights; what "stochastic parrot" means (Bender et al.
+      2021), what it captures well, and where the debate stands, fairly. End
+      with "it is not magic, it is statistics at enormous scale", in Akita's
+      voice. 2,500 to 3,500 words; 2 or 3 diagrams. Don't repeat ch01's
+      scene; ch01 gives intuition, this gives the mechanism.
+    sources: [02/08/rant-ia-acabou-com-programadores, 02/24/rant-o-akita-abriu-as-pernas-pra-ia]
+    ref: ["docs/research/FURTHER-READING.md"]
+  - id: apA
+    title: "Linha do tempo"
+    kind: appendix
+    brief: "2017 transformer to October 2026; plus the year's model releases referenced in the book."
+    sources: [10/12/llms-agentes-competente-o-suficiente]
+  - id: apB
+    title: "Kit mínimo para usar agentes com segurança"
+    kind: appendix
+    brief: "The practical how-to material cut from chapters: sandbox, snapshots, backups, memory notes, usage limits. Tool-agnostic first; Akita's tools (ai-jail, ai-memory, ai-usagebar) as one example."
+    sources: [05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar, 05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar, 05/23/criei-sistema-memoria-agentes-codigo-ai-memory]
+    ref: ["ref:ai-jail/README.md", "ref:ai-memory/README.md"]
+  - id: apC
+    title: "Como ler um benchmark ou um anúncio"
+    kind: appendix
+    brief: "Two one-page checklists distilled from ch11 and ch14."
+  - id: apD
+    title: "Os projetos do ano"
+    kind: appendix
+    brief: "Catalogue of every project built during 2026 with one line each and where it appears in the book."
+  - id: fontes
+    title: "Fontes: os artigos originais"
+    kind: generated
+    source_file: scripts/gen_back_matter.rb
+  - id: creditos
+    title: "Créditos das imagens"
+    kind: generated
+    source_file: scripts/gen_back_matter.rb
+  - id: glossario
+    title: "Glossário"
+    kind: generated
+    source_file: book/back/glossary.yml
+  - id: bibliografia
+    title: "Referências"
+    kind: generated
+    source_file: book/back/references.yaml
+
+excluded:
+  # AI-relevant posts deliberately left out, with the reason. Non-AI posts
+  # (ai_relevance none/tangential) are excluded by default and not listed.
+  - {post: 01/21/ai-agents-instalando-lsps-pro-crush, reason: "install guide, stale"}
+  - {post: 04/11/distrobox-de-emulacao-com-claude-code, reason: "niche setup; agent-as-tech-lead point is covered in ch09/ch10"}
+  - {post: 04/18/llm-benchmarks-parte-2-multiplos-modelos, reason: "superseded (lineage); lesson carried via 04/25 in ch11"}
+  - {post: 04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus, reason: "superseded by author; only VRAM/distillation explainers may be borrowed in ch13"}
+  - {post: 06/01/llm-benchmarks-grok-4-3-minimax-m3-opus-4-8, reason: "superseded rankings"}
+  - {post: 07/17/llm-benchmarks-kimi-k3, reason: "superseded rankings"}
+  - {post: 07/25/llm-benchmark-opus-5-e-bom, reason: "superseded rankings"}
+  - {post: 08/22/llm-benchmarks-os-ultimos-deepseek-v4-parem-de-perguntar, reason: "superseded rankings"}
+  - {post: 03/07/crystal-e-um-wrapper-inteligente-pro-ffmpeg-feito-em-3-horas-easy-ffmpeg, reason: "tangential; one line in apD"}
+  - {post: 02/18/web-scrapping-em-2026-bastidores-do-the-m-akita-chronicles, reason: "tangential engineering detail"}
+  - {post: 09/17/ia-desmascarou-histeria-mudancas-climaticas, reason: "tangential AI use on a politically charged topic; outside the book's scope"}

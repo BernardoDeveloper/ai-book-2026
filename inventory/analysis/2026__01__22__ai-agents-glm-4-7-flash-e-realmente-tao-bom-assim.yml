@@ -1,0 +1,53 @@
+id: "2026/01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim"
+source_sha256: "2f8d2231e055bd2d1f14704fada3a1e5c83d4c3391c38ae398509b97c816f116"
+title_en: "AI Agents: Is GLM 4.7 Flash Really That Good?"
+ai_relevance: core
+ai_relevance_reason: "Tests a local open-source LLM on a coding agent task and explains the hardware limits of running models at home."
+genre: review
+themes: [open-vs-closed-and-local-models, hardware-and-infrastructure, agent-memory-and-context, benchmarks-model-comparison]
+thesis: "GLM 4.7 Flash, a 30B-parameter model squeezed onto one RTX 5090, is the best open-source coding model he has tried, behaving like the commercial ones, but memory (VRAM) forces a trade-off between speed and context size."
+summary: "Akita tries to run GLM 4.7 Flash locally. vLLM and LM Studio did not work for him, so he compiled Ollama from source. To fit 32GB of VRAM he quantizes the KV cache to 4 bits, enables flash attention and caps context at 45k tokens. He explains that VRAM, not raw compute, is what matters for local models, which is why a Mac Studio with 512GB of shared memory or a Ryzen AI Max+ mini PC can run bigger models. Larger context (65k) pushed layers to the CPU and made answers about 20 times slower. Agents fill context fast; when the window nearly fills they summarise and restart, losing detail. A full context also truncated tool-call output (invalid XML) and crashed Crush, so he used Crush itself to write a pull request that auto-resumes. On his hard Zig test GLM 4.7 Flash was the only open model to get the build working, without the 'agentic loop' that Qwen3 fell into, but it was far slower than Claude Opus. He stresses that leaving an agent running unattended is bad practice and that his prompt is deliberately bad."
+key_claims:
+  - claim: "For local LLMs the limiting resource is VRAM, not compute; machines with large unified memory (Mac Studio up to 512GB, Ryzen AI Max+ up to 128GB) can run bigger models but cost above BRL 20k."
+    time_sensitive: true
+  - claim: "A larger context window competes with speed on limited memory: going from 45k to 65k tokens pushed layers to the CPU and made responses about 20x slower (4 s to 90 s)."
+    time_sensitive: true
+  - claim: "Agents consume context quickly (commands, file reads, web searches); when full they summarise and restart, losing details."
+    time_sensitive: false
+  - claim: "If the context fills while the model is emitting a tool call, the call is truncated and invalid, stopping the agent."
+    time_sensitive: false
+  - claim: "GLM 4.7 Flash was the only open model that got his Zig build working, behaving sensibly (one fix at a time, checking with the build), but he did not verify runtime bugs."
+    time_sensitive: true
+  - claim: "A slow model that converges is better than a fast one that loops claiming it is done."
+    time_sensitive: false
+  - claim: "Running a model fully local is free per use and preserves privacy, but is practical only for small, short tasks."
+    time_sensitive: false
+  - claim: "Letting an agent run unsupervised is bad practice; he only does it in a jail on a benchmark he knows well."
+    time_sensitive: false
+fears_addressed:
+  - "Can I run a good AI at home, privately and free?"
+  - "Why do cloud AI services cost money?"
+reader_value: "Moderate. Makes tangible why running AI locally is hard (memory) and what a context window costs, which demystifies the economics of cloud AI. The install steps are not useful to lay readers."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "VRAM as the bottleneck for home AI"
+    - "Context window versus speed trade-off, and agent summarising when full"
+    - "Slow-but-converges versus fast-but-loops"
+    - "Privacy and zero marginal cost as the case for local models"
+  cut:
+    - "Ollama compile steps and env vars"
+    - "Pull request side-quest details"
+jargon: [parameters, BF16, quantization, VRAM, KV cache, flash attention, context window, token, offload, tool calling, agentic loop, Ollama, vLLM, LM Studio, open-source model]
+illustration_ideas:
+  - "How a context window fills, triggers summarisation and loses detail"
+  - "VRAM as a fixed-size box: model weights plus KV cache versus context length"
+  - "Quantization: fewer bits per number to fit a smaller memory"
+people_events: ["Z.ai (GLM 4.7 / Flash)", "Ollama", "Nvidia RTX 5090", "Apple Mac Studio"]
+related_posts:
+  - "2026/01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig"
+  - "2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema"
+prerequisites: ["Tokens and context window", "What open-source/local models are"]
+series: "llm-benchmark"
+obsolescence: "Support status of GLM 4.7 Flash in vLLM/LM Studio/Ollama (he compiled Ollama from master), the 45k/65k context numbers and the verdict 'best OSS model of early 2026' are all dated. Later posts may supersede."

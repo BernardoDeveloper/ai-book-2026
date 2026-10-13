@@ -1,0 +1,58 @@
+# Shared continuity for parallel drafters. Read before drafting; the
+# integration pass updates it between waves. Facts here are about the BOOK
+# (who explains what, how things are named), not new claims.
+
+narrator: >-
+  Fabio Akita, first person ("eu"). Veteran programmer, ran the
+  Akitando YouTube channel 2018-2024, blog since 2006 (20 years in 2026),
+  keeps a home server ("homelab"). Biographical facts beyond the posts need a source. Never refer to
+  him as "Fabio"; "Akita" only when a third party speaks of him.
+
+reader: "Addressed as 'você', informally. Never patronised, never insulted."
+
+# Where each concept is explained properly. Elsewhere: mark the term with
+# [termo]{.gls} (the glossary expands/links it) and, if needed, a half-clause
+# reminder plus a cross-reference like "(veja @sec-ch02)". Don't re-explain.
+explained_in:
+  ch01: [llm, token, parametros, pesos, transformer, inferencia, agi, bolha, "curva em S", "treino vs uso"]
+  ch02: [contexto, janela-de-contexto, compactacao, rag, embedding, "memória de agente"]
+  ch03: [agente, harness, tool-calling, mcp, system-prompt, prompt-caching, raciocinio]
+  ch04: [alucinacao, sicofancia, "watermark/detector de IA"]
+  ch05: [vibe-coding, prompt, "a regra dos 10%/90%"]
+  ch06: [xp, tdd, ci, teste-de-integracao, refatoracao]
+  ch08: ["oráculo (verificador externo)"]
+  ch09: [skill, "AGENTS.md / CLAUDE.md"]
+  ch11: [benchmark, "tier", "ruído entre execuções"]
+  ch13: [vram, gpu, quantizacao, moe, modelo-aberto, destilacao, "largura de banda de memória"]
+  ch14: [modelo-de-fronteira, "IPO"]
+  ch15: [sandbox, snapshot]
+  ch16: [prompt-injection, gateway, seguranca-por-obscuridade, regressao, revisao-adversarial]
+  ch17: [fingerprint, engenharia-reversa]
+
+section_ids: "Each chapter's H1 carries {#sec-<id>} (e.g. # Um modelo com mãos {#sec-ch03}). Cross-reference with @sec-chNN."
+
+recurring_characters:
+  frank-projects: >-
+    Akita names his personal projects "Frank" + something (FrankMD, Frank
+    Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, Frank
+    Karaoke, Frank GO, Frank Manga+). The name is a homage to Frank Rosenblatt,
+    creator of the Perceptron (1957), as the posts themselves say. ch01
+    introduces Rosenblatt (cite rosenblatt1957perceptron); ch05 (FrankMD, the
+    first) explains the naming once. Never call them Frankenstein creatures.
+  the-m-akita-chronicles: "Weekly newsletter + AI-narrated podcast built in February (ch06)."
+  the-benchmark: "Akita's LLM coding benchmark, introduced in ch11; earlier chapters may foreshadow it."
+  claude-code: "Anthropic's coding agent, Akita's main tool for most of the year."
+  opencode-crush: "Open-source terminal agents (harnesses) he also used."
+  the-girlfriend: "Influencer; do not name her. 'minha namorada'."
+  ai-jail: "Akita's open-source sandbox for agents (ch15). Describe as 'accident guard, not a fortress'."
+  ai-memory: "Akita's open-source memory system for agents (ch02 mention, ch20 resolution, apB how-to)."
+
+time_anchor: >-
+  The narrative present is October 2026. Dates in absolute form. Model names
+  are period details, like car models in a novel: fine to name, never presented
+  as "the best" without the month attached.
+
+naming:
+  - "Claude Code, Codex, OpenCode, Crush: product names, no italics."
+  - "Model names as the vendor writes them: Claude Opus 4.5, GPT-5.5, GLM 4.7, Kimi K3, DeepSeek V4."
+  - "Book and paper titles in italics."

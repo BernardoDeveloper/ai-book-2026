@@ -1,0 +1,69 @@
+---
+id: cover-a
+kind: ai_illustration
+file: assets/cover/cover-a.png
+sha256: 4b6c10ac88d902fd6fbc9ab172b7fa40becf0291d14ffce300305438ae76a8ca
+generation:
+  provider: openai
+  endpoint: POST /v1/images/generations
+  model: gpt-image-2.5-flare-2026-09-08
+  date: '2026-10-13T16:12:53-03:00'
+  style_version: STYLE-cover
+  scene: A colossal original chrome-and-brass robot with an art deco fin-shaped head
+    and a single glowing round eye stands calmly in a World's Fair plaza at dusk,
+    towering over a small crowd of 1950s people in hats and coats seen from behind;
+    some point up in awe, some step back in fear, a mother holds a child, a man in
+    a suit clutches his briefcase. The robot extends one open hand toward the crowd,
+    ambiguous between offering help and reaching for them. Streamline moderne pavilions
+    and a needle-like tower behind, sunburst rays radiating from the robot's head.
+  prompt: 'COVER v1: 1950s retro-futurist illustrated poster, World''s Fair and Golden
+    Age pulp science-fiction movie poster aesthetic, art deco and streamline moderne
+    shapes, dramatic sunburst rays, gouache and airbrush texture, slightly weathered
+    printed-paper grain, limited palette of deep teal, navy, cream, brass gold and
+    a single warm red-orange accent, strong silhouette readable at thumbnail size,
+    cinematic low camera angle, all characters and robots are original designs (not
+    based on any existing film, game or franchise character), no real people, no text,
+    no letters, no numbers, no logos, no signage. Leave the top third of the image
+    as calm sky with room for a title, and the bottom tenth uncluttered for the author
+    name. Portrait book-cover composition. Scene: A colossal original chrome-and-brass
+    robot with an art deco fin-shaped head and a single glowing round eye stands calmly
+    in a World''s Fair plaza at dusk, towering over a small crowd of 1950s people
+    in hats and coats seen from behind; some point up in awe, some step back in fear,
+    a mother holds a child, a man in a suit clutches his briefcase. The robot extends
+    one open hand toward the crowd, ambiguous between offering help and reaching for
+    them. Streamline moderne pavilions and a needle-like tower behind, sunburst rays
+    radiating from the robot''s head.'
+  params:
+    size: 1024x1536
+    quality: high
+    background: opaque
+    output_format: png
+    "n": 2
+  seed:
+  request_id: e38b7402-3d48-4d5e-b0b3-4e72bc7369f4
+  usage:
+    input_tokens: 576
+    input_tokens_details:
+      image_tokens: 0
+      text_tokens: 576
+    output_tokens: 2744
+    output_tokens_details:
+      image_tokens: 2744
+      text_tokens: 0
+    total_tokens: 3320
+  drafts:
+  - build/genimg/cover-a-1.png
+  - build/genimg/cover-a-2.png
+  selected: 1
+post_processing:
+- 'flattened onto #FBF9F4, sRGB, alpha removed'
+human_contribution: art direction (scene brief), selection, placement and caption
+terms:
+  provider_terms: https://openai.com/policies/services-agreement/
+  copyright_status: AI-generated; likely not protectable (US Copyright Office Part
+    2; Lei 9.610 art. 11)
+kdp_disclosure: ai_generated_image
+credit:
+  caption_pt: Ilustração gerada por IA (GPT Image 2.5, OpenAI) sob direção do autor
+  caption_en: AI-generated illustration (GPT Image 2.5, OpenAI) under the author's
+    direction

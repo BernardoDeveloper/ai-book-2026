@@ -1,0 +1,22 @@
+analise-estatica:
+  term: Análise estática
+  def: Ler o código de um programa sem executá-lo, pra descobrir o que ele foi construído pra fazer. Mostra capacidades (permissões, endereços, identificadores), mas não prova o que o programa de fato faz quando roda.
+codigo-nativo:
+  term: Código nativo
+  def: Programa já convertido em instruções de máquina, geralmente a partir de C ou C++. Roda rápido e, ao contrário de Java, praticamente não volta a ser legível por ferramentas de descompilação.
+ofuscacao:
+  term: Ofuscação
+  def: Técnica que embaralha de propósito os nomes e a estrutura de um programa pra dificultar que alguém entenda o código depois de extraí-lo.
+sdk:
+  term: SDK
+  long: Software Development Kit
+  def: Pacote pronto de outra empresa que o programador encaixa no seu aplicativo, como métricas, anúncios ou relatórios de erro. Cada SDK pode coletar dados por conta própria.
+id-de-publicidade:
+  term: ID de publicidade
+  def: Código que o sistema do celular entrega a aplicativos e anunciantes pra identificar o aparelho em campanhas de anúncio. O usuário pode resetá-lo ou, no Android, excluí-lo.
+phishing:
+  term: Phishing
+  def: Golpe em que a mensagem se passa por alguém confiável (banco, empresa, jornalista, parente) pra fazer a vítima entregar senha, dados, dinheiro ou acesso a uma conta.
+deepfake:
+  term: Deepfake
+  def: Vídeo, imagem ou áudio falso de uma pessoa real, gerado ou alterado por IA de forma convincente.

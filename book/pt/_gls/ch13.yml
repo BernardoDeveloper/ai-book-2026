@@ -1,0 +1,12 @@
+kv-cache:
+  term: KV cache
+  def: As anotações que o modelo guarda sobre cada pedaço do contexto que já leu, pra não reler tudo a cada palavra. Cresce junto com a conversa e ocupa a mesma memória da placa que os pesos.
+memoria-unificada:
+  term: Memória unificada
+  def: Um único bloco de memória dividido entre o processador e a parte de vídeo do chip, em vez de memórias separadas. Permite dar muito mais memória à IA, mas costuma ser mais lenta que a de uma placa de vídeo dedicada.
+largura-de-banda:
+  term: Largura de banda de memória
+  def: Quantos gigabytes por segundo conseguem sair da memória até onde as contas são feitas. Como o modelo consulta todos os pesos ativos a cada token, é ela que decide a velocidade de uma IA rodando localmente.
+classificador:
+  term: Classificador
+  def: Modelo que recebe um texto e escolhe uma opção numa lista fechada (por exemplo, "crítico", "degradado" ou "rotina"), seguindo regras dadas. Técnica antiga, revendida em 2026 com nomes novos.

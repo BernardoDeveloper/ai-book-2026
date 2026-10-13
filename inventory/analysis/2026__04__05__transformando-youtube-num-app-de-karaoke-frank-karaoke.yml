@@ -1,0 +1,32 @@
+id: "2026/04/05/transformando-youtube-num-app-de-karaoke-frank-karaoke"
+source_sha256: "bfdb74b3108f689ed83e64312c370c344436ae90aa4de18e59a49cafde499a88"
+title_en: "Turning YouTube into a Karaoke App: Frank Karaoke"
+ai_relevance: tangential
+ai_relevance_reason: "Built with Claude Code, which did the audio-scoring research, but the app itself uses signal processing (YIN pitch detection), not an LLM. The 'llms' tag overstates the AI content."
+genre: project-log
+themes: [vibe-coding-practice, ai-in-daily-life, non-ai]
+thesis: "A karaoke score overlay on any YouTube video can be built without per-song reference files by judging vocal quality generically, but without references the scoring is approximate and experimental."
+summary: "Akita builds an Android Flutter app that wraps YouTube in a webview and overlays a live singing score. Professional karaoke systems need hand-made melody reference files, which a generic YouTube video lacks, so he asks Claude Code to research scoring (papers, patents, open source karaoke projects). The app filters the microphone with a bandpass filter, detects pitch with the YIN algorithm, and offers four scoring modes (pitch match, contour, intervals, streak), plus an optional 'pitch oracle' that downloads the video's audio to ignore speaker bleed. Debugging stories include a Samsung automatic gain control that attenuated the mic and a desktop Linux build abandoned after freezing the compositor. Over 25 commits just tuned scoring. He says plainly that the scoring is experimental and asks audio experts to help."
+key_claims:
+  - claim: "The author knew nothing about pitch scoring and used Claude Code to research the academic and patent literature, then implemented four generic scoring modes."
+    time_sensitive: false
+  - claim: "Scoring without per-song reference data is approximate; the app measures how you sing, not whether you sing the right melody."
+    time_sensitive: false
+  - claim: "On some Samsung phones the automatic gain control lowers the microphone signal instead of raising it."
+    time_sensitive: true
+  - claim: "More than 25 commits were spent tuning scoring; every fix revealed another bug."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. A fun hobby app. Marginal value: example of an AI agent as research assistant for an unfamiliar domain."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep: ["AI agent as a research assistant for a field the author knew nothing about"]
+  cut: ["Audio DSP details, YIN algorithm, scoring modes, install steps"]
+jargon: ["pitch detection", "YIN", "webview", "bandpass filter", "overlay", "Flutter"]
+illustration_ideas: []
+people_events: ["Joysound, DAM, SingStar, Videoke", "Claude Code"]
+related_posts: []
+prerequisites: []
+series: "frank-projects"
+obsolescence: "App version 0.2.0 and Android/Samsung behaviors are time-bound."

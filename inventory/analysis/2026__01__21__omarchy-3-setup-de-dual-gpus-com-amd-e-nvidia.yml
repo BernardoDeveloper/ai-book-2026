@@ -1,0 +1,31 @@
+id: "2026/01/21/omarchy-3-setup-de-dual-gpus-com-amd-e-nvidia"
+source_sha256: "3a6d508f9f027b723743165e7b83ccc27d87fb47a6597809b15bfd8f76cf04e1"
+title_en: "Omarchy 3: Dual-GPU Setup with AMD and NVIDIA"
+ai_relevance: tangential
+ai_relevance_reason: "Linux desktop GPU configuration; AI tools are mentioned only as a benefit of freeing VRAM on the NVIDIA card."
+genre: tutorial
+themes: [hardware-and-infrastructure, non-ai]
+thesis: "Run the desktop on the AMD integrated GPU and reserve the NVIDIA GPU for heavy apps and AI workloads, to avoid Hyprland/NVIDIA instability."
+summary: "Akita documents a personal fix for Hyprland crashing on wake-up with an NVIDIA RTX 5090. He moves the window manager to the CPU's integrated AMD GPU, configures environment variables and DRM device order, and uses Prime offload scripts so only Blender, Plasticity and Bambu Studio use the NVIDIA card. AI tools like ComfyUI, Ollama and LM Studio find the NVIDIA GPU automatically, and the NVIDIA card gains free VRAM for loading LLMs. He concludes Wayland on NVIDIA is not fully stable."
+key_claims:
+  - claim: "Using a second (integrated) GPU for the desktop frees the NVIDIA GPU's VRAM for running LLMs and other heavy workloads."
+    time_sensitive: true
+  - claim: "Wayland with Hyprland on NVIDIA is still not fully stable (at the time of writing)."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Niche Linux configuration; only the idea that VRAM is a scarce resource for local AI is reusable."
+technical_depth: 4
+evergreen: 1
+book_use:
+  keep:
+    - "One line: VRAM is what limits local models, so freeing it from the desktop helps"
+  cut:
+    - "Everything else (config files, scripts, PCI listing)"
+jargon: [GPU, iGPU, VRAM, Wayland, Prime offload, window manager]
+illustration_ideas:
+  - "GPU memory budget: desktop versus model weights"
+people_events: ["Omarchy", "Hyprland"]
+related_posts: []
+prerequisites: []
+series: ""
+obsolescence: "Hyprland/NVIDIA stability claims and versions (Hyprlock 0.9.2) are dated."

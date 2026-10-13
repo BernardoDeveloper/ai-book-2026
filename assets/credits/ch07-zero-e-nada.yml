@@ -1,0 +1,25 @@
+---
+id: ch07-zero-e-nada
+kind: diagram_code
+chapters:
+- 7
+editions:
+- pt
+- en
+file: assets/figures/ch07-zero-e-nada.png
+sha256: 01d6d52bf6599ae15f918520a09643deda96a847a13574f503fd950906e8b8c8
+pixels:
+  width: 1920
+  height: 1260
+source: assets/charts/ch07-zero-e-nada.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch07-zero-e-nada.py
+  pt
+description: 'ch07-zero-e-nada: an empty field ("not available") vs. a measured zero.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

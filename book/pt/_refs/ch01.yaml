@@ -1,0 +1,185 @@
+references:
+  - id: flow2025mentiram
+    type: "motion_picture"
+    title: "MENTIRAM PRA VOCÊ SOBRE INTELIGÊNCIA ARTIFICIAL [com Fabio Akita]"
+    author: [{literal: "Flow Podcast"}]
+    container-title: "YouTube"
+    issued: {date-parts: [[2025, 6, 13]]}
+    URL: "https://www.youtube.com/watch?v=sf4Gxf0LiKo"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores"
+  - id: akita2023chatgpt
+    type: "motion_picture"
+    title: "ChatGPT Consegue te Substituir? | Entendendo Jobs Assíncronos (Akitando #135)"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "YouTube"
+    issued: {date-parts: [[2023, 1, 5]]}
+    URL: "https://www.youtube.com/watch?v=Yl-hlwhj2B0"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (origin of the 'empolgação inversamente proporcional' phrase and the magic-trick comparison; verified in the episode transcript on the blog)"
+  - id: openai2022chatgpt
+    type: "webpage"
+    title: "Introducing ChatGPT"
+    author: [{literal: "OpenAI"}]
+    container-title: "OpenAI"
+    issued: {date-parts: [[2022, 11, 30]]}
+    URL: "https://openai.com/index/chatgpt/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia (launch date verified online)"
+  - id: radford2019better
+    type: "post-weblog"
+    title: "Better Language Models and Their Implications"
+    author: [{family: "Radford", given: "Alec"}, {family: "Wu", given: "Jeffrey"}, {family: "Amodei", given: "Dario"}, {family: "Amodei", given: "Daniela"}, {family: "Clark", given: "Jack"}, {family: "Brundage", given: "Miles"}, {family: "Sutskever", given: "Ilya"}]
+    container-title: "OpenAI Blog"
+    issued: {date-parts: [[2019, 2, 14]]}
+    URL: "https://openai.com/index/better-language-models/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (read via Wayback Machine copy: 1.5B parameters, 8M pages/40GB, 'not releasing the trained model', unicorn sample '10 tries', author list)"
+  - id: openai2019gpt2
+    type: "post-weblog"
+    title: "GPT-2: 1.5B Release"
+    author: [{literal: "OpenAI"}]
+    container-title: "OpenAI Blog"
+    issued: {date-parts: [[2019, 11, 5]]}
+    URL: "https://openai.com/index/gpt-2-1-5b-release/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (fact not linked in the post; verified via Wayback Machine copy)"
+  - id: hern2019dangerous
+    type: "article-newspaper"
+    title: "New AI fake text generator may be too dangerous to release, say creators"
+    author: [{family: "Hern", given: "Alex"}]
+    container-title: "The Guardian"
+    issued: {date-parts: [[2019, 2, 14]]}
+    URL: "https://www.theguardian.com/technology/2019/feb/14/elon-musk-backed-ai-writes-convincing-news-fiction"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (press framing of GPT-2; verified online)"
+  - id: anthropic2021raises
+    type: "webpage"
+    title: "Anthropic raises $124 million to build more reliable, general AI systems"
+    author: [{literal: "Anthropic"}]
+    container-title: "Anthropic"
+    issued: {date-parts: [[2021, 5, 28]]}
+    URL: "https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (Dario Amodei as Anthropic CEO in 2021; verified online)"
+  - id: brown2020language
+    type: "article"
+    title: "Language Models are Few-Shot Learners"
+    author: [{family: "Brown", given: "Tom B."}, {family: "Mann", given: "Benjamin"}, {family: "Ryder", given: "Nick"}, {family: "Subbiah", given: "Melanie"}, {family: "Kaplan", given: "Jared"}, {family: "Dhariwal", given: "Prafulla"}, {family: "Neelakantan", given: "Arvind"}, {family: "Shyam", given: "Pranav"}, {family: "Sastry", given: "Girish"}, {family: "Askell", given: "Amanda"}, {family: "Agarwal", given: "Sandhini"}, {family: "Herbert-Voss", given: "Ariel"}, {family: "Krueger", given: "Gretchen"}, {family: "Henighan", given: "Tom"}, {family: "Child", given: "Rewon"}, {family: "Ramesh", given: "Aditya"}, {family: "Ziegler", given: "Daniel M."}, {family: "Wu", given: "Jeffrey"}, {family: "Winter", given: "Clemens"}, {family: "Hesse", given: "Christopher"}, {family: "Chen", given: "Mark"}, {family: "Sigler", given: "Eric"}, {family: "Litwin", given: "Mateusz"}, {family: "Gray", given: "Scott"}, {family: "Chess", given: "Benjamin"}, {family: "Clark", given: "Jack"}, {family: "Berner", given: "Christopher"}, {family: "McCandlish", given: "Sam"}, {family: "Radford", given: "Alec"}, {family: "Sutskever", given: "Ilya"}, {family: "Amodei", given: "Dario"}]
+    container-title: "arXiv"
+    number: "arXiv:2005.14165"
+    DOI: "10.48550/arXiv.2005.14165"
+    issued: {date-parts: [[2020, 5, 28]]}
+    URL: "https://arxiv.org/abs/2005.14165"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: radford2018improving
+    type: "report"
+    title: "Improving Language Understanding by Generative Pre-Training"
+    author: [{family: "Radford", given: "Alec"}, {family: "Narasimhan", given: "Karthik"}, {family: "Salimans", given: "Tim"}, {family: "Sutskever", given: "Ilya"}]
+    publisher: "OpenAI"
+    publisher-place: "San Francisco"
+    issued: {date-parts: [[2018, 6]]}
+    URL: "https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (GPT-1 named in the post without a link; verified online)"
+  - id: openai2023gpt4
+    type: "article"
+    title: "GPT-4 Technical Report"
+    author: [{literal: "OpenAI"}]
+    container-title: "arXiv"
+    number: "arXiv:2303.08774"
+    DOI: "10.48550/arXiv.2303.08774"
+    issued: {date-parts: [[2023, 3, 15]]}
+    URL: "https://arxiv.org/abs/2303.08774"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: hai2024aiindex
+    type: "report"
+    title: "The 2024 AI Index Report"
+    author: [{literal: "Stanford Institute for Human-Centered Artificial Intelligence"}]
+    publisher: "Stanford University"
+    publisher-place: "Stanford, CA"
+    issued: {date-parts: [[2024, 4]]}
+    URL: "https://hai.stanford.edu/ai-index/2024-ai-index-report"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (training-cost estimates GPT-4 ~US$78M, Gemini Ultra ~US$191M; post stated rising cost without figures; verified online)"
+  - id: reuters2024limitations
+    type: "article-newspaper"
+    title: "OpenAI and others seek new path to smarter AI as current methods hit limitations"
+    author: [{family: "Hu", given: "Krystal"}, {family: "Tong", given: "Anna"}]
+    container-title: "Reuters"
+    issued: {date-parts: [[2024, 11, 11]]}
+    URL: "https://www.reuters.com/technology/artificial-intelligence/openai-rivals-seek-new-path-smarter-ai-current-methods-hit-limitations-2024-11-11/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: vaswani2017attention
+    type: "paper-conference"
+    title: "Attention Is All You Need"
+    author: [{family: "Vaswani", given: "Ashish"}, {family: "Shazeer", given: "Noam"}, {family: "Parmar", given: "Niki"}, {family: "Uszkoreit", given: "Jakob"}, {family: "Jones", given: "Llion"}, {family: "Gomez", given: "Aidan N."}, {family: "Kaiser", given: "Lukasz"}, {family: "Polosukhin", given: "Illia"}]
+    container-title: "Advances in Neural Information Processing Systems 30"
+    event: "31st Conference on Neural Information Processing Systems (NIPS 2017)"
+    page: "5998-6008"
+    publisher: "Curran Associates"
+    publisher-place: "Long Beach, CA"
+    issued: {date-parts: [[2017]]}
+    URL: "https://arxiv.org/abs/1706.03762"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores"
+  - id: weizenbaum1966eliza
+    type: "article-journal"
+    title: "ELIZA: a computer program for the study of natural language communication between man and machine"
+    author: [{family: "Weizenbaum", given: "Joseph"}]
+    container-title: "Communications of the ACM"
+    volume: "9"
+    issue: "1"
+    page: "36-45"
+    DOI: "10.1145/365153.365168"
+    issued: {date-parts: [[1966, 1]]}
+    URL: "https://doi.org/10.1145/365153.365168"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia (post linked the Wikipedia ELIZA article)"
+  - id: tarnoff2023weizenbaum
+    type: "article-newspaper"
+    title: "Weizenbaum's nightmares: how the inventor of the first chatbot turned against AI"
+    author: [{family: "Tarnoff", given: "Ben"}]
+    container-title: "The Guardian"
+    issued: {date-parts: [[2023, 7, 25]]}
+    URL: "https://www.theguardian.com/technology/2023/jul/25/joseph-weizenbaum-inventor-eliza-chatbot-turned-against-artificial-intelligence-ai"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (quotes 'very hard to convince that Eliza ... is not human' and the secretary anecdote; verified online)"
+  - id: lefkowitz2019perceptron
+    type: "webpage"
+    title: "Professor's perceptron paved the way for AI – 60 years too soon"
+    author: [{family: "Lefkowitz", given: "Melanie"}]
+    container-title: "Cornell Chronicle"
+    issued: {date-parts: [[2019, 9, 25]]}
+    URL: "https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (1958 Navy demo on IBM 704, 50 trials, Minsky & Papert 1969, funding winter, Rosenblatt's death in 1971; verified online)"
+  - id: sejnowski2020unreasonable
+    type: "article-journal"
+    title: "The unreasonable effectiveness of deep learning in artificial intelligence"
+    author: [{family: "Sejnowski", given: "Terrence J."}]
+    container-title: "Proceedings of the National Academy of Sciences"
+    volume: "117"
+    issue: "48"
+    page: "30033-30038"
+    DOI: "10.1073/pnas.1907373117"
+    issued: {date-parts: [[2020, 1, 28]]}
+    URL: "https://arxiv.org/abs/2002.04806"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (reproduces the New York Times article of 8 July 1958, 'New Navy Device Learns by Doing'; the 'walk, talk, see, write, reproduce itself and be conscious of its existence' wording cross-checked against secondary quotations, NYT archive not reachable)"
+  - id: krizhevsky2012imagenet
+    type: "paper-conference"
+    title: "ImageNet Classification with Deep Convolutional Neural Networks"
+    author: [{family: "Krizhevsky", given: "Alex"}, {family: "Sutskever", given: "Ilya"}, {family: "Hinton", given: "Geoffrey E."}]
+    container-title: "Advances in Neural Information Processing Systems 25"
+    event: "26th Conference on Neural Information Processing Systems (NIPS 2012)"
+    page: "1097-1105"
+    publisher: "Curran Associates"
+    publisher-place: "Lake Tahoe, NV"
+    issued: {date-parts: [[2012]]}
+    URL: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post credits AlexNet to 'George Hinton, Yann LeCunn e Ilya Sutskever'; corrected to the paper's authors)"

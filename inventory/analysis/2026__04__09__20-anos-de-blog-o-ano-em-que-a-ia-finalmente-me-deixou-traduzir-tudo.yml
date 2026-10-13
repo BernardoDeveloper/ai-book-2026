@@ -1,0 +1,48 @@
+id: "2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo"
+source_sha256: "247ad116f3c45c935f8a59156a72b8852733e259c70b65044f19fb56c6d32f3b"
+title_en: "20 Years of Blog: Translating Everything into English"
+ai_relevance: substantial
+ai_relevance_reason: "Anniversary post whose main story is using Claude Code to translate hundreds of posts in a weekend, including commercial models refusing some texts."
+genre: essay
+themes: [personal-journey, coding-agents-tools, society-politics-censorship, ai-in-daily-life]
+thesis: "A job that was too tedious to ever do by hand (translating 20 years of a blog) became a weekend task with an AI agent, and the only wall left was commercial models' content-policy refusals."
+summary: "Akita marks 20 years of his blog (April 5, 2026) and reviews five tech eras and his career turns, from multimedia agencies and SAP to Rails, events, the Akitando YouTube channel, and now full-time AI research. He says he always wanted an English version but 727 Portuguese posts made manual translation unrealistic. He opened Claude Code in the blog repo and asked for translation of everything; it ran about 39 hours over a few days, producing 354 English files in 80+ commits. He says about 90 percent came out natural and faithful to his voice. The effort exhausted his Max 20x plan quota and cost about R$280 (around US$50) in extra usage, with rate-limit errors. About six posts were refused by both Claude and GPT through their APIs (Steve Jobs speech mentioning cancer, Ayn Rand texts, an anti-Nazi post, an ethics essay), so he translated them with a local Qwen 3.5 35B. He also ran the reverse direction for his old English posts and concludes translation at scale is now a weekend problem."
+key_claims:
+  - claim: "Claude Code translated about 354 posts into English in roughly 39 hours of elapsed time, with minimal human work."
+    time_sensitive: true
+  - claim: "The translation quality was about 90 percent good, natural and faithful to the author's voice when given good style instructions."
+    time_sensitive: false
+  - claim: "Heavy agent use can exhaust even the top subscription tier and trigger extra-usage charges (about R$280 / US$50) and 429 rate limits."
+    time_sensitive: true
+  - claim: "Commercial models (Claude and GPT via API) refused to translate a handful of posts on sensitive topics, while a local open-source Qwen 3.5 35B translated them without objection."
+    time_sensitive: true
+  - claim: "Commercial LLMs apply preventive content moderation with a blunt ruler, a real trade-off for production use."
+    time_sensitive: false
+fears_addressed:
+  - "Is AI actually useful for real work or just hype?"
+  - "Do AI companies silently censor what their models will process?"
+reader_value: "A concrete, relatable example of AI doing laborious work at scale, with honest costs (quota, money) and a surprising limitation (refusals on harmless historical texts). Good for showing both capability and over-cautious censorship."
+technical_depth: 1
+evergreen: 3
+book_use:
+  keep:
+    - "Translate 727 posts in a weekend anecdote with cost and 90 percent quality"
+    - "Commercial models refusing the Steve Jobs speech or Ayn Rand text while a local model complied"
+    - "Perspective of a 20-year veteran who has seen several tech waves"
+  cut:
+    - "Blog platform migration history"
+    - "Hugo bilingual index script details"
+jargon: [Claude Code, rate limit, quota, API, open source model, local model, content moderation, llama-swap]
+illustration_ideas:
+  - "Timeline of tech eras across 20 years"
+  - "Where a refusal happens: user text, provider policy filter, model; versus a local model with no provider filter"
+people_events:
+  - "Akita blog 20th anniversary (2026-04-05)"
+  - "Akitando YouTube channel"
+  - "Steve Jobs Stanford speech 2005"
+  - "Ayn Rand"
+  - "Anthropic Claude Code, Qwen 3.5"
+related_posts: ["2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus"]
+prerequisites: ["What a coding agent is"]
+series: ""
+obsolescence: "Post counts (727 PT, 354 EN), plan quota behavior, costs and the Qwen 3.5 / Claude refusal behavior reflect April 2026; the blog later has more translations."

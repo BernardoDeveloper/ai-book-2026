@@ -1,0 +1,46 @@
+id: "2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro"
+source_sha256: "ec3091b9a4ff9295d0f3ff72cff9f584086c4a3d8f5ab4f9672a53956c4439d8"
+title_en: "The Mystery of Genesys PI from LUA Vision: a Brazilian frontier model?"
+ai_relevance: core
+ai_relevance_reason: "Black-box forensic investigation into the origin of a new LLM plus a re-test on a benchmark and a security audit task."
+genre: benchmark
+themes: [benchmarks-model-comparison, open-vs-closed-and-local-models, hype-and-marketing, limits-of-llms]
+thesis: "Black-box tests (tokenizer fingerprint, API behavior, error signatures) argue that Genesys PI is an independent model, not a rebadged Qwen or proxy, but whether it was trained from scratch or distilled, and the company's bolder claims, remain unverified."
+summary: "After the vendor fixed prompt caching, Akita re-ran Genesys PI: costs fell 85-87%, the House tier rose from 83.5 to 95.5 while Enterprise stayed about 82, and he cautions single-run noise by noting GPT 5.5 fell from 100 to 91 on a rerun. He also had the model audit his sandbox project and compared its report with another model's and with outside advisories, finding it strong. The core of the post is a forensic test of the suspicion that it is a rebadged Qwen, gpt-oss, or API proxy: the token billing pattern matches OpenAI's public o200k tokenizer, ruling out Qwen/DeepSeek/Llama/Mistral derivation, the API rejects parameters a transparent proxy or vLLM would accept, and error signatures are stable and unlike any of 44 tested models. He cannot separate from-scratch training from distillation, and flags an inconsistency with the company's own research on English-optimized tokenizers. He separates what he checked from what the company merely claims (new post-transformer architecture, training on AMD/ARM hardware without CUDA, a better model coming)."
+key_claims:
+  - claim: "After caching fixes, the House tier scored 95.5 and cost about 85% less, but single-run scores are noisy (GPT 5.5 went from 100 to 91 on an identical rerun)."
+    time_sensitive: true
+  - claim: "Token-count fingerprinting shows the API uses OpenAI's public o200k tokenizer, which excludes derivation from Qwen, DeepSeek, Llama or Mistral models."
+    time_sensitive: false
+  - claim: "Black-box testing can exclude hypotheses but cannot distinguish training from scratch from distillation of frontier-model outputs."
+    time_sensitive: false
+  - claim: "The company's claims (training without CUDA on AMD/ARM hardware, post-transformer architecture) are unverified; the author labels them clearly as their word only."
+    time_sensitive: true
+  - claim: "Smaller models with strong agentic ability can match larger, more expensive ones on this benchmark; very large parameter counts are partly marketing (opinion shared with the vendor CTO)."
+    time_sensitive: true
+fears_addressed:
+  - "Is this new model just a copy of an existing one"
+  - "Can you trust claims about where an AI model came from"
+reader_value: "Medium. Shows how outsiders test claims about a model's origin and the difference between verified and merely asserted facts; the specific model is niche."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "How a tokenizer acts as a fingerprint of model lineage"
+    - "Checked vs. claimed vs. open questions: a model for evaluating AI company claims"
+    - "Single-run benchmark noise example (100 to 91 on rerun)"
+    - "A convincing fake would be indistinguishable from having the model"
+  cut:
+    - "Cost tables and cache probe numbers"
+    - "ai-jail audit finding counts"
+    - "Detailed hypothesis table"
+jargon: [tokenizer, token, fine-tune, distillation, black-box testing, proxy, prompt caching, gpt-oss, Harmony format, reasoning effort, on-premise, transformer, parameters, NDA, benchmark noise]
+illustration_ideas:
+  - "tokenizer as a fingerprint: same text split into different token counts per model family"
+  - "checked vs claimed vs open questions ledger"
+  - "black-box testing: what can and cannot be excluded"
+people_events: [LUA Vision, Paulo Câmara, Eronides Junior, Qwen, gpt-oss, o200k tokenizer, ai-jail audit]
+related_posts: ["2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro", "2026/10/03/entendendo-o-hype-do-jev-pra-que-serve"]
+prerequisites: ["What a token and a tokenizer are", "Benchmark v4 posts"]
+series: "llm-benchmark"
+obsolescence: "Pricing policy was due 7 Oct 2026; scores, claims and the unverified training claims may be resolved later. Supersedes the 2026/09/23 Genesys PI scores."

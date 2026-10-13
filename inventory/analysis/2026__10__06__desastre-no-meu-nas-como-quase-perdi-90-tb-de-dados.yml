@@ -1,0 +1,46 @@
+id: "2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados"
+source_sha256: "0feadb627f15c5bd325c7ac8d2e0c67519e86987a51e7645b5d46bf4674b3cab"
+title_en: "Disaster in my NAS! How I almost lost 90 TB of data"
+ai_relevance: tangential
+ai_relevance_reason: "A storage post-mortem; AI appears in the second half where two AI agents ran the recovery, and in passing about AI-driven disk price inflation."
+genre: project-log
+themes: [hardware-and-infrastructure, coding-agents-tools, software-engineering-discipline]
+thesis: "RAID with single parity is not enough for large disks, a disk can slow you down without failing, and backups must be verified against an independent inventory; recovery was done mostly by AI agents under human decisions."
+summary: "A disk swap in the author's Synology NAS triggered a second disk failure during rebuild, leaving a single-parity array unable to survive, so he emergency-bought a QNAP (about R$185,000, roughly three times the US price) and copied about 90 TB to it. He explains disk failure statistics, why RAID parity fails after two losses, how SHR slicing saved him from total loss, and that the vendor's software had logged the failing disk for over a month without notifying him. In the follow-up he reports that two AI agents (one controlling his desktop and NAS over SSH, one running the home server) did the recovery: they discovered the sync tool was silently skipping files, replaced it with rsync, found a slow old disk was the real bottleneck, tuned parallelism by file count, and verified 5.9 million files byte-identical. He also covers a thick-provisioning snapshot error, a kernel regression rolled back thanks to a transactional OS, and ends with two NAS in RAID-6 with lessons. He also notes AI demand is driving HDD prices up."
+key_claims:
+  - claim: "Disk failure is a matter of time; fleet data (Backblaze) shows about 1.4-1.7% annual failure rate, implying large cumulative risk across multi-disk arrays."
+    time_sensitive: true
+  - claim: "Single-parity RAID/SHR is insufficient for large disks: rebuilds take days and read every disk, exposing latent bad sectors; use dual parity (RAID-6, SHR-2, RAIDZ2)."
+    time_sensitive: false
+  - claim: "RAID is not backup; verify backups against an independent source inventory, because a backup tool can report success while omitting files."
+    time_sensitive: false
+  - claim: "SMART 'passed' does not measure latency; a slow disk can throttle an entire array."
+    time_sensitive: false
+  - claim: "AI agents executed most of the recovery work (SSH, rsync orchestration, verification) under human direction, and made notable mistakes (e.g. trusting a truncated process list)."
+    time_sensitive: false
+  - claim: "AI data-center demand is raising hard-drive prices and consuming production capacity."
+    time_sensitive: true
+fears_addressed:
+  - "Can I trust my data to a single storage box"
+  - "Will AI agents do harm when operating critical systems (here they helped, under supervision)"
+reader_value: "Low-medium for an AI book. Valuable as a human-and-agent collaboration anecdote and a general data-safety lesson, but mostly a niche storage story."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Anecdote: agents running a data-recovery operation with human decisions and agent mistakes"
+    - "Verify against independent inventory; success logs can lie"
+    - "AI demand pushing hard-drive prices"
+  cut:
+    - "NAS hardware choice and pricing details, ZFS and RAID explanations, jumbo frame detail"
+    - "Kernel regression and NFS permission specifics"
+jargon: [NAS, RAID, parity, SHR, ZFS, rsync, snapshot, provisioning, SMART, kernel, agent, NFS, container, MTU]
+illustration_ideas:
+  - "why two failed disks break single-parity RAID: stripes spread across all disks"
+  - "slow disk as bottleneck in a striped array"
+  - "verifying a backup against an independent source inventory"
+people_events: [Synology, QNAP, Backblaze drive stats, Western Digital, Seagate, Glacier]
+related_posts: ["2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia"]
+prerequisites: ["What RAID and a NAS are (briefly explained in post)"]
+series: ""
+obsolescence: "Prices, exchange rates, hard-drive market data and specific hardware are Oct 2026."

@@ -1,0 +1,37 @@
+id: "2026/06/11/burlando-bloqueio-api-github-brasil"
+source_sha256: "1e0c3f6500cae8340fa3c300f4a5861de3b28b06898a85e0ef52fc63c689920e"
+title_en: "Getting Around the GitHub API Block in Brazil"
+ai_relevance: tangential
+ai_relevance_reason: "Not about AI; relevant only because coding agents and CLIs depend on api.github.com, and as a case of network censorship."
+genre: tutorial
+themes: [society-politics-censorship, non-ai]
+thesis: "Brazilian opaque IP blocking broke api.github.com for developers; a Tor-based SOCKS wrapper restores access for specific tools, but the real problem is secret, collateral-heavy blocking by the state."
+summary: "On 11 June 2026 api.github.com timed out in Brazil while github.com still worked. Akita reports a claim attributed to the Anatel that this is a national block, a typical side effect of anti-piracy IP blocking. He shows how to diagnose it with curl and DNS tools and found that switching to Quad9 did not help on his link. He built a wrapper that launches Tor locally and runs only chosen commands (gh) through a socks5h proxy, and added proxy fallback to his ghpending tool. He also lists alternatives (VPN, Tailscale exit node, SSH SOCKS). He closes with an opinion that secret blocking of critical infrastructure is operational censorship and warns about normalizing bypass."
+key_claims:
+  - claim: "On 11 June 2026 api.github.com timed out in Brazil; changing DNS to 9.9.9.9 did not fix it on his connection, implying a routing-level block, not DNS poisoning."
+    time_sensitive: true
+  - claim: "socks5h (with the h) resolves DNS through the proxy, unlike socks5."
+    time_sensitive: false
+  - claim: "A third party claims about 250 million addresses are blocked in Brazil through opaque, secret blocking orders; Akita calls this operational censorship and illegal in his reading."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Network tutorial; the political point about collateral damage of opaque blocking is the only transferable part."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Brief example of how infrastructure that AI tools depend on can be cut by opaque blocking"
+  cut:
+    - "All commands, wrapper script, per-distro install steps"
+jargon: [API, DNS, SOCKS proxy, Tor, VPN, timeout, blackhole routing]
+illustration_ideas:
+  - "Diagram of DNS block vs route blackhole and how a proxy takes a different path"
+people_events:
+  - "Anatel"
+  - "Ayub (cited on X)"
+  - "GitHub"
+related_posts:
+  - "2026/05/23/criei-cli-pra-checar-pendencias-github-ghpending"
+prerequisites: []
+series: ""
+obsolescence: "The specific block, IPs and status are a point-in-time event on 2026-06-11 and may have been lifted."

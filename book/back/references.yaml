@@ -1,0 +1,6375 @@
+---
+references:
+- id: a10k2026cch
+  type: webpage
+  title: What's cch? Reverse Engineering Claude Code's Request Signing
+  author:
+  - literal: a10k
+  container-title: a10k.co
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://a10k.co/b/reverse-engineering-claude-code-cch.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro'
+- id: aattaran2026deepclaude
+  type: software
+  title: deepclaude
+  author:
+  - literal: aattaran
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 5
+      - 3
+  URL: https://github.com/aattaran/deepclaude
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude'
+- id: adams1979guia
+  type: book
+  title: The Hitchhiker's Guide to the Galaxy
+  author:
+  - family: Adams
+    given: Douglas
+  publisher: Pan Books
+  publisher-place: London
+  issued:
+    date-parts:
+    - - 1979
+      - 10
+      - 12
+  URL: https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy_(novel)
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles
+    (post names the Guide and Marvin without a link; publication data verified online),
+    2026/04/15/como-falar-com-o-claude-code-efetivamente (named without a link; verified)'
+- id: adobe2026genai
+  type: webpage
+  title: Common generative AI issues in Photoshop
+  author:
+  - literal: Adobe
+  container-title: Adobe Help Center
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://helpx.adobe.com/photoshop/kb/troubleshoot-generative-ai-features.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (the post linked
+    the generative-credits FAQ and the Neural Filters page, both HTTP 403 on fetch;
+    this page, seen via search, lists internet connection and available generative
+    credits as requirements)'
+- id: agile2001history
+  type: webpage
+  title: 'History: The Agile Manifesto'
+  author:
+  - family: Highsmith
+    given: Jim
+  container-title: Manifesto for Agile Software Development
+  issued:
+    date-parts:
+    - - 2001
+  URL: https://agilemanifesto.org/history.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou
+    (Snowbird, 11-13 Feb 2001, seventeen people; stated in the post without a link,
+    verified online)'
+- id: akita2019terceirize
+  type: motion_picture
+  title: 'Akitando #63: Não terceirize suas decisões, a lição mais importante da sua
+    vida'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: YouTube
+  issued:
+    date-parts:
+    - - 2019
+      - 10
+      - 9
+  URL: https://www.youtube.com/watch?v=D3L8IOncLkg
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia'
+- id: akita2020akitando81
+  type: motion_picture
+  title: "[Akitando] #81 - Aprendendo sobre Computadores com Super Mario (do jeito
+    Hardcore++)"
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: YouTube
+  issued:
+    date-parts:
+    - - 2020
+      - 6
+      - 18
+  URL: https://www.youtube.com/watch?v=hYJ3dvHjeOE
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/23/driveclub-shadps4-e-ia-como-aprender and 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms
+    (both embed this video)'
+- id: akita2023akitando146
+  type: motion_picture
+  title: "[Akitando] #146 - Protegendo e Recuperando Dados Perdidos - Git, Backup,
+    BTRFS"
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: YouTube
+  issued:
+    date-parts:
+    - - 2023
+      - 10
+      - 19
+  URL: https://www.youtube.com/watch?v=yfEhz9poqW8
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas'
+- id: akita2023chatgpt
+  type: motion_picture
+  title: 'ChatGPT Consegue te Substituir? | Entendendo Jobs Assíncronos (Akitando
+    #135)'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: YouTube
+  issued:
+    date-parts:
+    - - 2023
+      - 1
+      - 5
+  URL: https://www.youtube.com/watch?v=Yl-hlwhj2B0
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (origin of the ''empolgação
+    inversamente proporcional'' phrase and the magic-trick comparison; verified in
+    the episode transcript on the blog)'
+- id: akita2024akitando
+  type: webpage
+  title: Akitando
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2024
+  URL: https://akitaonrails.com/akitando/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (series started around
+    August 2018; last numbered episode #149 in December 2023, one more video in March
+    2024; about 150 videos)'
+- id: akita2026aijail
+  type: software
+  title: ai-jail
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 1
+  URL: https://github.com/akitaonrails/ai-jail
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real;
+    current state checked against README v2.8.1 (2026-10-09)'
+- id: akita2026aimemory
+  type: software
+  title: ai-memory
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 5
+      - 21
+  URL: https://github.com/akitaonrails/ai-memory
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory; current
+    state checked against README at v2.6.6 (2026-10-13)'
+- id: akita2026aiusagebar
+  type: software
+  title: ai-usagebar
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 5
+      - 24
+  URL: https://github.com/akitaonrails/ai-usagebar
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar;
+    current state checked against README at v1.36.0 (2026-10-13)'
+- id: akita2026blog
+  type: software
+  title: akitaonrails.github.io
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://github.com/akitaonrails/akitaonrails.github.io
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
+    linked in the post)'
+- id: akita2026clashofkings
+  type: software
+  title: clash_of_kings_analysis
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 8
+  URL: https://github.com/akitaonrails/clash_of_kings_analysis
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint'
+- id: akita2026clocktui
+  type: software
+  title: clock-tui
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 7
+  URL: https://github.com/akitaonrails/clock-tui
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
+    (public repository linked in the post)'
+- id: akita2026distroboxgaming
+  type: software
+  title: distrobox-gaming
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 11
+  URL: https://github.com/akitaonrails/distrobox-gaming
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
+    linked in the post)'
+- id: akita2026distroboxllm
+  type: software
+  title: distrobox-llm
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 23
+  URL: https://github.com/akitaonrails/distrobox-llm
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
+    linked in the post)'
+- id: akita2026easyffmpeg
+  type: software
+  title: easy-ffmpeg
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 8
+  URL: https://github.com/akitaonrails/easy-ffmpeg
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/07/crystal-e-um-wrapper-inteligente-pro-ffmpeg-feito-em-3-horas-easy-ffmpeg
+    (public repository linked in the post)'
+- id: akita2026easysubtitle
+  type: software
+  title: easy-subtitle
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 8
+  URL: https://github.com/akitaonrails/easy-subtitle
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle
+    (public repository linked in the post)'
+- id: akita2026frankclaw
+  type: software
+  title: FrankClaw
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 10
+  URL: https://github.com/akitaonrails/FrankClaw
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw (public
+    repository linked in the post)'
+- id: akita2026frankfbi
+  type: software
+  title: 'Frank FBI: Fraud Bureau of Investigation'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 9
+  URL: https://github.com/akitaonrails/frank_fbi
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/09/atacando-fraudes-via-email-frank-fbi'
+- id: akita2026frankgeary
+  type: software
+  title: frank_geary
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 12
+  URL: https://github.com/akitaonrails/frank_geary
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
+    (public repository linked in the post)'
+- id: akita2026frankgo
+  type: software
+  title: frank_go
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 3
+  URL: https://github.com/akitaonrails/frank_go
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (public repository linked
+    in the post)'
+- id: akita2026frankinvestigator
+  type: software
+  title: frank_investigator
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 25
+  URL: https://github.com/akitaonrails/frank_investigator
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator (public
+    repository linked in the post)'
+- id: akita2026frankkaraoke
+  type: software
+  title: frank_karaoke
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 5
+  URL: https://github.com/akitaonrails/frank_karaoke
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/05/transformando-youtube-num-app-de-karaoke-frank-karaoke
+    (public repository linked in the post)'
+- id: akita2026franklyrics
+  type: software
+  title: frank_lyrics
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 10
+  URL: https://github.com/akitaonrails/frank_lyrics
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
+    (public repository linked in the post)'
+- id: akita2026frankmd
+  type: software
+  title: FrankMD
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 1
+      - 30
+  URL: https://github.com/akitaonrails/FrankMD
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2
+    (public repository linked in the post)'
+- id: akita2026frankmega
+  type: software
+  title: FrankMega
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 21
+  URL: https://github.com/akitaonrails/FrankMega
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server'
+- id: akita2026franksherlock
+  type: software
+  title: Frank Sherlock
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 23
+  URL: https://github.com/akitaonrails/FrankSherlock
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias'
+- id: akita2026franktype
+  type: software
+  title: frank_type
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 14
+  URL: https://github.com/akitaonrails/frank_type
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
+    (public repository linked in the post)'
+- id: akita2026frankyomik
+  type: software
+  title: FrankYomik
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 26
+  URL: https://github.com/akitaonrails/FrankYomik
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik
+    (public repository linked in the post)'
+- id: akita2026govbr
+  type: software
+  title: govbr_analysis
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 8
+  URL: https://github.com/akitaonrails/govbr_analysis
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint'
+- id: akita2026llmbench
+  type: software
+  title: llm-coding-benchmark
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 5
+  URL: https://github.com/akitaonrails/llm-coding-benchmark
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar
+    (public repository linked in the post)'
+- id: akita2026myskills
+  type: software
+  title: my-skills
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 10
+  URL: https://github.com/akitaonrails/my-skills
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia (public repository)'
+- id: akita2026nestosms
+  type: software
+  title: nes-to-sms
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 5
+  URL: https://github.com/akitaonrails/nes-to-sms
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms
+    (public repository linked in the post)'
+- id: akita2026nwomarchy
+  type: software
+  title: NW-Omarchy
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 29
+  URL: https://github.com/akitaonrails/NW-Omarchy
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
+    linked in the post)'
+- id: akita2026pact
+  type: software
+  title: 'pact-lang: an AI opinionated ideal language that ignores human-friendliness'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 9
+  URL: https://github.com/akitaonrails/pact-lang
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms'
+- id: akita2026shadps4
+  type: software
+  title: shadPS4
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 20
+  URL: https://github.com/akitaonrails/shadPS4
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
+    linked in the post)'
+- id: akita2026tiktok
+  type: software
+  title: tiktok_analysis
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 8
+  URL: https://github.com/akitaonrails/tiktok_analysis
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint'
+- id: akita2026tvclipboard
+  type: software
+  title: TV Clipboard
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 1
+      - 27
+  URL: https://github.com/akitaonrails/tvclipboard
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard
+    (public repository linked in the post)'
+- id: akita2026vibebench
+  type: software
+  title: 'vibe-coding-benchmarks: benchmarks to test if choosing any specific language
+    has any advantage on LLMs'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 10
+      - 11
+  URL: https://github.com/akitaonrails/vibe-coding-benchmarks
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms'
+- id: alammar2018illustrated
+  type: post-weblog
+  title: The Illustrated Transformer
+  author:
+  - family: Alammar
+    given: Jay
+  container-title: Jay Alammar's blog
+  issued:
+    date-parts:
+    - - 2018
+      - 6
+      - 27
+  URL: https://jalammar.github.io/illustrated-transformer/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: intermediário; gratuito; PT: nenhuma
+    tradução listada (há 11 outros idiomas); versão atualizada no cap. 3 de alammar2024handson'
+- id: alammar2024handson
+  type: book
+  title: 'Hands-On Large Language Models: Language Understanding and Generation'
+  author:
+  - family: Alammar
+    given: Jay
+  - family: Grootendorst
+    given: Maarten
+  publisher: O'Reilly Media
+  publisher-place: Sebastopol, CA
+  ISBN: '9781098150969'
+  issued:
+    date-parts:
+    - - 2024
+      - 9
+  URL: https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: técnico (Python); não gratuito;
+    edição PT: sim, tradução assistida por IA, ''Modelos de linguagem grandes e práticos'',
+    O''Reilly Media, mar. 2025, https://www.oreilly.com/library/view/modelos-de-linguagem/9798341637504/
+    (plataforma O''Reilly por assinatura; sem edição impressa brasileira encontrada)'
+- id: amd2025ryzenaimax
+  type: webpage
+  title: AMD Ryzen AI Max+ 395
+  author:
+  - literal: AMD
+  container-title: AMD
+  issued:
+    date-parts:
+    - - 2025
+  URL: https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-395.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395 (post states
+    up to 128 GB unified memory without a link; AMD product page lists 128 GB max,
+    LPDDR5x-8000)'
+- id: amodei2026pace
+  type: post-weblog
+  title: We Must Pace the Frontier
+  author:
+  - family: Amodei
+    given: Dario
+  container-title: Dario Amodei
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 12
+  URL: https://darioamodei.com/post/we-must-pace-the-frontier
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: anderson2026zig
+  type: article-newspaper
+  title: Zig creator seeks 'uncompromising perfection' before blessing 1.0
+  author:
+  - family: Anderson
+    given: Tim
+  container-title: DevClass
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 1
+  URL: https://www.devclass.com/devops/2026/06/01/zig-creator-seeks-uncompromising-perfection-before-blessing-10/5248219
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao'
+- id: angelo2026uber
+  type: article-newspaper
+  title: Uber burned through its entire 2026 AI budget in four months. Now its COO
+    is questioning whether it's worth it
+  author:
+  - family: Angelo
+    given: Jake
+  container-title: Fortune
+  issued:
+    date-parts:
+    - - 2026
+      - 5
+      - 26
+  URL: https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/24/por-que-llms-vao-falhar-na-sua-empresa (the post linked
+    a Forbes article of 2026-05-17 that returned HTTP 403 and could not be read; the
+    same facts, budget gone in four months, usage leaderboard, COO Andrew Macdonald''s
+    ''that link is not there yet'', were verified in this Fortune piece instead)'
+- id: anthropic2021raises
+  type: webpage
+  title: Anthropic raises $124 million to build more reliable, general AI systems
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2021
+      - 5
+      - 28
+  URL: https://www.anthropic.com/news/anthropic-raises-124-million-to-build-more-reliable-general-ai-systems
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (Dario Amodei as Anthropic CEO in 2021; verified online)'
+- id: anthropic2024agents
+  type: webpage
+  title: Building effective agents
+  author:
+  - literal: Anthropic
+  container-title: Anthropic Engineering
+  issued:
+    date-parts:
+    - - 2024
+      - 12
+      - 19
+  URL: https://www.anthropic.com/engineering/building-effective-agents
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: anthropic2024caching
+  type: webpage
+  title: Prompt caching with Claude
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2024
+      - 8
+      - 14
+  URL: https://www.anthropic.com/news/prompt-caching
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: anthropic2024contextual
+  type: webpage
+  title: Introducing Contextual Retrieval
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2024
+      - 9
+      - 19
+  URL: https://www.anthropic.com/news/contextual-retrieval
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/06/rag-esta-morto-contexto-longo'
+- id: anthropic2024mcp
+  type: webpage
+  title: Introducing the Model Context Protocol
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2024
+      - 11
+      - 25
+  URL: https://www.anthropic.com/news/model-context-protocol
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: anthropic2025aaif
+  type: webpage
+  title: Donating the Model Context Protocol and establishing the Agentic AI Foundation
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2025
+      - 12
+      - 9
+  URL: https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (post says MCP
+    ''hoje mora na Linux Foundation'' without a link; verified online)'
+- id: anthropic2025agentskills
+  type: webpage
+  title: Equipping agents for the real world with Agent Skills
+  author:
+  - literal: Anthropic
+  container-title: Anthropic Engineering
+  issued:
+    date-parts:
+    - - 2025
+      - 10
+      - 16
+  URL: https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia'
+- id: anthropic2025bun
+  type: webpage
+  title: Anthropic acquires Bun as Claude Code reaches $1B milestone
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2025
+      - 12
+      - 3
+  URL: https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (post states
+    Bun belongs to Anthropic since December 2025 without a link; verified online)'
+- id: anthropic2025multiagent
+  type: webpage
+  title: How we built our multi-agent research system
+  author:
+  - literal: Anthropic
+  container-title: Anthropic Engineering
+  issued:
+    date-parts:
+    - - 2025
+      - 6
+      - 13
+  URL: https://www.anthropic.com/engineering/multi-agent-research-system
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit'
+- id: anthropic2025skills
+  type: webpage
+  title: Agent Skills
+  author:
+  - literal: Anthropic
+  container-title: Claude Docs
+  issued:
+    date-parts:
+    - - 2025
+  URL: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity'
+- id: anthropic2025tracing
+  type: webpage
+  title: Tracing the thoughts of a large language model
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2025
+      - 3
+      - 27
+  URL: https://www.anthropic.com/research/tracing-thoughts-language-model
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (Claude plans the rhyme word ahead; mental addition via
+    parallel paths while describing the carry-the-one method; verified online)'
+- id: anthropic2025writingtools
+  type: webpage
+  title: Writing effective tools for agents, with agents
+  author:
+  - literal: Anthropic
+  container-title: Anthropic Engineering
+  issued:
+    date-parts:
+    - - 2025
+      - 9
+      - 11
+  URL: https://www.anthropic.com/engineering/writing-tools-for-agents
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia'
+- id: anthropic2026fable
+  type: webpage
+  title: Claude Fable 5 and Claude Mythos 5
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 9
+  URL: https://www.anthropic.com/news/claude-fable-5-mythos-5
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: anthropic2026glasswing
+  type: webpage
+  title: Project Glasswing
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 7
+  URL: https://www.anthropic.com/glasswing
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: anthropic2026mythos
+  type: webpage
+  title: Assessing Claude Mythos Preview's cybersecurity capabilities
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 7
+  URL: https://www.anthropic.com/research/mythos-preview
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: anthropic2026s1
+  type: webpage
+  title: Anthropic confidentially submits draft S-1
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 1
+  URL: https://www.anthropic.com/news/confidential-draft-s1-sec
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic (verified
+    online 2026-10-13; not linked in the post)'
+- id: anthropic2026seriesh
+  type: webpage
+  title: Anthropic raises Series H
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2026
+      - 5
+      - 28
+  URL: https://www.anthropic.com/news/series-h
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic (verified
+    online 2026-10-13; not linked in the post)'
+- id: anthropic2026suspend
+  type: webpage
+  title: Statement on the US government directive to suspend access to Fable 5 and
+    Mythos 5
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 12
+  URL: https://www.anthropic.com/news/fable-mythos-access
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic (verified
+    online 2026-10-13; not linked in the post)'
+- id: anthropic2026threat
+  type: report
+  title: 'Detecting and countering misuse of AI: September 2026'
+  author:
+  - literal: Anthropic
+  publisher: Anthropic
+  publisher-place: San Francisco
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 10
+  URL: https://www.anthropic.com/threat-intelligence-report-september-2026
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2
+    (the post cites the Bloomberg coverage without a link; primary report verified
+    online)'
+- id: anthropic2026watermark
+  type: webpage
+  title: How Claude's text watermark works
+  author:
+  - literal: Anthropic
+  container-title: Anthropic
+  issued:
+    date-parts:
+    - - 2026
+      - 8
+      - 14
+  URL: https://www.anthropic.com/news/claude-text-watermark
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/08/16/entendendo-ia-watermark-da-anthropic'
+- id: antynea2026grubbtrfs
+  type: software
+  title: 'grub-btrfs: include btrfs snapshots at boot options'
+  author:
+  - literal: Antynea
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://github.com/Antynea/grub-btrfs
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas'
+- id: apache2004license
+  type: webpage
+  title: Apache License, Version 2.0
+  author:
+  - literal: The Apache Software Foundation
+  container-title: The Apache Software Foundation
+  issued:
+    date-parts:
+    - - 2004
+      - 1
+  URL: https://www.apache.org/licenses/LICENSE-2.0.txt
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/15/controversia-llm-rio-3-5-plagio'
+- id: apple2025m3ultra
+  type: webpage
+  title: Apple reveals M3 Ultra, taking Apple silicon to a new extreme
+  author:
+  - literal: Apple
+  container-title: Apple Newsroom
+  issued:
+    date-parts:
+    - - 2025
+      - 3
+      - 5
+  URL: https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395 (post gives
+    ~819 GB/s and 512 GB; Apple''s release says ''over 800GB/s'' and up to 512GB,
+    which the chapter uses)'
+- id: artificialanalysis2026grok47
+  type: webpage
+  title: Benchmarking Grok 4.7
+  author:
+  - literal: Artificial Analysis
+  container-title: Artificial Analysis
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 21
+  URL: https://artificialanalysis.ai/articles/benchmarking-grok-4-7
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7'
+- id: axios2026astra
+  type: article-newspaper
+  title: "'Welcome to the AGI era,' OpenAI says as GPT-6 Astra debuts"
+  author:
+  - literal: Axios
+  container-title: Axios
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 3
+  URL: https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
+    online 2026-10-13; not linked in the post)'
+- id: axios2026sora
+  type: article-newspaper
+  title: OpenAI to discontinue Sora video app
+  author:
+  - literal: Axios
+  container-title: Axios
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 24
+  URL: https://www.axios.com/2026/03/24/openai-discontinue-sora-video-app
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/15/seedance-2-0-finalmente-foi-lancado-primeiras-impressoes
+    (post states Sora was discontinued without a link; verified online)'
+- id: backblaze2026q2
+  type: post-weblog
+  title: Backblaze Drive Stats for Q2 2026
+  author:
+  - family: Doyle
+    given: Stephanie
+  container-title: Backblaze Blog
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 29
+  URL: https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados
+    (354, 415 drives, 1.73% annualized failure rate in Q2 2026, 1.41% lifetime, as
+    quoted in the post)'
+- id: beck1999xp
+  type: book
+  title: 'Extreme Programming Explained: Embrace Change'
+  author:
+  - family: Beck
+    given: Kent
+  publisher: Addison-Wesley
+  publisher-place: Reading, MA
+  ISBN: '0201616416'
+  issued:
+    date-parts:
+    - - 1999
+      - 10
+      - 5
+  URL: https://tind.wipo.int/record/13245
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles
+    (post shows the book cover without a link; edition data verified online)'
+- id: becker2025measuring
+  type: article
+  title: Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer
+    Productivity
+  author:
+  - family: Becker
+    given: Joel
+  - family: Rush
+    given: Nate
+  - family: Barnes
+    given: Elizabeth
+  - family: Rein
+    given: David
+  container-title: arXiv
+  number: arXiv:2507.09089
+  DOI: 10.48550/arXiv.2507.09089
+  issued:
+    date-parts:
+    - - 2025
+      - 7
+      - 12
+  URL: https://arxiv.org/abs/2507.09089
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+    (16 devs, 246 tasks, forecast -24% time, measured +19%). Repos were large OPEN-SOURCE
+    projects; the post calls them private, the book does not.'
+- id: bender2020climbing
+  type: paper-conference
+  title: 'Climbing towards NLU: On Meaning, Form, and Understanding in the Age of
+    Data'
+  author:
+  - family: Bender
+    given: Emily M.
+  - family: Koller
+    given: Alexander
+  container-title: Proceedings of the 58th Annual Meeting of the Association for Computational
+    Linguistics
+  event: 58th Annual Meeting of the Association for Computational Linguistics (ACL
+    2020)
+  page: 5185-5198
+  publisher: Association for Computational Linguistics
+  publisher-place: Online
+  DOI: 10.18653/v1/2020.acl-main.463
+  issued:
+    date-parts:
+    - - 2020
+      - 7
+  URL: https://aclanthology.org/2020.acl-main.463/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (octopus test: islanders A and B, telegraph cable, octopus
+    O, coconut catapult, angry bear; read in the paper PDF)'
+- id: bender2021dangers
+  type: paper-conference
+  title: 'On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?'
+  author:
+  - family: Bender
+    given: Emily M.
+  - family: Gebru
+    given: Timnit
+  - family: McMillan-Major
+    given: Angelina
+  - family: Shmitchell
+    given: Shmargaret
+  container-title: Proceedings of the 2021 ACM Conference on Fairness, Accountability,
+    and Transparency
+  event: 2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT
+    '21)
+  page: 610-623
+  publisher: ACM
+  publisher-place: New York
+  DOI: 10.1145/3442188.3445922
+  issued:
+    date-parts:
+    - - 2021
+      - 3
+  URL: https://doi.org/10.1145/3442188.3445922
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia (term ''stochastic
+    parrot'' used in the post without a link; ''Shmargaret Shmitchell'' is the byline
+    Margaret Mitchell used; definition passage cross-checked against Quote Investigator
+    and Wikipedia quotations, ACM page returned 403)'
+- id: benzinga2026sacks
+  type: article-newspaper
+  title: David Sacks Accuses Jacob Coxon of AI Safety Campaign
+  author:
+  - family: Haider
+    given: Mohd
+  container-title: Benzinga
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 12
+  URL: https://www.benzinga.com/markets/tech/26/09/61753920/david-sacks-jacob-coxon-anthropic-ai-safety
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (title
+    approximated; page blocked fetching, content confirmed through search summaries)'
+- id: borisov2026rsync
+  type: article-newspaper
+  title: Rsync 3.4.3 Regressions Trigger Debate Over AI-Assisted Code
+  author:
+  - family: Borisov
+    given: Bobby
+  container-title: Linuxiac
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 4
+  URL: https://linuxiac.com/rsync-3-4-3-regressions-trigger-debate-over-ai-assisted-code/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao
+    (Tridgell''s own Medium post ''rsync and outrage'' returned 403; his statements
+    are taken from this report)'
+- id: brooks2014yahoo
+  type: article-newspaper
+  title: 'The Way We Were: Saying Farewell to Yahoo''s Once-Mighty Directory'
+  author:
+  - family: Brooks
+    given: Jon
+  container-title: KQED News
+  issued:
+    date-parts:
+    - - 2014
+      - 10
+      - 7
+  URL: https://www.kqed.org/news/10342603/the-way-we-were-saying-farewell-to-yahoos-once-mighty-directory
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post mentions ''catalogador
+    de sites'' without a link; verified: Yahoo ''surfers'' reviewed and sorted every
+    submission by hand)'
+- id: brown2015fish
+  type: article-journal
+  title: Fish intelligence, sentience and ethics
+  author:
+  - family: Brown
+    given: Culum
+  container-title: Animal Cognition
+  volume: '18'
+  issue: '1'
+  page: 1-17
+  DOI: 10.1007/s10071-014-0761-0
+  issued:
+    date-parts:
+    - - 2015
+      - 1
+  URL: https://doi.org/10.1007/s10071-014-0761-0
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (book-only material on the goldfish memory myth; verified
+    online)'
+- id: brown2020language
+  type: article
+  title: Language Models are Few-Shot Learners
+  author:
+  - family: Brown
+    given: Tom B.
+  - family: Mann
+    given: Benjamin
+  - family: Ryder
+    given: Nick
+  - family: Subbiah
+    given: Melanie
+  - family: Kaplan
+    given: Jared
+  - family: Dhariwal
+    given: Prafulla
+  - family: Neelakantan
+    given: Arvind
+  - family: Shyam
+    given: Pranav
+  - family: Sastry
+    given: Girish
+  - family: Askell
+    given: Amanda
+  - family: Agarwal
+    given: Sandhini
+  - family: Herbert-Voss
+    given: Ariel
+  - family: Krueger
+    given: Gretchen
+  - family: Henighan
+    given: Tom
+  - family: Child
+    given: Rewon
+  - family: Ramesh
+    given: Aditya
+  - family: Ziegler
+    given: Daniel M.
+  - family: Wu
+    given: Jeffrey
+  - family: Winter
+    given: Clemens
+  - family: Hesse
+    given: Christopher
+  - family: Chen
+    given: Mark
+  - family: Sigler
+    given: Eric
+  - family: Litwin
+    given: Mateusz
+  - family: Gray
+    given: Scott
+  - family: Chess
+    given: Benjamin
+  - family: Clark
+    given: Jack
+  - family: Berner
+    given: Christopher
+  - family: McCandlish
+    given: Sam
+  - family: Radford
+    given: Alec
+  - family: Sutskever
+    given: Ilya
+  - family: Amodei
+    given: Dario
+  container-title: arXiv
+  number: arXiv:2005.14165
+  DOI: 10.48550/arXiv.2005.14165
+  issued:
+    date-parts:
+    - - 2020
+      - 5
+      - 28
+  URL: https://arxiv.org/abs/2005.14165
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: brown2024hinton
+  type: article-newspaper
+  title: For Geoffrey Hinton, the godfather of AI, machines are closer to humans than
+    we think
+  author:
+  - family: Brown
+    given: Ian
+  container-title: The Globe and Mail
+  issued:
+    date-parts:
+    - - 2024
+      - 6
+      - 12
+  URL: https://www.theglobeandmail.com/business/article-geoffrey-hinton-artificial-intelligence-machines-feelings/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post rejects Hinton''s
+    view without a link; quote ''They really do understand. And they understand the
+    same way that we do.'' verified online)'
+- id: buckmaster2026statement
+  type: webpage
+  title: Statement
+  author:
+  - family: Buckmaster
+    given: Tristan
+  container-title: NYU Courant Institute
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 8
+  URL: https://cims.nyu.edu/~tristanb/statement.pdf
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (post
+    linked TechCrunch/Fortune; primary statement used)'
+- id: bun2026issue30693
+  type: webpage
+  title: 'bun update -i (Rust port) renders trailing r on short package names due
+    to OSC 8 / pretty tag escape conflict (issue #30693)'
+  author:
+  - literal: oven-sh/bun
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 5
+      - 14
+  URL: https://github.com/oven-sh/bun/issues/30693
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito'
+- id: businessinsider2026huang
+  type: article-newspaper
+  title: Nvidia CEO Jensen Huang says AI doomerism has 'done a lot of damage' and
+    is 'not helpful to society'
+  author:
+  - family: Griffiths
+    given: Brent D.
+  container-title: Business Insider
+  issued:
+    date-parts:
+    - - 2026
+      - 1
+      - 10
+  URL: https://www.businessinsider.com/nvidia-jensen-huang-ai-doomerism-damage-investments-2026-1
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (title
+    approximated)'
+- id: bytedance2026seedance
+  type: webpage
+  title: Seedance 2.0 Official Launch
+  author:
+  - literal: ByteDance Seed
+  container-title: ByteDance Seed
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 12
+  URL: https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/15/seedance-2-0-finalmente-foi-lancado-primeiras-impressoes
+    (page dated 12 Feb 2026, the partner launch; the post dates the public opening
+    to 15 Apr 2026)'
+- id: byteiota2026qwen3tts
+  type: post-weblog
+  title: 'Qwen3-TTS: 3-Second Voice Cloning Beats ElevenLabs'
+  author:
+  - literal: byteiota
+  container-title: byteiota
+  issued:
+    date-parts:
+    - - 2026
+      - 1
+      - 22
+  URL: https://byteiota.com/qwen3-tts-3-second-voice-cloning-beats-elevenlabs/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts'
+- id: carlini2026compiler
+  type: post-weblog
+  title: Building a C compiler with a team of parallel Claudes
+  author:
+  - family: Carlini
+    given: Nicholas
+  container-title: Anthropic Engineering
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 5
+  URL: https://www.anthropic.com/engineering/building-c-compiler
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (GCC used ''as an online
+    known-good compiler oracle''; builds Linux 6.9 on x86, ARM, RISC-V)'
+- id: cgchannel2025gimp
+  type: article-newspaper
+  title: GIMP 3.0 is out after seven years in development
+  author:
+  - literal: CG Channel
+  container-title: CG Channel
+  issued:
+    date-parts:
+    - - 2025
+      - 3
+      - 18
+  URL: https://www.cgchannel.com/2025/03/gimp-3-0-is-out/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (''it isn''t
+    currently possible to edit in CMYK mode'')'
+- id: chen2026clef
+  type: post-weblog
+  title: 'Introducing Clef: our open-source decision models, and new RL fine-tuning
+    platform'
+  author:
+  - family: Chen
+    given: Michelle
+  container-title: The Cloudflare Blog
+  issued:
+    date-parts:
+    - - 2026
+      - 10
+      - 1
+  URL: https://blog.cloudflare.com/clef-decision-models/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/03/entendendo-o-hype-do-jev-pra-que-serve'
+- id: chm2026dataentry
+  type: webpage
+  title: Data entry
+  author:
+  - literal: Computer History Museum
+  container-title: 'Revolution: The First 2000 Years of Computing'
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://www.computerhistory.org/revolution/punched-cards/2/4/40
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (book bridge on keypunch operators; ''most keypunch operators
+    were women''; page undated)'
+- id: christiano2017deep
+  type: paper-conference
+  title: Deep reinforcement learning from human preferences
+  author:
+  - family: Christiano
+    given: Paul
+  - family: Leike
+    given: Jan
+  - family: Brown
+    given: Tom B.
+  - family: Martic
+    given: Miljan
+  - family: Legg
+    given: Shane
+  - family: Amodei
+    given: Dario
+  container-title: Advances in Neural Information Processing Systems 30
+  event: 31st Conference on Neural Information Processing Systems (NIPS 2017)
+  publisher: Curran Associates
+  publisher-place: Long Beach, CA
+  issued:
+    date-parts:
+    - - 2017
+  URL: https://arxiv.org/abs/1706.03741
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam'
+- id: claburn2026fable
+  type: article-newspaper
+  title: It blocked us at 'hello!' Anthropic Fable 5 refusing innocuous prompts
+  author:
+  - family: Claburn
+    given: Thomas
+  container-title: The Register
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 10
+  URL: https://www.theregister.com/ai-and-ml/2026/06/10/anthropic-claude-fable-5-refuses-innocuous-prompts/5253754
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: clay2026navierstokes
+  type: webpage
+  title: Navier-Stokes Announcement
+  author:
+  - literal: Clay Mathematics Institute
+  container-title: Clay Mathematics Institute
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 11
+  URL: https://www.claymath.org/news/navier-stokes-announcement/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: cloudflare2026vinext
+  type: post-weblog
+  title: How we rebuilt Next.js with AI in one week
+  author:
+  - literal: Cloudflare
+  container-title: The Cloudflare Blog
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 24
+  URL: https://blog.cloudflare.com/vinext/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio'
+- id: cnbc2026hysteria
+  type: article-newspaper
+  title: Anthropic's Mythos set off a cybersecurity 'hysteria.' Experts say the threat
+    was already here
+  author:
+  - family: Son
+    given: Hugh
+  - family: Subin
+    given: Samantha
+  container-title: CNBC
+  issued:
+    date-parts:
+    - - 2026
+      - 5
+      - 8
+  URL: https://www.cnbc.com/2026/05/08/anthropic-mythos-ai-cybersecurity-banks.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: cnbc2026lifted
+  type: article-newspaper
+  title: Anthropic says Trump admin has lifted export controls on Claude Fable 5 and
+    Mythos 5
+  author:
+  - family: Capoot
+    given: Ashley
+  container-title: CNBC
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 30
+  URL: https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic (verified
+    online 2026-10-13; not linked in the post), 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic
+    (no longer cited in ch14, which now cites moon2026redeploy; kept because apA cites
+    this key. Page refused fetching at integration; the lift on 30 Jun and restoration
+    from 1 Jul are confirmed by Engadget and Anthropic''s Fable 5 page)'
+- id: codemirror
+  type: software
+  title: CodeMirror
+  author:
+  - family: Haverbeke
+    given: Marijn
+  container-title: codemirror.net
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://codemirror.net/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2'
+- id: cottier2024rising
+  type: article
+  title: The rising costs of training frontier AI models
+  author:
+  - family: Cottier
+    given: Ben
+  - family: Rahman
+    given: Robi
+  - family: Fattorini
+    given: Loredana
+  - family: Maslej
+    given: Nestor
+  - family: Besiroglu
+    given: Tamay
+  - family: Owen
+    given: David
+  container-title: arXiv
+  number: arXiv:2405.21015
+  DOI: 10.48550/arXiv.2405.21015
+  issued:
+    date-parts:
+    - - 2024
+      - 5
+      - 31
+  URL: https://arxiv.org/abs/2405.21015
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
+    (Epoch AI 2.4x/year figure stated in the post without a link; verified online)'
+- id: dathathri2024synthid
+  type: article-journal
+  title: Scalable watermarking for identifying large language model outputs
+  author:
+  - family: Dathathri
+    given: Sumanth
+  - family: See
+    given: Abigail
+  - family: Ghaisas
+    given: Sumedh
+  - family: Huang
+    given: Po-Sen
+  - family: McAdam
+    given: Rob
+  - family: Welbl
+    given: Johannes
+  - family: Bachani
+    given: Vandana
+  - family: Kaskasoli
+    given: Alex
+  - family: Stanforth
+    given: Robert
+  - family: Matejovicova
+    given: Tatiana
+  - family: Hayes
+    given: Jamie
+  - family: Vyas
+    given: Nidhi
+  - family: Al Merey
+    given: Majd
+  - family: Brown-Cohen
+    given: Jonah
+  - family: Bunel
+    given: Rudy
+  - family: Balle
+    given: Borja
+  - family: Cemgil
+    given: Taylan
+  - family: Ahmed
+    given: Zahra
+  - family: Stacpoole
+    given: Kitty
+  - family: Shumailov
+    given: Ilia
+  - family: Baetu
+    given: Ciprian
+  - family: Gowal
+    given: Sven
+  - family: Hassabis
+    given: Demis
+  - family: Kohli
+    given: Pushmeet
+  container-title: Nature
+  volume: '634'
+  issue: '8035'
+  page: 818-823
+  DOI: 10.1038/s41586-024-08025-4
+  issued:
+    date-parts:
+    - - 2024
+      - 10
+      - 23
+  URL: https://www.nature.com/articles/s41586-024-08025-4
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/08/16/entendendo-ia-watermark-da-anthropic (the post linked
+    Google''s SynthID page; the Nature paper is the primary source for SynthID-Text)'
+- id: deeplearningai2026kairos
+  type: article-newspaper
+  title: Claude Code's Source Code Leaked, Exposing Potential Future Features Kairos
+    and autoDream
+  author:
+  - literal: DeepLearning.AI
+  container-title: The Batch
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 3
+  URL: https://charonhub.deeplearning.ai/claude-codes-source-code-leaked-exposing-potential-future-features-kairos-and-autodream/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro
+    (autoDream described in the post with a link to a third-party summary; verified
+    online with this source)'
+- id: deepmind2025alphaevolve
+  type: webpage
+  title: 'AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms'
+  author:
+  - literal: Google DeepMind
+  container-title: Google DeepMind
+  issued:
+    date-parts:
+    - - 2025
+      - 5
+      - 14
+  URL: https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas'
+- id: deepmind2026alphago
+  type: webpage
+  title: AlphaGo
+  author:
+  - literal: Google DeepMind
+  container-title: Google DeepMind
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://deepmind.google/research/breakthroughs/alphago/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (4-1 in Seoul, March
+    2016; Move 37 in game two; verified online, blog had no link)'
+- id: deepseek2026thinking
+  type: webpage
+  title: Thinking Mode
+  author:
+  - literal: DeepSeek
+  container-title: DeepSeek API Docs
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://api-docs.deepseek.com/guides/thinking_mode
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude (post describes
+    the reasoning_content rule without a link; verified in DeepSeek API docs)'
+- id: deepseekai2024v3
+  type: article
+  title: DeepSeek-V3 Technical Report
+  author:
+  - literal: DeepSeek-AI
+  container-title: arXiv
+  number: arXiv:2412.19437
+  DOI: 10.48550/arXiv.2412.19437
+  issued:
+    date-parts:
+    - - 2024
+      - 12
+      - 27
+  URL: https://arxiv.org/abs/2412.19437
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
+    (the training-cost figure covers only the official training run, excluding prior
+    research and ablations; the post''s The Register US$51M hardware figure was not
+    verified and is not used), 2026/10/12/llms-agentes-competente-o-suficiente (671B
+    total, 37B active; 2.788M H800 GPU hours, ~US$5.6M at rental price, excluding
+    prior research)'
+- id: deepseekai2025r1
+  type: article
+  title: 'DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement
+    Learning'
+  author:
+  - literal: DeepSeek-AI
+  container-title: arXiv
+  number: arXiv:2501.12948
+  DOI: 10.48550/arXiv.2501.12948
+  issued:
+    date-parts:
+    - - 2025
+      - 1
+      - 22
+  URL: https://arxiv.org/abs/2501.12948
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente; 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas'
+- id: deloitte2025compute
+  type: report
+  title: Why AI's next phase will likely demand more computational power, not less
+  author:
+  - family: Stewart
+    given: Duncan
+  container-title: Technology, Media & Telecommunications Predictions 2026
+  publisher: Deloitte Insights
+  issued:
+    date-parts:
+    - - 2025
+      - 11
+      - 18
+  URL: https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/compute-power-ai.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: dhh2026campfire
+  type: post
+  title: Last conversion of the Campfire from my token stash goes to JavaScript/Express
+  author:
+  - family: Heinemeier Hansson
+    given: David
+  container-title: X
+  issued:
+    date-parts:
+    - - 2026
+      - 10
+      - 5
+  URL: https://x.com/dhh/status/2107077808182976817
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms'
+- id: docker2026security
+  type: webpage
+  title: Docker Engine security
+  author:
+  - literal: Docker Inc.
+  container-title: Docker Docs
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://docs.docker.com/engine/security/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/25/ai-jail-update-seguranca-docker-opt-in'
+- id: dora2026metrics
+  type: webpage
+  title: DORA's software delivery performance metrics
+  author:
+  - literal: DORA
+  container-title: DORA
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://dora.dev/guides/dora-metrics-four-keys/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou
+    (''speed and stability are not tradeoffs''; the post cited the State of DevOps
+    reports without a link; verified online). Issue year of the page approximate.'
+- id: elevenlabs2025v3
+  type: webpage
+  title: Eleven v3
+  author:
+  - literal: ElevenLabs
+  container-title: ElevenLabs
+  issued:
+    date-parts:
+    - - 2025
+      - 6
+      - 5
+  URL: https://elevenlabs.io/blog/eleven-v3
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts (post
+    says v3 ''saiu em fevereiro desse ano''; the official page, launched as alpha
+    June 2025, now notes general availability; GA on 2 Feb 2026 per secondary directories,
+    not confirmed on an official changelog)'
+- id: engadget2026mythos
+  type: article-newspaper
+  title: Anthropic is investigating unauthorized access of its Mythos cybersecurity
+    tool
+  author:
+  - family: Dent
+    given: Steve
+  container-title: Engadget
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 22
+  URL: https://www.engadget.com/ai/anthropic-is-investigating-unauthorized-access-of-its-mythos-cybersecurity-tool-091017168.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic (post
+    linked cybersecuritynews.com; Engadget used as the verified source)'
+- id: eu2024aiact
+  type: webpage
+  title: 'Artificial Intelligence Act, Article 50: Transparency Obligations for Providers
+    and Deployers of Certain AI Systems'
+  author:
+  - literal: União Europeia
+  container-title: EU Artificial Intelligence Act
+  issued:
+    date-parts:
+    - - 2024
+      - 6
+      - 13
+  URL: https://artificialintelligenceact.eu/article/50/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/08/16/entendendo-ia-watermark-da-anthropic'
+- id: favreau2008ironman
+  type: motion_picture
+  title: Iron Man
+  author:
+  - family: Favreau
+    given: Jon
+  publisher: Marvel Studios
+  issued:
+    date-parts:
+    - - 2008
+  URL: https://en.wikipedia.org/wiki/Iron_Man_(2008_film)
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/15/como-falar-com-o-claude-code-efetivamente (Mark I built
+    in a cave, Mark II icing; verified)'
+- id: fitzgerald2026capex
+  type: post-weblog
+  title: 'Follow the CAPEX: 2025 Retrospective'
+  author:
+  - family: Fitzgerald
+    given: Charles
+  container-title: Platformonomics
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 25
+  URL: https://platformonomics.com/?p=34926
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
+    (the post gave >US$400B 2025 capex for Amazon, Google, Microsoft, Meta without
+    a link; this retrospective reports just over US$416B)'
+- id: fleuret2023little
+  type: book
+  title: The Little Book of Deep Learning
+  author:
+  - family: Fleuret
+    given: François
+  version: 1.3 (2026-05-12)
+  issued:
+    date-parts:
+    - - 2023
+  URL: https://fleuret.org/francois/lbdl.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: intermediário; gratuito: PDF em
+    https://fleuret.org/public/lbdl.pdf (CC BY-NC-SA 4.0; impresso barato via Lulu);
+    edição PT: nenhuma encontrada'
+- id: flow2025mentiram
+  type: motion_picture
+  title: MENTIRAM PRA VOCÊ SOBRE INTELIGÊNCIA ARTIFICIAL [com Fabio Akita]
+  author:
+  - literal: Flow Podcast
+  container-title: YouTube
+  issued:
+    date-parts:
+    - - 2025
+      - 6
+      - 13
+  URL: https://www.youtube.com/watch?v=sf4Gxf0LiKo
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores'
+- id: fnnews2026brockman
+  type: article-newspaper
+  title: OpenAI Declares It Has "Opened the AGI Era" with GPT-6 Astra, Fighting Back
+    Against Anthropic
+  author:
+  - literal: The Financial News
+  container-title: The Financial News
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 4
+  URL: https://en.fnnews.com/news/202609040336531654
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
+    online 2026-10-13; not linked in the post) Title approximated from the English
+    edition; only source found for the ''different definition'' quote.'
+- id: fortune2023layoffs
+  type: article-newspaper
+  title: There's only one time tech layoffs have ever happened faster than right now
+  author:
+  - family: Morris
+    given: Chris
+  container-title: Fortune
+  issued:
+    date-parts:
+    - - 2023
+      - 1
+      - 3
+  URL: https://fortune.com/2023/01/03/tech-layoffs-2022-pandemic-dotcom-bubble
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (layoffs.fyi: 153,
+    160 tech workers at 1, 172 companies in 2022, as reported by Fortune; headline
+    verified)'
+- id: franzen2026claude
+  type: article-newspaper
+  title: 'Claude Code''s source code appears to have leaked: here''s what we know'
+  author:
+  - family: Franzen
+    given: Carl
+  container-title: VentureBeat
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 31
+  URL: https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro'
+- id: fridman2026huang
+  type: broadcast
+  title: 'Transcript for Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution'
+  author:
+  - family: Fridman
+    given: Lex
+  container-title: Lex Fridman Podcast
+  number: '494'
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 23
+  URL: https://lexfridman.com/jensen-huang-transcript/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: gartner2025agentic
+  type: webpage
+  title: Gartner Predicts Over 40% of Agentic AI Projects Will Be Canceled by End
+    of 2027
+  author:
+  - literal: Gartner
+  container-title: Gartner Newsroom
+  issued:
+    date-parts:
+    - - 2025
+      - 6
+      - 25
+  URL: https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-predicts-over-40-percent-of-agentic-ai-projects-will-be-canceled-by-end-of-2027
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit'
+- id: gillin2026typesafe
+  type: article-newspaper
+  title: TypeSafe AI exits stealth with $40M to build AI for use by software
+  author:
+  - family: Gillin
+    given: Paul
+  container-title: SiliconANGLE
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 16
+  URL: https://siliconangle.com/2026-09-16/typesafe-ai-exits-stealth-with-40m-to-build-ai-for-use-by-software/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam (post
+    linked Forbes; SiliconANGLE relays the Forbes valuation)'
+- id: gimp2022cmyk
+  type: post-weblog
+  title: 'Development version: GIMP 2.99.12 Released'
+  author:
+  - literal: GIMP Team
+  container-title: GIMP News
+  issued:
+    date-parts:
+    - - 2022
+      - 8
+      - 27
+  URL: https://www.gimp.org/news/2022/08/27/gimp-2-99-12-released/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu'
+- id: github2025octoverse
+  type: webpage
+  title: 'Octoverse: A new developer joins GitHub every second as AI leads TypeScript
+    to #1'
+  author:
+  - literal: GitHub
+  container-title: The GitHub Blog
+  issued:
+    date-parts:
+    - - 2025
+      - 10
+      - 28
+  URL: https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+    (81.5% of 2025 contributions in private repositories)'
+- id: github2026dmca
+  type: webpage
+  title: 2026-03-31-anthropic.md (DMCA takedown notice)
+  author:
+  - literal: GitHub
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 31
+  URL: https://github.com/github/dmca/blob/master/2026/03/2026-03-31-anthropic.md
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro'
+- id: github2026retraction
+  type: webpage
+  title: 2026-04-01-anthropic-retraction.md (DMCA partial retraction)
+  author:
+  - literal: GitHub
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 1
+  URL: https://github.com/github/dmca/blob/master/2026/04/2026-04-01-anthropic-retraction.md
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro'
+- id: gnu2009gnugo
+  type: software
+  title: GNU Go
+  author:
+  - literal: Free Software Foundation
+  container-title: GNU Project
+  version: '3.8'
+  issued:
+    date-parts:
+    - - 2009
+      - 2
+      - 19
+  URL: https://www.gnu.org/software/gnugo/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (latest stable release
+    3.8, 19 Feb 2009, per gnu.org)'
+- id: goodalexander2026devnet
+  type: post
+  title: Reproduction of GPT-5.6-Sol destructive rsync on a throwaway devnet
+  author:
+  - literal: goodalexander
+  container-title: X
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 11
+  URL: https://x.com/goodalexander/status/2076019436767584347
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas
+    (title paraphrased; exact day not checked)'
+- id: guthrie2026drm
+  type: post
+  title: Tonight, the DRM is dead
+  author:
+  - family: Guthrie
+    given: Jay
+  container-title: X
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 1
+  URL: https://x.com/StraughterG/status/2039344027556798476
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro'
+- id: ha2024lecun
+  type: article-newspaper
+  title: Meta's Yann LeCun says worries about AI's existential threat are 'complete
+    B.S.'
+  author:
+  - family: Ha
+    given: Anthony
+  container-title: TechCrunch
+  issued:
+    date-parts:
+    - - 2024
+      - 10
+      - 12
+  URL: https://techcrunch.com/2024/10/12/metas-yann-lecun-says-worries-about-a-i-s-existential-threat-are-complete-b-s/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
+    online 2026-10-13; not linked in the post)'
+- id: hai2024aiindex
+  type: report
+  title: The 2024 AI Index Report
+  author:
+  - literal: Stanford Institute for Human-Centered Artificial Intelligence
+  publisher: Stanford University
+  publisher-place: Stanford, CA
+  issued:
+    date-parts:
+    - - 2024
+      - 4
+  URL: https://hai.stanford.edu/ai-index/2024-ai-index-report
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (training-cost estimates
+    GPT-4 ~US$78M, Gemini Ultra ~US$191M; post stated rising cost without figures;
+    verified online)'
+- id: hai2025aiindex
+  type: report
+  title: The 2025 AI Index Report
+  author:
+  - literal: Stanford Institute for Human-Centered Artificial Intelligence
+  publisher: Stanford University
+  publisher-place: Stanford, CA
+  issued:
+    date-parts:
+    - - 2025
+  URL: https://hai.stanford.edu/ai-index/2025-ai-index-report
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (gap between top
+    and 10th-ranked models fell from 11.9% to 5.4% in a year)'
+- id: haider2026amodei
+  type: article-newspaper
+  title: 'Anthropic CEO Predicts AI Models Will Replace Software Engineers In 6-12
+    Months: ''I Don''t Write Any Code Anymore'''
+  author:
+  - family: Haider
+    given: Mohd
+  container-title: Benzinga
+  issued:
+    date-parts:
+    - - 2026
+      - 1
+      - 21
+  URL: https://finviz.com/news/281945/anthropic-ceo-predicts-ai-models-will-replace-software-engineers-in-6-12-months-i-dont-write-any-code-anymore
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post says ''concordo
+    com o CEO da Anthropic'' without a link; quote ''we might be 6-12 months away
+    from models doing all of what software engineers do end-to-end'', WEF Davos, 2026-01-20;
+    read via Finviz republication)'
+- id: han2025synthid
+  type: article
+  title: Robustness Assessment and Enhancement of Text Watermarking for Google's SynthID
+  author:
+  - family: Han
+    given: Xia
+  - family: Li
+    given: Qi
+  - family: Ni
+    given: Jianbing
+  - family: Zulkernine
+    given: Mohammad
+  container-title: arXiv
+  number: arXiv:2508.20228
+  DOI: 10.48550/arXiv.2508.20228
+  issued:
+    date-parts:
+    - - 2025
+      - 8
+      - 27
+  URL: https://arxiv.org/abs/2508.20228
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/08/16/entendendo-ia-watermark-da-anthropic'
+- id: hao2020gebru
+  type: article-magazine
+  title: We read the paper that forced Timnit Gebru out of Google. Here's what it
+    says.
+  author:
+  - family: Hao
+    given: Karen
+  container-title: MIT Technology Review
+  issued:
+    date-parts:
+    - - 2020
+      - 12
+      - 4
+  URL: https://www.technologyreview.com/2020/12/04/1013294/google-ai-ethics-research-paper-forced-out-timnit-gebru/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (Gebru co-led Google''s ethical AI team; said on 2 Dec
+    2020 she was forced out after a dispute over the paper; verified online)'
+- id: hern2019dangerous
+  type: article-newspaper
+  title: New AI fake text generator may be too dangerous to release, say creators
+  author:
+  - family: Hern
+    given: Alex
+  container-title: The Guardian
+  issued:
+    date-parts:
+    - - 2019
+      - 2
+      - 14
+  URL: https://www.theguardian.com/technology/2019/feb/14/elon-musk-backed-ai-writes-convincing-news-fiction
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (press framing
+    of GPT-2; verified online)'
+- id: hinton2015distilling
+  type: article
+  title: Distilling the Knowledge in a Neural Network
+  author:
+  - family: Hinton
+    given: Geoffrey
+  - family: Vinyals
+    given: Oriol
+  - family: Dean
+    given: Jeff
+  container-title: arXiv
+  number: arXiv:1503.02531
+  DOI: 10.48550/arXiv.1503.02531
+  issued:
+    date-parts:
+    - - 2015
+      - 3
+      - 9
+  URL: https://arxiv.org/abs/1503.02531
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus
+    (post explains distillation without citing the origin; added as the standard reference)'
+- id: hoffmann2022training
+  type: article
+  title: Training Compute-Optimal Large Language Models
+  author:
+  - family: Hoffmann
+    given: Jordan
+  - family: Borgeaud
+    given: Sebastian
+  - family: Mensch
+    given: Arthur
+  - family: Buchatskaya
+    given: Elena
+  - family: Cai
+    given: Trevor
+  - family: Rutherford
+    given: Eliza
+  - family: Casas
+    given: Diego de Las
+  - family: Hendricks
+    given: Lisa Anne
+  - family: Welbl
+    given: Johannes
+  - family: Clark
+    given: Aidan
+  - family: Hennigan
+    given: Tom
+  - family: Noland
+    given: Eric
+  - family: Millican
+    given: Katie
+  - family: Driessche
+    given: George van den
+  - family: Damoc
+    given: Bogdan
+  - family: Guy
+    given: Aurelia
+  - family: Osindero
+    given: Simon
+  - family: Simonyan
+    given: Karen
+  - family: Elsen
+    given: Erich
+  - family: Rae
+    given: Jack W.
+  - family: Vinyals
+    given: Oriol
+  - family: Sifre
+    given: Laurent
+  container-title: arXiv
+  number: arXiv:2203.15556
+  DOI: 10.48550/arXiv.2203.15556
+  issued:
+    date-parts:
+    - - 2022
+      - 3
+      - 29
+  URL: https://arxiv.org/abs/2203.15556
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: holtzman2020curious
+  type: paper-conference
+  title: The Curious Case of Neural Text Degeneration
+  author:
+  - family: Holtzman
+    given: Ari
+  - family: Buys
+    given: Jan
+  - family: Du
+    given: Li
+  - family: Forbes
+    given: Maxwell
+  - family: Choi
+    given: Yejin
+  container-title: ICLR 2020 Proceedings
+  event: 8th International Conference on Learning Representations (ICLR 2020)
+  publisher: OpenReview
+  issued:
+    date-parts:
+    - - 2020
+  URL: https://arxiv.org/abs/1904.09751
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (maximization-based decoding gives ''bland and strangely
+    repetitive'' text; nucleus sampling; verified online)'
+- id: huamani2026coxon
+  type: article-newspaper
+  title: 'Anthropic researcher resigns with a warning: AI ''could kill us all'''
+  author:
+  - family: Huamani
+    given: Kaitlyn
+  container-title: NBC Chicago
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 9
+  URL: https://www.nbcchicago.com/news/national-international/anthropic-researcher-resigns-warning-ai
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
+    online 2026-10-13; not linked in the post) Associated Press, syndicated by NBC.'
+- id: huggingface2026intrusion
+  type: post-weblog
+  title: 'Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July
+    2026 Incident'
+  author:
+  - family: Larcher
+    given: Hugo
+  container-title: Hugging Face Blog
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 27
+  URL: https://huggingface.co/blog/agent-intrusion-technical-timeline
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
+    online 2026-10-13; not linked in the post)'
+- id: iamfakeguru2026claude
+  type: post
+  title: Thread com achados técnicos do código vazado do Claude Code
+  author:
+  - literal: iamfakeguru
+  container-title: X
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 31
+  URL: https://x.com/iamfakeguru/status/2038965567269249484
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro'
+- id: ibm2026punchcard
+  type: webpage
+  title: The punched card
+  author:
+  - literal: IBM
+  container-title: IBM Heritage
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://www.ibm.com/history/punched-card
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/11/vs-code-e-o-novo-cartao-perfurado (80-column card introduced
+    in 1928; verified online, page undated)'
+- id: jiang2024mixtral
+  type: article
+  title: Mixtral of Experts
+  author:
+  - family: Jiang
+    given: Albert Q.
+  - family: Sablayrolles
+    given: Alexandre
+  - family: Roux
+    given: Antoine
+  - family: Mensch
+    given: Arthur
+  - family: Savary
+    given: Blanche
+  - family: Bamford
+    given: Chris
+  - family: Chaplot
+    given: Devendra Singh
+  - family: Casas
+    given: Diego de las
+  - family: Hanna
+    given: Emma Bou
+  - family: Bressand
+    given: Florian
+  - family: Lengyel
+    given: Gianna
+  - family: Bour
+    given: Guillaume
+  - family: Lample
+    given: Guillaume
+  - family: Lavaud
+    given: Lélio Renard
+  - family: Saulnier
+    given: Lucile
+  - family: Lachaux
+    given: Marie-Anne
+  - family: Stock
+    given: Pierre
+  - family: Subramanian
+    given: Sandeep
+  - family: Yang
+    given: Sophia
+  - family: Antoniak
+    given: Szymon
+  - family: Scao
+    given: Teven Le
+  - family: Gervet
+    given: Théophile
+  - family: Lavril
+    given: Thibaut
+  - family: Wang
+    given: Thomas
+  - family: Lacroix
+    given: Timothée
+  - family: Sayed
+    given: William El
+  container-title: arXiv
+  number: arXiv:2401.04088
+  DOI: 10.48550/arXiv.2401.04088
+  issued:
+    date-parts:
+    - - 2024
+      - 1
+      - 8
+  URL: https://arxiv.org/abs/2401.04088
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (book bridge on MoE routing; experts not specialized by
+    topic, per the paper''s routing analysis)'
+- id: jimenez2023swebench
+  type: article
+  title: 'SWE-bench: Can Language Models Resolve Real-World GitHub Issues?'
+  author:
+  - family: Jimenez
+    given: Carlos E.
+  - family: Yang
+    given: John
+  - family: Wettig
+    given: Alexander
+  - family: Yao
+    given: Shunyu
+  - family: Pei
+    given: Kexin
+  - family: Press
+    given: Ofir
+  - family: Narasimhan
+    given: Karthik
+  container-title: arXiv
+  number: arXiv:2310.06770
+  DOI: 10.48550/arXiv.2310.06770
+  issued:
+    date-parts:
+    - - 2023
+      - 10
+      - 10
+  URL: https://arxiv.org/abs/2310.06770
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1'
+- id: jobs2005stanford
+  type: webpage
+  title: "'You've got to find what you love,' Jobs says"
+  author:
+  - family: Jobs
+    given: Steve
+  container-title: Stanford Report
+  issued:
+    date-parts:
+    - - 2005
+      - 6
+      - 12
+  URL: https://news.stanford.edu/stories/2005/06/youve-got-find-love-jobs-says
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo
+    (speech mentioned without a link; verified online)'
+- id: kahn2026navierstokes
+  type: article-newspaper
+  title: OpenAI says it cracked Navier-Stokes math grand challenge
+  author:
+  - family: Kahn
+    given: Jeremy
+  container-title: Fortune
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 8
+  URL: https://fortune.com/2026/09/08/openai-says-it-cracked-navier-stokes-math-grand-challenge-buckmaster-accusation-cheating-intimidation-tao-lament/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: kaplan2020scaling
+  type: article
+  title: Scaling Laws for Neural Language Models
+  author:
+  - family: Kaplan
+    given: Jared
+  - family: McCandlish
+    given: Sam
+  - family: Henighan
+    given: Tom
+  - family: Brown
+    given: Tom B.
+  - family: Chess
+    given: Benjamin
+  - family: Child
+    given: Rewon
+  - family: Gray
+    given: Scott
+  - family: Radford
+    given: Alec
+  - family: Wu
+    given: Jeffrey
+  - family: Amodei
+    given: Dario
+  container-title: arXiv
+  number: arXiv:2001.08361
+  DOI: 10.48550/arXiv.2001.08361
+  issued:
+    date-parts:
+    - - 2020
+      - 1
+      - 23
+  URL: https://arxiv.org/abs/2001.08361
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: karpathy2022zerotohero
+  type: motion_picture
+  title: 'Neural Networks: Zero to Hero'
+  author:
+  - family: Karpathy
+    given: Andrej
+  container-title: karpathy.ai
+  issued:
+    date-parts:
+    - - 2022
+      - 8
+      - 16
+  URL: https://karpathy.ai/zero-to-hero.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: técnico (Python, derivadas); gratuito;
+    playlist https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ;
+    PT: nenhuma versão'
+- id: karpathy2023intro
+  type: motion_picture
+  title: "[1hr Talk] Intro to Large Language Models"
+  author:
+  - family: Karpathy
+    given: Andrej
+  container-title: YouTube
+  issued:
+    date-parts:
+    - - 2023
+      - 11
+      - 22
+  URL: https://www.youtube.com/watch?v=zjkBMFhNj_g
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: leigo; gratuito; PT: só legendas
+    automáticas'
+- id: karpathy2025deepdive
+  type: motion_picture
+  title: Deep Dive into LLMs like ChatGPT
+  author:
+  - family: Karpathy
+    given: Andrej
+  container-title: YouTube
+  issued:
+    date-parts:
+    - - 2025
+      - 2
+      - 5
+  URL: https://www.youtube.com/watch?v=7xTGNNLPyMI
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: leigo; gratuito; cobre pré-treino,
+    ajuste fino e RLHF para público geral; PT: só legendas automáticas'
+- id: karpathy2026llmwiki
+  type: webpage
+  title: LLM Wiki
+  author:
+  - family: Karpathy
+    given: Andrej
+  container-title: GitHub Gist
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 4
+  URL: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos
+    (05/18 linked a VentureBeat article about it)'
+- id: kelleher2019deep
+  type: book
+  title: Deep Learning
+  author:
+  - family: Kelleher
+    given: John D.
+  collection-title: The MIT Press Essential Knowledge Series
+  publisher: MIT Press
+  publisher-place: Cambridge, MA
+  ISBN: '9780262537551'
+  issued:
+    date-parts:
+    - - 2019
+  URL: https://mitpress.mit.edu/9780262537551/deep-learning/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: leigo/intermediário; não gratuito;
+    edição PT: nenhuma encontrada'
+- id: kelley2026bun
+  type: post-weblog
+  title: My Thoughts on the Bun Rust Rewrite
+  author:
+  - family: Kelley
+    given: Andrew
+  container-title: Andrew Kelley
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 9
+  URL: https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito'
+- id: kim2026leak
+  type: post-weblog
+  title: 'The Claude Code Source Leak: fake tools, frustration regexes, undercover
+    mode, and more'
+  author:
+  - family: Kim
+    given: Alex
+  container-title: Alex Kim's blog
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 31
+  URL: https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro'
+- id: kitze2026spaghetti
+  type: post
+  title: GPT 5.4 rates the Claude Code codebase 6.5/10
+  author:
+  - literal: kitze
+  container-title: X
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 31
+  URL: https://x.com/thekitze/status/2038956521942577557
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro'
+- id: kohs2017alphago
+  type: motion_picture
+  title: AlphaGo
+  author:
+  - family: Kohs
+    given: Greg
+  publisher: Moxie Pictures / Reel As Dirt (Netflix)
+  issued:
+    date-parts:
+    - - 2017
+  URL: https://www.netflix.com/title/80190844
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (blog linked the Netflix
+    page; director and year verified online)'
+- id: koi2026clawhavoc
+  type: post-weblog
+  title: 'ClawHavoc: 341 Malicious Clawed Skills Found by the Bot They Were Targeting'
+  author:
+  - literal: Alex
+  - family: Yomtov
+    given: Oren
+  container-title: Koi Security Blog
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 1
+  URL: https://www.koi.ai/blog/clawhavoc-341-malicious-clawedbot-skills-found-by-the-bot-they-were-targeting
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (book-only context for 2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw;
+    verified via the Wayback Machine snapshot of 2026-02-10, the live URL now redirects
+    to Palo Alto Networks), Arquivado em: https://web.archive.org/web/20260210212946/https://www.koi.ai/blog/clawhavoc-341-malicious-clawedbot-skills-found-by-the-bot-they-were-targeting'
+- id: kovacs2026mythos
+  type: article-newspaper
+  title: 'Anthropic: Mythos Detected 23,000 Potential Vulnerabilities Across 1,000
+    OSS Projects'
+  author:
+  - family: Kovacs
+    given: Eduard
+  container-title: SecurityWeek
+  issued:
+    date-parts:
+    - - 2026
+      - 5
+      - 25
+  URL: https://www.securityweek.com/anthropic-mythos-detected-23000-potential-vulnerabilities-across-1000-oss-projects/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: krietzberg2026mythos
+  type: article-newspaper
+  title: Is Anthropic's Mythos Model as Dangerous as Everyone Says?
+  author:
+  - family: Krietzberg
+    given: Ian
+  container-title: Puck
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 16
+  URL: https://puck.news/is-anthropics-mythos-model-as-dangerous-as-everyone-says/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: krizhevsky2012imagenet
+  type: paper-conference
+  title: ImageNet Classification with Deep Convolutional Neural Networks
+  author:
+  - family: Krizhevsky
+    given: Alex
+  - family: Sutskever
+    given: Ilya
+  - family: Hinton
+    given: Geoffrey E.
+  container-title: Advances in Neural Information Processing Systems 25
+  event: 26th Conference on Neural Information Processing Systems (NIPS 2012)
+  page: 1097-1105
+  publisher: Curran Associates
+  publisher-place: Lake Tahoe, NV
+  issued:
+    date-parts:
+    - - 2012
+  URL: https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post credits AlexNet
+    to ''George Hinton, Yann LeCunn e Ilya Sutskever''; corrected to the paper''s
+    authors)'
+- id: kurtome2026elixir
+  type: post
+  title: 'Reply to DHH: 10x speed up on the Room page requests (Campfire Elixir)'
+  author:
+  - family: Melby
+    given: Kurt
+  container-title: X
+  issued:
+    date-parts:
+    - - 2026
+      - 10
+      - 5
+  URL: https://x.com/kurtome/status/2106902762076467681
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms'
+- id: lackoftrack27smb
+  type: software
+  title: 'Super-Mario-Bros.-SMS: Port of Super Mario Bros. to the Sega Master System'
+  author:
+  - literal: lackoftrack27
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 1
+  URL: https://github.com/lackoftrack27/Super-Mario-Bros.-SMS
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms
+    (repo shows no release dates; the post places publication between June and early
+    September 2026)'
+- id: lee2024modelos
+  type: webpage
+  title: Grandes modelos de linguagem, explicados com o mínimo de matemática e jargão
+  author:
+  - family: Lee
+    given: Timothy B.
+  - family: Trott
+    given: Sean
+  translator:
+  - family: Dutra
+    given: Carlos
+  container-title: Understanding AI
+  issued:
+    date-parts:
+    - - 2024
+      - 4
+      - 15
+  URL: https://www.understandingai.org/p/grandes-modelos-de-linguagem-explicados
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: leigo; gratuito; edição PT: sim,
+    tradução PT-BR oficial no site dos autores (rev. Gabriel Adriano de Melo); original
+    em inglês ''Large language models, explained with a minimum of math and jargon'',
+    27 jul. 2023, https://www.understandingai.org/p/large-language-models-explained-with'
+- id: lefkowitz2019perceptron
+  type: webpage
+  title: Professor's perceptron paved the way for AI – 60 years too soon
+  author:
+  - family: Lefkowitz
+    given: Melanie
+  container-title: Cornell Chronicle
+  issued:
+    date-parts:
+    - - 2019
+      - 9
+      - 25
+  URL: https://news.cornell.edu/stories/2019/09/professors-perceptron-paved-way-ai-60-years-too-soon
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (1958 Navy demo on
+    IBM 704, 50 trials, Minsky & Papert 1969, funding winter, Rosenblatt''s death
+    in 1971; verified online)'
+- id: lexisnexis2026threatmetrix
+  type: webpage
+  title: ThreatMetrix
+  author:
+  - literal: LexisNexis Risk Solutions
+  container-title: LexisNexis Risk Solutions
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://risk.lexisnexis.com/products/threatmetrix
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint'
+- id: li2023othello
+  type: paper-conference
+  title: 'Emergent World Representations: Exploring a Sequence Model Trained on a
+    Synthetic Task'
+  author:
+  - family: Li
+    given: Kenneth
+  - family: Hopkins
+    given: Aspen K.
+  - family: Bau
+    given: David
+  - family: Viégas
+    given: Fernanda
+  - family: Pfister
+    given: Hanspeter
+  - family: Wattenberg
+    given: Martin
+  container-title: ICLR 2023 Proceedings
+  event: 11th International Conference on Learning Representations (ICLR 2023)
+  publisher: OpenReview
+  publisher-place: Kigali
+  issued:
+    date-parts:
+    - - 2023
+  URL: https://arxiv.org/abs/2210.13382
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (Othello-GPT internal board representation; interventions
+    change predictions; verified online)'
+- id: li2024rag
+  type: paper-conference
+  title: Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study
+    and Hybrid Approach
+  author:
+  - family: Li
+    given: Zhuowan
+  - family: Li
+    given: Cheng
+  - family: Zhang
+    given: Mingyang
+  - family: Mei
+    given: Qiaozhu
+  - family: Bendersky
+    given: Michael
+  container-title: 'Proceedings of the 2024 Conference on Empirical Methods in Natural
+    Language Processing: Industry Track'
+  event: 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP
+    2024)
+  page: 881-893
+  publisher: Association for Computational Linguistics
+  publisher-place: Miami, FL
+  DOI: 10.18653/v1/2024.emnlp-industry.66
+  issued:
+    date-parts:
+    - - 2024
+      - 11
+  URL: https://arxiv.org/abs/2407.16833
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/06/rag-esta-morto-contexto-longo'
+- id: lightvector2026katago
+  type: software
+  title: KataGo
+  author:
+  - family: Wu
+    given: David J.
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://github.com/lightvector/KataGo
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (estimates score and
+    per-point territory ownership, not just winrate; Eigen CPU backend runs without
+    GPU)'
+- id: liu2024lost
+  type: article-journal
+  title: 'Lost in the Middle: How Language Models Use Long Contexts'
+  author:
+  - family: Liu
+    given: Nelson F.
+  - family: Lin
+    given: Kevin
+  - family: Hewitt
+    given: John
+  - family: Paranjape
+    given: Ashwin
+  - family: Bevilacqua
+    given: Michele
+  - family: Petroni
+    given: Fabio
+  - family: Liang
+    given: Percy
+  container-title: Transactions of the Association for Computational Linguistics
+  volume: '12'
+  page: 157-173
+  DOI: 10.1162/tacl_a_00638
+  issued:
+    date-parts:
+    - - 2024
+  URL: https://arxiv.org/abs/2307.03172
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/06/rag-esta-morto-contexto-longo'
+- id: livebench2026issue370
+  type: webpage
+  title: 'Add: Lua Genesys - Natural Intelligence Model (LUA Vision — Proprietary
+    LLM) (issue #370)'
+  author:
+  - literal: LiveBench
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 22
+  URL: https://github.com/LiveBench/LiveBench/issues/370
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro'
+- id: luavision2026empresa
+  type: webpage
+  title: Empresa
+  author:
+  - literal: LUA Vision
+  container-title: LUA Vision
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://lua.vision/empresa/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro'
+- id: lyu2024rtdetr
+  type: software
+  title: 'RT-DETR: DETRs Beat YOLOs on Real-time Object Detection'
+  author:
+  - family: Lv
+    given: Wenyu
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2024
+  URL: https://github.com/lyuwenyu/RT-DETR
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik.
+    RT-DETRv2 paper: Lv, Zhao, Chang, Huang, Wang, Liu, ''RT-DETRv2: Improved Baseline
+    with Bag-of-Freebies for Real-Time Detection Transformer'' (2024).'
+- id: ma2026altmanipo
+  type: article-newspaper
+  title: Sam Altman confirms OpenAI won't go public this year, saying an IPO now would
+    come at an 'ill-advised moment' given AI safety concerns
+  author:
+  - family: Ma
+    given: Jason
+  container-title: Fortune
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 12
+  URL: https://fortune.com/2026/09/12/sam-altman-openai-ipo-delay-ill-advised-moment-safety-concerns/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: martin2008clean
+  type: book
+  title: 'Clean Code: A Handbook of Agile Software Craftsmanship'
+  author:
+  - family: Martin
+    given: Robert C.
+  publisher: Prentice Hall
+  publisher-place: Upper Saddle River, NJ
+  ISBN: 978-0132350884
+  issued:
+    date-parts:
+    - - 2008
+  URL: https://www.oreilly.com/library/view/clean-code-a/9780136083238/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/20/clean-code-para-agentes-de-ia (named in the post without
+    a link; well-known bibliographic fact)'
+- id: mdindoffer2026docker
+  type: webpage
+  title: 'Sandbox escape via a docker socket passthrough (effective host root), issue
+    #88'
+  author:
+  - literal: mdindoffer
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 25
+  URL: https://github.com/akitaonrails/ai-jail/issues/88
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/25/ai-jail-update-seguranca-docker-opt-in'
+- id: mediaite2026pace
+  type: article-newspaper
+  title: 'Elon Musk and Sam Altman agree with Anthropic boss: AI must slow down to
+    avoid catastrophic damage'
+  author:
+  - literal: Mediaite
+  container-title: Mediaite
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 12
+  URL: https://www.mediaite.com/media/elon-musk-and-sam-altman-agree-with-anthropic-boss-ai-must-slow-down-to-avoid-catastrophic-damage/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: meta2024llama3
+  type: webpage
+  title: 'Introducing Meta Llama 3: The most capable openly available LLM to date'
+  author:
+  - literal: Meta
+  container-title: Meta AI
+  issued:
+    date-parts:
+    - - 2024
+      - 4
+      - 18
+  URL: https://ai.meta.com/blog/meta-llama-3/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (pretrained on over 15T tokens; tokenizer vocabulary of
+    128K tokens; figures confirmed via IEEE Spectrum and The Decoder coverage)'
+- id: metr2025tasks
+  type: report
+  title: Measuring AI Ability to Complete Long Tasks
+  author:
+  - literal: METR
+  publisher: METR
+  publisher-place: Berkeley, CA
+  issued:
+    date-parts:
+    - - 2025
+      - 3
+      - 19
+  URL: https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: metr2026swebench
+  type: report
+  title: Many SWE-bench-Passing PRs Would Not Be Merged into Main
+  author:
+  - family: Whitfill
+    given: Parker
+  - family: Wu
+    given: Cheryl
+  - family: Becker
+    given: Joel
+  - family: Rush
+    given: Nate
+  publisher: METR
+  publisher-place: Berkeley, CA
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 10
+  URL: https://metr.org/notes/2026-03-10-many-swe-bench-passing-prs-would-not-be-merged-into-main/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1'
+- id: mikolov2013linguistic
+  type: paper-conference
+  title: Linguistic Regularities in Continuous Space Word Representations
+  author:
+  - family: Mikolov
+    given: Tomas
+  - family: Yih
+    given: Wen-tau
+  - family: Zweig
+    given: Geoffrey
+  container-title: Proceedings of NAACL-HLT 2013
+  event: '2013 Conference of the North American Chapter of the Association for Computational
+    Linguistics: Human Language Technologies (NAACL-HLT 2013)'
+  page: 746-751
+  publisher: Association for Computational Linguistics
+  publisher-place: Atlanta, GA
+  issued:
+    date-parts:
+    - - 2013
+      - 6
+  URL: https://aclanthology.org/N13-1090/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (king - man + woman lands near queen; authors at Microsoft
+    Research; verified online)'
+- id: mistral2023mixtral
+  type: webpage
+  title: Mixtral of experts
+  author:
+  - literal: Mistral AI
+  container-title: Mistral AI
+  issued:
+    date-parts:
+    - - 2023
+      - 12
+      - 11
+  URL: https://mistral.ai/news/mixtral-of-experts/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: mitchell2019guide
+  type: book
+  title: 'Artificial Intelligence: A Guide for Thinking Humans'
+  author:
+  - family: Mitchell
+    given: Melanie
+  publisher: Farrar, Straus and Giroux
+  publisher-place: New York
+  ISBN: '9780374257835'
+  issued:
+    date-parts:
+    - - 2019
+  URL: https://melaniemitchell.me/aibook/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: leigo; não gratuito; edição PT:
+    nenhuma encontrada (traduções listadas pela autora: chinês, japonês, espanhol,
+    francês, italiano, russo; em espanhol: ''Inteligencia artificial. Guía para seres
+    pensantes'', Capitán Swing, 2024)'
+- id: moon2026redeploy
+  type: article-newspaper
+  title: US government allows Anthropic to redeploy its Mythos and Fable AI models
+  author:
+  - family: Moon
+    given: Mariella
+  container-title: Engadget
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 30
+  URL: https://www.engadget.com/2205599/anthropic-redeploy-mythos-fable-ai-models/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic (verified
+    online 2026-10-13 at integration; not linked in the post; replaces a CNBC page
+    that refused fetching)'
+- id: morluto2026rea
+  type: software
+  title: 'REA: Reverse Engineer Anything'
+  author:
+  - literal: morluto
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 14
+  URL: https://github.com/morluto/rea
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (DISCLAIMER:
+    ''Decompilation, reconstruction, heuristics, and AI-assisted analysis may be incomplete
+    or incorrect''; requires Hopper, Ghidra or IDA for native binaries; analysis-efficiency
+    experiment)'
+- id: mryll2026claudebar
+  type: software
+  title: 'claudebar: Waybar module for Claude usage'
+  author:
+  - literal: mryll
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 18
+  URL: https://github.com/mryll/claudebar
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar'
+- id: mxtoolbox2026clipping
+  type: webpage
+  title: What Is Email Message Clipping? What Is Gmail's Limit?
+  author:
+  - literal: MxToolbox
+  container-title: MxToolbox
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://mxtoolbox.com/dmarc/email/email-clipping
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito
+    (102 KB limit stated in the post without a link; verified online; page has no
+    date, issued set to access year)'
+- id: nesdev2018sms
+  type: post
+  title: 'Sega Master System (SMS) to NES converter: is it possible?'
+  container-title: NESdev Forums
+  issued:
+    date-parts:
+    - - 2018
+      - 5
+      - 9
+  URL: https://forums.nesdev.org/viewtopic.php?t=17339
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms.
+    Verified line (tokumaru, 2018-05-09): ''Automatic conversion of 6502 code to Z80
+    will definitely cause a hit in performance''. The longer quote the blog attributes
+    to the thread was not found on the first page, so the chapter paraphrases only
+    the performance point.'
+- id: nexagi2026issue4
+  type: webpage
+  title: 'Rio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen (issue #4)'
+  author:
+  - literal: Nex AGI
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 14
+  URL: https://github.com/nex-agi/Nex-N2/issues/4
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/15/controversia-llm-rio-3-5-plagio'
+- id: nielsen2015neural
+  type: book
+  title: Neural Networks and Deep Learning
+  author:
+  - family: Nielsen
+    given: Michael A.
+  publisher: Determination Press
+  issued:
+    date-parts:
+    - - 2015
+  URL: http://neuralnetworksanddeeplearning.com/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: intermediário; gratuito (CC BY-NC
+    3.0, última atualização dez. 2019); edição PT: nenhuma encontrada'
+- id: nobel2024physics
+  type: webpage
+  title: 'Press release: The Nobel Prize in Physics 2024'
+  author:
+  - literal: The Royal Swedish Academy of Sciences
+  container-title: NobelPrize.org
+  issued:
+    date-parts:
+    - - 2024
+      - 10
+      - 8
+  URL: https://www.nobelprize.org/prizes/physics/2024/press-release/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (book bridge: John Hopfield and Geoffrey Hinton awarded
+    the 2024 Nobel Prize in Physics)'
+- id: ogkalu2025bubble
+  type: software
+  title: comic-text-and-bubble-detector
+  author:
+  - literal: ogkalu
+  container-title: Hugging Face
+  issued:
+    date-parts:
+    - - 2025
+      - 3
+      - 13
+  URL: https://huggingface.co/ogkalu/comic-text-and-bubble-detector
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik
+    (named in the post without a link; verified online. Model page shows no release
+    date; issued year is approximate and should be checked at merge), 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
+    (model named in the post without a link; verified online: ~11k comic images).
+    Year of release not verified; 2025 is approximate.'
+- id: openai2019gpt2
+  type: post-weblog
+  title: 'GPT-2: 1.5B Release'
+  author:
+  - literal: OpenAI
+  container-title: OpenAI Blog
+  issued:
+    date-parts:
+    - - 2019
+      - 11
+      - 5
+  URL: https://openai.com/index/gpt-2-1-5b-release/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (fact not linked
+    in the post; verified via Wayback Machine copy)'
+- id: openai2022chatgpt
+  type: webpage
+  title: Introducing ChatGPT
+  author:
+  - literal: OpenAI
+  container-title: OpenAI
+  issued:
+    date-parts:
+    - - 2022
+      - 11
+      - 30
+  URL: https://openai.com/index/chatgpt/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia (launch date verified
+    online)'
+- id: openai2023classifier
+  type: webpage
+  title: New AI classifier for indicating AI-written text
+  author:
+  - literal: OpenAI
+  container-title: OpenAI
+  issued:
+    date-parts:
+    - - 2023
+      - 1
+      - 31
+  URL: https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (ch04, not in the posts). Note added to the page: ''As
+    of July 20, 2023, the AI Classifier is no longer available due to its low rate
+    of accuracy.'' Verified via secondary coverage (Inquirer Technology, 2023-07-26);
+    the OpenAI page returned 403 to the fetcher.'
+- id: openai2023custominstructions
+  type: webpage
+  title: ChatGPT Custom Instructions
+  author:
+  - literal: OpenAI
+  container-title: OpenAI Help Center
+  issued:
+    date-parts:
+    - - 2023
+  URL: https://help.openai.com/en/articles/8096356-chatgpt-custom-instructions
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original bridge in ch09 (verified online; not in the posts)'
+- id: openai2023function
+  type: webpage
+  title: Function calling and other API updates
+  author:
+  - literal: OpenAI
+  container-title: OpenAI
+  issued:
+    date-parts:
+    - - 2023
+      - 6
+      - 13
+  URL: https://openai.com/index/function-calling-and-other-api-updates/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: openai2023gpt4
+  type: article
+  title: GPT-4 Technical Report
+  author:
+  - literal: OpenAI
+  container-title: arXiv
+  number: arXiv:2303.08774
+  DOI: 10.48550/arXiv.2303.08774
+  issued:
+    date-parts:
+    - - 2023
+      - 3
+      - 15
+  URL: https://arxiv.org/abs/2303.08774
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: openai2024caching
+  type: webpage
+  title: Prompt Caching in the API
+  author:
+  - literal: OpenAI
+  container-title: OpenAI
+  issued:
+    date-parts:
+    - - 2024
+      - 10
+      - 1
+  URL: https://openai.com/index/api-prompt-caching/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (page returned
+    403 to the fetcher; date from DevDay 2024 announcement)'
+- id: openai2024o1
+  type: webpage
+  title: Learning to reason with LLMs
+  author:
+  - literal: OpenAI
+  container-title: OpenAI
+  issued:
+    date-parts:
+    - - 2024
+      - 9
+      - 12
+  URL: https://openai.com/index/learning-to-reason-with-llms/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: openai2025codexprompt
+  type: software
+  title: 'Codex CLI: system prompt (codex-rs/core/prompt.md)'
+  author:
+  - literal: OpenAI
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2025
+  URL: https://github.com/openai/codex/blob/main/codex-rs/core/prompt.md
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity,
+    Arquivado em: https://web.archive.org/web/20260201125545/https://github.com/openai/codex/blob/main/codex-rs/core/prompt.md'
+- id: openai2026hfreport
+  type: report
+  title: 'OpenAI Hugging Face Incident: Technical Report'
+  author:
+  - literal: OpenAI
+  publisher: OpenAI
+  publisher-place: San Francisco
+  issued:
+    date-parts:
+    - - 2026
+      - 8
+      - 26
+  URL: https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: openai2026navierstokes
+  type: webpage
+  title: Navier-Stokes solution
+  author:
+  - literal: OpenAI
+  container-title: OpenAI
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 8
+  URL: https://openai.com/index/navier-stokes-solution/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
+    online 2026-10-13; not linked in the post)'
+- id: openai2026sweverified
+  type: webpage
+  title: Why we no longer evaluate SWE-bench Verified
+  author:
+  - literal: OpenAI
+  container-title: OpenAI
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 23
+  URL: https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1
+    (blog linked a secondary write-up; primary verified)'
+- id: openclaw2026readme
+  type: software
+  title: OpenClaw
+  author:
+  - family: Steinberger
+    given: Peter
+  - literal: OpenClaw contributors
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://github.com/openclaw/openclaw
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw (README
+    security guidance as of October 2026)'
+- id: opencv
+  type: software
+  title: 'OpenCV: Open Source Computer Vision Library'
+  author:
+  - literal: OpenCV
+  container-title: opencv.org
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://opencv.org/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik'
+- id: orosz2025stackoverflow
+  type: post-weblog
+  title: Stack overflow is almost dead
+  author:
+  - family: Orosz
+    given: Gergely
+  container-title: The Pragmatic Engineer
+  issued:
+    date-parts:
+    - - 2025
+      - 5
+      - 15
+  URL: https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores, 2026/02/08/rant-ia-acabou-com-programadores
+    (chart: monthly questions back to about the 2009 launch level)'
+- id: ouyang2022training
+  type: article
+  title: Training language models to follow instructions with human feedback
+  author:
+  - family: Ouyang
+    given: Long
+  - family: Wu
+    given: Jeff
+  - family: Jiang
+    given: Xu
+  - family: Almeida
+    given: Diogo
+  - family: Wainwright
+    given: Carroll L.
+  - family: Mishkin
+    given: Pamela
+  - family: Zhang
+    given: Chong
+  - family: Agarwal
+    given: Sandhini
+  - family: Slama
+    given: Katarina
+  - family: Ray
+    given: Alex
+  - family: Schulman
+    given: John
+  - family: Hilton
+    given: Jacob
+  - family: Kelton
+    given: Fraser
+  - family: Miller
+    given: Luke
+  - family: Simens
+    given: Maddie
+  - family: Askell
+    given: Amanda
+  - family: Welinder
+    given: Peter
+  - family: Christiano
+    given: Paul
+  - family: Leike
+    given: Jan
+  - family: Lowe
+    given: Ryan
+  container-title: arXiv
+  number: arXiv:2203.02155
+  DOI: 10.48550/arXiv.2203.02155
+  issued:
+    date-parts:
+    - - 2022
+      - 3
+      - 4
+  URL: https://arxiv.org/abs/2203.02155
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (40 contractors; reward model; 1.3B InstructGPT preferred
+    to 175B GPT-3; aligned to a specific group rather than ''human values''; Figure
+    8 French frog-to-ancient-Greece example where GPT-3 replies with more story prompts;
+    read in the paper PDF), 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam'
+- id: pan2025measuring
+  type: article
+  title: Measuring Agents in Production
+  author:
+  - family: Pan
+    given: Melissa Z.
+  - family: Arabzadeh
+    given: Negar
+  - family: Cogo
+    given: Riccardo
+  - family: Zhu
+    given: Yuxuan
+  - family: Xiong
+    given: Alexander
+  - family: Agrawal
+    given: Lakshya A
+  - family: Mao
+    given: Huanzhi
+  - family: Shen
+    given: Emma
+  - family: Pallerla
+    given: Sid
+  - family: Patel
+    given: Liana
+  - family: Liu
+    given: Shu
+  - family: Shi
+    given: Tianneng
+  - family: Liu
+    given: Xiaoyuan
+  - family: Davis
+    given: Jared Quincy
+  - family: Lacavalla
+    given: Emmanuele
+  - family: Basile
+    given: Alessandro
+  - family: Yang
+    given: Shuyi
+  - family: Castro
+    given: Paul
+  - family: Kang
+    given: Daniel
+  - family: Sen
+    given: Koushik
+  - family: Song
+    given: Dawn
+  - family: Gonzalez
+    given: Joseph E.
+  - family: Stoica
+    given: Ion
+  - family: Zaharia
+    given: Matei
+  - family: Ellis
+    given: Marquita
+  container-title: arXiv
+  number: arXiv:2512.04123
+  DOI: 10.48550/arXiv.2512.04123
+  issued:
+    date-parts:
+    - - 2025
+      - 12
+      - 2
+  URL: https://arxiv.org/abs/2512.04123
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit'
+- id: paolino2026rubyllm
+  type: software
+  title: 'RubyLLM 1.14.1: lib/ruby_llm/chat.rb'
+  author:
+  - family: Paolino
+    given: Carmine
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://github.com/crmne/ruby_llm/blob/1.14.1/lib/ruby_llm/chat.rb
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo (verified:
+    ask = add_message + complete; complete is public)'
+- id: patel2023gpt4
+  type: post-weblog
+  title: GPT-4 Architecture, Infrastructure, Training Dataset, Costs, Vision, MoE
+  author:
+  - family: Patel
+    given: Dylan
+  - family: Wong
+    given: Gerald
+  container-title: SemiAnalysis
+  issued:
+    date-parts:
+    - - 2023
+      - 7
+      - 10
+  URL: https://newsletter.semianalysis.com/p/gpt-4-architecture-infrastructure
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente. Post says 1.76T;
+    the SemiAnalysis report is quoted in secondary coverage as ~1.8T across 16 experts;
+    book says ''perto de 1, 8 trilhão'', never confirmed by OpenAI. Paywalled; figure
+    checked via secondary coverage.'
+- id: pcgamesn2025rtx5090
+  type: article-newspaper
+  title: Nvidia GeForce RTX 5090 release date, price, and specs
+  author:
+  - family: Hardwidge
+    given: Ben
+  container-title: PCGamesN
+  issued:
+    date-parts:
+    - - 2025
+      - 1
+      - 23
+  URL: https://www.pcgamesn.com/nvidia/geforce-rtx-5090-release-date-price-specs-benchmarks
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395 (post states
+    ~1, 792 GB/s without a link; NVIDIA''s own page lists 32 GB GDDR7 on 512-bit but
+    no GB/s figure; this spec table gives 1, 792 GB/s)'
+- id: pearl2026artcraft
+  type: article-newspaper
+  title: Someone Vibe Coded a Free Knockoff of Adobe Creative Suite
+  author:
+  - family: Pearl
+    given: Mike
+  container-title: Gizmodo
+  issued:
+    date-parts:
+    - - 2026
+      - 10
+      - 7
+  URL: https://gizmodo.com/someone-vibe-coded-a-free-knockoff-of-adobe-creative-suite-2000823322
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu'
+- id: pelley2023hinton
+  type: article-newspaper
+  title: "'Godfather of Artificial Intelligence' Geoffrey Hinton on the promise, risks
+    of advanced AI"
+  author:
+  - family: Pelley
+    given: Scott
+  container-title: CBS News, 60 Minutes
+  issued:
+    date-parts:
+    - - 2023
+      - 10
+      - 8
+  URL: https://www.cbsnews.com/news/geoffrey-hinton-ai-dangers-60-minutes-transcript/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post dismisses Hinton
+    without a link; verified quote ''I believe it definitely understands, yes'')'
+- id: perlo2026researchers
+  type: article-newspaper
+  title: Two AI researchers leave Anthropic and Google over safety concerns
+  author:
+  - family: Perlo
+    given: Jared
+  container-title: NBC News
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 10
+  URL: https://www.nbcnews.com/tech/security/two-ai-researchers-leave-anthropic-google-safety-concerns-rcna597086
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: petapixel2022pantone
+  type: article-newspaper
+  title: You Have to Pay a Subscription to Use Pantone Colors in Photoshop Now
+  author:
+  - family: Schneider
+    given: Jaron
+  container-title: PetaPixel
+  issued:
+    date-parts:
+    - - 2022
+      - 10
+      - 28
+  URL: https://petapixel.com/2022/10/28/you-have-to-pay-a-subscription-to-use-pantone-colors-in-photoshop-now
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (page returned
+    403 on fetch; facts confirmed by search snippets and other coverage of the same
+    event, e.g. spot colors rendering black; author name not retrieved)'
+- id: piratewires2026coxon
+  type: article-newspaper
+  title: Jacob Coxon worked with AI doomer firm
+  author:
+  - literal: Pirate Wires
+  container-title: Pirate Wires
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+  URL: https://www.piratewires.com/p/jacob-coxon-worked-with-ai-doomer-firm
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (page
+    rate-limited at check time; content confirmed through secondary coverage)'
+- id: posch2026curl
+  type: article-newspaper
+  title: The cURL Project Drops Bug Bounties Due To AI Slop
+  author:
+  - family: Posch
+    given: Maya
+  container-title: Hackaday
+  issued:
+    date-parts:
+    - - 2026
+      - 1
+      - 26
+  URL: https://hackaday.com/2026/01/26/the-curl-project-drops-bug-bounties-due-to-ai-slop/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao'
+- id: powell2026bend
+  type: post-weblog
+  title: Bend 2 and the Vibe-Coding Trap
+  author:
+  - family: Powell
+    given: Liam
+  container-title: Liam Powell's Blog
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 18
+  URL: https://blog.liampwll.com/posts/bend_vibe_coding/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/19/nova-linguagem-voltada-pra-ia-bend-2'
+- id: prefeiturario2026rio35
+  type: webpage
+  title: Rio-3.5-Open-397B
+  author:
+  - literal: Prefeitura da Cidade do Rio de Janeiro
+  container-title: Hugging Face
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 11
+  URL: https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/15/controversia-llm-rio-3-5-plagio (October status re-checked
+    online at drafting)'
+- id: prefeiturario2026rio3open
+  type: webpage
+  title: Prefeitura do Rio anuncia projetos de inovação que serão testados na cidade
+  author:
+  - literal: Prefeitura da Cidade do Rio de Janeiro
+  container-title: Prefeitura do Rio
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 2
+  URL: https://prefeitura.rio/cidade/prefeitura-do-rio-anuncia-projetos-de-inovacao-que-serao-testados-na-cidade/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/15/controversia-llm-rio-3-5-plagio'
+- id: prince2023understanding
+  type: book
+  title: Understanding Deep Learning
+  author:
+  - family: Prince
+    given: Simon J. D.
+  publisher: MIT Press
+  publisher-place: Cambridge, MA
+  ISBN: '9780262048644'
+  issued:
+    date-parts:
+    - - 2023
+  URL: https://udlbook.github.io/udlbook/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: intermediário/técnico; gratuito:
+    PDF no site do livro (CC BY-NC-ND; versão 5.0.3, 9 fev. 2026); edição PT: nenhuma
+    encontrada'
+- id: qwen2026qwen35
+  type: software
+  title: Qwen3.5-35B-A3B
+  author:
+  - literal: Qwen Team
+    Alibaba:
+  container-title: Hugging Face
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 24
+  URL: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo
+    (blog linked qwen.ai; official model card used; release month from secondary sources,
+    late Feb 2026)'
+- id: qwen2026tts
+  type: webpage
+  title: Qwen3-TTS
+  author:
+  - literal: Qwen Team
+    Alibaba:
+  container-title: Qwen
+  issued:
+    date-parts:
+    - - 2026
+      - 1
+      - 22
+  URL: https://qwen.ai/blog?id=qwen3tts-0115
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles;
+    also 2026/02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles.
+    Open-source release date 2026-01-22 per press coverage (gigazine.net, comfyui-wiki.com);
+    the official page renders client-side and could not be read by fetch.'
+- id: radford2018improving
+  type: report
+  title: Improving Language Understanding by Generative Pre-Training
+  author:
+  - family: Radford
+    given: Alec
+  - family: Narasimhan
+    given: Karthik
+  - family: Salimans
+    given: Tim
+  - family: Sutskever
+    given: Ilya
+  publisher: OpenAI
+  publisher-place: San Francisco
+  issued:
+    date-parts:
+    - - 2018
+      - 6
+  URL: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (GPT-1 named in the
+    post without a link; verified online)'
+- id: radford2019better
+  type: post-weblog
+  title: Better Language Models and Their Implications
+  author:
+  - family: Radford
+    given: Alec
+  - family: Wu
+    given: Jeffrey
+  - family: Amodei
+    given: Dario
+  - family: Amodei
+    given: Daniela
+  - family: Clark
+    given: Jack
+  - family: Brundage
+    given: Miles
+  - family: Sutskever
+    given: Ilya
+  container-title: OpenAI Blog
+  issued:
+    date-parts:
+    - - 2019
+      - 2
+      - 14
+  URL: https://openai.com/index/better-language-models/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (read via Wayback
+    Machine copy: 1.5B parameters, 8M pages/40GB, ''not releasing the trained model'',
+    unicorn sample ''10 tries'', author list)'
+- id: raschka2024build
+  type: book
+  title: Build a Large Language Model (From Scratch)
+  author:
+  - family: Raschka
+    given: Sebastian
+  publisher: Manning
+  publisher-place: Shelter Island, NY
+  ISBN: '9781633437166'
+  issued:
+    date-parts:
+    - - 2024
+      - 9
+  URL: https://www.manning.com/books/build-a-large-language-model-from-scratch
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: técnico (Python); não gratuito
+    (código livre em https://github.com/rasbt/LLMs-from-scratch); edição PT: nenhuma
+    encontrada (a Manning lista 9 traduções, nenhuma em português)'
+- id: restic2026
+  type: software
+  title: 'restic: backups done right'
+  author:
+  - literal: restic authors
+  container-title: restic.net
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://restic.net/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas'
+- id: reuters2024limitations
+  type: article-newspaper
+  title: OpenAI and others seek new path to smarter AI as current methods hit limitations
+  author:
+  - family: Hu
+    given: Krystal
+  - family: Tong
+    given: Anna
+  container-title: Reuters
+  issued:
+    date-parts:
+    - - 2024
+      - 11
+      - 11
+  URL: https://www.reuters.com/technology/artificial-intelligence/openai-rivals-seek-new-path-smarter-ai-current-methods-hit-limitations-2024-11-11/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente'
+- id: rice1953classes
+  type: article-journal
+  title: Classes of Recursively Enumerable Sets and Their Decision Problems
+  author:
+  - family: Rice
+    given: Henry Gordon
+  container-title: Transactions of the American Mathematical Society
+  volume: '74'
+  issue: '2'
+  page: 358-366
+  DOI: 10.1090/S0002-9947-1953-0053041-6
+  issued:
+    date-parts:
+    - - 1953
+  URL: https://doi.org/10.1090/S0002-9947-1953-0053041-6
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao
+    (Rice''s theorem named in the post without a link; verified online)'
+- id: rosenblatt1957perceptron
+  type: report
+  title: 'The Perceptron: A Perceiving and Recognizing Automaton (Project PARA)'
+  author:
+  - family: Rosenblatt
+    given: Frank
+  number: 85-460-1
+  publisher: Cornell Aeronautical Laboratory
+  publisher-place: Buffalo, NY
+  issued:
+    date-parts:
+    - - 1957
+      - 1
+  URL: https://websites.umass.edu/brain-wars/1957-the-birth-of-cognitive-science/the-perceptron-a-perceiving-and-recognizing-automaton
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1
+    (fact stated in the post without a link; verified online)'
+- id: roytburg2026agi
+  type: article-newspaper
+  title: AGI is here, Nvidia CEO Jensen Huang has declared. Here's why the market
+    doesn't care
+  author:
+  - family: Roytburg
+    given: Eva
+  container-title: Fortune
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 9
+  URL: https://fortune.com/2026/09/09/markets-agi-nvidia-singularity-wall-street/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: rozen2026senate
+  type: article-newspaper
+  title: US Senate negotiators consider requiring AI firms to mitigate known major
+    risks
+  author:
+  - family: Rozen
+    given: Courtney
+  container-title: Reuters
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 11
+  URL: https://www.reuters.com/legal/litigation/us-senate-negotiators-consider-requiring-ai-firms-mitigate-known-major-risks-2026-09-11/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: rumelhart1986learning
+  type: article-journal
+  title: Learning representations by back-propagating errors
+  author:
+  - family: Rumelhart
+    given: David E.
+  - family: Hinton
+    given: Geoffrey E.
+  - family: Williams
+    given: Ronald J.
+  container-title: Nature
+  volume: '323'
+  issue: '6088'
+  page: 533-536
+  DOI: 10.1038/323533a0
+  issued:
+    date-parts:
+    - - 1986
+      - 10
+  URL: https://doi.org/10.1038/323533a0
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (backpropagation for multi-layer networks; bibliographic
+    data verified online)'
+- id: russo2019endgame
+  type: motion_picture
+  title: 'Avengers: Endgame'
+  author:
+  - family: Russo
+    given: Anthony
+  - family: Russo
+    given: Joe
+  publisher: Marvel Studios
+  issued:
+    date-parts:
+    - - 2019
+  URL: https://en.wikipedia.org/wiki/Avengers:_Endgame
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/15/como-falar-com-o-claude-code-efetivamente (Mark 85 as
+    Stark''s final armor; verified)'
+- id: sanderson2017neural
+  type: motion_picture
+  title: Neural networks
+  author:
+  - family: Sanderson
+    given: Grant
+  container-title: YouTube
+  issued:
+    date-parts:
+    - - 2017
+      - 10
+      - 5
+  URL: https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: leigo/intermediário; gratuito;
+    série de 2017 a 2024 (cap. 5 transformers 1 abr. 2024, cap. 6 atenção 7 abr. 2024;
+    ''Large Language Models explained briefly'' 20 nov. 2024, https://www.youtube.com/watch?v=LPZh9BOjkQs);
+    PT: áudio dublado PT-BR no cap. 5 e no ''explained briefly'', legendas PT-BR no
+    cap. 1'
+- id: schaeffer2023mirage
+  type: paper-conference
+  title: Are Emergent Abilities of Large Language Models a Mirage?
+  author:
+  - family: Schaeffer
+    given: Rylan
+  - family: Miranda
+    given: Brando
+  - family: Koyejo
+    given: Sanmi
+  container-title: Advances in Neural Information Processing Systems 36
+  event: 37th Conference on Neural Information Processing Systems (NeurIPS 2023)
+  publisher: Curran Associates
+  publisher-place: New Orleans, LA
+  issued:
+    date-parts:
+    - - 2023
+  URL: https://arxiv.org/abs/2304.15004
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (emergence attributed to the choice of metric; verified
+    online)'
+- id: sejnowski2020unreasonable
+  type: article-journal
+  title: The unreasonable effectiveness of deep learning in artificial intelligence
+  author:
+  - family: Sejnowski
+    given: Terrence J.
+  container-title: Proceedings of the National Academy of Sciences
+  volume: '117'
+  issue: '48'
+  page: 30033-30038
+  DOI: 10.1073/pnas.1907373117
+  issued:
+    date-parts:
+    - - 2020
+      - 1
+      - 28
+  URL: https://arxiv.org/abs/2002.04806
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (reproduces the New
+    York Times article of 8 July 1958, ''New Navy Device Learns by Doing''; the ''walk,
+    talk, see, write, reproduce itself and be conscious of its existence'' wording
+    cross-checked against secondary quotations, NYT archive not reachable)'
+- id: shadps4
+  type: software
+  title: 'shadPS4: an early PlayStation 4 emulator'
+  author:
+  - literal: shadPS4 developers
+  container-title: shadps4.net
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://shadps4.net/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/23/driveclub-shadps4-e-ia-como-aprender'
+- id: sharma2023sycophancy
+  type: article
+  title: Towards Understanding Sycophancy in Language Models
+  author:
+  - family: Sharma
+    given: Mrinank
+  - family: Tong
+    given: Meg
+  - family: Korbak
+    given: Tomasz
+  - family: Duvenaud
+    given: David
+  - family: Askell
+    given: Amanda
+  - family: Bowman
+    given: Samuel R.
+  - family: Cheng
+    given: Newton
+  - family: Durmus
+    given: Esin
+  - family: Hatfield-Dodds
+    given: Zac
+  - family: Johnston
+    given: Scott R.
+  - family: Kravec
+    given: Shauna
+  - family: Maxwell
+    given: Timothy
+  - family: McCandlish
+    given: Sam
+  - family: Ndousse
+    given: Kamal
+  - family: Rausch
+    given: Oliver
+  - family: Schiefer
+    given: Nicholas
+  - family: Yan
+    given: Da
+  - family: Zhang
+    given: Miranda
+  - family: Perez
+    given: Ethan
+  container-title: arXiv
+  number: arXiv:2310.13548
+  DOI: 10.48550/arXiv.2310.13548
+  issued:
+    date-parts:
+    - - 2023
+      - 10
+      - 20
+  URL: https://arxiv.org/abs/2310.13548
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator (post
+    states sycophancy is documented in all large models, without a link; verified
+    online)'
+- id: shumer2026deleted
+  type: post
+  title: GPT-5.6-Sol accidentally deleted nearly all files on my Mac
+  author:
+  - family: Shumer
+    given: Matt
+  container-title: X
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 10
+  URL: https://x.com/mattshumer_/status/2075657271401390161
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas
+    (title paraphrased from the post''s screenshot; exact day in July 2026 not checked)'
+- id: siliconangle2026anthropicipo
+  type: article-newspaper
+  title: 'Report: Anthropic targets pre-Thanksgiving IPO launch, despite warning of
+    AI''s ''existential risks'''
+  author:
+  - family: Wheatley
+    given: Mike
+  container-title: SiliconANGLE
+  issued:
+    date-parts:
+    - - 2026
+      - 10
+      - 1
+  URL: https://siliconangle.com/2026/10/01/report-anthropic-targets-pre-thanksgiving-ipo-launch-despite-warning-of-ais-existential-risks/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
+    online 2026-10-13; not linked in the post), 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia
+    (verified online 2026-10-13; not linked in the post) Article gives a Nov. 9 target
+    and a valuation of more than US$2 trillion.'
+- id: silver2017mastering
+  type: article
+  title: Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning
+    Algorithm
+  author:
+  - family: Silver
+    given: David
+  - family: Hubert
+    given: Thomas
+  - family: Schrittwieser
+    given: Julian
+  - family: Antonoglou
+    given: Ioannis
+  - family: Lai
+    given: Matthew
+  - family: Guez
+    given: Arthur
+  - family: Lanctot
+    given: Marc
+  - family: Sifre
+    given: Laurent
+  - family: Kumaran
+    given: Dharshan
+  - family: Graepel
+    given: Thore
+  - family: Lillicrap
+    given: Timothy
+  - family: Simonyan
+    given: Karen
+  - family: Hassabis
+    given: Demis
+  container-title: arXiv
+  number: arXiv:1712.01815
+  DOI: 10.48550/arXiv.1712.01815
+  issued:
+    date-parts:
+    - - 2017
+      - 12
+      - 5
+  URL: https://arxiv.org/abs/1712.01815
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas'
+- id: skylot2026jadx
+  type: software
+  title: 'jadx: Dex to Java decompiler'
+  author:
+  - literal: skylot
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://github.com/skylot/jadx
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint
+    (the TikTok analysis README names jadx 1.5.5)'
+- id: sneddon2026photocraft
+  type: post-weblog
+  title: PhotoCraft is an open-source, AI-built clone of Photoshop
+  author:
+  - family: Sneddon
+    given: Joey
+  container-title: OMG! Ubuntu
+  issued:
+    date-parts:
+    - - 2026
+      - 10
+      - 8
+  URL: https://www.omgubuntu.co.uk/2026/10/artcraft-free-photoshop-ai-clone
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (''a superficial
+    facsimile with pronounced flaws''; 5 GB RAM after opening a PSD)'
+- id: storytold2026photocraft
+  type: software
+  title: PhotoCraft
+  author:
+  - literal: Storytold
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 30
+  URL: https://github.com/storytold/photocraft
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (README status
+    ''early alpha''; on 13 Oct 2026 the page showed ~57k stars and 929 open issues;
+    the book says ''mais de 800'')'
+- id: subservient
+  type: software
+  title: 'Subservient: fully automated subtitle synchronization suite'
+  author:
+  - literal: N3xigen
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://github.com/N3xigen/Subservient
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle'
+- id: sumner2025anthropic
+  type: post-weblog
+  title: Bun is joining Anthropic
+  author:
+  - family: Sumner
+    given: Jarred
+  container-title: Bun Blog
+  issued:
+    date-parts:
+    - - 2025
+      - 12
+      - 2
+  URL: https://bun.com/blog/bun-joins-anthropic
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao'
+- id: sumner2026bun
+  type: post-weblog
+  title: Rewriting Bun in Rust
+  author:
+  - family: Sumner
+    given: Jarred
+  container-title: Bun Blog
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 8
+  URL: https://bun.com/blog/bun-in-rust
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu'
+- id: sutskever2024neurips
+  type: motion_picture
+  title: 'Sequence to Sequence Learning with Neural Networks: what a decade (NeurIPS
+    2024 Test of Time talk)'
+  author:
+  - family: Sutskever
+    given: Ilya
+  container-title: YouTube
+  issued:
+    date-parts:
+    - - 2024
+      - 12
+      - 13
+  URL: https://www.youtube.com/watch?v=WQQdd6qGxNs
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/10/12/llms-agentes-competente-o-suficiente; also 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas.
+    Recording uploaded by a third party; ''pre-training as we know it will end'' and
+    ''data is the fossil fuel of AI'' confirmed in press coverage of the talk.'
+- id: taelin2026bend2
+  type: post
+  title: Bend 2 is here!
+  author:
+  - family: Taelin
+    given: Victor
+  container-title: X
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 17
+  URL: https://x.com/VictorTaelin/status/2100681226143092875
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/19/nova-linguagem-voltada-pra-ia-bend-2 (site slogan ''a
+    fast language that blocks AI mistakes via proof'', bend-lang.com)'
+- id: tao2026misalignment
+  type: post-weblog
+  title: A Severe Misalignment of AI in Mathematics
+  author:
+  - family: Tao
+    given: Terence
+  container-title: What's new
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 11
+  URL: https://terrytao.wordpress.com/2026/09/11/a-severe-misalignment-of-ai-in-mathematics/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia'
+- id: tarnoff2023weizenbaum
+  type: article-newspaper
+  title: 'Weizenbaum''s nightmares: how the inventor of the first chatbot turned against
+    AI'
+  author:
+  - family: Tarnoff
+    given: Ben
+  container-title: The Guardian
+  issued:
+    date-parts:
+    - - 2023
+      - 7
+      - 25
+  URL: https://www.theguardian.com/technology/2023/jul/25/joseph-weizenbaum-inventor-eliza-chatbot-turned-against-artificial-intelligence-ai
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (quotes ''very hard to convince that Eliza ... is not
+    human'' and the secretary anecdote; verified online)'
+- id: taylor2026jev
+  type: article-newspaper
+  title: 'Mini-Vibe Check: TypeSafe''s Jev Judged Everything I''ve Written in 0.7
+    Seconds'
+  author:
+  - family: Taylor
+    given: Mike
+  container-title: Every
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 15
+  URL: https://every.to/vibe-check/mini-vibe-check-typesafe-s-jev-judged-everything-i-ve-written-in-0-7-seconds
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam'
+- id: techcrunch2026openaiipo
+  type: article-newspaper
+  title: OpenAI files confidentially for IPO, following Anthropic
+  author:
+  - family: Bellan
+    given: Rebecca
+  container-title: TechCrunch
+  issued:
+    date-parts:
+    - - 2026
+      - 6
+      - 8
+  URL: https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: tencent2026hunyuan3d
+  type: webpage
+  title: Hunyuan 3D
+  author:
+  - literal: Tencent
+  container-title: Tencent Hunyuan
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://3d.hunyuanglobal.com/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/01/23/ai-3d-ja-da-pra-modelar-3d-com-prompts'
+- id: thakur2021beir
+  type: paper-conference
+  title: 'BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information
+    Retrieval Models'
+  author:
+  - family: Thakur
+    given: Nandan
+  - family: Reimers
+    given: Nils
+  - family: Rücklé
+    given: Andreas
+  - family: Srivastava
+    given: Abhishek
+  - family: Gurevych
+    given: Iryna
+  container-title: Proceedings of the Neural Information Processing Systems Track
+    on Datasets and Benchmarks
+  event: 35th Conference on Neural Information Processing Systems (NeurIPS 2021),
+    Datasets and Benchmarks Track
+  issued:
+    date-parts:
+    - - 2021
+  URL: https://arxiv.org/abs/2104.08663
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/06/rag-esta-morto-contexto-longo'
+- id: thenextweb2026bubeck
+  type: article-newspaper
+  title: OpenAI's Bubeck denies trying to cut Anthropic mathematician from credit
+  author:
+  - family: Constantin
+    given: Ana Maria
+  container-title: The Next Web
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 10
+  URL: https://thenextweb.com/news/bubeck-navier-stokes-account-apology-altman
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
+    online 2026-10-13; not linked in the post)'
+- id: tomshardware2026datacenters
+  type: article-newspaper
+  title: Half of planned US data center builds have been delayed or canceled, growth
+    limited by shortages of power infrastructure and parts from China
+  author:
+  - family: Shilov
+    given: Anton
+  container-title: Tom's Hardware
+  issued:
+    date-parts:
+    - - 2026
+      - 4
+      - 3
+  URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/half-of-planned-us-data-center-builds-have-been-delayed-or-canceled-growth-limited-by-shortages-of-power-infrastructure-and-parts-from-china-the-ai-build-out-flips-the-breakers
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic'
+- id: typesafe2026jev
+  type: webpage
+  title: Introducing System One models and Jev
+  author:
+  - literal: TypeSafe
+  container-title: TypeSafe
+  issued:
+    date-parts:
+    - - 2026
+      - 9
+      - 15
+  URL: https://typesafe.ai/blog/introducing-system-one-models-and-jev
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam'
+- id: typesafe2026team
+  type: webpage
+  title: Team
+  author:
+  - literal: TypeSafe
+  container-title: TypeSafe
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://typesafe.ai/team
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam'
+- id: valim2026hacked
+  type: post
+  title: Oops, my Twitter account was temporarily hacked
+  author:
+  - family: Valim
+    given: José
+  container-title: X
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 5
+  URL: https://x.com/josevalim/status/2029628027945021810
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/22/pseudo-techcrunch-tentou-me-pegar-em-golpe-calendly-e-uma-merda'
+- id: vaswani2017attention
+  type: paper-conference
+  title: Attention Is All You Need
+  author:
+  - family: Vaswani
+    given: Ashish
+  - family: Shazeer
+    given: Noam
+  - family: Parmar
+    given: Niki
+  - family: Uszkoreit
+    given: Jakob
+  - family: Jones
+    given: Llion
+  - family: Gomez
+    given: Aidan N.
+  - family: Kaiser
+    given: Lukasz
+  - family: Polosukhin
+    given: Illia
+  container-title: Advances in Neural Information Processing Systems 30
+  event: 31st Conference on Neural Information Processing Systems (NIPS 2017)
+  page: 5998-6008
+  publisher: Curran Associates
+  publisher-place: Long Beach, CA
+  issued:
+    date-parts:
+    - - 2017
+  URL: https://arxiv.org/abs/1706.03762
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores'
+- id: vice2019leesedol
+  type: article-newspaper
+  title: Go Pro Quits the Game, Says AI Is Too Tough to Beat
+  author:
+  - family: Gault
+    given: Matthew
+  container-title: Vice
+  issued:
+    date-parts:
+    - - 2019
+      - 11
+      - 27
+  URL: https://www.vice.com/en/article/go-pro-lee-sedol-quits-says-ai-is-too-tough-to-beat/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (not in the post; added
+    for the interlude; quotes Lee Sedol''s Yonhap interview: ''Even if I become the
+    number one, there is an entity that cannot be defeated''; retirement filed 19
+    Nov 2019)'
+- id: vigliarolo2026anthropic
+  type: article-newspaper
+  title: Anthropic goes nude, exposes Claude Code source by accident
+  author:
+  - family: Vigliarolo
+    given: Brandon
+  container-title: The Register
+  issued:
+    date-parts:
+    - - 2026
+      - 3
+      - 31
+  URL: https://www.theregister.com/2026/03/31/anthropic_claude_code_source_code/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro'
+- id: villalobos2024data
+  type: article
+  title: Will we run out of data? Limits of LLM scaling based on human-generated data
+  author:
+  - family: Villalobos
+    given: Pablo
+  - family: Ho
+    given: Anson
+  - family: Sevilla
+    given: Jaime
+  - family: Besiroglu
+    given: Tamay
+  - family: Heim
+    given: Lennart
+  - family: Hobbhahn
+    given: Marius
+  container-title: arXiv
+  number: arXiv:2211.04325
+  DOI: 10.48550/arXiv.2211.04325
+  issued:
+    date-parts:
+    - - 2024
+      - 6
+      - 4
+  URL: https://arxiv.org/abs/2211.04325
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
+    (Epoch AI data-exhaustion finding stated in the post without a link; verified
+    online)'
+- id: wang2023adversarial
+  type: paper-conference
+  title: Adversarial Policies Beat Superhuman Go AIs
+  author:
+  - family: Wang
+    given: Tony Tong
+  - family: Gleave
+    given: Adam
+  - family: Tseng
+    given: Tom
+  - family: Pelrine
+    given: Kellin
+  - family: Belrose
+    given: Nora
+  - family: Miller
+    given: Joseph
+  - family: Dennis
+    given: Michael D.
+  - family: Duan
+    given: Yawen
+  - family: Pogrebniak
+    given: Viktor
+  - family: Levine
+    given: Sergey
+  - family: Russell
+    given: Stuart
+  container-title: Proceedings of Machine Learning Research
+  event: 40th International Conference on Machine Learning (ICML 2023)
+  volume: '202'
+  publisher: PMLR
+  publisher-place: Honolulu, HI
+  issued:
+    date-parts:
+    - - 2023
+      - 7
+  URL: https://proceedings.mlr.press/v202/wang23g.html
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (not in the post; added
+    for the interlude: >97% win rate vs superhuman KataGo, adversary loses to amateurs,
+    humans learn the attack and consistently beat superhuman AIs, flaw persists after
+    adversarial training)'
+- id: wei2022emergent
+  type: article-journal
+  title: Emergent Abilities of Large Language Models
+  author:
+  - family: Wei
+    given: Jason
+  - family: Tay
+    given: Yi
+  - family: Bommasani
+    given: Rishi
+  - family: Raffel
+    given: Colin
+  - family: Zoph
+    given: Barret
+  - family: Borgeaud
+    given: Sebastian
+  - family: Yogatama
+    given: Dani
+  - family: Bosma
+    given: Maarten
+  - family: Zhou
+    given: Denny
+  - family: Metzler
+    given: Donald
+  - family: Chi
+    given: Ed H.
+  - family: Hashimoto
+    given: Tatsunori
+  - family: Vinyals
+    given: Oriol
+  - family: Liang
+    given: Percy
+  - family: Dean
+    given: Jeff
+  - family: Fedus
+    given: William
+  container-title: Transactions on Machine Learning Research
+  issued:
+    date-parts:
+    - - 2022
+  URL: https://arxiv.org/abs/2206.07682
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (verified online)'
+- id: weizenbaum1966eliza
+  type: article-journal
+  title: 'ELIZA: a computer program for the study of natural language communication
+    between man and machine'
+  author:
+  - family: Weizenbaum
+    given: Joseph
+  container-title: Communications of the ACM
+  volume: '9'
+  issue: '1'
+  page: 36-45
+  DOI: 10.1145/365153.365168
+  issued:
+    date-parts:
+    - - 1966
+      - 1
+  URL: https://doi.org/10.1145/365153.365168
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia (post linked the
+    Wikipedia ELIZA article)'
+- id: wikipedia2025signsai
+  type: webpage
+  title: Wikipedia:Signs of AI writing
+  author:
+  - literal: WikiProject AI Cleanup
+  container-title: Wikipedia
+  issued:
+    date-parts:
+    - - 2025
+  URL: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia'
+- id: wikipedia2026alphagoleesedol
+  type: webpage
+  title: AlphaGo versus Lee Sedol
+  author:
+  - literal: Wikipedia
+  container-title: Wikipedia
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (dates 9-15 March 2016,
+    Four Seasons Seoul; game 4 move 78 on 13 March; Gu Li ''divine move''; AlphaGo''s
+    win estimate collapsing around move 87; verified online)'
+- id: wikipedia2026altair
+  type: webpage
+  title: Altair 8800
+  author:
+  - literal: Wikipedia
+  container-title: Wikipedia
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://en.wikipedia.org/wiki/Altair_8800
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/11/vs-code-e-o-novo-cartao-perfurado (front-panel switch
+    programming verified online; the post shows a photo without a link)'
+- id: wikipedia2026elektro
+  type: webpage
+  title: Elektro
+  author:
+  - literal: Wikipedia
+  container-title: Wikipedia
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://en.wikipedia.org/wiki/Elektro
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (preface; Westinghouse robot at the 1939 New York World''s
+    Fair: ~2.1 m, walked on voice command, ~700 words from a 78-rpm record, smoked
+    cigarettes, blew up balloons)'
+- id: wikipedia2026futurama
+  type: webpage
+  title: Futurama (New York World's Fair)
+  author:
+  - literal: Wikipedia
+  container-title: Wikipedia
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://en.wikipedia.org/wiki/Futurama_(New_York_World%27s_Fair)
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (preface; General Motors exhibit by Norman Bel Geddes,
+    1939 fair theme ''The World of Tomorrow'', model of the US of 1960 with automated
+    highways and rooftop platforms for flying machines)'
+- id: wikipedia2026lgp30
+  type: webpage
+  title: LGP-30
+  author:
+  - literal: Wikipedia
+  container-title: Wikipedia
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://en.wikipedia.org/wiki/LGP-30
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/11/vs-code-e-o-novo-cartao-perfurado (the post embeds a
+    YouTube video, TJjRCCetyo4, now an Usagi Electric LGP-21 restoration episode dated
+    2026-04-19, not a programming session; the book cites the 1963 date of the LGP-21
+    from this page instead. The post''s ''second oldest personal computer after the
+    Bendix G-15'' claim was not verifiable and was dropped)'
+- id: wikipedia2026nes
+  type: webpage
+  title: Nintendo Entertainment System
+  author:
+  - literal: Wikipedia
+  container-title: Wikipedia
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://en.wikipedia.org/wiki/Nintendo_Entertainment_System
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms
+    (post states Nintendo''s exclusivity contracts without a link; verified: ''restrictive
+    licensing terms, which included platform exclusivity'')'
+- id: williams2015ng
+  type: article-newspaper
+  title: 'AI guru Ng: Fearing a rise of killer robots is like worrying about overpopulation
+    on Mars'
+  author:
+  - family: Williams
+    given: Chris
+  container-title: The Register
+  issued:
+    date-parts:
+    - - 2015
+      - 3
+      - 19
+  URL: https://www.theregister.com/2015/03/19/andrew_ng_baidu_ai/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
+    online 2026-10-13; not linked in the post)'
+- id: willison2024chollet
+  type: post-weblog
+  title: Quoting François Chollet
+  author:
+  - family: Willison
+    given: Simon
+  container-title: Simon Willison's Weblog
+  issued:
+    date-parts:
+    - - 2024
+      - 2
+      - 10
+  URL: https://simonwillison.net/2024/Feb/10/francois-chollet
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+    (post quotes Chollet''s Feb 2024 X post without a link; verified via this repost)'
+- id: wise1951day
+  type: motion_picture
+  title: The Day the Earth Stood Still
+  author:
+  - family: Wise
+    given: Robert
+  publisher: 20th Century-Fox
+  issued:
+    date-parts:
+    - - 1951
+      - 9
+      - 18
+  URL: https://en.wikipedia.org/wiki/The_Day_the_Earth_Stood_Still
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original (preface; Klaatu and the robot Gort land in Washington
+    and warn that Earth will be destroyed if its atomic-age aggression continues).
+    Brazilian title: O dia em que a Terra parou.'
+- id: wolfram2023chatgpt
+  type: book
+  title: What Is ChatGPT Doing ... and Why Does It Work?
+  author:
+  - family: Wolfram
+    given: Stephen
+  publisher: Wolfram Media
+  publisher-place: Champaign, IL
+  ISBN: '9781579550813'
+  issued:
+    date-parts:
+    - - 2023
+      - 3
+      - 9
+  URL: https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: antes (leituras prévias); nível: leigo; gratuito: o ensaio completo
+    está no site do autor (14 fev. 2023); edição PT: sim, PT-PT, ''O Que Faz o ChatGPT
+    e Como Funciona'', Casa das Letras, ago. 2023, ISBN 9789896618315 (ebook 9789896618322);
+    nenhuma edição brasileira encontrada'
+- id: worawit2026blutter
+  type: software
+  title: 'Blutter: Flutter mobile application reverse engineering tool'
+  author:
+  - literal: worawit
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://github.com/worawit/blutter
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint'
+- id: wu2019katago
+  type: article
+  title: Accelerating Self-Play Learning in Go
+  author:
+  - family: Wu
+    given: David J.
+  container-title: arXiv
+  number: arXiv:1902.10565
+  DOI: 10.48550/arXiv.1902.10565
+  issued:
+    date-parts:
+    - - 2019
+      - 2
+      - 27
+  URL: https://arxiv.org/abs/1902.10565
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (surpasses ELF''s final
+    model after 19 days on fewer than 30 GPUs vs thousands for ELF/AlphaZero; verified
+    online)'
+- id: yang2023rlcd
+  type: article
+  title: 'RLCD: Reinforcement Learning from Contrastive Distillation for Language
+    Model Alignment'
+  author:
+  - family: Yang
+    given: Kevin
+  - family: Klein
+    given: Dan
+  - family: Celikyilmaz
+    given: Asli
+  - family: Peng
+    given: Nanyun
+  - family: Tian
+    given: Yuandong
+  container-title: arXiv
+  number: arXiv:2307.12950
+  DOI: 10.48550/arXiv.2307.12950
+  issued:
+    date-parts:
+    - - 2023
+      - 7
+      - 24
+  URL: https://arxiv.org/abs/2307.12950
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam'
+- id: zai2025glm47
+  type: webpage
+  title: GLM-4.7
+  author:
+  - literal: Z.ai
+  container-title: Z.ai
+  issued:
+    date-parts:
+    - - 2025
+      - 12
+      - 22
+  URL: https://z.ai/blog/glm-4.7
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard'
+- id: zai2026glm47flash
+  type: software
+  title: GLM-4.7-Flash
+  author:
+  - literal: Z.ai
+  container-title: Hugging Face
+  issued:
+    date-parts:
+    - - 2026
+      - 1
+      - 19
+  URL: https://huggingface.co/zai-org/GLM-4.7-Flash
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim. Model
+    card: 30B-A3B MoE. The post calls it ''the same 30B GLM 4.7, quantized''; the
+    card shows it is a separate, smaller sibling (GLM-4.7 itself is much larger),
+    so the chapter says only ''irmão menor do GLM 4.7, com 30 bilhões de parâmetros''.'
+- id: zeff2024agi
+  type: article-newspaper
+  title: 'Microsoft and OpenAI have a financial definition of AGI: Report'
+  author:
+  - family: Zeff
+    given: Maxwell
+  container-title: TechCrunch
+  issued:
+    date-parts:
+    - - 2024
+      - 12
+      - 26
+  URL: https://techcrunch.com/2024/12/26/microsoft-and-openai-have-a-financial-definition-of-agi-report/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (post
+    linked Wired; TechCrunch reports The Information''s original story), 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia
+    (key shared with ch14; TechCrunch reports The Information''s original story)'
+- id: zig2026conduct
+  type: webpage
+  title: Code of Conduct
+  author:
+  - literal: Zig Software Foundation
+  container-title: Zig Programming Language
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://ziglang.org/code-of-conduct/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao'
+- id: zuckerberg2022layoffs
+  type: webpage
+  title: Mark Zuckerberg's Message to Meta Employees
+  author:
+  - family: Zuckerberg
+    given: Mark
+  container-title: Meta Newsroom
+  issued:
+    date-parts:
+    - - 2022
+      - 11
+      - 9
+  URL: https://about.fb.com/news/2022/11/mark-zuckerberg-layoff-message-to-employees/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post states end-2022
+    big-tech mass layoffs without a link; verified online: ''more than 11, 000'')'

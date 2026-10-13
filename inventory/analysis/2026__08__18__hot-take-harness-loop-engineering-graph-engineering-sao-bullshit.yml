@@ -1,0 +1,60 @@
+id: "2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit"
+source_sha256: "903caf191c73bee2866924e22860432a7b13b42e4c7a7a170f3fe4a9293b7e25"
+title_en: "Hot take: Harness, Loop Engineering and Graph Engineering are bullshit"
+ai_relevance: core
+ai_relevance_reason: "Argues about how AI agents should be used and sold: against new named 'engineering' disciplines and heavy multi-agent orchestration."
+genre: rant
+themes: [hype-and-marketing, coding-agents-tools, software-engineering-discipline, vibe-coding-practice]
+thesis: "When the technology becomes a commodity, money moves to taxonomy: harness, loop and graph engineering and spec-driven development are small real practices inflated into courses and certifications, and plain software engineering (tests, CI, pair-style iteration) is what actually works."
+summary: "Akita defends a tweet saying new AI 'engineering' disciplines exist to sell consulting and courses. His evidence is more than 30 public repositories and his benchmark data: for weak models a harness can rescue results, for frontier models harness is noise (one-point differences), and where it really matters is cost via caching (a run 5x cheaper in the vendor's own CLI). Loop engineering is test-and-review, graph engineering is a diagram for a straight line, and multi-agent chains multiply failure (ten steps at 90% each succeed about 35% of the time). He cites Cognition, Anthropic's own multi-agent post (15x tokens, coding poorly suited) and a Berkeley study of production agents. He argues spec-driven development is a program written in prose, repeats the failed UML/MDA promise, and contradicts agile's lesson that software emerges by building. He recommends Agile Vibe Coding (XP with an LLM), uses his ai-memory tool to switch harnesses freely, and says FOMO is the sales mechanism."
+key_claims:
+  - claim: "For frontier models the harness changes scores by about a point (noise); for weak models it can rescue results; the main real effect is cost through caching."
+    time_sensitive: true
+  - claim: "A pipeline of ten steps with 90% accuracy each succeeds only about 35% of the time."
+    time_sensitive: false
+  - claim: "No multi-agent planner-executor combination beat Opus alone in his April tests."
+    time_sensitive: true
+  - claim: "Anthropic's multi-agent research system uses about 15x more tokens, and 80% of its improvement came from spending more tokens."
+    time_sensitive: true
+  - claim: "A spec precise enough to generate correct code is already a program, written in prose that cannot be compiled or tested."
+    time_sensitive: false
+  - claim: "Gartner estimates only about 130 of thousands of vendors selling 'agentic AI' are real ('agent washing') and 40% of agentic projects will be canceled by end of 2027."
+    time_sensitive: true
+  - claim: "Agile Vibe Coding is XP with an LLM: tests, clean code, CI, pairing and deploy; the AI idea is 10% and normal engineering 90%."
+    time_sensitive: false
+fears_addressed:
+  - "FOMO: I am falling behind if I do not learn the latest AI methodology"
+  - "Do I need a course or certificate to use AI well?"
+  - "Are multi-agent systems the future?"
+reader_value: "High. Gives an anxious reader a skeptical framework for AI hype selling: new names, courses, certifications and FOMO; and a plain message that basic engineering and judgment matter more."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "When technology becomes a commodity, money migrates to taxonomy"
+    - "Ten steps at 90% = 35%: why long agent chains fail"
+    - "FOMO as sales mechanism; ask for the receipts (what did these techniques improve?)"
+    - "Specs as programs in prose; software emerges rather than being planned"
+    - "Agile Vibe Coding: the AI is 10%, engineering is 90%"
+  cut:
+    - "Benchmark numbers, ai-memory feature details, citations lists"
+jargon: [harness, agent, multi-agent, orchestration, loop engineering, graph engineering, spec-driven development, vibe coding, XP, CI, FOMO, cache, token, agent washing, MDA]
+illustration_ideas:
+  - "Compounding error: success probability across a chain of agents"
+  - "Spec-to-code: prose spec has no compiler or tests, so ambiguity becomes undetected bugs"
+  - "Hype funnel: new name -> course -> certification -> recertification"
+people_events:
+  - "Cognition (Devin) 'Don't Build Multi-Agents'"
+  - "Anthropic multi-agent research system"
+  - "Thoughtworks Technology Radar"
+  - "Gartner agent washing"
+  - "Pedro Arantes"
+related_posts:
+  - "2026/08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7"
+  - "2026/07/20/novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas-ias"
+  - "2026/04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos"
+  - "2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias"
+  - "2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel"
+prerequisites: ["What an AI coding agent and harness are"]
+series: ""
+obsolescence: "Benchmark figures are August 2026; the argument and terms ('loop engineering' etc.) are tied to mid-2026 hype cycle and may be replaced by new buzzwords."

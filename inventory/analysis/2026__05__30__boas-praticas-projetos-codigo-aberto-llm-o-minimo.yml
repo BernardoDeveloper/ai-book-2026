@@ -1,0 +1,50 @@
+id: "2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo"
+source_sha256: "00466ecee7b39ae01c57862140d336ab58b1d5f9807d02b29b001d6e304ed47d"
+title_en: "Open Source Best Practices with LLMs: The Minimum"
+ai_relevance: substantial
+ai_relevance_reason: "Written from the experience of shipping many LLM-built projects; uses Claude Code/Codex for releases, deploys and PR review, but most content is release engineering."
+genre: essay
+themes: [software-engineering-discipline, vibe-coding-practice, coding-agents-tools, open-source-community]
+thesis: "Generating code with an LLM is the easy part; a project is only ready when it is easy to install, backed by tests and CI, and documented around the problem it solves. Standardized structure also makes agents reliable."
+summary: "After publishing many personal projects built mostly with Claude Code and Codex, Akita lists three pillars: installation surface, automated tests and CI, and documentation. He explains building a binary once and repackaging it into many formats (Homebrew, AUR, AppImage, deb/rpm, Docker), plus tag-triggered releases and changelogs. He describes using LLMs as tireless PR reviewers with prompts that tell the model not to trust the PR author's description, while the human decides what to merge. Identical structure across projects (bin/deploy, release from tag) lets him ask an agent to deploy or release reliably. His deployment is deliberately simple: Docker, a private registry and SSH, not Kubernetes. The closing lesson is that nobody cares about your stack; the README should lead with the problem solved."
+key_claims:
+  - claim: "No open source project is ready without easy installation, tests with CI, and documentation, in that order of importance."
+    time_sensitive: false
+  - claim: "Standardized project structure makes agents able to deploy or release on command because nothing has to be guessed."
+    time_sensitive: false
+  - claim: "LLMs are excellent code reviewers and more consistent than a tired human, but the human must pilot and decide to merge, fix or refuse."
+    time_sensitive: false
+  - claim: "He closed almost 40 PRs and 20 issues on one project in a few days using LLM-assisted review."
+    time_sensitive: true
+  - claim: "Users care about the problem solved, not the technology stack; leading a README with the stack is a mistake."
+    time_sensitive: false
+fears_addressed:
+  - "Is AI-generated code just a pile of unusable code?"
+  - "Do I still need humans in the loop for reviewing AI output?"
+reader_value: "Medium-low. The README/problem-first lesson and the human-signs-off review stance are broadly useful; the CI and packaging detail is niche."
+technical_depth: 4
+evergreen: 4
+book_use:
+  keep:
+    - "Generating code is the easy part; what comes after git init is the real work"
+    - "Review prompt: do not trust the author's description, read the code"
+    - "LLM as tireless reviewer, human signs off"
+    - "Nobody cares about your stack; describe the problem solved"
+  cut:
+    - "Packaging format catalog, YAML and shell snippets"
+    - "macOS signing and cross-compilation details"
+    - "Home server deploy script"
+jargon: [CI, GitHub Actions, release, changelog, Docker, registry, pull request, binary, Homebrew, AUR, code signing, Kubernetes, README]
+illustration_ideas:
+  - "Build once, package many: one binary fanning out to formats"
+  - "Human-in-the-loop PR review pipeline with LLM auditor and human decision"
+people_events:
+  - "Akita's projects: ai-memory, ai-jail, Frank series"
+  - "Anthropic Claude Code, OpenAI Codex"
+related_posts:
+  - "2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso"
+  - "2026/04/20/clean-code-para-agentes-de-ia"
+  - "2026/03/31/migrando-meu-home-server-com-claude-code"
+prerequisites: [coding agent, git]
+series: ""
+obsolescence: "Specific CI actions, packaging tools and runner versions will date; the three-pillar advice is durable."

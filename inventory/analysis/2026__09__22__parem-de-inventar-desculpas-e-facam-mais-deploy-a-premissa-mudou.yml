@@ -1,0 +1,47 @@
+id: "2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou"
+source_sha256: "0a4255b7f3b8974a7d3a8714f0f6479a0a8dd16152f356d8951bf6f2d05cc3c3"
+title_en: "Stop making excuses and deploy more: with AI, the premise changed"
+ai_relevance: substantial
+ai_relevance_reason: "The argument rests on LLM agents lowering the cost of fixing bugs, and the author describes his agent-driven workflow and output."
+genre: essay
+themes: [software-engineering-discipline, vibe-coding-practice, coding-agents-tools]
+thesis: "Because AI makes fixing bugs fast and cheap, holding code back for slow human review costs more than shipping and correcting, provided basic engineering safeguards (tests, CI, rollback, flags, staging) exist."
+summary: "Akita argues that with frontier LLMs fixing a bug after release is now quick and cheap, so withholding deploys for line-by-line review is a bottleneck. He stresses this is not 'ship anything': it requires automated tests, CI, hostile automated review, feature flags, staging, rollback and observability. He cites DORA data and agile history showing frequent small deploys reduce failures. He lists honest limits: rollback cannot undo real-world consequences like payments, database migrations need expand-contract, public libraries have downstream users, app stores slow things, and his evidence comes from projects he owns alone. He shows his output since February (30+ open-source projects, over 1.6 million lines with agents, multi-platform release pipelines triggered by a tag) and says he has never seen an LLM do something randomly destructive unprompted. He ends that real users reporting issues, not his reviews, keep quality up, and that if review takes longer than building, you are the bottleneck."
+key_claims:
+  - claim: "Fixing a bug after release has become fast and cheap with AI agents, so holding deploys for manual review is often a cost, not prudence."
+    time_sensitive: false
+  - claim: "Frontier LLMs make fewer mistakes than most human developers he has seen in code review, and errors are usually from whoever drives the harness."
+    time_sensitive: true
+  - claim: "DORA research shows frequent deploys correlate with lower failure rates and faster recovery."
+    time_sensitive: false
+  - claim: "Rollback can't undo external consequences (payments, safety), and database migrations need expand-contract; those domains need stricter review regardless of who wrote the code."
+    time_sensitive: false
+  - claim: "Author produced over 1.6 million lines of code with LLMs since February and has never seen an LLM do something randomly destructive unrequested (anecdotal, single-owner projects)."
+    time_sensitive: true
+  - claim: "For ai-memory, 249 of 287 issues and 361 human PRs came from outside contributors; real usage, not automated review, keeps quality grounded."
+    time_sensitive: true
+fears_addressed:
+  - "AI-written code will flood production with bugs"
+  - "AI makes human software engineers unnecessary (it multiplies the judgment engineers already have)"
+reader_value: "Medium. Explains why AI changes the economics of fixing bugs, while insisting that engineering fundamentals and human judgment remain required; clearly flags the limits of his evidence."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "The premise shift: cost of correcting errors fell, so process should change"
+    - "Not 'ship anything': guardrails make speed safe"
+    - "Honest limits: irreversible consequences, databases, public libraries, single-owner evidence"
+    - "You only learn from code that is used; real users are the true reviewers"
+    - "AI doesn't replace judgment, it multiplies it"
+  cut:
+    - "CI/CD pipeline details, landing pages, podcast Discord bot, platform build lists"
+    - "Windows VM tangent"
+jargon: [deploy, CI/CD, rollback, feature flag, staging, harness, code review, DORA, Extreme Programming, expand-contract migration, semver, pull request, observability, LLM, agent]
+illustration_ideas:
+  - "pipeline with safety layers: tests, CI, flag, staging, production, rollback arrow"
+  - "cost of fixing a bug before vs after AI: time to repair curve"
+people_events: [Kent Beck, Martin Fowler, DHH, Agile Manifesto Snowbird 2001, DORA State of DevOps, José Valim (not here), ai-memory, ai-jail, The M.Akita Chronicles]
+related_posts: ["2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1", "2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia"]
+prerequisites: ["What CI/CD and deploy are", "What an AI coding agent is"]
+series: ""
+obsolescence: "Counts (lines, PRs, subscribers, repos) are a Sept 2026 snapshot. The core argument is durable but depends on LLM reliability remaining at current levels."

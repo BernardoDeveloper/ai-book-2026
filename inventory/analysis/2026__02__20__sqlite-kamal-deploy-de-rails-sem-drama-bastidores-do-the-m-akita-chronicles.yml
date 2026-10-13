@@ -1,0 +1,32 @@
+id: "2026/02/20/sqlite-kamal-deploy-de-rails-sem-drama-bastidores-do-the-m-akita-chronicles"
+source_sha256: "e5d467f1612a5a766b0ff01a2e1164043eeb46d73342211c3055cc1e64fbfdcd"
+title_en: "SQLite + Kamal: Rails Deploys Without Drama (Behind the Scenes of The M.Akita Chronicles)"
+ai_relevance: none
+ai_relevance_reason: "Pure Rails 8 / SQLite / Kamal deployment post, part 7 of a newsletter-project series. No AI discussion."
+genre: tutorial
+themes: [non-ai, software-engineering-discipline]
+thesis: "Most applications never needed the infrastructure complexity (PostgreSQL, Redis, Kubernetes) the industry assumed; Rails 8 with SQLite and Kamal on one cheap VPS is enough."
+summary: "Akita describes running a full Rails 8 app (database, job queue, cache, websockets) on a single 12 dollar per month VPS using SQLite files instead of PostgreSQL and Redis. Kamal handles Docker-based deploys over SSH with zero downtime through a proxy, automatic Let's Encrypt SSL, hooks and a secrets file. Docker volumes keep SQLite data alive across deploys, and VACUUM INTO gives an atomic hourly backup, while naive file copies of a live database can corrupt the backup. He lists when not to use SQLite (multiple writers, huge datasets, high availability). A cost table compares roughly 84 dollars per month for the classic stack against 12 dollars. The conclusion is that SQLite plus Kamal is not a downgrade but a recognition that most apps never needed the complexity."
+key_claims:
+  - claim: "Rails 8 can run primary DB, job queue, cache and websockets all on SQLite files."
+    time_sensitive: true
+  - claim: "A full production app can run on a single 12 USD/month VPS with zero external services."
+    time_sensitive: true
+  - claim: "VACUUM INTO produces an atomic, consistent backup of a live SQLite DB; copying the raw file can corrupt it."
+    time_sensitive: false
+  - claim: "SQLite is wrong for multi-node writers, very large datasets, or replication/high availability."
+    time_sensitive: false
+fears_addressed: []
+reader_value: "low. Pure deployment tooling, no AI content; only the broader lesson that simple setups often suffice."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep: ["The idea that most software never needed the complexity the industry sold"]
+  cut: ["Kamal config, Dockerfile details, hooks, secrets, cost table"]
+jargon: ["VPS", "SQLite", "Docker", "reverse proxy", "zero downtime deploy"]
+illustration_ideas: []
+people_events: ["Rails 8", "Kamal (Basecamp/37signals)"]
+related_posts: []
+prerequisites: []
+series: "m-akita-chronicles"
+obsolescence: "Rails 8 / Kamal versions and the 12 USD VPS cost figures will date; the SQLite-is-enough argument is durable."

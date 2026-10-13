@@ -1,0 +1,12 @@
+notes:
+  - "Source beats outline on 'fim de semana': the run started Monday 6 April 2026 ~18:30 and ended Wednesday morning (~39 h from first to last translation commit). The interlude keeps the title and says it was a 'fim de semana estendido que caiu no meio da semana'."
+  - "Figures kept: 727 PT posts, 354 EN files, 80+ commits, ~90% good, Max 20x plan exceeded for the first time, 91% weekly quota, ~R$280 (~US$50) extra usage, 429 rate limits. All April 2026 snapshots."
+  - "Refusals: six posts (Jobs Stanford speech, two Ayn Rand chapters, Atlas Shrugged money speech, anti-Nazi post, democracy/ethics essay) refused by Claude and GPT via API; translated by local Qwen 3.5 35B (cited qwen2026qwen35, Alibaba, Apache-2.0). The post's claim that this Qwen was 'um dos melhores open source' (from superseded 04/05 benchmark) was NOT used."
+  - "Half-clause glosses: token (@sec-ch01), modelo aberto (@sec-ch13). Mentions that the agent ran a style-cleanup pass on each translation (the post's 'humanizer'), without naming the skill."
+  - "Hook into Part III/ch11: the same Qwen had been in his own coding benchmark that April; 'medir modelo de IA é bem mais traiçoeiro do que traduzir vinte anos de blog'. Uses only 04/09 facts."
+  - "Posfácio could call back to this interlude: the book itself was reorganised with the same agents."
+integration:
+  - "Fact/logic fix: heading 'Os dez por cento que disseram não' and 'Os outros dez por cento...' implied that 10% of the posts were refused. Only six were (about 2% of the 354), and the 90% was about translation quality. Heading is now 'Os seis que disseram não' and the transition reads 'Nem tudo passou, porém.' The post makes the same conflation."
+  - "'digitei, mais ou menos, isto ... Foi literalmente isso' -> 'Foi só isso' (contradiction removed)."
+  - "Hook from ch10 now ends on the decision rather than the scene, so the interlude's opening ('Segunda-feira, 6 de abril ... umas seis e meia da tarde') is no longer duplicated. ch09 no longer teases this interlude."
+  - "Fact-check against 04/09: 6 Apr ~18:30 start, ~39 h, 80+ commits, 727/354, Max 20x, 91% weekly, R$280.88, 429 errors, six refusals, Qwen 3.5 35B. All hold. Close-to-ch11 hook is consistent with ch11's opening ('Fazia três semanas...')."

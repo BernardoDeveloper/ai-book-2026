@@ -1,0 +1,37 @@
+id: "2026/04/18/omarchy-no-thinkpad-t14-gen-6"
+source_sha256: "5c59af958dfea5fa314e4a6c579d090b2af383813a15ad6b0912ee40d31d09e0"
+title_en: "Omarchy on a ThinkPad T14 Gen 6: Mini-Review and Full Setup"
+ai_relevance: tangential
+ai_relevance_reason: "Laptop and Linux setup guide; Claude Code is mentioned as the companion tool and a one-paragraph aside says expensive local-LLM hardware is a weekend hobby, not a production tool."
+genre: tutorial
+themes: [non-ai, hardware-and-infrastructure]
+thesis: "A modest, rugged ThinkPad running Omarchy Linux makes a good remote companion for SSH, Claude Code and NAS access, provided you configure laptop-specific power, input and security settings."
+summary: "Akita bought a Lenovo ThinkPad T14 Gen 6 as a companion laptop to his main desktop (Ryzen 9, RTX 5090), not as a primary machine. He reviews it as unglamorous but rugged with good ports and fingerprint support. He explains using Tailscale to SSH home from anywhere, why he does not use a Mac (including a short claim that expensive unified-memory Macs for local LLMs are a hobby, with open models not matching Claude Opus), and why he picked Omarchy (Arch plus Hyprland defaults). Most of the post is configuration: TLP power management, suspend and lid behavior, touchpad, fingerprint for sudo and lock screen, the ThinkPad Brazilian keyboard variant, fcitx5, audio firmware, fwupd, fractional scaling, Btrfs snapshots, NFS to a Synology NAS, public WiFi hardening, SSH agent persistence, shell tooling and Waybar widgets (including a Claude Code usage bar). He notes he used the approach of letting Claude Code guide setup, following his earlier home server migration. He advises waiting 6-12 months after a laptop launches before buying for Linux and keeping config in Git."
+key_claims:
+  - claim: "Expensive hardware for running LLMs locally (e.g. a 128GB Mac) is a weekend hobby, not a production tool, because open models that fit do not match Claude Opus quality."
+    time_sensitive: true
+  - claim: "Tailscale lets a laptop reach a home machine over an encrypted private mesh without opening ports to the internet."
+    time_sensitive: false
+  - claim: "For Linux laptops, avoid brand-new models and wait 6-12 months for drivers and documentation."
+    time_sensitive: false
+fears_addressed: []
+reader_value: "low. Almost entirely Linux laptop configuration; only the passing local-LLM-hardware opinion and the Tailscale explanation have any value for a lay reader."
+technical_depth: 5
+evergreen: 2
+book_use:
+  keep:
+    - "Aside: local LLM hardware as hobby versus production tool (cross-reference to benchmark posts)"
+  cut:
+    - "All laptop configuration, power, keyboard, audio, Btrfs, NFS, shell tooling"
+    - "Hardware review"
+jargon: [Claude Code, local LLM, VPN, SSH, Tailscale, Linux]
+illustration_ideas:
+  - "Private mesh network connecting laptop to home desktop without opening ports (optional)"
+people_events:
+  - "Lenovo ThinkPad T14 Gen 6"
+  - "Omarchy (DHH) Linux distribution"
+  - "Tailscale"
+related_posts: ["2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus", "2026/03/31/migrando-meu-home-server-com-claude-code"]
+prerequisites: []
+series: "omarchy"
+obsolescence: "Hardware model, kernel/driver support versions and package behavior are April 2026 specifics."

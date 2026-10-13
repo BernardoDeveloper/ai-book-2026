@@ -1,0 +1,42 @@
+id: "2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+source_sha256: "82777df93da3ba3bf92807e76d3326dc878e81b79d78d456926828131b3274eb"
+title_en: "Claude Code's Source Code Leaked: What We Found Inside"
+ai_relevance: core
+ai_relevance_reason: "Analysis of the internals of a leading AI coding agent: memory architecture, multi-agent coordination, hidden features, context limits, and DRM."
+genre: news-analysis
+themes: [coding-agents-tools, agent-memory-and-context, reverse-engineering, software-engineering-discipline]
+thesis: "The accidental source-map leak of Claude Code exposes a sophisticated agent with an elegant layered memory design, but also an unmaintainable codebase and a weak DRM; it illustrates fast AI-assisted development without engineering discipline."
+summary: "On 31 March 2026 a security researcher noticed that the Claude Code npm package (v2.1.88) shipped a 59.8 MB source map exposing about 512,000 lines of TypeScript, caused by a packaging mistake. Akita summarizes what people found: 44 feature flags with unreleased modes (KAIROS proactive assistant, a Tamagotchi-like Buddy, ULTRAPLAN remote planning, multi-agent coordinator), and a three-layer memory design in which a small index file is always loaded and detailed topic files are fetched on demand, with a background 'dream' consolidation and memory treated as a hint to verify, not truth. Other findings: an 'Undercover Mode' that hides internal information in public commits, anti-distillation measures, and a request-signing scheme (cch hash) that was reverse engineered within a day because it used a static non-cryptographic xxHash64 seed. He lists context limits (file reads capped at 2,000 lines, tool results truncated, cache bugs inflating token cost) and quotes a 6.5/10 'staff-engineer spaghetti' rating, with a 3,167-line function. He ties this to his thesis that vibe coding without discipline accumulates mess and covers the clean-room debate, DMCA takedown of about 8,100 repositories and a partial retraction, and the Claw-Code reimplementation."
+key_claims:
+  - claim: "Claude Code v2.1.88 on npm included a source map exposing ~512k lines of TypeScript due to a release packaging error (Anthropic: human error, not a security breach)."
+    time_sensitive: true
+  - claim: "Claude Code memory is layered: a short always-loaded index of pointers, topic files fetched on demand, raw transcripts only searched; memory is treated as a hint to be verified."
+    time_sensitive: true
+  - claim: "A background 'dream' process consolidates memory only after 24 hours, 5 sessions, and a lock."
+    time_sensitive: true
+  - claim: "The request-signing DRM used a static xxHash64 seed and was reverse engineered within a day; it was security by obscurity."
+    time_sensitive: true
+  - claim: "Claude Code truncates file reads at 2,000 lines and tool results at 50,000 characters, and compresses old context."
+    time_sensitive: true
+  - claim: "The codebase contains a 3,167-line function with twelve nesting levels and a GPT-5.4 rating of 6.5/10, which he reads as ungoverned AI-assisted speed."
+    time_sensitive: true
+  - claim: "Anthropic's DMCA notice hit ~8,100 repositories and was partly retracted a day later."
+    time_sensitive: true
+  - claim: "Cache invalidation bugs made uncached tokens cost 10-20x more, draining user quotas."
+    time_sensitive: true
+  - claim: "The leak was avoidable: a one-line .npmignore, a bundler flag, or a CI check."
+    time_sensitive: false
+fears_addressed: ["What is really inside an AI coding assistant?", "Are AI companies' products as polished as the marketing suggests?", "Does AI remember everything about me?"]
+reader_value: "Moderate to high: demystifies an agent as software with limits, memory tricks and mess; the memory-as-index design and context limits are good explanatory material. Heavy product-specific and legal details date quickly."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep: ["Three-layer memory idea: tiny index always loaded, details fetched on demand, memory is a hint not truth", "Context truncation limits as proof agents do not 'see' everything", "Irony: leader of AI-assisted coding ships a leaky, messy product; speed without discipline", "Security by obscurity falls in hours"]
+  cut: ["Hash seed and DRM code details", "Buddy/KAIROS feature catalogue", "DMCA and clean-room legal detail", "Source list"]
+jargon: ["source map", "npm", "feature flag", "agent", "context window", "token", "prompt cache", "multi-agent", "system prompt", "distillation", "DRM", "reverse engineering", "clean room", "CLAUDE.md"]
+illustration_ideas: ["Three-layer agent memory: index always loaded, topic files on demand, transcripts only grepped", "How a context window fills, compresses and truncates", "Source map: how a debug file reveals the original code"]
+people_events: ["Anthropic Claude Code leak (31 March 2026)", "Chaofan Shou", "Bun / Jarred Sumner", "OpenCode", "Claw-Code", "@thekitze", "@StraughterG", "GitHub DMCA takedown"]
+related_posts: ["2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw", "2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito"]
+prerequisites: ["What a coding agent is", "What a context window is"]
+series: "claude-code-internals"
+obsolescence: "Event-bound: feature flags, version 2.1.88, DMCA status and star counts are a 31 March to 2 April 2026 snapshot; the post was updated 2 April and later developments supersede it."

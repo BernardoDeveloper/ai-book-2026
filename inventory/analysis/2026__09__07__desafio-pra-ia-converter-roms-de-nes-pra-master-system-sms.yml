@@ -1,0 +1,45 @@
+id: "2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms"
+source_sha256: "7c80fc86deb833bcd68d88a4ddb11c5222028f30bc368acdbc763a60ff365c5b"
+title_en: "Challenge for AI: converting NES ROMs to Master System (SMS)"
+ai_relevance: substantial
+ai_relevance_reason: "Project log built with frontier LLM agents; central lesson is about what AI can and cannot do when given a real feedback oracle, though much of the text is retro-hardware engineering."
+genre: project-log
+themes: [coding-agents-tools, limits-of-llms, reverse-engineering, vibe-coding-practice]
+thesis: "A coding LLM working blind translates badly; given an emulator-based oracle that measures reality, it can make real progress, but the deepest optimizations rely on human knowledge a static translator cannot infer."
+summary: "Akita always believed NES games could run on the Sega Master System but assumed naive 6502-to-Z80 translation would be too slow. Starting in May, his nes-to-sms static recompiler (Rust, with a hand-written Z80 runtime) converted all of Super Mario Bros but ran at a fraction of speed until stalled. A human-made hand port by another developer proved the console can run the game at 60 fps, and in September he had Claude Fable and GPT Astra study it. The key insight is the differential oracle: running the original on an emulator beside the translation, comparing state per instruction and per frame, and profiling cycles, which let the models find real bottlenecks (Mario from six times over budget to under two; a Castlevania wait loop eating 23% of the CPU). The biggest gains came from data layout choices a programmer knows by heart and a translator cannot infer. Mappers (bank-switching cartridge chips) are the next wall, and he is unsure larger games are viable. He sees automatic translation as a baseline for hand optimization."
+key_claims:
+  - claim: "A coding LLM that can run the target and measure real data plays at a different level than one generating code blind."
+    time_sensitive: false
+  - claim: "The Z80 at 3.58 MHz does less work than the NES 6502 at 1.79 MHz for generic tasks, so faithful translation cannot reach full speed without clever optimization."
+    time_sensitive: false
+  - claim: "Super Mario's cost fell from about 6x the per-frame cycle budget to under 2x using measurement-validated optimizations."
+    time_sensitive: true
+  - claim: "The deepest optimization (object-array layout using knowledge that an index is always 0 to 6) is something a static translator cannot infer; this sets a ceiling on what can be automated."
+    time_sensitive: false
+  - claim: "Only two cartridge mappers (NROM and UxROM) are implemented; larger games may die at mapper and interrupt-timing issues."
+    time_sensitive: true
+fears_addressed:
+  - "AI can do anything if I just prompt it"
+  - "Will AI replace skilled low-level engineers?"
+reader_value: "Moderate. A candid example of AI as a powerful but limited tool: it needed a feedback loop, a human-made reference solution, and still could not infer expert domain knowledge."
+technical_depth: 5
+evergreen: 3
+book_use:
+  keep:
+    - "Feedback oracle lesson: an LLM that runs the target and reacts to measurements versus one that guesses in the dark"
+    - "Where automation hits a ceiling: knowledge in the programmer's head"
+    - "The author's months-long stall and restart with a human reference"
+  cut:
+    - "6502/Z80, VDP, mapper and cycle-count details"
+jargon: [static recompiler, intermediate representation, emulator, oracle, 6502, Z80, mapper, bank switching, VRAM, frame budget, LLM agent]
+illustration_ideas:
+  - "Differential oracle: original on emulator vs translated build, compared each frame, feeding errors back to the model"
+  - "Cycle budget per frame: 6x over to under 2x as optimizations land"
+people_events:
+  - "lackoftrack27 (Super Mario Bros SMS hand port)"
+  - "Claude Fable, GPT Astra"
+  - "Akitando #81"
+related_posts: []
+prerequisites: ["What a coding agent is", "What an emulator is"]
+series: ""
+obsolescence: "Model names (Fable, Astra) and project status are September 2026; the feedback-oracle lesson is durable."

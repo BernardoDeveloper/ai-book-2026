@@ -1,0 +1,20 @@
+---
+id: ch04-tres-juizes
+kind: chart_code
+file: assets/figures/ch04-tres-juizes.png
+sha256: b7f304609fbd6c6d0c31b773795296c8821cbba69edd1778aa83e405ee300ad1
+source: assets/charts/ch04-tres-juizes.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I assets/charts/ch04-tres-juizes.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+chapters:
+- 4
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

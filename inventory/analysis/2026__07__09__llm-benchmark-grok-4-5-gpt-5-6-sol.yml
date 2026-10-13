@@ -1,0 +1,51 @@
+id: "2026/07/09/llm-benchmark-grok-4-5-gpt-5-6-sol"
+source_sha256: "6f9b7da43d8479867207771f58cd20ea3ce569b5c764df3b18cc4cc64ac21c74"
+title_en: "LLM Benchmarks: Grok 4.5 and GPT 5.6 Sol"
+ai_relevance: core
+ai_relevance_reason: "A benchmark round comparing LLMs plus a public correction of his own cost accounting and scoring."
+genre: benchmark
+themes: [benchmarks-model-comparison, business-and-economics, limits-of-llms]
+thesis: "Grok 4.5 reaches Tier A (87) and GPT 5.6 Sol scores 92, but a blind re-audit lowered GPT 5.5 from 96 to 85 and corrected underestimated costs, showing that benchmarks are fallible and that the real decision turns on price-quality frontier and subscription vs API."
+summary: "Akita adds Grok 4.5 (87) and GPT 5.6 Sol (92) to his Rails/RubyLLM benchmark. Grok 4.5 fixes earlier faults but has a double-send bug where the user message reaches the model twice, caught only by blind cross-audit. Sol was his first run billed on a subscription, the most token-efficient GPT, with strong tests. A blind comparison with GPT 5.5 revealed defects his earlier audit missed (development Dockerfile, no error-path tests), dropping it from 96 to 85 and making Opus 4.7 the sole leader. He also corrects his costs: he had undercounted cache-read tokens, so Opus 4.7 is about $7 per run, not $1.10. He builds a price-quality frontier and concludes: below Tier A you get silent runtime failures, subscribers should use the best model their plan gives, and API payers should use the frontier."
+key_claims:
+  - claim: "Grok 4.5 scored 87 (Tier A) and GPT 5.6 Sol 92; GPT 5.5 was re-audited from 96 to 85 and GPT 5.4 from 97 to 95, leaving Opus 4.7 (97) as sole leader."
+    time_sensitive: true
+  - claim: "He had been undercounting cache-read tokens; corrected per-run costs are about $7.00 for Opus 4.7, $6.40 for Opus 4.8 and $3.10 for Gemini 3.1 Pro."
+    time_sensitive: true
+  - claim: "A blind independent cross-audit found defects the original audit missed, including a development-mode Dockerfile running as root."
+    time_sensitive: false
+  - claim: "Grok 4.5 sent each user message to the LLM twice (double-send) while its tests stayed green because test setup differed from production."
+    time_sensitive: true
+  - claim: "Below Tier A, models do not save money; they shift cost to engineer time, with silent runtime failures such as hallucinated APIs the tests mock."
+    time_sensitive: false
+  - claim: "For subscribers, per-token price comparison collapses; for API/CI usage the price-quality frontier decides."
+    time_sensitive: true
+fears_addressed:
+  - "Are benchmark numbers reliable?"
+  - "Is AI getting cheaper?"
+  - "Which plan or model should I pay for?"
+reader_value: "Medium. Shows that benchmark authors correct themselves, that real AI cost differs from advertised price, and the subscription vs API distinction; ranking numbers are quickly stale."
+technical_depth: 4
+evergreen: 1
+book_use:
+  keep:
+    - "Public correction: scores and costs revised; benchmarks are fallible"
+    - "Cache reads dominate agent cost, so real costs are far above headline prices"
+    - "Subscription vs per-token API changes which model is rational"
+    - "Green tests hide a double-send bug"
+  cut:
+    - "Ranking tables and frontier table values"
+    - "Rubric item details"
+jargon: [benchmark, cache read, token, tier, cross-audit, blind test, subscription, API, Dockerfile, double-send, frontier, harness, CI]
+illustration_ideas:
+  - "Price vs score frontier chart with dominated models"
+  - "Where agent cost comes from: cache-read tokens dominate"
+people_events:
+  - "OpenAI GPT 5.6 Sol/Terra/Luna naming"
+  - "xAI Grok 4.5"
+related_posts:
+  - "2026/07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra"
+  - "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
+prerequisites: [LLM, benchmark, tokens]
+series: "llm-benchmark"
+obsolescence: "Scores, prices and tier placements are 9 July 2026 snapshots; corrected cost figures supersede the costs reported in earlier benchmark posts (June 2026 and before)."

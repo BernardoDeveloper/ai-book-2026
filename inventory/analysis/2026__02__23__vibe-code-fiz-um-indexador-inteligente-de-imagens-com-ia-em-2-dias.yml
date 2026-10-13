@@ -1,0 +1,38 @@
+id: "2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias"
+source_sha256: "ee1a4455e9076eb3c25fddf845758f2101e0cc127a9f383d9c4c7567a4eaab34"
+title_en: "Vibe Code: I Built a Smart AI Image Indexer in 2 Days (Frank Sherlock)"
+ai_relevance: core
+ai_relevance_reason: "The product is a local vision-LLM image classifier, it was built with Claude Code and Codex, and the post benchmarks vision models and argues about what AI-assisted engineering requires."
+genre: project-log
+themes: [vibe-coding-practice, benchmarks-model-comparison, open-vs-closed-and-local-models, software-engineering-discipline]
+thesis: "Agile vibe coding works, but the idea is 10% of the work and engineering is the other 90%; the LLM is an excellent executor while the experienced human decides what, in what order and why. Benchmark, do not guess."
+summary: "In a weekend (50 commits, about 26 hours) Akita built Frank Sherlock, a desktop app (Rust, Tauri, React) that catalogs and searches images using local vision LLMs via Ollama plus OCR, with no cloud. He first built a formal benchmark with 94 labeled files and found that the 7B Qwen2.5-VL model beat larger models (llava 13B, even its own 32B sibling at 29 times the latency) and that newer Qwen3-VL models were worse for his task. He then wrote a Python proof of concept, including a three-level cascade for repairing malformed JSON from LLMs, and had Claude Code port it to Rust. The post lists what Claude did (most code, tests, refactors, CI) versus what he did (benchmarks first, read-only principle, incremental scanning, cooperative cancellation, schema migrations, platform abstraction, knowing when to stop). He notes Codex was better for exploratory experimentation and Claude for execution once the target is clear. Cost estimate: roughly 34 USD of electricity to classify 500k files locally versus about 5,000 USD via a cloud vision API. He closes with the architect-and-construction-crew analogy: the vibe needs an experienced conductor, and for now that is human."
+key_claims:
+  - claim: "A weekend, ~26 working hours, 50 commits produced a cross-platform app with 338 tests."
+    time_sensitive: true
+  - claim: "Bigger or newer models are not necessarily better: Qwen2.5-VL 7B beat llava 13B, and the 32B version was 29x slower for a marginal gain; Qwen3-VL was worse on his task."
+    time_sensitive: true
+  - claim: "Local classification of ~500k files costs about 34 USD in electricity versus about 5,000 USD with a cloud vision API (back-of-envelope estimate)."
+    time_sensitive: true
+  - claim: "LLM output JSON is often malformed; a cascade of direct parse, brace-balancing, and regex salvage recovers it."
+    time_sensitive: false
+  - claim: "Agile vibe coding: the idea is 10% of the work, engineering is 90%; the experienced person asks the awkward questions (cancellation, corruption, edge cases)."
+    time_sensitive: false
+  - claim: "The vision model confuses unfamiliar anime with Evangelion and makes errors, though descriptions are still useful."
+    time_sensitive: true
+  - claim: "Codex was better for exploratory work, Claude Code better when requirements are well known."
+    time_sensitive: true
+fears_addressed: ["AI will replace programmers", "Anyone with an idea can now build software", "Does my private data have to go to the cloud to use AI?"]
+reader_value: "Good for a lay reader: shows AI running privately on a home computer, that bigger is not automatically better, and a vivid architect-and-crew analogy for AI-assisted work. Technical middle sections are skippable."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep: ["Local AI that catalogs your own photos without uploading them", "Benchmark result: smaller model won", "Architect and construction crew analogy", "Awkward questions the human asks list", "Cost of local vs cloud for 500k files"]
+  cut: ["Commit-by-commit timeline", "CI/CD cross-platform details", "Database migration and cancellation internals"]
+jargon: ["vision LLM", "Ollama", "OCR", "parameters (7B/32B)", "VRAM", "ground truth", "benchmark", "proof of concept", "JSON", "GPU", "vibe coding"]
+illustration_ideas: ["Bigger model vs smaller model: accuracy vs latency tradeoff", "Cascade fallback for repairing malformed LLM output", "Architect vs construction crew: who decides what in AI-assisted coding"]
+people_events: ["Claude Code (Anthropic)", "OpenAI Codex", "Qwen (Alibaba)", "Ollama", "Surya OCR", "Tauri"]
+related_posts: ["2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles"]
+prerequisites: ["What an LLM is", "Local vs cloud AI"]
+series: "frank-projects"
+obsolescence: "Model rankings (Qwen2.5-VL vs Qwen3-VL vs llava), RTX 5090 timings and the Claude/Codex comparison are time-bound; app was v0.1 beta, later versions (v0.7 with face detection) are covered in 2026/03/01/software-nunca-esta-pronto."

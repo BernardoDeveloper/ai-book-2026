@@ -1,0 +1,50 @@
+id: "2026/07/25/llm-benchmark-opus-5-e-bom"
+source_sha256: "48fc9a60351926d5a2c36a8ddd156fbbdea7c56815be9c1453b3479598a90acf"
+title_en: "LLM benchmark: is Opus 5 good?"
+ai_relevance: core
+ai_relevance_reason: "Benchmark of a newly released frontier model as an autonomous coding agent."
+genre: benchmark
+themes: [benchmarks-model-comparison, coding-agents-tools, hype-and-marketing, business-and-economics]
+thesis: "Claude Opus 5 is very good (95/100, tied at the top, half Fable 5's price per token), but that does not prove it is the best LLM in general, and the benchmark itself keeps being corrected."
+summary: "A day after Anthropic released Claude Opus 5, Akita ran it on his Rails chat-app benchmark through Claude Code headless: 95/100, 39 minutes, 201 turns, 121 tests, about $16 in API-equivalent cost billed to a subscription. He notes the harness differs from other entries, so the comparison is not controlled. The generated project showed unusually defensive engineering: isolated client, guard test for the gem's API, bounded cached history, and two bugs found and fixed during the run. It ties Opus 4.8 and GPT 5.4, one point above Fable 5. API price is $5/$25 per million tokens versus Fable's $10/$50, but per-task cost depends on turns and harness, not just price per token. Re-auditing the old leader Opus 4.7 with a blind cross-audit found a double-send bug, dropping its score from 97 to 87, which he says shows his earlier audit was incomplete, not that the model got worse. He closes advising to read 90+ as a group and run your own test."
+key_claims:
+  - claim: "Opus 5 scored 95/A in the Rails chat benchmark via Claude Code, tying Opus 4.8 and GPT 5.4."
+    time_sensitive: true
+  - claim: "Opus 5 API pricing is $5/$25 per million tokens, the same as Opus 4.8 and half of Fable 5."
+    time_sensitive: true
+  - claim: "Price per million tokens is not cost per task: a cheaper-per-token model can cost more per run because of turns and cache reads."
+    time_sensitive: false
+  - claim: "Opus 4.7's earlier 97 was inflated by an audit blind spot (a double-send bug); it was recalculated to 87 with no change to the model."
+    time_sensitive: true
+  - claim: "Opus 5's score being higher than Fable's does not prove it is better in general; Anthropic says Fable's edge grows on longer, more complex tasks."
+    time_sensitive: true
+fears_addressed:
+  - "A new model was announced; is it really better?"
+  - "Is the top of the leaderboard the best AI?"
+reader_value: "Low to moderate. Mostly useful as a worked example of a launch-day evaluation with caveats, and of 'tokens price is not task cost'."
+technical_depth: 4
+evergreen: 1
+book_use:
+  keep:
+    - "Per-token price versus per-task cost"
+    - "A ranking leader dropped 10 points because the auditor improved, not the model"
+    - "Model found and fixed its own bugs during the run"
+  cut:
+    - "41-row ranking table and per-model comparison details"
+jargon: [LLM, benchmark, harness, token, cache read, tier, multi-turn, streaming, API, subscription, test coverage, cross-audit, headless]
+illustration_ideas:
+  - "Per-token price versus tokens used: why two models' per-task costs can invert"
+  - "A leaderboard where one entry's rank moves after the grader is corrected"
+people_events:
+  - "Anthropic Claude Opus 5, Opus 4.8, Fable 5"
+  - "OpenAI GPT 5.6 Sol"
+  - "Moonshot Kimi K3"
+related_posts:
+  - "2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior"
+  - "2026/07/17/llm-benchmarks-kimi-k3"
+  - "2026/06/01/llm-benchmarks-grok-4-3-minimax-m3-opus-4-8"
+  - "2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic"
+  - "2026/07/09/llm-benchmark-grok-4-5-gpt-5-6-sol"
+prerequisites: ["What a coding agent is", "Tokens and API pricing"]
+series: "llm-benchmark"
+obsolescence: "Ranking, scores, prices and model lineup are a July 2026 snapshot; the full benchmark was redone in 2026/07/30 (novo-llm-benchmark-refiz-todos-os-testes)."

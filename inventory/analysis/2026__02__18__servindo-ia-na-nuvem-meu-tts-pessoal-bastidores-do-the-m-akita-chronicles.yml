@@ -1,0 +1,50 @@
+id: "2026/02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles"
+source_sha256: "bb406714689e394ca9c76ea99ab69dab85d286a819c6493d73403137fd8a941c"
+title_en: "Serving AI in the Cloud: My Personal TTS (Behind the Scenes of The M.Akita Chronicles)"
+ai_relevance: core
+ai_relevance_reason: "Production lessons from serving a text-to-speech model on a serverless GPU and prompting an LLM to write podcast scripts."
+genre: tutorial
+themes: [generative-media, hardware-and-infrastructure, limits-of-llms]
+thesis: "Running AI in production is infrastructure and experimentation, not a ten-line tutorial: cold starts, sampling settings, input quality and post-processing matter, and an LLM will homogenise your opinions unless told explicitly to preserve them."
+summary: "Part 3 of the series. To produce a weekly 30-minute, two-voice podcast automatically, Akita runs Qwen3-TTS on RunPod serverless GPUs. He lists nine lessons: cold starts of 30 to 90 seconds need health-check polling; model weights belong on a network volume; fine-tuned and voice-cloned modes need very different sampling parameters (the wrong ones yield white noise); a reference clip that starts without silence makes every generation clip the first syllable; generation needs token and time limits because GPU time is billed per second; loudness normalisation (-14 LUFS for Spotify), re-encoding and MP3 conversion are half the work. Script quality matters more than voice quality: he uses two LLM passes (draft into dialogue, then refine for naturalness), brutally specific personality prompts for the host and the robot co-host Marvin, rules to expand acronyms for speech, and explicit instructions to keep opinions because the model softens strong opinions into 'balanced' takes. Costs are about US$0.39 per GPU hour and US$0.50 to 1.50 per episode, but dozens of hours were spent making it work. He claims similar quality to ElevenLabs at a fraction of the cost."
+key_claims:
+  - claim: "A 4GB TTS model has a 30 to 90 second cold start on serverless GPU; designs must expect the model to take time to load."
+    time_sensitive: true
+  - claim: "Sampling parameters that work for a fine-tuned voice produce white noise for voice cloning mode; parameters are not universal across modes of the same model."
+    time_sensitive: false
+  - claim: "Reference audio quality dominates output: if the reference clip starts without silence, every generated clip cuts the first syllable."
+    time_sensitive: false
+  - claim: "Because LLMs are trained to be helpful and balanced, they soften strong opinions when rewriting content unless explicitly told to change the how and never the what."
+    time_sensitive: false
+  - claim: "Splitting script generation into a structure pass and a naturalness pass gives better output than doing both in one prompt."
+    time_sensitive: false
+  - claim: "One 30-minute episode costs roughly US$0.50 to 1.50 in GPU time on RunPod (L40 about US$0.39/hour)."
+    time_sensitive: true
+  - claim: "Prompts need concrete examples of how each persona speaks; abstract personality descriptions produce generic tone."
+    time_sensitive: false
+fears_addressed:
+  - "Can AI voices replace voice actors / services like ElevenLabs?"
+  - "Is AI output reliable out of the box?"
+reader_value: "Moderate. The sections on AI's tendency to smooth opinions into balance, input quality, and the gap between demo and production are accessible and quotable; the infrastructure parts are for developers."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "LLMs homogenise your voice unless told otherwise (helpful-and-balanced training)"
+    - "Garbage in, garbage out: the reference clip example"
+    - "Demo versus production: the hidden cost is figuring it out, not the compute"
+    - "Two-pass prompting idea: structure first, then style"
+  cut:
+    - "Cold-start health-check code, network volumes, ffmpeg and LUFS specifics"
+    - "Cost table"
+jargon: [TTS, text-to-speech, voice cloning, fine-tuning, GPU, VRAM, serverless, cold start, sampling, token, inference, LLM, prompt, loudness normalisation, white noise]
+illustration_ideas:
+  - "Two-pass script pipeline: newsletter to dialogue draft to refined natural script to TTS to audio post-processing"
+  - "Cold start timeline: request arrives, GPU boots, model loads into VRAM, response"
+people_events: ["Alibaba Qwen3-TTS", "RunPod", "ElevenLabs", "Spotify"]
+related_posts:
+  - "2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles"
+  - "2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts"
+prerequisites: ["What an LLM is", "What a GPU is"]
+series: "m-akita-chronicles"
+obsolescence: "Model name (Qwen3-TTS), RunPod prices and settings are Feb 2026 snapshots; a later post on ElevenLabs vs Qwen3 TTS (2026/04/09) may revise his view."

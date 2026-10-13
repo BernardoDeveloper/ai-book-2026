@@ -1,0 +1,47 @@
+id: "2026/07/20/novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas-ias"
+source_sha256: "daafe1a63fd8b3f44a5fdf0f302047fdd438903451950a999c5ffd47def491e3"
+title_en: "What's new in my ai-memory, getting better for use with your AIs"
+ai_relevance: substantial
+ai_relevance_reason: "Project update for a tool that manages coding-agent sessions and memory across Claude Code, Codex etc.; the argument about session memory and provider independence is AI-centered, but much is feature changelog."
+genre: announcement
+themes: [agent-memory-and-context, coding-agents-tools, open-source-community, security-and-sandboxing]
+thesis: "The agent session (decisions, failed experiments) is as much part of the project as the code, so developers should own it and be able to switch model or provider without losing it."
+summary: "A month after the first ai-memory post, the project went from 1.1.0 to 1.17.1 with 31 releases, 55 merged PRs and 14 outside contributors. The main new feature, ai-memory run, treats a work line as a 'workstream' spanning harnesses: Claude Code, Codex, OpenCode and others each keep their native session, linked through a portable ledger and a recent delta. Handoffs are described as lossy summaries; the ledger is searchable. Sessions are text (JSONL, SQLite), so there is no reason to leave them locked in one vendor's tool. Smaller additions: automatic briefing at session start, global preferences, Agent Skills instead of fixed instructions, and path exclusion for privacy. He pairs it with ai-jail (sandbox) running agents in YOLO mode, and ai-usagebar to monitor quota usage across providers. Closing line: he rents LLMs and subscriptions from whoever delivers best today, but the project's session stays with him."
+key_claims:
+  - claim: "The programmer should stay independent of provider whims: models and harnesses are replaceable, the project's memory is yours."
+    time_sensitive: false
+  - claim: "Code only shows what survived; the agent session holds the reasoning, discarded attempts and decisions."
+    time_sensitive: false
+  - claim: "Handoff summaries are deliberately lossy; feeding raw whole sessions into the next prompt is too big, costly and noisy."
+    time_sensitive: false
+  - claim: "Running agents in YOLO mode is best when a sandbox (ai-jail) limits the possible damage."
+    time_sensitive: false
+  - claim: "ai-memory went from 1.1.0 to 1.17.1 in a month with 55 merged PRs from 15 people."
+    time_sensitive: true
+fears_addressed:
+  - "Vendor lock-in with AI providers"
+  - "AI assistants forgetting everything between sessions"
+reader_value: "Moderate. The idea that AI sessions are an asset and that memory lives outside the model is accessible; the command-level details are for developers."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Code is what survived; the session explains why"
+    - "Swap the engine without losing the journey / rent the LLM, keep the session"
+    - "Handoff as lossy compression versus searchable ledger versus curated wiki"
+  cut:
+    - "Command syntax, release counts, contributor list, usagebar integrations"
+jargon: [harness, session, handoff, workstream, ledger, YOLO mode, sandbox, MCP, hooks, Agent Skills, context window, compaction, sanitizer, JSONL]
+illustration_ideas:
+  - "Several harness sessions feeding one portable ledger with a delta handed to the next agent"
+  - "Three tiers of memory: raw session evidence, lossy handoff summary, curated wiki"
+people_events:
+  - "Djalma Junior and other ai-memory contributors"
+  - "Anthropic Claude Code, OpenAI Codex, OpenCode"
+related_posts:
+  - "2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos"
+  - "2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas"
+  - "2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar"
+prerequisites: ["What a coding agent and its context window are", "Why AI forgets between sessions"]
+series: "ai-memory"
+obsolescence: "Versions (ai-memory 1.17.1, ai-jail 1.15.0, ai-usagebar 0.14.0) and feature set superseded by ai-memory 2.0 post (2026/09/02)."

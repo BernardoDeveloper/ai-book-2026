@@ -1,0 +1,172 @@
+references:
+  - id: wikipedia2026lgp30
+    type: "webpage"
+    title: "LGP-30"
+    author: [{literal: "Wikipedia"}]
+    container-title: "Wikipedia"
+    issued: {date-parts: [[2026]]}
+    URL: "https://en.wikipedia.org/wiki/LGP-30"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/11/vs-code-e-o-novo-cartao-perfurado (the post embeds a YouTube video, TJjRCCetyo4, now an Usagi Electric LGP-21 restoration episode dated 2026-04-19, not a programming session; the book cites the 1963 date of the LGP-21 from this page instead. The post's 'second oldest personal computer after the Bendix G-15' claim was not verifiable and was dropped)"
+  - id: wikipedia2026altair
+    type: "webpage"
+    title: "Altair 8800"
+    author: [{literal: "Wikipedia"}]
+    container-title: "Wikipedia"
+    issued: {date-parts: [[2026]]}
+    URL: "https://en.wikipedia.org/wiki/Altair_8800"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/11/vs-code-e-o-novo-cartao-perfurado (front-panel switch programming verified online; the post shows a photo without a link)"
+  - id: ibm2026punchcard
+    type: "webpage"
+    title: "The punched card"
+    author: [{literal: "IBM"}]
+    container-title: "IBM Heritage"
+    issued: {date-parts: [[2026]]}
+    URL: "https://www.ibm.com/history/punched-card"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/11/vs-code-e-o-novo-cartao-perfurado (80-column card introduced in 1928; verified online, page undated)"
+  - id: chm2026dataentry
+    type: "webpage"
+    title: "Data entry"
+    author: [{literal: "Computer History Museum"}]
+    container-title: "Revolution: The First 2000 Years of Computing"
+    issued: {date-parts: [[2026]]}
+    URL: "https://www.computerhistory.org/revolution/punched-cards/2/4/40"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (book bridge on keypunch operators; 'most keypunch operators were women'; page undated)"
+  - id: akita2024akitando
+    type: "webpage"
+    title: "Akitando"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2024]]}
+    URL: "https://akitaonrails.com/akitando/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (series started around August 2018; last numbered episode #149 in December 2023, one more video in March 2024; about 150 videos)"
+  - id: zuckerberg2022layoffs
+    type: "webpage"
+    title: "Mark Zuckerberg's Message to Meta Employees"
+    author: [{family: "Zuckerberg", given: "Mark"}]
+    container-title: "Meta Newsroom"
+    issued: {date-parts: [[2022, 11, 9]]}
+    URL: "https://about.fb.com/news/2022/11/mark-zuckerberg-layoff-message-to-employees/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post states end-2022 big-tech mass layoffs without a link; verified online: 'more than 11,000')"
+  - id: fortune2023layoffs
+    type: "article-newspaper"
+    title: "There's only one time tech layoffs have ever happened faster than right now"
+    author: [{family: "Morris", given: "Chris"}]
+    container-title: "Fortune"
+    issued: {date-parts: [[2023, 1, 3]]}
+    URL: "https://fortune.com/2023/01/03/tech-layoffs-2022-pandemic-dotcom-bubble"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (layoffs.fyi: 153,160 tech workers at 1,172 companies in 2022, as reported by Fortune; headline verified)"
+  - id: haider2026amodei
+    type: "article-newspaper"
+    title: "Anthropic CEO Predicts AI Models Will Replace Software Engineers In 6-12 Months: 'I Don't Write Any Code Anymore'"
+    author: [{family: "Haider", given: "Mohd"}]
+    container-title: "Benzinga"
+    issued: {date-parts: [[2026, 1, 21]]}
+    URL: "https://finviz.com/news/281945/anthropic-ceo-predicts-ai-models-will-replace-software-engineers-in-6-12-months-i-dont-write-any-code-anymore"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post says 'concordo com o CEO da Anthropic' without a link; quote 'we might be 6-12 months away from models doing all of what software engineers do end-to-end', WEF Davos, 2026-01-20; read via Finviz republication)"
+  - id: brooks2014yahoo
+    type: "article-newspaper"
+    title: "The Way We Were: Saying Farewell to Yahoo's Once-Mighty Directory"
+    author: [{family: "Brooks", given: "Jon"}]
+    container-title: "KQED News"
+    issued: {date-parts: [[2014, 10, 7]]}
+    URL: "https://www.kqed.org/news/10342603/the-way-we-were-saying-farewell-to-yahoos-once-mighty-directory"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post mentions 'catalogador de sites' without a link; verified: Yahoo 'surfers' reviewed and sorted every submission by hand)"
+  - id: carlini2026compiler
+    type: "post-weblog"
+    title: "Building a C compiler with a team of parallel Claudes"
+    author: [{family: "Carlini", given: "Nicholas"}]
+    container-title: "Anthropic Engineering"
+    issued: {date-parts: [[2026, 2, 5]]}
+    URL: "https://www.anthropic.com/engineering/building-c-compiler"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (GCC used 'as an online known-good compiler oracle'; builds Linux 6.9 on x86, ARM, RISC-V)"
+  - id: pelley2023hinton
+    type: "article-newspaper"
+    title: "'Godfather of Artificial Intelligence' Geoffrey Hinton on the promise, risks of advanced AI"
+    author: [{family: "Pelley", given: "Scott"}]
+    container-title: "CBS News, 60 Minutes"
+    issued: {date-parts: [[2023, 10, 8]]}
+    URL: "https://www.cbsnews.com/news/geoffrey-hinton-ai-dangers-60-minutes-transcript/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post dismisses Hinton without a link; verified quote 'I believe it definitely understands, yes')"
+  - id: nobel2024physics
+    type: "webpage"
+    title: "Press release: The Nobel Prize in Physics 2024"
+    author: [{literal: "The Royal Swedish Academy of Sciences"}]
+    container-title: "NobelPrize.org"
+    issued: {date-parts: [[2024, 10, 8]]}
+    URL: "https://www.nobelprize.org/prizes/physics/2024/press-release/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (book bridge: John Hopfield and Geoffrey Hinton awarded the 2024 Nobel Prize in Physics)"
+  - id: orosz2025stackoverflow
+    type: "post-weblog"
+    title: "Stack overflow is almost dead"
+    author: [{family: "Orosz", given: "Gergely"}]
+    container-title: "The Pragmatic Engineer"
+    issued: {date-parts: [[2025, 5, 15]]}
+    URL: "https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (chart: monthly questions back to about the 2009 launch level)"
+  - id: akita2026pact
+    type: "software"
+    title: "pact-lang: an AI opinionated ideal language that ignores human-friendliness"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 2, 9]]}
+    URL: "https://github.com/akitaonrails/pact-lang"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms"
+  - id: taelin2026bend2
+    type: "post"
+    title: "Bend 2 is here!"
+    author: [{family: "Taelin", given: "Victor"}]
+    container-title: "X"
+    issued: {date-parts: [[2026, 9, 17]]}
+    URL: "https://x.com/VictorTaelin/status/2100681226143092875"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/19/nova-linguagem-voltada-pra-ia-bend-2 (site slogan 'a fast language that blocks AI mistakes via proof', bend-lang.com)"
+  - id: powell2026bend
+    type: "post-weblog"
+    title: "Bend 2 and the Vibe-Coding Trap"
+    author: [{family: "Powell", given: "Liam"}]
+    container-title: "Liam Powell's Blog"
+    issued: {date-parts: [[2026, 9, 18]]}
+    URL: "https://blog.liampwll.com/posts/bend_vibe_coding/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/19/nova-linguagem-voltada-pra-ia-bend-2"
+  - id: dhh2026campfire
+    type: "post"
+    title: "Last conversion of the Campfire from my token stash goes to JavaScript/Express"
+    author: [{family: "Heinemeier Hansson", given: "David"}]
+    container-title: "X"
+    issued: {date-parts: [[2026, 10, 5]]}
+    URL: "https://x.com/dhh/status/2107077808182976817"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms"
+  - id: kurtome2026elixir
+    type: "post"
+    title: "Reply to DHH: 10x speed up on the Room page requests (Campfire Elixir)"
+    author: [{family: "Melby", given: "Kurt"}]
+    container-title: "X"
+    issued: {date-parts: [[2026, 10, 5]]}
+    URL: "https://x.com/kurtome/status/2106902762076467681"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms"
+  - id: akita2026vibebench
+    type: "software"
+    title: "vibe-coding-benchmarks: benchmarks to test if choosing any specific language has any advantage on LLMs"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 10, 11]]}
+    URL: "https://github.com/akitaonrails/vibe-coding-benchmarks"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms"

@@ -1,0 +1,18 @@
+cartao-perfurado:
+  term: Cartão perfurado
+  def: Cartão de papel rígido em que dados e instruções eram gravados como furos em posições combinadas. Por décadas foi o jeito de entregar programas aos computadores, um cartão por linha, num maço que precisava estar na ordem certa.
+assembly:
+  term: Assembly
+  def: Linguagem de montagem. Cada linha corresponde quase diretamente a uma instrução do processador, com nomes curtos no lugar dos números. É a forma de programar mais próxima da máquina que um humano ainda consegue ler.
+compilador:
+  term: Compilador
+  def: Programa que traduz o código escrito numa linguagem de programação, mais próxima da humana, para as instruções que o processador executa. Também recusa programas com certos erros antes que eles rodem.
+editor-de-codigo:
+  term: Editor de código
+  def: O programa onde o programador digita e organiza o código, linha por linha, com ajudas como cores, busca e sugestões. O VS Code é o mais popular deles.
+tipagem-forte:
+  term: Tipagem forte
+  def: Característica de linguagens em que cada valor tem um tipo declarado ou deduzido (número, texto, lista) e o compilador recusa o programa quando os tipos não combinam. Pega alguns erros antes de o programa rodar, ao custo de mais burocracia na escrita.
+verificacao-formal:
+  term: Verificação formal
+  def: Provar matematicamente, com a ajuda de um programa verificador, que o código cumpre certas regras escritas de antemão. Vai além dos testes, que só conferem os casos que alguém lembrou de testar, mas costuma cobrir só uma parte pequena de um sistema real.

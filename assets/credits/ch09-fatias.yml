@@ -1,0 +1,25 @@
+---
+id: ch09-fatias
+kind: diagram_code
+chapters:
+- 9
+editions:
+- pt
+- en
+file: assets/figures/ch09-fatias.png
+sha256: 77dd201b85f1ea0eae100b474c2e8930ba342136dfcb5e46e6942b74a76ca205
+pixels:
+  width: 1920
+  height: 1230
+source: assets/charts/ch09-fatias.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch09-fatias.py
+  pt
+description: 'ch09-fatias: a giant file read in slices vs. a small file read whole.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

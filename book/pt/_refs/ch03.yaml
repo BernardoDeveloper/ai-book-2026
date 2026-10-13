@@ -1,0 +1,92 @@
+references:
+  - id: aattaran2026deepclaude
+    type: "software"
+    title: "deepclaude"
+    author: [{literal: "aattaran"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 5, 3]]}
+    URL: "https://github.com/aattaran/deepclaude"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude"
+  - id: openai2025codexprompt
+    type: "software"
+    title: "Codex CLI: system prompt (codex-rs/core/prompt.md)"
+    author: [{literal: "OpenAI"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2025]]}
+    URL: "https://github.com/openai/codex/blob/main/codex-rs/core/prompt.md"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity, Arquivado em: https://web.archive.org/web/20260201125545/https://github.com/openai/codex/blob/main/codex-rs/core/prompt.md"
+  - id: openai2023function
+    type: "webpage"
+    title: "Function calling and other API updates"
+    author: [{literal: "OpenAI"}]
+    container-title: "OpenAI"
+    issued: {date-parts: [[2023, 6, 13]]}
+    URL: "https://openai.com/index/function-calling-and-other-api-updates/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: anthropic2024mcp
+    type: "webpage"
+    title: "Introducing the Model Context Protocol"
+    author: [{literal: "Anthropic"}]
+    container-title: "Anthropic"
+    issued: {date-parts: [[2024, 11, 25]]}
+    URL: "https://www.anthropic.com/news/model-context-protocol"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: anthropic2025aaif
+    type: "webpage"
+    title: "Donating the Model Context Protocol and establishing the Agentic AI Foundation"
+    author: [{literal: "Anthropic"}]
+    container-title: "Anthropic"
+    issued: {date-parts: [[2025, 12, 9]]}
+    URL: "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (post says MCP 'hoje mora na Linux Foundation' without a link; verified online)"
+  - id: anthropic2025skills
+    type: "webpage"
+    title: "Agent Skills"
+    author: [{literal: "Anthropic"}]
+    container-title: "Claude Docs"
+    issued: {date-parts: [[2025]]}
+    URL: "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity"
+  - id: anthropic2024caching
+    type: "webpage"
+    title: "Prompt caching with Claude"
+    author: [{literal: "Anthropic"}]
+    container-title: "Anthropic"
+    issued: {date-parts: [[2024, 8, 14]]}
+    URL: "https://www.anthropic.com/news/prompt-caching"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: openai2024o1
+    type: "webpage"
+    title: "Learning to reason with LLMs"
+    author: [{literal: "OpenAI"}]
+    container-title: "OpenAI"
+    issued: {date-parts: [[2024, 9, 12]]}
+    URL: "https://openai.com/index/learning-to-reason-with-llms/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: deepseek2026thinking
+    type: "webpage"
+    title: "Thinking Mode"
+    author: [{literal: "DeepSeek"}]
+    container-title: "DeepSeek API Docs"
+    issued: {date-parts: [[2026]]}
+    URL: "https://api-docs.deepseek.com/guides/thinking_mode"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude (post describes the reasoning_content rule without a link; verified in DeepSeek API docs)"
+  - id: metr2025tasks
+    type: "report"
+    title: "Measuring AI Ability to Complete Long Tasks"
+    author: [{literal: "METR"}]
+    publisher: "METR"
+    publisher-place: "Berkeley, CA"
+    issued: {date-parts: [[2025, 3, 19]]}
+    URL: "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"

@@ -1,0 +1,76 @@
+---
+id: ch19-ferrari
+kind: ai_illustration
+file: assets/figures/ch19-ferrari.png
+sha256: f81583b58b8858f75f69abcbe1c2d6204bcf74a0c7de0b95acf247007640a98a
+generation:
+  provider: openai
+  endpoint: POST /v1/images/generations
+  model: gpt-image-2.5-flare-2026-09-08
+  date: '2026-10-13T16:19:36-03:00'
+  style_version: STYLE v1
+  scene: 'A sleek, low mid-engine sports car painted amber, an invented generic design
+    that does not resemble any real car model or brand: no badges, no emblems, no
+    logos, no prancing horse, no license plate characters. Seen from a three-quarter
+    rear view on a plain off-white ground. Its rear engine lid is lifted wide open,
+    revealing inside the big engine bay a comically small, old, dusty air-cooled four-cylinder
+    economy-car engine with cooling fins and a round fan housing, with a little wisp
+    of grey smoke. Three simple stylised cartoon figures (faceless, generic, flat
+    shapes, not recognisable individuals) stand near the front of the car holding
+    up smartphones to photograph its shiny bodywork; none of them looks at the open
+    engine. Gently humorous editorial mood. No text anywhere.'
+  prompt: 'STYLE v1: flat editorial vector illustration, thick uniform ink outlines
+    (#1B2238), limited palette navy #2B3A67, teal #2F7F86, amber #E3A23B accent, sand
+    #E9DFC9 panels, off-white #FBF9F4 background, generous whitespace, no gradients,
+    no textures, no text, no letters, no numbers, no logos, no real people, high contrast,
+    reads clearly in grayscale. Scene: A sleek, low mid-engine sports car painted
+    amber, an invented generic design that does not resemble any real car model or
+    brand: no badges, no emblems, no logos, no prancing horse, no license plate characters.
+    Seen from a three-quarter rear view on a plain off-white ground. Its rear engine
+    lid is lifted wide open, revealing inside the big engine bay a comically small,
+    old, dusty air-cooled four-cylinder economy-car engine with cooling fins and a
+    round fan housing, with a little wisp of grey smoke. Three simple stylised cartoon
+    figures (faceless, generic, flat shapes, not recognisable individuals) stand near
+    the front of the car holding up smartphones to photograph its shiny bodywork;
+    none of them looks at the open engine. Gently humorous editorial mood. No text
+    anywhere.'
+  params:
+    size: 1536x1024
+    quality: high
+    background: opaque
+    output_format: png
+    "n": 2
+  seed:
+  request_id: '08cad8eb-87f1-4b03-b5f3-774d241f0217'
+  usage:
+    input_tokens: 540
+    input_tokens_details:
+      image_tokens: 0
+      text_tokens: 540
+    output_tokens: 2744
+    output_tokens_details:
+      image_tokens: 2744
+      text_tokens: 0
+    total_tokens: 3284
+  drafts:
+  - build/genimg/ch19-ferrari-1.png
+  - build/genimg/ch19-ferrari-2.png
+  selected: 1
+post_processing:
+- 'flattened onto #FBF9F4, sRGB, alpha removed'
+- upscaled 1536x1024 -> 2400x1600 (ImageMagick Lanczos)
+human_contribution: art direction (scene brief), selection, placement and caption
+terms:
+  provider_terms: https://openai.com/policies/services-agreement/
+  copyright_status: AI-generated; likely not protectable (US Copyright Office Part
+    2; Lei 9.610 art. 11)
+kdp_disclosure: ai_generated_image
+credit:
+  caption_pt: Ilustração gerada por IA (GPT Image 2.5, OpenAI) sob direção do autor
+  caption_en: AI-generated illustration (GPT Image 2.5, OpenAI) under the author's
+    direction
+pixels:
+  width: 2400
+  height: 1600
+chapters:
+- 19

@@ -1,0 +1,19 @@
+ocr:
+  term: OCR
+  long: Optical Character Recognition
+  def: Reconhecimento automático de texto numa imagem. Transforma letras fotografadas ou desenhadas em texto que o computador consegue ler e processar.
+heuristica:
+  term: Heurística
+  def: Um conjunto de regras escritas à mão que descrevem como a gente imagina que um problema costuma se comportar. Funciona bem nos casos previstos e quebra nos que ninguém previu.
+modelo-pre-treinado:
+  term: Modelo pré-treinado
+  def: Um modelo que alguém já treinou com milhares de exemplos e publicou pronto para usar. Em vez de escrever as regras, você aproveita o que ele aprendeu sozinho com os dados.
+emulador:
+  term: Emulador
+  def: Programa que imita outro computador ou videogame, permitindo rodar os programas daquela máquina em outra diferente.
+bug:
+  term: Bug
+  def: Um defeito de software. O programa faz algo diferente do que deveria, ou deixa de fazer o que deveria.
+oraculo:
+  term: Oráculo
+  def: Um verificador externo que diz se uma resposta está certa medindo a realidade, sem depender da opinião de quem produziu a resposta. Um teste automatizado, uma medição ou uma comparação com uma referência confiável são oráculos. Dá ao agente de IA um jeito de saber que errou.

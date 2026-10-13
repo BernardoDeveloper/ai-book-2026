@@ -1,0 +1,54 @@
+id: "2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu"
+source_sha256: "deadcd56a7224857fd51925747a119fc9cecbf26300360afea516cd1de5765ac"
+title_en: "Reverse engineering with AI: did Adobe die?"
+ai_relevance: core
+ai_relevance_reason: "Examines viral claims about AI-built clones and AI-driven reverse engineering and what AI actually can and cannot do."
+genre: essay
+themes: [reverse-engineering, hype-and-marketing, limits-of-llms, jobs-and-careers]
+thesis: "AI made reverse engineering faster, but it is not magic: the viral clones are alpha-quality, tools like REA need the binary and expertise, retro ports work because targets are small and static, and the valuable parts of products like Photoshop live in the cloud, contracts and domain expertise."
+summary: "After a week of claims that AI clones killed Adobe, that REA can reverse anything, and that programming is dead, Akita checks each one. Reverse engineering is a 40-year discipline with mature tools (Ghidra, IDA); AI accelerates the manual work, and neural decompilation research is still modest. REA is a toolbox exposing Ghidra and others to an agent, requires the binary and tools and heavy token use, and its own docs deny it clones programs. The PhotoCraft clone is a two-week alpha with 800+ open issues. Moving targets (Office, SaaS) and licensed knowledge (color science, Pantone, camera SDKs) are what make real products hard, with the GIMP/CMYK story as evidence. The Bun rewrite cost about US$165,000 with its author, a full source, a million-assertion test suite and 64 agents. Retro ports are fast because binaries are tiny, documented and fixed, and modern consoles are PCs in disguise. Token prices for frontier models fell little, and exponential scaling ended. He concludes engineers remain necessary."
+key_claims:
+  - claim: "Reverse engineering is a mature discipline; the decomp/recomp wave began in 2019, before coding agents, and AI joined an existing pipeline."
+    time_sensitive: false
+  - claim: "LLM-based decompilation research is modest: function-level, small models, and refinement of Ghidra output can raise compile rate while lowering behavioral fidelity."
+    time_sensitive: true
+  - claim: "REA is an agent-driven toolbox needing the binary, installed tools and many tokens; its own docs say it does not clone programs automatically."
+    time_sensitive: true
+  - claim: "The PhotoCraft Photoshop clone is an early alpha with 800+ open issues, crashes and rudimentary color management."
+    time_sensitive: true
+  - claim: "Rewriting Bun from Zig to Rust with agents cost about US$165,000 and relied on the original author, full source, a test suite as oracle and unlimited budget."
+    time_sensitive: true
+  - claim: "Much valuable software is SaaS or depends on licensed data (color profiles, camera SDKs, Pantone) that cannot be reverse engineered from a binary."
+    time_sensitive: false
+  - claim: "Frontier model prices fell only 1.2-3x in three and a half years while quality-adjusted cost fell much faster; scaling is not exponential."
+    time_sensitive: true
+  - claim: "Retro ports advance quickly because binaries are small, hardware is documented, targets don't move, and legal questions are settled."
+    time_sensitive: false
+fears_addressed:
+  - "AI will make any software copyable and kill companies like Adobe"
+  - "AI will replace programmers"
+  - "Everything proprietary can now be cloned by an agent"
+reader_value: "High. A model of how to debunk a viral AI headline by looking at the actual repository, the cost, and the structure of the problem; shows what AI really accelerates."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Ferrari replica built on a Beetle metaphor: looks right in a screenshot, runs like a Beetle"
+    - "Why retro ports are fast: small, documented, static targets"
+    - "The Bun rewrite: US$165k with author, source, tests as oracle, 64 agents; take away those advantages"
+    - "Valuable software lives in the cloud, contracts and expertise, not the binary"
+    - "Checking the repository behind a viral claim"
+  cut:
+    - "Timeline of emulation law and tool lists"
+    - "Console architecture details, DecompileBench citations"
+    - "Pantone and color science details beyond a short example"
+jargon: [reverse engineering, decompiler, disassembler, binary, Ghidra, clean-room, MCP, token, oracle, SaaS, color profile, CMYK, emulator, static recompilation, vibe-coded]
+illustration_ideas:
+  - "disassemble to decompile to recover names to refactor: what is lost in compilation"
+  - "why a moving target defeats cloning (Office formats, SaaS)"
+  - "advantages that made the Bun rewrite possible vs a clone with none"
+people_events: [Brandon Thomas PhotoCraft, REA reverse-engineer-anything, Jarred Sumner Bun rewrite, Linus Tech Tips video, Ilya Sutskever, Sega v. Accolade, Sony v. Connectix, GIMP CMYK, Epoch AI]
+related_posts: ["2026/10/12/llms-agentes-competente-o-suficiente", "2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas", "2026/10/11/existem-linguagens-melhores-pra-programar-com-llms"]
+prerequisites: ["What a binary and compiled code are", "What an AI coding agent is"]
+series: ""
+obsolescence: "Star counts, issue counts, version numbers and cost figures are Oct 2026; PhotoCraft and REA will evolve."

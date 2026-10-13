@@ -1,0 +1,42 @@
+---
+id: interlude2-partida-4
+kind: photo
+file: assets/figures/interlude2-partida-4.png
+sha256: 6e6d33334b86658bc5e31b60a419e3f7172329019adaab757cae46af829a868f
+pixels:
+  width: 426
+  height: 469
+source:
+  repository: wikimedia_commons
+  page_url: https://commons.wikimedia.org/wiki/File:Lee_Sedol_(W)_vs_AlphaGo_(B)_-_Game_4.svg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/f/f5/Lee_Sedol_%28W%29_vs_AlphaGo_%28B%29_-_Game_4.svg
+  original_sha1: e94e7b5aa9a79d10df49039195ed5254cdcf3992
+  retrieved: '2026-10-13'
+  title: Lee Sedol (W) vs AlphaGo (B) - Game 4
+  date_taken: '2018-09-06'
+  description: |-
+    Lee Sedol (B) vs AlphaGo (W) - Game 1
+    Komi: 7.50
+    Time: 2h0min 3x1min byo-yomi
+    Result: White wins by resignation
+
+    Rules: Chinese
+author: Wesalius
+uploader: Wesalius
+license:
+  short: CC BY-SA 4.0
+  url: https://creativecommons.org/licenses/by-sa/4.0
+  attribution_required: true
+  share_alike: true
+  restrictions: []
+modifications:
+- convertida de SVG para PNG
+adaptation: false
+placement: interior
+personality_rights_check: public figure, editorial context, interior only
+kdp_disclosure: none
+credit:
+  caption_pt: 'Imagem: Wesalius / Wikimedia Commons, CC BY-SA 4.0'
+  backmatter: '"Lee Sedol (W) vs AlphaGo (B) - Game 4.svg", Wesalius. https://commons.wikimedia.org/wiki/File:Lee_Sedol_(W)_vs_AlphaGo_(B)_-_Game_4.svg.
+    Licença CC BY-SA 4.0, https://creativecommons.org/licenses/by-sa/4.0. Modificações:
+    convertida de SVG para PNG.'

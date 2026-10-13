@@ -1,0 +1,44 @@
+id: "2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1"
+source_sha256: "5db7eb44180f7e0c53bc66af03873cda0294139eb8aea030e33e0cf7956ed893"
+title_en: "Vibe Code: I Built a Markdown Editor from Scratch with Claude Code (FrankMD) - Part 1"
+ai_relevance: substantial
+ai_relevance_reason: "Product tour of an app built entirely by Claude Code; AI appears as the builder and as an optional grammar feature, but the post mostly describes app features."
+genre: project-log
+themes: [vibe-coding-practice, personal-journey, coding-agents-tools]
+thesis: "A personalised tool built with AI in about three days fits the author's workflow, but it works because text editors are very well documented in training data, not because AI can make anything."
+summary: "Akita presents FrankMD, a self-hosted Markdown editor (Ruby on Rails 8, Docker) built entirely with Claude Code in about three days and 30 hours, without writing code himself. It was motivated by friction in editing his Hugo blog posts: front matter and slugs, uploading images to S3, tables, previews, spell-checking. Features include image insertion from local files, web search and the Nano Banana image generator, YouTube embedding, table helpers, emoji, themes matching Omarchy, fonts, i18n, typewriter mode, an AI button that sends text to a chosen LLM for grammar-only checks with a diff, and Hugo post creation. The name honours Frank Rosenblatt, creator of the 1957 Perceptron. He frames the two prior vibe-code posts as showing how hard simple things are, and says the point is to temper the unrealistic expectations of non-programmers ('a GTA 6 from scratch'). He cautions that editors are heavily documented so the result is not as impressive as it looks."
+key_claims:
+  - claim: "FrankMD was built with Claude Code in about 3 days (roughly 30 hours) with 137 pull requests and no code written by hand."
+    time_sensitive: false
+  - claim: "Claude succeeded partly because text editors are very well documented with abundant training material; the result should not be over-interpreted."
+    time_sensitive: false
+  - claim: "Non-programmers will not get an app like this from a few prompts without knowing the components and techniques underneath."
+    time_sensitive: false
+  - claim: "He likes LLMs and uses them heavily; his issue is correcting unrealistic expectations."
+    time_sensitive: false
+  - claim: "Frank Rosenblatt created the Perceptron in 1957, the origin of modern neural networks."
+    time_sensitive: false
+fears_addressed:
+  - "Can AI build real software for me?"
+  - "Is the author anti-AI? (no, he supports it with realistic expectations)"
+reader_value: "Low to moderate. Mostly a feature tour; the useful nuggets are the honest caveat about training data and the Rosenblatt/Perceptron note."
+technical_depth: 2
+evergreen: 2
+book_use:
+  keep:
+    - "Caveat: it worked because editors are well documented in training data"
+    - "Rosenblatt and the 1957 Perceptron as a naming anecdote"
+    - "Scratch-your-own-itch tools: 3 days, no hand-written code"
+  cut:
+    - "Feature-by-feature tour, keyboard shortcuts, Docker shell function"
+jargon: [Markdown, self-hosted, Docker, Perceptron, neural network, Nano Banana, front matter, vibe coding]
+illustration_ideas:
+  - "Timeline: Perceptron (1957) to modern neural networks"
+people_events: ["Frank Rosenblatt (Perceptron, 1957)", "Anthropic (Claude Code)", "Google Nano Banana", "Obsidian", "Hugo"]
+related_posts:
+  - "2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2"
+  - "2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard"
+  - "2026/01/29/vibe-code-qual-llm-é-a-melhor-vamos-falar-a-real"
+prerequisites: []
+series: "frankmd"
+obsolescence: "Feature list and version of the editor will change; process lessons are in part 2."

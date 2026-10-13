@@ -1,0 +1,37 @@
+id: "2026/05/28/backup-gmail-maildir-linux"
+source_sha256: "e936c429306d6a53486bca30a82c1c7e97906631a24d119b0addc647cc864be5"
+title_en: "Backing Up Gmail to Maildir on Linux"
+ai_relevance: none
+ai_relevance_reason: "A sysadmin tutorial on mirroring Gmail with mbsync, systemd and restic; AI appears only in a passing mention of LLM classification pipelines."
+genre: tutorial
+themes: [non-ai]
+thesis: "Do not trust the cloud to own your email; mirror it locally in an open format (Maildir) so you keep the data and any tool can read it."
+summary: "Akita replaces a manual Thunderbird backup with mbsync pulling Gmail over IMAP into Maildir, scheduled by a systemd user timer. The config is pull-only with no expunge or removal, so deleted remote mail is preserved locally. He stores an app password in the desktop keyring rather than in a config file. Restic snapshots the Maildir to a home NAS with deduplication, and the Synology sends encrypted copies to Glacier off-site. Because Maildir is an open format, many mail clients can read the same archive. Scripts or bots can read the files directly without Gmail OAuth or API quotas, which he notes would work for LLM classification too."
+key_claims:
+  - claim: "Maildir stores each message as a separate file, avoiding mbox locking and corruption problems, and has been the standard local format for decades."
+    time_sensitive: false
+  - claim: "A pull-only sync with no expunge/remove means deletions on Gmail never propagate and the local copy accumulates history."
+    time_sensitive: false
+  - claim: "Local ownership of email in an open format protects you if the provider closes your account."
+    time_sensitive: false
+fears_addressed:
+  - "What if a big tech provider locks me out of my data?"
+reader_value: "low. Pure self-hosting tutorial with no AI content; only the data-ownership mindset might interest a general reader."
+technical_depth: 4
+evergreen: 4
+book_use:
+  keep:
+    - "Brief point that owning your data in open formats lets any tool, including AI, use it without API gatekeepers"
+  cut:
+    - "All config files, systemd units, commands and Python snippet"
+    - "Restic and Glacier details"
+jargon: [IMAP, Maildir, systemd timer, NAS, restic, OAuth, app password]
+illustration_ideas:
+  - "Flow from Gmail to local Maildir to NAS to off-site copy"
+people_events:
+  - "Daniel J. Bernstein (Maildir, qmail 1995)"
+  - "Google (Gmail)"
+related_posts: []
+prerequisites: []
+series: ""
+obsolescence: "Config details and Gmail app-password requirements may change; the approach is stable."

@@ -1,0 +1,34 @@
+id: "2026/03/31/migrando-meu-home-server-com-claude-code"
+source_sha256: "d832d8629dd910e48f8bec41f3d59c3e7d735e4f039932d3708c1ee52ad14791"
+title_en: "Migrating My Home Server with Claude Code (openSUSE MicroOS)"
+ai_relevance: tangential
+ai_relevance_reason: "Claude Code assisted a 49-container server migration, with a short section on what the agent got wrong and when not to use it; the bulk is Linux/Docker/SELinux sysadmin detail."
+genre: tutorial
+themes: [coding-agents-tools, hardware-and-infrastructure, software-engineering-discipline]
+thesis: "An AI agent accelerates a home-server migration, but it does not know environment-specific traps (SELinux, absolute paths in Plex's database, unsupported GPU), so the human must supply that context and review every step; on real production servers, never without strict human review."
+summary: "Akita migrates a home server from Ubuntu on an Intel NUC to openSUSE MicroOS, an immutable OS with atomic updates and enforcing SELinux, on a new Minisforum machine with an AMD AI Max+ 395. He documents NFS mounting, getting ROCm to see 96GB of unified memory on an unsupported GPU, Docker daemon settings, and 49 containers in 15 stacks including a local Ollama. SELinux caused about 90% of the problems and a table lists fourteen pitfalls. Backups use btrfs snapshots plus restic to a NAS. A section lists what he would tell Claude Code up front to avoid 80% of problems. The closing warning says Claude created compose files and diagnosed issues, but does not know things like that a volume flag breaks SQLite, or that Plex stores absolute paths and will break if the agent invents 'better' volume layouts; for real production, read every file, confirm destructive commands and test backups."
+key_claims:
+  - claim: "Claude Code can generate compose files, backup scripts, firewall configuration and diagnose SELinux problems for a home server migration."
+    time_sensitive: true
+  - claim: "The agent does not know environment-specific pitfalls unless told, and may invent 'better' volume layouts that break applications."
+    time_sensitive: false
+  - claim: "Giving the agent the right context in the first message would have avoided about 80% of the problems."
+    time_sensitive: false
+  - claim: "For production systems, an AI agent should never be used without rigorous human review of each file and destructive command, and with tested backups."
+    time_sensitive: false
+  - claim: "SELinux caused about 90% of the migration problems."
+    time_sensitive: false
+fears_addressed: ["Can I let an AI manage my servers?"]
+reader_value: "low overall; the closing warning and 'brief the agent with your environment's gotchas' lesson are useful, rest is niche sysadmin."
+technical_depth: 5
+evergreen: 2
+book_use:
+  keep: ["Agent warning: it does not know your system's traps unless you tell it", "Low-risk home server vs production distinction"]
+  cut: ["Everything on SELinux, btrfs, ROCm, NFS, stack-by-stack details"]
+jargon: ["immutable OS", "container", "Docker", "SELinux", "NFS", "ROCm", "VRAM", "snapshot", "restic", "agent"]
+illustration_ideas: []
+people_events: ["Claude Code", "openSUSE MicroOS", "Minisforum MS-S1 Max", "Synology NAS", "Plex", "Cloudflare Tunnel"]
+related_posts: ["2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395", "2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server"]
+prerequisites: ["What a server and a container are"]
+series: "home-server"
+obsolescence: "Software versions, ROCm gfx1151 workarounds and IP/path specifics will date."

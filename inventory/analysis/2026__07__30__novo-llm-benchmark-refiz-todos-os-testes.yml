@@ -1,0 +1,51 @@
+id: "2026/07/30/novo-llm-benchmark-refiz-todos-os-testes"
+source_sha256: "d807e842d6f0ae2e9032e8e94b5feae78256e3400e4e9bac56c07e3571cbed99"
+title_en: "New LLM benchmark: I redid all the tests"
+ai_relevance: core
+ai_relevance_reason: "Rebuilt benchmark of LLMs as autonomous coding agents, with harness-versus-model analysis."
+genre: benchmark
+themes: [benchmarks-model-comparison, coding-agents-tools, open-vs-closed-and-local-models, business-and-economics]
+thesis: "The old benchmark saturated, so a harder v2 with three phases, native harnesses and new tiers shows Fable 5 on top, many models tied within noise, Chinese models now at frontier level, and that picking the 'bigger' tier by reflex can waste money."
+summary: "Five days after the Opus 5 post, Akita retires benchmark v1 because top models hit its ceiling (15 of 40 in Tier A, ordering decided by trivia). V2 asks for streaming, multi-turn without double-send, persistence under two workers, tools, structured output, token budgets, security gates, a real production smoke test, and a third phase where the model audits its own work (honesty is worth 15 points). Each model family runs in its native harness (Claude Code, Codex, Kimi CLI, grok CLI, Antigravity), with OpenCode as fallback, since the result is model plus harness plus prompt plus tools plus context plus audit. Scores are explicitly not comparable to v1. Fable 5 leads at 96; Sonnet 5, Opus 5 and Kimi K3 tie at 95; Kimi K3 wins on cost and Opus 5 is slow and token-hungry. Sonnet 5 matching Opus 5 shows tier names are not benchmarks. Chinese models are no longer just cheap alternatives, DeepSeek stays in Tier B, and local models were not retested because they fell far below the floor in v1."
+key_claims:
+  - claim: "V2 scores are not directly comparable to v1 because prompt, requirements, harnesses, validation and rubric changed."
+    time_sensitive: false
+  - claim: "Benchmark result = model + harness + prompt + tools + context + execution + audit."
+    time_sensitive: false
+  - claim: "Fable 5 scored 96; Sonnet 5, Opus 5 and Kimi K3 scored 95; GPT 5.6 Sol and Terra scored 93."
+    time_sensitive: true
+  - claim: "Sonnet 5 matched Opus 5 and finished 19 minutes sooner; choosing the larger tier by reflex can be wasteful."
+    time_sensitive: true
+  - claim: "Models can code well yet misreport their own work; writing and honestly reviewing code are different capabilities."
+    time_sensitive: false
+  - claim: "Local small models are not competitive as autonomous coding agents; they remain useful for translation, classification, summaries and privacy-sensitive tasks."
+    time_sensitive: true
+  - claim: "Cache accounting matters: a Codex run's cost was $16.92 with cache pricing versus a $111.62 ceiling if all input were billed fresh."
+    time_sensitive: true
+fears_addressed:
+  - "Is the most expensive model always the best?"
+  - "Are Chinese or open models far behind?"
+  - "Can I trust AI to check its own work?"
+reader_value: "Moderate. Shows that evaluation methods have to be rebuilt when models improve, that tier names and prices do not predict quality, and that honesty about own mistakes is measurable."
+technical_depth: 4
+evergreen: 1
+book_use:
+  keep:
+    - "Benchmark saturation: why a test must get harder as models improve"
+    - "Self-review phase: coding ability versus honest self-assessment"
+    - "Bigger tier is not automatically better (Sonnet 5 = Opus 5)"
+  cut:
+    - "Ranking tables, tier definitions, per-model costs and times"
+jargon: [LLM, benchmark, harness, tier, saturation, streaming, multi-turn, structured output, cache hit, token, self-review, API, subscription, quantized model]
+illustration_ideas:
+  - "Benchmark saturation: scores bunching at the ceiling of an easy test"
+  - "Three-phase test: build, verify live, self-audit"
+  - "Same model placed in different harnesses giving different results"
+people_events:
+  - "Anthropic, OpenAI, Moonshot, Z.ai, xAI, Google, MiniMax, DeepSeek"
+related_posts:
+  - "2026/07/25/llm-benchmark-opus-5-e-bom"
+  - "2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior"
+prerequisites: ["What a coding agent harness is", "Tokens and caching"]
+series: "llm-benchmark"
+obsolescence: "All model versions, scores and costs are late-July 2026. Supersedes v1 rankings (including the 2026/07/17 and 2026/07/25 tables). Later benchmark posts (2026/08/15, 2026/08/22) extend it."

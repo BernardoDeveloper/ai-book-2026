@@ -1,0 +1,34 @@
+id: "2026/08/12/davi-e-golias-digital-entendendo-megalag-vs-honey-paypal"
+source_sha256: "9548d9198be6ef07007dda5714e9a385b7a6ac2e2b1c1b91d21ac32ed8c7f2bc"
+title_en: "Digital David and Goliath: understanding MegaLag vs Honey/PayPal"
+ai_relevance: none
+ai_relevance_reason: "Investigation of a browser coupon extension's affiliate-commission fraud; no AI content."
+genre: news-analysis
+themes: [non-ai, society-politics-censorship]
+thesis: "A lone researcher with clear-text JSON evidence exposed that the Honey extension, owned by PayPal, hid its commission-stealing behavior from auditors; the company denied and threatened at every step until the evidence became undeniable."
+summary: "Akita summarizes the YouTuber MegaLag's investigation of Honey, a coupon extension bought by PayPal for 4 billion dollars. Honey exploited last-click affiliate attribution to replace creators' tracking cookies with its own at checkout, and pressured stores whose coupons were listed. The core finding is a defeat device in a server-delivered JSON file that made the extension obey the industry 'stand down' rule only when the user looked like an auditor (new accounts, few points, affiliate-dashboard cookies, 'test' in the email), compared to the VW Dieselgate. After the PayPal rewrite in 2021 the rules became readable. Affiliate networks (Rakuten, Impact, Awin) cut Honey in January 2026 and a class action survived a motion to dismiss in June 2026. He notes PayPal's pattern of denial and legal threats."
+key_claims:
+  - claim: "Honey replaced creators' affiliate cookies at checkout using last-click attribution, even when no coupon was found."
+    time_sensitive: false
+  - claim: "A server-delivered rules file made the extension honor stand-down rules only for users who looked like auditors (a defeat device akin to Dieselgate)."
+    time_sensitive: false
+  - claim: "Rakuten, Impact and Awin removed or suspended Honey in January 2026, and the class action survived dismissal on 22 June 2026."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low"
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Pattern of a product behaving well only when tested (relevant analog to benchmark gaming)"
+  cut:
+    - "JSON line-by-line analysis, litigation timeline"
+jargon: [browser extension, affiliate marketing, last-click attribution, cookie, stand down, defeat device, telemetry]
+illustration_ideas:
+  - "Two paths: user looks like auditor -> extension behaves; looks like real consumer -> steals the cookie"
+people_events:
+  - "MegaLag, Ben Edelman, PayPal, Honey, Rakuten, Awin, Linus Tech Tips"
+related_posts: []
+prerequisites: []
+series: ""
+obsolescence: "Legal status (class action, network bans) is as of August 2026."

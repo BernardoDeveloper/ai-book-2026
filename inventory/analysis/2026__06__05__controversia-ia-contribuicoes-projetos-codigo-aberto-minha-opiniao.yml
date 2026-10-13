@@ -1,0 +1,61 @@
+id: "2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao"
+source_sha256: "c9cba2e95138b7a4a1a3a6a459e5cc3253a0a556925a533482eb87e333b0fcf3"
+title_en: "The AI Controversy in Open Source Contributions: My Opinion"
+ai_relevance: core
+ai_relevance_reason: "The subject is AI-generated contributions, AI slop and AI-assisted review in open source."
+genre: opinion
+themes: [open-source-community, software-engineering-discipline, limits-of-llms, coding-agents-tools]
+thesis: "AI in open source contributions is here to stay and banning it is a losing fight locally defensible; the pragmatic answer is to use AI for triage and audit while a human keeps the final decision, because bugs and regressions were never exclusive to AI."
+summary: "Akita surveys recent flashpoints: rsync 3.4.3 regressions after Andrew Tridgell used Claude to help rewrite tests, Zig's strict no-AI policy, Bun's move to Rust after joining Anthropic, and curl dropping its bug bounty because of AI-generated fake reports. He grants maintainers the right to ban AI but says the volume will keep rising. He argues regressions exist with or without AI, citing the impossibility of a general perfect program verifier. His own workflow has an agent audit each PR with 'do not trust the author' prompts and ask for approval, after which he runs a second hardening audit and a deploy test. Projects need real use plus CI, since manual testing remains the last defense. His conclusion: AI is a mirror that amplifies sloppiness or engineering, and companies adding AI must strengthen QA."
+key_claims:
+  - claim: "rsync 3.4.3 (a security release in May 2026) triggered regressions; Tridgell said he used Claude with Codex and Gemini cross-checks to help rewrite Python tests and that the regressions were in valid but uncommon cases untested before."
+    time_sensitive: true
+  - claim: "Zig has a strict no-LLM contribution policy covering code, prose, translation and review."
+    time_sensitive: true
+  - claim: "curl suspended its bug bounty from 1 Feb 2026 after being flooded with LLM-generated vulnerability reports."
+    time_sensitive: true
+  - claim: "Fake security reports are worse than bad patches because an experienced person must spend time proving no bug exists."
+    time_sensitive: false
+  - claim: "No language or process eliminates bugs; there is no general perfect verifier for semantic properties of programs (halting problem, Rice's theorem)."
+    time_sensitive: false
+  - claim: "Banning AI contributions cannot be enforced reliably since AI use cannot be detected with certainty."
+    time_sensitive: false
+  - claim: "AI amplifies the practices of its user: sloppy people produce industrialized slop, rigorous engineers get amplified engineering."
+    time_sensitive: false
+  - claim: "ai-memory had 55 closed PRs (46 merged) and was entirely written by AI with no hand-written code."
+    time_sensitive: true
+fears_addressed:
+  - "Will AI flood the internet with low-quality code and fake bug reports?"
+  - "Is AI-written code inherently more dangerous than human code?"
+  - "Can we just ban AI from important projects?"
+reader_value: "High. A grounded, non-hype view of AI slop, who is affected and what practical process looks like, with real cases a lay reader can follow."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep:
+    - "curl bounty case: AI shifts cost of verification onto human maintainers"
+    - "rsync regression: bugs are not new, and a human designed and reviewed the AI work"
+    - "'Do not trust the author' as a review principle; PR description is a hypothesis, diff is evidence"
+    - "AI as a mirror that amplifies the user's habits"
+    - "Companies cutting developers must invest more in QA"
+  cut:
+    - "List of commit hashes and PRs in his projects"
+    - "Bun/Zig/Rust corporate speculation"
+jargon: [AI slop, pull request, regression, CVE, bug bounty, CI, triage, clean code, halting problem, maintainer, open source]
+illustration_ideas:
+  - "Review funnel: many incoming PRs, LLM triage, human decision"
+  - "Cost asymmetry: seconds to generate a fake report vs hours for a maintainer to refute"
+people_events:
+  - "Andrew Tridgell (rsync, Samba)"
+  - "Andrew Kelley (Zig)"
+  - "Daniel Stenberg (curl)"
+  - "Bun joining Anthropic"
+related_posts:
+  - "2026/04/11/vs-code-e-o-novo-cartao-perfurado"
+  - "2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso"
+  - "2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real"
+  - "2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory"
+  - "2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito"
+prerequisites: [LLM, coding agent, open source]
+series: ""
+obsolescence: "Specific incidents (rsync 3.4.3, curl bounty, Zig policy, Bun) are dated June 2026; the later Bun/Rust post (2026/07/09) expands on the Bun controversy. The argument itself is durable."

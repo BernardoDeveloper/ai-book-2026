@@ -1,0 +1,56 @@
+id: "2026/04/15/como-falar-com-o-claude-code-efetivamente"
+source_sha256: "1b8795f593d0bf02003614559d134daa34121962de303cf664aa5e7bc9a3eed0"
+title_en: "Why LLMs Don't Give You the Result You Expect | Why I Prefer Claude Code Today"
+ai_relevance: core
+ai_relevance_reason: "The post is about how to prompt and collaborate with LLM coding agents and compares two of them."
+genre: essay
+themes: [vibe-coding-practice, coding-agents-tools, jobs-and-careers, limits-of-llms]
+thesis: "When people say a model 'failed', the cause is usually poor communication: stating what you want, how, what you do not want and how to validate, then iterating like a pair programmer."
+summary: "Akita hears constantly that Claude is worse than GPT or vice versa, but after 500+ hours and about 400k generated lines with Claude Code and Codex, he says neither went off the rails and that when they could not do something they said so. He rejects heavy frameworks such as Spec Driven Development and instead practices Agile Vibe Coding: XP-style pair programming with an LLM. Using a real example (consolidating 12 TB of ROMs with checksums, idempotent steps, zero deletion and a human approval gate) he shows four things to communicate: the goal, the preferred method, what you do NOT want, and how to validate success. Once the context is solid, he switches from dictating to asking the model for the best approach, because it has broader vocabulary. He says the prompt is the start of a conversation, not a contract, and that output quality is proportional to the effort put into asking. He argues AI will replace people who cannot ask properly or validate, not good professionals, uses Tony Stark and Jarvis (and 85 armors) as a metaphor for iteration, and prefers Claude Code over Codex in April 2026 due to its harness (to-do planning and parallel execution), not the model. He closes with the Hitchhiker's 42 joke about asking the wrong question."
+key_claims:
+  - claim: "Differences people report between models are mostly differences in how they communicate with the model."
+    time_sensitive: false
+  - claim: "Effective prompts state the goal, the method, what not to do, and how to validate success."
+    time_sensitive: false
+  - claim: "After context is established, asking the model for the best approach beats prescribing the solution."
+    time_sensitive: false
+  - claim: "AI agents will replace people who cannot specify or validate work, not good professionals who become more productive."
+    time_sensitive: false
+  - claim: "As of April 2026, Claude Opus and GPT-5.4 xHigh are roughly tied as models; Claude Code's harness (visible to-do list, parallel execution on interruption) is superior to Codex's."
+    time_sensitive: true
+  - claim: "Models tend to say when they cannot do a task given the constraints rather than inventing, in the author's 500+ hours of use."
+    time_sensitive: true
+  - claim: "Prompting is iterative; the first prompt is a starting point and corrections continue during the work."
+    time_sensitive: false
+fears_addressed:
+  - "Why does AI give me bad results?"
+  - "Will AI replace skilled professionals?"
+  - "Do I need a special spec format or complicated prompt framework?"
+reader_value: "High for a lay reader: explains in plain terms that working with AI is about clear communication, offers a four-part checklist, and the Stark and Jarvis metaphor makes the human role concrete. Counters 'the model is bad' folklore."
+technical_depth: 2
+evergreen: 4
+book_use:
+  keep:
+    - "Four things to tell the AI: want, method, do-not-want, how to validate"
+    - "Terceirizado (outsourced contractor), not magician, as mental model"
+    - "Stark plus Jarvis and 85 armor iterations"
+    - "42 as right answer to the wrong question"
+    - "Ask instead of dictate once context is established"
+    - "Output quality is proportional to effort in the request"
+  cut:
+    - "ROM organization specifics"
+    - "Claude Code versus Codex harness comparison details"
+    - "Screenshots of the author's own prompts"
+jargon: [LLM, prompt, harness, coding agent, Agile Vibe Coding, pair programming, XP, Spec Driven Development, context, idempotent, Claude Code, Codex]
+illustration_ideas:
+  - "Four-part request: goal, method, anti-goals, validation"
+  - "Iteration loop: propose, test, break, fix (Stark armor Mark I to Mark 85)"
+  - "What is in your head versus what the model can see"
+people_events:
+  - "Tony Stark and Jarvis (MCU)"
+  - "Douglas Adams, Hitchhiker's Guide, answer 42"
+  - "Codeminer 42"
+related_posts: ["2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus", "2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio", "2013/11/02/off-topic-programadores-sao-pessimos-comunicadores-udp-vs-tcp"]
+prerequisites: ["What a coding agent is"]
+series: "agile-vibe-coding"
+obsolescence: "The Claude Code versus Codex harness comparison and model parity claim are explicitly dated 15 April 2026 and the author expects Codex to catch up; the communication advice is durable."

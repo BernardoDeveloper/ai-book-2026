@@ -1,0 +1,38 @@
+id: "2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw"
+source_sha256: "87fa90a9cd9c470204741dd83dfaebae1acbf9adc711e8fd50177671bd4d863b"
+title_en: "I Rewrote OpenClaw in Rust: Did It Work? (FrankClaw)"
+ai_relevance: core
+ai_relevance_reason: "OpenClaw is an AI-agent gateway; the post covers an AI-generated codebase audit, context limits of coding agents, and agent security hardening."
+genre: project-log
+themes: [security-and-sandboxing, coding-agents-tools, limits-of-llms, software-engineering-discipline]
+thesis: "A million-line, AI-generated gateway for LLM agents, merged at 50 commits per day with no human review, ships with serious vulnerabilities; a much smaller rewrite is possible, but no agent can rewrite such a codebase in one pass because of context limits."
+summary: "Akita measured OpenClaw, a popular gateway connecting chat channels to AI models, at about 1.25 million lines of TypeScript with around 50 commits per day from 42 contributors, which he reads as AI-generated code poured in faster than a human can review. A Claude security audit found 7 critical, 9 high, and more lower issues, including eval in the browser tool, unrestricted shell, unsigned Slack webhooks and plaintext transcripts. He refused to run it and rebuilt the core in Rust as FrankClaw (about 56,600 lines, 178 commits in about 5 days) with fixes for all critical and high findings, borrowing 12 ideas from a competing Rust rewrite (IronClaw). Asking Claude Code or Codex to rewrite the entire project failed because the codebase did not fit in context, producing stubs and todo markers; what worked was step-by-step analysis, a plan, and one feature at a time with tests and commits. He admits it is alpha, tested only for simple chats, and that he personally prefers building small custom bots in a day over a generic gateway."
+key_claims:
+  - claim: "OpenClaw is ~1.25 million lines of TypeScript with ~50 commits per day from 42 contributors, which makes serious human review impossible."
+    time_sensitive: true
+  - claim: "A Claude-driven automated audit of OpenClaw found 7 critical and 9 high-severity vulnerabilities."
+    time_sensitive: true
+  - claim: "No AI coding agent can rewrite a million-line project in one pass because it cannot hold it in context; results are stubs and todo!() placeholders."
+    time_sensitive: true
+  - claim: "A workable method: analyze in stages, write a detailed plan, implement one feature at a time with tests and commits."
+    time_sensitive: false
+  - claim: "The LLM generates functional code but does not think about attack vectors by itself; security hardening required human intervention."
+    time_sensitive: false
+  - claim: "FrankClaw is alpha and only simple chat flows were tested."
+    time_sensitive: true
+  - claim: "A custom-built bot for a specific task can be built in a day and may suit developers better than a generic agent gateway."
+    time_sensitive: true
+fears_addressed: ["Are AI agent tools safe to run?", "Is AI-written code in popular projects reliable?", "Why can't AI just rewrite anything?"]
+reader_value: "Moderate to high: a concrete case of AI-generated software at volume with serious security flaws and of agent context limits, valuable against both hype and blind trust. Details of channels and crates are skippable."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep: ["Million lines at 50 commits/day with no review: vibe coding at extreme", "Audit found 7 critical flaws including unrestricted shell and eval", "Agent cannot hold a million-line project in context; do it piece by piece", "Author's own conclusion: custom small bot beats generic gateway"]
+  cut: ["Feature lists, tool names, cryptographic details table", "Docker deploy steps", "Channel-by-channel audit commits"]
+jargon: ["gateway", "agent", "context window", "LLM", "vulnerability", "SSRF", "prompt injection", "sandbox", "webhook", "RAG", "embedding", "circuit breaker", "MCP", "token"]
+illustration_ideas: ["Why a million-line codebase does not fit in an agent's context window", "Piecewise rewrite loop: analyze, plan, implement one feature, test, commit"]
+people_events: ["OpenClaw", "IronClaw (NEAR AI)", "Claude Code", "OpenAI Codex 5.4", "VirusTotal"]
+related_posts: ["2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real", "2026/02/20/discord-como-admin-panel-bastidores-do-the-m-akita-chronicles"]
+prerequisites: ["What a coding agent is", "What a context window is"]
+series: "frank-projects"
+obsolescence: "OpenClaw's size, activity and vulnerability counts are a March 2026 snapshot (the project changes fast); model versions (Codex 5.4) will date."

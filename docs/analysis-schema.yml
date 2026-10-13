@@ -1,0 +1,36 @@
+# Schema for inventory/analysis/<id-with-slashes-as-__>.yml (one file per post).
+# Written in English regardless of post language. Keys in this order.
+id: "2026/MM/DD/slug"            # exact inventory id
+source_sha256: ""                 # pt.sha256 from inventory/posts.yml at analysis time
+title_en: ""
+ai_relevance: core                # core | substantial | tangential | none
+ai_relevance_reason: ""
+genre: essay                      # essay | rant | tutorial | project-log | benchmark | review | news-analysis | opinion | announcement
+themes: []                        # 1-4 from the controlled list below, primary first
+thesis: ""                        # the argument in 1-2 sentences
+summary: ""                       # 5-8 sentences, what the post actually says
+key_claims:                       # the claims a book must keep or verify
+  - claim: ""
+    time_sensitive: false         # true if it depends on model versions, prices, dates, benchmark numbers
+fears_addressed: []               # lay-reader fears/doubts this post speaks to, e.g. "AI will replace programmers"
+reader_value: ""                  # why a non-expert worried by AI hype would benefit; "low" is a valid answer
+technical_depth: 3                # 1 (anyone) .. 5 (needs to be a programmer)
+evergreen: 3                      # 1 (stale in months) .. 5 (holds for years)
+book_use:
+  keep: []                        # ideas/sections/anecdotes worth carrying into a book
+  cut: []                         # install steps, code dumps, version tables, promo, etc.
+jargon: []                        # terms a lay reader needs defined (glossary candidates)
+illustration_ideas: []            # abstract concepts a diagram/illustration would clarify
+people_events: []                 # real people, companies, events (photo / bibliography candidates)
+related_posts: []                 # ids of other 2026 posts it links to or depends on
+prerequisites: []                 # concepts the reader should already know
+series: ""                        # series/lineage name if part of one (e.g. "llm-benchmark", "ai-memory", "m-akita-chronicles"), else ""
+obsolescence: ""                  # what in this post is likely outdated or superseded (older model rankings, tool versions, reversed opinions), and by which later post if it says so
+
+# Controlled theme list (add a new slug only if nothing fits, and say so in ai_relevance_reason):
+# what-llms-are, limits-of-llms, hype-and-marketing, jobs-and-careers, coding-agents-tools,
+# vibe-coding-practice, software-engineering-discipline, benchmarks-model-comparison,
+# open-vs-closed-and-local-models, security-and-sandboxing, agent-memory-and-context,
+# business-and-economics, generative-media, ai-in-daily-life, reverse-engineering,
+# society-politics-censorship, open-source-community, hardware-and-infrastructure,
+# programming-languages, personal-journey, non-ai

@@ -1,0 +1,9 @@
+commit:
+  term: Commit
+  def: Um ponto salvo na história de um projeto de software, com as mudanças feitas e uma mensagem explicando o quê e por quê. Dá pra voltar a qualquer commit anterior.
+teste-automatizado:
+  term: Teste automatizado
+  def: Um pequeno programa que confere se outra parte do código faz o que deveria. Roda sozinho, em segundos, e avisa quando uma mudança quebrou algo que antes funcionava.
+codigo-morto:
+  term: Código morto
+  def: Trechos de código que ficaram no projeto mas não são mais usados por nada. Não causam erro visível, mas confundem quem lê, inclusive agentes de IA.

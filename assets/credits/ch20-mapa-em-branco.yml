@@ -1,0 +1,106 @@
+---
+id: ch20-mapa-em-branco
+kind: ai_illustration
+file: assets/figures/ch20-mapa-em-branco.png
+sha256: fd98dd95ba02c2e1c64a4fff75fc60b4fa8e142e08cd79c2ab84340e93f7c35e
+generation:
+  provider: openai
+  endpoint: POST /v1/images/generations
+  model: gpt-image-2.5-flare-2026-09-08
+  date: '2026-10-13T16:19:37-03:00'
+  style_version: STYLE v1
+  scene: 'An old hand-drawn explorer''s map laid flat, one large sheet of sand-coloured
+    parchment filling most of the frame, with slightly curled corners. In the lower-left
+    part of the sheet, a small territory with a clear coastline is densely detailed:
+    winding roads, many tiny towns drawn as little clusters of houses, rivers with
+    bridges, small forests, hills. The rest of the sheet, much larger and surrounding
+    it, is almost completely blank parchment: the coastline fades into a faint dashed
+    line and then nothing. In the blank area there are three small empty banner scrolls
+    (cartouches) with nothing written in them, spread apart, and one more empty banner
+    scroll over the detailed territory. A large magnifying glass lies on the blank
+    area, and through its lens there is only empty parchment. No people, no compass
+    letters, no text, no letters, no numbers anywhere; all banners are empty.'
+  prompt: 'STYLE v1: flat editorial vector illustration, thick uniform ink outlines
+    (#1B2238), limited palette navy #2B3A67, teal #2F7F86, amber #E3A23B accent, sand
+    #E9DFC9 panels, off-white #FBF9F4 background, generous whitespace, no gradients,
+    no textures, no text, no letters, no numbers, no logos, no real people, high contrast,
+    reads clearly in grayscale. Scene: An old hand-drawn explorer''s map laid flat,
+    one large sheet of sand-coloured parchment filling most of the frame, with slightly
+    curled corners. In the lower-left part of the sheet, a small territory with a
+    clear coastline is densely detailed: winding roads, many tiny towns drawn as little
+    clusters of houses, rivers with bridges, small forests, hills. The rest of the
+    sheet, much larger and surrounding it, is almost completely blank parchment: the
+    coastline fades into a faint dashed line and then nothing. In the blank area there
+    are three small empty banner scrolls (cartouches) with nothing written in them,
+    spread apart, and one more empty banner scroll over the detailed territory. A
+    large magnifying glass lies on the blank area, and through its lens there is only
+    empty parchment. No people, no compass letters, no text, no letters, no numbers
+    anywhere; all banners are empty.'
+  params:
+    size: 1536x1024
+    quality: high
+    background: opaque
+    output_format: png
+    "n": 2
+  seed:
+  request_id: ca4b6592-191c-45c3-a884-c3e51e06a406
+  usage:
+    input_tokens: 572
+    input_tokens_details:
+      image_tokens: 0
+      text_tokens: 572
+    output_tokens: 2744
+    output_tokens_details:
+      image_tokens: 2744
+      text_tokens: 0
+    total_tokens: 3316
+  drafts:
+  - build/genimg/ch20-mapa-em-branco-1.png
+  - build/genimg/ch20-mapa-em-branco-2.png
+  selected: 1
+post_processing:
+- 'flattened onto #FBF9F4, sRGB, alpha removed'
+- upscaled 1536x1024 -> 2400x1600 (ImageMagick Lanczos)
+- 'three empty banner scrolls in the blank area painted out with the parchment colour
+  #E8DABC (rectangles 315,190-712,318; 1680,208-2085,345; 1745,1135-2128,1268)'
+- 'labels overlaid with ImageMagick -annotate (gravity center, offsets from image
+  centre): público (NotoSans-SemiBold 54px, #1B2238, -694+208, on the generated banner);
+  privado (NotoSans-SemiBold 96px, #2B3A67, -50-330); código das empresas / jogos
+  comerciais / sistemas de bancos (NotoSans-Italic 52px, #565C68, -680-546 / +680-524
+  / +735+400); formulários / cadastros / sites (NotoSans-Regular 44px, #1B2238 on
+  #FBF9F4 undercolor, -840-160 / -440+105 / -95+260)'
+human_contribution: art direction (scene brief), selection, label text and placement,
+  placement and caption
+terms:
+  provider_terms: https://openai.com/policies/services-agreement/
+  copyright_status: AI-generated; likely not protectable (US Copyright Office Part
+    2; Lei 9.610 art. 11)
+kdp_disclosure: ai_generated_image
+credit:
+  caption_pt: Ilustração gerada por IA (GPT Image 2.5, OpenAI) sob direção do autor
+  caption_en: AI-generated illustration (GPT Image 2.5, OpenAI) under the author's
+    direction
+pixels:
+  width: 2400
+  height: 1600
+chapters:
+- 20
+labels:
+  pt:
+  - público
+  - privado
+  - código das empresas
+  - jogos comerciais
+  - sistemas de bancos
+  - formulários
+  - cadastros
+  - sites
+  en:
+  - public
+  - private
+  - company code
+  - commercial games
+  - banking systems
+  - forms
+  - registrations
+  - websites

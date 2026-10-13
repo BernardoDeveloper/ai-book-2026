@@ -1,0 +1,51 @@
+id: "2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1"
+source_sha256: "e6e28596d99d2ce9857a4ab24cba5d3b50e5e4d8fc6fd3d8e2b5132122cd7025"
+title_en: "New LLM Benchmark v4: Retesting ALL the Major LLMs (Part 1)"
+ai_relevance: core
+ai_relevance_reason: "The post is about how to measure LLM coding ability and why common benchmarks saturate."
+genre: benchmark
+themes: [benchmarks-model-comparison, limits-of-llms, coding-agents-tools]
+thesis: "Isolated-task coding benchmarks saturate and measure the wrong thing; a single evolving app with silently planted sabotage better tests real engineering vigilance, and even then frontier models are converging."
+summary: "Akita explains why his earlier benchmark versions stopped discriminating among frontier models: a well-specified app test becomes a completeness exam that nearly everyone aces. His v3, made of eighteen isolated micro-tasks (with the AI assistant itself nudging the design toward SWE-bench-style puzzles), saturated, so he rejected it. He cites industry problems with SWE-bench Verified (retired, malformed tests, memorization) and METR's finding that many passing PRs would not be merged. The v4 design is one Rails app that grows over seven sprints while a hidden subagent plants fourteen real-CVE-based sabotages, never announced until a final reveal; scoring weights severity and rewards unprompted detection. Thirty-nine models completed it. The run cost over US$4,000 in nine days, much of it in discarded attempts and quota limits, and he argues flat-rate subscriptions beat per-token billing for heavy agent use. He concludes that frontier models are close together (supporting an S-curve plateau), that paying for useful products does not contradict criticizing CEO rhetoric, and that no benchmark is absolute truth."
+key_claims:
+  - claim: "Isolated-task benchmarks (SWE-bench, HumanEval, LeetCode-style) saturate and suffer contamination; real software is non-linear coordination across parts."
+    time_sensitive: false
+  - claim: "OpenAI retired SWE-bench Verified in 2026 after an audit found 59.4% of hard failures were malformed tests; METR found about half of passing PRs would not be merged."
+    time_sensitive: true
+  - claim: "The v4 benchmark plants 14 CVE-based sabotages unannounced across 7 sprints and scores unprompted detection fully, post-reveal detection at 40%."
+    time_sensitive: false
+  - claim: "The run cost over US$4,000 in nine days; heavy agentic use is cheaper on a high-tier flat subscription than per-token pricing (an Opus agent session of ~2M input and 500k output tokens is about US$22)."
+    time_sensitive: true
+  - claim: "Frontier models remain very close to each other; differences matter less than cost, speed, and the harness you already use, consistent with an S-curve plateau."
+    time_sensitive: true
+  - claim: "A benchmark score only has meaning within the methodology that produced it; one should build own tests for own use case."
+    time_sensitive: false
+fears_addressed:
+  - "Which AI is 'best' and are rankings trustworthy"
+  - "AI is advancing explosively"
+reader_value: "Medium. Shows why AI leaderboards mislead (saturation, contamination, narrow scope) and that frontier models are roughly equivalent, a useful antidote to 'model X changes everything' marketing."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "Why benchmarks saturate and what 'contamination' means"
+    - "Linear (isolated puzzles) vs non-linear (interacting parts) complexity in real software"
+    - "Score only means something within its methodology; test with your own problem"
+    - "Anecdote: the AI assistant drifted the benchmark design toward the format the author criticizes"
+    - "Cost of agentic work and flat-rate vs per-token billing"
+  cut:
+    - "CVE list and Rails specifics"
+    - "Comparison with rails/ai-evals"
+    - "Quota juggling among Claude Max, Codex, Kimi"
+    - "List of models that failed to survive"
+jargon: [LLM, benchmark, SWE-bench, HumanEval, contamination, harness, sprint, CVE, subagent, token, context, tier, S-curve, OpenRouter, subscription vs API pricing]
+illustration_ideas:
+  - "benchmark saturation: scores clustering near 100 so the test cannot separate models"
+  - "linear chain of isolated tasks vs web of interdependent code"
+  - "hidden sabotage across sprints with detection weighting (unprompted vs after reveal)"
+  - "per-token billing vs flat subscription cost curve"
+people_events: [METR, OpenAI retirement of SWE-bench Verified, Princeton NLP, Evil Martians, Rails Foundation, 37signals]
+related_posts: ["2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia", "2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2", "2026/08/22/llm-benchmarks-os-ultimos-deepseek-v4-parem-de-perguntar"]
+prerequisites: ["What an LLM and a coding agent are", "What a benchmark is"]
+series: "llm-benchmark"
+obsolescence: "Specific model names, costs, subscription prices and quotas will date quickly; methodology lessons endure. Superseded by later v4 posts (2026/09/23) that add new models."

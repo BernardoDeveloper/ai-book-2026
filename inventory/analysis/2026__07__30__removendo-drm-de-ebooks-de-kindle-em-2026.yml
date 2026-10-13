@@ -1,0 +1,38 @@
+id: "2026/07/30/removendo-drm-de-ebooks-de-kindle-em-2026"
+source_sha256: "c4084752b17794c73cdbdff371ee490dc0bd1e2c0d797bc5d2071527d686caf7"
+title_en: "Removing DRM from Kindle ebooks in 2026"
+ai_relevance: none
+ai_relevance_reason: "No AI content; a tutorial on ebook DRM removal with Calibre and plugins (no mention of LLMs or agents)."
+genre: tutorial
+themes: [non-ai, society-politics-censorship]
+thesis: "Books you bought should stay yours; with Calibre, DeDRM, KFX Input and a Windows VM you can still archive purchased Kindle books as EPUB, though Amazon keeps changing the rules."
+summary: "Amazon disabled USB download of purchased Kindle books in February 2025, breaking the old Calibre workflow. Akita explains the formats (AZW, EPUB, KFX) and the difference between format and DRM, then walks through a current method: Calibre with the DeDRM fork (10.0.28 pre-release) and KFX Input plugins, the Windows Kindle app inside a VM to download the books, and conversion to EPUB. He recovered 106 purchased books, advises keeping originals until EPUBs are verified, and storing the key file encrypted. He notes Amazon has remotely deleted books (Orwell, 2009) and edited purchased content, argues DRM does not stop piracy but only inconveniences paying customers, and restricts the discussion to books he bought. He includes a legal disclaimer."
+key_claims:
+  - claim: "Amazon disabled the Download and Transfer via USB option on 26 February 2025."
+    time_sensitive: true
+  - claim: "DRM does not prevent piracy; it mainly inconveniences paying customers."
+    time_sensitive: false
+  - claim: "Amazon remotely deleted 1984 and Animal Farm from customers' Kindles in 2009."
+    time_sensitive: false
+  - claim: "The tool chain (DeDRM 10.0.28, KFX Input, Windows Kindle app in a VM) works as of 30 July 2026 and may break with any Amazon change."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low"
+technical_depth: 3
+evergreen: 1
+book_use:
+  keep:
+    - "Possible sidebar on digital ownership: licensed versus owned content"
+  cut:
+    - "Entire install/VM/plugin procedure and hashes"
+jargon: [DRM, EPUB, KFX, AZW, plugin, virtual machine]
+illustration_ideas:
+  - "Format versus DRM: a package (format) with a lock (DRM) on top"
+people_events:
+  - "Amazon Kindle USB download removal (Feb 2025)"
+  - "Amazon 1984 deletion (2009)"
+  - "Calibre, DeDRM (Satsuoni fork)"
+related_posts: []
+prerequisites: []
+series: ""
+obsolescence: "Tool versions and the working method are valid only for mid 2026 and were already updated in August 2026 (DeDRM 10.0.29); expect further breakage."

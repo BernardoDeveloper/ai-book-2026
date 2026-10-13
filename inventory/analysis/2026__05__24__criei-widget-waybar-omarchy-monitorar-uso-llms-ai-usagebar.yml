@@ -1,0 +1,30 @@
+id: "2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar"
+source_sha256: "cbd63fc0c5ed86a201d6420d5e1cbaf04f067b13677e6f312eb5fe1e55f1f68b"
+title_en: "I Built a Waybar Widget for Omarchy to Monitor LLM Plan Usage: ai-usagebar"
+ai_relevance: tangential
+ai_relevance_reason: "A small utility for monitoring LLM subscription usage; AI is the context but the post is a tool announcement."
+genre: announcement
+themes: [coding-agents-tools, business-and-economics, non-ai]
+thesis: "Someone who juggles several LLM subscriptions needs one place to see how much quota is left across vendors, so the author wrote a Rust widget and terminal UI for it."
+summary: "Akita uses Claude and GPT through their official coding tools on subscription plans, which he says are much cheaper than per-token credit, plus OpenRouter for testing and a Z.AI GLM subscription. To track usage of all of them in one view, he ported the claudebar Waybar widget to Rust and extended it to four vendors: Anthropic, OpenAI Codex, Z.AI and OpenRouter. Claude and Codex are read through the OAuth credentials their official CLIs already store, while Z.AI and OpenRouter use API keys. There is also a standalone terminal interface that works over SSH and in any terminal. He lists install options (AUR, source) and recommends one Waybar module with scrolling between vendors. It was a Saturday-night project, MIT licensed."
+key_claims:
+  - claim: "Subscription plans (Pro/Plus/Max) are much cheaper than per-token credit for heavy coding-agent use."
+    time_sensitive: true
+  - claim: "Subscription tiers have session, weekly and extra-usage limits, so monitoring remaining quota across vendors helps decide when to switch tools."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Niche tool announcement; only the observation that AI subscriptions have usage quotas that heavy users watch is of general interest."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep: []
+  cut:
+    - "Entire post (maybe a one-line mention that heavy AI users track quota like a data plan)"
+jargon: [LLM, OAuth, API key, subscription, quota, TUI, Waybar]
+illustration_ideas: []
+people_events:
+  - "claudebar (mryll)"
+related_posts: ["2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar", "2026/04/18/omarchy-no-thinkpad-t14-gen-6"]
+prerequisites: []
+series: "ai-toolkit"
+obsolescence: "Vendor list, credential file paths and plan limits are May 2026 specifics."

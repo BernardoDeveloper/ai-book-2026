@@ -1,0 +1,43 @@
+id: "2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema"
+source_sha256: "4c69f21b41a7d410a4bb469d0b482a385b6545ec753171858a52c93b6599a809"
+title_en: "AI Agents: Protecting Your System"
+ai_relevance: core
+ai_relevance_reason: "About the risk of letting AI coding agents run commands on your machine and how to contain it."
+genre: tutorial
+themes: [security-and-sandboxing, coding-agents-tools]
+thesis: "AI coding agents need broad system access to be useful, so you should treat them as untrusted and run them inside a sandbox that can only write to the project directory."
+summary: "Coding agents must read files and run commands like grep, compilers and linters, so an LLM that hallucinates can issue something destructive such as rm -Rf. Tools ask for permission, but users tire of approving every command and switch to allow-all. Supply-chain attacks on open-source libraries (e.g. NPM) add a second risk: even a well-behaved tool can be compromised. His answer is a jail using Bubblewrap (the sandbox technology behind Flatpak): read-only system directories, write access only to the current project, hidden home directory. He supplies a long custom ai-jail script with deny-lists for password stores and browser data. For Claude Code he also shows a settings file with allow, ask and deny permission lists instead of skipping permissions. He ends by saying this is essentially how Docker/Podman containers work and that nothing is 100% safe."
+key_claims:
+  - claim: "To be useful, coding agents need file-system access and the ability to run arbitrary shell commands, which creates a risk of damage or data exfiltration."
+    time_sensitive: false
+  - claim: "Approval prompts get bypassed in practice because users get tired and choose 'allow everything'."
+    time_sensitive: false
+  - claim: "Supply-chain attacks mean even open-source software cannot be assumed trustworthy; assume everything is insecure until proven otherwise."
+    time_sensitive: false
+  - claim: "A Bubblewrap jail with read-only system mounts and a single writable project directory prevents the agent from touching the rest of the system."
+    time_sensitive: false
+  - claim: "Granular allow/ask/deny rules are a middle path between approving everything and approving nothing."
+    time_sensitive: false
+fears_addressed:
+  - "Could an AI agent wipe my computer or leak my files?"
+  - "Can I trust the tool's own permission prompts?"
+reader_value: "Moderate to high for the concept, low for the script. Explains in plain terms why agents are risky and what isolation means; the code itself is for developers."
+technical_depth: 4
+evergreen: 4
+book_use:
+  keep:
+    - "Permission fatigue: why approval prompts end up as 'allow everything'"
+    - "Sandbox/jail as the principle: untrusted by default, one writable folder"
+    - "Supply-chain attack as a reason not to trust tools blindly"
+  cut:
+    - "Full ai-jail script"
+    - "settings.json permission list"
+jargon: [sandbox, jail, Bubblewrap, Flatpak, supply-chain attack, hallucination, agent, container, VM, read-only mount, permissions]
+illustration_ideas:
+  - "A sandbox: agent inside a box that sees the project folder read-write and everything else hidden or read-only"
+  - "Permission fatigue curve: ask-every-time drifting to allow-all"
+people_events: ["Anthropic (Claude Code)", "Flatpak/Bubblewrap", "NPM supply-chain incidents (general)"]
+related_posts: []
+prerequisites: ["What a coding agent is", "Files and shell commands at a basic level"]
+series: "ai-jail"
+obsolescence: "Script details and Claude Code settings keys may change; the principle is durable. The ai-jail idea is referenced and extended in later posts."

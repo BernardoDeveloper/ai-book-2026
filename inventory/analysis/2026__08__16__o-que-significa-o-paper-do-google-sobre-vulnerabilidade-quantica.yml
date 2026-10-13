@@ -1,0 +1,46 @@
+id: "2026/08/16/o-que-significa-o-paper-do-google-sobre-vulnerabilidade-quantica"
+source_sha256: "56f5a0f940f3cd8680669f8bb49dfadf7f01ee5aa36eaebb98e027fce7e069fa"
+title_en: "What Google's paper on quantum vulnerability means"
+ai_relevance: tangential
+ai_relevance_reason: "Analysis of a quantum-computing/crypto paper; AI appears as a method: the author had GLM, Kimi and ChatGPT critique the paper and compares their views."
+genre: news-analysis
+themes: [hardware-and-infrastructure, hype-and-marketing, non-ai]
+thesis: "A Google paper cutting the estimated cost of breaking Bitcoin's elliptic curve to under 500,000 qubits is serious but describes machine size, not a date; the sky is not falling, but migration should start early and the real risk is limited to exposed keys."
+summary: "Akita reads a Google Quantum AI, Ethereum Foundation and Stanford paper on securing elliptic-curve cryptocurrencies against quantum attack. It claims breaking secp256k1 needs under 500,000 physical qubits and about 9 minutes under favorable assumptions, and publishes a zero-knowledge proof instead of the circuit. He explains fast and slow quantum clocks, attacks at spend, at rest and at setup, about 6.9 million BTC with exposed keys, and that mining is not at risk. He asked GLM 5.3, Kimi K3 and ChatGPT to critique the paper; they converged on the main points and warned that 'value at risk' differs from expected loss and that 41% is not the chance of theft. He notes a researcher forged the proof via a verifier bug, an independent reproduction, and authors' conflicts of interest. Today's best hardware has about a dozen logical qubits versus the 1,200 needed; he bets on timelines an order of magnitude longer than roadmaps, and advises key hygiene and gradual post-quantum migration."
+key_claims:
+  - claim: "The paper estimates breaking secp256k1 with fewer than 500,000 physical qubits and roughly 9 to 12 minutes, conditional on assumptions; it gives no date."
+    time_sensitive: true
+  - claim: "Best public hardware has about 12 logical qubits while the attack needs over 1,200 working together for minutes."
+    time_sensitive: true
+  - claim: "Bitcoin mining (proof of work) is not at risk from quantum attack."
+    time_sensitive: false
+  - claim: "Value at risk is not expected loss, and the quoted 41% is the chance the computation finishes within a block interval, not the chance of theft."
+    time_sensitive: false
+  - claim: "A stronger passphrase does not protect against a quantum attack that derives a private key from an exposed public key."
+    time_sensitive: false
+  - claim: "When different LLMs critique the same paper and converge on the same points, that is a useful sign, but the author still verified externally."
+    time_sensitive: false
+fears_addressed:
+  - "Quantum computers will break all encryption/Bitcoin tomorrow"
+  - "Alarmist headlines versus dismissals of FUD"
+reader_value: "Low to moderate. Good model of calibrating a scary headline (distinguish resource estimate from timeline, risk from expected loss); the quantum and crypto details are niche."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Reading a scary headline: machine size is not a date; value at risk is not expected loss"
+    - "Using several LLMs as critics of a paper, then checking sources"
+    - "Physical versus logical qubit plates-spinning analogy"
+  cut:
+    - "Attack taxonomy, address-type lists, roadmap numbers"
+jargon: [quantum computer, qubit, logical qubit, error correction, Shor's algorithm, zero-knowledge proof, secp256k1, post-quantum cryptography, public key]
+illustration_ideas:
+  - "Physical qubits (noisy) grouped into one logical qubit via error correction"
+  - "Gap chart: about 12 logical qubits today versus 1,200 required"
+people_events:
+  - "Google Quantum AI (Craig Gidney), Trail of Bits, IBM roadmap, Quantinuum, Microsoft Majorana"
+related_posts:
+  - "2026/08/01/explorando-o-problema-escandaloso-do-rng-da-coinkite"
+prerequisites: ["Public/private key basics"]
+series: ""
+obsolescence: "Qubit records, roadmaps and probabilities are August 2026 estimates."

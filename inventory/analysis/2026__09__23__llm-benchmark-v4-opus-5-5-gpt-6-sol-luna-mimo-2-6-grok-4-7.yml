@@ -1,0 +1,43 @@
+id: "2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7"
+source_sha256: "f25eac5a0fe68846d1e5744753f479b5e33d1c92fbea356d51adf506c9335ce8"
+title_en: "LLM Benchmark v4: Opus 5.5, GPT 6 sol/luna, MiMo 2.6, Grok 4.7"
+ai_relevance: core
+ai_relevance_reason: "Benchmark update ranking five newly released LLMs."
+genre: benchmark
+themes: [benchmarks-model-comparison, hype-and-marketing, open-vs-closed-and-local-models]
+thesis: "New versions are not automatic upgrades: Opus 5.5 and GPT 6 luna match or beat predecessors at a fraction of the cost, while Grok 4.7 and GPT 6 sol regress on vigilance."
+summary: "Five new models joined the v4 sabotage-detection benchmark, bringing the table to 44. Opus 5.5 reached a perfect score at about a quarter of Opus 5's cost and under half the time. GPT 6 luna scored 95.5 for roughly one-twelfth the previous luna's cost, while GPT 6 sol dropped to 91.0 though far cheaper. Grok 4.7 regressed to 83.5, worse than 4.6 on score, cost and speed, catching loud sabotage but missing disguised ones. MiMo V2.6 Pro improved to 92 for about US$1.22. Akita compares with external benchmarks (Artificial Analysis, others) which sometimes disagree, explaining they measure different things. He gives per-model migrate-or-not advice and closes noting the three American labs released models within three days right after publicly agreeing to 'pace the frontier', while a Chinese lab simply improved."
+key_claims:
+  - claim: "Opus 5.5 scored 100 at about US$16.63 and 64 minutes versus about US$71 and 145 minutes for Opus 5."
+    time_sensitive: true
+  - claim: "GPT 6 luna scored 95.5 at an estimated US$0.84, GPT 6 sol 91.0, a regression from GPT 5.6 sol on vigilance but cheaper."
+    time_sensitive: true
+  - claim: "Grok 4.7 scored 83.5, lower than Grok 4.6 (98.5), and was costlier and slower; external benchmarks show it improving on general coding, so the benchmarks measure different axes."
+    time_sensitive: true
+  - claim: "A newer model version is not always better; regressions on one axis can coexist with gains on another."
+    time_sensitive: false
+  - claim: "Release cadence continued despite public calls to slow the frontier."
+    time_sensitive: true
+fears_addressed:
+  - "Is every new model release a leap forward"
+  - "Should I switch to the newest model immediately"
+reader_value: "Medium-low. Useful for the idea that versions can regress and that different benchmarks disagree; specifics date within weeks."
+technical_depth: 3
+evergreen: 1
+book_use:
+  keep:
+    - "New version does not mean better: Grok 4.7 and GPT 6 sol regression, luna and Opus 5.5 gains"
+    - "Capability benchmarks and vigilance-under-sabotage benchmarks can disagree without either being wrong"
+    - "Release timing vs calls to slow down"
+  cut:
+    - "Full 44-row table, costs, per-model details"
+    - "Migrate-or-not recommendations"
+jargon: [LLM, benchmark, tier, token, harness, subscription, CORS, XSS, open weights, regression]
+illustration_ideas:
+  - "version-over-version score, cost and time deltas showing gains and regressions"
+  - "two benchmarks measuring different axes of the same model"
+people_events: [Anthropic Opus 5.5, OpenAI GPT 6 sol and luna, xAI Grok 4.7, Xiaomi MiMo V2.6 Pro, Artificial Analysis, Dario Amodei essay on pacing the frontier]
+related_posts: ["2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1", "2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2", "2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia"]
+prerequisites: ["Parts 1 and 2 of the v4 benchmark"]
+series: "llm-benchmark"
+obsolescence: "All scores, costs and migration advice are tied to model versions of 21-23 Sept 2026 and will be superseded by later benchmark posts (e.g. 2026/09/23 Genesys PI addendum adds two more models)."

@@ -1,0 +1,54 @@
+id: "2026/06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local"
+source_sha256: "ea56a609622cfd6ea2f3df72fe53f008ee722fccd6b4df9c81d69eca44c8ebb9"
+title_en: "LLM Benchmark: Kimi K2.7 Code, GLM 5.2 and MiniMax M3 Local"
+ai_relevance: core
+ai_relevance_reason: "Benchmarks open-weight models and discusses why large open models cannot run on consumer hardware."
+genre: benchmark
+themes: [open-vs-closed-and-local-models, benchmarks-model-comparison, hardware-and-infrastructure]
+thesis: "Open-weight models are improving steadily (GLM 5.2 jumped from 46 to 87), but serious coding still needs Opus 4.8 or GPT 5.5, and local use of the largest open models is blocked by memory and chip supply until perhaps around 2030."
+summary: "Akita adds Kimi K2.7 Code (86/100), GLM 5.2 (87) and the open-weights MiniMax M3 to his Rails/RubyLLM coding benchmark. He first updates his data-center story: SpaceX's record IPO was pitched on orbital AI compute, and open models could eventually offload demand from the cloud. Kimi K2.7 Code regressed slightly versus K2.6 by omitting the system prompt, and its case exposed a false positive in his own scanner. GLM 5.2 made the biggest jump he has measured by fixing a hallucinated API bug. MiniMax M3 has about 428B parameters in a mixture-of-experts layout, so even the 1-bit quantization fills 128 GB and leaves nothing for the KV cache; only 256 GB or more Mac Studios could try it. He expects local viability to converge with cheaper hardware around 2030."
+key_claims:
+  - claim: "In his benchmark GLM 5.2 scored 87 and Kimi K2.7 Code 86, versus GLM 5.1 at 46."
+    time_sensitive: true
+  - claim: "Serious agentic coding needs more than about 200K tokens of context, which most open models do not deliver with quality."
+    time_sensitive: true
+  - claim: "In a mixture-of-experts model all weights must stay resident in memory even though only a fraction is active per token; the total size, not the active size, sets hardware needs."
+    time_sensitive: false
+  - claim: "MiniMax M3 (~428B parameters, ~23B active) cannot run on a 32 GB GPU or a 128 GB unified-memory machine at any usable quantization."
+    time_sensitive: true
+  - claim: "Local AI is held back by chip and memory supply being absorbed by data-center buyers; he guesses viability around 2030."
+    time_sensitive: true
+  - claim: "His automated scanner flagged valid app methods as hallucinated API calls, so he always reads integrations by hand."
+    time_sensitive: false
+fears_addressed:
+  - "Will I be able to run powerful AI on my own computer?"
+  - "Are open models catching up?"
+reader_value: "Medium. Clear explanation of why big models do not fit in consumer machines and why local AI is a hardware question; also a caution about trusting automated checkers."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Mixture-of-experts: total size must fit in memory even if few experts activate"
+    - "Local AI blocked by hardware supply, convergence guess of ~2030"
+    - "Automated checker false positive: validate by reading"
+  cut:
+    - "Ranking table and rubric detail"
+    - "Quantization size table specifics"
+    - "SpaceX IPO figures"
+jargon: [open-weight model, mixture of experts, MoE, quantization, GGUF, KV cache, unified memory, context window, hallucination, parameters, inference]
+illustration_ideas:
+  - "Mixture-of-experts: many experts in memory, only a few active per token"
+  - "Memory budget bar: weights + KV cache vs available RAM at different quantizations"
+  - "Timeline projecting open-model quality rising and hardware price falling to a crossing point"
+people_events:
+  - "Moonshot (Kimi), Z.ai (GLM), MiniMax"
+  - "SpaceX IPO (June 2026)"
+  - "Minisforum MS-S1 Max (Strix Halo)"
+related_posts:
+  - "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
+  - "2026/06/01/llm-benchmarks-grok-4-3-minimax-m3-opus-4-8"
+  - "2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic"
+  - "2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395"
+prerequisites: [LLM, context window, benchmark]
+series: "llm-benchmark"
+obsolescence: "Scores, model names, memory sizes and the 2030 prediction are mid-June 2026; later benchmark posts supersede the ranking."

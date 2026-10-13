@@ -1,0 +1,40 @@
+id: "2026/01/23/ai-3d-ja-da-pra-modelar-3d-com-prompts"
+source_sha256: "09b178bd873a09ef47a6208e7ad76fe600ffb82fd2aed622b929470a3873c2b5"
+title_en: "AI 3D: You Can Already Model in 3D with Prompts"
+ai_relevance: core
+ai_relevance_reason: "Subject is AI image-to-3D generation tools and a workflow ending in a physical 3D print."
+genre: tutorial
+themes: [generative-media, ai-in-daily-life]
+thesis: "Commercial AI 3D generators are now good enough to take a character image to a printable model, provided you start from clean, consistent multi-angle reference images made with an image-editing AI."
+summary: "Akita corrects an earlier negative verdict on AI-assisted Blender modelling: open-source options vary and his Trellis2 tests produced deformed blobs, but commercial tools (Tencent Hunyuan 3D, Hitem3D, Yvo3D for textures, and others) are strong. The key trick is input quality: using Google's Nano Banana to remove a background, then generate a T-pose character with consistent front, back, left and right views. Feeding four clean images to Hunyuan 3.0 produced a high-polygon model with correct hands, face and hair; he re-meshed it in Blender, printed it on a 3D printer, and showed rigging and posing with Adobe Mixamo. He concludes going from nothing to a physical object via AI is real, though textures from Hunyuan are weak and he only tried a hobby use."
+key_claims:
+  - claim: "Quality of AI 3D output depends heavily on input images; poor or inconsistent photos give poor models."
+    time_sensitive: false
+  - claim: "Open-source image-to-3D (e.g. Trellis2) was unreliable in his tests, while commercial services were excellent."
+    time_sensitive: true
+  - claim: "Image-editing AI (Nano Banana) can remove backgrounds and produce consistent T-pose views from several angles, work that once needed Photoshop."
+    time_sensitive: true
+  - claim: "A Hunyuan-generated model printed correctly on a home 3D printer, with right proportions and five-fingered hands."
+    time_sensitive: true
+  - claim: "Hunyuan is weak at textures; another tool (Yvo3D) is best for textures but expensive."
+    time_sensitive: true
+fears_addressed:
+  - "Is AI image/3D generation real or a demo trick?"
+reader_value: "Moderate. A concrete, non-coding example of AI producing a physical object, plus the lesson that results depend on preparing good inputs."
+technical_depth: 2
+evergreen: 2
+book_use:
+  keep:
+    - "From a drawing to a printed figurine: concrete example"
+    - "Garbage in, garbage out: prepare clean multi-angle inputs"
+  cut:
+    - "List of platforms and YouTube channels"
+    - "Remesh, Mixamo, rigging details"
+jargon: [image-to-3D, mesh, polygon, remesh, T-pose, texture, rig, ComfyUI, 3D printing]
+illustration_ideas:
+  - "Pipeline: messy image to clean background-free image to four consistent views to 3D mesh to print"
+people_events: ["Tencent Hunyuan", "Google Nano Banana", "Microsoft Trellis2", "Adobe Mixamo", "Blender"]
+related_posts: []
+prerequisites: []
+series: ""
+obsolescence: "Tool names, versions (Hunyuan 3.0, Trellis2) and quality verdicts are January 2026 snapshots; this post reverses his earlier negative verdict on Blender MCP with local models."

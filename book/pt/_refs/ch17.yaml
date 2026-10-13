@@ -1,0 +1,100 @@
+references:
+  - id: skylot2026jadx
+    type: "software"
+    title: "jadx: Dex to Java decompiler"
+    author: [{literal: "skylot"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026]]}
+    URL: "https://github.com/skylot/jadx"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint (the TikTok analysis README names jadx 1.5.5)"
+  - id: worawit2026blutter
+    type: "software"
+    title: "Blutter: Flutter mobile application reverse engineering tool"
+    author: [{literal: "worawit"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026]]}
+    URL: "https://github.com/worawit/blutter"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint"
+  - id: akita2026tiktok
+    type: "software"
+    title: "tiktok_analysis"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 7, 8]]}
+    URL: "https://github.com/akitaonrails/tiktok_analysis"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint"
+  - id: akita2026clashofkings
+    type: "software"
+    title: "clash_of_kings_analysis"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 7, 8]]}
+    URL: "https://github.com/akitaonrails/clash_of_kings_analysis"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint"
+  - id: akita2026govbr
+    type: "software"
+    title: "govbr_analysis"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 7, 8]]}
+    URL: "https://github.com/akitaonrails/govbr_analysis"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint"
+  - id: lexisnexis2026threatmetrix
+    type: "webpage"
+    title: "ThreatMetrix"
+    author: [{literal: "LexisNexis Risk Solutions"}]
+    container-title: "LexisNexis Risk Solutions"
+    issued: {date-parts: [[2026]]}
+    URL: "https://risk.lexisnexis.com/products/threatmetrix"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint"
+  - id: akita2026frankfbi
+    type: "software"
+    title: "Frank FBI: Fraud Bureau of Investigation"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 3, 9]]}
+    URL: "https://github.com/akitaonrails/frank_fbi"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/09/atacando-fraudes-via-email-frank-fbi"
+  - id: valim2026hacked
+    type: "post"
+    title: "Oops, my Twitter account was temporarily hacked"
+    author: [{family: "Valim", given: "José"}]
+    container-title: "X"
+    issued: {date-parts: [[2026, 3, 5]]}
+    URL: "https://x.com/josevalim/status/2029628027945021810"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/22/pseudo-techcrunch-tentou-me-pegar-em-golpe-calendly-e-uma-merda"
+  - id: bytedance2026seedance
+    type: "webpage"
+    title: "Seedance 2.0 Official Launch"
+    author: [{literal: "ByteDance Seed"}]
+    container-title: "ByteDance Seed"
+    issued: {date-parts: [[2026, 2, 12]]}
+    URL: "https://seed.bytedance.com/en/blog/official-launch-of-seedance-2-0"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/15/seedance-2-0-finalmente-foi-lancado-primeiras-impressoes (page dated 12 Feb 2026, the partner launch; the post dates the public opening to 15 Apr 2026)"
+  - id: axios2026sora
+    type: "article-newspaper"
+    title: "OpenAI to discontinue Sora video app"
+    author: [{literal: "Axios"}]
+    container-title: "Axios"
+    issued: {date-parts: [[2026, 3, 24]]}
+    URL: "https://www.axios.com/2026/03/24/openai-discontinue-sora-video-app"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/15/seedance-2-0-finalmente-foi-lancado-primeiras-impressoes (post states Sora was discontinued without a link; verified online)"
+  - id: tencent2026hunyuan3d
+    type: "webpage"
+    title: "Hunyuan 3D"
+    author: [{literal: "Tencent"}]
+    container-title: "Tencent Hunyuan"
+    issued: {date-parts: [[2026]]}
+    URL: "https://3d.hunyuanglobal.com/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/01/23/ai-3d-ja-da-pra-modelar-3d-com-prompts"

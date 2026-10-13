@@ -1,0 +1,48 @@
+id: "2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito"
+source_sha256: "4efebd6893539875cd7d62c121b0b6df51ba8610890a2232d996241e4f56d914"
+title_en: "The Response on Bun in Rust That Andrew Kelley Should Have Written"
+ai_relevance: substantial
+ai_relevance_reason: "Core topic is Rust vs Zig for Bun, but the rewrite was done by AI agents and the post uses Fable 5 and GPT 5.6 Sol as technical referees; process with agents is a main finding."
+genre: opinion
+themes: [programming-languages, coding-agents-tools, software-engineering-discipline, open-source-community]
+thesis: "Bun's rewrite to Rust is defensible and Rust buys real safety, but the method (agent loops, adversarial review, tests as arbiter) mattered as much as the language, and the evidence does not prove Zig was technically unviable."
+summary: "Akita supports Jarred Sumner's decision to rewrite Bun in Rust and is disappointed by Andrew Kelley's reply, which he says drifted into personal attacks. He therefore asks Claude Fable 5 and GPT 5.6 Sol to act as technical referees and write the answer Kelley should have given. Rust turns ownership and cleanup into compiler-checked types, reducing use-after-free and double-free, but cannot verify the JavaScriptCore boundary (FFI), so contracts remain. Zig has errdefer, debug allocators and arenas, and its comptime gave a real advantage that the first Rust port lost. Size and speed numbers have mixed causes (LTO, ICU, toolchain). The most useful lesson is process: Sumner broke the migration into verifiable loops with adversarial reviewers. He flags that Anthropic owns Bun and sells Claude Code, a conflict of incentives."
+key_claims:
+  - claim: "Rust makes ownership and cleanup visible in types, turning many use-after-free, double-free and leak-on-error bugs into compiler errors, but it cannot prove validity across FFI or the JavaScriptCore garbage-collector boundary."
+    time_sensitive: false
+  - claim: "Zig is not defenseless: errdefer, std.testing.allocator and DebugAllocator catch many leaks and double-frees in tests, though not statically."
+    time_sensitive: false
+  - claim: "A first Rust port of Bun's Output.pretty lost Zig's comptime guarantee and caused a regression, later fixed with a macro."
+    time_sensitive: true
+  - claim: "Binary-size and speed gains in Bun v1.4 canary (e.g. 94 MB to 76 MB on Windows, ~4.5-4.8% faster HTTP) have mixed causes: Rust, LTO, ICU changes, linker and cleanup."
+    time_sensitive: true
+  - claim: "The Bun rewrite succeeded as a process of loops: porting docs, lifetime analysis, trial run, compiler errors as a work queue, adversarial reviewers, test suite and multi-platform CI as arbiter; it was not a single prompt."
+    time_sensitive: false
+  - claim: "Anthropic acquired Bun in December 2025 and sells Claude Code, so the Bun team has an institutional incentive to showcase Claude."
+    time_sensitive: true
+fears_addressed:
+  - "Can AI rewrite a huge codebase by itself?"
+  - "Is language choice or process what matters?"
+reader_value: "Low to medium for lay readers, high for engineers. The takeaway for non-programmers is that AI-assisted large projects succeed through verification loops and human engineering, and that claims by interested parties deserve scrutiny."
+technical_depth: 5
+evergreen: 3
+book_use:
+  keep:
+    - "A huge AI-assisted rewrite succeeded because it was turned into verifiable loops, not a magic prompt"
+    - "Conflict of interest: the vendor's own acquired team demonstrating the vendor's product"
+    - "Using two LLMs as referees (and the author's own caveats)"
+  cut:
+    - "All code excerpts and Rust/Zig language comparison detail"
+    - "Kelley personal dispute"
+jargon: [use-after-free, double-free, ownership, lifetime, FFI, garbage collection, unsafe, borrow checker, comptime, LTO, agent, adversarial review, runtime, compiler error]
+illustration_ideas:
+  - "Verification loop: agent implements, adversarial reviewers critique, fixer applies, tests decide"
+  - "What the compiler guarantees vs what remains a human contract at the FFI boundary"
+people_events:
+  - "Jarred Sumner (Bun), Andrew Kelley (Zig)"
+  - "Anthropic acquisition of Bun (Dec 2025)"
+related_posts:
+  - "2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao"
+prerequisites: [coding agent, programming language, memory safety]
+series: ""
+obsolescence: "Bun canary numbers and Zig's async/I-O redesign status are July 2026; Zig may have shipped changes since."

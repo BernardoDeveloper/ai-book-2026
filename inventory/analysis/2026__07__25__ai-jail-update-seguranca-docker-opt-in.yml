@@ -1,0 +1,45 @@
+id: "2026/07/25/ai-jail-update-seguranca-docker-opt-in"
+source_sha256: "dc064ef739ebe8a36ccc90a6749dddf3017098c85f4ad1162be4a6d6f1cd6375"
+title_en: "ai-jail update: Docker security becomes opt-in"
+ai_relevance: substantial
+ai_relevance_reason: "About sandboxing AI coding agents; the flaw is a container-security classic, but the context is containing an agent."
+genre: news-analysis
+themes: [security-and-sandboxing, coding-agents-tools, open-source-community]
+thesis: "Mounting the Docker socket into an agent sandbox gives the agent root on the host, so ai-jail made it opt-in; a sandbox with a convenience back door is decoration."
+summary: "A user reported issue #88: ai-jail mounted /var/run/docker.sock read-write into the sandbox by default, letting an agent run a container that mounts the host filesystem and read anything as root. Version 1.16.0 turns the passthrough off by default, warns when enabled, and shows its state in status. Akita admits that leaving it on by default was a design flaw, not just a documented risk. He shows that any user in the docker group can become root with one command, explains the Docker daemon runs as root, and why this long-known architecture persists. He compares Podman (daemonless, rootless) with its trade-offs, then lists best practices: treat the docker group as passwordless sudo, never mount the socket in untrusted environments, use socket proxies, prefer rootless, build in CI without privileged daemons. He thanks the reporter."
+key_claims:
+  - claim: "Access to the Docker socket is effectively root on the host, because the daemon runs as root and can bind-mount any host path."
+    time_sensitive: false
+  - claim: "An AI agent inside the sandbox with the socket mounted could bypass tmpfs home, masks, Landlock and other protections by asking the daemon to act outside the sandbox."
+    time_sensitive: false
+  - claim: "ai-jail v1.16.0 made Docker passthrough opt-in via --docker or no_docker = false."
+    time_sensitive: true
+  - claim: "Podman avoids this class of problem by being daemonless and rootless, at the cost of compatibility friction."
+    time_sensitive: false
+fears_addressed:
+  - "Can an AI agent escape its sandbox and damage my computer?"
+  - "Are AI safety tools themselves trustworthy?"
+reader_value: "Moderate. A clear case study that giving an AI agent a convenient tool can quietly hand it full control, and of an honest maintainer fixing it. Technical for the Docker details."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "Sandbox with a back door: the agent does not need to escape if the door leads to the machine room"
+    - "Maintainer admits a default was a vulnerability; credit to the outside reporter"
+  cut:
+    - "Update commands, Podman pros/cons list, tool links"
+jargon: [sandbox, container, Docker socket, root, daemon, rootless, bwrap, Landlock, seccomp, namespace, privilege escalation, YOLO mode]
+illustration_ideas:
+  - "Sandbox walls with a door to the Docker daemon outside them that runs as root"
+  - "Agent in sandbox asking the root daemon to mount the whole host disk"
+people_events:
+  - "mdindoffer (issue reporter)"
+  - "Red Hat / Podman"
+  - "Akitando #139 on containers"
+related_posts:
+  - "2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas"
+  - "2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema"
+  - "2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar"
+prerequisites: ["What a coding agent can do on your computer", "What a sandbox is"]
+series: "ai-jail"
+obsolescence: "ai-jail version numbers (1.16.0) and the socket-proxy plan are time-bound; the Docker-socket lesson is stable."

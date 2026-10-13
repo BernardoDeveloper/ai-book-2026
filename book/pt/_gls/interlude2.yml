@@ -1,0 +1,8 @@
+mcts:
+  term: Busca em árvore de Monte Carlo
+  long: Monte Carlo Tree Search (MCTS)
+  def: Técnica em que o programa simula muitas partidas a partir da posição atual, com lances escolhidos em parte ao acaso, e prefere o lance que mais vezes levou à vitória. Foi o que tirou as IAs de Go da era das regrinhas escritas à mão, e o AlphaGo ainda a usava junto com redes neurais.
+codigo-aberto:
+  term: Código aberto
+  long: open source
+  def: Software cujo código-fonte é publicado com uma licença que deixa qualquer um ler, modificar e redistribuir. Diferente de modelo aberto, que publica só os pesos de um modelo de IA.

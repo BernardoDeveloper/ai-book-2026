@@ -1,0 +1,16 @@
+nivel-de-esforco:
+  term: Nível de esforço
+  long: reasoning effort
+  def: Ajuste que define quanto um modelo de raciocínio "pensa" por escrito antes de responder. Esforço alto gasta mais tokens e tempo e erra menos em tarefas difíceis.
+pre-treino:
+  term: Pré-treino
+  long: pre-training
+  def: A primeira e mais cara fase do treino de um LLM, em que ele aprende a prever o próximo pedaço de texto numa montanha de texto da internet, livros e código.
+lei-de-escala:
+  term: Lei de escala
+  long: scaling law
+  def: Relação observada em 2020 de que o erro de um modelo cai de forma previsível conforme crescem o tamanho, os dados e o processamento usados no treino. Inspirou a corrida por modelos cada vez maiores.
+aprendizado-por-reforco:
+  term: Aprendizado por reforço
+  long: reinforcement learning (RL)
+  def: Treino por tentativa e recompensa, em que o modelo é premiado quando acerta. Funciona bem onde existe um jeito barato de conferir o resultado, como placar de jogo, prova de matemática ou teste de código.

@@ -1,0 +1,28 @@
+references:
+  - id: wikipedia2026elektro
+    type: "webpage"
+    title: "Elektro"
+    author: [{literal: "Wikipedia"}]
+    container-title: "Wikipedia"
+    issued: {date-parts: [[2026]]}
+    URL: "https://en.wikipedia.org/wiki/Elektro"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (preface; Westinghouse robot at the 1939 New York World's Fair: ~2.1 m, walked on voice command, ~700 words from a 78-rpm record, smoked cigarettes, blew up balloons)"
+  - id: wikipedia2026futurama
+    type: "webpage"
+    title: "Futurama (New York World's Fair)"
+    author: [{literal: "Wikipedia"}]
+    container-title: "Wikipedia"
+    issued: {date-parts: [[2026]]}
+    URL: "https://en.wikipedia.org/wiki/Futurama_(New_York_World%27s_Fair)"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (preface; General Motors exhibit by Norman Bel Geddes, 1939 fair theme 'The World of Tomorrow', model of the US of 1960 with automated highways and rooftop platforms for flying machines)"
+  - id: wise1951day
+    type: "motion_picture"
+    title: "The Day the Earth Stood Still"
+    author: [{family: "Wise", given: "Robert"}]
+    publisher: "20th Century-Fox"
+    issued: {date-parts: [[1951, 9, 18]]}
+    URL: "https://en.wikipedia.org/wiki/The_Day_the_Earth_Stood_Still"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (preface; Klaatu and the robot Gort land in Washington and warn that Earth will be destroyed if its atomic-age aggression continues). Brazilian title: O dia em que a Terra parou."

@@ -1,0 +1,53 @@
+id: "2026/10/12/llms-agentes-competente-o-suficiente"
+source_sha256: "ee499fef89fe8fe35d652f193b51f1660cd08e8ed77adee74e036ca1444cc54b"
+title_en: "LLMs + Agents = competent enough"
+ai_relevance: core
+ai_relevance_reason: "Synthesis essay on the state and trajectory of LLM capability and agent harnesses."
+genre: essay
+themes: [what-llms-are, limits-of-llms, hype-and-marketing, coding-agents-tools]
+thesis: "Base LLM intelligence has converged and is near the ceiling of the transformer architecture; the real jump of 2025-2026 came from the agentic harness (tool use, caching, long sessions), which is competent enough to automate real software engineering when guided by disciplined engineers."
+summary: "Akita ties together his benchmark and essay series with a timeline from GPT-2 (2019) to the agentic era: GPT-3 and the parameter war, Chinchilla shifting weight to data, GPT-4 hiding parameter counts, o1 (2024) as the last big leap in core reasoning, 2025 as architecture optimization (mixture of experts, prompt caching, long context), and 2026 as harness refinement. He argues an agent can run a less dense model because it can look up facts on demand and use trial and error with real test feedback, which fights hallucination and explains why recent progress feels huge. He notes many tasks (e.g. classification) don't need giant LLMs. He warns the loop needs an oracle, otherwise it spins, and cites signs of plateau such as diminishing pretraining returns and shrinking gaps between top models. He contrasts this with apocalyptic marketing and concludes that LLM alone is an expensive parrot, with an agent and engineering discipline it is competent enough, but there is no magic for amateurs: unskilled prompting yields slop."
+key_claims:
+  - claim: "In the author's benchmarks, general programming ability has not improved noticeably since the Opus 4.5 generation; frontier models converge and model choice is nearly indifferent, except for effort level."
+    time_sensitive: true
+  - claim: "Core reasoning had its last big leap around 2024 (o1-style reasoning); 2025 was architectural optimization and 2026 harness refinement."
+    time_sensitive: true
+  - claim: "Mixture-of-experts separates total capacity from per-token cost; prompt caching cut repeated-context cost by up to 90%."
+    time_sensitive: false
+  - claim: "An agent with search and test feedback can use a less dense model because facts are fetched and errors are caught by test loops, reducing hallucination."
+    time_sensitive: false
+  - claim: "The agentic loop needs an oracle (docs, tests); with none it spins, as seen with a brand-new language."
+    time_sensitive: false
+  - claim: "Frontier-lab claims of dangerous emergent behavior were brute-force trial and error rather than consciousness; fear serves marketing and regulation."
+    time_sensitive: true
+  - claim: "LLM alone is an expensive parrot; with an agent it is competent enough for real engineering, but unskilled use produces slop."
+    time_sensitive: false
+fears_addressed:
+  - "AI is advancing exponentially toward superintelligence"
+  - "AI will replace engineers"
+  - "Do I need the newest model"
+reader_value: "High. A clear narrative of how AI progressed, why the recent leap is mostly in tools around the model rather than the model itself, and why skill still matters; also a counterweight to doom and hype."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Timeline 2019-2026 of the parameter war, hidden parameter counts, reasoning peak, MoE/caching, agent era"
+    - "Why the agent harness feels like a leap: lookup plus trial-and-error loops"
+    - "LLM alone is a costly parrot; the agent makes it competent"
+    - "Plateau evidence: diminishing pretraining returns, shrinking gaps among top models"
+    - "No magic for amateurs: slop in, slop out"
+  cut:
+    - "Series map linking prior posts"
+    - "Dense citations to papers beyond a few"
+    - "Reiteration of the Sept marketing critique"
+jargon: [LLM, transformer, parameters, mixture of experts, prompt caching, context window, agent, harness, tool calling, MCP, RL, reasoning, hallucination, oracle, benchmark, pretraining, scaling laws]
+illustration_ideas:
+  - "timeline: parameter war, data era, reasoning peak, optimization, agents"
+  - "agent loop: hypothesis, run test, feedback, correct"
+  - "mixture of experts: total parameters stored vs active parameters computed per token"
+  - "S-curve of model capability vs rising harness competence"
+people_events: [GPT-2, GPT-3, Chinchilla, GPT-4 technical report, o1, DeepSeek-V3, DeepSeek-R1-Zero, Model Context Protocol, METR task-length study, Ilya Sutskever NeurIPS 2024, Reuters Nov 2024 report, Stanford AI Index 2025]
+related_posts: ["2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7", "2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas", "2026/10/11/existem-linguagens-melhores-pra-programar-com-llms", "2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia", "2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor"]
+prerequisites: ["What an LLM is", "What an AI agent is"]
+series: ""
+obsolescence: "Model names and 'no improvement since Opus 4.5' are time-bound; the author's plateau thesis could be revised by later releases."

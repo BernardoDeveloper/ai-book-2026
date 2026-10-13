@@ -1,0 +1,36 @@
+id: "2026/03/04/eu-fiz-um-sistema-de-data-mining-pra-minha-namorada-influencer-dicas-e-truques"
+source_sha256: "cbb458881bb3245cc5a535afe1ba1a3e0f18dc6a9a73d9b2da1e8260b3f8976f"
+title_en: "I Built a Data Mining System for My Influencer Girlfriend: Tips and Tricks"
+ai_relevance: substantial
+ai_relevance_reason: "Built with Claude and uses LLMs inside the product (sentiment, tool-calling Discord chatbot, prompts); the post covers LLM pitfalls such as null vs zero, hallucinated dates and bad tool parameters."
+genre: project-log
+themes: [vibe-coding-practice, ai-in-daily-life, limits-of-llms, software-engineering-discipline]
+thesis: "Start from the user's own words about what they want, not from architecture; and an LLM-powered system needs defensive engineering because LLMs mix up missing data with zero, invent dates and send bad parameters."
+summary: "Akita built, in 3 days and 58 commits, a headless Rails system that collects social media, event and competitor data for his influencer partner and exposes it through a Discord chatbot that answers in Portuguese using tool calling. He began from a document of her own free-form wishes (what content works, how much to charge sponsors) rather than a technical spec, and later pivoted from a weekly email to five daily Discord digests with feedback buttons. Technical lessons include making every job idempotent, treating a missing value (null) differently from zero so the LLM does not conclude nobody shares posts, and exposing 40+ tools that return structured data. LLM-specific traps: models hallucinate timestamps (a reminder 'tomorrow 3pm' landed in 2024), call tools with out-of-range parameters, and contradictory prompts produce inconsistent behavior, so prompts are composed from reusable YAML snippets. Instagram blocks scraping at random, so a paid API became primary. The project is private and not open source. He credits Claude for much of the code but the direction and validation as human."
+key_claims:
+  - claim: "A full data-mining system with 40+ chatbot tools, 916 tests and 25+ scheduled jobs was built in 3 days with Claude."
+    time_sensitive: true
+  - claim: "LLMs treat 'not collected' (null) and zero as equivalent unless told otherwise, producing false conclusions; a reusable prompt snippet fixes this."
+    time_sensitive: false
+  - claim: "LLMs hallucinate dates and times; the current datetime must be injected into prompts."
+    time_sensitive: false
+  - claim: "LLMs frequently pass wrong tool parameters (e.g. limit 100 where max is 50), so inputs should be clamped and normalized, since each error costs a round trip and tokens."
+    time_sensitive: false
+  - claim: "Contradictory instructions in two prompts make the LLM obey one or the other 'depending on the day'."
+    time_sensitive: false
+  - claim: "The user's own words about her problems produced a better product than a technical spec would have (chatbot instead of dashboard)."
+    time_sensitive: false
+fears_addressed: ["Is AI useful for ordinary non-technical people's work?", "Why does AI get simple things like dates wrong?"]
+reader_value: "Moderate to high: a humane use case (a creator getting daily insights in plain language) and a clear list of ways LLMs go wrong in practice (invented dates, confusing blank with zero). The infrastructure sections are skippable."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep: ["Start from the user's wishes in their own words", "Null vs zero: how an LLM draws a wrong conclusion from missing data", "LLM hallucinated 'tomorrow' as a date in 2024", "Chatbot with tools answering questions from a real database", "User-driven pivot from weekly email to daily digests"]
+  cut: ["Docker headless Chrome host-header trick", "Job schedule tables", "Event tracker and discovery pipeline internals", "SQLite production notes"]
+jargon: ["tool calling", "LLM", "hallucination", "idempotent", "prompt", "scraping", "headless browser", "token", "Discord bot", "sentiment analysis", "API"]
+illustration_ideas: ["Tool calling loop: question, LLM chooses tools, database results, LLM writes answer", "Null vs zero: missing data vs measured zero"]
+people_events: ["Claude Sonnet via OpenRouter", "Grok", "Gemini image generation", "Apify", "Discord"]
+related_posts: ["2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio"]
+prerequisites: ["What an LLM chatbot is"]
+series: "frank-projects"
+obsolescence: "Model names and API/scraping workarounds (Instagram blocking, Apify) will date; the project is private."

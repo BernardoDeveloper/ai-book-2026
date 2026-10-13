@@ -1,0 +1,59 @@
+id: "2026/05/25/primeiras-impressoes-usando-oh-my-pi-e-opencode"
+source_sha256: "ae4f1c3ec3b40add53e15b6886ab62a6ba7e9534c0233728e4ccc55eda28fc6e"
+title_en: "First Impressions of Oh-My-Pi and OpenCode"
+ai_relevance: core
+ai_relevance_reason: "The subject is coding-agent harnesses (the program wrapped around an LLM) and how they change what the same model can do."
+genre: review
+themes: [coding-agents-tools, limits-of-llms, agent-memory-and-context, vibe-coding-practice]
+thesis: "The harness around a model matters as much as the model, but no harness or single LLM audits everything; tool names are not arguments, and process (small prompts, tests, careful review) still decides quality."
+summary: "Akita explains what a harness is: the program that builds the system prompt, exposes tools, runs them, manages permissions and compacts context. He compares Claude Code, Codex CLI, OpenCode, Pi and Oh-My-Pi, concluding Codex is a weaker harness around a good model, OpenCode is polished and cohesive, and Oh-My-Pi has more tools (notably a universal read for SQLite, PDFs, zips) that pay off for non-code artifacts. He argues that more sub-agents do not make programming more parallel, because most coding has a critical path, citing his earlier mixed-model benchmark. He rejects the 'Pi saves tokens' myth: spend comes from tool output and logs, and he would not use a coding agent with under 200K tokens of context, which is why he is skeptical of local open models. In a three-way review of the same pull request, each harness-model combination found some real problems and missed others. His conclusion is that tools help but disciplined process wins."
+key_claims:
+  - claim: "A raw LLM only receives text and returns text; a harness gives it files, tools, permissions, memory and context management, so two CLIs on the same model behave differently."
+    time_sensitive: false
+  - claim: "Subsidized monthly plans are far cheaper than per-token API billing for heavy agent use, but Anthropic forbids using Claude Pro/Max OAuth in third-party tools."
+    time_sensitive: true
+  - claim: "Codex CLI is an inferior harness (weak plan mode, poor interruption) wrapping a strong GPT 5.5; the same model felt less 'nerfed' in OpenCode."
+    time_sensitive: true
+  - claim: "Adding more sub-agents does not speed up hard programming because tasks have a critical path; coordination overhead eats the gain, and only independent batch jobs parallelize well."
+    time_sensitive: false
+  - claim: "System prompt size is a negligible share of token spend; logs, test output and file reads dominate, and under roughly 200K tokens of context a serious coding agent is impractical."
+    time_sensitive: true
+  - claim: "Local open-source models were Tier C or worse in his benchmark and consumer GPUs lack VRAM for a huge KV cache, so they are not a substitute for frontier models in serious coding."
+    time_sensitive: true
+  - claim: "In a three-way review of one PR, each of Oh-My-Pi/GPT 5.5, OpenCode/GPT 5.5 and Claude Code/Opus 4.7 found some real issues and missed others; never trust one LLM to audit anything important."
+    time_sensitive: false
+fears_addressed:
+  - "Is there a magic tool or agent swarm that makes AI programming effortless?"
+  - "Can I trust an AI code review to be complete?"
+  - "Is the model alone what matters?"
+reader_value: "Medium. Gives a lay reader a clear picture of the wrapper around the model and a healthy skepticism toward fanboy tool talk and 'more agents is better' claims; the product-by-product comparison is niche."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Harness as horse tack: the model is strong but needs a harness; model plus harness, not model alone"
+    - "Three reviewers each found different bugs: do not rely on one LLM to audit"
+    - "Why more sub-agents does not equal more speed (critical path, like managing a team)"
+    - "Token spend comes from work output, not the system prompt; why context window size matters"
+  cut:
+    - "Tool-by-tool lists of Oh-My-Pi/OpenCode capabilities and read URIs"
+    - "Subscription OAuth policy details"
+    - "NeoVim and Linux analogies and personal editor setup"
+jargon: [LLM, harness, system prompt, tool calling, MCP, LSP, AST, compaction, context window, token, KV cache, sub-agent, steering, sandbox, frontier model, open-weight model, vibe coding]
+illustration_ideas:
+  - "Layers diagram: user -> harness (prompt, tools, permissions, compaction) -> model"
+  - "Critical-path diagram showing why parallel agents stall on dependent tasks"
+  - "Venn diagram of bugs found by three reviewers with partial overlap"
+  - "Where tokens go in a coding session: system prompt vs logs and tool output"
+people_events:
+  - "Claude Code (Anthropic), Codex CLI (OpenAI), OpenCode, Pi, Oh-My-Pi"
+  - "Claude Code source leak (March 2026)"
+related_posts:
+  - "2026/02/08/rant-ia-acabou-com-programadores"
+  - "2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - "2026/05/18/memoria-agentes-karpathy-llm-wiki-agentmemory"
+  - "2026/04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos"
+  - "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
+prerequisites: [LLM, context window, coding agent]
+series: "coding-agent-harnesses"
+obsolescence: "Tool and model versions (Oh-My-Pi, OpenCode 1.15, GPT 5.5, Opus 4.7), subscription OAuth policy and product opinions are likely to change quickly; the harness concept and sub-agent argument hold."

@@ -1,0 +1,25 @@
+---
+id: ch19-ciclos
+kind: diagram_code
+chapters:
+- 19
+editions:
+- pt
+- en
+file: assets/figures/ch19-ciclos.png
+sha256: a7c27275f55f7f79336a6b99284faeebab6600cdeb8d41a56c2875a7d06aade9
+pixels:
+  width: 1920
+  height: 1290
+source: assets/charts/ch19-ciclos.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch19-ciclos.py
+  pt
+description: 'ch19-ciclos: the two-week sprint loop vs. the same-day loop (a hypothesis).'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

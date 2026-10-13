@@ -1,0 +1,12 @@
+rubrica:
+  term: Rubrica
+  def: A lista de critérios, com pesos, que um avaliador usa pra transformar um trabalho em nota. Duas rubricas diferentes dão notas diferentes ao mesmo trabalho.
+ruido-entre-execucoes:
+  term: Ruído entre execuções
+  def: A variação de nota que aparece quando a mesma prova é repetida com o mesmo modelo, sem mudar nada. Diferenças menores que esse ruído não provam que um modelo é melhor que outro.
+saturacao:
+  term: Saturação
+  def: Quando uma prova fica fácil demais pros melhores competidores e quase todos tiram a nota máxima. A prova continua separando bons de ruins, mas deixa de separar os bons entre si.
+contaminacao:
+  term: Contaminação
+  def: Quando as perguntas ou respostas de uma prova vazam pro material de treino do modelo, que passa a lembrar a resposta em vez de resolver o problema.

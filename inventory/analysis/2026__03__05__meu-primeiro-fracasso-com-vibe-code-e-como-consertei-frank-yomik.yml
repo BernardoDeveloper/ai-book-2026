@@ -1,0 +1,38 @@
+id: "2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik"
+source_sha256: "3119dbda9fae3c6a430923c8ca03977ecdd73994087340beb873a5b785b3f4f0"
+title_en: "My First Vibe Code Failure and How I Fixed It (Frank Yomik)"
+ai_relevance: substantial
+ai_relevance_reason: "Vibe-coding post-mortem built with Claude; also uses pre-trained ML models (RT-DETR detector, OCR, local LLM translation) and discusses why heuristics lost to a trained model."
+genre: project-log
+themes: [vibe-coding-practice, limits-of-llms, software-engineering-discipline, generative-media]
+thesis: "AI makes writing code so fast that you can produce a huge volume of useless code; prompting does not replace thinking. Know when to abandon a brittle approach and search for an existing trained model, and AI makes such failure cheap."
+summary: "Akita wanted a tool to add furigana to, or translate, manga pages in near real time. With Claude he spent about six days building an OpenCV heuristic detector for speech bubbles: 551 lines, seven false-positive filters, three detection passes, and many hand-tuned magic numbers, plagued by faces being mistaken for bubbles. Each fix broke something else, which he calls brittle code. He then asked Claude to search for pre-trained models and found an RT-DETR-v2 detector trained on about 11,000 comic images; replacing the heuristic code with it deleted 1,112 lines in one commit and solved over 99% of cases. A hidden-browser prefetch feature and a Flutter-on-Linux saga are also described. He argues that the last 20% of a project costs exponentially more, that vibe coding made the failure cheap (days instead of weeks), and that researching existing models first would have saved most of the time. Unsolved: translating each speech balloon without context loses gender and wordplay, and webtoon art requires AI in-painting."
+key_claims:
+  - claim: "Six days of AI-assisted OpenCV heuristics were replaced by a pre-trained detection model in about one day, deleting 1,112 lines."
+    time_sensitive: false
+  - claim: "Heuristic piles of filters and magic numbers become brittle: fixing one case breaks another."
+    time_sensitive: false
+  - claim: "Prompting does not replace thinking; no prompt turns seven layers of heuristics into a robust solution."
+    time_sensitive: false
+  - claim: "Reaching 80% is easy; the last 20% costs exponentially more and the last 1% may be impossible."
+    time_sensitive: false
+  - claim: "Vibe coding made the failure cheap: a 5-day dead end would have been 2-3 weeks pre-AI."
+    time_sensitive: true
+  - claim: "Translating balloons in isolation loses context (pronoun gender, running jokes); real quality would need earlier text as context."
+    time_sensitive: false
+  - claim: "The final server needs a GPU (16GB VRAM stated in the intro, 8GB in the closing; inconsistent in source)."
+    time_sensitive: true
+fears_addressed: ["Does AI always get it right?", "Does vibe coding guarantee a working product?", "AI will make developers obsolete"]
+reader_value: "Good: an honest failure story showing that AI speeds up the wrong direction just as fast as the right one, and that a pre-trained model beat hand-written rules. Also a plain explanation of why rules-based approaches to messy real-world inputs fail."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep: ["Face mistaken for speech bubble: why rule-based vision fails", "Brittle code symptom definition", "AI makes failure cheap but not decisions", "'Prompting does not replace thinking'", "Context-free translation loses gender and puns"]
+  cut: ["OpenCV filter details (CLAHE, Canny, watershed)", "Flutter/WebKitGTK GPU workarounds", "Pipeline internals (Redis, Go, WebSocket)"]
+jargon: ["vibe coding", "OpenCV", "false positive", "heuristic", "pre-trained model", "object detection", "OCR", "furigana", "VRAM", "in-painting", "fine-tuning", "brittle code"]
+illustration_ideas: ["Heuristic rules vs trained model: stacked filters vs one detector", "The 80/20 curve: effort to reach 80%, 95%, 99%"]
+people_events: ["ogkalu comic-text-and-bubble-detector (RT-DETR-v2)", "Claude", "Qwen3 14B via Ollama", "Kindle web", "manga-ocr"]
+related_posts: ["2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio"]
+prerequisites: ["What a pre-trained model is"]
+series: "frank-projects"
+obsolescence: "Model names (RT-DETR-v2, Qwen3:14b), VRAM requirements and the Flutter-on-Linux workarounds will date. Later Frank Yomik posts may supersede the architecture."

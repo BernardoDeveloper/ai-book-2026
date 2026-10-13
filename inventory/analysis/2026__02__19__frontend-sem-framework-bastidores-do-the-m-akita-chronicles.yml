@@ -1,0 +1,31 @@
+id: "2026/02/19/frontend-sem-framework-bastidores-do-the-m-akita-chronicles"
+source_sha256: "aff1f031731826bbd8c2a3689aa59c6c083f2bc95a08f4c698397daba7b9a653"
+title_en: "Frontend Without a Framework (Behind the Scenes of The M.Akita Chronicles)"
+ai_relevance: none
+ai_relevance_reason: "Web and email front-end techniques (Tailwind, Hugo, HSL palettes, email HTML); AI is not discussed."
+genre: tutorial
+themes: [non-ai, software-engineering-discipline]
+thesis: "A modern, accessible, dark-mode-capable frontend for web, blog, RSS and email can be built with Tailwind, Hugo, ERB and plain Markdown, without a JavaScript framework."
+summary: "Part 4 of the series. Akita explains using Tailwind CSS v4 in Rails, Hugo with the Hextra theme and shortcodes for the blog, and two independent rendering pipelines from the same Markdown content (one for the web, one for email). He lists email HTML survival rules (tables, inline CSS, Outlook 2016 using the Word engine), derives a colour palette from HSL hues and fixed lightness per layer with WCAG contrast targets, explains that well-formed HTML also reduces spam scoring, covers podcast RSS requirements, and closes with a content-first philosophy: Markdown plus YAML as the universal format."
+key_claims:
+  - claim: "Outlook 2016 renders HTML with the Microsoft Word engine, so email layout needs tables and inline CSS."
+    time_sensitive: true
+  - claim: "Mail providers treat malformed HTML as a spam signal; the practices that make email render correctly also help deliverability."
+    time_sensitive: false
+  - claim: "A palette built on evenly spaced HSL hues with fixed saturation and lightness per layer gives coherent colours and verifiable contrast (WCAG AA/AAA)."
+    time_sensitive: false
+fears_addressed: []
+reader_value: "low. Pure web front-end craft with no AI content."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep: []
+  cut: ["Entire post, except perhaps one line on the content-first philosophy"]
+jargon: [framework, Tailwind, Hugo, shortcode, Markdown, HSL, WCAG, dark mode, RSS]
+illustration_ideas: []
+people_events: ["Tailwind CSS", "Hugo/Hextra", "Microsoft Outlook"]
+related_posts:
+  - "2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles"
+prerequisites: []
+series: "m-akita-chronicles"
+obsolescence: "Tool versions (Tailwind v4, Hextra) and email client behavior change over time."

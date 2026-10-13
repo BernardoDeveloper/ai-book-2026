@@ -1,0 +1,10 @@
+notes:
+  - "como-ler points to each part through its first chapter: Parte I @sec-ch01, II @sec-ch05, III @sec-ch11, IV @sec-ch15, V @sec-ch18. Update if part boundaries move."
+  - "It promises five appendices in a list: apmecanica (mechanics, no math), apA (timeline from the 2017 transformer to October 2026), apB (minimal safety kit for agents), apC (two checklists: benchmark and announcement), apD (catalogue of the year's projects). If any is cut or renamed, adjust the list."
+  - "Cross-refs to generated back matter: @sec-glossario, @sec-bibliografia, @sec-fontes, @sec-creditos. Says citations show 'autor e ano entre parênteses' (matches the ABNT CSL)."
+  - "Uses [token]{.gls} as the example of a dotted-underlined term; token has no long form, so ch01's first-use expansion is unaffected."
+  - "Time-anchor examples use Claude Opus 4.5, GPT-5.5 and Kimi K3 (continuity.yml naming)."
+  - "Closes with a hook into antes (@sec-antes)."
+integration:
+  - "Checked promises: part entry points (ch01, ch05, ch11, ch15, ch18) match outline; apmecanica, apB, apD exist and match their lines; Part IV phone-apps promise matches ch17; @sec-glossario/@sec-bibliografia/@sec-fontes/@sec-creditos exist; Fontes is per chapter; Créditos covers AI illustrations and photos. No text changes needed."
+  - "OPEN: apA (timeline 2017 -> Oct 2026) and apC (two checklists) do not exist yet; the list follows their outline briefs. If either is cut or changes scope, edit the bullet list."

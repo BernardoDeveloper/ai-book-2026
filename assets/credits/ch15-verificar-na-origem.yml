@@ -1,0 +1,26 @@
+---
+id: ch15-verificar-na-origem
+kind: diagram_code
+chapters:
+- 15
+editions:
+- pt
+- en
+file: assets/figures/ch15-verificar-na-origem.png
+sha256: 637c17a69b7ac1c5c857efcba1d962011aeb0d861c4748ad038097bdd0ed810b
+pixels:
+  width: 1920
+  height: 1380
+source: assets/charts/ch15-verificar-na-origem.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch15-verificar-na-origem.py
+  pt
+description: 'ch15-verificar-na-origem: check the destination against the source,
+  not the tool''s log.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

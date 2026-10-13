@@ -1,0 +1,47 @@
+id: "2026/06/01/llm-benchmarks-grok-4-3-minimax-m3-opus-4-8"
+source_sha256: "689a4e5f8490de23f7244baa85059a3203e5e9fb837683d9fb2180c886a52b92"
+title_en: "LLM Benchmarks: Update on Grok 4.3, MiniMax M3 and Opus 4.8"
+ai_relevance: core
+ai_relevance_reason: "A benchmark update scoring LLMs on a fixed coding task."
+genre: benchmark
+themes: [benchmarks-model-comparison, limits-of-llms, hype-and-marketing]
+thesis: "Three new models barely change the ranking: Opus and GPT stay on top, the others became usable but remain a generation or two behind, and cheaper models only win on paper once you count fixing their output."
+summary: "Akita adds Opus 4.8, Grok 4.3 and MiniMax M3 to his recurring benchmark, where each model must build a ChatGPT-style app in Rails 8 with RubyLLM, tests and Docker from one fixed prompt, scored 0-100 on an eight-dimension rubric and grouped in tiers. Opus 4.8 scores 95, indistinguishable from 4.7 at 97 apart from speed. Grok 4.3 jumps from 25 to 72 because it now uses the library API correctly, but its front-end JavaScript is dead at runtime. MiniMax M3 rises from 41 to 78 but did not finish validation and wrote a real API key into a project file, violating the prompt. He argues that cheaper Tier A options already exist and that for programming one should default to Opus and/or GPT. He warns the results hold only for this specific task."
+key_claims:
+  - claim: "In his Rails/RubyLLM benchmark Opus 4.8 scored 95/100, Opus 4.7 97, GPT 5.5 96, Grok 4.3 72, MiniMax M3 78."
+    time_sensitive: true
+  - claim: "Grok 4.3 improved 47 points over Grok 4.20 mainly because it stopped inventing library API calls, but shipped a dead Stimulus front-end."
+    time_sensitive: true
+  - claim: "MiniMax M3 wrote a real API key into a .env file in the generated project against the prompt's explicit instruction."
+    time_sensitive: true
+  - claim: "Benchmark results are specific to this task and methodology and are not a universal measure of model capability."
+    time_sensitive: false
+  - claim: "Cheaper models cost more in practice because of the 1-2 hours of patching they need per project."
+    time_sensitive: false
+fears_addressed:
+  - "Are new models dramatically better every release?"
+  - "Can a cheap model replace the top ones?"
+reader_value: "Low to medium. Shows that releases often change little and that models still hallucinate APIs and leak secrets; the score tables are quickly stale."
+technical_depth: 4
+evergreen: 1
+book_use:
+  keep:
+    - "Hallucinated library functions as a concrete failure mode (the earlier Grok and MiniMax versions)"
+    - "Model wrote a secret key into a file despite being told not to"
+    - "A benchmark only measures what it measures"
+  cut:
+    - "Score table and per-model details"
+    - "Series bibliography of prior benchmark posts"
+jargon: [benchmark, tier, rubric, hallucination, harness, RubyLLM, API key, Docker, tokens per second, DNF]
+illustration_ideas:
+  - "Bar chart of scores by tier, flagged as a snapshot"
+  - "How a fixed-prompt benchmark pipeline scores a model"
+people_events:
+  - "Anthropic (Opus 4.8), xAI (Grok 4.3), MiniMax (M3)"
+related_posts:
+  - "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
+  - "2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude"
+  - "2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus"
+prerequisites: [LLM, benchmark]
+series: "llm-benchmark"
+obsolescence: "Entire ranking is a snapshot of June 2026; superseded by later benchmark posts (e.g. 2026/06/11 and 2026/07 llm-benchmark posts)."

@@ -1,0 +1,149 @@
+references:
+  - id: koi2026clawhavoc
+    type: "post-weblog"
+    title: "ClawHavoc: 341 Malicious Clawed Skills Found by the Bot They Were Targeting"
+    author: [{literal: "Alex"}, {family: "Yomtov", given: "Oren"}]
+    container-title: "Koi Security Blog"
+    issued: {date-parts: [[2026, 2, 1]]}
+    URL: "https://www.koi.ai/blog/clawhavoc-341-malicious-clawedbot-skills-found-by-the-bot-they-were-targeting"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (book-only context for 2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw; verified via the Wayback Machine snapshot of 2026-02-10, the live URL now redirects to Palo Alto Networks), Arquivado em: https://web.archive.org/web/20260210212946/https://www.koi.ai/blog/clawhavoc-341-malicious-clawedbot-skills-found-by-the-bot-they-were-targeting"
+  - id: openclaw2026readme
+    type: "software"
+    title: "OpenClaw"
+    author: [{family: "Steinberger", given: "Peter"}, {literal: "OpenClaw contributors"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026]]}
+    URL: "https://github.com/openclaw/openclaw"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw (README security guidance as of October 2026)"
+  - id: kim2026leak
+    type: "post-weblog"
+    title: "The Claude Code Source Leak: fake tools, frustration regexes, undercover mode, and more"
+    author: [{family: "Kim", given: "Alex"}]
+    container-title: "Alex Kim's blog"
+    issued: {date-parts: [[2026, 3, 31]]}
+    URL: "https://alex000kim.com/posts/2026-03-31-claude-code-source-leak/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - id: kitze2026spaghetti
+    type: "post"
+    title: "GPT 5.4 rates the Claude Code codebase 6.5/10"
+    author: [{literal: "kitze"}]
+    container-title: "X"
+    issued: {date-parts: [[2026, 3, 31]]}
+    URL: "https://x.com/thekitze/status/2038956521942577557"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - id: a10k2026cch
+    type: "webpage"
+    title: "What's cch? Reverse Engineering Claude Code's Request Signing"
+    author: [{literal: "a10k"}]
+    container-title: "a10k.co"
+    issued: {date-parts: [[2026]]}
+    URL: "https://a10k.co/b/reverse-engineering-claude-code-cch.html"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - id: guthrie2026drm
+    type: "post"
+    title: "Tonight, the DRM is dead"
+    author: [{family: "Guthrie", given: "Jay"}]
+    container-title: "X"
+    issued: {date-parts: [[2026, 4, 1]]}
+    URL: "https://x.com/StraughterG/status/2039344027556798476"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - id: github2026dmca
+    type: "webpage"
+    title: "2026-03-31-anthropic.md (DMCA takedown notice)"
+    author: [{literal: "GitHub"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 3, 31]]}
+    URL: "https://github.com/github/dmca/blob/master/2026/03/2026-03-31-anthropic.md"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - id: github2026retraction
+    type: "webpage"
+    title: "2026-04-01-anthropic-retraction.md (DMCA partial retraction)"
+    author: [{literal: "GitHub"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 4, 1]]}
+    URL: "https://github.com/github/dmca/blob/master/2026/04/2026-04-01-anthropic-retraction.md"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - id: posch2026curl
+    type: "article-newspaper"
+    title: "The cURL Project Drops Bug Bounties Due To AI Slop"
+    author: [{family: "Posch", given: "Maya"}]
+    container-title: "Hackaday"
+    issued: {date-parts: [[2026, 1, 26]]}
+    URL: "https://hackaday.com/2026/01/26/the-curl-project-drops-bug-bounties-due-to-ai-slop/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao"
+  - id: zig2026conduct
+    type: "webpage"
+    title: "Code of Conduct"
+    author: [{literal: "Zig Software Foundation"}]
+    container-title: "Zig Programming Language"
+    issued: {date-parts: [[2026]]}
+    URL: "https://ziglang.org/code-of-conduct/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao"
+  - id: anderson2026zig
+    type: "article-newspaper"
+    title: "Zig creator seeks 'uncompromising perfection' before blessing 1.0"
+    author: [{family: "Anderson", given: "Tim"}]
+    container-title: "DevClass"
+    issued: {date-parts: [[2026, 6, 1]]}
+    URL: "https://www.devclass.com/devops/2026/06/01/zig-creator-seeks-uncompromising-perfection-before-blessing-10/5248219"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao"
+  - id: borisov2026rsync
+    type: "article-newspaper"
+    title: "Rsync 3.4.3 Regressions Trigger Debate Over AI-Assisted Code"
+    author: [{family: "Borisov", given: "Bobby"}]
+    container-title: "Linuxiac"
+    issued: {date-parts: [[2026, 6, 4]]}
+    URL: "https://linuxiac.com/rsync-3-4-3-regressions-trigger-debate-over-ai-assisted-code/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao (Tridgell's own Medium post 'rsync and outrage' returned 403; his statements are taken from this report)"
+  - id: rice1953classes
+    type: "article-journal"
+    title: "Classes of Recursively Enumerable Sets and Their Decision Problems"
+    author: [{family: "Rice", given: "Henry Gordon"}]
+    container-title: "Transactions of the American Mathematical Society"
+    volume: "74"
+    issue: "2"
+    page: "358-366"
+    DOI: "10.1090/S0002-9947-1953-0053041-6"
+    issued: {date-parts: [[1953]]}
+    URL: "https://doi.org/10.1090/S0002-9947-1953-0053041-6"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao (Rice's theorem named in the post without a link; verified online)"
+  - id: sumner2025anthropic
+    type: "post-weblog"
+    title: "Bun is joining Anthropic"
+    author: [{family: "Sumner", given: "Jarred"}]
+    container-title: "Bun Blog"
+    issued: {date-parts: [[2025, 12, 2]]}
+    URL: "https://bun.com/blog/bun-joins-anthropic"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao"
+  - id: kelley2026bun
+    type: "post-weblog"
+    title: "My Thoughts on the Bun Rust Rewrite"
+    author: [{family: "Kelley", given: "Andrew"}]
+    container-title: "Andrew Kelley"
+    issued: {date-parts: [[2026, 7, 9]]}
+    URL: "https://andrewkelley.me/post/my-thoughts-bun-rust-rewrite.html"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito"
+  - id: bun2026issue30693
+    type: "webpage"
+    title: "bun update -i (Rust port) renders trailing r on short package names due to OSC 8 / pretty tag escape conflict (issue #30693)"
+    author: [{literal: "oven-sh/bun"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 5, 14]]}
+    URL: "https://github.com/oven-sh/bun/issues/30693"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito"

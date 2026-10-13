@@ -1,0 +1,56 @@
+id: "2026/04/06/rag-esta-morto-contexto-longo"
+source_sha256: "7ff16e0b5895ccd7909d0d16cb0d78b8a11dc80629766f7820198555ea8fe711"
+title_en: "Is RAG Dead? Long Context, Grep and the End of the Mandatory Vector DB"
+ai_relevance: core
+ai_relevance_reason: "The whole post is about how LLMs are fed documents (context window vs retrieval) and how coding agents handle memory."
+genre: essay
+themes: [agent-memory-and-context, what-llms-are, coding-agents-tools, business-and-economics]
+thesis: "Now that frontier models have 1M-token context windows, a plain keyword search (grep/BM25) plus a generous context beats the classic embeddings-and-vector-database RAG stack for most use cases: cheaper, simpler and debuggable."
+summary: "Akita recalls that in 2022/2023 context windows were 4k-32k tokens, so RAG (chunk, embed, vector DB, top-k) became an industry. In April 2026 frontier models offer 1M tokens, so he argues the retriever can be dumb and the reader (the LLM) smart. He uses the leaked Claude Code source (March 31, 2026) as evidence: its memory is an index file, topic files and grep over transcripts, plus a background 'autoDream' subagent, with no vector DB. He lists real problems of vector DBs (false neighbours, bad chunking, opaque failures, stale indexes, operating cost) and does a cost calculation showing tokens are cheaper than engineer time. He concedes RAG still wins for huge corpora, vocabulary mismatch, non-text media, tight latency and audit needs. He recommends 'lazy retrieval' (keyword filter, load generously, let the LLM do the fine work) and ends with a literature review (DeepMind, LaRA, Lost in the Middle, BEIR, Anthropic Contextual Retrieval) showing there is no silver bullet and that hybrid lexical+vector is the robust option."
+key_claims:
+  - claim: "Claude Code does not use a vector DB or embeddings; it uses a markdown index, topic files, grep and context compaction strategies."
+    time_sensitive: true
+  - claim: "Token cost is the cheapest part of the stack; engineering and operating a vector pipeline costs more than many long-context queries (example: 200k-token query costs about $0.63 on Sonnet 4.6)."
+    time_sensitive: true
+  - claim: "Classic vector DB RAG suffers from false neighbours, arbitrary chunking, opaque failures and stale indexes."
+    time_sensitive: false
+  - claim: "RAG is not dead: huge corpora, paraphrase-heavy vocabulary, non-text modalities, tight latency and audit/compliance still favour it."
+    time_sensitive: false
+  - claim: "Research literature shows no silver bullet: long context often wins on quality, RAG wins on token cost, and BM25 is surprisingly strong out-of-domain."
+    time_sensitive: false
+  - claim: "Models handle information in the middle of the context better than in 2023 (Lost in the Middle), though not solved."
+    time_sensitive: true
+  - claim: "Claude Code's compaction pipeline has a 'context poisoning' weakness where instruction-like file content can be preserved as if it were user feedback."
+    time_sensitive: true
+fears_addressed:
+  - "Is the AI stack I hear about (vector databases, RAG) mandatory complexity?"
+  - "Is AI too expensive to use on large documents?"
+reader_value: "Gives a lay reader concrete size intuition for tokens (100k tokens is a short novel, 1M is the Lord of the Rings trilogy) and shows that industry buzzwords (RAG, vector DB) rise and fall quickly, which is a healthy antidote to hype. Also shows how a leading AI tool actually remembers things with plain files."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "Token-to-book-size equivalences (100k = short novel, 1M = LOTR trilogy)"
+    - "Dumb retriever + smart reader inversion as the story of how the bottleneck moved"
+    - "Claude Code memory as plain files and an 'autoDream' consolidation subagent, memory treated as a hint"
+    - "Honest list of cases where the thesis fails"
+  cut:
+    - "Ruby code examples"
+    - "Per-model price table"
+    - "Paper-by-paper literature review details"
+jargon: [LLM, token, context window, RAG, embedding, vector database, chunking, BM25, grep, prompt caching, reranker, subagent, compaction, tool calling]
+illustration_ideas:
+  - "How a classic RAG pipeline (chunk, embed, store, top-k) compares with grep plus long context"
+  - "How a context window fills up and gets compacted"
+  - "Size of a context window expressed in books"
+  - "Three-layer agent memory: index file, topic files, raw transcripts searched on demand"
+people_events:
+  - "Anthropic Claude Code source leak via npm source map (2026-03-31)"
+  - "Anthropic Contextual Retrieval (2024)"
+  - "Google DeepMind RAG vs long-context study (EMNLP 2024)"
+  - "Liu et al. Lost in the Middle (2023)"
+  - "BEIR benchmark"
+related_posts: ["2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro", "2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus"]
+prerequisites: ["What a token is", "What a context window is", "Basic idea of an LLM answering from provided text"]
+series: "claude-code-leak"
+obsolescence: "Model names, context sizes (Opus 4.6, Gemini 3.1 Pro, GPT 5.4), per-token prices and the description of Claude Code internals from the March 2026 leak are snapshot-specific. The architectural argument (lexical search plus big context) is more durable."

@@ -1,0 +1,50 @@
+id: "2026/04/15/seedance-2-0-finalmente-foi-lancado-primeiras-impressoes"
+source_sha256: "1b2de96515aea28a6b7f0e0bbfa9c84a8eb6d1b8a21b80cafd9d846eeb2785fc"
+title_en: "Seedance 2.0 Finally Launched: First Impressions"
+ai_relevance: core
+ai_relevance_reason: "A hands-on review of a generative video model, with discussion of deepfakes and what the tool does not replace."
+genre: review
+themes: [generative-media, society-politics-censorship, jobs-and-careers, business-and-economics]
+thesis: "Seedance 2.0 can produce serious-looking clips, especially when guided by a reference video, but it is still expensive and imprecise for professional production, and it makes video deepfakes an unavoidable reality."
+summary: "ByteDance opened Seedance 2.0 to the public on April 15, 2026 after months of restricted access. It is a multimodal video model that accepts text, up to 9 images, 3 video clips and 3 audio tracks and outputs up to 15 seconds with synced audio. Akita tested lip-sync of an anime avatar to his podcast audio (decent, good for short clips) and then the use he considers essential: a reference video, here a quick Blender render of a 3D character. A generic prompt kept the character consistent but ignored the motion and camera; adding an explicit instruction to follow the reference's motion and camera improved it but still not exactly. He works through pricing in credits and argues that with 3 to 5 regenerations per scene, the monthly plan covers only about 80-140 short scenes. He notes the model's strict moderation (no real people, protected IP) and warns that deepfake video is now real: ordinary people cannot tell generated video by eye. He rejects the idea that it replaces artists: it is a hammer, and AI reflects who you are. He expects quality up and prices down within a year or two and notes OpenAI discontinued Sora."
+key_claims:
+  - claim: "Text prompts alone give lottery-like results; a reference video is what gives usable control in generative video."
+    time_sensitive: false
+  - claim: "Seedance 2.0 launched publicly on 2026-04-15 with inputs of up to 9 images, 3 videos and 3 audio tracks and 15-second outputs with native synchronized audio."
+    time_sensitive: true
+  - claim: "At about 6 credits per 10 seconds and 2500 credits per month on the Standard plan, realistic usable output is roughly 80-140 short scenes a month after regenerations."
+    time_sensitive: true
+  - claim: "ByteDance's model blocks real-person references and strong IP characters, partly because of global regulatory and Hollywood copyright pressure."
+    time_sensitive: true
+  - claim: "Deepfake video is no longer hypothetical; untrained people can no longer distinguish generated from real video by sight, and filters only stop legitimate use."
+    time_sensitive: false
+  - claim: "Generative video tools multiply the skill of the user and do not replace trained artists; the barrier of taste and study remains."
+    time_sensitive: false
+fears_addressed:
+  - "Will AI video replace filmmakers and artists?"
+  - "Can I trust videos I see online?"
+reader_value: "Gives a measured view of generative video: impressive but imprecise, costly, and a clear warning that seeing is no longer believing. Useful for readers anxious about creative jobs and misinformation."
+technical_depth: 2
+evergreen: 2
+book_use:
+  keep:
+    - "Lottery versus control: why reference video matters"
+    - "Deepfake video is real: photos stopped being proof, now video too"
+    - "AI is a hammer; same tool, different outcomes by who holds it"
+    - "Credits math showing iteration cost"
+  cut:
+    - "Pricing table details and ComfyUI/Runway plan specifics"
+    - "Blender setup steps"
+jargon: [generative video, multimodal, lip-sync, reference video, prompt, deepfake, credits, ComfyUI, content moderation]
+illustration_ideas:
+  - "Reference video guiding generation: motion and camera taken from a rough render, appearance from images"
+  - "Cost of iteration: credits consumed per usable scene"
+people_events:
+  - "ByteDance Seedance 2.0 launch (2026-04-15)"
+  - "OpenAI Sora discontinued"
+  - "Google Veo, Runway, Kling, Hailuo"
+  - "Stefan 3D AI Lab (YouTube)"
+related_posts: ["2026/01/23/ai-3d-ja-da-pra-modelar-3d-com-prompts", "2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts"]
+prerequisites: ["What generative AI is"]
+series: ""
+obsolescence: "Seedance version, pricing, plan names, regeneration costs, and competitor landscape (Sora discontinued) are mid-April 2026 snapshots. The deepfake warning and the tool-multiplies-the-user argument are durable."

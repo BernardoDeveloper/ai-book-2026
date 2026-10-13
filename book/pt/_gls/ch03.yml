@@ -1,0 +1,3 @@
+tier:
+  term: Tier
+  def: Faixa de classificação numa tabela de comparação de modelos (A, B, C, D), que agrupa notas próximas em vez de tratar cada ponto de diferença como real.

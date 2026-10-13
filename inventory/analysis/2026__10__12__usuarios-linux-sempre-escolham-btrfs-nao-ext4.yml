@@ -1,0 +1,36 @@
+id: "2026/10/12/usuarios-linux-sempre-escolham-btrfs-nao-ext4"
+source_sha256: "8814d49a100b7edeaabc46b19f3d4b61deec09db345f5d6d51dc86aba73778d8"
+title_en: "Linux users: always choose BTRFS, not EXT4"
+ai_relevance: tangential
+ai_relevance_reason: "A filesystem advocacy post; AI appears in one section on disk hygiene in the AI-coding era (agents create build artifacts, caches, worktrees) and agent cleanup rules."
+genre: opinion
+themes: [hardware-and-infrastructure, coding-agents-tools, non-ai]
+thesis: "Linux users should pick btrfs over ext4 for checksums, snapshots, compression and recovery, and AI coding agents make disk hygiene and cheap rollback more important."
+summary: "A follow-up to the NAS disaster post. Akita compares ext4 (journaling, no data checksums or snapshots) with btrfs (copy-on-write, checksums, snapshots, subvolumes, transparent compression, scrub) and argues even NTFS and APFS now protect data better than ext4. He explains copy-on-write, snapshots as boot recovery (including a kernel rollback that saved his server), compression that saved about 630 GB on 2.2 TB, and why ZFS suits large NAS while btrfs suits everything else. A section on AI coding says agents produce junk at industrial speed (Rust build directories of hundreds of GB, Docker caches, model caches, worktrees) and recommends automated cleanup plus rules in agent instruction files telling agents to remove only what they created. He ends with backup practice using restic and the lesson that snapshots are not backups."
+key_claims:
+  - claim: "btrfs checksums every block and supports snapshots, scrub and compression, which ext4 lacks; this protects against silent corruption."
+    time_sensitive: false
+  - claim: "Snapshots are not backups; they live on the same disk."
+    time_sensitive: false
+  - claim: "AI coding agents generate large amounts of build artifacts, caches and worktrees that fill disks quickly; agents should be instructed to clean up only what they created."
+    time_sensitive: false
+  - claim: "Compression saved about 15% (630 GB of 2.2 TB) on his machines; AI model weights do not compress."
+    time_sensitive: true
+fears_addressed:
+  - "Can AI agents damage my machine by deleting or filling things (answer: set rules for cleanup)"
+reader_value: "Low for a lay reader; one useful insight that agent-generated clutter and unsupervised cleanup are real risks, and rules in agent instruction files help."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "Agents create junk at industrial speed; tell them to remove only what they created and never run broad cleanups without authorization"
+  cut:
+    - "Filesystem comparison, commands, ZFS vs btrfs, restic configuration"
+jargon: [filesystem, ext4, btrfs, ZFS, copy-on-write, snapshot, checksum, scrub, subvolume, compression, restic, worktree, build cache]
+illustration_ideas:
+  - "copy-on-write: new block written, pointer switched atomically"
+people_events: [Omarchy, openSUSE MicroOS, restic]
+related_posts: ["2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados"]
+prerequisites: ["What a filesystem is"]
+series: ""
+obsolescence: "Disk-usage numbers and tool recommendations (cargo-sweep etc.) are Oct 2026."

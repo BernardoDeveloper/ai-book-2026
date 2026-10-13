@@ -1,0 +1,45 @@
+id: "2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms"
+source_sha256: "82c513848860f28bd296284a54db0565badf72f473d02175271c2afd961f6ba5"
+title_en: "AI Agents: What Would Be the Best Programming Language for LLMs?"
+ai_relevance: core
+ai_relevance_reason: "A thought experiment in which Claude and GPT Codex design a programming language meant for LLMs rather than humans, plus a Claude-generated prototype compiler."
+genre: essay
+themes: [programming-languages, limits-of-llms, coding-agents-tools]
+thesis: "Languages are designed around human limits; an LLM-native language would be closer to a typed, effect-tracked AST with specs and provenance, which humans reject as too burdensome, and the human's role might shift to writing specifications."
+summary: "A 'silly exercise': Akita asks Claude and GPT Codex what an ideal language for LLM editing would look like, ignoring human ergonomics. The models land on something like a typed Lisp-style AST with machine-readable contracts, effects, provenance and dependency graphs (resembling Lean 4, F*, Dafny, Rust), and propose four layers: human intent spec, AI-native format, read-only human projection, and semantic edits instead of text diffs. The bulk of the post is the model's own text, including a ranking of existing languages and the observation that features LLMs would like are exactly those humans find tedious. Akita adds that he asked Claude to build a prototype compiler for the language (PACT, in Rust, not yet tested by him), uses it to argue that writing a compiler is not impressive (contrast with the hyped Claude C compiler), and speculates that if generating code is cheap, effort should shift back to detailed specifications. He stresses these are model-generated guesses from probabilities, not truths."
+key_claims:
+  - claim: "Claude and GPT Codex independently suggested that the best language for a machine is strongly typed, effect-tracking, verbose and spec-heavy, the opposite of human-friendly dynamic languages."
+    time_sensitive: false
+  - claim: "The models' answer is guesswork derived from their probabilities, not a verified truth."
+    time_sensitive: false
+  - claim: "Features humans reject as friction (formal specs, total functions, effect tracking, exhaustive matching) are what an LLM-oriented language would want."
+    time_sensitive: false
+  - claim: "In an AI-native workflow the human writes intent and constraints, the AI generates and maintains the implementation, and verification checks they agree."
+    time_sensitive: false
+  - claim: "Writing a compiler is a standard computer-science course exercise; Claude making one (C, or an invented language) is not by itself impressive."
+    time_sensitive: false
+  - claim: "Writing detailed specs was historically unproductive but may become worthwhile if code generation is trivial."
+    time_sensitive: false
+fears_addressed:
+  - "Will programming languages and code itself disappear?"
+reader_value: "Low to moderate. The model-written design document is dense; the framing (AI could change what humans write: intent, not code) is thought-provoking for a lay reader. Treat it as speculation."
+technical_depth: 5
+evergreen: 3
+book_use:
+  keep:
+    - "Human writes intent, machine writes code: the specification shift"
+    - "Things made for human comfort (naming, formatting, sugar) are irrelevant to an LLM"
+    - "'Ask the model' is not evidence: output is a probabilistic guess"
+  cut:
+    - "The full design document, code layers, language ranking tables"
+    - "PACT repository mention unless the book discusses AI-built compilers"
+jargon: [programming language, compiler, AST, type system, side effects, provenance, formal specification, Lisp, Rust, intermediate representation, DSL]
+illustration_ideas:
+  - "Four-layer stack: human intent spec, AI-native graph, human read-only view, semantic edits"
+  - "Text as serialization for human cognition versus graph for machine"
+people_events: ["Anthropic C compiler demo (criticised)", "Microsoft Research (F*, Dafny)", "Lean 4"]
+related_posts:
+  - "2026/02/08/rant-ia-acabou-com-programadores"
+prerequisites: ["What a programming language and a compiler are"]
+series: ""
+obsolescence: "PACT is an untested prototype as of Feb 2026; model opinions will differ with later models."

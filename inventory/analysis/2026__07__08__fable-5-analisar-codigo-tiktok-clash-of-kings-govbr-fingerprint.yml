@@ -1,0 +1,52 @@
+id: "2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint"
+source_sha256: "e873292bfee4c5f3c9982202a807ae257c9d9e20c36542682de66e729e38a92c"
+title_en: "I Had Fable 5 Analyze TikTok, Clash of Kings and Gov.br Code - Understanding Fingerprinting"
+ai_relevance: substantial
+ai_relevance_reason: "An LLM (Claude Fable 5) performed the static analysis of three decompiled apps; the post is mostly about privacy and fingerprinting, with the AI role and its limits stated up front."
+genre: essay
+themes: [reverse-engineering, security-and-sandboxing, coding-agents-tools, ai-in-daily-life]
+thesis: "Apps you install for free pay for themselves with persistent device fingerprints and a mutiny of trackers; with an LLM and an afternoon any curious developer can inspect them, though static analysis shows capability, not proof of what leaves the phone."
+summary: "Akita opens with a disclaimer: nothing is 100% factual because he cannot verify how deeply Fable 5 went through hundreds of thousands of files. He explains that Android apps are easy to decompile and what a device fingerprint is: many weak signals combined into a persistent identifier that survives clearing data and reinstalling. The TikTok analysis found industrial-scale collection with the fingerprint engine in native code, but no IMEI, SMS or keylogger. Clash of Kings has a reset-resistant UUID and predatory monetization, while gov.br was built carefully with no commercial ad trackers but embeds Firebase. He lists the SDK stack most apps carry and gives practical privacy tips. His point: an LLM now lets ordinary people read the label before eating."
+key_claims:
+  - claim: "Fable 5's analysis cannot be fully verified; the APKs came from APKPure, native binaries were not opened, and static analysis shows capability, not actual network traffic."
+    time_sensitive: false
+  - claim: "A device fingerprint combines many weak signals into a persistent identifier that can survive clearing data, reinstalling and sometimes resetting the device."
+    time_sensitive: false
+  - claim: "TikTok 46.0.1: no malware found, but heavy collection (precise location, Wi-Fi/Bluetooth scans, a check against 91 named apps) with the fingerprint built in native code that hides the exact payload."
+    time_sensitive: true
+  - claim: "Clash of Kings stores a reset-resistant UUID in four places and has predatory monetization (loot boxes, whale ranking), though no GPS, camera or contacts."
+    time_sensitive: true
+  - claim: "The gov.br app uses certificate pinning, encrypted keystore and no commercial ad trackers, but includes Google Firebase analytics enabled by default."
+    time_sensitive: true
+  - claim: "Most apps embed multiple third-party SDKs (Firebase, attribution SDKs, ad networks, fraud fingerprinting services), so tracking is a collective effort by many parties."
+    time_sensitive: false
+fears_addressed:
+  - "Is my phone app spying on me?"
+  - "Can I check apps myself without being an expert?"
+  - "What does 'if it's free you're the product' really mean?"
+reader_value: "High. Clear explanation of fingerprinting, practical privacy steps and an honest demonstration of using an LLM as an analysis assistant while flagging its unverifiable limits."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Fingerprint explained: many weak signals, one persistent identity"
+    - "Honest caveat: the LLM's depth is not verifiable; static analysis is capability, not proof"
+    - "Privacy tips list (deny GPS, reset ad ID, avoid 'find friends', prefer web)"
+    - "Anyone can read the 'label' of an app with an LLM and a free afternoon"
+  cut:
+    - "Per-app technical specifics (library names, section numbers)"
+    - "Clash of Kings monetization detail"
+jargon: [fingerprint, decompile, APK, static analysis, native code, SDK, certificate pinning, ad ID, telemetry, MITM, Firebase, obfuscation, LLM]
+illustration_ideas:
+  - "Many weak signals combining into one unique device fingerprint"
+  - "Stack of third-party SDKs inside a single app, each pulling data"
+  - "Static analysis vs live traffic capture: what each can and cannot show"
+people_events:
+  - "TikTok / ByteDance, Elex (Clash of Kings), Gov.br app"
+  - "Project Texas (TikTok/Oracle)"
+related_posts:
+  - "2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic"
+  - "2026/05/30/manga-plus-shueisha-desktop-frank-manga-plus"
+prerequisites: [LLM, coding agent]
+series: ""
+obsolescence: "App versions (TikTok 46.0.1) and findings reflect early July 2026 downloads; Fable 5 availability and behavior may differ later."

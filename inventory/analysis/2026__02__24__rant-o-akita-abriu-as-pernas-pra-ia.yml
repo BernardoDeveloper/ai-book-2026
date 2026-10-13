@@ -1,0 +1,40 @@
+id: "2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia"
+source_sha256: "eba7e0379feb2d062e312e755b44b31fbc056217040c9107cbae1848bf1e5623"
+title_en: "RANT: Did Akita Cave In to AI??"
+ai_relevance: core
+ai_relevance_reason: "AI hype, LLM nature, AGI skepticism and AI's effect on programming jobs are the explicit subject."
+genre: rant
+themes: [hype-and-marketing, jobs-and-careers, what-llms-are, limits-of-llms]
+thesis: "He has used AI for code since 2023 and never changed his position: current LLMs are glorified text generators, AGI is not reachable with current technology, and they will not replace all programmers, only bad ones; both zealots and haters are wrong, since it is just a tool like a hammer."
+summary: "Responding to people who think he reversed his stance on AI after podcast clips, Akita says he has used LLMs for programming since early 2023 and that his earlier statements still stand. He restates that LLMs are 'stochastic parrots': they compute the most probable next token, sample from a small group, append it and repeat, and humans are easily fooled into attributing personality (he mentions Eliza). Without a new discovery AGI is not achievable; this is not a question of time. He contrasts the wrong way to program with AI (no review, straight to production, like the Tea app leak where the database was simply open) with the right way, 'software engineering applied to AI'. He argues AI will replace bad programmers, who ignored tests, documentation and conventions that Claude and Codex now follow, while 90% of code is mundane work. He compares the shift to earlier input technologies (switches, punch cards, tape) and dismisses the 'AI companies are evil' and 'energy' objections. His closing line: why glorify or hate a hammer?"
+key_claims:
+  - claim: "LLMs are probabilistic next-token generators ('stochastic parrots', glorified text generators) and have been fundamentally so since 2022."
+    time_sensitive: false
+  - claim: "AGI is not achievable with current technology; it is not a matter of time without a new discovery."
+    time_sensitive: true
+  - claim: "AI will not replace all programmers, but will replace bad ones; about 90% of code produced day to day is mundane."
+    time_sensitive: true
+  - claim: "In 2026 coding LLMs became right more often than wrong, enough to trust without micromanaging each step; earlier he could not recommend them to amateurs."
+    time_sensitive: true
+  - claim: "Claude and Codex consistently do the hygiene (tests, docs, conventions, commit messages) that human developers routinely ignore."
+    time_sensitive: true
+  - claim: "The Tea app leak was an open production database, an example of reckless AI-enthusiast shipping, not a hack."
+    time_sensitive: true
+  - claim: "The 2001 internet bubble burst but the internet remained; the same is expected for AI."
+    time_sensitive: false
+  - claim: "Excitement about AI is inversely proportional to knowledge about AI."
+    time_sensitive: false
+fears_addressed: ["AI will replace all programmers", "AGI is coming soon / AI will become conscious", "AI is a bubble that will vanish", "AI chat seems to have a personality"]
+reader_value: "High as a voice: a veteran who is neither hype nor hater, gives a plain explanation of next-token prediction, why humans anthropomorphize, and a calm framing (a tool, like a hammer). Tone is aggressive and profane, which will need softening; ethics and energy dismissals are dismissive and should not be adopted uncritically."
+technical_depth: 2
+evergreen: 3
+book_use:
+  keep: ["Next-token loop explained simply: predict, sample, append, repeat", "Autocorrect as everyday example of a text generator", "Eliza and humans anthropomorphizing", "Hammer analogy: do not glorify or hate it", "Tea app leak as a cautionary tale", "Wrong way vs right way to program with AI", "History of inputting instructions to machines: switches to prompts"]
+  cut: ["Personal grievances about colleagues", "Dismissals of energy and ethics objections (contested)", "Profanity-heavy passages"]
+jargon: ["LLM", "stochastic parrot", "token", "next-token prediction", "transformer", "AGI", "Markov chain", "vibe coding", "anthropomorphize", "Turing test", "low code"]
+illustration_ideas: ["Next-token loop: prompt, probabilities, sample, append, repeat", "Timeline of how instructions were fed to computers: switches, punch cards, tape, keyboard, prompt"]
+people_events: ["Tea app data leak", "Sam Altman", "AI 2027 report", "Eliza", "Linus Torvalds", "2001 dot-com bubble", "Akitando video series"]
+related_posts: ["2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles"]
+prerequisites: []
+series: ""
+obsolescence: "Claims about AI error rates in 2026 and AGI being unreachable 'with current technology' are time-bound opinions; model names (GPT, Claude, GLM, Gemini, DeepSeek) will date."

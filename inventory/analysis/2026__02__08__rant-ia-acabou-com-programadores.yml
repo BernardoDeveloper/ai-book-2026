@@ -1,0 +1,73 @@
+id: "2026/02/08/rant-ia-acabou-com-programadores"
+source_sha256: "09830f1d69488d527d241814a30269786cd7a5548e5d34fdf33b7fa21af0f417"
+title_en: "Rant: Did AI Kill Programmers?"
+ai_relevance: core
+ai_relevance_reason: "A long argued position piece on what LLMs can and cannot do, AI bubbles, and the future of programming careers."
+genre: rant
+themes: [jobs-and-careers, hype-and-marketing, limits-of-llms, what-llms-are]
+thesis: "LLMs are a powerful tool for grunt work that still need senior humans to specify and review; the architecture is near its ceiling, the AI bubble will burst the way the dot-com bubble did while the technology survives, and the careers that vanish are the low-skill volume ones."
+summary: "Akita clarifies that he never said AI will replace no programmer, only that it will not replace programmers like him, and that AGI is not possible with the current transformer architecture without a new breakthrough. He recounts his view that the programming bubble (bootcamp 'noodle-chef' programmers) burst in late 2022 from layoffs, not from ChatGPT. He argues progress follows an S-curve: each model generation costs far more energy and hardware for smaller gains, training data is running out (Stack Overflow traffic collapsed), synthetic data hits diminishing returns, and RAM prices rose because of AI demand. He explains how coding tools work around context limits: tool calling, grep, web fetch, summarising when full, parallel sub-agents, linters, plan-then-execute. He says LLMs only reproduce what already exists, calling them 'stochastic parrots' and downplaying Anthropic's C compiler demo as copying GCC. Advice to companies: seniors must specify, review, and fix; use LLMs for legacy exploration, tests and refactors step by step; do not rewrite from scratch; bug detection is heuristic not algorithm; never ask the hammer how to run your company. He answers 'how will juniors become seniors?' by saying nobody knows entirely, that each generation had its own version of the worry, keep hiring juniors and keep adapting. He ends: this is the second AI bubble (the first in the 1960s, Rosenblatt), bubbles pop but technologies stay."
+key_claims:
+  - claim: "The programming-job bubble burst at the end of 2022 with mass big-tech layoffs; ChatGPT appeared at the same time but was not the cause."
+    time_sensitive: true
+  - claim: "All current LLMs (OpenAI, Anthropic, DeepSeek, Qwen, GLM, MiniMax) share the transformer foundation from 'Attention Is All You Need'; no further breakthrough has surpassed it."
+    time_sensitive: true
+  - claim: "Capability gains per generation follow an S-curve with diminishing returns, while training cost, energy and memory demand keep rising."
+    time_sensitive: true
+  - claim: "Useful training data is running out; Stack Overflow traffic fell sharply; synthetic data has its own ceiling."
+    time_sensitive: true
+  - claim: "Coding tools are 'harnesses': system prompt, tool calling, parallel agents, plan then execute, context summarisation, and (optionally) sandboxing."
+    time_sensitive: false
+  - claim: "LLMs cannot hold a large codebase in context; quality degrades as context grows; the workaround is retrieving only relevant pieces."
+    time_sensitive: false
+  - claim: "Everything an LLM can do already exists or existed; it cannot invent a new category (the 'next Instagram of the 2030s'); innovation needs constraint."
+    time_sensitive: false
+  - claim: "Finding all bugs is a heuristic, stochastic process, never an algorithm; an LLM asked for all security bugs will find some, never all."
+    time_sensitive: false
+  - claim: "Generated code needs a senior to specify, review and rewrite; work should proceed step by step in plan-do-check-act cycles with a commit per step."
+    time_sensitive: false
+  - claim: "Do not rewrite systems from scratch (e.g. in Rust) just because an LLM makes it easy; rewrites introduce new unknown bugs."
+    time_sensitive: false
+  - claim: "Anthropic's Claude C compiler is not impressive because C is simple, GCC already exists and was used as the reference."
+    time_sensitive: true
+  - claim: "This is the second AI bubble; the first was in the 1960s (Rosenblatt) followed by an AI winter; bubbles burst but the technology persists."
+    time_sensitive: false
+  - claim: "The result of an LLM is directly proportional to the human's instruction, evaluation and follow-up: a Michelin dish or instant noodles."
+    time_sensitive: false
+fears_addressed:
+  - "AI will take all programming jobs"
+  - "AGI is coming soon"
+  - "Where will future seniors come from if juniors are replaced?"
+  - "Is the AI bubble going to burst, and does that mean AI is gone?"
+reader_value: "Very high. This is the post to mine for the book's career and hype chapters: a historically grounded, opinionated counter to both doom and hype, with the hammer analogy, the bubble-vs-technology distinction, and the explanation of how agents work around limited context. Note the claims are the author's strong opinions (e.g. dismissing Hinton), partly unverifiable."
+technical_depth: 2
+evergreen: 3
+book_use:
+  keep:
+    - "Bubble bursts but technology remains (dot-com analogy, 1960s AI bubble and winter)"
+    - "S-curve and diminishing returns; data running out"
+    - "Hammer analogy: never ask the hammer how to run your company"
+    - "Heuristic versus algorithm: why 'find all bugs' cannot be guaranteed"
+    - "Series of 'how will anyone become a programmer if...' questions across decades"
+    - "How tools work around limited context (summaries, sub-agents, retrieval)"
+    - "Michelin dish or instant noodles: output tracks the quality of the request"
+  cut:
+    - "Channel self-promotion and playlist links"
+    - "Dismissals of named individuals and 'Hinton' remarks (needs fact-checking)"
+    - "Rust rewrite and C compiler asides unless the book needs them"
+jargon: [LLM, transformer, AGI, S-curve, diminishing returns, context window, tool calling, agentic fetch, harness, sub-agent, token, synthetic data, stochastic parrot, heuristic vs algorithm, AI winter, bubble, Turing complete, PDCA]
+illustration_ideas:
+  - "S-curve of model capability versus cost per generation"
+  - "How a coding agent compacts context: fill, summarise, restart, spawn sub-agents and merge summaries"
+  - "Bubble versus technology: dot-com crash curve with Internet adoption continuing"
+  - "Timeline of AI bubbles: 1960s hype and winter, deep learning revival, 2020s boom"
+people_events: ["Frank Rosenblatt (Perceptron, 1960s hype)", "Dario Amodei and Sam Altman (hype comparison)", "Geoffrey Hinton, Yann LeCun, Ilya Sutskever (AlexNet)", "Anthropic C compiler experiment", "Stack Overflow traffic decline", "Flow podcast", "2022 big-tech layoffs"]
+related_posts:
+  - "2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema"
+  - "2026/01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig"
+  - "2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity"
+  - "2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard"
+  - "2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2"
+prerequisites: ["What an LLM is", "What a coding agent is"]
+series: ""
+obsolescence: "Claims about the ceiling of the architecture, data exhaustion, RAM prices and the Claude C compiler are February 2026 judgments that later model releases may have challenged; check against later posts in the book's timeline (e.g. benchmark posts in mid-2026). Career arguments remain valid."

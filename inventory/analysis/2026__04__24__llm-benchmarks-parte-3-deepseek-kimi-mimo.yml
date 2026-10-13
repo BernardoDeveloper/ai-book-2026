@@ -1,0 +1,68 @@
+id: "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
+source_sha256: "e81505f0acafb44f3a1df187f5e774f9cf01a3187c8c20d9535b28bbcbdf9f02"
+title_en: "LLM Coding Benchmark (May 2026): DeepSeek v4, Kimi v2.6, Grok 4.3, GPT 5.5"
+ai_relevance: core
+ai_relevance_reason: "The canonical coding benchmark of 24 LLMs, covering model comparison, harness effects, open vs closed and local models."
+genre: benchmark
+themes: [benchmarks-model-comparison, open-vs-closed-and-local-models, coding-agents-tools, hype-and-marketing]
+thesis: "On a fixed task of building a Rails chat app with the RubyLLM gem, top commercial models (Opus 4.7, GPT 5.4/5.5) lead, a few Chinese models reach Tier A cheaply, no local open model does, and rankings only hold for this narrow methodology; the harness and checking against source matter as much as the model."
+summary: "This is the author's canonical re-audit, superseding earlier April posts, of 24 models on the same prompt: autonomously build a ChatGPT-style Rails app with RubyLLM, tests, Docker and CI tools. He changed the rubric to eight weighted dimensions (deliverable completeness, API correctness, test quality, error handling, persistence, Hotwire use, architecture, production readiness) and scored Tier A to D. He admits an error: he had labeled as 'hallucinated' some APIs that exist in the gem, found by reading the library source, which promoted several models (Kimi K2.6, Gemini 3.1 Pro). Opus 4.7 and GPT 5.4 tie at 97, GPT 5.5 gets 96 at 40 percent lower cost, Kimi K2.6 and Gemini 3.1 Pro are cheap Tier A, DeepSeek V4 Pro reaches Tier A only through a shim (DeepClaude) because of a protocol incompatibility in other harnesses, and Grok 4.3 jumps to Tier B. Local models stay at Tier C or below. He finds distillation copied Claude's style but not library knowledge, 'Coder' models did worse than general ones, the same model scores differently in different harnesses, and multi-model delegation is never used voluntarily. He explains why local inference is hard (VRAM, KV cache, memory bandwidth, toolchain bugs), warns the China-has-caught-up narrative is overstated for this task, and says benchmarks are tools, not truth. Updates on May 6 add DeepSeek V4 Pro and Grok 4.3."
+key_claims:
+  - claim: "In this benchmark Claude Opus 4.7 and GPT 5.4 xHigh tie at 97/100, GPT 5.5 gets 96 at about 40% lower cost and 20% faster, Kimi K2.6 gets 87 at about $0.30 per run."
+    time_sensitive: true
+  - claim: "No local open-source model reached Tier A; the best local model (Qwen 3.5 35B) was Tier C, so running a local model for production coding is a hobby/lab activity in 2026."
+    time_sensitive: true
+  - claim: "Rankings only hold within this narrow methodology (one Rails app, one prompt); models can do well elsewhere. Benchmarks are tools, not truth."
+    time_sensitive: false
+  - claim: "Counting tests or files measures nothing if the code is wrong; but correct API alone is not enough either: completeness of deliverables and test quality matter."
+    time_sensitive: false
+  - claim: "The author wrongly labeled valid library APIs as hallucinations until he checked the gem's source; verify claims against ground truth."
+    time_sensitive: false
+  - claim: "The same model gives different results in different harnesses (agent wrappers); DeepSeek V4 Pro scored Tier A via a Claude Code shim but was unmeasurable in opencode."
+    time_sensitive: true
+  - claim: "Distilling a big model's reasoning traces into a small model transfers style but not factual library knowledge."
+    time_sensitive: true
+  - claim: "Models with 'Coder' in the name did worse than general models on long agentic tasks."
+    time_sensitive: true
+  - claim: "Benchmark claims from vendors (e.g. GLM 5.1 beating GPT 5.4 on SWE-Bench Pro) did not hold on this task."
+    time_sensitive: true
+  - claim: "Opus 4.7's community-reported regression was about behavior (new tokenizer using up to 1.35x more tokens, aggressive resource optimization), not code quality."
+    time_sensitive: true
+  - claim: "Local inference speed is dominated by memory bandwidth and KV cache size, not just model size or RAM capacity."
+    time_sensitive: false
+  - claim: "Of 13 Chinese models tested, two reached Tier A in this benchmark; the 'China has caught up' narrative is overstated for full-deliverable coding."
+    time_sensitive: true
+fears_addressed:
+  - "Which AI model is really the best?"
+  - "Are cheap Chinese or open-source models as good as the expensive ones?"
+  - "Can I trust benchmark scores and launch hype?"
+reader_value: "Teaches that benchmarks are narrow, that vendor claims vary, that the wrapper tool matters, and that even the author caught himself making mistakes. The model scoreboard itself will be stale quickly; the lessons on skepticism are durable."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Benchmark is a tool, not truth; rankings hold only for the task tested"
+    - "Author corrected his own 'hallucination' labels by checking source code"
+    - "Style transfers by distillation, knowledge does not"
+    - "Same model, different wrapper, different score"
+    - "Why local models are hard: memory, bandwidth, tooling"
+    - "Vendor benchmark claims versus own test"
+  cut:
+    - "Full 24-model ranking table and tier-by-model commentary"
+    - "Rubric weights, per-model code snippets"
+    - "Pricing per run"
+jargon: [LLM, benchmark, harness, hallucination, tier, distillation, KV cache, VRAM, memory bandwidth, quantization, tool calling, open source model, local model, sub-agent, reasoning mode, token, tokenizer, SWE-Bench]
+illustration_ideas:
+  - "Why local LLMs are bound by memory bandwidth and KV cache growth with context"
+  - "How a benchmark rubric turns a pile of code into a tiered score"
+  - "Harness as the wrapper around a model: same model, different wrapper, different output"
+  - "Distillation: style copied, knowledge not"
+people_events:
+  - "Claude Opus 4.7 release and Reddit regression complaints"
+  - "GPT 5.5 release (2026-04-23)"
+  - "DeepSeek V4, Kimi K2.6, Grok 4.3, Xiaomi MiMo V2.5, GLM 5.1, Qwen 3.6, Gemini 3.1 Pro"
+  - "Google TurboQuant (ICLR 2026)"
+related_posts: ["2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus", "2026/04/18/llm-benchmarks-parte-2-multiplos-modelos", "2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude", "2026/04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos"]
+prerequisites: ["What an LLM is", "What a coding agent is", "What a benchmark is"]
+series: "llm-benchmark"
+obsolescence: "Described by the author as canonical for April-May 2026 and already updated on 2026-05-06; all scores, tiers, prices and model versions will be superseded by later benchmark posts. It supersedes the April 5 and April 18 benchmark posts."

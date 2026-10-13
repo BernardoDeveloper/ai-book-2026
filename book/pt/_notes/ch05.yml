@@ -1,0 +1,12 @@
+notes:
+  - "Frank naming: the blog's stated reason is a homage to Frank Rosenblatt (Perceptron, 1957; 02/01 part 1 and 07/12). No post mentions Frankenstein. ch05 states the Rosenblatt reason and adds only a light wink ('criaturas costuradas a partir de pedaços'). continuity.yml's 'Frankenstein creatures' description should be corrected to Rosenblatt."
+  - "ch05 cites the Perceptron as 1957 (Cornell report 85-460-1, key rosenblatt1957perceptron). ch01's illustration idea says '1958 hype': both are right (1957 report, 1958 Mark I/press coverage), but ch01 should use the same key and not contradict 1957 as the creation date. ch05 points to @sec-ch01 for the Perceptron and the first AI hype."
+  - "ch05 introduces and glosses: vibe coding, prompt, commit, teste automatizado, código morto, refatoração (half-clause gloss, because ch05 is the first use in book order although continuity assigns refatoracao to ch06). ch06 can mark [refatoração]{.gls key=refatoracao} without re-explaining."
+  - "ch05 uses 'o estagiário com memória de peixinho dourado' as the image for an agent without persistent memory; ch02's goldfish title is the same image. Later chapters can call back to 'o estagiário'."
+  - "ch05 mentions, without detail, Frank Sherlock (ch07), Frank Yomik as 'meu primeiro fracasso de verdade' (ch08), Frank FBI (ch17), and calls Frank Investigator (ch04) a younger relative of FrankMD."
+  - "ch05 forward refs: @sec-ch09 (project rules file / CLAUDE.md), @sec-ch20 (whether models got faster but the process stayed the same). ch05 closes on the ch06 hook: newsletter + AI-narrated podcast, 'em dois dias, o grosso já funcionava' (from 02/16)."
+  - "Dated snapshot: model personalities (Opus over-proactive, GPT/Gemini more literal) appear framed as 'naquele janeiro' only."
+integration:
+  - "Ledger (ch03/ch05): Zig challenge now a callback ('o chat em Zig de @sec-ch03') instead of a fresh introduction; 01/11 figures kept (two prompts, ~half hour, ~US$8, deliberately bad prompt)."
+  - "Ledger (ch05/ch06): FrankMD window explicit: 'Cerca de 130 commits, contando só essa largada' in 'naqueles três primeiros dias', with pointer to @sec-ch06 for the whole history (212 in 19 days)."
+  - "Verified unchanged: TV Clipboard 10 commits/1 h, 43 commits, 10+ h, ~250 prompts, ~US$40 OpenRouter, 3k+ lines Go, 200K context; relay ~US$3 (01/29); FrankMD Fri 30 Jan start, 17 h/70 commits, 19:25 Saturday, 15 h fever break, 1,600-line i18n, 6,000-line CodeMirror swap, 200 h estimate."

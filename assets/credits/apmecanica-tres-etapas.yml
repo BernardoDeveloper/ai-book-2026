@@ -1,0 +1,26 @@
+---
+id: apmecanica-tres-etapas
+kind: diagram_code
+chapters:
+- apmecanica
+editions:
+- pt
+- en
+file: assets/figures/apmecanica-tres-etapas.png
+sha256: dee04d0107fb5d279476384f9baa5823e3db2854fa751fdd3f98a61c40d9d13b
+pixels:
+  width: 1920
+  height: 1026
+source: assets/charts/apmecanica-tres-etapas.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/apmecanica-tres-etapas.py
+  pt
+description: 'apmecanica-tres-etapas: from document continuer to assistant, three
+  training stages.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

@@ -1,0 +1,72 @@
+# Cross-chapter issues collected while drafting, resolved in the integration
+# pass (after all waves). Each item: chapters involved, the issue, the ruling
+# if already decided. Drafter notes live in book/pt/_notes/; this file is the
+# editor's ledger.
+items:
+  - chapters: [ch03, ch11]
+    issue: >-
+      Benchmark repo contradicts itself on whether Opus 4.7's `chat.complete`
+      call in Claude Code was wrong (docs/success_report.multi_model.md, 18 Apr)
+      or valid (README.md e834f50, 24 Apr, re-audit against the gem source).
+      ch03 says only "the audit of the time classified it as wrong" and hands
+      the re-audit to ch11.
+    ruling: "ch11 tells the re-audit (it is the 'my own ranking was wrong' scene); ch03 wording must stay consistent with ch11's resolution."
+  - chapters: [ch05, ch06]
+    issue: "FrankMD: ch05 says ~130 commits in three days; ch06 uses 02/20's 212 commits in 19 days (11/day). Different windows, both from posts."
+    ruling: "Keep both, make the windows explicit in each (first three days vs whole project to 20 Feb)."
+  - chapters: [ch03, ch05]
+    issue: "Both use the January Zig challenge; ch05 introduces it as new."
+    ruling: "ch03 comes first in reading order: ch05 calls back to @sec-ch03 instead of introducing."
+  - chapters: [ch06, ch09]
+    issue: "Both proposed glossary key pair-programming."
+    ruling: "ch06 owns it (XP chapter); ch09 marks only."
+  - chapters: [ch09, ch15, ch16, ch17]
+    issue: "prompt-injection key proposed by ch09; deeper treatment probably in Part IV."
+    ruling: "Owner decided after wave B; add to continuity explained_in."
+  - chapters: [ch04, ch06, ch07]
+    issue: "Hallucination examples (invented market numbers in ch06, missing-data-as-zero in ch07) should be called back from ch04, not retold."
+  - chapters: [ch09, posfacio]
+    issue: "The 04/15 post was itself written by Claude from Akita's prompt; posfácio can call back to it."
+  - chapters: [ch07, ch10, ch20]
+    issue: "'espelho da sua própria competência' line originates in ch06/ch07; ch10 and ch20 should call back, not restate as new. ch20 can echo 'ela já está boa o suficiente' (title echo)."
+  - chapters: [ch04, ch10]
+    issue: "Frank Investigator: ch04 shows a working tool (9 days, 129 commits); 05/14 calls it 'a seed I planted and stopped'. Message sent to ch10 drafter to word both as true."
+  - chapters: [ch04, apC, epilogo]
+    issue: "ch04 has the practical chatbot checklist (8 rules + health/money/news); apC and the epilogue point to it instead of repeating."
+  - chapters: [ch01, apmecanica, antes]
+    issue: "New optional appendix 'A máquina por dentro, sem matemática' (author request). ch01 gives intuitions; add a one-line pointer in ch01 to @sec-apmecanica (and to @sec-antes for reading). Glossary key papagaio-estocastico (proposed by ch01) gets its full treatment in apmecanica."
+  - chapters: [apmecanica, apA, apB, apC, apD]
+    issue: "Appendix titles no longer carry hardcoded letters; the Typst template / Quarto letters them. Check EPUB/HTML show sensible appendix labels."
+  - chapters: [ch06, ch13]
+    issue: "Qwen3 TTS cost: ch06 (02/18) says US$0.50-1.50 per episode on RunPod; ch13 (04/09) says ~8 cents vs US$2.70 on ElevenLabs. Likely different scopes (GPU rental incl. cold starts vs per-episode inference). Check both posts and make each chapter state its scope."
+  - chapters: [ch09, ch15, ch16, ch17]
+    issue: "prompt-injection ownership."
+    ruling: "ch16 explains it fully (owner); ch09 and others mark and point to @sec-ch16. Add to continuity explained_in.ch16."
+  - chapters: [ch17, ch19]
+    issue: "binario key proposed by ch19; ch17 (reverse engineering) may own it."
+  - chapters: [ch10, ch16]
+    issue: "FrankClaw: ch10 says 'nunca rodei nem uma vez'; March post says web and Telegram channels were tested on simple chats; May scorecard says 1/10, never used. ch10 should say 'nunca usei de verdade'."
+  - chapters: [ch02, ch16]
+    issue: "Claude Code DRM was broken about 30 hours after the leak ('no dia seguinte'), not 'in under a day': check ch02 wording if it repeats the claim."
+  - chapters: [ch03, ch11]
+    issue: "ch11 settled chat.complete: valid (gem source: `ask` = add_message + complete). ch03's 'Então o problema era da combinação' must become the then-conclusion with a pointer to @sec-ch11 (suggested wording in _notes/ch11.yml). ch03 must not quote the 'Claude Code 4-7x more expensive / ~210K tokens in OpenCode' comparison (OpenCode side came from the metrics bug)."
+  - chapters: [ch11, apC]
+    issue: "apC distils ch11's 'Como eu leio uma tabela' section and ch14's announcement checklist."
+  - chapters: [ch12]
+    issue: "AUTHOR DECISION: one Genesys PI paragraph uses UNPUBLISHED findings (llm-coding-benchmark/model-forensics/FINDINGS.md, untracked, 9 Oct): token counts match OpenAI vocabulary but prove only API counting; no origin proven or excluded. More cautious than the 30 Sep post. Kept in 1.0, flagged for Akita; removable cleanly."
+  - chapters: [prefacio, posfacio]
+    issue: "Both describe how the book was made. Preface keeps a short paragraph and points to @sec-posfacio; detail lives in the posfácio."
+  - chapters: [prefacio, ch11, ch13, ch20, posfacio, epilogo]
+    issue: "Fable 5 'ten times the price' is WRONG (ch14: July pricing audit, Opus 4.8 ~US$6.40/run vs Fable ~US$11: a bit under 2x). Any unit saying 'dez vezes' about Fable must fix it or frame it as the June figure later corrected (@sec-ch14)."
+  - chapters: [ch14]
+    issue: "New material not on the blog: US export-control order switched Fable 5/Mythos 5 off 12-30 June 2026. Re-verify with primary sources in the fact-check pass."
+  - chapters: [ch06, ch08]
+    issue: "AUTHOR QUESTION: years of experience differ by source post: ch06 '30 anos de experiência' (02/20) vs ch08 'mais de 25' (04/23). Both faithful to their posts; harmonise if Akita prefers one figure."
+  - chapters: [ch16, ch19, apA]
+    issue: "Bun rewrite date: ch16 says Sumner published the Zig-to-Rust rewrite on 8 July 2026 (~11 days of work); ch19 says 'Em maio de 2026 ... reescreveu tudo'. apA uses 8 July. Verify against sources and align ch19."
+  - chapters: [ch15, apB]
+    issue: "AUTHOR NOTE (his repo): ai-jail README contradicts itself on agent credentials (agent_state): one section says on by default, the options list says 'default off'. Book follows 'on' (bootstrap.rs). Akita may want to fix the README."
+  - chapters: [EN-edition]
+    issue: "Before EN: chart scripts and render_diagram.rb write assets/figures/<fig>.png regardless of language, so an EN render overwrites PT. Make them write assets/figures/<lang>/... (or a build-time copy) and point each edition at its own figures."
+  - chapters: [glossary]
+    issue: "merge_glossary never overwrites curated entries, so some keys keep the first proposer's definition (e.g. prompt-injection from ch09, while ch16 owns it and has a fuller one in _gls/ch16.yml). Glossary editor pass: prefer the owner chapter's definition (continuity.yml explained_in), unify voice."

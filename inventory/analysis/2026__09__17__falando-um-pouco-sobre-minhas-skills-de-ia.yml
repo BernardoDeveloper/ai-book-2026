@@ -1,0 +1,49 @@
+id: "2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia"
+source_sha256: "b0df8d0f5d1ba96b82101f00203d21acfa68bc386334b75a59380cf7d55c4746"
+title_en: "A bit about my AI Skills"
+ai_relevance: core
+ai_relevance_reason: "Explains agent skills (prompt files for coding agents), memory and how the author works daily with agents."
+genre: essay
+themes: [coding-agents-tools, agent-memory-and-context, vibe-coding-practice, security-and-sandboxing]
+thesis: "Agent skills are just versioned prompts; do not copy other people's, build your own from experience, and make agents write down everything that is not code so knowledge compounds."
+summary: "Akita explains that a skill is a folder with a text file containing a well-written prompt, loaded on demand (progressive disclosure) so it does not flood the context. He warns that installing third-party skills is like running someone else's instructions with your permissions and invites prompt injection; more skills also compete for the agent's attention. His one borrowed skill is a humanizer built from Wikipedia's catalog of AI-writing tells. He describes his daily routine of managing 40+ repositories with skills for auditing pull requests and issues, resolving tickets, batching dependency bumps and cutting releases, claiming over a thousand PRs and issues handled with his supervision. He argues skills are minor compared to per-project instruction files, a persistent memory wiki, and pointing the agent at living examples. He recommends having the agent document research and decisions as lasting assets, calling it compound interest of knowledge, and closes with the principle that nobody else knows what you need."
+key_claims:
+  - claim: "A skill is just a text file prompt (SKILL.md) possibly with helper scripts; harnesses load only name and description up front and the body on demand."
+    time_sensitive: false
+  - claim: "Installing third-party skills means running another person's instructions with your credentials and is a prompt-injection risk."
+    time_sensitive: false
+  - claim: "More tools/skills do not necessarily improve agent results and unused skills become debt."
+    time_sensitive: false
+  - claim: "One person using these skills handled 609 merged PRs and 375 closed issues across three projects, with supervision."
+    time_sensitive: true
+  - claim: "Per-project instruction files, persistent memory and pointing to working examples carry more value than skills."
+    time_sensitive: false
+  - claim: "Make the agent write down research, decisions and rejected alternatives so knowledge accumulates."
+    time_sensitive: false
+fears_addressed:
+  - "AI agents are magic I cannot understand"
+  - "Do I need to install lots of agent add-ons"
+reader_value: "Medium. Demystifies 'skills' as plain text prompts and illustrates what a single human supervising agents can do, plus the safety point about untrusted instructions."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Skills are just prompts: no magic"
+    - "Installing someone else's skill equals prompt injection by choice"
+    - "Agent with amnesia vs persistent project memory"
+    - "Write down everything that is not code; compound knowledge"
+    - "Every line of a skill is a scar from a past mistake"
+  cut:
+    - "Per-skill rule lists for PR audit, release, bump"
+    - "Repo links and screenshot of monitor"
+    - "Competitor memory-tool survey list"
+jargon: [skill, prompt, harness, context window, progressive disclosure, prompt injection, supply chain, PR, issue, CI, changelog, semver, sandbox, AGENTS.md, memory wiki, LLM]
+illustration_ideas:
+  - "progressive disclosure: only skill names in context, body loaded on demand"
+  - "agent session with and without persistent project memory"
+  - "daily loop: audit PRs/issues then resolve then release"
+people_events: [Wikipedia WikiProject AI Cleanup, Anthropic skills documentation, Karpathy LLM wiki pattern, MemPalace]
+related_posts: ["2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam", "2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit"]
+prerequisites: ["What an AI coding agent is", "What a prompt is"]
+series: "ai-memory"
+obsolescence: "Counts of merged PRs/issues and the skill list are a 17 Sept 2026 snapshot; harness skill-loading behavior may change."

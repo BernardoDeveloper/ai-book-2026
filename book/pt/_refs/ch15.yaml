@@ -1,0 +1,64 @@
+references:
+  - id: backblaze2026q2
+    type: "post-weblog"
+    title: "Backblaze Drive Stats for Q2 2026"
+    author: [{family: "Doyle", given: "Stephanie"}]
+    container-title: "Backblaze Blog"
+    issued: {date-parts: [[2026, 9, 29]]}
+    URL: "https://www.backblaze.com/blog/backblaze-drive-stats-for-q2-2026/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados (354,415 drives, 1.73% annualized failure rate in Q2 2026, 1.41% lifetime, as quoted in the post)"
+  - id: shumer2026deleted
+    type: "post"
+    title: "GPT-5.6-Sol accidentally deleted nearly all files on my Mac"
+    author: [{family: "Shumer", given: "Matt"}]
+    container-title: "X"
+    issued: {date-parts: [[2026, 7, 10]]}
+    URL: "https://x.com/mattshumer_/status/2075657271401390161"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas (title paraphrased from the post's screenshot; exact day in July 2026 not checked)"
+  - id: goodalexander2026devnet
+    type: "post"
+    title: "Reproduction of GPT-5.6-Sol destructive rsync on a throwaway devnet"
+    author: [{literal: "goodalexander"}]
+    container-title: "X"
+    issued: {date-parts: [[2026, 7, 11]]}
+    URL: "https://x.com/goodalexander/status/2076019436767584347"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas (title paraphrased; exact day not checked)"
+  - id: akita2026aijail
+    type: "software"
+    title: "ai-jail"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 3, 1]]}
+    URL: "https://github.com/akitaonrails/ai-jail"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real; current state checked against README v2.8.1 (2026-10-09)"
+  - id: mdindoffer2026docker
+    type: "webpage"
+    title: "Sandbox escape via a docker socket passthrough (effective host root), issue #88"
+    author: [{literal: "mdindoffer"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 7, 25]]}
+    URL: "https://github.com/akitaonrails/ai-jail/issues/88"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/25/ai-jail-update-seguranca-docker-opt-in"
+  - id: docker2026security
+    type: "webpage"
+    title: "Docker Engine security"
+    author: [{literal: "Docker Inc."}]
+    container-title: "Docker Docs"
+    issued: {date-parts: [[2026]]}
+    URL: "https://docs.docker.com/engine/security/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/25/ai-jail-update-seguranca-docker-opt-in"
+  - id: akita2023akitando146
+    type: "motion_picture"
+    title: "[Akitando] #146 - Protegendo e Recuperando Dados Perdidos - Git, Backup, BTRFS"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "YouTube"
+    issued: {date-parts: [[2023, 10, 19]]}
+    URL: "https://www.youtube.com/watch?v=yfEhz9poqW8"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas"

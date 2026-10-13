@@ -1,0 +1,54 @@
+id: "2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles"
+source_sha256: "3bb267b2daadcb058747de25bfae3cc26fcd37642c8349e03bf9108b56440da5"
+title_en: "Vibe Code: From Zero to Production in 6 Days (The M.Akita Chronicles)"
+ai_relevance: core
+ai_relevance_reason: "A project log of shipping a multi-part AI-assisted product (newsletter, blog, AI-voiced podcast, Discord bot) in six days with Claude Code, and the methodology behind it."
+genre: project-log
+themes: [vibe-coding-practice, software-engineering-discipline, generative-media, personal-journey]
+thesis: "Vibe coding works only when done as disciplined Extreme Programming by a senior who plays product manager, tech lead and QA; 'it already works' on day two is where amateurs stop, and the next four days of testing and hardening are the real work."
+summary: "Akita launched The M.Akita Chronicles, a weekly newsletter plus archive blog, an automated podcast voiced by a fine-tuned open-source TTS model (Qwen3 TTS with his voice), and a Discord bot persona called M.Arvin (a Marvin the Paranoid Android homage) that curates links and writes AI commentary. Built in six days (Feb 10 to 15, with the first production run on Feb 16) with 201 commits by Claude Code, which he equates to about 150 pull requests of a human team, and 1:1 test-to-code lines with 100% coverage plus a separate end-to-end integration project. About two days produced the 'works' version; one day was deployment; three days were testing, refactoring and hardening, the part he says every vibe coder skips. Even repeated security and test reviews by Claude Code and then Codex each missed things he later found himself. He maps the process to Extreme Programming: plan first (pair), TDD, CI, small releases, coding standards. He says spec-driven formats matter less than how well you write, and that the winning profile is the 'Senior Agile Vibe Coder'. Privacy measures: encrypted subscriber emails, no trackers; serverless GPU on demand to cut costs. He will not open-source it."
+key_claims:
+  - claim: "The whole product (newsletter, blog, podcast, Discord bot, X.com monitor, TTS server) was built Feb 10 to 15, 2026 with 201 commits by Claude Code; first production jobs ran Feb 16."
+    time_sensitive: true
+  - claim: "Roughly 2 days produced the working core; 1 day deployment; 3 days testing, integration tests and refactoring (50 to 200 commits), the step vibe coders skip."
+    time_sensitive: true
+  - claim: "Treat Claude Code or Codex like a hard-working human programmer who makes many mistakes but follows explicit, unambiguous orders; the human must be product manager, tech lead and QA."
+    time_sensitive: false
+  - claim: "Neither Claude Code nor Codex found all security holes or missing tests, even after repeated reviews; nobody, including AI, finds everything."
+    time_sensitive: false
+  - claim: "Vibe coding done right is Extreme Programming: plan first, TDD, CI, small releases, coding standards."
+    time_sensitive: false
+  - claim: "'Spec-driven development' structure does not matter; the quality of your written text does."
+    time_sensitive: false
+  - claim: "The AI cost to run the bot is very low and he controls how much AI it uses; GPU for audio is serverless and turned on only when generating."
+    time_sensitive: true
+  - claim: "He estimates an experienced programmer without AI could not produce 150 user stories to production in 6 days."
+    time_sensitive: false
+fears_addressed:
+  - "Can one person ship a whole product with AI?"
+  - "Is vibe coding only for toys?"
+  - "Do I still need engineering discipline?"
+reader_value: "High. Shows an upper bound of what AI-assisted work can do in a week, and the discipline it took. A balanced story: impressive speed, but only because an experienced person supplied planning, tests and review."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Works on day two, production-ready on day six"
+    - "Human as product manager, tech lead and QA at once"
+    - "Extreme Programming as the antidote to sloppy vibe coding"
+    - "AI persona M.Arvin, a robot commentator named after Marvin the Paranoid Android"
+    - "Two AIs reviewing each other still miss things"
+  cut:
+    - "Infrastructure details (Kamal, Cloudflare, Docker volumes)"
+    - "Newsletter marketing links"
+jargon: [vibe coding, Extreme Programming, TDD, CI, pull request, user story, test coverage, TTS, LoRA, fine-tuning, serverless GPU, Discord bot, deployment]
+illustration_ideas:
+  - "Six-day timeline: 2 days to 'works', 4 days to 'production-ready'"
+  - "One person wearing three hats: PM, tech lead, QA, with the AI as the diligent junior"
+people_events: ["Anthropic (Claude Code)", "OpenAI (Codex)", "Alibaba Qwen3 TTS", "Douglas Adams (Marvin the Paranoid Android)", "RunPod"]
+related_posts:
+  - "2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2"
+  - "2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles"
+prerequisites: ["What vibe coding is", "Basic idea of testing and deployment"]
+series: "m-akita-chronicles"
+obsolescence: "Tool versions (Qwen3 TTS, Claude Code), the 6-day and 201-commit figures are Feb 2026 snapshots. A fuller methodology post follows (see 2026/02/20)."

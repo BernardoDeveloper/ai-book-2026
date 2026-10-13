@@ -1,0 +1,20 @@
+---
+id: ch02-compactacao
+kind: chart_code
+file: assets/figures/ch02-compactacao.png
+sha256: '0488a2737d78adfb01372944843718f33851c5bcbe84d70ff4d9cc86bd033978'
+source: assets/charts/ch02-compactacao.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I assets/charts/ch02-compactacao.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+chapters:
+- 2
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

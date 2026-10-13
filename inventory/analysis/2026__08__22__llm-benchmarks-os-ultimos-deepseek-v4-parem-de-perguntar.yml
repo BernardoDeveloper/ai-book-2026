@@ -1,0 +1,43 @@
+id: "2026/08/22/llm-benchmarks-os-ultimos-deepseek-v4-parem-de-perguntar"
+source_sha256: "d082a261e481162e2d36d916e92ba558d99185a919db28a6e94d14a24f5d73f8"
+title_en: "LLM benchmarks: the latest DeepSeek V4 (stop asking)"
+ai_relevance: core
+ai_relevance_reason: "Benchmark of new DeepSeek V4 snapshots as coding agents."
+genre: benchmark
+themes: [benchmarks-model-comparison, open-vs-closed-and-local-models, business-and-economics]
+thesis: "DeepSeek V4's new snapshots moved from Tier B to Tier A (90 and 91) and are the cheapest in that tier, but similar scores on a narrow web-app test do not make models equivalent, and Kimi K3 and GLM 5.3 remain his preference."
+summary: "Tired of readers asking 'what about DeepSeek?', Akita ran the new DeepSeek V4 Flash 0731 and Pro 0813 snapshots on his v2 Rails chat benchmark. Flash rose from 80 to 90 and Pro from 82 to 91, both Tier A, with Flash's roughly 82-cent run the cheapest Tier A run yet. Pro's earlier multi-turn bug was fixed in a harness update, so the workaround was no longer needed. Both were slow (82 and 88 minutes) and verbose (Flash used 44 million tokens). He reminds readers the benchmark measures one narrow slice, easy web programming, so close scores mean closeness only on that test. DeepSeek's trajectory since April, when an earlier version invented a whole library API, is steep. Among Chinese models in the same harness it trails GLM 5.3, Qwen 3.8 Max and Kimi; its advantage is price."
+key_claims:
+  - claim: "DeepSeek V4 Flash 0731 scored 90 (was 80) and Pro 0813 scored 91 (was 82), both Tier A."
+    time_sensitive: true
+  - claim: "A benchmark score reflects only the narrow tested slice (easy Rails web programming) and says nothing about kernel drivers, game engines or offensive security."
+    time_sensitive: false
+  - claim: "DeepSeek is competitive in cost (about $0.82 and $5.01 per run) but slow and token-verbose compared with peers."
+    time_sensitive: true
+  - claim: "Models can improve greatly within months: from fabricating an entire library API in April to finding and confessing its own dead code."
+    time_sensitive: true
+fears_addressed:
+  - "Is DeepSeek the model that will beat the Americans?"
+  - "Do near-equal scores mean equal models?"
+reader_value: "Low. Short reinforcement of the 'a benchmark measures a narrow slice' lesson; the rest is model-specific."
+technical_depth: 3
+evergreen: 1
+book_use:
+  keep:
+    - "Benchmark measures a slice; close scores mean closeness only on that test"
+    - "Fast improvement of a once-bad model in four months"
+  cut:
+    - "Tables, snapshot specifics, cost lines"
+jargon: [LLM, benchmark, tier, snapshot, harness, tokens, reasoning, open model]
+illustration_ideas:
+  - "A narrow test window over a vast space of tasks: score applies only inside the window"
+people_events:
+  - "DeepSeek V4"
+  - "Moonshot Kimi K3, Z.ai GLM 5.3"
+related_posts:
+  - "2026/08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7"
+  - "2026/07/30/novo-llm-benchmark-refiz-todos-os-testes"
+  - "2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude"
+prerequisites: ["2026/07/30 benchmark v2 methodology"]
+series: "llm-benchmark"
+obsolescence: "All scores, snapshots and costs are late August 2026."

@@ -1,0 +1,45 @@
+id: "2026/07/12/noticias-quanticas-majorana-2-e-entendendo-shor"
+source_sha256: "2b6b7f1b6614f3f467daa53156e2c0f66ce3306245c5ea9390691c7e824aa306"
+title_en: "Quantum News: Majorana 2 and Understanding Shor"
+ai_relevance: none
+ai_relevance_reason: "About quantum computing and a corporate announcement; no AI content, though its skeptical stance toward press-release hype parallels AI hype."
+genre: news-analysis
+themes: [hype-and-marketing, non-ai]
+thesis: "Microsoft's Majorana 2 shows real materials progress but still demonstrates no topological qubit, and Shor's algorithm works by turning factoring into period finding via interference; quantum computers accelerate problems with exploitable structure, not everything."
+summary: "On 2 June 2026 Microsoft announced Majorana 2 with parity lifetimes of about 22 seconds (versus milliseconds before) and moved its roadmap from 2033 to 2029. Akita recounts the program's retracted 2018 Nature paper, the Majorana 1 criticisms, and physicists' immediate replies that nothing resolves the basic question. Missing items cited from an analysis include X-basis measurements, proof of topological states, logic gates or entanglement, peer review and reproducibility. He then explains Shor's algorithm: factoring reduces to finding the period of a^x mod N, which superposition plus a quantum Fourier transform extracts through interference. He clarifies that quantum computers are not universal accelerators; they help with structured problems like simulation, Grover search and phase estimation. He expects only niche chemistry and materials use in the short term."
+key_claims:
+  - claim: "Microsoft's Majorana 2 (announced 2 June 2026) reported Z-parity lifetimes of about 22 seconds, versus 1-12 milliseconds in Majorana 1, and shortened its scalable-quantum timeline from 2033 to 2029."
+    time_sensitive: true
+  - claim: "The paper reports no X measurements, no proof the states are topological, no gates, entanglement or algorithms, no peer review and no reproducibility, so it does not show a qubit."
+    time_sensitive: true
+  - claim: "Earlier Microsoft-funded Majorana papers (2018 Delft) were retracted in 2021 and 2022 after selective data presentation was shown."
+    time_sensitive: false
+  - claim: "Shor's algorithm factors N by finding the period of a^x mod N using superposition and a quantum Fourier transform that uses interference to amplify the period."
+    time_sensitive: false
+  - claim: "Breaking real RSA keys would need millions of physical qubits with error correction; quantum computers are accelerators for structured problems and do not speed up sorting or most everyday tasks."
+    time_sensitive: false
+fears_addressed:
+  - "Will quantum computers break all encryption soon?"
+  - "Should I believe tech press releases?"
+reader_value: "Medium for the hype-skepticism angle and a lay-friendly explanation of Shor; no AI content."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Press releases vs peer-reviewed evidence: the habit of asking what the paper does not show (parallel to AI hype)"
+    - "Quantum computers accelerate structured problems, not everything"
+  cut:
+    - "Majorana physics details and Shor math walkthrough"
+jargon: [qubit, topological qubit, superposition, interference, Shor's algorithm, Fourier transform, RSA, peer review, retraction]
+illustration_ideas:
+  - "Shor's algorithm: factoring -> period finding -> interference peaks"
+  - "Checklist of what a qubit announcement must show versus what Majorana 2 showed"
+people_events:
+  - "Microsoft Majorana 1 and 2, Chetan Nayak"
+  - "Sergey Frolov, Henry Legg (critics)"
+  - "Peter Shor (1994)"
+  - "TU Delft retraction (2021)"
+related_posts: []
+prerequisites: []
+series: ""
+obsolescence: "Announcement details and Microsoft timeline are July 2026; subsequent peer review or follow-up data may change the picture."

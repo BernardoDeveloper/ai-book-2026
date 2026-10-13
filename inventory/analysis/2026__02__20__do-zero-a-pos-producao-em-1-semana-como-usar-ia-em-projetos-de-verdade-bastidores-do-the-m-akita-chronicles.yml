@@ -1,0 +1,70 @@
+id: "2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles"
+source_sha256: "8a3892fa3d5cb201158394d2673a003461fe510482559cd989d4cf41ffd7b340"
+title_en: "From Zero to Post-Production in 1 Week: How to Use AI on Real Projects (Behind the Scenes of The M.Akita Chronicles)"
+ai_relevance: core
+ai_relevance_reason: "The series finale and methodology post: a quantified account of working with a coding agent as a pair-programming partner, with a controlled-ish comparison against his earlier undisciplined project."
+genre: essay
+themes: [vibe-coding-practice, software-engineering-discipline, jobs-and-careers, coding-agents-tools]
+thesis: "AI programming alone is a recipe for disaster; what works is Extreme Programming (pair, TDD, CI, small releases, continuous refactoring) with the AI as the pair, and the same developer with the same agent got much better results when disciplined than when not."
+summary: "Akita reports 274 commits, 8 days, 4 applications and 1,323 tests for the M.Akita Chronicles system, built with Claude Code as a pair-programming partner. Only 37% of commits were new features; the rest were fixes, hardening, security, deploy, tests and docs, which he says is what 'one-shot prompt' demos omit. He describes the human supplying what and why and the agent supplying how, with examples where he interrupted over-engineering or supplied domain knowledge the agent lacked. He lists what AI does well (boilerplate, tests, mechanical refactors, research, consistency) and badly (architecture, domain knowledge, opinions, proactive security, prioritisation). He estimates 180 to 200 user stories that a normal 2-3 dev team would need 10 to 30 weeks for, caveating that he has 30 years of experience and works solo. A living CLAUDE.md file (702 lines) stores project knowledge for the agent. The counter-example is FrankMD: same developer and agent but feature-first without CI or TDD; a single JavaScript file grew to nearly 5,000 lines and needed six emergency refactors, giving 11 commits/day versus 34. His conclusion: the variable was the process, not the AI; 'AI is your mirror'."
+key_claims:
+  - claim: "The system was built in 8 days with 274 commits and 1,323 tests (test lines exceed code lines by about 1.5x), roughly 16,000 lines of functional code."
+    time_sensitive: true
+  - claim: "Only about 37% of commits were new features; the remainder were fixes, hardening, security, deploy, tests, docs and refactoring."
+    time_sensitive: true
+  - claim: "The one-shot-prompt narrative produces prototypes without tests, security, error handling or deployment."
+    time_sensitive: false
+  - claim: "The correct system emerges from iteration, not from specification: several key components were discovered only after failures in real runs."
+    time_sensitive: false
+  - claim: "Humans decide the what; the agent decides the how. Inverting this makes results dramatically worse."
+    time_sensitive: false
+  - claim: "Tests matter more, not less, with AI: they are the safety net that lets the agent change code with confidence; CI caught a real bug more than 50 times."
+    time_sensitive: false
+  - claim: "The agent never says no; it will implement over-engineered or insecure requests enthusiastically, so the human must act as brake, code reviewer and adult."
+    time_sensitive: false
+  - claim: "AI is a multiplier, not a substitute: a mediocre programmer with AI produces mediocre code faster."
+    time_sensitive: false
+  - claim: "Same developer, same agent: the disciplined project averaged 34 commits per day versus 11 for the undisciplined FrankMD, which needed six large emergency refactors."
+    time_sensitive: true
+  - claim: "A living project document (CLAUDE.md) that records hurdles and conventions gives the agent persistent context across sessions."
+    time_sensitive: false
+  - claim: "Estimated equivalent effort for a conventional 2-3 developer team: roughly 10 to 30 weeks for about 180-200 user stories (author's estimate, with caveats about his 30 years of experience and solo context)."
+    time_sensitive: false
+fears_addressed:
+  - "AI will replace programmers"
+  - "AI can build a SaaS in 10 minutes"
+  - "Do I still need good engineering practices with AI?"
+reader_value: "High. The clearest quantified account of working with an AI agent in the book's source set: commit-category breakdown, strengths and weaknesses list, and a natural experiment (FrankMD vs this project). It supports 'AI amplifies the person' and 'process beats prompts'. Note the author's own caveats, and note inconsistencies with the earlier post (201 commits in 6 days vs 274 in 8 days: different counting windows)."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep:
+    - "Only 37% of commits were features: the hidden work behind demos"
+    - "Strengths and weaknesses list of an AI coding agent"
+    - "The agent never says no; you are the adult in the room"
+    - "Same developer, same agent, two processes, very different outcomes (FrankMD vs Chronicles)"
+    - "CLAUDE.md as a living memory document for the agent"
+    - "Closing quote: AI is your mirror"
+    - "Challenge to the reader: a week of detached pair programming with AI on a small project"
+  cut:
+    - "Commit-per-day tables, line counts, coverage tables, Brakeman details"
+    - "List-Unsubscribe feature walk-through"
+    - "Component inventory"
+jargon: [Extreme Programming, pair programming, TDD, CI, small releases, refactoring, technical debt, user story, test coverage, CLAUDE.md, vibe coding, one-shot prompt, agent, commit]
+illustration_ideas:
+  - "Where commits go: pie of features vs fixes, security, deploy, tests, docs"
+  - "Technical debt curve: build-build-build-stop-refactor (FrankMD) versus steady small refactors (Chronicles)"
+  - "Division of labour: human supplies what and why, agent supplies how"
+people_events: ["Anthropic (Claude Code)", "Kent Beck / Extreme Programming (concept)", "FrankMD (earlier project)"]
+related_posts:
+  - "2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles"
+  - "2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2"
+  - "2026/02/17/enviando-emails-sem-spammar-bastidores-do-the-m-akita-chronicles"
+  - "2026/02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles"
+  - "2026/02/18/web-scrapping-em-2026-bastidores-do-the-m-akita-chronicles"
+  - "2026/02/19/frontend-sem-framework-bastidores-do-the-m-akita-chronicles"
+  - "2026/02/19/jobs-asssincronos-que-sobrevivem-ao-caos-bastidores-do-the-m-akita-chronicles"
+  - "2026/02/20/discord-como-admin-panel-bastidores-do-the-m-akita-chronicles"
+prerequisites: ["What vibe coding is", "Idea of tests and continuous integration"]
+series: "m-akita-chronicles"
+obsolescence: "Counts (274 commits, 8 days, 1,323 tests) supersede the earlier 6-day, 201-commit figures in 2026/02/16. Claims about what agents do poorly (proactive security, saying no) reflect Claude Code in Feb 2026 and may change; the process lessons remain."

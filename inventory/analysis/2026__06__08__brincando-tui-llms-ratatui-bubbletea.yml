@@ -1,0 +1,41 @@
+id: "2026/06/08/brincando-tui-llms-ratatui-bubbletea"
+source_sha256: "d09074bd2e0a8538dc8bcb60a15e100569d235218940e82238407f14ea1d3366"
+title_en: "Playing with TUIs and LLMs: Ratatui plus Bubble Tea"
+ai_relevance: substantial
+ai_relevance_reason: "Small tools are built by orchestrating coding agents, and the post argues LLMs change the economics of language choice and personal software."
+genre: project-log
+themes: [vibe-coding-practice, programming-languages, coding-agents-tools]
+thesis: "When an LLM writes most of the code, Rust's ergonomic cost matters less, and small custom tools become cheap enough to build for personal itches, provided they are tested and packaged properly."
+summary: "Akita presents ratatui-bubbletea, a theme and component toolkit that gives Rust's Ratatui terminal UIs the look of Charm's Bubble Tea. He explains why he now picks Rust for small tools: the borrow checker battles are fought by the LLM while he reviews. He shows ai-usagebar as a public example, and describes a private finance TUI he will not open-source. He also built google-calendar-tui, modernized clock-tui into a widget dashboard, and wrote a GTK module to hide Geary's sidebar instead of forking the app. His thesis is that tiny single-purpose software has become cheap, but should still get tests, builds and XDG-conformant packaging rather than becoming throwaway scripts."
+key_claims:
+  - claim: "With an LLM writing most of the code, Rust's usual ergonomic downsides (borrow checker, lifetimes) weigh much less on the human, making it attractive for small tools."
+    time_sensitive: false
+  - claim: "Current models are surprisingly competent at Rust if told to run tests and fix warnings and not accept the first draft."
+    time_sensitive: true
+  - claim: "Small custom tools that would once cost a weekend are now a series of small supervised tasks."
+    time_sensitive: false
+  - claim: "Runtime module injection can customize a large GTK app without maintaining a fork."
+    time_sensitive: false
+fears_addressed:
+  - "Will AI make personal software only for professionals?"
+reader_value: "low to medium. Shows a concrete picture of personal, throwaway-turned-real software made with AI; heavy on niche tooling."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "Small bespoke software is now cheap: describe the itch, get a prototype, discard or keep"
+    - "Human as reviewer and end user while the LLM fights the compiler"
+  cut:
+    - "Crate structure, list of repos and TUI library comparison"
+    - "Geary and GTK module details"
+jargon: [TUI, Rust, borrow checker, Ratatui, Bubble Tea, crate, fork, XDG, LLM, AUR]
+illustration_ideas:
+  - "Cost curve of building a personal tool before and after coding agents"
+people_events:
+  - "Charmbracelet (Bubble Tea, gum)"
+related_posts:
+  - "2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar"
+  - "2026/05/23/criei-cli-pra-checar-pendencias-github-ghpending"
+prerequisites: [coding agent, open source]
+series: ""
+obsolescence: "Tool lineup and statements about current model competence in Rust are June 2026 snapshots."

@@ -1,0 +1,34 @@
+id: "2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles"
+source_sha256: "33600c47a224dc3d4bdbd6cf909141d20886dd29d40e6873328d32daf4de514d"
+title_en: "Integration Tests in a Monorepo (Behind the Scenes of The M.Akita Chronicles)"
+ai_relevance: substantial
+ai_relevance_reason: "Testing a pipeline that calls LLMs (GPT-5.2) in production: LLM non-determinism, caching LLM calls, cost reporting and structural validation of LLM output are major sections, though the post is mainly about test architecture."
+genre: tutorial
+themes: [software-engineering-discipline, limits-of-llms, coding-agents-tools]
+thesis: "Unit tests with mocks give false confidence; only integration tests with real production data reveal the bugs that matter, and this is doubly true when LLMs sit in the pipeline."
+summary: "Three apps (a Discord bot, a newsletter builder, a podcast generator) share Markdown files with an implicit contract, so unit tests of each side never test the contract itself. Akita builds a separate 'integration' environment that runs the whole weekly pipeline locally with real APIs and real production data synced via rsync, but writes emails to disk. Because LLM calls are non-deterministic and cost money, he adds a file-based dev cache for LLM responses and a billing summary per run. A 'preflight' validates the structure of generated sections (item counts, required markers) since an LLM job can succeed yet return truncated or malformed output. He lists five real bugs only found with production data (Japanese titles, RSS vs Atom, rate limits, fake image responses, null scores). He concludes that confidence is proportional to how real your test data is."
+key_claims:
+  - claim: "Calling an LLM twice with the same prompt does not return the same answer, and each call costs money, so LLM responses should be cached during development."
+    time_sensitive: false
+  - claim: "A job that runs without exception may still produce wrong or truncated LLM output; structural validation (preflight) is needed."
+    time_sensitive: false
+  - claim: "Every LLM bug he found was caught by structural preflight checks: truncated responses, wrong format, missing sections."
+    time_sensitive: false
+  - claim: "Full integration pipeline costs about 0.40 USD per run and takes about 3 minutes; 1,330 unit tests run in 7 seconds."
+    time_sensitive: true
+  - claim: "Mocked tests hide real-world bugs such as feed format changes and API rate limits."
+    time_sensitive: false
+fears_addressed: ["Can I trust what an AI-powered system produces?", "Why do AI systems fail in odd ways?"]
+reader_value: "low to moderate. The lay reader gains the idea that AI output must be verified by ordinary engineering checks and that AI calls cost money per use, but most of the post is test-engineering detail."
+technical_depth: 5
+evergreen: 4
+book_use:
+  keep: ["LLM output is non-deterministic and billed per call; 'ran without error' is not 'correct'", "Anecdote: newsletter would have shipped broken to 300 subscribers"]
+  cut: ["Worker/test directory isolation code", "Wave scheduling, rsync commands, CI details"]
+jargon: ["LLM", "token", "mock", "unit test", "integration test", "monorepo", "idempotent", "TTS", "frontmatter"]
+illustration_ideas: ["Unit tests verify each side of a contract separately; integration test verifies the contract itself", "Pipeline in dependency waves with a preflight gate before sending"]
+people_events: ["GPT-5.2 (OpenAI)", "Hacker News", "Yahoo Finance"]
+related_posts: []
+prerequisites: ["What a software test is"]
+series: "m-akita-chronicles"
+obsolescence: "References GPT-5.2 and per-run costs (0.40 USD); the principles hold."

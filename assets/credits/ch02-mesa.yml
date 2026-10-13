@@ -1,0 +1,84 @@
+---
+id: ch02-mesa
+kind: ai_illustration
+file: assets/figures/ch02-mesa.png
+sha256: db01c12c69b7a612ca3618bac51f3c1efadc1804fc7abccbd38027d129101acc
+generation:
+  provider: openai
+  endpoint: POST /v1/images/generations
+  model: gpt-image-2.5-flare-2026-09-08
+  date: '2026-10-13T16:08:08-03:00'
+  style_version: STYLE v1
+  scene: 'A plain wooden office desk seen from slightly above at a three-quarter angle,
+    isolated on the off-white background. Only the flat tabletop and four simple legs:
+    no drawers, no cabinets, no shelves, no chair, no computer. The whole surface
+    is covered with many overlapping sheets of blank paper and small stacks of blank
+    pages (the sheets carry only abstract grey lines, never letters). The newest sheets
+    are neat and near the front; the oldest, slightly yellowed sheets crowd the far
+    back edge, and three or four of them are sliding off that back edge and drifting
+    down through the air beside the desk, tumbling away. Calm, gently humorous editorial
+    mood. No people, no hands, no logos, no writing anywhere.'
+  prompt: 'STYLE v1: flat editorial vector illustration, thick uniform ink outlines
+    (#1B2238), limited palette navy #2B3A67, teal #2F7F86, amber #E3A23B accent, sand
+    #E9DFC9 panels, off-white #FBF9F4 background, generous whitespace, no gradients,
+    no textures, no text, no letters, no numbers, no logos, no real people, high contrast,
+    reads clearly in grayscale. Scene: A plain wooden office desk seen from slightly
+    above at a three-quarter angle, isolated on the off-white background. Only the
+    flat tabletop and four simple legs: no drawers, no cabinets, no shelves, no chair,
+    no computer. The whole surface is covered with many overlapping sheets of blank
+    paper and small stacks of blank pages (the sheets carry only abstract grey lines,
+    never letters). The newest sheets are neat and near the front; the oldest, slightly
+    yellowed sheets crowd the far back edge, and three or four of them are sliding
+    off that back edge and drifting down through the air beside the desk, tumbling
+    away. Calm, gently humorous editorial mood. No people, no hands, no logos, no
+    writing anywhere.'
+  params:
+    size: 1536x1024
+    quality: high
+    background: opaque
+    output_format: png
+    "n": 2
+  seed:
+  request_id: 8e948944-093f-43e9-b04d-a439df2f528f
+  usage:
+    input_tokens: 500
+    input_tokens_details:
+      image_tokens: 0
+      text_tokens: 500
+    output_tokens: 2744
+    output_tokens_details:
+      image_tokens: 2744
+      text_tokens: 0
+    total_tokens: 3244
+  drafts:
+  - build/genimg/ch02-mesa-1.png
+  - build/genimg/ch02-mesa-2.png
+  selected: 1
+  selected_from: 2
+  cost_usd: 0.085
+  cost_note: 'estimate: 2744 output image tokens x $30/1M + 500 text input tokens
+    (docs/research/IMAGES.md §2.2 rates)'
+  reference_images: []
+post_processing:
+- 'flattened onto #FBF9F4, sRGB, alpha removed'
+- resized 1536x1024 -> 2400x1600 (Lanczos) to meet the 1800-2400 px long-side contract;
+  flat vector art, no detail synthesis
+human_contribution: art direction (scene brief), selection, placement and caption
+terms:
+  provider_terms: https://openai.com/policies/services-agreement/
+  copyright_status: AI-generated; likely not protectable (US Copyright Office Part
+    2; Lei 9.610 art. 11)
+kdp_disclosure: ai_generated_image
+credit:
+  caption_pt: Ilustração gerada por IA.
+  caption_en: AI-generated illustration.
+  backmatter: Ilustração gerada com GPT Image 2.5 (OpenAI, gpt-image-2.5-flare-2026-09-08)
+    sob direção do autor.
+chapters:
+- 2
+editions:
+- pt
+- en
+pixels:
+  width: 2400
+  height: 1600

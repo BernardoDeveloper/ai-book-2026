@@ -1,0 +1,32 @@
+id: "2026/04/01/bitcoin-no-home-server-soberania-e-privacidade-com-coldcard-sparrow-e-fulcrum"
+source_sha256: "28792a62df676130756bc6bc5d5fe44b26b52a6dbc1b53babd9071016b25acdb"
+title_en: "Bitcoin on the Home Server: Sovereignty and Privacy with Coldcard, Sparrow and Fulcrum"
+ai_relevance: none
+ai_relevance_reason: "Bitcoin self-custody and home-server infrastructure; AI is not discussed."
+genre: tutorial
+themes: [non-ai, hardware-and-infrastructure, security-and-sandboxing]
+thesis: "Holding and moving Bitcoin without outsourcing to exchanges and public servers is more work but gives more control and privacy: an offline signer, a watch-only desktop wallet, a private Electrum server and a full node."
+summary: "Akita describes a home Bitcoin stack: Coldcard as an offline airgapped signer, Sparrow wallet on the desktop, Fulcrum as a private Electrum server and bitcoind as a full node. He explains the signing flow (PSBT via microSD), why public servers leak wallet privacy, and warns never to buy a hardware wallet second-hand. He covers Docker Compose settings, graceful shutdown, storage size (about 726 GB chain in March 2026), hardening, Lightning for everyday spending as pocket-money wallets, and recent exchange breaches. He says it is not evangelism and warns against leveraged trading. Verdict: probably not worth it for most people in the first month, but a good learning exercise in depending less on others."
+key_claims:
+  - claim: "Never buy a hardware wallet second-hand."
+    time_sensitive: false
+  - claim: "Using public Electrum servers leaks wallet addresses and balances; a private Fulcrum server on your own full node avoids that."
+    time_sensitive: false
+  - claim: "Blockchain size was about 725.82 GB on 11 March 2026; 1-2 TB recommended."
+    time_sensitive: true
+  - claim: "Bitcoin was around US$68k on 1 April 2026."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Crypto self-custody niche, no AI content."
+technical_depth: 5
+evergreen: 2
+book_use:
+  keep: []
+  cut: ["Entire post, off-topic for an AI book"]
+jargon: ["Bitcoin", "full node", "cold storage", "airgap", "PSBT", "Docker"]
+illustration_ideas: []
+people_events: ["Coldcard", "Sparrow", "Fulcrum", "Bybit hack 2025", "Coinbase data leak 2025"]
+related_posts: ["2026/03/31/migrando-meu-home-server-com-claude-code", "2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395"]
+prerequisites: []
+series: "home-server"
+obsolescence: "Prices, versions (Bitcoin Core 28.0, Fulcrum 2.1.0) and chain size are time-bound."

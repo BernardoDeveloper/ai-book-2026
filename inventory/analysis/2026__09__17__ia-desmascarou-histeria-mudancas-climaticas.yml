@@ -1,0 +1,44 @@
+id: "2026/09/17/ia-desmascarou-histeria-mudancas-climaticas"
+source_sha256: "0444fe25fcef9589750d793925a4d2bee28c52fffb2b6a096647da018d1e8bea"
+title_en: "AI Unmasked the Climate Change Hysteria"
+ai_relevance: tangential
+ai_relevance_reason: "Framed around AI's energy demand (datacenter electricity, nuclear deals), but most of the post is a climate-policy argument unrelated to AI technology."
+genre: opinion
+themes: [hardware-and-infrastructure, society-politics-censorship, business-and-economics]
+thesis: "The AI datacenter race exposed that green commitments were negotiable; governments and Big Tech are rushing to nuclear, which the author takes as evidence that climate alarmism was driven by money and theater, while the real problem is misallocated trillions."
+summary: "Akita argues that the energy hunger of AI datacenters has displaced the climate agenda: Microsoft restarts Three Mile Island, Meta, Google and Amazon sign nuclear deals, and Germany's chancellor calls the nuclear exit a mistake. He cites IEA figures that datacenters used about 415 TWh in 2024 and are projected near 945 TWh by 2030, and that they already consume nearly twice the electricity of the global EV fleet. Grid bottlenecks (capacity auction shortfalls, transformer queues, delayed datacenters) show energy is now the AI constraint. The rest is a long case that climate panic is funded by foundations, governments and rivals, citing Bjorn Lomborg's cost-benefit numbers, failed treaties, Al Gore's predictions, and geological history, while stating that human-caused warming is real but manageable. He recommends spending on cheap health interventions instead and mocks symbolic gestures like paper straws."
+key_claims:
+  - claim: "Datacenters consumed about 415 TWh in 2024 (about 1.5% of world electricity), roughly 485 TWh in 2025, with a central projection of about 945 TWh by 2030 (IEA)."
+    time_sensitive: true
+  - claim: "Data center electricity use in 2025 was already nearly double the global EV fleet's consumption (~250 TWh)."
+    time_sensitive: true
+  - claim: "Big Tech capex on AI infrastructure roughly US$400B in 2025 rising to about US$715B guided for 2026; power, not chips, is becoming the bottleneck."
+    time_sensitive: true
+  - claim: "Microsoft, Meta, Google and Amazon signed large nuclear power deals to feed datacenters, including restarting Three Mile Island unit 1."
+    time_sensitive: true
+  - claim: "Germany's chancellor said in January 2026 that abandoning nuclear was a grave strategic mistake."
+    time_sensitive: true
+  - claim: "The author asserts human-caused warming is real but manageable; policy cost-benefit and many cited figures (Lomborg, Spencer) are contested political claims, not settled consensus."
+    time_sensitive: false
+fears_addressed:
+  - "Is AI going to wreck the climate through energy use"
+reader_value: "Low to medium. The datacenter-electricity section gives lay readers real numbers on what AI costs in power, but the bulk is a contested climate-politics argument that would distract a book on AI and needs independent fact-checking."
+technical_depth: 2
+evergreen: 2
+book_use:
+  keep:
+    - "Datacenter electricity numbers and the power-as-bottleneck point (verify against current IEA data)"
+    - "Big Tech nuclear deals as evidence of AI energy demand"
+  cut:
+    - "Climate-hysteria argument, Greta/Gore/Lomborg material, treaty history, geology and scale trivia"
+    - "Foundation funding allegations and political commentary"
+    - "Paper-straw and recycling digressions"
+jargon: [datacenter, TWh, GW, baseload, capacity factor, nuclear SMR, grid interconnection queue, capex, EV]
+illustration_ideas:
+  - "datacenter electricity vs EV fleet bar comparison 2024-2030"
+  - "why AI is power-limited: chips, grid, transformers, construction queue"
+people_events: [Bjorn Lomborg, Roy Spencer, Al Gore, Friedrich Merz, Three Mile Island restart, IEA Energy and AI report, COP30 Belem, AI Data Center Moratorium Act]
+related_posts: ["2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam", "2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia"]
+prerequisites: ["Basic idea that AI runs in datacenters"]
+series: ""
+obsolescence: "Energy projections, capex guidance, nuclear deal status and political events are dated to Sept 2026; many climate claims are the author's contested reading and could be corrected by fact-checking."

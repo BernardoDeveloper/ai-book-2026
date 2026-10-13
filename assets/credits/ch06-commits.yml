@@ -1,0 +1,25 @@
+---
+id: ch06-commits
+kind: chart_code
+chapters:
+- 6
+editions:
+- pt
+- en
+file: assets/figures/ch06-commits.png
+sha256: f6280b6378795b91ce9fe37e49c95793dd946523617b75cfe27e4f06e26fb267
+pixels:
+  width: 1920
+  height: 1200
+source: assets/charts/ch06-commits.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch06-commits.py
+  pt
+description: 'ch06-commits: where the 274 commits of The M.Akita Chronicles went.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

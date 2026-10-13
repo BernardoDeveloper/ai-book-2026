@@ -1,0 +1,37 @@
+id: "2026/07/01/rant-nao-tenha-esperanca-com-politica-como-se-tornar-imune"
+source_sha256: "f6bc63c98f9d58c3ac3e31880851813abc4b87f0ecae2b41232dd7017095429f"
+title_en: "Off-Topic: Do Not Hope for Politics - How to Become Immune"
+ai_relevance: none
+ai_relevance_reason: "Personal opinion on Brazilian politics, inflation, taxes and personal financial resilience; AI appears only in one passing clause about remote work."
+genre: rant
+themes: [non-ai, personal-journey]
+thesis: "Treat politics as an environmental risk to manage, not a team to cheer for: build English skills, earn in strong currency, understand taxes and structure assets legally so your life does not depend on elections."
+summary: "Akita, writing as off-topic personal opinion with a disclaimer that it is not financial or legal advice, argues Brazilians treat elections like football fandom. He cites high public debt, cumulative inflation of about 197% over 20 years and the real's fall against the dollar to say the bill always arrives. He recalls 1980s hyperinflation and the Collor plan's freezing of savings, and explains how informed people profited from float and spread. His strategy: learn English, build an exportable profession, earn in dollars, understand taxes and lawful wealth structuring, choose marriage and children deliberately, keep optionality like passports and foreign accounts, and cultivate competent friends such as accountants and lawyers. He says emigration is optional, and notes that foreign income makes Brazil cheap."
+key_claims:
+  - claim: "Brazil's gross general government debt closed 2025 at about 78.7% of GDP, per the central bank as cited."
+    time_sensitive: true
+  - claim: "Cumulative IPCA inflation from July 2006 to May 2026 was about 197%, and the dollar rose from ~R$2.16 to ~R$5.18."
+    time_sensitive: true
+  - claim: "Persistent inflation is rooted in money, credit, expectations and fiscal situation; rising prices are the symptom."
+    time_sensitive: false
+  - claim: "The dollar participates in almost 90% of global FX transactions (BIS), so earning in strong currency reduces vulnerability."
+    time_sensitive: true
+  - claim: "A legal, declared offshore structure is not crime by definition, but hiding assets or income is; consult real professionals."
+    time_sensitive: false
+fears_addressed: []
+reader_value: "low for an AI book. Off-topic personal finance and political opinion; only a trace of career-resilience advice."
+technical_depth: 1
+evergreen: 2
+book_use:
+  keep: []
+  cut:
+    - "Entire post: off-topic politics and personal finance opinions with Brazil-specific data"
+jargon: [inflation, IPCA, PTAX, holding, offshore, ITCMD, float]
+illustration_ideas: []
+people_events:
+  - "Fernando Collor / Plano Collor (1990)"
+  - "Banco Central do Brasil, ANS, PISA 2022"
+related_posts: []
+prerequisites: []
+series: ""
+obsolescence: "All economic figures are June 2026 snapshots; political context tied to the 2026 Brazilian election."

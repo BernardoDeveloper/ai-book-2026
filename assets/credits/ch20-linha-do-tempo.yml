@@ -1,0 +1,26 @@
+---
+id: ch20-linha-do-tempo
+kind: diagram_code
+chapters:
+- 20
+editions:
+- pt
+- en
+file: assets/figures/ch20-linha-do-tempo.png
+sha256: 77802f198f01f26c5f3f025e97a5cfc248c5f628481940bdc005eb19b0cdcd8c
+pixels:
+  width: 2160
+  height: 1920
+source: assets/charts/ch20-linha-do-tempo.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch20-linha-do-tempo.py
+  pt
+description: 'ch20-linha-do-tempo: 2019-2026 in four phases, plus base intelligence
+  vs. model + harness.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

@@ -1,0 +1,20 @@
+---
+id: ch04-duas-perguntas
+kind: chart_code
+file: assets/figures/ch04-duas-perguntas.png
+sha256: b7204361b4db9f0a5c09efb7ba0b0a1554375d4f7e461a5957cdf45fb291aa39
+source: assets/charts/ch04-duas-perguntas.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I assets/charts/ch04-duas-perguntas.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+chapters:
+- 4
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

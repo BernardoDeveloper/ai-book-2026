@@ -1,0 +1,55 @@
+id: "2026/06/15/controversia-llm-rio-3-5-plagio"
+source_sha256: "61a54d101f81b21d2fee42f753300b18d75271c745b8e681dec9418fdef38565"
+title_en: "The Rio 3.5 LLM Controversy: Plagiarism?"
+ai_relevance: core
+ai_relevance_reason: "Analyzes an open-weight model controversy involving model merging, distillation and licensing."
+genre: news-analysis
+themes: [open-vs-closed-and-local-models, open-source-community, society-politics-censorship, hype-and-marketing]
+thesis: "Public evidence suggests the first Rio 3.5 checkpoint was a near-linear merge of Nex-N2-Pro and Qwen3.5 without crediting Nex; that is an attribution failure rather than proven legal plagiarism, and a lesson that open weights can be audited."
+summary: "The Rio de Janeiro city hall (IplanRio) announced Rio 3.5 Open 397B as an open model; Nex AGI published a weight analysis claiming the checkpoint is about 0.6 Nex plus 0.4 Qwen, plus identity tests where the model called itself Nex without a system prompt. Akita did not reproduce the tensor analysis but finds it falsifiable and strong; the Rio README was then changed to admit a merge and an 'incorrect upload' and mention a later distillation. He explains model merging and distillation to lay readers, notes Apache-2.0 permits reuse but requires keeping notices, and says the initial MIT-only card may be a compliance problem. His benchmark shows Qwen base at 42 and Nex-N2-Pro at 83, so the merged model's strength likely came from Nex. He recommends using Nex directly and urges clear attribution of model lineage."
+key_claims:
+  - claim: "Nex AGI reported that Rio 3.5 weights fit alpha*Nex + (1-alpha)*Qwen with alpha near 0.57-0.6 and very high correlation across tensors, and that the model identified itself as Nex without a system prompt (95/120 identity questions)."
+    time_sensitive: true
+  - claim: "Rio's README initially credited Qwen but not Nex and was altered after the Nex issue to admit a merge and an 'incorrect upload' of the base-merged version instead of the final distilled model."
+    time_sensitive: true
+  - claim: "Model merging interpolates weights of two compatible trained models and costs far less than training a 397B model."
+    time_sensitive: false
+  - claim: "Distillation trains a student model to imitate a stronger teacher's outputs or behavior."
+    time_sensitive: false
+  - claim: "Apache-2.0 allows commercial reuse and derivatives but requires keeping license copy, notices and attribution; labeling the derivative as MIT only could be a compliance issue (not legal advice)."
+    time_sensitive: false
+  - claim: "In his benchmark the same Qwen3.5-397B backbone scored 42 (Tier C) as base and 83 (Tier A) as Nex's agent-tuned post-training, so post-training matters more than parameter count."
+    time_sensitive: true
+  - claim: "Open weights can be compared and audited, so lineage cannot be hidden: you cannot hide linear algebra."
+    time_sensitive: false
+fears_addressed:
+  - "Can I trust claims that a government or company 'built its own AI'?"
+  - "Is open-source AI really original work?"
+reader_value: "High. A concrete story that explains merging, distillation, base vs post-trained models, licenses and attribution, and shows how claims of national AI can be scrutinized."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Merge vs training vs distillation explained simply"
+    - "Same base model, 42 vs 83: post-training makes the difference, not parameter count"
+    - "Weights are auditable: lineage can be checked mathematically"
+    - "Attribution as the currency of open source"
+  cut:
+    - "Tensor-level alpha figures and commit hashes"
+    - "Public funding tweet exchanges"
+    - "License clause listing"
+jargon: [open-weight model, checkpoint, safetensors, model merge, distillation, post-training, base model, Apache-2.0, MIT license, parameters, MoE, benchmark, system prompt, attribution]
+illustration_ideas:
+  - "Model merge: 0.6 * model A + 0.4 * model B producing a new weight file"
+  - "Teacher-student distillation"
+  - "Lineage tree: Qwen -> Nex-N2-Pro -> Rio 3.5"
+people_events:
+  - "Prefeitura do Rio / IplanRio (Rio 3 Open)"
+  - "Nex AGI (Nex-N2-Pro), Alibaba Qwen"
+  - "Hugging Face"
+  - "Eduardo Cavaliere, Rafael Coelho (public statements)"
+related_posts:
+  - "2026/06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local"
+prerequisites: [LLM, open-weight models, benchmark]
+series: ""
+obsolescence: "Status of the Rio model (re-upload of a correct checkpoint), Nex/Qwen facts and benchmark scores are as of 15 June 2026; later developments are not covered."

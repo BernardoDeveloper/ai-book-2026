@@ -1,0 +1,36 @@
+id: "2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real"
+source_sha256: "9f3b13a3c124f69e6a832ef5d6b8e4218d7dab134f639e8bad41c70580feebbb"
+title_en: "ai-jail: A Sandbox for AI Agents, From Shell Script to Real Tool"
+ai_relevance: substantial
+ai_relevance_reason: "The tool exists to contain AI coding agents (Claude Code, Codex, OpenCode); the post is about the security risk of giving agents filesystem access, though the content is mostly sandbox tooling."
+genre: project-log
+themes: [security-and-sandboxing, coding-agents-tools, software-engineering-discipline]
+thesis: "AI coding agents need real file access to be useful, which exposes your credentials and system; run them inside a sandbox, keep Git as a safety net, and add layers rather than trusting the model's good behavior."
+summary: "Akita turns his January bubblewrap shell script into ai-jail, a small Rust tool that runs any AI agent with only the project directory writable, an empty temporary home, and sensitive folders (SSH keys, AWS credentials, GPG) invisible. It supports Linux (bubblewrap plus Landlock) and approximately macOS (sandbox-exec); Windows users should use WSL 2. A lockdown mode makes the project read-only and cuts the network. A bootstrap option generates allow/deny/ask permission files for Claude Code, Codex and OpenCode. He compares it to Claude Code's built-in sandbox (same underlying tools, but the built-in one has an opt-out escape hatch), to Dev Containers and Docker microVM sandboxes, and recommends immutable operating systems as an outer layer. The security model is layered: sandbox for the filesystem, Git for the code with push requiring manual approval, immutable OS for the system. He argues that running agents with the skip-permissions flag on a personal workstation is blind trust in the LLM and in every dependency."
+key_claims:
+  - claim: "Coding agents need filesystem access but this also lets them read credentials, SSH keys and delete files; supply-chain attacks via npm/PyPI/RubyGems make this real."
+    time_sensitive: false
+  - claim: "Running an agent with --dangerously-skip-permissions without a sandbox is blind trust in the LLM and in your dependencies; the flag is meant for isolated CI/containers."
+    time_sensitive: true
+  - claim: "If the agent cannot git push, the worst damage is confined to the local directory and recoverable with git checkout or a fresh clone."
+    time_sensitive: false
+  - claim: "Claude Code has had a built-in sandbox since October 2025 using the same bubblewrap/sandbox-exec stack, but with an opt-out escape hatch."
+    time_sensitive: true
+  - claim: "Security layers add up: immutable OS, per-session sandbox, Git with manual push; breaching all three is improbable."
+    time_sensitive: false
+  - claim: "macOS parity with Linux is approximate; sandbox-exec is deprecated by Apple."
+    time_sensitive: true
+fears_addressed: ["Could an AI agent wreck my computer or leak my passwords?", "Can I trust an AI with access to my files?"]
+reader_value: "Moderate. The core idea (give an agent a locked room containing only the project, keep a backup in Git, do not trust the model's good intentions) is accessible; install steps and flags are not."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep: ["Locked-room analogy for sandboxing agents", "Layered defense: sandbox + Git + immutable OS", "Why 'skip permissions' flags are dangerous", "Supply-chain attack scenario via post-install script"]
+  cut: ["Install commands, TOML config, mount-point details", "Landlock/SBPL internals", "Rust implementation details"]
+jargon: ["sandbox", "agent", "bubblewrap", "namespace", "supply-chain attack", "Landlock", "Dev Container", "microVM", "immutable OS", "WSL", "Git", "lockdown"]
+illustration_ideas: ["Sandbox as a room: agent sees only the project folder, home dir is empty, secrets invisible", "Layered defense: immutable OS, sandbox, Git remote with manual push"]
+people_events: ["Claude Code", "OpenAI Codex", "OpenCode", "Flatpak/GNOME bubblewrap", "Docker Sandboxes"]
+related_posts: ["2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema"]
+prerequisites: ["What a coding agent is", "What Git is"]
+series: "ai-jail"
+obsolescence: "Claude Code sandbox features, Docker Sandboxes and ai-jail version details (v0.4.0, Landlock behavior) are time-bound; the earlier shell-script version is superseded by this post."

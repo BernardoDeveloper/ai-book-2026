@@ -1,0 +1,31 @@
+references:
+  - id: adams1979guia
+    type: "book"
+    title: "The Hitchhiker's Guide to the Galaxy"
+    author: [{family: "Adams", given: "Douglas"}]
+    publisher: "Pan Books"
+    publisher-place: "London"
+    issued: {date-parts: [[1979, 10, 12]]}
+    URL: "https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy_(novel)"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles (post names the Guide and Marvin without a link; publication data verified online)"
+  - id: beck1999xp
+    type: "book"
+    title: "Extreme Programming Explained: Embrace Change"
+    author: [{family: "Beck", given: "Kent"}]
+    publisher: "Addison-Wesley"
+    publisher-place: "Reading, MA"
+    ISBN: "0201616416"
+    issued: {date-parts: [[1999, 10, 5]]}
+    URL: "https://tind.wipo.int/record/13245"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles (post shows the book cover without a link; edition data verified online)"
+  - id: qwen2026tts
+    type: "webpage"
+    title: "Qwen3-TTS"
+    author: [{literal: "Qwen Team", Alibaba: ""}]
+    container-title: "Qwen"
+    issued: {date-parts: [[2026, 1, 22]]}
+    URL: "https://qwen.ai/blog?id=qwen3tts-0115"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles; also 2026/02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles. Open-source release date 2026-01-22 per press coverage (gigazine.net, comfyui-wiki.com); the official page renders client-side and could not be read by fetch."

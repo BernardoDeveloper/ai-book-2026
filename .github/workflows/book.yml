@@ -1,0 +1,80 @@
+# Builds and validates the book on every push and pull request; on a v* tag it
+# also publishes a GitHub Release with the editions attached. Release notes
+# come from the tag's section in CHANGELOG.md; tags with a hyphen
+# (v1.0.0-preview) are marked as pre-releases.
+name: book
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: write # needed only by the release step
+
+concurrency:
+  group: book-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      BOOK_LANG: pt
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - uses: ruby/setup-ruby@v1.327.0
+        with:
+          ruby-version: .ruby-version
+
+      - uses: actions/setup-java@v6.0.1 # epubcheck
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - name: System tools (page audit)
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      - name: Cache pinned toolchain downloads
+        uses: actions/cache@v6.1.0
+        with:
+          path: tools/cache
+          key: tools-${{ hashFiles('tools/SHA256SUMS') }}
+
+      - name: Toolchain (Quarto, epubcheck; checksum-verified)
+        run: rake tools
+
+      - name: Outline coverage and chapter lint
+        run: rake check
+
+      - name: Build editions (EPUB, PDF, ebook PDF, HTML, DOCX) + epubcheck + page audit
+        run: rake build
+
+      - uses: actions/upload-artifact@v7.0.1
+        with:
+          name: book-${{ env.BOOK_LANG }}-${{ github.sha }}
+          path: |
+            build/${{ env.BOOK_LANG }}/*.epub
+            build/${{ env.BOOK_LANG }}/*.pdf
+            build/${{ env.BOOK_LANG }}/*.docx
+          retention-days: 14
+
+      - name: Publish release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          version="${TAG#v}"
+          # Section of CHANGELOG.md between "## <version>" and the next "## ".
+          awk -v v="$version" '$0 ~ "^## " v "( |$)" {on=1; next} /^## / {on=0} on' CHANGELOG.md > notes.md
+          [ -s notes.md ] || echo "Edition $version." > notes.md
+          prerelease=""; case "$TAG" in *-*) prerelease="--prerelease";; esac
+          gh release create "$TAG" $prerelease \
+            --title "Competente o Suficiente $version" --notes-file notes.md \
+            build/pt/Competente-o-Suficiente.epub \
+            build/pt/Competente-o-Suficiente-ebook.pdf \
+            build/pt/Competente-o-Suficiente.pdf

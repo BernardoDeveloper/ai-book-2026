@@ -1,0 +1,50 @@
+id: "2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia"
+source_sha256: "17b4907dd02637d62ac50e2a67c9327aab0a28c7055d82ed160808c3f55ded12"
+title_en: "Using AI to solve my little day-to-day problems"
+ai_relevance: substantial
+ai_relevance_reason: "Roundup of small open-source tools built with AI coding agents; the thesis is that AI collapsed the cost of fixing personal annoyances, though most of the text is per-project description."
+genre: project-log
+themes: [ai-in-daily-life, vibe-coding-practice, open-source-community]
+thesis: "The cost of turning a small everyday irritation into a working tool has dropped so far that it is now worth fixing almost everything by opening an AI agent."
+summary: "Akita says he will not write one article per tiny project, so he bundles the ones never covered on the blog. Each began as a small friction in his own routine that he would normally have swallowed because fixing it would cost a weekend. Examples: a terminal desk clock with command widgets (clock-tui, Google Calendar and GitHub-pending widgets), an animated GitHub repo dashboard, a fork of the Geary email client with a collapsible sidebar and working recipient autocomplete, manga readers (furigana overlay using OCR and a local LLM, a desktop reader for a Manga Plus subscription, a scanlation aggregator), a Chrome extension for repeating song lyric lines, a typing trainer using public-domain prose, an Ansible-based gaming container, and Docker images for ComfyUI recipes. He notes LLMs have become good enough to write decent Dockerfiles. He credits third-party work (Aitrepreneur) and explains that the 'Frank' naming honors Frank Rosenblatt, inventor of the perceptron. Everything is open source on his GitHub."
+key_claims:
+  - claim: "With AI agents, the cost of turning a small annoyance into a tool fell so much that the cost-benefit calculation inverted: fixing almost everything is now worth it."
+    time_sensitive: false
+  - claim: "FrankYomik adds furigana over manga pages on the fly using local models (bubble detection, manga-ocr, optional local LLM translation), without downloading or redistributing pages."
+    time_sensitive: false
+  - claim: "Scanlations today mostly use AI in the translation process, including models trained to detect speech balloons."
+    time_sensitive: false
+  - claim: "LLMs have evolved to the point of writing decent Dockerfiles."
+    time_sensitive: true
+fears_addressed:
+  - "AI is only hype with no practical use for ordinary people"
+  - "You need to be a big company to build useful software"
+reader_value: "Moderate. Shows concrete, humble uses of AI agents by one experienced developer to scratch personal itches, which counters both 'AI is useless' and 'AI will do everything' narratives. The individual tools are niche."
+technical_depth: 2
+evergreen: 3
+book_use:
+  keep:
+    - "The 'cost of fixing an irritation inverted' idea as an everyday-AI anecdote"
+    - "Frank naming after Frank Rosenblatt and the perceptron"
+    - "Manga furigana overlay as a vivid example of AI helping a hobby (OCR + local model, legal framing of on-the-fly overlay)"
+  cut:
+    - "Install commands, AUR/Docker/release details"
+    - "Per-project feature lists for clock-tui, Geary fork, distrobox-gaming"
+jargon: [AI agent, local LLM, OCR, Docker, container, fork, open source, vibe coding, widget]
+illustration_ideas:
+  - "Cost-benefit threshold: the weekend-of-work barrier for fixing small annoyances before and after AI agents"
+  - "Pipeline of manga furigana overlay: detect bubble -> OCR -> reading/translation -> render on top"
+people_events:
+  - "Jarred Sumner (Bun rewrite article inspiration)"
+  - "Aitrepreneur (YouTuber, ComfyUI recipes)"
+  - "Frank Rosenblatt (perceptron)"
+  - "Shueisha / Manga Plus"
+related_posts:
+  - "2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito"
+  - "2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas"
+  - "2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos"
+  - "2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar"
+  - "2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik"
+prerequisites: ["What an AI coding agent is"]
+series: "frank-projects"
+obsolescence: "Tool list and versions are a snapshot of July 2026; install methods may change."

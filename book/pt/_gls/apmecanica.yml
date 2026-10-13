@@ -1,0 +1,15 @@
+descida-do-gradiente:
+  term: Descida do gradiente
+  def: O jeito de treinar uma rede neural. A cada rodada, mede-se o tamanho do erro e cada parâmetro é girado um pouquinho na direção que diminui esse erro, como quem desce um morro na neblina sentindo a inclinação do chão.
+retropropagacao:
+  term: Retropropagação
+  def: A técnica que distribui a culpa por um erro entre todos os parâmetros de uma rede com muitas camadas, repassando o erro da saída de trás pra frente. É o que torna a descida do gradiente possível em redes grandes.
+atencao:
+  term: Atenção
+  def: O mecanismo central do transformer. Em cada camada, cada pedaço do texto pesa quais pedaços anteriores importam pra ele naquele momento e mistura um pouco deles em si, como quem passa marca-texto nas palavras relevantes.
+pre-treino:
+  term: Pré-treino
+  def: A primeira e mais cara etapa do treino de um LLM, em que ele aprende a adivinhar a próxima palavra em trilhões de palavras de texto. O resultado continua documentos, mas ainda não sabe se comportar como assistente.
+aprendizado-em-contexto:
+  term: Aprendizado em contexto
+  def: Quando o modelo passa a fazer uma tarefa nova só porque o pedido trouxe alguns exemplos dela, sem nenhum treino adicional. Os parâmetros não mudam; vale só pra aquela conversa.

@@ -1,0 +1,36 @@
+id: "2026/02/17/enviando-emails-sem-spammar-bastidores-do-the-m-akita-chronicles"
+source_sha256: "278a1bcea5ebac554c1615585994bdf09bb7c3df8c1fc036d5b949b340c9a27d"
+title_en: "Sending Emails Without Spamming (Behind the Scenes of The M.Akita Chronicles)"
+ai_relevance: tangential
+ai_relevance_reason: "Backend engineering of a reliable email pipeline; AI appears only as the context (the project was vibe coded), not as the subject."
+genre: tutorial
+themes: [software-engineering-discipline, non-ai]
+thesis: "Reliable email sending means treating each delivery as a state machine and, when uncertain whether a message was sent, never resending (at-most-once), plus correct DNS authentication and unsubscribe headers."
+summary: "Part 1 of a behind-the-scenes series. Using Amazon SES, Akita describes patterns to avoid duplicate newsletters: one delivery record per recipient, atomic claiming so two workers cannot send the same email, terminal states that are never auto-reverted, an explicit 'unknown' state for ambiguous cases, recovery of stuck jobs, careful retry rules, tags and webhooks to reconcile bounces, and deferred reports. He also covers SES sandbox, DKIM/SPF/DMARC, the Gmail List-Unsubscribe header requirement (RFC 8058 one-click), the silent suppression list, encrypting subscriber emails at rest, and a cost of about US$0.40 per month for 1,000 subscribers. Ruby on Rails code is shown throughout."
+key_claims:
+  - claim: "For email, at-most-once delivery is preferable to at-least-once: nobody complains about missing a newsletter, everyone complains about receiving it twice, so when in doubt do not resend."
+    time_sensitive: false
+  - claim: "Gmail requires List-Unsubscribe headers for bulk senders (since Feb 2024) and silently penalises domain reputation otherwise."
+    time_sensitive: true
+  - claim: "SES silently drops messages to addresses on its account-level suppression list while still returning success."
+    time_sensitive: true
+  - claim: "Subscriber emails should be encrypted at rest."
+    time_sensitive: false
+fears_addressed: []
+reader_value: "low. Pure backend detail; at most the at-most-once principle is an illustration of how real systems handle uncertainty."
+technical_depth: 5
+evergreen: 3
+book_use:
+  keep:
+    - "Principle: when you cannot know whether it was sent, do not resend (human decides)"
+  cut:
+    - "All code, SES setup, DNS records, cost table"
+jargon: [idempotency, atomic operation, state machine, bounce, DKIM, SPF, DMARC, webhook, race condition, encryption at rest]
+illustration_ideas:
+  - "Email delivery state machine: pending, sending, sent, unknown, bounced"
+people_events: ["Amazon SES", "Gmail bulk sender rules (Feb 2024)"]
+related_posts:
+  - "2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles"
+prerequisites: []
+series: "m-akita-chronicles"
+obsolescence: "SES pricing, Gmail rules and Rails version details may change; the design pattern is durable."

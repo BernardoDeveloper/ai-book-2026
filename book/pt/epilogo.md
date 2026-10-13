@@ -1,0 +1,112 @@
+---
+id: epilogo
+chapter: "Epílogo: O que eu diria pra você"
+sources:
+  - {post: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia, sha256: "eba7e0379feb2d062e312e755b44b31fbc056217040c9107cbae1848bf1e5623"}
+  - {post: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit, sha256: "903caf191c73bee2866924e22860432a7b13b42e4c7a7a170f3fe4a9293b7e25"}
+  - {post: 2026/04/11/vs-code-e-o-novo-cartao-perfurado, sha256: "1fd3ad1e7cb92b4531666f44a3df805498aa5b6e4e58ef0b07ea31c3ad85ceae"}
+  - {post: 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior, sha256: "0c064de942568d0b2b29ff979ee157d364b94817d2374aa5937bee377402daa5"}
+  - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "09830f1d69488d527d241814a30269786cd7a5548e5d34fdf33b7fa21af0f417"}
+refs_projects: []
+blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
+---
+
+# Epílogo: O que eu diria pra você {#sec-epilogo .unnumbered}
+
+<!-- src: original -->
+Segunda-feira, então. Você chegou ao fim do livro, ou quase, e a pergunta que trouxe na primeira página continua aí, talvez um pouco menor: o que eu faço com tudo isso?
+
+Eu não tenho plano de carreira pra vender, nem curso. Tenho o que um ano de uso diário me ensinou, e cabe em poucas páginas. Boa parte vai soar óbvia. O difícil é segurar o óbvio quando a manchete do dia grita o contrário.
+
+## Medo vende
+
+<!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
+Você conheceu em @sec-ch01 a frase do cartaz: a sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA. Depois deste ano, eu acrescentaria que o medo segue a mesma regra. Quanto menos a pessoa sabe como a coisa funciona, mais espaço sobra pra imaginar o fim do mundo.
+
+<!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
+Medo e empolgação saem da mesma fábrica. Em agosto de 2026 escrevi sobre os cursos de "engenharia" disso e daquilo que brotaram em volta dos agentes, e o mecanismo era velho. Primeiro deixam você ansioso, achando que está ficando pra trás, que todo mundo já migrou pro paradigma novo e só você não. Depois cobram pra curar a ansiedade que eles mesmos criaram.
+
+Esse medo de ficar de fora tem sigla em inglês, FOMO, e nesse mercado ele é o modelo de negócio. O anúncio de que a inteligência geral chega em dois anos funciona do mesmo jeito, numa escala maior (@sec-ch14). Quem tem ação pra vender, placa de vídeo pra vender ou rodada de investimento pra fechar precisa que você sinta que o mundo vai acabar, ou recomeçar, na terça que vem.
+
+<!-- src: original -->
+O medo aconselha mal porque decide rápido e decide por você. Quem compra em pânico compra o que estiver na frente, quase sempre o curso de quem gritou mais alto. E quem trava de medo deixa de usar uma ferramenta que, como você viu ao longo do livro, rende de verdade na mão de quem sabe o que está fazendo.
+
+> Toda vez que um anúncio sobre IA acelerar o seu coração, pergunte quem ganha dinheiro com você se sentindo assim.
+
+## O que vale aprender
+
+<!-- src: original -->
+Três coisas, e nenhuma delas vence em seis meses.
+
+### Como a coisa funciona
+
+<!-- src: original -->
+A primeira é o mínimo sobre a máquina. Um [LLM]{.gls} gera o texto mais provável, pedaço por pedaço, a partir de um arquivo congelado que não aprende com você (@sec-ch01). Quem guarda só isso na cabeça já se defende de metade das promessas: não espera consciência de um gerador de texto, não espera que ele lembre da conversa da semana anterior, e desconfia quando ele concorda com tudo (@sec-ch04).
+
+Se quiser ir mais fundo, @sec-apmecanica mostra o mecanismo sem matemática, e @sec-antes traz uma lista de leitura pra vários níveis.
+
+<!-- src: 2026/04/11/vs-code-e-o-novo-cartao-perfurado -->
+Vale o mesmo pro fundamento do seu próprio ofício. Em abril escrevi sobre o programador sem base que vê o [agente]{.gls} montar uma consulta ao banco de dados, testa com 300 linhas de mentira, acha que está tudo certo e não imagina o que acontece com um milhão de linhas de verdade. Com agente na mão, quem tem base aprende mais rápido. Quem não tem só terceiriza a própria ignorância.
+
+### Julgamento
+
+<!-- src: original -->
+A segunda é julgamento, a capacidade de olhar uma resposta e saber se ela presta. O melhor teste que eu conheço é o de @sec-ch18: você sabe explicar por que a resposta certa é a certa? Se sabe, a máquina digita pra você. Se não sabe, ela digita do mesmo jeito, e você não percebe quando ela erra.
+
+Julgamento se treina fazendo, errando e conferindo. O agente deixa a parte do fazer muito mais barata, e dá pra testar e descartar uma hipótese atrás da outra, como em @sec-ch08. A parte do conferir continua inteira com você.
+
+### O seu domínio
+
+<!-- src: original -->
+A terceira é o seu ofício. Lembre do mapa de @sec-ch20: o modelo enxerga em detalhe o que o mundo publicou e é cego pro que ficou fechado. As regras não escritas da sua empresa, o cliente difícil, a exceção que só você conhece, o motivo pelo qual aquela norma existe: nada disso entrou no treino.
+
+Essa é a parte do mapa que está em branco pra máquina e preenchida na sua cabeça. Quanto mais fundo você conhece o seu ofício, mais a ferramenta rende na sua mão.
+
+## O que dá pra ignorar
+
+<!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
+Essa lista é mais longa, e libera mais tempo:
+
+- curso e certificação da taxonomia do mês. Quando a tecnologia vira commodity, o dinheiro migra pro nome novo: cinco nomes pra encadear chamada de API e um certificado que expira em seis meses. Quem trabalha com método, teste e revisão já faz o que eles ensinam;
+- anúncio de [AGI]{.gls key=agi}, de extinção, de modelo perigoso demais pra lançar. O roteiro existe pelo menos desde 2019 (@sec-ch01), e @sec-ch14 mostra quem lucra com ele;
+- briga de ranking por décimo de ponto. No topo, os modelos formam um grupo, e a diferença entre eles cabe no [ruído entre execuções]{.gls key=ruido-entre-execucoes} (@sec-ch11);
+- a promessa de que o próximo modelo resolve. Os números de @sec-ch20 mostram uma linha reta lá em cima, e o que muda o resultado é o processo em volta;
+- o vídeo do aplicativo feito em dez minutos. A primeira hora é a parte fácil, e os outros noventa por cento estão em @sec-ch05.
+
+## Confira você mesmo
+
+<!-- src: 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior -->
+Em julho, depois de meses publicando tabelas, escrevi a frase que eu mais queria que você levasse daqui: não confie em benchmark, não confie em influencer, não confie em mim. Ela vale pra este livro. Foi por isso que deixei em @sec-ch20 a lista do que me faria mudar de ideia, com coisas que qualquer um pode medir de fora.
+
+<!-- src: original -->
+Conferir dá menos trabalho do que parece, e as listas práticas já estão no livro, cada uma onde o assunto pedia:
+
+- pra usar chatbot em assunto sério, as oito regras de @sec-ch04, com os cuidados extras pra saúde, dinheiro e notícias;
+- pra ler uma tabela de [benchmark]{.gls}, @sec-ch11, e pra ler um anúncio, as perguntas de @sec-como-ler-anuncio, com as duas listas resumidas em @sec-apC;
+- pra deixar um programa mexer nos seus arquivos sem perder nada, os hábitos de @sec-ch15 e o kit de @sec-apB;
+- pra decidir se confia num software feito com IA, as perguntas de @sec-ch16;
+- contra golpe e [deepfake]{.gls}, os hábitos de @sec-ch17.
+
+<!-- src: original -->
+Quase todas terminam no mesmo gesto, que é subir até a fonte primária: o estudo, o contrato, o dado oficial. E a fonte primária mais útil pra quem usa IA no trabalho é um teste seu. Pegue uma tarefa real, que você já sabe resolver, dê pra duas ferramentas, rode mais de uma vez e compare com o que você sabe que está certo. Esse é o benchmark que interessa pra você, e nenhum anúncio publica.
+
+## Sem entregar o volante
+
+<!-- src: 2026/02/08/rant-ia-acabou-com-programadores -->
+Em fevereiro, no meio da briga sobre se a IA tinha acabado com os programadores, escrevi uma linha que ainda uso: nunca pergunte a um martelo como dirigir a sua empresa. O martelo de @sec-ch01 é excelente pra muito prego, como o rascunho, o resumo, a tradução, o relatório novo a partir do velho e a primeira versão do código. Use, e use bastante.
+
+<!-- src: original -->
+A linha que eu não cruzo é a da decisão. A máquina pode propor, pesquisar, comparar e escrever. Decide quem responde pelo resultado. Na prática, isso vira poucos hábitos:
+
+- só delegue o que você consegue avaliar; se não sabe dizer se o resultado presta, a tarefa ainda não está pronta pra sair da sua mão;
+- leia antes de aprovar, e o que não conseguir ler, não aprove;
+- de vez em quando, faça você mesmo o que costuma delegar, pra não perder a mão;
+- guarde o que aprendeu num lugar seu, porque o modelo não guarda nada (@sec-ch20).
+
+> A ferramenta faz quase tudo o que você pedir. Saber o que pedir, e se o que voltou presta, continua sendo trabalho seu.
+
+<!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
+Passei 2026 sem medo dessa máquina e desconfiado de quase tudo o que se dizia sobre ela, e essa combinação me serviu bem. Ninguém precisa glorificar um martelo, nem odiar um.
+
+<!-- src: original -->
+Se você quiser ver essa disciplina aplicada uma última vez, não precisa ir longe. Este livro foi montado com os mesmos agentes que ele examina, sob as regras que ele recomenda. Como isso foi feito, e o que continuou sendo trabalho meu, está nas próximas páginas.

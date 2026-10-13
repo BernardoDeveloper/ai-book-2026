@@ -1,0 +1,49 @@
+id: "2026/04/20/clean-code-para-agentes-de-ia"
+source_sha256: "42f9c95a16d9d0cdd243a25165b0a250c5a3dae7799498acb9c86d0896e78646"
+title_en: "Clean Code for AI Agents"
+ai_relevance: core
+ai_relevance_reason: "The post re-ranks software-craft principles around the technical limits of LLM coding agents."
+genre: essay
+themes: [software-engineering-discipline, coding-agents-tools, limits-of-llms, agent-memory-and-context]
+thesis: "When the primary reader of code is an AI agent, Clean Code rules change weight: small files and functions, unique greppable names, comments with provenance, explicit types and runnable tests become technical requirements, and old XP discipline becomes the right way to work with agents."
+summary: "Akita revisits Robert C. Martin's Clean Code (2008), written for human readers, and asks what it means when the main reader is an LLM agent. He lists agent constraints: file reads are truncated (Claude Code reads 2000 lines by default), attention degrades as context fills, grep is cheaper than reading, every tool call costs tokens and latency. He then re-ranks principles: small functions and files first, single responsibility, unique searchable names, comments that record why (provenance), reversing the old 'comments are a smell' rule, explicit types, DRY, tests the agent can run headless, predictable directories, dependency injection, shallow nesting, rich error messages, automatic formatters, and dropping obvious comments. New items include CLAUDE.md/AGENTS.md files, high-level READMEs, structured logs and idempotent setup scripts. He stresses no LLM does these by default, so rules must be written down in an instructions file, and offers a template. He cites his own project (274 commits, 1,323 tests, CI catching 50+ real bugs) to argue TDD became a technical obligation. He ends that clean code was never fashion: it became infrastructure."
+key_claims:
+  - claim: "Agent tooling truncates file reads (Claude Code reads 2000 lines at a time) and retrieval quality degrades well before the declared context limit, so small functions and files help the agent."
+    time_sensitive: true
+  - claim: "Comments that explain why a decision was made are valuable to agents, reversing the 2008 advice that comments are a smell; do not delete comments the agent wrote."
+    time_sensitive: false
+  - claim: "Unique, greppable names matter most because agents navigate code by lexical search."
+    time_sensitive: false
+  - claim: "Tests the agent can run without human setup are what separate a productive agent from one that guesses; in the author's project CI caught real bugs 50+ times in 274 commits."
+    time_sensitive: false
+  - claim: "No LLM follows these practices by default; they must be stated in an instructions file such as CLAUDE.md, and the agent will not add defensive code like retries unless asked."
+    time_sensitive: false
+  - claim: "XP practices (TDD, CI, refactoring) were not made obsolete by AI; they are the right way to work with agents."
+    time_sensitive: false
+fears_addressed:
+  - "Does AI make software engineering discipline obsolete?"
+  - "Why does AI-generated code sometimes look sloppy?"
+reader_value: "Moderate. A lay reader learns that AI agents have mechanical limits (they read in slices and lose attention) and that good results come from rules and tests, not magic. Details are programmer-oriented."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "Code is written once and read dozens of times; the reader is now a machine with limits"
+    - "Agents do the average thing by default; you must write the rules down"
+    - "Comments explaining why become valuable again"
+    - "Tests as the safety net that lets agents multiply, not guess"
+  cut:
+    - "The 13-item ranked list details and CLAUDE.md template"
+    - "Project-specific anecdotes about 24-file config refactor"
+jargon: [LLM, coding agent, context window, token, tool call, grep, CLAUDE.md, AGENTS.md, TDD, CI, SRP, dependency injection, XP, needle in a haystack, type hints]
+illustration_ideas:
+  - "Agent reading a large file in truncated slices versus a small file read in one call"
+  - "Attention degrading as the context window fills with code, logs, instructions and history"
+  - "Test loop: agent writes code, runs tests, reads output, adjusts"
+people_events:
+  - "Robert C. Martin (Uncle Bob), Clean Code (2008)"
+  - "Agile Manifesto, SOLID"
+related_posts: ["2026/04/11/vs-code-e-o-novo-cartao-perfurado", "2026/04/06/rag-esta-morto-contexto-longo", "2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles", "2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito"]
+prerequisites: ["What a coding agent is", "What a context window is", "What automated tests are"]
+series: "agile-vibe-coding"
+obsolescence: "Specific limits (2000-line read, context sizes of 200k/1M tokens) are tool and model dependent and will drift; the principles are durable."

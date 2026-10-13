@@ -1,0 +1,13 @@
+agents-md:
+  term: AGENTS.md / CLAUDE.md
+  def: Arquivo de texto na raiz de um projeto com as regras da casa pro agente de IA (arquitetura, comandos de teste, o que nunca fazer). O agente lê no começo de toda sessão. O nome muda conforme a ferramenta.
+prompt-injection:
+  term: Injeção de prompt
+  long: Prompt injection
+  def: Ordens escondidas num texto que a IA vai ler (uma página, um e-mail, um arquivo de instruções), feitas pra que ela obedeça quem escreveu o texto em vez de quem está usando a ferramenta.
+grep:
+  term: Grep
+  def: Ferramenta de busca por texto exato em muitos arquivos de uma vez. É o jeito mais barato de um agente achar onde algo está no código.
+pull-request:
+  term: Pull request
+  def: Pedido formal pra incorporar uma mudança num projeto de software, geralmente vindo de outra pessoa. O dono do projeto revisa e decide se aceita.

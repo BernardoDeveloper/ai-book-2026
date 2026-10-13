@@ -1,0 +1,56 @@
+id: "2026/04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos"
+source_sha256: "f6b05b8dac655c5709fdcb4b6ef01537fcc295f7e91340dad98df2ab2f288c6e"
+title_en: "LLM Benchmarks: Is It Worth ($$) Mixing 2 Models? (Planner + Executor)"
+ai_relevance: core
+ai_relevance_reason: "Three experiment rounds on multi-agent LLM coding setups, with cost, quality and delegation analysis."
+genre: benchmark
+themes: [benchmarks-model-comparison, coding-agents-tools, business-and-economics, hype-and-marketing]
+thesis: "A strong planner model plus a cheap executor model does not beat simply using one frontier model (Opus 4.7) in a mature harness, on quality, cost or time; multi-agent orchestration is mostly premature optimization."
+summary: "Akita answers 'no' to the popular idea of saving money by having an expensive model plan and a cheap one execute. He first lists five wrong premises: people rarely show a real production result, the use case matters, subscription vs pay-as-you-go changes the math, mature solo models only reveal themselves in full vibe coding, and premature optimization. He explains that the benchmark (a coherent Rails app) is a task with many dependencies and so is hard to parallelize, using an async/await analogy: parallelism only exists where tasks are independent. Across three rounds, models never delegated voluntarily (0 of 7); when forced, quality dropped 2-7 points while time rose; and manual cross-process orchestration by Opus tied quality at best but cost roughly three times as much once the planner's hidden cost was counted. Solo Opus 4.7 in opencode scored 97 in 18 minutes for about $4. The one real exception was Codex GPT 5.4 with a cheaper executor, saving 80-85 percent. DeepSeek V4 Pro never wrote a line due to a protocol incompatibility with the SDK. Orchestration helps weak executors more (the gain was larger the weaker the solo score) but the planner dominates cost. He concludes: pick a good frontier model, use a mature harness, optimize the prompt, and $20-200 a month is trivial compared with shipping value."
+key_claims:
+  - claim: "In no tested configuration did planner+executor beat solo Opus 4.7 in opencode (97/100, 18 min, about $4 pay-as-you-go) on quality, cost and time together."
+    time_sensitive: true
+  - claim: "Models do not delegate to sub-agents voluntarily on cohesive tasks; even aggressive prompts did not change that (0 of 7 runs)."
+    time_sensitive: true
+  - claim: "Multi-agent only pays off when subtasks are independent and numerous (translate 100 documents, apply the same refactor to 50 files), not for dependent tasks like building one app."
+    time_sensitive: false
+  - claim: "Manual orchestration by Opus tied quality (97) with Kimi K2.6 but cost about 3x the solo run when the planner's hidden cost was counted."
+    time_sensitive: true
+  - claim: "The weaker the executor solo, the larger the lift from a strong planner's detailed plan, but the plan's quality drives the result more than the executor's autonomy."
+    time_sensitive: true
+  - claim: "On a flat-rate subscription the marginal cost of an extra call is zero, so multi-model orchestration saves nothing."
+    time_sensitive: true
+  - claim: "Tooling maturity around a model matters as much as the model: DeepSeek V4 Pro was incompatible with SDK-based harnesses because of an unreturned reasoning field."
+    time_sensitive: true
+  - claim: "People bragging about orchestrating dozens of agents rarely show a production result; ask for the result."
+    time_sensitive: false
+fears_addressed:
+  - "Do I need elaborate multi-agent setups to use AI well?"
+  - "Can I save money by chaining cheap and expensive AI models?"
+  - "Are influencers' agent-swarm demos real?"
+reader_value: "A skeptical, evidence-based counter to agent-swarm hype: simplest setup usually wins, and 'show me the production result' is a good filter. The async/await parallelism analogy explains why more agents does not mean faster. Numbers are perishable."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "Ask for the production result, not the dashboard"
+    - "Parallelism only exists where tasks are independent (dependencies analogy)"
+    - "Hidden cost of the orchestrator (planner) never shows in the cheap model's bill"
+    - "Premature optimization: spending a weekend to save $30"
+    - "Tooling maturity matters as much as the model"
+  cut:
+    - "All per-variant score, time and cost tables"
+    - "Harness-specific watchdog and timeout details"
+    - "Detailed DeepSeek protocol explanation"
+jargon: [LLM, planner, executor, sub-agent, delegation, harness, orchestration, reasoning content, token, subscription, pay-as-you-go, premature optimization, parallelism, frontier model]
+illustration_ideas:
+  - "Dependent chain (A then B then C) vs independent tasks (A, B, C in parallel)"
+  - "Planner-executor loop and where the hidden planner cost accumulates"
+  - "Cost per run: solo frontier vs orchestrated pair"
+people_events:
+  - "Donald Knuth on premature optimization"
+  - "Claude Opus 4.7, Kimi K2.6, GLM 5.1, Qwen 3.6, DeepSeek V4 Pro, GPT 5.4"
+related_posts: ["2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo", "2026/04/18/llm-benchmarks-parte-2-multiplos-modelos", "2026/04/15/como-falar-com-o-claude-code-efetivamente", "2026/04/20/clean-code-para-agentes-de-ia", "2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles"]
+prerequisites: ["What a coding agent is", "What a benchmark is", "Difference between subscription and API pricing"]
+series: "llm-benchmark"
+obsolescence: "All scores, prices and model versions are April 2026 snapshots; the DeepSeek V4 Pro incompatibility was later worked around (see 2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude). Extends and supersedes the multi-model findings of 2026/04/18/llm-benchmarks-parte-2-multiplos-modelos."

@@ -1,0 +1,77 @@
+references:
+  - id: zai2026glm47flash
+    type: "software"
+    title: "GLM-4.7-Flash"
+    author: [{literal: "Z.ai"}]
+    container-title: "Hugging Face"
+    issued: {date-parts: [[2026, 1, 19]]}
+    URL: "https://huggingface.co/zai-org/GLM-4.7-Flash"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim. Model card: 30B-A3B MoE. The post calls it 'the same 30B GLM 4.7, quantized'; the card shows it is a separate, smaller sibling (GLM-4.7 itself is much larger), so the chapter says only 'irmão menor do GLM 4.7, com 30 bilhões de parâmetros'."
+  - id: amd2025ryzenaimax
+    type: "webpage"
+    title: "AMD Ryzen AI Max+ 395"
+    author: [{literal: "AMD"}]
+    container-title: "AMD"
+    issued: {date-parts: [[2025]]}
+    URL: "https://www.amd.com/en/products/processors/laptop/ryzen/ai-300-series/amd-ryzen-ai-max-plus-395.html"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395 (post states up to 128 GB unified memory without a link; AMD product page lists 128 GB max, LPDDR5x-8000)"
+  - id: pcgamesn2025rtx5090
+    type: "article-newspaper"
+    title: "Nvidia GeForce RTX 5090 release date, price, and specs"
+    author: [{family: "Hardwidge", given: "Ben"}]
+    container-title: "PCGamesN"
+    issued: {date-parts: [[2025, 1, 23]]}
+    URL: "https://www.pcgamesn.com/nvidia/geforce-rtx-5090-release-date-price-specs-benchmarks"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395 (post states ~1,792 GB/s without a link; NVIDIA's own page lists 32 GB GDDR7 on 512-bit but no GB/s figure; this spec table gives 1,792 GB/s)"
+  - id: jiang2024mixtral
+    type: "article"
+    title: "Mixtral of Experts"
+    author: [{family: "Jiang", given: "Albert Q."}, {family: "Sablayrolles", given: "Alexandre"}, {family: "Roux", given: "Antoine"}, {family: "Mensch", given: "Arthur"}, {family: "Savary", given: "Blanche"}, {family: "Bamford", given: "Chris"}, {family: "Chaplot", given: "Devendra Singh"}, {family: "Casas", given: "Diego de las"}, {family: "Hanna", given: "Emma Bou"}, {family: "Bressand", given: "Florian"}, {family: "Lengyel", given: "Gianna"}, {family: "Bour", given: "Guillaume"}, {family: "Lample", given: "Guillaume"}, {family: "Lavaud", given: "Lélio Renard"}, {family: "Saulnier", given: "Lucile"}, {family: "Lachaux", given: "Marie-Anne"}, {family: "Stock", given: "Pierre"}, {family: "Subramanian", given: "Sandeep"}, {family: "Yang", given: "Sophia"}, {family: "Antoniak", given: "Szymon"}, {family: "Scao", given: "Teven Le"}, {family: "Gervet", given: "Théophile"}, {family: "Lavril", given: "Thibaut"}, {family: "Wang", given: "Thomas"}, {family: "Lacroix", given: "Timothée"}, {family: "Sayed", given: "William El"}]
+    container-title: "arXiv"
+    number: "arXiv:2401.04088"
+    DOI: "10.48550/arXiv.2401.04088"
+    issued: {date-parts: [[2024, 1, 8]]}
+    URL: "https://arxiv.org/abs/2401.04088"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (book bridge on MoE routing; experts not specialized by topic, per the paper's routing analysis)"
+  - id: apple2025m3ultra
+    type: "webpage"
+    title: "Apple reveals M3 Ultra, taking Apple silicon to a new extreme"
+    author: [{literal: "Apple"}]
+    container-title: "Apple Newsroom"
+    issued: {date-parts: [[2025, 3, 5]]}
+    URL: "https://www.apple.com/newsroom/2025/03/apple-reveals-m3-ultra-taking-apple-silicon-to-a-new-extreme/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395 (post gives ~819 GB/s and 512 GB; Apple's release says 'over 800GB/s' and up to 512GB, which the chapter uses)"
+  - id: hinton2015distilling
+    type: "article"
+    title: "Distilling the Knowledge in a Neural Network"
+    author: [{family: "Hinton", given: "Geoffrey"}, {family: "Vinyals", given: "Oriol"}, {family: "Dean", given: "Jeff"}]
+    container-title: "arXiv"
+    number: "arXiv:1503.02531"
+    DOI: "10.48550/arXiv.1503.02531"
+    issued: {date-parts: [[2015, 3, 9]]}
+    URL: "https://arxiv.org/abs/1503.02531"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus (post explains distillation without citing the origin; added as the standard reference)"
+  - id: byteiota2026qwen3tts
+    type: "post-weblog"
+    title: "Qwen3-TTS: 3-Second Voice Cloning Beats ElevenLabs"
+    author: [{literal: "byteiota"}]
+    container-title: "byteiota"
+    issued: {date-parts: [[2026, 1, 22]]}
+    URL: "https://byteiota.com/qwen3-tts-3-second-voice-cloning-beats-elevenlabs/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts"
+  - id: elevenlabs2025v3
+    type: "webpage"
+    title: "Eleven v3"
+    author: [{literal: "ElevenLabs"}]
+    container-title: "ElevenLabs"
+    issued: {date-parts: [[2025, 6, 5]]}
+    URL: "https://elevenlabs.io/blog/eleven-v3"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts (post says v3 'saiu em fevereiro desse ano'; the official page, launched as alpha June 2025, now notes general availability; GA on 2 Feb 2026 per secondary directories, not confirmed on an official changelog)"

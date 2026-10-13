@@ -1,0 +1,45 @@
+/* EPUB styles: readable defaults that defer to the reading system.
+   Fonts match the PDF (Source Serif 4 body, Source Sans 3 headings); the
+   files are embedded via `epub-fonts` in _quarto.yml and land in EPUB/fonts/.
+   Readers that let the user pick a font still override these. */
+@font-face { font-family: "Source Serif 4"; font-style: normal; font-weight: normal; src: url("../fonts/SourceSerif4-Regular.otf"); }
+@font-face { font-family: "Source Serif 4"; font-style: italic; font-weight: normal; src: url("../fonts/SourceSerif4-It.otf"); }
+@font-face { font-family: "Source Serif 4"; font-style: normal; font-weight: bold; src: url("../fonts/SourceSerif4-Bold.otf"); }
+@font-face { font-family: "Source Serif 4"; font-style: italic; font-weight: bold; src: url("../fonts/SourceSerif4-BoldIt.otf"); }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: normal; src: url("../fonts/SourceSans3-Regular.otf"); }
+@font-face { font-family: "Source Sans 3"; font-style: normal; font-weight: 600; src: url("../fonts/SourceSans3-Semibold.otf"); }
+
+body { font-family: "Source Serif 4", Georgia, serif; line-height: 1.5; hyphens: auto; -epub-hyphens: auto; }
+h1, h2, h3, h4, figcaption, dl dt { font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif; }
+h1, h2, h3 { font-weight: 600; line-height: 1.25; text-align: left; hyphens: none; -epub-hyphens: none; }
+p { margin: 0; text-indent: 1.2em; orphans: 2; widows: 2; }
+h1 + p, h2 + p, h3 + p, blockquote + p, figure + p, ul + p, ol + p { text-indent: 0; }
+h1 { margin-top: 2em; margin-bottom: 1.5em; page-break-before: always; }
+h2, h3 { margin-top: 1.4em; page-break-after: avoid; }
+h3 { font-style: italic; }
+/* Takeaways: same treatment as the PDF (left rule, roman, slightly larger). */
+blockquote { margin: 1.2em 0.5em 1.2em 0; padding-left: 1em; border-left: 2px solid #1B2238; font-size: 1.05em; }
+blockquote p { text-indent: 0; margin-bottom: 0.5em; }
+figure { margin: 1.5em 0; text-align: center; }
+figure img { max-width: 100%; height: auto; }
+figcaption { font-size: 0.85em; margin-top: 0.4em; text-align: left; }
+a.gls { color: inherit; text-decoration: none; border-bottom: 1px dotted; }
+dl dt { font-weight: 600; margin-top: 0.8em; }
+dl dd { margin-left: 1.2em; }
+
+/* Pagination (reading systems that paginate honour these; the rest ignore
+   them): never split a figure, its caption, a table, a quote, a code block
+   or a list item; keep headings with what follows; keep images inside one
+   screen, scaled down without distortion. */
+figure, .quarto-figure, .quarto-float, table, blockquote, pre, li, dl dd {
+  page-break-inside: avoid; break-inside: avoid;
+}
+figure img, .quarto-figure img {
+  max-height: 85vh; object-fit: contain; page-break-after: avoid; break-after: avoid;
+}
+figcaption { page-break-before: avoid; break-before: avoid; }
+h1, h2, h3, h4, dt { page-break-after: avoid; break-after: avoid; }
+thead { display: table-header-group; }
+td, th { vertical-align: top; text-align: left; padding: 0.2em 0.4em; }
+table { border-collapse: collapse; font-size: 0.9em; }
+thead th { border-bottom: 1px solid #1B2238; }

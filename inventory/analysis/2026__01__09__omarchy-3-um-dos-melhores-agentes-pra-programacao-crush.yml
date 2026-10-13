@@ -1,0 +1,48 @@
+id: "2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush"
+source_sha256: "d1ec3ad24e669b7389a4102874d2f51d65a81b0f3b88dae7b95ec41952ac99eb"
+title_en: "Omarchy 3 - One of the Best Coding Agents: Crush"
+ai_relevance: core
+ai_relevance_reason: "The whole post is a hands-on test of a coding agent (Crush) driving Claude Opus 4.5."
+genre: review
+themes: [coding-agents-tools, vibe-coding-practice]
+thesis: "Open-source terminal coding agents such as Crush and OpenCode, paired with a strong model, have become practical for daily work, a clear leap over a year earlier."
+summary: "Akita says Aider has stagnated and that Omarchy 3 now ships OpenCode and Crush. He runs Crush (a terminal agent from Charm) with Claude Opus 4.5 on his Hugo blog. It scans the project, writes an AGENTS.md summary, refactors two scripts without breaking them, runs the result to check it, and finds a bug he had missed. A harder second test: an abandoned-style command-line chat written in Zig (an obscure, unfinished language) using llama.cpp, CUDA and Qwen3, which had to be updated for Zig 0.15's new IO API. The agent split a monolithic file, remapped the C functions, iterated on compiler errors until it built, then diagnosed a segmentation fault (wrong struct, memory leak) after being told to run it. The first refactor round cost US$5.64 and the total was close to US$8. He notes no model he tried the year before could finish this program, and that he has not tested local models."
+key_claims:
+  - claim: "A coding agent is a wrapper that feeds a model context and tools; here all code came from Claude Opus 4.5, Crush only orchestrates."
+    time_sensitive: false
+  - claim: "The agent ran the code it modified and checked it still worked, and caught a bug the author had not noticed."
+    time_sensitive: false
+  - claim: "With an obscure, recently changed language (Zig 0.15) and little training data, the agent still refactored, updated APIs and reached a working binary, which no LLM he tested in 2025 managed."
+    time_sensitive: true
+  - claim: "Compiling is not the same as working: the first build segfaulted and needed a second debugging round."
+    time_sensitive: false
+  - claim: "The whole job cost about US$8 in API credits."
+    time_sensitive: true
+fears_addressed:
+  - "Is AI coding hype or real?"
+  - "AI-generated code is always broken or wasted money"
+reader_value: "Moderate. Shows concretely what an agent does (reads project, edits, runs, fixes) and that the cost was a few dollars, with honest notes that compiling is not working. Tool names date quickly."
+technical_depth: 3
+evergreen: 2
+book_use:
+  keep:
+    - "Zig challenge as a stress test: obscure language, changed API, little training data"
+    - "Distinction between the agent (harness) and the model"
+    - "Compiles vs works: the segfault follow-up"
+    - "Cost anchor: roughly US$8 for the job"
+  cut:
+    - "Crush/OpenCode/Aider tool comparison and installation chatter"
+    - "Specific refactor details (Dir.glob, symbols)"
+jargon: [coding agent, LLM, TUI, AGENTS.md, context, MCP, LSP, segmentation fault, memory leak, refactoring, API credits, llama.cpp, CUDA, OpenRouter]
+illustration_ideas:
+  - "Agent versus model: the harness loop of read files, edit, run, read errors, repeat"
+  - "Why obscure languages are harder for an LLM (less training data)"
+people_events:
+  - "DHH (bundled OpenCode in Omarchy 3)"
+  - "Charm (Crush, BubbleTea, Gum)"
+  - "Anthropic (Claude Opus 4.5)"
+  - "Ghostty (the one popular Zig app mentioned)"
+related_posts: []
+prerequisites: ["What an LLM is", "Basic idea of a terminal and compiling code"]
+series: "llm-benchmark"
+obsolescence: "Model name (Opus 4.5), Zig 0.15, tool choice (Crush/OpenCode vs Aider) and the US$8 cost are early-2026 snapshots. The Zig challenge is reused and compared across models in 2026/01/11."

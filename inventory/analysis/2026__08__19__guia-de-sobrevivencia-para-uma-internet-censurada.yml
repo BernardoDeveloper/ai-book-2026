@@ -1,0 +1,41 @@
+id: "2026/08/19/guia-de-sobrevivencia-para-uma-internet-censurada"
+source_sha256: "f9e1ec739388e51419b532c4a1ee580ab0caf662040a3ef077734fd72dd0358e"
+title_en: "Survival guide for a censored internet"
+ai_relevance: tangential
+ai_relevance_reason: "A VPN and anti-censorship guide; AI appears as a practical aside (let an AI agent configure the server) with a requirements prompt."
+genre: tutorial
+themes: [society-politics-censorship, security-and-sandboxing, ai-in-daily-life]
+thesis: "Censorship is a question of cost and arrives in steps, so build your own escape ladder (commercial VPN, self-hosted VPN, obfuscated protocols, Tor bridges) before you need it; no tool makes an ordinary person invisible to a full state firewall."
+summary: "Akita recaps Brazil's history of blocking communication services (WhatsApp, Telegram, the 40-day X suspension in 2024) and the 2026 penalty enhancer for VPN use, then lays out a ladder of defenses. Phase 1 is a reputable commercial VPN with its limits (you swap watchers, payment links identity, exit IP ranges are public and blockable). Phase 2 is a personal WireGuard VPN on a cheap overseas VPS using wg-easy, with checks for IP, IPv6 and DNS leaks. He explains deep packet inspection and obfuscated protocols for the next phases, and Tor bridges and satellite beyond that. In a 2026 aside, he describes handing SSH access to an AI agent that configured server and client, and now keeps the setup as a reproducible Ansible playbook, offering a requirements prompt. He concludes with honest limits and recommends following a specialist for updates."
+key_claims:
+  - claim: "A commercial VPN swaps who watches your traffic but does not make you anonymous; paying by card links the account to your identity."
+    time_sensitive: false
+  - claim: "Against a state-level firewall using deep packet inspection no home tool makes an ordinary person invisible; the goal is to raise the cost of mass blocking."
+    time_sensitive: false
+  - claim: "Large cloud providers' IP ranges are public and mapped, so a small VPS at a smaller provider is less easily blocked."
+    time_sensitive: true
+  - claim: "In 2026 an AI agent can configure a VPN server end to end, but the user should supply real requirements rather than 'install a VPN'."
+    time_sensitive: true
+fears_addressed:
+  - "Government blocking apps and services"
+  - "Do I need to be a sysadmin to protect myself? (AI agent can do the setup)"
+reader_value: "Low for AI; moderate for civic context. The AI aside shows a non-expert use of an agent for a practical, reproducible infrastructure task."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Aside: handing a server to an AI agent and keeping it reproducible (Ansible) with a requirements-driven prompt"
+  cut:
+    - "Commands and VPN step-by-step, provider recommendations"
+jargon: [VPN, WireGuard, VPS, DPI, deep packet inspection, Tor, bridge, DNS leak, IPv6, Ansible, idempotent]
+illustration_ideas:
+  - "Escape ladder: each rung raises the censor's cost"
+people_events:
+  - "Brazilian blocks of WhatsApp, Telegram, X (2024)"
+  - "Great Firewall of China"
+  - "Ayub (analyst)"
+related_posts:
+  - "2026/08/13/entendendo-a-censura-ao-discord-e-a-eca-digital"
+prerequisites: ["What a VPN is"]
+series: "brasil-censura"
+obsolescence: "Legal context, provider recommendations and blocking techniques are August 2026."

@@ -1,0 +1,15 @@
+notes:
+  - "Preface opens on 1939-1951 retro-futurism (author request tied to the cover): Elektro at the 1939 New York World's Fair (wikipedia2026elektro), GM Futurama (wikipedia2026futurama), The Day the Earth Stood Still, 1951 (wise1951day). It closes the thread in the last section ('O Elektro nunca virou mordomo...'). Cover is not described. If the posfácio or ch20 echo the image, reuse these keys."
+  - "The preface alludes to the 'empolgação/conhecimento' phrase without quoting it and does not retell the Flow clips scene beyond a one-sentence hook into ch01. It does not reuse the hammer image (ch01 owns it)."
+  - "Process description promises: agents wrote per-post analyses; the author approved the outline; one agent per chapter reorganised and rewrote; per-paragraph provenance markers; every factual claim checked against source (post, project code, or published reference); the author reads, corrects and approves every chapter. The posfácio (@sec-posfacio) must tell this in detail and must not contradict it."
+  - "'Quase cem textos' = inventory count of 2026 posts with ai_relevance core (68) + substantial (28) = 96."
+  - "Preface references @sec-antes (reading list / mechanism appendix) and @sec-posfacio; those ids must exist at build."
+  - "Glossary first uses in book order now happen in the preface: agi (glossed as 'inteligência artificial geral', half-clause) and agente (half-clause gloss). ch01 still explains AGI properly per continuity; ch03 owns agente."
+  - "Fable 5 allusion (June 2026, IPO filing, 'too dangerous' family, tie at ten times the price) comes from 06/11 and matches ch13's closing hook and ch14's scene."
+integration:
+  - "Ledger (Fable price): 'custando dez vezes mais' -> 'custando quase o dobro' (ch14 July pricing audit: Opus 4.8 ~US$6 vs Fable ~US$11; ratio framed as the corrected figure, no June number repeated)."
+  - "Ledger (prefacio/posfacio): 'Como este livro foi feito' cut from five paragraphs to one paragraph + the takeaway + pointer to @sec-posfacio. The approval sentence now reads 'nenhum capítulo entra no livro sem que eu leia e aprove', a standing commitment matching the posfácio's wording; no claim that review already happened."
+  - "Fact: closing line of 'O outro mundo' said the curve appeared as 'uma linha quase reta' (ambiguous: a straight line can be rising); changed to 'quase plana' to match 10/12 ('os números mostram platô')."
+  - "Fact: The Day the Earth Stood Still warning made precise ('seria eliminada se levasse a própria agressividade pra fora do planeta'), per the film plot (wise1951day)."
+  - "Pointer fix: the mechanism appendix is @sec-apmecanica; the reading list stays @sec-antes (both now cited separately)."
+  - "Verified unchanged: Elektro (2.1 m, voice command, ~700 words, cigarettes, balloons), Futurama (1960, automated highways, rooftop platforms), 500+ h / 24 repos (05/14), programming since late 80s (02/08), AI for code since early 2023 (02/24), obsolete-banner on 04/05 post, S-1 filed 1 June before Fable (06/11). 1939/1951 thread kept (author request)."

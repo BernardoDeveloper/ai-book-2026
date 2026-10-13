@@ -1,0 +1,61 @@
+id: "2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard"
+source_sha256: "30986720d5a7e169612410eb23606e4f7128e53eccae9e6f68e967e5eb5620db"
+title_en: "Vibe Code: I Made a 100% Vibe-Coded Little App with GLM 4.7 (TV Clipboard)"
+ai_relevance: substantial
+ai_relevance_reason: "A long case study of building a small app entirely by prompting an AI agent, used to teach what 'it works' really omits; the app itself is incidental."
+genre: project-log
+themes: [vibe-coding-practice, software-engineering-discipline, limits-of-llms, jobs-and-careers]
+thesis: "Getting an AI to make something that 'works' takes about 10% of the effort; the other 90% (security, structure, cleanup, review) still needs an experienced human, so 'AI replaces programmers' is a big fallacy."
+summary: "Akita builds TV Clipboard, a tiny Go + JavaScript app that sends text from a phone to a TV PC by QR code, entirely with GLM 4.7 via the Crush agent. A working v0.1 took about an hour and ten commits; the finished app took over 10 to 12 hours, roughly 43 commits, about 250 prompts, around US$40 on OpenRouter, and over 3,000 lines of Go. He walks through what the extra time bought: expiring tokens, refactoring into packages, Docker, cache busting, dev vs production configuration, race conditions and graceful shutdown, input validation, rate limiting, CORS, clipboard permissions, licensing, tests and linters, i18n. Along the way the model left dead code, invented unnecessary designs, forgot to update docs and tests, and repeated mistakes. Afterwards Claude Code and then GPT 5.2 Codex each found more problems, so 'finished' software does not exist. His summary: it felt like mentoring an eager intern with goldfish memory, a senior Go developer would have been twice as fast, and the technology (transformers) is on the flat part of the S-curve."
+key_claims:
+  - claim: "LLMs are stochastic text generators with built-in randomness; the architecture is unchanged since 2022, so human intervention is always needed."
+    time_sensitive: false
+  - claim: "A minimal working app took about 1 hour and a few prompts; the full robust version took 10 to 12 hours, 43 commits and about 250 prompts, costing slightly over US$40 on OpenRouter with GLM 4.7."
+    time_sensitive: true
+  - claim: "The model leaves behind duplicated code, stale tests and missing docs, repeats old mistakes, and does not remember what it was taught between projects."
+    time_sensitive: false
+  - claim: "A model told to review its own code finds new problems every pass; Claude Code and then GPT 5.2 Codex each found more bugs after GLM and Opus had reviewed it."
+    time_sensitive: true
+  - claim: "Small prompts, one feature at a time, with tests, commit after each, is the best process; automated feedback (compiler, tests, linters, race detector) helps the LLM."
+    time_sensitive: false
+  - claim: "Software is never finished; non-programmers should not put vibe-coded software into production without review by an experienced programmer."
+    time_sensitive: false
+  - claim: "An LLM will not choose libraries for you or write correct legal texts (e.g. licenses); you must know what to ask."
+    time_sensitive: false
+  - claim: "GLM 4.7 is of quality similar to Claude Opus, GPT Codex and Gemini but at least 2x slower and cheaper per token."
+    time_sensitive: true
+  - claim: "The 'S-curve' of LLM progress is at its top: improvement is now incremental and costs orders of magnitude more energy per step."
+    time_sensitive: true
+  - claim: "Never communicate sensitive data via WhatsApp (his distrust of its end-to-end encryption claim)."
+    time_sensitive: false
+fears_addressed:
+  - "AI will replace programmers"
+  - "Can a non-programmer vibe-code a real product?"
+  - "If AI can write the app, why learn anything?"
+reader_value: "High. The clearest worked example of the gap between a demo that works and software that is safe and maintainable, with the intern-with-goldfish-memory image and real numbers (hours, prompts, dollars). The technical sections can be skimmed or summarised."
+technical_depth: 4
+evergreen: 4
+book_use:
+  keep:
+    - "Pareto framing: works in 1 hour, solid in 12 hours"
+    - "Intern with goldfish memory analogy"
+    - "Post-mortem: three different models each found more bugs"
+    - "Small prompts, one feature, tests, commit, repeat"
+    - "Why 'works on my machine' differs from 'works in production'"
+    - "Non-programmers cannot judge what they do not know to ask for"
+  cut:
+    - "Go/JavaScript implementation details (IIFE, race detector, cache busting, CORS specifics)"
+    - "Commit links and LOC listings"
+    - "Framework-choice discussion"
+jargon: [vibe coding, agent, LLM, token, context window, prompt, commit, refactoring, unit test, race condition, rate limiting, XSS, CORS, Docker, production, technical debt, linter, open-source license, stochastic]
+illustration_ideas:
+  - "Iceberg: the 10% that 'works' versus the 90% hidden work (security, tests, structure, review)"
+  - "Review loop: each AI review pass finds new issues, never converging to zero"
+  - "S-curve of capability with the author claiming we are near the flat top"
+people_events: ["Z.ai (GLM 4.7)", "Anthropic (Claude Code, Opus 4.5)", "OpenAI (GPT 5.2 Codex)", "Charm Crush", "OpenRouter"]
+related_posts:
+  - "2026/01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim"
+  - "2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema"
+prerequisites: ["What vibe coding is", "Rough idea of what an app, a server and testing are"]
+series: "vibe-code-projects"
+obsolescence: "Model speed/cost comparisons (GLM 4.7 vs Claude), US$40 cost and 12-hour estimate are January 2026 snapshots; the claim that progress is at the top of the S-curve is an opinion later posts may revise. The process lessons stay valid."

@@ -1,0 +1,46 @@
+id: "2026/09/19/nova-linguagem-voltada-pra-ia-bend-2"
+source_sha256: "8a98f0d0f644b402a2ad9d95709c6dc204d92c04e390388b3bc148418223e7b1"
+title_en: "A new AI-oriented language was just released: Bend 2"
+ai_relevance: substantial
+ai_relevance_reason: "The language is pitched as a way to block AI mistakes through formal proofs, and the author tests it by having AI agents port projects."
+genre: review
+themes: [programming-languages, limits-of-llms, coding-agents-tools]
+thesis: "Bend 2 has real potential as a proof-carrying language for AI-written kernels, but on day two its standard library and ecosystem are toy-sized, and proofs cover only a small slice of real programs."
+summary: "Akita reviews Bend 2, released by Brazilian researcher Victor Taelin with a pitch of C-like speed, GPU parallelism and formal proofs that gate AI-written code. The human writes the laws file, the AI writes the proofs, and a fast checker blocks code that does not satisfy them. He had AI agents port two of his Rust tools to Bend and tried a third on paper. The proof checker was fast and caught an injected off-by-one that tests would have missed, but proofs covered a few percent of the code, the standard library lacked basic features like TLS or terminal input, and eight hand-written C effects were needed. He notes critics who say the benchmarks are misleading and that existing tools like SPARK/Ada do similar verification. He concludes the natural niche is small verified cores written by AI, advises building an ecosystem and a killer app, and says he chooses languages by ecosystem size, not paper elegance, since the LLM writes the code anyway."
+key_claims:
+  - claim: "Bend 2 splits a program into human-written laws and AI-written proofs, with a proof checker as a commit gate."
+    time_sensitive: true
+  - claim: "In the author's tests, the proof gate caught an injected off-by-one that the example outputs would not have caught."
+    time_sensitive: false
+  - claim: "Proofs only covered a tiny share of real programs (a 30-line guard needed 93 lines of laws and proofs); FFI boundaries leave the proof behind."
+    time_sensitive: true
+  - claim: "The language's compiler is claimed to be 99% AI-written, with only the checking kernel audited by humans."
+    time_sensitive: true
+  - claim: "No measurement showed Bend faster than Rust on the same work; the language is two days old with a toy ecosystem."
+    time_sensitive: true
+  - claim: "Language choice should follow ecosystem size, because with LLMs writing the code, syntax ergonomics matters less."
+    time_sensitive: false
+fears_addressed:
+  - "Can AI-written code be mathematically guaranteed correct"
+  - "Will AI make programming languages irrelevant"
+reader_value: "Low-medium. The idea of machine-checked proofs as a guard against AI mistakes is accessible, but the post is about a niche language and day-two tooling."
+technical_depth: 5
+evergreen: 2
+book_use:
+  keep:
+    - "Humans write the rules, AI writes the proofs, a checker arbitrates: a model for trusting AI output"
+    - "Proofs cover only a small part of a real program; the border with unverified code is an act of faith"
+    - "Choose language by ecosystem since the LLM does the typing"
+  cut:
+    - "Code listings, benchmarks, port metrics, effect list"
+    - "Advice to the language author and Zig digression"
+jargon: [formal verification, proof, type checker, dependent types, GPU, garbage collector, FFI, standard library, ecosystem, LLM, agent, Lean, Rust, interaction nets, mutation test]
+illustration_ideas:
+  - "laws (human) vs proofs (AI) with a checker as commit gate"
+  - "share of a program that can be proven versus the unverified I/O shell"
+  - "proof boundary lost at the foreign function interface"
+people_events: [Victor Taelin, Bend 2 launch 17 Sept 2026, Higher Order Company, Hacker News thread, Andrew Kelley, Ghostty]
+related_posts: ["2026/10/11/existem-linguagens-melhores-pra-programar-com-llms", "2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1"]
+prerequisites: ["What a programming language is", "Idea of an AI coding agent"]
+series: ""
+obsolescence: "Day-two review of Bend 2.0.16; features, stdlib, benchmarks and critiques will change quickly. Related later discussion in 2026/10/11."

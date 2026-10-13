@@ -1,0 +1,42 @@
+id: "2026/03/27/ensinando-a-questionar-noticias-frank-investigator"
+source_sha256: "6981e63b8950f4fa8c7142097d559b7bed10db219f20d7d9065689869b87e29a"
+title_en: "Teaching People to Question the News: Frank Investigator"
+ai_relevance: core
+ai_relevance_reason: "A 15-step news analysis pipeline built on three LLMs; a large section explains why asking a chatbot directly is unreliable (sycophancy, confirmation bias, hallucination) and how structured prompts and multi-model consensus mitigate it."
+genre: project-log
+themes: [limits-of-llms, society-politics-censorship, ai-in-daily-life, software-engineering-discipline]
+thesis: "General chatbots tell you what you want to hear and invent evidence, so analyzing news with an LLM needs structured prompts with no operator opinion, multi-model consensus, primary-source veto and no final verdict; the tool exposes omissions and reframings rather than declaring truth."
+summary: "Akita presents Frank Investigator, which takes a news URL, extracts claims, checks headline against body, detects rhetorical fallacies and source distortion, expands cited links, and scores each claim with a consensus of three LLMs (Claude Sonnet 4.6, GPT-5.4, Gemini 3.1 Pro) via OpenRouter. Its stated principle is truth above consensus: a primary source overrides any number of secondary articles repeating the same thing. He walks through five Brazilian news pieces, arguing the strongest manipulation signal is omission and reframing (for example presenting a partial rollback of tariff increases as a tax cut), and reporting 'coordinated narrative' and confidence scores. A key section explains why pasting an article into ChatGPT is not equivalent: models predict the answer you expect, are trained to please (sycophancy, RLHF), and hallucinate citations. The design counters this with structured questions, a no-hallucination instruction, confidence-weighted voting across vendors, quarantine of inconsistent models, and downweighting of same-owner outlets. The post admits limits: false positives, results depend on search, and reports are starting points not verdicts. The five examples contain Akita's own strongly partisan editorial opinions about Brazilian media, government and cinema."
+key_claims:
+  - claim: "Asking a chatbot to critique or confirm an article yields whatever matches your framing; it gives automated confirmation bias."
+    time_sensitive: false
+  - claim: "General LLMs are trained to be agreeable (sycophancy, RLHF), and tend to align to the user's perceived politics."
+    time_sensitive: false
+  - claim: "LLMs fabricate plausible citations and studies when they lack evidence."
+    time_sensitive: false
+  - claim: "Structured stage-specific prompts where the operator never states an opinion remove confirmation bias at the root."
+    time_sensitive: false
+  - claim: "Using three models from different companies and weighting by confidence catches hallucinations because one model's invention is usually contradicted by the others."
+    time_sensitive: false
+  - claim: "A primary source contradicting a claim caps confidence at 60% regardless of how many LLMs or articles agree; many same-group outlets count as one voice."
+    time_sensitive: false
+  - claim: "Omission and reframing are the strongest manipulation signals; the tool gives reports not verdicts."
+    time_sensitive: false
+  - claim: "The author asserts that major Brazilian outlets use misleading headlines and coordinated agendas (his opinion; contested)."
+    time_sensitive: true
+  - claim: "Built in ~9 working days, 129 commits, ~19.4k lines Ruby."
+    time_sensitive: true
+fears_addressed: ["Can I trust an AI to tell me what is true in the news?", "Why does ChatGPT agree with me?", "Do AIs make things up?"]
+reader_value: "High for the 'why you cannot just ask ChatGPT' section: a clear lay-level explanation of sycophancy, confirmation bias and hallucination, and design countermeasures. The five case studies are heavily political and would need heavy editing or removal; they carry the author's partisan claims and unverified allegations about real people."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep: ["Section 'Why you can't just ask ChatGPT': sycophancy, confirmation bias, hallucination", "Structured prompts vs open questions", "Three models from different vendors voting; primary-source veto", "Omission and reframing as manipulation: same event, opposite impression", "Reports are starting points, not verdicts"]
+  cut: ["The five detailed political case studies (partisan, defamation risk)", "Pipeline stack and commit history", "Stack details"]
+jargon: ["LLM", "sycophancy", "RLHF", "hallucination", "confirmation bias", "consensus", "primary source", "prompt", "OpenRouter", "fallacy", "cherry-picking", "headless browser"]
+illustration_ideas: ["Same question framed two ways yields opposite chatbot answers", "Three-model consensus weighted by confidence with a primary-source veto", "Many outlets citing each other forming a circular chain of evidence"]
+people_events: ["Claude Sonnet 4.6", "GPT-5.4", "Gemini 3.1 Pro", "Brazilian outlets named: BBC Brasil, UOL, Brasil 247, Folha, O Globo, Veja, Gazeta do Povo", "Noelia Castillo euthanasia case (March 2026)", "Banco Master/Vorcaro case"]
+related_posts: []
+prerequisites: ["What a chatbot is", "What hallucination means"]
+series: "frank-projects"
+obsolescence: "Specific model versions and the news cases are tied to March 2026; the sycophancy and consensus design points are durable."

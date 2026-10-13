@@ -1,0 +1,36 @@
+id: "2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server"
+source_sha256: "b900f95c79c7b164a006c12b2a921030ed5428584dd7f4453a33591b7d652091"
+title_en: "Vibe Code: I Built a Mega Clone in Rails in 1 Day for My Home Server"
+ai_relevance: substantial
+ai_relevance_reason: "Built with Claude Code (Opus 4.6); the post's argument is about what the human expert vs the LLM contributed."
+genre: project-log
+themes: [vibe-coding-practice, software-engineering-discipline, security-and-sandboxing, coding-agents-tools]
+thesis: "AI makes a working app in hours, but the first output is not production-ready; the experienced programmer's value is knowing what to ask and what to audit. AI is a mirror of your own competence."
+summary: "Akita writes a 56-line spec and uses Claude Code to build FrankMega, a self-hosted file-sharing service (Rails 8, SQLite, invitations only, 2FA, passkeys) in about 3 hours and 21 commits. The first commit delivers 6,900 lines but is far from production-ready: Docker and gem conflicts fail, and a security-audit commit later fixes 22 flaws (hardcoded fallback encryption keys, OTP replay, download-counter race condition, open redirect, predictable CSP nonce). He argues the LLM found these only because he knew to ask specific questions such as 'check the race condition on the counter'. Debugging a download bug took five commits and real browser testing that the LLM could not do alone. Requirements also emerged during building (quotas, i18n, terms of service) that were not in the spec. The post ends with deployment steps via Docker and Cloudflare Tunnel and the line that AI is the mirror of your own competence."
+key_claims:
+  - claim: "FrankMega was built in about 3 hours of active work, 21 commits, 210 tests, using Claude Code with Claude Opus 4.6."
+    time_sensitive: true
+  - claim: "The first AI-generated commit (207 files, ~6,900 lines) was not production-ready; a later audit fixed 22 security issues."
+    time_sensitive: false
+  - claim: "The LLM did not make the security decisions; the human had to know which specific questions to ask (e.g. TOCTOU race conditions)."
+    time_sensitive: false
+  - claim: "A beginner writing the same spec would likely get a functional, attractive, but insecure service."
+    time_sensitive: false
+  - claim: "Some bugs (browser download behaviour with Turbo) require iterative real-browser testing that an LLM does not resolve alone."
+    time_sensitive: false
+  - claim: "AI is the mirror of your own competence."
+    time_sensitive: false
+fears_addressed: ["AI will replace programmers", "Vibe coding means anyone can build real software with prompts", "Is AI-generated software safe?"]
+reader_value: "High for the lay reader: a concrete, honest case that AI produces impressive but flawed first drafts, and that expert judgment is the filter between 'works' and 'safe'."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep: ["Spec of 56 lines becomes 6,900 lines in one commit, yet 22 security flaws", "Race condition example in plain terms (two simultaneous downloads)", "'AI is the mirror of your own competence'", "Requirements that emerge only while building"]
+  cut: ["Deployment tutorial, Docker and Cloudflare Tunnel steps", "Security code snippets", "Rails vs scratch comparison table"]
+jargon: ["vibe coding", "LLM", "Claude Code", "race condition", "2FA", "passkey", "rate limiting", "CSP", "Docker", "self-hosted"]
+illustration_ideas: ["Timeline from one-shot first commit to production-ready through iteration and audit", "Race condition: two simultaneous requests both read the same counter"]
+people_events: ["Anthropic Claude Opus 4.6", "Mega.nz", "Cloudflare"]
+related_posts: []
+prerequisites: ["Basic idea of what a web app and a login system are"]
+series: "frank-projects"
+obsolescence: "Claude Opus 4.6 and Rails 8.1 specifics will date; the lesson about expert review is durable."

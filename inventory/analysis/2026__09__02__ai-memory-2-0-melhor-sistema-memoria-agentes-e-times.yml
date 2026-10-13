@@ -1,0 +1,44 @@
+id: "2026/09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times"
+source_sha256: "be2e1bb212c22cd90673fefb8978f21bebc8894fdda4181a7104b2b1e5b66691"
+title_en: "ai-memory 2.0: the best memory system for agents and teams"
+ai_relevance: substantial
+ai_relevance_reason: "Release announcement and positioning of a long-term memory server for coding agents; memory and context are central AI topics, though the post is promotional and feature-focused."
+genre: announcement
+themes: [agent-memory-and-context, coding-agents-tools, open-source-community]
+thesis: "ai-memory 2.0 offers an open-format, local-embedding, multi-agent and team-ready memory for coding agents, keeping the project's knowledge with the user instead of with any model vendor or harness."
+summary: "Akita announces ai-memory 2.0 after 1.x grew to 1.39 in two months. Major points: strict semantic versioning with a verified-backup migration, a native Open Knowledge Format wiki so memory is plain Markdown readable by other tools, and a local embedding provider on by default that raised retrieval hit@5 on LongMemEval-S from 0.617 to 0.779. It supports several agents at once on the same project without overwriting one another (versioned pages, single writer) and a team sharing one server with attribution and audit log, while handoffs and personal work slots stay per person. He compares it with other memory projects and the memory built into Claude Code, claiming the combination of cross-agent, cross-machine, team, open Markdown, silent capture and single binary is unique. He credits about 70 contributors and closes: rent LLMs and subscriptions from whoever is best, keep the project memory."
+key_claims:
+  - claim: "Local embeddings improved retrieval on the LongMemEval-S benchmark (hit@5 from 0.617 with full-text only to 0.779)."
+    time_sensitive: true
+  - claim: "The wiki is native Open Knowledge Format Markdown, so memory is not locked into the tool."
+    time_sensitive: true
+  - claim: "Concurrent writes create new page versions rather than overwriting; all writes go through a single writer."
+    time_sensitive: false
+  - claim: "Claude Code's built-in memory is limited to one machine and one agent, without real search or team support."
+    time_sensitive: true
+  - claim: "The project grew to about 70 contributors, 371 merged PRs and 181 closed issues by 2.0."
+    time_sensitive: true
+fears_addressed:
+  - "AI assistants forget everything / lock-in to one vendor's memory"
+reader_value: "Low to moderate. Mostly a product pitch; the principle that memory should be portable and owned by the user is worth a sentence."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Models and harnesses are rented; project memory is yours (portable plain-Markdown memory)"
+    - "Why memory is hard: concurrent writes, retrieval quality, contradiction"
+  cut:
+    - "Release features list, competitor survey, contributor thank-you list, install details"
+jargon: [embedding, hybrid search, vector store, full-text search, hit@5, LongMemEval, OKF, harness, handoff, MCP, SQLite, semantic versioning, local model]
+illustration_ideas:
+  - "Plain Markdown wiki as source of truth with a rebuildable search index on top"
+  - "Two agents writing the same page: versions chain instead of overwrite"
+people_events:
+  - "Djalma Junior, Samir Hanna Verza and other contributors"
+  - "Competing memory projects (agentmemory, basic-memory, cognee, MemPalace)"
+related_posts:
+  - "2026/07/20/novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas-ias"
+  - "2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos"
+prerequisites: ["2026/07/20 ai-memory update", "What an embedding is"]
+series: "ai-memory"
+obsolescence: "Version numbers, contributor counts, benchmark figures and competitor landscape are September 2026 snapshots."

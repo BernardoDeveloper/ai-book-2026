@@ -1,0 +1,57 @@
+id: "2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas"
+source_sha256: "d0cbb55e7fefdb9aacc81e9b5fd1039940ab999808e75a568bb5b5bc4e6c8879"
+title_en: "The limits of LLMs: good at reproducing what exists, expensive for what doesn't"
+ai_relevance: core
+ai_relevance_reason: "Central argument about what LLMs can and cannot do, backed by research and personal experiments."
+genre: essay
+themes: [limits-of-llms, what-llms-are, jobs-and-careers, coding-agents-tools]
+thesis: "LLMs excel at reproducing what is publicly documented; for genuinely new problems without references or verifiers they degrade into costly directed brute-force, and the models themselves never learn from usage."
+summary: "Akita argues LLMs are trained only on public data, yet 81.5% of GitHub activity is in private repos and proprietary code never entered training, creating a blind spot. Fast app-building is explained as cheap replication of solved problems. He recounts retro-computing projects: a NES-to-Master-System static recompiler that stalled after 349 commits and four Claude generations except for Super Mario Bros, which had a public disassembly; a Game Gear conversion with existing human corpus that progressed fast; and others, concluding that progress needs references and an oracle (a checkable answer). He cites research (Apple GSM-Symbolic, GSM1k, LiveCodeBench, ARC-AGI, METR RCT showing developers 19% slower) and concedes the strongest counter-case, AlphaEvolve and similar systems, as brute-force search with cheap verifiers at huge cost. He explains models are static files that do not learn from sessions, so agent trial and error teaches the model nothing; reinforcement-learning self-play works only with cheap verifiable rewards and happens in the lab. He concludes LLMs will replace the reproduction part of programming but not novel work, legacy COBOL stays hard because code is private, and survivors will be those who build oracles."
+key_claims:
+  - claim: "LLMs reproduce publicly available patterns well; performance drops on problems with no public reference."
+    time_sensitive: false
+  - claim: "About 81.5% of GitHub contributions happen in private repositories, and proprietary code is absent from public training data (GitHub Octoverse 2025)."
+    time_sensitive: true
+  - claim: "Without an oracle (reference output, recorded trajectory, reference emulator) agents loop through trial-and-error; with one they can iterate to success."
+    time_sensitive: false
+  - claim: "Research: Apple GSM-Symbolic showed up to 65% drops with an irrelevant sentence; LiveCodeBench shows contamination; ARC-AGI-2 pure LLMs score 0% (at 2025 launch); METR RCT found experienced developers 19% slower with AI."
+    time_sensitive: true
+  - claim: "A trained model is a static read-only file; user sessions do not teach it anything, new knowledge enters only at the next training run."
+    time_sensitive: false
+  - claim: "AI training AI (reinforcement learning) needs cheap verifiable rewards (games, math, tests) and occurs in the lab, not during use."
+    time_sensitive: false
+  - claim: "AlphaEvolve, o3 on ARC and AlphaGo achieved novelty via expensive search with verifiers, not cheap insight."
+    time_sensitive: true
+  - claim: "LLMs will replace the reproduction share of programming work but not novel, private-domain or oracle-free work."
+    time_sensitive: false
+fears_addressed:
+  - "AI will replace all programmers"
+  - "AI agents are learning and improving as they work with me"
+  - "AI can solve any novel problem if given enough time"
+reader_value: "High. Gives a clear, example-driven mental model of why LLMs seem magical on routine work and stall on new work, why they don't learn from you, and where human jobs likely remain."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep:
+    - "Reproduction vs novelty: the map vs no-map distinction"
+    - "Oracle concept: need a way to check the answer"
+    - "Model as a frozen file: an agent's trial and error teaches the model nothing; 'intern who learns' metaphor is wrong"
+    - "Super Mario Bros worked because of a public disassembly"
+    - "Brute force with a verifier at industrial cost (AlphaEvolve, Navier-Stokes)"
+    - "Chollet quote on memorization and interpolation"
+    - "Open-source heritage as training fuel"
+  cut:
+    - "Project commit counts and technical retro-computing details"
+    - "Scale/benchmark paper details beyond one or two"
+    - "Hugging Face incident repetition"
+jargon: [LLM, training data, contamination, oracle, ground truth, brute force, reinforcement learning, RLHF, benchmark, ARC-AGI, token, agent, steelman, context, static recompiler, disassembly]
+illustration_ideas:
+  - "map vs blank map: public training data vs private code"
+  - "directed brute-force loop with and without an oracle"
+  - "frozen model file copied to many servers with no cross-learning"
+  - "reinforcement learning limited to domains with verifiable rewards"
+people_events: [François Chollet, METR RCT, Apple GSM-Symbolic, DeepMind AlphaEvolve, AlphaGo move 37, AlphaZero, DeepSeek-R1-Zero, Ilya Sutskever NeurIPS 2024, Octoverse 2025]
+related_posts: ["2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia"]
+prerequisites: ["What an LLM is", "What an AI agent is"]
+series: ""
+obsolescence: "Benchmark figures (ARC-AGI-2, METR) and model names are time-bound; the structural argument (frozen weights, public-data dependence, need for verifiers) should hold longer, though future continual-learning architectures could weaken it."

@@ -1,0 +1,53 @@
+id: "2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos"
+source_sha256: "7b25cc52f03575fd6c68f40e1985b7b1708cba9be353e973256adcca2540cd2b"
+title_en: "ai-memory: Long-Term Memory (Karpathy Wiki) and Self-Learning (Hermes) for Your Projects"
+ai_relevance: core
+ai_relevance_reason: "The subject is persistent memory for AI coding agents and a guarded self-learning loop."
+genre: project-log
+themes: [agent-memory-and-context, coding-agents-tools, limits-of-llms]
+thesis: "A coding agent's session memory vanishes; a versioned markdown wiki with selective, validated, auditable promotion of lessons gives continuity across sessions and agents, and 'self-learning' should be modest, not magic."
+summary: "Akita describes the daily-use side of ai-memory. Long sessions produce a warmed-up agent that forgets everything once the session ends, making the human the agent's cache; a big context window only belongs to the current session. The tool follows Karpathy's LLM Wiki idea: hooks capture sessions, the server organizes them into small markdown pages (decisions, gotchas, procedures, rules) with SQLite as a rebuildable index, and agents query via MCP. An auto-improve job inspired by Hermes Agent reviews finished sessions in the background, asks an LLM for small edits, validates evidence, path, size and confidence, logs an audit trail and optionally requires human approval. He warns that bad memory is worse than no memory because it produces false certainty, and cautions against marketing the word 'auto' as agents learning by themselves."
+key_claims:
+  - claim: "Context windows belong to the current session; they do not give agents memory across days or across different agents."
+    time_sensitive: false
+  - claim: "Useful memory is synthesis (decisions, gotchas, procedures, rules), not transcripts of logs."
+    time_sensitive: false
+  - claim: "Bad memory is worse than no memory: lacking memory makes you ask, wrong memory gives false certainty; a naive auto-writer would fill the wiki with superstitions from transient failures."
+    time_sensitive: false
+  - claim: "ai-memory keeps markdown as source of truth with SQLite as a derived index that can be rebuilt."
+    time_sensitive: false
+  - claim: "Auto-improve runs outside the hot path of hooks, validates proposals and records an audit trail, with an optional manual approval mode."
+    time_sensitive: true
+  - claim: "'Self-learning' is an easy marketing trap; the real system is a bounded job that observes, filters, validates and leaves a trail."
+    time_sensitive: false
+fears_addressed:
+  - "Does AI really learn and remember like a person?"
+  - "Will agents quietly accumulate wrong beliefs?"
+reader_value: "Medium to high for the first half: explains in plain terms why AI assistants forget, what 'memory' really means and why 'self-learning' claims deserve scrutiny; the product feature list is niche."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Human becomes the agent's cache: re-explaining the project every session"
+    - "Context window is not long-term memory"
+    - "Bad memory worse than none; confident garbage"
+    - "Caution about the word 'auto-learning'"
+  cut:
+    - "List of supported agents and CLI clients"
+    - "Config snippets and filenames"
+jargon: [context window, hooks, MCP, wiki, markdown, SQLite, index, handoff, LLM provider, audit trail, embeddings, monorepo, agent]
+illustration_ideas:
+  - "Session timeline: agent warms up, session ends, knowledge lost vs saved to a wiki"
+  - "Memory promotion pipeline: session summary -> LLM proposal -> validation -> audit log -> wiki page"
+  - "Short-term (context window) vs long-term (wiki) memory"
+people_events:
+  - "Andrej Karpathy (LLM Wiki gist)"
+  - "Hermes Agent (Nous Research)"
+related_posts:
+  - "2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel"
+  - "2026/05/18/memoria-agentes-karpathy-llm-wiki-agentmemory"
+  - "2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory"
+  - "2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar"
+prerequisites: [LLM, context window, coding agent]
+series: "ai-memory"
+obsolescence: "Supported-agent lists and feature set are mid-June 2026; the conceptual framing of memory is durable."

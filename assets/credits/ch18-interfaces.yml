@@ -1,0 +1,26 @@
+---
+id: ch18-interfaces
+kind: diagram_code
+chapters:
+- 18
+editions:
+- pt
+- en
+file: assets/figures/ch18-interfaces.png
+sha256: 66cf9ad009765ab88cc21325c7751cf2dee8fc659d1cc43ea4557a77a695bafc
+pixels:
+  width: 1920
+  height: 1200
+source: assets/charts/ch18-interfaces.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch18-interfaces.py
+  pt
+description: 'ch18-interfaces: the interface changes at every step, the judgment underneath
+  never breaks.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

@@ -1,0 +1,60 @@
+id: "2026/01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig"
+source_sha256: "7b271c480df6fe878da38c5d0ae06141b3307e57b81aa69da5fa264c4ada2ac2"
+title_en: "AI Agents: Comparing the Main LLMs on the Zig Challenge"
+ai_relevance: core
+ai_relevance_reason: "A hands-on comparison of commercial and open-source LLMs on one hard coding task, plus commentary on careers."
+genre: benchmark
+themes: [benchmarks-model-comparison, open-vs-closed-and-local-models, jobs-and-careers, limits-of-llms]
+thesis: "On one demanding, deliberately obscure coding task, the top commercial models (led by Claude Opus) now succeed where a year ago all failed, while the open-source models that fit on a consumer GPU still fail; and this makes good programmers more valuable, not obsolete."
+summary: "Akita revisits an unfinished Zig + llama.cpp command-line chat he abandoned a year earlier, which needs updating to Zig 0.15 and a new llama.cpp, with a deliberately bad all-in-one prompt. He tested agents Crush and OpenCode against commercial and open models. Claude Opus solved it in two prompts in about half an hour for about US$8; GPT 5.1 Codex took a few more prompts (~US$6); GPT 5.2 was slower; Gemini 3 Pro Preview was slowest, most expensive (~US$14) and gave up once claiming success falsely. No open-source model finished: Qwen3-Coder 30B and GPT-OSS 20B (run locally on an RTX 5090 with 32GB VRAM) failed, and GLM 4.7 and MiniMax 2.1 (run through OpenRouter) were slow and failed; DeepSeek could not be integrated. He explains why small models fall into 'agentic loops' that claim success without acting, and how sampling parameters (temperature, Min-P, repeat penalty) affect this. He ends by saying agents are very good now, that they make senior programmers more productive, that the 'programming bubble' of mediocre bootcamp grads burst in 2022, that amateurs 'don't know what they don't know', and that AI also helps onboarding into unfamiliar projects such as the Xenia emulator."
+key_claims:
+  - claim: "Ranking on this task: Claude Opus first, then GPT 5.1 Codex, GPT 5.2, Gemini 3 Pro Preview; it is explicitly one small opinionated test, not a general benchmark."
+    time_sensitive: true
+  - claim: "No open-source model he could run solved the challenge; the largest open models (hundreds of billions of parameters) need hardware like a 512GB Mac Studio (~US$4000+) or are too slow."
+    time_sensitive: true
+  - claim: "Commercial models have trillions of parameters; the biggest open ones around 300 billion; a top consumer GPU (RTX 5090) has 32GB VRAM, limiting local models to roughly 30B parameters with quantization."
+    time_sensitive: true
+  - claim: "Small models can fall into an 'agentic loop', repeating that the task is done without making changes, a symptom of training to please and confused context."
+    time_sensitive: false
+  - claim: "Costs on this task: Opus about US$8, GPT 5 Codex about US$6, Gemini 3 Pro nearly US$14; Opus costs more per token but wastes less context on reasoning."
+    time_sensitive: true
+  - claim: "LLMs are stochastic and non-deterministic, so only someone who knows what they want and can check the result gets real value; an amateur cannot do complicated things ('you don't know what you don't know')."
+    time_sensitive: false
+  - claim: "Agents can replace some junior-type grunt work for seniors, but the bar for a programming career has risen by an order of magnitude and competition has increased."
+    time_sensitive: false
+  - claim: "Tailwind lost 80% of its revenue because of AI, as an example of quick-training/shallow-skill markets collapsing."
+    time_sensitive: true
+  - claim: "Bad prompt practices: many tasks at once, sweeping changes, mixing refactor with bug fixes, vague wording."
+    time_sensitive: false
+fears_addressed:
+  - "Will AI replace programmers?"
+  - "Are the free/open models as good as the paid ones?"
+  - "Can I trust an AI that says 'done'?"
+reader_value: "High for the careers section and the honest 'it claimed it fixed it but did not' anecdote; moderate for the model comparison which is dated. Shows evidence rather than hype and ties value to the user's ability to verify."
+technical_depth: 3
+evergreen: 2
+book_use:
+  keep:
+    - "The Zig challenge as a repeatable, failed-last-year test"
+    - "Agentic loop: model claims success without acting"
+    - "Why open models fall short on consumer hardware (parameters vs VRAM)"
+    - "Careers section: you must know what you want and verify; bar raised, not removed"
+    - "Onboarding use: getting oriented in an unfamiliar codebase"
+  cut:
+    - "LM Studio/Crush config JSON and sampling tuning detail"
+    - "Specific model ranking tables"
+    - "OpenCode vs Crush aesthetics"
+jargon: [LLM, parameters, VRAM, quantization, token, temperature, Top-P, Min-P, sampling, agentic loop, reasoning/thinking, context window, tool calling, stochastic, non-deterministic, OpenRouter, open-source model, hallucination]
+illustration_ideas:
+  - "Parameters versus VRAM: why a big model does not fit on a home GPU"
+  - "Next-token sampling: candidates with probabilities and how temperature/Min-P reshape the draw"
+  - "Agentic loop: model repeating 'fixed it' while no files change"
+people_events:
+  - "Anthropic, OpenAI, Google, MiniMax, Zhipu (GLM), Alibaba (Qwen), DeepSeek"
+  - "Tailwind revenue drop"
+  - "Xenia Canary Xbox 360 emulator"
+related_posts:
+  - "2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush"
+prerequisites: ["What an LLM is", "What a coding agent is"]
+series: "llm-benchmark"
+obsolescence: "Model rankings, prices, open-model verdicts (Qwen3, GPT-OSS, GLM, MiniMax) and hardware costs are January 2026 snapshots; GLM 4.7 Flash is re-evaluated more favorably in 2026/01/22. The career opinions remain valid."

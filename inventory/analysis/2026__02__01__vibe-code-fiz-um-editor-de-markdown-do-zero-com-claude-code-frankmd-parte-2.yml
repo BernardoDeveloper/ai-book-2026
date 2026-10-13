@@ -1,0 +1,60 @@
+id: "2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2"
+source_sha256: "fe55c3fbbd2ecbd0b51b059c1f46bf9e308b8b6a25c5953ffac9ad43d23f6839"
+title_en: "Vibe Code: I Built a Markdown Editor from Scratch with Claude Code (FrankMD) - Part 2"
+ai_relevance: core
+ai_relevance_reason: "A detailed post-mortem of building a mid-size app with Claude Code, focused on process, failure modes and speedup."
+genre: project-log
+themes: [vibe-coding-practice, software-engineering-discipline, jobs-and-careers, limits-of-llms]
+thesis: "Used by a senior who reviews and steers it, Claude Code made a 200-hour project take about 30 hours (6 to 7 times faster), but most of vibe coding is still refactoring, bug fixing and testing, and unattended output is a house of cards."
+summary: "Akita reports the process behind FrankMD: roughly 30 hours over 3 days (he got ill from hyperfocus), 130+ pull requests, around 18,000 lines of Rails and JavaScript at about 70% test coverage (about 33,000 lines total by his tokei count). A minimal editor took 10 commits and 1.5 hours; the rest was fixes. He lists failure modes: the model piled everything into single huge CSS and JavaScript files until asked to split them, ignored Rails conventions (RESTful resources) that a CLAUDE.md should have specified, left dead code and uncleared timers, saved on every keystroke, and kept guess-and-retry loops (a .gitignore entry silently broke the Tailwind build for two hours). He reinvented a syntax-highlighting editor by hand for hours before replacing it with CodeMirror, a 6,000-line change the model did well because tests existed. Strengths: translation/i18n, rebranding, large refactors with tests, git-bisect-style debugging. Plan cost: Claude Max about US$100/month, but a few hours on API pricing cost over US$100. He argues it works because editors are well-documented, that a vague bug report ('it stopped working') helps nobody including an LLM, and that real systems are far larger (a 33k-line project is small)."
+key_claims:
+  - claim: "A project he estimates at about 200 hours by hand took about 30 hours with Claude Code, a 6 to 7x speedup for a senior developer."
+    time_sensitive: true
+  - claim: "Most of vibe coding is refactoring, bug fixing and adding tests; left alone the model accumulates giant single files, dead code and leaks."
+    time_sensitive: false
+  - claim: "The task succeeded largely because text editors are a well-known, well-documented scope; unfamiliar domains would be much harder."
+    time_sensitive: false
+  - claim: "A project rules file (CLAUDE.md or similar) with architecture and conventions should be written up front; the model does not proactively follow practices you did not ask for."
+    time_sensitive: false
+  - claim: "Large refactors go well with LLMs when a good automated test suite exists."
+    time_sensitive: false
+  - claim: "LLMs are excellent at translation/i18n and mass renames, with results far better than older machine translation."
+    time_sensitive: false
+  - claim: "Bug reports must be specific (what, where, error, steps, logs); vague reports fail with LLMs as with human programmers."
+    time_sensitive: false
+  - claim: "Using the Claude Max plan (~US$100/month) was far cheaper than paying the same model by API tokens (over US$100 in a few hours)."
+    time_sensitive: true
+  - claim: "The 'developer 10x' finally exists, but only if you are senior first."
+    time_sensitive: false
+  - claim: "Real large systems have hundreds of thousands to millions of lines of code; a 33k-line project is small."
+    time_sensitive: false
+fears_addressed:
+  - "AI will replace programmers"
+  - "Can AI really make a developer much faster?"
+  - "Can a beginner do this?"
+reader_value: "High. A calibrated, first-hand account of real speedup (and its price in attention and health), with concrete failure modes and the 'senior first' condition. Good counterweight to both doom and hype."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep:
+    - "200 hours to 30 hours, with the conditions attached"
+    - "Most of vibe coding is refactoring, testing and fixing"
+    - "Failure catalogue: giant files, dead code, guess-and-retry loops, reinventing the wheel"
+    - "'It stopped working' is not a bug report"
+    - "Developer 10x, but only if senior first; 33k lines is a small project"
+    - "Hyperfocus cost: author got sick"
+  cut:
+    - "Feature-by-feature chronology, Rails RESTful detail, CodeMirror/syntax highlighting mechanics"
+    - "Plan pricing specifics beyond the plan-vs-API contrast"
+jargon: [vibe coding, Claude Code, pull request, refactoring, test coverage, dead code, CLAUDE.md, i18n, git bisect, technical debt, token limit, API pricing, fuzzy matching, 10x developer]
+illustration_ideas:
+  - "Where the 30 hours went: first working version versus refactor, tests, bug-fix share"
+  - "Guess-and-retry loop versus systematic debugging (git bisect)"
+  - "Scale comparison of a 33k-line project to large production systems"
+people_events: ["Anthropic (Claude Code, Claude Max plan)", "CodeMirror", "Ruby on Rails 8", "Frank Rosenblatt (name origin, see part 1)"]
+related_posts:
+  - "2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1"
+  - "2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard"
+prerequisites: ["What vibe coding is", "Basic notion of testing and refactoring"]
+series: "frankmd"
+obsolescence: "Plan prices, rate limits and the 6-7x figure are early-February 2026 snapshots; a later post-mortem is promised ('Aguardem o post-mortem') in the text. Process lessons are durable."

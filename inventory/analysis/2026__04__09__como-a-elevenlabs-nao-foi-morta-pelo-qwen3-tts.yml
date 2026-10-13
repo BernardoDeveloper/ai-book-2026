@@ -1,0 +1,57 @@
+id: "2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts"
+source_sha256: "7e3a646b143cfe73c81a960380737ebe609b79f6de648f0d47666bd7af642760"
+title_en: "How ElevenLabs Was Not Killed by Qwen3 TTS"
+ai_relevance: core
+ai_relevance_reason: "Hands-on comparison of an open-source text-to-speech model with a commercial one in a real production podcast and a large AI dubbing project."
+genre: review
+themes: [generative-media, open-vs-closed-and-local-models, hype-and-marketing, business-and-economics]
+thesis: "Open-source TTS hyped as an 'ElevenLabs killer' falls well short once you run it in real weekly production; the commercial service is worth its much higher per-episode cost."
+summary: "When Qwen3 TTS launched in January 2026, the enthusiast internet called it an ElevenLabs killer. Akita ran it for about two months to produce his weekly podcast and found the voice flat, with mispronounced English terms that forced him to rewrite scripts to avoid anglicisms and with heavy ops work (rented GPU, cold starts of 5-15 minutes). He switched to ElevenLabs v3: about 4 minutes per episode instead of 25-30, inline emotion tags that work in Portuguese, one API key instead of infrastructure, at roughly $2.70 per episode versus $0.08. The second half describes dubbing all 146 episodes (about 96 hours) of his YouTube channel into English with a cloned voice: chunking text, preventing hallucinated long audio from the v3 model, aligning audio to video, rewriting unspeakable code and URL passages, repairing truncated subtitles with Claude, detecting jingles and inserted external clips, and translating thumbnails with Gemini Nano Banana Pro. The effort took several rounds, burned over 91 percent of an 11M-credit ElevenLabs Business plan and a maxed Claude Max 20x plan with over R$300 extra. His conclusion is that tweet demos are not production and open-source TTS is still far behind, though it has a niche for sensitive data or idle GPUs."
+key_claims:
+  - claim: "Qwen3 TTS 1.7B is not an 'ElevenLabs killer'; in production it sounded flat and mispronounced English terms, and does not beat even ElevenLabs v2."
+    time_sensitive: true
+  - claim: "Switching to ElevenLabs v3 cut episode generation from about 25-30 minutes to about 4 minutes, at about $2.70 versus about $0.08 per episode."
+    time_sensitive: true
+  - claim: "Demos of a few seconds hide problems that only appear when a model runs real, long, repeated production work."
+    time_sensitive: false
+  - claim: "TTS models can hallucinate, generating minutes of invented audio for long inputs, so inputs must be chunked and outputs sanity-checked."
+    time_sensitive: false
+  - claim: "Dubbing 146 episodes required multiple full re-renders because of structural problems found only after listening to final masters; the job consumed over 91 percent of 11M credits and the Claude Max 20x weekly limit."
+    time_sensitive: true
+  - claim: "A voice clone inherits the accent and rhythm of its training sample, so a non-native English sample yields a non-native clone."
+    time_sensitive: false
+  - claim: "Open source TTS still makes sense for sensitive data that cannot leave the machine or when GPU is idle and budget is small."
+    time_sensitive: true
+fears_addressed:
+  - "Is the 'new open-source model beats everything' headline true?"
+  - "Can AI voice cloning replace human narrators?"
+  - "Does AI automation just work with the push of a button?"
+reader_value: "A grounded counter-example to launch-day hype: shows the gap between demo and production, the hidden labor and cost of AI automation, and what voice cloning can and cannot do."
+technical_depth: 3
+evergreen: 2
+book_use:
+  keep:
+    - "Tweet demo versus weekly production as the test of hype"
+    - "Cost trade-off: 30x more expensive per episode but saves hours of operations"
+    - "The dubbing saga: each 'done' was followed by a new class of problem found only by listening"
+    - "Voice clone inherits accent and pace of the sample"
+    - "TTS hallucinating nine minutes of audio from 1,500 characters"
+  cut:
+    - "Chunking algorithm and ffmpeg loudness code"
+    - "Per-episode list of rewritten cues"
+    - "Emotion tag list details and YouTube embed notes"
+jargon: [TTS, text-to-speech, voice cloning, open source model, hallucination, chunk, prosody, API, GPU, subtitles SRT, prompt, LLM, image editing model]
+illustration_ideas:
+  - "Demo vs production: what a 5-second sample hides versus a 30-minute weekly episode"
+  - "Pipeline of AI dubbing: subtitles, translation, chunking, text-to-speech, alignment to video, mastering"
+  - "Why an AI voice can run on and hallucinate when given long input"
+people_events:
+  - "ElevenLabs v3 (Feb 2026)"
+  - "Qwen3 TTS (Alibaba, Jan 2026)"
+  - "Akitando YouTube channel dubbing project"
+  - "Google Gemini Nano Banana Pro"
+  - "The M.Akita Chronicles podcast"
+related_posts: ["2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo", "2026/02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles"]
+prerequisites: ["What text-to-speech is", "Open versus commercial models"]
+series: "m-akita-chronicles"
+obsolescence: "Verdict on Qwen3 TTS vs ElevenLabs v3, prices, credit plans and YouTube embed limitations are April 2026 snapshots; open TTS models improve quickly. No later post superseding it is cited in the text."

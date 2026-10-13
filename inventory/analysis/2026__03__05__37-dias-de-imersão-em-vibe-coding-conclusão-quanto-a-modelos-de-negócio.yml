@@ -1,0 +1,38 @@
+id: "2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio"
+source_sha256: "3a0e58d2f627361f2a155480ea3b9dff790c52978d91b0f625d709d809af72ed"
+title_en: "37 Days of Vibe Coding Immersion: Conclusions About Business Models"
+ai_relevance: core
+ai_relevance_reason: "AI-assisted coding is the premise and the post analyzes its economic consequences and the cost of training frontier models."
+genre: essay
+themes: [business-and-economics, vibe-coding-practice, hardware-and-infrastructure, jobs-and-careers]
+thesis: "When one person with an AI agent can build in days what took teams months, software code stops being a competitive advantage; the new moat is exclusive data and the capital and hardware to train models, so the era of the easy startup is over."
+summary: "After 37 days, 653 commits and about 144K lines across 8 projects, Akita concludes that building software has become cheap and fast, citing a Cloudflare engineer who rebuilt the Next.js API surface on Vite in a week for about 1,100 USD in tokens. Ideas of the type 'like Uber but for X' lose value because any competent developer with Claude Code or Codex can replicate an MVP in a week. The differentiator moves elsewhere: his manga translator relies on a bubble-detection model trained on about 11,000 labeled images, which he did not and could not easily train. He then presents figures on frontier training cost (hundreds of millions of dollars, growing about 2.4x per year per Epoch AI), GPU prices, HBM memory shortage, data-center electricity use and big-tech capex over 400 billion dollars in 2025. Public text data is approaching exhaustion, so exclusive proprietary data is the real moat, though even that advantage is temporary. The garage still works, but what comes out of it can no longer just be an app."
+key_claims:
+  - claim: "37 days of vibe coding produced 653 commits and ~144K LOC in 8 published projects."
+    time_sensitive: true
+  - claim: "Code is becoming a commodity; execution is cheap, so ideas that are easily replicable have little value."
+    time_sensitive: true
+  - claim: "A Cloudflare engineer reimplemented the Next.js API surface on Vite in a week for ~1,100 USD of tokens with Claude (completeness is disputed)."
+    time_sensitive: true
+  - claim: "Frontier model training cost grows ~2.4x per year (Epoch AI); GPT-4 cost over 100M USD; big-tech 2025 capex over 400B USD."
+    time_sensitive: true
+  - claim: "DeepSeek's reported 5.5M USD training cost excludes hardware (51M+ USD), R&D, data and failed runs."
+    time_sensitive: true
+  - claim: "Exclusive proprietary data and training capacity are the new moat, but the advantage is temporary."
+    time_sensitive: false
+  - claim: "Data centers consumed ~415 TWh in 2024 (~1.5% of world electricity), projected ~945 TWh by 2030."
+    time_sensitive: true
+fears_addressed: ["Will AI make startups/businesses obsolete?", "Why do only giant companies build the top AI models?", "Is my business idea still worth anything?"]
+reader_value: "Good for readers thinking about the economics: it explains in plain terms why AI lowers the price of software but raises the price of models and data, a counter to both the 'anyone can build anything' hype and the fear of total displacement. Numbers date quickly."
+technical_depth: 2
+evergreen: 2
+book_use:
+  keep: ["Execution got cheap; exclusive data and compute are the scarce thing", "Why only a few companies can train frontier models: cost, GPUs, energy", "Bubble-detection model he could not train himself as the concrete example", "Why DeepSeek's cheap-training headline is misleading"]
+  cut: ["Index of earlier posts", "Project table", "Detailed GPU/HBM pricing"]
+jargon: ["vibe coding", "MVP", "moat", "frontier model", "GPU", "H100", "HBM", "training vs inference", "capex", "proprietary data", "tokens"]
+illustration_ideas: ["Where the moat moved: code cost falling vs model and data cost rising", "Training cost growth curve (2.4x per year)"]
+people_events: ["Cloudflare vinext (Next.js on Vite)", "Epoch AI", "Sam Altman (GPT-4 cost)", "Dario Amodei (Anthropic)", "DeepSeek-V3", "Meta Llama 3", "NVIDIA", "IEA data center report"]
+related_posts: ["2026/02/08/rant-ia-acabou-com-programadores", "2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik", "2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito"]
+prerequisites: ["What a startup/MVP is", "What training a model means"]
+series: "frank-projects"
+obsolescence: "All cost, capex, power and GPU price figures are snapshot values as of March 2026; the Cloudflare example and model names will date."

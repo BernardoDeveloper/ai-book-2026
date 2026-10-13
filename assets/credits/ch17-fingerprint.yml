@@ -1,0 +1,25 @@
+---
+id: ch17-fingerprint
+kind: diagram_code
+chapters:
+- 17
+editions:
+- pt
+- en
+file: assets/figures/ch17-fingerprint.png
+sha256: af6269044d5f5c12092a6957e9da082450b9b2390c14a85319d6f1ed3b76bdc3
+pixels:
+  width: 2100
+  height: 1320
+source: assets/charts/ch17-fingerprint.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch17-fingerprint.py
+  pt
+description: 'ch17-fingerprint: weak, common signals add up to a near-unique, sticky identity.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

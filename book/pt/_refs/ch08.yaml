@@ -1,0 +1,72 @@
+references:
+  - id: opencv
+    type: "software"
+    title: "OpenCV: Open Source Computer Vision Library"
+    author: [{literal: "OpenCV"}]
+    container-title: "opencv.org"
+    issued: {date-parts: [[2026]]}
+    URL: "https://opencv.org/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik"
+  - id: ogkalu2025bubble
+    type: "software"
+    title: "comic-text-and-bubble-detector"
+    author: [{literal: "ogkalu"}]
+    container-title: "Hugging Face"
+    issued: {date-parts: [[2025, 3, 13]]}
+    URL: "https://huggingface.co/ogkalu/comic-text-and-bubble-detector"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik (named in the post without a link; verified online. Model page shows no release date; issued year is approximate and should be checked at merge)"
+  - id: lyu2024rtdetr
+    type: "software"
+    title: "RT-DETR: DETRs Beat YOLOs on Real-time Object Detection"
+    author: [{family: "Lv", given: "Wenyu"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2024]]}
+    URL: "https://github.com/lyuwenyu/RT-DETR"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik. RT-DETRv2 paper: Lv, Zhao, Chang, Huang, Wang, Liu, 'RT-DETRv2: Improved Baseline with Bag-of-Freebies for Real-Time Detection Transformer' (2024)."
+  - id: shadps4
+    type: "software"
+    title: "shadPS4: an early PlayStation 4 emulator"
+    author: [{literal: "shadPS4 developers"}]
+    container-title: "shadps4.net"
+    issued: {date-parts: [[2026]]}
+    URL: "https://shadps4.net/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/23/driveclub-shadps4-e-ia-como-aprender"
+  - id: akita2020akitando81
+    type: "motion_picture"
+    title: "[Akitando] #81 - Aprendendo sobre Computadores com Super Mario (do jeito Hardcore++)"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "YouTube"
+    issued: {date-parts: [[2020, 6, 18]]}
+    URL: "https://www.youtube.com/watch?v=hYJ3dvHjeOE"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/23/driveclub-shadps4-e-ia-como-aprender and 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms (both embed this video)"
+  - id: wikipedia2026nes
+    type: "webpage"
+    title: "Nintendo Entertainment System"
+    author: [{literal: "Wikipedia"}]
+    container-title: "Wikipedia"
+    issued: {date-parts: [[2026]]}
+    URL: "https://en.wikipedia.org/wiki/Nintendo_Entertainment_System"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms (post states Nintendo's exclusivity contracts without a link; verified: 'restrictive licensing terms, which included platform exclusivity')"
+  - id: nesdev2018sms
+    type: "post"
+    title: "Sega Master System (SMS) to NES converter: is it possible?"
+    container-title: "NESdev Forums"
+    issued: {date-parts: [[2018, 5, 9]]}
+    URL: "https://forums.nesdev.org/viewtopic.php?t=17339"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms. Verified line (tokumaru, 2018-05-09): 'Automatic conversion of 6502 code to Z80 will definitely cause a hit in performance'. The longer quote the blog attributes to the thread was not found on the first page, so the chapter paraphrases only the performance point."
+  - id: lackoftrack27smb
+    type: "software"
+    title: "Super-Mario-Bros.-SMS: Port of Super Mario Bros. to the Sega Master System"
+    author: [{literal: "lackoftrack27"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 4, 1]]}
+    URL: "https://github.com/lackoftrack27/Super-Mario-Bros.-SMS"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms (repo shows no release dates; the post places publication between June and early September 2026)"

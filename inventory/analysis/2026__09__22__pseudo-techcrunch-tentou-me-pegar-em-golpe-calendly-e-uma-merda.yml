@@ -1,0 +1,38 @@
+id: "2026/09/22/pseudo-techcrunch-tentou-me-pegar-em-golpe-calendly-e-uma-merda"
+source_sha256: "bc328ccb2a5fdc5aa452538106d42f7f99a31e6109cacb8e0def3bd7effc94a0"
+title_en: "Beware! Fake TechCrunch tried to scam me, and Calendly is garbage"
+ai_relevance: tangential
+ai_relevance_reason: "The scam pretext is an AI-agents interview request, but the post is about an OAuth phishing scheme, not AI."
+genre: news-analysis
+themes: [security-and-sandboxing, ai-in-daily-life]
+thesis: "A fake journalist DM leading to a Calendly redirect and a malicious OAuth authorization screen is a known account-takeover scam; unsolicited meeting requests are scams until proven otherwise."
+summary: "Akita received a DM from a verified X account posing as a TechCrunch journalist asking about how coding agents handle project context, then sending a Calendly link. Clicking it redirected through Calendly's legitimate after-booking redirect feature to a real X authorization page for a malicious app called Events Portal requesting broad account control. He recognized it from a public case involving José Valim. He explains the mechanism, why the screenshot token he showed was harmless, evidence he checked (a days-old domain, documented Calendly-themed campaigns), and gives a short checklist, including revoking third-party app access and reporting the account."
+key_claims:
+  - claim: "The scam uses a legitimate Calendly redirect feature to send victims to a genuine X OAuth consent screen for a malicious app, rather than faking a login page."
+    time_sensitive: false
+  - claim: "Real scheduling tools never require social-network login; a cold contact requesting a meeting is a scam until proven otherwise."
+    time_sensitive: false
+  - claim: "The malicious app requested permissions amounting to full account takeover (post, follow, edit profile, block)."
+    time_sensitive: false
+  - claim: "The callback domain was registered only six days earlier (16 Sept 2026)."
+    time_sensitive: true
+fears_addressed:
+  - "How scammers target people who are known for working in AI"
+reader_value: "Medium-low for an AI book; practical security lesson on OAuth phishing and flattery-based pretexts, useful in a chapter on AI-era scams."
+technical_depth: 2
+evergreen: 4
+book_use:
+  keep:
+    - "Pretext tailored to the victim's AI expertise; legit-looking consent screens as attack"
+    - "Checklist: cold meeting request, third-party app permissions, revoke access"
+  cut:
+    - "Domain registration and technical forensic details"
+    - "Insults toward Calendly and journalists"
+jargon: [phishing, OAuth, authorization, third-party app, redirect, token, domain registration]
+illustration_ideas:
+  - "OAuth consent chain: legitimate Calendly link to legitimate X screen granting a malicious app"
+people_events: [José Valim, TechCrunch (impersonated), Calendly, Events Portal app, Push Security, Validin]
+related_posts: []
+prerequisites: ["What a social-media login/authorization screen is"]
+series: ""
+obsolescence: "Specific account, link and app are tied to Sept 2026; the pattern persists."

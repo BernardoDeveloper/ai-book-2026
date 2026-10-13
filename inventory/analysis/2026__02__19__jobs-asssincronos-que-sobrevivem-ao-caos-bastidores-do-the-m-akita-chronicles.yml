@@ -1,0 +1,31 @@
+id: "2026/02/19/jobs-asssincronos-que-sobrevivem-ao-caos-bastidores-do-the-m-akita-chronicles"
+source_sha256: "28cce45b50144186a58be5e778eb8e9c362668aadaec17e2ab6b3277fd629327"
+title_en: "Async Jobs That Survive Chaos (Behind the Scenes of The M.Akita Chronicles)"
+ai_relevance: none
+ai_relevance_reason: "Rails background-job reliability patterns; AI is not discussed."
+genre: tutorial
+themes: [software-engineering-discipline, non-ai]
+thesis: "Background jobs that do important work must be designed to recover from failures: targeted retries, locks with expiry, atomic claiming, orchestrator jobs, cron safety nets and status notifications."
+summary: "Part 5 of the series. Akita presents six patterns used in the newsletter system running on Rails 8, ActiveJob and SolidQueue: retry_on with specific transient exceptions and bounded polling (up to four hours for a podcast to be ready) with graceful degradation; file or database locks with a time-to-live; atomic per-recipient claiming for emails with a recovery job that moves ambiguous cases to 'unknown'; orchestrator jobs delegating to specialist jobs; cron as a safety net with idempotent jobs; and a notification concern for start, done and error. He adds that SolidQueue on SQLite avoids needing Redis."
+key_claims:
+  - claim: "Idempotent jobs plus a cron fallback let a failed pipeline recover without duplicating work."
+    time_sensitive: false
+  - claim: "Ambiguous email deliveries should never be auto-resent."
+    time_sensitive: false
+  - claim: "SolidQueue using the same SQLite database removes the need for a separate Redis."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Backend engineering for developers; no AI content."
+technical_depth: 5
+evergreen: 3
+book_use:
+  keep: []
+  cut: ["Entire post"]
+jargon: [background job, idempotency, retry, lock, TTL, cron, queue]
+illustration_ideas: []
+people_events: ["Rails 8 / SolidQueue"]
+related_posts:
+  - "2026/02/17/enviando-emails-sem-spammar-bastidores-do-the-m-akita-chronicles"
+prerequisites: []
+series: "m-akita-chronicles"
+obsolescence: "Framework features are Rails 8 era (2026)."

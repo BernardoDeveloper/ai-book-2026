@@ -1,0 +1,51 @@
+id: "2026/07/17/llm-benchmarks-kimi-k3"
+source_sha256: "0705dbbfc3f2b326034e2d3ea3a93a3d4d47455c3916d78453a0f13bc2e3e96c"
+title_en: "LLM benchmarks: Kimi K3"
+ai_relevance: core
+ai_relevance_reason: "Benchmark of a specific LLM acting as an autonomous coding agent, with pricing and harness analysis."
+genre: benchmark
+themes: [benchmarks-model-comparison, coding-agents-tools, business-and-economics, open-vs-closed-and-local-models]
+thesis: "Kimi K3 scored 89/A building a Rails chat app alone, beating Opus 4.6 and offering a cheaper alternative to Opus 4.8, but Claude still wins on architecture, hardening and tests; Kimi is no longer the absurdly cheap option."
+summary: "Akita gives 40 models the same prompt: build a ChatGPT-style chat in Rails 8 with RubyLLM, Hotwire, Docker, tests and CI, then score the result 0-100. K3 initially failed because OpenCode sent a tool schema that Moonshot's strict validator rejected, so he built a Kimi Code CLI runner; the harness changes the result (K2.7 got about 68 via CLI versus 86 via OpenCode). K3 got 89/A at an equivalent API cost near $2.10, ahead of Opus 4.6 (83) and behind Opus 4.8 (95). He reads the code: K3 got conversation replay, capped state and tested provider errors right, but lacked a system prompt, had an ephemeral cache, a race condition and raw errors in the UI. Price per token tripled versus K2.6/2.7, and the cheap $19 subscription ran out of quota after about two heavy runs, causing a lost run. He recommends plans and API by use case and adds GLM 5.2 as a decent subscription default. He closes warning that one run per model is weak evidence and to treat rankings as limited evidence, not religion."
+key_claims:
+  - claim: "Kimi K3 scored 89/A, rank 8 of 40, versus Opus 4.8 at 95 and Opus 4.6 at 83."
+    time_sensitive: true
+  - claim: "A model can appear not to support tools when the bug is in the harness-provider pairing (OpenCode with Moonshot schema validation)."
+    time_sensitive: false
+  - claim: "The same model family scored very differently under different harnesses (K2.7: about 68 via Kimi CLI vs 86 via OpenCode/OpenRouter), though snapshots may differ."
+    time_sensitive: true
+  - claim: "K3 API price is about 3x higher than K2.6/K2.7 ($3/$15 per million tokens input/output)."
+    time_sensitive: true
+  - claim: "The $19 Moderato subscription allowed roughly two heavy benchmark runs per five-hour window before a hard 403 lost a third run."
+    time_sensitive: true
+  - claim: "One run per model gives no statistical certainty; rankings are limited evidence."
+    time_sensitive: false
+fears_addressed:
+  - "Which AI model is best, and do I trust leaderboards?"
+  - "Are cheap Chinese models catching up to US ones?"
+reader_value: "Low to moderate. The honest caveats (harness effect, single run, subscription quota surprises) are a useful lesson in reading AI rankings critically; the tables and plan advice are for developers."
+technical_depth: 4
+evergreen: 1
+book_use:
+  keep:
+    - "Harness effect: same model, very different score depending on the surrounding tool"
+    - "'Treat rankings as limited evidence, not religion'"
+    - "Subscription quota windows as hidden limits"
+  cut:
+    - "40-row ranking table, price tables, plan tiers, commit hashes"
+    - "GLM 5.2 versus Opus detail"
+jargon: [LLM, benchmark, harness, tool calling, schema, context window, MoE (mixture of experts), token, cache, system prompt, rate limit, API, subscription, RubyLLM, Rails, CI]
+illustration_ideas:
+  - "Model + harness + provider as three stacked layers where a mismatch breaks tool calling"
+  - "Rolling five-hour quota window filling and recovering"
+people_events:
+  - "Moonshot AI (Kimi)"
+  - "Anthropic (Opus, Fable)"
+  - "Z.ai (GLM)"
+related_posts:
+  - "2026/07/09/llm-benchmark-grok-4-5-gpt-5-6-sol"
+  - "2026/07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra"
+  - "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
+prerequisites: ["What an LLM and a coding agent are", "Tokens and API pricing"]
+series: "llm-benchmark"
+obsolescence: "Ranking, model prices and subscription plans are July 2026 snapshots; superseded by later benchmark posts (e.g. 2026/07/30 full re-test)."

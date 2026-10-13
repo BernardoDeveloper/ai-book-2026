@@ -1,0 +1,51 @@
+id: "2026/06/24/por-que-llms-vao-falhar-na-sua-empresa"
+source_sha256: "c7e7cacb9fdc678f880385661cfc56b9bcc63df7d1493ddddc8ed0021483504a"
+title_en: "Why LLMs Will Fail at Your Company"
+ai_relevance: core
+ai_relevance_reason: "Argues about why corporate AI adoption fails and how to redesign software process around LLMs."
+genre: essay
+themes: [business-and-economics, jobs-and-careers, software-engineering-discipline, vibe-coding-practice]
+thesis: "Speculatively, LLMs fail in companies because they amplify processes populated by people trained not to decide; the fix is short daily cycles of decision, implementation, test and review, paired with PO, QA and tech lead."
+summary: "Akita opens by noting Uber reportedly burned its 2026 AI budget in four months on Claude Code without tracing value to tokens. He argues that spec-driven development, the market's answer to one-line prompts, is still wrong because the real problem is professionals taught for years not to decide or face consequences. Corporate Agile has become structured bureaucracy where decisions are diluted and feedback arrives months later. Since LLMs make coding cheap, the bottleneck moves to deciding, explaining, testing and reviewing, and AI becomes a mirror that amplifies lack of direction. He proposes, as speculation, rotating pairing of a programmer with a PO, QA and Tech Lead in same-day cycles, throwaway code, and one or two weeks of training without delivery goals."
+key_claims:
+  - claim: "Uber reportedly consumed its 2026 AI budget in about four months on Claude Code-style tools, and executives could not tie token use to delivered value (as cited from Forbes)."
+    time_sensitive: true
+  - claim: "With LLMs the bottleneck moves from writing code to human ability to decide, explain, test and review."
+    time_sensitive: false
+  - claim: "Putting an LLM inside the same broken process yields faster slop: bad code, bugs and irritated customers arrive ten times faster."
+    time_sensitive: false
+  - claim: "Spec-driven development still documents bad decisions if the spec comes from a process where nobody owns decisions."
+    time_sensitive: false
+  - claim: "Because LLMs make mistakes and prototypes cheap, teams should throw code away far more often and use branches for experiments."
+    time_sensitive: false
+  - claim: "He labels the whole thesis speculative and not backed by sufficient data."
+    time_sensitive: false
+fears_addressed:
+  - "Why do companies spend a fortune on AI and see no results?"
+  - "Will AI replace programmers?"
+  - "Is AI a magic productivity multiplier?"
+reader_value: "High. Gives non-technical readers a concrete explanation of why corporate AI rollouts disappoint (organizational, not technological) and the 'AI as mirror' idea. Clearly marked as speculation."
+technical_depth: 2
+evergreen: 4
+book_use:
+  keep:
+    - "AI as mirror: amplifies lack of direction"
+    - "Bottleneck shift from coding to deciding"
+    - "Uber budget anecdote (verify before use)"
+    - "Cheap mistakes: throw code away; train the team for a week without delivery targets"
+  cut:
+    - "Scrum ceremony critique details"
+    - "Detailed role descriptions of PO, QA, Tech Lead rotation"
+jargon: [LLM, spec-driven development, PRD, Agile, Scrum, sprint, backlog, Product Owner, QA, Tech Lead, kaizen, token, prototype, vibe coding]
+illustration_ideas:
+  - "Bottleneck chain: before (coding slow) vs after (deciding slow)"
+  - "Long sprint feedback loop vs same-day decision-implement-test-review loop"
+people_events:
+  - "Uber AI budget story (Forbes)"
+  - "Akitando videos on not outsourcing decisions (2019)"
+related_posts:
+  - "2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida"
+  - "2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r"
+prerequisites: [LLM, coding agent]
+series: ""
+obsolescence: "The Uber figure and company anecdotes are dated May-June 2026; the author flags the process proposal as speculation and may revise it."

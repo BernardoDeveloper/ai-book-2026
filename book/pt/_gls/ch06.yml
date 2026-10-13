@@ -1,0 +1,14 @@
+pair-programming:
+  term: Programação em par
+  long: Pair programming
+  def: Duas pessoas trabalhando no mesmo código ao mesmo tempo, uma escrevendo e a outra revisando e dando a direção. Com IA, o agente costuma escrever e o humano navega.
+mock:
+  term: Mock
+  def: Um dublê usado em testes, que finge ser um serviço externo (e-mail, banco, modelo de IA) e sempre responde do jeito combinado. Deixa o teste rápido e barato, mas esconde como o serviço real se comporta.
+tts:
+  term: TTS
+  long: Text-to-Speech
+  def: Síntese de voz. Um modelo que transforma texto escrito em fala, às vezes imitando a voz de uma pessoa específica.
+divida-tecnica:
+  term: Dívida técnica
+  def: O custo acumulado de atalhos no código, como arquivos gigantes, duplicação e falta de testes. Cada mudança futura fica mais lenta e arriscada até alguém parar pra pagar a dívida.

@@ -1,0 +1,39 @@
+id: "2026/05/30/manga-plus-shueisha-desktop-frank-manga-plus"
+source_sha256: "f748009d6a6d993aaef6379ad1f817a1880d0d93e7cbbcc058449674a8a83fda"
+title_en: "A Complete Manga Setup: Frank Manga+, Frank Yomik, Prettify Manga Reader"
+ai_relevance: tangential
+ai_relevance_reason: "A personal-project showcase; Claude Code helped decompile an Android app and build the reader, and the Yomik extension uses OCR plus a local LLM to translate manga, but the post is about reader features."
+genre: project-log
+themes: [reverse-engineering, coding-agents-tools, generative-media]
+thesis: "With a coding agent, a single reader can build desktop tools for content that lacks an official desktop client, then complement them with a browser extension and an LLM-based translator."
+summary: "Akita subscribes to Shueisha's MANGA Plus, which has no web or desktop reader, so he worked with Claude Code to decompile the Android app with jadx and learn how it authenticates. The subscription turns out to be a static per-device secret that must be extracted from a rooted phone, emulator or network capture. He built Frank Manga+ in Rust and Tauri with single and double-page modes, a night filter and resume. He also describes the Prettify Manga Reader browser extension for fansub sites and Kindle Web, and the Frank Yomik extension that sends page images to a self-hosted server that detects speech balloons, runs OCR and translates with a local qwen3:14b model. The post is mostly feature description and install steps."
+key_claims:
+  - claim: "The MANGA Plus app authenticates API calls with a static 32-hex-character per-device secret stored in Android shared preferences, with no elaborate DRM or rotating token."
+    time_sensitive: true
+  - claim: "Frank Yomik detects speech balloons with RT-DETR-v2, runs OCR, and translates via a local Ollama qwen3:14b model on a self-hosted server."
+    time_sensitive: true
+  - claim: "Claude Code was used to decompile the official app and work out its authentication."
+    time_sensitive: false
+fears_addressed: []
+reader_value: "low. A hobby tooling post; the only transferable idea is that a coding agent can help reverse-engineer an app for personal use."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Anecdote: a coding agent helps decompile an app and find that its 'subscription' is one static secret"
+    - "Local-LLM manga translation as an example of AI in a hobby workflow"
+  cut:
+    - "Reader keyboard shortcuts, layouts, install steps, extension setup"
+    - "Rooting and emulator extraction instructions"
+jargon: [decompile, API, OCR, LLM, Ollama, browser extension, Tauri, WebView, DRM, root]
+illustration_ideas:
+  - "Pipeline for manga translation: page image -> balloon detection -> OCR -> LLM translation -> text replaced on page"
+people_events:
+  - "Shueisha (MANGA Plus, Shonen Jump)"
+  - "Amazon Kindle, Naver Webtoon"
+related_posts:
+  - "2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso"
+  - "2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik"
+prerequisites: [LLM, coding agent]
+series: "frank-projects"
+obsolescence: "App internals (MANGA Plus authentication), extension features and model choice (qwen3:14b) may change; Shueisha could alter its API at any time."

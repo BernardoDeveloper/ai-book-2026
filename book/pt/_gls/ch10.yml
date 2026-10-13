@@ -1,0 +1,13 @@
+slop:
+  term: Slop
+  def: Gíria em inglês pra conteúdo gerado por IA em grande volume e sem cuidado, que ocupa espaço e serve pra pouca coisa. Em código, é o programa que funciona na demonstração e desmorona quando alguém mexe.
+fosso:
+  term: Fosso (moat)
+  def: No jargão de negócios, aquilo que protege uma empresa da concorrência e é difícil de copiar, como o fosso com água em volta de um castelo. Pode ser uma marca, dados exclusivos, uma rede de clientes ou uma tecnologia cara de reproduzir.
+fork:
+  term: Fork
+  def: Uma cópia de um projeto de código aberto que alguém passa a manter por conta própria, com mudanças suas, podendo ou não acompanhar as atualizações do original.
+tui:
+  term: TUI
+  long: Text User Interface
+  def: Um aplicativo de tela cheia que roda dentro do terminal, com menus, tabelas e painéis desenhados com caracteres de texto em vez de janelas gráficas.

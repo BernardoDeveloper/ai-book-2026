@@ -1,0 +1,63 @@
+references:
+  - id: sharma2023sycophancy
+    type: "article"
+    title: "Towards Understanding Sycophancy in Language Models"
+    author: [{family: "Sharma", given: "Mrinank"}, {family: "Tong", given: "Meg"}, {family: "Korbak", given: "Tomasz"}, {family: "Duvenaud", given: "David"}, {family: "Askell", given: "Amanda"}, {family: "Bowman", given: "Samuel R."}, {family: "Cheng", given: "Newton"}, {family: "Durmus", given: "Esin"}, {family: "Hatfield-Dodds", given: "Zac"}, {family: "Johnston", given: "Scott R."}, {family: "Kravec", given: "Shauna"}, {family: "Maxwell", given: "Timothy"}, {family: "McCandlish", given: "Sam"}, {family: "Ndousse", given: "Kamal"}, {family: "Rausch", given: "Oliver"}, {family: "Schiefer", given: "Nicholas"}, {family: "Yan", given: "Da"}, {family: "Zhang", given: "Miranda"}, {family: "Perez", given: "Ethan"}]
+    container-title: "arXiv"
+    number: "arXiv:2310.13548"
+    DOI: "10.48550/arXiv.2310.13548"
+    issued: {date-parts: [[2023, 10, 20]]}
+    URL: "https://arxiv.org/abs/2310.13548"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator (post states sycophancy is documented in all large models, without a link; verified online)"
+  - id: anthropic2026watermark
+    type: "webpage"
+    title: "How Claude's text watermark works"
+    author: [{literal: "Anthropic"}]
+    container-title: "Anthropic"
+    issued: {date-parts: [[2026, 8, 14]]}
+    URL: "https://www.anthropic.com/news/claude-text-watermark"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/08/16/entendendo-ia-watermark-da-anthropic"
+  - id: dathathri2024synthid
+    type: "article-journal"
+    title: "Scalable watermarking for identifying large language model outputs"
+    author: [{family: "Dathathri", given: "Sumanth"}, {family: "See", given: "Abigail"}, {family: "Ghaisas", given: "Sumedh"}, {family: "Huang", given: "Po-Sen"}, {family: "McAdam", given: "Rob"}, {family: "Welbl", given: "Johannes"}, {family: "Bachani", given: "Vandana"}, {family: "Kaskasoli", given: "Alex"}, {family: "Stanforth", given: "Robert"}, {family: "Matejovicova", given: "Tatiana"}, {family: "Hayes", given: "Jamie"}, {family: "Vyas", given: "Nidhi"}, {family: "Al Merey", given: "Majd"}, {family: "Brown-Cohen", given: "Jonah"}, {family: "Bunel", given: "Rudy"}, {family: "Balle", given: "Borja"}, {family: "Cemgil", given: "Taylan"}, {family: "Ahmed", given: "Zahra"}, {family: "Stacpoole", given: "Kitty"}, {family: "Shumailov", given: "Ilia"}, {family: "Baetu", given: "Ciprian"}, {family: "Gowal", given: "Sven"}, {family: "Hassabis", given: "Demis"}, {family: "Kohli", given: "Pushmeet"}]
+    container-title: "Nature"
+    volume: "634"
+    issue: "8035"
+    page: "818-823"
+    DOI: "10.1038/s41586-024-08025-4"
+    issued: {date-parts: [[2024, 10, 23]]}
+    URL: "https://www.nature.com/articles/s41586-024-08025-4"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/08/16/entendendo-ia-watermark-da-anthropic (the post linked Google's SynthID page; the Nature paper is the primary source for SynthID-Text)"
+  - id: eu2024aiact
+    type: "webpage"
+    title: "Artificial Intelligence Act, Article 50: Transparency Obligations for Providers and Deployers of Certain AI Systems"
+    author: [{literal: "União Europeia"}]
+    container-title: "EU Artificial Intelligence Act"
+    issued: {date-parts: [[2024, 6, 13]]}
+    URL: "https://artificialintelligenceact.eu/article/50/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/08/16/entendendo-ia-watermark-da-anthropic"
+  - id: han2025synthid
+    type: "article"
+    title: "Robustness Assessment and Enhancement of Text Watermarking for Google's SynthID"
+    author: [{family: "Han", given: "Xia"}, {family: "Li", given: "Qi"}, {family: "Ni", given: "Jianbing"}, {family: "Zulkernine", given: "Mohammad"}]
+    container-title: "arXiv"
+    number: "arXiv:2508.20228"
+    DOI: "10.48550/arXiv.2508.20228"
+    issued: {date-parts: [[2025, 8, 27]]}
+    URL: "https://arxiv.org/abs/2508.20228"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/08/16/entendendo-ia-watermark-da-anthropic"
+  - id: openai2023classifier
+    type: "webpage"
+    title: "New AI classifier for indicating AI-written text"
+    author: [{literal: "OpenAI"}]
+    container-title: "OpenAI"
+    issued: {date-parts: [[2023, 1, 31]]}
+    URL: "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (ch04, not in the posts). Note added to the page: 'As of July 20, 2023, the AI Classifier is no longer available due to its low rate of accuracy.' Verified via secondary coverage (Inquirer Technology, 2023-07-26); the OpenAI page returned 403 to the fetcher."

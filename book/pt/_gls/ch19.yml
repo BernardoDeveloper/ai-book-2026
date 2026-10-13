@@ -1,0 +1,28 @@
+spec-driven:
+  term: Spec-driven development
+  long: Desenvolvimento guiado por especificação
+  def: Jeito de usar agentes de programação em que se escreve primeiro um documento detalhado (escopo, casos de uso, critérios de aceite, restrições) e só depois se entrega ao agente pra implementar.
+po:
+  term: PO
+  long: Product Owner
+  def: Dono do produto. A pessoa que, numa equipe de software, decide o que deve ser feito e em que ordem, a partir do objetivo do negócio.
+qa:
+  term: QA
+  long: Quality Assurance
+  def: Garantia de qualidade. A função, ou a pessoa, responsável por testar o software e transformar o comportamento esperado em verificações, de preferência automáticas.
+feature-flag:
+  term: Feature flag
+  def: Uma chave no software que liga ou desliga uma novidade sem instalar outra versão, permitindo mostrar a mudança primeiro só pra uma parte dos usuários e desligar na hora se algo der errado.
+staging:
+  term: Staging
+  def: Uma cópia do sistema de produção, com a mesma configuração, onde as mudanças passam e são testadas antes de chegar a qualquer cliente de verdade.
+rollback:
+  term: Rollback
+  def: Voltar o sistema à versão anterior quando uma mudança recém-colocada no ar dá problema. Desfaz o código, mas não desfaz o que a versão errada já fez no mundo, como um pagamento processado.
+binario:
+  term: Binário
+  def: O arquivo de um programa já compilado, pronto pra o computador executar. Guarda as instruções de máquina, mas perde os nomes, comentários e a organização do código-fonte original.
+saas:
+  term: SaaS
+  long: Software as a Service
+  def: Software vendido como serviço, que roda nos servidores do fornecedor e é usado pelo navegador ou por um aplicativo, mediante assinatura. O código que importa nunca chega à máquina do cliente.

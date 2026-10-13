@@ -1,0 +1,32 @@
+id: "2026/03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle"
+source_sha256: "e49efc523ff9ac45199c8cef4b32957df1f8bc6d2ea7bed885ed0255455e2848"
+title_en: "Porting 10 Thousand Lines of Python to Crystal with Claude (easy-subtitle)"
+ai_relevance: substantial
+ai_relevance_reason: "Claude does the whole port; the post's argument is that AI collapses the cost of rewriting software."
+genre: project-log
+themes: [vibe-coding-practice, programming-languages, coding-agents-tools, software-engineering-discipline]
+thesis: "When an AI can port a 10,000-line project in under 40 minutes, the cost calculus of rewriting software changes, and the old rule against porting 'just because' needs rethinking."
+summary: "To avoid the Python dependency burden of an open source subtitle automation tool (Subservient), Akita asked Claude to analyze it and produce a feature-parity port in Crystal, after specifying design decisions: use a standalone Rust sync binary, subcommands instead of menus, and YAML instead of INI. Five commits in under 40 minutes yielded 2,516 lines in 42 files plus 76 tests (the original had none), a 6 MB static binary with no runtime dependencies, CI releases and a Homebrew formula. The original was 10,220 lines in 6 monolithic files. He notes the line-count difference is partly due to restructuring, not only Crystal. He admits the experiment made him reconsider his long-held view that porting for language fetishism is a waste, because the barrier fell so low. The port is GPL-3.0 like the original."
+key_claims:
+  - claim: "Claude produced a feature-parity port (2,516 lines, 76 tests) of a 10,220-line Python project in under 40 minutes."
+    time_sensitive: true
+  - claim: "The port includes tests that the original lacked, and better module separation, not a mechanical translation."
+    time_sensitive: false
+  - claim: "When porting cost drops from weeks to under an hour, the argument against rewriting changes."
+    time_sensitive: true
+  - claim: "Human design choices (replace ffsubsync with alass, subcommands, YAML) were specified up front."
+    time_sensitive: false
+fears_addressed: ["What can AI actually do with existing code?"]
+reader_value: "low to moderate. The takeaway that AI makes rewriting cheap is useful, but the post is tool-specific."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep: ["Human specifies design decisions, AI executes a 10k-line port in under 40 minutes", "Rethinking 'never rewrite' when cost collapses"]
+  cut: ["Architecture module list", "Fiber/channel code", "Subtitle workflow and install steps"]
+jargon: ["port", "feature parity", "static binary", "dependency", "CI", "rate limiting", "open source licence (GPL)"]
+illustration_ideas: ["Cost of a rewrite before and after AI: weeks versus minutes"]
+people_events: ["Subservient (open source Python tool)", "OpenSubtitles", "alass", "Claude"]
+related_posts: ["2026/03/07/crystal-e-um-wrapper-inteligente-pro-ffmpeg-feito-em-3-horas-easy-ffmpeg"]
+prerequisites: []
+series: "crystal-cli-tools"
+obsolescence: "40-minute figure and Claude version are snapshot data; no later post superseding it is named in the text."

@@ -1,0 +1,15 @@
+notes:
+  - "apA reuses chapter citation keys only (no _refs/apA.yaml). Pre-2026 rows use year-only where the chapter gives only the year (Kaplan, GPT-3, Chinchilla, GPT-4 report), per 'every date must match the chapter'."
+  - "2026 entries are short paragraphs with a bold date and one provenance marker each (tables can't carry per-row markers). Dates follow the chapters: Mythos 7 Apr, IPO filings 1 and 8 Jun, Fable 5 9 Jun, export order 12 Jun / back 1 Jul, Astra early Sep (ch14 '3 days before' Huang's 6 Sep post), Navier-Stokes 8 Sep, Tao 11 Sep, Amodei essay 12 Sep, Jev 15 Sep, Clef 1 Oct (all ch14)."
+  - "CONFLICT ch16/ch19 (Bun rewrite): ch16 says Jarred Sumner published the Zig-to-Rust account on 8 July 2026 (about 11 days of work); ch19 line ~313 says 'Em maio de 2026, ... reescreveu tudo'. apA dates the publication (8 July, @sec-ch16/@sec-ch19). Integration should check the rewrite month in ch19 against sumner2026bun."
+  - "ch03 harness ablation told in apA as concrete numbers (MiniMax M3 24->91, Grok 4.3 57->18) without model names, end of July, per ch03."
+  - "Classifier entry (12 Oct) and synthesis entry are separate: ch20 dates the synthesis only as 'outubro'; the post date 12 Oct is not used for it."
+integration:
+  - "Bun: ch16 (8 Jul publication, work done in May) and ch19 ('Em maio de 2026 ... em julho publicou') are now reconciled; apA's '8 de julho' entry (publication) is consistent, unchanged."
+  - "Zig chat 'Começo de janeiro': added @sec-ch05 (only ch05 gives 'começo de janeiro')."
+  - "10 Oct deletion: 'os snapshots trazem tudo de volta' -> snapshot restored the 11 albums with no other copy (ch15: 58 of 69 had copies)."
+  - "Frank GO 'cinco dias depois' pointer: added @sec-interlude2 (ch15 has only 'em julho')."
+  - "End-September benchmark entry: dropped 'e luna' (GPT 6 luna not in ch11/ch20)."
+  - "Blog translation: 'no aniversário, metade bilíngue' -> half bilingual when the anniversary post went out on 9 April (interlude1)."
+  - "Fable 5 entry: 'empata com o Opus 4.8, 94 a 95' (ch14)."
+  - "Open: METR task-length row dated 2025 only via the citation year (chapters give no year); '14 de maio' is the day of the boletim question (ch10 says 'meados de maio' for the end). Acquisition of Bun cited with two keys (sumner2025anthropic in ch16/apA, anthropic2025bun in ch19)."

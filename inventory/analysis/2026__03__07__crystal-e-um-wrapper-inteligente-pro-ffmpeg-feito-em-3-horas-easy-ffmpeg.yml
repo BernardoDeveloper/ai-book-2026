@@ -1,0 +1,28 @@
+id: "2026/03/07/crystal-e-um-wrapper-inteligente-pro-ffmpeg-feito-em-3-horas-easy-ffmpeg"
+source_sha256: "293a67a39837b1fe385064c172587b4d79f9c8f2234620e1e5a0f99d53eccb6e"
+title_en: "Crystal and a Smart FFmpeg Wrapper Built in 3 Hours (easy-ffmpeg)"
+ai_relevance: tangential
+ai_relevance_reason: "Tagged vibe-coding and built in 3 hours, but the post itself is about FFmpeg ergonomics and the Crystal language; AI is barely discussed."
+genre: project-log
+themes: [programming-languages, vibe-coding-practice, non-ai]
+thesis: "FFmpeg flags are painful; a small Crystal CLI with presets and an interactive mode fixes that, and Crystal is a good fit for static-binary CLIs compared with Go and Rust."
+summary: "Akita wraps FFmpeg in a command-line tool called easy-ffmpeg that probes input files, checks codec compatibility with the target container, and decides what can be copied without re-encoding. It offers presets, trimming, scaling, aspect ratio, image-sequence to video, a dry-run mode and an interactive terminal menu with fuzzy file search. He compares Crystal (Ruby-like syntax, static typing, fibers and channels, static binaries) to Go (verbose, deliberately simple) and Rust (better for systems code, overkill here). The whole tool was built in about 3 hours in a single afternoon: 2,342 lines, 10 commits, with CI building static binaries for Linux and macOS. The AI role is only implied by the vibe-coding tag."
+key_claims:
+  - claim: "A 2,342-line Crystal CLI with presets, interactive mode and cross-platform static binaries was built in about 3 hours."
+    time_sensitive: true
+  - claim: "Crystal gives static native binaries with Ruby-like ergonomics, and for a CLI it is preferable to Rust."
+    time_sensitive: false
+fears_addressed: []
+reader_value: "low. Niche command-line tooling and language comparison; only marginal evidence of AI speed."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep: ["FFmpeg flag incantations copied from Stack Overflow as an everyday pain point"]
+  cut: ["Everything else: CLI usage, language comparison, CI/CD"]
+jargon: ["FFmpeg", "CLI", "codec", "static binary", "garbage collector"]
+illustration_ideas: []
+people_events: ["FFmpeg", "Crystal language"]
+related_posts: ["2026/03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle"]
+prerequisites: []
+series: "crystal-cli-tools"
+obsolescence: "Version-specific build and tool details only; low risk."

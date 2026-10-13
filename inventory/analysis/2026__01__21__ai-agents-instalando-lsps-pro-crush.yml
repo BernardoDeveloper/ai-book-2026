@@ -1,0 +1,29 @@
+id: "2026/01/21/ai-agents-instalando-lsps-pro-crush"
+source_sha256: "299dda83f6d16859cb9cd17c9498a51185256f3411b34a7e740ba3a36b081fe5"
+title_en: "AI Agents: Installing LSPs for Crush"
+ai_relevance: substantial
+ai_relevance_reason: "Configuration notes for a coding agent (Crush); AI is the context but the content is config files and install scripts."
+genre: tutorial
+themes: [coding-agents-tools, non-ai]
+thesis: "Documentation for himself: configure Crush with providers and install language servers (LSPs) so the agent gets more code context."
+summary: "A personal reference post. Akita shows his Crush configuration (OpenRouter as default provider with Claude Opus 4.5, plus LM Studio and Ollama providers for local open-source models) and a long script that installs language servers for the languages he has set up with Mise on Arch Linux. He says he does not yet know how much LSPs help the agent, and that Claude Code, OpenCode and Crush are all about equally good, with his preference for Crush being aesthetic."
+key_claims:
+  - claim: "OpenCode and Crush support Language Servers (LSPs), which give an agent code-aware context, but the author is unsure how much difference it makes."
+    time_sensitive: false
+  - claim: "Claude Code, OpenCode and Crush are 'equally good'; his preference is cosmetic."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Install scripts and config; no conceptual content for a lay reader beyond what an LSP is."
+technical_depth: 5
+evergreen: 1
+book_use:
+  keep: []
+  cut: ["Entire post: crush.json (about 200 lines) and the LSP install script (about 500 lines)"]
+jargon: [LSP, language server, provider, OpenRouter, local model]
+illustration_ideas: []
+people_events: ["Charm (Crush)"]
+related_posts:
+  - "2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush"
+prerequisites: []
+series: ""
+obsolescence: "Crush config schema, LSP package names and Arch-specific install steps will drift quickly."

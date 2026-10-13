@@ -1,0 +1,20 @@
+---
+id: ch05-iceberg
+kind: chart_code
+file: assets/figures/ch05-iceberg.png
+sha256: 13b78a06dc336183968afbaf2c8a03229c1e4bc727b0370c03345d8813bf5978
+source: assets/charts/ch05-iceberg.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I assets/charts/ch05-iceberg.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+chapters:
+- 5
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

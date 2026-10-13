@@ -1,0 +1,65 @@
+references:
+  - id: prefeiturario2026rio3open
+    type: "webpage"
+    title: "Prefeitura do Rio anuncia projetos de inovação que serão testados na cidade"
+    author: [{literal: "Prefeitura da Cidade do Rio de Janeiro"}]
+    container-title: "Prefeitura do Rio"
+    issued: {date-parts: [[2026, 4, 2]]}
+    URL: "https://prefeitura.rio/cidade/prefeitura-do-rio-anuncia-projetos-de-inovacao-que-serao-testados-na-cidade/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/15/controversia-llm-rio-3-5-plagio"
+  - id: prefeiturario2026rio35
+    type: "webpage"
+    title: "Rio-3.5-Open-397B"
+    author: [{literal: "Prefeitura da Cidade do Rio de Janeiro"}]
+    container-title: "Hugging Face"
+    issued: {date-parts: [[2026, 6, 11]]}
+    URL: "https://huggingface.co/prefeitura-rio/Rio-3.5-Open-397B"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/15/controversia-llm-rio-3-5-plagio (October status re-checked online at drafting)"
+  - id: nexagi2026issue4
+    type: "webpage"
+    title: "Rio-3.5-Open-397B ≈ 0.6 x Nex-N2_pro + 0.4 x Qwen (issue #4)"
+    author: [{literal: "Nex AGI"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 6, 14]]}
+    URL: "https://github.com/nex-agi/Nex-N2/issues/4"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/15/controversia-llm-rio-3-5-plagio"
+  - id: apache2004license
+    type: "webpage"
+    title: "Apache License, Version 2.0"
+    author: [{literal: "The Apache Software Foundation"}]
+    container-title: "The Apache Software Foundation"
+    issued: {date-parts: [[2004, 1]]}
+    URL: "https://www.apache.org/licenses/LICENSE-2.0.txt"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/15/controversia-llm-rio-3-5-plagio"
+  - id: anthropic2026threat
+    type: "report"
+    title: "Detecting and countering misuse of AI: September 2026"
+    author: [{literal: "Anthropic"}]
+    publisher: "Anthropic"
+    publisher-place: "San Francisco"
+    issued: {date-parts: [[2026, 9, 10]]}
+    URL: "https://www.anthropic.com/threat-intelligence-report-september-2026"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2 (the post cites the Bloomberg coverage without a link; primary report verified online)"
+  - id: luavision2026empresa
+    type: "webpage"
+    title: "Empresa"
+    author: [{literal: "LUA Vision"}]
+    container-title: "LUA Vision"
+    issued: {date-parts: [[2026]]}
+    URL: "https://lua.vision/empresa/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro"
+  - id: livebench2026issue370
+    type: "webpage"
+    title: "Add: Lua Genesys - Natural Intelligence Model (LUA Vision — Proprietary LLM) (issue #370)"
+    author: [{literal: "LiveBench"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 3, 22]]}
+    URL: "https://github.com/LiveBench/LiveBench/issues/370"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro"

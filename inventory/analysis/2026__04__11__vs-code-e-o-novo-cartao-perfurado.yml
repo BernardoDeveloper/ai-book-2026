@@ -1,0 +1,51 @@
+id: "2026/04/11/vs-code-e-o-novo-cartao-perfurado"
+source_sha256: "1fd3ad1e7cb92b4531666f44a3df805498aa5b6e4e58ef0b07ea31c3ad85ceae"
+title_en: "VS Code Is the New Punch Card"
+ai_relevance: core
+ai_relevance_reason: "The whole post argues how coding agents change what programming is and what juniors must learn."
+genre: opinion
+themes: [jobs-and-careers, software-engineering-discipline, coding-agents-tools, vibe-coding-practice]
+thesis: "Typing code by hand is the modern punch card: an input mechanism being displaced by agents, while the real discipline of software engineering (fundamentals, judgment) matters more, not less."
+summary: "Akita says people asking whether juniors will stop learning to program confuse code input with software engineering. He walks through earlier eras (switches, punch cards, Assembly, compilers, the web's markup grind) to show interfaces change while the machine still demands precision. He blames the 2010s hiring bubble and bootcamps for a flood of weak programmers and says the 2022 layoffs were predicted. In his view the turning point for usable coding agents was late 2025 (better models, prompt caching, tool calling, agent interfaces), and Claude Code is now his terminal. He urges treating the agent as a pair programmer while acting as tech lead, avoiding both blind trust and nitpicking, and relying on XP practices (tests, CI, refactoring). Without fundamentals, a junior just outsources ignorance and approves patches they cannot judge, such as a query that works on 300 fake rows and melts at a million. He dismisses sustainability worries as unactionable and says he exploits subsidized pricing while it lasts. He closes that AI reflects who you are: it accelerates good code or technical debt."
+key_claims:
+  - claim: "Typing code is not software engineering; as tooling changes, fundamentals (domain modeling, architecture, performance, security, trade-offs) remain the core skill."
+    time_sensitive: false
+  - claim: "Coding agents became real work tools only around late 2025, not in 2023-2024 when hallucination, context loss and cost made them unreliable."
+    time_sensitive: true
+  - claim: "Juniors using agents without fundamentals will outsource their ignorance and become unable to review; those with fundamentals will learn faster."
+    time_sensitive: false
+  - claim: "AI does not turn bad programmers into good ones; it accelerates whatever quality (or technical debt) is already there."
+    time_sensitive: false
+  - claim: "The right balance is neither blind trust nor nitpicking; XP practices (tests, CI, small changes) sustain speed with agents."
+    time_sensitive: false
+  - claim: "AI companies are currently subsidizing usage; individuals cannot act on sustainability concerns so should use it while the window is open."
+    time_sensitive: true
+fears_addressed:
+  - "Will AI replace programmers?"
+  - "Should juniors still learn computer science?"
+  - "Is AI usage sustainable or a bubble about to burst?"
+reader_value: "A direct answer to the job-loss fear from a veteran: the typing is being automated, the judgment is not; it also warns that AI magnifies skill and ignorance alike. The historical punch card analogy is easy to carry to lay readers."
+technical_depth: 2
+evergreen: 4
+book_use:
+  keep:
+    - "Punch card analogy: input mechanisms change, engineering stays"
+    - "Query works on 300 fake rows and fails on a million: why fundamentals matter"
+    - "Exoskeleton versus crutch"
+    - "AI reflects who you are"
+    - "Tech lead role versus digitador (typist)"
+  cut:
+    - "Embedded video references and Akitando plugs"
+    - "Rant on bootcamp bubble details"
+jargon: [LLM, coding agent, Claude Code, prompt caching, tool calling, XP (extreme programming), technical debt, CRUD, CI]
+illustration_ideas:
+  - "Timeline of input interfaces: switches, punch cards, assembly, compilers, frameworks, agents"
+  - "Layers of work: what agents absorb versus what remains human judgment"
+people_events:
+  - "LGP-21 and Altair 8800 as historical machines"
+  - "2022 tech layoffs"
+  - "Akitando channel"
+related_posts: ["2026/02/08/rant-ia-acabou-com-programadores", "2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio", "2026/03/31/migrando-meu-home-server-com-claude-code", "2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia", "2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito"]
+prerequisites: ["What a coding agent is", "Basic idea of what programmers do"]
+series: "agile-vibe-coding"
+obsolescence: "The claim that late 2025 was the inflection and the subsidy/pricing remarks are April 2026 views; the argument about fundamentals is durable."

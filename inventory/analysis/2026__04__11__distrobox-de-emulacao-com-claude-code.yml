@@ -1,0 +1,43 @@
+id: "2026/04/11/distrobox-de-emulacao-com-claude-code"
+source_sha256: "85d53244aee32f2d111ed9392811454ae17326831552f48bc3f7d910db26e59c"
+title_en: "Emulation Distrobox with Claude Code"
+ai_relevance: substantial
+ai_relevance_reason: "Mostly a retro-gaming emulation setup, but its framing and method section are about using Claude Code as an infrastructure assistant."
+genre: project-log
+themes: [coding-agents-tools, vibe-coding-practice, non-ai]
+thesis: "A coding agent removes the drudgery of configuring a dozen emulators, so the author can describe goals, supervise as a tech lead, and end up with a reproducible Ansible-based setup."
+summary: "Akita, a lifelong retro gamer, was tired of redoing emulator setup on every new machine. He built an Arch Linux Distrobox called gaming (container sharing the host GPU, audio and USB) provisioned by 17 Ansible roles, covering 12 platforms from PS1 to Xbox 360 plus Steam, with per-game tuning, DLC and update checkers. He explains why he rejected Nix and Flatpak. The AI part: he gave Claude Code short goal-level prompts and let it find paths, config formats and commands, asking it to document everything, then had it rewrite the prompts into an organized document afterwards. He says the real gain is not typing rare commands and working through conversation, as a tech lead who reviews and corrects. He ends with five tips: start from the goal, ask for documentation, work in phases, ask for objective checks, and do not use the agent as a command parrot. He does not distribute ROMs or keys. Most of the post is emulator-specific detail."
+key_claims:
+  - claim: "Describing the goal and letting a coding agent discover paths, formats and commands is far less tiring than doing manual configuration."
+    time_sensitive: false
+  - claim: "Agents lower the entry barrier to desktop Linux because the tuning curve was historically the main obstacle."
+    time_sensitive: false
+  - claim: "He is comfortable using Claude Code as infrastructure assistant on personal, destroyable machines, but would not do it blindly on a client's server."
+    time_sensitive: false
+  - claim: "Ask the agent to document what it does and verify objectively, working in phases."
+    time_sensitive: false
+fears_addressed:
+  - "Do I need to be an expert to configure complex software?"
+  - "Does using an AI agent mean losing control of my own machine?"
+reader_value: "low. A short slice about delegating tedious setup to an agent while staying responsible is useful, but most of the post is niche emulator configuration."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Describe the goal, not the command; stay in the tech lead role"
+    - "Ask the agent to document what it did so the work is reproducible"
+    - "Lower barrier to Linux through agents"
+  cut:
+    - "All emulator-by-emulator tuning details"
+    - "Nix versus Ansible versus Flatpak comparison"
+    - "Install commands"
+jargon: [Claude Code, coding agent, prompt, container, Distrobox, Ansible, GPU passthrough, emulator]
+illustration_ideas:
+  - "Human as tech lead: goal, agent works, human reviews and redirects"
+people_events:
+  - "Valve Proton"
+  - "EmuDeck"
+related_posts: ["2026/03/31/migrando-meu-home-server-com-claude-code", "2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus"]
+prerequisites: ["What a coding agent is"]
+series: "distrobox-gaming"
+obsolescence: "Emulator versions, patch ceilings and per-game fixes change monthly; the method advice is durable."

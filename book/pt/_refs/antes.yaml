@@ -1,0 +1,145 @@
+references:
+  # Tier 1: no math
+  - id: lee2024modelos
+    type: "webpage"
+    title: "Grandes modelos de linguagem, explicados com o mínimo de matemática e jargão"
+    author: [{family: "Lee", given: "Timothy B."}, {family: "Trott", given: "Sean"}]
+    translator: [{family: "Dutra", given: "Carlos"}]
+    container-title: "Understanding AI"
+    issued: {date-parts: [[2024, 4, 15]]}
+    URL: "https://www.understandingai.org/p/grandes-modelos-de-linguagem-explicados"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: leigo; gratuito; edição PT: sim, tradução PT-BR oficial no site dos autores (rev. Gabriel Adriano de Melo); original em inglês 'Large language models, explained with a minimum of math and jargon', 27 jul. 2023, https://www.understandingai.org/p/large-language-models-explained-with"
+  - id: mitchell2019guide
+    type: "book"
+    title: "Artificial Intelligence: A Guide for Thinking Humans"
+    author: [{family: "Mitchell", given: "Melanie"}]
+    publisher: "Farrar, Straus and Giroux"
+    publisher-place: "New York"
+    ISBN: "9780374257835"
+    issued: {date-parts: [[2019]]}
+    URL: "https://melaniemitchell.me/aibook/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: leigo; não gratuito; edição PT: nenhuma encontrada (traduções listadas pela autora: chinês, japonês, espanhol, francês, italiano, russo; em espanhol: 'Inteligencia artificial. Guía para seres pensantes', Capitán Swing, 2024)"
+  - id: wolfram2023chatgpt
+    type: "book"
+    title: "What Is ChatGPT Doing ... and Why Does It Work?"
+    author: [{family: "Wolfram", given: "Stephen"}]
+    publisher: "Wolfram Media"
+    publisher-place: "Champaign, IL"
+    ISBN: "9781579550813"
+    issued: {date-parts: [[2023, 3, 9]]}
+    URL: "https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: leigo; gratuito: o ensaio completo está no site do autor (14 fev. 2023); edição PT: sim, PT-PT, 'O Que Faz o ChatGPT e Como Funciona', Casa das Letras, ago. 2023, ISBN 9789896618315 (ebook 9789896618322); nenhuma edição brasileira encontrada"
+  - id: kelleher2019deep
+    type: "book"
+    title: "Deep Learning"
+    author: [{family: "Kelleher", given: "John D."}]
+    collection-title: "The MIT Press Essential Knowledge Series"
+    publisher: "MIT Press"
+    publisher-place: "Cambridge, MA"
+    ISBN: "9780262537551"
+    issued: {date-parts: [[2019]]}
+    URL: "https://mitpress.mit.edu/9780262537551/deep-learning/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: leigo/intermediário; não gratuito; edição PT: nenhuma encontrada"
+  # Tier 2: some math, free
+  - id: nielsen2015neural
+    type: "book"
+    title: "Neural Networks and Deep Learning"
+    author: [{family: "Nielsen", given: "Michael A."}]
+    publisher: "Determination Press"
+    issued: {date-parts: [[2015]]}
+    URL: "http://neuralnetworksanddeeplearning.com/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: intermediário; gratuito (CC BY-NC 3.0, última atualização dez. 2019); edição PT: nenhuma encontrada"
+  - id: fleuret2023little
+    type: "book"
+    title: "The Little Book of Deep Learning"
+    author: [{family: "Fleuret", given: "François"}]
+    version: "1.3 (2026-05-12)"
+    issued: {date-parts: [[2023]]}
+    URL: "https://fleuret.org/francois/lbdl.html"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: intermediário; gratuito: PDF em https://fleuret.org/public/lbdl.pdf (CC BY-NC-SA 4.0; impresso barato via Lulu); edição PT: nenhuma encontrada"
+  - id: prince2023understanding
+    type: "book"
+    title: "Understanding Deep Learning"
+    author: [{family: "Prince", given: "Simon J. D."}]
+    publisher: "MIT Press"
+    publisher-place: "Cambridge, MA"
+    ISBN: "9780262048644"
+    issued: {date-parts: [[2023]]}
+    URL: "https://udlbook.github.io/udlbook/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: intermediário/técnico; gratuito: PDF no site do livro (CC BY-NC-ND; versão 5.0.3, 9 fev. 2026); edição PT: nenhuma encontrada"
+  # Tier 3: hands-on
+  - id: raschka2024build
+    type: "book"
+    title: "Build a Large Language Model (From Scratch)"
+    author: [{family: "Raschka", given: "Sebastian"}]
+    publisher: "Manning"
+    publisher-place: "Shelter Island, NY"
+    ISBN: "9781633437166"
+    issued: {date-parts: [[2024, 9]]}
+    URL: "https://www.manning.com/books/build-a-large-language-model-from-scratch"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: técnico (Python); não gratuito (código livre em https://github.com/rasbt/LLMs-from-scratch); edição PT: nenhuma encontrada (a Manning lista 9 traduções, nenhuma em português)"
+  - id: alammar2024handson
+    type: "book"
+    title: "Hands-On Large Language Models: Language Understanding and Generation"
+    author: [{family: "Alammar", given: "Jay"}, {family: "Grootendorst", given: "Maarten"}]
+    publisher: "O'Reilly Media"
+    publisher-place: "Sebastopol, CA"
+    ISBN: "9781098150969"
+    issued: {date-parts: [[2024, 9]]}
+    URL: "https://www.oreilly.com/library/view/hands-on-large-language/9781098150952/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: técnico (Python); não gratuito; edição PT: sim, tradução assistida por IA, 'Modelos de linguagem grandes e práticos', O'Reilly Media, mar. 2025, https://www.oreilly.com/library/view/modelos-de-linguagem/9798341637504/ (plataforma O'Reilly por assinatura; sem edição impressa brasileira encontrada)"
+  # Companions
+  - id: sanderson2017neural
+    type: "motion_picture"
+    title: "Neural networks"
+    author: [{family: "Sanderson", given: "Grant"}]
+    container-title: "YouTube"
+    issued: {date-parts: [[2017, 10, 5]]}
+    URL: "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: leigo/intermediário; gratuito; série de 2017 a 2024 (cap. 5 transformers 1 abr. 2024, cap. 6 atenção 7 abr. 2024; 'Large Language Models explained briefly' 20 nov. 2024, https://www.youtube.com/watch?v=LPZh9BOjkQs); PT: áudio dublado PT-BR no cap. 5 e no 'explained briefly', legendas PT-BR no cap. 1"
+  - id: karpathy2023intro
+    type: "motion_picture"
+    title: "[1hr Talk] Intro to Large Language Models"
+    author: [{family: "Karpathy", given: "Andrej"}]
+    container-title: "YouTube"
+    issued: {date-parts: [[2023, 11, 22]]}
+    URL: "https://www.youtube.com/watch?v=zjkBMFhNj_g"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: leigo; gratuito; PT: só legendas automáticas"
+  - id: karpathy2025deepdive
+    type: "motion_picture"
+    title: "Deep Dive into LLMs like ChatGPT"
+    author: [{family: "Karpathy", given: "Andrej"}]
+    container-title: "YouTube"
+    issued: {date-parts: [[2025, 2, 5]]}
+    URL: "https://www.youtube.com/watch?v=7xTGNNLPyMI"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: leigo; gratuito; cobre pré-treino, ajuste fino e RLHF para público geral; PT: só legendas automáticas"
+  - id: karpathy2022zerotohero
+    type: "motion_picture"
+    title: "Neural Networks: Zero to Hero"
+    author: [{family: "Karpathy", given: "Andrej"}]
+    container-title: "karpathy.ai"
+    issued: {date-parts: [[2022, 8, 16]]}
+    URL: "https://karpathy.ai/zero-to-hero.html"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: técnico (Python, derivadas); gratuito; playlist https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ; PT: nenhuma versão"
+  - id: alammar2018illustrated
+    type: "post-weblog"
+    title: "The Illustrated Transformer"
+    author: [{family: "Alammar", given: "Jay"}]
+    container-title: "Jay Alammar's blog"
+    issued: {date-parts: [[2018, 6, 27]]}
+    URL: "https://jalammar.github.io/illustrated-transformer/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: antes (leituras prévias); nível: intermediário; gratuito; PT: nenhuma tradução listada (há 11 outros idiomas); versão atualizada no cap. 3 de alammar2024handson"

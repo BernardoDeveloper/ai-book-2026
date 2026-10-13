@@ -1,0 +1,28 @@
+root:
+  term: Root
+  def: A conta de administrador em sistemas como Linux e macOS. Pode ler, alterar e apagar qualquer coisa, inclusive o próprio sistema.
+modo-yolo:
+  term: Modo YOLO
+  long: You only live once
+  def: Configuração em que o agente de IA executa qualquer comando sem pedir confirmação a cada passo. Economiza paciência e tira a última trava antes de um erro.
+ataque-cadeia-de-suprimentos:
+  term: Ataque de cadeia de suprimentos
+  long: Supply-chain attack
+  def: Invasão de uma biblioteca ou ferramenta de terceiros usada por muitos projetos, para que o código malicioso chegue a todos que a instalam.
+maquina-virtual:
+  term: Máquina virtual
+  long: VM
+  def: Um computador inteiro simulado por software dentro de outro. O que roda lá dentro fica separado do sistema real, e a máquina pode ser jogada fora depois.
+conteiner:
+  term: Contêiner
+  long: Container
+  def: Um ambiente isolado e leve onde um programa roda junto com as dependências dele, sem misturar com o resto do sistema. Docker e Podman são as ferramentas mais conhecidas.
+copy-on-write:
+  term: Copy-on-write
+  def: Técnica de sistemas de arquivos que nunca sobrescreve um dado no lugar; grava a versão nova em outro canto do disco. É o que torna snapshots instantâneos e quase gratuitos.
+backup:
+  term: Backup
+  def: Uma cópia dos seus dados guardada em outro aparelho ou lugar, para recuperar o que se perdeu. Só vale se for testado e se não morar no mesmo disco que o original.
+producao:
+  term: Produção
+  def: O sistema de verdade, que atende usuários e clientes. O oposto dos ambientes de desenvolvimento e de teste, onde errar é barato.

@@ -1,0 +1,55 @@
+id: "2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior"
+source_sha256: "0c064de942568d0b2b29ff979ee157d364b94817d2374aa5937bee377402daa5"
+title_en: "LLM benchmark: should I use the one with the highest score?"
+ai_relevance: core
+ai_relevance_reason: "Explains how to read LLM benchmark rankings critically; AI evaluation is the subject."
+genre: essay
+themes: [benchmarks-model-comparison, hype-and-marketing, limits-of-llms, coding-agents-tools]
+thesis: "A benchmark's first place is not the best model; the score belongs to one generated project under one prompt, harness and rubric, so read the top (90+) as a cluster and never outsource a technical decision to a table, including this one."
+summary: "Readers keep asking why Opus 4.7 ranks above 4.8 or GPT 5.4 above 5.6. Akita answers that the table is simply sorted by a score column, and the score grades a project, not the model's total intelligence. A result is model plus prompt plus harness plus context plus tools plus snapshot plus execution plus audit. LLMs are non-deterministic: the same model re-run scored 94 then 93, and the same family scored 69 or 89 depending on harness. Above 90 the models are saturating a small greenfield task, so ordering is decided by small details such as a missing API-key guard or cookie cap. Tier A versus Tier C is a meaningful gap, 97 versus 95 is not. He also admits his own audits have bugs: GPT 5.5 dropped from 96 to 85 after a re-audit with no change to the model. He recommends using rankings to discard bad groups, find candidate clusters, and read defects, then to run your own test on your own work."
+key_claims:
+  - claim: "The benchmark score evaluates the generated project, not the model's overall capability; the result depends on model, prompt, harness, context, tools, snapshot, execution and audit."
+    time_sensitive: false
+  - claim: "LLMs are non-deterministic; re-running the same model changes results (Fable 5 scored 94 then 93 on the same model ID)."
+    time_sensitive: true
+  - claim: "Models scoring above 90 should be read as one cluster; the Tier A to Tier C gap is meaningful, the gap between 97 and 95 is not."
+    time_sensitive: true
+  - claim: "Harness can swing scores a lot (DeepSeek V4 Pro 69 vs 89; Kimi K2.7 86 vs about 68)."
+    time_sensitive: true
+  - claim: "The author's own auditing improved over time, changing scores with no change to the model or project (GPT 5.5 from 96 to 85)."
+    time_sensitive: true
+  - claim: "A newer GPT version used far fewer tokens than 5.4 and cost less per run despite a higher per-token price."
+    time_sensitive: true
+  - claim: "No benchmark yields 'the best LLM' in absolute terms; do your own test with your own tasks."
+    time_sensitive: false
+fears_addressed:
+  - "Which AI should I trust or buy based on a leaderboard?"
+  - "Are benchmark numbers marketing?"
+  - "Is one model objectively smarter than the rest?"
+reader_value: "High. A plain-language lesson in reading AI rankings: one number, one test, noise, and no objective 'smartest model'. Works against hype from either direction."
+technical_depth: 2
+evergreen: 4
+book_use:
+  keep:
+    - "Formula result = model + prompt + harness + context + tools + snapshot + execution + audit"
+    - "Same model, two runs, 94 vs 93: a point of score is noise"
+    - "Author admits his own audit errors; 'do not trust benchmarks, influencers, or me'"
+    - "Cluster versus podium reading; ceiling effect on small tasks"
+  cut:
+    - "Per-model defect lists (cookie cap, Dockerfile root), token/price tables"
+jargon: [LLM, benchmark, harness, rubric, tier, non-deterministic, token, context window, compaction, snapshot, tool call, SWE-bench, Terminal-Bench, ceiling effect, cross-audit]
+illustration_ideas:
+  - "Stacked equation showing everything that goes into one benchmark score"
+  - "Scores of the same model over repeated runs as a spread of dots, versus a podium"
+  - "Ceiling effect: models saturating an easy test so ordering is decided by trivia"
+people_events:
+  - "Anthropic Opus 4.7/4.8 and Fable 5"
+  - "OpenAI GPT 5.4/5.5/5.6 Sol"
+  - "SWE-bench, Terminal-Bench"
+related_posts:
+  - "2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus"
+  - "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
+  - "2026/04/18/llm-benchmarks-parte-2-multiplos-modelos"
+prerequisites: ["What an LLM is", "What a coding agent harness is"]
+series: "llm-benchmark"
+obsolescence: "Specific scores and token costs are dated; the reading-benchmarks argument holds. Scores were later redone (see 2026/07/30 re-test post)."

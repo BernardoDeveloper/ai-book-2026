@@ -1,0 +1,25 @@
+---
+id: ch11-topo-agrupado
+kind: chart_code
+chapters:
+- 11
+editions:
+- pt
+- en
+file: assets/figures/ch11-topo-agrupado.png
+sha256: ff3964203824eeb2ab2a2c8b2edf711994f7eea95ad50723b9a46ae311c5cb6e
+pixels:
+  width: 2400
+  height: 1980
+source: assets/charts/ch11-topo-agrupado.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch11-topo-agrupado.py
+  pt
+description: 'ch11-topo-agrupado: the top of the v4 table is a cluster, not a ladder.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

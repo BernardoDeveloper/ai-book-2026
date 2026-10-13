@@ -1,0 +1,58 @@
+id: "2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar"
+source_sha256: "f4efb1344b38638f025ff0b617ac8ff0311ed4b0adaabf7b6ae8ed13a08526e8"
+title_en: "AI Agent Memory: Karpathy's LLM Wiki and agentmemory in Practice"
+ai_relevance: core
+ai_relevance_reason: "Explains how coding agents manage context and memory and how to extend it."
+genre: essay
+themes: [agent-memory-and-context, what-llms-are, coding-agents-tools, limits-of-llms]
+thesis: "An LLM has no persistent memory beyond its context window; agents manage this with compaction, which loses long-term detail, so durable memory means structured text files, ideally a Karpathy-style LLM Wiki, kept outside any one vendor."
+summary: "Akita explains that a language model only 'remembers' what fits in its context window, and that agents like Claude Code, Codex and opencode keep it from overflowing by compaction, summarizing the old conversation. Reading the real source of each, he compares them: Codex asks for a short handoff summary, opencode keeps an anchored summary that is updated and leaves recent turns verbatim, and Claude Code has three layers, including clearing old tool results after an hour and a nine-section summary that preserves every user message. He argues there is no vendor lock-in because agent memory is just text, so handoffs between agents work via a markdown file. The problem is that compaction deletes early details, so he has long forced agents to write to docs files. He then covers Karpathy's LLM Wiki (raw sources, LLM-maintained wiki pages, schema; ingest, query, lint), whose core claim is that knowledge should be compiled and compound rather than re-derived by retrieval each time. He tried agentmemory, an MCP server implementing that idea with tiered consolidation and hybrid search, but a May 23 update says he withdrew his recommendation after structural bugs and started his own tool, ai-memory. Conclusion: memory is text, and text needs management."
+key_claims:
+  - claim: "An LLM has no persistent memory; what it knows in a conversation is the tokens in its context window, resent in full each turn."
+    time_sensitive: false
+  - claim: "When context nears its limit, agents run an extra LLM call to summarize and discard raw history (compaction), which saves space but loses detail."
+    time_sensitive: false
+  - claim: "Claude Code, Codex and opencode implement compaction differently: Claude Code uses three layers and a nine-section summary preserving all user messages; Codex a short handoff; opencode an updatable anchored summary."
+    time_sensitive: true
+  - claim: "Agent memory is plain text, so there is no real vendor lock-in; context can be handed off between agents with a markdown file."
+    time_sensitive: false
+  - claim: "Early-session information is the first to be lost on compaction, so important decisions should be written to files."
+    time_sensitive: false
+  - claim: "Karpathy's LLM Wiki compiles knowledge into LLM-maintained markdown pages so knowledge compounds, unlike RAG which re-derives answers each query."
+    time_sensitive: true
+  - claim: "A larger context window does not mean it should be filled; fuller windows are slower, costlier and make agents worse at using relevant information."
+    time_sensitive: false
+  - claim: "The author withdrew his agentmemory recommendation on 2026-05-23 due to structural bugs and replaced it with his own ai-memory."
+    time_sensitive: true
+fears_addressed:
+  - "Why does my AI forget what we decided earlier?"
+  - "Am I locked into one AI company's tool?"
+  - "Does AI remember me between conversations?"
+reader_value: "High for lay readers on the conceptual first half: a clear explanation of why AI forgets, what a context window is, and how compaction works, with the reassurance that memory is just text. The tooling sections are for engineers."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep:
+    - "LLM has no memory; only the context window, resent every turn"
+    - "Compaction: summarizing the past loses the details first (early session fades)"
+    - "Memory is just text: no lock-in, handoff via a markdown file"
+    - "Karpathy's wiki idea: compile knowledge, let it compound, versus re-retrieving"
+    - "The analogy to human memory consolidation during sleep"
+  cut:
+    - "Source-code snippets of each agent's compaction thresholds"
+    - "agentmemory installation and MCP config"
+    - "Comparison table internals"
+jargon: [LLM, context window, token, compaction, handoff, MCP, hook, embedding, RAG, BM25, vector search, knowledge graph, prompt caching, vendor lock-in, agent harness, consolidation]
+illustration_ideas:
+  - "How a context window fills, then compaction replaces the old history with a summary"
+  - "Three-layer memory: context window, project docs files, external memory server"
+  - "LLM Wiki loop: raw sources, wiki pages, schema, ingest/query/lint"
+  - "Handoff between two agents via a markdown file"
+people_events:
+  - "Andrej Karpathy LLM Wiki gist (April 2026)"
+  - "Claude Code source leak (March 2026)"
+  - "agentmemory (Rohit Ghumare)"
+related_posts: ["2026/04/06/rag-esta-morto-contexto-longo", "2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory", "2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"]
+prerequisites: ["What an LLM is", "What a token is", "What a coding agent is"]
+series: "ai-memory"
+obsolescence: "Superseded in its tool recommendation by 2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory (agentmemory withdrawn, ai-memory instead). Compaction thresholds and agent implementations are May 2026 snapshots; the conceptual explanation remains valid."

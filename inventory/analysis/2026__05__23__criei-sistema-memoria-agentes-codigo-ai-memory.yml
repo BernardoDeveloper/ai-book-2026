@@ -1,0 +1,53 @@
+id: "2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory"
+source_sha256: "2a5277bea57d0bf92a002a4cee03ff4346308f18b1e8f06c018e874bfd8ce14a"
+title_en: "I Built a Memory System for Coding Agents: ai-memory"
+ai_relevance: core
+ai_relevance_reason: "Describes designing a persistent memory layer for LLM coding agents and why."
+genre: project-log
+themes: [agent-memory-and-context, coding-agents-tools, open-source-community, software-engineering-discipline]
+thesis: "Agent memory should be plain markdown plus a simple search index, captured automatically by hooks and shareable across different agents, instead of a complicated vector or graph stack."
+summary: "Five days after recommending agentmemory, Akita retracts after a week of real use: its architecture had structural bugs (index rebuilt on every restart, a data-loss window, wrong hook field on about 47 percent of Claude Code tool calls, config path confusion). He explains what he wanted: for anyone who uses a single agent, built-in compaction plus a docs folder is enough, but for people who bounce between Claude Code and Codex on the same project, an external memory that hands off context is valuable. Inspired by Karpathy's LLM Wiki line that a plain index works without embeddings, he built ai-memory in Rust: markdown on disk as the source of truth, SQLite full-text search as derived index, hooks capturing events automatically, an MCP server for queries, consolidation at session end into concept, decision, gotcha and rule pages, decay of unused memory like sleep consolidation, project isolation, a read-only web UI, and a bootstrap command for existing projects. He chooses Claude Haiku as the default consolidator after testing six providers (cheap and good at restraint), notes that a reasoning model (Kimi K2.6) was ineligible because it spent its token budget thinking. It is beta and needs users; install is three commands with Docker."
+key_claims:
+  - claim: "For a user of a single agent, built-in compaction plus a manually maintained docs folder is enough; external memory matters when switching between agents or returning after weeks."
+    time_sensitive: false
+  - claim: "Agent memory is text: store it as markdown in git, index it with SQLite FTS5, and avoid mandatory embeddings or vector databases."
+    time_sensitive: false
+  - claim: "Memory consolidation should be automatic and should forget unused information, modeled on how humans consolidate memory during sleep."
+    time_sensitive: false
+  - claim: "Consolidation (turning raw session notes into a few wiki pages) does not need a frontier model; a small cheap model such as Claude Haiku 4.5 performed best on restraint and classification."
+    time_sensitive: true
+  - claim: "A reasoning model can be unsuitable for simple text-in/text-out jobs because it spends its token budget thinking before emitting output."
+    time_sensitive: true
+  - claim: "The author withdrew his own earlier tool recommendation (agentmemory) after a week of use, for structural bugs."
+    time_sensitive: true
+  - claim: "Tools that depend on the agent remembering to call a save function are unreliable; capture should be automatic via lifecycle hooks."
+    time_sensitive: false
+fears_addressed:
+  - "Why does my AI forget what happened last session?"
+  - "Can I switch between AI tools without losing context?"
+reader_value: "Moderate. Shows concretely how to give an AI long-term memory (notes in files, summarized automatically) and that an author can publicly reverse a recommendation. Installation and CLI detail are for engineers."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "Memory is text, written to disk, indexed simply, forgotten when unused"
+    - "Switching agents with a handoff note: the next agent knows where you stopped"
+    - "Publicly reversing a recommendation after a week of real use"
+    - "Small model suffices for summarizing; reasoning model ate its budget thinking"
+  cut:
+    - "Installation steps, CLI commands list, web UI tour"
+    - "Provider A/B table specifics"
+    - "Hook and MCP routing table"
+jargon: [LLM, coding agent, hook, MCP, FTS5, SQLite, markdown, consolidation, handoff, embedding, vector database, knowledge graph, context window, compaction, harness]
+illustration_ideas:
+  - "Agent hooks capture a session; at session end an LLM consolidates raw observations into a few wiki pages"
+  - "Handoff between Claude Code and Codex through shared memory"
+  - "Memory tiers and forgetting: working, episodic, semantic, procedural"
+people_events:
+  - "Andrej Karpathy LLM Wiki"
+  - "agentmemory (Rohit Ghumare)"
+  - "basic-memory, cognee"
+related_posts: ["2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar", "2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso", "2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar"]
+prerequisites: ["What a context window is", "What compaction is", "What a coding agent is"]
+series: "ai-memory"
+obsolescence: "Beta software (v0.2) as of 2026-05-23; provider choices, prices and supported agent list will change. Supersedes the agentmemory recommendation in 2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar."

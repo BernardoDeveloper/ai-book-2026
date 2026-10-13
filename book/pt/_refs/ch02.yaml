@@ -1,0 +1,104 @@
+references:
+  - id: vigliarolo2026anthropic
+    type: "article-newspaper"
+    title: "Anthropic goes nude, exposes Claude Code source by accident"
+    author: [{family: "Vigliarolo", given: "Brandon"}]
+    container-title: "The Register"
+    issued: {date-parts: [[2026, 3, 31]]}
+    URL: "https://www.theregister.com/2026/03/31/anthropic_claude_code_source_code/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - id: franzen2026claude
+    type: "article-newspaper"
+    title: "Claude Code's source code appears to have leaked: here's what we know"
+    author: [{family: "Franzen", given: "Carl"}]
+    container-title: "VentureBeat"
+    issued: {date-parts: [[2026, 3, 31]]}
+    URL: "https://venturebeat.com/technology/claude-codes-source-code-appears-to-have-leaked-heres-what-we-know/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - id: deeplearningai2026kairos
+    type: "article-newspaper"
+    title: "Claude Code's Source Code Leaked, Exposing Potential Future Features Kairos and autoDream"
+    author: [{literal: "DeepLearning.AI"}]
+    container-title: "The Batch"
+    issued: {date-parts: [[2026, 4, 3]]}
+    URL: "https://charonhub.deeplearning.ai/claude-codes-source-code-leaked-exposing-potential-future-features-kairos-and-autodream/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro (autoDream described in the post with a link to a third-party summary; verified online with this source)"
+  - id: iamfakeguru2026claude
+    type: "post"
+    title: "Thread com achados técnicos do código vazado do Claude Code"
+    author: [{literal: "iamfakeguru"}]
+    container-title: "X"
+    issued: {date-parts: [[2026, 3, 31]]}
+    URL: "https://x.com/iamfakeguru/status/2038965567269249484"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro"
+  - id: brown2015fish
+    type: "article-journal"
+    title: "Fish intelligence, sentience and ethics"
+    author: [{family: "Brown", given: "Culum"}]
+    container-title: "Animal Cognition"
+    volume: "18"
+    issue: "1"
+    page: "1-17"
+    DOI: "10.1007/s10071-014-0761-0"
+    issued: {date-parts: [[2015, 1]]}
+    URL: "https://doi.org/10.1007/s10071-014-0761-0"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (book-only material on the goldfish memory myth; verified online)"
+  - id: liu2024lost
+    type: "article-journal"
+    title: "Lost in the Middle: How Language Models Use Long Contexts"
+    author: [{family: "Liu", given: "Nelson F."}, {family: "Lin", given: "Kevin"}, {family: "Hewitt", given: "John"}, {family: "Paranjape", given: "Ashwin"}, {family: "Bevilacqua", given: "Michele"}, {family: "Petroni", given: "Fabio"}, {family: "Liang", given: "Percy"}]
+    container-title: "Transactions of the Association for Computational Linguistics"
+    volume: "12"
+    page: "157-173"
+    DOI: "10.1162/tacl_a_00638"
+    issued: {date-parts: [[2024]]}
+    URL: "https://arxiv.org/abs/2307.03172"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/06/rag-esta-morto-contexto-longo"
+  - id: li2024rag
+    type: "paper-conference"
+    title: "Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach"
+    author: [{family: "Li", given: "Zhuowan"}, {family: "Li", given: "Cheng"}, {family: "Zhang", given: "Mingyang"}, {family: "Mei", given: "Qiaozhu"}, {family: "Bendersky", given: "Michael"}]
+    container-title: "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track"
+    event: "2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024)"
+    page: "881-893"
+    publisher: "Association for Computational Linguistics"
+    publisher-place: "Miami, FL"
+    DOI: "10.18653/v1/2024.emnlp-industry.66"
+    issued: {date-parts: [[2024, 11]]}
+    URL: "https://arxiv.org/abs/2407.16833"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/06/rag-esta-morto-contexto-longo"
+  - id: thakur2021beir
+    type: "paper-conference"
+    title: "BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of Information Retrieval Models"
+    author: [{family: "Thakur", given: "Nandan"}, {family: "Reimers", given: "Nils"}, {family: "Rücklé", given: "Andreas"}, {family: "Srivastava", given: "Abhishek"}, {family: "Gurevych", given: "Iryna"}]
+    container-title: "Proceedings of the Neural Information Processing Systems Track on Datasets and Benchmarks"
+    event: "35th Conference on Neural Information Processing Systems (NeurIPS 2021), Datasets and Benchmarks Track"
+    issued: {date-parts: [[2021]]}
+    URL: "https://arxiv.org/abs/2104.08663"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/06/rag-esta-morto-contexto-longo"
+  - id: anthropic2024contextual
+    type: "webpage"
+    title: "Introducing Contextual Retrieval"
+    author: [{literal: "Anthropic"}]
+    container-title: "Anthropic"
+    issued: {date-parts: [[2024, 9, 19]]}
+    URL: "https://www.anthropic.com/news/contextual-retrieval"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/04/06/rag-esta-morto-contexto-longo"
+  - id: karpathy2026llmwiki
+    type: "webpage"
+    title: "LLM Wiki"
+    author: [{family: "Karpathy", given: "Andrej"}]
+    container-title: "GitHub Gist"
+    issued: {date-parts: [[2026, 4, 4]]}
+    URL: "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos (05/18 linked a VentureBeat article about it)"

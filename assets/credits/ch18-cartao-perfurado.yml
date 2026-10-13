@@ -1,0 +1,40 @@
+---
+id: ch18-cartao-perfurado
+kind: photo
+file: assets/figures/ch18-cartao-perfurado.jpg
+sha256: '0934ab7923ddcce0e019c4fd6805b08a50ef142fdd154d1810c3f89384063bad'
+pixels:
+  width: 2959
+  height: 2434
+source:
+  repository: wikimedia_commons
+  page_url: https://commons.wikimedia.org/wiki/File:Keypunch_operator_1950_census_IBM_016.jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/3/39/Keypunch_operator_1950_census_IBM_016.jpg
+  original_sha1: 80a2a610be5943fa469d6cd540b088278aca7f19
+  retrieved: '2026-10-13'
+  title: Keypunch operator 1950 census IBM 016
+  date_taken: 1950sdate QS:P,+1950-00-00T00:00:00Z/8
+  description: A clerk employee creates punch cards containing data from the 1950
+    Census. The Census Bureau initially tabulated the 1950 Census using punch cards
+    and electronic tabulators reminiscent of those developed by Herman Hollerith prior
+    to the 1890 Census. After the installation of its first computer, UNIV
+author: U.S. Census Bureau employees
+uploader: ArnoldReinhold
+license:
+  short: Public domain
+  url:
+  attribution_required: false
+  share_alike: false
+  restrictions: []
+modifications:
+- redimensionada
+adaptation: false
+placement: interior
+personality_rights_check: anonymous 1950s government employee, historical public-domain
+  photo, editorial context, interior only
+kdp_disclosure: none
+credit:
+  caption_pt: "Foto: U.S. Census Bureau / domínio público"
+  backmatter: '"Keypunch operator 1950 census IBM 016.jpg", U.S. Census Bureau employees.
+    https://commons.wikimedia.org/wiki/File:Keypunch_operator_1950_census_IBM_016.jpg.
+    Domínio público. Modificações: redimensionada.'

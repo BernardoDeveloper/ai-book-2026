@@ -1,0 +1,149 @@
+references:
+  - id: sutskever2024neurips
+    type: "motion_picture"
+    title: "Sequence to Sequence Learning with Neural Networks: what a decade (NeurIPS 2024 Test of Time talk)"
+    author: [{family: "Sutskever", given: "Ilya"}]
+    container-title: "YouTube"
+    issued: {date-parts: [[2024, 12, 13]]}
+    URL: "https://www.youtube.com/watch?v=WQQdd6qGxNs"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente; also 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas. Recording uploaded by a third party; 'pre-training as we know it will end' and 'data is the fossil fuel of AI' confirmed in press coverage of the talk."
+  - id: hai2025aiindex
+    type: "report"
+    title: "The 2025 AI Index Report"
+    author: [{literal: "Stanford Institute for Human-Centered Artificial Intelligence"}]
+    publisher: "Stanford University"
+    publisher-place: "Stanford, CA"
+    issued: {date-parts: [[2025]]}
+    URL: "https://hai.stanford.edu/ai-index/2025-ai-index-report"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (gap between top and 10th-ranked models fell from 11.9% to 5.4% in a year)"
+  - id: kaplan2020scaling
+    type: "article"
+    title: "Scaling Laws for Neural Language Models"
+    author: [{family: "Kaplan", given: "Jared"}, {family: "McCandlish", given: "Sam"}, {family: "Henighan", given: "Tom"}, {family: "Brown", given: "Tom B."}, {family: "Chess", given: "Benjamin"}, {family: "Child", given: "Rewon"}, {family: "Gray", given: "Scott"}, {family: "Radford", given: "Alec"}, {family: "Wu", given: "Jeffrey"}, {family: "Amodei", given: "Dario"}]
+    container-title: "arXiv"
+    number: "arXiv:2001.08361"
+    DOI: "10.48550/arXiv.2001.08361"
+    issued: {date-parts: [[2020, 1, 23]]}
+    URL: "https://arxiv.org/abs/2001.08361"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: hoffmann2022training
+    type: "article"
+    title: "Training Compute-Optimal Large Language Models"
+    author: [{family: "Hoffmann", given: "Jordan"}, {family: "Borgeaud", given: "Sebastian"}, {family: "Mensch", given: "Arthur"}, {family: "Buchatskaya", given: "Elena"}, {family: "Cai", given: "Trevor"}, {family: "Rutherford", given: "Eliza"}, {family: "Casas", given: "Diego de Las"}, {family: "Hendricks", given: "Lisa Anne"}, {family: "Welbl", given: "Johannes"}, {family: "Clark", given: "Aidan"}, {family: "Hennigan", given: "Tom"}, {family: "Noland", given: "Eric"}, {family: "Millican", given: "Katie"}, {family: "Driessche", given: "George van den"}, {family: "Damoc", given: "Bogdan"}, {family: "Guy", given: "Aurelia"}, {family: "Osindero", given: "Simon"}, {family: "Simonyan", given: "Karen"}, {family: "Elsen", given: "Erich"}, {family: "Rae", given: "Jack W."}, {family: "Vinyals", given: "Oriol"}, {family: "Sifre", given: "Laurent"}]
+    container-title: "arXiv"
+    number: "arXiv:2203.15556"
+    DOI: "10.48550/arXiv.2203.15556"
+    issued: {date-parts: [[2022, 3, 29]]}
+    URL: "https://arxiv.org/abs/2203.15556"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: patel2023gpt4
+    type: "post-weblog"
+    title: "GPT-4 Architecture, Infrastructure, Training Dataset, Costs, Vision, MoE"
+    author: [{family: "Patel", given: "Dylan"}, {family: "Wong", given: "Gerald"}]
+    container-title: "SemiAnalysis"
+    issued: {date-parts: [[2023, 7, 10]]}
+    URL: "https://newsletter.semianalysis.com/p/gpt-4-architecture-infrastructure"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente. Post says 1.76T; the SemiAnalysis report is quoted in secondary coverage as ~1.8T across 16 experts; book says 'perto de 1,8 trilhão', never confirmed by OpenAI. Paywalled; figure checked via secondary coverage."
+  - id: mistral2023mixtral
+    type: "webpage"
+    title: "Mixtral of experts"
+    author: [{literal: "Mistral AI"}]
+    container-title: "Mistral AI"
+    issued: {date-parts: [[2023, 12, 11]]}
+    URL: "https://mistral.ai/news/mixtral-of-experts/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: deepseekai2024v3
+    type: "article"
+    title: "DeepSeek-V3 Technical Report"
+    author: [{literal: "DeepSeek-AI"}]
+    container-title: "arXiv"
+    number: "arXiv:2412.19437"
+    DOI: "10.48550/arXiv.2412.19437"
+    issued: {date-parts: [[2024, 12, 27]]}
+    URL: "https://arxiv.org/abs/2412.19437"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (671B total, 37B active; 2.788M H800 GPU hours, ~US$5.6M at rental price, excluding prior research)"
+  - id: openai2024caching
+    type: "webpage"
+    title: "Prompt Caching in the API"
+    author: [{literal: "OpenAI"}]
+    container-title: "OpenAI"
+    issued: {date-parts: [[2024, 10, 1]]}
+    URL: "https://openai.com/index/api-prompt-caching/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente (page returned 403 to the fetcher; date from DevDay 2024 announcement)"
+  - id: deepseekai2025r1
+    type: "article"
+    title: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
+    author: [{literal: "DeepSeek-AI"}]
+    container-title: "arXiv"
+    number: "arXiv:2501.12948"
+    DOI: "10.48550/arXiv.2501.12948"
+    issued: {date-parts: [[2025, 1, 22]]}
+    URL: "https://arxiv.org/abs/2501.12948"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente; 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas"
+  - id: anthropic2024agents
+    type: "webpage"
+    title: "Building effective agents"
+    author: [{literal: "Anthropic"}]
+    container-title: "Anthropic Engineering"
+    issued: {date-parts: [[2024, 12, 19]]}
+    URL: "https://www.anthropic.com/engineering/building-effective-agents"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/12/llms-agentes-competente-o-suficiente"
+  - id: github2025octoverse
+    type: "webpage"
+    title: "Octoverse: A new developer joins GitHub every second as AI leads TypeScript to #1"
+    author: [{literal: "GitHub"}]
+    container-title: "The GitHub Blog"
+    issued: {date-parts: [[2025, 10, 28]]}
+    URL: "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas (81.5% of 2025 contributions in private repositories)"
+  - id: becker2025measuring
+    type: "article"
+    title: "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity"
+    author: [{family: "Becker", given: "Joel"}, {family: "Rush", given: "Nate"}, {family: "Barnes", given: "Elizabeth"}, {family: "Rein", given: "David"}]
+    container-title: "arXiv"
+    number: "arXiv:2507.09089"
+    DOI: "10.48550/arXiv.2507.09089"
+    issued: {date-parts: [[2025, 7, 12]]}
+    URL: "https://arxiv.org/abs/2507.09089"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas (16 devs, 246 tasks, forecast -24% time, measured +19%). Repos were large OPEN-SOURCE projects; the post calls them private, the book does not."
+  - id: willison2024chollet
+    type: "post-weblog"
+    title: "Quoting François Chollet"
+    author: [{family: "Willison", given: "Simon"}]
+    container-title: "Simon Willison's Weblog"
+    issued: {date-parts: [[2024, 2, 10]]}
+    URL: "https://simonwillison.net/2024/Feb/10/francois-chollet"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas (post quotes Chollet's Feb 2024 X post without a link; verified via this repost)"
+  - id: deepmind2025alphaevolve
+    type: "webpage"
+    title: "AlphaEvolve: A Gemini-powered coding agent for designing advanced algorithms"
+    author: [{literal: "Google DeepMind"}]
+    container-title: "Google DeepMind"
+    issued: {date-parts: [[2025, 5, 14]]}
+    URL: "https://deepmind.google/discover/blog/alphaevolve-a-gemini-powered-coding-agent-for-designing-advanced-algorithms/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas"
+  - id: silver2017mastering
+    type: "article"
+    title: "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm"
+    author: [{family: "Silver", given: "David"}, {family: "Hubert", given: "Thomas"}, {family: "Schrittwieser", given: "Julian"}, {family: "Antonoglou", given: "Ioannis"}, {family: "Lai", given: "Matthew"}, {family: "Guez", given: "Arthur"}, {family: "Lanctot", given: "Marc"}, {family: "Sifre", given: "Laurent"}, {family: "Kumaran", given: "Dharshan"}, {family: "Graepel", given: "Thore"}, {family: "Lillicrap", given: "Timothy"}, {family: "Simonyan", given: "Karen"}, {family: "Hassabis", given: "Demis"}]
+    container-title: "arXiv"
+    number: "arXiv:1712.01815"
+    DOI: "10.48550/arXiv.1712.01815"
+    issued: {date-parts: [[2017, 12, 5]]}
+    URL: "https://arxiv.org/abs/1712.01815"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas"

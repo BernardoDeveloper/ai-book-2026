@@ -1,0 +1,49 @@
+id: "2026/01/29/vibe-code-qual-llm-é-a-melhor-vamos-falar-a-real"
+source_sha256: "27ec2deb34752b644e2a4a9a54cd361b3a511e7428082e49db7e2a977a4b3317"
+title_en: "Vibe Code: Which LLM Is the Best? Let's Be Real"
+ai_relevance: core
+ai_relevance_reason: "Answers the question 'which LLM lets a beginner build a perfect app by prompting' by running five models over the same code."
+genre: opinion
+themes: [limits-of-llms, vibe-coding-practice, jobs-and-careers, benchmarks-model-comparison]
+thesis: "No LLM lets a total beginner produce a perfect, secure app; the quality of the result is proportional to the seniority of the person asking, and there is always something left over."
+summary: "Following up on the TV Clipboard post, Akita had five more models run an 'extensive' security, optimisation and test review of the same tiny app in sequence: Claude Opus 4.5, GPT 5.2 Codex, Kimi 2.5, Gemini 3 Pro Preview and MiniMax 2.1, for about US$3 total. Each found something the previous ones missed (missing security headers, a deadlock at shutdown, a stale timeout, WebSocket headers) and each also suggested unnecessary changes, reintroduced code he had removed, or over-engineered. He characterises Opus as over-proactive like an intern showing off, and GPT/Gemini as more literal. His conclusion: AIs are probability machines that never reach 100%, what you want and what you need differ, and the quality of the app tracks the asker's experience. The models are very good but are motivated interns, not geniuses, and he would still not publish the app without manual review."
+key_claims:
+  - claim: "Five frontier models reviewed the same small app in sequence and each still found new issues; none could produce a perfect app."
+    time_sensitive: true
+  - claim: "App quality is directly proportional to the requester's seniority, with or without AI."
+    time_sensitive: false
+  - claim: "AIs will not guess what you want or need; you must know the right limits for your use case (not NASA-grade security everywhere)."
+    time_sensitive: false
+  - claim: "Models tend to over-engineer, keep or re-add dead code, and show off; Opus was more over-proactive, GPT Codex and Gemini more literal (his impression)."
+    time_sensitive: true
+  - claim: "The five-model review cost about US$3 in total."
+    time_sensitive: true
+  - claim: "Reaching 100% is impossible because the effort per extra percent grows without bound."
+    time_sensitive: false
+  - claim: "If unsure, use Claude Code for the best speed/quality balance (his recommendation at the time)."
+    time_sensitive: true
+fears_addressed:
+  - "Which AI should I pick to build an app without knowing how to code?"
+  - "Will the next model finally make programmers unnecessary?"
+reader_value: "High for the thesis in plain language. 'No model, regardless of brand, removes the need to know what you are asking for' is a durable, quotable message for anxious or hype-influenced readers."
+technical_depth: 2
+evergreen: 4
+book_use:
+  keep:
+    - "Five-model relay review: each finds something, none finishes"
+    - "What you want versus what you need"
+    - "Quality proportional to seniority of the asker"
+    - "Motivated intern, not a genius"
+  cut:
+    - "Per-model commit details and Go-specific findings"
+    - "Model personality comparisons (dated)"
+jargon: [vibe coding, LLM, probability machine, security headers, deadlock, WebSocket, over-engineering, production]
+illustration_ideas:
+  - "Relay of five reviewers each catching different leftovers, with a remainder that never reaches zero"
+  - "Diminishing returns curve approaching but never reaching 100%"
+people_events: ["Anthropic", "OpenAI", "Moonshot (Kimi 2.5)", "Google (Gemini 3 Pro Preview)", "MiniMax"]
+related_posts:
+  - "2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard"
+prerequisites: ["What vibe coding is"]
+series: "vibe-code-projects"
+obsolescence: "Specific model versions, relative personalities and the US$3 cost are late-January 2026 snapshots. Direct sequel to the TV Clipboard post; the thesis is not model-specific."

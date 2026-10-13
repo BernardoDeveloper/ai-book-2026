@@ -1,0 +1,36 @@
+id: "2026/08/07/por-que-uma-eleicao-digital-perfeita-ainda-nao-seria-viavel"
+source_sha256: "cb68d37b9d411e3afcbe95b0cd731d77adf4f7c2c8108f2b6a4e59d4584f7957"
+title_en: "Why a perfect digital election would still not be viable"
+ai_relevance: none
+ai_relevance_reason: "Cryptography thought experiment about voting systems; no AI content."
+genre: essay
+themes: [non-ai, society-politics-censorship]
+thesis: "End-to-end verifiable digital elections are mathematically possible, but a system whose trust depends on math most citizens cannot follow is as opaque as the current one, so social trust beats sophistication."
+summary: "Akita builds, as a computer-science exercise, a hypothetical verifiable digital election using hash commitments, Pedersen commitments, a public Merkle tree, Benaloh's cast-or-challenge, Schnorr zero-knowledge proofs and blind signatures, with toy numbers and code. He argues that 'the voting machine is not on the internet' is irrelevant because current security rests on physical custody and trust in people, while a verifiable system rests on public checks. He addresses vote-buying (receipts must not prove the vote) and the weakest link, authenticating who is voting. He then argues it would never work in practice: ordinary citizens cannot verify the math, so trust becomes blind faith in experts, and rich countries keep paper trails. Appendices review auditability of the Brazilian system and an incentive idea for rewarding verifiers. He stresses it is an exercise, not a proposal."
+key_claims:
+  - claim: "A voting system can in theory give every voter individual verification and anyone universal verification without a secret component or a coercion-proof receipt."
+    time_sensitive: false
+  - claim: "Security of the current Brazilian system depends on physical custody and ceremonies conducted by the electoral court, not on independent software-free recount."
+    time_sensitive: false
+  - claim: "A system requiring trust in mathematics few can audit is as opaque to citizens as the current one."
+    time_sensitive: false
+  - claim: "Blockchain is not synonymous with cryptocurrency; public does not mean anonymous (chain analysis can deanonymize)."
+    time_sensitive: false
+fears_addressed: []
+reader_value: "low"
+technical_depth: 5
+evergreen: 4
+book_use:
+  keep:
+    - "Trust is social, not just technical: the 'who can audit it' argument (transferable to AI claims)"
+  cut:
+    - "All cryptographic constructions, code, appendices, election-specific Brazilian detail"
+jargon: [hash, commitment, Merkle tree, zero-knowledge proof, blind signature, nonce, append-only log, end-to-end verifiability]
+illustration_ideas:
+  - "Merkle tree with an inclusion proof for one voter's receipt"
+people_events:
+  - "TSE (Brazilian electoral court), Josh Benaloh, David Chaum, Diego Aranha"
+related_posts: []
+prerequisites: ["Basic idea of hash functions"]
+series: ""
+obsolescence: "References to the June 2026 TSE urn opening and 2026 election context date quickly; the cryptography is timeless."

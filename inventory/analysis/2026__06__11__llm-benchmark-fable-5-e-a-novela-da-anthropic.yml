@@ -1,0 +1,54 @@
+id: "2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic"
+source_sha256: "ce3ac52806404b9410bbe7b38962bc96d1beaff182ad194e2dbc1f18630c5d30"
+title_en: "LLM Benchmark: Fable 5 and the Anthropic Soap Opera"
+ai_relevance: core
+ai_relevance_reason: "Benchmarks a new frontier model and critiques the marketing, compute economics and IPO context around it."
+genre: benchmark
+themes: [hype-and-marketing, benchmarks-model-comparison, business-and-economics, hardware-and-infrastructure]
+thesis: "Anthropic's Mythos/Fable campaign is aggressive, unverifiable marketing during an IPO run-up and a compute shortage; in measurable coding terms Fable 5 ties Opus 4.8 at ten times the cost."
+summary: "Akita first lays out the pressure on frontier labs: inference now takes about two thirds of AI compute, training returns are diminishing, and data center construction is delayed by power equipment shortages, so labs squeeze existing models. He notes both Anthropic and OpenAI filed confidentially for IPOs in June 2026. He recounts the Mythos story: a model withheld as too dangerous, a closed consortium (Project Glasswing), skeptics asking if it is hype, and a reported unauthorized access. Fable 5 is presented as a safer Mythos-class model that redirects risky queries to Opus 4.8, with over-strict refusals reported. In his benchmark Fable 5 scored 94/100 versus Opus 4.8 at 95, at roughly ten times the cost, with notable behavior such as reading the installed gem source before coding. He suspects some answers may silently be Opus fallbacks, which he cannot audit, and recommends staying on Opus 4.8."
+key_claims:
+  - claim: "Inference grew from about one third of AI compute in 2023 to about two thirds in 2026, per Deloitte as cited."
+    time_sensitive: true
+  - claim: "Nearly half of US data centers planned for 2026 were delayed or cancelled, with power equipment lead times above 160 weeks."
+    time_sensitive: true
+  - claim: "Anthropic announced Mythos Preview on 7 April 2026 as too dangerous for release and shared it via Project Glasswing with 40+ large companies."
+    time_sensitive: true
+  - claim: "Fable 5 redirects queries touching cyber exploitation, bio/chemical weapons or distillation to Opus 4.8, estimated for under 5% of sessions; the safeguards produced false-positive refusals."
+    time_sensitive: true
+  - claim: "In his benchmark Fable 5 scored 94/100 (Tier A) versus Opus 4.8 at 95, at about 10x the cost (~$11 vs ~$1.10 per run)."
+    time_sensitive: true
+  - claim: "A model whose capabilities cannot be independently tested while its maker prepares an IPO has an incentive to inflate perceived capability; this is how hype works."
+    time_sensitive: false
+  - claim: "New versions of GPT 5.x and Opus 4.x are mixed results because labs optimize for serving more users on the same hardware."
+    time_sensitive: true
+fears_addressed:
+  - "Is the 'too dangerous to release' model really that dangerous?"
+  - "Does every new model mean a big leap?"
+  - "Why are AI companies so aggressive in marketing?"
+reader_value: "High for the context section: shows how compute shortage, IPOs and unverifiable claims shape AI marketing. The benchmark numbers themselves are quickly stale."
+technical_depth: 3
+evergreen: 2
+book_use:
+  keep:
+    - "Hype mechanics: unverifiable capability claims, secret model, closed consortium, pre-IPO incentives"
+    - "Inference now dominates compute; data center bottlenecks (transformers, power) limit growth"
+    - "Cannot tell whether a premium model is answering or silently falling back to a cheaper one"
+  cut:
+    - "Ranking table and per-model rubric details"
+    - "Gem source grep and test coverage specifics"
+jargon: [frontier model, inference, training, compute, IPO, S-1, benchmark, fallback, safeguards, distillation, vulnerability, CVE, data center]
+illustration_ideas:
+  - "Share of AI compute going to training vs inference over 2023-2030"
+  - "Request routing: risky query detected by safeguard, redirected to Opus"
+  - "Pressure diagram: IPO growth, scarce data centers, subsidized prices"
+people_events:
+  - "Anthropic Claude Mythos Preview, Project Glasswing, Claude Fable 5"
+  - "Anthropic and OpenAI confidential IPO filings (June 2026)"
+related_posts:
+  - "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
+  - "2026/06/01/llm-benchmarks-grok-4-3-minimax-m3-opus-4-8"
+  - "2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude"
+prerequisites: [LLM, benchmark, tokens]
+series: "llm-benchmark"
+obsolescence: "Rankings, prices, IPO status and Mythos/Fable facts are June 2026 snapshots; later benchmark posts (e.g. 2026/07/01, 2026/07/09) and Fable posts (2026/07/08) supersede the scores. The compute-economics framing is more durable."

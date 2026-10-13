@@ -1,0 +1,80 @@
+references:
+  - id: gnu2009gnugo
+    type: "software"
+    title: "GNU Go"
+    author: [{literal: "Free Software Foundation"}]
+    container-title: "GNU Project"
+    version: "3.8"
+    issued: {date-parts: [[2009, 2, 19]]}
+    URL: "https://www.gnu.org/software/gnugo/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (latest stable release 3.8, 19 Feb 2009, per gnu.org)"
+  - id: deepmind2026alphago
+    type: "webpage"
+    title: "AlphaGo"
+    author: [{literal: "Google DeepMind"}]
+    container-title: "Google DeepMind"
+    issued: {date-parts: [[2026]]}
+    URL: "https://deepmind.google/research/breakthroughs/alphago/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (4-1 in Seoul, March 2016; Move 37 in game two; verified online, blog had no link)"
+  - id: wikipedia2026alphagoleesedol
+    type: "webpage"
+    title: "AlphaGo versus Lee Sedol"
+    author: [{literal: "Wikipedia"}]
+    container-title: "Wikipedia"
+    issued: {date-parts: [[2026]]}
+    URL: "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (dates 9-15 March 2016, Four Seasons Seoul; game 4 move 78 on 13 March; Gu Li 'divine move'; AlphaGo's win estimate collapsing around move 87; verified online)"
+  - id: kohs2017alphago
+    type: "motion_picture"
+    title: "AlphaGo"
+    author: [{family: "Kohs", given: "Greg"}]
+    publisher: "Moxie Pictures / Reel As Dirt (Netflix)"
+    issued: {date-parts: [[2017]]}
+    URL: "https://www.netflix.com/title/80190844"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (blog linked the Netflix page; director and year verified online)"
+  - id: vice2019leesedol
+    type: "article-newspaper"
+    title: "Go Pro Quits the Game, Says AI Is Too Tough to Beat"
+    author: [{family: "Gault", given: "Matthew"}]
+    container-title: "Vice"
+    issued: {date-parts: [[2019, 11, 27]]}
+    URL: "https://www.vice.com/en/article/go-pro-lee-sedol-quits-says-ai-is-too-tough-to-beat/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (not in the post; added for the interlude; quotes Lee Sedol's Yonhap interview: 'Even if I become the number one, there is an entity that cannot be defeated'; retirement filed 19 Nov 2019)"
+  - id: wu2019katago
+    type: "article"
+    title: "Accelerating Self-Play Learning in Go"
+    author: [{family: "Wu", given: "David J."}]
+    container-title: "arXiv"
+    number: "arXiv:1902.10565"
+    DOI: "10.48550/arXiv.1902.10565"
+    issued: {date-parts: [[2019, 2, 27]]}
+    URL: "https://arxiv.org/abs/1902.10565"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (surpasses ELF's final model after 19 days on fewer than 30 GPUs vs thousands for ELF/AlphaZero; verified online)"
+  - id: lightvector2026katago
+    type: "software"
+    title: "KataGo"
+    author: [{family: "Wu", given: "David J."}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026]]}
+    URL: "https://github.com/lightvector/KataGo"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (estimates score and per-point territory ownership, not just winrate; Eigen CPU backend runs without GPU)"
+  - id: wang2023adversarial
+    type: "paper-conference"
+    title: "Adversarial Policies Beat Superhuman Go AIs"
+    author: [{family: "Wang", given: "Tony Tong"}, {family: "Gleave", given: "Adam"}, {family: "Tseng", given: "Tom"}, {family: "Pelrine", given: "Kellin"}, {family: "Belrose", given: "Nora"}, {family: "Miller", given: "Joseph"}, {family: "Dennis", given: "Michael D."}, {family: "Duan", given: "Yawen"}, {family: "Pogrebniak", given: "Viktor"}, {family: "Levine", given: "Sergey"}, {family: "Russell", given: "Stuart"}]
+    container-title: "Proceedings of Machine Learning Research"
+    event: "40th International Conference on Machine Learning (ICML 2023)"
+    volume: "202"
+    publisher: "PMLR"
+    publisher-place: "Honolulu, HI"
+    issued: {date-parts: [[2023, 7]]}
+    URL: "https://proceedings.mlr.press/v202/wang23g.html"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (not in the post; added for the interlude: >97% win rate vs superhuman KataGo, adversary loses to amateurs, humans learn the attack and consistently beat superhuman AIs, flaw persists after adversarial training)"

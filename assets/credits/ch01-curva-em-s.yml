@@ -1,0 +1,20 @@
+---
+id: ch01-curva-em-s
+kind: chart_code
+file: assets/figures/ch01-curva-em-s.png
+sha256: b8a6311e6dc641bd76f988d2e95b36ab9ff18fe347dd4aa9305b35106677c1ad
+source: assets/charts/ch01-curva-em-s.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I assets/charts/ch01-curva-em-s.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+chapters:
+- 1
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

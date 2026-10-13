@@ -1,0 +1,67 @@
+---
+id: cover-c
+kind: ai_illustration
+file: assets/cover/cover-c.png
+sha256: c88ff0c9dfe2572d61f7f6a05c0735053555b2788437d69c76b3b90b09b6e9a6
+generation:
+  provider: openai
+  endpoint: POST /v1/images/generations
+  model: gpt-image-2.5-flare-2026-09-08
+  date: '2026-10-13T16:12:55-03:00'
+  style_version: STYLE-cover
+  scene: 'Night scene in the style of a 1950s alien-landing movie poster: an original
+    tall smooth robot, half its faceplate open to reveal a glowing intricate brain
+    made of vacuum tubes, stands on a hill above a sleepy suburban town; searchlight
+    beams cross the sky; tiny townspeople below look up from their porches and cars,
+    some fleeing, some curious. The robot looks down at its own open hand as if wondering
+    whether it is alive. Dramatic rim light, teal night sky, warm windows.'
+  prompt: 'COVER v1: 1950s retro-futurist illustrated poster, World''s Fair and Golden
+    Age pulp science-fiction movie poster aesthetic, art deco and streamline moderne
+    shapes, dramatic sunburst rays, gouache and airbrush texture, slightly weathered
+    printed-paper grain, limited palette of deep teal, navy, cream, brass gold and
+    a single warm red-orange accent, strong silhouette readable at thumbnail size,
+    cinematic low camera angle, all characters and robots are original designs (not
+    based on any existing film, game or franchise character), no real people, no text,
+    no letters, no numbers, no logos, no signage. Leave the top third of the image
+    as calm sky with room for a title, and the bottom tenth uncluttered for the author
+    name. Portrait book-cover composition. Scene: Night scene in the style of a 1950s
+    alien-landing movie poster: an original tall smooth robot, half its faceplate
+    open to reveal a glowing intricate brain made of vacuum tubes, stands on a hill
+    above a sleepy suburban town; searchlight beams cross the sky; tiny townspeople
+    below look up from their porches and cars, some fleeing, some curious. The robot
+    looks down at its own open hand as if wondering whether it is alive. Dramatic
+    rim light, teal night sky, warm windows.'
+  params:
+    size: 1024x1536
+    quality: high
+    background: opaque
+    output_format: png
+    "n": 2
+  seed:
+  request_id: 0d8472c8-a689-4d81-a88d-a531b66cd5ac
+  usage:
+    input_tokens: 540
+    input_tokens_details:
+      image_tokens: 0
+      text_tokens: 540
+    output_tokens: 2744
+    output_tokens_details:
+      image_tokens: 2744
+      text_tokens: 0
+    total_tokens: 3284
+  drafts:
+  - build/genimg/cover-c-1.png
+  - build/genimg/cover-c-2.png
+  selected: 1
+post_processing:
+- 'flattened onto #FBF9F4, sRGB, alpha removed'
+human_contribution: art direction (scene brief), selection, placement and caption
+terms:
+  provider_terms: https://openai.com/policies/services-agreement/
+  copyright_status: AI-generated; likely not protectable (US Copyright Office Part
+    2; Lei 9.610 art. 11)
+kdp_disclosure: ai_generated_image
+credit:
+  caption_pt: Ilustração gerada por IA (GPT Image 2.5, OpenAI) sob direção do autor
+  caption_en: AI-generated illustration (GPT Image 2.5, OpenAI) under the author's
+    direction

@@ -1,0 +1,51 @@
+id: "2026/07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra"
+source_sha256: "7963a48cb5edda6211c8f8c37df67a62b97ca78cdd29dff37ba9b736a4a34672"
+title_en: "LLM Benchmark: Sonnet 5 Fails, Gemini Flash Surprises, Sakana Fugu Nearly Tier A"
+ai_relevance: core
+ai_relevance_reason: "A benchmark round scoring new LLMs on a full-project coding task."
+genre: benchmark
+themes: [benchmarks-model-comparison, limits-of-llms, hype-and-marketing]
+thesis: "A famous new model name does not guarantee working integration: Sonnet 5 passed Docker yet called a non-existent API (58/100), while Gemini 3.5 Flash scored 93; green builds and tests can hide fake-based lies."
+summary: "Akita adds Sonnet 5, Gemini 3.5 Flash, Sakana Fugu Ultra, Qwen3.7 Max and Step 3.7 Flash to his Rails/RubyLLM chat-app benchmark graded by reading code by hand. Sonnet 5 scored 58 because its service assigns messages= which RubyLLM lacks, so the first real chat raises NoMethodError, and its test fake defines the missing writer, hiding the bug. Gemini 3.5 Flash scored 93 with correct API use, strong tests and file-based persistence, though its run cost about $3.50. Sakana Fugu Ultra (79) never replayed chat history to the model, and Step 3.7 Flash had the same flaw. He also notes Anthropic lifting US-government controls on Fable 5 and OpenAI's GPT-5.6 preview. His practical advice remains Opus 4.8 or GPT 5.5 for serious coding, and that harness, prompt, memory and test quality matter as much as the model."
+key_claims:
+  - claim: "Claude Sonnet 5 scored 58/100 (Tier C) in his benchmark because the generated code assigned chat.messages=, a method RubyLLM does not have, so the first real conversation fails."
+    time_sensitive: true
+  - claim: "The project's own FakeChat defined the missing writer, so tests were green while production code was broken: a green test can be worse than useless when the fake lies."
+    time_sensitive: false
+  - claim: "Gemini 3.5 Flash scored 93/100 (Tier A, #6) but cost about $3.50 per run, more than Opus 4.8 on this task."
+    time_sensitive: true
+  - claim: "Sakana Fugu Ultra (79) and Step 3.7 Flash (69) displayed a multi-turn chat UI but only sent the last message to the model."
+    time_sensitive: true
+  - claim: "Anthropic lifted controls on Fable 5 on 30 June 2026 after imposing US-government-related controls on 12 June; Mythos 5 remains restricted to approved US organizations."
+    time_sensitive: true
+  - claim: "Model alone does not carry the work; harness, system prompt, project memory and test quality matter."
+    time_sensitive: false
+fears_addressed:
+  - "Is the newest, most famous model always better?"
+  - "If tests pass is the code correct?"
+reader_value: "Medium. The fake-test anecdote and 'big name does not equal quality' are accessible; ranking details are quickly stale."
+technical_depth: 4
+evergreen: 1
+book_use:
+  keep:
+    - "Sonnet 5: passed Docker, failed at the heart; tests that mock a lie"
+    - "UI looks like multi-turn chat but the model sees only the last message"
+    - "Build green does not prove integration is correct"
+  cut:
+    - "Full ranking table and rubric details"
+    - "Qwen 3.6 PR revert detail"
+    - "Personal toolkit mentions"
+jargon: [benchmark, tier, hallucination, mock, fake, test coverage, multi-turn, harness, API, persistence, streaming, SSE, context replay]
+illustration_ideas:
+  - "Green tests with a fake that has a method the real library lacks"
+  - "Chat UI shows history but model receives only last message"
+people_events:
+  - "Anthropic (Sonnet 5, Fable 5, Mythos 5), Google (Gemini 3.5 Flash), Sakana AI (Fugu Ultra), OpenAI GPT-5.6 preview"
+related_posts:
+  - "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
+  - "2026/06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local"
+  - "2026/06/15/controversia-llm-rio-3-5-plagio"
+  - "2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic"
+prerequisites: [LLM, benchmark, hallucination]
+series: "llm-benchmark"
+obsolescence: "All scores, prices and model availability are 1 July 2026 snapshots; superseded by the 2026/07/09 benchmark post."

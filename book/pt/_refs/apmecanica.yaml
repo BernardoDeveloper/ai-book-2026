@@ -1,0 +1,155 @@
+references:
+  - id: bender2020climbing
+    type: "paper-conference"
+    title: "Climbing towards NLU: On Meaning, Form, and Understanding in the Age of Data"
+    author: [{family: "Bender", given: "Emily M."}, {family: "Koller", given: "Alexander"}]
+    container-title: "Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics"
+    event: "58th Annual Meeting of the Association for Computational Linguistics (ACL 2020)"
+    page: "5185-5198"
+    publisher: "Association for Computational Linguistics"
+    publisher-place: "Online"
+    DOI: "10.18653/v1/2020.acl-main.463"
+    issued: {date-parts: [[2020, 7]]}
+    URL: "https://aclanthology.org/2020.acl-main.463/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (octopus test: islanders A and B, telegraph cable, octopus O, coconut catapult, angry bear; read in the paper PDF)"
+  - id: bender2021dangers
+    type: "paper-conference"
+    title: "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?"
+    author: [{family: "Bender", given: "Emily M."}, {family: "Gebru", given: "Timnit"}, {family: "McMillan-Major", given: "Angelina"}, {family: "Shmitchell", given: "Shmargaret"}]
+    container-title: "Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency"
+    event: "2021 ACM Conference on Fairness, Accountability, and Transparency (FAccT '21)"
+    page: "610-623"
+    publisher: "ACM"
+    publisher-place: "New York"
+    DOI: "10.1145/3442188.3445922"
+    issued: {date-parts: [[2021, 3]]}
+    URL: "https://doi.org/10.1145/3442188.3445922"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia (term 'stochastic parrot' used in the post without a link; 'Shmargaret Shmitchell' is the byline Margaret Mitchell used; definition passage cross-checked against Quote Investigator and Wikipedia quotations, ACM page returned 403)"
+  - id: hao2020gebru
+    type: "article-magazine"
+    title: "We read the paper that forced Timnit Gebru out of Google. Here's what it says."
+    author: [{family: "Hao", given: "Karen"}]
+    container-title: "MIT Technology Review"
+    issued: {date-parts: [[2020, 12, 4]]}
+    URL: "https://www.technologyreview.com/2020/12/04/1013294/google-ai-ethics-research-paper-forced-out-timnit-gebru/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (Gebru co-led Google's ethical AI team; said on 2 Dec 2020 she was forced out after a dispute over the paper; verified online)"
+  - id: rumelhart1986learning
+    type: "article-journal"
+    title: "Learning representations by back-propagating errors"
+    author: [{family: "Rumelhart", given: "David E."}, {family: "Hinton", given: "Geoffrey E."}, {family: "Williams", given: "Ronald J."}]
+    container-title: "Nature"
+    volume: "323"
+    issue: "6088"
+    page: "533-536"
+    DOI: "10.1038/323533a0"
+    issued: {date-parts: [[1986, 10]]}
+    URL: "https://doi.org/10.1038/323533a0"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (backpropagation for multi-layer networks; bibliographic data verified online)"
+  - id: meta2024llama3
+    type: "webpage"
+    title: "Introducing Meta Llama 3: The most capable openly available LLM to date"
+    author: [{literal: "Meta"}]
+    container-title: "Meta AI"
+    issued: {date-parts: [[2024, 4, 18]]}
+    URL: "https://ai.meta.com/blog/meta-llama-3/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (pretrained on over 15T tokens; tokenizer vocabulary of 128K tokens; figures confirmed via IEEE Spectrum and The Decoder coverage)"
+  - id: mikolov2013linguistic
+    type: "paper-conference"
+    title: "Linguistic Regularities in Continuous Space Word Representations"
+    author: [{family: "Mikolov", given: "Tomas"}, {family: "Yih", given: "Wen-tau"}, {family: "Zweig", given: "Geoffrey"}]
+    container-title: "Proceedings of NAACL-HLT 2013"
+    event: "2013 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT 2013)"
+    page: "746-751"
+    publisher: "Association for Computational Linguistics"
+    publisher-place: "Atlanta, GA"
+    issued: {date-parts: [[2013, 6]]}
+    URL: "https://aclanthology.org/N13-1090/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (king - man + woman lands near queen; authors at Microsoft Research; verified online)"
+  - id: holtzman2020curious
+    type: "paper-conference"
+    title: "The Curious Case of Neural Text Degeneration"
+    author: [{family: "Holtzman", given: "Ari"}, {family: "Buys", given: "Jan"}, {family: "Du", given: "Li"}, {family: "Forbes", given: "Maxwell"}, {family: "Choi", given: "Yejin"}]
+    container-title: "ICLR 2020 Proceedings"
+    event: "8th International Conference on Learning Representations (ICLR 2020)"
+    publisher: "OpenReview"
+    issued: {date-parts: [[2020]]}
+    URL: "https://arxiv.org/abs/1904.09751"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (maximization-based decoding gives 'bland and strangely repetitive' text; nucleus sampling; verified online)"
+  - id: ouyang2022training
+    type: "article"
+    title: "Training language models to follow instructions with human feedback"
+    author: [{family: "Ouyang", given: "Long"}, {family: "Wu", given: "Jeff"}, {family: "Jiang", given: "Xu"}, {family: "Almeida", given: "Diogo"}, {family: "Wainwright", given: "Carroll L."}, {family: "Mishkin", given: "Pamela"}, {family: "Zhang", given: "Chong"}, {family: "Agarwal", given: "Sandhini"}, {family: "Slama", given: "Katarina"}, {family: "Ray", given: "Alex"}, {family: "Schulman", given: "John"}, {family: "Hilton", given: "Jacob"}, {family: "Kelton", given: "Fraser"}, {family: "Miller", given: "Luke"}, {family: "Simens", given: "Maddie"}, {family: "Askell", given: "Amanda"}, {family: "Welinder", given: "Peter"}, {family: "Christiano", given: "Paul"}, {family: "Leike", given: "Jan"}, {family: "Lowe", given: "Ryan"}]
+    container-title: "arXiv"
+    number: "arXiv:2203.02155"
+    DOI: "10.48550/arXiv.2203.02155"
+    issued: {date-parts: [[2022, 3, 4]]}
+    URL: "https://arxiv.org/abs/2203.02155"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (40 contractors; reward model; 1.3B InstructGPT preferred to 175B GPT-3; aligned to a specific group rather than 'human values'; Figure 8 French frog-to-ancient-Greece example where GPT-3 replies with more story prompts; read in the paper PDF)"
+  - id: wei2022emergent
+    type: "article-journal"
+    title: "Emergent Abilities of Large Language Models"
+    author: [{family: "Wei", given: "Jason"}, {family: "Tay", given: "Yi"}, {family: "Bommasani", given: "Rishi"}, {family: "Raffel", given: "Colin"}, {family: "Zoph", given: "Barret"}, {family: "Borgeaud", given: "Sebastian"}, {family: "Yogatama", given: "Dani"}, {family: "Bosma", given: "Maarten"}, {family: "Zhou", given: "Denny"}, {family: "Metzler", given: "Donald"}, {family: "Chi", given: "Ed H."}, {family: "Hashimoto", given: "Tatsunori"}, {family: "Vinyals", given: "Oriol"}, {family: "Liang", given: "Percy"}, {family: "Dean", given: "Jeff"}, {family: "Fedus", given: "William"}]
+    container-title: "Transactions on Machine Learning Research"
+    issued: {date-parts: [[2022]]}
+    URL: "https://arxiv.org/abs/2206.07682"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (verified online)"
+  - id: schaeffer2023mirage
+    type: "paper-conference"
+    title: "Are Emergent Abilities of Large Language Models a Mirage?"
+    author: [{family: "Schaeffer", given: "Rylan"}, {family: "Miranda", given: "Brando"}, {family: "Koyejo", given: "Sanmi"}]
+    container-title: "Advances in Neural Information Processing Systems 36"
+    event: "37th Conference on Neural Information Processing Systems (NeurIPS 2023)"
+    publisher: "Curran Associates"
+    publisher-place: "New Orleans, LA"
+    issued: {date-parts: [[2023]]}
+    URL: "https://arxiv.org/abs/2304.15004"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (emergence attributed to the choice of metric; verified online)"
+  - id: li2023othello
+    type: "paper-conference"
+    title: "Emergent World Representations: Exploring a Sequence Model Trained on a Synthetic Task"
+    author: [{family: "Li", given: "Kenneth"}, {family: "Hopkins", given: "Aspen K."}, {family: "Bau", given: "David"}, {family: "Viégas", given: "Fernanda"}, {family: "Pfister", given: "Hanspeter"}, {family: "Wattenberg", given: "Martin"}]
+    container-title: "ICLR 2023 Proceedings"
+    event: "11th International Conference on Learning Representations (ICLR 2023)"
+    publisher: "OpenReview"
+    publisher-place: "Kigali"
+    issued: {date-parts: [[2023]]}
+    URL: "https://arxiv.org/abs/2210.13382"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (Othello-GPT internal board representation; interventions change predictions; verified online)"
+  - id: anthropic2025tracing
+    type: "webpage"
+    title: "Tracing the thoughts of a large language model"
+    author: [{literal: "Anthropic"}]
+    container-title: "Anthropic"
+    issued: {date-parts: [[2025, 3, 27]]}
+    URL: "https://www.anthropic.com/research/tracing-thoughts-language-model"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: original (Claude plans the rhyme word ahead; mental addition via parallel paths while describing the carry-the-one method; verified online)"
+  - id: brown2024hinton
+    type: "article-newspaper"
+    title: "For Geoffrey Hinton, the godfather of AI, machines are closer to humans than we think"
+    author: [{family: "Brown", given: "Ian"}]
+    container-title: "The Globe and Mail"
+    issued: {date-parts: [[2024, 6, 12]]}
+    URL: "https://www.theglobeandmail.com/business/article-geoffrey-hinton-artificial-intelligence-machines-feelings/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post rejects Hinton's view without a link; quote 'They really do understand. And they understand the same way that we do.' verified online)"
+  - id: orosz2025stackoverflow
+    type: "post-weblog"
+    title: "Stack overflow is almost dead"
+    author: [{family: "Orosz", given: "Gergely"}]
+    container-title: "The Pragmatic Engineer"
+    issued: {date-parts: [[2025, 5, 15]]}
+    URL: "https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores"

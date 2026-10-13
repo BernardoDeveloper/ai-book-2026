@@ -1,0 +1,25 @@
+---
+id: ch12-mescla
+kind: diagram_code
+chapters:
+- 12
+editions:
+- pt
+- en
+file: assets/figures/ch12-mescla.png
+sha256: 00a4e4ba867259963a867e0a241b794939fb2d9a5947714f47805fa42db0ab8f
+pixels:
+  width: 1920
+  height: 1200
+source: assets/charts/ch12-mescla.py
+labels: inline dict per language in the source (pt, en)
+tool:
+  name: matplotlib
+  font: Noto Sans (assets/fonts)
+  theme: house-v1 (docs/research/IMAGES.md §4)
+render: uv run --with matplotlib --with numpy python -I assets/charts/ch12-mescla.py
+  pt
+description: 'ch12-mescla: a merge is a weighted average of two finished models.'
+authored_by: author+llm
+kdp_disclosure: none
+credit:

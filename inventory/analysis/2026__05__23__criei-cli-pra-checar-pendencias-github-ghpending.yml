@@ -1,0 +1,27 @@
+id: "2026/05/23/criei-cli-pra-checar-pendencias-github-ghpending"
+source_sha256: "d52a3751e387b7faf94d097c52cab877b517eb119296f4bb276779d6927223cb"
+title_en: "I Built a CLI to Check My GitHub Pending Items: ghpending"
+ai_relevance: tangential
+ai_relevance_reason: "A small developer utility; AI only appears as the background (the author's AI marathon created many repos)."
+genre: announcement
+themes: [non-ai, open-source-community]
+thesis: "Writing a small custom tool that prints open issues and pull requests across many repositories removes the friction that kept the author from answering contributors."
+summary: "After his AI experimentation marathon left him with dozens of public repositories receiving issues and pull requests, Akita built ghpending, a small Rust command line tool that fetches open issues and PRs for chosen repos in parallel and prints a digest. He lists install options (Homebrew, Cargo, mise), the four commands, the optional GitHub token that raises the API rate limit from 60 to 5000 requests per hour, and the config file locations. He explains that a self-made tool gets used because third-party ones always add friction. It is MIT-licensed and PRs are welcome."
+key_claims:
+  - claim: "GitHub's anonymous API limit is 60 requests per hour and 5000 with a token."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Niche developer utility; no AI explanation."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep: []
+  cut:
+    - "Entire post"
+jargon: []
+illustration_ideas: []
+people_events: []
+related_posts: ["2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso"]
+prerequisites: []
+series: ""
+obsolescence: "Tool version and rate-limit numbers are as of May 2026."

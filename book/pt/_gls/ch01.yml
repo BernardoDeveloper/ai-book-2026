@@ -1,0 +1,15 @@
+curva-em-s:
+  term: Curva em S
+  def: O desenho que o progresso de uma tecnologia costuma fazer ao longo do tempo. Começa devagar, sobe rápido e depois achata, quando cada melhora passa a custar muito mais do que a anterior.
+treinamento:
+  term: Treino
+  def: A fase, feita uma vez pela empresa, em que o modelo lê uma montanha de texto e tem seus parâmetros ajustados a cada erro de previsão. Leva semanas ou meses e custa milhões. Depois dela, os pesos ficam congelados.
+papagaio-estocastico:
+  term: Papagaio estocástico
+  def: Apelido crítico para os LLMs. Algo que repete padrões do que aprendeu com uma dose de sorteio no meio, sem entender o que diz.
+temperatura:
+  term: Temperatura
+  def: Um ajuste que regula quanto acaso entra no sorteio do próximo token. Baixa deixa as respostas previsíveis; alta deixa entrar escolhas menos óbvias, mais variadas e mais sujeitas a erro.
+rede-neural:
+  term: Rede neural
+  def: Um programa formado por muitas unidades simples ligadas por conexões com pesos ajustáveis, vagamente inspirado nos neurônios. Aprende ajustando esses pesos a partir de exemplos. Todo LLM é uma rede neural.

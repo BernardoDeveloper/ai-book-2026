@@ -1,0 +1,20 @@
+---
+id: ch04-marca-dagua
+kind: chart_code
+file: assets/figures/ch04-marca-dagua.png
+sha256: 876293fec10788cd6a2fd01972d31fb5966903e102ffd6731b01b5dc88086717
+source: assets/charts/ch04-marca-dagua.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I assets/charts/ch04-marca-dagua.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+chapters:
+- 4
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

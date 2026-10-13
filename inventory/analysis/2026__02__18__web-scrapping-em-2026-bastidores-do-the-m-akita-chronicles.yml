@@ -1,0 +1,38 @@
+id: "2026/02/18/web-scrapping-em-2026-bastidores-do-the-m-akita-chronicles"
+source_sha256: "b5526c4b92e40b43c572abd4d101df3a9f577fe9a98788bba2a42d978994d868"
+title_en: "Web Scraping in 2026 (Behind the Scenes of The M.Akita Chronicles)"
+ai_relevance: tangential
+ai_relevance_reason: "About scraping the web for a newsletter bot; AI only appears as the downstream consumer of scraped content."
+genre: tutorial
+themes: [software-engineering-discipline, non-ai]
+thesis: "Reading the web programmatically has become adversarial; use APIs and RSS first, a stealth headless browser only when needed, and identify page elements by structural behaviour instead of brittle CSS class names."
+summary: "Part 2 of the series. Akita traces scraping from a four-line HTTP fetch to packaging a Chromium browser. SPAs need a real browser (Ferrum/CDP); bot detectors spot headless Chrome through navigator.webdriver, plugins, WebGL and timing; he patches these with a stealth wrapper. Professional anti-bot services (DataDome, Cloudflare Turnstile) detect the automation protocol itself, so for Reuters he switched to Google News RSS. He shows how Morningstar changed its DOM and CSS classes twice, and why he moved to structural heuristics (long URLs, clustering, descriptive titles). He gives a reliability hierarchy (API, RSS, server-rendered HTML, headless browser, anti-bot sites) and the real costs of Chromium (300MB image, 200-400MB RAM per instance, seconds of latency). He predicts the web will keep closing into a walled garden."
+key_claims:
+  - claim: "Headless Chrome is detectable via navigator.webdriver, empty plugin lists, missing client hints, software WebGL renderer and non-human timing."
+    time_sensitive: true
+  - claim: "Anti-bot vendors such as DataDome detect the Chrome DevTools Protocol itself, which JavaScript patches cannot hide."
+    time_sensitive: true
+  - claim: "The most reliable approach is the simplest source that works: API, then RSS, then HTML, and only then headless browser."
+    time_sensitive: false
+  - claim: "Sites that generate CSS class names at build time make class-based selectors a time bomb; structural properties are more stable."
+    time_sensitive: false
+  - claim: "The open, machine-readable web is turning into a walled garden and will get harder to access."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. Niche scraping engineering; one small thread (the web closing to bots) connects to the AI-and-open-web debate."
+technical_depth: 5
+evergreen: 2
+book_use:
+  keep:
+    - "One line: the open, machine-readable web is closing as bot defences escalate"
+  cut:
+    - "All code, selectors, browser fingerprinting detail, Docker costs"
+jargon: [web scraping, SPA, headless browser, bot detection, RSS, API, CDP, fingerprinting, CAPTCHA]
+illustration_ideas:
+  - "Reliability ladder: API, RSS, server HTML, headless browser, anti-bot sites"
+people_events: ["DataDome", "Cloudflare Turnstile", "Reuters", "Morningstar"]
+related_posts:
+  - "2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles"
+prerequisites: []
+series: "m-akita-chronicles"
+obsolescence: "Anti-bot techniques and site structures change quarterly; specifics are already likely stale."

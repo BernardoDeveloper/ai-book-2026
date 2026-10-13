@@ -1,0 +1,40 @@
+id: "2026/03/09/atacando-fraudes-via-email-frank-fbi"
+source_sha256: "ee527bbc91add597c4c88b856f1a4f973d8c957b1c2ff012378d50615ee26127"
+title_en: "Fighting Email Fraud: Frank FBI"
+ai_relevance: substantial
+ai_relevance_reason: "A security tool in which three LLMs form one of six analysis layers; the post discusses LLM hallucination, consensus, and criminals using LLMs; built with AI assistance."
+genre: project-log
+themes: [ai-in-daily-life, security-and-sandboxing, limits-of-llms, vibe-coding-practice]
+thesis: "Phishing succeeds through vanity rather than ignorance, and LLMs have removed the old tells like bad grammar, so an automated, self-hosted multi-layer analyzer (with LLMs as only one layer) is more practical than training people; and security work needs a human who thinks like an attacker."
+summary: "Akita describes Frank FBI, a self-hosted tool where you forward a suspicious email and get back a risk report. It runs six layers: header authentication (SPF, DKIM, DMARC), sender reputation (domain age, blocklists), content patterns, external threat databases (URLhaus, VirusTotal), entity verification via open-source intelligence, and an LLM layer that queries three models (Claude Sonnet, GPT-4o, Grok 4) in parallel and combines them by confidence-weighted consensus. LLMs carry 30% of the weight; if all fail the score falls to a neutral 50 instead of guessing. He argues that vanity, not technical ignorance, makes people fall for phishing, and that LLMs now let criminals write flawless Portuguese emails. Development notes cover a score-dilution bug, replacing regex with LLM for pattern detection, a hallucination-prevention step that checks LLM claims against deterministic data, and anti-poisoning rules so legitimate domains are never reported to community threat databases. He warns strongly against offering the tool as a service, because the operator would hold users' sensitive emails, and licenses it AGPL-3.0."
+key_claims:
+  - claim: "People fall for phishing mainly because of vanity (flattering offers), not technical ignorance."
+    time_sensitive: false
+  - claim: "LLMs let criminals produce grammatically perfect, professional scam emails, so spotting spelling errors no longer works."
+    time_sensitive: true
+  - claim: "Combining several independent LLMs by weighted consensus, and defaulting to a neutral score when they all fail, is safer than trusting a single model."
+    time_sensitive: false
+  - claim: "LLM claims must be cross-checked against concrete data from deterministic layers because models invent facts."
+    time_sensitive: false
+  - claim: "A failed analysis layer returning zero diluted the average and made fraudulent emails look safer (zero-dilution bug)."
+    time_sensitive: false
+  - claim: "The LLM did not propose security hardening; the human had to ask 'what if the sender is spoofed' and 'what if someone poisons the reporting'."
+    time_sensitive: false
+  - claim: "Offering such a tool as a public service creates a honeypot of sensitive emails."
+    time_sensitive: false
+  - claim: "The project took ~17 hours, 38 commits, ~14.6k Ruby lines."
+    time_sensitive: true
+fears_addressed: ["AI makes scams more convincing", "Can I trust an AI to judge if an email is a scam?", "Will I be tricked by phishing?"]
+reader_value: "High for a lay reader: shows how AI both empowers scammers and can help defend, explains why vanity is the hook, and demonstrates a design where AI is one voice among checks rather than the judge. Concrete and relatable."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep: ["Phishing works through vanity, not stupidity", "LLMs erased the 'bad grammar' tell", "Six layers; LLM is one voice, not the judge", "Three LLMs voting; fall back to neutral when unsure", "Never offer this as a service: honeypot of sensitive emails", "Human thinks like the attacker (IOC poisoning)"]
+  cut: ["Docker Compose deploy steps and env vars", "Commit lists", "API service details (ThreatFox, AbuseIPDB)"]
+jargon: ["phishing", "SPF/DKIM/DMARC", "WHOIS", "OSINT", "LLM consensus", "hallucination", "IOC", "IOC poisoning", "self-hosted", "AGPL", "spoofing"]
+illustration_ideas: ["Six layers of email analysis with weights feeding one risk score", "Three LLMs vote with a confidence-weighted consensus", "Zero dilution: a failed layer dragging the average down"]
+people_events: ["Claude Sonnet", "GPT-4o", "Grok 4", "VirusTotal", "URLhaus/abuse.ch", "ThreatFox", "AbuseIPDB", "SpamCop", "OpenRouter"]
+related_posts: ["2026/03/07/crystal-e-um-wrapper-inteligente-pro-ffmpeg-feito-em-3-horas-easy-ffmpeg", "2026/03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle"]
+prerequisites: ["What phishing is", "What an LLM is"]
+series: "frank-projects"
+obsolescence: "Model names (GPT-4o, Grok 4, Claude Sonnet) and the list of external services will date; the vanity and LLM-as-one-layer ideas are durable."

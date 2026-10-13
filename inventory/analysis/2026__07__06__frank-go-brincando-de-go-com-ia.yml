@@ -1,0 +1,43 @@
+id: "2026/07/06/frank-go-brincando-de-go-com-ia"
+source_sha256: "65dd71345fc6229a22d1c40ea2f7ff20e2e79213cf41323d7864c1fd6ca7b5e5"
+title_en: "Frank GO: Playing Go with AI"
+ai_relevance: substantial
+ai_relevance_reason: "Built with Claude Code and centered on KataGo, a superhuman Go AI, plus a short history from GNU Go heuristics to AlphaGo and open-source engines."
+genre: project-log
+themes: [ai-in-daily-life, personal-journey, coding-agents-tools]
+thesis: "In 18 years Go AI went from laughable heuristics (GNU Go, 2008) to free superhuman engines (KataGo); Akita wrapped one into a beginner-friendly study app that shows territory and score rather than opaque win rates."
+summary: "Akita, a casual Go player who started with the manga Hikaru no Go, recounts that the only Go AI in 2008 was GNU Go, a pile of heuristics. He sketches the path through Monte Carlo Tree Search, AlphaGo's 4-1 win over Lee Sedol in 2016 (move 37, Lee's move 78), Leela Zero and KataGo. Using Claude Code to research options, he forked the Sabaki editor, integrated KataGo and bundled over 4,700 tsumego problems, historical games and 15 games from the manga, citing sources and licenses. The main innovation is overlays: area painting, live score and move names, because KataGo estimates territory and score and beginners understand '12 points behind' more than a win-rate percentage. It runs offline on CPU. He built it for solo study, not competition."
+key_claims:
+  - claim: "In 2008 GNU Go was a stack of heuristics that beat only beginners; AlphaGo beat Lee Sedol 4-1 in March 2016."
+    time_sensitive: false
+  - claim: "KataGo, an open-source descendant of the AlphaZero approach, is superhuman and estimates score and territory point by point, not just win probability."
+    time_sensitive: false
+  - claim: "Win-rate percentages are unhelpful to beginners; telling them points behind and dead areas is better."
+    time_sensitive: false
+  - claim: "Most games in the manga Hikaru no Go are recreations of real historical games."
+    time_sensitive: false
+fears_addressed:
+  - "Has AI beaten humans at Go, and what does that mean for learners?"
+reader_value: "Medium-low. A warm, accessible history of Go AI from heuristics to superhuman and an example of AI as study tutor rather than rival; app features are niche."
+technical_depth: 2
+evergreen: 4
+book_use:
+  keep:
+    - "Go AI timeline: GNU Go (2008) -> MCTS -> AlphaGo (2016, move 37 and move 78) -> KataGo"
+    - "Showing score and territory instead of opaque win rates: explainability for beginners"
+  cut:
+    - "Problem collection sources, install instructions, server lists"
+jargon: [KataGo, AlphaGo, Monte Carlo Tree Search, heuristics, engine, SGF, tsumego, komi, win rate, open source, Electron]
+illustration_ideas:
+  - "Timeline of Go AI strength from GNU Go to KataGo"
+  - "Go board with territory overlay versus win-rate bar"
+people_events:
+  - "AlphaGo vs Lee Sedol (March 2016)"
+  - "David Wu (KataGo), Yichuan Shen (Sabaki)"
+  - "Hikaru no Go (Yumi Hotta, Takeshi Obata)"
+related_posts:
+  - "2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo"
+  - "2008/07/15/off-topic-por-que-programadores-devem-jogar-go"
+prerequisites: [AI, neural network]
+series: "frank-projects"
+obsolescence: "Collection sizes and platform install details are July 2026; the Go AI history is stable."

@@ -1,0 +1,38 @@
+id: "2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito"
+source_sha256: "fbf1d5f1c5974097c0d648ddea25b17e7e19d9f77943a218acd1a17303f9e7cc"
+title_en: "Software Is Never 'Done': 4 Projects, Life After Deploy, and Why the One-Shot Prompt Is a Myth"
+ai_relevance: core
+ai_relevance_reason: "The whole post is an argument about AI-assisted development: one-shot prompting vs iteration, role of the experienced developer, evidence from four AI-built projects."
+genre: essay
+themes: [vibe-coding-practice, software-engineering-discipline, jobs-and-careers, hype-and-marketing]
+thesis: "One-shot prompting is for demos; real software diverges from any spec within hours of deployment, so AI-built software requires iterative engineering (tests, CI, small releases) and decisions from an experienced human. The AI is the accelerator; engineering discipline is the brake and steering."
+summary: "Ten days after declaring his M.Akita Chronicles project finished, Akita counts 125 post-deploy commits across four AI-built projects and uses them as evidence. Unpredictable issues included Gmail clipping emails over 102KB, Steam API returning Portuguese date abbreviations, a text-to-speech 'auto' language mode producing a mixed accent, an LLM persona opening every comment with the same word, and users sharing file types nobody anticipated. Features such as face detection and video support emerged from using the apps, not from specs. He highlights decisions the AI would not make unprompted, such as asking for a circuit breaker instead of retry-with-backoff, and switching the LLM from Claude to Grok-4 once model config was centralized. He addresses senior developers who dismissed AI after a few errors, arguing it is already good enough and that using it only as autocomplete leaves 90% of the gain unused. He claims 692 commits and 4,057 tests in a month, with practices from Extreme Programming (TDD, small releases, refactoring) as the discipline that keeps AI output from accumulating technical debt."
+key_claims:
+  - claim: "125 post-deployment commits across four projects show that specs cannot predict production behavior; one-shot prompts produce demos, not production software."
+    time_sensitive: false
+  - claim: "Four projects (692 commits, 4,057 tests) were built in one month by one developer with an AI agent."
+    time_sensitive: true
+  - claim: "He estimates Frank Sherlock would take a good senior dev 3-4 weeks without AI versus his 7 days, and the newsletter system 10-15 weeks in Scrum with 2-3 devs versus his 8 days (his own estimates)."
+    time_sensitive: true
+  - claim: "LLMs flatten tone over time (the persona's comments all became the same lukewarm voice), requiring iterative prompt tuning."
+    time_sensitive: false
+  - claim: "Senior developers who write off AI after a few mistakes are leaving most of the gain on the table; using AI as glorified autocomplete is not enough."
+    time_sensitive: true
+  - claim: "AI accelerates code production but also accelerates technical debt without discipline (TDD, CI, small releases)."
+    time_sensitive: false
+  - claim: "The default model for the newsletter project was switched from Claude to Grok-4."
+    time_sensitive: true
+fears_addressed: ["AI will replace programmers", "You can describe an app and get a finished product (one-shot prompting)", "Is AI-built software real or just demos?"]
+reader_value: "High. Concrete, relatable stories (Gmail cutting off emails, AI tone becoming bland, users doing the unexpected) show why AI cannot just 'finish' software, which directly counters hype and job-loss fear. Also a counter-view to dismissive skeptics."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep: ["Software is never done: reality finds bugs no spec predicts", "Anecdotes: Gmail 102KB clipping, Steam Portuguese dates, TTS accent, LLM persona opening every comment with 'Ah,'", "Circuit breaker vs retry: the AI will not ask for it", "LLM tone flattening and mood system", "Agent types code, human decides what code"]
+  cut: ["Commit hashes and per-release tables", "Contributor PR table details", "CI/CD signing details"]
+jargon: ["one-shot prompt", "vibe coding", "TDD", "CI", "circuit breaker", "technical debt", "regression test", "LLM", "TTS", "prompt tuning", "Extreme Programming"]
+illustration_ideas: ["Spec vs reality: curve of unforeseen issues appearing after deployment", "Circuit breaker vs retry storm"]
+people_events: ["Claude (Anthropic)", "Grok-4 (xAI)", "Frank Sherlock, FrankMD, FrankMega, M.Akita Chronicles projects", "Gmail 102KB clipping"]
+related_posts: ["2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles", "2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias", "2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server", "2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1"]
+prerequisites: ["What vibe coding is", "What a test and a deploy are"]
+series: "frank-projects"
+obsolescence: "Commit counts, version numbers and the Claude to Grok-4 switch are snapshot data from 1 March 2026; time estimates are the author's own."

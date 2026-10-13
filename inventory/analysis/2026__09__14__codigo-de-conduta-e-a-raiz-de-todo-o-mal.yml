@@ -1,0 +1,39 @@
+id: "2026/09/14/codigo-de-conduta-e-a-raiz-de-todo-o-mal"
+source_sha256: "d8c95672345de64b7e62adf4c7b643a04f293a86f937f22e915a370eff3fa120"
+title_en: "Codes of Conduct Are the Root of All Evil: Reclaiming Your Freedom"
+ai_relevance: tangential
+ai_relevance_reason: "About open-source community politics; AI appears only as a side note in the 2022 tech-layoff and ChatGPT timeline (end-of-programming predictions)."
+genre: opinion
+themes: [open-source-community, society-politics-censorship, non-ai]
+thesis: "Open-source codes of conduct, born in a decade of cheap money, became instruments for cancelling people over opinions rather than code, with no evidence they improved diversity; the era ended when the money did."
+summary: "Akita argues that the Contributor Covenant and similar codes of conduct were used to oust high-profile figures (Brendan Eich, Larry Garfield, Linus Torvalds, Richard Stallman, Tim Peters and others) for opinions or private life rather than technical wrongdoing. He ties the phenomenon to the 2012-2022 hiring bubble, when companies overhired and had spare time for internal politics, and notes the bubble burst in 2022 with large layoffs, coinciding with ChatGPT's release and early predictions that AI would end programming (including Amodei's 90% claim, which he says did not come true). He reviews academic studies finding no demonstrable gain in diversity or newcomer attraction from codes of conduct, and a 2026 causal study showing veteran contributors disengage after adoption. He describes the backlash led by DHH, Framework and the Omacom Foundation, and tells how pressure on quotas led him to leave organizing RubyConf Brasil. He closes saying the cancelling machine lost funding rather than the debate."
+key_claims:
+  - claim: "Codes of conduct were used to remove prominent open-source figures for non-code reasons (opinions, donations, private life)."
+    time_sensitive: false
+  - claim: "Studies find no evidence that codes of conduct raise diversity or attract newcomers; a 2026 ICSE causal study found more newcomers but also more disengagement of existing contributors."
+    time_sensitive: true
+  - claim: "The 2012-2022 tech hiring bubble, fueled by cheap money, funded the 'everyone should learn to code' wave and burst with hundreds of thousands of layoffs in 2022-2023."
+    time_sensitive: false
+  - claim: "ChatGPT launched during the 2022 layoffs, followed by predictions of the end of programming (Huang, Devin, Amodei's 90% of code in 3-6 months) that did not materialize."
+    time_sensitive: true
+fears_addressed:
+  - "Will AI end programming careers (shows the earlier 'end of programming' predictions were hype)"
+reader_value: "Low for an AI book. The only reusable piece is the context that AI 'end of programming' predictions arrived right after the tech layoffs and did not come true."
+technical_depth: 1
+evergreen: 3
+book_use:
+  keep:
+    - "Timeline: 2022 layoffs, ChatGPT release and the 'end of programming' predictions that failed, as background on hype cycles"
+    - "Hiring bubble as context for why programming looked like a guaranteed career"
+  cut:
+    - "Entire code-of-conduct, GamerGate, DEI and culture-war discussion"
+    - "Personal RubyConf Brasil story"
+    - "Omarchy/Omacom fundraising details"
+jargon: [open source, Contributor Covenant, code of conduct, maintainer, GPL, fork, repository]
+illustration_ideas:
+  - "timeline of tech hiring bubble, 2022 layoffs and ChatGPT release"
+people_events: [Brendan Eich, Larry Garfield, Linus Torvalds, Richard Stallman, Tim Peters, DHH, Eric S. Raymond, Coraline Ada Ehmke, Keith Rabois, Jensen Huang, Dario Amodei, ChatGPT launch 2022, Big Tech layoffs 2022-2023, GamerGate, Omacom Foundation]
+related_posts: []
+prerequisites: ["What open-source software is"]
+series: ""
+obsolescence: "Status of the Omacom Foundation, Ruby Central and cited studies may change; not AI content."

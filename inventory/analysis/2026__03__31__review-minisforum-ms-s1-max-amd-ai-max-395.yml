@@ -1,0 +1,40 @@
+id: "2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395"
+source_sha256: "5503548667e5a04feb629e98214f329605f7ca537c7095d3afe20c72e9ad2cd1"
+title_en: "Review: Minisforum MS-S1 Max, AMD AI Max+ 395 with 96GB of VRAM"
+ai_relevance: substantial
+ai_relevance_reason: "Hardware review centered on running LLMs locally: why memory bandwidth and capacity decide inference speed and which models fit; includes explanations of MoE, quantization, distillation and flash attention."
+genre: review
+themes: [hardware-and-infrastructure, open-vs-closed-and-local-models, benchmarks-model-comparison, what-llms-are]
+thesis: "LLM inference is limited by memory bandwidth and capacity: a gaming GPU is up to 7x faster but caps at 32GB, while a unified-memory mini-PC with 96GB runs much larger models, slowly but privately and cheaply."
+summary: "Akita bought a Minisforum mini-PC with the AMD Ryzen AI Max+ 395 chip so he could allocate 96GB of unified memory to the GPU and run big local models. In his tests an RTX 5090 was about 6-7x faster on models that fit in 32GB (about 150 vs 23 tokens per second on phi4), consistent with the bandwidth ratio of roughly 1,792 vs 256 GB/s. The mini-PC can however run models of 50 to 81GB, for example a 122B-parameter model at about 19 tokens per second, which the 5090 cannot hold. He explains why LLM inference is bandwidth-bound, why offloading layers over PCIe fails for interactive use, how Mixture-of-Experts models run 3-10x faster than dense models of the same size, and how quantization, distillation, flash attention and KV cache reduce memory needs. He compares options (Framework Desktop, Mac Studio M3 Ultra with up to 512GB at about 110k reais in Brazil vs 12-15k reais for this machine) and concludes that 19 tokens/s on a 122B model is not the Claude or ChatGPT experience, but it is local, private and low-power."
+key_claims:
+  - claim: "LLM generation speed is dominated by memory bandwidth: read all active weights per token; RTX 5090 (~1,792 GB/s) was ~6-7x faster than Strix Halo (~256 GB/s) on models fitting in 32GB."
+    time_sensitive: true
+  - claim: "A 96GB unified-memory machine can run models (e.g. 122B MoE at ~19 tok/s) that do not fit in a 32GB gaming GPU."
+    time_sensitive: true
+  - claim: "Mixture-of-Experts models activate only a fraction of parameters per token and ran 3-10x faster than dense models of similar size on this hardware."
+    time_sensitive: false
+  - claim: "Offloading layers to system RAM over PCIe drops speed from ~150 to 2-8 tok/s, unusable interactively."
+    time_sensitive: false
+  - claim: "Quantization to 4-bit lets a 70B model fit in ~40GB instead of ~140GB with small quality loss."
+    time_sensitive: false
+  - claim: "Local 19 tok/s on a big model is slower than Claude or ChatGPT, but local, private, under ~100W."
+    time_sensitive: true
+  - claim: "Mac Studio M3 Ultra max config costs ~$9,999 in the US and over R$110,000 in Brazil with import costs, versus R$12-15k for this mini-PC (his estimates)."
+    time_sensitive: true
+  - claim: "Some 70B models crash on ROCm due to a 32-bit size bug awaiting an Ollama fix."
+    time_sensitive: true
+fears_addressed: ["Do I need the cloud to run AI?", "Why is AI hardware so expensive and scarce?"]
+reader_value: "Moderate: a lay reader can take the bandwidth-and-capacity intuition for why AI needs special memory and why local AI is slow and costly. The tables and benchmarks are specialist."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep: ["LLM generation as 'read all weights from memory per token': bandwidth explains speed", "Why VRAM size caps the model you can run", "MoE explained: only a few experts active per token", "Quantization intuition: shrinking weights from 16 to 4 bits", "Local AI trade-off: private and cheap to run but slow"]
+  cut: ["CPU benchmark tables", "Model-by-model tok/s tables", "ROCm bug detail", "Brazil import pricing comparison"]
+jargon: ["VRAM", "unified memory", "memory bandwidth", "tokens per second", "inference", "quantization", "MoE (Mixture of Experts)", "dense model", "KV cache", "flash attention", "distillation", "offloading", "parameters", "ROCm", "CUDA"]
+illustration_ideas: ["Why memory bandwidth limits token speed: weights streamed past the GPU for every token", "MoE vs dense: all parameters read vs only active experts read", "Model size vs available VRAM: what fits where", "Quantization: same model at 16, 8 and 4 bits"]
+people_events: ["AMD Ryzen AI Max+ 395 (Strix Halo)", "NVIDIA RTX 5090", "Apple Mac Studio M3 Ultra", "Qwen, GLM, Kimi, MiniMax, DeepSeek", "Ollama"]
+related_posts: ["2026/03/31/migrando-meu-home-server-com-claude-code"]
+prerequisites: ["What an LLM is", "What a GPU is"]
+series: "home-server"
+obsolescence: "All benchmark numbers, model names (qwen3.5, phi4 etc.), prices and the ROCm bug will date within months; the bandwidth-bound principle is durable."

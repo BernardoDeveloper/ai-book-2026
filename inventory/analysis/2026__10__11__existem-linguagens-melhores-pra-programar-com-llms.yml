@@ -1,0 +1,50 @@
+id: "2026/10/11/existem-linguagens-melhores-pra-programar-com-llms"
+source_sha256: "d0ad6a79b80f5d9dd74bf39c0782d291889f9de32b964c6ea06c580f02bb4079"
+title_en: "Are there better languages for programming with LLMs?"
+ai_relevance: core
+ai_relevance_reason: "Reproducible benchmark testing whether programming language choice matters when LLM agents write the code."
+genre: benchmark
+themes: [programming-languages, benchmarks-model-comparison, software-engineering-discipline, vibe-coding-practice]
+thesis: "No language is better for LLM-written code: concise syntax did not save tokens, strong typing did not save repair cycles, and what mattered was the presence of tests and engineering discipline."
+summary: "Responding to DHH's viral series converting an app into several languages with agents and declaring Rust the winner, Akita argues a single agent conversion measures the model's familiarity, not the language, and that real software needs many iterations. He ran 112 attempts: 7 languages, 4 model configurations, with and without public tests, on a multi-tenant ledger engine task graded by hidden stories. The two frontier configurations passed all eligible attempts, so there was no language ranking. Weaker models did better when tests were provided. Token use did not follow code conciseness (Ruby used as many or more tokens as Rust), and there were zero compiler-error repair cycles in audited runs. A separate queue-worker test (Elixir, Rust, Rails, plain Ruby) found equal throughput under his load, with Rust only using less memory, although the test may just show the shared collector was the bottleneck. He concludes that choosing the right tool for the job and testing discipline outweigh language wars, lists his rule-of-thumb language map, and clearly flags the benchmark's limits."
+key_claims:
+  - claim: "Across 112 attempts on one ledger task, frontier models (Opus 5.5, Codex/GPT-6 Sol) passed 53 of 53 eligible attempts regardless of language, so no language ranking emerged."
+    time_sensitive: true
+  - claim: "Providing a public test suite improved weaker models' results (24 correct artifacts vs 16 without), which was the cleanest signal in the benchmark."
+    time_sensitive: true
+  - claim: "Concise languages did not save tokens: Ruby cost as many or more tokens than Rust; strongly typed languages showed no compiler-guided repair cycles to save."
+    time_sensitive: true
+  - claim: "Remaining model errors were domain invariants no compiler catches, in typed and dynamic languages alike."
+    time_sensitive: false
+  - claim: "In a queue-worker load test, four stacks tied on throughput at the tested load; Rust used far less memory (16 MiB vs 135 MiB for Elixir)."
+    time_sensitive: true
+  - claim: "A single-shot agent conversion (like DHH's) measures the model's familiarity with idioms and the number of iterations, not the language."
+    time_sensitive: false
+  - claim: "The benchmark is small, one task, two repetitions per cell, and shows a floor not a ceiling; results don't transfer automatically."
+    time_sensitive: false
+fears_addressed:
+  - "Which programming language should I learn in the AI era"
+  - "Do typed languages make AI-written code safer"
+reader_value: "Medium. Addresses a common worry about choosing languages in the AI era and shows measurement beats social-media debates; includes accessible lessons on tests and humility about benchmark limits."
+technical_depth: 4
+evergreen: 3
+book_use:
+  keep:
+    - "Single agent conversion measures the model, not the language"
+    - "Tests and discipline matter more than language or typing"
+    - "Superstitions measured: concise syntax saves tokens; strong types save repairs"
+    - "Errors were domain invariants no compiler catches"
+    - "Honest limits of the benchmark spelled out"
+  cut:
+    - "Language/model matrices, queue test numbers, instrumentation details"
+    - "Tweets and language-by-use-case map beyond one or two lines"
+jargon: [LLM, agent, token, benchmark, compiler, static typing, dynamic typing, test suite, throughput, backpressure, invariant, regression test, Rust, Elixir]
+illustration_ideas:
+  - "language conciseness vs tokens used: lines of code do not predict token cost"
+  - "tests as the variable that moved results for weaker models"
+  - "iteration count confound: one-shot vs many-round agent output"
+people_events: [DHH, Campfire conversion thread, kurtome, vibe-coding-benchmarks repo]
+related_posts: ["2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou", "2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas", "2026/10/12/llms-agentes-competente-o-suficiente", "2026/09/19/nova-linguagem-voltada-pra-ia-bend-2"]
+prerequisites: ["What a programming language and compiler are", "What a coding agent is"]
+series: ""
+obsolescence: "Model names, token counts and the specific language results are Oct 2026 and one task only; the claim that language choice barely matters may be revisited with other tasks."

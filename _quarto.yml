@@ -1,0 +1,53 @@
+# Shared Quarto config. Language-specific settings (title, chapter list,
+# glossary, output dir) live in _quarto-<lang>.yml, generated from
+# book/outline.yml by scripts/gen_quarto.rb. Build with `rake build`.
+project:
+  type: book
+book:
+  author: "Fabio Akita"
+  date: last-modified
+  cover-image: assets/cover/cover.png
+bibliography: book/back/references.yaml
+citeproc: true
+link-citations: true
+crossref:
+  chapters: true
+filters:
+  - filters/strip-provenance.lua
+  - filters/project-paths.lua
+  - filters/unnumbered-refs.lua
+  - filters/glossary.lua
+  - quarto
+  - filters/strip-div-alt.lua
+format:
+  epub:
+    epub-cover-image: assets/cover/cover.png
+    # Only chapters carry numbers (as in the PDF); sections stay unnumbered.
+    number-depth: 1
+    toc-depth: 1
+    css: assets/style/epub.css
+    # Same faces as the PDF (OFL, see assets/fonts/SOURCES.md); declared in epub.css.
+    epub-fonts:
+      - assets/fonts/SourceSerif4-Regular.otf
+      - assets/fonts/SourceSerif4-It.otf
+      - assets/fonts/SourceSerif4-Bold.otf
+      - assets/fonts/SourceSerif4-BoldIt.otf
+      - assets/fonts/SourceSans3-Regular.otf
+      - assets/fonts/SourceSans3-Semibold.otf
+  # PDF: local Quarto format extension _extensions/akita-book (6x9 in trade
+  # paperback). Quarto renders the print edition; `rake build` recompiles the
+  # kept .typ with `--input edition=ebook` for the ebook PDF (with cover).
+  akita-book-typst:
+    citeproc: true
+    toc: true
+    toc-depth: 1
+    keep-typ: true
+    font-paths: [assets/fonts]
+    pdf-standard: ua-1
+    pdf-cover: assets/cover/cover.png
+  html:
+    theme: [default]
+    css: assets/style/html.css
+    number-depth: 1
+    toc: true
+  docx: default

@@ -1,0 +1,13 @@
+source-map:
+  term: Source map
+  def: Arquivo de depuração que liga o código compactado e embaralhado de um programa ao código original legível. Quando vai junto num pacote publicado, pode expor o código-fonte inteiro.
+memoria-de-agente:
+  term: Memória de agente
+  def: Anotações em texto que um agente de IA grava em arquivos e relê no começo de cada sessão. O modelo em si não guarda nada entre conversas; a "memória" é o que ele lê.
+banco-vetorial:
+  term: Banco vetorial
+  long: Vector database
+  def: Banco de dados feito para guardar embeddings e achar rapidamente os que são mais parecidos com uma pergunta. Foi a peça central do RAG clássico.
+busca-lexical:
+  term: Busca lexical
+  def: Busca pela palavra literal no texto, como o "localizar" de um editor ou o comando grep. Simples, rápida e fácil de entender quando falha.

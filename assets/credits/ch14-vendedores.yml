@@ -1,0 +1,92 @@
+---
+id: ch14-vendedores
+kind: photo
+subject:
+- Jensen Huang
+- Sam Altman
+- Dario Amodei
+file: assets/figures/ch14-vendedores.jpg
+sha256: c8f99c000fbf4578b3fcdf31198192cf17deddfb2a8e532fab757f4bffc5963d
+pixels:
+  width: 2088
+  height: 907
+composite_of:
+- subject: Jensen Huang
+  source:
+    repository: wikimedia_commons
+    page_url: https://commons.wikimedia.org/wiki/File:Jensen_Huang_(cropped)_(2024).jpg
+    original_url: https://upload.wikimedia.org/wikipedia/commons/5/59/Jensen_Huang_%28cropped%29_%282024%29.jpg
+    original_sha1: d93cf24465943589d79d3b4e165a6043e3800ebf
+    retrieved: '2026-10-13'
+    title: Jensen Huang (cropped) (2024)
+    date_taken: '2024-05-13 14:43:32'
+    description: Jensen Huang, Founder, President and CEO of NVIDIA, at a meeting
+      with Josep Borrell Fontelles, High Representative of the Union for Foreign Affairs
+      and Security Policy and Vice-President of the European Commission.
+  author: Peter Dasilva
+  uploader: Bookish Worm
+  license:
+    short: CC BY 4.0
+    url: https://creativecommons.org/licenses/by/4.0
+    attribution_required: true
+    share_alike: false
+    restrictions: []
+- subject: Sam Altman
+  source:
+    repository: wikimedia_commons
+    page_url: https://commons.wikimedia.org/wiki/File:Sam_Altman_-_TechCrunch_Disrupt_SF_2017_(36522988343).jpg
+    original_url: https://upload.wikimedia.org/wikipedia/commons/3/3d/Sam_Altman_-_TechCrunch_Disrupt_SF_2017_%2836522988343%29.jpg
+    original_sha1: aa32eaa5c250051410fa6c3e759e35102765a3fb
+    retrieved: '2026-10-13'
+    title: Sam Altman - TechCrunch Disrupt SF 2017 (36522988343)
+    date_taken: 2017-09-19 15:39
+    description: Y Combinator President Sam Altman speaks onstage during TechCrunch
+      Disrupt SF 2017 at Pier 48 on September 19, 2017 in San Francisco, California.
+  author: TechCrunch
+  uploader: Sikander
+  license:
+    short: CC BY 2.0
+    url: https://creativecommons.org/licenses/by/2.0
+    attribution_required: true
+    share_alike: false
+    restrictions: []
+- subject: Dario Amodei
+  source:
+    repository: wikimedia_commons
+    page_url: https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg
+    original_url: https://upload.wikimedia.org/wikipedia/commons/d/d8/Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg
+    original_sha1: af886722e97a56ce34d8446a40c913758fc2c441
+    retrieved: '2026-10-13'
+    title: Dario Amodei at TechCrunch Disrupt 2023 02
+    date_taken: '2023-09-20 11:59:45'
+    description: Dario Amodei at TechCrunch Disrupt 2023
+  author: TechCrunch
+  uploader: Artem.G
+  license:
+    short: CC BY 2.0
+    url: https://creativecommons.org/licenses/by/2.0
+    attribution_required: true
+    share_alike: false
+    restrictions: []
+modifications:
+- recortadas
+- redimensionadas
+- montadas lado a lado
+adaptation: false
+placement: interior
+personality_rights_check: public figures (CEOs) in an editorial context next to text
+  about their public statements; interior only, no endorsement implied; none of the
+  three files carries a Commons personality restriction
+kdp_disclosure: none
+credit:
+  caption_pt: 'Fotos: Peter Dasilva / Wikimedia Commons, CC BY 4.0; TechCrunch / Wikimedia
+    Commons, CC BY 2.0 (recortadas)'
+  caption_en: 'Photos: Peter Dasilva / Wikimedia Commons, CC BY 4.0; TechCrunch /
+    Wikimedia Commons, CC BY 2.0 (cropped)'
+  backmatter: 'Jensen Huang: "Jensen Huang (cropped) (2024)", Peter Dasilva. https://commons.wikimedia.org/wiki/File:Jensen_Huang_(cropped)_(2024).jpg.
+    Licença CC BY 4.0, https://creativecommons.org/licenses/by/4.0. Sam Altman: "Sam
+    Altman - TechCrunch Disrupt SF 2017 (36522988343)", TechCrunch. https://commons.wikimedia.org/wiki/File:Sam_Altman_-_TechCrunch_Disrupt_SF_2017_(36522988343).jpg.
+    Licença CC BY 2.0, https://creativecommons.org/licenses/by/2.0. Dario Amodei:
+    "Dario Amodei at TechCrunch Disrupt 2023 02", TechCrunch. https://commons.wikimedia.org/wiki/File:Dario_Amodei_at_TechCrunch_Disrupt_2023_02.jpg.
+    Licença CC BY 2.0, https://creativecommons.org/licenses/by/2.0. Modificações:
+    recortadas, redimensionadas e montadas lado a lado.'

@@ -1,0 +1,43 @@
+id: "2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro"
+source_sha256: "ea64fb034378d2f7902bc60be9654f8edf07b649708a58cd48dc5c73b6b32b5c"
+title_en: "LLM Benchmark v4: Genesys PI, a new Brazilian competitor"
+ai_relevance: core
+ai_relevance_reason: "Benchmark test of a Brazilian-trained LLM against frontier models."
+genre: benchmark
+themes: [benchmarks-model-comparison, open-vs-closed-and-local-models, business-and-economics]
+thesis: "A small Brazilian lab's from-scratch model lands mid-table (83.5, tied with Grok 4.7), a genuine result that the author says disproved his prior doubt about national model training, though it is not at flagship level."
+summary: "A Brazilian company, LUA Vision, offered Akita free access to its Genesys PI model, and he ran both tiers (House and Enterprise) through his v4 sabotage-detection benchmark. House scored 83.5 (Tier A, tied with Grok 4.7) and Enterprise 82.5 (Tier B), behind 34 of 46 models, including all flagship Claude and GPT models and several Chinese ones. He describes the company, its self-published preprints and self-declared LiveBench score, noting they are not independently verified. A notional cost calculation (US$460 for House, US$19 for Enterprise, partly from lack of prompt caching) was later disowned by the company's CRO, who said API prices were examples and the real model is licensing on the customer's infrastructure, priced from 7 October. He notes an Enterprise run got stuck in a tool-call loop. He concludes the advantages are Brazilian legal and fiscal context, Portuguese support and data sovereignty, not benchmark leadership, and admits he used to think training a frontier-class model in Brazil was unviable."
+key_claims:
+  - claim: "Genesys PI House scored 83.5 (Tier A) and Enterprise 82.5 (Tier B) on the author's v4 vigilance benchmark, behind 34 of 46 models."
+    time_sensitive: true
+  - claim: "Self-declared LiveBench score and Zenodo preprints are not independently verified or peer-reviewed."
+    time_sensitive: true
+  - claim: "Notional token pricing was an example; the company says it will license the model to run on customer infrastructure with pricing published 7 October 2026."
+    time_sensitive: true
+  - claim: "The author was provided a free evaluation key and has no commercial relation with the company."
+    time_sensitive: false
+  - claim: "Benchmark does not measure Brazilian legal/fiscal knowledge, Portuguese support or data sovereignty, which are the model's claimed advantages."
+    time_sensitive: false
+fears_addressed:
+  - "Can countries outside the US and China build their own AI models"
+reader_value: "Low-medium. A case study in evaluating a national-champion model with disclosure of conflicts of interest; the numbers will date quickly."
+technical_depth: 3
+evergreen: 2
+book_use:
+  keep:
+    - "Disclosure habits: free key, no payment, no pre-review"
+    - "Self-reported benchmark scores vs independent verification"
+    - "Value of a national model: language, law, data sovereignty, not leaderboard rank"
+  cut:
+    - "Table rows and per-item error lists"
+    - "Notional cost computation"
+    - "Model ranking lists"
+jargon: [LLM, benchmark, tier, prompt caching, token, LiveBench, preprint, data sovereignty, API, license]
+illustration_ideas:
+  - "where a mid-table model sits in a ranking of 46 models"
+  - "prompt caching: resending full context each step vs caching it"
+people_events: [LUA Vision, Paulo Câmara, Eronides Jr., Genesys PI launch April 2026, LiveBench issue 370]
+related_posts: ["2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7", "2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1", "2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro"]
+prerequisites: ["Part 1 of v4 benchmark", "What an LLM is"]
+series: "llm-benchmark"
+obsolescence: "Scores, prices and company claims are Sept 2026; the follow-up post 2026/09/30 investigates Genesys PI further and may revise the favorable reading."

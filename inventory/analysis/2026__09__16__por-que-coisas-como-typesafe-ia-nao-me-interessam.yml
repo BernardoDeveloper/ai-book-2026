@@ -1,0 +1,50 @@
+id: "2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam"
+source_sha256: "320ec83b6a68fa8bca013192989c2e5a0613c1c54223b8c6441cef5e62a0d896"
+title_en: "Why things like TypeSafe AI don't interest me"
+ai_relevance: core
+ai_relevance_reason: "Evaluates an AI startup's claims and explains how to use LLMs for classification and how to vet AI tooling."
+genre: opinion
+themes: [hype-and-marketing, coding-agents-tools, software-engineering-discipline]
+thesis: "Do not adopt AI intermediary tools until you feel the pain; vet bold startup claims against primary sources; and stop using chat LLMs to generate free text for closed, repeated decisions."
+summary: "Several commenters pushed a startup (TypeSafe, product Jev) and Akita treats that as a smell of promotion. He states a rule: use your favorite agent harness directly and add orchestration layers only after real pain. He describes asking Grok and Claude to research it, but notes both agreed with his skeptical prompt, so that is an echo, not confirmation; he then verifies primary sources. Jev is a hosted classifier answering fixed-type questions fast, a legitimate product wrapped in grandiose marketing. He found the founder's resume inflated (co-authored InstructGPT, did not invent RLHF), the 'zero hallucination' number is a schema guarantee not a measurement, the accuracy reference is the average of two rival models, an independent test found it faster and cheaper but weaker, and its training method name collides with an unrelated paper. He explains that structured output and classifiers already existed, and separates format hallucination from judgment error. He ends by arguing that optimizing token spend is a losing strategy because prices, caching and consumption change with every model release."
+key_claims:
+  - claim: "A founder's real credentials can still be inflated in marketing; check publication dates and papers (the founder co-authored InstructGPT but did not invent RLHF)."
+    time_sensitive: false
+  - claim: "A 'zero hallucination' chart based on schema conformance guarantees only valid format, not correct judgment."
+    time_sensitive: false
+  - claim: "Two AI assistants agreeing with a hypothesis you put in the prompt is an echo, not independent confirmation."
+    time_sensitive: false
+  - claim: "Using a chat LLM to write free text from which you extract a label is an antipattern; structured output, zero-shot classification or a trained classifier fit closed repeated decisions."
+    time_sensitive: false
+  - claim: "Hallucination has two kinds: format hallucination (solved by constrained output) and judgment error (not solved)."
+    time_sensitive: false
+  - claim: "Independent tests found Jev about 25x faster and cheaper than a flagship chat model but less accurate on single-verdict phishing detection (62.6% vs 81.3%); decomposed into five signals it reached 95%."
+    time_sensitive: true
+  - claim: "Token-saving strategies are fragile because provider pricing, quantization, caching and reasoning spend change with every model release."
+    time_sensitive: true
+fears_addressed:
+  - "Is every new AI tool I hear about worth adopting"
+  - "Does AI 'never hallucinate' claims mean the answers are right"
+reader_value: "Medium-high. A practical lesson in vetting AI product claims and in noticing when an AI assistant just mirrors your own opinion."
+technical_depth: 3
+evergreen: 4
+book_use:
+  keep:
+    - "Echo problem: two AIs agreeing with a biased prompt is not confirmation"
+    - "Format hallucination vs judgment error"
+    - "Vet claims with primary sources; real credential is not honest credential"
+    - "Do not adopt tools until it hurts; do not chase token savings"
+  cut:
+    - "Jev product details and benchmark specifics"
+    - "Alternatives list (Laya, Arbiter)"
+    - "Drinking-straw joke"
+jargon: [LLM, hallucination, classifier, schema, structured output, zero-shot classification, RLHF, token, harness, orchestration, benchmark, seed round, quantization, cache]
+illustration_ideas:
+  - "format hallucination vs judgment error: valid category list but wrong choice"
+  - "free-text LLM pipeline vs direct classifier call"
+  - "echo chamber: leading prompt returning the same belief"
+people_events: [TypeSafe, Jev, Diogo Almeida, InstructGPT, RLHF paper 2017, The Register coverage, Every newsletter test]
+related_posts: ["2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2", "2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit"]
+prerequisites: ["What an LLM is", "What hallucination means"]
+series: "jev"
+obsolescence: "Verdict on TypeSafe/Jev reflects data available on 16 Sept 2026; later posts (2026/10/03 and 2026/10/10) examine Jev further and may revise the picture. Funding and test figures may change."

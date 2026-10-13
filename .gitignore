@@ -1,0 +1,17 @@
+/build/
+/tmp/
+*.log
+.DS_Store
+/tools/*
+!/tools/SHA256SUMS
+/.quarto/
+/_quarto-*.yml
+/index.md
+/index.typ
+
+**/*.quarto_ipynb
+/book/*/glossario.md
+/book/*/bibliografia.md
+/book/*/fontes.md
+/book/*/creditos.md
+/private/

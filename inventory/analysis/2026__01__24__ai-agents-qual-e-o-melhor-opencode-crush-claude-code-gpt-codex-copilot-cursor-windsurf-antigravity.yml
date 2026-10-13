@@ -1,0 +1,53 @@
+id: "2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity"
+source_sha256: "714c5332b714b8ffa7fb3c43335738a358435142dfb73799b6f10817e0ace03d"
+title_en: "AI Agents: Which Is Best? OpenCode, Crush, Claude Code, GPT Codex, Copilot, Cursor, Windsurf, Antigravity"
+ai_relevance: core
+ai_relevance_reason: "Explains how coding agents work (system prompts, skills, harness) and the competitive dynamics between vendors."
+genre: opinion
+themes: [coding-agents-tools, hype-and-marketing, open-vs-closed-and-local-models, agent-memory-and-context]
+thesis: "An agent is mostly a system prompt plus tools plus a loop (a 'harness'), models are tuned to their vendor's own harness, so the best results come from using each vendor's own tool, and an 'agent war' like the browser wars is under way."
+summary: "Prompted by a tweet saying open agents cannot do everything closed ones can, Akita says he will keep using Crush with occasional Claude Code. He explains Agent Skills (an Anthropic-originated standard) and that everything in agents is system prompt: skills are advertised to the model as text metadata, costing roughly 80 to 250 tokens each, so 50 skills could cost 4,000 to 12,500 tokens at every session start, and nothing is remembered between sessions, which is part of vendors' business model. He then describes the GPT Codex 'harness': system prompt, tool definitions, a specific patch format the model was trained on, and the orchestration loop. Codex models are tuned to this proprietary harness, so using them elsewhere may be worse. He compares the situation to the 1990s browser wars, notes models are expensive to train so vendors close things up, and that no truly open model exists (free as in beer, not freedom). He concludes it depends on your use, advises testing technically rather than following opinions, and calls it an AI bubble and an agent war."
+key_claims:
+  - claim: "Everything in an agent is based on the system prompt, instructions repeated at the start of each session; the agent differs from the website chat mainly by its prompts."
+    time_sensitive: false
+  - claim: "Each installed skill adds tokens (rough estimate 80 to 250) to every session's system prompt; many skills can cost thousands of tokens, which is not free."
+    time_sensitive: false
+  - claim: "A harness is the system prompt, tool definitions, patch format and orchestration loop wrapped around a raw model to make it effective at code."
+    time_sensitive: false
+  - claim: "GPT Codex models are fine-tuned for OpenAI's proprietary harness, so they behave best in Codex CLI; Claude is best in Claude Code."
+    time_sensitive: true
+  - claim: "Open models like GLM 4.7 or MiniMax v2.1 can give results as good as Claude for some uses (his claim), and open agents avoid lock-in."
+    time_sensitive: true
+  - claim: "Nothing is magic or tool-specific; skills, LSPs, MCPs are open text prompts."
+    time_sensitive: false
+  - claim: "We are in an AI bubble and a coding 'agent war'; vendors lock in because models cost billions to train."
+    time_sensitive: true
+  - claim: "Open models are 'free as in beer', not truly free as in freedom."
+    time_sensitive: false
+fears_addressed:
+  - "Which AI tool should I pick? (answer: it depends, test it)"
+  - "Is AI hype a bubble?"
+reader_value: "Moderate to high. Demystifies what an 'agent' is (a prompt plus tools plus loop), why it costs tokens even when idle, and why vendors compete to lock users in. Product names are secondary."
+technical_depth: 3
+evergreen: 3
+book_use:
+  keep:
+    - "Agent = system prompt + tools + loop (harness)"
+    - "Idle cost: instructions are re-sent every session, tokens burn before you type"
+    - "Browser-wars analogy for agent lock-in"
+    - "Free as in beer vs free as in freedom"
+  cut:
+    - "Crush skills config"
+    - "apply_patch format details and tool lists"
+jargon: [agent, harness, system prompt, skills, token, MCP, LSP, ACP, tool, fine-tuning, patch, orchestration loop, lock-in]
+illustration_ideas:
+  - "Anatomy of a harness: system prompt, tool list, patch format, loop around a model"
+  - "System prompt token cost accumulating per skill at session start"
+  - "Browser-wars analogy mapped onto agents"
+people_events: ["Anthropic (Claude Code, Agent Skills)", "OpenAI (Codex CLI)", "DHH (Omarchy/OpenCode)", "Browser wars of the 1990s"]
+related_posts:
+  - "2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush"
+  - "2026/01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig"
+prerequisites: ["What a system prompt is", "Tokens"]
+series: ""
+obsolescence: "Product positioning (Claude Code as IE11, Codex as Netscape), which tools support harnesses and skills, and the token estimates are January 2026 snapshots."

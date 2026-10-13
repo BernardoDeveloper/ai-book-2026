@@ -1,0 +1,47 @@
+id: "2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude"
+source_sha256: "4641537c1f8f7d1865d44bb403fba0cd2d9c5bfa86320f2e0ea2767b67de4f42"
+title_en: "LLM Benchmarks: DeepSeek Unlocked! Use DeepClaude"
+ai_relevance: core
+ai_relevance_reason: "A benchmark follow-up showing how the agent wrapper (harness) changes one model's score, centered on DeepSeek V4 Pro."
+genre: benchmark
+themes: [benchmarks-model-comparison, coding-agents-tools, open-vs-closed-and-local-models, limits-of-llms]
+thesis: "Swapping only the harness (the agent loop around the model) lifted DeepSeek V4 Pro from an unmeasurable or Tier B 69 to Tier A 89, showing that the wrapper matters as much as the model."
+summary: "Recaps four earlier benchmark posts, where DeepSeek V4 Pro could not be measured in opencode because a reasoning field it returns was dropped by the SDK, causing errors that the tool hid by silently falling back to Opus. Akita found DeepClaude, a shell shim that points Claude Code at an alternative Anthropic-compatible endpoint (OpenRouter, DeepSeek, Fireworks), so Claude Code's whole agent loop runs on another model. He extended his benchmark runner with environment overrides and ran two variants: DeepSeek solo scored 84 and with a Sonnet subagent registered but never invoked scored 89 at $3.14 in 18 minutes. Observations: the Opus code-quality regression inside Claude Code is specific to Opus, merely having a subagent available seemed to make the planner decompose better, a multi-turn bug in the controller persisted regardless of harness, and DeepSeek also ignored the subagent. Caveats of DeepClaude include no image input, no MCP tools and ignored Anthropic cache markers. An update notes other options: DeepSeek-TUI and an opencode fix (PR merged April 24) needing manual config. Practical conclusion: this is the first real Tier A coding option without an Anthropic subscription."
+key_claims:
+  - claim: "Changing only the harness raised DeepSeek V4 Pro from 69 (Tier B, opencode, partly written by a hidden Opus fallback) to 84-89 (Tier A via Claude Code with an alternative endpoint)."
+    time_sensitive: true
+  - claim: "A coding tool can silently fall back to another model when the chosen model errors, making a benchmark appear to succeed while measuring the wrong model."
+    time_sensitive: false
+  - claim: "Having an unused subagent registered correlated with +5 points, possibly because the planner designs smaller, more contractable units."
+    time_sensitive: true
+  - claim: "The Opus regression in Claude Code does not appear with DeepSeek in the same harness, so it is specific to Opus rather than the harness alone."
+    time_sensitive: true
+  - claim: "DeepClaude lacks image input and MCP tools and drops Anthropic's explicit prompt-cache markers, so costs are not strictly comparable."
+    time_sensitive: true
+  - claim: "As of May 2026, opencode supports DeepSeek thinking mode through a merged fix but needs manual config."
+    time_sensitive: true
+fears_addressed:
+  - "Is a cheaper non-Western model really worse, or is it the tool around it?"
+reader_value: "Low to medium: illustrates that AI results depend on the surrounding software, not just the model, and that tools can hide failures. The detail is for engineers."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Same model, different wrapper, 15-20 point swing"
+    - "Silent fallback: the system looked like it worked but a different model did the work"
+  cut:
+    - "DeepClaude install and env var details"
+    - "Score tables and cross-harness matrix"
+    - "Controller multi-turn bug details"
+jargon: [harness, LLM, benchmark, subagent, endpoint, reasoning content, SDK, tier, planner, MCP, prompt caching, OpenRouter, thinking mode, shim]
+illustration_ideas:
+  - "Model vs harness: the same engine in different car bodies"
+  - "Silent fallback: request fails, wrapper quietly asks a different model"
+people_events:
+  - "DeepSeek V4 Pro"
+  - "DeepClaude project"
+  - "DeepSeek-TUI (Hunter Bown)"
+related_posts: ["2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo", "2026/04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos", "2026/04/18/llm-benchmarks-parte-2-multiplos-modelos", "2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus"]
+prerequisites: ["What a harness is", "What a benchmark is"]
+series: "llm-benchmark"
+obsolescence: "Scores, prices and the DeepSeek/opencode incompatibility are May 2026 snapshots; the post itself carries a May 11 update showing the incompatibility was being fixed. Later benchmark posts likely supersede."

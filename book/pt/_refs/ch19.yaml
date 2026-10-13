@@ -1,0 +1,138 @@
+references:
+  - id: angelo2026uber
+    type: "article-newspaper"
+    title: "Uber burned through its entire 2026 AI budget in four months. Now its COO is questioning whether it's worth it"
+    author: [{family: "Angelo", given: "Jake"}]
+    container-title: "Fortune"
+    issued: {date-parts: [[2026, 5, 26]]}
+    URL: "https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/06/24/por-que-llms-vao-falhar-na-sua-empresa (the post linked a Forbes article of 2026-05-17 that returned HTTP 403 and could not be read; the same facts, budget gone in four months, usage leaderboard, COO Andrew Macdonald's 'that link is not there yet', were verified in this Fortune piece instead)"
+  - id: agile2001history
+    type: "webpage"
+    title: "History: The Agile Manifesto"
+    author: [{family: "Highsmith", given: "Jim"}]
+    container-title: "Manifesto for Agile Software Development"
+    issued: {date-parts: [[2001]]}
+    URL: "https://agilemanifesto.org/history.html"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou (Snowbird, 11-13 Feb 2001, seventeen people; stated in the post without a link, verified online)"
+  - id: dora2026metrics
+    type: "webpage"
+    title: "DORA's software delivery performance metrics"
+    author: [{literal: "DORA"}]
+    container-title: "DORA"
+    issued: {date-parts: [[2026]]}
+    URL: "https://dora.dev/guides/dora-metrics-four-keys/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou ('speed and stability are not tradeoffs'; the post cited the State of DevOps reports without a link; verified online). Issue year of the page approximate."
+  - id: fitzgerald2026capex
+    type: "post-weblog"
+    title: "Follow the CAPEX: 2025 Retrospective"
+    author: [{family: "Fitzgerald", given: "Charles"}]
+    container-title: "Platformonomics"
+    issued: {date-parts: [[2026, 2, 25]]}
+    URL: "https://platformonomics.com/?p=34926"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio (the post gave >US$400B 2025 capex for Amazon, Google, Microsoft, Meta without a link; this retrospective reports just over US$416B)"
+  - id: deepseekai2024v3
+    type: "article"
+    title: "DeepSeek-V3 Technical Report"
+    author: [{literal: "DeepSeek-AI"}]
+    container-title: "arXiv"
+    number: "arXiv:2412.19437"
+    DOI: "10.48550/arXiv.2412.19437"
+    issued: {date-parts: [[2024, 12, 27]]}
+    URL: "https://arxiv.org/abs/2412.19437"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio (the training-cost figure covers only the official training run, excluding prior research and ablations; the post's The Register US$51M hardware figure was not verified and is not used)"
+  - id: pearl2026artcraft
+    type: "article-newspaper"
+    title: "Someone Vibe Coded a Free Knockoff of Adobe Creative Suite"
+    author: [{family: "Pearl", given: "Mike"}]
+    container-title: "Gizmodo"
+    issued: {date-parts: [[2026, 10, 7]]}
+    URL: "https://gizmodo.com/someone-vibe-coded-a-free-knockoff-of-adobe-creative-suite-2000823322"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu"
+  - id: sneddon2026photocraft
+    type: "post-weblog"
+    title: "PhotoCraft is an open-source, AI-built clone of Photoshop"
+    author: [{family: "Sneddon", given: "Joey"}]
+    container-title: "OMG! Ubuntu"
+    issued: {date-parts: [[2026, 10, 8]]}
+    URL: "https://www.omgubuntu.co.uk/2026/10/artcraft-free-photoshop-ai-clone"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu ('a superficial facsimile with pronounced flaws'; 5 GB RAM after opening a PSD)"
+  - id: storytold2026photocraft
+    type: "software"
+    title: "PhotoCraft"
+    author: [{literal: "Storytold"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 9, 30]]}
+    URL: "https://github.com/storytold/photocraft"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (README status 'early alpha'; on 13 Oct 2026 the page showed ~57k stars and 929 open issues; the book says 'mais de 800')"
+  - id: morluto2026rea
+    type: "software"
+    title: "REA: Reverse Engineer Anything"
+    author: [{literal: "morluto"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 4, 14]]}
+    URL: "https://github.com/morluto/rea"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (DISCLAIMER: 'Decompilation, reconstruction, heuristics, and AI-assisted analysis may be incomplete or incorrect'; requires Hopper, Ghidra or IDA for native binaries; analysis-efficiency experiment)"
+  - id: adobe2026genai
+    type: "webpage"
+    title: "Common generative AI issues in Photoshop"
+    author: [{literal: "Adobe"}]
+    container-title: "Adobe Help Center"
+    issued: {date-parts: [[2026]]}
+    URL: "https://helpx.adobe.com/photoshop/kb/troubleshoot-generative-ai-features.html"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (the post linked the generative-credits FAQ and the Neural Filters page, both HTTP 403 on fetch; this page, seen via search, lists internet connection and available generative credits as requirements)"
+  - id: petapixel2022pantone
+    type: "article-newspaper"
+    title: "You Have to Pay a Subscription to Use Pantone Colors in Photoshop Now"
+    author: [{family: "Schneider", given: "Jaron"}]
+    container-title: "PetaPixel"
+    issued: {date-parts: [[2022, 10, 28]]}
+    URL: "https://petapixel.com/2022/10/28/you-have-to-pay-a-subscription-to-use-pantone-colors-in-photoshop-now"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (page returned 403 on fetch; facts confirmed by search snippets and other coverage of the same event, e.g. spot colors rendering black; author name not retrieved)"
+  - id: gimp2022cmyk
+    type: "post-weblog"
+    title: "Development version: GIMP 2.99.12 Released"
+    author: [{literal: "GIMP Team"}]
+    container-title: "GIMP News"
+    issued: {date-parts: [[2022, 8, 27]]}
+    URL: "https://www.gimp.org/news/2022/08/27/gimp-2-99-12-released/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu"
+  - id: cgchannel2025gimp
+    type: "article-newspaper"
+    title: "GIMP 3.0 is out after seven years in development"
+    author: [{literal: "CG Channel"}]
+    container-title: "CG Channel"
+    issued: {date-parts: [[2025, 3, 18]]}
+    URL: "https://www.cgchannel.com/2025/03/gimp-3-0-is-out/"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu ('it isn't currently possible to edit in CMYK mode')"
+  - id: anthropic2025bun
+    type: "webpage"
+    title: "Anthropic acquires Bun as Claude Code reaches $1B milestone"
+    author: [{literal: "Anthropic"}]
+    container-title: "Anthropic"
+    issued: {date-parts: [[2025, 12, 3]]}
+    URL: "https://www.anthropic.com/news/anthropic-acquires-bun-as-claude-code-reaches-usd1b-milestone"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu (post states Bun belongs to Anthropic since December 2025 without a link; verified online)"
+  - id: sumner2026bun
+    type: "post-weblog"
+    title: "Rewriting Bun in Rust"
+    author: [{family: "Sumner", given: "Jarred"}]
+    container-title: "Bun Blog"
+    issued: {date-parts: [[2026, 7, 8]]}
+    URL: "https://bun.com/blog/bun-in-rust"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu"

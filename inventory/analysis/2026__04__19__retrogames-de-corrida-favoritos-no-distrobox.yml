@@ -1,0 +1,34 @@
+id: "2026/04/19/retrogames-de-corrida-favoritos-no-distrobox"
+source_sha256: "f5f9ff6d422f7c887dea766f58445b508debe210db7cd30d26afcab4231d2fd9"
+title_en: "My Favorite Racing Retro Games Running in My Distrobox"
+ai_relevance: tangential
+ai_relevance_reason: "A retro-gaming emulation showcase; AI appears only in the closing reflection that Claude Code acted as an aggregator of scattered, outdated information."
+genre: project-log
+themes: [non-ai, personal-journey, coding-agents-tools, reverse-engineering]
+thesis: "After years of failing, a Sunday of emulator tuning finally got hard-to-run racing games (Driveclub on shadPS4, Forza Motorsport 4 on Xenia) working, with a coding agent helping gather scattered knowledge."
+summary: "Akita documents a single productive Sunday getting classic racing games to run on Linux inside his Distrobox: Gran Turismo 1 to 6 via DuckStation, PCSX2 and RPCS3 (with community HD textures, widescreen patches and the Spec II mods), Enthusia, Ridge Racer, Colin McRae, Forza Motorsport 2 to 4 and Horizon 1 and Project Gotham Racing on Xenia Canary. The centerpiece is Driveclub on a PS4 emulator that has no stable release; he lists seven traps (an audio error that was actually unpacked game files, a patch-versus-base install, a 60fps patch that makes physics slow-motion, shader pipeline cache, silently ignored config format, controller detection, and black night tracks that he fixed with a depth-buffer shader patch in a local fork). He reflects that the years of frustration were caused by too much badly indexed, outdated information, and that Claude Code now acts as his aggregator, reading issue trackers, wikis and logs and comparing with the installed version. He notes he does not distribute ROMs. The post is mostly emulator-specific."
+key_claims:
+  - claim: "The difficulty with emulation was never lack of information but too much outdated, scattered information; a coding agent can aggregate and cross-check it against the installed version and logs."
+    time_sensitive: false
+  - claim: "Driveclub runs at a stable 30 FPS on shadPS4 with a local fork fix for night tracks, v1.28 with DLC."
+    time_sensitive: true
+fears_addressed: []
+reader_value: "low. A hobby post; the only useful nugget for a lay reader is the idea of AI as a researcher that reconciles old forum posts with your actual setup."
+technical_depth: 5
+evergreen: 1
+book_use:
+  keep:
+    - "Anecdote: years of failure because of outdated, scattered information, solved by an agent aggregating sources against the real logs"
+  cut:
+    - "All game-by-game emulator settings and tables"
+    - "The seven Driveclub traps in detail (could be an example of reverse engineering)"
+jargon: [Claude Code, coding agent, emulator, shader, Vulkan]
+illustration_ideas: []
+people_events:
+  - "Driveclub (Evolution Studios, 2014)"
+  - "shadPS4, Xenia Canary, PCSX2, RPCS3 projects"
+  - "TheAdmiester GT4 Spec II mod"
+related_posts: ["2026/04/11/distrobox-de-emulacao-com-claude-code", "2026/04/23/driveclub-shadps4-e-ia-como-aprender"]
+prerequisites: []
+series: "distrobox-gaming"
+obsolescence: "Emulator builds, patches and game-specific fixes are April 2026; shadPS4 had no stable release at the time."

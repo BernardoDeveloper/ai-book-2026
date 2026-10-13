@@ -1,0 +1,17 @@
+tokenizador:
+  term: Tokenizador
+  def: A parte do modelo que quebra o texto em tokens antes de qualquer processamento. Cada família de modelo tem o seu vocabulário, e quem ajusta um modelo herda o tokenizador dele, por isso ele serve como pista de parentesco.
+mescla-de-modelos:
+  term: Mescla de modelos
+  long: Model merge
+  def: Criar um modelo novo tirando uma média ponderada dos pesos de dois modelos compatíveis já treinados. Custa muito menos do que treinar, e o resultado herda as qualidades (e a autoria) dos dois.
+pos-treino:
+  term: Pós-treino
+  long: Post-training
+  def: Treinamento feito depois do treino principal, pra ensinar um modelo-base a seguir instruções, usar ferramentas ou trabalhar como agente. Muitas vezes é o que separa um modelo útil de um que só completa texto.
+caixa-preta:
+  term: Teste de caixa-preta
+  def: Avaliar um sistema só pelo que entra e pelo que sai, sem ver o que tem dentro. Serve pra excluir hipóteses sobre um modelo fechado, mas não prova de onde ele veio.
+proxy:
+  term: Proxy
+  def: Um intermediário que recebe pedidos e os repassa a outro serviço. Um proxy transparente só encaminha; quem usa pode achar que fala com um sistema quando, na verdade, fala com outro.

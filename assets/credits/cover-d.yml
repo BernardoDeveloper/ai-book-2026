@@ -1,0 +1,112 @@
+---
+id: cover-d
+kind: ai_illustration
+file: assets/cover/cover-d.png
+sha256: baab0d94c7e9f37b6203db22a6aca6225bac13fbb87b279f2d32273fb48dbeef
+generation:
+  provider: openai
+  endpoint: POST /v1/images/generations
+  model: gpt-image-2.5-flare-2026-09-08
+  date: '2026-10-13T16:14:59-03:00'
+  style_version: STYLE-cover
+  scene: 'Wide empty dusk sky filling the entire top 40 percent of the frame, nothing
+    in it but faint sunburst rays. Below it, at a World''s Fair plaza, an original
+    colossal chrome-and-brass robot (art deco design, rounded dome head with one glowing
+    round eye) kneels on one knee so that its head stays well below the upper 40 percent
+    of the frame; it studies its own raised open hand with curiosity, as if wondering
+    whether it is alive. In the foreground, seen from behind, a 1950s crowd reacts:
+    a man in a suit holding a briefcase and a pink slip of blank paper, a mother shielding
+    a child, a young woman stepping forward curious. Streamline moderne pavilions
+    and a needle tower in the background. The image should hold all three fears at
+    once: the end of humanity, losing one''s job, a machine becoming conscious.'
+  prompt: 'COVER v1: 1950s retro-futurist illustrated poster, World''s Fair and Golden
+    Age pulp science-fiction movie poster aesthetic, art deco and streamline moderne
+    shapes, dramatic sunburst rays, gouache and airbrush texture, slightly weathered
+    printed-paper grain, limited palette of deep teal, navy, cream, brass gold and
+    a single warm red-orange accent, strong silhouette readable at thumbnail size,
+    cinematic low camera angle, all characters and robots are original designs (not
+    based on any existing film, game or franchise character), no real people, no text,
+    no letters, no numbers, no logos, no signage. Leave the top third of the image
+    as calm sky with room for a title, and the bottom tenth uncluttered for the author
+    name. Portrait book-cover composition. Scene: Wide empty dusk sky filling the
+    entire top 40 percent of the frame, nothing in it but faint sunburst rays. Below
+    it, at a World''s Fair plaza, an original colossal chrome-and-brass robot (art
+    deco design, rounded dome head with one glowing round eye) kneels on one knee
+    so that its head stays well below the upper 40 percent of the frame; it studies
+    its own raised open hand with curiosity, as if wondering whether it is alive.
+    In the foreground, seen from behind, a 1950s crowd reacts: a man in a suit holding
+    a briefcase and a pink slip of blank paper, a mother shielding a child, a young
+    woman stepping forward curious. Streamline moderne pavilions and a needle tower
+    in the background. The image should hold all three fears at once: the end of humanity,
+    losing one''s job, a machine becoming conscious.'
+  params:
+    size: 1024x1536
+    quality: high
+    background: opaque
+    output_format: png
+    "n": 2
+  seed:
+  request_id: f3b0c16b-883f-458d-8e4b-ae549883d038
+  usage:
+    input_tokens: 688
+    input_tokens_details:
+      image_tokens: 0
+      text_tokens: 688
+    output_tokens: 2744
+    output_tokens_details:
+      image_tokens: 2744
+      text_tokens: 0
+    total_tokens: 3432
+  drafts:
+  - build/genimg/cover-d-1.png
+  - build/genimg/cover-d-2.png
+  selected: 2
+post_processing:
+- 'flattened onto #FBF9F4, sRGB, alpha removed'
+human_contribution: art direction (scene brief), selection, placement and caption
+terms:
+  provider_terms: https://openai.com/policies/services-agreement/
+  copyright_status: AI-generated; likely not protectable (US Copyright Office Part
+    2; Lei 9.610 art. 11)
+kdp_disclosure: ai_generated_image
+credit:
+  caption_pt: Ilustração gerada por IA (GPT Image 2.5, OpenAI) sob direção do autor
+  caption_en: AI-generated illustration (GPT Image 2.5, OpenAI) under the author's
+    direction
+edits:
+- endpoint: POST /v1/images/edits
+  model: gpt-image-2.5-flare-2026-09-08
+  date: '2026-10-13T17:23:10-03:00'
+  source: build/genimg/cover-d-2.png
+  references:
+  - "newsletter-character reference (private)"
+  instruction: 'Edit only the robot''s head; keep everything else in the image exactly
+    as it is (composition, crowd, plaza, sky, lighting, painting style, palette, the
+    kneeling pose and the raised open hand). Redesign the robot''s head as a nod to
+    the reference character: a large, smooth, glossy white-silver spherical dome head,
+    noticeably big for the body, sitting on a short ring collar; two half-closed,
+    droopy, melancholic eyes glowing pale green with a fine grid texture, heavy upper
+    lids; a small downturned frown line below them. The expression should read as
+    a weary, pensive, slightly depressed robot looking at its own hand. Integrate
+    it seamlessly into the chrome and brass art deco body and the 1950s gouache poster
+    rendering, with the same warm rim light; it must look painted in the same style,
+    not pasted. No text, no letters.'
+  params:
+    size: 1024x1536
+    quality: high
+    "n": 2
+  request_id: 140fb6d3-2a9d-49d4-8671-77ebef370620
+  usage:
+    input_tokens: 3832
+    input_tokens_details:
+      image_tokens: 3410
+      text_tokens: 422
+    output_tokens: 2744
+    output_tokens_details:
+      image_tokens: 2744
+      text_tokens: 0
+    total_tokens: 6576
+  drafts:
+  - build/genimg/cover-d-edit-1.png
+  - build/genimg/cover-d-edit-2.png
+  selected: 2

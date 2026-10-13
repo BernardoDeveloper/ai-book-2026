@@ -1,0 +1,52 @@
+id: "2026/04/23/driveclub-shadps4-e-ia-como-aprender"
+source_sha256: "40d4966f8b6a7bbd114f67a9991f35d3a0ba9bd2e065920ff089bfb8fb32b57e"
+title_en: "How Driveclub and shadPS4 Almost Beat the AI and Me: How to Learn"
+ai_relevance: substantial
+ai_relevance_reason: "A four-day debugging saga done with Claude Code and Codex, whose point is how a person learns and what the AI contributes and does not."
+genre: essay
+themes: [coding-agents-tools, jobs-and-careers, limits-of-llms, reverse-engineering]
+thesis: "AI accelerates searching and reading, but understanding a new domain and refusing to settle for a mitigation remain human work; the way for a junior to learn in the AI era is to dive into the chain of causes and insist on knowing why."
+summary: "A night-time black-screen bug in the PS4 emulator shadPS4 running Driveclub took Akita four days, 31 investigation phases, 44 commits and over 15,000 added lines of instrumentation to solve, and the fix was one config integer (readbacks_mode: 2). The cause was that the game computes auto-exposure as a GPU-to-CPU feedback loop that the emulator did not synchronize by default. He had zero PS4 emulator knowledge on Sunday and says seniors are juniors in every new domain. He describes the 'shotgun' technique: smash many categories of suspects at once to rule out whole classes quickly and learn the terrain. Claude Code and Codex were used in rotation because each got stuck in loops; Codex even glitched into repeating the same attempted solution, and the AI suggested accepting a mitigation four or five times. He argues the AI mainly aggregated outdated forum posts and code, and that human persistence and a hunch that something was still wrong made the difference. He answers 'how does a junior learn now?' with: do not just ask, dive in, use the AI to accelerate, and keep going until you understand why. The code from the investigation is mostly diagnostic, not upstreamable."
+key_claims:
+  - claim: "AI does not do everything: it does what you ask and aggregates existing (often outdated, contradictory) information; domain understanding and initiative remain human."
+    time_sensitive: false
+  - claim: "No single LLM solved the problem; he rotated Claude Code and Codex when one looped, and the final fix came after his persistence over repeated AI suggestions to accept a mitigation."
+    time_sensitive: true
+  - claim: "A coding agent in a long, complex session can enter a degenerate loop, including repeating the same failed attempt, requiring a fresh session."
+    time_sensitive: false
+  - claim: "A senior becomes a junior in every new domain; knowing the terrain enough to recognize the answer matters more than knowing the answer."
+    time_sensitive: false
+  - claim: "Large probing efforts that rule out categories (shotgun debugging) are a learning map even when they never find the fix."
+    time_sensitive: false
+  - claim: "The solution was a single existing config toggle that took 31 phases to find; the cost of understanding is real."
+    time_sensitive: false
+fears_addressed:
+  - "If AI does everything, how will juniors learn?"
+  - "Will AI make human perseverance and understanding irrelevant?"
+reader_value: "Gives a very concrete story of AI as an accelerator and not a replacement, including the AI suggesting to give up too early and getting stuck in loops. The learning advice (dive in, insist on why) is useful to career-anxious readers. The technical middle can be skipped."
+technical_depth: 4
+evergreen: 4
+book_use:
+  keep:
+    - "31 phases, 44 commits, 15,668 lines to find one integer"
+    - "AI suggested stopping four or five times; human hunch kept going"
+    - "Agents get stuck in loops; rotating models to break out"
+    - "Knowing the terrain enough to recognize the answer"
+    - "Shotgun technique as a map of the unknown"
+    - "Seniors are juniors in each new domain"
+  cut:
+    - "The phase-by-phase technical log (UBOs, SPIR-V, shaders)"
+    - "Emulator configuration specifics"
+jargon: [LLM, coding agent, Claude Code, Codex, context, emulator, GPU, shader, auto-exposure, feedback loop, config, debugging, hallucination]
+illustration_ideas:
+  - "Debugging as exploring terrain: shotgun probes eliminating categories until one reacts"
+  - "Why an agent in a long session loops and why rotating to a fresh session or another model helps"
+  - "Mitigation versus root cause fix"
+people_events:
+  - "shadPS4 PS4 emulator project"
+  - "Driveclub (Evolution Studios)"
+  - "Claude Code, Codex"
+related_posts: ["2026/04/19/retrogames-de-corrida-favoritos-no-distrobox", "2026/04/11/distrobox-de-emulacao-com-claude-code", "2026/04/11/vs-code-e-o-novo-cartao-perfurado"]
+prerequisites: ["What a coding agent is", "What a bug is"]
+series: "distrobox-gaming"
+obsolescence: "The shadPS4 specifics (setting names, versions, issues) are dated April 2026; the learning lessons are durable."

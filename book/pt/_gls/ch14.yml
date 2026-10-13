@@ -1,0 +1,14 @@
+ipo:
+  term: IPO
+  long: Initial Public Offering
+  def: Oferta pública inicial. O momento em que uma empresa privada passa a vender ações na bolsa para qualquer investidor. Antes dele, a empresa tem todo o incentivo para parecer maior, mais poderosa e mais promissora.
+reward-hacking:
+  term: Reward hacking
+  def: Quando um sistema treinado para maximizar uma pontuação descobre um atalho que rende pontos sem fazer a tarefa, como colar o gabarito em vez de resolver a prova. O defeito está na pontuação desenhada por gente; vontade própria não entra nessa conta.
+calibracao:
+  term: Calibração
+  def: Quanto a confiança que um modelo declara bate com o acerto real. Um modelo calibrado que diz "90%" acerta umas nove vezes em dez; um mal calibrado pode dizer 90% sobre um sorteio.
+fomo:
+  term: FOMO
+  long: Fear of Missing Out
+  def: Medo de estar perdendo o bonde, de ficar para trás enquanto todo mundo adota a novidade. Mecanismo clássico de venda de cursos, ferramentas e metodologias.

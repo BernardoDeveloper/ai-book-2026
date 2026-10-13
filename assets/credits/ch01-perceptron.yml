@@ -1,0 +1,49 @@
+---
+id: ch01-perceptron
+kind: photo
+file: assets/figures/ch01-perceptron.jpg
+sha256: f798da02c4d6d8aba7ffcf5ea8afdce678051c3edff530c326ff41344e704547
+pixels:
+  width: 2836
+  height: 2220
+source:
+  repository: wikimedia_commons
+  page_url: https://commons.wikimedia.org/wiki/File:330-PSA-80-60_(USN_710739)_(20897323365).jpg
+  original_url: https://upload.wikimedia.org/wikipedia/commons/1/1a/330-PSA-80-60_%28USN_710739%29_%2820897323365%29.jpg
+  original_sha1: 5e3804709e56e3d61be1b78b281968f379f14623
+  retrieved: '2026-10-13'
+  title: 330-PSA-80-60 (USN 710739) (20897323365)
+  date_taken: 1960 (photograph released by the U.S. Navy on 1960-06-24; 2015-08-25
+    is the archive scan date)
+  description: '330-PSA-80-60 (USN 710739):  Experimental Machine Able To Identify
+    Letters of Alphabet Announced By Navy.   This photo shows the Mark I Perceptron,
+    an experimental machine which can be trained to automatically identify objects
+    or patterns, such as letters of the alphabet.  Originated by Dr. Frank Ro'
+author: National Museum of the U.S. Navy
+uploader: Hiàn (alt)
+license:
+  short: Public domain
+  url:
+  attribution_required: false
+  share_alike: false
+  restrictions: []
+  basis: U.S. Navy photograph, work of the U.S. federal government (17 U.S.C. §105);
+    released as public domain by the National Museum of the U.S. Navy
+modifications:
+- redimensionada
+adaptation: false
+placement: interior
+personality_rights_check: unidentified operator in a 1960 U.S. Navy press photograph;
+  editorial, interior only; not named in caption or alt
+kdp_disclosure: none
+credit:
+  caption_pt: 'Foto: Marinha dos EUA / domínio público'
+  backmatter: '"330-PSA-80-60 (USN 710739)", U.S. Navy photograph, 1960, via National
+    Museum of the U.S. Navy. https://commons.wikimedia.org/wiki/File:330-PSA-80-60_(USN_710739)_(20897323365).jpg.
+    Domínio público (obra do governo federal dos EUA). Modificações: redimensionada.'
+  caption_en: 'Photo: U.S. Navy / public domain'
+pixels_final:
+  width: 2400
+  height: 1879
+subject:
+- Mark I Perceptron (Cornell Aeronautical Laboratory)

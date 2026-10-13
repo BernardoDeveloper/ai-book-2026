@@ -1,0 +1,46 @@
+id: "2026/08/16/entendendo-ia-watermark-da-anthropic"
+source_sha256: "1d322e2603b8a56d275962144f684c2416294a2db0a1726eb4b8f23f5e63f854"
+title_en: "Understanding Anthropic's AI watermark: how to get around it"
+ai_relevance: core
+ai_relevance_reason: "Explains how a statistical text watermark in an LLM works, why EU law requires it, and why it is weak."
+genre: news-analysis
+themes: [what-llms-are, society-politics-censorship, limits-of-llms, hype-and-marketing]
+thesis: "Anthropic's invisible text watermark is a deliberately weak provenance label created to satisfy EU law; it proves Claude touched a text and disappears when another model rewrites it."
+summary: "Since 2 August 2026 Anthropic marks Claude's text with a statistical watermark, causing a wave of subscription cancellations. Akita explains it is not hidden characters: at points where several words would fit equally, a secret key biases the choice, leaving a pattern across a long text that only the key holder can detect (method inherited from Google's SynthID-Text). It stores nothing about the user, only suggests Claude was involved, and weakens on short or factual text. The cause is Article 50 of the EU AI Act, which requires machine-readable marking of AI output from that date, with large fines; Anthropic marked everywhere because it could not limit by region. A full rewrite by any other model, even a small local one, erases the signal, which Anthropic admits; academic robustness tests show detection falling after paraphrasing. He gives a rewriting prompt and discloses that the article itself was drafted by Claude, fact-checked by Kimi and rewritten by GLM."
+key_claims:
+  - claim: "The watermark is statistical, biasing synonym choices with a secret key; no hidden characters and no extra cost."
+    time_sensitive: false
+  - claim: "It proves only that Claude was involved at some point, not that the whole text was machine-written, and carries no user identity."
+    time_sensitive: false
+  - claim: "EU AI Act Article 50 requires machine-readable marking of generative AI output from 2 August 2026, with fines up to 15 million euros or 3% of global revenue."
+    time_sensitive: true
+  - claim: "A complete rewrite by another LLM, even a small local one, removes the watermark; light edits probably leave part of it."
+    time_sensitive: true
+  - claim: "Images and files use signed C2PA metadata instead of the text watermark."
+    time_sensitive: true
+fears_addressed:
+  - "AI detectors will accuse me of cheating"
+  - "Is the AI company tracking what I write?"
+  - "Can I prove or disprove that text came from AI?"
+reader_value: "High for the lay reader. Explains in plain terms how text can be statistically marked, that detection is probabilistic and easily erased, and why AI-text detectors are unreliable evidence."
+technical_depth: 2
+evergreen: 3
+book_use:
+  keep:
+    - "How a statistical watermark works: choosing among equally good synonyms"
+    - "Watermark as weak provenance label, not proof; AI-detection limits"
+    - "The article disclosing its own production chain (Claude draft, Kimi fact-check, GLM rewrite)"
+  cut:
+    - "The rewrite prompt text, subscription-cancellation news detail"
+jargon: [watermark, token, sampling, SynthID, C2PA, provenance, AI Act, detector, paraphrase]
+illustration_ideas:
+  - "At each word choice a keyed bias nudges between equal synonyms; counts accumulate over a long text"
+  - "Watermark signal fading as the text is rewritten by another model"
+people_events:
+  - "Anthropic watermark rollout (2 Aug 2026)"
+  - "EU AI Act Article 50"
+  - "Google DeepMind SynthID-Text"
+related_posts: []
+prerequisites: ["How an LLM picks the next word"]
+series: ""
+obsolescence: "Rollout date, signatory list and legal obligations are August 2026; later detection methods or vendor changes may supersede."

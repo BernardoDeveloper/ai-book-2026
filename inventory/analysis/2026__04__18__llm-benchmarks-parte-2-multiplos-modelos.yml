@@ -1,0 +1,53 @@
+id: "2026/04/18/llm-benchmarks-parte-2-multiplos-modelos"
+source_sha256: "28ded06abf1d600e8f480d70a167236fbf9e9b7a0d70b2d5f7a3a173097d793f"
+title_en: "LLM Benchmarks Part 2: Is Combining Multiple Models in One Project Worth It? Claude + GLM??"
+ai_relevance: core
+ai_relevance_reason: "A benchmark about coding agents, sub-agent delegation and run-to-run variance of LLMs."
+genre: benchmark
+themes: [benchmarks-model-comparison, coding-agents-tools, limits-of-llms, business-and-economics]
+thesis: "Having a big model plan and a small one execute does not pay off for greenfield projects: the main models never even delegated, and the same model gave very different results across runs and harnesses, so single-run benchmarks are signals, not proof."
+summary: "The post is marked obsolete by its author (April 24 update) because rankings were superseded, but the core finding stands. Akita tested seven combinations in Claude Code, opencode and Codex for building a Rails app with the RubyLLM gem, e.g. Opus planning with Sonnet, Haiku, GLM 5.1 or a local Qwen 3.6 executing. In all seven runs, the delegation tool was called zero times: the main models judged the task too cross-file to delegate. Because of that, he ended up with multiple runs of the same model: GPT 5.4 xHigh gave Tier 1 once and Tier 2 twice, and Opus 4.7 gave Tier 1 in opencode but Tier 2/3 in Claude Code, which he partly attributes to the harness loading millions of cached tokens. He shows Claude Code costs 5-7x more per run than opencode on the same model, but still recommends Claude Code with a Max plan for most people. He explains that the 'Opus plans, small model executes' idea fails because plans are never perfect, small models hallucinate APIs and coordination costs explode. Multi-model makes sense for truly parallel, decoupled tasks (like translating many posts). He ends by urging readers to run their own benchmark and not generalize from tweets."
+key_claims:
+  - claim: "In 7 multi-model runs, the main model never delegated to the sub-agent; delegation is decided by the model, not by configuration."
+    time_sensitive: true
+  - claim: "The same model on the same prompt gives different quality across runs and across harnesses, so single-run benchmark rankings are signals, not proof."
+    time_sensitive: false
+  - claim: "Passing tests are a vanity metric when the mock encodes a hallucinated API: 34 tests passed while the app crashed on the first message."
+    time_sensitive: false
+  - claim: "Claude Code costs about 5-7 times more per run than opencode for the same model because it loads far more context (6-11M cached tokens vs about 210k)."
+    time_sensitive: true
+  - claim: "The 'big model plans, small model executes' workflow is overhead for cohesive greenfield work; it only helps for genuinely parallel, independent tasks."
+    time_sensitive: false
+  - claim: "Complaints that a new model version 'got worse' often cannot be reproduced; 'it felt worse' is not data."
+    time_sensitive: false
+  - claim: "Only Claude Opus/Sonnet were robust to variance in this task; GLM 5.1 came close but with small sample."
+    time_sensitive: true
+fears_addressed:
+  - "Is a cheaper model combined with a big one a free lunch?"
+  - "Are benchmark rankings and online 'model got worse' claims reliable?"
+reader_value: "Teaches skepticism about benchmarks and viral AI workflow claims: the same model can vary, tests can pass while code is wrong, and cost depends on the wrapper tool. Medium value; the details are programmer-heavy."
+technical_depth: 4
+evergreen: 2
+book_use:
+  keep:
+    - "Hired an assistant and left them sitting at the desk: models refuse to delegate"
+    - "Passing tests that prove nothing when the mock is hallucinated"
+    - "Same model, same prompt, different results: benchmarks as signal not proof"
+    - "Placebo of delegation: merely having a sub-agent changed the main model's behavior"
+    - "Be suspicious of 'model got worse' claims without reproducible prompt"
+  cut:
+    - "Per-run tier tables and timing tables"
+    - "Harness configuration files for sub-agents"
+    - "Pricing and plan-by-plan recommendations"
+jargon: [LLM, benchmark, harness, sub-agent, delegation, hallucination, prompt, context, cache, token, tier, Claude Code, Codex, opencode, reasoning effort, greenfield]
+illustration_ideas:
+  - "Planner and executor model loop and why coordination overhead grows with each correction"
+  - "Same model, same prompt, different harness giving different results"
+  - "Why tests can pass while the code is wrong (mock of a hallucinated API)"
+people_events:
+  - "Claude Opus 4.7 release (April 2026) and Reddit complaints about regression"
+  - "GLM 5.1 (Z.ai), Qwen 3.6, GPT 5.4 xHigh"
+related_posts: ["2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus", "2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo", "2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo"]
+prerequisites: ["What a coding agent is", "What a benchmark is"]
+series: "llm-benchmark"
+obsolescence: "Marked obsolete by the author on 2026-04-24: rankings and conclusions superseded after re-audit against the ruby_llm gem; the canonical version is 2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo. The finding that multi-model is not worth it for greenfield was kept there. All model names, costs and tiers are dated."
