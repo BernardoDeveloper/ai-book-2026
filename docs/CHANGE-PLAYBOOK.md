@@ -83,4 +83,5 @@ errors) for each language, CHANGELOG entry, `vX.Y.Z` tag.
 | `scripts/lint_chapter.rb` | voice bans, paragraph length, raw URLs, unknown keys, provenance markers |
 | `scripts/page_audit.rb` | no split blocks, stranded headings, gaps, runts, oversized images, overfull lines |
 | `epubcheck` | valid EPUB |
+| `scripts/style_report.rb` (`rake style`) | copyedit step 1: repeated passages, recurring phrases, overused words, term variants, PT comparatives (docs/COPYEDIT.md) |
 | `test/` (`rake test`) | the tools themselves keep doing the above |

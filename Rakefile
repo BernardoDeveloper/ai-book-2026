@@ -73,6 +73,11 @@ task :doctor do
   ruby "scripts/doctor.rb", "--lang", LANG
 end
 
+desc "Copyedit step 1: mechanical style report (repetition, tics, variants) in build/<lang>/style-report.md"
+task :style do
+  ruby "scripts/style_report.rb", "--lang", LANG
+end
+
 desc "Strict pre-release check: doctor in release mode (placeholders and stale translations are errors)"
 task :release_check do
   ruby "scripts/doctor.rb", "--lang", LANG, "--release", "--output"
