@@ -12,7 +12,9 @@
 # commit, so the update can touch only the paragraphs marked
 # `<!-- src: <post> -->` that the change affects.
 #
-# Usage: scripts/drift.rb [--diff] [--lang pt]
+# Usage: scripts/drift.rb [--diff] [--lang pt] [--unit ID[,ID]] (--unit repeatable)
+#   --unit limits the Chapters and Translations sections (and their diffs) to
+#   those units, so a re-sync agent sees only its own work.
 #   Run scripts/inventory.rb first so hashes are fresh (the Rakefile does).
 
 require "yaml"
@@ -20,10 +22,11 @@ require "digest"
 require "date"
 require "optparse"
 
-opts = { diff: false, lang: "pt" }
+opts = { diff: false, lang: "pt", units: [] }
 OptionParser.new do |o|
   o.on("--diff", "print the blog diff for every stale source") { opts[:diff] = true }
   o.on("--lang LANG") { |v| opts[:lang] = v }
+  o.on("--unit IDS", "limit to these units (comma list, repeatable)") { |v| opts[:units].concat(v.split(",").map(&:strip)) }
 end.parse!
 
 ROOT = File.expand_path("..", __dir__)
@@ -32,6 +35,10 @@ blog = inv["generated_from"]
 by_id = inv["posts"].to_h { [_1["id"], _1] }
 lang_key = opts[:lang] == "en" ? "en" : "pt"
 file_name = lang_key == "en" ? "index.en.md" : "index.md"
+
+# "prefacio" lives in index.md.
+unit_id = ->(path) { (b = File.basename(path, ".md")) == "index" ? "prefacio" : b }
+wanted = ->(path) { opts[:units].empty? || opts[:units].include?(unit_id.(path)) }
 
 def front_matter(path)
   text = File.read(path)
@@ -49,6 +56,8 @@ Dir.glob(File.join(ROOT, "book", opts[:lang], "**", "*.md")).sort.each do |path|
   rel = path.delete_prefix(ROOT + "/")
   Array(fm["sources"]).each do |src|
     used[src["post"]] << rel
+    next unless wanted.(path)
+
     post = by_id[src["post"]]
     if post.nil?
       puts "  MISSING  #{rel}: #{src['post']} no longer exists in the blog"
@@ -69,6 +78,8 @@ unless opts[:lang] == "pt"
   # `translated_from: {file: book/pt/<id>.md, sha256: ...}`.
   puts "== Translations (#{opts[:lang]} vs pt)"
   Dir.glob(File.join(ROOT, "book", opts[:lang], "*.md")).sort.each do |path|
+    next unless wanted.(path)
+
     tf = front_matter(path)["translated_from"] or next
     pt = File.join(ROOT, tf["file"])
     next if File.exist?(pt) && Digest::SHA256.file(pt).hexdigest == tf["sha256"]

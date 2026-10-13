@@ -76,4 +76,44 @@ class TestRestamp < ToolTest
     refute res.ok?
     assert_includes res.err, "unknown post 2026/09/09/nada"
   end
+
+  def tf_line(rel) = fx.read(rel)[/^translated_from: .*$/]
+
+  # Guards --translation: only the named EN unit's translated_from sha256 is set
+  # to the current PT hash; other EN units, source hashes and prose stay.
+  def test_translation_restamp_touches_only_that_hash
+    fx.edit("book/pt/ch01.md") { _1.sub("calcula a próxima palavra.", "calcula a próxima palavra provável.") }
+    fx.edit("book/pt/ch02.md") { _1.sub("começa do zero", "começa do nada") }
+    assert_exit 1, fx.run("drift", "--lang", "en")
+    before = fx.read("book/en/ch01.md")
+    other = fx.read("book/en/ch02.md")
+
+    assert_exit 0, fx.run("restamp", "--translation", "ch01")
+    after = fx.read("book/en/ch01.md")
+    assert_equal %(translated_from: {file: book/pt/ch01.md, sha256: "#{fx.sha('book/pt/ch01.md')}"}), tf_line("book/en/ch01.md")
+    assert_equal before.sub(/^translated_from: .*$/, ""), after.sub(/^translated_from: .*$/, "")
+    assert_equal other, fx.read("book/en/ch02.md")
+    res = fx.run("drift", "--lang", "en")
+    refute_includes res.out, "book/en/ch01.md"
+    assert_includes res.out, "book/en/ch02.md"
+  end
+
+  # Guards the comma list, the prefacio -> index.md mapping and --all-translations.
+  def test_translation_list_and_all
+    fx.edit("book/pt/index.md") { _1.sub("começou num blog", "começou em um blog") }
+    fx.edit("book/pt/ch01.md") { _1 + "\nMais.\n" }
+    fx.edit("book/pt/ch02.md") { _1 + "\nMais.\n" }
+    assert_exit 0, fx.run("restamp", "--translation", "prefacio,ch01")
+    assert_equal %(translated_from: {file: book/pt/index.md, sha256: "#{fx.sha('book/pt/index.md')}"}), tf_line("book/en/index.md")
+    assert_includes fx.run("drift", "--lang", "en").out, "book/en/ch02.md"
+    assert_exit 0, fx.run("restamp", "--all-translations")
+    assert_exit 0, fx.run("drift", "--lang", "en")
+  end
+
+  # Guards typos: an unknown unit aborts.
+  def test_translation_unknown_unit
+    res = fx.run("restamp", "--translation", "nada")
+    refute res.ok?
+    assert_includes res.err, "unknown unit nada"
+  end
 end

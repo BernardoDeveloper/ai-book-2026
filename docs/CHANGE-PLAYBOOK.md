@@ -77,10 +77,13 @@ errors) for each language, CHANGELOG entry, `vX.Y.Z` tag.
 | Tool | Guarantees |
 |---|---|
 | `scripts/outline_check.rb` | every AI post is placed or excluded with a reason; ids exist |
-| `scripts/drift.rb [--lang] [--diff]` | the book matches the blog; translations match the PT units |
+| `scripts/drift.rb [--lang] [--diff] [--unit ID]` | the book matches the blog; translations match the PT units (`--unit` limits the report and diffs to those units) |
+| `scripts/restamp.rb <post> \| --translation <unit> \| --all-translations` | records that a unit was reviewed against a post's new hash, or that an EN unit follows its PT unit's current hash (sets only `translated_from.sha256`) |
 | `scripts/impact.rb` | the full blast radius of a change, before making it |
-| `scripts/doctor.rb [--output] [--release]` | cross-references, citations, glossary keys, figures and credits resolve; provenance consistent; cut-off and exclusions respected; callbacks plausible; translation parity; no unresolved references in the built PDF |
-| `scripts/lint_chapter.rb` | voice bans, paragraph length, raw URLs, unknown keys, provenance markers |
+| `scripts/doctor.rb [--output] [--release]` | cross-references, citations, glossary keys, figures and credits resolve; provenance consistent; cut-off and exclusions respected; callbacks plausible (versioned names match by stem); apA timeline in date order; translation parity; no unresolved references in the built PDF |
+| `scripts/lint_chapter.rb` | voice bans, paragraph length, raw URLs, unknown keys, provenance markers, naming rules (`naming_rules` in `book/continuity.yml`: GPT tiers, Z.ai, sprint) |
+| `scripts/en_quote_punct.rb [--check]` | EN house style: periods and commas inside closing quotes (`rake check BOOK_LANG=en` runs it with `--check`) |
+| `scripts/review.rb validate\|summary\|status` (`rake review DIR=...`) | copyedit findings files are well-formed, quotes exist in their units, items carry stable ids; after applying, which items are still unchanged (docs/COPYEDIT.md) |
 | `scripts/page_audit.rb` | no split blocks, stranded headings, gaps, runts, oversized images, overfull lines |
 | `epubcheck` | valid EPUB |
 | `scripts/style_report.rb` (`rake style`) | copyedit step 1: repeated passages, recurring phrases, overused words, term variants, PT comparatives (docs/COPYEDIT.md) |

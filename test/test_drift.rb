@@ -117,4 +117,35 @@ class TestDrift < ToolTest
     res = drift("--lang", "en", "--diff")
     assert_includes res.out, "translated version not found in git history"
   end
+
+  # Guards --unit: a re-sync agent sees only its own unit's stale translation and
+  # diff (repeatable and comma-separated), not the other units'.
+  def test_unit_filter_limits_translations
+    fx.init_book_git!
+    fx.edit("book/pt/ch01.md") { _1.sub("calcula a próxima palavra.", "calcula a próxima palavra provável.") }
+    fx.edit("book/pt/ch02.md") { _1.sub("começa do zero", "começa do nada") }
+    fx.book_git("commit", "-q", "-am", "PT edits")
+    both = drift("--lang", "en", "--diff")
+    assert_includes both.out, "book/en/ch01.md"
+    assert_includes both.out, "book/en/ch02.md"
+
+    one = drift("--lang", "en", "--diff", "--unit", "ch01")
+    assert_includes one.out, "STALE    book/en/ch01.md"
+    assert_includes one.out, "palavra provável"
+    refute_includes one.out, "book/en/ch02.md"
+    refute_includes one.out, "do nada"
+
+    many = drift("--lang", "en", "--unit", "ch01", "--unit", "ch02,ch03")
+    assert_includes many.out, "book/en/ch01.md"
+    assert_includes many.out, "book/en/ch02.md"
+  end
+
+  # Guards --unit prefacio mapping to index.md.
+  def test_unit_filter_prefacio
+    fx.edit("book/pt/index.md") { _1.sub("começou num blog", "começou em um blog") }
+    fx.edit("book/pt/ch01.md") { _1.sub("calcula a próxima palavra.", "calcula a próxima palavra provável.") }
+    res = drift("--lang", "en", "--unit", "prefacio")
+    assert_includes res.out, "book/en/index.md"
+    refute_includes res.out, "book/en/ch01.md"
+  end
 end

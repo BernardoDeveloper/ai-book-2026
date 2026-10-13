@@ -40,10 +40,22 @@ from step 1). Each produces a ranked report, not edits (shared instructions:
 4. passages a lay reader would stumble on;
 5. pacing (only the worst cases).
 
+Each part's findings land in `reviews/<version>/<lang>/part<N>-*.yml` (format:
+`reviews/README.md`). Validate and summarise them before triage with
+`rake review DIR=reviews/<version>/<lang>` (optionally `GREP=regex` over
+problem and suggestion): it checks the schema, that every quote is really in
+its unit (reporting the actual line when it moved), adds stable ids
+`<part>.<n>` to the items, and prints one line per item with counts per
+category and severity. After the apply agents are done,
+`ruby scripts/review.rb status reviews/<version>/<lang>` lists the items whose
+quote is still in the unit ("unchanged": not applied) and, apart, those the
+triage rejected (ids under a "Rejected" or "No change" heading of `triage.md`).
+
 The editor (Claude, with the author) triages the items into
 `reviews/<version>/<lang>/triage.md`, applies them surgically
 (`docs/INTEGRATION.md` rules; voice per `docs/BOOK-VOICE.md`), runs `rake check
-build`, and propagates to EN with `scripts/drift.rb --lang en --diff`.
+build`, and propagates to EN with `scripts/drift.rb --lang en --diff` (per unit:
+`--unit ch05`; then `scripts/restamp.rb --translation ch05`, never by hand).
 Cheaper models handle the proofreading; flagged hard passages get the strong
 model. Rough budget: 2-3M tokens per language.
 

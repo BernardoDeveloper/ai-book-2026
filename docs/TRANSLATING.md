@@ -83,13 +83,18 @@ differed meaningfully from the PT chapter, open questions.
 `ruby scripts/drift.rb --lang en --diff` lists every EN unit whose PT source
 changed since it was translated, with a word-level diff of the PT file since
 the exact version that was translated (found by its `translated_from.sha256`).
-For each stale unit:
+A re-sync agent gets only its own unit's diff with
+`ruby scripts/drift.rb --lang en --diff --unit ch05` (repeatable or comma list;
+the preface is `prefacio`). For each stale unit:
 
 1. Apply only the diff: find the corresponding EN paragraphs by their `src`
    markers and position, and re-translate those (added, removed or reworded
    paragraphs, changed markers, sources, figures). Leave untouched paragraphs
    alone; don't re-polish them.
 2. Make the EN front matter match: `sources` (same posts as the PT unit, EN
-   hashes), and `translated_from.sha256` set to the current PT file's sha256.
+   hashes). Never edit `translated_from.sha256` by hand: when the unit is
+   re-synced, run `ruby scripts/restamp.rb --translation ch05[,ch06...]`
+   (or `--all-translations`), which sets it to the current PT file's sha256 and
+   touches nothing else.
 3. `BOOK_LANG=en ruby scripts/lint_chapter.rb <file>` and
    `ruby scripts/doctor.rb --lang en` (parity: same src-marker sequence as PT).

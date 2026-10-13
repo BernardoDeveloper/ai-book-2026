@@ -3,7 +3,8 @@
 
 # Mechanical checks for book chapter sources (docs/BOOK-VOICE.md). Catches what
 # a reread misses: dashes, banned phrases, long paragraphs, raw URLs, unknown
-# citation or glossary keys, missing provenance. Judgment calls stay with the
+# citation or glossary keys, missing provenance, naming-rule violations
+# (book/continuity.yml `naming_rules`). Judgment calls stay with the
 # humanizer and akita-finish passes.
 #
 # Usage: scripts/lint_chapter.rb FILE...   (BOOK_LANG=pt by default)
@@ -56,6 +57,16 @@ BANNED_EN = {
   /\b(surgical|juicy|I sign off on)\b/i => "effusive flourish",
 }.freeze
 BANNED = COMMON.merge(LANG == "en" ? BANNED_EN : BANNED_PT).freeze
+# Mechanical naming decisions (book/continuity.yml `naming_rules`): each match is an error that
+# names the preferred form. Link texts and *italic titles* followed by a URL are post titles
+# quoted as written, so they're blanked out first.
+NAMING_RULES = Array(yaml_or_empty(File.join(ROOT, "book", "continuity.yml"))["naming_rules"])
+                 .select { Array(_1["langs"]).map(&:to_s).include?(LANG) }
+                 .map { [Regexp.new(_1["pattern"]), _1["use"]] }
+def unquoted_titles(line)
+  line.gsub(/\[[^\]]*\]\([^)]*\)/) { |m| " " * m.size }
+      .gsub(%r{\*[^*\n]+\*(?=\s*\(?\s*https?://)}) { |m| " " * m.size }
+end
 NON_PROSE = /\A\s*(#|>|[-*+] |\d+\. |\||<!--|!\[|:::|\{)/
 
 errors = 0
@@ -112,6 +123,13 @@ ARGV.each do |path|
     next if line.include?("<!--")
 
     BANNED.each { |re, msg| report.("error", rel, n, "#{msg}: #{line.strip[0, 80]}") if line =~ re }
+    checked = NAMING_RULES.empty? ? line : unquoted_titles(line)
+    NAMING_RULES.each do |re, use|
+      checked.scan(re) do
+        m = Regexp.last_match
+        report.("error", rel, n, "naming: '#{m[0]}' should be '#{m[0].sub(re, use)}' (continuity.yml naming_rules)")
+      end
+    end
     report.("error", rel, n, "raw URL in prose; use a citation [@key]") if line =~ %r{https?://}
     line.scan(%r{(?<![\w./])@([\w:.-]*\w)}).flatten.each do |key|
       next if key.start_with?("fig-", "sec-", "tbl-")

@@ -8,12 +8,17 @@
 # analysis' source_sha256.
 #
 # Usage: scripts/restamp.rb [--lang en] 2026/MM/DD/slug [...]   (run scripts/inventory.rb first)
+#        scripts/restamp.rb --translation ch03[,ch04...] | --all-translations
+# The second form is for EN units re-synced to their PT unit: it sets
+# translated_from.sha256 in book/en/<unit>.md to the PT file's current hash
+# (and nothing else). Never edit that hash by hand.
 # Each edition tracks its own language of the post (index.md / index.en.md).
 # Only touches the front-matter block; prose is never modified. The
 # chapter-level blog_commit stays as the baseline for the chapter's other
 # sources, so scripts/drift.rb --diff stays correct for them.
 
 require "yaml"
+require "digest"
 
 ROOT = File.expand_path("..", __dir__)
 inv = YAML.load_file(File.join(ROOT, "inventory", "posts.yml"))
@@ -24,7 +29,45 @@ if (i = ARGV.index("--lang"))
   lang = ARGV[i + 1]
   ARGV.slice!(i, 2)
 end
-abort "usage: restamp.rb [--lang en] POST_ID..." if ARGV.empty?
+translations = nil
+if (i = ARGV.index("--translation"))
+  translations = ARGV[i + 1].to_s.split(",").map(&:strip).reject(&:empty?)
+  ARGV.slice!(i, 2)
+end
+all_translations = !ARGV.delete("--all-translations").nil?
+
+if translations || all_translations
+  abort "--translation needs unit ids" if translations&.empty?
+  dir = File.join(ROOT, "book", "en")
+  files = if all_translations
+            Dir[File.join(dir, "*.md")].sort
+          else
+            translations.map do |u|
+              path = File.join(dir, u == "prefacio" ? "index.md" : "#{u}.md")
+              File.exist?(path) ? path : abort("unknown unit #{u}: no #{path.delete_prefix(ROOT + '/')}")
+            end
+          end
+  files.each do |path|
+    text = File.read(path)
+    fm_end = text.start_with?("---\n") && text.index(/^---[ \t]*$/, 4)
+    tf = fm_end && text[0...fm_end].match(/^translated_from: \{file: (\S+?), sha256: "[0-9a-f]{64}"\}$/)
+    unless tf
+      next if all_translations
+
+      abort "#{File.basename(path)} has no translated_from line"
+    end
+    pt = File.join(ROOT, tf[1])
+    abort "#{tf[1]} (translated_from of #{File.basename(path)}) does not exist" unless File.exist?(pt)
+
+    sha = Digest::SHA256.file(pt).hexdigest
+    line = %(translated_from: {file: #{tf[1]}, sha256: "#{sha}"})
+    File.write(path, text[0...fm_end].sub(tf[0]) { line } + text[fm_end..])
+    warn "restamped #{File.basename(path)} translated_from"
+  end
+  exit
+end
+
+abort "usage: restamp.rb [--lang en] POST_ID... | --translation UNIT[,UNIT] | --all-translations" if ARGV.empty?
 
 ARGV.each do |id|
   sha = posts.fetch(id) { abort "unknown post #{id}" }.dig(lang, "sha256")

@@ -59,3 +59,14 @@ naming:
   - "Z.ai (never z.ai). 'Sprint' is feminine (a sprint)."
   - "A cross-reference used as subject or after como/que/porque takes the article: o @sec-ch15."
   - "Book and paper titles in italics."
+
+# The mechanical subset of `naming`, enforced by scripts/lint_chapter.rb (errors).
+# pattern: Ruby regex (case-sensitive unless it carries (?i:...)); use: replacement
+# with \1.. back-references, shown in the message; langs: editions it applies to.
+# Not checked inside markdown link texts or *italic titles* followed by a URL.
+naming_rules:
+  - {pattern: '\bGPT (\d)', use: 'GPT-\1', langs: [pt, en]}
+  - {pattern: '\bGPT-(\d(?:\.\d)?)[- ](sol|luna|terra|astra)\b', use: 'GPT-\1 \2 (tier capitalised)', langs: [pt, en]}
+  - {pattern: '\bGPT-(\d(?:\.\d)?)-(Sol|Luna|Terra|Astra)\b', use: 'GPT-\1 \2', langs: [pt, en]}
+  - {pattern: '\bz\.ai\b', use: 'Z.ai', langs: [pt, en]}
+  - {pattern: '(?i:\b(um|o|este|esse|aquele) sprint\b)', use: 'a/uma/esta/essa/aquela sprint (feminine)', langs: [pt]}

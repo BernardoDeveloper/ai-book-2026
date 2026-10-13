@@ -15,6 +15,8 @@
 #   callbacks  heuristic: a sentence that points at another unit (@sec-x) and
 #              names something (quoted phrase, Capitalised Name, number) must
 #              find at least one of those names in the target unit (warning)
+#   timeline   apA: within each month section entries are in order; loose labels
+#              span days (Começo/Early 1-10, Meados/Mid 11-20, Fim/Late 21-31) (warning)
 #   parity     (non-PT editions) same src-marker sequence and the same
 #              ids/citations/figures as the PT unit; translated_from is current
 # Output checks (--output, after `rake build`):
@@ -156,9 +158,38 @@ units.each do |id, u|
     next if names.empty?
 
     hay = targets.map { fold(units[_1][:text]) }.join("\n")
-    next if names.any? { hay.include?(fold(_1)) }
+    # "DeepSeek-V3" or "GPT-4o" count as found when the stem ("DeepSeek", "GPT") is.
+    next if names.any? { hay.include?(fold(_1)) || (_1 =~ /\A(\p{L}{3,})[-\d]/ && hay.include?(fold(Regexp.last_match(1)))) }
 
     warn_.(id, "callback to #{targets.map { "@sec-#{_1}" }.join('/')} names #{names.first(4).join(', ')}, none found there: \"#{sentence.strip[0, 110]}\"")
+  end
+end
+
+# ---- timeline order (apA) ----------------------------------------------------
+# `### <month>` sections list paragraphs led by a bold date label: dated
+# (**9 de março.**, **6 a 9 de abril.**, **April 7.**) or loose (**Março.**,
+# **Começo de/Meados de/Fim de <mês>.**, **Early/Mid/Late <Month>.**).
+if units.key?("apA")
+  # Loose labels cover a range of days; an entry is out of order only when it
+  # must lie entirely before the previous one.
+  loose = LANG == "pt" ? { /\AComeço de / => 1..10, /\AMeados de / => 11..20, /\AFim de / => 21..31 } : { /\AEarly / => 1..10, /\AMid / => 11..20, /\ALate / => 21..31 }
+  dated_re = LANG == "pt" ? /\A(\d{1,2})º?\b.* de \p{L}+\z/ : /\A\p{Lu}\p{Ll}+ (\d{1,2})\b/
+  month = nil
+  last = nil # [day range, label]
+  units["apA"][:text].split(/\n{2,}/).each do |para|
+    if (h = para.match(/\A###? +(.+)/))
+      month = h[1].strip
+      last = nil
+      next
+    end
+    label = para[/\A\*\*([^*]+?)\.?\*\*/, 1] or next
+    next unless month
+
+    days = (d = label.match(dated_re)) ? d[1].to_i..d[1].to_i : loose.find { |re, _| re.match?(label) }&.last
+    next unless days
+
+    warn_.("apA", "#{month}: \"#{label}\" is out of order after \"#{last[1]}\"") if last && days.max < last[0].min
+    last = [days, label]
   end
 end
 

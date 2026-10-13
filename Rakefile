@@ -9,6 +9,7 @@
 #   rake build          render PT edition (EPUB, print + ebook PDF, HTML, DOCX) + epubcheck + page audit
 #   rake audit          page-level layout audit of the PDFs (scripts/page_audit.rb)
 #   rake build BOOK_LANG=en  same for the EN edition
+#   rake review DIR=reviews/<version>/<lang>  validate + summarise copyedit findings (scripts/review.rb)
 #   rake test           regression tests of the tools (test/, isolated fixture book)
 
 require "digest"
@@ -67,6 +68,15 @@ task :check do
   ruby "scripts/lint_chapter.rb", *files unless files.empty?
   ruby "scripts/en_quote_punct.rb", "--check" if LANG == "en" # EN house style: punctuation inside quotes
   ruby "scripts/doctor.rb", "--lang", LANG
+end
+
+desc "Copyedit step 2: validate and summarise findings (DIR=reviews/<version>/<lang>, GREP=regex optional)"
+task :review do
+  dir = ENV["DIR"] or abort "usage: rake review DIR=reviews/<version>/<lang> [GREP=regex]"
+  ruby "scripts/review.rb", "validate", dir
+  summary = ["summary", dir]
+  summary += ["--grep", ENV["GREP"]] if ENV["GREP"]
+  ruby "scripts/review.rb", *summary
 end
 
 desc "Integrity check of the sources (scripts/doctor.rb): refs, citations, glossary, figures, provenance, callbacks, parity"

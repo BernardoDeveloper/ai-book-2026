@@ -171,4 +171,53 @@ class TestLintChapter < ToolTest
     res = lint("\n<!-- src: original -->\nTexto.\n\n```\ncurl https://example.com # ontem\n```\n\n<!-- nota: https://x.y ontem -->\n")
     assert_exit 0, res
   end
+
+  RULES = <<~YAML
+    naming_rules:
+      - {pattern: '\\bGPT (\\d)', use: 'GPT-\\1', langs: [pt, en]}
+      - {pattern: '\\bGPT-(\\d(?:\\.\\d)?)[- ](sol|luna|terra|astra)\\b', use: 'GPT-\\1 \\2 (tier capitalised)', langs: [pt, en]}
+      - {pattern: '\\bGPT-(\\d(?:\\.\\d)?)-(Sol|Luna|Terra|Astra)\\b', use: 'GPT-\\1 \\2', langs: [pt, en]}
+      - {pattern: '\\bz\\.ai\\b', use: 'Z.ai', langs: [pt, en]}
+      - {pattern: '(?i:\\b(um|o|este|esse|aquele) sprint\\b)', use: 'feminine', langs: [pt]}
+  YAML
+
+  # Guards naming_rules (book/continuity.yml): each violation is an error that
+  # names the preferred form; correct spellings pass.
+  def test_naming_rules_flag_violations
+    fx.write("book/continuity.yml", RULES)
+    res = lint(<<~MD)
+
+      <!-- src: original -->
+      O GPT 5.5 e o GPT-5.6 luna e o GPT-5.6-Sol rodaram na z.ai com um sprint curto.
+
+      O GPT-5.6 Sol, a Z.ai e a sprint estão certos.
+    MD
+    assert_exit 1, res
+    n = line_of("O GPT 5.5")
+    assert_includes res.out, "chx.md:#{n}: error: naming: 'GPT 5' should be 'GPT-5'"
+    assert_includes res.out, "naming: 'GPT-5.6 luna' should be 'GPT-5.6 luna (tier capitalised)'"
+    assert_includes res.out, "naming: 'GPT-5.6-Sol' should be 'GPT-5.6 Sol'"
+    assert_includes res.out, "naming: 'z.ai' should be 'Z.ai'"
+    assert_includes res.out, "naming: 'um sprint' should be 'feminine'"
+    assert_includes res.out, "5 error(s)", "the correct line adds none"
+  end
+
+  # Guards per-language rules (sprint is PT only) and the opt-out zones: link
+  # texts and italic titles followed by a URL are quoted post titles.
+  def test_naming_rules_langs_and_title_exemptions
+    fx.write("book/continuity.yml", RULES)
+    assert_exit 0, lint("\n<!-- src: original -->\nThe sprint was short, a one sprint plan.\n", lang: "en")
+    res = lint(<<~MD)
+
+      <!-- src: original -->
+      Veja [GPT 5 e a z.ai](https://example.com/x) e *Rodei o GPT 5* (https://example.com/y) sem medo.
+    MD
+    refute_includes res.out, "naming:"
+    assert_includes lint("\n<!-- src: original -->\n*Rodei o GPT 5* sem URL.\n").out, "naming:"
+  end
+
+  # Guards the opt-in: without naming_rules in continuity.yml (or the file) nothing is checked.
+  def test_naming_rules_absent
+    assert_exit 0, lint("\n<!-- src: original -->\nO GPT 5 na z.ai.\n")
+  end
 end

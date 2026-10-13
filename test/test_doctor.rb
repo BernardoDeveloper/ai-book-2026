@@ -176,6 +176,16 @@ class TestDoctor < ToolTest
     refute_match(/callback/, res.out)
   end
 
+  # Guards the stem rule: "DeepSeek-V3" / "GPT-4o" in a callback count as found
+  # when "DeepSeek" / "GPT" is in the target unit (the version is rarely repeated).
+  def test_callback_versioned_name_matches_by_stem
+    append("ch02", "<!-- src: original -->\nComo vimos em @sec-ch01, o DeepSeek-V3 saiu barato, e o GPT-4o também.")
+    res = doctor
+    assert_match(/callback to @sec-ch01 names DeepSeek-V3, GPT-4o/, res.out)
+    append("ch01", "<!-- src: original -->\nO DeepSeek e o GPT apareceram.")
+    refute_match(/callback/, doctor.out)
+  end
+
   # Guards callbacks into the unit itself and into unknown units being ignored.
   def test_callback_self_reference_ignored
     append("ch02", "<!-- src: original -->\nAqui em @sec-ch02 falo do Zeppelin.")
@@ -275,5 +285,40 @@ class TestDoctor < ToolTest
     res = doctor("--output")
     assert_exit 1, res
     assert_match(/1× '\?\?' \(unresolved reference\)/, res.out)
+  end
+
+  def timeline(lang, body)
+    fx.edit(fx.unit_rel("apA", lang)) { "#{_1}\n#{body}\n" }
+    doctor("--lang", lang)
+  end
+
+  # Guards the apA timeline order: dated entries out of day order in a month warn (PT and EN).
+  def test_timeline_out_of_order_warns
+    res = timeline("pt", "### Abril\n\n<!-- src: original -->\n**7 de abril.** A.\n\n**6 a 9 de abril.** B.\n\n**1º de abril.** C.\n")
+    assert_exit 0, res
+    assert_includes res.out, %(warn  apA: Abril: "1º de abril" is out of order after "6 a 9 de abril")
+    assert_includes res.out, 'apA: Abril: "6 a 9 de abril" is out of order after "7 de abril"'
+    res = timeline("en", "### April\n\n<!-- src: original -->\n**April 7.** A.\n\n**April 6 to 9.** B.\n")
+    assert_includes res.out, %(warn  apA: April: "April 6 to 9" is out of order after "April 7")
+  end
+
+  # Guards loose labels as day ranges: "Fim de"/"Late" (21-31) before an early
+  # date warns; before the 30th, or repeated after it, does not.
+  def test_timeline_loose_labels_are_ranges
+    res = timeline("pt", "### Maio\n\n<!-- src: original -->\n**Fim de maio.** A.\n\n**10 de maio.** B.\n")
+    assert_includes res.out, %(warn  apA: Maio: "10 de maio" is out of order after "Fim de maio")
+    res = timeline("en", "### May\n\n<!-- src: original -->\n**Late May.** A.\n\n**May 3.** B.\n")
+    assert_includes res.out, %(warn  apA: May: "May 3" is out of order after "Late May")
+    # timeline() appends to the same apA, so check only the new section's entries
+    res = timeline("pt", "### Junho\n\n<!-- src: original -->\n**Fim de junho.** A.\n\n**30 de junho.** B.\n\n**Fim de junho.** C.\n")
+    refute_match(/Junho: .* out of order/, res.out)
+  end
+
+  # Guards no false positives on a well-ordered timeline (undated entries, equal days, new month sections).
+  def test_timeline_ordered_is_quiet
+    body = "### Junho\n\n<!-- src: original -->\n**Começo de junho.** A.\n\n**3 de junho.** B.\n\n**Junho.** C.\n\n**3 de junho.** D.\n\n**Fim de junho.** E.\n\n### Julho\n\n**2 de julho.** F.\n"
+    refute_match(/apA: \w+: /, timeline("pt", body).out)
+    en = "### June\n\n<!-- src: original -->\n**Early June.** A.\n\n**June 3.** B.\n\n**June.** C.\n\n**Late June.** E.\n\n### July\n\n**July 2.** F.\n"
+    refute_match(/apA: \w+: /, timeline("en", en).out)
   end
 end
