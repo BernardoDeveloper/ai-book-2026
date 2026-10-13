@@ -111,7 +111,11 @@ end
 # source with Quarto's bundled typst; build/<lang>/.tighten holds the
 # per-chapter tightening (`--input tighten=...`) shared by every compile and
 # by the audit, so they all see the same layout.
-TYPST = Dir[File.join(TOOLS, "quarto-1.10.19", "bin", "tools", "*", "typst")].first
+# Resolved lazily: in a fresh checkout Quarto (which bundles Typst) is only
+# unpacked by the tools task, after this file is loaded.
+def typst_bin
+  Dir[File.join(TOOLS, "quarto-1.10.19", "bin", "tools", "*", "typst")].first or raise "typst not found; run rake tools"
+end
 TIGHTEN = File.join(ROOT, "build", LANG, ".tighten")
 
 def typst_sources
@@ -124,7 +128,7 @@ end
 
 def typst_compile(typ, pdf, edition)
   tighten = File.exist?(TIGHTEN) ? File.read(TIGHTEN).strip : ""
-  sh TYPST, "compile", "--root", ROOT, "--font-path", File.join(ROOT, "assets", "fonts"), "--pdf-standard", "ua-1",
+  sh typst_bin, "compile", "--root", ROOT, "--font-path", File.join(ROOT, "assets", "fonts"), "--pdf-standard", "ua-1",
      "--input", "edition=#{edition}", "--input", "tighten=#{tighten}", typ, pdf
 end
 
