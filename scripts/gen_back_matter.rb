@@ -76,9 +76,21 @@ units.each do |u|
     next if seen.include?(path)
 
     seen << path
-    rec = credits[path]
+    # Translated figures (assets/figures/<lang>/x.png) share the canonical record.
+    rec = credits[path] || credits[path.sub(%r{figures/[a-z]{2}/}, "figures/")]
     text = case rec&.dig("kind")
-           when "photo" then rec.dig("credit", "backmatter")
+           when "photo"
+             if lang == "pt"
+               rec.dig("credit", "backmatter")
+             else # built from the record's fields; the stored strings are Portuguese
+               mods = { "redimensionada" => "resized", "recortada" => "cropped", "convertida de SVG para PNG" => "converted from SVG to PNG",
+                        "em tons de cinza" => "converted to grayscale" }
+               src = rec["source"] || {}
+               lic = rec.dig("license", "short").to_s
+               licence = lic.match?(/public domain|\APD|CC0/i) ? "Public domain." : "Licensed #{lic}#{rec.dig('license', 'url') ? ", #{rec.dig('license', 'url')}" : ''}."
+               changes = Array(rec["modifications"]).map { mods.fetch(_1, _1) }
+               %("#{src['title']}", #{rec['author']}. #{src['page_url']}. #{licence}#{changes.empty? ? '' : " Changes: #{changes.join(', ')}."})
+             end
            when "ai_illustration" then "#{CR[:ai]}: #{rec.dig('generation', 'model')}, #{rec.dig('generation', 'date').to_s[0, 10]}."
            else CR[:diagram]
            end
@@ -87,7 +99,7 @@ units.each do |u|
 end
 cover = credits.values.find { _1["file"].to_s.start_with?("assets/cover/") }
 if cover
-  credit_lines.insert(4, "- #{lang == 'en' ? 'Cover' : 'Capa'}: #{CR[:ai]} (#{cover.dig('generation', 'model')}, #{cover.dig('generation', 'date').to_s[0, 10]}); #{lang == 'en' ? 'typography by the author' : 'tipografia do autor'}.")
+  credit_lines.insert(4, "- #{lang == 'en' ? 'Cover' : 'Capa'}: #{CR[:ai]} (#{cover.dig('generation', 'model')}, #{cover.dig('generation', 'date').to_s[0, 10]}); #{lang == 'en' ? "typography by the author; author sticker: the author's official portrait illustration" : 'tipografia do autor; selo com o retrato oficial do autor (ilustração)'}.")
 end
 File.write(File.join(dir, "creditos.md"), credit_lines.join("\n") + "\n")
 warn "wrote glossario.md, bibliografia.md, fontes.md, creditos.md for #{lang}"

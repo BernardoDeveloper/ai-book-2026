@@ -11,6 +11,7 @@
 # Text comes from book/outline.yml (meta.working_title / subtitle / author).
 
 require "yaml"
+require "fileutils"
 
 ROOT = File.expand_path("..", __dir__)
 art, out = ARGV[0], ARGV[1]
@@ -36,6 +37,26 @@ def text_layer(font:, size:, text:, gravity:, offset:, kerning: 0, interline: 0)
    "-fill", CREAM, "-annotate", "+#{offset[0]}+#{offset[1]}", text, ")", "-composite"]
 end
 
+# Author sticker: the official portrait (assets/cover/akita-portrait.png, from the
+# AI-Lair site) as a round die-cut sticker, tilted, in the open sky right of the
+# robot's head. Built here so both editions get the same sticker.
+STICKER = File.join(ROOT, "assets", "cover", "akita-portrait.png")
+def sticker_layer
+  return [] unless File.exist?(STICKER)
+
+  tmp = File.join(ROOT, "build", "cover-sticker.png")
+  FileUtils.mkdir_p(File.dirname(tmp))
+  system("magick", STICKER, "-background", "#F4E9D0", "-alpha", "remove", "-alpha", "off",
+         "-crop", "1180x1180+230+40", "+repage", "-resize", "400x400",
+         "(", "-size", "400x400", "xc:black", "-fill", "white", "-draw", "circle 200,200 200,2", ")",
+         "-alpha", "off", "-compose", "CopyOpacity", "-composite", tmp, exception: true)
+  system("magick", "-size", "452x452", "xc:none", "-fill", "#FBF9F4", "-stroke", "#1B2238", "-strokewidth", "5",
+         "-draw", "circle 226,226 226,6", tmp, "-geometry", "+26+26", "-compose", "over", "-composite",
+         "(", "+clone", "-background", "#0B1A26", "-shadow", "70x10+8+12", ")", "+swap", "-background", "none",
+         "-layers", "merge", "+repage", "-rotate", "-7", tmp, exception: true)
+  ["(", tmp, "-resize", "430x430", ")", "-gravity", "northeast", "-geometry", "+60+700", "-compose", "over", "-composite"]
+end
+
 cmd = ["magick", art, "-resize", "#{W}x#{H}^", "-gravity", "center", "-extent", "#{W}x#{H}",
        # a gentle darkening behind the title keeps it legible on bright skies
        "(", "-size", "#{W}x900", "gradient:#0B1A26B0-#0B1A2600", ")", "-gravity", "north", "-composite",
@@ -45,6 +66,7 @@ cmd = ["magick", art, "-resize", "#{W}x#{H}^", "-gravity", "center", "-extent", 
        "(", "-size", "#{W}x640", "gradient:#0B1A2600-#0B1A26D8", ")", "-gravity", "south", "-composite",
        *text_layer(font: "#{fonts}/SourceSans3-Semibold.otf", size: 54, text: subtitle, gravity: "south", offset: [0, 250], kerning: 2),
        *text_layer(font: "#{fonts}/SourceSans3-Bold.otf", size: 78, text: author, gravity: "south", offset: [0, 110], kerning: 18),
+       *sticker_layer,
        "-alpha", "remove", "-alpha", "off", "-colorspace", "sRGB", "-quality", "95", out]
 system(*cmd, exception: true)
 warn "wrote #{out}"
