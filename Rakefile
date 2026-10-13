@@ -126,10 +126,11 @@ desc "Build all formats for LANG (default pt), fit and audit the PDF, validate t
 task build: %i[tools merge backmatter config] do
   profile = File.join(ROOT, "_quarto-#{LANG}.yml")
   raise "missing profile #{profile}" unless File.exist?(profile) # quarto ignores unknown profiles silently
-  # Keep Quarto's output in build/<lang>/render.log: the doctor's output
+  # Keep Quarto's output in build/logs/render-<lang>.log (outside the output
+  # dir, which Quarto wipes at the start of a render): the doctor's output
   # checks read it for unresolved cross-references, unknown glossary keys and
   # missing citations (Quarto only warns about those).
-  log = File.join(ROOT, "build", LANG, "render.log")
+  log = File.join(ROOT, "build", "logs", "render-#{LANG}.log")
   FileUtils.mkdir_p(File.dirname(log))
   status = Open3.popen2e(QUARTO, "render", "--profile", LANG) do |_in, out, wait|
     File.open(log, "w") { |f| out.each_line { |l| print l; f.write(l) } }

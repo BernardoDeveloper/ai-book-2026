@@ -18,7 +18,7 @@
 #   parity     (non-PT editions) same src-marker sequence and the same
 #              ids/citations/figures as the PT unit; translated_from is current
 # Output checks (--output, after `rake build`):
-#   the render log has no unresolved cross-references, unknown glossary keys
+#   the render log (build/logs/render-<lang>.log) has no unresolved cross-references, unknown glossary keys
 #   or missing citations; the PDF text has no "??" / "key?" artefacts
 # Also writes build/<lang>/seams.md: each unit's last paragraph next to the
 # next unit's first, for a quick human or agent review of the hand-offs.
@@ -202,18 +202,19 @@ File.write(File.join(ROOT, "build", LANG, "seams.md"), seams.join("\n"))
 
 # ---- output checks ----------------------------------------------------------
 if opts[:output]
-  log = File.join(ROOT, "build", LANG, "render.log")
+  log = File.join(ROOT, "build", "logs", "render-#{LANG}.log")
   if File.exist?(log)
     text = File.read(log).gsub(/\e\[[0-9;]*m/, "")
     text.scan(/Unable to resolve crossref @?([\w-]+)/).flatten.uniq.each { err.("render", "unresolved cross-reference #{_1}") }
     text.scan(/\[glossary\] unknown key: (\S+)/).flatten.uniq.each { err.("render", "unknown glossary key #{_1}") }
     text.scan(/[Cc]itation (?:not found|missing)[: ]+(\S+)/).flatten.uniq.each { err.("render", "missing citation #{_1}") }
   else
-    warn_.("render", "no build/#{LANG}/render.log (rake build writes it)")
+    warn_.("render", "no build/logs/render-#{LANG}.log (rake build writes it)")
   end
   Dir[File.join(ROOT, "build", LANG, "*.pdf")].each do |pdf|
     txt = `pdftotext -q #{pdf} - 2>/dev/null`
-    { /\?\?/ => "'??' (unresolved reference)", /\b[\w-]+\?\)/ => "'key?)' (missing citation)",
+    # Standalone "??" or "?@id" only: titles like "Bend Over for AI??" are text.
+    { /(?<![\p{L}\d])\?\?(?![\p{L}\d])|\?@[\w-]+/ => "'??' (unresolved reference)", /\b[\w-]+\?\)/ => "'key?)' (missing citation)",
       /(Se[cç][aã]o|Section|Figura|Figure) \?/ => "unresolved numbered reference" }.each do |re, what|
       hits = txt.scan(re).size
       err.(File.basename(pdf), "#{hits}× #{what}") if hits.positive?

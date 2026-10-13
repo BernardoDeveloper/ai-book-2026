@@ -233,8 +233,9 @@ class TestDoctor < ToolTest
   end
 
   # Guards the --output checks reading Quarto's render log (Quarto only warns).
+  # The log lives in build/logs/, outside the output dir that Quarto wipes.
   def test_output_reads_render_log
-    fx.write("build/pt/render.log", <<~LOG)
+    fx.write("build/logs/render-pt.log", <<~LOG)
       \e[33mWARNING (/x/filters/quarto.lua:1) Unable to resolve crossref @sec-sumiu\e[0m
       [glossary] unknown key: chave-x
       Citation not found: fantasma2026
@@ -251,6 +252,28 @@ class TestDoctor < ToolTest
   def test_output_without_render_log
     res = doctor("--output")
     assert_exit 0, res
-    assert_includes res.out, "warn  render: no build/pt/render.log"
+    assert_includes res.out, "warn  render: no build/logs/render-pt.log"
+  end
+  # Guards the PDF "??" check: a post title like "Bend Over for AI??" in the
+  # Fontes page is text, while a standalone "??" is an unresolved reference.
+  # Needs the bundled Typst to make a real PDF; skipped without the toolchain.
+  def test_output_pdf_unresolved_reference_pattern
+    typst = Dir[File.join(FixtureData::REPO_ROOT, "tools", "quarto-*", "bin", "tools", "*", "typst")].first
+    skip "bundled typst not found (run rake tools)" unless typst
+    skip "pdftotext not found" unless system("command -v pdftotext >/dev/null 2>&1")
+
+    fx.write("build/logs/render-pt.log", "Output created: book.pdf\n")
+    FileUtils.mkdir_p(File.join(fx.root, "build", "pt"))
+    src = File.join(fx.root, "build", "t.typ")
+    File.write(src, "RANT: Did Akita Bend Over for AI?? A real question.\n")
+    assert system(typst, "compile", src, File.join(fx.root, "build", "pt", "book.pdf"), out: File::NULL, err: File::NULL)
+    res = doctor("--output")
+    refute_match(/unresolved reference/, res.out, "a title ending in ?? must not count")
+
+    File.write(src, "See section ?? for details.\n")
+    assert system(typst, "compile", src, File.join(fx.root, "build", "pt", "book.pdf"), out: File::NULL, err: File::NULL)
+    res = doctor("--output")
+    assert_exit 1, res
+    assert_match(/1× '\?\?' \(unresolved reference\)/, res.out)
   end
 end
