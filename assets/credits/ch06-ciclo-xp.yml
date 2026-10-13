@@ -7,7 +7,7 @@ editions:
 - pt
 - en
 file: assets/figures/ch06-ciclo-xp.png
-sha256: 0edfcedbf0e0d033ecdc71c7089ce00bd1a0b8ccc67193fd5751cddec0f87085
+sha256: daaa90299cfaaeee7270090c869f0617e98096d4e15454252bcfe5a36fed1fdd
 pixels:
   width: 1920
   height: 1560

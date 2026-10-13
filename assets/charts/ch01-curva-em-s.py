@@ -71,7 +71,9 @@ ax.plot(x, cap(x), color=NAVY, lw=3.0, solid_capstyle="round", zorder=3)
 for name, yr in MODELS:
     y = cap(yr)
     ax.plot(yr, y, "o", ms=8.5, mfc=AMBER, mec=INK, mew=1.4, zorder=4)
-    if yr <= 2020:  # rising part: the curve is below-left, so the label goes above-left
+    if yr == 2019:  # above-left would straddle the band edge; below-right keeps it inside the band
+        ax.text(yr + 0.14, y - 0.02, name, ha="left", va="top", fontsize=11.5, fontweight="semibold", zorder=5)
+    elif yr <= 2020:  # rising part: the curve is below-left, so the label goes above-left
         ax.text(yr - 0.08, y + 0.03, name, ha="right", va="bottom", fontsize=11.5, fontweight="semibold", zorder=5)
     else:
         ax.text(yr, y + 0.05, name, ha="center", va="bottom", fontsize=11.5, fontweight="semibold", zorder=5)

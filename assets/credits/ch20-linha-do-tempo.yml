@@ -7,7 +7,7 @@ editions:
 - pt
 - en
 file: assets/figures/ch20-linha-do-tempo.png
-sha256: 77802f198f01f26c5f3f025e97a5cfc248c5f628481940bdc005eb19b0cdcd8c
+sha256: 6ec47a5ae0928ebe6cbf2d5b435f400119dcb109e635362350faefbbd93184cb
 pixels:
   width: 2160
   height: 1920

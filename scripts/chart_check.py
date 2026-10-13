@@ -9,6 +9,15 @@ but intercepts Figure.savefig to check, for every visible text:
   - if its centre is inside a box (FancyBboxPatch/Rectangle), it fits in that
     box entirely (a label that belongs to a box must not spill past its edge).
 On a problem it prints the offending labels and exits 1 without saving.
+
+Intentional exceptions: give an artist the gid "nocheck" to tell the checker
+the overlap is a design choice, not a layout bug. Use it sparingly.
+  - a text with gid "nocheck" may cross box edges (e.g. an event label that
+    hangs off a date and runs across a coloured era band); it must still lie
+    inside the canvas;
+  - a patch with gid "nocheck" is a background panel or band, never a label's
+    box, so texts over it are judged against the other boxes only.
+Set it with text.set_gid("nocheck") or gid="nocheck" on the patch.
 """
 
 import runpy
@@ -21,6 +30,7 @@ from matplotlib.figure import Figure  # noqa: E402
 from matplotlib.patches import FancyBboxPatch, Rectangle  # noqa: E402
 
 TOL = 1.5  # pixels of slack for antialiasing and rounded corners
+NOCHECK = "nocheck"  # gid that marks an intentional overlap (see the docstring)
 
 _original_savefig = Figure.savefig
 SCRIPT = sys.argv[1] if len(sys.argv) > 1 else "?"
@@ -34,7 +44,8 @@ def _check(fig):
     canvas = fig.bbox
     for ax in fig.axes:
         boxes = [p.get_window_extent(renderer) for p in ax.patches
-                 if isinstance(p, (FancyBboxPatch, Rectangle)) and p.get_visible() and p is not ax.patch]
+                 if isinstance(p, (FancyBboxPatch, Rectangle)) and p.get_visible() and p is not ax.patch
+                 and p.get_gid() != NOCHECK]
         for t in ax.texts + list(fig.texts):
             if not t.get_visible() or not t.get_text().strip():
                 continue
@@ -42,6 +53,8 @@ def _check(fig):
             label = t.get_text().replace("\n", " ")[:50]
             if bb.x0 < canvas.x0 - TOL or bb.x1 > canvas.x1 + TOL or bb.y0 < canvas.y0 - TOL or bb.y1 > canvas.y1 + TOL:
                 problems.append(f"text off the canvas: {label!r}")
+                continue
+            if t.get_gid() == NOCHECK:
                 continue
             cx, cy = (bb.x0 + bb.x1) / 2, (bb.y0 + bb.y1) / 2
             # The smallest box containing the label's centre is the box it belongs to.

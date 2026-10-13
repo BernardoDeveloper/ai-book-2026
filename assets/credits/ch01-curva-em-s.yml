@@ -2,7 +2,7 @@
 id: ch01-curva-em-s
 kind: chart_code
 file: assets/figures/ch01-curva-em-s.png
-sha256: b8a6311e6dc641bd76f988d2e95b36ab9ff18fe347dd4aa9305b35106677c1ad
+sha256: 2a43b4208379fcdabd3a68721c0600b0074ece911216a8572181e7b32ef0062e
 source: assets/charts/ch01-curva-em-s.py
 labels: inline dict per language (pt, en) in the source
 tool:

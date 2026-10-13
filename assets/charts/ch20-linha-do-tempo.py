@@ -92,8 +92,15 @@ for i, (a, b) in enumerate(eras):
     ax.add_patch(FancyBboxPatch((X(a) + 0.02, bottoms[i] + 0.03), X(b) - X(a) - 0.04, heights[i] - 0.06,
                                 boxstyle="round,pad=0,rounding_size=0.06", fc=SAND, ec="none", zorder=0))
     ax.plot([X(2019), XEND], [lines[i], lines[i]], color=GRAY, lw=1.0, zorder=1)
-    ax.text(X(a) + 0.08, lines[i] - 0.18, L["lanes"][i], ha="left", va="center", fontsize=12,
-            fontweight="semibold", zorder=4)
+    # The lane name sits inside its era band when it fits; a one-year band is narrower
+    # than "raciocínio" or "optimisation", so those names sit just left of their band.
+    name = ax.text(X(a) + 0.08, lines[i] - 0.18, L["lanes"][i], ha="left", va="center", fontsize=12,
+                   fontweight="semibold", zorder=4)
+    fig.canvas.draw()
+    bb = name.get_window_extent(renderer=fig.canvas.get_renderer())
+    if bb.width / fig.dpi > X(b) - X(a) - 0.2:
+        name.set_x(X(a) - 0.06)
+        name.set_horizontalalignment("right")
 
 def event(i, year, key, level, side="left", color=NAVY, r=0.05, bg=None):
     """Dot on lane i's line; label lines stacked upward from `level` (0 = lowest)."""
@@ -105,9 +112,12 @@ def event(i, year, key, level, side="left", color=NAVY, r=0.05, bg=None):
     ax.add_patch(Circle((x, y0), r, fc=color, ec=INK, lw=1.0, zorder=3))
     for k, line in enumerate(text.split("\n")):
         yy = bottom + (n - 1 - k) * STEP
-        ax.text(x + (0.05 if side == "left" else -0.05), yy, line, ha=side, va="bottom", fontsize=FS,
-                fontweight="semibold" if k == 0 else "normal", zorder=4,
-                bbox=dict(fc=bg, ec="none", pad=1.5) if bg else None)
+        t = ax.text(x + (0.05 if side == "left" else -0.05), yy, line, ha=side, va="bottom", fontsize=FS,
+                    fontweight="semibold" if k == 0 else "normal", zorder=4,
+                    bbox=dict(fc=bg, ec="none", pad=1.5) if bg else None)
+        # Event labels hang off a real date, so they cross a lane's era band freely:
+        # the band marks years, it is not the label's box (scripts/chart_check.py).
+        t.set_gid("nocheck")
 
 # lane 0: parameter war
 event(0, 2019.15, "gpt2", 0)

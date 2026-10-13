@@ -36,7 +36,7 @@ L = {
            "tools": ["compilar", "rodar teste", "ler arquivo"],
            "leg_m": "modelo: só escreve texto", "leg_h": "harness: tem as mãos"},
     "en": {"pensa": "the model thinks", "pede": "asks for\na tool", "executa": "the harness runs it",
-           "volta": "the result comes back\nas text", "tarefa": "task", "pronto": "done",
+           "volta": "the result\ncomes back as text", "tarefa": "task", "pronto": "done",
            "bate": "when the result\nmatches the request",
            "tools": ["compile", "run tests", "read a file"],
            "leg_m": "model: only writes text", "leg_h": "harness: has the hands"},
@@ -59,12 +59,27 @@ def pt(deg, r=R):
     return CX + r * math.cos(a), CY + r * math.sin(a)
 
 
+def fit_text(t, max_w, min_size=10.0):
+    """Shrink a text artist until it fits max_w (data units). Labels change
+    length between languages; only the type size gives way, never below
+    min_size (10 pt here is ~7 pt once the 6.6 in figure is set at text width)."""
+    fig.canvas.draw()
+    inv = ax.transData.inverted()
+    while t.get_fontsize() > min_size:
+        bb = t.get_window_extent(renderer=fig.canvas.get_renderer())
+        (x0, _), (x1, _) = inv.transform([(bb.x0, bb.y0), (bb.x1, bb.y1)])
+        if x1 - x0 <= max_w:
+            break
+        t.set_fontsize(t.get_fontsize() - 0.25)
+    return t
+
+
 def station(deg, text, fc, w, h=0.95):
     x, y = pt(deg)
     ax.add_patch(FancyBboxPatch((x - w / 2, y - h / 2), w, h, boxstyle="round,pad=0,rounding_size=0.2", fc=fc,
                                 ec=INK, lw=1.6, zorder=4))
-    ax.text(x, y, text, ha="center", va="center", fontsize=12, fontweight="semibold", color=PAPER, zorder=5,
-            linespacing=1.15)
+    fit_text(ax.text(x, y, text, ha="center", va="center", fontsize=12, fontweight="semibold", color=PAPER, zorder=5,
+                     linespacing=1.15), w - 0.3)
 
 
 def arc(a0, a1):  # clockwise arc on the ring from angle a0 to a1 (degrees)

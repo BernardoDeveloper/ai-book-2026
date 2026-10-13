@@ -50,6 +50,23 @@ ax = fig.add_axes([0, 0, 1, 1])
 ax.set_xlim(0, W); ax.set_ylim(0, H); ax.set_aspect("equal"); ax.axis("off")
 
 CX, CY, RX, RY = 3.2, 2.72, 2.12, 1.85
+
+
+def fit_text(t, max_w, min_size=10.0):
+    """Shrink a text artist until it fits max_w (data units). Labels change
+    length between languages; only the type size gives way, never below
+    min_size (10 pt here is ~7 pt once the 6.4 in figure is set at text width)."""
+    fig.canvas.draw()
+    inv = ax.transData.inverted()
+    while t.get_fontsize() > min_size:
+        bb = t.get_window_extent(renderer=fig.canvas.get_renderer())
+        (x0, _), (x1, _) = inv.transform([(bb.x0, bb.y0), (bb.x1, bb.y1)])
+        if x1 - x0 <= max_w:
+            break
+        t.set_fontsize(t.get_fontsize() - 0.25)
+    return t
+
+
 BW, LINE = 2.12, 0.25
 STEPS = [("s1", 90, NAVY), ("s2", 18, TEAL), ("s3", -50, TEAL), ("s4", -130, SAND), ("s5", 162, NAVY)]
 boxes = {}
@@ -66,8 +83,8 @@ for i, (key, ang, fill) in enumerate(STEPS, start=1):
     boxes[key] = p
     top = y + LINE * (len(lines) - 1) / 2
     for j, line in enumerate(lines):
-        ax.text(x, top - j * LINE, line, ha="center", va="center", zorder=4, color=fg,
-                fontsize=12.5 if j == 0 else 11.5, fontweight="semibold" if j == 0 else "normal")
+        fit_text(ax.text(x, top - j * LINE, line, ha="center", va="center", zorder=4, color=fg,
+                         fontsize=12.5 if j == 0 else 11.5, fontweight="semibold" if j == 0 else "normal"), BW - 0.16)
 
 def arrow(a, b, rad, **kw):
     style = dict(arrowstyle="-|>,head_length=7,head_width=4", color=INK, lw=1.8,
@@ -88,9 +105,9 @@ ax.text(CX, 0.3, L["fail"], ha="center", va="center", fontsize=11.5, style="ital
 
 # role key in the middle of the loop
 for dy, fill, txt in [(0.25, NAVY, L["nav"]), (-0.25, TEAL, L["pil"])]:
-    ax.add_patch(FancyBboxPatch((CX - 0.72, CY + dy - 0.1), 0.2, 0.2, boxstyle="round,pad=0,rounding_size=0.03",
+    ax.add_patch(FancyBboxPatch((CX - 0.8, CY + dy - 0.1), 0.2, 0.2, boxstyle="round,pad=0,rounding_size=0.03",
                                 fc=fill, ec=INK, lw=1.0))
-    ax.text(CX - 0.42, CY + dy, txt, ha="left", va="center", fontsize=11.5)
+    ax.text(CX - 0.5, CY + dy, txt, ha="left", va="center", fontsize=11.5)
 
 # PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
 

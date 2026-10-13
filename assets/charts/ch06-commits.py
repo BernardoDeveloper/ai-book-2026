@@ -42,11 +42,11 @@ LABELS = {
     "pt": {"features": "funcionalidades novas", "bugs": "correção de bugs",
            "tests": "testes e integração contínua", "infra": "infraestrutura e colocar no ar",
            "refactor": "refatoração e reforço", "docs": "documentação", "security": "segurança",
-           "hidden": "o que não aparece na demonstração", "unit": "commits"},
+           "hidden": "o que não aparece\nna demonstração", "unit": "commits"},
     "en": {"features": "new features", "bugs": "bug fixes",
            "tests": "tests and continuous integration", "infra": "infrastructure and deployment",
            "refactor": "refactoring and hardening", "docs": "documentation", "security": "security",
-           "hidden": "what the demo doesn't show", "unit": "commits"},
+           "hidden": "what the demo\ndoesn't show", "unit": "commits"},
 }[LANG]
 
 fig, ax = plt.subplots(figsize=(6.4, 4.0), dpi=300)
@@ -77,7 +77,7 @@ ax.set_ylim(-0.6, len(DATA) - 0.4)
 x = 27.5
 ax.plot([x, x + 0.8, x + 0.8, x], [ys[1] + 0.3, ys[1] + 0.3, ys[-1] - 0.3, ys[-1] - 0.3],
         color=INK, linewidth=1.0, solid_capstyle="round")
-ax.text(x + 2.0, (ys[1] + ys[-1]) / 2, LABELS["hidden"].replace(" na ", "\nna ").replace(" show", "\nshow"),
+ax.text(x + 2.0, (ys[1] + ys[-1]) / 2, LABELS["hidden"],
         va="center", ha="left", fontsize=12, style="italic")
 
 fig.tight_layout()
