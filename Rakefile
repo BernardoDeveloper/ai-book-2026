@@ -96,7 +96,7 @@ task :backmatter do
 end
 
 desc "Build all formats for LANG (default pt), fit and audit the PDF, validate the EPUB"
-task build: %i[tools config merge backmatter] do
+task build: %i[tools merge backmatter config] do
   profile = File.join(ROOT, "_quarto-#{LANG}.yml")
   raise "missing profile #{profile}" unless File.exist?(profile) # quarto ignores unknown profiles silently
   sh QUARTO, "render", "--profile", LANG
