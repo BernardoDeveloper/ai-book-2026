@@ -54,7 +54,9 @@ def sticker_layer
          "-draw", "circle 226,226 226,6", tmp, "-geometry", "+26+26", "-compose", "over", "-composite",
          "(", "+clone", "-background", "#0B1A26", "-shadow", "70x10+8+12", ")", "+swap", "-background", "none",
          "-layers", "merge", "+repage", "-rotate", "-7", tmp, exception: true)
-  ["(", tmp, "-resize", "430x430", ")", "-gravity", "northeast", "-geometry", "+60+700", "-compose", "over", "-composite"]
+  # Bottom-right corner, beside the author name, like a signature badge. The
+  # footer text is laid out around it (subtitle above, name shifted left).
+  ["(", tmp, "-resize", "360x360", ")", "-gravity", "southeast", "-geometry", "+70+40", "-compose", "over", "-composite"]
 end
 
 cmd = ["magick", art, "-resize", "#{W}x#{H}^", "-gravity", "center", "-extent", "#{W}x#{H}",
@@ -63,9 +65,9 @@ cmd = ["magick", art, "-resize", "#{W}x#{H}^", "-gravity", "center", "-extent", 
        *text_layer(font: "#{fonts}/Limelight-Regular.ttf", size: 190, text: title, gravity: "north", offset: [0, 150], kerning: 4, interline: -10),
        # Footer block: subtitle above the author, both on a dark gradient, so the
        # title area at the top stays clear of the art's focal point (the robot head).
-       "(", "-size", "#{W}x640", "gradient:#0B1A2600-#0B1A26D8", ")", "-gravity", "south", "-composite",
-       *text_layer(font: "#{fonts}/SourceSans3-Semibold.otf", size: 54, text: subtitle, gravity: "south", offset: [0, 250], kerning: 2),
-       *text_layer(font: "#{fonts}/SourceSans3-Bold.otf", size: 78, text: author, gravity: "south", offset: [0, 110], kerning: 18),
+       "(", "-size", "#{W}x820", "gradient:#0B1A2600-#0B1A26E0", ")", "-gravity", "south", "-composite",
+       *text_layer(font: "#{fonts}/SourceSans3-Semibold.otf", size: 54, text: subtitle, gravity: "south", offset: [0, 430], kerning: 2),
+       *text_layer(font: "#{fonts}/SourceSans3-Bold.otf", size: 78, text: author, gravity: "south", offset: [-190, 150], kerning: 18),
        *sticker_layer,
        "-alpha", "remove", "-alpha", "off", "-colorspace", "sRGB", "-quality", "95", out]
 system(*cmd, exception: true)
