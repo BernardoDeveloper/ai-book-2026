@@ -67,7 +67,7 @@ No Linux, a peça básica é o bubblewrap, o mesmo isolador que o Flatpak usa pr
 No macOS, o sistema tem um mecanismo de isolamento embutido, o `sandbox-exec`, que a Apple marca como obsoleto mas continua funcionando. É menos flexível que o do Linux, e algumas proteções funcionam só pela metade.
 
 <!-- src: ref:ai-jail/README.md -->
-No Windows, o caminho mais simples é rodar o agente dentro do WSL2, o Linux que a Microsoft embute no sistema, e usar as ferramentas do Linux lá dentro. É o que a documentação do ai-jail, a minha jaula, manda fazer.
+No Windows, o caminho mais simples é rodar o agente dentro do WSL2, o Linux que a Microsoft embute no sistema, e usar as ferramentas do Linux lá dentro. É o que a documentação do ai-jail, a minha jaula, manda fazer [@akita2026aijail; @aijail2026site].
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
 Os agentes grandes também trazem uma sandbox própria, configurável nas opções de cada um. Vale ligar. Só lembre que ela protege apenas aquele agente, e que o dia em que você trocar de ferramenta, a proteção não vai junto.
@@ -216,7 +216,7 @@ Eu separo o que guardar em três gavetas:
 - **o meio do caminho**: o defeito esquisito que apareceu, a hipótese que falhou, onde a tarefa parou; é o que se perde com mais facilidade e o que mais faz falta na sessão seguinte.
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
-As duas primeiras gavetas são fáceis: peça ao agente pra escrever e revisar esses arquivos, e confira o que ele escreveu. A terceira é a mais chata, e foi pra ela que eu escrevi uma ferramenta. Sem ferramenta nenhuma, dá pra resolver com disciplina: no fim de cada sessão, peça ao agente um resumo de onde parou, do que falhou e do que falta, salvo num arquivo de passagem de turno que o próximo agente lê ao começar.
+As duas primeiras gavetas são fáceis: peça ao agente pra escrever e revisar esses arquivos, e confira o que ele escreveu. A terceira é a mais chata, e foi pra ela que eu escrevi uma ferramenta (@sec-apmemoria). Sem ferramenta nenhuma, dá pra resolver com disciplina: no fim de cada sessão, peça ao agente um resumo de onde parou, do que falhou e do que falta, salvo num arquivo de passagem de turno que o próximo agente lê ao começar.
 
 ### Pra quem usa chat
 
@@ -248,7 +248,7 @@ O que vem a seguir são as três ferramentas que eu escrevi em 2026 pra cobrir a
 ### ai-jail, a jaula
 
 <!-- src: ref:ai-jail/README.md -->
-O ai-jail roda um agente de programação dentro de uma sandbox: no Linux, com o bubblewrap e mais algumas proteções do próprio núcleo do sistema; no macOS, com o `sandbox-exec` [@akita2026aijail]. No Windows, ele só funciona dentro do WSL2. Em outubro de 2026 estava na versão 2.8.1.
+O ai-jail roda um agente de programação dentro de uma sandbox: no Linux, com o bubblewrap e mais algumas proteções do próprio núcleo do sistema; no macOS, com o `sandbox-exec` [@akita2026aijail; @aijail2026site]. No Windows, ele só funciona dentro do WSL2. Em outubro de 2026 estava na versão 2.8.1.
 
 A documentação deixa claro o que ele promete: proteção contra acidentes de um agente em quem você confia mas que é falível. Contra um atacante tentando fugir de propósito, ele manda usar uma máquina virtual descartável.
 
@@ -275,37 +275,10 @@ Por fim, a opção `--bootstrap` escreve configurações de permissão pro Claud
 ### ai-memory, as notas
 
 <!-- src: ref:ai-memory/README.md -->
-O ai-memory é a memória de longo prazo que eu prometi em @sec-ch02 e contei em @sec-ch20 [@akita2026aimemory]. A ideia cabe na frase que abre a documentação dele: largue o Claude Code no meio da tarefa, abra o Codex na mesma pasta e continue sem explicar de novo a arquitetura, o que falhou e o que ficou em aberto. Em 13 de outubro de 2026 ele estava na versão 2.6.6.
-
-<!-- src: 2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory -->
-Quem usa um agente só, e fica nele, talvez não precise de nada disso: a pasta de documentos da peça 6 resolve. O problema aparece pra quem pula de agente no mesmo projeto, como eu. Quando o Claude Code empaca, eu abro o Codex na mesma pasta pra ver o problema por outro ângulo, e depois volto. Sem memória compartilhada, cada troca começava do zero.
-
-<!-- src: ref:ai-memory/README.md -->
-Ele funciona em quatro tempos:
-
-- **captura**: ganchos instalados no agente registram em silêncio o que acontece na sessão, como pedidos, ferramentas usadas e começo e fim, filtrando dados sensíveis antes de guardar;
-- **consolidação**: no fim da sessão, esse registro vira páginas legíveis de uma wiki do projeto;
-- **consulta**: a sessão seguinte, em qualquer agente compatível, recebe um resumo curto e pode buscar no resto;
-- **passagem de turno**: um agente deixa um bilhete formal pro próximo, dizendo onde parou.
-
-<!-- src: ref:ai-memory/README.md -->
-Três escolhas de desenho importam pra quem não quer ficar refém de ninguém. A memória é Markdown comum, guardada num repositório Git, que você abre em qualquer editor e lê com os próprios olhos; o banco de dados é só um índice reconstruível. Ela mora num servidor que é seu, no próprio computador ou numa máquina de casa. E o caminho padrão funciona sem chamar modelo nenhum: captura, busca e passagem de turno rodam sem chave de API.
-
-<!-- src: ref:ai-memory/README.md -->
-Instalado o programa, ligar um agente a ele é questão de dois comandos, um pra registrar a memória como ferramenta e outro pra instalar os ganchos de captura:
-
-```bash
-ai-memory install-mcp --client claude-code --apply
-ai-memory install-hooks --agent claude-code --apply
-```
-
-Depois disso, no dia a dia, você conversa com o agente normalmente. Pergunte "onde a gente parou?" pra retomar uma passagem de turno, ou "a gente já discutiu isso?" pra ele buscar na memória.
+O ai-memory é a memória de longo prazo que eu prometi em @sec-ch02 e contei em @sec-ch20 [@akita2026aimemory; @aimemory2026site]. A ideia cabe na frase que abre a documentação dele: largue o Claude Code no meio da tarefa, abra o Codex na mesma pasta e continue sem explicar de novo a arquitetura, o que falhou e o que ficou em aberto. Ganchos instalados no agente registram a sessão em silêncio, o servidor transforma o registro em páginas de texto comum, e a sessão seguinte, em qualquer agente compatível, começa de onde a anterior parou. O que ele faz, quando vale a pena e como começar estão em @sec-apmemoria.
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
 Ele cobre a terceira gaveta da peça 6, o meio do caminho. Decisão que precisa sobreviver com garantia continua indo pra um documento dentro do projeto, revisado e versionado. A memória automática guarda o que talvez importe depois; o documento guarda o que com certeza importa.
-
-<!-- src: ref:ai-memory/README.md -->
-Na configuração inicial, o servidor só aceita conexões do próprio computador e não pede senha. Se você for colocá-lo numa rede, pra várias máquinas ou pra uma equipe, ligue a autenticação antes; a documentação descreve os degraus.
 
 ### ai-usagebar, o medidor
 

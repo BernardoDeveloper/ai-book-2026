@@ -200,7 +200,7 @@ O ano do livro. Cada entrada aponta pro capítulo que conta a história inteira.
 ### Março
 
 <!-- src: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito -->
-**1º de março.** Quatro projetos no ar, e todos já mudaram desde o lançamento (@sec-ch07). O ai-jail vira ferramenta de verdade nesse mês (@sec-ch15).
+**1º de março.** Quatro projetos no ar, e todos já mudaram desde o lançamento (@sec-ch07). O ai-jail vira ferramenta de verdade nesse mês [@aijail2026site] (@sec-ch15).
 
 <!-- src: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio -->
 **5 de março.** Depois de 37 dias seguidos, a conta parcial: 653 commits em 8 projetos publicados (@sec-ch10).
@@ -285,7 +285,7 @@ O ano do livro. Cada entrada aponta pro capítulo que conta a história inteira.
 **20 de maio.** Sai o rsync 3.4.3, com seis correções de segurança e regressões logo depois [@borisov2026rsync] (@sec-ch16).
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-**21 de maio.** Primeiro commit do ai-memory, depois de uma semana com uma ferramenta de terceiros que não aguentou o uso (@sec-ch02, @sec-ch20).
+**21 de maio.** Primeiro commit do ai-memory [@aimemory2026site], depois de uma semana com uma ferramenta de terceiros que não aguentou o uso (@sec-ch02, @sec-ch20).
 
 <!-- src: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms -->
 **Fim de maio.** Começo o conversor de jogos de Nintendinho pro Master System (@sec-ch08).

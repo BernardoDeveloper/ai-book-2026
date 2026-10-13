@@ -94,6 +94,42 @@ references:
   note: 'cited-by: 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou
     (Snowbird, 11-13 Feb 2001, seventeen people; stated in the post without a link,
     verified online)'
+- id: aijail2026site
+  type: webpage
+  title: 'ai-jail: An OS sandbox for AI coding agents'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: aijail.io
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://aijail.io
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real;
+    project site, installation and docs'
+- id: aimemory2026site
+  type: webpage
+  title: 'ai-memory: long-term memory for AI coding agents'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: aimemory.sh
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://aimemory.sh
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times;
+    project site, installation and docs (v2.6.6 on 2026-10-13)'
 - id: akita2019terceirize
   type: motion_picture
   title: 'Akitando #63: Não terceirize suas decisões, a lição mais importante da sua

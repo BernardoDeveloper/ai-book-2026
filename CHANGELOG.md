@@ -13,7 +13,7 @@ articles on akitaonrails.com (blog commit b9c0292).
   começar" (what the book doesn't explain, with a reading list), epilogue and
   afterword.
 - Appendices: the machine inside without math, timeline, minimal kit for
-  using agents safely, how to read a benchmark or an announcement, the year's
+  using agents safely, ai-memory (why agent memory matters, quick start), how to read a benchmark or an announcement, the year's
   projects.
 - Glossary of 144 terms, 292 references (ABNT), 50 figures with credits,
   list of the original articles behind each chapter.

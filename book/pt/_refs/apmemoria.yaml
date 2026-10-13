@@ -1,0 +1,28 @@
+references:
+  - id: akita2026aimemory
+    type: "software"
+    title: "ai-memory"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 5, 21]]}
+    URL: "https://github.com/akitaonrails/ai-memory"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory; current state checked against README at v2.6.6 (2026-10-13)"
+  - id: aimemory2026site
+    type: "webpage"
+    title: "ai-memory: long-term memory for AI coding agents"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "aimemory.sh"
+    issued: {date-parts: [[2026]]}
+    URL: "https://aimemory.sh"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times; project site, installation and docs (v2.6.6 on 2026-10-13)"
+  - id: aijail2026site
+    type: "webpage"
+    title: "ai-jail: An OS sandbox for AI coding agents"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "aijail.io"
+    issued: {date-parts: [[2026]]}
+    URL: "https://aijail.io"
+    accessed: {date-parts: [[2026, 10, 13]]}
+    note: "cited-by: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real; project site, installation and docs"

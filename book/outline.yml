@@ -479,6 +479,23 @@ back:
     brief: "The practical how-to material cut from chapters: sandbox, snapshots, backups, memory notes, usage limits. Tool-agnostic first; Akita's tools (ai-jail, ai-memory, ai-usagebar) as one example."
     sources: [05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar, 05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar, 05/23/criei-sistema-memoria-agentes-codigo-ai-memory]
     ref: ["ref:ai-jail/README.md", "ref:ai-memory/README.md"]
+  - id: apmemoria
+    title: "ai-memory: a memória que é sua"
+    kind: appendix
+    brief: >-
+      Author request: placed right after the safety kit. Why memory matters for
+      anyone working with AI agents (the goldfish of ch02: the model forgets
+      everything between sessions; compaction loses detail; vendor memory
+      features lock your project's knowledge inside one tool). What ai-memory
+      is (open source, one binary, plain markdown, long-term memory for coding
+      agents; switch agents, machines and teammates without re-explaining the
+      project), its main features as of October 2026 (verify against the
+      README and aimemory.sh), why use it, and a short quick start pointing to
+      aimemory.sh for installation and docs. Callbacks: @sec-ch02, @sec-ch20,
+      @sec-apB. Not an ad: honest about what it does and doesn't do, in
+      Akita's voice; 1,500 to 2,500 words.
+    sources: [05/18/como-memoria-de-agentes-funciona-e-como-melhorar, 05/23/criei-sistema-memoria-agentes-codigo-ai-memory, 06/14/ai-memory-arquitetura-emergente-e-software-maleavel, 06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos, 07/20/novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas-ias, 09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times]
+    ref: ["ref:ai-memory/README.md", "https://aimemory.sh"]
   - id: apC
     title: "Como ler um benchmark ou um anúncio"
     kind: appendix

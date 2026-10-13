@@ -108,7 +108,7 @@ Em julho ganhou um parente: uma versão que coloca a legendinha de leitura por c
 **Frank Investigator.** Uma ferramenta pra questionar notícias, em que três modelos conferem cada afirmação e a fonte primária tem poder de veto [@akita2026frankinvestigator]. Uns nove dias de trabalho e 129 commits em março. Ficou de pé e funcionando, e eu parei ali: nota 3 em maio. Aparece em @sec-ch04 e @sec-ch10.
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-**ai-jail.** A jaula de janeiro, reescrita como ferramenta de verdade em março [@akita2026aijail]. Isola o agente de programação pra que ele só enxergue a pasta do projeto. Nota 8 em maio, a mais alta junto com o Chronicles, e o projeto que mais atraiu gente de fora.
+**ai-jail.** A jaula de janeiro, reescrita como ferramenta de verdade em março [@akita2026aijail; @aijail2026site]. Isola o agente de programação pra que ele só enxergue a pasta do projeto. Nota 8 em maio, a mais alta junto com o Chronicles, e o projeto que mais atraiu gente de fora.
 
 <!-- src: ref:ai-jail/README.md -->
 Em outubro de 2026 estava na versão 2.8.1, depois de uma fuga via Docker corrigida no mesmo dia, em julho, e de duas auditorias de segurança em 30 de setembro. Aparece em @sec-ch10, @sec-ch15 e @sec-apB.
@@ -135,10 +135,10 @@ Em outubro de 2026 estava na versão 2.8.1, depois de uma fuga via Docker corrig
 **Cadernos privados.** Seis repositórios que fecham a conta dos 24, onde o Claude Code guarda as anotações pra administrar as minhas máquinas. Ficam privados, e foi um deles que registrou a faxina de @sec-ch15.
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-**ai-memory.** Memória de longo prazo pra agentes de programação, que deixa um agente continuar o trabalho de outro sem explicação nova [@akita2026aimemory]. Primeiro commit em 21 de maio, depois de eu desistir de uma ferramenta de terceiros em uma semana. A versão 2.0 saiu em setembro, com umas setenta pessoas que já tinham contribuído código.
+**ai-memory.** Memória de longo prazo pra agentes de programação, que deixa um agente continuar o trabalho de outro sem explicação nova [@akita2026aimemory; @aimemory2026site]. Primeiro commit em 21 de maio, depois de eu desistir de uma ferramenta de terceiros em uma semana. A versão 2.0 saiu em setembro, com umas setenta pessoas que já tinham contribuído código.
 
 <!-- src: ref:ai-memory/README.md -->
-Em 13 de outubro de 2026 estava na versão 2.6.6. Aparece em @sec-ch02 e @sec-ch20, sem nome em @sec-ch16 e @sec-ch19, e o como usar está em @sec-apB.
+Em 13 de outubro de 2026 estava na versão 2.6.6. Aparece em @sec-ch02 e @sec-ch20, sem nome em @sec-ch16 e @sec-ch19, e ganhou um apêndice próprio, @sec-apmemoria.
 
 <!-- src: 2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar -->
 **ai-usagebar.** Um medidor do consumo dos planos de IA, na barra do sistema ou no terminal, pra eu saber quando trocar de agente antes de bater no limite [@akita2026aiusagebar]. Nasceu em maio.

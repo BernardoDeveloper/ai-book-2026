@@ -1,0 +1,7 @@
+hook:
+  term: Hook
+  long: Gancho
+  def: Um pequeno programa que uma ferramenta dispara sozinha quando acontece um evento, como o começo de uma sessão ou o uso de um comando. É como o ai-memory registra o que o agente fez sem ninguém pedir.
+markdown:
+  term: Markdown
+  def: Um jeito de escrever texto comum com marcações simples, como asterisco pra negrito e cerquilha pra título. O arquivo continua legível em qualquer editor de texto e pode ser convertido em página formatada.

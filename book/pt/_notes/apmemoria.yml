@@ -1,0 +1,4 @@
+notes:
+  - "continuity.yml ai-memory entry still says 'apB how-to'; the how-to now lives in apmemoria (apB keeps a short pointer)."
+  - "New web references aimemory2026site and aijail2026site live in _refs/apmemoria.yaml and are cited from ch02, ch10, ch15, ch20, apA, apB and apD."
+  - "Quick-start commands follow the aimemory.sh quick setup and docs/install.md as of v2.6.6 (2026-10-13); recheck on each ai-memory release."

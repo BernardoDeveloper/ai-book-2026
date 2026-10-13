@@ -279,6 +279,12 @@ heuristica:
   def: Um conjunto de regras escritas à mão que descrevem como a gente imagina que
     um problema costuma se comportar. Funciona bem nos casos previstos e quebra nos
     que ninguém previu.
+hook:
+  term: Hook
+  long: Gancho
+  def: Um pequeno programa que uma ferramenta dispara sozinha quando acontece um evento,
+    como o começo de uma sessão ou o uso de um comando. É como o ai-memory registra
+    o que o agente fez sem ninguém pedir.
 id-de-publicidade:
   term: ID de publicidade
   def: Código que o sistema do celular entrega a aplicativos e anunciantes pra identificar
@@ -328,6 +334,11 @@ maquina-virtual:
   def: Um computador inteiro simulado por software dentro de outro (VM, na sigla em
     inglês). O que roda lá dentro fica separado do sistema real, e a máquina pode
     ser jogada fora depois.
+markdown:
+  term: Markdown
+  def: Um jeito de escrever texto comum com marcações simples, como asterisco pra
+    negrito e cerquilha pra título. O arquivo continua legível em qualquer editor
+    de texto e pode ser convertido em página formatada.
 mcp:
   term: MCP
   long: Model Context Protocol
