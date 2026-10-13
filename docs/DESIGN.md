@@ -105,6 +105,23 @@ After PT approval: translate chapter by chapter into `book/en/` keeping ids,
 and diagram labels have EN fields already. Drift works per language
 (`scripts/drift.rb --lang en` compares against `index.en.md` hashes).
 
+## Tests
+
+`rake test` (Minitest, stdlib only; also a CI step before the build) guards
+the tools in `scripts/` and `filters/`. `test/test_helper.rb` builds, once
+per run, a tiny self-consistent book in a temp dir (outline with front unit,
+two parts, an interlude, an appendix, `excluded` with `borrowed_by`; PT and EN
+units with markers, refs, citations and glossary marks; credits, PNGs,
+inventory) next to a fake blog git repository, and copies it for each test.
+Scripts run with `ruby` inside that copy (they compute ROOT from their own
+location), so the real book is never touched and no Quarto render happens.
+The base fixture passes lint, outline_check, doctor and drift; each test makes
+one change and asserts the tool notices it. Filter tests use the Pandoc in
+`tools/` and skip without it; placeholder creation skips without ImageMagick.
+One file per tool (`test/test_<tool>.rb`); when a tool changes or a bug is
+fixed, add the case that would have caught it, with a comment naming the
+regression it guards against.
+
 ## Decisions
 
 - PT-BR first, EN later (user, 2026-10-13).

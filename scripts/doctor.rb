@@ -142,7 +142,8 @@ names_in = lambda do |sentence|
   proper = words.drop(1).each_cons(1).map(&:first).map { _1.gsub(/\A[^\p{L}\d]+|[^\p{L}\d+]+\z/, "") }
                 .select { _1.match?(/\A\p{Lu}[\p{L}\d+.-]{2,}\z/) }
   numbers = plain.scan(/\b(\d{2,}(?:[.,]\d+)*)\b/).flatten.reject { _1.match?(/\A20\d\d\z/) }
-  (quoted + proper + numbers).uniq.reject { STOP.include?(_1) }
+  # Roman numerals (Parte VII) are labels, not names.
+  (quoted + proper + numbers).uniq.reject { STOP.include?(_1) || _1.match?(/\A[IVX]+\z/) }
 end
 units.each do |id, u|
   # Headings, images, tables and divs aren't prose; split the rest into sentences.

@@ -95,7 +95,7 @@ when "unit"
   order = outline["front"].map { _1["id"] } + outline["parts"].flat_map { |p| p["chapters"] ? p["chapters"].map { _1["id"] } : [p["id"]] } +
           outline["back"].reject { _1["kind"] == "generated" }.map { _1["id"] }
   i = order.index(target)
-  puts "== hand-offs: #{order[i - 1]} → #{target} → #{order[i + 1]} (closing/opening paragraphs must still match)" if i
+  puts "== hand-offs: #{i.zero? ? '(start)' : order[i - 1]} → #{target} → #{order[i + 1] || '(end)'} (closing/opening paragraphs must still match)" if i
   if File.exist?(file)
     figs = read.(file).scan(%r{assets/figures/[^)\s]+}).uniq
     puts "== figures: #{figs.join(', ')}" unless figs.empty?

@@ -9,10 +9,12 @@
 #   rake build          render PT edition (EPUB, print + ebook PDF, HTML, DOCX) + epubcheck + page audit
 #   rake audit          page-level layout audit of the PDFs (scripts/page_audit.rb)
 #   rake build BOOK_LANG=en  same for the EN edition
+#   rake test           regression tests of the tools (test/, isolated fixture book)
 
 require "digest"
 require "fileutils"
 require "open3"
+require "rake/testtask"
 
 ROOT = __dir__
 LANG = ENV.fetch("BOOK_LANG", "pt")
@@ -76,6 +78,15 @@ task :release_check do
   ruby "scripts/doctor.rb", "--lang", LANG, "--release", "--output"
 end
 
+# Each test runs the scripts inside a throwaway fixture repository (see
+# test/test_helper.rb); the real book is never touched. No Quarto render.
+Rake::TestTask.new(:test) do |t|
+  t.description = "Regression tests of the tools (scripts/, filters/) against a fixture book"
+  t.libs << "test"
+  t.test_files = FileList["test/test_*.rb"].exclude("test/test_helper.rb")
+  t.warning = false
+end
+
 desc "Render D2 diagrams for the current language"
 task diagrams: :tools do
   Dir[File.join(ROOT, "assets", "diagrams", "*.d2")].each do |src|
@@ -86,7 +97,9 @@ end
 desc "Render matplotlib charts/diagrams (assets/charts/*.py) for the current language"
 task :charts do
   Dir[File.join(ROOT, "assets", "charts", "*.py")].sort.each do |py|
-    sh "uv", "run", "--quiet", "--with", "matplotlib", "--with", "numpy", "python", "-I", py, LANG
+    # chart_check.py runs the script and refuses to save if a label spills out
+    # of its box or off the canvas (labels change length between languages).
+    sh "uv", "run", "--quiet", "--with", "matplotlib", "--with", "numpy", "python", "-I", "scripts/chart_check.py", py, LANG
   end
   # Label overlays on AI art (ImageMagick), same language convention.
   Dir[File.join(ROOT, "assets", "charts", "*.rb")].sort.each { |rb| ruby rb, LANG }

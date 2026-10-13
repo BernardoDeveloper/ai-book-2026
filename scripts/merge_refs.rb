@@ -41,19 +41,26 @@ Dir[File.join(ROOT, "book", lang, "_refs", "*.yaml")].sort.each do |path|
       by_url[norm_url(ref["URL"])] = ref if ref["URL"]
       next
     end
+    if existing["URL"] && ref["URL"] && norm_url(existing["URL"]) != norm_url(ref["URL"])
+      # Found by key only: same key, different source. Rename the newcomer.
+      new_id = "#{ref['id']}#{('b'..'z').find { |s| !by_id.key?("#{ref['id']}#{s}") }}"
+      warn "key clash #{ref['id']} (#{chapter}) -> #{new_id}"
+      (renames[chapter] ||= {})[ref["id"]] = new_id
+      ref = ref.merge("id" => new_id)
+      merged << ref
+      by_id[new_id] = ref
+      by_url[norm_url(ref["URL"])] = ref
+      next
+    end
     if existing["id"] != ref["id"]
-      if existing["URL"] && ref["URL"] && norm_url(existing["URL"]) != norm_url(ref["URL"])
-        # Same key, different source: rename the newcomer.
-        new_id = "#{ref['id']}#{('b'..'z').find { |s| !by_id.key?("#{ref['id']}#{s}") }}"
-        warn "key clash #{ref['id']} (#{chapter}) -> #{new_id}"
-        (renames[chapter] ||= {})[ref["id"]] = new_id
-        ref = ref.merge("id" => new_id)
-        merged << ref
-        by_id[new_id] = ref
-        by_url[norm_url(ref["URL"])] = ref
-        next
+      # Same source under another key. If that key names another work in the
+      # bibliography (a clash renamed on an earlier run), the rewrite stays in
+      # the proposing chapter; otherwise it is an alias, rewritten book-wide.
+      if by_id.key?(ref["id"])
+        (renames[chapter] ||= {})[ref["id"]] = existing["id"]
+      else
+        aliases[ref["id"]] = existing["id"]
       end
-      aliases[ref["id"]] = existing["id"]
     end
     notes = [existing["note"], ref["note"]].compact.flat_map { _1.sub(/\Acited-by:\s*/, "").split(/,\s*/) }.uniq
     existing["note"] = "cited-by: #{notes.join(', ')}" unless notes.empty?

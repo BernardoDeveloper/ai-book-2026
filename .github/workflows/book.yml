@@ -1,7 +1,7 @@
-# Builds and validates the book on every push and pull request; on a v* tag it
-# also publishes a GitHub Release with the editions attached. Release notes
-# come from the tag's section in CHANGELOG.md; tags with a hyphen
-# (v1.0.0-preview) are marked as pre-releases.
+# Builds and validates every edition (one job per language) on each push and
+# pull request. On a v* tag, a release job collects the editions and publishes
+# a GitHub Release. Release notes come from the tag's section in CHANGELOG.md;
+# tags with a hyphen (v1.0.0-preview) are marked as pre-releases.
 name: book
 
 on:
@@ -11,7 +11,7 @@ on:
   pull_request:
 
 permissions:
-  contents: write # needed only by the release step
+  contents: read
 
 concurrency:
   group: book-${{ github.ref }}
@@ -21,8 +21,12 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        lang: [pt, en]
     env:
-      BOOK_LANG: pt
+      BOOK_LANG: ${{ matrix.lang }}
     steps:
       - uses: actions/checkout@v7.0.1
 
@@ -47,6 +51,9 @@ jobs:
       - name: Toolchain (Quarto, epubcheck; checksum-verified)
         run: rake tools
 
+      - name: Tool regression tests (fixture book, no render)
+        run: rake test
+
       - name: Outline coverage and chapter lint
         run: rake check
 
@@ -55,15 +62,27 @@ jobs:
 
       - uses: actions/upload-artifact@v7.0.1
         with:
-          name: book-${{ env.BOOK_LANG }}-${{ github.sha }}
+          name: book-${{ matrix.lang }}
           path: |
-            build/${{ env.BOOK_LANG }}/*.epub
-            build/${{ env.BOOK_LANG }}/*.pdf
-            build/${{ env.BOOK_LANG }}/*.docx
+            build/${{ matrix.lang }}/*.epub
+            build/${{ matrix.lang }}/*.pdf
           retention-days: 14
 
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - uses: actions/download-artifact@v8.0.1
+        with:
+          path: dist
+          merge-multiple: true
+
       - name: Publish release
-        if: startsWith(github.ref, 'refs/tags/v')
         env:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.ref_name }}
@@ -73,8 +92,7 @@ jobs:
           awk -v v="$version" '$0 ~ "^## " v "( |$)" {on=1; next} /^## / {on=0} on' CHANGELOG.md > notes.md
           [ -s notes.md ] || echo "Edition $version." > notes.md
           prerelease=""; case "$TAG" in *-*) prerelease="--prerelease";; esac
+          ls -la dist
           gh release create "$TAG" $prerelease \
-            --title "Competente o Suficiente $version" --notes-file notes.md \
-            build/pt/Competente-o-Suficiente.epub \
-            build/pt/Competente-o-Suficiente-ebook.pdf \
-            build/pt/Competente-o-Suficiente.pdf
+            --title "Competente o Suficiente / Competent Enough $version" --notes-file notes.md \
+            dist/*.epub dist/*.pdf
