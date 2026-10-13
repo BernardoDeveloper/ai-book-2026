@@ -77,7 +77,17 @@ unless opts[:lang] == "pt"
     problems += 1
     next unless opts[:diff]
 
-    puts `git -C #{ROOT} log --oneline -5 -- #{tf['file']}`.gsub(/^/, "      ")
+    # Find the commit whose version of the PT file has the recorded hash, then
+    # show exactly what changed since: that's what the translation must follow.
+    base = `git -C #{ROOT} log --format=%H -- #{tf['file']}`.split.find do |rev|
+      Digest::SHA256.hexdigest(`git -C #{ROOT} show #{rev}:#{tf['file']} 2>/dev/null`) == tf["sha256"]
+    end
+    if base
+      puts "      PT changes since the translated version (#{base[0, 8]}):"
+      puts `git -C #{ROOT} diff --word-diff=plain #{base} -- #{tf['file']}`.gsub(/^/, "      ")
+    else
+      puts "      translated version not found in git history; compare against the whole PT unit"
+    end
   end
 end
 

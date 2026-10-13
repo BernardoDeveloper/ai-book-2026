@@ -77,3 +77,19 @@ Body rules:
 
 Report: units done, word counts, any quote where the EN post's wording
 differed meaningfully from the PT chapter, open questions.
+
+## Re-sync after the PT edition changes
+
+`ruby scripts/drift.rb --lang en --diff` lists every EN unit whose PT source
+changed since it was translated, with a word-level diff of the PT file since
+the exact version that was translated (found by its `translated_from.sha256`).
+For each stale unit:
+
+1. Apply only the diff: find the corresponding EN paragraphs by their `src`
+   markers and position, and re-translate those (added, removed or reworded
+   paragraphs, changed markers, sources, figures). Leave untouched paragraphs
+   alone; don't re-polish them.
+2. Make the EN front matter match: `sources` (same posts as the PT unit, EN
+   hashes), and `translated_from.sha256` set to the current PT file's sha256.
+3. `BOOK_LANG=en ruby scripts/lint_chapter.rb <file>` and
+   `ruby scripts/doctor.rb --lang en` (parity: same src-marker sequence as PT).

@@ -13,6 +13,7 @@ meta:
   owned_names: ["akitaonrails", "Akitando", "The M.Akita Chronicles", "ai-memory", "ai-jail", "ai-usagebar", "ghpending", "Frank (FrankMD, Frank Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, FrankMega, Frank Karaoke, Frank GO, Frank Manga+ e demais projetos da série)"]
   open_source_licenses: {ai-jail: "GPL-3.0", ai-memory: "MIT", ai-usagebar: "MIT", ghpending: "MIT"}
   cutoff: "2026-10-13"
+  source_from: "2026-02-01"   # earliest post date the book may use (author, 2026-10-13)
   target_words: 90000
   spine: >-
     First-person, chronological-ish story of 2026: a veteran programmer who
@@ -533,7 +534,7 @@ back:
     source_file: book/back/references.yaml
 
 excluded:
-  # Book cut-off moved to February 2026 (author, 2026-10-13): January posts are left out.
+  # Book cut-off moved to February 2026 (author, 2026-10-13): January posts are left out (meta.source_from).
   - {post: 01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, reason: "before the February 2026 cut-off"}
   - {post: 01/10/ai-agents-garantindo-a-protecao-do-seu-sistema, reason: "before the February 2026 cut-off"}
   - {post: 01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig, reason: "before the February 2026 cut-off"}
@@ -543,15 +544,16 @@ excluded:
   - {post: 01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity, reason: "before the February 2026 cut-off"}
   - {post: 01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard, reason: "before the February 2026 cut-off"}
   - {post: 01/29/vibe-code-qual-llm-é-a-melhor-vamos-falar-a-real, reason: "before the February 2026 cut-off"}
-  # AI-relevant posts deliberately left out, with the reason. Non-AI posts
+  # AI-relevant posts deliberately left out, with the reason; `borrowed_by`
+  # lists units allowed to use a narrow part of an excluded post. Non-AI posts
   # (ai_relevance none/tangential) are excluded by default and not listed.
   - {post: 04/11/distrobox-de-emulacao-com-claude-code, reason: "niche setup; agent-as-tech-lead point is covered in ch09/ch10"}
   - {post: 04/18/llm-benchmarks-parte-2-multiplos-modelos, reason: "superseded (lineage); lesson carried via 04/25 in ch11"}
-  - {post: 04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus, reason: "superseded by author; only VRAM/distillation explainers may be borrowed in ch13"}
+  - {post: 04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus, reason: "superseded by author; only VRAM/distillation explainers may be borrowed in ch13", borrowed_by: [ch13]}
   - {post: 06/01/llm-benchmarks-grok-4-3-minimax-m3-opus-4-8, reason: "superseded rankings"}
   - {post: 07/17/llm-benchmarks-kimi-k3, reason: "superseded rankings"}
   - {post: 07/25/llm-benchmark-opus-5-e-bom, reason: "superseded rankings"}
   - {post: 08/22/llm-benchmarks-os-ultimos-deepseek-v4-parem-de-perguntar, reason: "superseded rankings"}
-  - {post: 03/07/crystal-e-um-wrapper-inteligente-pro-ffmpeg-feito-em-3-horas-easy-ffmpeg, reason: "tangential; one line in apD"}
+  - {post: 03/07/crystal-e-um-wrapper-inteligente-pro-ffmpeg-feito-em-3-horas-easy-ffmpeg, reason: "tangential; one line in apD", borrowed_by: [apD]}
   - {post: 02/18/web-scrapping-em-2026-bastidores-do-the-m-akita-chronicles, reason: "tangential engineering detail"}
   - {post: 09/17/ia-desmascarou-histeria-mudancas-climaticas, reason: "tangential AI use on a politically charged topic; outside the book's scope"}
