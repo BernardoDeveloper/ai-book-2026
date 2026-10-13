@@ -12,6 +12,7 @@
 
 require "digest"
 require "fileutils"
+require "open3"
 
 ROOT = __dir__
 LANG = ENV.fetch("BOOK_LANG", "pt")
@@ -62,6 +63,17 @@ task :check do
   generated = %w[glossario.md bibliografia.md fontes.md creditos.md]
   files = Dir[File.join(ROOT, "book", LANG, "*.md")].reject { generated.include?(File.basename(_1)) }
   ruby "scripts/lint_chapter.rb", *files unless files.empty?
+  ruby "scripts/doctor.rb", "--lang", LANG
+end
+
+desc "Integrity check of the sources (scripts/doctor.rb): refs, citations, glossary, figures, provenance, callbacks, parity"
+task :doctor do
+  ruby "scripts/doctor.rb", "--lang", LANG
+end
+
+desc "Strict pre-release check: doctor in release mode (placeholders and stale translations are errors)"
+task :release_check do
+  ruby "scripts/doctor.rb", "--lang", LANG, "--release", "--output"
 end
 
 desc "Render D2 diagrams for the current language"
@@ -101,11 +113,21 @@ desc "Build all formats for LANG (default pt), fit and audit the PDF, validate t
 task build: %i[tools merge backmatter config] do
   profile = File.join(ROOT, "_quarto-#{LANG}.yml")
   raise "missing profile #{profile}" unless File.exist?(profile) # quarto ignores unknown profiles silently
-  sh QUARTO, "render", "--profile", LANG
+  # Keep Quarto's output in build/<lang>/render.log: the doctor's output
+  # checks read it for unresolved cross-references, unknown glossary keys and
+  # missing citations (Quarto only warns about those).
+  log = File.join(ROOT, "build", LANG, "render.log")
+  FileUtils.mkdir_p(File.dirname(log))
+  status = Open3.popen2e(QUARTO, "render", "--profile", LANG) do |_in, out, wait|
+    File.open(log, "w") { |f| out.each_line { |l| print l; f.write(l) } }
+    wait.value
+  end
+  raise "quarto render failed (see #{log})" unless status.success?
   Rake::Task[:fit].invoke
   Rake::Task[:ebook_pdf].invoke
   Rake::Task[:epubcheck].invoke
   Rake::Task[:audit].invoke
+  ruby "scripts/doctor.rb", "--lang", LANG, "--output"
 end
 
 # Quarto renders the print PDF (6x9 in, mirrored margins, no cover) and keeps

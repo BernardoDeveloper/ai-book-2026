@@ -23,8 +23,35 @@ Whenever asked to update the book, or at the start of any work session:
    (`docs/analysis-schema.yml`), then place them in `book/outline.yml` or add
    them to `excluded` with a reason. Check `inventory/lineage.yml`: a new post
    may supersede what a chapter says.
-5. `rake check`, `rake build`, `rake audit`, look at the affected pages, then
+5. `rake check`, `rake build` (includes the page audit and doctor), read
+   `build/<lang>/seams.md` for the hand-offs, look at the affected pages, then
    report to the author what changed and where. Commit only when asked.
+
+## Structural changes
+
+Before removing, moving or replacing source material, follow
+`docs/CHANGE-PLAYBOOK.md`: encode the decision in the outline, map the impact
+(`scripts/impact.rb`), edit in parallel on disjoint files, verify with
+`rake check build` and the doctor, then propagate to the EN edition.
+
+## Two editions
+
+PT-BR (`book/pt/`) is canonical; EN (`book/en/`) is a translation of each PT
+unit (contract: `docs/TRANSLATING.md`). Each EN unit records
+`translated_from: {file, sha256}` of its PT unit and tracks the author's
+English posts (`index.en.md`) in `sources`. After any PT change:
+
+1. `ruby scripts/drift.rb --lang en` lists EN units whose PT source changed
+   (and EN posts that changed).
+2. Re-translate only the changed paragraphs (same `src` markers), update
+   `translated_from.sha256`, `ruby scripts/restamp.rb --lang en <post>` for
+   EN-post changes.
+3. Figures with text have per-language files: `rake charts BOOK_LANG=en`
+   writes `assets/figures/en/`; the EN cover is
+   `scripts/compose_cover.rb assets/cover/cover-d.png assets/cover/cover-en.png --lang en`.
+4. `rake check build BOOK_LANG=en`.
+
+PT changes land first and need the author's approval before EN follows.
 
 ## Rules
 
