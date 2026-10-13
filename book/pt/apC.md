@@ -36,7 +36,7 @@ Vale pra qualquer [benchmark]{.gls}, ranking ou placar de modelos, inclusive o m
 
 1. **Qual era a tarefa, em que ferramenta, corrigida por qual critério?** A nota descreve um trabalho, feito num [harness]{.gls} específico e avaliado por uma [rubrica]{.gls key=rubrica} específica, e trocar só o programa em volta do modelo já levou um deles do "impossível de medir" ao topo da tabela (@sec-ch03, @sec-ch11).
 2. **Quantas vezes rodaram?** Uma rodada só é amostra de um: no meu teste, em setembro de 2026, o mesmo modelo, repetido sem mudar nada, caiu nove pontos, e isso tem nome, [ruído entre execuções]{.gls key=ruido-entre-execucoes} (@sec-ch11).
-3. **A diferença é maior que o ruído?** No topo, os modelos formam um grupo, e brigar pela posição exata lá dentro é precisão inventada; escolha primeiro o [tier]{.gls}, depois decida por preço, tempo e a ferramenta que você já usa (@sec-ch11).
+3. **A diferença é maior do que o ruído?** No topo, os modelos formam um grupo, e brigar pela posição exata lá dentro é precisão inventada; escolha primeiro o [tier]{.gls}, depois decida por preço, tempo e a ferramenta que você já usa (@sec-ch11).
 4. **Quem corrigiu, e as correções estão publicadas?** O juiz também erra, eu errei várias vezes, e um benchmark sério mostra o pedido, o código gerado, os registros e as erratas, enquanto quem mostra só o gráfico não deixa ninguém contestar (@sec-ch11).
 5. **Como o custo foi contado?** Já vi custo subestimado por esquecer releituras do cache e por um programa que só somava o último passo, então confie na ordem de grandeza e desconfie de "por centavos" (@sec-ch11).
 6. **A prova ainda separa alguém?** Quando quase todo mundo tira entre 95 e 100, a prova está saturada, e a ordem passa a ser decidida por detalhe, sem dizer quase nada sobre capacidade (@sec-ch11).
@@ -64,11 +64,11 @@ A lista completa que eu uso, com os casos de 2026, está em @sec-como-ler-anunci
 3. **Qual é a definição da palavra grande?** Quando quem vende o equipamento declara que a [AGI]{.gls key=agi} chegou, pergunte o que ela quer dizer, porque no contrato entre OpenAI e Microsoft a palavra virou meta de faturamento [@zeff2024agi] (@sec-ch14).
 4. **Contra quem é a comparação, e com qual régua?** "Centenas de vezes mais barato" sempre tem um adversário escolhido a dedo, e "zero alucinação" pode ser zero por definição, então ache a frase que explica como o número foi medido (@sec-ch14).
 5. **O que esse produto é, tirando o nome?** O lançamento revolucionário de setembro de 2026 era um [classificador]{.gls key=classificador}, técnica de décadas, e muito "novo paradigma" é prática velha com nome novo pra vender consultoria (@sec-ch14).
-6. **Isso aconteceu ou poderia acontecer?** Leia os verbos: "poderia", "em poucos meses", "se fosse mais capaz" têm outro peso que um fato documentado, e o apocalipse dos anúncios costuma morar inteiro no condicional (@sec-ch14).
+6. **Isso aconteceu ou poderia acontecer?** Leia os verbos: "poderia", "em poucos meses", "se fosse mais capaz" têm um peso diferente do de um fato documentado, e o apocalipse dos anúncios costuma morar inteiro no condicional (@sec-ch14).
 7. **Quem ganha com o seu medo?** O aviso de catástrofe e o anúncio do milagre empurram o mesmo carrinho, e um pedido de regulação escrito sob medida pros líderes trava o concorrente pequeno (@sec-ch14).
 8. **Quanto custou o feito?** Um resultado obtido com milhões de dólares de computação mostra força bruta e dinheiro, e diz bem menos sobre a inteligência da máquina (@sec-ch14).
 9. **As vozes que concordam são independentes?** Dez influenciadores repetindo o mesmo comunicado contam como uma voz, e duas IAs concordando com a hipótese que você escreveu na pergunta são eco (@sec-ch04, @sec-ch14).
-10. **A credencial confere com as datas?** Nome do artigo, ano e lista de autores estão a uma busca de distância, e credencial real às vezes chega inflada na vitrine (@sec-ch14).
+10. **A credencial confere com as datas?** Nome do artigo, ano e lista de autores estão a uma busca de distância, e a credencial anunciada às vezes é maior do que a real (@sec-ch14).
 11. **Você precisa disso hoje?** Quase toda manchete grande de 2026 mudou de forma em poucas semanas, e eu só adoto uma ferramenta nova quando sinto a falta dela doer (@sec-ch14).
 
 <!-- src: original -->

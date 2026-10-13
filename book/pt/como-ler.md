@@ -11,14 +11,12 @@ blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 <!-- src: original -->
 O melhor jeito de ler este livro é em ordem, do começo ao fim. Ele conta os meses de fevereiro a outubro de 2026, em que eu coloquei a inteligência artificial à prova quase todo dia, e a história tem uma sequência. Primeiro o que essa coisa é, depois o que ela fez nas minhas mãos, como medir, onde ela é perigosa e o que tudo isso quer dizer pro seu trabalho. Um conceito explicado no começo é usado sem cerimônia lá na frente.
 
-Mas eu sei que muita gente chega aqui com uma preocupação específica e pouca paciência pra esperar o livro inteiro pela resposta. Tudo bem. Cada uma das cinco partes responde a um medo, e dá pra pular direto pra ele.
+Mas eu sei que muita gente chega aqui com uma preocupação específica e pouca paciência pra esperar o livro inteiro pela resposta. Tudo bem. Cada parte responde a uma pergunta que ouvi muito, e dá pra pular direto pra ela.
 
 ## Se você tem pressa
 
 <!-- src: original -->
-A Parte I, que começa no @sec-ch01, é pra quem quer saber se essa coisa é inteligente, se tem alguém do outro lado da tela e se a tal inteligência artificial geral está chegando. A Parte II, a partir do @sec-ch05, é a maratona: meses programando com IA todos os dias pra descobrir se aquilo funciona de verdade ou se é só demonstração de palco.
-
-A Parte III, a partir do @sec-ch11, é pra quem se pergunta qual IA é a melhor, se ela está melhorando de forma exponencial e se dá pra acreditar nos anúncios. A Parte IV, no @sec-ch15, trata do medo mais concreto: deixar um programa desses mexer nos seus arquivos, e o que os aplicativos do seu celular sabem de você. A Parte V, no @sec-ch18, encara a pergunta que trouxe a maioria das pessoas até aqui: a IA vai tirar o meu emprego, o que eu devo aprender e o que vem depois.
+Cada parte começa num capítulo que dá pra ler sozinho: a Parte I no @sec-ch01, a II no @sec-ch05, a III no @sec-ch11, a IV no @sec-ch15 e a V no @sec-ch18. As perguntas que cada uma responde estão no prefácio.
 
 <!-- src: original -->
 Entre as partes há dois interlúdios, mais curtos e mais leves, pra respirar. Os apêndices, no fim, guardam o que atrapalharia a narrativa:

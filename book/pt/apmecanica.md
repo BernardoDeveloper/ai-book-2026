@@ -105,7 +105,7 @@ Na hora de escrever, o modelo só pode olhar pra trás, pras palavras que já ex
 ## O dado viciado
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-O resultado das camadas é uma lista com uma chance pra cada pedaço do vocabulário: "telhado", tanto; "muro", tanto. Os pedaços são dezenas de milhares, e quase todos recebem um número perto de zero. O passo seguinte é o sorteio que o @sec-ch01 mostrou: o modelo escolhe um pedaço, cola no fim do texto e recalcula tudo pra escolher o próximo.
+O resultado das camadas é uma lista com uma chance pra cada pedaço do vocabulário: "telhado", tanto; "muro", tanto. Os pedaços são dezenas ou centenas de milhares, e quase todos recebem um número perto de zero. O passo seguinte é o sorteio que o @sec-ch01 mostrou: o modelo escolhe um pedaço, cola no fim do texto e recalcula tudo pra escolher o próximo.
 
 Pense nesse sorteio como um dado viciado, com uma face pra cada pedaço e o peso de cada face proporcional à chance dela. As faces mais prováveis caem quase sempre, mas não sempre. Na prática, os sistemas jogam fora a cauda de faces improváveis e sorteiam só entre as mais pesadas.
 
@@ -171,9 +171,9 @@ Tudo que você leu até aqui cabe nessa frase:
 
 Bender e Koller terminam a história do polvo assim. Enquanto os náufragos trocavam amenidades, o polvo se saía bem.
 
-Daí uma das náufragas inventa uma catapulta de cocos e pede opinião; o polvo, que não sabe o que é corda nem coco, responde com o "ideia legal, bom trabalho!" que costumava aparecer nessas horas. Ela pode até aceitar, mas só porque é ela quem faz todo o trabalho de dar sentido à resposta.
+Daí um dos náufragos inventa uma catapulta de cocos e pede opinião; o polvo, que não sabe o que é corda nem coco, responde com o "ideia legal, bom trabalho!" que costumava aparecer nessas horas. Ele pode até aceitar, mas só porque é ele quem faz todo o trabalho de dar sentido à resposta.
 
-No fim, ela é perseguida por um urso e pede socorro: precisa saber como montar uma arma com uns gravetos. O polvo não tem de onde tirar isso [@bender2020climbing].
+No fim, ele é perseguido por um urso e pede socorro: precisa saber como montar uma arma com uns gravetos. O polvo não tem de onde tirar isso [@bender2020climbing].
 
 <!-- src: original -->
 A metáfora acerta em cheio em três coisas. O modelo aprende só com texto, sem nunca ter tocado no mundo de que o texto fala. Ele produz a continuação provável, sem nenhum compromisso com a verdadeira. E quem atribui sentido e intenção à resposta somos nós, os mesmos humanos que conversavam em particular com a Eliza nos anos 60.
@@ -207,7 +207,7 @@ Os achados dos críticos são reais. Onde eu discordo é na conclusão que tiram
 
 Uma representação interna do tabuleiro de Otelo continua sendo estatística extraída de jogadas; um modelo que planeja a rima continua escolhendo a rima mais provável. O papagaio é muito mais sofisticado do que a palavra "papagaio" sugere, e a imagem da tabela de frequências é simplista demais. Mas a matéria-prima continua sendo texto, o critério continua sendo o provável, e os botões continuam trancados depois do treino.
 
-O mesmo estudo da Anthropic traz um detalhe que eu acho mais revelador que a rima. Ao pedir pro Claude somar dois números, os pesquisadores viram que ele usa por dentro dois caminhos em paralelo, um que estima o total aproximado e outro que acerta o último dígito. Perguntado como chegou ao resultado, o modelo descreve o método de "vai um" que se aprende na escola, bem diferente do que fez por dentro [@anthropic2025tracing].
+O mesmo estudo da Anthropic traz um detalhe que eu acho mais revelador do que a rima. Ao pedir pro Claude somar dois números, os pesquisadores viram que ele usa por dentro dois caminhos em paralelo, um que estima o total aproximado e outro que acerta o último dígito. Perguntado como chegou ao resultado, o modelo descreve o método de "vai um" que se aprende na escola, bem diferente do que fez por dentro [@anthropic2025tracing].
 
 A explicação dele é a explicação mais provável pra aquela pergunta, e a conta dele é outra coisa.
 
@@ -236,4 +236,4 @@ Em nenhum momento dessa lista aparece consciência, vontade, intenção ou enten
 <!-- src: original -->
 Isso não diminui o que ela faz. Eu passei o ano inteiro usando essas máquinas pra trabalho de verdade, e o resto deste livro é sobre isso. Mas quando um executivo disser que o modelo dele "pensa", "quer" ou "está quase consciente", agora você sabe o que tem dentro da caixa. É o mesmo truque de mágica do @sec-ch01: o encanto passa quando você vê como funciona, e a utilidade fica.
 
-Não é mágica. É estatística em escala absurda, e quem sabe disso fica bem mais difícil de enganar.
+Isso é estatística em escala absurda, e quem sabe disso fica bem mais difícil de enganar.

@@ -20,7 +20,7 @@ sources:
 refs_projects:
   - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apC.md, sha256: "f21d6b9526dd132a4148f599979d77126292a7434fb407de19a839faf2e4ca0d"}
+translated_from: {file: book/pt/apC.md, sha256: "55860516a540b8d1a29a6e33a3bcdc02586549c06ff1b7ede954a6827d1790dc"}
 ---
 
 # How to Read a Benchmark or an Announcement {#sec-apC}
@@ -35,10 +35,10 @@ The model names and the scores will age fast; the questions should last a lot lo
 <!-- src: 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior -->
 This applies to any [benchmark]{.gls}, ranking or model leaderboard, mine included.
 
-1. **What was the task, in which tool, graded by which criteria?** The score describes one job, done in a specific [harness]{.gls} and assessed by a specific [rubric]{.gls key=rubrica}, and swapping only the program around the model has already taken one of them from "unmeasurable" to the top of the table (@sec-ch03, @sec-ch11).
+1. **What was the task, in which tool, graded by which criteria?** The score describes one job, done in a specific [harness]{.gls} and assessed by a specific [rubric]{.gls key=rubrica}, and swapping only the program around the model has already taken a model from "unmeasurable" to the top of the table (@sec-ch03, @sec-ch11).
 2. **How many times did they run it?** A single round is a sample of one: in my test, in September 2026, the same model, repeated with nothing changed, dropped nine points, and that has a name, [run-to-run noise]{.gls key=ruido-entre-execucoes} (@sec-ch11).
 3. **Is the difference bigger than the noise?** At the top, the models form a group, and fighting over the exact position inside it is made-up precision; pick the [tier]{.gls} first, then decide by price, time and the tool you already use (@sec-ch11).
-4. **Who did the grading, and are the corrections published?** The judge gets it wrong too, I got it wrong several times, and a serious benchmark shows the prompt, the generated code, the logs and the errata, while whoever shows only the chart leaves no one able to challenge it (@sec-ch11).
+4. **Who did the grading, and are the corrections published?** The judge gets it wrong too, and I got it wrong several times. A serious benchmark shows the prompt, the generated code, the logs and the errata; whoever shows only the chart leaves no one able to challenge it (@sec-ch11).
 5. **How was cost counted?** I've seen cost underestimated by forgetting cache rereads and by a program that only added up the last step, so trust the order of magnitude and be wary of "for pennies" (@sec-ch11).
 6. **Does the test still separate anyone?** When almost everyone scores between 95 and 100, the test is saturated, and the order comes down to details that say next to nothing about capability (@sec-ch11).
 7. **Could the answers have leaked into training?** A famous, old test runs the risk of [contamination]{.gls key=contaminacao}, and passing the automatic grader is different from having the work accepted by the people who actually maintain the project (@sec-ch11).
@@ -60,17 +60,17 @@ Before the questions, a habit I brought back from the model-origin tests (@sec-c
 <!-- src: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia -->
 The full list I use, with the 2026 cases, is in @sec-como-ler-anuncio. This is the pocket version.
 
-1. **Who makes money if you believe it?** Behind the sentence there's usually an [IPO]{.gls key=ipo}, a graphics card to sell or a course, and a financial interest doesn't make anything false, it just calls for stronger proof (@sec-ch14).
-2. **Can someone outside test it?** "Too dangerous to release," a closed consortium and a waiting list are claims until someone independent measures them, and that script had already been used in 2019 (@sec-ch01, @sec-ch14).
+1. **Who makes money if you believe it?** Behind the sentence there's usually an [IPO]{.gls key=ipo}, a graphics card to sell or a course, and a financial interest doesn't make anything false; it just calls for stronger proof (@sec-ch14).
+2. **Can someone outside test it?** "Too dangerous to release," a closed consortium and a waiting list are claims until someone independent measures them, and the "too dangerous to release" line was already used with GPT-2 in 2019 (@sec-ch01, @sec-ch14).
 3. **What's the definition of the big word?** When the people selling the hardware declare that [AGI]{.gls key=agi} has arrived, ask what they mean by it, because in the contract between OpenAI and Microsoft the word became a revenue target [@zeff2024agi] (@sec-ch14).
 4. **Compared against whom, and with which yardstick?** "Hundreds of times cheaper" always has a hand-picked opponent, and "zero hallucination" can be zero by definition, so find the sentence that explains how the number was measured (@sec-ch14).
 5. **What is this product, minus the name?** The revolutionary launch of September 2026 was a [classifier]{.gls key=classificador}, a decades-old technique, and plenty of "new paradigms" are old practice with a new name to sell consulting (@sec-ch14).
 6. **Did it happen, or could it happen?** Read the verbs: "could," "within a few months," "if it were more capable" carry a different weight from a documented fact, and the apocalypse in announcements usually lives entirely in the conditional (@sec-ch14).
-7. **Who profits from your fear?** The catastrophe warning and the miracle announcement push the same cart, and a call for regulation written to fit the leaders locks out the small competitor (@sec-ch14).
+7. **Who profits from your fear?** The catastrophe warning and the miracle announcement serve the same seller, and a call for regulation written to fit the leaders locks out the small competitor (@sec-ch14).
 8. **What did the feat cost?** A result obtained with millions of dollars of compute shows brute force and money, and says much less about the machine's intelligence (@sec-ch14).
 9. **Are the voices that agree independent?** Ten influencers repeating the same press release count as one voice, and two AIs agreeing with the hypothesis you wrote into the question are an echo (@sec-ch04, @sec-ch14).
-10. **Do the credentials match the dates?** The paper's title, year and author list are one search away, and real credentials sometimes arrive inflated in the shop window (@sec-ch14).
-11. **Do you need this today?** Nearly every big headline of 2026 changed shape within a few weeks, and I only adopt a new tool when I feel its absence hurt (@sec-ch14).
+10. **Do the credentials match the dates?** The paper's title, year and author list are one search away, and the announced credential is sometimes bigger than the real one (@sec-ch14).
+11. **Do you need this today?** Nearly every big headline of 2026 changed shape within a few weeks, and I only adopt a new tool when I notice that its absence hurts (@sec-ch14).
 
 <!-- src: original -->
 If you're going to use a chatbot to investigate the announcement, add the list from @sec-ch04 to this one: asking without handing over your own opinion, opening the source and climbing up to the [primary source]{.gls key=fonte-primaria} count as much as the questions above.

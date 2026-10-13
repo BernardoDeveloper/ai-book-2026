@@ -18,7 +18,7 @@ refs_projects:
   - "ai-memory/README.md"
   - "ai-usagebar/README.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apB.md, sha256: "61251e5b1258b4c81949fe7d03661105e7a36fa691f23ac077b1eb6ce755ee6c"}
+translated_from: {file: book/pt/apB.md, sha256: "8ceae2e05c3de7d8c1441ab81bc9bb228c103b5dea2b6e408c4039b143b069b3"}
 ---
 
 # A Minimum Kit for Using Agents Safely {#sec-apB}
@@ -53,7 +53,7 @@ A [sandbox]{.gls} is an isolated environment in which a program only sees and ch
 
 - only the current project folder is real and writable; the rest of your home folder shows up empty or doesn't show up at all;
 - sensitive folders stay out: server access keys, cloud credentials, browser profiles with saved passwords;
-- the network comes off or filtered, letting through only what the agent needs to talk to the model and download libraries;
+- the network is cut off or filtered, letting through only what the agent needs to talk to the model and download libraries;
 - no shortcut to programs that run as [root]{.gls}, the system administrator.
 
 <!-- src: 2026/07/25/ai-jail-update-seguranca-docker-opt-in -->
@@ -73,7 +73,7 @@ On Windows, the simplest path is to run the agent inside WSL2, the Linux Microso
 The big agents also come with their own sandbox, configurable in each one's settings. Worth turning on. Just remember it only protects that one agent, and on the day you switch tools, the protection doesn't come along.
 
 <!-- src: ref:ai-jail/README.md -->
-And there's a line none of these jails crosses. They exist to contain the mistakes of a program you trust but that is fallible. To run code of dubious origin, which may be trying to escape on purpose, the answer is a disposable [virtual machine]{.gls key=maquina-virtual}, a whole simulated computer you throw away afterward.
+And there's a line none of these jails crosses. They exist to contain the mistakes of a program that you trust but that is fallible. To run code of dubious origin, which may be trying to escape on purpose, the answer is a disposable [virtual machine]{.gls key=maquina-virtual}, a whole simulated computer you throw away afterward.
 
 ### Git as a Safety Net
 
@@ -85,23 +85,23 @@ The practical rule is simple: make small, frequent commits, keep a remote copy a
 ## 2. The Undo Button
 
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
-A [snapshot]{.gls} freezes the state of the disk at an instant. On filesystems with [copy-on-write]{.gls key=copy-on-write}, it's instant and nearly free, because only what changes from then on takes up new space (@sec-ch15 tells how this saved eleven of my albums). You browse a snapshot like a regular folder: the agent deleted the project at three in the afternoon, you open the two o'clock snapshot and copy it back.
+A [snapshot]{.gls} freezes the state of the disk at an instant. On filesystems with [copy-on-write]{.gls key=copy-on-write}, it's instant and nearly free, because only what changes from then on takes up new space (@sec-ch15 tells how this saved eleven of my albums). You can open the two o'clock snapshot like any folder and copy back the project the agent deleted at three.
 
 What you need to guarantee is short. Automatic snapshots, at least hourly during the day, and a rule for how many to keep per hour, per day, per week and per month. And knowing where to click to recover a file before you need to.
 
 ### Linux
 
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
-The filesystem has to support snapshots. The most common one on desktop computers is Btrfs, which several distributions already offer at install time. For scheduling, the two classic tools are Timeshift, with a graphical interface and a panel where you check off how many snapshots to keep, and snapper, more detailed, which takes a snapshot before and after every package install.
+The filesystem, the way the disk organizes data, has to support snapshots. The one most Linux desktop distributions offer for this is Btrfs, and several offer it at install time. For scheduling, the two classic tools are Timeshift, with a graphical interface and a panel where you check off how many snapshots to keep, and snapper, more detailed, which takes a snapshot before and after every package install.
 
 I use Timeshift on a schedule and, before a session that makes me nervous, I take one by hand:
 
 ```bash
-sudo timeshift --create --comments "antes de soltar o agente"
+sudo timeshift --create --comments "before releasing the agent"
 ```
 
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
-There's an add-on worth its weight in gold on the day the system won't even boot: grub-btrfs, which puts each snapshot as an option in the boot menu [@antynea2026grubbtrfs]. You pick the snapshot from the day before, boot into it and tell it to restore. It was a variation on this, on a system built on top of snapshots, that saved me a reinstall in the middle of the NAS crisis (@sec-ch15).
+There's an add-on worth its weight in gold on the day the system won't even boot: grub-btrfs, which lists each snapshot in the boot menu [@antynea2026grubbtrfs]. You pick the snapshot from the day before, boot into it and tell it to restore. The same idea, applied to a whole operating system, saved me a reinstall in the middle of the NAS crisis (@sec-ch15).
 
 ### macOS
 
@@ -119,12 +119,12 @@ Recovery goes through Time Machine itself, which browses the local snapshots and
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
 Here the story is weaker. Windows has shadow copies, which feed the restore points and the "Previous Versions" tab on folders, but they were designed for system files and rarely cover your data at the moment you need it. If you use agents on Windows, treat the next piece as mandatory.
 
-> The snapshot solves the accident from minutes ago, in seconds. It lives on the same disk as your data and dies along with it.
+The snapshot solves the accident from minutes ago, in seconds. It lives on the same disk as your data and dies along with it.
 
 ## 3. The Copy That Lives Somewhere Else
 
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
-An external [backup]{.gls} is a copy on a separate device: an external drive, a NAS, a cloud service. It covers what the snapshot doesn't, from the dead disk to the stolen computer. A good backup has four properties:
+An external [backup]{.gls} is a copy on a separate device: an external drive, a NAS (the network storage box in your home), a cloud service. It covers what the snapshot doesn't, from the dead disk to the stolen computer. A good backup has four properties:
 
 - it runs on its own, on a schedule, without depending on you to remember;
 - it keeps several versions, with a retention policy that says how many to keep;
@@ -173,7 +173,7 @@ In Claude Code, this list lives in a JSON configuration file. A chunk of the one
 "allow": ["Bash(git status *)", "Bash(git diff *)", "Bash(git log *)"]
 ```
 
-Each entry is a command pattern. The asterisk means "anything from here on". Other agents use other names and other files, but the idea is the same.
+Each entry is a command pattern. The asterisk means "anything from here on." Other agents use other names and other files, but the idea is the same.
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
 Notice where pushing to the remote sits: in the middle column. The agent can make commits to its heart's content, create branches, reorganize the local history. When it's time to publish, it stops and you review. The force push, which overwrites the remote's history, goes in the "never" column.
@@ -181,29 +181,29 @@ Notice where pushing to the remote sits: in the middle column. The agent can mak
 ### YOLO Mode, Only Inside the Jail
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
-Since May 2026, I've run my agents in YOLO mode nearly all the time (@sec-ch15). That looks like it contradicts everything above, and it would, except for one detail: I remove the lock inside the agent and put a fence at the operating-system level. The agent works fast inside the project, and the rest of the disk stays out of its reach.
+Since May 2026, I run my agents in YOLO mode nearly all the time (@sec-ch15). That looks like it contradicts everything above, and it would, except for one detail: I remove the lock inside the agent and put a fence at the operating-system level. The agent works fast inside the project, and the rest of the disk stays out of its reach.
 
 The rule I follow is that combination. YOLO mode without a jail means trusting that no wrong command, from any source, will ever show up. With a jail, a remote Git and manual pushes, the realistic worst case is redoing an afternoon of local work.
 
 ### Secrets
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
-The most common accident I saw all year wasn't an agent deleting anything. It was a secret leaking into the repository: a file with passwords that goes into the commit along with everything else and ends up on the remote. It happened to me more than once.
+The most common accident I saw all year was a secret leaking into the repository: a file with passwords that goes into the commit along with everything else and ends up on the remote. It happened to me more than once.
 
 Three habits fix almost all of it:
 
-- before pushing, look at what's going in the package (in Git, `git status` and `git diff --cached` show exactly that);
+- before pushing, look at exactly what is about to be sent (in Git, `git status` and `git diff --cached` show exactly that);
 - keep passwords and keys in a password manager, so losing the project folder doesn't mean losing the keys to the kingdom;
 - if a key leaks, rotate the key; cleaning up the history helps, but whoever copied it before still has it.
 
 ## 5. Agents Stay Out of Production
 
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
-This piece is short because @sec-ch15 already made the whole argument. No agent should have direct access to [production]{.gls key=producao}, the system that serves real customers: no database password, no admin key to the servers.
+This piece is short because @sec-ch15 has already made the whole argument. No agent should have direct access to [production]{.gls key=producao}, the system that serves real customers: no database password, no admin key to the servers.
 
-In a test environment, the agent can work freely, as long as it writes recipes instead of issuing one-off commands. A recipe is a file that describes the desired configuration, is kept in the history and can be reviewed and run again. It writes, applies it to the test environment, checks and adjusts. A human reviews and promotes it to production.
+In a test environment, the agent can work freely, as long as it writes recipes instead of issuing one-off commands. A recipe is a file that describes the desired configuration, is kept in the history and can be reviewed and run again. It writes the recipe, applies it to the test environment, checks and adjusts. A human reviews and promotes it to production.
 
-> Never run anything in production that you can't recover from.
+The production rule, with the story behind it, is in @sec-ch15.
 
 ## 6. Notes That Outlive the Session
 
@@ -251,7 +251,7 @@ What follows are the three tools I wrote in 2026 to cover pieces 1, 6 and 7 on m
 <!-- src: ref:ai-jail/README.md -->
 ai-jail runs a coding agent inside a sandbox: on Linux, with bubblewrap plus a few protections from the system's own kernel; on macOS, with `sandbox-exec` [@akita2026aijail; @aijail2026site]. On Windows, it only works inside WSL2. In October 2026 it was at version 2.8.1.
 
-The documentation is clear about what it promises: protection against the accidents of an agent you trust but that is fallible. Against an attacker trying to escape on purpose, it tells you to use a disposable virtual machine.
+The documentation says what it promises: protection against accidents, the limit we saw in piece 1. Against an attacker trying to escape on purpose, it tells you to use a disposable virtual machine (@sec-ch15).
 
 <!-- src: ref:ai-jail/README.md -->
 You use it by putting `ai-jail` in front of the agent's command, from inside the project folder:
@@ -262,7 +262,7 @@ ai-jail --dry-run claude    # shows what would be mounted, without running anyth
 ai-jail --lockdown claude   # strictest mode: project read-only, almost everything off
 ```
 
-The first shows everyday use. The second is for auditing before you trust it: it prints the jail's configuration and doesn't execute. The third is the full lockdown mode, which even so, the documentation warns, is no substitute for a virtual machine.
+The first shows everyday use. The second is for auditing before you trust it: it prints the jail's configuration and doesn't execute. The third is the full lockdown mode, which, the documentation warns, is still no substitute for a virtual machine.
 
 <!-- src: ref:ai-jail/README.md -->
 By default, the project folder is writable and the home folder is an empty temporary area that disappears at the end of the session. The agent's own credentials get in, so it starts logged in; the documentation calls that a conscious trade-off, and anyone who doesn't accept it runs with `--no-agent-state`. Broad network access, GPU, audio, Docker, SSH keys and cloud credentials come off, each with an option to turn it on.
@@ -271,12 +271,12 @@ By default, the project folder is writable and the home folder is an empty tempo
 Two usage details that hold for any jail. Secret files inside the project itself, like `.env`, are visible to the agent unless you tell it to hide them with `--mask .env`. And the first run creates an `.ai-jail` file in the folder, with that project's policy, which can go into the repository along with the code. Since that file comes from inside the project, the tool distrusts it: unless you mark that folder as trusted in your personal configuration, it can only tighten the jail, never loosen it.
 
 <!-- src: ref:ai-jail/src/bootstrap.rs -->
-Finally, the `--bootstrap` option writes permission settings for five agents, among them Claude Code, Codex, OpenCode and Gemini CLI. The Claude Code one is the three-column list from piece 4, with pushing to the remote under "asks first" and force pushing under "never". Before overwriting any file, it saves a copy of the old one.
+Finally, the `--bootstrap` option writes permission settings for five agents, among them Claude Code, Codex, OpenCode and Gemini CLI. The Claude Code one is the three-column list from piece 4, with pushing to the remote under "asks first" and force pushing under "never." Before overwriting any file, it saves a copy of the old one.
 
 ### ai-memory, the Notes
 
 <!-- src: ref:ai-memory/README.md -->
-ai-memory is the long-term memory I promised in @sec-ch02 and told the story of in @sec-ch20 [@akita2026aimemory; @aimemory2026site]. The idea fits in the sentence that opens its documentation: quit Claude Code mid-task, start Codex in the same directory and continue without re-explaining the architecture, what failed or what's still open. Hooks installed in the agent quietly record the session, the server turns the record into plain text pages, and the next session, in any compatible agent, starts where the previous one stopped. What it does, when it's worth it and how to get started are in @sec-apmemoria.
+ai-memory is the long-term memory I promised in @sec-ch02 and told the story of in @sec-ch20 [@akita2026aimemory; @aimemory2026site]. The idea: a new session, in any compatible agent, starts where the previous one stopped. Hooks installed in the agent quietly record the session, and the server turns the record into plain text pages. The full description, with when it's worth it and how to start, is in @sec-apmemoria.
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
 It covers the third drawer of piece 6, the work in progress. A decision that has to survive for sure still goes into a document inside the project, reviewed and versioned. Automatic memory keeps what might matter later; the document keeps what definitely matters.

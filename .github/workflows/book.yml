@@ -96,3 +96,15 @@ jobs:
           gh release create "$TAG" $prerelease \
             --title "Competente o Suficiente / Competent Enough $version" --notes-file notes.md \
             dist/*.epub dist/*.pdf
+
+      - name: Keep only the two newest releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          # Old editions aren't worth keeping; the git tags stay as history.
+          gh release list --limit 100 --json tagName,createdAt \
+            --jq 'sort_by(.createdAt) | reverse | .[2:] | .[].tagName' |
+          while read -r old; do
+            echo "deleting release $old"
+            gh release delete "$old" --yes
+          done

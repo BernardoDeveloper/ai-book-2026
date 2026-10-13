@@ -43,20 +43,20 @@ Em @sec-ch02 eu também mostrei o remédio caseiro, que continua valendo: memór
 Os agentes grandes perceberam o problema e vêm ganhando funções de memória. O Claude Code faz as próprias anotações, o Cursor lembra de algumas coisas, e cada plataforma acrescenta mais um pouco a cada versão. Todas esbarram nos mesmos limites: as notas moram numa máquina só, pertencem a um agente só e saem de vista quando você troca de ferramenta ou passa o trabalho pra um colega.
 
 <!-- src: 2026/07/20/novidades-no-meu-ai-memory-cada-vez-melhor-pra-usar-com-suas-ias -->
-Em @sec-ch20 eu contei por que isso me incomoda. A Anthropic pode mudar limite, preço ou modelo amanhã, e a OpenAI também. Se a memória do projeto mora dentro da ferramenta de uma delas, trocar de ferramenta vira mudança de casa, e quanto mais tempo você fica, mais pesada fica a mudança.
+Em @sec-ch20 eu contei por que isso me incomoda: se a memória do projeto mora dentro da ferramenta de uma empresa, trocar de ferramenta vira mudança de casa, e quanto mais tempo você fica, mais pesada fica a mudança.
 
 <!-- src: 2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar -->
-As notas dessas ferramentas são texto, como @sec-ch02 mostrou, então em tese dá pra levar. Na prática, cada uma guarda num lugar, num formato e numa máquina diferentes, e ninguém carrega a mudança por você.
+As notas dessas ferramentas são texto, como o @sec-ch02 mostrou, então em tese dá pra levar. Na prática, cada uma guarda num lugar, num formato e numa máquina diferentes, e ninguém carrega a mudança por você.
 
 > A sessão de um agente é a parte mais cara do trabalho, e ela pertence a quem trabalhou, seja qual for a ferramenta que a gravou.
 
 ## O que é o ai-memory
 
 <!-- src: ref:ai-memory/README.md -->
-O ai-memory é uma memória de longo prazo pra agentes de programação, de [código aberto]{.gls key=codigo-aberto}, distribuída como um [binário]{.gls key=binario} só, um programa único que não depende de outros serviços pra rodar. A promessa está na primeira frase da documentação: largue o Claude Code no meio da tarefa, abra o Codex na mesma pasta e continue sem explicar de novo a arquitetura, as tentativas que falharam e as perguntas em aberto.
+O ai-memory é uma memória de longo prazo pra agentes de programação, de [código aberto]{.gls key=codigo-aberto}, distribuída como um [binário]{.gls key=binario} só, um programa único que não depende de outros serviços pra rodar. A promessa é que a sessão seguinte, em qualquer agente compatível, continue de onde a anterior parou, sem você explicar de novo a arquitetura, as tentativas que falharam e as perguntas em aberto.
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-O primeiro commit foi em 21 de maio de 2026, depois de uma semana tentando usar uma ferramenta de terceiros que não aguentou o uso. Era uma versão pra um usuário, numa máquina, num sistema operacional. O projeto cresceu com gente de fora usando e mandando correção, e a versão 2.0, de setembro, já tinha umas setenta pessoas que contribuíram código. No dia em que eu fechei este livro, 13 de outubro de 2026, ele estava na versão 2.6.6.
+A origem do projeto, de maio de 2026, está contada em @sec-ch20. Começou como uma versão pra um usuário, numa máquina, num sistema operacional, e cresceu com gente de fora usando e mandando correção. No dia em que eu fechei este livro, 13 de outubro de 2026, estava na versão 2.6.6.
 
 ### Como funciona
 
@@ -95,10 +95,10 @@ O caminho padrão não chama modelo de linguagem nenhum. Captura, busca e passag
 
 A memória também envelhece, e o que você usa envelhece mais devagar: abrir uma página, achar ela numa busca ou chegar nela por um link conta como uso. Esse reforço vem sempre ligado, porque ele só segura a memória por mais tempo. E nada é apagado de vez: a versão antiga continua no histórico do Git e dá pra trazer de volta.
 
-As funções que reescrevem ou descartam conteúdo vêm desligadas. A mais curiosa é um "sonho", parecido com o do Claude Code que @sec-ch02 descreveu: com um modelo configurado, enquanto você não está trabalhando, um processo reescreve grupos de notas antigas numa página só e para assim que você volta.
+As funções que reescrevem ou descartam conteúdo vêm desligadas. A mais curiosa é um "sonho", parecido com o do Claude Code que o @sec-ch02 descreveu: com um modelo configurado, enquanto você não está trabalhando, um processo reescreve grupos de notas antigas numa página só e para assim que você volta.
 
 <!-- src: 2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos -->
-A cautela tem motivo. Memória ruim é pior que falta de memória, porque o agente sem memória pergunta e o agente com memória errada age com certeza falsa.
+A cautela tem motivo. Memória ruim é pior do que memória nenhuma, porque o agente sem memória pergunta e o agente com memória errada age com certeza falsa.
 
 ### Pra quem pula de agente, e pra equipes
 

@@ -1,0 +1,371 @@
+---
+- unit: ch02
+  line: 119
+  quote: The details of each change with every version.
+  category: error
+  severity: medium
+  problem: 'Ambiguous: "each change" reads as a noun phrase ("each change") at first,
+    and the verb is missing in the reader''s parse.'
+  suggestion: The details change with every version.
+- unit: ch03
+  line: 32
+  quote: The worse part was what I found when I looked closely.
+  category: error
+  severity: medium
+  problem: Superlative needed ("the worst part"), since it is not compared with a
+    specific alternative.
+  suggestion: The worst part was what I found when I looked closely.
+- unit: ch04
+  line: 25
+  quote: what are the problems with this story?".
+  category: error
+  severity: medium
+  problem: A question mark followed by a closing quote and a stray period. Same at
+    "is this story correct?".
+  suggestion: 'Ask: "what are the problems with this story?" ... and: "is this story
+    correct?" (no period after the closing quote).'
+- unit: ch03
+  line: 34
+  quote: The runs "completed". The files showed up on disk.
+  category: consistency
+  severity: medium
+  problem: 'Punctuation around closing quotes is inconsistent across the book: ch01
+    and ch02 put commas and periods inside the quotes (American style: "un," / "constitution"
+    and "ally."), while ch03 ("completed". / "done", / "run this command".), ch04
+    (?"., "mixed"...) and later chapters (ch05, ch08 counts) put them outside. Preface
+    and como-ler use inside.'
+  suggestion: 'Pick one rule for the whole EN edition (inside, matching the American
+    spelling used elsewhere) and apply with a find-and-replace pass: "The runs "completed."
+    The files...", "when it said "done," I could check", "run this command." The harness...".'
+- unit: ch04
+  line: 134
+  quote: Ten newspapers repeating the same thing without a primary source still add
+    up to zero.
+  category: repetition
+  severity: medium
+  problem: 'Three "ten ... repeating the same thing" images in one chapter: here,
+    the next section ("ten outlets repeat the same claim citing each other") and rule
+    4 ("Ten summaries repeating the same thing are worth one"), plus "five stories"
+    in between. The reader notices it. The circular-chain paragraph ("when ten outlets
+    repeat ... citing each other") overlaps with the same-group paragraph.'
+  suggestion: 'Keep this one. Change the circular-chain paragraph to "And then there''s
+    the circular chain: A cites B, B cites C, C cites A, and the evidence goes around
+    in circles." Rule 4 can stay as the callback, with "A pile of summaries" instead
+    of "Ten".'
+- unit: ch01
+  line: 57
+  quote: something like "un," "constitution" and "ally."
+  category: clarity
+  severity: medium
+  problem: The reader is never told these three pieces are one word. Without the whole
+    word, the example does not show anything.
+  suggestion: 'A rare word like "unconstitutionally" might become three pieces: "un,"
+    "constitution" and "ally."'
+- unit: ch01
+  line: 131
+  quote: when the model gets to "payday" it has to realize, because of "withdraw money,"
+    that the "bank" back there
+  category: clarity
+  severity: medium
+  problem: The logic is backwards for a lay reader. "Bank" comes before "payday",
+    and "withdraw money" is already next to "bank". Nothing in the example needs "payday".
+  suggestion: 'Use a sentence where the clue comes first: "I went to withdraw money
+    at the bank." When the model reaches "bank," it looks back at "withdraw money"
+    and realizes this is the kind with tellers, not the kind with a river.'
+- unit: ch02
+  line: 65
+  quote: and something similar in Portuguese
+  category: clarity
+  severity: medium
+  problem: Leftover from the PT edition. An English reader has no reason to care about
+    Portuguese here, and the figure for other languages is in fact less favorable
+    (more tokens per word).
+  suggestion: One token is, on average, about three quarters of an English word, and
+    often less in other languages.
+- unit: ch03
+  line: 121
+  quote: the tools change from house to house
+  category: clarity
+  severity: medium
+  problem: '"From house to house" is a calque of the Portuguese "de casa pra casa".
+    In English it means door to door. The harness-maker sense is lost, and the next
+    section''s heading "When the House Gets in the Way" (and "in its maker''s tool")
+    leans on the same unusual use.'
+  suggestion: 'the tools change from vendor to vendor. Heading: "When the Maker''s
+    Harness Gets in the Way".'
+- unit: ch03
+  line: 251
+  quote: That goes after the invention of facts, the subject of the next chapter,
+    at the root.
+  category: clarity
+  severity: medium
+  problem: 'Awkward: "goes after ... at the root" is a calque of "ataca ... pela raiz".'
+  suggestion: That attacks the invention of facts, the subject of the next chapter,
+    at its root.
+- unit: ch01
+  line: 186
+  quote: Just like Sam Altman, of OpenAI, or Dario Amodei, of Anthropic, do today,
+    he talked
+  category: error
+  severity: low
+  problem: '"Just like ... do today" is ungrammatical in standard English (a Portuguese
+    "assim como" calque).'
+  suggestion: As Sam Altman, of OpenAI, and Dario Amodei, of Anthropic, do today,
+    he talked about machines that would soon be much smarter than human beings, and
+    the newspapers of the day printed it.
+- unit: ch01
+  line: 234
+  quote: at the company of the same Dario Amodei and with a lot more money at stake
+  category: error
+  severity: low
+  problem: '"At the company of" is a calque and reads oddly.'
+  suggestion: at the company run by the same Dario Amodei, and with a lot more money
+    at stake
+- unit: ch01
+  line: 115
+  quote: I spent months on a project converting old games that you'll meet in @sec-ch08
+  category: error
+  severity: low
+  problem: Relative clause attached to "games" instead of "project"; the project is
+    what the reader will meet.
+  suggestion: I spent months on a project converting old games, which you'll meet
+    in @sec-ch08, with hundreds of rounds of trial and error.
+- unit: ch02
+  line: 143
+  quote: The index never becomes a dumping ground for facts.
+  category: error
+  severity: low
+  problem: Tense slips from the narrated past ("had a discipline rule") into the present.
+  suggestion: The index never became a dumping ground for facts.
+- unit: ch02
+  line: 172
+  quote: It stored a note about you, in text, and puts that note on the desk at the
+    start of every conversation.
+  category: error
+  severity: low
+  problem: Tense mismatch ("stored" ... "puts") and unclear subject for "puts".
+  suggestion: It stored a note about you, in text, and the app puts that note on the
+    desk at the start of every conversation.
+- unit: ch02
+  line: 184
+  quote: For months I had kept, in the projects that matter, a documentation folder
+  category: error
+  severity: low
+  problem: Past perfect with no past point of reference; the habit is ongoing.
+  suggestion: For months I've kept, in the projects that matter, a documentation folder
+    with short files by subject...
+- unit: ch04
+  line: 132
+  quote: confidence is capped at 60% at most
+  category: error
+  severity: low
+  problem: 'Redundant: "capped at" and "at most" say the same thing.'
+  suggestion: confidence is capped at 60%
+- unit: ch03
+  line: 266
+  quote: That left me with a suspicion that took me the rest of the year to check.
+  category: consistency
+  severity: low
+  problem: The check was in late September and the book is closed in October, so "the
+    rest of the year" is a few weeks. Same wording in PT, so author decision.
+  suggestion: That left me with a suspicion that took me until October to check.
+- unit: ch01
+  line: 258
+  quote: the balance sheet for the whole year is saved for @sec-ch20
+  category: repetition
+  severity: low
+  problem: '"is saved for" (calque of "fica pra") appears here and again in ch02 ("is
+    saved for @sec-ch20"). Unidiomatic, and the same phrase and same target twice
+    in a row of chapters.'
+  suggestion: 'ch01: "and the balance sheet for the whole year comes in @sec-ch20."
+    ch02: "is told in @sec-ch20".'
+- unit: ch02
+  line: 67
+  quote: 100,000 tokens is a whole short novel, something like *The Old Man and the
+    Sea* with room to spare.
+  category: repetition
+  severity: low
+  problem: 'Two of the three bullets use the same "with room to spare" tag, and the
+    first mixes up capacity and size: 100,000 tokens is about 75,000 words, nearly
+    three times The Old Man and the Sea, so the comparison undersells the window.'
+  suggestion: Drop the tag from one bullet and fix the first comparison, e.g. "100,000
+    tokens is a full-length novel, something like *The Great Gatsby* twice over."
+- unit: ch04
+  line: 36
+  quote: If it doesn't have the evidence to back the answer it thinks you want, it
+    makes it up.
+  category: repetition
+  severity: low
+  problem: 'Nearly the same sentence returns in the hallucination section: "When they
+    don''t have enough evidence to back the answer they think you want, they fabricate...".'
+  suggestion: 'Keep the intro one as the teaser and rewrite the second to start from
+    the definition: "The second problem is more treacherous, because you don''t notice
+    it while you read. LLMs hallucinate: they fabricate plausible citations and data,
+    and attribute to people statements they never made."'
+- unit: como-ler
+  line: 39
+  quote: Claude Opus 4.5, GPT-5.5 or Kimi K3 will probably sound like the cars in
+    an old novel
+  category: repetition
+  severity: low
+  problem: Same "cars in an old novel" image as the preface ("the way car models age
+    in an old novel"), with near-identical wording. Fine as a callback, but the second
+    use should vary.
+  suggestion: 'Keep the preface version. Here: "...will probably sound as dated as
+    a Ford Model T. They tell you when the story is set, and nobody reads the novel
+    to pick a car." Or cut the image.'
+- unit: antes
+  line: 46
+  quote: "### For Anyone"
+  category: repetition
+  severity: low
+  problem: Heading "For Anyone" sits directly under "For Anyone Who Wants to Go Deeper".
+    The echo is noticeable in the table of contents.
+  suggestion: '### For Anyone (rename to "Easiest First" or "No Math").'
+- unit: ch01
+  line: 242
+  quote: GPT-1, from 2018, to GPT-2 was a quantum leap
+  category: clarity
+  severity: low
+  problem: 'Clumsy sentence: the parenthetical date splits the subject ("GPT-1 to
+    GPT-2"). Also, "quantum leap" is technically a tiny jump, but it is idiomatic
+    enough to leave.'
+  suggestion: From GPT-1 (2018) to GPT-2 was a huge leap [@radford2018improving].
+- unit: ch01
+  line: 83
+  quote: the whole chapter about it is @sec-ch04
+  category: clarity
+  severity: low
+  problem: Stilted. Reads like a translation of "o capítulo inteiro sobre isso é".
+  suggestion: It's a natural side effect of how the machine works, and @sec-ch04 is
+    entirely about it.
+- unit: ch01
+  line: 103
+  quote: Stanford University's annual artificial intelligence report estimated that
+    the computing used to train GPT-4 alone cost some 78 million dollars
+  category: clarity
+  severity: low
+  problem: '"alone" is odd here (alone versus what?). It sounds like the computing
+    was only part of the cost.'
+  suggestion: estimated that the computing used to train GPT-4 cost some 78 million
+    dollars, and Google's Gemini Ultra some 191 million
+- unit: ch02
+  line: 200
+  quote: is saved for @sec-ch20, and what it does and how to start using it are in
+    @sec-apmemoria
+  category: clarity
+  severity: low
+  problem: '"is saved for" calque (see ch01 item).'
+  suggestion: The story of how it grew and what it taught me about owning your own
+    memory is told in @sec-ch20; what it does and how to start using it are in @sec-apmemoria.
+- unit: ch02
+  line: 132
+  quote: because it tears down a lot of fantasy about what an AI's "memory" is
+  category: clarity
+  severity: low
+  problem: '"tears down fantasy" is a loose rendering of the PT idiom; "fantasy" is
+    not countable-friendly in this sense.'
+  suggestion: because it deflates a lot of the fantasy around what an AI's "memory"
+    is
+- unit: ch03
+  line: 115
+  quote: A Harness Made to Measure
+  category: clarity
+  severity: low
+  problem: '"Made to measure" is British; the rest of the book is American English.
+    "Tailor-made" appears later in the chapter with the same meaning.'
+  suggestion: A Harness Cut to Fit (or "A Custom-Fit Harness").
+- unit: ch03
+  line: 136
+  quote: the model felt much less nerfed
+  category: clarity
+  severity: low
+  problem: '"Nerfed" is gamer slang a non-programmer reader may not know, and nothing
+    in the book glosses it.'
+  suggestion: the model felt much less held back
+- unit: ch03
+  line: 104
+  quote: converting NES games to run on the Master System, Sega's console
+  category: clarity
+  severity: low
+  problem: '"NES" is never explained for a lay reader while the Master System gets
+    a gloss. Same sentence reused in ch08 per the style report.'
+  suggestion: converting Nintendo NES games to run on Sega's Master System (here,
+    keep this as the first full explanation; in ch08 shorten to a callback).
+- unit: ch03
+  line: 279
+  quote: and one primary source is worth more than ten newspapers repeating the same
+    thing
+  category: clarity
+  severity: low
+  problem: The clause is dropped into the description of the tool and interrupts the
+    thought; it is introduced properly in ch04.
+  suggestion: It puts three different models to work checking the claims in each story.
+    To understand why I distrusted a single model so much, you need to understand
+    why it tends to agree with you.
+- unit: ch04
+  line: 97
+  quote: You're going to paste a spreadsheet, a bank statement or a lab result into
+    a chatbot
+  category: clarity
+  severity: low
+  problem: Reads like a prediction rather than a general example, and "whatever is
+    missing there can turn into a conclusion" then lacks a condition.
+  suggestion: Sooner or later you'll paste a spreadsheet, a bank statement or a lab
+    result into a chatbot, and whatever is missing there can turn into a conclusion.
+- unit: ch04
+  line: 147
+  quote: raises the bus fare from 5 to 6 reais
+  category: clarity
+  severity: low
+  problem: Non-Brazilian readers may not know "reais".
+  suggestion: 'Add a gloss, for example: raises the bus fare from 5 to 6 reais (roughly
+    one US dollar), or make the example currency-neutral.'
+- unit: ch04
+  line: 214
+  quote: the key leans Claude one way more often than pure chance would
+  category: clarity
+  severity: low
+  problem: 'Slightly strained: "leans Claude one way" is hard to parse on first read.'
+  suggestion: the key nudges Claude toward one of the two words more often than pure
+    chance would
+- unit: como-ler
+  line: 20
+  quote: The questions each one answers are in the preface.
+  category: clarity
+  severity: low
+  problem: Flat. A reader arriving here with a worry would like the questions named,
+    since this is the "in a hurry" section.
+  suggestion: The question each one answers is listed in the preface, under "The Fears
+    You Brought Along."
+- unit: prefacio
+  line: 54
+  quote: the confusion has a known source, and it isn't you
+  category: clarity
+  severity: low
+  problem: Negation tail ("X, and it isn't you") is close to the rhetorical negation
+    the voice rules ban. Meaning is clear without it.
+  suggestion: 'start by knowing that the confusion has a known source: advertising.'
+- unit: prefacio
+  line: 28
+  quote: Reports drew up the end of the world with a date on it
+  category: clarity
+  severity: low
+  problem: '"Drew up" means "drafted"; the intended sense is "predicted". Also a mildly
+    translated sound.'
+  suggestion: Reports predicted the end of the world with a date on it
+- unit: antes
+  line: 44
+  quote: whether you can read it free, legally
+  category: clarity
+  severity: low
+  problem: Awkward word order.
+  suggestion: author, publisher, and whether you can legally read it for free
+- unit: antes
+  line: 56
+  quote: under 200 pages the size of a phone screen
+  category: clarity
+  severity: low
+  problem: 'Ambiguous: reads as if the pages are the size of a phone screen, which
+    is the intent, but the missing comma makes it read oddly.'
+  suggestion: under 200 pages, each the size of a phone screen,

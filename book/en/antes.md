@@ -4,20 +4,20 @@ chapter: "Before You Start: What This Book Doesn't Explain"
 sources: []
 refs_projects: ["docs/research/FURTHER-READING.md"]
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/antes.md, sha256: "d844fe84051a0cd8839c649e3841a478819f877a0d317cdd78b8d43b6d23bc67"}
+translated_from: {file: book/pt/antes.md, sha256: "b5430e97bc9d13d1fb45535ef42507decb736a29d3258e986dc2f8c2aeae0fc8"}
 ---
 
 # Before You Start: What This Book Doesn't Explain {#sec-antes .unnumbered}
 
 <!-- src: original -->
-This book gives you intuitions about how these machines work, and stops there. @sec-ch01 explains what a language model is, why it works with pieces of words, the difference between training a model and using one, and why it learns nothing from you once it's done. They're everyday images, with no math at all, and they're enough to follow the story.
+This book gives you intuitions about how these machines work, and stops there. @sec-ch01 explains what a language model is, why it works with pieces of words, the difference between training a model and using it, and why it learns nothing from you once it's done. They're everyday images, with no math at all, and they're enough to follow the story.
 
 What I left out on purpose is the mechanics inside:
 
 - how a [neural network]{.gls key=rede-neural} learns, with [gradient descent]{.gls key=descida-do-gradiente} and [backpropagation]{.gls key=retropropagacao};
 - what [embeddings]{.gls key=embedding} are, the lists of numbers that represent the meaning of a piece of text;
 - how a [transformer]{.gls}, the architecture behind all of these models, and its [attention]{.gls key=atencao} mechanism work;
-- how [pretraining]{.gls key=pre-treino} and [RLHF]{.gls} turn a heap of text into a polite assistant.
+- how [pretraining]{.gls key=pre-treino} and [RLHF]{.gls} (reinforcement learning from human feedback) turn a heap of text into a polite assistant.
 
 <!-- src: original -->
 Each of these subjects calls for a whole book, and those books exist, written by people who research or build these things. A narrative book that tried to do the same would turn into a textbook by page ten.
@@ -41,9 +41,9 @@ If you'd like a middle ground, there's an optional appendix, *The Machine Inside
 ## For Anyone Who Wants to Go Deeper
 
 <!-- src: ref:docs/research/FURTHER-READING.md -->
-The list below is short on purpose and runs from easiest to most technical. I checked every item in October 2026: author, publisher, and whether you can read it free, legally.
+The list below is short on purpose and runs from easiest to most technical. I checked every item in October 2026: author, publisher, and whether you can legally read it for free.
 
-### For Anyone
+### Easiest First
 
 - Timothy B. Lee and Sean Trott, *Large Language Models, Explained with a Minimum of Math and Jargon*: the shortest path, and free [@lee2024modelos].
 - Stephen Wolfram, *What Is ChatGPT Doing ... and Why Does It Work?*: from the next word all the way to the transformer, with pictures; the full essay is free on the author's website [@wolfram2023chatgpt].
@@ -53,7 +53,7 @@ The list below is short on purpose and runs from easiest to most technical. I ch
 ### With a Little Math
 
 - Michael Nielsen, *Neural Networks and Deep Learning*: the gentlest classic on neural networks and backpropagation, free online; it stops before transformers [@nielsen2015neural].
-- François Fleuret, *The Little Book of Deep Learning*: under 200 pages the size of a phone screen, from training to the transformer; free PDF [@fleuret2023little].
+- François Fleuret, *The Little Book of Deep Learning*: under 200 pages, each the size of a phone screen, from training to the transformer; free PDF [@fleuret2023little].
 - Simon J. D. Prince, *Understanding Deep Learning*: a modern, beautifully illustrated textbook, to consult after the two above; free PDF [@prince2023understanding].
 
 ### Hands-On (with Python)

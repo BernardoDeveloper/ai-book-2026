@@ -65,7 +65,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.multi_model.md"
   - "llm-coding-benchmark/docs/success_report.v2.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apA.md, sha256: "62a441f104b81640531d76fd84231894bb0f517743cb4baaa8e9614e8200eb4f"}
+translated_from: {file: book/pt/apA.md, sha256: "d38ed1823f788090dfbfe5a08d80854abe0531732f9e045d2a1a108c3df1f7be"}
 ---
 
 # Timeline {#sec-apA}
@@ -74,7 +74,7 @@ translated_from: {file: book/pt/apA.md, sha256: "62a441f104b81640531d76fd8423189
 In October 2026, when I redid the AI timeline to write the year's synthesis, it split itself into phases: the parameter wars, the reasoning peak, optimization and the agent era. @sec-ch20 tells that story. This appendix keeps the full list, for reference.
 
 <!-- src: original -->
-It has three parts. The first runs from the Perceptron, in 1957, to the launch of ChatGPT, at the end of 2022. The second covers the three years in which the labs traded size for efficiency and the model got hands. The third is 2026 month by month, with what this book tells and the chapter where each thing appears.
+It has three parts. The first runs from the Perceptron, in 1957, to the launch of ChatGPT, at the end of 2022. The second covers the three years in which the labs traded size for efficiency and the model learned to use tools. The third is 2026 month by month, with what this book tells and the chapter where each thing appears.
 
 The model names are period details, like the car models in a novel. Each date is the one in the chapter that tells the episode, and when the chapter only gives the month, so does this list.
 
@@ -119,7 +119,7 @@ From 2023 to 2025, model size vanished from the marketing, reasoning had its las
 | Late 2023 | Mixtral popularizes [mixture of experts]{.gls key=moe} [@mistral2023mixtral] | @sec-ch20 |
 | Aug. 2024 | Anthropic launches [prompt caching]{.gls key=prompt-caching}, cutting up to 90% off the cost of rereading the conversation [@anthropic2024caching] | @sec-ch03 |
 | Sep. 2024 | OpenAI launches o1, trained to [reason]{.gls key=raciocinio} in writing before answering; by my yardstick, the last big leap [@openai2024o1] | @sec-ch03, @sec-ch20 |
-| 2024 | OpenAI launches its own prompt caching, less than two months after Anthropic [@openai2024caching] | @sec-ch20 |
+| Oct. 2024 | OpenAI launches its own prompt caching, less than two months after Anthropic [@openai2024caching] | @sec-ch20 |
 | Nov. 2024 | Reuters reports smaller-than-expected gains from simply making models bigger [@reuters2024limitations] | @sec-ch01, @sec-ch20 |
 | Late 2024 | Anthropic proposes [MCP]{.gls}, the standard plug for hooking tools into agents [@anthropic2024mcp] | @sec-ch03 |
 | Late 2024 | Ilya Sutskever says at NeurIPS that pretraining as we know it will end [@sutskever2024neurips] | @sec-ch20 |
@@ -226,11 +226,11 @@ The book's year. The story starts in February; the few January entries are the b
 <!-- src: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro -->
 **April 1.** The day after the leak, the signature that protected Claude Code's requests is declared broken [@guthrie2026drm] (@sec-ch16).
 
-<!-- src: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic -->
-**April 7.** Anthropic unveils Claude Mythos Preview and decides not to release it to the public, because it's too good at finding security flaws [@anthropic2026mythos] (@sec-ch14).
-
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
 **April 6 to 9.** An agent translates a good chunk of twenty years of blog; when I publish the anniversary post, on the 9th, half the blog is bilingual (@sec-interlude1).
+
+<!-- src: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic -->
+**April 7.** Anthropic unveils Claude Mythos Preview and decides not to release it to the public, because it's too good at finding security flaws [@anthropic2026mythos] (@sec-ch14).
 
 <!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
 **April 8.** I pit Qwen3 TTS against ElevenLabs in one night of testing (@sec-ch13).
@@ -285,7 +285,7 @@ The book's year. The story starts in February; the few January entries are the b
 **June 1.** Anthropic confidentially files for its IPO; OpenAI does the same on June 8 [@anthropic2026s1; @techcrunch2026openaiipo] (@sec-ch14).
 
 <!-- src: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic -->
-**June 9.** Anthropic launches Claude Fable 5, the first public model of the "Mythos class". On my benchmark, it ties with Opus 4.8, 94 to 95 [@anthropic2026fable] (@sec-ch13, @sec-ch14).
+**June 9.** Anthropic launches Claude Fable 5, the first public model of the "Mythos class." On my benchmark, it ties with Opus 4.8 within the noise, 94 to 95 [@anthropic2026fable] (@sec-ch13, @sec-ch14).
 
 <!-- src: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic -->
 **June 12.** A US government export control order takes Fable 5 offline worldwide; it comes back on July 1 [@anthropic2026suspend; @cnbc2026lifted] (@sec-ch14).
@@ -340,7 +340,7 @@ The book's year. The story starts in February; the few January entries are the b
 **August 2.** Anthropic starts invisibly watermarking the text from Claude models, on the same day the European marking rule comes into force [@anthropic2026watermark; @eu2024aiact] (@sec-ch04).
 
 <!-- src: 2026/08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7 -->
-**August.** Gemini 3.7 Flash reads the test's answer key and runs the security auditor on itself (@sec-ch12).
+**August.** Gemini 3.7 Flash finds the test's answer key and runs the benchmark's security checker on its own work (@sec-ch12).
 
 <!-- src: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms -->
 **August.** I shelve the NES-to-Master System converter (@sec-ch08).
@@ -360,7 +360,7 @@ The book's year. The story starts in February; the few January entries are the b
 **September 8.** OpenAI announces it has solved the Navier-Stokes problem, one of the Millennium Prize Problems, in the version where an external force pushes the fluid [@openai2026navierstokes] (@sec-ch14). On the 11th, Terence Tao and other Fields medalists publish a warning about AI in mathematics [@tao2026misalignment] (@sec-ch14).
 
 <!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2 -->
-**September 10.** Anthropic accuses Moonshot, the maker of Kimi, of quietly passing nearly 300 thousand customer requests through to Claude [@anthropic2026threat]. In my tests, I found no sign of live pass-through on the routes I checked (@sec-ch12).
+**September 10.** Anthropic accuses Moonshot, the maker of Kimi, of quietly relaying nearly 300 thousand customer requests to Claude [@anthropic2026threat]. In my tests, I found no sign of live relaying on the routes I checked (@sec-ch12).
 
 <!-- src: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia -->
 **September 12.** Dario Amodei publishes an essay calling for slowing down model improvement [@amodei2026pace] (@sec-ch14).
@@ -377,14 +377,14 @@ The book's year. The story starts in February; the few January entries are the b
 <!-- src: 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou -->
 **September.** I argue that companies should ship more code to production, because fixing it got cheap (@sec-ch19).
 
-<!-- src: 2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7 -->
-**Late September.** Claude Opus 5.5, GPT 6 sol and Grok 4.7 enter the benchmark. Seven models tie at the top score, and Opus 5.5 gets there at a quarter of the cost of Opus 5 (@sec-ch11, @sec-ch20).
-
-<!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2 -->
-**Late September.** An accidental rerun shows GPT 5.5 scoring 100 in one round and 91 in the other, on the same test (@sec-ch11).
-
 <!-- src: 2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro -->
 **September 23.** First round of Genesys PI on my benchmark (@sec-ch12).
+
+<!-- src: 2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7 -->
+**Late September.** Claude Opus 5.5, GPT-6 Sol and Grok 4.7 enter the benchmark. Seven models tie at the top score, and Opus 5.5 gets there at a quarter of the cost of Opus 5 (@sec-ch11, @sec-ch20).
+
+<!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2 -->
+**Late September.** An accidental rerun shows GPT-5.5 scoring 100 in one round and 91 in the other, on the same test (@sec-ch11).
 
 <!-- src: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu -->
 **Late September.** Open source programs built with AI to replace Adobe's start coming out [@pearl2026artcraft] (@sec-ch19).

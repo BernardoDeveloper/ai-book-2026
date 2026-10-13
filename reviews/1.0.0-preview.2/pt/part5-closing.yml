@@ -1,0 +1,252 @@
+# Reader pass, Part V and closing: ch18, ch19, ch20, epilogo, posfacio (PT). Read-only findings.
+# Line numbers refer to book/pt/<unit>.md at review time.
+
+# ---------------------------------------------------------------- errors
+
+- unit: ch20
+  line: 235
+  quote: "Só explicou por que ela é verdade"
+  category: error
+  severity: medium
+  problem: "Agreement: the subject is 'Meses de medição' (plural), so the verb in 'Meses de medição não mexeram nessa frase. Só explicou...' has to be plural."
+  suggestion: "Meses de medição não mexeram nessa frase. Só explicaram por que ela é verdade:"
+
+- unit: ch18
+  line: 183
+  quote: "voltou ao nível de 2009, o ano em que o site nasceu"
+  category: error
+  severity: medium
+  problem: "Fact: Stack Overflow went public in 2008 (September), not 2009. As written, the sentence also contradicts itself if the reader knows the site is older than the 2009 level."
+  suggestion: "despencou depois do ChatGPT e voltou ao nível de 2009, o ano seguinte ao do nascimento do site"
+
+- unit: ch19
+  line: 331
+  quote: "sabendo que código sozinho ele não é mais"
+  category: error
+  severity: medium
+  problem: "Broken syntax (pronoun 'ele' left over, no article). The reader has to guess that 'ele' is the fosso."
+  suggestion: "pergunte onde mora o fosso da empresa, sabendo que o código sozinho já não é um."
+
+- unit: ch19
+  line: 157
+  quote: "mais tempo do que deveria"
+  category: error
+  severity: low
+  problem: "WRITER.md 'do que' rule: conjugated verb after 'do que' (elliptical 'deveria'). Flagged by the style report."
+  suggestion: "Um defeito que chegava à produção ficava lá mais tempo do que o razoável, porque consertar nunca virava prioridade na próxima sprint."
+
+- unit: ch18
+  line: 117
+  quote: "pra os modelos fazerem"
+  category: error
+  severity: low
+  problem: "'pra os' reads stiff next to the contracted style used everywhere else ('pros')."
+  suggestion: "faltassem de seis a doze meses pros modelos fazerem tudo o que um engenheiro de software faz"
+
+- unit: ch18
+  line: 267
+  quote: "Pra mim aquilo reforçava a minha opinião sobre o compilador de C"
+  category: error
+  severity: low
+  problem: "Redundant 'Pra mim ... a minha'."
+  suggestion: "Aquilo reforçava a minha opinião sobre o compilador de C:"
+
+# ---------------------------------------------------------------- consistency
+
+- unit: ch20
+  line: 129
+  quote: "O único jogo que ficou de fato pronto foi o Super Mario Bros."
+  category: consistency
+  severity: medium
+  problem: "Line 140 says 'Até aquele fim de setembro, nenhum jogo tinha passado na revisão final.' Read straight after line 129 it contradicts it (one NES game finished vs none finished). Line 140 means the Game Gear conversions, but the sentence does not say so."
+  suggestion: "At line 140: 'Até aquele fim de setembro, nenhuma conversão de Game Gear tinha passado na revisão final.' (apD repeats the 'nenhum jogo' wording, same fix there.)"
+
+- unit: ch19
+  line: 214
+  quote: "361 vinham de umas 120 pessoas diferentes"
+  category: consistency
+  severity: medium
+  problem: "ch20 line 269 and apmemoria say the 2.0 release (Sept) already had 'umas setenta pessoas que contribuíram código'; ch19 says about 120 people sent the 361 pull requests, three weeks after the 2.0 post (22 Sept). Either the number jumped by 50 in weeks or one of them counts differently. A careful reader will do the arithmetic."
+  suggestion: "Check the two sources and state one population, or the date of each count: e.g. ch19 'Dos pedidos de mudança no código, 361 vinham de umas 120 pessoas diferentes (contando também quem só mexeu em documentação)'; or align ch20 to the same figure."
+
+- unit: ch20
+  line: 129
+  quote: "e um sprint final de 176 commits"
+  category: consistency
+  severity: low
+  problem: "Gender of 'sprint': ch19 uses feminine five times ('a sprint', 'próxima sprint', 'mais uma sprint'); ch20 uses masculine ('um sprint', and 'Aquele sprint' at line 177)."
+  suggestion: "uma sprint final de 176 commits (line 129) and 'Aquela sprint de 176 commits' (line 177)."
+
+- unit: ch18
+  line: 312
+  quote: "o GPT-6 Sol pelo Codex"
+  category: consistency
+  severity: low
+  problem: "Same model written 'GPT-5.6-Sol' in ch15 (line 145), 'GPT 5.6 sol' in ch11 and 'GPT 6 sol' in ch11/apA (style report lists '6 sol' variants). ch18 uses 'GPT-6 Sol' and then 'Sol' alone, which is also the form ch11 uses for the 6 family. One spelling should be fixed book-wide."
+  suggestion: "Pick the vendor's name (per continuity.yml 'as the vendor writes them') and apply in ch11, ch15, ch18, apA; ch18 only needs to follow the choice."
+
+- unit: ch20
+  line: 31
+  quote: "sete linguagens saíram praticamente equivalentes"
+  category: consistency
+  severity: low
+  problem: "ch18 says the frontier models were equivalent in correctness, but also that Ruby cost more than twice C# tokens on Opus and that weaker models changed with tests. 'Equivalentes' (and line 208 again) overstates for a reader who just read ch18."
+  suggestion: "e sete linguagens saíram equivalentes em acerto nos modelos de fronteira (@sec-ch18). Same qualifier at line 208."
+
+- unit: ch18
+  line: 112
+  quote: "à crise financeira de 2008, que acabou dando origem à bolha da programação"
+  category: consistency
+  severity: low
+  problem: "Line 97 dates the start of the bubble 'por volta de 2014'; here the 2008 crisis 'gave origin' to it. Six-year gap unexplained."
+  suggestion: "à crise financeira de 2008, cujo dinheiro barato acabou alimentando a bolha da programação que eu citei acima;"
+
+# ---------------------------------------------------------------- repetition
+
+- unit: ch20
+  line: 205
+  quote: "dezenas de pequenas correções que ninguém testemunhou"
+  category: repetition
+  severity: medium
+  problem: "Lines 199-205 retell ch03 almost verbatim: 'cada volta do laço traz informação nova pra sessão sem custar', 'O modelo chuta errado, o agente roda o teste', 'no meio rolaram dezenas de pequenas correções que ninguém testemunhou', and the GPT-4o 'escrevia o plano do que ia fazer e parava ali, sem chamar uma' (line 202). The style report lists all four as ch03/ch20. ch03 is the home; ch20 should be the callback."
+  suggestion: "Replace the paragraph at 205 with: 'Em uma sessão boa, o ciclo de chute, teste e correção que você viu em @sec-ch03 se repete dezenas de vezes sem que quem pediu perceba.' Shorten 202 to: 'O teste do GPT-4o de @sec-ch03 foi a prova mais limpa disso: no mesmo harness dos modelos atuais ele planejava e parava, e quando engajava até sabia programar. O que separava as gerações era...' Keep line 199 (new idea: knowledge leaves the weights) but cut 'cada volta do laço traz informação nova pra sessão sem custar um centavo de treino' to 'o laço traz informação nova sem custar treino'."
+
+- unit: ch20
+  line: 284
+  quote: "Ele não vai virar outra coisa."
+  category: repetition
+  severity: medium
+  problem: "Lines 284-287 are nearly the ch01 curva-em-S paragraph ('O próximo modelo vai ser um pouco mais rápido e errar um pouco menos. Ele não vai virar outra coisa. O que você aprender agora ... continua valendo na próxima versão'). As payoff it is good, but as written it reads as the same text twice with no acknowledgement."
+  suggestion: "Make it an explicit callback: 'Lembra da curva em S do @sec-ch01? Agora ela tem número. O próximo modelo vai errar um pouco menos e custar um pouco menos. Ele não vai virar outra coisa.' and cut the sentence at 287 'continua valendo na próxima versão' to a pointer, since ch01 already says it."
+
+- unit: ch20
+  line: 84
+  quote: "a OpenAI lançou o o1, um modelo treinado pra escrever uma longa cadeia de"
+  category: repetition
+  severity: low
+  problem: "21-word passage identical to ch03 (style report). Same for line 79 ('o relatório técnico do GPT-4 se recusou a dizer o tamanho do modelo', ch01) and line 52 ('colhendo ganhos menores que o esperado', ch01 line 251)."
+  suggestion: "Keep the timeline but turn the already-told items into short callbacks: 'Em setembro de 2024 veio o o1 (@sec-ch03), e com ele a descoberta de que deixar o modelo pensar mais na hora da pergunta melhora a resposta.' Line 79: 'Em 2023 o GPT-4 já veio sem o tamanho do modelo (@sec-ch01); vazamentos falavam em ...'. Line 52: 'A reportagem da Reuters de novembro de 2024 (@sec-ch01) já dizia que os ganhos do pré-treino estavam encolhendo, ...'."
+
+- unit: ch20
+  line: 89
+  quote: "sem contar a pesquisa anterior"
+  category: repetition
+  severity: low
+  problem: "The DeepSeek-V3 'asterisk' (training cost covers only the final run) is told in ch19 line 232 and again here, both citing deepseekai2024v3."
+  suggestion: "Here: 'o treino final custou menos de 6 milhões de dólares em horas de placa de vídeo alugada (com o asterisco de @sec-ch19)'. Ch19 keeps the full explanation."
+
+- unit: ch20
+  line: 272
+  quote: "largue o Claude Code no meio da tarefa, abra o Codex na mesma pasta e continue sem explicar tudo de novo"
+  category: repetition
+  severity: low
+  problem: "The tagline appears in apB, apmemoria and here; ai-memory origin facts ('21 de maio de 2026', 'versão 2.6.6', 'a Anthropic pode mudar limite, preço ou modelo amanhã', 'o defeito que só aparecia de vez em quando') are also repeated nearly verbatim in apmemoria."
+  suggestion: "Keep the story in ch20 (reader meets it first) and make apmemoria the one that varies or points back (@sec-ch20) rather than retelling. Within ch20, one mention of the tagline is enough."
+
+- unit: ch18
+  line: 364
+  quote: "Em meados de 2026 começaram a aparecer histórias de empresas grandes gastando fortunas em tokens"
+  category: repetition
+  severity: low
+  problem: "The hand-off paragraph at the end of ch18 pre-tells ch19's opener (companies spending fortunes in tokens without results; 'treinada justamente a não decidir'), and ch19 line 26 then asks the same question again ('por que empresas gastam tanto com IA e veem tão pouco resultado?')."
+  suggestion: "Trim ch18's last paragraph to a teaser: 'Só que essa conclusão esconde uma armadilha, e ela não está no modelo: está nas empresas que compraram IA e não souberam decidir o que fazer com ela.' Leave the Uber story to ch19."
+
+- unit: ch18
+  line: 233
+  quote: "Sênior é alguém que já foi júnior em cada assunto que domina"
+  category: repetition
+  severity: low
+  problem: "The paragraph says 'O conselho prático eu já dei em @sec-ch08' and then restates the three-part advice and the senior line in nearly the same words (style report: ch08/ch18, 10 and 9 words)."
+  suggestion: "Keep the pointer and one new sentence: 'O conselho prático está em @sec-ch08, depois dos quatro dias caçando um defeito de vídeo num emulador: mergulhar no problema e insistir em entender o porquê do que funcionou. Sênior é quem volta a ser júnior toda vez que entra num assunto novo.'"
+
+- unit: ch19
+  line: 323
+  quote: "Junto as três pontas do capítulo numa lista curta."
+  category: repetition
+  severity: low
+  problem: "Same device and phrase as ch18 line 331 ('Juntando as três pontas'), two chapters in a row."
+  suggestion: "Resumo o capítulo numa lista curta."
+
+- unit: epilogo
+  line: 49
+  quote: "testa com 300 linhas de mentira, acha que está tudo certo e não imagina o que acontece com um milhão de linhas de verdade"
+  category: repetition
+  severity: low
+  problem: "Retells the ch18 database example (300 test rows vs a million) in detail, while ch18 line 198 / epilogo line 54 already reuse the 'sabe explicar por que a resposta certa é a certa' test. Two full recaps of ch18 in one short epilogue."
+  suggestion: "Shorten line 49 to a pointer: 'Vale o mesmo pro fundamento do seu próprio ofício (o programador sem base de @sec-ch18, que testa com 300 linhas e não imagina o milhão). Com agente na mão, quem tem base aprende mais rápido. Quem não tem só terceiriza a própria ignorância.'"
+
+# ---------------------------------------------------------------- clarity
+
+- unit: ch19
+  line: 242
+  quote: "No dia 9, uma conta popular resumiu a lista e a coisa explodiu."
+  category: clarity
+  severity: low
+  problem: "'No dia 9' of what month is left to be inferred. Also 'Escritos com ajuda do Claude Opus 5.5, de graça' can be read as the model being free."
+  suggestion: "No dia 9 de outubro, uma conta popular resumiu a lista e a coisa explodiu. / Escritos com ajuda do Claude Opus 5.5, distribuídos de graça, sem uma linha de código da Adobe."
+
+- unit: ch19
+  line: 118
+  quote: "Depois o PO roda pra outro programador"
+  category: clarity
+  severity: low
+  problem: "'roda pra outro programador' is unclear (rotates to the next programmer?). The figure caption says 'se revezam'."
+  suggestion: "Depois o PO passa pro próximo programador, e o QA e o líder técnico também. (Em vez de ficar parado, cada um circula entre os programadores.)"
+
+- unit: ch19
+  line: 313
+  quote: "reescreveu tudo de uma linguagem pra outra"
+  category: clarity
+  severity: low
+  problem: "ch16 names them (Zig to Rust, about 535 mil linhas). The vague wording here makes the 11 days and 165 mil dólares hard to weigh for a lay reader."
+  suggestion: "reescreveu tudo de Zig pra Rust em onze dias,"
+
+- unit: ch20
+  line: 199
+  quote: "um modelo menos denso"
+  category: clarity
+  severity: low
+  problem: "'Denso' (as opposed to mistura de especialistas) was not introduced; the lay reader will not know what makes a model 'dense'."
+  suggestion: "Por isso um agente pode rodar um modelo menor e ainda assim render mais."
+
+- unit: ch18
+  line: 340
+  quote: "invariante nova"
+  category: clarity
+  severity: low
+  problem: "'invariante' is jargon that appears nowhere else in the book and is not explained."
+  suggestion: "Cada erro virou regra nova, teste novo, skill nova. Nenhum virou troca de linguagem."
+
+- unit: ch20
+  line: 250
+  quote: "aquela que eu dizia em @sec-ch01 que ninguém sabe qual vai ser"
+  category: clarity
+  severity: low
+  problem: "Clumsy relative clause that needs two reads. Line 253 'Todos dá pra medir de fora.' is also awkward (agreement with 'todos')."
+  suggestion: "uma descoberta de arquitetura que substitua o transformer (em @sec-ch01 eu disse que ninguém sabe qual será). / Line 253: 'Dá pra medir todos de fora.'"
+
+- unit: epilogo
+  line: 70
+  quote: "curso e certificação da taxonomia do mês"
+  category: clarity
+  severity: low
+  problem: "'taxonomia do mês' is a callback to the ch14 aphorism but means nothing to a reader who skimmed ch14; it also leans on 'chamada de API'."
+  suggestion: "curso e certificação do nome da moda do mês (harness engineering, loop engineering e parentes). Quando a tecnologia vira commodity, o dinheiro migra pro nome novo: ..."
+
+- unit: posfacio
+  line: 86
+  quote: "porque o modelo virou commodity"
+  category: clarity
+  severity: low
+  problem: "'commodity' is explained only in ch14's header and aphorism; epilogo line 70 and this line use it bare."
+  suggestion: "porque o modelo virou commodity, uma mercadoria quase intercambiável."
+
+# ---------------------------------------------------------------- pacing
+
+- unit: ch20
+  line: 266
+  quote: "Foi daí que nasceu o ai-memory"
+  category: pacing
+  severity: low
+  problem: "After the thesis section ('O ponto deste capítulo, e do livro, é que isso já basta') and the 'o que mudaria a minha conclusão' list, the ai-memory section (lines 255-277) is a product intro with version number, contributor count and release date, delaying the emotional close ('A linha reta'). The appendix carries the details."
+  suggestion: "Cut lines 266-272 to about half: keep 'nasceu com o uso, ninguém desenhou a arquitetura no primeiro dia', the 'trocar o motor sem jogar fora a viagem' principle and the pointer to @sec-apmemoria; drop the version number and 70-contributors figure."

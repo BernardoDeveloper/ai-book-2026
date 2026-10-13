@@ -71,6 +71,33 @@ class TestGenBackMatter < ToolTest
     assert_includes fx.read("book/en/creditos.md"), "File:Sala.jpg. Public domain. Changes:"
   end
 
+  # Guards composites (several photos in one figure, `composite_of`): the EN
+  # page credits each photo by subject and translates plural modifications.
+  # 1.0.0-preview.2 shipped an empty credit line for such a figure.
+  def test_creditos_en_composite
+    fx.edit("assets/credits/ch03-foto.yml") do |y|
+      rec = YAML.safe_load(y)
+      rec.delete("source")
+      rec.delete("author")
+      rec["modifications"] = ["recortadas", "montadas lado a lado"]
+      rec["composite_of"] = [
+        { "subject" => "Ana", "author" => "Foto A", "source" => { "title" => "Ana 2025", "page_url" => "https://commons.wikimedia.org/wiki/File:A.jpg" },
+          "license" => { "short" => "CC BY 2.0", "url" => "https://creativecommons.org/licenses/by/2.0" } },
+        { "subject" => "Bia", "author" => "Foto B", "source" => { "title" => "Bia 2024", "page_url" => "https://commons.wikimedia.org/wiki/File:B.jpg" },
+          "license" => { "short" => "CC BY 4.0", "url" => "https://creativecommons.org/licenses/by/4.0" } },
+      ]
+      rec.to_yaml
+    end
+    gen("en")
+    line = fx.read("book/en/creditos.md")[/^- @fig-ch03-foto: .*$/]
+    expected = [%(- @fig-ch03-foto: Ana: "Ana 2025", Foto A. https://commons.wikimedia.org/wiki/File:A.jpg.),
+                "Licensed CC BY 2.0, https://creativecommons.org/licenses/by/2.0.",
+                %(Bia: "Bia 2024", Foto B. https://commons.wikimedia.org/wiki/File:B.jpg.),
+                "Licensed CC BY 4.0, https://creativecommons.org/licenses/by/4.0.",
+                "Changes: cropped, placed side by side."].join(" ")
+    assert_equal expected, line
+  end
+
   # Guards each figure being credited once, even when referenced twice.
   def test_figure_credited_once
     fx.edit("book/pt/ch03.md") { _1 + "\n![De novo.](assets/figures/ch02-diagrama.png){#fig-ch02-diagrama}\n" }

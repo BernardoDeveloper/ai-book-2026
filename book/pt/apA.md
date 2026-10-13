@@ -119,7 +119,7 @@ De 2023 a 2025, o tamanho dos modelos sumiu do marketing, o raciocínio teve o �
 | ago. 2024 | A Anthropic lança o [prompt caching]{.gls key=prompt-caching}, com corte de até 90% no custo de reler a conversa [@anthropic2024caching] | @sec-ch03 |
 | set. 2024 | A OpenAI lança o o1, treinado pra [raciocinar]{.gls key=raciocinio} por escrito antes de responder; na minha régua, o último grande salto [@openai2024o1] | @sec-ch03, @sec-ch20 |
 | 2024 | A OpenAI lança o próprio prompt caching, menos de dois meses depois da Anthropic [@openai2024caching] | @sec-ch20 |
-| nov. 2024 | A Reuters reporta ganhos menores que o esperado em simplesmente aumentar os modelos [@reuters2024limitations] | @sec-ch01, @sec-ch20 |
+| nov. 2024 | A Reuters reporta ganhos menores do que o esperado em simplesmente aumentar os modelos [@reuters2024limitations] | @sec-ch01, @sec-ch20 |
 | fim de 2024 | A Anthropic propõe o [MCP]{.gls}, a tomada padrão pra plugar ferramentas em agentes [@anthropic2024mcp] | @sec-ch03 |
 | fim de 2024 | Ilya Sutskever diz na NeurIPS que o pré-treino como a gente conhece vai acabar [@sutskever2024neurips] | @sec-ch20 |
 | fim de 2024 | A Anthropic publica o guia de como construir agentes com padrões simples [@anthropic2024agents] | @sec-ch20 |
@@ -225,11 +225,11 @@ O ano do livro. A história começa em fevereiro; as poucas entradas de janeiro 
 <!-- src: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro -->
 **1º de abril.** No dia seguinte ao vazamento, a assinatura que protegia os pedidos do Claude Code é dada como quebrada [@guthrie2026drm] (@sec-ch16).
 
-<!-- src: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic -->
-**7 de abril.** A Anthropic apresenta o Claude Mythos Preview e decide não liberá-lo ao público, por ser bom demais em achar falhas de segurança [@anthropic2026mythos] (@sec-ch14).
-
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
 **6 a 9 de abril.** Um agente traduz boa parte de vinte anos de blog; quando publico o texto de aniversário, no dia 9, metade do blog está bilíngue (@sec-interlude1).
+
+<!-- src: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic -->
+**7 de abril.** A Anthropic apresenta o Claude Mythos Preview e decide não liberá-lo ao público, por ser bom demais em achar falhas de segurança [@anthropic2026mythos] (@sec-ch14).
 
 <!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
 **8 de abril.** Comparo o Qwen3 TTS com a ElevenLabs numa noite de testes (@sec-ch13).
@@ -284,7 +284,7 @@ O ano do livro. A história começa em fevereiro; as poucas entradas de janeiro 
 **1º de junho.** A Anthropic entrega em sigilo o pedido de abertura de capital; a OpenAI faz o mesmo em 8 de junho [@anthropic2026s1; @techcrunch2026openaiipo] (@sec-ch14).
 
 <!-- src: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic -->
-**9 de junho.** A Anthropic lança o Claude Fable 5, o primeiro modelo público da "classe Mythos". No meu benchmark, empata com o Opus 4.8, 94 a 95 [@anthropic2026fable] (@sec-ch13, @sec-ch14).
+**9 de junho.** A Anthropic lança o Claude Fable 5, o primeiro modelo público da "classe Mythos". No meu benchmark, fica empatado com o Opus 4.8 dentro do ruído, 94 a 95 [@anthropic2026fable] (@sec-ch13, @sec-ch14).
 
 <!-- src: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic -->
 **12 de junho.** Uma ordem de controle de exportação do governo americano tira o Fable 5 do ar no mundo todo; ele volta em 1º de julho [@anthropic2026suspend; @cnbc2026lifted] (@sec-ch14).
@@ -376,14 +376,14 @@ O ano do livro. A história começa em fevereiro; as poucas entradas de janeiro 
 <!-- src: 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou -->
 **Setembro.** Defendo que as empresas coloquem mais código no ar, porque consertar ficou barato (@sec-ch19).
 
-<!-- src: 2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7 -->
-**Fim de setembro.** O Claude Opus 5.5, o GPT 6 sol e o Grok 4.7 entram no benchmark. Sete modelos empatam na nota máxima, e o Opus 5.5 chega lá por um quarto do custo do Opus 5 (@sec-ch11, @sec-ch20).
-
-<!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2 -->
-**Fim de setembro.** Uma repetição acidental mostra o GPT 5.5 tirando 100 numa rodada e 91 na outra, na mesma prova (@sec-ch11).
-
 <!-- src: 2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro -->
 **23 de setembro.** Primeira rodada do Genesys PI no meu benchmark (@sec-ch12).
+
+<!-- src: 2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7 -->
+**Fim de setembro.** O Claude Opus 5.5, o GPT-6 Sol e o Grok 4.7 entram no benchmark. Sete modelos empatam na nota máxima, e o Opus 5.5 chega lá por um quarto do custo do Opus 5 (@sec-ch11, @sec-ch20).
+
+<!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2 -->
+**Fim de setembro.** Uma repetição acidental mostra o GPT-5.5 tirando 100 numa rodada e 91 na outra, na mesma prova (@sec-ch11).
 
 <!-- src: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu -->
 **Fim de setembro.** Começam a sair os programas de código aberto feitos com IA pra substituir os da Adobe [@pearl2026artcraft] (@sec-ch19).

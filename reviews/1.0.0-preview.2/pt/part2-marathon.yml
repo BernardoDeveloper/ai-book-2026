@@ -1,0 +1,263 @@
+# Part II (marathon): ch05-ch10 + interlude1. Read-only copyedit findings.
+# Ranked: errors, consistency, repetition, clarity, pacing; high before low inside each.
+
+# ---------- 1. ERRORS ----------
+- unit: ch09
+  line: 293
+  quote: "Mais de mil itens"
+  category: error
+  severity: high
+  problem: "609 contribuições aceitas + 375 problemas resolvidos = 984, que não passa de mil. A frase seguinte ('quase todos tratados por essas skills') herda o número errado."
+  suggestion: "Trocar por 'Quase mil itens' (ou conferir os números no repositório e corrigir o total). Se o total real passar de mil, corrigir 609 ou 375."
+
+- unit: ch07
+  line: 257
+  quote: "Nenhuma linha de código estava escrita errado"
+  category: error
+  severity: medium
+  problem: "Concordância: 'escrita' pede 'errada'."
+  suggestion: "Nenhuma linha de código estava escrita errada;"
+
+- unit: ch05
+  line: 210
+  quote: "O certo teriam sido as mesmas 30 horas"
+  category: error
+  severity: low
+  problem: "Sujeito 'o certo' no singular com verbo no plural; soa como erro de concordância."
+  suggestion: "O certo teria sido as mesmas 30 horas espalhadas por pelo menos cinco dias. (Ou 'O certo seriam as mesmas 30 horas', se preferir concordar com o predicativo.)"
+
+- unit: ch06
+  line: 115
+  quote: "o como dele é melhor do que eu faria sozinho"
+  category: error
+  severity: low
+  problem: "Regra do 'do que' do WRITER.md (infinitivo dos dois lados); aqui o verbo está conjugado e o termo comparado é implícito."
+  suggestion: "...e muitas vezes o como dele é melhor do que o meu."
+
+- unit: ch08
+  line: 91
+  quote: "do que teria ido sozinho"
+  category: error
+  severity: low
+  problem: "'do que' seguido de verbo composto conjugado (regra do WRITER.md). O pretérito composto também pesa na frase."
+  suggestion: "...e executou tão rápido que eu fui muito mais longe na direção errada do que iria sozinho."
+
+- unit: ch09
+  line: 269
+  quote: "mais ferramentas nem sempre levam a resultados melhores"
+  category: error
+  severity: low
+  problem: "A frase termina com espaço sobrando depois da citação ([@anthropic2025writingtools]. ), resíduo de edição."
+  suggestion: "Apagar o espaço final da linha."
+
+- unit: ch06
+  line: 181
+  quote: "Mesmo assim, se fosse uma equipe humana, eu teria posto no ar num estado pior"
+  category: error
+  severity: medium
+  problem: "Frase quebrada no sentido: 'Mesmo assim' não se liga ao parágrafo anterior e a condicional não diz quem compara com quem. Leitor precisa de uma segunda leitura."
+  suggestion: "Mesmo assim, o estado em que pus no ar ficou melhor do que muita equipe humana entregaria com a mesma pressa. (Confirmar a intenção com o autor; o que importa é deixar claro que a comparação é com uma equipe humana.)"
+
+# ---------- 2. CONSISTENCY ----------
+- unit: ch07
+  line: 285
+  quote: "692 commits e mais de 4 mil testes"
+  category: consistency
+  severity: high
+  problem: "ch07 diz 692 commits em quatro projetos até março; ch10 (l.165) diz 653 commits em 8 projetos até 5 de março. O número maior vem de menos projetos e de data anterior. O leitor que faz a conta tropeça."
+  suggestion: "Conferir no histórico dos repositórios. Se os recortes são diferentes (datas ou conjunto de projetos), dizer qual em meia frase em cada capítulo; se não, corrigir o número errado."
+
+- unit: ch09
+  line: 19
+  quote: "num ritmo de 16 horas por dia durante dois meses e meio"
+  category: consistency
+  severity: high
+  problem: "16 h/dia por 2,5 meses dá bem mais de mil horas; o mesmo parágrafo (e ch10 l.21) diz 'mais de 500 horas'. ch10 l.118 repete 'dezesseis horas por dia, todo dia'."
+  suggestion: "ch09: 'num ritmo que chegava a 16 horas por dia'. ch10 l.118: 'dias de dezesseis horas de vibe coding, semana após semana, sempre produzem slop'."
+
+- unit: ch06
+  line: 57
+  quote: "Só 37% eram funcionalidade nova"
+  category: consistency
+  severity: medium
+  problem: "Os percentuais da figura somam 108% (37+16+16+11+10+10+8). Com 274 commits, as fatias dão ~294. O texto diz 'separei pelo tipo de trabalho que cada um fazia', o que sugere categorias exclusivas."
+  suggestion: "Conferir o gráfico (ch06-commits.png e o fig-alt, l.59). Se os commits podem ter mais de uma categoria, dizer isso; senão, recalcular para somar 100%."
+
+- unit: ch06
+  line: 294
+  quote: "Eu tenho 30 anos de experiência com software."
+  category: consistency
+  severity: medium
+  problem: "ch08 l.223 coloca 'mais de 25 anos de experiência' (entre aspas, voz de um crítico). Número diferente para a mesma pessoa no mesmo livro."
+  suggestion: "Unificar. Se o certo for 30, ch08: 'tem uns 30 anos de experiência'. Conferir o número com o autor (e com preface/ch01)."
+
+- unit: ch08
+  line: 119
+  quote: "substituído por umas 50 linhas em volta de um modelo pronto"
+  category: consistency
+  severity: medium
+  problem: "l.103 diz que o detector novo tem 262 linhas (maioria é recorte do balão). 50 linhas não bate com 262."
+  suggestion: "Dizer 'substituído por um detector de umas 260 linhas, quase todas em volta de um modelo pronto' ou especificar que 50 é só o núcleo (a chamada do modelo)."
+
+- unit: ch08
+  line: 119
+  quote: "A diferença entre semanas de trabalho e um fim de semana era uma busca no Hugging Face"
+  category: consistency
+  severity: low
+  problem: "O texto antes fala em 'uns cinco dias' perdidos e 'uns dois dias' se tivesse pesquisado; 'semanas' só vale para o mundo pré-IA (l.131)."
+  suggestion: "A diferença entre cinco dias de trabalho e dois era uma busca no Hugging Face, o site onde a comunidade publica modelos treinados."
+
+- unit: ch10
+  line: 132
+  quote: "Minha estimativa, em maio de 2026, ficou em umas cinco vezes."
+  category: consistency
+  severity: medium
+  problem: "ch06 (l.291) compara 30 semanas (10 a 15 com equipe sênior) com 8 dias, algo entre 8 e 25 vezes; ch05 e ch10 l.137 falam em 6 a 7 vezes (200 h para 30 h). 'Cinco vezes, talvez dez' parece contradizer os dois."
+  suggestion: "Acrescentar o escopo: 'Minha estimativa, em maio de 2026, na média da maratona, ficou em umas cinco vezes; nos melhores casos, como o FrankMD e o Chronicles, foi mais.' Ou suavizar a comparação de ch06 l.291."
+
+- unit: ch10
+  line: 172
+  quote: "Um editor de Markdown completo em uns cinco."
+  category: consistency
+  severity: low
+  problem: "ch05 conta o FrankMD em três dias (30 horas). 'Uns cinco' (dias) destoa."
+  suggestion: "Um editor de Markdown completo em uns três dias."
+
+- unit: ch09
+  line: 21
+  quote: "ele me dizia isso antes, em vez de inventar. Os dois entregavam."
+  category: consistency
+  severity: medium
+  problem: "Afirmação absoluta que choca com ch08 (Claude Code 'entrou em círculo', Codex repetindo a mesma 'solução' sem perceber) e com a alucinação de ch04."
+  suggestion: "...quando o modelo de fato não dava conta de alguma coisa, quase sempre ele me dizia isso antes, em vez de inventar. Os dois entregavam."
+
+- unit: ch08
+  line: 283
+  quote: "um processador cinco vezes mais rápido que o original"
+  category: consistency
+  severity: low
+  problem: "l.321 e l.335 falam em 'seis vezes' o tempo do quadro. Cinco vs seis para o mesmo estouro."
+  suggestion: "Unificar em 'uns cinco ou seis' na primeira menção, ou usar o mesmo número nas três."
+
+- unit: ch09
+  line: 118
+  quote: "Eu chamo esse jeito de trabalhar de Agile Vibe Coding"
+  category: consistency
+  severity: low
+  problem: "ch10 l.127 chama a mesma coisa de 'vibe coding ágil' (e 'brincadeira'). Dois nomes para o mesmo termo."
+  suggestion: "Usar um só. Sugestão: ch09 'Agile Vibe Coding (vibe coding ágil)' na primeira vez e ch10 repetir 'Agile Vibe Coding'."
+
+- unit: ch10
+  line: 61
+  quote: "que eu mesmo não uso e por isso deve estar cheio de bug"
+  category: consistency
+  severity: low
+  problem: "ch07 l.137 conta que ele passou a usar o Frank Sherlock com as próprias fotos (rostos, versão 0.7). Pode ter parado de usar depois, mas o leitor não sabe."
+  suggestion: "...que eu usei por umas semanas e larguei, e por isso deve estar cheio de bug."
+
+- unit: ch10
+  line: 19
+  quote: "Eu tinha começado a acelerar em fevereiro"
+  category: consistency
+  severity: low
+  problem: "ch05 e o próprio ch10 (l.165) contam a partir de 27 de janeiro."
+  suggestion: "Eu tinha começado a acelerar no fim de janeiro e só fui parar perto de maio,"
+
+- unit: ch06
+  line: 145
+  quote: "uma vez e meia mais, nas duas aplicações principais"
+  category: consistency
+  severity: low
+  problem: "Na l.53: ~16 mil linhas de código e ~36 mil contando testes, ou seja, ~20 mil de teste, 1,25 vez o código. 'Uma vez e meia mais' é ambíguo (1,5x ou 2,5x?)."
+  suggestion: "...com mais linhas de teste do que de código, perto de 1,5 vez a quantidade, nas duas aplicações principais. (Conferir com os números reais por aplicação.)"
+
+# ---------- 3. REPETITION ----------
+- unit: ch06
+  line: 35
+  quote: "Dá pra uma pessoa sozinha, com um agente, botar no ar um produto de verdade, com gente de verdade esperando por ele toda segunda-feira às sete da manhã?"
+  category: repetition
+  severity: low
+  problem: "Repete quase palavra por palavra a pergunta que fecha ch05 (l.264), apenas duas páginas antes na leitura (o style report acusa 23 palavras iguais)."
+  suggestion: "Cortar a repetição e partir da resposta: 'O capítulo anterior terminou com uma pergunta: dá pra uma pessoa sozinha botar no ar um produto de verdade? Dá. Só que o jeito como dá é bem diferente do que aparece nos vídeos.'"
+
+- unit: ch10
+  line: 286
+  quote: "Eu tinha uma dívida com ele havia quase esse tempo todo: centenas de textos que só existiam em português"
+  category: repetition
+  severity: low
+  problem: "O gancho final de ch10 já conta a dívida de tradução, a prometida tradução e a segunda-feira de abril; o interlúdio seguinte (l.13-27) reconta tudo, até com 'dívida' de novo. Quem lê em sequência ouve duas vezes."
+  suggestion: "Deixar o gancho de ch10 só com a promessa: 'Em abril de 2026, enquanto a maratona ainda corria, meu blog fez vinte anos. E eu tinha uma dívida com ele que cobrei numa segunda-feira.' O resto fica no interlúdio."
+
+- unit: ch09
+  line: 202
+  quote: "foram 274 [commits]{.gls key=commit} em 8 dias"
+  category: repetition
+  severity: low
+  problem: "Reconta os números de ch06 (274 commits, 8 dias, CI pegando bug mais de 50 vezes) quase igual."
+  suggestion: "Encurtar: 'No projeto da newsletter (@sec-ch06), a verificação automática que roda a cada mudança, a CI, pegou bug de verdade mais de 50 vezes.'"
+
+# ---------- 4. CLARITY ----------
+- unit: ch08
+  line: 350
+  quote: "Volto então à pergunta que abriu o capítulo"
+  category: clarity
+  severity: medium
+  problem: "O capítulo não abre com essa pergunta (abre com o detector de mangá errando). A pergunta 'o que acontece quando a IA não dá conta?' só aparece aqui. (O ch09 l.21 retoma corretamente a pergunta do fim, 'o que você pediu pra ele, exatamente?'.)"
+  suggestion: "Volto então ao tema do capítulo: o que acontece quando a IA não dá conta?"
+
+- unit: ch08
+  line: 136
+  quote: "o capitão fala da Nami"
+  category: clarity
+  severity: low
+  problem: "Quem não leu One Piece não sabe quem é o capitão nem a Nami, e a piada do gênero não funciona."
+  suggestion: "...e aí, num mangá de piratas, o capitão fala de uma personagem, a Nami, e o balão traduzido sai 'ele'."
+
+- unit: ch08
+  line: 138
+  quote: "Ela volta no fim do capítulo."
+  category: clarity
+  severity: low
+  problem: "A seção final 'Traduzir no escuro' é sobre código, não sobre tradução de texto sem contexto; a ideia só volta como eco do título."
+  suggestion: "Cortar a promessa ('Guarde essa ideia de traduzir sem enxergar o resto.') ou trocar por 'Guarde essa ideia: traduzir sem enxergar o contexto é uma falha que reaparece.'"
+
+- unit: ch05
+  line: 75
+  quote: "dois ou três blocos genéricos"
+  category: clarity
+  severity: low
+  problem: "Para quem não programa, 'blocos genéricos' e 'convenção do Rails' ficam vagos; ch09 l.234 reusa a expressão."
+  suggestion: "...enfiou toda a lógica de arquivos e imagens em dois ou três arquivos genéricos, em vez de separar cada assunto no seu lugar, como o Rails manda,"
+
+- unit: ch07
+  line: 50
+  quote: "faltava uma biblioteca de sistema na hora de montar o contêiner"
+  category: clarity
+  severity: low
+  problem: "'Contêiner' e 'framework' (mesma linha) são jargão sem explicação para o leigo."
+  suggestion: "...faltava uma peça do sistema na hora de empacotar o programa pra rodar no servidor. Depois, uma regra de segurança do navegador entrou em conflito com o jeito como o programa carrega os scripts da página."
+
+- unit: ch07
+  line: 285
+  quote: "Foram quatro projetos em produção num mês"
+  category: clarity
+  severity: low
+  problem: "O capítulo cobre FrankMega, Sherlock, newsletter e o sistema da namorada (e cita o FrankMD): o leitor não sabe quais são os quatro. ch06 l.320 tem a mesma contagem."
+  suggestion: "Foram quatro projetos públicos em produção num mês (sem contar o privado da seção anterior), 692 commits e mais de 4 mil testes."
+
+- unit: ch09
+  line: 166
+  quote: "naquele 15 de abril"
+  category: clarity
+  severity: low
+  problem: "Nenhuma data anterior no capítulo ancora 'aquele 15 de abril'; só há 'abril de 2026' genérico."
+  suggestion: "Uma nota de época, porque ferramenta envelhece rápido: em meados de abril de 2026, com os modelos empatados, eu preferia..."
+
+# ---------- 5. PACING ----------
+- unit: ch06
+  line: 289
+  quote: "tentei traduzir em"
+  category: pacing
+  severity: low
+  problem: "A subseção 'O tamanho da conta' (l.289-296) acrescenta mais uma estimativa de produtividade depois de várias; o capítulo é o mais longo da parte e o argumento já fechou em 'O espelho'. Os números ainda divergem de ch10 (ver item de consistência)."
+  suggestion: "Cortar o parágrafo das histórias de usuário e deixar o asterisco da l.294 (30 anos de experiência, projeto só meu), ou condensar tudo em 3-4 frases."

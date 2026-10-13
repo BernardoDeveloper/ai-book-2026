@@ -10,7 +10,7 @@ meta:
   subtitle_en: "A year putting artificial intelligence to the test, without fear and without hype"
   author: "Fabio Akita"
   # Names owned by the author (copyright page, EPUB rights, HTML footer).
-  owned_names: ["akitaonrails", "Akitando", "The M.Akita Chronicles", "ai-memory", "ai-jail", "ai-usagebar", "ghpending", "Frank (FrankMD, Frank Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, FrankMega, Frank Karaoke, Frank GO, Frank Manga+ e demais projetos da série)"]
+  owned_names: ["akitaonrails", "Akitando", "The M.Akita Chronicles", "ai-memory", "ai-jail", "ai-usagebar", "ghpending", "AI Lair", "Frank (FrankMD, Frank Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, FrankMega, Frank Karaoke, Frank GO, Frank Manga+ e demais projetos da série)"]
   open_source_licenses: {ai-jail: "GPL-3.0", ai-memory: "MIT", ai-usagebar: "MIT", ghpending: "MIT"}
   cutoff: "2026-10-13"
   source_from: "2026-02-01"   # earliest post date the book may use (author, 2026-10-13)
@@ -534,6 +534,7 @@ back:
     source_file: book/back/references.yaml
 
 excluded:
+  - {post: 10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, reason: "about this book itself (launch and build process); not added for now (author, 2026-10-13)"}
   # Book cut-off moved to February 2026 (author, 2026-10-13): January posts are left out (meta.source_from).
   - {post: 01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, reason: "before the February 2026 cut-off"}
   - {post: 01/10/ai-agents-garantindo-a-protecao-do-seu-sistema, reason: "before the February 2026 cut-off"}

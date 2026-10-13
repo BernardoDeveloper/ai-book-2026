@@ -79,7 +79,7 @@ What I changed most was the screen. Almost every Go program is built by strong p
 KataGo has an advantage that mattered a great deal in my case. Beyond the chance of winning, it estimates the score and works out, point by point, who owns each part of the board. It always knew how to do that math; someone just had to put the result on screen in a way a beginner understands.
 
 <!-- src: 2026/07/06/frank-go-brincando-de-go-com-ia -->
-So Frank GO paints the board. Each player's influence shows up as a soft gradient, settled territory in solid color, and groups that are already dead go dark. A live score shows how many points you're behind, already counting the compensation White gets for playing second.
+So Frank GO paints the board. Each player's influence shows up as a soft gradient, settled territory in solid color, and groups that are already dead go dark. A live score shows how many points you're behind, already counting the komi, the handicap points White gets for playing second.
 
 "You're 12 points behind and the lower left corner just died" teaches more than any percentage.
 

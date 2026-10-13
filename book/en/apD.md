@@ -37,7 +37,7 @@ refs_projects:
   - "ai-memory/README.md"
   - "ai-usagebar/README.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apD.md, sha256: "90f9b755470d16a09a792399e5e92aee31d911712bff676c5c880d68bd52ab58"}
+translated_from: {file: book/pt/apD.md, sha256: "6329e99be475dbec8a178c218790388209c447626454701e5253ae6b937e68dc"}
 ---
 
 # The Year's Projects {#sec-apD}
@@ -46,7 +46,7 @@ translated_from: {file: book/pt/apD.md, sha256: "90f9b755470d16a09a792399e5e92ae
 I use GitHub as an exercise notebook. Almost nothing in there is a product, and in 2026 that was truer than ever: the marathon that ends in @sec-ch10 alone produced 24 repositories, and more came after it. This appendix is the inventory, for anyone who wants to find a project mentioned in passing or see the whole year at once.
 
 <!-- src: original -->
-Each entry says in a line or two what the project is, what state it was in the last time I wrote about it and which chapter it appears in. The 1-to-10 grades are the ones from the May report card (@sec-ch10), which measured one thing only: how stable and usable the project was on that day. The projects are in order of birth.
+Each entry says in a line or two what the project is, what state it was in the last time I wrote about it and which chapter it appears in. The 1-to-10 grades are the ones from the May report card (@sec-ch10), which measured one thing only: how stable and usable the project was on that day. The projects are roughly in order of birth.
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
 A warning before you go cloning everything. Most of these projects are proofs of concept: they work for me, on my computer, my way. Published code is code you can read, study and improve, and that doesn't make it a dependency for your company tomorrow morning.
@@ -63,7 +63,7 @@ The projects I named Frank something are a tribute to Frank Rosenblatt, the crea
 **PACT.** The compiler prototype for an "ideal for AI" language, designed by Claude itself at my request in February. I published it without even testing it, as a record of a hypothesis I myself called a hunch [@akita2026pact]. Appears in @sec-ch18.
 
 <!-- src: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles -->
-**The M.Akita Chronicles.** A weekly newsletter with an AI-narrated podcast, in which the robot M.Arvin comments on the news with me. Programmed between February 10 and 15, it ran on its own for the first time on the 16th. It got an 8 in May, the highest grade on the report card along with ai-jail, and it's the project I touch most often, because it has readers waiting every week. Appears in @sec-ch06, @sec-ch07, @sec-ch10 and @sec-ch13.
+**The M.Akita Chronicles.** A weekly newsletter with an AI-narrated podcast, in which the robot M.Arvin comments on the news with me. Programmed between February 10 and 15, it ran on its own for the first time on the 16th. It got an 8 in May, tied with ai-jail for the highest grade on the report card, and it's the project I touch most often, because it has readers waiting every week. Appears in @sec-ch06, @sec-ch07, @sec-ch10 and @sec-ch13.
 
 <!-- src: 2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server -->
 **FrankMega.** A homemade clone of Mega, the large-file sharing service, built in one day to send a file to a friend from my home server [@akita2026frankmega]. A 5 in May: personal use. Appears in @sec-ch07 and @sec-ch10.
@@ -75,7 +75,7 @@ The projects I named Frank something are a tribute to Frank Rosenblatt, the crea
 **A private project.** Built around the turn of February into March for a user who wasn't me, my girlfriend. No details here. Appears in @sec-ch04 and @sec-ch07.
 
 <!-- src: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik -->
-**Frank Yomik.** A tool for reading manga in Japanese: it finds the speech bubbles, reads the text and adds the reading of the kanji or the translation. It started on February 24 [@akita2026frankyomik]. It was my first real failure: the hand-built detector sank under filters, until I swapped it all out, on March 4, for a model already trained to find bubbles. A 4 in May, and the only one on the list I intended to pick back up.
+**Frank Yomik.** A tool for reading manga in Japanese: it finds the speech bubbles, reads the text and adds the reading of the kanji or the translation. It started on February 24 [@akita2026frankyomik]. It was my first real failure: the hand-built detector kept sinking under piles of special-case filters, until I swapped it all out, on March 4, for a model already trained to find bubbles. A 4 in May, and the only one on the list I intended to pick back up.
 
 <!-- src: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia -->
 In July it got a relative: a version that puts the little reading captions over the hard kanji right on the page I already bought, running on my own computer. Appears in @sec-ch07, @sec-ch08 and @sec-ch10.
@@ -86,19 +86,19 @@ In July it got a relative: a version that puts the little reading captions over 
 **easy-ffmpeg.** A small Crystal program that converts the videos I record, built in about three hours [@akita2026easyffmpeg]. A 7 in May, because I actually use it. Appears in @sec-ch10.
 
 <!-- src: 2026/03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle -->
-**easy-subtitle.** The Crystal rewrite of a Python subtitle synchronizer: about 10 thousand lines became 2,500, with 76 tests, in under 40 minutes [@akita2026easysubtitle]. A 1 in May: I started it, lost interest, never really tested it. Appears in @sec-ch10.
+**easy-subtitle.** The Crystal rewrite of a Python subtitle synchronizer: about 10,000 lines became 2,500, with 76 tests, in under 40 minutes [@akita2026easysubtitle]. A 1 in May: I started it, lost interest, never really tested it. Appears in @sec-ch10.
 
 <!-- src: 2026/03/09/atacando-fraudes-via-email-frank-fbi -->
 **Frank FBI.** An email scam hunter: you forward the suspicious message and get back a risk report assembled from the votes of three models from different companies [@akita2026frankfbi]. A 3 in May, a concept I wanted to test without having a personal use for it. Appears in @sec-ch10 and @sec-ch17.
 
 <!-- src: 2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw -->
-**FrankClaw.** The Rust rewrite of OpenClaw, someone else's project that hooks messaging apps up to AI models. Nearly 57 thousand lines and 178 commits between March 10 and 16 [@akita2026frankclaw]. It came out as an alpha, tested only on simple conversations, and got a 1 in May: it stopped at 0.1 and I never used it. Appears in @sec-ch10 and @sec-ch16.
+**FrankClaw.** The Rust rewrite of OpenClaw, someone else's project that hooks messaging apps up to AI models. Nearly 57,000 lines and 178 commits between March 10 and 16 [@akita2026frankclaw]. It came out as an alpha, tested only on simple conversations, and got a 1 in May: it stopped at 0.1 and I never used it. Appears in @sec-ch10 and @sec-ch16.
 
 <!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
 **Frank Investigator.** A tool for questioning the news, in which three models check each claim and the primary source has veto power [@akita2026frankinvestigator]. About nine days of work and 129 commits in March. It was up and working, and I stopped there: a 3 in May. Appears in @sec-ch04 and @sec-ch10.
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-**ai-jail.** It started as a script of about 170 lines wrapped around bubblewrap and became a real tool in March [@akita2026aijail; @aijail2026site]. It isolates the coding agent so it only sees the project folder. An 8 in May, the highest along with the Chronicles, and the project that drew the most outside contributors.
+**ai-jail.** It started in January as a script of about 170 lines wrapped around bubblewrap and became a real tool in March [@akita2026aijail; @aijail2026site]. It isolates the coding agent so it only sees the project folder. An 8 in May, tied with the Chronicles for the highest and, in May, the project that drew the most outside contributors.
 
 <!-- src: ref:ai-jail/README.md -->
 In October 2026 it was at version 2.8.1, after a Docker escape fixed the same day, in July, and two security audits on September 30. Appears in @sec-ch10, @sec-ch15 and @sec-apB.
@@ -122,13 +122,13 @@ In October 2026 it was at version 2.8.1, after a Docker escape fixed the same da
 
 **Graphics experiment.** Two days to see if my desktop environment would run on an older Linux graphics system [@akita2026nwomarchy]. The concept worked, a 4, and it stopped there. Appears in @sec-ch10.
 
-**Private notebooks.** Six repositories that round out the 24, where Claude Code keeps the notes for managing my machines. They stay private, and it was one of them that logged the cleanup in @sec-ch15.
+**Private notebooks.** Six repositories that round out the 24, where Claude Code keeps the notes for managing my machines. They stay private, and it was one of them that logged the NAS cleanup told in @sec-ch15.
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-**ai-memory.** Long-term memory for coding agents, which lets one agent pick up another's work without a fresh explanation [@akita2026aimemory; @aimemory2026site]. First commit on May 21, after I gave up on a third-party tool within a week. Version 2.0 came out in September, with some seventy people who had already contributed code.
+**ai-memory.** Long-term memory for coding agents, which lets one agent pick up another's work without a fresh explanation [@akita2026aimemory; @aimemory2026site]. First commit on May 21; the full story is in @sec-ch20.
 
 <!-- src: ref:ai-memory/README.md -->
-On October 13, 2026 it was at version 2.6.6. Appears in @sec-ch02 and @sec-ch20, unnamed in @sec-ch16 and @sec-ch19, and got an appendix of its own, @sec-apmemoria.
+On October 13, 2026 it was at version 2.6.6. It appears in @sec-ch02, @sec-ch16 and @sec-ch20, unnamed in @sec-ch19, and has an appendix of its own, @sec-apmemoria.
 
 <!-- src: 2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar -->
 **ai-usagebar.** A gauge for AI plan usage, in the system bar or in the terminal, so I know when to switch agents before hitting the limit [@akita2026aiusagebar]. Born in May.
@@ -165,10 +165,10 @@ At the end of September I called the pause: 349 commits in almost four months, f
 **My skills.** The reusable instructions I wrote for the agents over the year, from auditing contributions to publishing releases, published with the warning that they aren't meant for general use [@akita2026myskills]. Appear in @sec-ch09.
 
 <!-- src: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas -->
-**Game Gear converter.** Converting Game Gear games to the Master System, started the same day nes-to-sms stopped, in a private repository. This time the problem had a reference: in one day, the research and the catalog of some 186 conversions done by hand were ready. By the end of September, no game had passed the final review. Appears in @sec-ch20.
+**Game Gear converter.** Converting Game Gear games to the Master System, started the same day nes-to-sms stopped, in a private repository. This time the problem had a reference: in one day, the research and the catalog of some 186 conversions done by hand were ready. By the end of September, no Game Gear conversion had passed the final review. Appears in @sec-ch20.
 
 <!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
-**Classifier benchmark.** A battery of tests for small decision models, the same family as Jev, run in October with local and cloud models. The October 12 result is in @sec-ch13.
+**Classifier benchmark.** A battery of tests for small decision models, the same family as Jev (the classifier launched with great fanfare in September, @sec-ch14), run in October with local and cloud models. The October 12 result is in @sec-ch13.
 
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
 **Language benchmark.** The test that answered, in October, February's question about the best language for AI: the same hard task, in several languages, and the language changed nothing; what changed the result was the presence of tests [@akita2026vibebench]. Appears in @sec-ch18.
@@ -176,4 +176,4 @@ At the end of September I called the pause: 349 commits in almost four months, f
 ## What the Inventory Shows
 
 <!-- src: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso -->
-Looking at the whole list, the pattern from @sec-ch10 holds all the way to October. The projects that stayed alive are the ones with users: ai-jail, ai-memory, the newsletter, the blog. The rest did what I wanted from it, which was to teach me something, and stayed in the notebook.
+Looking at the whole list, the pattern from @sec-ch10 holds all the way to October. The projects that stayed alive are the ones with users: ai-jail, ai-memory, the newsletter, the blog and, thanks to the others, FrankMD. The rest did what I wanted from them, which was to teach me something, and stayed in the notebook.

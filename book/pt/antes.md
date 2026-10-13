@@ -9,14 +9,14 @@ blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 # Antes de começar: o que este livro não explica {#sec-antes .unnumbered}
 
 <!-- src: original -->
-Este livro dá intuições sobre como essas máquinas funcionam, e para por aí. O @sec-ch01 explica o que é um modelo de linguagem, por que ele trabalha com pedaços de palavras, a diferença entre treinar um modelo e usar, e por que ele não aprende nada com você depois de pronto. São imagens do dia a dia, sem conta nenhuma, e bastam pra acompanhar a história.
+Este livro dá intuições sobre como essas máquinas funcionam, e para por aí. O @sec-ch01 explica o que é um modelo de linguagem, por que ele trabalha com pedaços de palavras, a diferença entre treinar um modelo e usá-lo, e por que ele não aprende nada com você depois de pronto. São imagens do dia a dia, sem conta nenhuma, e bastam pra acompanhar a história.
 
 O que eu deixei de fora de propósito é a mecânica por dentro:
 
 - como uma [rede neural]{.gls key=rede-neural} aprende, com [descida do gradiente]{.gls key=descida-do-gradiente} e [retropropagação]{.gls key=retropropagacao};
 - o que são [embeddings]{.gls key=embedding}, as listas de números que representam o sentido de um texto;
 - como um [transformer]{.gls}, a arquitetura por trás de todos esses modelos, e o seu mecanismo de [atenção]{.gls key=atencao} funcionam;
-- como o [pré-treino]{.gls key=pre-treino} e o [RLHF]{.gls} transformam um amontoado de texto num assistente educado.
+- como o [pré-treino]{.gls key=pre-treino} e o [RLHF]{.gls} (aprendizado por reforço com feedback humano) transformam um amontoado de texto num assistente educado.
 
 <!-- src: original -->
 Cada um desses assuntos pede um livro inteiro, e esses livros existem, escritos por gente que pesquisa ou constrói essas coisas. Um livro de narrativa que tentasse fazer o mesmo viraria apostila na página dez.

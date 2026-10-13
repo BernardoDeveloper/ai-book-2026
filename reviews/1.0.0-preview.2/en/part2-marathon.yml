@@ -1,0 +1,280 @@
+# EN reader pass, part 2 (ch05-ch10, interlude1). Read-only review.
+- unit: ch07
+  line: 20
+  quote: "the newsletter had taken another 56 batches of changes"
+  category: consistency
+  severity: medium
+  problem: "'batches of changes' is used for what the next sentence and line 152 call commits ('125 commits', 'The 56 commits of the following ten days'). The reader has to guess the two are the same."
+  suggestion: "the newsletter had taken another 56 commits."
+
+- unit: ch08
+  line: 120
+  quote: "with more than 20 fine-tuning commits"
+  category: error
+  severity: medium
+  problem: "'fine-tuning' is the glossary term for further training a model (used correctly at line 108 for the model that was NOT fine-tuned). Here it means tweaking filter thresholds, so the reader is misled."
+  suggestion: "with more than 20 commits tweaking thresholds"
+
+- unit: ch08
+  line: 224
+  quote: "he has more than 25 years of experience"
+  category: consistency
+  severity: medium
+  problem: "Ch06 line 295 says 'I have 30 years of experience with software'. A reader notices two different figures for the same person (PT has the same 25, so this may be a quoted objection, but it reads as a contradiction)."
+  suggestion: "Align to one figure (author question: 25 or 30?). If it is meant as a critic's quote, 'he has decades of experience' avoids the clash."
+
+- unit: ch08
+  line: 284
+  quote: "pretend to have a processor five times faster than the original"
+  category: consistency
+  severity: low
+  problem: "Here the needed speed-up is 'five times'; lines 322 and 336 say the translation used 'about six times' the frame budget / a 'six-times overrun'. Different measures, but unexplained, so it reads like a slip."
+  suggestion: "Add a clause, e.g. 'five times faster than the original (the translated code, as it turned out, needed about six times the time the console has per frame)', or align to one number if the source allows (author question)."
+
+- unit: ch07
+  line: 106
+  quote: "got one more image right out of a group of 16"
+  category: clarity
+  severity: low
+  problem: "'a group of 16' is opaque to a lay reader: 16 what? The sentence after it ('turns a six-hour job into a week-long job') also sits next to the 'almost a month' estimate for half a million files at line 109, so the two time figures look inconsistent. Both come from the source post but were different scopes."
+  suggestion: "got one more image right out of 16 labeled test images and took 29 times longer. For a job of hundreds of thousands of files, that turns hours into days or weeks."
+
+- unit: ch07
+  line: 84
+  quote: "It identifies the type of each file to decide what to accept"
+  category: clarity
+  severity: low
+  problem: "'It' has no clear antecedent (previous sentence is 'They couldn't', about users)."
+  suggestion: "The program identifies the type of each file to decide what to accept, and those formats weren't on the initial list."
+
+- unit: ch10
+  line: 182
+  quote: "A service that charges R$ 500 a month"
+  category: clarity
+  severity: medium
+  problem: "Untranslated currency with no conversion; an English reader does not know the scale. The interlude (line 61) does convert 'R$ 280, close to $50'."
+  suggestion: "A service that charges R$ 500 a month (around $90)"
+
+- unit: ch10
+  line: 112
+  quote: "Of the languages I tested, the models moved most freely with Ruby on Rails"
+  category: clarity
+  severity: low
+  problem: "Rails, Flutter and Tauri are frameworks/tools, not languages; the sentence mixes them with Crystal, which is a language."
+  suggestion: "Of the languages and tools I tested, the models moved most freely with Ruby on Rails..."
+
+- unit: ch10
+  line: 152
+  quote: "AI helped me finish those tests in a half-baked way, faster."
+  category: error
+  severity: medium
+  problem: "Broken syntax and 'tests' is ambiguous (automated tests vs experiments). Reads as a literal translation."
+  suggestion: "AI helped me get through those experiments faster, even if half-baked."
+
+- unit: ch10
+  line: 227
+  quote: "open source and paused for ages"
+  category: error
+  severity: low
+  problem: "'paused' for a project nobody maintains is a Portuguese-ism (parado)."
+  suggestion: "open source and abandoned for ages"
+
+- unit: ch10
+  line: 40
+  quote: "At the top, with an 8, were two."
+  category: error
+  severity: low
+  problem: "Inverted order, stilted, and the sentence that follows ('The first is ai-jail') depends on it."
+  suggestion: "Two projects got an 8."
+
+- unit: ch10
+  line: 185
+  quote: "can copy the first version of your product in a week"
+  category: repetition
+  severity: low
+  problem: "Same sentence, near-verbatim, appears in ch19 (style report). The ch10 occurrence is the origin."
+  suggestion: "Keep here; in ch19 turn it into a callback ('as I said in the marathon chapter')."
+
+- unit: ch10
+  line: 206
+  quote: "another competitor gathers similar data and trains a rival model in months"
+  category: repetition
+  severity: low
+  problem: "Repeated nearly word for word in ch19 (style report)."
+  suggestion: "Keep here; shorten the ch19 version to a pointer to @sec-ch10."
+
+- unit: ch10
+  line: 248
+  quote: "the little reading guide that manga for adult audiences, about business or war, doesn't print"
+  category: clarity
+  severity: low
+  problem: "Convoluted, and the term furigana (explained in ch08) is not reused, so the reader may not connect it."
+  suggestion: "...overlays furigana, the small reading guide (see @sec-ch08), on top of the hard kanji in manga for adults that don't print it, all running on my own computer."
+
+- unit: interlude1
+  line: 83
+  quote: "measures with a thick ruler"
+  category: error
+  severity: medium
+  problem: "Literal rendering of a Portuguese idiom (régua grossa); unclear in English."
+  suggestion: "Apparently the companies' automatic filter is a blunt instrument: brush up against a sensitive topic and it refuses, without weighing the context."
+
+- unit: interlude1
+  line: 105
+  quote: "I knew the Qwen that rescued those six posts from somewhere else."
+  category: clarity
+  severity: medium
+  problem: "Awkward and unclear: 'from somewhere else' reads as if the posts were rescued from elsewhere."
+  suggestion: "I already knew that Qwen from another context. In those same weeks..."
+
+- unit: interlude1
+  line: 97
+  quote: "I took the chance to solve the opposite side."
+  category: error
+  severity: low
+  problem: "'solve the opposite side' is a literal translation."
+  suggestion: "I took the chance to handle the opposite direction too."
+
+- unit: ch09
+  line: 272
+  quote: "My version is more acidic: an idle skill is debt."
+  category: error
+  severity: low
+  problem: "'acidic' is a Portuguese-ism (ácida) for opinionated/biting."
+  suggestion: "My version is blunter: an idle skill is debt."
+
+- unit: ch09
+  line: 324
+  quote: "Experience is only relevant to whoever lived through its constraints."
+  category: clarity
+  severity: low
+  problem: "Abstract and slightly garbled; 'its' has no clear owner."
+  suggestion: "Experience only transfers to people who have lived under the same constraints."
+
+- unit: ch09
+  line: 140
+  quote: "The model has way more vocabulary than I do"
+  category: repetition
+  severity: low
+  problem: "The intensifier 'way' recurs in this chapter (lines 18 'way better', 56 'way too much', 91 'cut the request way back', 116 'way longer', 140 'way more') and reads as a tic."
+  suggestion: "Vary or drop most: 'much more vocabulary', 'far too much', 'cut the request back a lot', 'much longer'."
+
+- unit: ch09
+  line: 235
+  quote: "crammed FrankMD's logic into two or three generic blocks"
+  category: consistency
+  severity: low
+  problem: "Ch05 line 76 says 'two or three generic files'; 'blocks' is vaguer and could read as a different thing."
+  suggestion: "two or three generic files"
+
+- unit: ch08
+  line: 125
+  quote: "my problem was never typing speed. It was the approach."
+  category: clarity
+  severity: low
+  problem: "Rhetorical negation pattern ('never X. It was Y.') the voice guide discourages."
+  suggestion: "My problem was the approach, not typing speed, or simply 'The approach was the problem, and speed only made it worse.'"
+
+- unit: ch08
+  line: 275
+  quote: "and the Master System went hungry"
+  category: error
+  severity: low
+  problem: "Literal Portuguese idiom (passou fome); the sense (starved of games) is lost."
+  suggestion: "and the Master System was starved of games."
+
+- unit: ch08
+  line: 55
+  quote: "And then the hell began."
+  category: error
+  severity: low
+  problem: "Unidiomatic article."
+  suggestion: "And then hell began."
+
+- unit: ch05
+  line: 132
+  quote: "Until the penny dropped, for me."
+  category: error
+  severity: low
+  problem: "Fragment with an awkward tail; the previous paragraph ends in a loop and this should be a clean turn."
+  suggestion: "Then the penny dropped."
+
+- unit: ch05
+  line: 201
+  quote: "With zero human assistance, code comes out at the worst possible quality."
+  category: clarity
+  severity: low
+  problem: "Stilted ('zero human assistance', 'at the worst possible quality') and an overstatement."
+  suggestion: "With no human in the loop, the code comes out at its worst."
+
+- unit: ch05
+  line: 204
+  quote: "a kind of feature it had always built on the server, at some point, it decided to build in the browser"
+  category: clarity
+  severity: medium
+  problem: "Tangled sentence with a dangling subject; a lay reader loses the point (the model was inconsistent with its own earlier choice)."
+  suggestion: "In FrankMD, one kind of feature it had always built on the server it suddenly decided to build in the browser."
+
+- unit: ch05
+  line: 116
+  quote: "after some three hours of refactoring that one alone"
+  category: error
+  severity: low
+  problem: "Awkward word order."
+  suggestion: "after some three hours of refactoring that file alone"
+
+- unit: ch05
+  line: 228
+  quote: "I'd guess that an iFood or a Mercado Livre (Brazil's dominant food-delivery app and its biggest online marketplace), with all their subsystems, go past a million."
+  category: clarity
+  severity: low
+  problem: "Long parenthetical gloss breaks the sentence and the verb agreement is shaky (an iFood or a Mercado Livre ... go)."
+  suggestion: "I'd guess that Brazil's big platforms, like the food-delivery app iFood or the marketplace Mercado Livre, go past a million lines once you count all their subsystems."
+
+- unit: ch06
+  line: 93
+  quote: "spell out exactly everything it's going to do"
+  category: error
+  severity: low
+  problem: "Word order."
+  suggestion: "spell out everything it's going to do"
+
+- unit: ch06
+  line: 90
+  quote: "Whenever we flipped it, with me dictating exact code and it just typing"
+  category: clarity
+  severity: low
+  problem: "'flipped it' has no clear object."
+  suggestion: "Whenever we flipped the roles, with me dictating exact code and it just typing, the result got worse."
+
+- unit: ch06
+  line: 263
+  quote: "And it goes for any text of yours"
+  category: error
+  severity: low
+  problem: "Unidiomatic (Portuguese 'vale pra')."
+  suggestion: "And it holds for any text of yours"
+
+- unit: ch06
+  line: 228
+  quote: "GPT-5.2, which I was using there, is a good model."
+  category: clarity
+  severity: low
+  problem: "'there' is vague and the sentence introduces a model name abruptly after a section with no model mentioned."
+  suggestion: "GPT-5.2, which I was using for that step, is a good model."
+
+- unit: ch07
+  line: 171
+  quote: "because the previous one was weak in a specific domain"
+  category: clarity
+  severity: low
+  problem: "'the previous one' and 'a specific domain' leave the reader with nothing concrete; one clause of what the domain was would make the story land (the source post may say)."
+  suggestion: "Name the domain if the post does (author question), otherwise 'because Claude was weak at one kind of story'."
+
+- unit: ch07
+  line: 192
+  quote: "Even FrankMD, the editor from @sec-ch05, took on a life of its own in those weeks."
+  category: pacing
+  severity: low
+  problem: "The FrankMD contributions paragraph sits inside the 'Circuit Breaker' subsection and interrupts the move from the circuit breaker to the one-shot-myth conclusion."
+  suggestion: "Move it above 'The Circuit Breaker' (end of 'Life After Deploy') or to the start of 'Why the One-Shot Prompt Is a Myth'."

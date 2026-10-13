@@ -1,0 +1,212 @@
+# Part IV (ch15, ch16, ch17), read-only reader pass. Line numbers refer to book/pt/<unit>.md at review time.
+
+# ---------- 1. error ----------
+- unit: ch16
+  line: 26
+  quote: "Deu umas 1,25 milhão de linhas de TypeScript"
+  category: error
+  severity: high
+  problem: "Concordância: 'milhão' é masculino, e 'umas' (feminino plural) não combina com 1,25 milhão."
+  suggestion: "Deu uns 1,25 milhão de linhas de TypeScript"
+
+- unit: ch17
+  line: 153
+  quote: "Nenhuma delas precisa te espionar sozinha"
+  category: error
+  severity: medium
+  problem: "Sem antecedente feminino: a frase anterior fala em 'parceiros' (cada um pegando um pedaço)."
+  suggestion: "Nenhum deles precisa te espionar sozinho, porque o trabalho é feito em mutirão."
+
+- unit: ch15
+  line: 211
+  quote: "Agradeci publicamente quem relatou."
+  category: error
+  severity: low
+  problem: "Regência: agradecer a alguém."
+  suggestion: "Agradeci publicamente a quem relatou."
+
+- unit: ch16
+  line: 283
+  quote: "um agente implementa, dois revisores atacam, um terceiro corrige"
+  category: error
+  severity: low
+  problem: "Legenda da figura contradiz o texto de L279, onde o corretor é a quarta instância (1 implementa, 2 revisam, 1 corrige)."
+  suggestion: "um agente implementa, dois revisores atacam, um quarto corrige, e os testes decidem."
+
+- unit: ch15
+  line: 41
+  quote: "Eles foram copiados de volta e conferidos um a um, com o tamanho exato do original, em bytes."
+  category: error
+  severity: medium
+  problem: >-
+    Contradição interna: aqui os onze álbuns já estão restaurados e conferidos um a um, mas L57-60 conta que o procedimento
+    de restauração tinha um defeito (tratava 'existe' como 'restaurado') e deixou passar um arquivo pela metade; só depois
+    foram restaurados 'com o tamanho exato'. O leitor percebe que a conferência de L41 ainda não valia.
+  suggestion: >-
+    Em L41, cortar a conferência e adiar: 'Eles foram copiados de volta. (Como a conferência dessa cópia quase falhou é
+    o assunto da próxima seção.)'. Manter a verificação em bytes só em L60.
+
+- unit: ch16
+  line: 209
+  quote: "Esse caso é pior que um código ruim."
+  category: error
+  severity: low
+  problem: "Comparativo sem 'do que' (WRITER.md manda reler todo 'mais/menos/pior que'). Mesmo padrão em ch15 L104 ('é pior que uma que falha gritando')."
+  suggestion: "Esse caso é pior do que um código ruim. / ... é pior do que uma que falha gritando."
+
+# ---------- 2. consistency ----------
+- unit: ch15
+  line: 145
+  quote: "o GPT-5.6-Sol tinha apagado"
+  category: consistency
+  severity: low
+  problem: "Grafia do modelo: ch15 'GPT-5.6-Sol'; ch11 'GPT 5.6 sol' e fontes 'GPT 5.6 Sol'; continuity.yml pede o nome como o fornecedor escreve (hífen: GPT-5.5, GPT-5.4)."
+  suggestion: "Padronizar em 'GPT-5.6 Sol' no livro todo (ch15 e ch11)."
+
+- unit: ch17
+  line: 359
+  quote: "me lembrei de um aparelho que sumiu das empresas enquanto a programação só crescia: o cartão perfurado"
+  category: consistency
+  severity: medium
+  problem: >-
+    Hand-off com ch18: ch18 abre dizendo que o que veio à cabeça foi o LGP-21 (máquina de escrever em binário, 1963);
+    o cartão perfurado só aparece na linha 40 do ch18. Além disso 'um aparelho' é impreciso (cartão não é aparelho).
+  suggestion: >-
+    Em ch17 L359: 'me lembrei de uma tecnologia que sumiu das empresas enquanto a programação só crescia: o cartão
+    perfurado.' Ou, no ch18, abrir pelo cartão e deixar o LGP-21 para depois.
+
+- unit: ch16
+  line: 245
+  quote: "O de memória pra agentes, em junho de 2026"
+  category: consistency
+  severity: low
+  problem: "O projeto não é nomeado; continuity.yml e ch20 o chamam de ai-memory. O leitor não sabe a que 'O de memória' se refere (e L334 repete 'o projeto de memória que eu mantenho')."
+  suggestion: "O ai-memory (o sistema de memória pra agentes de @sec-ch20), em junho de 2026, tinha ... ; em L334: 'o ai-memory, que eu mantenho'."
+
+- unit: ch17
+  line: 29
+  quote: "A pergunta que muita gente carrega para este capítulo é dupla."
+  category: consistency
+  severity: low
+  problem: "Registro oscila entre 'pra' (voz do livro) e 'para' em L29, L97 ('se espalha para uns seis terceiros'), L128, L134, L147. Não é erro, mas destoa da voz dos outros capítulos."
+  suggestion: "Trocar por 'pra' nesses pontos (L29: 'carrega pra este capítulo'; L97: 'se espalha pra uns seis terceiros')."
+
+# ---------- 3. repetition ----------
+- unit: ch16
+  line: 167
+  quote: "1.279 sessões tinham tido 50 ou mais falhas seguidas"
+  category: repetition
+  severity: medium
+  problem: >-
+    O mesmo comentário do código vazado (1.279 sessões, 250 mil chamadas, 'três linhas: depois de três falhas seguidas,
+    parar de tentar') já foi contado em ch02 L121, quase palavra por palavra (style-report). Quem lê em ordem reconhece.
+  suggestion: >-
+    Em ch16 encurtar para a lembrança e a moral: 'Lembra do comentário no código que admitia centenas de milhares de
+    chamadas desperdiçadas por dia, consertado com três linhas (@sec-ch02)? Esse é o tipo de achado que só aparece
+    quando alguém lê o que a empresa não esperava que lessem.' (L164 com a função de 3.100 linhas fica.)
+
+- unit: ch16
+  line: 351
+  quote: "No começo de julho, peguei três aplicativos populares, um deles do governo brasileiro, e pedi pra um modelo de fronteira me contar o que eles sabiam de mim."
+  category: repetition
+  severity: medium
+  problem: "A ponte do fim do ch16 antecipa quase literalmente a abertura do ch17 (L17-21: 'No começo de julho de 2026, baixei três aplicativos... entreguei o código dos três ao Claude Fable 5...')."
+  suggestion: "Terminar o ch16 em L351 só com a primeira parte: 'Os aplicativos do seu celular também são código que você nunca leu. A diferença é que, em 2026, ler ficou barato.' e deixar o relato de julho para o ch17."
+
+- unit: ch15
+  line: 321
+  quote: "Em março de 2026, um projeto aberto que liga aplicativos de mensagem a modelos de IA estava na boca de todo mundo."
+  category: repetition
+  severity: low
+  problem: "Fim do ch15 apresenta o OpenClaw sem nome; ch16 L19-34 reapresenta tudo ('todo mundo à minha volta estava falando do OpenClaw', 'ritmo que nenhum humano conseguiria revisar' / 'mais rápido do que qualquer ser humano consegue ler')."
+  suggestion: "Reduzir L321 a um gancho: 'Em março de 2026 vi um projeto popular crescer num ritmo que nenhum humano conseguiria revisar. Fui ver o que tinha lá dentro.' e manter a apresentação completa só no ch16."
+
+- unit: ch15
+  line: 145
+  quote: "Em julho de 2026, o assunto nas redes foi LLM apagando arquivo dos outros."
+  category: repetition
+  severity: low
+  problem: "O interlúdio 2 termina com a mesma notícia (agente que apagou quase todos os arquivos de um usuário conhecido, 'fazia dois meses', 'nunca tinha passado por isso'); ch15 L145-152 a reconta e repete 'nem uma vez um agente tinha apagado algo'. O leitor lê duas vezes o mesmo gancho, sem reconhecimento explícito."
+  suggestion: "Abrir a seção com a retomada: 'Lembra da notícia que fechou o interlúdio anterior? Matt Shumer contou que...' e cortar de L150 a frase 'Nem uma vez um agente tinha apagado algo que eu não pedi' se o interlúdio já a deu."
+
+- unit: ch15
+  line: 104
+  quote: "Verifique o backup contra um inventário independente da origem, nunca contra o log da própria ferramenta."
+  category: repetition
+  severity: low
+  problem: "A mesma lição (confiar no relato em vez de medir na fonte) aparece em L104, L114, L121-123, L306 e L308. Cada uma é curta, mas L123 e L306 dizem o mesmo; um leitor atento sente o terceiro retorno."
+  suggestion: "Manter a citação em L104 e a síntese de L121-123; em L306 reduzir para 'O sinal verde de uma ferramenta é a ferramenta falando de si mesma. A prova está no destino.' e cortar L308 se não sobrar espaço."
+
+- unit: apB
+  line: 205
+  quote: "> Jamais rode em produção qualquer coisa da qual você não consegue se recuperar."
+  category: repetition
+  severity: medium
+  problem: "Blockquote idêntico em ch15 L287 e apB L205. Cluster de passagens compartilhadas entre ch15 e apB que o leitor de ambos nota (style-report): snapshot 'se navega como uma pasta comum... às três da tarde' (ch15 L253 / apB L87), 'O snapshot resolve o acidente de minutos atrás, em segundos' (ch15 L267 / apB L121), 'sete cópias diárias, quatro semanais, seis mensais e uma anual' (ch15 L265 / apB L136), 'só a pasta do projeto atual é real' (ch15 L172 / apB L53), 'programa que roda como root, fora da jaula' (ch15 L204 / apB L59), 'em quem você confia mas que é falível... máquina virtual descartável' (ch15 L184-186 / apB L253), definição de sandbox (ch15 L167 / apB L51)."
+  suggestion: >-
+    Deixar a narrativa e as frases de efeito no ch15 e encurtar o apêndice, que é de receita. apB L205: trocar o
+    blockquote por 'A regra de produção está em @sec-ch15.' apB L121: tirar o blockquote e dizer só 'Ele mora no mesmo disco
+    dos dados e morre junto com ele.' apB L87: cortar a anecdota das três da tarde ('Um snapshot se navega como uma pasta
+    comum: abra o snapshot e copie o arquivo de volta.'). apB L253: 'A documentação diz o que ele promete (@sec-ch15); para
+    código hostil, use uma máquina virtual.' Já a política de retenção (apB L136) é o lugar certo do número; em ch15 L265
+    dizer só 'sete cópias diárias, semanais, mensais e uma anual (a política exata está em @sec-apB)'.
+
+# ---------- 4. clarity ----------
+- unit: ch15
+  line: 34
+  quote: "Sessenta e nove itens foram apagados. A conferência, feita item por item depois do susto, mostrou o tamanho do estrago:"
+  category: clarity
+  severity: medium
+  problem: "A lista soma 58 + 11 = 69, mas o segundo marcador ('os 31 downloads incompletos... ficaram intactos') não faz parte dos 69 e quebra a conta; o leitor tenta somar 58 + 31 + 11."
+  suggestion: >-
+    Tirar o item dos 31 da lista e dizer depois dela: 'Os 31 downloads incompletos, que eram o motivo da lista de
+    proteção existir, ficaram intactos, por sorte.'
+
+- unit: ch15
+  line: 223
+  quote: "um truque com variáveis de ambiente duplicadas fazia uma senha de verdade entrar na jaula"
+  category: clarity
+  severity: medium
+  problem: "A frase anuncia 'Em linguagem de gente', mas 'variáveis de ambiente' e 'arquivos de configuração do Git' ficam sem explicação para um leigo."
+  suggestion: "um truque com configurações do sistema repetidas (as 'variáveis de ambiente', onde programas guardam senhas) fazia uma senha de verdade entrar na jaula, num lugar onde só deveria entrar um marcador falso no lugar dela."
+
+- unit: ch15
+  line: 258
+  quote: "O sistema daquela máquina é transacional, construído em cima de snapshots"
+  category: clarity
+  severity: low
+  problem: "'Transacional' é jargão sem explicação; o parágrafo depende dele. Também 'núcleo do sistema' e 'Btrfs' (L255) aparecem sem glosa."
+  suggestion: "O sistema daquela máquina atualiza em bloco e guarda a versão anterior como snapshot, então voltar pra versão anterior foi uma reinicialização."
+
+- unit: ch15
+  line: 145
+  quote: "um subagente de revisão montou errado o caminho da pasta pessoal"
+  category: clarity
+  severity: low
+  problem: "'Subagente' não foi introduzido para o leitor leigo neste ponto (agente é explicado em ch03, subagente não)."
+  suggestion: "um segundo agente, encarregado de revisar o trabalho do primeiro, montou errado o caminho da pasta pessoal..."
+
+- unit: ch16
+  line: 340
+  quote: "o programa vai rodar com as suas senhas, os seus arquivos, o seu dinheiro? Se sim, ele precisa de mais do que isso?"
+  category: clarity
+  severity: low
+  problem: "'Mais do que isso' fica sem referente (mais do que as quatro perguntas anteriores? mais cuidado?). Leitura pede segunda passada."
+  suggestion: "o programa vai rodar com as suas senhas, os seus arquivos, o seu dinheiro? Se sim, exija mais das quatro respostas acima."
+
+- unit: ch15
+  line: 90
+  quote: "por mais de três vezes o preço americano"
+  category: clarity
+  severity: low
+  problem: "Sem contexto, o leitor não sabe por que o preço é maior (importação, imposto, urgência). A frase seguinte atribui à pressa, mas 'preço americano' fica solto."
+  suggestion: "Comprei às pressas um segundo NAS, pagando mais de três vezes o preço de lá, entre importação e urgência, porque quem compra..."
+
+# ---------- 5. pacing ----------
+- unit: ch15
+  line: 95
+  quote: "Quem operou a recuperação"
+  category: pacing
+  severity: low
+  problem: "A seção 'Noventa terabytes por um fio' (L73-123) tem sete tropeços encadeados (cópia que pulou pasta, 32 processos, verificação com filtros, 17 jobs). É o trecho mais longo antes da tese do capítulo; o leitor leigo perde o fio entre a tese de L121-123 e a abertura sobre o ai-jail, que só chega em L164."
+  suggestion: "Se for preciso cortar: tirar o parágrafo dos 32 processos (L107-109), que ilustra o mesmo padrão 'acreditou sem conferir' já coberto pelo tropeço da verificação (L112-114)."

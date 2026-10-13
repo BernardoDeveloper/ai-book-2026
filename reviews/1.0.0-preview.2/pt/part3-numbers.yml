@@ -1,0 +1,148 @@
+---
+- unit: ch11
+  line: 270
+  quote: Na sexta etapa ouve só um vago
+  category: error
+  severity: high
+  problem: 'Typo: "ouve" (verbo ouvir) no lugar de "houve".'
+  suggestion: Na sexta etapa houve só um vago "deixe isso pronto pra produção".
+- unit: ch12
+  line: 63
+  quote: com o mesmo modelo, a lógica de não dar a senha do cofre ao estagiário
+  category: error
+  severity: medium
+  problem: 'Frase quebrada: "a lógica de..." fica solta, sem verbo que a ligue ao resto.'
+  suggestion: A mudança foi toda no ambiente, com o mesmo modelo. É a lógica de não dar a senha do cofre ao estagiário no primeiro dia.
+- unit: ch13
+  line: 220
+  quote: A ElevenLabs custa quase trinta vezes mais por episódio
+  category: error
+  severity: medium
+  problem: 'Aritmética: 2,70 / 0,08 dólar dá cerca de 34 vezes, ou seja, mais de trinta, não "quase trinta".'
+  suggestion: A ElevenLabs custa mais de trinta vezes por episódio.
+- unit: ch13
+  line: 131
+  quote: ela sozinha ocuparia os 128 GB inteiros do mini-PC
+  category: error
+  severity: medium
+  problem: 'Número que não fecha: 428 bilhões de parâmetros em 1 bit são uns 54 GB (uns 85 GB se for a quantização de ~1,6 bit), não 128 GB. Além disso, desde 8 de abril o capítulo diz que a parte de vídeo é de 64 GB, então "128 GB inteiros" confunde com a memória total.'
+  suggestion: 'Conferir o número no post de 14/06 e reescrever, por exemplo: "ela sozinha ocuparia uns X GB, mais do que os 64 GB de VRAM, sem deixar espaço pro caderno de anotações nem pro sistema." (preencher X com o valor do post).'
+- unit: ch14
+  line: 34
+  quote: JPMorganChase e companhia) mais de quarenta
+  category: error
+  severity: low
+  problem: 'Falta o conectivo: "Onze gigantes (...) mais de quarenta outras organizações" lê-se como lista truncada.'
+  suggestion: Onze gigantes (Amazon, Apple, Microsoft, Google, NVIDIA, Cisco, JPMorganChase e companhia) e mais de quarenta outras organizações que mantêm software crítico ganharam acesso exclusivo...
+- unit: ch14
+  line: 268
+  quote: projeção tem outro peso que fato
+  category: error
+  severity: low
+  problem: 'Comparação mal formada: "outro peso que fato".'
+  suggestion: projeção pesa menos do que fato.
+- unit: ch12
+  line: 46
+  quote: e @sec-ch14 volta ao termo
+  category: error
+  severity: low
+  problem: Referência cruzada sem artigo; no mesmo capítulo a forma é "O @sec-ch14 volta a essa régua". Vale o mesmo para "que @sec-ch11 explica" (linha 113 aprox.). Conferir como o build renderiza ("Capítulo 14") e padronizar com "o".
+  suggestion: e o @sec-ch14 volta ao termo; ... que o @sec-ch11 explica.
+- unit: ch12
+  line: 293
+  quote: todos os cerca de 44 modelos da tabela
+  category: consistency
+  severity: medium
+  problem: 'Contagem de modelos diverge: o ch11 diz que a tabela da quarta versão em setembro tinha 46 modelos (39 nos artigos do dia 15); o ch12 fala em "cerca de 44" (e "os 44 aplicativos" em agosto, que é outra data). O leitor que soma os números vê três contagens.'
+  suggestion: Trocar por "todos os modelos da tabela" ou alinhar com o ch11 ("os 46 modelos da tabela"), conferindo a data da análise.
+- unit: ch11
+  line: 286
+  quote: GPT-6 Astra, Claude Opus 5
+  category: consistency
+  severity: low
+  problem: 'Grafia de GPT varia: "GPT-6 Astra" (ch11, ch14) contra "GPT 6 sol", "GPT 6 luna", "GPT 5.5", "GPT 5.6 sol" (ch11, ch12). continuity.yml dá "GPT-5.5" como forma de referência. O style report também lista GPT 5/GPT-5 e GPT 6/GPT-6.'
+  suggestion: 'Padronizar com hífen em todo o livro: GPT-5.5, GPT-5.6 sol, GPT-6 sol, GPT-6 luna, GPT-6 Astra.'
+- unit: ch13
+  line: 44
+  quote: da chinesa Z.ai
+  category: consistency
+  severity: low
+  problem: A empresa aparece como "Z.ai" (ch13) e "z.ai" (ch11, "plano de assinatura fixa da z.ai").
+  suggestion: Usar "Z.ai" nos dois (como a empresa escreve).
+- unit: ch14
+  line: 245
+  quote: cerca de 4 vezes
+  category: consistency
+  severity: low
+  problem: O texto alternativo da figura menciona uma terceira barra (~4 vezes, "modelo sem raciocínio em testes independentes") que não aparece na prosa; a prosa só tem 444,6 e 8 vezes. Quem ouve só o alt text ou compara figura e texto estranha.
+  suggestion: 'Acrescentar na prosa, depois de "umas 8 vezes": "e contra um modelo sem raciocínio, nos testes independentes, a vantagem ficava em umas 4 vezes."'
+- unit: ch13
+  line: 149
+  quote: o GLM 5.3 chegou a 94 pontos rodando num plano
+  category: repetition
+  severity: medium
+  problem: Mesmo trecho do ch11 (GLM 5.3 a 94 no plano fixo, DeepSeek V4.1 Flash 92,5 por pouco mais de 1 dólar, seis/sete empatados no topo), com a parentética pesada sobre seis virando sete. O style report marca a frase do DeepSeek como repetida entre ch11 e ch13.
+  suggestion: 'Encurtar no ch13 e remeter: "Em setembro, na versão mais difícil do teste, o GLM 5.3 chegou a 94 num plano de assinatura fixa e o DeepSeek V4.1 Flash fez 92,5 por pouco mais de um dólar (@sec-ch11). O topo da tabela empatava com os modelos mais caros do mercado."'
+- unit: ch12
+  line: 26
+  quote: lido o relatório da rodada anterior, com a nota e a auditoria de cada concorrente
+  category: repetition
+  severity: low
+  problem: O flagrante do Gemini (abriu a rubrica, leu o relatório, rodou o auditor oito vezes) é contado no fim do ch11 e de novo, quase com as mesmas palavras, na abertura do ch12, que ainda diz "o que contei no fim do capítulo anterior".
+  suggestion: 'Encurtar no ch12 e deixar só o que é novo: "No registro, o modelo tinha aberto a rubrica de correção e o relatório da rodada anterior, a mesma cola do fim do capítulo anterior, e a resposta sobre o Sonnet 5 estava escrita nele."'
+- unit: ch14
+  line: 236
+  quote: aquele programa do @sec-ch13 que escolhe uma resposta numa lista fechada
+  category: repetition
+  severity: low
+  problem: O ch13 já definiu o Jev como classificador, com o termo marcado como glossário e a frase "coisa que existe há décadas"; o ch14 repete a definição e a mesma frase ("Isso existe há décadas"), com o termo marcado de novo.
+  suggestion: 'No ch14: "Tirando o marketing, o Jev é um classificador, aquele programa do @sec-ch13 que escolhe uma resposta numa lista fechada: esse e-mail é golpe ou não, esse chamado é de cobrança, suporte ou vendas." (cortar a frase final e manter a marcação só em um dos dois).'
+- unit: ch14
+  line: 277
+  quote: venceu Lee Sedol, um dos maiores jogadores de Go de todos os tempos, por 4 a 1
+  category: repetition
+  severity: low
+  problem: O gancho final do ch14 entrega o resultado (4 a 1, Lee Sedol, "um dos maiores jogadores") que o interlúdio seguinte conta de novo com a mesma descrição. Funciona como ponte, mas gasta a revelação.
+  suggestion: 'Deixar só o gancho: "Em março de 2016, o AlphaGo venceu um dos maiores jogadores de Go de todos os tempos." e guardar o placar e o nome para o interlúdio.'
+- unit: ch12
+  line: 116
+  quote: sob licença MIT, e agradecia à equipe do Qwen
+  category: clarity
+  severity: medium
+  problem: 'Ambíguo: parece que o Qwen é MIT, mas mais adiante o livro diz que Qwen e Nex são Apache 2.0 e que o problema é o Rio ter se anunciado "só como MIT".'
+  suggestion: "...a partir do Qwen 3.5, o modelo aberto da Alibaba, e agradecia à equipe do Qwen. A página declarava o Rio sob licença MIT."
+- unit: ch13
+  line: 245
+  quote: Continua valendo. Um estúdio com ator
+  category: clarity
+  severity: medium
+  problem: '"Continua valendo." não tem antecedente claro: vem logo depois da lista de problemas e do consumo de 91% dos créditos, e o que "vale" é a frase anterior sobre a ElevenLabs valer o preço, vários parágrafos antes.'
+  suggestion: Mesmo assim, a conta da ElevenLabs continua valendo. Um estúdio com ator, direção e revisão custaria outra ordem de grandeza.
+- unit: ch11
+  line: 286
+  quote: com vigilância perfeita sem nenhum aviso
+  category: clarity
+  severity: low
+  problem: '"Vigilância" aparece aqui e em outras frases do capítulo sem nunca ser definida; o leitor leigo não liga ao teste do Casey (achar as sabotagens sem ser avisado).'
+  suggestion: Todos de duas empresas, OpenAI e Anthropic, e todos acharam as sabotagens sem ninguém avisar.
+- unit: ch11
+  line: 291
+  quote: O terra gastou menos da metade.
+  category: clarity
+  severity: low
+  problem: 'Falta o objeto: menos da metade do quê (custo? tempo?). Os nomes "sol" e "terra" também chegam sem explicação de que são os níveis de esforço da OpenAI (a frase anterior só diz isso depois).'
+  suggestion: O terra gastou menos da metade do custo do sol.
+- unit: ch12
+  line: 316
+  quote: Em outubro, rodei uma bateria mais rigorosa
+  category: pacing
+  severity: low
+  problem: Parágrafo único de uns 190 palavras, com seis ressalvas encadeadas (768 textos, GPT-4o, controles que se sobrepuseram). Bem acima do teto de 3 a 4 frases do WRITER.md e difícil de seguir.
+  suggestion: 'Quebrar em três: (1) a bateria e a contagem de tokens nos 768 textos; (2) o que isso não prova (mesmo vocabulário em outros modelos); (3) a comparação com o GPT-4o e a conclusão "nenhuma origem ficou provada".'
+- unit: ch14
+  line: 120
+  quote: a empresa rodou uns 10 mil agentes em paralelo durante 88 horas
+  category: pacing
+  severity: low
+  problem: Parágrafo com sete números seguidos (10 mil agentes, 88 horas, 130 bi e 300 bi de tokens, mil vezes, 2 mil, 2 milhões, 20 milhões), mais denso do que o resto do capítulo para um leitor leigo.
+  suggestion: 'Dividir depois de "que cobria vários problemas" e deixar só os números que carregam o argumento: 88 horas, mil vezes a computação anterior e a ordem de grandeza do custo (de 2 a mais de 20 milhões de dólares).'

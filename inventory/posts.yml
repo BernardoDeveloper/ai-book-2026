@@ -1,7 +1,8 @@
 ---
 generated_from: "/home/akitaonrails/Projects/akitaonrails-hugo"
 blog_commit: b9c029231693369b8f895576b491c878aea3e8da
-dirty_files: []
+dirty_files:
+- content/2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente/
 year: '2026'
 posts:
 - id: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush
@@ -16154,6 +16155,49 @@ posts:
         35% savings on the system, 39% on Docker layers and zero on AI model weights'
       url: "/2026/10/12/usuarios-linux-sempre-escolham-btrfs-nao-ext4/btrfs-compressao-economia.png"
     youtube: []
+- id: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+  date: '2026-10-13T19:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente/
+  url_en:
+  pt:
+    sha256: bfd899c4c31afcceeb223a8b4b850cede8fe308757b0ef126a014c0eac4f9291
+    title: 'Auto-publiquei meu próprio Livro/e-book: Competente o Suficiente'
+    description: 'Publiquei meu livro sobre IA, de graça, em EPUB e PDF: os 131 textos
+      de 2026 do blog, quase meio milhão de palavras, reorganizados em 20 capítulos,
+      6 apêndices, glossário e quase 300 referências. Este texto é o bastidor técnico:
+      o inventário com hash de cada post, o contrato que cada agente lia antes de
+      escrever, os rascunhos em paralelo, a marca invisível por parágrafo que liga
+      o livro ao blog, o verificador que reprova capítulo com erro, o que a conferência
+      pegou de errado nos meus próprios posts, e a pipeline Quarto, Typst e Pandoc
+      que gera tudo. É preview: abra uma issue se achar erro.'
+    slug: auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+    tags:
+    - inteligencia-artificial
+    - agentes-de-codigo
+    - open-source
+    words: 3766
+    links:
+    - text: esta
+      url: https://ailair.akitaonrails.com/pt-br/book/
+    - text: repositório
+      url: https://github.com/akitaonrails/ai-book-2026
+    - text: abra uma issue no GitHub
+      url: https://github.com/akitaonrails/ai-book-2026/issues
+    - text: a síntese do ano
+      url: "/2026/10/12/llms-agentes-competente-o-suficiente/"
+    - text: post sobre engenharia reversa
+      url: "/2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu/"
+    - text: página do livro
+      url: https://ailair.akitaonrails.com/pt-br/book/
+    - text: releases do GitHub
+      url: https://github.com/akitaonrails/ai-book-2026/releases
+    - text: abra uma issue
+      url: https://github.com/akitaonrails/ai-book-2026/issues
+    images:
+    - alt: Competente o Suficiente, o livro, em 3D
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/20261013190000_livro-competente-o-suficiente-3d.png
+    youtube: []
+  en:
 - id: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
   date: '2026-10-13T00:00:00-03:00'
   url_pt: https://www.akitaonrails.com/2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu/

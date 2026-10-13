@@ -1,0 +1,217 @@
+- unit: epilogo
+  line: 25
+  quote: "you met the line on the poster"
+  category: consistency
+  severity: medium
+  problem: "ch01 (EN) presents the line as written on a card the author is holding in an image, never a poster. The PT epilogue says 'cartaz' (poster/sign), so the EN word follows PT but contradicts the EN ch01 description."
+  suggestion: "In @sec-ch01 you met the line on the card: your hype about AI is inversely proportional to your knowledge of AI."
+- unit: ch19
+  line: 215
+  quote: "Of the 287 complaints and suggestions filed up to then, 249 came from people who weren't me. Of the requests to change the code, 361 came from real people (not counting the dependency-update bot), some 120 different ones"
+  category: clarity
+  severity: medium
+  problem: "Circumlocutions for 'issues' and 'pull requests' (the book has a glossary entry and uses 'pull request' in ch09 and ch16). 'some 120 different ones' has no clear referent (people? requests?). A lay reader cannot tell what is counted."
+  suggestion: "Of the 287 issues (bug reports and suggestions) filed up to then, 249 came from people who weren't me. Of the [pull requests]{.gls key=pull-request}, 361 came from outside contributors (not counting the dependency-update bot), some 120 different people, whether or not I accepted the change."
+- unit: ch20
+  line: 270
+  quote: "some seventy people with an accepted change request in the project"
+  category: consistency
+  severity: medium
+  problem: "'change request' is not the book's term (glossary: Pull request; ch09 and ch16 use it, with the .gls link). Also reads clumsily."
+  suggestion: "version 2.0 came out, with some seventy people having had a pull request accepted in the project."
+- unit: ch19
+  line: 337
+  quote: "the six questions from the list at the start of the chapter"
+  category: error
+  severity: medium
+  problem: "The six questions (real goal, how it improves the product, which number changes...) appear mid-chapter in 'Then AI Arrives', not at the start."
+  suggestion: "learn to answer the six questions from the list earlier in this chapter about your own task, before you open the agent;"
+- unit: ch20
+  line: 230
+  quote: "Whoever had process, tests and documented rules reaped; whoever had only hype is still waiting"
+  category: error
+  severity: medium
+  problem: "'reaped' is used without an object, a calque of the Portuguese absolute use. Reads as a broken sentence in English."
+  suggestion: "Whoever had process, tests and documented rules reaped the gains; whoever had only hype is still waiting for the next model to solve it."
+- unit: ch18
+  line: 165
+  quote: "In February I put a word to companies on the record, and I stand by it in October."
+  category: error
+  severity: medium
+  problem: "Translated-sounding ('pus uma palavra'); the meaning (a message to companies) is unclear."
+  suggestion: "In February I gave companies some advice, and I stand by it in October. No LLM writes code on its own: it needs a senior to spec it out."
+- unit: ch19
+  line: 186
+  quote: "a suspicious automated review before any change is merged"
+  category: error
+  severity: medium
+  problem: "'suspicious' means 'doubtful of someone' here only in Portuguese ('desconfiada'); in English it implies the review itself is shady."
+  suggestion: "a skeptical automated review before any change is merged into the project, one that treats whatever the author claimed as unverified until proven otherwise;"
+- unit: ch18
+  line: 327
+  quote: "The brakes are part of the result."
+  category: clarity
+  severity: medium
+  problem: "Calque; 'brakes' is not an English way to say limits or caveats and a lay reader will not get it."
+  suggestion: "The caveats are part of the result."
+- unit: ch18
+  line: 268
+  quote: "That reinforced my opinion about the C compiler: Claude had just built a compiler for a language that didn't even exist."
+  category: clarity
+  severity: medium
+  problem: "The logic is hard to follow: why does building PACT reinforce the view that the C compiler was unimpressive? The link (compilers are textbook material, so a model can produce one even for an invented language) is left implicit."
+  suggestion: "That reinforced my opinion about the C compiler: compilers are textbook material, and Claude had just produced one for a language that didn't even exist."
+- unit: ch19
+  line: 148
+  quote: "It's not much time next to what an annual budget burned in four months costs."
+  category: clarity
+  severity: low
+  problem: "Clumsy, hard to parse sentence."
+  suggestion: "It's little time next to the cost of an annual budget burned in four months."
+- unit: ch20
+  line: 34
+  quote: "On the other side of the table sat the same year's propaganda"
+  category: error
+  severity: low
+  problem: "'propaganda' reads as political in English (false friend of 'propaganda'); the next sentence already says 'marketing'."
+  suggestion: "On the other side of the table sat the same year's hype: general intelligence two or three years away, ..."
+- unit: ch20
+  line: 40
+  quote: "And here lives the question this book has put off since the first chapter."
+  category: error
+  severity: low
+  problem: "Calque of 'mora a pergunta'."
+  suggestion: "And here is the question this book has put off since the first chapter."
+- unit: ch20
+  line: 32
+  quote: "The rest of the material said the same thing by other roads."
+  category: error
+  severity: low
+  problem: "Calque ('por outros caminhos')."
+  suggestion: "The rest of the material said the same thing from other angles."
+- unit: ch18
+  line: 300
+  quote: "how many laps it ran on each one"
+  category: consistency
+  severity: low
+  problem: "The previous sentence says 'agent rounds'; 'laps' is a new, odd image."
+  suggestion: "A one-shot conversion done by an agent measures how well the model knows each language and how many rounds it ran on each one."
+- unit: ch18
+  line: 318
+  quote: "got 53 out of 53 valid attempts right"
+  category: clarity
+  severity: low
+  problem: "The text says 112 attempts across 4 models; the frontier pair accounts for 56, and 'valid' is never explained, so 53 looks like a typo."
+  suggestion: "Add a half-clause: 'got 53 out of 53 valid attempts right (three runs were discarded as invalid)', if that is what happened in the benchmark; otherwise drop 'valid'. Author/PT check."
+- unit: ch19
+  line: 247
+  quote: "Hence the consensus online: Adobe is dead"
+  category: clarity
+  severity: low
+  problem: "'Hence' is stiff and implies a logical consequence that the text doesn't state."
+  suggestion: "That became the consensus online: Adobe is dead, no program is sacred, programming is over."
+- unit: ch19
+  line: 265
+  quote: "The problem is whoever looks at the screenshot."
+  category: clarity
+  severity: low
+  problem: "Compressed; a lay reader may not see what the problem is."
+  suggestion: "The problem is how people read the screenshot."
+- unit: ch19
+  line: 140
+  quote: "@sec-ch08 tells the failure that taught me to drop an approach"
+  category: error
+  severity: low
+  problem: "'tells the failure' is not idiomatic."
+  suggestion: "@sec-ch08 tells the story of the failure that taught me to drop an approach"
+- unit: ch20
+  line: 141
+  quote: "As of that end of September, no Game Gear conversion had passed the final review."
+  category: error
+  severity: low
+  problem: "Unidiomatic 'As of that end of'."
+  suggestion: "At the end of September, no Game Gear conversion had passed the final review."
+- unit: ch20
+  line: 156
+  quote: "even with the code in plain view of everyone"
+  category: clarity
+  severity: low
+  problem: "Unclear for a lay reader; the point is that the code is readable but the context is not written anywhere."
+  suggestion: "full of context that isn't written down anywhere, even though the code itself is right there to read."
+- unit: ch20
+  line: 209
+  quote: "My bet, in October 2026, was that not even new library versions confused agents that much anymore"
+  category: pacing
+  severity: low
+  problem: "One very long paragraph packs the bet, the seven-language result and the Bend 2 caveat; easy to lose the thread."
+  suggestion: "Split after 'looks it up, tests and adjusts.' and start a new paragraph at 'I measured the caveat too.'"
+- unit: epilogo
+  line: 92
+  quote: "going up to the primary source"
+  category: error
+  severity: low
+  problem: "Direction word is odd; ch04 says 'Climb up to the primary source', but 'go back to' is the natural phrase."
+  suggestion: "which is going back to the primary source: the study, the contract, the official data."
+- unit: epilogo
+  line: 75
+  quote: "the other ninety percent is in @sec-ch05"
+  category: clarity
+  severity: low
+  problem: "Slightly off: the chapter does not contain the ninety percent, it explains it."
+  suggestion: "the other ninety percent is what @sec-ch05 is about."
+- unit: epilogo
+  line: 80
+  quote: "That's why I left in @sec-ch20 the list of what would make me change my mind"
+  category: error
+  severity: low
+  problem: "Awkward word order ('I left in')."
+  suggestion: "That's why @sec-ch20 includes the list of what would make me change my mind, with things anyone can measure from the outside."
+- unit: posfacio
+  line: 56
+  quote: "the book tells the wrong number and the correction"
+  category: error
+  severity: low
+  problem: "'tells' calque, and the sentence is ambiguous (which number is wrong)."
+  suggestion: "the book reports both the wrong number and the correction (@sec-ch14)"
+- unit: posfacio
+  line: 62
+  quote: "Notice that many of these corrections are to my own blog."
+  category: error
+  severity: low
+  problem: "Ungrammatical preposition use; reads as translated."
+  suggestion: "Notice that many of these are corrections to my own blog."
+- unit: posfacio
+  line: 81
+  quote: "In @sec-ch09 I told how the blog post about talking to Claude Code was written by Claude itself"
+  category: error
+  severity: low
+  problem: "'told how' is not idiomatic with a lay audience."
+  suggestion: "In @sec-ch09 I told you how the blog post about talking to Claude Code was written by Claude itself, ..."
+- unit: posfacio
+  line: 58
+  quote: "Claude Code's signing lock had fallen"
+  category: clarity
+  severity: low
+  problem: "'signing lock' is not a term a lay reader knows; ch16 explains it as a request signature computed inside the program."
+  suggestion: "that the block on third-party tools (the request signature inside Claude Code) had been broken in less than a day after the code leak"
+- unit: ch18
+  line: 219
+  quote: "None of those questions had an exact solution, and we're still here."
+  category: error
+  severity: low
+  problem: "'exact solution' is a calque of 'solução exata'."
+  suggestion: "None of those questions had a definitive answer, and we're still here."
+- unit: ch19
+  line: 218
+  quote: "What keeps the project grounded is hundreds of people using it"
+  category: consistency
+  severity: low
+  problem: "Para 215 counts about 120 distinct code contributors and 249 outside issues; 'hundreds of people' is not backed by those figures as worded. Author/PT check; the user count may come from elsewhere."
+  suggestion: "Say 'many people', or cite the count the claim rests on."
+- unit: ch18
+  line: 199
+  quote: "ask yourself whether you can explain why the right answer is the right one. If you can, the machine does the typing for you."
+  category: repetition
+  severity: low
+  problem: "The same test and wording are repeated almost verbatim in the epilogue (line 55). It is flagged as a callback there, which is fine, but the epilogue repeats the full phrasing; also ch18 'senior' and 'punch card' counts are very high (style report)."
+  suggestion: "Keep in ch18; in the epilogue shorten to 'the test from @sec-ch18: can you explain why the right answer is the right one?' and drop the repeated 'If you can... types for you' pair."

@@ -1,0 +1,210 @@
+- unit: ch12
+  line: 346
+  quote: "A claim that size demands evidence that size"
+  category: error
+  severity: medium
+  problem: "Missing word: 'evidence that size' is ungrammatical."
+  suggestion: "A claim of that size demands evidence of that size, and I don't have it."
+- unit: ch12
+  line: 36
+  quote: "it would have taken about 75 points"
+  category: clarity
+  severity: medium
+  problem: "'Taken' is a literal carry-over of PT 'levado'. A lay reader can't tell whether 75 is what it scored or what it gained, and 'on someone else's work' reads oddly."
+  suggestion: "Built on someone else's work, it would have scored about 75 points. I voided that one too."
+- unit: ch12
+  line: 150
+  quote: "Parameters, Qwen already had plenty of."
+  category: clarity
+  severity: medium
+  problem: "Translated-sounding inverted sentence (PT 'Parâmetros, o Qwen já tinha de sobra'). The point is that size was not what Nex added."
+  suggestion: "Qwen already had plenty of parameters. What Nex added was the training."
+- unit: ch13
+  line: 150
+  quote: "The top of the table was tied with the most expensive models on the market."
+  category: consistency
+  severity: medium
+  problem: "Overstates. In ch11 the tie at the top is seven models at 100, and GLM 5.3 (94) and DeepSeek V4.1 Flash (92.5) are described as 'a bit lower'. 'Tied' contradicts the ch11 numbers and the 'read it as a group' message. (PT says the same, 'empatava', so this is a PT point too.)"
+  suggestion: "Both landed within a few points of the top of the table, next to models that cost many times more."
+- unit: ch13
+  line: 150
+  quote: "GLM 5.3 reached 94 running on a flat-rate subscription plan, and DeepSeek V4.1 Flash scored 92.5 for a little over a dollar (@sec-ch11)."
+  category: repetition
+  severity: medium
+  problem: "Near-verbatim repeat of ch11 ('DeepSeek V4.1 Flash scored 92.5 for a little over $1... GLM 5.3 to the same 94', flagged in the style report). The cross-reference is already there."
+  suggestion: "Shorten to a callback: 'In the September round (@sec-ch11), a flat-rate GLM 5.3 and a cheap DeepSeek V4.1 Flash both finished within a few points of the top.'"
+- unit: ch11
+  line: 73
+  quote: "inside a programming [agent]{.gls key=agente}, a ChatGPT-style chat app. Nobody helped along the way."
+  category: clarity
+  severity: medium
+  problem: "Garbled apposition: 'a ChatGPT-style chat app' appears to rename the agent, but it is the thing the models were asked to build. A non-programmer will misread it."
+  suggestion: "Each model got the same request, word for word: build a ChatGPT-style chat app on its own, working inside a programming [agent]{.gls key=agente}. Nobody helped along the way."
+- unit: ch11
+  line: 233
+  quote: "It didn't last. Once the models learned to build"
+  category: clarity
+  severity: low
+  problem: "'It' has no clear antecedent right after the new heading 'The Wrong Turn'; the previous section ended on the self-review phase, not on something that could 'last'."
+  suggestion: "The second version didn't last either. Once the models learned to build, it became a completeness exam..."
+- unit: ch11
+  line: 238
+  quote: "It's the path of least resistance for anything that's trained on that kind of test its whole life, and a language model has."
+  category: error
+  severity: medium
+  problem: "Broken, translated-sounding sentence; 'and a language model has' dangles."
+  suggestion: "It's the path of least resistance for anything trained on that kind of test its whole life, and a language model has been."
+- unit: ch11
+  line: 367
+  quote: "Getting the test wrong, I already knew how to measure. Cheating was a different problem."
+  category: clarity
+  severity: medium
+  problem: "First sentence is hard to parse ('getting the test wrong' = models getting questions wrong?). Reader stumbles at the chapter's last beat."
+  suggestion: "How to measure a model that gets the test wrong, I already knew. A model that cheats on it was a different problem."
+- unit: ch11
+  line: 303
+  quote: "GPT-6 Sol also landed below GPT-5.6 Sol on vigilance, though much cheaper."
+  category: clarity
+  severity: low
+  problem: "'Vigilance' is never defined in the chapter (it is the sabotage-detection score). A lay reader won't know what was measured."
+  suggestion: "...landed below GPT-5.6 Sol at catching the planted sabotage, though much cheaper."
+- unit: ch11
+  line: 65
+  quote: "The audit at the time was wrong."
+  category: pacing
+  severity: low
+  problem: "The opening anecdote (lines 29-65) is long, with the 'Opus in Claude Code' reveal and the self-contradicting repository summary covered in three separate beats. Not an error; the worst drag in the chapter."
+  suggestion: "Optional: merge lines 59 and 62 (the two 'correction and error side by side' paragraphs) into one."
+- unit: ch12
+  line: 86
+  quote: "that stand-in that pretends to be the external service during the test (@sec-ch06)"
+  category: repetition
+  severity: medium
+  problem: "Third explanation of mock/stand-in (ch06, ch11 'The Test That Lies', here), and 'Green Tests, Dead App' retells ch11's 'sneakiest case' (invented command + mock written by the same model) almost beat for beat. The reader has just read it one chapter earlier."
+  suggestion: "In ch12 make it a callback: 'Same trap as the sneakiest case in @sec-ch11: Sonnet 5 wrote the [mock]{.gls} itself, and the stand-in had exactly the invented command.' Keep the Sonnet 5 / Qwen 3.7 specifics, cut the re-explanation."
+- unit: ch12
+  line: 115
+  quote: "Hugging Face, the site where the community shares"
+  category: repetition
+  severity: low
+  problem: "Hugging Face is explained again in ch14 line 144 ('the world's biggest repository of open AI models... a sort of GitHub') and flagged in the style report as a ch08/ch12 repeat."
+  suggestion: "Keep the explanation in ch12; in ch14 write 'Hugging Face, the site from @sec-ch12 where the community shares open models'."
+- unit: ch12
+  line: 275
+  quote: "A digit run that Qwen and DeepSeek count as 200 tokens, LUA counted as 67."
+  category: consistency
+  severity: low
+  problem: "The figure alt text gives Qwen 193 and DeepSeek 255 for that same digit run, not a shared 200. The alt text also mixes per-text counts (42/67/168) with the summed distances (2, 68, almost 200) in one list, which a reader of the figure can't tell apart."
+  suggestion: "'A digit run that Qwen counts as 193 tokens and DeepSeek as 255, LUA counted as 67.' Label the summed distances as such in the figure."
+- unit: ch12
+  line: 215
+  quote: "Add configuration differences across the fifteen servers."
+  category: clarity
+  severity: low
+  problem: "Imperative fragment reads like a note; also 'detour' and 'relay' alternate for the same idea in this section."
+  suggestion: "Configuration differences across the fifteen servers could add to that."
+- unit: ch12
+  line: 187
+  quote: "it had quietly passed nearly 300,000 customer requests to Claude, instead of processing them with Kimi itself"
+  category: clarity
+  severity: low
+  problem: "Ambiguous: whose customers? Reads as if Claude's customers were passed to Claude."
+  suggestion: "...it had quietly forwarded nearly 300,000 requests from its own customers to Claude, instead of answering them with Kimi, through a network of 5,380 fake accounts"
+- unit: ch13
+  line: 159
+  quote: "GLM 4.7 Flash, the 30-billion-parameter one, running on the RTX 5090, was the first local model"
+  category: clarity
+  severity: medium
+  problem: "Line 45-47 says GLM 4.7 Flash at full precision takes about 60 GB and 'on the card, it doesn't fit'. A careful reader will wonder how it ran on the 32 GB RTX 5090 in September. The quantized version isn't mentioned."
+  suggestion: "...running on the RTX 5090 in a 4-bit quantized version, was the first local model..."
+- unit: ch13
+  line: 112
+  quote: "speed plummets from 150 tokens per second to somewhere between 2 and 8"
+  category: consistency
+  severity: low
+  problem: "The chapter opening (line 32) says 2 or 3 tokens per second for the same situation (model spilling out of the card)."
+  suggestion: "Use one range in both places, e.g. 'to somewhere between 2 and 8' in the opening too, or 'to 2 or 3' here."
+- unit: ch13
+  line: 176
+  quote: "whoever pays the most are the companies buying cards"
+  category: error
+  severity: low
+  problem: "Agreement/idiom slip: 'whoever pays the most are'. Also the paragraph opens a new topic ('why don't home machines improve') with no signpost after the 'Twelve Hours' price-column quote, so the thread jumps."
+  suggestion: "...and in 2026 the ones paying the most are the companies buying cards by the container-load to fill data centers. (Optional lead-in: 'One more reason local lags the cloud: why don't home machines improve at the same pace as the models?')"
+- unit: ch13
+  line: 164
+  quote: "for a test suite that practically the whole rest of the table ran in the cloud in 80 to 300 minutes"
+  category: clarity
+  severity: low
+  problem: "Clumsy and heavy; 'test suite' also misdescribes the benchmark, which the book elsewhere calls the test."
+  suggestion: "Nearly twelve hours, for a test that almost every other model on the table finished in the cloud in 80 to 300 minutes."
+- unit: ch13
+  line: 193
+  quote: "the \"ElevenLabs killer,\" the company that dominated synthetic voice"
+  category: clarity
+  severity: low
+  problem: "Reads as if the 'killer' were the company. The appositive should attach to ElevenLabs."
+  suggestion: "It was the \"ElevenLabs killer,\" the one that would dethrone ElevenLabs, the company that dominated synthetic voice."
+- unit: ch13
+  line: 286
+  quote: "The full Clef, from Cloudflare, a 27-billion-parameter model"
+  category: clarity
+  severity: low
+  problem: "'Full Clef' (from PT 'Clef completo') suggests a variant and the reader hasn't met other Clef sizes; ch14 mentions only 'Clef, which Cloudflare released on October 1'."
+  suggestion: "The largest Clef, from Cloudflare, a 27-billion-parameter model... (or just 'Cloudflare's Clef, the 27-billion-parameter version')"
+- unit: ch13
+  line: 268
+  quote: "tied with OpenAI's decision service, which debuted at 90.5%"
+  category: clarity
+  severity: low
+  problem: "The 4B models scored 87% to 90% (line 265), 'tied' with 90.5% is loose, and 'debuted at' is odd for a score."
+  suggestion: "A 4-billion-parameter model... landed within a point or two of OpenAI's decision service, which scored 90.5%."
+- unit: ch14
+  line: 241
+  quote: "Strip away the marketing and Jev is a classifier, that program from @sec-ch13"
+  category: repetition
+  severity: low
+  problem: "ch13 line 256 already says 'Under the marketing, Jev is a classifier, something that has existed for decades... You give it a text, some rules...' Same point and same mailroom-style explanation twice, one chapter apart."
+  suggestion: "Make ch14 the callback: 'Strip away the marketing and, as you saw in @sec-ch13, Jev is a classifier: it picks an answer from a closed list, such as whether an email is a scam, or a ticket is billing, support or sales.'"
+- unit: ch14
+  line: 196
+  quote: "when the technology becomes a commodity, the money migrates to taxonomy"
+  category: repetition
+  severity: low
+  problem: "Same sentence appears again as the blockquote on line 212 sixteen lines later, and again in the epilogue (style report). The blockquote adds 'Ask for the receipt' and is fine, but the first statement could be dropped in favor of it."
+  suggestion: "Replace line 196's last sentence with 'The full idea is simple, and it's in the quote below.' or cut the first occurrence."
+- unit: ch14
+  line: 279
+  quote: "The dangerous model leaked, went offline and came back"
+  category: clarity
+  severity: low
+  problem: "Conflates two stories: the leak (unauthorized access to Mythos, April) and the shutdown and return (Fable 5 and Mythos 5, June-July). Read literally it says one model did all three."
+  suggestion: "The dangerous model was reported leaked, then its successor was shut down worldwide and came back;"
+- unit: ch14
+  line: 144
+  quote: "Hugging Face is the world's biggest repository of open AI models and datasets, a sort of GitHub for machine learning."
+  category: repetition
+  severity: low
+  problem: "Already explained in ch12 (line 37). See the ch12 item."
+  suggestion: "'Hugging Face, the site where the community shares open models (@sec-ch12), was broken into between July 9 and 13, 2026, and the intruder was OpenAI...'"
+- unit: ch14
+  line: 168
+  quote: "pointed to three AI safety advocacy groups amplifying the posts in the first 15 minutes"
+  category: clarity
+  severity: low
+  problem: "Dense paragraph with four actors (Sacks, Pirate Wires, Coxon, Soares) in one block; a lay reader loses who said what. Not an error."
+  suggestion: "Split after the Sacks sentence and after 'had not worked with any third parties', so the Soares reply gets its own short paragraph."
+- unit: interlude2
+  line: 82
+  quote: "already counting the compensation White gets for playing second"
+  category: clarity
+  severity: low
+  problem: "The Go term for this (komi) is never given, and 'compensation' alone may confuse a reader who has never seen a Go score."
+  suggestion: "...already counting the komi, the handicap points White gets for playing second."
+- unit: interlude2
+  line: 61
+  quote: "have at home an opponent stronger than any human professional [@wang2023adversarial]"
+  category: clarity
+  severity: low
+  problem: "Citation placement: the Wang paper is the adversarial-attack study cited later (line 94) for the blind spot, not a source for 'stronger than any professional', and the sentence ends up citing the same paper that shows KataGo can be beaten."
+  suggestion: "Check the key; if the claim rests on KataGo's published ratings, cite [@lightvector2026katago] or the Wu paper here and keep wang2023adversarial for the blind-spot paragraph."

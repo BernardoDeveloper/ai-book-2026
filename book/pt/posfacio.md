@@ -83,7 +83,7 @@ Em @sec-ch09 eu contei que o texto do blog sobre como falar com o Claude Code fo
 Não foi a primeira vez no ano. Em abril, o Claude Code traduziu vinte anos de blog em pouco mais de um dia e meio (@sec-interlude1). Noventa por cento correu liso, e os outros dez só se resolveram porque alguém leu a lista do que tinha falhado e foi atrás de outro caminho.
 
 <!-- src: 2026/10/12/llms-agentes-competente-o-suficiente -->
-Esse é o ponto de @sec-ch20 aplicado ao próprio livro. Qualquer um dos bons modelos de outubro de 2026 teria escrito rascunhos parecidos, porque o modelo virou commodity. O que fez o processo funcionar foi o que está em volta dele: o inventário, o contrato escrito, o verificador automático, as fontes como [oráculo]{.gls key=oraculo}, o rastro por parágrafo. É a mesma engenharia velha que eu defendi em cada capítulo, aplicada a texto.
+Esse é o ponto de @sec-ch20 aplicado ao próprio livro. Qualquer um dos bons modelos de outubro de 2026 teria escrito rascunhos parecidos, porque o modelo virou commodity, uma mercadoria quase intercambiável. O que fez o processo funcionar foi o que está em volta dele: o inventário, o contrato escrito, o verificador automático, as fontes como [oráculo]{.gls key=oraculo}, o rastro por parágrafo. É a mesma engenharia velha que eu defendi em cada capítulo, aplicada a texto.
 
 <!-- src: original -->
 O repositório registra o primeiro commit e o rascunho de todos os capítulos no mesmo dia. São os primeiros dez por cento de @sec-ch05: impressionam e quase não dizem nada sobre o resto. Os outros noventa por cento são leitura, corte e correção.

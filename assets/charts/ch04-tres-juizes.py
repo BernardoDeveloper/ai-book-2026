@@ -2,9 +2,9 @@
 
 Data: the example in book/pt/ch04.md ("Três juízes e um veto"), from
 akitaonrails.com 2026/03/27/ensinando-a-questionar-noticias-frank-investigator:
-two models say "sustentado" at 70% and one says "misto" at 95%, and the "misto"
-weighs more; a contrary primary source locks confidence at 60% at most and forces
-"misto"; five outlets of the same group count as one voice; outlets citing each
+two models say "sustentado" at 40% and one says "misto" at 95%; confidences add
+up per verdict, so "misto" wins 95 to 80; a contrary primary source locks
+confidence at 60% at most and forces "misto"; five outlets of the same group count as one voice; outlets citing each
 other in a circle are flagged. Models are generic (no vendor names or logos).
 
 Usage: uv run --with matplotlib python -I assets/charts/ch04-tres-juizes.py pt
@@ -32,10 +32,10 @@ for f in ("NotoSans-Regular.ttf", "NotoSans-SemiBold.ttf", "NotoSans-Italic.ttf"
 plt.rcParams.update({"font.family": "Noto Sans", "font.size": 12, "text.color": INK})
 
 L = {
-    "pt": {"models": [("modelo A", "sustentado 70%"), ("modelo B", "sustentado 70%"), ("modelo C", "misto 95%")],
+    "pt": {"models": [("modelo A", "sustentado 40%"), ("modelo B", "sustentado 40%"), ("modelo C", "misto 95%")],
            "sust": "sustentado", "misto": "misto", "fonte": "fonte\nprimária", "veto": "veto: no máximo 60%",
            "result": "misto, no máximo 60%", "grupo": "mesmo grupo = uma voz", "circ": "citação circular"},
-    "en": {"models": [("model A", "supported 70%"), ("model B", "supported 70%"), ("model C", "mixed 95%")],
+    "en": {"models": [("model A", "supported 40%"), ("model B", "supported 40%"), ("model C", "mixed 95%")],
            "sust": "supported", "misto": "mixed", "fonte": "primary\nsource", "veto": "veto: 60% at most",
            "result": "mixed, 60% at most", "grupo": "same group = one voice", "circ": "circular citation"},
 }[LANG]
@@ -95,14 +95,14 @@ def pan(cx, top, label, weights):
     x = cx - sum(w for w, _ in weights) / 2 - 0.05 * (len(weights) - 1) / 2
     for w, t in weights:
         box(x, by, w, w * 0.8, SAND, lw=1.2, r=0.06, z=5)
-        ax.text(x + w / 2, by + w * 0.4, t, ha="center", va="center", fontsize=9 if w < 0.7 else 10,
+        ax.text(x + w / 2, by + w * 0.4, t, ha="center", va="center", fontsize=8 if w < 0.5 else (9 if w < 0.7 else 10),
                 fontweight="semibold", zorder=6)
         x += w + 0.05
     ax.text(cx, by - 0.45, label, ha="center", va="top", fontsize=11.5, style="italic")
     return by
 
 
-lby = pan(lx, ly, L["sust"], [(0.6, "70%"), (0.6, "70%")])
+lby = pan(lx, ly, L["sust"], [(0.44, "40%"), (0.44, "40%")])
 rby = pan(rx, ry, L["misto"], [(0.95, "95%")])
 for y, (tx, ty) in zip(ys, ((lx - 0.55, lby + 0.6), (lx - 0.6, lby + 0.2), (rx - 0.78, rby - 0.2))):
     arrow((3.08, y), (tx, ty), rad=-0.1 if ty > y + 0.3 else 0.0)

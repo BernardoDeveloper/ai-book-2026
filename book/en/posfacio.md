@@ -7,7 +7,7 @@ sources:
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "c6451afc1d26d440a2364ebee3249330f54d9e0ddcb493aa7fdba4c9ff72d8c4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/posfacio.md, sha256: "6b741b5e1563c82186a405f88a8dd463dbb22e6286af087b237356f737a38f24"}
+translated_from: {file: book/pt/posfacio.md, sha256: "f5e37ac8224a52db5efaef70f154097284a56d6e775f4f4a0642c71d0e36a143"}
 ---
 
 # Afterword: How This Book Was Made {#sec-posfacio .unnumbered}
@@ -53,13 +53,13 @@ Every number, date and name was checked against three things: the posts, the ref
 
 - in the March review of my mini PC with a Strix Halo chip, I had set aside 96 GB of memory for the graphics side. On April 8 I lowered it to 64 GB, and some later posts still said 96. The book uses 64 for everything after April (@sec-ch13);
 - a counting bug in one of the benchmark's tools underestimated by 40 to 90 times the cost of the runs done with it before August (@sec-ch11). The book doesn't cite any of those costs;
-- in the June post about Claude Fable 5, I wrote that it cost ten times more than Opus 4.8 per run. In July, redoing the benchmark's math, I found that the old estimates left out the tokens read from cache: Opus 4.8 came to about $6, not a little over one, and Fable cost almost double, not ten times. The June post still says ten times; the book tells the wrong number and the correction (@sec-ch14);
+- in the June post about Claude Fable 5, I wrote that it cost ten times more than Opus 4.8 per run. In July, redoing the benchmark's math, I found that the old estimates left out the tokens read from cache: Opus 4.8 came to about $6, not a little over one, and Fable cost almost double, not ten times. The June post still says ten times; the book reports both the wrong number and the correction (@sec-ch14);
 - in the March post about the Claude Code source leak, I wrote that Anthropic had bought Bun at the end of 2024. Bun's own announcement is from December 2025, and that's the date the book uses (@sec-ch16) [@sumner2025anthropic];
-- a chapter summary, written by an agent, said that Claude Code's signing lock had fallen in less than a day after the code leak (@sec-ch16). The original announcement came out about 30 hours later, and the book says "the next day" [@guthrie2026drm];
+- a chapter summary, written by an agent, said that the block on third-party tools (the request signature inside Claude Code) had been broken in less than a day after the code leak (@sec-ch16). The original announcement came out about 30 hours later, and the book says "the next day" [@guthrie2026drm];
 - METR's productivity study, which I had described as done on private code, used large open source projects [@becker2025measuring].
 
 <!-- src: original -->
-Notice that many of these corrections are to my own blog. In some places, the book ended up more accurate than the posts it came from. And one of them corrected a summary written by an agent, because the source beats the summary, including when the summary comes from the machine.
+Notice that many of these are corrections to my own blog. In some places, the book ended up more accurate than the posts it came from. And one of them corrected a summary written by an agent, because the source beats the summary, including when the summary comes from the machine.
 
 > The drafts came out fast. Trust in the text came from the checking.
 
@@ -78,13 +78,13 @@ Real people only appear in freely licensed photos, credited in the caption and i
 ## What's Still Mine
 
 <!-- src: 2026/04/15/como-falar-com-o-claude-code-efetivamente -->
-In @sec-ch09 I told how the blog post about talking to Claude Code was written by Claude itself, from a request of mine, and corrected by me while it wrote. This book was made the same way, on a larger scale. This afterword too: the draft came from Claude, running in Claude Code, from a request of mine. The English edition you're reading is a translation of the Portuguese text, made the same way, by agents working under the same rules, and reviewed by me.
+In @sec-ch09 I told you how the blog post about talking to Claude Code was written by Claude itself, from a request of mine, and corrected by me while it wrote. This book was made the same way, on a larger scale. This afterword too: the draft came from Claude, running in Claude Code, from a request of mine. The English edition you're reading is a translation of the Portuguese text, made the same way, by agents working under the same rules, and reviewed by me.
 
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
 It wasn't the first time that year. In April, Claude Code translated twenty years of blog posts in a little over a day and a half (@sec-interlude1). Ninety percent went smoothly, and the other ten only got sorted because someone read the list of what had failed and went looking for another way.
 
 <!-- src: 2026/10/12/llms-agentes-competente-o-suficiente -->
-That's the point of @sec-ch20 applied to the book itself. Any of the good models of October 2026 would have written similar drafts, because the model became a commodity. What made the process work was what surrounds it: the inventory, the written contract, the automatic checker, the sources as [oracle]{.gls key=oraculo}, the trail for every paragraph. It's the same old engineering I defended in every chapter, applied to text.
+That's the point of @sec-ch20 applied to the book itself. Any of the good models of October 2026 would have written similar drafts, because the model became a commodity, a nearly interchangeable good. What made the process work was what surrounds it: the inventory, the written contract, the automatic checker, the sources as [oracle]{.gls key=oraculo}, the trail for every paragraph. It's the same old engineering I defended in every chapter, applied to text.
 
 <!-- src: original -->
 The repository records the first commit and the drafts of every chapter on the same day. That's the first ten percent from @sec-ch05: impressive, and it says almost nothing about the rest. The other ninety percent is reading, cutting and correcting.

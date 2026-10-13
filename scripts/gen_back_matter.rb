@@ -84,12 +84,22 @@ units.each do |u|
                rec.dig("credit", "backmatter")
              else # built from the record's fields; the stored strings are Portuguese
                mods = { "redimensionada" => "resized", "recortada" => "cropped", "convertida de SVG para PNG" => "converted from SVG to PNG",
-                        "em tons de cinza" => "converted to grayscale" }
+                        "em tons de cinza" => "converted to grayscale",
+                        "montada lado a lado" => "placed side by side" }
                src = rec["source"] || {}
-               lic = rec.dig("license", "short").to_s
-               licence = lic.match?(/public domain|\APD|CC0/i) ? "Public domain." : "Licensed #{lic}#{rec.dig('license', 'url') ? ", #{rec.dig('license', 'url')}" : ''}."
-               changes = Array(rec["modifications"]).map { mods.fetch(_1, _1) }
-               %("#{src['title']}", #{rec['author']}. #{src['page_url']}. #{licence}#{changes.empty? ? '' : " Changes: #{changes.join(', ')}."})
+               licence_of = lambda do |r|
+                 l = r.dig("license", "short").to_s
+                 l.match?(/public domain|\APD|CC0/i) ? "Public domain." : "Licensed #{l}#{r.dig('license', 'url') ? ", #{r.dig('license', 'url')}" : ''}."
+               end
+               parts = if rec["composite_of"] # several photos in one figure: credit each
+                         rec["composite_of"].map do |c|
+                           %(#{c['subject']}: "#{c.dig('source', 'title')}", #{c['author']}. #{c.dig('source', 'page_url')}. #{licence_of.(c)})
+                         end.join(" ")
+                       else
+                         %("#{src['title']}", #{rec['author']}. #{src['page_url']}. #{licence_of.(rec)})
+                       end
+               changes = Array(rec["modifications"]).map { m = _1.sub(/s(?= |\z)/, ""); mods.fetch(m, mods.fetch(_1, _1)) }
+               %(#{parts}#{changes.empty? ? '' : " Changes: #{changes.join(', ')}."})
              end
            when "ai_illustration" then "#{CR[:ai]}: #{rec.dig('generation', 'model')}, #{rec.dig('generation', 'date').to_s[0, 10]}."
            else CR[:diagram]

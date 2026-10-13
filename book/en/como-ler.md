@@ -4,7 +4,7 @@ chapter: "How to Read This Book"
 sources: []
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/como-ler.md, sha256: "4c053e7a8cec4c7a22f4c02f688bd4831baac0615bd96571057a6d311d85197a"}
+translated_from: {file: book/pt/como-ler.md, sha256: "b364c01a7bc262123c45198f2c4be95b3db079a230059ee1b37c3bef6387bf57"}
 ---
 
 # How to Read This Book {#sec-como-ler .unnumbered}
@@ -12,14 +12,12 @@ translated_from: {file: book/pt/como-ler.md, sha256: "4c053e7a8cec4c7a22f4c02f68
 <!-- src: original -->
 The best way to read this book is in order, front to back. It tells the story of February through October 2026, the months in which I put artificial intelligence to the test almost every day, and the story has a sequence. First what this thing is, then what it did in my hands, how to measure it, where it's dangerous and what all of it means for your work. A concept explained early on gets used without ceremony later.
 
-But I know plenty of people arrive with one specific worry and little patience to wait the whole book for the answer. That's fine. Each of the five parts answers a fear, and you can jump straight to yours.
+But I know plenty of people arrive with one specific worry and little patience to wait the whole book for the answer. That's fine. Each part answers a question I heard a lot, and you can jump straight to it.
 
 ## If You're in a Hurry
 
 <!-- src: original -->
-Part I, which starts at @sec-ch01, is for anyone who wants to know whether this thing is intelligent, whether there's someone on the other side of the screen and whether this artificial general intelligence everyone talks about is on its way. Part II, from @sec-ch05 on, is the marathon: months programming with AI every day to find out whether it really works or is just a stage demo.
-
-Part III, from @sec-ch11 on, is for anyone wondering which AI is the best, whether it's improving exponentially and whether you can believe the ads. Part IV, at @sec-ch15, deals with the most concrete fear: letting one of these programs loose on your files, and what the apps on your phone know about you. Part V, at @sec-ch18, faces the question that brought most people here: will AI take my job, what should I learn and what comes next.
+Each part starts with a chapter you can read on its own: Part I at @sec-ch01, II at @sec-ch05, III at @sec-ch11, IV at @sec-ch15 and V at @sec-ch18. The question each one answers is listed in the preface, under "The Fears You Brought Along."
 
 <!-- src: original -->
 Between the parts there are two interludes, shorter and lighter, to catch your breath. The appendices, at the back, hold whatever would get in the way of the story:
@@ -38,7 +36,7 @@ If you skip around, you'll trip now and then over a term or a character that sho
 This book was closed in October 2026. The story takes place between February and October of that year, and the dates are spelled out on purpose: "in March 2026," never "recently."
 
 <!-- src: original -->
-The names of models and products will age fast. By the time you read this, Claude Opus 4.5, GPT-5.5 or Kimi K3 will probably sound like the cars in an old novel: they tell you when the story is set, and nobody reads the novel to pick a car. The mechanisms underneath change much more slowly. How a language model generates text, why it forgets what the two of you agreed on, why it agrees with you, why an unsupervised agent screws things up: that's what I want you to take away.
+The names of models and products will age fast. By the time you read this, Claude Opus 4.5, GPT-5.5 or Kimi K3 will probably sound as dated as a Ford Model T: they tell you when the story is set, and nobody reads the novel to pick a car. The mechanisms underneath change much more slowly. How a language model generates text, why it forgets what the two of you agreed on, why it agrees with you, why an unsupervised agent screws things up: that's what I want you to take away.
 
 <!-- src: original -->
 Numbers deserve the same care. Price, benchmark score, amount of memory, position in a ranking: each one is a snapshot taken in a specific month, and the text says which. A score from September 2026 tells you what happened in September 2026, and that's it.

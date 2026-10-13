@@ -9,7 +9,7 @@ sources:
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "309b129d7a93fb9b17e4efaefe75a56b8b85e95568adc2ecc9809306dab8b434"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/epilogo.md, sha256: "e9e8823153cdd40716ac89a544b84ddcd3860e6691402c3be843508d30bf2f98"}
+translated_from: {file: book/pt/epilogo.md, sha256: "5b3843d6310a2d10048a6f4f0f7b9f1b7d9c74715da3723afc3681f81ccfb0c9"}
 ---
 
 # Epilogue: What I'd Tell You {#sec-epilogo .unnumbered}
@@ -22,7 +22,7 @@ I have no career plan to sell you, and no course. I have what a year of daily us
 ## Fear Sells
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-In @sec-ch01 you met the line on the poster: your hype about AI is inversely proportional to your knowledge of AI. After this year, I'd add that fear follows the same rule. The less a person knows about how the thing works, the more room is left to imagine the end of the world.
+In @sec-ch01 you met the line on the card: your hype about AI is inversely proportional to your knowledge of AI. After this year, I'd add that fear follows the same rule. The less a person knows about how the thing works, the more room is left to imagine the end of the world.
 
 <!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
 Fear and hype come out of the same factory. In August 2026 I wrote about the courses in "engineering" this and that which sprouted around agents, and the mechanism was an old one. First they make you anxious, thinking you're falling behind, that everyone else already migrated to the new paradigm and you haven't. Then they charge you to cure the anxiety they created.
@@ -47,7 +47,7 @@ The first is the bare minimum about the machine. An [LLM]{.gls} generates the mo
 If you want to go deeper, @sec-apmecanica shows the mechanism without math, and @sec-antes has a reading list for several levels.
 
 <!-- src: 2026/04/11/vs-code-e-o-novo-cartao-perfurado -->
-The same goes for the fundamentals of your own trade. In April I wrote about the programmer with no foundation who watches the [agent]{.gls key=agente} put together a database query, tests it against 300 fake rows, thinks everything is fine and has no idea what happens with a million real rows. With an agent in hand, people with a foundation learn faster. People without one just outsource their own ignorance.
+The same goes for the fundamentals of your own trade. Think of the programmer with no foundation from @sec-ch18, who tests against 300 rows and has no idea what happens with a million. With an [agent]{.gls key=agente} in hand, people with a foundation learn faster. People without one just outsource their own ignorance.
 
 ### Judgment
 
@@ -68,16 +68,16 @@ That's the part of the map that's blank for the machine and filled in inside you
 <!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
 This list is longer, and it frees up more time:
 
-- courses and certifications in the taxonomy of the month. When the technology becomes a commodity, the money migrates to the new name: five names for chaining API calls and a certification that expires in six months. Anyone working with method, tests and review already does what they teach;
+- courses and certifications in the name of the fad of the month (harness engineering, loop engineering and relatives). When the technology becomes a commodity, the money migrates to the new name: five names for chaining API calls and a certification that expires in six months. Anyone working with method, tests and review already does what they teach;
 - announcements of [AGI]{.gls key=agi}, of extinction, of a model too dangerous to release. The script has existed since at least 2019 (@sec-ch01), and @sec-ch14 shows who profits from it;
 - ranking fights over a tenth of a point. At the top, the models form a pack, and the gap between them fits inside the [run-to-run noise]{.gls key=ruido-entre-execucoes} (@sec-ch11);
 - the promise that the next model will fix it. The numbers in @sec-ch20 show a flat line up top, and what changes the result is the process around it;
-- the video of the app built in ten minutes. The first few hours are the easy part, and the other ninety percent is in @sec-ch05.
+- the video of the app built in ten minutes. The first few hours are the easy part, and the other ninety percent is what @sec-ch05 is about.
 
 ## Check for Yourself
 
 <!-- src: 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior -->
-In July, after months of publishing tables, I wrote the line I'd most like you to take away from here: don't trust a benchmark, don't trust influencers, don't trust me. It applies to this book. That's why I left in @sec-ch20 the list of what would make me change my mind, with things anyone can measure from the outside.
+In July, after months of publishing tables, I wrote the line I'd most like you to take away from here: don't trust a benchmark, don't trust influencers, don't trust me. It applies to this book. That's why @sec-ch20 includes the list of what would make me change my mind, with things anyone can measure from the outside.
 
 <!-- src: original -->
 Checking takes less work than it seems, and the practical checklists are already in the book, each one where the subject called for it:
@@ -89,7 +89,7 @@ Checking takes less work than it seems, and the practical checklists are already
 - against scams and [deepfakes]{.gls key=deepfake}, the habits in @sec-ch17.
 
 <!-- src: original -->
-Nearly all of them end with the same move, which is going up to the primary source: the study, the contract, the official data. And the most useful primary source for anyone using AI at work is a test of your own. Take a real task, one you already know how to solve, give it to two tools, run it more than once and compare with what you know is right. That's the benchmark that matters to you, and no announcement publishes it.
+Nearly all of them end with the same move, which is going back to the primary source: the study, the contract, the official data. And the most useful primary source for anyone using AI at work is a test of your own. Take a real task, one you already know how to solve, give it to two tools, run it more than once and compare with what you know is right. That's the benchmark that matters to you, and no announcement publishes it.
 
 ## Without Handing Over the Wheel
 

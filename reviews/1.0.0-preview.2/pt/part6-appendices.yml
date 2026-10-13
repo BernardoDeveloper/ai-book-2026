@@ -1,0 +1,320 @@
+# Part 6 (appendices + glossary), PT, read-only reader pass.
+# Units: apmecanica, apA, apB, apmemoria, apC, apD, glossary.
+# Cross-checks done: apA dates vs apD statuses (FrankMD 30 jan, Chronicles 10-16 fev,
+# Yomik 24 fev, FrankClaw 10-16 mar, ai-memory 21 mai / 2.0 set / 2.6.6 em 13 out,
+# ai-jail 2.8.1, nes-to-sms pausa fim de set, benchmark de classificadores 12 out) agree
+# with each other and with ch10/ch11/ch15/ch20. No contradiction found, only ordering and
+# wording nits below. Glossary keys used by the six appendices all exist.
+
+# ---------------------------------------------------------------- 1. errors
+
+- unit: apB
+  line: 75
+  quote: "erros de um programa em quem você confia"
+  category: error
+  severity: medium
+  problem: "'Programa' não é pessoa; o pronome relativo certo é 'em que'. (Na linha 253 a mesma frase usa 'agente em quem', que está correto.)"
+  suggestion: "Elas existem pra conter os erros de um programa em que você confia mas que é falível."
+
+- unit: apB
+  line: 183
+  quote: "Desde maio de 2026, rodei os agentes quase o tempo todo em modo YOLO"
+  category: error
+  severity: medium
+  problem: "Tempo verbal: 'desde' + ação que continua pede presente (o parágrafo seguinte descreve a regra que ele segue hoje)."
+  suggestion: "Desde maio de 2026, rodo os agentes quase o tempo todo em modo YOLO (@sec-ch15)."
+
+- unit: apB
+  line: 201
+  quote: "porque @sec-ch15 já fez o argumento inteiro"
+  category: error
+  severity: low
+  problem: "A referência vira 'Capítulo 15' no PDF, e sujeito sem artigo soa quebrado ('porque Capítulo 15 já fez'). O resto do livro usa 'o @sec-chNN' nessa posição (ex.: apmecanica 'O @sec-ch01 deu')."
+  suggestion: "Esta peça é curta porque o @sec-ch15 já fez o argumento inteiro."
+
+- unit: apmemoria
+  line: 49
+  quote: "como @sec-ch02 mostrou"
+  category: error
+  severity: low
+  problem: "Mesma questão: sujeito sem artigo depois de 'como'."
+  suggestion: "As notas dessas ferramentas são texto, como o @sec-ch02 mostrou, então em tese dá pra levar."
+
+- unit: apmemoria
+  line: 98
+  quote: "parecido com o do Claude Code que @sec-ch02 descreveu"
+  category: error
+  severity: low
+  problem: "Mesma questão: sujeito sem artigo depois de 'que'."
+  suggestion: "parecido com o do Claude Code que o @sec-ch02 descreveu"
+
+- unit: apmemoria
+  line: 101
+  quote: "Memória ruim é pior que falta de memória"
+  category: error
+  severity: low
+  problem: "Comparativo fora da regra do WRITER.md ('do que')."
+  suggestion: "Memória ruim é pior do que memória nenhuma, porque o agente sem memória pergunta e o agente com memória errada age com certeza falsa."
+
+- unit: apmecanica
+  line: 210
+  quote: "que eu acho mais revelador que a rima"
+  category: error
+  severity: low
+  problem: "Comparativo sem 'do que'."
+  suggestion: "um detalhe que eu acho mais revelador do que a rima"
+
+- unit: apB
+  line: 66
+  quote: "É menos flexível que o do Linux"
+  category: error
+  severity: low
+  problem: "Comparativo sem 'do que'."
+  suggestion: "É menos flexível do que o do Linux, e algumas proteções funcionam só pela metade."
+
+- unit: apA
+  line: 122
+  quote: "ganhos menores que o esperado"
+  category: error
+  severity: low
+  problem: "Comparativo sem 'do que'."
+  suggestion: "A Reuters reporta ganhos menores do que o esperado em simplesmente aumentar os modelos"
+
+- unit: apC
+  line: 39
+  quote: "A diferença é maior que o ruído?"
+  category: error
+  severity: low
+  problem: "Comparativo sem 'do que'."
+  suggestion: "**A diferença é maior do que o ruído?**"
+
+- unit: apC
+  line: 67
+  quote: "têm outro peso que um fato documentado"
+  category: error
+  severity: low
+  problem: "'outro peso que' é construção torta; comparativo sem 'do que'."
+  suggestion: "têm um peso diferente do de um fato documentado"
+
+- unit: glossary
+  quote: "fonte-primaria"
+  category: error
+  severity: low
+  problem: "Definição: 'Vale mais que qualquer número de textos que a repetem' (comparativo sem 'do que'; 'qualquer número de textos' é estranho)."
+  suggestion: "Vale mais do que qualquer quantidade de textos que a repetem."
+
+- unit: glossary
+  quote: "ruido-entre-execucoes"
+  category: error
+  severity: low
+  problem: "Definição: 'Diferenças menores que esse ruído não provam que um modelo é melhor que outro' (dois comparativos sem 'do que')."
+  suggestion: "Diferenças menores do que esse ruído não provam que um modelo é melhor do que outro."
+
+- unit: glossary
+  quote: "memoria-unificada"
+  category: error
+  severity: low
+  problem: "Definição: 'costuma ser mais lenta que a de uma placa de vídeo dedicada' (comparativo sem 'do que')."
+  suggestion: "costuma ser mais lenta do que a de uma placa de vídeo dedicada."
+
+# ---------------------------------------------------------------- 2. consistency
+
+- unit: apmecanica
+  line: 239
+  quote: "Não é mágica. É estatística em escala absurda"
+  category: consistency
+  severity: medium
+  problem: "Negação retórica em duas frases ('Não é X. É Y.'), banida pelo WRITER.md. Fica no fecho do apêndice, onde mais aparece."
+  suggestion: "Isso é estatística em escala absurda, e quem sabe disso fica bem mais difícil de enganar."
+
+- unit: apB
+  line: 190
+  quote: "não foi agente apagando nada. Foi segredo vazando pro repositório"
+  category: consistency
+  severity: low
+  problem: "Mesmo padrão 'não foi X. Foi Y.'"
+  suggestion: "O acidente mais comum que eu vi no ano foi segredo vazando pro repositório: um arquivo com senhas que entra no commit junto com o resto e vai parar no remoto."
+
+- unit: glossary
+  quote: "alucinacao"
+  category: consistency
+  severity: low
+  problem: "Definição usa 'Não é defeito ocasional: vem do...' (negação retórica)."
+  suggestion: "Acontece com qualquer modelo, porque vem do próprio jeito como ele escolhe o texto mais provável."
+
+- unit: apmecanica
+  line: 108
+  quote: "Os pedaços são dezenas de milhares"
+  category: consistency
+  severity: low
+  problem: "Na linha 71 o vocabulário do Llama 3 tem 'uns 128 mil pedaços'; 'dezenas de milhares' subestima."
+  suggestion: "Os pedaços são dezenas ou centenas de milhares, e quase todos recebem um número perto de zero."
+
+- unit: apA
+  line: 383
+  quote: "o GPT 5.5 tirando 100"
+  category: consistency
+  severity: medium
+  problem: "continuity.yml grafa 'GPT-5.5' (com hífen); o mesmo apêndice usa 'GPT-6 Astra' (linha 350, com hífen) e 'GPT 6 sol' (linha 380, sem). O style report lista GPT 5/GPT-5 e GPT 6/GPT-6 como variantes. ch11 também usa 'GPT 5.5' e 'GPT 5.6 sol' sem hífen, então a decisão é do livro todo."
+  suggestion: "Escolher uma grafia (a do continuity: com hífen) e aplicar em apA e ch11: 'GPT-5.5', 'GPT-6 Sol'."
+
+- unit: apA
+  line: 380
+  quote: "o GPT 6 sol"
+  category: consistency
+  severity: low
+  problem: "Ver item da linha 383: sem hífen e com 'sol' minúsculo, enquanto ch18 grafa 'GPT-6 Sol'."
+  suggestion: "o GPT-6 Sol"
+
+- unit: apA
+  line: 232
+  quote: "**6 a 9 de abril.**"
+  category: consistency
+  severity: low
+  problem: "Fora de ordem cronológica: vem depois de '7 de abril' (Mythos) e antes de '8 de abril'; começa no dia 6."
+  suggestion: "Mover a entrada para antes de '7 de abril' (logo depois de '1º de abril')."
+
+- unit: glossary
+  quote: "mcp"
+  category: consistency
+  severity: low
+  problem: "Definição diz 'doado a uma fundação independente em 2025'; apA (dez. 2025) e ch03 dizem 'fundação ligada à Linux Foundation'."
+  suggestion: "Criado pela Anthropic em 2024 e doado em 2025 a uma fundação ligada à Linux Foundation."
+
+- unit: apD
+  line: 48
+  quote: "Os projetos estão em ordem de nascimento."
+  category: consistency
+  severity: low
+  problem: "O ai-jail (linha 100) aparece depois do Frank Investigator (março), mas apA (linha 145) e ch15 dizem que o script nasceu em janeiro. A ordem é por data de lançamento da ferramenta, não de nascimento."
+  suggestion: "Os projetos estão mais ou menos em ordem de nascimento. (E na entrada do ai-jail: 'Começou em janeiro como um script de umas 170 linhas em volta do bubblewrap e virou ferramenta de verdade em março'.)"
+
+- unit: apD
+  line: 100
+  quote: "o projeto que mais atraiu gente de fora"
+  category: consistency
+  severity: low
+  problem: "Vale pro boletim de maio (ch10: 19 contribuições de código fechadas), mas na linha 127 o ai-memory já tem umas setenta pessoas que contribuíram código em setembro."
+  suggestion: "e, em maio, o projeto que mais atraiu gente de fora."
+
+- unit: apD
+  line: 178
+  quote: "o ai-jail, o ai-memory, a newsletter, o blog"
+  category: consistency
+  severity: low
+  problem: "Linha 59 diz que o FrankMD é mantido vivo por outras pessoas com correções; a lista dos projetos vivos o omite."
+  suggestion: "o ai-jail, o ai-memory, a newsletter, o blog e, graças aos outros, o FrankMD."
+
+# ---------------------------------------------------------------- 3. repetition
+
+- unit: apB
+  line: 278
+  quote: "largue o Claude Code no meio da tarefa, abra o Codex na mesma pasta e continue sem explicar de novo a arquitetura"
+  category: repetition
+  severity: low
+  problem: "A mesma frase da documentação aparece em apmemoria (linha 56) e em ch20 (linha 272), três vezes no livro. O apB apenas apresenta a ferramenta e já aponta pro apmemoria."
+  suggestion: "A ideia: uma sessão nova, em qualquer agente compatível, começa de onde a anterior parou. Ganchos instalados no agente registram a sessão em silêncio, e o servidor transforma o registro em páginas de texto comum."
+
+- unit: apmemoria
+  line: 46
+  quote: "A Anthropic pode mudar limite, preço ou modelo amanhã, e a OpenAI também."
+  category: repetition
+  severity: low
+  problem: "Cópia literal de ch20; o parágrafo já remete a @sec-ch20."
+  suggestion: "Em @sec-ch20 eu contei por que isso me incomoda: se a memória do projeto mora dentro da ferramenta de uma empresa, trocar de ferramenta vira mudança de casa, e quanto mais tempo você fica, mais pesada fica a mudança."
+
+- unit: apB
+  line: 205
+  quote: "Jamais rode em produção qualquer coisa da qual você não consegue se recuperar."
+  category: repetition
+  severity: low
+  problem: "Blockquote idêntico ao de ch15 (linha 287). Num apêndice que diz 'ch15 já fez o argumento inteiro', a mesma frase de destaque soa reciclada."
+  suggestion: "Trocar o blockquote por uma regra operacional curta, por ex.: '> Se você não consegue desfazer, o agente não encosta.' (ou cortar e deixar só o parágrafo)."
+
+- unit: apB
+  line: 253
+  quote: "proteção contra acidentes de um agente em quem você confia mas que é falível"
+  category: repetition
+  severity: low
+  problem: "Repete a frase da linha 75 (mesmo apêndice) e a de ch15."
+  suggestion: "A documentação deixa claro o que ele promete: proteção contra acidentes, o limite que vimos na peça 1. Contra um atacante tentando fugir de propósito, ele manda usar uma máquina virtual descartável."
+
+- unit: apB
+  line: 87
+  quote: "Um snapshot se navega como uma pasta comum: o agente apagou o projeto às três da tarde, você abre o snapshot das duas e copia de volta."
+  category: repetition
+  severity: low
+  problem: "Quase literal de ch15 (linha 253), que já explica o mesmo exemplo."
+  suggestion: "Dá pra abrir o snapshot das duas da tarde como uma pasta qualquer e copiar de volta o projeto que o agente apagou às três."
+
+- unit: apD
+  line: 127
+  quote: "Primeiro commit em 21 de maio, depois de eu desistir de uma ferramenta de terceiros em uma semana."
+  category: repetition
+  severity: low
+  problem: "A mesma história (21 de maio, semana com ferramenta de terceiros, versão 2.0, setenta pessoas, 2.6.6) está em apA 276/374/421, apmemoria 59 e ch20. O apD tem uma linha por projeto; este é o único que repete tudo."
+  suggestion: "Cortar o histórico e deixar: 'Primeiro commit em 21 de maio. Em 13 de outubro de 2026 estava na versão 2.6.6; a história completa está em @sec-ch20 e no apêndice @sec-apmemoria.'"
+
+# ---------------------------------------------------------------- 4. clarity
+
+- unit: apmecanica
+  line: 174
+  quote: "uma das náufragas inventa uma catapulta de cocos"
+  category: clarity
+  severity: low
+  problem: "A abertura (linha 14) fala em 'Dois náufragos' e 'um náufrago costuma responder ao outro'; aqui o gênero muda pra feminino e o leitor pode achar que entrou uma terceira personagem."
+  suggestion: "Daí um dos náufragos inventa uma catapulta de cocos e pede opinião; (...) Ele pode até aceitar, mas só porque é ele quem faz todo o trabalho (...). No fim, ele é perseguido por um urso" # ou trocar a abertura para 'Duas náufragas'
+
+- unit: apB
+  line: 94
+  quote: "O sistema de arquivos precisa suportar snapshots."
+  category: clarity
+  severity: low
+  problem: "'Sistema de arquivos' e 'Btrfs' não são explicados; o leitor leigo (parte do público do apêndice) para aqui."
+  suggestion: "O sistema de arquivos, a forma como o disco organiza os dados, precisa suportar snapshots. O mais comum em computador de mesa é o Btrfs, que várias distribuições já oferecem na instalação."
+
+- unit: apB
+  line: 126
+  quote: "um HD externo, um NAS, um serviço de nuvem"
+  category: clarity
+  severity: low
+  problem: "NAS aparece na linha 103 e aqui sem explicação; o apêndice foi feito pra ser lido sozinho."
+  suggestion: "um HD externo, um NAS (o armazenamento ligado à rede da sua casa), um serviço de nuvem"
+
+- unit: apD
+  line: 124
+  quote: "foi um deles que registrou a faxina de @sec-ch15"
+  category: clarity
+  severity: low
+  problem: "'A faxina' não foi introduzida no apêndice; apA descreve o mesmo episódio como 'apaga 69 itens'."
+  suggestion: "foi um deles que registrou a faxina do NAS contada em @sec-ch15"
+
+- unit: apA
+  line: 287
+  quote: "empata com o Opus 4.8, 94 a 95"
+  category: clarity
+  severity: low
+  problem: "'Empata' com notas diferentes (94 e 95) parece contradição pra quem lê rápido; o ponto (ch14) é que a diferença está dentro do ruído."
+  suggestion: "fica empatado com o Opus 4.8 dentro do ruído, 94 a 95"
+
+- unit: apC
+  line: 71
+  quote: "credencial real às vezes chega inflada na vitrine"
+  category: clarity
+  severity: low
+  problem: "Frase obscura: não diz quem infla o quê."
+  suggestion: "e a credencial anunciada às vezes é maior do que a real"
+
+- unit: glossary
+  quote: "tipagem-forte"
+  category: clarity
+  severity: low
+  problem: "A definição descreve tipagem estática (tipo conhecido antes de rodar, compilador recusa). 'Tipagem forte' é outra coisa pra quem programa. Conferir como ch18 usa o termo."
+  suggestion: "Se ch18 fala de linguagens verificadas pelo compilador: 'Característica de linguagens em que cada valor tem um tipo (número, texto, lista) conferido pelo compilador antes de o programa rodar, que recusa o programa quando os tipos não combinam...'"
+
+- unit: glossary
+  quote: "codigo-nativo"
+  category: clarity
+  severity: low
+  problem: "'Programa já convertido em instruções de máquina, geralmente escrito em C ou C++': o leitor não sabe se o escrito é o programa ou a origem."
+  suggestion: "Programa já convertido em instruções de máquina, geralmente a partir de código em C ou C++."

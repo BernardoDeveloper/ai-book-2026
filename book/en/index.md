@@ -25,7 +25,7 @@ The promise and the fear came out of the same shop window. The fair was put up b
 In 2026 I lived through the current edition of that fair, except I was looking backstage at the same time. It was like living in two worlds.
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-One was the world of the shop window. There, [artificial general intelligence]{.gls key=agi}, a machine able to think about any subject the way a person does, was just around the corner. Reports drew up the end of the world with a date on it, and business owners fired their entire programming staff because they thought the AI's code would come out better.
+One was the world of the shop window. There, [artificial general intelligence]{.gls key=agi}, a machine able to think about any subject the way a person does, was just around the corner. Reports predicted the end of the world with a date on it, and business owners fired their entire programming staff because they thought the AI's code would come out better.
 
 <!-- src: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic -->
 In June, one of the biggest companies in the field, its paperwork to go public freshly filed, put on sale a model from the very family it had itself presented as too dangerous for the public. On my test, it tied with the previous model while costing almost twice as much.
@@ -51,7 +51,7 @@ While writing, I had a few people in mind:
 - the manager being sold an "AI transformation" that nobody can quite explain;
 - the junior programmer wondering if he picked the wrong career.
 
-If you recognized yourself in any of them, start by knowing that the confusion has a known source, and it isn't you. For years you've been exposed to advertising made by people who profit from your anxiety: companies on their way to the stock market, chipmakers, course sellers with a new name for an old thing. Whoever believed an ad did exactly what the ad was designed to make them do.
+If you recognized yourself in any of them, start by knowing that the confusion has a known source: advertising. For years it has come from people who profit from your anxiety: companies on their way to the stock market, chipmakers, course sellers with a new name for an old thing. Whoever believed an ad did exactly what the ad was designed to make them do.
 
 And if you got here out of plain curiosity, with no fear at all, great. You'll get a kick out of some of this year's stories.
 

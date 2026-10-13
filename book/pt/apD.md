@@ -45,7 +45,7 @@ blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 Eu uso o GitHub como caderno de exercícios. Quase nada que está lá é produto, e em 2026 isso ficou mais verdade do que nunca: só na maratona que termina em @sec-ch10 foram 24 repositórios, e depois dela vieram mais. Este apêndice é o inventário, pra quem quer achar um projeto citado de passagem ou ver o ano inteiro de uma vez.
 
 <!-- src: original -->
-Cada entrada diz em uma ou duas linhas o que o projeto é, em que estado ele estava na última vez que escrevi sobre ele e em que capítulo aparece. As notas de 1 a 10 são as do boletim de maio (@sec-ch10), que mediam uma coisa só: quão estável e usável o projeto estava naquele dia. Os projetos estão em ordem de nascimento.
+Cada entrada diz em uma ou duas linhas o que o projeto é, em que estado ele estava na última vez que escrevi sobre ele e em que capítulo aparece. As notas de 1 a 10 são as do boletim de maio (@sec-ch10), que mediam uma coisa só: quão estável e usável o projeto estava naquele dia. Os projetos estão mais ou menos em ordem de nascimento.
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
 Um aviso antes de você sair clonando tudo. A maior parte destes projetos é prova de conceito: funciona pra mim, no meu computador, do meu jeito. Código publicado é código que você pode ler, estudar e melhorar, e isso não faz dele uma dependência pra sua empresa amanhã de manhã.
@@ -97,7 +97,7 @@ Em julho ganhou um parente: uma versão que coloca a legendinha de leitura por c
 **Frank Investigator.** Uma ferramenta pra questionar notícias, em que três modelos conferem cada afirmação e a fonte primária tem poder de veto [@akita2026frankinvestigator]. Uns nove dias de trabalho e 129 commits em março. Ficou de pé e funcionando, e eu parei ali: nota 3 em maio. Aparece em @sec-ch04 e @sec-ch10.
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-**ai-jail.** Começou como um script de umas 170 linhas em volta do bubblewrap e virou ferramenta de verdade em março [@akita2026aijail; @aijail2026site]. Isola o agente de programação pra que ele só enxergue a pasta do projeto. Nota 8 em maio, a mais alta junto com o Chronicles, e o projeto que mais atraiu gente de fora.
+**ai-jail.** Começou em janeiro como um script de umas 170 linhas em volta do bubblewrap e virou ferramenta de verdade em março [@akita2026aijail; @aijail2026site]. Isola o agente de programação pra que ele só enxergue a pasta do projeto. Nota 8 em maio, a mais alta junto com o Chronicles, e, em maio, o projeto que mais atraiu gente de fora.
 
 <!-- src: ref:ai-jail/README.md -->
 Em outubro de 2026 estava na versão 2.8.1, depois de uma fuga via Docker corrigida no mesmo dia, em julho, e de duas auditorias de segurança em 30 de setembro. Aparece em @sec-ch10, @sec-ch15 e @sec-apB.
@@ -121,13 +121,13 @@ Em outubro de 2026 estava na versão 2.8.1, depois de uma fuga via Docker corrig
 
 **Experimento gráfico.** Dois dias pra ver se o meu ambiente de trabalho rodava num sistema gráfico mais antigo do Linux [@akita2026nwomarchy]. O conceito funcionou, nota 4, e parou ali. Aparece em @sec-ch10.
 
-**Cadernos privados.** Seis repositórios que fecham a conta dos 24, onde o Claude Code guarda as anotações pra administrar as minhas máquinas. Ficam privados, e foi um deles que registrou a faxina de @sec-ch15.
+**Cadernos privados.** Seis repositórios que fecham a conta dos 24, onde o Claude Code guarda as anotações pra administrar as minhas máquinas. Ficam privados, e foi um deles que registrou a faxina do NAS contada em @sec-ch15.
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-**ai-memory.** Memória de longo prazo pra agentes de programação, que deixa um agente continuar o trabalho de outro sem explicação nova [@akita2026aimemory; @aimemory2026site]. Primeiro commit em 21 de maio, depois de eu desistir de uma ferramenta de terceiros em uma semana. A versão 2.0 saiu em setembro, com umas setenta pessoas que já tinham contribuído código.
+**ai-memory.** Memória de longo prazo pra agentes de programação, que deixa um agente continuar o trabalho de outro sem explicação nova [@akita2026aimemory; @aimemory2026site]. Primeiro commit em 21 de maio; a história completa está em @sec-ch20.
 
 <!-- src: ref:ai-memory/README.md -->
-Em 13 de outubro de 2026 estava na versão 2.6.6. Aparece em @sec-ch02 e @sec-ch20, sem nome em @sec-ch16 e @sec-ch19, e ganhou um apêndice próprio, @sec-apmemoria.
+Em 13 de outubro de 2026 estava na versão 2.6.6. Aparece em @sec-ch02, @sec-ch16 e @sec-ch20, sem nome em @sec-ch19, e ganhou um apêndice próprio, @sec-apmemoria.
 
 <!-- src: 2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar -->
 **ai-usagebar.** Um medidor do consumo dos planos de IA, na barra do sistema ou no terminal, pra eu saber quando trocar de agente antes de bater no limite [@akita2026aiusagebar]. Nasceu em maio.
@@ -164,7 +164,7 @@ No fim de setembro eu decretei a pausa: 349 commits em quase quatro meses, quatr
 **Minhas skills.** As instruções reutilizáveis que eu escrevi pros agentes ao longo do ano, de auditoria de contribuições a publicação de versões, publicadas com o aviso de que não servem pra uso geral [@akita2026myskills]. Aparecem em @sec-ch09.
 
 <!-- src: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas -->
-**Conversor de Game Gear.** A conversão de jogos de Game Gear pro Master System, começada no mesmo dia em que o nes-to-sms parou, num repositório privado. Dessa vez o problema tinha referência: em um dia, a pesquisa e o catálogo de umas 186 conversões feitas à mão estavam prontos. Até o fim de setembro, nenhum jogo tinha passado na revisão final. Aparece em @sec-ch20.
+**Conversor de Game Gear.** A conversão de jogos de Game Gear pro Master System, começada no mesmo dia em que o nes-to-sms parou, num repositório privado. Dessa vez o problema tinha referência: em um dia, a pesquisa e o catálogo de umas 186 conversões feitas à mão estavam prontos. Até o fim de setembro, nenhuma conversão de Game Gear tinha passado na revisão final. Aparece em @sec-ch20.
 
 <!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
 **Benchmark de classificadores.** Uma bateria de testes pra modelos pequenos de decisão, os da mesma família do Jev, rodada em outubro com modelos locais e na nuvem. O resultado de 12 de outubro está em @sec-ch13.
@@ -175,4 +175,4 @@ No fim de setembro eu decretei a pausa: 349 commits em quase quatro meses, quatr
 ## O que o inventário mostra
 
 <!-- src: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso -->
-Olhando a lista inteira, o padrão de @sec-ch10 se confirma até outubro. Os projetos que continuaram vivos são os que têm usuário: o ai-jail, o ai-memory, a newsletter, o blog. O resto cumpriu o que eu queria dele, que era me ensinar alguma coisa, e ficou no caderno.
+Olhando a lista inteira, o padrão de @sec-ch10 se confirma até outubro. Os projetos que continuaram vivos são os que têm usuário: o ai-jail, o ai-memory, a newsletter, o blog e, graças aos outros, o FrankMD. O resto cumpriu o que eu queria dele, que era me ensinar alguma coisa, e ficou no caderno.

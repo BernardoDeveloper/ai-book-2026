@@ -22,9 +22,8 @@ agi:
 alucinacao:
   term: Hallucination
   def: When the model produces false information with the same confidence as true
-    information, such as a quote, a date or a law that does not exist. It comes from
-    the very way the model picks the most likely text, so it is a built-in trait rather
-    than a rare glitch.
+    information, such as a quote, a date or a law that does not exist. It happens
+    with any model, because it comes from the very way it picks the most likely text.
 analise-estatica:
   term: Static analysis
   def: Examining a program by reading its contents without running it. It shows what
@@ -137,9 +136,9 @@ codigo-morto:
     They cause no visible error, but they confuse whoever reads them, AI agents included.
 codigo-nativo:
   term: Native code
-  def: A program already converted into machine instructions, usually written in C
-    or C++. It runs fast and practically never becomes readable again, even with reverse
-    engineering tools.
+  def: A program already converted into machine instructions, usually built from C
+    or C++ code. It runs fast and practically never becomes readable again, even with
+    reverse engineering tools.
 commit:
   term: Commit
   def: A saved point in the history of a software project, with the changes made and
@@ -235,10 +234,11 @@ fine-tuning:
   def: Extra training, applied to a finished model with specific data, to specialize
     it in a task or a way of working.
 fingerprint:
-  term: Fingerprint
-  def: A device's fingerprint. An identifier built by combining dozens of characteristics
-    of a phone or computer, which recognizes the device even without cookies or a
-    login and often survives wiping the data and reinstalling the app.
+  term: Device fingerprint
+  def: An identifier built by combining dozens of characteristics of a phone or computer
+    (model, language, screen, fonts, installed apps). It recognizes the device even
+    without cookies or a login and often survives wiping the data and reinstalling
+    the app. Unrelated to fingerprint sensors.
 fomo:
   term: FOMO
   long: Fear of Missing Out
@@ -247,7 +247,7 @@ fomo:
 fonte-primaria:
   term: Primary source
   def: The origin of a piece of data or a claim, such as the original study, the official
-    statistics, the court ruling or the contract. It is worth more than any number
+    statistics, the court ruling or the contract. It is worth more than any amount
     of texts that repeat it.
 fork:
   term: Fork
@@ -314,7 +314,7 @@ kv-cache:
   term: KV cache
   def: The notes the model keeps about each piece of context it has already read,
     so it does not have to reread everything for each new word. It grows along with
-    the conversation and takes up the same VRAM as the weights.
+    the conversation and takes up VRAM on top of what the weights already use.
 largura-de-banda:
   term: Memory bandwidth
   def: How many gigabytes per second can travel from memory to where the math happens.
@@ -345,7 +345,7 @@ mcp:
   long: Model Context Protocol
   def: 'An open standard for connecting tools and data sources to AI agents, like
     a standard wall socket: the same tool works with many agents. Created by Anthropic
-    in 2024 and donated to an independent foundation in 2025.'
+    in 2024 and donated in 2025 to a foundation under the Linux Foundation.'
 mcts:
   term: Monte Carlo tree search
   def: A technique in which the program simulates many games from the current position,
@@ -466,7 +466,8 @@ producao:
     and test environments, where mistakes are cheap.
 prompt:
   term: Prompt
-  def: The text you write asking the model for something.
+  def: The text you send the model asking for something. In an agent it also includes
+    the instructions and files the tool adds on your behalf.
 prompt-caching:
   term: Prompt caching
   def: The server keeps the processing of the opening part of a conversation, which
@@ -495,9 +496,8 @@ qa:
 quantizacao:
   term: Quantization
   def: Storing the model's weights with less numerical precision, like rounding every
-    price in a supermarket to the nearest whole real (the Brazilian currency). The
-    model then fits in much less memory, with some loss of quality that grows the
-    more you round.
+    price in a supermarket to the nearest dollar. The model then fits in much less
+    memory, with some loss of quality that grows the more you round.
 raciocinio:
   term: Reasoning
   def: A mode in which the model writes a long chain of "thought" before its final
@@ -650,10 +650,9 @@ tier:
     together instead of treating every point of difference as real.
 tipagem-forte:
   term: Strong typing
-  def: A trait of languages in which every value has a declared or inferred type (number,
-    text, list) and the compiler rejects the program when the types do not match.
-    It catches some errors before the program runs, at the cost of more paperwork
-    while writing.
+  def: A trait of languages in which every value has a type (number, text, list) and
+    the compiler rejects the program when the types do not match. It catches some
+    errors before the program ever runs, at the cost of more paperwork while writing.
 token:
   term: Token
   def: The piece of text the model works with, usually a fragment of a word. Models

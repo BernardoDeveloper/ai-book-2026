@@ -63,7 +63,7 @@ O último item parece detalhe e foi o furo que mais me ensinou no ano. O Docker,
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
 No Linux, a peça básica é o bubblewrap, o mesmo isolador que o Flatpak usa pros aplicativos instalados por ele. Ele monta pro programa uma visão falsa do sistema, com as pastas que você escolher. Em cima dele dá pra escrever um script próprio, que foi como eu comecei, ou usar uma ferramenta pronta.
 
-No macOS, o sistema tem um mecanismo de isolamento embutido, o `sandbox-exec`, que a Apple marca como obsoleto mas continua funcionando. É menos flexível que o do Linux, e algumas proteções funcionam só pela metade.
+No macOS, o sistema tem um mecanismo de isolamento embutido, o `sandbox-exec`, que a Apple marca como obsoleto mas continua funcionando. É menos flexível do que o do Linux, e algumas proteções funcionam só pela metade.
 
 <!-- src: ref:ai-jail/README.md -->
 No Windows, o caminho mais simples é rodar o agente dentro do WSL2, o Linux que a Microsoft embute no sistema, e usar as ferramentas do Linux lá dentro. É o que a documentação do ai-jail, a minha jaula, manda fazer [@akita2026aijail; @aijail2026site].
@@ -72,7 +72,7 @@ No Windows, o caminho mais simples é rodar o agente dentro do WSL2, o Linux que
 Os agentes grandes também trazem uma sandbox própria, configurável nas opções de cada um. Vale ligar. Só lembre que ela protege apenas aquele agente, e que o dia em que você trocar de ferramenta, a proteção não vai junto.
 
 <!-- src: ref:ai-jail/README.md -->
-E tem um limite que nenhuma dessas jaulas cruza. Elas existem pra conter os erros de um programa em quem você confia mas que é falível. Pra rodar código de origem duvidosa, que pode estar tentando fugir de propósito, a resposta é uma [máquina virtual]{.gls key=maquina-virtual} descartável, um computador inteiro simulado que você joga fora depois.
+E tem um limite que nenhuma dessas jaulas cruza. Elas existem pra conter os erros de um programa em que você confia mas que é falível. Pra rodar código de origem duvidosa, que pode estar tentando fugir de propósito, a resposta é uma [máquina virtual]{.gls key=maquina-virtual} descartável, um computador inteiro simulado que você joga fora depois.
 
 ### O Git como rede
 
@@ -84,14 +84,14 @@ A regra prática é simples: faça commits pequenos e frequentes, mantenha uma c
 ## 2. O botão de desfazer
 
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
-Um [snapshot]{.gls} congela o estado do disco num instante. Nos sistemas de arquivos com [copy-on-write]{.gls key=copy-on-write}, ele sai instantâneo e quase de graça, porque só o que muda dali pra frente ocupa espaço novo (@sec-ch15 conta como isso salvou onze álbuns meus). Um snapshot se navega como uma pasta comum: o agente apagou o projeto às três da tarde, você abre o snapshot das duas e copia de volta.
+Um [snapshot]{.gls} congela o estado do disco num instante. Nos sistemas de arquivos com [copy-on-write]{.gls key=copy-on-write}, ele sai instantâneo e quase de graça, porque só o que muda dali pra frente ocupa espaço novo (@sec-ch15 conta como isso salvou onze álbuns meus). Dá pra abrir o snapshot das duas da tarde como uma pasta qualquer e copiar de volta o projeto que o agente apagou às três.
 
 O que você precisa garantir é pouco. Snapshots automáticos, pelo menos de hora em hora durante o dia, e uma regra de quantos guardar por hora, por dia, por semana e por mês. E saber onde clicar pra recuperar um arquivo antes de precisar.
 
 ### Linux
 
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
-O sistema de arquivos precisa suportar snapshots. O mais comum em computador de mesa é o Btrfs, que várias distribuições já oferecem na instalação. Pra agendar, as duas ferramentas clássicas são o Timeshift, com interface gráfica e um painel onde você marca quantos snapshots manter, e o snapper, mais detalhado, que tira snapshot antes e depois de cada instalação de pacote.
+O sistema de arquivos, a forma como o disco organiza os dados, precisa suportar snapshots. O mais comum em computador de mesa é o Btrfs, que várias distribuições já oferecem na instalação. Pra agendar, as duas ferramentas clássicas são o Timeshift, com interface gráfica e um painel onde você marca quantos snapshots manter, e o snapper, mais detalhado, que tira snapshot antes e depois de cada instalação de pacote.
 
 Eu uso o Timeshift agendado e, antes de uma sessão que me deixa desconfiado, tiro um na mão:
 
@@ -118,12 +118,12 @@ A recuperação é pelo próprio Time Machine, que navega pelos snapshots locais
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
 Aqui a história é mais fraca. O Windows tem as cópias de sombra, que alimentam os pontos de restauração e a aba "Versões anteriores" das pastas, mas elas foram pensadas pros arquivos do sistema e raramente cobrem os seus dados na hora em que você precisa. Se você usa agente no Windows, trate a próxima peça como obrigatória.
 
-> O snapshot resolve o acidente de minutos atrás, em segundos. Ele mora no mesmo disco que os seus dados e morre junto com ele.
+O snapshot resolve o acidente de minutos atrás, em segundos. Ele mora no mesmo disco dos seus dados e morre junto com ele.
 
 ## 3. A cópia que mora em outro lugar
 
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
-Um [backup]{.gls} externo é uma cópia num aparelho separado: um HD externo, um NAS, um serviço de nuvem. Ele cobre o que o snapshot não cobre, do disco que morreu ao computador roubado. Um bom backup tem quatro propriedades:
+Um [backup]{.gls} externo é uma cópia num aparelho separado: um HD externo, um NAS (o armazenamento ligado à rede da sua casa), um serviço de nuvem. Ele cobre o que o snapshot não cobre, do disco que morreu ao computador roubado. Um bom backup tem quatro propriedades:
 
 - roda sozinho, numa agenda, sem depender de você lembrar;
 - guarda várias versões, com uma política de retenção que diz quantas manter;
@@ -180,14 +180,14 @@ Repare onde está o envio pro remoto: na coluna do meio. O agente pode gravar co
 ### Modo YOLO, só dentro da jaula
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
-Desde maio de 2026, rodei os agentes quase o tempo todo em modo YOLO (@sec-ch15). Parece contraditório com tudo acima, e seria, se não fosse um detalhe: eu tiro a trava de dentro do agente e coloco uma cerca no sistema operacional. O agente trabalha rápido dentro do projeto, e o resto do disco fica fora do alcance dele.
+Desde maio de 2026, rodo os agentes quase o tempo todo em modo YOLO (@sec-ch15). Parece contraditório com tudo acima, e seria, se não fosse um detalhe: eu tiro a trava de dentro do agente e coloco uma cerca no sistema operacional. O agente trabalha rápido dentro do projeto, e o resto do disco fica fora do alcance dele.
 
 A regra que eu sigo é essa combinação. Modo YOLO sem jaula é confiar que nenhum comando errado, de nenhuma origem, vai aparecer. Com jaula, Git remoto e envio manual, o pior caso realista é refazer o trabalho local de uma tarde.
 
 ### Segredos
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
-O acidente mais comum que eu vi no ano não foi agente apagando nada. Foi segredo vazando pro repositório: um arquivo com senhas que entra no commit junto com o resto e vai parar no remoto. Aconteceu comigo mais de uma vez.
+O acidente mais comum que eu vi no ano foi segredo vazando pro repositório: um arquivo com senhas que entra no commit junto com o resto e vai parar no remoto. Aconteceu comigo mais de uma vez.
 
 Três hábitos resolvem quase tudo:
 
@@ -198,11 +198,11 @@ Três hábitos resolvem quase tudo:
 ## 5. Agente não entra em produção
 
 <!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
-Esta peça é curta porque @sec-ch15 já fez o argumento inteiro. Nenhum agente deve ter acesso direto à [produção]{.gls key=producao}, o sistema que atende os clientes de verdade: nada de senha do banco de dados, nada de chave de administrador dos servidores.
+Esta peça é curta porque o @sec-ch15 já fez o argumento inteiro. Nenhum agente deve ter acesso direto à [produção]{.gls key=producao}, o sistema que atende os clientes de verdade: nada de senha do banco de dados, nada de chave de administrador dos servidores.
 
 Em ambiente de teste, o agente pode trabalhar à vontade, desde que escreva receitas em vez de dar comandos avulsos. Uma receita é um arquivo que descreve a configuração desejada, fica guardado no histórico e pode ser revisado e executado de novo. Ele escreve, aplica no teste, confere e ajusta. Um humano revisa e promove pra produção.
 
-> Jamais rode em produção qualquer coisa da qual você não consegue se recuperar.
+A regra de produção, com a história por trás, está no @sec-ch15.
 
 ## 6. Notas que sobrevivem à sessão
 
@@ -250,7 +250,7 @@ O que vem a seguir são as três ferramentas que eu escrevi em 2026 pra cobrir a
 <!-- src: ref:ai-jail/README.md -->
 O ai-jail roda um agente de programação dentro de uma sandbox: no Linux, com o bubblewrap e mais algumas proteções do próprio núcleo do sistema; no macOS, com o `sandbox-exec` [@akita2026aijail; @aijail2026site]. No Windows, ele só funciona dentro do WSL2. Em outubro de 2026 estava na versão 2.8.1.
 
-A documentação deixa claro o que ele promete: proteção contra acidentes de um agente em quem você confia mas que é falível. Contra um atacante tentando fugir de propósito, ele manda usar uma máquina virtual descartável.
+A documentação diz o que ele promete: proteção contra acidentes, o limite que vimos na peça 1. Contra um atacante tentando fugir de propósito, ele manda usar uma máquina virtual descartável (@sec-ch15).
 
 <!-- src: ref:ai-jail/README.md -->
 O uso é colocar `ai-jail` na frente do comando do agente, de dentro da pasta do projeto:
@@ -275,7 +275,7 @@ Por fim, a opção `--bootstrap` escreve configurações de permissão pra cinco
 ### ai-memory, as notas
 
 <!-- src: ref:ai-memory/README.md -->
-O ai-memory é a memória de longo prazo que eu prometi em @sec-ch02 e contei em @sec-ch20 [@akita2026aimemory; @aimemory2026site]. A ideia cabe na frase que abre a documentação dele: largue o Claude Code no meio da tarefa, abra o Codex na mesma pasta e continue sem explicar de novo a arquitetura, o que falhou e o que ficou em aberto. Ganchos instalados no agente registram a sessão em silêncio, o servidor transforma o registro em páginas de texto comum, e a sessão seguinte, em qualquer agente compatível, começa de onde a anterior parou. O que ele faz, quando vale a pena e como começar estão em @sec-apmemoria.
+O ai-memory é a memória de longo prazo que eu prometi em @sec-ch02 e contei em @sec-ch20 [@akita2026aimemory; @aimemory2026site]. A ideia: uma sessão nova, em qualquer agente compatível, começa de onde a anterior parou. Ganchos instalados no agente registram a sessão em silêncio, e o servidor transforma o registro em páginas de texto comum. O que ele faz, quando vale a pena e como começar estão em @sec-apmemoria.
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
 Ele cobre a terceira gaveta da peça 6, o meio do caminho. Decisão que precisa sobreviver com garantia continua indo pra um documento dentro do projeto, revisado e versionado. A memória automática guarda o que talvez importe depois; o documento guarda o que com certeza importa.

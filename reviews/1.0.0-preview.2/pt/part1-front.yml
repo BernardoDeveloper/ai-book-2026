@@ -1,0 +1,321 @@
+- unit: ch02
+  line: 67
+  quote: 200 mil tokens são um romance grande, *Crime e Castigo* na íntegra.
+  category: error
+  severity: medium
+  problem: 'Conta não fecha: 200 mil tokens são uns 150 mil palavras (a própria regra
+    de três quartos de palavra por token, linha 64), e Crime e Castigo tem bem mais
+    de 200 mil palavras (cerca de 270 mil tokens). O mesmo livro é repetido na linha
+    249 com o custo de 60 centavos, que também vira conta errada. Alguém vai conferir.'
+  suggestion: 'Trocar o exemplo por um livro que caiba, por exemplo: ''- 200 mil tokens
+    são um romance grande, coisa como *Orgulho e Preconceito* com sobra.'' E na linha
+    249: ''Uma pergunta com 200 mil tokens na mesa, um romance grande inteiro, custava
+    uns 60 centavos...''. O preço (200 mil x US$ 3 por milhão) continua certo.'
+- unit: ch02
+  line: 249
+  quote: "*Crime e Castigo* inteiro"
+  category: error
+  severity: medium
+  problem: Mesmo livro da linha 67, com o mesmo problema de tamanho (200 mil tokens
+    não comportam Crime e Castigo).
+  suggestion: 'Acompanhar a troca da linha 67: ''um romance grande inteiro''.'
+- unit: ch01
+  line: 246
+  quote: uma versão que não é tão melhor assim que a anterior
+  category: error
+  severity: medium
+  problem: 'Comparativo quebrado: ''tão melhor ... que'' mistura estruturas (e ''melhor
+    assim que'' lê como ''assim que'', conjunção temporal). Quebra a regra do ''do
+    que'' do WRITER.md.'
+  suggestion: "'pra entregar uma versão que não é muito melhor do que a anterior.'"
+- unit: ch01
+  line: 164
+  quote: Martelo também não aperta parafuso
+  category: clarity
+  severity: medium
+  problem: 'A metáfora do martelo nunca é introduzida: a seção se chama ''Um martelo'',
+    mas o parágrafo anterior (linha 161) só fala de limites, e ''Martelo também...''
+    soa como continuação de uma frase que o leitor não leu. A metáfora só aparece
+    com o ''LLM é o martelo perfeito'' duas linhas depois.'
+  suggestion: 'Fechar o parágrafo da linha 161 com a imagem: ''...e o que não estava
+    no treino ele não sabe. É uma ferramenta, como um martelo.'' Aí ''Martelo também
+    não aperta parafuso'' funciona.'
+- unit: ch02
+  line: 199
+  quote: ficam pra @sec-ch20
+  category: error
+  severity: low
+  problem: 'Concordância: o sujeito ''A história de como ela cresceu e o que ela me
+    ensinou...'' é singular; ''ficam'' soa errado. O final da frase (''estão em @sec-apmemoria'')
+    tem sujeito composto e pode ficar.'
+  suggestion: "'...ficam pra @sec-ch20' -> '...fica pra @sec-ch20'."
+- unit: ch03
+  line: 166
+  quote: cada volta saía um pouco mais cara do que sairia direto na Anthropic
+  category: error
+  severity: low
+  problem: 'Apontado pelo style report: ''do que'' + verbo conjugado. WRITER.md quer
+    infinitivo ou termo nominal dos dois lados.'
+  suggestion: "'Resultado: cada volta saía um pouco mais cara do que numa chamada
+    direta à Anthropic.'"
+- unit: ch01
+  line: 249
+  quote: Desde então, número de parâmetros sumiu do marketing.
+  category: error
+  severity: low
+  problem: Falta o artigo ('o número'). Soa telegráfico demais perto do tom do resto
+    do parágrafo.
+  suggestion: "'Desde então, o número de parâmetros sumiu do marketing.'"
+- unit: antes
+  line: 12
+  quote: a diferença entre treinar um modelo e usar
+  category: error
+  severity: low
+  problem: 'Objeto direto omitido sem retomada: ''e usar'' pende no ar.'
+  suggestion: "'a diferença entre treinar um modelo e usá-lo'."
+- unit: ch01
+  line: 49
+  quote: a sigla em inglês para "modelo de linguagem de grande porte"
+  category: consistency
+  severity: low
+  problem: É a única ocorrência de 'para' por extenso numa passagem em que o livro
+    usa 'pra' o tempo todo (e 'pra' aparece de novo na linha 210, 'sigla em inglês
+    pra inteligência artificial geral'). Se o registro for 'pra', fica uniforme.
+  suggestion: '''a sigla em inglês pra "modelo de linguagem de grande porte"''.'
+- unit: ch01
+  line: 241
+  quote: foi um salto quântico
+  category: clarity
+  severity: low
+  problem: "'Salto quântico' é o menor salto possível em física e o leitor leigo costuma
+    usar o termo como 'enorme'; a frase seguinte já diz 'um salto gigante' e repete
+    o substantivo."
+  suggestion: "'Do GPT-1, de 2018, pro GPT-2 foi um pulo enorme. Do GPT-2 pro GPT-3,
+    outro salto gigante;...'"
+- unit: ch04
+  line: 126
+  quote: Se dois modelos dizem "sustentado" com 70% de confiança e um diz "misto"
+    com 95%, o "misto" pesa mais.
+  category: clarity
+  severity: medium
+  problem: O leitor que fizer a conta (70 + 70 = 140 contra 95) vai ver que a votação
+    ponderada pela confiança dá 'sustentado'. O exemplo contradiz a explicação que
+    vem antes na mesma frase; a figura (pesos diferentes por modelo) sugere outra
+    regra. Precisa bater com o que o Frank Investigator realmente faz.
+  suggestion: 'Conferir a regra no código. Se for soma, trocar os números (ex.: dois
+    modelos a 40% e um a 95%). Se o peso for maior que linear ou houver peso por modelo,
+    dizer isso: ''a confiança conta mais do que o número de votos: um modelo com 95%
+    de certeza em "misto" pode derrubar dois que dizem "sustentado" com 70%''.'
+- unit: ch04
+  line: 235
+  quote: Isso importa pra quem tem medo de ser acusado.
+  category: clarity
+  severity: medium
+  problem: "'Isso' não tem antecedente: a seção E os detectores? começa logo depois
+    do fim da seção anterior (linha 230), e 'O detector da Anthropic' aparece sem
+    ter sido apresentado. O leitor precisa de uma segunda leitura pra entender que
+    a marca só é verificável por quem tem a chave."
+  suggestion: "'Isso importa pra quem tem medo de ser acusado de usar IA. A marca
+    só pode ser conferida por um detector que tenha a chave da Anthropic, e ninguém
+    de fora tem essa chave. Cada fabricante que adotar a sua vai ter a sua própria
+    chave e o seu próprio método.'"
+- unit: ch03
+  line: 87
+  quote: o [MCP]{.gls}
+  category: consistency
+  severity: medium
+  problem: como-ler.md (linha 51) promete que siglas aparecem por extenso na primeira
+    vez. MCP nunca é desdobrado no livro até aqui, e é o primeiro uso (o glossário
+    não vale como leitura corrida).
+  suggestion: '''o MCP (Model Context Protocol, "protocolo de contexto de modelos")''.'
+- unit: ch03
+  line: 176
+  quote: senão a [API]{.gls key=api} recusa o pedido
+  category: consistency
+  severity: low
+  problem: API sem explicação no texto na primeira ocorrência de ch03 (e antes disso
+    no livro). O leitor leigo não sabe que é a porta de entrada programática do serviço.
+  suggestion: "'senão a API, a porta pela qual outros programas falam com o serviço,
+    recusa o pedido'."
+- unit: antes
+  line: 19
+  quote: "[RLHF]{.gls}"
+  category: consistency
+  severity: low
+  problem: RLHF aparece pela primeira vez aqui, sem desdobrar, contra a promessa de
+    como-ler.md (linha 51). Só em ch04 linha 53 aparece 'aprendizado por reforço com
+    feedback humano'.
+  suggestion: "'o pré-treino e o RLHF (aprendizado por reforço com feedback humano)
+    transformam...'."
+- unit: ch04
+  line: 38
+  quote: 129 commits
+  category: clarity
+  severity: medium
+  problem: Primeira ocorrência de 'commit' no livro, sem explicação e sem marcação
+    de glossário (a marcação só entra em ch06, linha 42). O leitor leigo não sabe
+    o que é.
+  suggestion: "'...foram uns nove dias de trabalho e 129 [commits]{.gls key=commit},
+    os pacotes de mudança que o programador registra no histórico do projeto.' (ou
+    só marcar com .gls e deixar ch06 explicar)."
+- unit: ch01
+  line: 117
+  quote: a comparação com o estagiário, que eu mesmo uso bastante
+  category: clarity
+  severity: low
+  problem: O estagiário aparece como se já tivesse sido apresentado; no livro, a imagem
+    só é introduzida em ch02 (linha 38) e em ch03 (linha 77). O leitor de ch01 fica
+    sem saber de qual comparação se trata.
+  suggestion: "'Por isso a comparação com o estagiário, que eu mesmo uso bastante
+    pra falar de IA, tem um limite.'"
+- unit: ch03
+  line: 265
+  quote: Volto a ela no último capítulo
+  category: clarity
+  severity: low
+  problem: 'O ''ela'' fica sem antecedente claro: a pergunta que vem antes termina
+    em ''promessas de inteligência crescendo sem parar''.'
+  suggestion: "'Volto a essa pergunta no último capítulo (@sec-ch20), com os números
+    de um ano inteiro.'"
+- unit: ch04
+  line: 108
+  quote: A primeira decisão foi que nenhum ser humano faz pergunta ao modelo.
+  category: clarity
+  severity: low
+  problem: Lida isolada, a frase parece dizer que ninguém conversa com o modelo, o
+    que contradiz a frase seguinte (as perguntas existem, só são fechadas e escritas
+    de antemão).
+  suggestion: '''A primeira decisão foi que nenhum ser humano formula a pergunta.
+    Não existe um pedido aberto do tipo "analise este artigo".'''
+- unit: ch03
+  line: 103
+  quote: rodar o jogo original e a tradução em emuladores
+  category: clarity
+  severity: low
+  problem: "'Emulador' não é explicado aqui nem antes. Quem não joga videogame retro
+    pode não saber o que é."
+  suggestion: "'em emuladores (programas que imitam o console no computador), lado
+    a lado'."
+- unit: como-ler
+  line: 19
+  quote: A Parte I, que começa no @sec-ch01, é pra quem quer saber se essa coisa é
+    inteligente
+  category: repetition
+  severity: medium
+  problem: 'A seção ''Se você tem pressa'' (linhas 19 a 21) refaz, quase frase por
+    frase, o resumo dos cinco medos do prefácio (index.md, linhas 79 a 89): ''Cada
+    uma das cinco partes responde a um medo'', ''por que ele esquece o que vocês combinaram'',
+    ''o que os aplicativos do seu celular sabem de você'' aparecem nos dois, e o style
+    report marca as três. O leitor que lê o prefácio e depois ''Como ler'' recebe
+    o mesmo mapa duas vezes seguidas.'
+  suggestion: 'Deixar o prefácio com o mapa por medos e encurtar ''Como ler'' a um
+    mapa de navegação (parte, capítulo inicial, uma linha por parte, sem repetir as
+    perguntas), ou o contrário. Em ''Como ler'', sugestão: ''Cada parte começa num
+    capítulo que dá pra ler sozinho: Parte I no @sec-ch01, II no @sec-ch05, III no
+    @sec-ch11, IV no @sec-ch15, V no @sec-ch18. As perguntas que cada uma responde
+    estão no prefácio.'''
+- unit: como-ler
+  line: 14
+  quote: Cada uma das cinco partes responde a um medo, e dá pra pular direto pra ele.
+  category: repetition
+  severity: low
+  problem: 'Mesma fórmula do prefácio (index.md, linha 79: ''Cada uma das cinco partes
+    responde a um medo''), nove palavras idênticas; vira tique quando as duas aparecem
+    na mesma leitura.'
+  suggestion: "'Cada parte responde a uma pergunta que ouvi muito, e dá pra pular
+    direto pra ela.'"
+- unit: ch02
+  line: 121
+  quote: 1.279 sessões tinham tido 50 ou mais falhas seguidas
+  category: repetition
+  severity: medium
+  problem: 'O mesmo achado (1.279 sessões, 250 mil chamadas por dia, ''três linhas:
+    depois de três falhas seguidas, parar de tentar'') é recontado quase igual em
+    ch16, linha 167. O style report marca duas passagens de 11 palavras. Quem leu
+    ch02 reconhece a anedota palavra por palavra.'
+  suggestion: 'Manter em ch02 (primeira vez) e, em ch16, reduzir a uma remissão: ''o
+    mesmo vazamento do @sec-ch02, onde um comentário admitia milhares de sessões travadas
+    num laço de compactação''.'
+- unit: ch03
+  line: 260
+  quote: O GPT-4o escrevia o plano do que ia fazer e parava ali, sem chamar uma única
+    ferramenta.
+  category: repetition
+  severity: low
+  problem: Reaparece quase igual em ch20 (linha 202), assim como 'cada volta do laço
+    traz informação nova pra sessão sem custar' (ch03 l.249 / ch20 l.199) e 'no meio
+    rolaram dezenas de pequenas correções que ninguém testemunhou' (ch03 l.100 / ch20
+    l.205). Em ch20, que é o balanço, o recap é esperado, mas a reciclagem literal
+    é perceptível.
+  suggestion: Em ch20, trocar por remissão com palavras novas, mantendo o texto de
+    ch03 como original. Nenhuma mudança necessária em ch03.
+- unit: ch01
+  line: 268
+  quote: No dia 31 de março de 2026, um erro de empacotamento deixou o código-fonte
+    inteiro do Claude Code
+  category: repetition
+  severity: low
+  problem: O gancho final de ch01 conta o vazamento e ch02 reabre com a mesma data,
+    o mesmo pacote e o mesmo erro (linhas 17 a 24). Quem lê de uma vez passa duas
+    vezes pelo mesmo anúncio.
+  suggestion: 'Encurtar o gancho de ch01 para só a pergunta e a promessa: ''No fim
+    de março de 2026, o código-fonte inteiro do Claude Code vazou por engano. De repente,
+    deu pra ver por dentro como um produto comercial simula memória.'' (ch02 fica
+    com a cena).'
+- unit: ch04
+  line: 251
+  quote: Numa sexta-feira de manhã, no fim de janeiro, resolvi construir um editor
+    de texto sem escrever uma linha de código, achando que um dia de trabalho bastava.
+  category: repetition
+  severity: low
+  problem: 'O gancho final de ch04 antecipa quase a mesma sequência que ch05 abre
+    (ch05 l.21 a 29: sexta de manhã, ''um dia de trabalho bastava'', ''em pouco mais
+    de uma hora e meia'', febre). O leitor encontra a mesma cena duas vezes em páginas
+    seguidas, com números levemente diferentes (''em uma hora e meia'' contra ''pouco
+    mais de uma hora e meia'').'
+  suggestion: 'Deixar o gancho de ch04 só com o salto de assunto: ''Bem antes do Frank
+    Investigator, porém, eu já vinha usando a IA pra outra coisa: pedir que trabalhasse.
+    Em janeiro, resolvi construir um editor de texto sem escrever uma linha de código.''
+    Os detalhes (sexta, hora e meia, febre) ficam em ch05.'
+- unit: ch04
+  line: 251
+  quote: Bem antes do Frank Investigator
+  category: clarity
+  severity: low
+  problem: O leitor chega em ch05 vindo de agosto (marca d'água) e de março (Frank
+    Investigator) e volta a janeiro/fevereiro sem aviso de ordem. O trecho já tem
+    'Bem antes', mas ch05 começa em 1º de fevereiro sem referência a esse recuo.
+  suggestion: Manter o 'bem antes' no gancho e deixar o primeiro parágrafo de ch05
+    como está; só garantir que ch05 não presuma que o leitor sabe que o capítulo recua
+    no calendário.
+- unit: ch02
+  line: 26
+  quote: Em abril de 2026 eu já somava umas 500 horas com ele.
+  category: consistency
+  severity: low
+  problem: O prefácio (index.md, linha 33) diz 'de fevereiro a maio, passei mais de
+    500 horas programando quase só com agentes' e ch09 (linha 19) 'até ali [maio]
+    tinha acumulado mais de 500 horas'. Em ch02 o mesmo marco aparece em abril e só
+    com o Claude Code. Não é contradição, mas o leitor atento vai pedir uma data única.
+  suggestion: 'Alinhar em ch02: ''Em abril de 2026 eu já somava centenas de horas
+    com ele.'', e deixar o número de 500 horas para o prefácio e ch09/ch10.'
+- unit: ch04
+  line: 204
+  quote: Uma leva de assinantes cancelou em protesto
+  category: clarity
+  severity: low
+  problem: Afirmação factual forte sem citação e sem número ('uma leva'). O resto
+    do parágrafo está citado ([@anthropic2026watermark]), mas essa frase parece vir
+    de outra fonte.
+  suggestion: 'Citar a fonte da frase ou suavizar: ''Alguns assinantes cancelaram
+    em protesto, com medo de que...''.'
+- unit: ch04
+  line: 181
+  quote: Chatbot é bom pra traduzir o jargão de um laudo
+  category: pacing
+  severity: low
+  problem: As três subseções (Saúde, Dinheiro, Notícias) repetem, em cenário concreto,
+    as oito regras da lista que acabou de ser dada. É útil, mas a seção Notícias (linhas
+    195 a 197) quase só reexpõe as regras 3, 4 e 7.
+  suggestion: 'Opcional: cortar Notícias a duas frases, porque o capítulo inteiro
+    já é sobre isso.'

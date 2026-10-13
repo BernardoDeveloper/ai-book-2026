@@ -1,0 +1,229 @@
+# Part IV (keys): ch15-ch17, English edition. Read-only copyedit findings.
+# Ranked: errors, consistency, repetition, clarity, pacing; high before low inside each.
+
+# ---------- 1. ERRORS / translated-sounding phrasing ----------
+- unit: ch15
+  line: 92
+  quote: "paying more than three times the price over there"
+  category: error
+  severity: medium
+  problem: "'over there' is a leftover of the PT 'de lá' and has no referent in English (over where?). The reader can't tell the price is being compared with the author's country."
+  suggestion: "paying more than three times what it would cost in the US, import and rush included"
+- unit: ch15
+  line: 111
+  quote: "After the cleanup, the useful copying got faster."
+  category: error
+  severity: medium
+  problem: "'the cleanup' is the chapter's own term for the file deletion in the opening (and 'cleanup' returns at 241 and 310). Here it means killing the stray copy processes. A reader will connect it to the wrong event."
+  suggestion: "Once I killed the extra processes, the useful copying got faster."
+- unit: ch15
+  line: 225
+  quote: "a trick with repeated system settings (the \"environment variables\", where programs keep passwords)"
+  category: error
+  severity: medium
+  problem: "'repeated system settings' is unclear and reads as a mistranslation (a variable defined twice?). Also, environment variables hold settings in general, not just passwords."
+  suggestion: "a trick with a duplicated entry in the environment variables (the settings programs read at startup, where passwords often live) let a real password into the jail, in a spot where only a fake placeholder was supposed to go"
+- unit: ch15
+  line: 282
+  quote: "Agents in a test environment, on the other hand, I advocate for."
+  category: error
+  severity: low
+  problem: "Stranded preposition and inverted word order, translated-sounding."
+  suggestion: "I do advocate agents in a test environment, though. Even there, there's a right way."
+- unit: ch16
+  line: 202
+  quote: "In June 2026, that fight was hot."
+  category: error
+  severity: low
+  problem: "'was hot' is a literal rendering of PT 'estava quente'."
+  suggestion: "In June 2026, that fight was in full swing."
+- unit: ch16
+  line: 165
+  quote: "Twelve levels of nesting is an \"if this, then, if that, then\" stuffed inside another one, twelve times over."
+  category: error
+  severity: low
+  problem: "Garbled sentence: 'an X stuffed inside another one' does not say what is being nested, and 'twelve times over' repeats 'twelve levels'."
+  suggestion: "Twelve levels of nesting means an \"if this, then\" inside an \"if that, then\", inside another, twelve deep."
+- unit: ch16
+  line: 335
+  quote: "The same phrase describes the ai-memory, which I maintain, where not one line was typed by hand and every contribution gets audited, and the code nobody read."
+  category: error
+  severity: medium
+  problem: "Broken parallel: the phrase describes 'the ai-memory ... and the code nobody read', but 'the code nobody read' has no verb or referent (OpenClaw?). Also 'the ai-memory' with an article reads oddly (line 246 same)."
+  suggestion: "The same phrase describes ai-memory, which I maintain, where not one line was typed by hand and every contribution gets audited, and it also describes code nobody ever read."
+- unit: ch16
+  line: 341
+  quote: "demand more than the four answers above"
+  category: error
+  severity: low
+  problem: "The list above holds questions, not answers (and the fifth bullet is the condition itself). Count is also ambiguous."
+  suggestion: "demand good answers to all four questions above"
+- unit: ch17
+  line: 37
+  quote: "Few people know this, but an Android app is way too easy to open up."
+  category: error
+  severity: low
+  problem: "'way too easy' means 'too easy, to a worrying degree' in English; the intended meaning is just 'surprisingly easy'. 'open up' is vague."
+  suggestion: "Few people know how easy it is to open an Android app."
+- unit: ch17
+  line: 120
+  quote: "The concern is TikTok's villain in a simpler version."
+  category: error
+  severity: medium
+  problem: "Does not parse in English. 'concern' and 'villain' are mixed; the meaning is that the game does the same thing TikTok does, in a simpler form."
+  suggestion: "The concern is the same one as with TikTok, in a simpler version."
+- unit: ch17
+  line: 123
+  quote: "Where the game really weighs on you is money"
+  category: error
+  severity: low
+  problem: "'weighs on you' is a calque of PT 'pesa'; in English it means emotional burden, not cost."
+  suggestion: "Where the game really gets you is money:"
+- unit: ch17
+  line: 135
+  quote: "which is part of the purpose of verifying identity and doesn't go to third parties"
+  category: error
+  severity: low
+  problem: "Clumsy and ambiguous: it is unclear what 'doesn't go to third parties' attaches to."
+  suggestion: "which is the point of an identity check, and it doesn't go to third parties"
+- unit: ch17
+  line: 133
+  quote: "None of that line of advertising companies that shows up in TikTok."
+  category: error
+  severity: low
+  problem: "Translated-sounding fragment."
+  suggestion: "None of the ad-tech companies that show up in TikTok."
+- unit: ch17
+  line: 250
+  quote: "If they disagree, the system weighs them."
+  category: error
+  severity: low
+  problem: "Circular: the previous sentence already says the vote is weighted by confidence, so this adds nothing and gives no outcome."
+  suggestion: "If they disagree, the more confident answers count for more, and the score lands in between."
+- unit: ch17
+  line: 214
+  quote: "In September 2026 they tried it on me."
+  category: error
+  severity: low
+  problem: "'they' has no antecedent (the previous paragraphs speak of 'the scammer' in the singular, generic)."
+  suggestion: "In September 2026 a scammer tried it on me."
+- unit: ch17
+  line: 25
+  quote: "none of what follows is a hundred percent factual"
+  category: error
+  severity: low
+  problem: "'a hundred percent factual' is a calque ('cem por cento factual') and overstates: the point is that it is unverified."
+  suggestion: "not everything that follows is verified"
+
+# ---------- 2. CONSISTENCY ----------
+- unit: ch15
+  line: 24
+  quote: "the downloads folder on the old NAS"
+  category: consistency
+  severity: low
+  problem: "The NAS is introduced as 'the old NAS', then 'a sick NAS' (75), 'the new NAS', 'both NASes'. Cleanup (Oct 10) happens on the old NAS while the opening does not say there were two; the reader learns about the second one only at line 52 and in the next section. Mild confusion about which machine is which."
+  suggestion: "At line 24 add one clause, e.g. 'on the old NAS (I'd bought a second one days earlier, more on that below)'."
+- unit: ch16
+  line: 146
+  quote: "178 commits over about five days of work, between March 10 and 16"
+  category: consistency
+  severity: low
+  problem: "March 10 to 16 is seven calendar days; 'five days of work' is fine only if two were idle. A reader doing the arithmetic stumbles. (Same wording in PT; flag only for the author.)"
+  suggestion: "author question: keep, or 'in about a week, between March 10 and 16'."
+- unit: ch16
+  line: 300
+  quote: "a million lines no human reviewed line by line"
+  category: consistency
+  severity: low
+  problem: "Line 273 gives the Zig codebase as about 535 thousand lines. The 'million lines' here refers to the Rust result (or Kelley's rounding) but this is not said, so the numbers look inconsistent."
+  suggestion: "Add 'in Rust': 'to trust a million lines of Rust no human reviewed line by line' (check Kelley's wording in the post), or say 'hundreds of thousands of lines'."
+- unit: ch17
+  line: 236
+  quote: "Frank FBI was born"
+  category: consistency
+  severity: low
+  problem: "Naming: 'Frank FBI' in prose but 'FrankClaw', 'FrankMD' in ch16 (one word). Fine as product names, but confirm against continuity.yml; the PT also uses two words."
+  suggestion: "No change if continuity.yml lists 'Frank FBI'."
+
+# ---------- 3. REPETITION ----------
+- unit: ch15
+  line: 24
+  quote: "in the middle of a week"
+  category: repetition
+  severity: low
+  problem: "'in the middle of' appears at 24, 123 ('in the middle of that same week'), 260 (twice: 'in the middle of the NAS recovery... in the middle of the night'). A reader notices the tic."
+  suggestion: "Keep line 24. Line 123: 'And, that same week,'. Line 260: 'During the NAS recovery, an update ... started knocking its drive offline at night, silently.'"
+- unit: ch16
+  line: 74
+  quote: "Remember the desk from @sec-ch02?"
+  category: repetition
+  severity: low
+  problem: "Chapters 15 and 16 lean on 'Remember X?' callbacks (ch15 147; ch16 74, 168, 236) plus 'You already know why from @sec-ch02' (113). Five in one stretch is a lot."
+  suggestion: "Turn two of them into plain references, e.g. line 168: 'The comment in the code that admitted to hundreds of thousands of wasted calls a day (@sec-ch02) is that kind of find.'; line 236: 'Claude Code's Undercover Mode is the problem.'"
+- unit: ch17
+  line: 207
+  quote: "don't fall because of technical ignorance. They fall because of vanity."
+  category: repetition
+  severity: medium
+  problem: "This is the 'not X, but Y' rhetorical negation the English voice rules ban. Same shape at ch17 line 154 ('None of them has to spy on you alone, because the job gets done as a group effort') is milder."
+  suggestion: "Most people who fall for phishing, the scam where a message poses as someone trustworthy to steal data, passwords or money, fall because of vanity."
+- unit: ch17
+  line: 57
+  quote: "The answer has a technical name: [fingerprint]{.gls}, the device's fingerprint."
+  category: repetition
+  severity: low
+  problem: "'fingerprint' repeated three times in one sentence; the chapter uses the word dozens of times (style report: 222x book rate), which is fine as the key term, but this sentence reads like a stutter."
+  suggestion: "The answer has a technical name: the device [fingerprint]{.gls}."
+
+# ---------- 4. CLARITY ----------
+- unit: ch15
+  line: 85
+  quote: "Hard drives die. Always."
+  category: clarity
+  severity: low
+  problem: "'Always' is ambiguous (they always die? always at some point?). Then the 1.7% and 1.4% rates and '11% / more than 40%' are given; the arithmetic checks (1-0.986^8 = 10.7%, 1-0.986^40 = 43%), but a lay reader may not see that the 11% and 40% are the author's own calculation."
+  suggestion: "Hard drives die, sooner or later. ... 'Run the numbers for eight drives at the lifetime rate and you get about an 11% chance ...'"
+- unit: ch15
+  line: 47
+  quote: "## Sixty-Nine Items"
+  category: clarity
+  severity: low
+  problem: "The heading sits after the story of the 69 deleted items has already been told in the unheaded opening; the section itself is about the second, bigger cleanup and its defects. The title promises the first story."
+  suggestion: "Move the heading above line 24, or retitle it 'What the Second Pass Found'."
+- unit: ch16
+  line: 110
+  quote: "lots of types declared with no implementation"
+  category: clarity
+  severity: low
+  problem: "A non-programmer will not know what a 'type declared with no implementation' is."
+  suggestion: "lots of empty shells: names for things with nothing inside them"
+- unit: ch16
+  line: 52
+  quote: "ran chunks of program that came from outside with no isolation at all"
+  category: clarity
+  severity: low
+  problem: "Dense list of flaws; 'The command-line tool had no list of what was allowed: any tool could tell the computer to run anything' mixes two meanings of 'tool'."
+  suggestion: "The command-execution feature had no allow-list: any command could be run."
+- unit: ch17
+  line: 152
+  quote: "from the device, the location, the network address and the behavior, to detect fraud"
+  category: clarity
+  severity: low
+  problem: "The clause is hard to parse: 'building the digital identity ... from X, to detect fraud'."
+  suggestion: "...a company whose product is a digital identity for whoever is on the other side of the screen, built from the device, the location, the network address and the behavior, and sold to detect fraud."
+- unit: ch17
+  line: 226
+  quote: "A \"bank\" message in Portuguese with \"você\" missing its accent and tangled agreement was a scam."
+  category: clarity
+  severity: low
+  problem: "Fine for the PT edition, but an English reader sees a Portuguese example in an English book without being told it is the author's local example, and 'tangled agreement' is jargon-ish."
+  suggestion: "For years the standard anti-scam tip was to look for spelling and grammar mistakes. A \"bank\" message full of typos and broken grammar was a scam. That tip is dead."
+
+# ---------- 5. PACING ----------
+- unit: ch16
+  line: 293
+  quote: "### The Other Side of the Fight"
+  category: pacing
+  severity: low
+  problem: "The Kelley/Zig rebuttal and the referee exercise run about 25 paragraphs and drift from the chapter's question (is AI-written software safe). The lay reader is carrying a lot of Zig/Rust detail."
+  suggestion: "Consider trimming the bullet list at 298-300 to one sentence each in the next pass; no change needed for this copyedit."

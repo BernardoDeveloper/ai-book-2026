@@ -80,4 +80,5 @@ the git pre-push hook and blocks any tracked file or commit message matching
 author's email in tracked files or commit messages.
 
 Releases: add a section to CHANGELOG.md, then push a `vX.Y.Z` tag; the
-`book` workflow builds, validates and publishes the GitHub Release.
+`book` workflow builds, validates and publishes the GitHub Release, then
+deletes all but the two newest releases (tags are kept).

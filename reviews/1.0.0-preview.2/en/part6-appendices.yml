@@ -1,0 +1,287 @@
+- unit: apmecanica
+  line: 177
+  quote: "In the end, he's chased by a bear and calls for help: she needs to know how to build a weapon out of a few sticks."
+  category: error
+  severity: high
+  problem: "Pronoun slip: 'he' (the castaway) then 'she needs to know'. Bender and Koller's castaway is a man, and the PT says 'precisa saber' with no gender. Also 'He might even accept it' (line 175) reads as if the octopus is the one accepting, because the octopus is the subject of the same sentence."
+  suggestion: "Line 175: 'The castaway might even accept it, but only because he's the one doing all the work of making sense of the reply.' Line 177: 'In the end, the castaway is chased by a bear and calls for help: he needs to know how to build a weapon out of a few sticks. The octopus has nowhere to get that from.'"
+- unit: apmecanica
+  line: 238
+  quote: "I spent the whole year using these machines for real work, and the rest of this book is about that."
+  category: clarity
+  severity: low
+  problem: "This is an appendix at the back of the book, so 'the rest of this book' has nothing left to point to. It was lifted from the ch01 wording (the style report lists it as repeated in ch01)."
+  suggestion: "'I spent the whole year using these machines for real work, and that is what this book is about.'"
+- unit: apmecanica
+  line: 180
+  quote: "the same humans who confided in Eliza back in the 60s"
+  category: error
+  severity: low
+  problem: "'the 60s' is informal and inconsistent with the rest of the book, which gives Eliza as 1966 (apA)."
+  suggestion: "'the same humans who confided in Eliza in the 1960s' (or 'back in 1966')."
+- unit: apmecanica
+  line: 114
+  quote: "Researchers showed in 2019 that always choosing the likeliest piece"
+  category: consistency
+  severity: low
+  problem: "Text says 2019 while the citation key is holtzman2020curious (ICLR 2020, arXiv Apr 2019). A reader checking the reference will see 2020."
+  suggestion: "Say 'Researchers showed in 2019 (the paper appeared at a 2020 conference)' or simply 'Researchers showed that', dropping the year."
+- unit: apmecanica
+  line: 111
+  quote: "In practice, the systems throw away the tail of unlikely faces and draw only among the heaviest."
+  category: clarity
+  severity: low
+  problem: "'Throw away the tail' is jargon from the PT original; a lay reader may not picture 'tail' of a list of faces."
+  suggestion: "'In practice, the systems discard the long list of unlikely faces and draw only among the heaviest ones.'"
+- unit: apmecanica
+  line: 69
+  quote: "### Pieces, Again"
+  category: clarity
+  severity: low
+  problem: "The heading says 'Pieces' but the body calls them tokens; the glossary term is 'Token'. A reader skimming the table of contents will not know what 'Pieces' refers to."
+  suggestion: "'Tokens, One More Detail' or 'Pieces of Words, Again'."
+- unit: apA
+  line: 221
+  quote: "of quietly passing nearly 300 thousand customer requests through to Claude"
+  category: error
+  severity: medium
+  problem: "Awkward and slightly wrong verb: 'passing ... through to Claude' reads like the requests were handed to Claude. The accusation is that Kimi relayed customer requests to Claude's service and presented the answers as its own. The next sentence then says 'live pass-through' without having defined it."
+  suggestion: "'Anthropic accuses Moonshot, the maker of Kimi, of quietly relaying nearly 300 thousand customer requests to Claude. In my tests, I found no sign of live relaying on the routes I checked.'"
+- unit: apA
+  line: 237
+  quote: "**September 23.** First round of Genesys PI on my benchmark"
+  category: pacing
+  severity: low
+  problem: "Chronological order breaks: the September 23 entry comes after two 'Late September' entries, while every other month sorts dated entries before 'Late'."
+  suggestion: "Move the September 23 entry above 'Late September. Claude Opus 5.5, GPT-6 Sol and Grok 4.7 ...'."
+- unit: apA
+  line: 49
+  quote: "| 2024 | OpenAI launches its own prompt caching, less than two months after Anthropic"
+  category: clarity
+  severity: low
+  problem: "The row sits between Sep. 2024 and Nov. 2024 but is only dated '2024', and 'less than two months after Anthropic' forces the reader to do the date math (Aug. 2024 to Oct. 2024)."
+  suggestion: "Date it 'Oct. 2024' if ch20 gives the month; otherwise keep '2024' and move it right after the Aug. 2024 row so the 'after Anthropic' reads naturally."
+- unit: apA
+  line: 207
+  quote: "**August.** Gemini 3.7 Flash reads the test's answer key and runs the security auditor on itself"
+  category: clarity
+  severity: low
+  problem: "A lay reader cannot tell what 'runs the security auditor on itself' means (the model ran the benchmark's grader against its own work)."
+  suggestion: "'Gemini 3.7 Flash finds the test's answer key and runs the benchmark's security checker on its own work (@sec-ch12).'"
+- unit: apA
+  line: 7
+  quote: "the model got hands"
+  category: clarity
+  severity: low
+  problem: "Metaphor ('hands' for tools) is fine, but this is the only place in the appendix that uses it and the next section header says 'Agents'. Slightly cutesy for a reference page."
+  suggestion: "'the labs traded size for efficiency and the model learned to use tools.'"
+- unit: apB
+  line: 67
+  quote: "sudo timeshift --create --comments \"antes de soltar o agente\""
+  category: error
+  severity: high
+  problem: "Portuguese text left in the English edition's command. The comment string is visible to the reader."
+  suggestion: "sudo timeshift --create --comments \"before releasing the agent\""
+- unit: apB
+  line: 31
+  quote: "the network comes off or filtered, letting through only what the agent needs"
+  category: error
+  severity: medium
+  problem: "Broken parallel structure and idiom: 'comes off or filtered'."
+  suggestion: "'the network is cut off or filtered, letting through only what the agent needs to talk to the model and download libraries;'"
+- unit: apB
+  line: 209
+  quote: "The third is the full lockdown mode, which even so, the documentation warns, is no substitute for a virtual machine."
+  category: error
+  severity: medium
+  problem: "Tangled syntax ('which even so, ... is no substitute'), a literal rendering of the PT."
+  suggestion: "'The third is the full lockdown mode, which, the documentation warns, is still no substitute for a virtual machine.'"
+- unit: apB
+  line: 149
+  quote: "before pushing, look at what's going in the package"
+  category: clarity
+  severity: low
+  problem: "'the package' is unclear to a non-programmer (a commit? a library package?)."
+  suggestion: "'before pushing, look at exactly what is about to be sent (in Git, `git status` and `git diff --cached` show it);'"
+- unit: apB
+  line: 157
+  quote: "It writes, applies it to the test environment, checks and adjusts."
+  category: clarity
+  severity: low
+  problem: "'It writes, applies it' drops the object, so 'it' is ambiguous (recipe or environment). Also 'recipe' is used here for a configuration file and in apD for a collection of notes; keep the first sense defined here."
+  suggestion: "'It writes the recipe, applies it to the test environment, checks and adjusts.'"
+- unit: apB
+  line: 70
+  quote: "It was a variation on this, on a system built on top of snapshots, that saved me a reinstall in the middle of the NAS crisis"
+  category: clarity
+  severity: low
+  problem: "Vague and hard to parse: 'a variation on this, on a system built on top of snapshots'. Also 'puts each snapshot as an option' (line 70) is unidiomatic."
+  suggestion: "'grub-btrfs, which lists each snapshot in the boot menu'. Last sentence: 'Something close to this saved me a reinstall in the middle of the NAS crisis (@sec-ch15).' (verify against ch15 what was actually used)."
+- unit: apB
+  line: 62
+  quote: "The most common one on desktop computers is Btrfs"
+  category: clarity
+  severity: low
+  problem: "'most common on desktop computers' is too broad; the sentence is in the Linux section, and Windows and macOS desktops use other filesystems. A reader could take it as a general claim."
+  suggestion: "'The one most Linux desktop distributions offer for this is Btrfs, and several offer it at install time.'"
+- unit: apB
+  line: 5
+  quote: "Here is what to do about it, in the order I'd set up the house for someone just starting out."
+  category: repetition
+  severity: low
+  problem: "The style report lists three identical callbacks between this appendix and ch15 / apmemoria ('why it forgets what the two of you agreed on' appears in apB, como-ler and prefacio). Within apB, 'the house keys' / 'set up the house' are also close together."
+  suggestion: "Keep the apB version as the reference and shorten the other two occurrences; here the sentence is fine."
+- unit: apB
+  line: 219
+  quote: "What it does, when it's worth it and how to get started are in @sec-apmemoria."
+  category: repetition
+  severity: low
+  problem: "Near-verbatim repeat of ch20 (style report: apB, ch20 share a 14-word run)."
+  suggestion: "In apB: 'The full description, with when it is worth it and how to start, is in @sec-apmemoria.'"
+- unit: apmemoria
+  line: 112
+  quote: "It can be this one, another one, or a folder of text files kept by hand."
+  category: clarity
+  severity: medium
+  problem: "'It' has no clear antecedent after 'You don't need my program to follow the principle'."
+  suggestion: "'The tool can be this one, another one, or a folder of text files kept by hand.'"
+- unit: apmemoria
+  line: 104
+  quote: "puts the program on your command path"
+  category: clarity
+  severity: low
+  problem: "'command path' is a translation of PATH; a lay reader will not recognize it."
+  suggestion: "'and installs the program so you can run it from any folder.'"
+- unit: apmemoria
+  line: 15
+  quote: "The code shows what survived. The session holds the rest: the experiment that failed, the bug that only showed up now and then, the reason we changed our minds after three hours."
+  category: repetition
+  severity: low
+  problem: "The style report flags an 18-word run shared with ch20 ('the bug that only showed up now and then, the reason we changed our minds after three hours'). A reader of both will notice."
+  suggestion: "Keep it here, in the appendix, as the full statement, and have ch20 paraphrase or point back; or vary this list here ('the experiment that failed, the intermittent bug, the reasoning behind a decision')."
+- unit: apmemoria
+  line: 5
+  quote: "A scene that played out all year long on my computer. Claude Code gets stuck on a bug after an hour of conversation."
+  category: clarity
+  severity: low
+  problem: "Tense shift: the opening fragment is past ('played out') and the scene is told in present tense with no marker that it is a habitual pattern."
+  suggestion: "'A scene that repeated itself all year on my computer: Claude Code gets stuck on a bug after an hour of conversation. I close it, ...'"
+- unit: apC
+  line: 13
+  quote: "swapping only the program around the model has already taken one of them from \"unmeasurable\" to the top of the table"
+  category: clarity
+  severity: medium
+  problem: "'one of them' has no antecedent (the sentence mentions a task, a harness and a rubric, not models). A reader will think it refers to the rubrics."
+  suggestion: "'swapping only the program around the model has already taken a model from \"unmeasurable\" to the top of the table'"
+- unit: apC
+  line: 36
+  quote: "and that script had already been used in 2019 (@sec-ch01, @sec-ch14)"
+  category: clarity
+  severity: medium
+  problem: "'that script' (PT 'roteiro') is a literal rendering and unclear in English: a lay reader may think of a computer script. It refers to the 'too dangerous to release' play OpenAI ran with GPT-2 in 2019."
+  suggestion: "'... until someone independent measures them, and the \"too dangerous to release\" line was already used with GPT-2 in 2019 (@sec-ch01, @sec-ch14).'"
+- unit: apC
+  line: 41
+  quote: "The catastrophe warning and the miracle announcement push the same cart"
+  category: clarity
+  severity: medium
+  problem: "'push the same cart' is a literal rendering of the PT 'empurram o mesmo carrinho'; the English idiom is not established and the image is unclear."
+  suggestion: "'The catastrophe warning and the miracle announcement serve the same seller,' or 'push in the same direction'."
+- unit: apC
+  line: 16
+  quote: "The judge gets it wrong too, I got it wrong several times, and a serious benchmark shows the prompt"
+  category: error
+  severity: low
+  problem: "Comma splice between two independent clauses, then a third clause with a different subject; hard to read in one breath."
+  suggestion: "'The judge gets it wrong too, and I got it wrong several times. A serious benchmark shows the prompt, the generated code, the logs and the errata; whoever shows only the chart leaves no one able to challenge it (@sec-ch11).'"
+- unit: apC
+  line: 45
+  quote: "I only adopt a new tool when I feel its absence hurt"
+  category: error
+  severity: low
+  problem: "Ungrammatical in English ('feel its absence hurt')."
+  suggestion: "'I only adopt a new tool when I notice that its absence hurts.'"
+- unit: apC
+  line: 35
+  quote: "a financial interest doesn't make anything false, it just calls for stronger proof"
+  category: error
+  severity: low
+  problem: "Comma splice."
+  suggestion: "'a financial interest doesn't make anything false; it just calls for stronger proof'"
+- unit: apD
+  line: 100
+  quote: "The rest did what I wanted from it, which was to teach me something"
+  category: error
+  severity: low
+  problem: "Agreement: 'The rest' (plural projects) with 'from it'."
+  suggestion: "'The rest did what I wanted from them, which was to teach me something, and stayed in the notebook.'"
+- unit: apD
+  line: 19
+  quote: "the highest grade on the report card along with ai-jail"
+  category: consistency
+  severity: low
+  problem: "'along with' reads as 'in addition to'. The same idea is worded 'the highest along with the Chronicles' at the ai-jail entry (line 43). Both mean a tie."
+  suggestion: "Use 'tied with ai-jail for the highest grade on the report card' and 'tied with the Chronicles for the highest, and, in May, the project that drew the most outside contributors.'"
+- unit: apD
+  line: 27
+  quote: "the hand-built detector sank under filters"
+  category: clarity
+  severity: low
+  problem: "'sank under filters' is a literal rendering and unclear to a lay reader (it means the code piled up rules and special-case filters)."
+  suggestion: "'the hand-built detector kept sinking under piles of special-case filters, until I swapped it all out, on March 4, for a model already trained to find bubbles.'"
+- unit: apD
+  line: 35
+  quote: "about 10 thousand lines became 2,500"
+  category: consistency
+  severity: low
+  problem: "Mixed number styles in one clause ('10 thousand' vs '2,500'); also 'Nearly 57 thousand lines' in FrankClaw."
+  suggestion: "'about 10,000 lines became 2,500' and 'Nearly 57,000 lines'."
+- unit: apD
+  line: 94
+  quote: "the same family as Jev"
+  category: clarity
+  severity: low
+  problem: "A reader who jumps straight to this appendix has not met Jev (introduced only in the September timeline and ch14)."
+  suggestion: "'the same family as Jev, the classifier launched with great fanfare in September (@sec-ch14)'."
+- unit: apD
+  line: 65
+  quote: "Appears in @sec-ch02, @sec-ch16 and @sec-ch20, unnamed in @sec-ch19, and got an appendix of its own"
+  category: error
+  severity: low
+  problem: "Subject drops in the second half ('and got an appendix'), the sentence now has 'Appears' as its verb."
+  suggestion: "'It appears in @sec-ch02, @sec-ch16 and @sec-ch20, unnamed in @sec-ch19, and has an appendix of its own, @sec-apmemoria.'"
+- unit: glossary
+  line: 1
+  quote: "fingerprint"
+  category: clarity
+  severity: low
+  problem: "Entry reads 'A device's fingerprint. An identifier built ...' with the term 'Fingerprint'; the first sentence is a fragment restating the term, and a lay reader will think of biometrics."
+  suggestion: "term: Device fingerprint. def: 'An identifier built by combining dozens of characteristics of a phone or computer (model, language, screen, fonts, installed apps). It recognizes the device even without cookies or a login and often survives wiping the data and reinstalling the app. Unrelated to fingerprint sensors.' (Check that the {.gls key=fingerprint} uses in the text still read well.)"
+- unit: glossary
+  line: 1
+  quote: "kv-cache"
+  category: clarity
+  severity: low
+  problem: "'takes up the same VRAM as the weights' says the cache is the same size as the weights, which is not what is meant; it takes VRAM in addition to the weights."
+  suggestion: "'It grows along with the conversation and takes up VRAM on top of what the weights already use.'"
+- unit: glossary
+  line: 1
+  quote: "tipagem-forte"
+  category: repetition
+  severity: low
+  problem: "'before the program runs' appears twice in one definition, and the entry is about compile-time checking."
+  suggestion: "'A trait of languages in which every value has a type (number, text, list) and the compiler rejects the program when the types do not match. It catches some errors before the program ever runs, at the cost of more paperwork while writing.'"
+- unit: glossary
+  line: 1
+  quote: "quantizacao"
+  category: clarity
+  severity: low
+  problem: "'the nearest whole real (the Brazilian currency)' is a PT-flavored analogy that EN readers will have to decode; the book is otherwise currency-neutral."
+  suggestion: "'like rounding every price in a supermarket to the nearest dollar.'"
+- unit: glossary
+  line: 1
+  quote: "prompt"
+  category: clarity
+  severity: low
+  problem: "Definition is only 'The text you write asking the model for something.' It does not mention that the prompt includes the instructions and files an agent sends, which the book uses elsewhere (system prompt, context)."
+  suggestion: "'The text you send the model asking for something. In an agent it also includes the instructions and files the tool adds on your behalf.'"

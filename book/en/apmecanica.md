@@ -6,7 +6,7 @@ sources:
   - {post: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia, sha256: "71bce137854c76e643c64c2888ff44ef33b12b3bd3cd7dc3214ade44a46d0f27"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apmecanica.md, sha256: "d7f87225a5a47e74e004922afcdecb87574bbcf2654663e91b7175dc50ccb592"}
+translated_from: {file: book/pt/apmecanica.md, sha256: "94a5b3c92a6fe1c118de4e6444e89119b48bdaae91b1b27631480515ed3b7e05"}
 ---
 
 # The Machine Inside, Without the Math {#sec-apmecanica}
@@ -66,7 +66,7 @@ Even the dumb beginner question was training data: it was what told the model wh
 <!-- src: 2026/02/08/rant-ia-acabou-com-programadores -->
 The consequence for you is direct. What isn't in the model's probabilities won't spontaneously appear. It recombines what it has seen very well, in combinations nobody may have written before, but it doesn't pull out of thin air what was never in the material.
 
-### Pieces, Again
+### Tokens, One More Detail
 
 <!-- src: original -->
 Tokens, which @sec-ch01 introduced, get one more detail here. A model's vocabulary is a fixed list of pieces, built before training from whichever letter sequences show up most in the text. Llama 3's has about 128 thousand pieces [@meta2024llama3]. Common English words are usually a single piece; words in Portuguese and other languages, proper names and technical terms break into more pieces.
@@ -80,21 +80,21 @@ The first thing the network does with each token is swap its number for an addre
 
 What matters here is how the map organizes itself, and nobody draws that map. The addresses are knobs like any others, tuned in the same next-word guessing game. And since words used in similar situations help predict similar things, they end up living near each other.
 
-"Dog" lives in the same neighborhood as "cat", far from "tax". "Monday" lives near "Tuesday".
+"Dog" lives in the same neighborhood as "cat," far from "tax." "Monday" lives near "Tuesday."
 
 ![On the map of meanings, words used in similar situations live close together, and some relationships turn into directions.](assets/figures/en/apmecanica-mapa-de-sentidos.png){#fig-apmecanica-mapa-de-sentidos fig-alt="A flat map with labeled points grouped into neighborhoods: an animal neighborhood (dog, cat, horse), a weekday neighborhood (Monday, Tuesday, Wednesday) and one of taxes and money. In a corner, four points form a parallelogram: 'man' and 'woman' at the bottom, 'king' and 'queen' at the top, with two parallel arrows running from 'man' to 'woman' and from 'king' to 'queen'."}
 
 <!-- src: original -->
 Better still: some relationships turn into directions on the map. In 2013, Microsoft researchers showed that, on a map like this, the path from "man" to "woman" is nearly the same as the one from "king" to "queen" [@mikolov2013linguistic]. Nobody taught the machine the concept of gender. It showed up as a side effect of predicting words.
 
-This is where a lot of people get impressed, and rightly so: the map holds an enormous amount of structure about how words relate. Only that structure was extracted from how words show up together in text. The map knows that "queen" is to "king" as "woman" is to "man". It has never seen a queen.
+This is where a lot of people get impressed, and rightly so: the map holds an enormous amount of structure about how words relate. Only that structure was extracted from how words show up together in text. The map knows that "queen" is to "king" as "woman" is to "man." It has never seen a queen.
 
 ### The Highlighter
 
 <!-- src: original -->
 The address on the map is the same for "bank" in any sentence. What sorts out which bank is which is [attention]{.gls key=atencao}, the core mechanism of the [transformer]{.gls} [@vaswani2017attention], which @sec-ch01 summed up in one sentence. Here's a bit more.
 
-Imagine each word in the sentence gets a highlighter. In each layer, it looks at the words that came before and marks the ones that matter to it at that moment. In "the trophy didn't fit in the suitcase because it was too small", the "it" marks "suitcase" heavily and "trophy" lightly.
+Imagine each word in the sentence gets a highlighter. In each layer, it looks at the words that came before and marks the ones that matter to it at that moment. In "the trophy didn't fit in the suitcase because it was too small," the "it" marks "suitcase" heavily and "trophy" lightly.
 
 After marking, each word updates its own address by mixing in a little of what it marked. The "it" leaves that layer carrying a bit of "suitcase" inside it.
 
@@ -106,24 +106,24 @@ When it's writing, the model can only look backward, at the words that already e
 ## The Loaded Die
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-What comes out of the layers is a list with a chance for every piece in the vocabulary: "roof", so much; "wall", so much. The pieces number in the tens of thousands, and nearly all of them get a number close to zero. The next step is the draw that @sec-ch01 showed: the model picks one piece, sticks it on the end of the text and recomputes everything to pick the next one.
+What comes out of the layers is a list with a chance for every piece in the vocabulary: "roof," so much; "wall," so much. The pieces number in the tens or hundreds of thousands, and nearly all of them get a number close to zero. The next step is the draw that @sec-ch01 showed: the model picks one piece, sticks it on the end of the text and recomputes everything to pick the next one.
 
-Think of that draw as a loaded die, with one face for each piece and each face weighted in proportion to its chance. The likeliest faces come up almost always, but not always. In practice, the systems throw away the tail of unlikely faces and draw only among the heaviest.
+Think of that draw as a loaded die, with one face for each piece and each face weighted in proportion to its chance. The likeliest faces come up almost always, but not always. In practice, the systems discard the long list of unlikely faces and draw only among the heaviest ones.
 
 <!-- src: original -->
-Why not always pick the likeliest face? It looks like the safest bet, and it backfires. Researchers showed in 2019 that always choosing the likeliest piece produces bland, weirdly repetitive text that gets stuck in a loop repeating the same sentence [@holtzman2020curious]. The draw is what makes the text look like written text.
+Why not always pick the likeliest face? It looks like the safest bet, and it backfires. Researchers showed that always choosing the likeliest piece produces bland, weirdly repetitive text that gets stuck in a loop repeating the same sentence [@holtzman2020curious]. The draw is what makes the text look like written text.
 
 [Temperature]{.gls key=temperatura} is the setting that adjusts how the die is loaded. Low temperature piles the weight onto the favorite faces: the model gets predictable. High temperature spreads the weight around: less obvious words get in, which sometimes sound creative and sometimes are just wrong.
 
 <!-- src: original -->
-Notice what this mechanism lacks: nowhere along the way is there a step that checks whether the sentence is true. The question the machine answers for each piece is "what usually comes here?". When the likeliest answer and the true one coincide, great. When they don't, out comes a [hallucination]{.gls key=alucinacao} with the same fluency as ever (@sec-ch04 covers this in full).
+Notice what this mechanism lacks: nowhere along the way is there a step that checks whether the sentence is true. The question the machine answers for each piece is "what usually comes here?" When the likeliest answer and the true one coincide, great. When they don't, out comes a [hallucination]{.gls key=alucinacao} with the same fluency as ever (@sec-ch04 covers this in full).
 
 ## From Encyclopedia to Assistant
 
 <!-- src: original -->
 A model that has only gone through the word-guessing training, the so-called [pretraining]{.gls key=pre-treino}, is a document continuer. It doesn't know you're asking a question. It knows that texts like yours tend to continue in a certain way.
 
-The paper in which OpenAI introduced InstructGPT, in 2022, has a perfect example [@ouyang2022training]. They asked raw GPT-3, in French, to write a short story about a frog that travels back in time to ancient Greece. Instead of the story, it returned more requests of the same kind: "write a story about a child who...", "write a story about a young man who...".
+The paper in which OpenAI introduced InstructGPT, in 2022, has a perfect example [@ouyang2022training]. They asked raw GPT-3, in French, to write a short story about a frog that travels back in time to ancient Greece. Instead of the story, it returned more requests of the same kind: "write a story about a child who...," "write a story about a young man who...."
 
 That makes sense for something that continues documents. On the internet, a list of writing prompts usually continues with more writing prompts.
 
@@ -167,17 +167,17 @@ Everything you've read so far fits in that sentence:
 
 - "linguistic forms it has observed in its training data" are the pieces and the map built during training;
 - "probabilistic information about how they combine" is the loaded die;
-- "haphazardly", the stochastic in the name, is the draw;
-- "without any reference to meaning" is the octopus's point: the map knows that "coconut" lives near "mango", but it has never held a coconut.
+- "haphazardly," the stochastic in the name, is the draw;
+- "without any reference to meaning" is the octopus's point: the map knows that "coconut" lives near "mango," but it has never held a coconut.
 
 Bender and Koller end the octopus story like this. While the castaways were trading pleasantries, the octopus did fine.
 
-Then one of the castaways invents a coconut catapult and asks for an opinion; the octopus, which doesn't know what rope or a coconut is, answers with the "Cool idea, great job!" that used to show up at moments like that. She might even accept it, but only because she's the one doing all the work of making sense of the reply.
+Then one of the castaways invents a coconut catapult and asks for an opinion; the octopus, which doesn't know what rope or a coconut is, answers with the "Cool idea, great job!" that used to show up at moments like that. The castaway might even accept it, but only because he's the one doing all the work of making sense of the reply.
 
-In the end, she's chased by a bear and calls for help: she needs to know how to build a weapon out of a few sticks. The octopus has nowhere to get that from [@bender2020climbing].
+In the end, the castaway is chased by a bear and calls for help: he needs to know how to build a weapon out of a few sticks. The octopus has nowhere to get that from [@bender2020climbing].
 
 <!-- src: original -->
-The metaphor nails three things. The model learns only from text, without ever having touched the world the text talks about. It produces the likely continuation, with no commitment to the true one. And the ones who assign meaning and intent to the answer are us, the same humans who confided in Eliza back in the 60s.
+The metaphor nails three things. The model learns only from text, without ever having touched the world the text talks about. It produces the likely continuation, with no commitment to the true one. And the ones who assign meaning and intent to the answer are us, the same humans who confided in Eliza in the 1960s.
 
 [Stochastic parrot]{.gls key=papagaio-estocastico}, then, is a technical description of the mechanism with an image that's easy to remember. A lot of people use it as an insult, but the term was born as a diagnosis.
 
@@ -235,6 +235,6 @@ Put the pieces together:
 Nowhere on that list do you find consciousness, will, intent or understanding of the world. You find statistics, at a scale no human being can picture, built with an amount of money and electricity that's also hard to picture.
 
 <!-- src: original -->
-That doesn't diminish what it does. I spent the whole year using these machines for real work, and the rest of this book is about that. But when an executive tells you his model "thinks", "wants" or "is almost conscious", now you know what's inside the box. It's the same magic trick from @sec-ch01: the spell breaks once you see how it works, and the usefulness stays.
+That doesn't diminish what it does. I spent the whole year using these machines for real work, and that is what this book is about. But when an executive tells you his model "thinks," "wants" or "is almost conscious," now you know what's inside the box. It's the same magic trick from @sec-ch01: the spell breaks once you see how it works, and the usefulness stays.
 
-There's no magic in it. It's statistics at an absurd scale, and anyone who knows that is a lot harder to fool.
+This is statistics at an absurd scale, and anyone who knows that is a lot harder to fool.

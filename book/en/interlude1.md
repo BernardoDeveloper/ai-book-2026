@@ -5,7 +5,7 @@ sources:
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "c6451afc1d26d440a2364ebee3249330f54d9e0ddcb493aa7fdba4c9ff72d8c4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/interlude1.md, sha256: "c66a507dca01a4035b04420c1966c8042180a3f24953769a3f973dd5d261bda1"}
+translated_from: {file: book/pt/interlude1.md, sha256: c66a507dca01a4035b04420c1966c8042180a3f24953769a3f973dd5d261bda1}
 ---
 
 # Interlude: Twenty Years of Blogging in a Weekend {#sec-interlude1 .unnumbered}
@@ -80,7 +80,7 @@ Looking at the list, you could guess what had set off the alarm:
 - an essay on democracy and ethics that broke on every attempt.
 
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
-None of those posts has anything dangerous in it. One talks about illness, another about political philosophy, another criticizes the Nazis. Apparently the companies' automatic filter measures with a thick ruler: brush up against a sensitive topic and it refuses, without weighing the context.
+None of those posts has anything dangerous in it. One talks about illness, another about political philosophy, another criticizes the Nazis. Apparently the companies' automatic filter is a blunt instrument: brush up against a sensitive topic and it refuses, without weighing the context.
 
 The way out came from home. I loaded onto my own computer Qwen 3.5 35B, an [open model]{.gls key=modelo-aberto} from China's Alibaba, the kind anyone can download and run without asking anybody's permission (@sec-ch13 covers what that takes) [@qwen2026qwen35]. With no corporate filter in the way, the model read the posts, understood the context and translated everything without drama.
 
@@ -94,7 +94,7 @@ Behind the joke there's a practical lesson. Commercial models will always carry 
 ## The Way Back
 
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
-Since I was already elbow-deep in it, I took the chance to solve the opposite side. The 2008 interviews and the 2017 and 2018 posts that were born in English got Portuguese versions, by the same route, just in reverse. The agent also adjusted the little program that builds the blog's index, so it generates one list per language.
+Since I was already elbow-deep in it, I took the chance to handle the opposite direction too. The 2008 interviews and the 2017 and 2018 posts that were born in English got Portuguese versions, by the same route, just in reverse. The agent also adjusted the little program that builds the blog's index, so it generates one list per language.
 
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
 On April 9, when I finally published the anniversary post, half the blog was bilingual. What was left was mostly old tips about software versions that don't even exist anymore, stuff it made more sense to delete than to translate.
@@ -102,4 +102,4 @@ On April 9, when I finally published the anniversary post, half the blog was bil
 The barrier to reaching readers outside Brazil, which I had carried for two decades, had become cheap enough that I no longer had an excuse.
 
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
-I knew the Qwen that rescued those six posts from somewhere else. In those same weeks, I had been pitting models against each other on a programming test I had built myself, trying to find out which one was best. It looked like a simple question, with the answer in a table. Over the following months I found out that measuring AI models is far trickier than translating twenty years of blog posts.
+I already knew that Qwen from another context. In those same weeks, I had been pitting models against each other on a programming test I had built myself, trying to find out which one was best. It looked like a simple question, with the answer in a table. Over the following months I found out that measuring AI models is far trickier than translating twenty years of blog posts.

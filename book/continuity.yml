@@ -55,4 +55,7 @@ time_anchor: >-
 naming:
   - "Claude Code, Codex, OpenCode, Crush: product names, no italics."
   - "Model names as the vendor writes them: Claude Opus 4.5, GPT-5.5, GLM 4.7, Kimi K3, DeepSeek V4."
+  - "OpenAI tiers (the blog is inconsistent; the book fixes one form): hyphen + capitalised tier, GPT-5.4 Sol, GPT-5.6 Sol/Luna/Terra, GPT-6 Sol/Luna/Astra; a tier alone is capitalised too (o Sol, o Terra)."
+  - "Z.ai (never z.ai). 'Sprint' is feminine (a sprint)."
+  - "A cross-reference used as subject or after como/que/porque takes the article: o @sec-ch15."
   - "Book and paper titles in italics."

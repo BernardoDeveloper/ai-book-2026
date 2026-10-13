@@ -21,7 +21,7 @@ Eu não tenho plano de carreira pra vender, nem curso. Tenho o que um ano de uso
 ## Medo vende
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-Você conheceu em @sec-ch01 a frase do cartaz: a sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA. Depois deste ano, eu acrescentaria que o medo segue a mesma regra. Quanto menos a pessoa sabe como a coisa funciona, mais espaço sobra pra imaginar o fim do mundo.
+Você conheceu em @sec-ch01 a frase do cartão: a sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA. Depois deste ano, eu acrescentaria que o medo segue a mesma regra. Quanto menos a pessoa sabe como a coisa funciona, mais espaço sobra pra imaginar o fim do mundo.
 
 <!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
 Medo e empolgação saem da mesma fábrica. Em agosto de 2026 escrevi sobre os cursos de "engenharia" disso e daquilo que brotaram em volta dos agentes, e o mecanismo era velho. Primeiro deixam você ansioso, achando que está ficando pra trás, que todo mundo já migrou pro paradigma novo e só você não. Depois cobram pra curar a ansiedade que eles mesmos criaram.
@@ -46,7 +46,7 @@ A primeira é o mínimo sobre a máquina. Um [LLM]{.gls} gera o texto mais prov�
 Se quiser ir mais fundo, @sec-apmecanica mostra o mecanismo sem matemática, e @sec-antes traz uma lista de leitura pra vários níveis.
 
 <!-- src: 2026/04/11/vs-code-e-o-novo-cartao-perfurado -->
-Vale o mesmo pro fundamento do seu próprio ofício. Em abril escrevi sobre o programador sem base que vê o [agente]{.gls} montar uma consulta ao banco de dados, testa com 300 linhas de mentira, acha que está tudo certo e não imagina o que acontece com um milhão de linhas de verdade. Com agente na mão, quem tem base aprende mais rápido. Quem não tem só terceiriza a própria ignorância.
+Vale o mesmo pro fundamento do seu próprio ofício. Pense no programador sem base de @sec-ch18, que testa com 300 linhas e não imagina o milhão. Com [agente]{.gls} na mão, quem tem base aprende mais rápido. Quem não tem só terceiriza a própria ignorância.
 
 ### Julgamento
 
@@ -67,7 +67,7 @@ Essa é a parte do mapa que está em branco pra máquina e preenchida na sua cab
 <!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
 Essa lista é mais longa, e libera mais tempo:
 
-- curso e certificação da taxonomia do mês. Quando a tecnologia vira commodity, o dinheiro migra pro nome novo: cinco nomes pra encadear chamada de API e um certificado que expira em seis meses. Quem trabalha com método, teste e revisão já faz o que eles ensinam;
+- curso e certificação do nome da moda do mês (harness engineering, loop engineering e parentes). Quando a tecnologia vira commodity, o dinheiro migra pro nome novo: cinco nomes pra encadear chamada de API e um certificado que expira em seis meses. Quem trabalha com método, teste e revisão já faz o que eles ensinam;
 - anúncio de [AGI]{.gls key=agi}, de extinção, de modelo perigoso demais pra lançar. O roteiro existe pelo menos desde 2019 (@sec-ch01), e @sec-ch14 mostra quem lucra com ele;
 - briga de ranking por décimo de ponto. No topo, os modelos formam um grupo, e a diferença entre eles cabe no [ruído entre execuções]{.gls key=ruido-entre-execucoes} (@sec-ch11);
 - a promessa de que o próximo modelo resolve. Os números de @sec-ch20 mostram uma linha reta lá em cima, e o que muda o resultado é o processo em volta;

@@ -21,6 +21,18 @@ Checks passing: provenance in sync with the blog, outline coverage, voice
 lint on every unit, epubcheck, page audit (no split blocks, stranded
 headings, gap pages, runt endings, oversized images or overfull lines).
 
+## Status after 1.0.0-preview.2 (2026-10-13)
+
+Settled from the sources or by the author's earlier answers:
+2 (ch08's "mais de 25" quotes a critic from the 04/23 post; consistent with
+30), 5 and 6 (cover and title shipped in both previews unchanged by the
+author), 8 ("AI Lair" is the author's site, ai-toolkit-web; added to
+`owned_names`), 9 (Altman photo replaced by a 2025 TED photo, CC BY 2.0),
+10 (NBR 10520:2023 kept), 12 (aliases + `public_guard`), ai-jail README
+(fixed upstream: "On by default"). Item 4 is being checked against archived
+originals (`reviews/1.0.0-preview.2/pt/ch14-secondary-sources.md`).
+Still the author's: 1, 3, 7, 11.
+
 ## Decisions only you can make
 
 1. **Unpublished research in ch12.** One paragraph on Genesys PI uses your

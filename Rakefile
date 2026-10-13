@@ -65,6 +65,7 @@ task :check do
   generated = %w[glossario.md bibliografia.md fontes.md creditos.md]
   files = Dir[File.join(ROOT, "book", LANG, "*.md")].reject { generated.include?(File.basename(_1)) }
   ruby "scripts/lint_chapter.rb", *files unless files.empty?
+  ruby "scripts/en_quote_punct.rb", "--check" if LANG == "en" # EN house style: punctuation inside quotes
   ruby "scripts/doctor.rb", "--lang", LANG
 end
 

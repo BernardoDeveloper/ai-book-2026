@@ -20,9 +20,9 @@ agi:
     marketing.
 alucinacao:
   term: Alucinação
-  def: 'Quando o modelo produz uma informação falsa com a mesma confiança de uma verdadeira,
-    como uma citação, uma data ou uma lei que não existem. Não é defeito ocasional:
-    vem do próprio jeito como o modelo escolhe o texto mais provável.'
+  def: Quando o modelo produz uma informação falsa com a mesma confiança de uma verdadeira,
+    como uma citação, uma data ou uma lei que não existem. Acontece com qualquer modelo,
+    porque vem do próprio jeito como ele escolhe o texto mais provável.
 analise-estatica:
   term: Análise estática
   def: Examinar um programa lendo o seu conteúdo, sem executá-lo. Mostra o que ele
@@ -134,8 +134,8 @@ codigo-morto:
     Não causam erro visível, mas confundem quem lê, inclusive agentes de IA.
 codigo-nativo:
   term: Código nativo
-  def: Programa já convertido em instruções de máquina, geralmente escrito em C ou
-    C++. Roda rápido e praticamente não volta a ser legível, mesmo com ferramentas
+  def: Programa já convertido em instruções de máquina, geralmente a partir de código
+    em C ou C++. Roda rápido e praticamente não volta a ser legível, mesmo com ferramentas
     de engenharia reversa.
 commit:
   term: Commit
@@ -243,8 +243,8 @@ fomo:
 fonte-primaria:
   term: Fonte primária
   def: A origem de um dado ou afirmação, como o estudo original, a estatística oficial,
-    a decisão judicial ou o contrato. Vale mais que qualquer número de textos que
-    a repetem.
+    a decisão judicial ou o contrato. Vale mais do que qualquer quantidade de textos
+    que a repetem.
 fork:
   term: Fork
   def: Uma cópia de um projeto de código aberto que alguém passa a manter por conta
@@ -343,7 +343,7 @@ mcp:
   long: Model Context Protocol
   def: 'Um padrão aberto pra conectar ferramentas e fontes de dados a agentes de IA,
     como uma tomada padrão: a mesma ferramenta funciona em vários agentes. Criado
-    pela Anthropic em 2024 e doado a uma fundação independente em 2025.'
+    pela Anthropic em 2024 e doado em 2025 a uma fundação ligada à Linux Foundation.'
 mcts:
   term: Busca em árvore de Monte Carlo
   def: Técnica em que o programa simula muitas partidas a partir da posição atual,
@@ -359,7 +359,7 @@ memoria-unificada:
   term: Memória unificada
   def: Um único bloco de memória dividido entre o processador e a parte de vídeo do
     chip, em vez de memórias separadas. Permite dar muito mais memória à IA, mas costuma
-    ser mais lenta que a de uma placa de vídeo dedicada.
+    ser mais lenta do que a de uma placa de vídeo dedicada.
 mescla-de-modelos:
   term: Mescla de modelos
   def: Criar um modelo novo tirando uma média ponderada dos pesos de dois modelos
@@ -553,8 +553,8 @@ rubrica:
 ruido-entre-execucoes:
   term: Ruído entre execuções
   def: A variação de nota que aparece quando a mesma prova é repetida com o mesmo
-    modelo, sem mudar nada. Diferenças menores que esse ruído não provam que um modelo
-    é melhor que outro.
+    modelo, sem mudar nada. Diferenças menores do que esse ruído não provam que um
+    modelo é melhor do que outro.
 saas:
   term: SaaS
   long: Software as a Service
@@ -644,9 +644,10 @@ tier:
     agrupa notas próximas em vez de tratar cada ponto de diferença como real.
 tipagem-forte:
   term: Tipagem forte
-  def: Característica de linguagens em que cada valor tem um tipo declarado ou deduzido
-    (número, texto, lista) e o compilador recusa o programa quando os tipos não combinam.
-    Pega alguns erros antes de o programa rodar, ao custo de mais burocracia na escrita.
+  def: Característica de linguagens em que cada valor tem um tipo (número, texto,
+    lista) conferido pelo compilador antes de o programa rodar, que recusa o programa
+    quando os tipos não combinam. Pega alguns erros antes de o programa rodar, ao
+    custo de mais burocracia na escrita.
 token:
   term: Token
   def: O pedaço de texto com que o modelo trabalha, em geral um fragmento de palavra.
