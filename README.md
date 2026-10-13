@@ -1,10 +1,14 @@
 <p align="center">
-  <img src="assets/cover/cover-readme.jpg" alt="Cover of Competente o Suficiente: a giant retro-futurist robot with a round, weary face kneels at a 1950s World's Fair, studying its own open hand, while a crowd watches; a round sticker with the author's portrait sits beside his name" width="360">
+  <img src="assets/cover/cover-readme.jpg" alt="Portuguese cover of Competente o Suficiente: a giant retro-futurist robot with a round, weary face kneels at a 1950s World's Fair, studying its own open hand, while a crowd watches; a round sticker with the author's portrait sits beside his name" width="320">
+  &nbsp;&nbsp;
+  <img src="assets/cover/cover-readme-en.jpg" alt="English cover of Competent Enough: the same retro-futurist robot kneeling at a 1950s World's Fair, with the English title and subtitle" width="320">
 </p>
+<p align="center"><sub>Português · English</sub></p>
 
-<h1 align="center">Competente o Suficiente</h1>
+<h1 align="center">Competente o Suficiente<br><sub>Competent Enough</sub></h1>
 
 <p align="center"><em>Um ano colocando a inteligência artificial à prova, sem medo e sem propaganda</em><br>
+<em>A year putting artificial intelligence to the test, without fear and without hype</em><br>
 Fabio Akita</p>
 
 ---

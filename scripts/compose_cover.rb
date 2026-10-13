@@ -73,9 +73,10 @@ cmd = ["magick", art, "-resize", "#{W}x#{H}^", "-gravity", "center", "-extent", 
 system(*cmd, exception: true)
 warn "wrote #{out}"
 
-# The README shows the canonical (PT) cover: keep it in step automatically.
-if lang == "pt" && File.basename(out) == "cover.png"
-  readme = File.join(ROOT, "assets", "cover", "cover-readme.jpg")
+# The README shows both covers side by side: keep the thumbnails in step automatically.
+readme_name = { "cover.png" => "cover-readme.jpg", "cover-en.png" => "cover-readme-en.jpg" }[File.basename(out)]
+if readme_name
+  readme = File.join(ROOT, "assets", "cover", readme_name)
   system("magick", out, "-resize", "640x", "-quality", "88", readme, exception: true)
   warn "wrote #{readme.delete_prefix(ROOT + '/')}"
 end
