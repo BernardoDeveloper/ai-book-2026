@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/cover/cover-readme.jpg" alt="Cover of Competente o Suficiente: a giant retro-futurist robot with a round, weary face kneels at a 1950s World's Fair, studying its own open hand, while a crowd watches" width="360">
+  <img src="assets/cover/cover-readme.jpg" alt="Cover of Competente o Suficiente: a giant retro-futurist robot with a round, weary face kneels at a 1950s World's Fair, studying its own open hand, while a crowd watches; a round sticker with the author's portrait sits beside his name" width="360">
 </p>
 
 <h1 align="center">Competente o Suficiente</h1>

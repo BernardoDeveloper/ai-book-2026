@@ -72,3 +72,10 @@ cmd = ["magick", art, "-resize", "#{W}x#{H}^", "-gravity", "center", "-extent", 
        "-alpha", "remove", "-alpha", "off", "-colorspace", "sRGB", "-quality", "95", out]
 system(*cmd, exception: true)
 warn "wrote #{out}"
+
+# The README shows the canonical (PT) cover: keep it in step automatically.
+if lang == "pt" && File.basename(out) == "cover.png"
+  readme = File.join(ROOT, "assets", "cover", "cover-readme.jpg")
+  system("magick", out, "-resize", "640x", "-quality", "88", readme, exception: true)
+  warn "wrote #{readme.delete_prefix(ROOT + '/')}"
+end
