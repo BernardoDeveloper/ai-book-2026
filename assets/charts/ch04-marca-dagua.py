@@ -129,6 +129,8 @@ ax.add_patch(FancyArrowPatch((x1 + 0.2, GY + 1.2), (7.0, GY + 1.2), arrowstyle="
 
 buf = io.BytesIO()
 fig.savefig(buf, dpi=300, facecolor=PAPER, format="png")
-out = ROOT / "assets" / "figures" / "ch04-marca-dagua.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch04-marca-dagua.png"
+out.parent.mkdir(parents=True, exist_ok=True)
 Image.open(buf).convert("RGB").save(out, dpi=(300, 300))
 print(out)

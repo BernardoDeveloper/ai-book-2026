@@ -6,6 +6,8 @@
 meta:
   working_title: "Competente o Suficiente"
   subtitle: "Um ano colocando a inteligência artificial à prova, sem medo e sem propaganda"
+  working_title_en: "Competent Enough"
+  subtitle_en: "A year putting artificial intelligence to the test, without fear and without hype"
   author: "Fabio Akita"
   # Names owned by the author (copyright page, EPUB rights, HTML footer).
   owned_names: ["akitaonrails", "Akitando", "The M.Akita Chronicles", "ai-memory", "ai-jail", "ai-usagebar", "ghpending", "Frank (FrankMD, Frank Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, FrankMega, Frank Karaoke, Frank GO, Frank Manga+ e demais projetos da série)"]
@@ -60,6 +62,7 @@ front:
 parts:
   - id: p1
     title: "Parte I: O que é essa coisa, afinal"
+    title_en: "Part I: What Is This Thing, Anyway"
     fear: "Is it intelligent? Is it alive? Is AGI coming?"
     chapters:
       - id: ch01
@@ -138,6 +141,7 @@ parts:
 
   - id: p2
     title: "Parte II: A maratona"
+    title_en: "Part II: The Marathon"
     fear: "Does it actually work, or is it all demo?"
     chapters:
       - id: ch05
@@ -239,6 +243,7 @@ parts:
 
   - id: p3
     title: "Parte III: Números e propaganda"
+    title_en: "Part III: Numbers and Propaganda"
     fear: "Which AI is best? Is it getting exponentially better? Should I believe the announcements?"
     chapters:
       - id: ch11
@@ -323,6 +328,7 @@ parts:
 
   - id: p4
     title: "Parte IV: Quem fica com as chaves"
+    title_en: "Part IV: Who Holds the Keys"
     fear: "Is it dangerous to let it touch my things? Is it spying on me?"
     chapters:
       - id: ch15
@@ -376,6 +382,7 @@ parts:
 
   - id: p5
     title: "Parte V: E o meu emprego?"
+    title_en: "Part V: What About My Job?"
     fear: "Will it take my job? What should I learn? What comes next?"
     chapters:
       - id: ch18

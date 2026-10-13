@@ -138,7 +138,11 @@ ax.add_patch(FancyBboxPatch((lx - 0.15, ly - 0.02), 0.3, 0.2, boxstyle="round,pa
 arrow((5.38, BELT_Y + 0.1), (5.53, BELT_Y + 0.1), lw=1.4)
 ax.text(fx + fw / 2, 0.82, L["frozen"], ha="center", va="top", fontsize=11, fontweight="semibold", linespacing=1.1)
 
-out = ROOT / "assets" / "figures" / "apmecanica-tres-etapas.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "apmecanica-tres-etapas.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

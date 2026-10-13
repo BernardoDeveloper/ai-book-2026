@@ -112,7 +112,11 @@ for i in range(3):
                                      connectionstyle="arc3,rad=-0.5", zorder=6, shrinkA=0, shrinkB=0))
 ax.text(px + pw / 2, py - 0.12, L["knobs"], ha="center", va="top", fontsize=11, linespacing=1.15)
 
-out = ROOT / "assets" / "figures" / "apmecanica-descida-na-neblina.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "apmecanica-descida-na-neblina.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

@@ -120,7 +120,11 @@ ax.text(kx + 0.38, ky + 0.07, L["two"], ha="left", va="center", fontsize=11.5, f
 ax.text(kx + 0.38, ky - 0.2, L["reset"], ha="left", va="center", fontsize=11.5)
 arrow((kx - 0.22, ky + 0.22), (cx + 0.2, cy - 0.42), rad=-0.3, lw=1.3)
 
-out = ROOT / "assets" / "figures" / "ch07-disjuntor.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch07-disjuntor.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

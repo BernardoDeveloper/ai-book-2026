@@ -111,6 +111,8 @@ ax.text((MX - 0.6 + 3.0) / 2, MY + 0.2, L["reescreve"], ha="center", va="bottom"
 
 buf = io.BytesIO()
 fig.savefig(buf, dpi=300, facecolor=PAPER, format="png")
-out = ROOT / "assets" / "figures" / "ch02-memoria-em-camadas.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch02-memoria-em-camadas.png"
+out.parent.mkdir(parents=True, exist_ok=True)
 Image.open(buf).convert("RGB").save(out, dpi=(300, 300))
 print(out)

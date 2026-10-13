@@ -98,7 +98,11 @@ ax.text(4.45, (mid - 0.55 + y0 + 0.67) / 2, L["back"], ha="left", va="center", f
 arrow((3.8, y0 + 0.42), (2.35, e2y - 0.3), rad=-0.35)
 ax.text(2.0, y0 + 0.42, L["new"], ha="center", va="center", fontsize=11.5, style="italic")
 
-out = ROOT / "assets" / "figures" / "ch08-oraculo.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch08-oraculo.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

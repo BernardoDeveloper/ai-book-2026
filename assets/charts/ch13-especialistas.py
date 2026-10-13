@@ -92,7 +92,11 @@ def panel(x0, title, moe):
 panel(0.12, L["dense"], False)
 panel(3.27, L["moe"], True)
 
-out = ROOT / "assets" / "figures" / "ch13-especialistas.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch13-especialistas.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

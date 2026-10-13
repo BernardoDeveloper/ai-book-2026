@@ -96,7 +96,11 @@ ax.add_patch(FancyArrowPatch((2.25, 2.02), (2.25, y0 + hh + 0.04), arrowstyle="-
                              color=INK, lw=1.5, linestyle=(0, (4, 3)), zorder=2, shrinkA=0, shrinkB=0))
 ax.text(2.4, (2.02 + y0 + hh) / 2, L["read0"], ha="left", va="center", fontsize=11.5, style="italic")
 
-out = ROOT / "assets" / "figures" / "ch07-zero-e-nada.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch07-zero-e-nada.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

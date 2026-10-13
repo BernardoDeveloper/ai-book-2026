@@ -148,7 +148,11 @@ ax.add_patch(FancyBboxPatch((0.15, 0.18), W - 0.3, 0.5, boxstyle="round,pad=0,ro
                             fc=NAVY, ec=INK, lw=1.4, zorder=2))
 ax.text(W / 2, 0.43, L["band"], ha="center", va="center", fontsize=11.5, color=PAPER, fontweight="semibold", zorder=3)
 
-out = ROOT / "assets" / "figures" / "ch18-interfaces.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch18-interfaces.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

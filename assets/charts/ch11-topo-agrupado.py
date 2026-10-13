@@ -107,7 +107,11 @@ axes[1].text(82.2, NROWS - 0.22, L["tier"], ha="right", va="bottom", fontsize=FS
 fig.text(0.02, 0.962, L["title"], fontsize=15, fontweight="semibold", ha="left", va="center")
 fig.text(0.02, 0.025, L["note"], fontsize=FS, style="italic", color="#5E636C", ha="left", va="center")
 
-out = ROOT / "assets" / "figures" / "ch11-topo-agrupado.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch11-topo-agrupado.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

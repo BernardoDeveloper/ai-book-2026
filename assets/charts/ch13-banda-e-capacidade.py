@@ -102,7 +102,11 @@ L["tps"] = L["tps"].replace(" por ", "\npor ").replace(" per ", "\nper ")
 panel(0.12, 32, 1792, L["rtx"], L["wide"], 0.85, False, L["fast"])
 panel(3.27, 128, 256, L["strix"], L["narrow"], 0.15, True, L["slow"])
 
-out = ROOT / "assets" / "figures" / "ch13-banda-e-capacidade.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch13-banda-e-capacidade.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

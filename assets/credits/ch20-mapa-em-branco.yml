@@ -2,7 +2,7 @@
 id: ch20-mapa-em-branco
 kind: ai_illustration
 file: assets/figures/ch20-mapa-em-branco.png
-sha256: fd98dd95ba02c2e1c64a4fff75fc60b4fa8e142e08cd79c2ab84340e93f7c35e
+sha256: 3084ab3ad3eae7bb429f74a597d017839005d0f50acd8e25ff32e01f28e620d7
 generation:
   provider: openai
   endpoint: POST /v1/images/generations
@@ -104,3 +104,4 @@ labels:
   - forms
   - registrations
   - websites
+source_script: 'assets/charts/ch20-mapa-em-branco.rb (base art: assets/art/ch20-mapa-em-branco-base.png)'

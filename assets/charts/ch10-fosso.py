@@ -83,7 +83,11 @@ castle(8.9, 1.25, 1.15, full=False)
 ax.text(7.6, 1.3, L["dry"], ha="right", va="center", fontsize=11.5, style="italic")
 castle(8.3, 8.25, 0.95, full=True)
 
-out = ROOT / "assets" / "figures" / "ch10-fosso.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch10-fosso.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

@@ -94,7 +94,11 @@ for i, (name, counts, dist) in enumerate(ROWS):
 ax.text(0.2, 0.42, L["note"], ha="left", va="center", fontsize=11, style="italic")
 ax.text(0.2, 0.13, L["foot"], ha="left", va="center", fontsize=9, style="italic", color="#5E636C")
 
-out = ROOT / "assets" / "figures" / "ch12-impressao-digital.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch12-impressao-digital.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

@@ -74,7 +74,11 @@ fig.legend(handles=handles, loc="lower center", ncol=2, frameon=False, fontsize=
            columnspacing=2.0)
 fig.subplots_adjust(left=0.07, right=0.98, top=0.9, bottom=0.12, wspace=0.12)
 
-out = ROOT / "assets" / "figures" / "ch10-limiar.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch10-limiar.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

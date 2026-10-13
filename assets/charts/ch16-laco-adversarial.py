@@ -113,7 +113,11 @@ ax.text(0.75, 0.62, L["fail"], ha="center", va="center", fontsize=11.5, style="i
 arrow((tx + tw + 0.05, ty + 0.25), (fx + 0.1, 0.32))
 ax.text(fx + 0.15, 0.32, L["pass"], ha="left", va="center", fontsize=11.5, style="italic")
 
-out = ROOT / "assets" / "figures" / "ch16-laco-adversarial.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch16-laco-adversarial.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

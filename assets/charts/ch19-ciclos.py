@@ -108,7 +108,11 @@ box(px, 0.45, 1.0, 0.42, GRAY, L["result"], weight="semibold")
 arrow((px, 1.12), (px, 0.68), lw=1.6)
 ax.text(px + 0.12, 0.9, L["same"], ha="left", va="center", fontsize=11.5, fontweight="semibold")
 
-out = ROOT / "assets" / "figures" / "ch19-ciclos.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch19-ciclos.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

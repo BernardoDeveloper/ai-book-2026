@@ -117,6 +117,8 @@ ax.text(W / 2 + 0.2, (rows[1] - 0.68 + rows[2] + H + 0.95) / 2, L["compactacao"]
 fig.tight_layout(pad=0.4)
 buf = io.BytesIO()
 fig.savefig(buf, dpi=300, facecolor=PAPER, format="png")
-out = ROOT / "assets" / "figures" / "ch02-compactacao.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch02-compactacao.png"
+out.parent.mkdir(parents=True, exist_ok=True)
 Image.open(buf).convert("RGB").save(out, dpi=(300, 300))
 print(out)

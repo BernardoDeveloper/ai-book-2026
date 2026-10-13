@@ -16,6 +16,7 @@
 #   Run scripts/inventory.rb first so hashes are fresh (the Rakefile does).
 
 require "yaml"
+require "digest"
 require "date"
 require "optparse"
 
@@ -60,6 +61,23 @@ Dir.glob(File.join(ROOT, "book", opts[:lang], "**", "*.md")).sort.each do |path|
       from = src["commit"] || fm["blog_commit"] || inv["blog_commit"]
       puts `git -C #{blog} diff --stat --patch #{from} -- content/#{src['post']}/#{file_name}`.gsub(/^/, "      ")
     end
+  end
+end
+
+unless opts[:lang] == "pt"
+  # Translations follow the canonical PT chapter: front matter
+  # `translated_from: {file: book/pt/<id>.md, sha256: ...}`.
+  puts "== Translations (#{opts[:lang]} vs pt)"
+  Dir.glob(File.join(ROOT, "book", opts[:lang], "*.md")).sort.each do |path|
+    tf = front_matter(path)["translated_from"] or next
+    pt = File.join(ROOT, tf["file"])
+    next if File.exist?(pt) && Digest::SHA256.file(pt).hexdigest == tf["sha256"]
+
+    puts "  STALE    #{path.delete_prefix(ROOT + '/')}: #{tf['file']} changed since translation"
+    problems += 1
+    next unless opts[:diff]
+
+    puts `git -C #{ROOT} log --oneline -5 -- #{tf['file']}`.gsub(/^/, "      ")
   end
 end
 

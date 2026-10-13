@@ -81,7 +81,9 @@ ax.text(x + 2.0, (ys[1] + ys[-1]) / 2, LABELS["hidden"].replace(" na ", "\nna ")
         va="center", ha="left", fontsize=12, style="italic")
 
 fig.tight_layout()
-out = ROOT / "assets" / "figures" / "ch06-commits.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch06-commits.png"
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

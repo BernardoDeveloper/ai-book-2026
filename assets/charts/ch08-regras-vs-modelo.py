@@ -112,7 +112,11 @@ arrow((rx, H - 2.66), (rx, H - 2.88))
 page(rx - 0.48, H - 3.95, 0.96, 1.0, marked=True)
 ax.text(rx, H - 4.18, L["found"], ha="center", va="center", fontsize=12, fontweight="semibold")
 
-out = ROOT / "assets" / "figures" / "ch08-regras-vs-modelo.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch08-regras-vs-modelo.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

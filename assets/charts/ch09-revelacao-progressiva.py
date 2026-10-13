@@ -83,7 +83,11 @@ for i, fx in enumerate(fxs):
 ax.add_patch(FancyArrowPatch((fxs[PICK] + 0.48, 1.1), (ox + 0.3, oy - 0.02), arrowstyle="-|>,head_length=6,head_width=3.5",
                              color=INK, lw=1.6, connectionstyle="arc3,rad=-0.25", zorder=5, shrinkA=0, shrinkB=0))
 
-out = ROOT / "assets" / "figures" / "ch09-revelacao-progressiva.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch09-revelacao-progressiva.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

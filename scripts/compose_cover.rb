@@ -16,15 +16,17 @@ ROOT = File.expand_path("..", __dir__)
 art, out = ARGV[0], ARGV[1]
 abort "usage: compose_cover.rb ART OUT" unless art && out
 meta = YAML.load_file(File.join(ROOT, "book", "outline.yml"))["meta"]
+lang = ARGV.include?("--lang") ? ARGV[ARGV.index("--lang") + 1] : "pt"
+suffix = lang == "pt" ? "" : "_#{lang}"
 fonts = File.join(ROOT, "assets", "fonts")
 W, H = 1600, 2560
 CREAM = "#F4E9D0"
 SHADOW = "#0B1A26"
 
 # Title broken where the words land well on a poster: "COMPETENTE / O SUFICIENTE".
-words = meta["working_title"].upcase.split
+words = (meta["working_title#{suffix}"] || meta["working_title"]).upcase.split
 title = words.size > 2 ? "#{words.first}\n#{words[1..].join(' ')}" : words.join("\n")
-subtitle = meta["subtitle"].to_s.sub(/,\s*/, ",\n")
+subtitle = (meta["subtitle#{suffix}"] || meta["subtitle"]).to_s.sub(/,\s*/, ",\n")
 author = meta["author"].to_s.upcase
 
 def text_layer(font:, size:, text:, gravity:, offset:, kerning: 0, interline: 0)

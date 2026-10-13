@@ -79,7 +79,11 @@ ax.text(0.15, 0.5, L["monitor"], ha="left", va="center", fontsize=11, style="ita
 arrow((xs[1] + 0.42, y2 - BH / 2), (xs[1] - 0.42, y2 - BH / 2), rad=-1.1, lw=2.4, color=AMBER, z=5)
 ax.text(xs[1] + 0.62, 0.54, L["rollback"], ha="left", va="center", fontsize=11, fontweight="semibold", linespacing=1.1)
 
-out = ROOT / "assets" / "figures" / "ch19-camadas.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch19-camadas.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

@@ -90,7 +90,11 @@ ax.add_patch(Polygon([(axc - 0.1, by + bh2 - 0.08), (axc + 0.1, by + bh2 - 0.08)
 ax.text(bx + bw / 2, by + bh2 / 2, L["nogo"], ha="center", va="center", fontsize=12.5, style="italic", zorder=6)
 arrow((bx - 0.05, by + bh2 / 2), (cx + cw + 0.05, by + bh2 / 2), ls=(0, (4, 3)))
 
-out = ROOT / "assets" / "figures" / "ch09-quatro-partes.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch09-quatro-partes.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

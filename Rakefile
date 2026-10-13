@@ -76,6 +76,8 @@ task :charts do
   Dir[File.join(ROOT, "assets", "charts", "*.py")].sort.each do |py|
     sh "uv", "run", "--quiet", "--with", "matplotlib", "--with", "numpy", "python", "-I", py, LANG
   end
+  # Label overlays on AI art (ImageMagick), same language convention.
+  Dir[File.join(ROOT, "assets", "charts", "*.rb")].sort.each { |rb| ruby rb, LANG }
 end
 
 desc "Generate the Quarto profile from book/outline.yml"

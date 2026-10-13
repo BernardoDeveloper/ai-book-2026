@@ -100,6 +100,8 @@ clock(10.75, 4.3, 0.62, 11, L["h10"])
 
 buf = io.BytesIO()
 fig.savefig(buf, dpi=300, facecolor=PAPER, format="png")
-out = ROOT / "assets" / "figures" / "ch05-iceberg.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch05-iceberg.png"
+out.parent.mkdir(parents=True, exist_ok=True)
 Image.open(buf).convert("RGB").save(out, dpi=(300, 300))
 print(out)

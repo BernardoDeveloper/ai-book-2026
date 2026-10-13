@@ -67,7 +67,11 @@ ax.grid(axis="x", color="#D8D2C4", lw=0.7, zorder=0)
 ax.set_xlabel(L["axis"], fontsize=11, labelpad=6)
 fig.subplots_adjust(left=0.37, right=0.97, top=0.96, bottom=0.2)
 
-out = ROOT / "assets" / "figures" / "ch14-um-adversario-por-manchete.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch14-um-adversario-por-manchete.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

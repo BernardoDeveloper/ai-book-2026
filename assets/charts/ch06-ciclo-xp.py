@@ -92,7 +92,11 @@ for dy, fill, txt in [(0.25, NAVY, L["nav"]), (-0.25, TEAL, L["pil"])]:
                                 fc=fill, ec=INK, lw=1.0))
     ax.text(CX - 0.42, CY + dy, txt, ha="left", va="center", fontsize=11.5)
 
-out = ROOT / "assets" / "figures" / "ch06-ciclo-xp.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch06-ciclo-xp.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

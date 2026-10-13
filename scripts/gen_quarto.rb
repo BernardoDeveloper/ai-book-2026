@@ -10,6 +10,7 @@
 
 require "yaml"
 require "fileutils"
+require "date"
 
 ROOT = File.expand_path("..", __dir__)
 lang = ARGV[0] || "pt"
@@ -101,7 +102,8 @@ chapters = outline["front"].map { want.(_1["id"]) }.compact
 outline["parts"].each do |part|
   if part["chapters"]
     chs = part["chapters"].map { want.(_1["id"]) }.compact
-    chapters << { "part" => part["title"], "chapters" => chs } unless chs.empty?
+    title = lang == "pt" ? part["title"] : (part["title_#{lang}"] || part["title"])
+    chapters << { "part" => title, "chapters" => chs } unless chs.empty?
   elsif chapters.last.is_a?(Hash)
     # Interludes ride at the end of the preceding part (Quarto parts can't
     # be followed by loose chapters); they are unnumbered in their files.
@@ -130,8 +132,8 @@ profile = {
   "rights" => RIGHTS.fetch(lang), # EPUB dc:rights
 }
 profile["book"]["page-footer"] = { "center" => "#{RIGHTS.fetch(lang)} akitaonrails.com" } # HTML edition
-if cfg["csl"]
-  profile["csl"] = cfg["csl"]
+profile["csl"] = cfg["csl"] if cfg["csl"]
+begin # every edition reads a filtered copy of the bibliography
   # abnt-akita.csl prints the `note` field (NBR 6023 complements such as the
   # Wayback copy of a dead link), but in references.yaml `note` also carries
   # editorial provenance ("cited-by: <post> (...)") that must never reach
@@ -139,7 +141,8 @@ if cfg["csl"]
   refs = YAML.load_file(File.join(ROOT, "book", "back", "references.yaml"))
   refs["references"].each do |ref|
     archived = ref["note"].to_s.scan(/Arquivado em:\s*(\S+)/).flatten
-    archived.empty? ? ref.delete("note") : ref["note"] = "Arquivado em: #{archived.join(', ')}"
+    label = lang == "pt" ? "Arquivado em" : "Archived at"
+    archived.empty? ? ref.delete("note") : ref["note"] = "#{label}: #{archived.join(', ')}"
   end
   public_bib = "build/references-#{lang}.yaml"
   FileUtils.mkdir_p(File.join(ROOT, "build"))
@@ -151,7 +154,18 @@ end
 unnumbered = (outline["front"] + outline["parts"].reject { _1["chapters"] } + outline["back"].reject { _1["kind"] == "appendix" })
 profile["unnumbered-sections"] = unnumbered.to_h do |u|
   file = u["id"] == "prefacio" ? "index.html" : "#{u['id']}.html"
-  ["sec-#{u['id']}", { "title" => u["title"], "file" => file }]
+  # Link text is the unit's title in this edition (its file's `chapter:`).
+  src = File.join(ROOT, "book", lang, u["id"] == "prefacio" ? "index.md" : "#{u['id']}.md")
+  fm = File.exist?(src) && File.read(src)[/\A---\n(.*?)\n---/m, 1]
+  title = (fm && YAML.safe_load(fm, permitted_classes: [Date, Time])&.dig("chapter")) || u["title"]
+  ["sec-#{u['id']}", { "title" => title, "file" => file }]
+end
+
+# Each edition has its own cover, with the title typeset in its language.
+if lang != "pt"
+  cover = "assets/cover/cover-#{lang}.png"
+  profile["book"]["cover-image"] = cover
+  profile["format"] = { "epub" => { "epub-cover-image" => cover }, "akita-book-typst" => { "pdf-cover" => cover } }
 end
 
 File.write(File.join(ROOT, "_quarto-#{lang}.yml"),

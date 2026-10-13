@@ -131,7 +131,11 @@ for (qx, locked) in packets:
 ax.text(p0 + 0.55, pyc - 0.62, L["enc"], ha="center", va="center", fontsize=10.5, style="italic")
 ax.plot([p0 + 0.55, p0 + 0.55], [pyc - 0.5, pyc - 0.14], color=INK, lw=0.9, zorder=4)
 
-out = ROOT / "assets" / "figures" / "ch17-capacidade-vs-prova.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch17-capacidade-vs-prova.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

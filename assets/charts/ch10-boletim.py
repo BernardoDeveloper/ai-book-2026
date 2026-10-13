@@ -94,7 +94,9 @@ for tier in ("top", "mid", "low", "bottom"):
     ax.text(x + 0.38, (hi + lo) / 2, L[tier], va="center", ha="left", fontsize=12.5, fontweight="semibold")
 
 fig.tight_layout()
-out = ROOT / "assets" / "figures" / "ch10-boletim.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch10-boletim.png"
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image

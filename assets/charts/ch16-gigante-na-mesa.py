@@ -115,7 +115,11 @@ ax.add_patch(FancyBboxPatch((tx - 0.42, ty - 0.14), 0.84, 0.28, boxstyle="round,
 ax.text(tx, ty, L["todo"], ha="center", va="center", fontsize=11.5, fontweight="semibold", zorder=6)
 ax.plot([tx, tx], [ty - 0.14, floor_y + 0.27], color=INK, lw=1.0, zorder=4)
 
-out = ROOT / "assets" / "figures" / "ch16-gigante-na-mesa.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch16-gigante-na-mesa.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

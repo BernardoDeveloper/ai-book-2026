@@ -94,7 +94,11 @@ cx = lane(0.12, L["test_lane"], L["test"], L["mock"], PAPER, (0, (3, 2)), L["yes
 ax.text(cx + 0.82, 1.62, L["mock_note"], ha="left", va="top", fontsize=9.5, color="#5E636C", linespacing=1.1)
 lane(3.3, L["prod_lane"], L["app"], L["lib"], GRAY, "-", L["no"], False)
 
-out = ROOT / "assets" / "figures" / "ch12-teste-verde.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch12-teste-verde.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

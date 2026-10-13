@@ -24,12 +24,18 @@ end
 ref_keys = [File.join(ROOT, "book", "back", "references.yaml"), *Dir[File.join(LANG_DIR, "_refs", "*.yaml")]]
            .flat_map { Array(yaml_or_empty(_1)["references"]).map { |r| r["id"] } }
 # Glossary keys: book/back/glossary-<lang>.yml + per-chapter proposals (book/<lang>/_gls/*.yml).
-glossary_keys = [File.join(ROOT, "book", "back", "glossary-#{LANG}.yml"), *Dir[File.join(LANG_DIR, "_gls", "*.yml")]]
-                .flat_map { yaml_or_empty(_1).keys }
+# Keys are shared across editions, so the PT glossary also counts (the EN one
+# may be mid-translation).
+glossary_keys = [File.join(ROOT, "book", "back", "glossary-#{LANG}.yml"), File.join(ROOT, "book", "back", "glossary-pt.yml"),
+                 *Dir[File.join(LANG_DIR, "_gls", "*.yml")]].uniq.flat_map { yaml_or_empty(_1).keys }.uniq
 
-BANNED = {
-  /[—–]/ => "em/en dash",
-  /[“”‘’]/ => "curly quote (typesetter handles quotes)",
+COMMON = {
+  /[\u2014\u2013]/ => "em/en dash",
+  /[\u201C\u201D\u2018\u2019]/ => "curly quote (typesetter handles quotes)",
+  /\b(delve|tapestry|testament|pivotal|underscore)\b/i => "stock AI word",
+}.freeze
+
+BANNED_PT = {
   /\bnão é [^.]{1,60}, é /i => "negative parallelism 'não é X, é Y'",
   /, e não [^.]{1,40}\./i => "negative tail ', e não Y'",
   /pra ser (honest|sincer|franc)|vou ser direto|preciso ser direto|sem rodeios|verdade seja dita|devo admitir|justiça seja/i => "directness/honesty signaling",
@@ -38,8 +44,18 @@ BANNED = {
   /assino embaixo|suculent|cutuc|lindo de/i => "effusive flourish",
   /neste (post|artigo)|no (post|artigo) (de|anterior)|atualização:|\bUPDATE\b/i => "blog-ism",
   /\b(ontem|semana passada|mês passado)\b/i => "relative time (use absolute dates)",
-  /\b(delve|tapestry|testament|pivotal|underscore)\b/i => "stock AI word",
 }.freeze
+
+# English edition: WRITER.md bans the same moves in English.
+BANNED_EN = {
+  /\b(it|this|that)('s| is) not [^.]{1,60}[,;] (it's|it is|but)\b/i => "negative parallelism 'it's not X, it's Y'",
+  /\bnot (just|only|merely) [^.]{1,60},? but\b/i => "negative parallelism 'not just X but Y'",
+  /\b(to be honest|honestly|let me be (direct|honest|clear)|I'll be (direct|blunt|honest)|frankly|truth be told|I must admit)\b/i => "directness/honesty signaling",
+  /\b(in this (post|article)|in the previous (post|article)|update:)/i => "blog-ism",
+  /\b(yesterday|last week|last month)\b/i => "relative time (use absolute dates)",
+  /\b(surgical|juicy|I sign off on)\b/i => "effusive flourish",
+}.freeze
+BANNED = COMMON.merge(LANG == "en" ? BANNED_EN : BANNED_PT).freeze
 NON_PROSE = /\A\s*(#|>|[-*+] |\d+\. |\||<!--|!\[|:::|\{)/
 
 errors = 0

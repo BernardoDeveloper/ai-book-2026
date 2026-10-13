@@ -98,7 +98,11 @@ for t in ax.texts[-4:]:
 
 ax.text(W / 2, 0.2, L["note"], ha="center", va="center", fontsize=11.5, style="italic")
 
-out = ROOT / "assets" / "figures" / "apmecanica-mapa-de-sentidos.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "apmecanica-mapa-de-sentidos.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

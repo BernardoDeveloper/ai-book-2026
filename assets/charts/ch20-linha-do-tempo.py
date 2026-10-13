@@ -161,7 +161,11 @@ yo1 = Y(base[np.searchsorted(t, 2024.7)])
 ax.plot([X(2024.7)] * 2, [lines[1], yo1], color=INK, lw=0.9, linestyle=(0, (1.5, 2)), zorder=2)
 ax.add_patch(Circle((X(2024.7), yo1), 0.075, fc=AMBER, ec=INK, lw=1.0, zorder=4))
 
-out = ROOT / "assets" / "figures" / "ch20-linha-do-tempo.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch20-linha-do-tempo.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

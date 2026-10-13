@@ -100,6 +100,8 @@ for side, q, title, items, color, mark in ((-1, L["q1"], L["crit"], L["c"], RUST
 
 buf = io.BytesIO()
 fig.savefig(buf, dpi=300, facecolor=PAPER, format="png")
-out = ROOT / "assets" / "figures" / "ch04-duas-perguntas.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch04-duas-perguntas.png"
+out.parent.mkdir(parents=True, exist_ok=True)
 Image.open(buf).convert("RGB").save(out, dpi=(300, 300))
 print(out)

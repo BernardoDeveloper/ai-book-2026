@@ -115,7 +115,11 @@ ax.add_patch(FancyBboxPatch((cx + 3.15 - 0.95, 0.78 - 0.36), 1.9, 0.72, boxstyle
 ax.text(cx + 3.15, 0.78, L["missing"], ha="center", va="center", fontsize=13, fontweight="semibold",
         color=RUST, zorder=4)
 
-out = ROOT / "assets" / "figures" / "ch15-verificar-na-origem.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch15-verificar-na-origem.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 from PIL import Image
 Image.open(out).convert("RGB").save(out, dpi=(300, 300))

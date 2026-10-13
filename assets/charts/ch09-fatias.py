@@ -94,7 +94,11 @@ ax.text(vx2 + vw2 / 2, vy + vh + 0.14, L["view"], ha="center", va="center", font
 page(vx2 + 0.42, vy + 0.95, sw, 0.68, PAPER, lines=5, z=4)
 agent(vx2 + vw2 / 2, vy + 0.45)
 
-out = ROOT / "assets" / "figures" / "ch09-fatias.png"
+# PT is the canonical edition at assets/figures/; other languages get assets/figures/<lang>/.
+
+out = ROOT / "assets" / "figures" / ("" if LANG == "pt" else LANG) / "ch09-fatias.png"
+
+out.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(out, dpi=300, facecolor=PAPER)
 # Flatten to RGB (no alpha), keep 300 dpi metadata
 from PIL import Image
