@@ -22,6 +22,7 @@ LANGS = {
 cfg = LANGS.fetch(lang)
 edition = outline.dig("meta", "edition") || "1.0"
 isbn = outline.dig("meta", "isbn")
+isbn_line = isbn ? "\n\nISBN #{isbn}" : "" # hidden until the author sets meta.isbn
 year = outline.dig("meta", "cutoff").to_s[0, 4]
 author = outline.dig("meta", "author")
 owned = Array(outline.dig("meta", "owned_names"))
@@ -44,9 +45,7 @@ COLOPHON = {
 
     Os nomes #{owned_pt} são de propriedade de #{author}. O código de alguns desses projetos é aberto, sob a licença indicada em cada repositório (#{lic_pt}); essas licenças cobrem o código e não se estendem aos nomes nem a este livro. Os demais nomes de produtos e empresas citados pertencem a seus respectivos donos e aparecem apenas para identificação.
 
-    Edição #{edition}, #{year}.
-
-    ISBN #{isbn || '[a definir]'}
+    Edição #{edition}, #{year}.#{isbn_line}
 
     As figuras criadas com inteligência artificial estão identificadas como tal nos créditos das imagens, com a ferramenta usada em cada uma.
 
@@ -62,9 +61,7 @@ COLOPHON = {
 
     The names #{owned_en} are the property of #{author}. Some of these projects' code is open source under the licence stated in each repository (#{lic_pt}); those licences cover the code and do not extend to the names or to this book. Other product and company names belong to their respective owners and appear for identification only.
 
-    Edition #{edition}, #{year}.
-
-    ISBN #{isbn || '[to be assigned]'}
+    Edition #{edition}, #{year}.#{isbn_line}
 
     Figures made with artificial intelligence are disclosed as such in the image credits, with the tool used for each one.
 

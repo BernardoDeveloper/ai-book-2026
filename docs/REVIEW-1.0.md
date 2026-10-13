@@ -31,7 +31,19 @@ author), 8 ("AI Lair" is the author's site, ai-toolkit-web; added to
 10 (NBR 10520:2023 kept), 12 (aliases + `public_guard`), ai-jail README
 (fixed upstream: "On by default"). Item 4 is being checked against archived
 originals (`reviews/1.0.0-preview.2/pt/ch14-secondary-sources.md`).
-Still the author's: 1, 3, 7, 11.
+Author's answers (2026-10-13): 1, Genesys PI stays, with a prudence
+paragraph in ch12 (not enough information; not a recommendation or
+endorsement of product, company or investment); 3, the NAS hypothesis
+paragraphs in ch15 stay as they are; 11, the ISBN line is hidden until
+`meta.isbn` is set. Item 7 (length) waits for the author's read.
+
+Watch in future edits: the Genesys PI section (due diligence pending; any
+new information or the author's change of mind may mean parking it, see
+the impact map in the 2026-10-13 session: ch12 "O mistério brasileiro",
+apA two entries, apC marker, refs luavision2026empresa and
+livebench2026issue370, glossary proxy and tokenizador), and the ch15
+"Minha hipótese" / "Três meses depois" pair, whose last sentence reads as
+a contradiction (hypothesis vs conclusion) if it gets touched again.
 
 ## Decisions only you can make
 

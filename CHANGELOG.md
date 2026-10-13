@@ -4,6 +4,12 @@ Editions of *Competente o Suficiente*. Each version is a git tag (`vX.Y.Z`);
 pushing the tag builds the book and publishes a GitHub Release with the
 files.
 
+## Unreleased
+
+- Chapter 12, Genesys PI section: a prudence note, the case is
+  still open and the section is not a recommendation or endorsement.
+- Copyright page: the ISBN line is hidden until one is assigned.
+
 ## 1.0.0-preview.3
 
 First copyedit pass, both languages.
