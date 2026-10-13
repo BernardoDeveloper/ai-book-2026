@@ -30,9 +30,10 @@ Download the latest edition from
 | `Competente-o-Suficiente.epub` | Kindle, Kobo, Apple Books, any e-reader |
 | `Competente-o-Suficiente-ebook.pdf` | Reading on a screen |
 | `Competente-o-Suficiente.pdf` | Print (6 × 9 in) |
+| `Competent-Enough.epub`, `Competent-Enough-ebook.pdf`, `Competent-Enough.pdf` | The English edition, same formats |
 
-**Status:** 1.0-preview, in Brazilian Portuguese. An English edition is in
-progress.
+**Status:** preview editions in Brazilian Portuguese and English. The book is
+still open: new versions will follow until it is declared final.
 
 ## What's inside
 

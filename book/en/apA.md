@@ -2,9 +2,6 @@
 id: apA
 chapter: "Timeline"
 sources:
-  - {post: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, sha256: "f14e659cc693c3057aa799645c9a59c7291f279f0ddc9897238b7486a41417fc"}
-  - {post: 2026/01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim, sha256: "39bebe31f5d6f0ccce7766c53f3523d654e8f8cdcb67bde92fa211ab80216c44"}
-  - {post: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard, sha256: "3bae7ef72f3674eca5ccb6fcea456b1c5a1316d71b01b574481935527c206666"}
   - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "65b3ce93900a46d8fe0b9cb7fdc627978e0e220926745dd8c5e4453edc2b3690"}
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "309b129d7a93fb9b17e4efaefe75a56b8b85e95568adc2ecc9809306dab8b434"}
   - {post: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms, sha256: "d93556fda3856a19b1c0baf917aa1cca83c3fc939198966005c7ffd6acfb396f"}
@@ -68,7 +65,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.multi_model.md"
   - "llm-coding-benchmark/docs/success_report.v2.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apA.md, sha256: "f1dcfcf44728e955a66aa2e38acf512c6a23b7214c9088f47570125600ad5486"}
+translated_from: {file: book/pt/apA.md, sha256: "62a441f104b81640531d76fd84231894bb0f517743cb4baaa8e9614e8200eb4f"}
 ---
 
 # Timeline {#sec-apA}
@@ -141,27 +138,18 @@ From 2023 to 2025, model size vanished from the marketing, reasoning had its las
 ## 2026, Month by Month
 
 <!-- src: original -->
-The book's year. Each entry points to the chapter that tells the whole story.
+The book's year. The story starts in February; the few January entries are the backdrop some chapter refers to. Each entry points to the chapter that tells the whole story.
 
 ### January
 
-<!-- src: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush -->
-**Early January.** Claude Opus 4.5, running inside Crush, finishes the Zig chat app that no model had managed to finish the year before (@sec-ch03, @sec-ch05, @sec-ch20).
-
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
 **January.** I set up the first [sandbox]{.gls} for my agents, a script of about 170 lines (@sec-ch15).
-
-<!-- src: 2026/01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim -->
-**January.** A whole afternoon squeezing GLM 4.7 Flash onto an RTX 5090, trading context for speed (@sec-ch13).
 
 <!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
 **January.** Alibaba launches Qwen3 TTS, hailed as the "ElevenLabs killer" [@byteiota2026qwen3tts] (@sec-ch13).
 
 <!-- src: 2026/02/08/rant-ia-acabou-com-programadores -->
 **January.** In Davos, Dario Amodei says we may be six to twelve months away from models doing everything a software engineer does [@haider2026amodei] (@sec-ch18).
-
-<!-- src: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard -->
-**Late January.** TV Clipboard, built entirely with GLM 4.7, works in one hour; the rest takes ten to twelve (@sec-ch05).
 
 <!-- src: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2 -->
 **January 30.** I start FrankMD, the first Frank project (@sec-ch05).

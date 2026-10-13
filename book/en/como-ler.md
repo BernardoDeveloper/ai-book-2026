@@ -4,13 +4,13 @@ chapter: "How to Read This Book"
 sources: []
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/como-ler.md, sha256: "082804248ae1eadf2109e2e22537f6d38304facb051f75b1c05427014f96916f"}
+translated_from: {file: book/pt/como-ler.md, sha256: "4c053e7a8cec4c7a22f4c02f688bd4831baac0615bd96571057a6d311d85197a"}
 ---
 
 # How to Read This Book {#sec-como-ler .unnumbered}
 
 <!-- src: original -->
-The best way to read this book is in order, front to back. It tells the story of one year, 2026, in which I put artificial intelligence to the test almost every day, and the story has a sequence. First what this thing is, then what it did in my hands, how to measure it, where it's dangerous and what all of it means for your work. A concept explained early on gets used without ceremony later.
+The best way to read this book is in order, front to back. It tells the story of February through October 2026, the months in which I put artificial intelligence to the test almost every day, and the story has a sequence. First what this thing is, then what it did in my hands, how to measure it, where it's dangerous and what all of it means for your work. A concept explained early on gets used without ceremony later.
 
 But I know plenty of people arrive with one specific worry and little patience to wait the whole book for the answer. That's fine. Each of the five parts answers a fear, and you can jump straight to yours.
 
@@ -35,7 +35,7 @@ If you skip around, you'll trip now and then over a term or a character that sho
 ## A Snapshot of October 2026
 
 <!-- src: original -->
-This book was closed in October 2026. The story takes place between January and October of that year, and the dates are spelled out on purpose: "in March 2026," never "recently."
+This book was closed in October 2026. The story takes place between February and October of that year, and the dates are spelled out on purpose: "in March 2026," never "recently."
 
 <!-- src: original -->
 The names of models and products will age fast. By the time you read this, Claude Opus 4.5, GPT-5.5 or Kimi K3 will probably sound like the cars in an old novel: they tell you when the story is set, and nobody reads the novel to pick a car. The mechanisms underneath change much more slowly. How a language model generates text, why it forgets what the two of you agreed on, why it agrees with you, why an unsupervised agent screws things up: that's what I want you to take away.

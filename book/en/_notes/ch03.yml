@@ -1,0 +1,6 @@
+notes:
+  - "Used Akita's EN wording from posts: 'the gear that straps in and steers a horse' / 'runs off wherever' (05/25), 'the model goes blind exactly where it matters' (05/25), 'dozens of micro-corrections nobody witnessed' and 'the loop spins in a vacuum' (10/12), 'dropped on the floor' for the cache markers (05/04), 'much less nerfed' for GPT-5.5 in OpenCode (05/25), A/B/C/D review matrix (05/25), critical-path / 'independent batches' (05/25), 'tied as models... what separates them is the harness' (04/15)."
+  - "PT glosses that only serve Portuguese readers were folded: 'Em inglês, harness é arreio' became 'A harness is the gear that straps in and steers a horse'; 'tool calling, a chamada de ferramentas' drops the PT-language appositive; 'Em português, \"o conteúdo do raciocínio precisa ser devolvido\"' became 'In plain words, the model's reasoning has to be sent back'."
+  - "'Nintendinho' rendered as 'NES'. '200 mil tokens' as '200,000 tokens' (EN post says 200K)."
+  - "blog_commit set to inventory/posts.yml's b9c029231693369b8f895576b491c878aea3e8da (PT front matter carries cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01)."
+  - "Figure points to assets/figures/en/ch03-laco-do-agente.png."

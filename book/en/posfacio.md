@@ -7,13 +7,13 @@ sources:
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "c6451afc1d26d440a2364ebee3249330f54d9e0ddcb493aa7fdba4c9ff72d8c4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/posfacio.md, sha256: "f3bfa1c83bfd693953942599301b2334c45b295b4a95cfcb52344ca400daaa52"}
+translated_from: {file: book/pt/posfacio.md, sha256: "6b741b5e1563c82186a405f88a8dd463dbb22e6286af087b237356f737a38f24"}
 ---
 
 # Afterword: How This Book Was Made {#sec-posfacio .unnumbered}
 
 <!-- src: 2026/10/12/llms-agentes-competente-o-suficiente -->
-On October 12, 2026, I published the year's synthesis on the blog, the piece that became @sec-ch20. The next day I started turning the whole year into a book. The first [commit]{.gls} in this book's repository is dated October 13.
+On October 12, 2026, I published the year's synthesis on the blog, the piece that became @sec-ch20. The next day I started turning those months into a book. The first [commit]{.gls} in this book's repository is dated October 13.
 
 <!-- src: original -->
 I had written 131 posts on the blog in 2026, almost half a million words, on subjects ranging from model [benchmarks]{.gls key=benchmark} to bitcoin wallets. Reorganizing all that by hand, alone, would have taken months I didn't have. So I did what this whole book describes: I handed the grunt work to [agents]{.gls key=agente} and kept the deciding, the setting up of the process and the checking for myself.
@@ -25,7 +25,7 @@ It's worth telling how it went, for two reasons. You have the right to know how 
 <!-- src: original -->
 The first step was an inventory. A script read the 131 posts and stored, for each one, a code computed from the exact content of the file. If a comma changes in the post, the code changes with it. I also recorded the exact point in the blog's history from which everything was read.
 
-Then an agent read each post and filled out a fixed form: the thesis in one or two sentences, the claims a book would need to check, which of them go stale quickly, which lay reader's fear the post answers, what to cut. Of the 131, 96 had AI as their central subject or gave it significant weight. The rest only made it in when they taught something specific, and every AI post left out has the reason written down.
+Then an agent read each post and filled out a fixed form: the thesis in one or two sentences, the claims a book would need to check, which of them go stale quickly, which lay reader's fear the post answers, what to cut. Of the 131, 96 had AI as their central subject or gave it significant weight. The rest only made it in when they taught something specific, and every AI post left out has the reason written down. Halfway through I changed the cut-off: the January posts came out, and the book's story settled between February and October.
 
 <!-- src: original -->
 A lot of what I wrote in February no longer held in September. I reran my benchmark several times during the year, corrected costs, changed my mind about tools. That's why the process has a lineage map, which says which post superseded which and what can still be salvaged from the older one. The chapters tell the most recent state and, when the change teaches something, they tell the change.
@@ -54,7 +54,7 @@ Every number, date and name was checked against three things: the posts, the ref
 - in the March review of my mini PC with a Strix Halo chip, I had set aside 96 GB of memory for the graphics side. On April 8 I lowered it to 64 GB, and some later posts still said 96. The book uses 64 for everything after April (@sec-ch13);
 - a counting bug in one of the benchmark's tools underestimated by 40 to 90 times the cost of the runs done with it before August (@sec-ch11). The book doesn't cite any of those costs;
 - in the June post about Claude Fable 5, I wrote that it cost ten times more than Opus 4.8 per run. In July, redoing the benchmark's math, I found that the old estimates left out the tokens read from cache: Opus 4.8 came to about $6, not a little over one, and Fable cost almost double, not ten times. The June post still says ten times; the book tells the wrong number and the correction (@sec-ch14);
-- in January I wrote that GLM 4.7 Flash was the same GLM 4.7, just compressed. The official page shows a separate, much smaller model, with 30 billion [parameters]{.gls key=parametros} [@zai2026glm47flash];
+- in the March post about the Claude Code source leak, I wrote that Anthropic had bought Bun at the end of 2024. Bun's own announcement is from December 2025, and that's the date the book uses (@sec-ch16) [@sumner2025anthropic];
 - a chapter summary, written by an agent, said that Claude Code's signing lock had fallen in less than a day after the code leak (@sec-ch16). The original announcement came out about 30 hours later, and the book says "the next day" [@guthrie2026drm];
 - METR's productivity study, which I had described as done on private code, used large open source projects [@becker2025measuring].
 
@@ -84,10 +84,10 @@ In @sec-ch09 I told how the blog post about talking to Claude Code was written b
 It wasn't the first time that year. In April, Claude Code translated twenty years of blog posts in a little over a day and a half (@sec-interlude1). Ninety percent went smoothly, and the other ten only got sorted because someone read the list of what had failed and went looking for another way.
 
 <!-- src: 2026/10/12/llms-agentes-competente-o-suficiente -->
-That's the point of @sec-ch20 applied to the book itself. Any of the good models of October 2026 would have written similar drafts, because the model became a commodity. What made the process work was what surrounds it: the inventory, the written contract, the automatic checker, the sources as [oracle]{.gls key=oraculo}, the trail for every paragraph. It's the same old engineering I defended all year, applied to text.
+That's the point of @sec-ch20 applied to the book itself. Any of the good models of October 2026 would have written similar drafts, because the model became a commodity. What made the process work was what surrounds it: the inventory, the written contract, the automatic checker, the sources as [oracle]{.gls key=oraculo}, the trail for every paragraph. It's the same old engineering I defended in every chapter, applied to text.
 
 <!-- src: original -->
-The repository records the first commit and the drafts of every chapter on the same day. That's the first hour from @sec-ch05: impressive, and it says almost nothing about the rest. The other ninety percent is reading, cutting and correcting.
+The repository records the first commit and the drafts of every chapter on the same day. That's the first ten percent from @sec-ch05: impressive, and it says almost nothing about the rest. The other ninety percent is reading, cutting and correcting.
 
 And that part is mine. The experiences in the book are the ones I lived, and the opinions are the ones I wrote over the year, none invented to fill a chapter. I approved the structure. No chapter goes into the book without me reading and approving it, and whatever I send back for rework goes through the same process again.
 

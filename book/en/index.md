@@ -7,9 +7,10 @@ sources:
   - {post: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso, sha256: "ce4d26c715008a4e0b0034c9af56433844c8db43f9b7e035e2b45c5258d1ceae"}
   - {post: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic, sha256: "ab900c522b1e3798b82f918c636213aa8290807a14ce39300a21f4fda68ef9a8"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "0178f4ea75a7f6b79e7ae1878ccf3ccfd7fe7c0c4edf57d4cfd3bac2dee3e921"}
+  - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "65b3ce93900a46d8fe0b9cb7fdc627978e0e220926745dd8c5e4453edc2b3690"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/index.md, sha256: "68120c929889bb9457f26e76cfa392a165f7a93e4b65495e0096baf458b8def2"}
+translated_from: {file: book/pt/index.md, sha256: "41845e8796c7615b8a1e8e20c8a641525151bf0ece881e5c80b984c8114cfd50"}
 ---
 
 # Preface {#sec-prefacio .unnumbered}
@@ -38,7 +39,7 @@ Then came months of putting dozens of models through a programming test I built 
 <!-- src: original -->
 The distance between the two worlds ran both ways. In plenty of places the tool was better than the skeptics would admit: you can build real software with it, and I did. In others, it was much worse than the ads were selling. It gets things wrong with total confidence, agrees with whatever you already thought, forgets what was agreed an hour earlier, and needs someone experienced checking what comes out.
 
-This book was born from that distance. It is the account of a year putting artificial intelligence to the test, told by someone who had his hands on the keyboard.
+This book was born from that distance. It is the account of eight months putting artificial intelligence to the test, from February to October 2026, told by someone who had his hands on the keyboard.
 
 ## Who I Wrote This For
 
@@ -64,7 +65,7 @@ I've been programming since the late 1980s, blogging since 2006, and I spent six
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
 A lot of people know me for a line about hype and knowledge, which you'll find right in the first chapter. Because of it, one crowd thinks I hate AI. Because of what I did in 2026, another crowd thinks I caved to it. Both get it wrong for the same reason: they imagine those are the only two sides.
 
-I've been using AI to write code since early 2023. I like the tool, I use it every day, and it took part in almost everything you're about to read. At the same time, I spent the entire year documenting its limits, because that's the part that disappears from the public conversation.
+I've been using AI to write code since early 2023. I like the tool, I use it every day, and it took part in almost everything you're about to read. At the same time, I spent all those months documenting its limits, because that's the part that disappears from the public conversation.
 
 <!-- src: original -->
 The over-hyped and the over-haters have one thing in common: both usually talk without having measured anything. That's why this book's method is to measure. When I say a model did well, it's because it passed a test whose setup you'll get to see. When I say it got something wrong, you'll see the mistake.
@@ -75,12 +76,12 @@ And when the mistake was mine, the book tells that too. There was a ranking I pu
 
 ## The Fears You Brought Along
 
-<!-- src: original -->
+<!-- src: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2 -->
 The book follows my year, more or less in the order things happened. Each of its five parts answers a fear I've heard many, many times.
 
 The first is the oldest: is there someone in there? Part I opens the box, with no math. It shows why the text coming out of a chatbot seems to come from someone, why it forgets what the two of you agreed on, what changes when it gets tools to mess with your computer, and why it tends to agree with you and make up sources to back that up. Just understanding that mechanism already goes a long way toward protecting you.
 
-The second fear is the opposite of the first: what if it's all just a demo? In Part II I tell the story of the marathon. There's the app that worked in an hour and then gave me grief for days, the product that went from zero to live in under a week, and the project that failed even with the machine doing everything I asked. It works, just in a very different way from what you see in those "I built an app in ten minutes" videos.
+The second fear is the opposite of the first: what if it's all just a demo? In Part II I tell the story of the marathon. There's the text editor that looked done in an hour and a half and needed about thirty hours to really work, the product that went from zero to live in under a week, and the project that failed even with the machine doing everything I asked. It works, just in a very different way from what you see in those "I built an app in ten minutes" videos.
 
 The third comes as a question: which one is the best? Is it getting exponentially smarter? Should I believe the ads? Part III is the fight with the numbers: how you measure an AI, the models I caught cheating on the test, what you can run on your computer at home, and how the propaganda factory around all of it works.
 
@@ -93,7 +94,7 @@ Between the parts there are two lighter interludes, to catch your breath. And fo
 ## How This Book Was Made
 
 <!-- src: original -->
-Everything here started as writing on my blog over the course of 2026, almost always in the heat of the experiment: nearly a hundred pieces in which AI was the main subject or a big part of it. To turn them into a book, I did what the whole book recommends. AI agents did the grunt work of reorganizing and rewriting, following written rules about my voice and checking every claim against its source. The final word is mine: no chapter goes into the book unless I read and approve it, the same way I do with the code an agent writes for me.
+Everything here started as writing on my blog over the course of 2026, almost always in the heat of the experiment: dozens of pieces in which AI was the main subject or a big part of it. To turn them into a book, I did what the whole book recommends. AI agents did the grunt work of reorganizing and rewriting, following written rules about my voice and checking every claim against its source. The final word is mine: no chapter goes into the book unless I read and approve it, the same way I do with the code an agent writes for me.
 
 > The machine does the grunt work, something outside checks it, and someone who knows the subject decides.
 

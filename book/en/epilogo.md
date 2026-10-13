@@ -9,7 +9,7 @@ sources:
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "309b129d7a93fb9b17e4efaefe75a56b8b85e95568adc2ecc9809306dab8b434"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/epilogo.md, sha256: "0f42557e45e1abd2e8e70f24f7026ab84813d147ce7cbaf97ee5dcf469ce66db"}
+translated_from: {file: book/pt/epilogo.md, sha256: "e9e8823153cdd40716ac89a544b84ddcd3860e6691402c3be843508d30bf2f98"}
 ---
 
 # Epilogue: What I'd Tell You {#sec-epilogo .unnumbered}
@@ -72,7 +72,7 @@ This list is longer, and it frees up more time:
 - announcements of [AGI]{.gls key=agi}, of extinction, of a model too dangerous to release. The script has existed since at least 2019 (@sec-ch01), and @sec-ch14 shows who profits from it;
 - ranking fights over a tenth of a point. At the top, the models form a pack, and the gap between them fits inside the [run-to-run noise]{.gls key=ruido-entre-execucoes} (@sec-ch11);
 - the promise that the next model will fix it. The numbers in @sec-ch20 show a flat line up top, and what changes the result is the process around it;
-- the video of the app built in ten minutes. The first hour is the easy part, and the other ninety percent is in @sec-ch05.
+- the video of the app built in ten minutes. The first few hours are the easy part, and the other ninety percent is in @sec-ch05.
 
 ## Check for Yourself
 

@@ -2,7 +2,6 @@
 id: apB
 chapter: "A Minimum Kit for Using Agents Safely"
 sources:
-  - {post: 2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema, sha256: "746b8ee40aa0d914df1c3d49ae2c7da2cbb85da44c810baf7e295b3b3ae4c5ca"}
   - {post: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real, sha256: "7d63767d989884b817bbac1269c970c71952e6fad97fe6cbf93ae433d45d005f"}
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "c6451afc1d26d440a2364ebee3249330f54d9e0ddcb493aa7fdba4c9ff72d8c4"}
   - {post: 2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar, sha256: "d3fb07c726e86bd9b42611fb749b9d003e1cd59d30a9ee5ffa022457756b375d"}
@@ -19,7 +18,7 @@ refs_projects:
   - "ai-memory/README.md"
   - "ai-usagebar/README.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apB.md, sha256: "f18323ee8aaa9fc65abfa9224e6ce1206e5e359a45e98b2e934311fd694cadad"}
+translated_from: {file: book/pt/apB.md, sha256: "61251e5b1258b4c81949fe7d03661105e7a36fa691f23ac077b1eb6ce755ee6c"}
 ---
 
 # A Minimum Kit for Using Agents Safely {#sec-apB}
@@ -63,7 +62,7 @@ That last item looks like a detail, and it was the hole that taught me the most 
 ### How to Set It Up, on Each System
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-On Linux, the basic building block is bubblewrap, the same isolation tool Flatpak uses for the apps it installs. It builds a fake view of the system for the program, with the folders you choose. On top of it you can write your own script, which is what I did in January, or use a ready-made tool.
+On Linux, the basic building block is bubblewrap, the same isolation tool Flatpak uses for the apps it installs. It builds a fake view of the system for the program, with the folders you choose. On top of it you can write your own script, which is how I started, or use a ready-made tool.
 
 On macOS, the system has a built-in isolation mechanism, `sandbox-exec`, which Apple marks as deprecated but still works. It's less flexible than the Linux one, and some protections only half work.
 
@@ -155,9 +154,10 @@ If you don't program, the short version of this piece goes like this. On a Mac, 
 
 ## 4. What It Can Do, What It Asks, What It Never Does
 
-<!-- src: 2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema -->
+<!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
 By default, coding agents ask permission before each command. It's safe and it's exhausting: after the hundredth confirmation of a harmless command, you start hitting "yes" without reading, and the lock stops meaning anything. The other extreme is [YOLO mode]{.gls key=modo-yolo}, in which the agent runs everything without asking anything.
 
+<!-- src: ref:ai-jail/src/bootstrap.rs -->
 The middle ground is a permission list in three columns, which nearly every agent accepts in a configuration file:
 
 - **allowed without asking**: commands that only read or that are easy to undo, like checking the repository status, listing files, searching text, running the tests, making a local commit;
@@ -271,7 +271,7 @@ By default, the project folder is writable and the home folder is an empty tempo
 Two usage details that hold for any jail. Secret files inside the project itself, like `.env`, are visible to the agent unless you tell it to hide them with `--mask .env`. And the first run creates an `.ai-jail` file in the folder, with that project's policy, which can go into the repository along with the code. Since that file comes from inside the project, the tool distrusts it: unless you mark that folder as trusted in your personal configuration, it can only tighten the jail, never loosen it.
 
 <!-- src: ref:ai-jail/src/bootstrap.rs -->
-Finally, the `--bootstrap` option writes permission settings for Claude Code, Codex, OpenCode, Gemini CLI and Crush. The Claude Code one is the three-column list from piece 4, with pushing to the remote under "asks first" and force pushing under "never". Before overwriting any file, it saves a copy of the old one.
+Finally, the `--bootstrap` option writes permission settings for five agents, among them Claude Code, Codex, OpenCode and Gemini CLI. The Claude Code one is the three-column list from piece 4, with pushing to the remote under "asks first" and force pushing under "never". Before overwriting any file, it saves a copy of the old one.
 
 ### ai-memory, the Notes
 

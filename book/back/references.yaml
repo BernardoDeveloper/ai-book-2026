@@ -1165,7 +1165,10 @@ references:
     - - 2026
       - 10
       - 13
-  note: 'cited-by: 2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity'
+  note: 'cited-by: 2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity,
+    2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia (post links the Claude Code
+    skills docs and Anthropic''s Agent Skills write-up for the name-and-description-first
+    loading)'
 - id: anthropic2025tracing
   type: webpage
   title: Tracing the thoughts of a large language model
@@ -6351,7 +6354,10 @@ references:
   note: 'cited-by: 2026/01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim. Model
     card: 30B-A3B MoE. The post calls it ''the same 30B GLM 4.7, quantized''; the
     card shows it is a separate, smaller sibling (GLM-4.7 itself is much larger),
-    so the chapter says only ''irmão menor do GLM 4.7, com 30 bilhões de parâmetros''.'
+    so the chapter says only ''irmão menor do GLM 4.7, com 30 bilhões de parâmetros''.,
+    2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395 (glm-4.7-flash bf16, 59.9
+    GB). Model card: 30B-A3B MoE, a separate, smaller sibling of GLM-4.7; the chapter
+    says only that it has about 30 billion parameters.'
 - id: zeff2024agi
   type: article-newspaper
   title: 'Microsoft and OpenAI have a financial definition of AGI: Report'

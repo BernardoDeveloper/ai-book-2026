@@ -2,8 +2,6 @@
 id: apD
 chapter: "The Year's Projects"
 sources:
-  - {post: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, sha256: "f14e659cc693c3057aa799645c9a59c7291f279f0ddc9897238b7486a41417fc"}
-  - {post: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard, sha256: "3bae7ef72f3674eca5ccb6fcea456b1c5a1316d71b01b574481935527c206666"}
   - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "65b3ce93900a46d8fe0b9cb7fdc627978e0e220926745dd8c5e4453edc2b3690"}
   - {post: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms, sha256: "d93556fda3856a19b1c0baf917aa1cca83c3fc939198966005c7ffd6acfb396f"}
   - {post: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles, sha256: "fba5ebda8a2cd78817b7566e407adb180b0a67fb1fdd45d689e2f1a2a8248e1d"}
@@ -39,7 +37,7 @@ refs_projects:
   - "ai-memory/README.md"
   - "ai-usagebar/README.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apD.md, sha256: "1fc9fb3d530d7fa9b528ee30deb1fe10daa15b83193c86d26aec0e508122ab3a"}
+translated_from: {file: book/pt/apD.md, sha256: "90f9b755470d16a09a792399e5e92aee31d911712bff676c5c880d68bd52ab58"}
 ---
 
 # The Year's Projects {#sec-apD}
@@ -56,19 +54,10 @@ A warning before you go cloning everything. Most of these projects are proofs of
 <!-- src: original -->
 The projects I named Frank something are a tribute to Frank Rosenblatt, the creator of the Perceptron (@sec-ch01, @sec-ch05).
 
-## January and February: The First Ones
-
-<!-- src: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush -->
-**Zig chat.** A command-line program for chatting with AI models, in a low-level language, which I had abandoned in 2025 because no model could finish it. In January 2026 Claude Opus 4.5 finished it, running inside Crush, including hunting down a bug that crashed the program. Appears in @sec-ch03, @sec-ch05 and @sec-ch20.
-
-<!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-**The script jail.** About 170 lines of script wrapped around bubblewrap, put together in January to isolate the agents on my computer. In March it became ai-jail, further down. Appears in @sec-ch15.
-
-<!-- src: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard -->
-**TV Clipboard.** An app for sending text from your phone to the living room TV, built at the end of January without me writing a line, with GLM 4.7 [@akita2026tvclipboard]. It worked in one hour; the rest took ten to twelve. It stayed for personal use: reviewed by six models, it still hasn't given me the confidence to open it to the public. Appears in @sec-ch05.
+## February: The First Ones
 
 <!-- src: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2 -->
-**FrankMD.** A Markdown note editor, the first of the Franks, started on a Friday, January 30, with Claude Code [@akita2026frankmd]. In May it got a 7: I barely use it, but other people do and keep it alive with fixes. Appears in @sec-ch05, @sec-ch06, @sec-ch10 and @sec-ch20.
+**FrankMD.** A Markdown note editor, the first of the Franks, built with Claude Code in three days, at the turn from January to February [@akita2026frankmd]. In May it got a 7: I barely use it, but other people do and keep it alive with fixes. Appears in @sec-ch05, @sec-ch06, @sec-ch10 and @sec-ch20.
 
 <!-- src: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms -->
 **PACT.** The compiler prototype for an "ideal for AI" language, designed by Claude itself at my request in February. I published it without even testing it, as a record of a hypothesis I myself called a hunch [@akita2026pact]. Appears in @sec-ch18.
@@ -109,7 +98,7 @@ In July it got a relative: a version that puts the little reading captions over 
 **Frank Investigator.** A tool for questioning the news, in which three models check each claim and the primary source has veto power [@akita2026frankinvestigator]. About nine days of work and 129 commits in March. It was up and working, and I stopped there: a 3 in May. Appears in @sec-ch04 and @sec-ch10.
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-**ai-jail.** The January jail, rewritten as a real tool in March [@akita2026aijail; @aijail2026site]. It isolates the coding agent so it only sees the project folder. An 8 in May, the highest along with the Chronicles, and the project that drew the most outside contributors.
+**ai-jail.** It started as a script of about 170 lines wrapped around bubblewrap and became a real tool in March [@akita2026aijail; @aijail2026site]. It isolates the coding agent so it only sees the project folder. An 8 in May, the highest along with the Chronicles, and the project that drew the most outside contributors.
 
 <!-- src: ref:ai-jail/README.md -->
 In October 2026 it was at version 2.8.1, after a Docker escape fixed the same day, in July, and two security audits on September 30. Appears in @sec-ch10, @sec-ch15 and @sec-apB.
