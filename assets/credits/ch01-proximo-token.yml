@@ -2,7 +2,7 @@
 id: ch01-proximo-token
 kind: chart_code
 file: assets/figures/ch01-proximo-token.png
-sha256: 6b73a76c068a893acb69bcf6aa80d07c99a80244a809859fd654bb2fd2608712
+sha256: 5497bb2476a332ab31925490edf0071bf7702b6d2db98e1149617f7451403be8
 source: assets/charts/ch01-proximo-token.py
 labels: inline dict per language (pt, en) in the source
 tool:

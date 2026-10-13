@@ -34,7 +34,7 @@ L = {
     "pt": {"seg": ["O céu estava", "e a rua,", "…"], "f1": ("nublado", "cinzento"), "f2": ("vazia", "deserta"),
            "chave": "chave secreta", "muitas": "centenas de escolhas", "assin": "assinatura",
            "reesc": "reescrito por outro modelo", "some": "sinal some"},
-    "en": {"seg": ["The sky was", "and the street,", "…"], "f1": ("cloudy", "overcast"), "f2": ("empty", "deserted"),
+    "en": {"seg": ["The sky was", "the street", "…"], "f1": ("cloudy", "overcast"), "f2": ("empty", "deserted"),
            "chave": "secret key", "muitas": "hundreds of choices", "assin": "signature",
            "reesc": "rewritten by another model", "some": "signal gone"},
 }[LANG]
@@ -49,12 +49,27 @@ ax.axis("off")
 fig.subplots_adjust(0.01, 0.01, 0.99, 0.99)
 
 
+def fit_text(t, max_w, min_size=7.0):
+    """Shrink a text artist until it fits max_w (data units). Labels change
+    length between languages; the layout stays fixed and only the type size
+    gives way, never below min_size (house minimum ~7 pt)."""
+    fig.canvas.draw()
+    inv = ax.transData.inverted()
+    while t.get_fontsize() > min_size:
+        bb = t.get_window_extent(renderer=fig.canvas.get_renderer())
+        (x0, _), (x1, _) = inv.transform([(bb.x0, bb.y0), (bb.x1, bb.y1)])
+        if x1 - x0 <= max_w:
+            break
+        t.set_fontsize(t.get_fontsize() - 0.25)
+    return t
+
+
 def word(x, y, text, w, chosen=True, fc=PAPER, bold=False):
     ax.add_patch(FancyBboxPatch((x, y - 0.33), w, 0.66, boxstyle="round,pad=0,rounding_size=0.15", fc=fc,
                                 ec=INK if chosen else GRAY, lw=1.6 if chosen else 1.0,
                                 linestyle="-" if chosen else (0, (3, 2)), zorder=3))
-    ax.text(x + w / 2, y, text, ha="center", va="center", fontsize=11.5, color=INK if chosen else MUTED,
-            fontweight="semibold" if bold else "normal", zorder=4)
+    fit_text(ax.text(x + w / 2, y, text, ha="center", va="center", fontsize=11.5, color=INK if chosen else MUTED,
+                     fontweight="semibold" if bold else "normal", zorder=4), w - 0.25)
 
 
 def link(p, q, chosen):

@@ -31,7 +31,7 @@ L = {
     "pt": {"prompt": "O gato subiu no", "s1": "olha o texto todo", "s2": "calcula as chances",
            "s3": "sorteia entre\nos mais prováveis", "s4": "cola no fim\ne repete",
            "cands": ["telhado", "muro", "sofá", "…", "…"], "next": ["e", "quando", "de"]},
-    "en": {"prompt": "The cat climbed onto the", "s1": "looks at the whole text", "s2": "computes the chances",
+    "en": {"prompt": "The cat sat on the", "s1": "looks at the whole text", "s2": "computes the chances",
            "s3": "draws among\nthe most likely", "s4": "appends it\nand repeats",
            "cands": ["roof", "wall", "sofa", "…", "…"], "next": ["and", "when", "to"]},
 }[LANG]
@@ -57,11 +57,26 @@ def arrow(p, q, color=INK, lw=1.4, rad=0.0, ms=12, ls="-"):
                                  connectionstyle=f"arc3,rad={rad}", shrinkA=0, shrinkB=0, zorder=3))
 
 
+
+def fit_text(t, max_w, min_size=7.0):
+    """Shrink a text artist until it fits max_w (data units). Labels change
+    length between languages; the layout stays fixed and only the type size
+    gives way, never below min_size (house minimum ~7 pt)."""
+    fig.canvas.draw()
+    inv = ax.transData.inverted()
+    while t.get_fontsize() > min_size:
+        bb = t.get_window_extent(renderer=fig.canvas.get_renderer())
+        (x0, _), (x1, _) = inv.transform([(bb.x0, bb.y0), (bb.x1, bb.y1)])
+        if x1 - x0 <= max_w:
+            break
+        t.set_fontsize(t.get_fontsize() - 0.25)
+    return t
+
 # 1 - the prompt
 PY = 4.25
 ax.add_patch(FancyBboxPatch((0.15, PY - 0.42), 2.55, 0.84, boxstyle="round,pad=0,rounding_size=0.12",
                             fc=SAND, ec=INK, lw=1.5, zorder=2))
-ax.text(1.425, PY, L["prompt"], ha="center", va="center", fontsize=12, fontweight="semibold", zorder=3)
+fit_text(ax.text(1.425, PY, L["prompt"], ha="center", va="center", fontsize=12, fontweight="semibold", zorder=3), 2.55 - 0.3)
 badge(0.32, PY + 0.85, 1)
 ax.text(0.62, PY + 0.85, L["s1"], ha="left", va="center", fontsize=11.5)
 
