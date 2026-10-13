@@ -1,0 +1,5 @@
+unit: ch18
+notes:
+  - blog_commit: "Front matter uses the inventory blog_commit (b9c0292...) and EN hashes from inventory/posts.yml; the PT unit still carries cc8b467."
+  - brazil_context: "Added the shortest clarifications for international readers: CRM/OAB ('the medical and bar councils'), Submarino ('one of the country's first big online stores'), the playlist name 'EU AVISEI' glossed as 'I told you so'."
+  - quotes: "Used Akita's own EN wording from the posts where the chapter follows them (punch-card interface blockquote, exoskeleton/crutch, 'the ideal language for AI is the one humans keep rejecting', 'AI reflects who you are', the 'how is anyone going to be a programmer' list, 'instant noodle chef')."

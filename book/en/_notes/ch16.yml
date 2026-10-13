@@ -1,0 +1,6 @@
+notes:
+  - "Heading case: H2/H3 in title case, matching ch06/ch15/ch18 EN."
+  - "Section title 'Em casa de ferreiro' rendered as 'The Shoemaker's Children' (the English proverb with the same point: the vendor's own house is the one in disrepair)."
+  - "Quotes restored to Akita's own English: the PR-review prompt (06/05 EN post), 'staff-engineer spaghetti' and 'Strict No LLM / No AI Policy' / 'uncompromising perfection' (original English sources), the Bun takeaway 'The model executed work inside an engineering process...' and 'Language does not replace architecture. It only changes which errors become cheap to detect' (07/09 EN post). The PT condensed thekitze's quote; EN keeps the PT's shortened form ('performance-aware, feature-flagged, telemetry-instrumented, but spaghetti'), dropping 'surgically optimized' to match the PT."
+  - "front matter blog_commit uses inventory/posts.yml (b9c0292...), per the contract; PT ch16 still carries cc8b467...."
+  - "Glossary: 'LLMs' and 'bugs' are plural in English, so they carry explicit key=llm / key=bug."

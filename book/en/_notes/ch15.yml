@@ -1,0 +1,9 @@
+notes:
+  - "blog_commit set to inventory/posts.yml value (b9c0292...); the PT unit still carries cc8b467... Source sha256 values are the EN post hashes per the contract."
+  - "Opening scene (private-notes markers) translated with no detail added beyond the PT text; markers kept verbatim."
+  - "'O dedo que aperta o botão de produção tem CPF' rendered with Akita's own EN wording from 07/11: 'has a name on a payroll' (CPF is the Brazilian taxpayer ID; the EN post already solved it)."
+  - "'Dá pra transformar ela em pânico, em post indignado ou em proibição. Eu prefiro transformar em engenharia.' The EN post says 'my distrust turns into engineering instead of turning into a tweet'; I followed the PT chapter's expanded version, not the post's tweet line."
+  - "ai-jail SECURITY.md wording restored: the PT quotes only 'proteção contra acidentes'; EN quotes 'an accident guard' and paraphrases the rest ('no pretension of being a security boundary'), matching the doc's 'an accident guard, not a security boundary' without the not-X-but-Y construction."
+  - "Claude Code's YOLO flag: PT translates it as 'pular permissões perigosamente'; EN writes it as 'dangerously skip permissions' (the flag is --dangerously-skip-permissions). Editor may prefer the literal flag in code font."
+  - "PT glosses 'sandbox, caixa de areia' and 'ai-jail, a jaula de IA'; in English the glosses are redundant, so the sandbox metaphor stands on the English word and the ai-jail gloss is dropped. 'copy-on-write, cópia na escrita' likewise loses its PT gloss."
+  - "Headings in title case, matching the other EN chapters."

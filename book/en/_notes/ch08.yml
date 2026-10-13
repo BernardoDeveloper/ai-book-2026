@@ -1,0 +1,6 @@
+id: ch08
+notes:
+  - blog_commit set to the value in inventory/posts.yml (b9c0292...), which differs from the PT unit's cc8b467...
+  - "Glossary marks: [bug]{.gls} left without explicit key because the English text lowercased equals the key; [context]{.gls key=contexto} made explicit."
+  - "Quotes taken from Akita's EN posts: the house-of-cards symptom (adapted to the PT chapter's shorter form), 'Prompting doesn't replace thinking', the Codex/Claude 'decent mitigation' line, the 'code in the dark ... plays in another league' takeaway, and 'what did you ask it for, exactly?'."
+  - "'Nintendinho' rendered as NES throughout (the Brazilian nickname has no English equivalent)."

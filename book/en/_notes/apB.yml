@@ -1,0 +1,5 @@
+notes:
+  - "Commands kept byte-identical. In the ai-jail block, only the '#' comments were translated (WRITER.md rule). The timeshift --comments string literal stays in Portuguese ('antes de soltar o agente') since it's program data; change to an English string if the editor prefers the reader not see Portuguese there."
+  - "ai-memory's opening sentence follows the README's own English ('Quit Claude Code mid-task, start ... Codex in the same directory, continue without re-explaining...')."
+  - "Secrets paragraph follows Akita's EN wording from 2026/05/24 ('keys to the kingdom', 'happened to me more than once'); the fence image follows the same post ('put a fence at the operating-system level')."
+  - "Windows 'Versões anteriores' rendered as the actual English UI label 'Previous Versions'."

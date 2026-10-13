@@ -1,0 +1,7 @@
+id: ch07
+notes:
+  - blog_commit set to the value in inventory/posts.yml (b9c0292...), which differs from the PT unit's cc8b467...
+  - "Girlfriend's first quote: the PT chapter truncates her sentence; the EN uses the EN post's wording cut at the same point. Second quote keeps the post's 'should/could'."
+  - "Gmail clipping: the EN post says 102KB; the PT chapter rounds to about 100 kilobytes, kept as rounded prose."
+  - "'Lisbon Portuguese trying to pass for Rio' adapts 'português de Lisboa tentando ser carioca' (the EN post keeps 'carioca'); swapped for 'Rio' so non-Brazilians get it."
+  - "The Gmail/months/accent list in 'Why the One-Shot Prompt Is a Myth' and the circuit breaker takeaway follow the EN post's wording."

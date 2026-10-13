@@ -1,0 +1,7 @@
+unit: ch20
+notes:
+  - blog_commit: "Front matter uses inventory blog_commit b9c0292 and EN hashes from inventory/posts.yml."
+  - restored_quotes: "Chollet (willison2024chollet) restored to his original English fragments: 'work via memorization and interpolation', 'can be tremendously useful, if you want to automate a known task', 'as long as you don't need to adapt to novelty'. The nes-to-sms pause notice restored to the README wording quoted in the EN post ('may be fundamentally unattainable'; 'this may be a limit of the current frontier coding models as much as of the approach')."
+  - title: "Chapter title 'Competent Enough' (book title). The closing blockquote follows Akita's EN post ('A lone LLM is an expensive parrot... the next magic parameter count that nobody publishes anymore')."
+  - possible_pt_issue: "PT says the gg-to-sms scanner hit addresses 'com margem de poucos bytes'; the post says 'within an 8-byte margin'. Kept 'a few bytes' as PT."
+  - possible_pt_issue_2: "PT says the AlphaZero reached superhuman level 'em menos de um dia de treino'; the EN post says 'within hours of self-play'. Both consistent; kept PT."

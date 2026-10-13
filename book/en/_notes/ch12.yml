@@ -1,0 +1,8 @@
+unit: ch12
+notes:
+  - "City of Rio quote ('uma família de seis modelos...', 'sem depender de plataformas estrangeiras') is originally Portuguese; translated by me. The 'without depending on foreign platforms' wording matches Akita's EN Rio post."
+  - "Rio README quotes restored from the English original: 'followed by On-Policy Distillation from a stronger model', 'incorrect upload'."
+  - "Blockquote on open weights follows Akita's EN wording ('You can hide the narrative for a while, but you cannot hide linear algebra'); 'If you fine-tune on top of Qwen, say Qwen...' and 'credit ... the basic currency of the game' also follow the EN post."
+  - "'A test that mocks a fabricated API is worse than no test. It certifies the hallucination.' taken from the EN 2026/08/15 post."
+  - "Added short clarifiers for international readers: IplanRio as the city's municipal IT company; CLT versus PJ as salaried employee versus contractor (the latter as in the EN 09/23 post)."
+  - "The October recheck of the Rio page (src: original) could not be verified by me; translated as written."

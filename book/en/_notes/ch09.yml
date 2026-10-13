@@ -1,0 +1,8 @@
+notes:
+  - "blog_commit set to inventory/posts.yml (b9c0292...) per docs/TRANSLATING.md; the PT unit carries cc8b467.... Same for ch10, interlude1, epilogo, posfacio."
+  - "Opening complaints and several lines (contractor vs magician, 'directly proportional', Mark I 'bolted together in a cave out of scrap', 'sharpest lesson about engineering I've ever read in fiction', 'Skip that step and anything I deliver is going to be a 42') follow Akita's EN wording in the 2026/04/15 post."
+  - "PR review blockquote restored from the 2026/05/30 EN post ('look at the open PR on github. don't trust the author's description. audit the code thoroughly to see if it actually makes sense.'), sentence-cased; the PT chapter keeps only those three sentences, so the EN does too."
+  - "The rules-file code block is book text written in PT; translated into English using the wording of the CLAUDE.md template in the 2026/04/20 EN post where lines match ('Keep your own comments. Don't strip them on refactor.', 'Tests run with a single command: <project-specific>.')."
+  - "Skills: 'not tailored for general usage' is the repo's own English text; 'An idle skill is debt', 'Every line ... is a scar', 'compound interest for knowledge' follow the 2026/09/17 EN post."
+  - "Video title rendered as *Don't Outsource Your Decisions* (the EN post's translation of 'Não terceirize suas decisões'); the video itself is in Portuguese."
+  - "Health-insurer letter example: 'ouvidoria' rendered as 'the insurer's ombudsman', 'protocolo do atendimento anterior' as 'the ticket number from my previous call'."

@@ -1,0 +1,7 @@
+notes:
+  - "Tokenizer example: PT 'morango' became 'strawberry' (the well-known English case of models miscounting letters). Same point, adapted to the reader's language. The tokenizer paragraph now reads 'words in Portuguese and other languages' where PT said 'palavras em português'."
+  - "Bender et al. 2021 definition restored to the paper's original English ('a system for haphazardly stitching together...'). The PT list glosses its phrases; the EN list quotes the original phrases ('haphazardly' for 'ao acaso')."
+  - "Bender & Koller octopus reply restored as 'Cool idea, great job!' (paper's wording). Hinton quote kept as verified in the PT note ('They really do understand. And they understand the same way that we do.')."
+  - "'Onde eu fico' follows Akita's EN wording from 2026/02/08 ('regardless of what a Geoffrey Hinton...', 'everyone has biases', 'Appeal to Authority Fallacy', 'won't spontaneously appear') and 2026/02/24 ('most efficient way', 'new breakthrough', 'cannot count on it')."
+  - "Trophy/suitcase sentence: English pronoun 'it' is ambiguous (unlike PT 'ela', gendered); this is the classic Winograd example, so the point still holds."
+  - "Figures point to assets/figures/en/ (all three exist). Alt text assumes the EN figures carry English labels (Monday/Tuesday, king/queen, 'size of the error', 'frozen weights'); worth a visual check."

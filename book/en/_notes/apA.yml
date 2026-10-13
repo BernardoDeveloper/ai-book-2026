@@ -1,0 +1,4 @@
+notes:
+  - "All cells translated; dates in US style ('Feb. 14, 2019', 'Late 2022', bold 'February 1.')."
+  - "Brazil-only references got short clarifying clauses: Akitando ('my YouTube channel'), Flow Podcast ('one of Brazil's biggest talk shows'), gov.br ('the Brazilian government's services app'), Rio's 'prefeitura' as 'city government'. 'Nintendinho' rendered as NES."
+  - "PT front matter source 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu carries an extra 'commit:' field; EN sources list uses only post + EN sha256, and blog_commit is the inventory's b9c0292 (same commit)."

@@ -1,0 +1,8 @@
+unit: interlude2
+notes:
+  - blog_commit: "Used b9c029231693369b8f895576b491c878aea3e8da from inventory/posts.yml; the PT unit carries cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01."
+  - figure: "interlude2-partida-4 has no EN version in assets/figures/en/; kept the shared path (the diagram's numbering is language-neutral)."
+  - quote: >-
+      Lee Sedol's Yonhap line stays paraphrased as in PT; the original English per the cited
+      Vice piece is "Even if I become the number one, there is an entity that cannot be
+      defeated", if the editor prefers direct quotation.

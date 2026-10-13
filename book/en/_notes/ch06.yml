@@ -1,0 +1,6 @@
+id: ch06
+notes:
+  - blog_commit set to the value in inventory/posts.yml (b9c0292...), which differs from the PT unit's cc8b467...; per TRANSLATING.md.
+  - "The Voice the Model Erases: the EN post keeps Akita's line in Portuguese ('isso é bobagem' / 'isso tem seus méritos, mas...'). The book renders it in English ('this is nonsense' / 'this has its merits, but...') so the international reader gets the joke."
+  - "The mirror blockquote uses Akita's own EN wording from the 2026/02/20 post verbatim."
+  - "'XP tinha razão desde o começo' paragraph and the 'adult in the room' line follow the EN post's wording ('never argues from ego', 'You are the brake...')."

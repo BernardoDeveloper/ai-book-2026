@@ -1,0 +1,27 @@
+unit: ch14
+notes:
+  - blog_commit: "Used b9c029231693369b8f895576b491c878aea3e8da from inventory/posts.yml; the PT unit carries cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01."
+  - restored_quotes: >-
+      Original English restored from the cited sources (fetched 2026-10-13):
+      Huang on Lex Fridman "I think it's now. I think we've achieved AGI" (transcript);
+      Coxon "This is not a marketing stunt" and the "earnestly believe it could kill us all by
+      the end of the decade" paraphrase (AP via NBC Chicago); Engels "There are no adults in the
+      room" (NBC); Buckmaster "Why would you ruin your career?" and "I am not accusing anyone of
+      anything" (his statement PDF); Bubeck "extremely poor choice of words" (The Next Web; PT has
+      only "pessima escolha de palavras"); Amodei "an extra year or two" and "no one was hurt and
+      the economic damage was minimal" (his essay; PT "um ano ou dois"); Clay "has apparently been
+      settled" / "deliberately unhurried" (Clay note); Altman "an ill-advised moment" and Huang
+      "done a lot of damage" (headlines of the cited Fortune and Business Insider pieces;
+      Business Insider could not be fetched); SiliconANGLE headline "despite warning of AI's
+      existential risks"; The Register headline "It blocked us at 'hello!'"; TypeSafe "Our number
+      is not empirical" (as quoted in the author's EN post).
+  - unverified: >-
+      Brockman's "welcome to the AGI era" is in the Axios headline (axios2026astra); the
+      FnNews piece cited for the "different definition" remark quotes him as "Everyone has a
+      different definition of AGI, and it is an ambiguous concept"; the PT paraphrase was kept
+      as indirect speech.
+  - adaptation: >-
+      "perigoso demais" rendered "too dangerous" (two words, matching the PT "duas palavras").
+      "A pulga atras da orelha" rendered as an itch that wouldn't go away, echoing the
+      author's EN post. LeCun's "besteira completa" given as "complete nonsense" (the cited
+      TechCrunch headline says "complete B.S."; the author's EN post uses "complete nonsense").

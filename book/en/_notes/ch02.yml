@@ -1,0 +1,6 @@
+notes:
+  - "Used Akita's EN wording from posts: 'graveyard of superstition', 'Bad memory is worse than no memory. No memory makes you ask...' (06/16), 'memory is treated as a hint' (03/31, 04/06), 'the equation has flipped' / smart vs dumb retriever (04/06), 'knowledge compounds' and Karpathy's bet (05/18), 'my wifi's down' / 'loss of connectivity' for PT 'tô sem net' (04/06), book comparisons (Old Man and the Sea, Crime and Punishment, Lord of the Rings + Hobbit)."
+  - "PT 'Você virou a memória do agente' kept as 'You've become the agent's memory'; the EN post says 'You become the agent's cache'. The PT chapter had already adapted 'cache' to 'memória', so the book wording wins."
+  - "Anthropic statement rendered close to its published English ('release packaging issue caused by human error, not a security breach'), as indirect speech like the PT."
+  - "Context-window paragraph keeps 'and something similar in Portuguese' (PT: 'em português'); harmless in English but the editor may cut it."
+  - "ch02-mesa.png has no EN version (label-free AI illustration), shared path kept; compactacao and memoria-em-camadas point to assets/figures/en/."

@@ -1,0 +1,6 @@
+notes:
+  - "Language-specific scam tip: PT 'olhar os erros de português' / 'voce sem acento' is kept as a Portuguese example with a clarifying clause ('A \"bank\" message in Portuguese with \"você\" missing its accent'), and 'português perfeito' stays 'perfect Portuguese' in the LLM paragraph, as Akita's own EN post (03/09) does. Where the PT uses Portuguese as a stand-in for 'the victim's language' (takeaway blockquote, last item of the habits list, chapter opening question), the EN says 'flawless grammar' / 'perfect grammar' / 'flawless prose'. Editor may prefer to keep 'Portuguese' everywhere for strict fidelity."
+  - "Brazil-only clarifications added: SERPRO and Dataprev glossed as 'the federal government's data-processing companies'; CPF glossed as 'the Brazilian taxpayer number'; gov.br already explained in the PT text."
+  - "Front matter blog_commit uses inventory/posts.yml (b9c0292...), per TRANSLATING.md; the PT unit carries cc8b467...."
+  - "Obfuscation example: PT 'enviarLocalizacao' rendered as 'sendLocation'."
+  - "Akita's EN wording reused from the 07/08, 03/09, 09/22, 04/15 and 01/23 EN posts wherever the PT follows the post (fingerprint persistence, vanity paragraph, 'what you can do' list, deepfake paragraph, 'reading the label' line)."

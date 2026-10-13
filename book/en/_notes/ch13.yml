@@ -1,0 +1,20 @@
+unit: ch13
+notes:
+  - blog_commit: "Used b9c029231693369b8f895576b491c878aea3e8da from inventory/posts.yml as the contract says; the PT unit carries cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01."
+  - possible_pt_issue: >-
+      The PT text says everything after April 8 ran with 64 GB of VRAM, including the
+      September benchmark. The EN/PT v4 post (2026/09/15 part 2) describes the Strix Halo run
+      of Qwen 3.8 27B as having "96 GB of unified memory". The chapter's wording ("com mais
+      memoria") is not wrong either way, but the editor may want to confirm against
+      private-notes/server-notes.md.
+  - adaptation: >-
+      "A conta e de padeiro" rendered as "back-of-the-envelope"; the supermarket rounding
+      analogy rounds "to the nearest dollar" instead of "pro real mais proximo" so it reads
+      naturally to an international reader. Brazilian import taxes are named as such
+      ("with Brazilian import taxes"); R$ amounts kept in reais.
+  - post_wording_reused: >-
+      From the author's EN posts: "these crappy video cards having so little memory",
+      "a slow model that gets there / a fast one that goes in circles", "it's local, it's
+      private ... less than an old lightbulb", "with prettier handwriting", "Qwen3 didn't
+      kill anyone", "buying yourself a problem", "zero would be a lie", the
+      "oh-pen-ee-sohrss-eh" transliteration.

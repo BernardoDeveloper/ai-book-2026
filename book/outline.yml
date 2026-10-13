@@ -111,12 +111,12 @@ parts:
         question: "What is an 'agent', and why did 2025-2026 feel like a leap?"
         arc: >-
           Agent = system prompt + tools + loop; models tuned to their vendor's
-          harness; the 'browser war' of agents; the harness is half the result;
+          harness (Claude Code vs Codex, April); the harness is half the result;
           why the leap people felt came from tools, caching and long sessions,
           not from a smarter base model (set-up for the capstone in ch20).
         sources:
-          primary: [01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity, 05/04/llm-benchmarks-deepseek-unlocked-deepclaude]
-          supporting: [05/25/primeiras-impressoes-usando-oh-my-pi-e-opencode, 10/12/llms-agentes-competente-o-suficiente, 01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush]
+          primary: [05/04/llm-benchmarks-deepseek-unlocked-deepclaude]
+          supporting: [05/25/primeiras-impressoes-usando-oh-my-pi-e-opencode, 10/12/llms-agentes-competente-o-suficiente]
           ref: ["ref:llm-coding-benchmark (harness ablation: orchestrator plugin moved scores +67 to -39)"]
         illustrations:
           - {kind: diagram, idea: "the agent loop: think, call tool, read result, decide again"}
@@ -147,16 +147,19 @@ parts:
       - id: ch05
         title: "Os primeiros dez por cento"
         scene: >-
-          January 2026: a small app to send text from phone to TV, built entirely
-          with GLM 4.7. It 'works' in an evening. Then the other 90% begins.
+          1 February 2026: FrankMD, a Markdown editor built from zero with Claude
+          Code in about three days. It "works" almost immediately; the 200 hours
+          of real work it replaces are mostly the other 90%. (Cut-off is
+          February: the January TV Clipboard and model-comparison posts are out.)
         question: "If AI writes the app, what is left for a human to do?"
         arc: >-
-          The 10%/90% rule; result quality proportional to the seniority of the
-          asker; FrankMD: 200 hours of work in 30, with a senior steering;
-          unattended output is a house of cards.
+          The 10%/90% rule (the idea is 10%, engineering is 90%: 02/23); result
+          quality proportional to the seniority of the asker; FrankMD: 200 hours
+          of work in 30, with a senior steering; unattended output is a house of
+          cards; the marathon begins (03/05 counts the immersion's days).
         sources:
-          primary: [01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard, 01/29/vibe-code-qual-llm-é-a-melhor-vamos-falar-a-real, 02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2]
-          supporting: [02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1, 01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig]
+          primary: [02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2]
+          supporting: [02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1, 02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias, 03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio]
         illustrations:
           - {kind: diagram, idea: "iceberg: the working demo above water, security/tests/cleanup below"}
       - id: ch06
@@ -260,7 +263,7 @@ parts:
           Only latest (v4) numbers are quoted as current.
         sources:
           primary: [07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior, 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1, 04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo]
-          supporting: [07/30/novo-llm-benchmark-refiz-todos-os-testes, 07/09/llm-benchmark-grok-4-5-gpt-5-6-sol, 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2, 09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7, 04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos, 01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig]
+          supporting: [07/30/novo-llm-benchmark-refiz-todos-os-testes, 07/09/llm-benchmark-grok-4-5-gpt-5-6-sol, 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2, 09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7, 04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos]
           ref: ["ref:llm-coding-benchmark (methodology history, v3 'wrong turn', metrics bug, rerun variance)"]
         bridge: "How a benchmark is built and why scores mislead (from llm-coding-benchmark)."
         illustrations:
@@ -283,9 +286,10 @@ parts:
       - id: ch13
         title: "IA em casa"
         scene: >-
-          January 2026: squeezing GLM 4.7 Flash onto a single RTX 5090 and
-          trading context for speed; later, a 96 GB mini-PC that is slow but
-          private.
+          March 2026: a unified-memory mini-PC (Minisforum MS-S1 Max, AMD AI Max+
+          395) next to an RTX 5090. The gaming card is up to seven times faster
+          but caps at 32 GB; the mini-PC fits far bigger models, slowly but
+          privately.
         question: "Can I run a good AI on my own computer? Are free models as good as paid ones?"
         arc: >-
           Memory bandwidth decides speed, memory size decides what fits; local
@@ -294,7 +298,7 @@ parts:
           vs a weekly production; small specialised models (Jev-class
           classifiers) matching giants for closed decisions.
         sources:
-          primary: [01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim, 03/31/review-minisforum-ms-s1-max-amd-ai-max-395, 04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts]
+          primary: [03/31/review-minisforum-ms-s1-max-amd-ai-max-395, 04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts]
           supporting: [06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local, 10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, 09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2]
           ref: ["ref:private-notes/decision-models.md", "ref:jev-docs/benchmark"]
         illustrations:
@@ -345,7 +349,7 @@ parts:
           the tool's log; a second agent as reviewer.
         sources:
           primary: [07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas, 03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real]
-          supporting: [01/10/ai-agents-garantindo-a-protecao-do-seu-sistema, 07/25/ai-jail-update-seguranca-docker-opt-in, 10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados]
+          supporting: [07/25/ai-jail-update-seguranca-docker-opt-in, 10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados]
           ref: ["ref:private-notes/bulk-delete-runbook.md", "ref:private-notes/nas-postmortem.md", "ref:ai-jail/README.md"]
         bridge: "The 69-item deletion incident (not on the blog) as the opening scene."
         constraints: "No hostnames, IPs or private repo names from private-notes."
@@ -378,7 +382,7 @@ parts:
           (Seedance); reverse engineering became cheap but not magic.
         sources:
           primary: [07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint, 03/09/atacando-fraudes-via-email-frank-fbi]
-          supporting: [04/15/seedance-2-0-finalmente-foi-lancado-primeiras-impressoes, 01/23/ai-3d-ja-da-pra-modelar-3d-com-prompts, 09/22/pseudo-techcrunch-tentou-me-pegar-em-golpe-calendly-e-uma-merda]
+          supporting: [04/15/seedance-2-0-finalmente-foi-lancado-primeiras-impressoes, 09/22/pseudo-techcrunch-tentou-me-pegar-em-golpe-calendly-e-uma-merda]
 
   - id: p5
     title: "Parte V: E o meu emprego?"
@@ -529,9 +533,18 @@ back:
     source_file: book/back/references.yaml
 
 excluded:
+  # Book cut-off moved to February 2026 (author, 2026-10-13): January posts are left out.
+  - {post: 01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, reason: "before the February 2026 cut-off"}
+  - {post: 01/10/ai-agents-garantindo-a-protecao-do-seu-sistema, reason: "before the February 2026 cut-off"}
+  - {post: 01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig, reason: "before the February 2026 cut-off"}
+  - {post: 01/21/ai-agents-instalando-lsps-pro-crush, reason: "before the February 2026 cut-off"}
+  - {post: 01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim, reason: "before the February 2026 cut-off"}
+  - {post: 01/23/ai-3d-ja-da-pra-modelar-3d-com-prompts, reason: "before the February 2026 cut-off"}
+  - {post: 01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity, reason: "before the February 2026 cut-off"}
+  - {post: 01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard, reason: "before the February 2026 cut-off"}
+  - {post: 01/29/vibe-code-qual-llm-é-a-melhor-vamos-falar-a-real, reason: "before the February 2026 cut-off"}
   # AI-relevant posts deliberately left out, with the reason. Non-AI posts
   # (ai_relevance none/tangential) are excluded by default and not listed.
-  - {post: 01/21/ai-agents-instalando-lsps-pro-crush, reason: "install guide, stale"}
   - {post: 04/11/distrobox-de-emulacao-com-claude-code, reason: "niche setup; agent-as-tech-lead point is covered in ch09/ch10"}
   - {post: 04/18/llm-benchmarks-parte-2-multiplos-modelos, reason: "superseded (lineage); lesson carried via 04/25 in ch11"}
   - {post: 04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus, reason: "superseded by author; only VRAM/distillation explainers may be borrowed in ch13"}

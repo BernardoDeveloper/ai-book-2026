@@ -1,0 +1,7 @@
+unit: ch11
+notes:
+  - "blog_commit: PT front matter has cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01; inventory/posts.yml has b9c029231693369b8f895576b491c878aea3e8da. Used the inventory value per TRANSLATING.md. Same for ch12 and apC."
+  - "Quotes taken from Akita's EN posts: 'Embarrassing.' (2026/04/24), 'Obsolete article.' (EN obsolete banners on 04/05 and 04/18), 'binary recall' (04/24), 'in my little test' (01/11), tier definitions (04/24), formula and 'Don't trust a benchmark. Don't trust influencers. Don't trust me.' (07/19), 'The price didn't go up; my math was off.' (07/09), v3 'documented wrong path' and the anchored-in-everyday-reality quote (09/15 part 1), 'Never name the sabotage.' (09/15 part 1)."
+  - "Report quote 'a method that doesn't exist' restored from llm-coding-benchmark/docs/success_report.multi_model.md."
+  - "Phase-3 honesty line: the EN post says 'An accurate FAIL is worth more than an optimistic PASS that the audit disproves'; the PT chapter paraphrases (falha admitida vs sucesso inventado) and I followed the PT."
+  - "Grade analogy 'nove e dez' rendered with the US 0-100 scale ('between 90 and 100', 'whoever got 100'); section title 'Quando todo mundo tira dez' became 'When Everybody Gets an A'."

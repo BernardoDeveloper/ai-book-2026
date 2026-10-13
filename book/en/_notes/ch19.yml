@@ -1,0 +1,7 @@
+unit: ch19
+notes:
+  - blog_commit: "Front matter uses inventory blog_commit b9c0292 and EN hashes; dropped the per-source 'commit:' field on the Adobe post since its EN hash matches the inventory commit."
+  - restored_quotes: "Uber COO Andrew Macdonald quotes restored from Fortune (angelo2026uber): 'very hard to draw a line' and 'That link is not there yet.' DORA quote restored from dora.dev: 'has repeatedly demonstrated that speed and stability are not tradeoffs'. The page says 'top performers do well across all five metrics'; PT says 'todas as métricas', kept as 'all the metrics'."
+  - po_gloss: "PT explains PO as 'do inglês Product Owner'; in EN the term is written out ('the product owner (the PO)'), so the 'from English' gloss is dropped."
+  - sneddon_quote: "PT paraphrases OMG Ubuntu ('fac-símile superficial com falhas pronunciadas'); EN uses the original wording in quotes, 'a superficial facsimile with pronounced flaws', as Akita's EN post does."
+  - possible_pt_issue: "PT 'Dos pedidos de mudança no código, 361 vinham de umas 120 pessoas': the EN post says 361 from 'roughly 121 distinct contributors'. Consistent with 'umas 120'; no change."
