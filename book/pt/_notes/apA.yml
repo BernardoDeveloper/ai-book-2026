@@ -13,3 +13,5 @@ integration:
   - "Blog translation: 'no aniversário, metade bilíngue' -> half bilingual when the anniversary post went out on 9 April (interlude1)."
   - "Fable 5 entry: 'empata com o Opus 4.8, 94 a 95' (ch14)."
   - "Open: METR task-length row dated 2025 only via the citation year (chapters give no year); '14 de maio' is the day of the boletim question (ch10 says 'meados de maio' for the end). Acquisition of Bun cited with two keys (sumner2025anthropic in ch16/apA, anthropic2025bun in ch19)."
+cutoff_february:
+  - "January entries from 01/09 (Zig/Crush), 01/22 (GLM 4.7 Flash), 01/28 (TV Clipboard) removed with their sources. Kept: sandbox script (03/01), Qwen3 TTS (04/09, ch13), Davos (02/08, ch18), FrankMD 30 Jan (02/01, ch05). Intro of the 2026 section says the story starts in February."

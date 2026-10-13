@@ -1,13 +1,4 @@
 references:
-  - id: zai2025glm47
-    type: "webpage"
-    title: "GLM-4.7"
-    author: [{literal: "Z.ai"}]
-    container-title: "Z.ai"
-    issued: {date-parts: [[2025, 12, 22]]}
-    URL: "https://z.ai/blog/glm-4.7"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard"
   - id: rosenblatt1957perceptron
     type: "report"
     title: "The Perceptron: A Perceiving and Recognizing Automaton (Project PARA)"

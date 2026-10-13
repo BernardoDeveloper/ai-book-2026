@@ -9,7 +9,7 @@ blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 # Como ler este livro {#sec-como-ler .unnumbered}
 
 <!-- src: original -->
-O melhor jeito de ler este livro é em ordem, do começo ao fim. Ele conta um ano, 2026, em que eu coloquei a inteligência artificial à prova quase todo dia, e a história tem uma sequência. Primeiro o que essa coisa é, depois o que ela fez nas minhas mãos, como medir, onde ela é perigosa e o que tudo isso quer dizer pro seu trabalho. Um conceito explicado no começo é usado sem cerimônia lá na frente.
+O melhor jeito de ler este livro é em ordem, do começo ao fim. Ele conta os meses de fevereiro a outubro de 2026, em que eu coloquei a inteligência artificial à prova quase todo dia, e a história tem uma sequência. Primeiro o que essa coisa é, depois o que ela fez nas minhas mãos, como medir, onde ela é perigosa e o que tudo isso quer dizer pro seu trabalho. Um conceito explicado no começo é usado sem cerimônia lá na frente.
 
 Mas eu sei que muita gente chega aqui com uma preocupação específica e pouca paciência pra esperar o livro inteiro pela resposta. Tudo bem. Cada uma das cinco partes responde a um medo, e dá pra pular direto pra ele.
 
@@ -34,7 +34,7 @@ Se você pular, vai tropeçar de vez em quando num termo ou num personagem que a
 ## Um retrato de outubro de 2026
 
 <!-- src: original -->
-Este livro foi fechado em outubro de 2026. A história se passa entre janeiro e outubro daquele ano, e as datas aparecem completas de propósito: "em março de 2026", nunca "recentemente".
+Este livro foi fechado em outubro de 2026. A história se passa entre fevereiro e outubro daquele ano, e as datas aparecem completas de propósito: "em março de 2026", nunca "recentemente".
 
 <!-- src: original -->
 Os nomes de modelos e produtos vão envelhecer rápido. Quando você ler isto, Claude Opus 4.5, GPT-5.5 ou Kimi K3 provavelmente vão soar como os carros de um romance antigo: dizem em que época a história se passa, e ninguém lê o romance pra escolher carro. Os mecanismos por baixo mudam bem mais devagar. Como um modelo de linguagem gera texto, por que ele esquece o que vocês combinaram, por que concorda com você, por que um agente sem supervisão faz besteira: é isso que eu quero que você leve daqui.

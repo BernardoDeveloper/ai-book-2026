@@ -257,7 +257,7 @@ parts:
           posts obsolete.
         question: "How do you know which model is better?"
         arc: >-
-          The benchmark as a character: Zig challenge, v1 and its audit, the cost
+          The benchmark as a character: v1 (April) and its audit, the cost
           bug, saturation, v2, v4 with planted sabotage; noise (same model 100
           then 91); never outsource a decision to a table; the convergence result.
           Only latest (v4) numbers are quoted as current.

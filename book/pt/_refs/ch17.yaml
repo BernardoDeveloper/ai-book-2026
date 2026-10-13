@@ -89,12 +89,3 @@ references:
     URL: "https://www.axios.com/2026/03/24/openai-discontinue-sora-video-app"
     accessed: {date-parts: [[2026, 10, 13]]}
     note: "cited-by: 2026/04/15/seedance-2-0-finalmente-foi-lancado-primeiras-impressoes (post states Sora was discontinued without a link; verified online)"
-  - id: tencent2026hunyuan3d
-    type: "webpage"
-    title: "Hunyuan 3D"
-    author: [{literal: "Tencent"}]
-    container-title: "Tencent Hunyuan"
-    issued: {date-parts: [[2026]]}
-    URL: "https://3d.hunyuanglobal.com/"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/01/23/ai-3d-ja-da-pra-modelar-3d-com-prompts"

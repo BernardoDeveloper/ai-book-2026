@@ -1,13 +1,4 @@
 references:
-  - id: akita2026tvclipboard
-    type: "software"
-    title: "TV Clipboard"
-    author: [{family: "Akita", given: "Fabio"}]
-    container-title: "GitHub"
-    issued: {date-parts: [[2026, 1, 27]]}
-    URL: "https://github.com/akitaonrails/tvclipboard"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard (public repository linked in the post)"
   - id: akita2026frankmd
     type: "software"
     title: "FrankMD"

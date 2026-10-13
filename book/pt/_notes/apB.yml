@@ -12,3 +12,5 @@ integration:
   - "Committed .ai-jail: README says project config is untrusted and monotonic (can only tighten unless the folder is listed in trust_project_config); apB no longer says the team 'inherits the same jail'."
   - "--bootstrap targets: Claude Code, Codex, OpenCode, Gemini CLI and Crush (src/bootstrap.rs run()); src marker changed to ref:ai-jail/src/bootstrap.rs."
   - "Verified: permission excerpt in bootstrap.rs; WSL2 / sandbox-exec / tmpfs home / defaults off list; ai-memory 2.6.6, install commands, loopback no-auth default, markdown in git, zero-LLM default; ai-usagebar 1.36.0 Rust port of claudebar, 97% alert, tray for macOS/Windows; ch15 callbacks (YOLO since May, eleven albums, transactional OS rollback)."
+cutoff_february:
+  - "01/10 source dropped: permissions paragraph -> 07/11; three-column list -> ref:ai-jail/src/bootstrap.rs. 'fiz em janeiro' removed; Crush removed from the --bootstrap list ('cinco agentes, entre eles ...')."

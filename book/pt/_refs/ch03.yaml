@@ -8,15 +8,6 @@ references:
     URL: "https://github.com/aattaran/deepclaude"
     accessed: {date-parts: [[2026, 10, 13]]}
     note: "cited-by: 2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude"
-  - id: openai2025codexprompt
-    type: "software"
-    title: "Codex CLI: system prompt (codex-rs/core/prompt.md)"
-    author: [{literal: "OpenAI"}]
-    container-title: "GitHub"
-    issued: {date-parts: [[2025]]}
-    URL: "https://github.com/openai/codex/blob/main/codex-rs/core/prompt.md"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity, Arquivado em: https://web.archive.org/web/20260201125545/https://github.com/openai/codex/blob/main/codex-rs/core/prompt.md"
   - id: openai2023function
     type: "webpage"
     title: "Function calling and other API updates"
@@ -52,7 +43,7 @@ references:
     issued: {date-parts: [[2025]]}
     URL: "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
     accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity"
+    note: "cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia (post links the Claude Code skills docs and Anthropic's Agent Skills write-up for the name-and-description-first loading)"
   - id: anthropic2024caching
     type: "webpage"
     title: "Prompt caching with Claude"

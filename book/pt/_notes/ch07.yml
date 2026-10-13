@@ -12,3 +12,5 @@ integration:
   - "Fact fix: Steam dates. Old: 'quando consultado em português, devolvia os meses abreviados em português'. New: 'devolvia as datas com os meses abreviados em português' (03/01 says only that the Steam API returned Portuguese month abbreviations)."
   - "Wording: 'operação profissional de uma pessoa só com uma equipe enxuta' (self-contradictory) became 'tocada por ela, com uma equipe enxuta' (03/04)."
   - "Fact-check: FrankMega (02/21), Frank Sherlock (02/23, 03/01), post-deploy numbers (03/01) and data-mining (03/04) figures all re-verified. Kept: 1-cent/image API estimate and US$34 electricity, both from the post's own back-of-envelope sums."
+cutoff_february:
+  - "'Pela primeira vez desde janeiro' -> 'na maratona'."

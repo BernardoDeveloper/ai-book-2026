@@ -1,11 +1,12 @@
 """ch05-iceberg: the part that works vs. the part under water.
 
 Data: book/pt/ch05.md ("Os outros noventa"), from akitaonrails.com
-2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard: about one
-hour to "work", ten to twelve hours for the rest (security, where most of the
-time went; tests; cleanup and refactoring; per-environment configuration;
-review). Layer sizes are illustrative; security is drawn largest because the
-chapter says most of the time lived there.
+2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2:
+FrankMD's first ten commits took about an hour and a half to "already work";
+almost 30 more hours went to the rest (refactoring, which the post calls the
+largest part of vibe coding; bug fixes; tests; performance; security checks).
+Layer sizes are illustrative; refactoring is drawn largest because the post
+says most of the work is refactoring.
 
 Usage: uv run --with matplotlib python -I assets/charts/ch05-iceberg.py pt
 House style: docs/research/IMAGES.md §4.
@@ -31,12 +32,12 @@ for f in ("NotoSans-Regular.ttf", "NotoSans-SemiBold.ttf", "NotoSans-Italic.ttf"
 plt.rcParams.update({"font.family": "Noto Sans", "font.size": 12, "text.color": INK})
 
 L = {
-    "pt": {"tip": "funciona na\nminha máquina", "layers": ["segurança", "testes", "limpeza e refatoração",
-                                                       "configuração", "revisão"],
-           "h1": "1 hora", "h10": "10 a 12 horas"},
-    "en": {"tip": "works on\nmy machine", "layers": ["security", "tests", "cleanup and refactoring",
-                                                  "configuration", "review"],
-           "h1": "1 hour", "h10": "10 to 12 hours"},
+    "pt": {"tip": "já funciona", "layers": ["refatoração", "consertos de bugs", "testes",
+                                         "desempenho", "segurança"],
+           "h1": "1 hora e meia", "h10": "quase\n30 horas"},
+    "en": {"tip": "it already\nworks", "layers": ["refactoring", "bug fixes", "tests",
+                                                "performance", "security"],
+           "h1": "an hour and a half", "h10": "almost\n30 hours"},
 }[LANG]
 
 fig, ax = plt.subplots(figsize=(6.4, 4.9), dpi=300)
@@ -86,7 +87,7 @@ def clock(cx, cy, r, hours, label, beside=False):
         ax.plot([cx + 0.8 * r * math.cos(a), cx + 0.92 * r * math.cos(a)],
                 [cy + 0.8 * r * math.sin(a), cy + 0.92 * r * math.sin(a)], color=INK, lw=0.8, zorder=7)
     # filled wedge for the elapsed share of a 12-hour face
-    ax.add_patch(Wedge((cx, cy), r * 0.72, 90 - hours * 30, 90, fc=AMBER if hours <= 1 else TEAL, ec=INK, lw=0.8,
+    ax.add_patch(Wedge((cx, cy), r * 0.72, 90 - hours * 30, 90, fc=AMBER if hours <= 2 else TEAL, ec=INK, lw=0.8,
                        zorder=7))
     ax.plot([cx, cx], [cy, cy + 0.72 * r], color=INK, lw=1.6, zorder=8, solid_capstyle="round")
     if beside:
@@ -95,8 +96,8 @@ def clock(cx, cy, r, hours, label, beside=False):
         ax.text(cx, cy - r - 0.3, label, ha="center", va="top", fontsize=12, fontweight="semibold")
 
 
-clock(7.3, 8.1, 0.5, 1, L["h1"], beside=True)
-clock(10.75, 4.3, 0.62, 11, L["h10"])
+clock(7.3, 8.1, 0.5, 1.5, L["h1"], beside=True)
+clock(10.75, 4.3, 0.62, 12, L["h10"])
 
 buf = io.BytesIO()
 fig.savefig(buf, dpi=300, facecolor=PAPER, format="png")

@@ -2,9 +2,6 @@
 id: apA
 chapter: "Linha do tempo"
 sources:
-  - {post: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, sha256: "d1ec3ad24e669b7389a4102874d2f51d65a81b0f3b88dae7b95ec41952ac99eb"}
-  - {post: 2026/01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim, sha256: "2f8d2231e055bd2d1f14704fada3a1e5c83d4c3391c38ae398509b97c816f116"}
-  - {post: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard, sha256: "30986720d5a7e169612410eb23606e4f7128e53eccae9e6f68e967e5eb5620db"}
   - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "fe55c3fbbd2ecbd0b51b059c1f46bf9e308b8b6a25c5953ffac9ad43d23f6839"}
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "09830f1d69488d527d241814a30269786cd7a5548e5d34fdf33b7fa21af0f417"}
   - {post: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms, sha256: "82c513848860f28bd296284a54db0565badf72f473d02175271c2afd961f6ba5"}
@@ -140,27 +137,18 @@ De 2023 a 2025, o tamanho dos modelos sumiu do marketing, o raciocínio teve o �
 ## 2026, mês a mês
 
 <!-- src: original -->
-O ano do livro. Cada entrada aponta pro capítulo que conta a história inteira.
+O ano do livro. A história começa em fevereiro; as poucas entradas de janeiro são o pano de fundo que algum capítulo cita. Cada entrada aponta pro capítulo que conta a história inteira.
 
 ### Janeiro
 
-<!-- src: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush -->
-**Começo de janeiro.** O Claude Opus 4.5, dentro do Crush, termina o chat em Zig que nenhum modelo tinha conseguido terminar no ano anterior (@sec-ch03, @sec-ch05, @sec-ch20).
-
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
 **Janeiro.** Monto a primeira [sandbox]{.gls} pros meus agentes, um script de umas 170 linhas (@sec-ch15).
-
-<!-- src: 2026/01/22/ai-agents-glm-4-7-flash-e-realmente-tao-bom-assim -->
-**Janeiro.** Uma tarde inteira espremendo o GLM 4.7 Flash numa RTX 5090, trocando contexto por velocidade (@sec-ch13).
 
 <!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
 **Janeiro.** A Alibaba lança o Qwen3 TTS, saudado como o "assassino da ElevenLabs" [@byteiota2026qwen3tts] (@sec-ch13).
 
 <!-- src: 2026/02/08/rant-ia-acabou-com-programadores -->
 **Janeiro.** Em Davos, Dario Amodei diz que talvez faltem de seis a doze meses pros modelos fazerem tudo o que um engenheiro de software faz [@haider2026amodei] (@sec-ch18).
-
-<!-- src: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard -->
-**Fim de janeiro.** O TV Clipboard, feito inteiro com o GLM 4.7, funciona em uma hora; o resto leva dez a doze (@sec-ch05).
 
 <!-- src: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2 -->
 **30 de janeiro.** Começo o FrankMD, o primeiro projeto Frank (@sec-ch05).

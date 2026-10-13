@@ -2,8 +2,6 @@
 id: apD
 chapter: "Os projetos do ano"
 sources:
-  - {post: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, sha256: "d1ec3ad24e669b7389a4102874d2f51d65a81b0f3b88dae7b95ec41952ac99eb"}
-  - {post: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard, sha256: "30986720d5a7e169612410eb23606e4f7128e53eccae9e6f68e967e5eb5620db"}
   - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "fe55c3fbbd2ecbd0b51b059c1f46bf9e308b8b6a25c5953ffac9ad43d23f6839"}
   - {post: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms, sha256: "82c513848860f28bd296284a54db0565badf72f473d02175271c2afd961f6ba5"}
   - {post: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles, sha256: "8a3892fa3d5cb201158394d2673a003461fe510482559cd989d4cf41ffd7b340"}
@@ -55,19 +53,10 @@ Um aviso antes de você sair clonando tudo. A maior parte destes projetos é pro
 <!-- src: original -->
 Os projetos que batizei de Frank alguma coisa são homenagem a Frank Rosenblatt, o criador do Perceptron (@sec-ch01, @sec-ch05).
 
-## Janeiro e fevereiro: os primeiros
-
-<!-- src: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush -->
-**Chat em Zig.** Um programa de conversa com modelos de IA, pra linha de comando, numa linguagem de baixo nível, que eu tinha abandonado em 2025 porque nenhum modelo conseguia terminar. Em janeiro de 2026 o Claude Opus 4.5 terminou, rodando dentro do Crush, incluindo a caça a um defeito que derrubava o programa. Aparece em @sec-ch03, @sec-ch05 e @sec-ch20.
-
-<!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-**A jaula em script.** Umas 170 linhas de script em volta do bubblewrap, montadas em janeiro pra isolar os agentes no meu computador. Em março virou o ai-jail, que está mais abaixo. Aparece em @sec-ch15.
-
-<!-- src: 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard -->
-**TV Clipboard.** Um aplicativo pra mandar texto do celular pra TV da sala, feito no fim de janeiro sem eu escrever uma linha, com o GLM 4.7 [@akita2026tvclipboard]. Funcionou em uma hora; o resto levou de dez a doze. Ficou no uso pessoal: revisado por seis modelos, ainda não me deu confiança pra abrir ao público. Aparece em @sec-ch05.
+## Fevereiro: os primeiros
 
 <!-- src: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2 -->
-**FrankMD.** Um editor de notas em Markdown, o primeiro dos Frank, começado numa sexta-feira, 30 de janeiro, com o Claude Code [@akita2026frankmd]. Em maio levou nota 7: eu mal uso, mas outras pessoas usam e mantêm vivo com correções. Aparece em @sec-ch05, @sec-ch06, @sec-ch10 e @sec-ch20.
+**FrankMD.** Um editor de notas em Markdown, o primeiro dos Frank, feito com o Claude Code em três dias, na virada de janeiro pra fevereiro [@akita2026frankmd]. Em maio levou nota 7: eu mal uso, mas outras pessoas usam e mantêm vivo com correções. Aparece em @sec-ch05, @sec-ch06, @sec-ch10 e @sec-ch20.
 
 <!-- src: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms -->
 **PACT.** O protótipo de compilador de uma linguagem "ideal pra IA", desenhada pelo próprio Claude a meu pedido em fevereiro. Publiquei sem nem testar, como registro de uma hipótese que eu mesmo chamei de achismo [@akita2026pact]. Aparece em @sec-ch18.
@@ -108,7 +97,7 @@ Em julho ganhou um parente: uma versão que coloca a legendinha de leitura por c
 **Frank Investigator.** Uma ferramenta pra questionar notícias, em que três modelos conferem cada afirmação e a fonte primária tem poder de veto [@akita2026frankinvestigator]. Uns nove dias de trabalho e 129 commits em março. Ficou de pé e funcionando, e eu parei ali: nota 3 em maio. Aparece em @sec-ch04 e @sec-ch10.
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-**ai-jail.** A jaula de janeiro, reescrita como ferramenta de verdade em março [@akita2026aijail; @aijail2026site]. Isola o agente de programação pra que ele só enxergue a pasta do projeto. Nota 8 em maio, a mais alta junto com o Chronicles, e o projeto que mais atraiu gente de fora.
+**ai-jail.** Começou como um script de umas 170 linhas em volta do bubblewrap e virou ferramenta de verdade em março [@akita2026aijail; @aijail2026site]. Isola o agente de programação pra que ele só enxergue a pasta do projeto. Nota 8 em maio, a mais alta junto com o Chronicles, e o projeto que mais atraiu gente de fora.
 
 <!-- src: ref:ai-jail/README.md -->
 Em outubro de 2026 estava na versão 2.8.1, depois de uma fuga via Docker corrigida no mesmo dia, em julho, e de duas auditorias de segurança em 30 de setembro. Aparece em @sec-ch10, @sec-ch15 e @sec-apB.

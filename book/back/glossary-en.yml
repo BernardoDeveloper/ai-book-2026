@@ -1,0 +1,721 @@
+# English glossary. Stable key (ASCII, lowercase, hyphens) -> term, optional
+# long form (expanded on its first use in the book) and a definition for lay readers.
+# Keys mirror glossary-pt.yml exactly; never rename them.
+# Mark in the text: [LLM]{.gls}  or  [context windows]{.gls key=janela-de-contexto}
+# New keys: propose them in book/pt/_gls/<chapter>.yml; the merge brings them here.
+agente:
+  term: Agent
+  def: A language model placed inside a program that lets it use tools (read files,
+    run commands, search the web) and repeat a cycle of thinking, acting and checking
+    until a task is done.
+agents-md:
+  term: AGENTS.md / CLAUDE.md
+  def: A text file at the root of a project with the house rules for the AI agent
+    (how the project is organized, which command runs the tests, what never to do).
+    The agent reads it at the start of every session; the file name changes from tool
+    to tool.
+agi:
+  term: AGI
+  long: Artificial General Intelligence
+  def: A hypothetical machine able to learn and reason about any subject the way a
+    human does. It does not exist; the term shows up a lot in marketing.
+alucinacao:
+  term: Hallucination
+  def: When the model produces false information with the same confidence as true
+    information, such as a quote, a date or a law that does not exist. It comes from
+    the very way the model picks the most likely text, so it is a built-in trait rather
+    than a rare glitch.
+analise-estatica:
+  term: Static analysis
+  def: Examining a program by reading its contents without running it. It shows what
+    the program was built to do (the permissions it asks for, the addresses it contacts,
+    the identifiers it assembles), but it cannot prove what the program actually does
+    when it runs.
+api:
+  term: API
+  long: Application Programming Interface
+  def: The entry point through which one program talks to another. Using a model "through
+    the API" means calling it directly from a program and paying per use, request
+    by request, instead of subscribing to a monthly plan.
+aprendizado-em-contexto:
+  term: In-context learning
+  def: When the model starts doing a new task just because the request included a
+    few examples of it, with no extra training. The parameters stay the same; the
+    effect lasts only for that conversation.
+aprendizado-por-reforco:
+  term: Reinforcement learning
+  def: Training by trial and reward (RL for short), in which the model is rewarded
+    when it gets things right. It works well wherever there is a cheap way to check
+    the result, such as a game score, a math exam or a code test.
+assembly:
+  term: Assembly
+  def: Assembly language. Each line maps almost directly to one processor instruction,
+    with short names in place of numbers. It is the closest to the machine that a
+    human can still read.
+ataque-cadeia-de-suprimentos:
+  term: Supply-chain attack
+  def: Breaking into a library (a package of ready-made code that other programs use)
+    or a third-party tool so that the malicious code reaches everyone who installs
+    it.
+atencao:
+  term: Attention
+  def: The core mechanism of the transformer. In each layer, every piece of text looks
+    at the pieces that came before it, weighs which ones matter to it at that moment
+    and blends a little of them into itself, like someone running a highlighter over
+    the relevant words.
+backup:
+  term: Backup
+  def: A copy of your data kept on another device or in another place (a separate
+    hard drive, another server, the cloud) so you can recover what was lost. It only
+    counts if it has been tested and does not live on the same disk as the original.
+banco-vetorial:
+  term: Vector database
+  def: A database built to store embeddings and quickly find the ones most similar
+    to a question. It was the centerpiece of classic RAG.
+benchmark:
+  term: Benchmark
+  def: A standardized exam, the same for every competitor and graded the same way,
+    used to compare systems. It measures one specific thing in one specific way, and
+    never "intelligence" in general.
+binario:
+  term: Binary
+  def: The file of a program after it has gone through the compiler, ready for the
+    computer to run. It keeps the machine instructions but loses the names, the comments
+    and the organization of the original code.
+bolha:
+  term: Bubble
+  def: A period in which the price of, or the expectations around, a technology climb
+    far beyond what it delivers, until an abrupt correction. The technology can stay
+    useful after the bubble bursts.
+bug:
+  term: Bug
+  def: A software defect. The program does something other than what it should, or
+    fails to do what it should.
+busca-lexical:
+  term: Lexical search
+  def: Searching for the literal word in the text, like the "find" command in an editor
+    or the grep tool. Simple, fast and easy to understand when it fails, unlike meaning-based
+    search done with embeddings.
+caixa-preta:
+  term: Black-box testing
+  def: Evaluating a system only by what goes in and what comes out, without seeing
+    what is inside. It helps rule out hypotheses about a closed model, but it does
+    not prove where the model came from.
+calibracao:
+  term: Calibration
+  def: How well the confidence a model states matches how often it is actually right.
+    A calibrated model that says "90%" is right about nine times in ten; a poorly
+    calibrated one may say 90% about a coin toss.
+cartao-perfurado:
+  term: Punched card
+  def: A stiff paper card on which data and instructions were recorded as holes in
+    agreed positions. For decades it was how programs were fed to computers, one card
+    per line, in a deck that had to stay in the right order.
+ci:
+  term: CI
+  long: Continuous Integration
+  def: A server that, on every change to the code, runs all of the project's tests
+    and checks on its own and warns when something broke.
+circuit-breaker:
+  term: Circuit breaker
+  def: The software version of the breaker in a fuse box. When an outside service
+    fails or complains about too many requests, the program stops calling it for a
+    while and carries on without it, instead of insisting with an avalanche of retries.
+classificador:
+  term: Classifier
+  def: A model that receives a text and picks one option from a closed list (for example,
+    "critical", "degraded" or "routine"), following the rules it was given. It works
+    like a post office sorting envelopes into bins, and it has existed for decades.
+codigo-aberto:
+  term: Open source
+  def: Software whose code is published under a license that lets anyone read, modify
+    and redistribute it. It differs from an open-weight model, which publishes only
+    the weights of an AI model.
+codigo-morto:
+  term: Dead code
+  def: Bits of code that stayed in the project but are no longer used by anything.
+    They cause no visible error, but they confuse whoever reads them, AI agents included.
+codigo-nativo:
+  term: Native code
+  def: A program already converted into machine instructions, usually written in C
+    or C++. It runs fast and practically never becomes readable again, even with reverse
+    engineering tools.
+commit:
+  term: Commit
+  def: A saved point in the history of a software project, with the changes made and
+    a message explaining what and why. You can go back to any earlier commit.
+compactacao:
+  term: Compaction
+  def: When the conversation with an agent gets close to the limit of the context
+    window, the agent asks the model for a summary of what happened, throws away the
+    original conversation and continues from the summary. The space comes back; the
+    details are lost.
+compilador:
+  term: Compiler
+  def: A program that translates code written in a programming language, closer to
+    human language, into the instructions the processor executes. It also rejects
+    programs with certain errors before they run.
+condicao-de-corrida:
+  term: Race condition
+  def: A bug that only happens when two operations arrive at the same time and one
+    tramples the other, like two simultaneous clicks that read the same counter before
+    either one writes the new value.
+contaminacao:
+  term: Contamination
+  def: When the questions or answers of a test leak into the model's training material,
+    so the model remembers the answer instead of solving the problem.
+conteiner:
+  term: Container
+  def: A light, isolated environment where a program runs together with the pieces
+    it needs, without mixing with the rest of the system. Docker and Podman are the
+    best-known tools.
+contexto:
+  term: Context
+  def: 'All the text the model sees at a given moment: the conversation, the files
+    it has read, the instructions. The app resends this whole bundle with every request,
+    and anything left out of it does not exist as far as the model is concerned.'
+copy-on-write:
+  term: Copy-on-write
+  def: 'A way of organizing a disk in which data is never overwritten in place: the
+    new version goes somewhere else and only the index changes. It is what makes snapshots
+    instant and nearly free.'
+curva-em-s:
+  term: S-curve
+  def: The shape a technology's progress usually traces over time. It starts slow,
+    climbs fast and then flattens out, when each improvement costs much more than
+    the one before.
+deepfake:
+  term: Deepfake
+  def: A fake video, image or audio of a real person, generated or altered by AI in
+    a convincing way.
+deploy:
+  term: Deploy
+  def: The moment the software leaves the programmer's machine and is installed on
+    the server where real people will use it. Putting it live.
+descida-do-gradiente:
+  term: Gradient descent
+  def: The way a neural network is trained. On each round, the size of the error is
+    measured and every parameter is nudged a tiny bit in the direction that shrinks
+    that error, like someone walking down a hill in the fog by feeling the slope under
+    their feet.
+destilacao:
+  term: Distillation
+  def: Training a smaller model, the student, to imitate the answers of a bigger one,
+    the teacher. It transfers style well, and knowledge less reliably.
+divida-tecnica:
+  term: Technical debt
+  def: The accumulated cost of shortcuts in the code, such as giant files, duplication
+    and missing tests. Every future change gets slower and riskier until someone stops
+    to pay down the debt.
+editor-de-codigo:
+  term: Code editor
+  def: The program where a programmer types and organizes code, line by line, with
+    helpers such as colors, search and suggestions. VS Code is the most popular one.
+embedding:
+  term: Embedding
+  def: A list of numbers that represents the "meaning" of a piece of text. Texts with
+    similar meanings become similar lists, which makes it possible to search by subject
+    instead of by exact word.
+emulador:
+  term: Emulator
+  def: A program that imitates another computer or game console, so the programs made
+    for that machine can run on a different one.
+engenharia-reversa:
+  term: Reverse engineering
+  def: Figuring out how a program works inside, starting from the finished program
+    and without access to the original code, like a mechanic taking apart a competitor's
+    engine without the factory blueprints.
+feature-flag:
+  term: Feature flag
+  def: A switch in the software that turns a new feature on or off without installing
+    a different version. It lets you show the change to only some of the users first
+    and switch it off at once if something goes wrong.
+fine-tuning:
+  term: Fine-tuning
+  def: Extra training, applied to a finished model with specific data, to specialize
+    it in a task or a way of working.
+fingerprint:
+  term: Fingerprint
+  def: A device's fingerprint. An identifier built by combining dozens of characteristics
+    of a phone or computer, which recognizes the device even without cookies or a
+    login and often survives wiping the data and reinstalling the app.
+fomo:
+  term: FOMO
+  long: Fear of Missing Out
+  def: The fear of missing the boat, of being left behind while everyone else adopts
+    the new thing. A classic lever for selling courses, tools and methodologies.
+fonte-primaria:
+  term: Primary source
+  def: The origin of a piece of data or a claim, such as the original study, the official
+    statistics, the court ruling or the contract. It is worth more than any number
+    of texts that repeat it.
+fork:
+  term: Fork
+  def: A copy of an open source project that someone starts maintaining on their own,
+    with their own changes, and that may or may not keep up with updates to the original.
+fosso:
+  term: Moat
+  def: In business jargon, whatever protects a company from the competition and is
+    hard to copy, like the water-filled moat around a castle. It can be a brand, exclusive
+    data, a network of customers or a technology that is expensive to reproduce.
+gateway:
+  term: Gateway
+  def: A program that sits at the front door between the internet and your services,
+    holding the access keys. In the case of agents, it receives messages from chat
+    apps and passes them on to an AI model that can act on your computer.
+gpu:
+  term: GPU
+  long: Graphics Processing Unit
+  def: The chip on a graphics card. It was born to draw games, and because it does
+    many simple calculations in parallel it became the hardware used to train and
+    run AI models.
+grep:
+  term: Grep
+  def: 'A lexical search tool: it finds an exact piece of text across many files at
+    once. It is the fastest and cheapest way for an agent to find where something
+    lives in the code.'
+harness:
+  term: Harness
+  def: 'The program around the model that turns it into an agent: it assembles the
+    system prompt and the tools, runs whatever the model asks for and hands back the
+    result, in a loop. Claude Code, Codex and OpenCode are harnesses.'
+heuristica:
+  term: Heuristic
+  def: A set of hand-written rules describing how we imagine a problem usually behaves.
+    It works well in the cases someone foresaw and breaks in the ones nobody did.
+hook:
+  term: Hook
+  def: A small program that a tool fires on its own when an event happens, such as
+    the start of a session or the use of a command. It is how ai-memory records what
+    the agent did without anyone asking.
+id-de-publicidade:
+  term: Advertising ID
+  def: A code the phone's operating system hands to apps and advertisers to identify
+    the device in ad campaigns. The user can reset it in the settings or, on Android,
+    delete it.
+idempotencia:
+  term: Idempotency
+  def: The property of an operation that can run several times in a row with the same
+    result as running it once, without duplicating or corrupting data.
+inferencia:
+  term: Inference
+  def: Using an already trained model to generate answers. It is what happens every
+    time you send a question, and the model's parameters stay unchanged throughout.
+ipo:
+  term: IPO
+  long: Initial Public Offering
+  def: The moment a private company starts selling shares on the stock exchange to
+    any investor. On the eve of it, the company has every incentive to look bigger
+    and more promising than it is.
+janela-de-contexto:
+  term: Context window
+  def: The maximum amount of context a model can see at once, measured in tokens.
+kv-cache:
+  term: KV cache
+  def: The notes the model keeps about each piece of context it has already read,
+    so it does not have to reread everything for each new word. It grows along with
+    the conversation and takes up the same VRAM as the weights.
+largura-de-banda:
+  term: Memory bandwidth
+  def: How many gigabytes per second can travel from memory to where the math happens.
+    Since the model consults every weight it uses for each token, this is what sets
+    the speed of an AI running on your own computer.
+lei-de-escala:
+  term: Scaling law
+  def: 'A relationship observed in 2020: a model''s error drops predictably as the
+    size, the data and the computing power used in training grow. It inspired the
+    race for ever bigger models.'
+llm:
+  term: LLM
+  long: Large Language Model
+  def: A program trained on an enormous amount of text to calculate which next piece
+    of text is most likely. ChatGPT, Claude and Gemini are LLMs.
+maquina-virtual:
+  term: Virtual machine
+  def: An entire computer simulated by software inside another one (VM for short).
+    Whatever runs inside stays separate from the real system, and the machine can
+    be thrown away afterwards.
+markdown:
+  term: Markdown
+  def: A way of writing plain text with simple marks, such as asterisks for bold and
+    a hash sign for a heading. The file stays readable in any text editor and can
+    be converted into a formatted page.
+mcp:
+  term: MCP
+  long: Model Context Protocol
+  def: 'An open standard for connecting tools and data sources to AI agents, like
+    a standard wall socket: the same tool works with many agents. Created by Anthropic
+    in 2024 and donated to an independent foundation in 2025.'
+mcts:
+  term: Monte Carlo tree search
+  def: A technique in which the program simulates many games from the current position,
+    with moves picked partly at random, and prefers the move that most often led to
+    a win (MCTS for short). It greatly improved Go programs, and AlphaGo still used
+    it alongside neural networks.
+memoria-de-agente:
+  term: Agent memory
+  def: Text notes that an AI agent writes to files and rereads at the start of each
+    session. The model itself keeps nothing between conversations; its "memory" is
+    whatever it reads.
+memoria-unificada:
+  term: Unified memory
+  def: A single pool of memory shared between the processor and the graphics part
+    of the chip, in place of separate memories. It lets you give the AI much more
+    memory, but it is usually slower than the memory on a dedicated graphics card.
+mescla-de-modelos:
+  term: Model merging
+  def: Creating a new model by taking a weighted average of the weights of two compatible,
+    already trained models. It costs far less than training, and the result inherits
+    the qualities, and the authorship, of both.
+mock:
+  term: Mock
+  def: A stand-in used in tests that pretends to be an outside service (email, a bank,
+    an AI model) and always answers in the agreed way. It makes the test fast and
+    cheap, but it hides how the real service behaves.
+modelo-aberto:
+  term: Open-weight model
+  def: A model whose weights are published for anyone to download and run on their
+    own computer. That does not mean the training data or the code used for training
+    are public.
+modelo-de-fronteira:
+  term: Frontier model
+  def: The name the industry gives to the most capable models of the moment, the flagships
+    of companies like Anthropic, OpenAI and Google, usually commercial.
+modelo-pre-treinado:
+  term: Pretrained model
+  def: A model that someone has already trained on thousands of examples and published
+    ready to use for a task, such as finding speech balloons on a comic page. Instead
+    of writing the rules by hand, you reuse what it learned from the data. Not to
+    be confused with pretraining, the first phase of training an LLM.
+modo-yolo:
+  term: YOLO mode
+  def: A setting in which the AI agent runs any command without asking for confirmation
+    at each step. The name comes from "you only live once"; it saves patience and
+    removes the last safety catch before a mistake.
+moe:
+  term: MoE
+  long: Mixture of Experts
+  def: An architecture in which the model is split into blocks and a small router
+    picks, for each token, the few blocks that will do the work. This makes running
+    giant models cheaper and faster.
+nivel-de-esforco:
+  term: Reasoning effort
+  def: A setting that controls how much a reasoning model "thinks" in writing before
+    it answers. High effort spends more tokens and time and makes fewer mistakes on
+    hard tasks.
+ocr:
+  term: OCR
+  long: Optical Character Recognition
+  def: Automatic recognition of text in an image. It turns photographed or drawn letters
+    into text the computer can read and process.
+ofuscacao:
+  term: Obfuscation
+  def: A technique that deliberately scrambles the names and structure of a program
+    to make it hard for anyone to understand once they open it.
+one-shot-prompt:
+  term: One-shot prompt
+  def: The idea of describing everything you want in a single request to the AI and
+    getting the finished system back, with no conversation or corrections afterwards.
+    It works for a demo; real software does not come out that way.
+oraculo:
+  term: Oracle
+  def: An outside checker that says whether an answer is right by measuring reality,
+    independent of the opinion of whoever produced the answer. An automated test,
+    a measurement or a comparison with a trusted reference are oracles, and they give
+    an AI agent a way to know it got something wrong.
+pair-programming:
+  term: Pair programming
+  def: Two people working on the same code at the same time, one typing and the other
+    reviewing and steering. With AI, the agent usually types and the human navigates.
+papagaio-estocastico:
+  term: Stochastic parrot
+  def: A critical nickname for LLMs. Something that repeats patterns from what it
+    learned, with a dose of randomness thrown in, without understanding what it says;
+    "stochastic" means "with chance built in".
+parametros:
+  term: Parameters
+  def: The numbers adjusted during training that hold what the model learned, like
+    billions of knobs on a sound mixing desk. "70B" means 70 billion parameters.
+pesos:
+  term: Weights
+  def: Another name for parameters. After training they are frozen; the model learns
+    nothing new while you use it.
+phishing:
+  term: Phishing
+  def: A scam in which a message poses as someone trustworthy (a bank, a company,
+    a journalist, a relative) to get the victim to hand over a password, data, money
+    or access to an account.
+po:
+  term: PO
+  def: Short for Product Owner. The person on a software team who decides what should
+    be built and in what order, based on the business goal.
+pos-treino:
+  term: Post-training
+  def: Training done after pretraining to teach the model to follow instructions,
+    use tools or work as an agent. It is often what separates a useful model from
+    one that only continues text.
+pre-treino:
+  term: Pretraining
+  def: The first and most expensive phase of training an LLM, in which it learns to
+    guess the next piece of text across a mountain of web pages, books and code. The
+    result only knows how to continue documents; it does not behave like an assistant
+    yet.
+producao:
+  term: Production
+  def: The real system, the one serving users and customers. The opposite of the development
+    and test environments, where mistakes are cheap.
+prompt:
+  term: Prompt
+  def: The text you write asking the model for something.
+prompt-caching:
+  term: Prompt caching
+  def: The server keeps the processing of the opening part of a conversation, which
+    repeats with every request, and charges much less when it comes back. It cuts
+    the cost of long conversations and agents a lot.
+prompt-injection:
+  term: Prompt injection
+  def: Orders hidden in a text the AI is going to read (a web page, an email, an instructions
+    file), written so that it obeys whoever wrote the text instead of whoever is using
+    the tool. There is no known cure; the best protection is limiting what the agent
+    can do and requiring human approval for dangerous actions.
+proxy:
+  term: Proxy
+  def: A middleman that receives requests and passes them on to another service. A
+    transparent proxy just forwards them, so the user may think they are talking to
+    one system when they are really talking to another.
+pull-request:
+  term: Pull request
+  def: A formal request to bring a change into a software project, usually from someone
+    else. The project owner reviews it and decides whether to accept it.
+qa:
+  term: QA
+  long: Quality Assurance
+  def: The role, or the person, responsible for testing the software and turning the
+    expected behavior into checks, preferably automated ones.
+quantizacao:
+  term: Quantization
+  def: Storing the model's weights with less numerical precision, like rounding every
+    price in a supermarket to the nearest whole real (the Brazilian currency). The
+    model then fits in much less memory, with some loss of quality that grows the
+    more you round.
+raciocinio:
+  term: Reasoning
+  def: A mode in which the model writes a long chain of "thought" before its final
+    answer, spending more tokens to make fewer mistakes.
+rag:
+  term: RAG
+  long: Retrieval-Augmented Generation
+  def: Before the model answers, a separate system searches the documents for the
+    relevant passages and puts only those passages into the context.
+rede-neural:
+  term: Neural network
+  def: A program made of many simple units linked by connections with adjustable weights,
+    loosely inspired by neurons. It learns by adjusting those weights from examples.
+    Every LLM is a neural network.
+refatoracao:
+  term: Refactoring
+  def: Reorganizing code without changing what it does, so it becomes easier to understand
+    and to change later.
+regressao:
+  term: Regression
+  def: Something that worked in an earlier version of a program and stopped working
+    after a change.
+retropropagacao:
+  term: Backpropagation
+  def: The technique that spreads the blame for an error across all the parameters
+    of a neural network with many layers, passing the error from the output back toward
+    the input. It is what makes gradient descent possible in large networks.
+revisao-adversarial:
+  term: Adversarial review
+  def: A review done by someone (a person or a separate agent, with a clean context)
+    whose job is to hunt for flaws in another's work instead of confirming that it
+    is right.
+reward-hacking:
+  term: Reward hacking
+  def: When a system trained to maximize a score finds a shortcut that earns points
+    without doing the task, like cheating on an exam instead of solving it. The flaw
+    lies in the score that people designed; the system has no will of its own in the
+    matter.
+rlhf:
+  term: RLHF
+  long: Reinforcement Learning from Human Feedback
+  def: A training stage in which people rate the model's answers and the model is
+    adjusted to produce more of the kind they approved. It makes the chatbot more
+    pleasant and is one of the sources of sycophancy.
+rollback:
+  term: Rollback
+  def: Returning the system to the previous version when a change that just went live
+    causes trouble. It undoes the code, but it cannot undo what the faulty version
+    already did in the world, such as a payment that went through.
+root:
+  term: Root
+  def: The administrator account on systems like Linux and macOS. It can read, change
+    and delete anything, including the system itself.
+rubrica:
+  term: Rubric
+  def: The list of weighted criteria a grader uses to turn a piece of work into a
+    score. Two different rubrics give different scores to the same work.
+ruido-entre-execucoes:
+  term: Run-to-run noise
+  def: The variation in score that shows up when the same test is repeated with the
+    same model, changing nothing. Differences smaller than this noise do not prove
+    that one model is better than another.
+saas:
+  term: SaaS
+  long: Software as a Service
+  def: Software that runs on the vendor's servers and is used through the browser
+    or an app, for a subscription fee. The code that matters never reaches the customer's
+    machine.
+sandbox:
+  term: Sandbox
+  def: An isolated environment in which a program can only see and change what you
+    allowed, like a child playing freely in a sandbox without the sand spilling into
+    the rest of the yard.
+saturacao:
+  term: Saturation
+  def: When a test becomes too easy for the top competitors and nearly all of them
+    get the maximum score. The test still separates the good from the bad, but it
+    no longer separates the good from each other.
+sdk:
+  term: SDK
+  long: Software Development Kit
+  def: A ready-made package from another company that a programmer plugs into their
+    app instead of writing it from scratch, for things like analytics, ads or crash
+    reports. Each SDK can collect data on its own.
+seguranca-por-obscuridade:
+  term: Security through obscurity
+  def: Protection that only works as long as nobody finds out how it is built. When
+    the secret leaks or someone examines the program, the protection is gone; a real
+    lock stays locked even when the burglar knows its make.
+sicofancia:
+  term: Sycophancy
+  def: Flattery. The model's tendency to agree with you and tell you what you want
+    to hear, because it was trained to please.
+skill:
+  term: Skill
+  def: A folder with a reusable instructions file that teaches an agent how to carry
+    out a kind of task, sometimes with small helper programs. In practice, a prompt
+    that has been saved, refined and kept ready to use.
+slop:
+  term: Slop
+  def: Slang for AI-generated content churned out in bulk and without care, which
+    takes up space and is good for very little. In code, it is the program that works
+    in the demo and falls apart when someone touches it.
+snapshot:
+  term: Snapshot
+  def: An instant picture of a disk or folder at a given moment, which lets you go
+    back to exactly that state. It lives on the same disk as the data, so it cannot
+    replace a backup.
+source-map:
+  term: Source map
+  def: A helper file that links the squeezed and scrambled code of a published program
+    back to the original readable code, to help find where an error happened. When
+    it ships in the package by mistake, it can expose the entire original code.
+spec-driven:
+  term: Spec-driven development
+  def: A way of using coding agents in which you first write a detailed document (scope,
+    use cases, acceptance criteria, constraints) and only then hand it to the agent
+    to implement.
+staging:
+  term: Staging
+  def: A copy of the production system, with the same configuration, where changes
+    go and get tested before they reach any real customer.
+system-prompt:
+  term: System prompt
+  def: The instructions the tool's maker places before your message, telling the model
+    who it is, how it should behave and what it may or may not do.
+tdd:
+  term: TDD
+  long: Test-Driven Development
+  def: Writing first the test that defines the expected behavior and only then the
+    code that satisfies it; every bug that gets fixed gains a test that keeps it from
+    coming back.
+temperatura:
+  term: Temperature
+  def: A setting that controls how much chance goes into drawing the next token. Low
+    makes answers predictable; high lets in less obvious choices, more varied and
+    more prone to error.
+teste-automatizado:
+  term: Automated test
+  def: A small program that checks whether another part of the code does what it should.
+    It runs on its own, in seconds, and warns when a change broke something that used
+    to work.
+teste-de-integracao:
+  term: Integration test
+  def: A test that runs several parts of the system together for real, with real services
+    and data, instead of isolated pieces with stand-ins for the rest.
+tier:
+  term: Tier
+  def: A ranking band in a model comparison table (A, B, C, D) that groups close scores
+    together instead of treating every point of difference as real.
+tipagem-forte:
+  term: Strong typing
+  def: A trait of languages in which every value has a declared or inferred type (number,
+    text, list) and the compiler rejects the program when the types do not match.
+    It catches some errors before the program runs, at the cost of more paperwork
+    while writing.
+token:
+  term: Token
+  def: The piece of text the model works with, usually a fragment of a word. Models
+    read, write and charge by the token.
+tokenizador:
+  term: Tokenizer
+  def: The part of the model that breaks text into tokens before any processing. Each
+    family of models has its own vocabulary, and whoever fine-tunes a model inherits
+    its tokenizer, which makes it a clue to a model's lineage.
+tool-calling:
+  term: Tool calling
+  def: The model writes, in an agreed format, a request like "read such-and-such file";
+    the program around it actually carries it out and feeds the result back into the
+    conversation.
+transformer:
+  term: Transformer
+  def: The neural network architecture published by Google researchers in 2017 that
+    underlies every current LLM. Its centerpiece is the attention mechanism.
+treinamento:
+  term: Training
+  def: The phase, done by the company before launch, in which the model reads a mountain
+    of text and has its parameters adjusted after every prediction error. It takes
+    weeks or months and costs millions; after it, the weights are frozen.
+tts:
+  term: TTS
+  long: Text-to-Speech
+  def: Speech synthesis. A model that turns written text into speech, sometimes imitating
+    the voice of a specific person.
+tui:
+  term: TUI
+  long: Text User Interface
+  def: A full-screen app that runs inside the terminal, the text window where programmers
+    type commands, with menus, tables and panels drawn out of letters and symbols
+    instead of graphical windows.
+verificacao-formal:
+  term: Formal verification
+  def: Proving mathematically, with the help of a checker program, that code follows
+    certain rules written down in advance. It goes further than tests, which only
+    check the cases someone remembered to test, but it usually covers only a small
+    part of a real system.
+vibe-coding:
+  term: Vibe coding
+  def: Programming by describing what you want, in plain language, to an AI agent
+    and letting it write the code, while you just look, test and ask for the next
+    thing.
+vram:
+  term: VRAM
+  long: Video Random Access Memory
+  def: The graphics card's own memory. The model's weights have to fit in it entirely,
+    so it determines the size of model the card can run.
+vulnerabilidade:
+  term: Vulnerability
+  def: A flaw in a program that lets an outsider do what they should not, such as
+    reading other people's data or running commands. It is usually rated by severity,
+    from low to critical.
+watermark:
+  term: Watermark
+  def: In AI-generated text, an invisible statistical tilt in word choices, steered
+    by a secret key, that lets the maker estimate whether its model was involved.
+    It disappears when another model rewrites the text.
+xp:
+  term: XP
+  long: Extreme Programming
+  def: A software development methodology built on short cycles, pair programming,
+    automated tests, continuous integration and small, frequent releases.

@@ -71,7 +71,7 @@ Essa lista é mais longa, e libera mais tempo:
 - anúncio de [AGI]{.gls key=agi}, de extinção, de modelo perigoso demais pra lançar. O roteiro existe pelo menos desde 2019 (@sec-ch01), e @sec-ch14 mostra quem lucra com ele;
 - briga de ranking por décimo de ponto. No topo, os modelos formam um grupo, e a diferença entre eles cabe no [ruído entre execuções]{.gls key=ruido-entre-execucoes} (@sec-ch11);
 - a promessa de que o próximo modelo resolve. Os números de @sec-ch20 mostram uma linha reta lá em cima, e o que muda o resultado é o processo em volta;
-- o vídeo do aplicativo feito em dez minutos. A primeira hora é a parte fácil, e os outros noventa por cento estão em @sec-ch05.
+- o vídeo do aplicativo feito em dez minutos. As primeiras horas são a parte fácil, e os outros noventa por cento estão em @sec-ch05.
 
 ## Confira você mesmo
 

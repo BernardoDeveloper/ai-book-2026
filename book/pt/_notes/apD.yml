@@ -6,3 +6,5 @@ notes:
 integration:
   - "Private repo name removed: entry '**gg-to-sms.**' renamed '**Conversor de Game Gear.**' (repo not resolvable on GitHub; notes listed it as unlinked/private). nes-to-sms is public and stays."
   - "All 32 cited akitaonrails repos re-checked PUBLIC via gh on 13 Oct 2026. Status lines checked against ch07 (Sherlock 0.7, 621 tests), ch10 (grades, ai-jail 8 with Chronicles), ch16 (FrankClaw ~57k lines, 178 commits), ch18 (PACT), ch20 (nes-to-sms 349 commits, Game Gear 186 conversions)."
+cutoff_february:
+  - "Removed Chat em Zig (01/09) and TV Clipboard (01/28) entries + akita2026tvclipboard ref; folded 'A jaula em script' into the ai-jail entry; heading 'Fevereiro: os primeiros'; FrankMD 'feito em três dias, na virada de janeiro pra fevereiro'."

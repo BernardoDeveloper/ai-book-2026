@@ -8,3 +8,5 @@ notes:
 integration:
   - "Checked promises: part entry points (ch01, ch05, ch11, ch15, ch18) match outline; apmecanica, apB, apD exist and match their lines; Part IV phone-apps promise matches ch17; @sec-glossario/@sec-bibliografia/@sec-fontes/@sec-creditos exist; Fontes is per chapter; Créditos covers AI illustrations and photos. No text changes needed."
   - "OPEN: apA (timeline 2017 -> Oct 2026) and apC (two checklists) do not exist yet; the list follows their outline briefs. If either is cut or changes scope, edit the bullet list."
+cutoff_february:
+  - "Book span: 'um ano, 2026' / 'entre janeiro e outubro' -> fevereiro a outubro."

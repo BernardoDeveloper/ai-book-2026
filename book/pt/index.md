@@ -7,6 +7,7 @@ sources:
   - {post: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso, sha256: "23ccf942d2fcc8114fb4b373b17acce392e0711e3556436f6cfe3aab97cc3ac2"}
   - {post: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic, sha256: "ce3ac52806404b9410bbe7b38962bc96d1beaff182ad194e2dbc1f18630c5d30"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "ee499fef89fe8fe35d652f193b51f1660cd08e8ed77adee74e036ca1444cc54b"}
+  - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "fe55c3fbbd2ecbd0b51b059c1f46bf9e308b8b6a25c5953ffac9ad43d23f6839"}
 refs_projects: []
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 ---
@@ -37,7 +38,7 @@ Depois vieram meses colocando dezenas de modelos numa prova de programação que
 <!-- src: original -->
 A distância entre os dois mundos ia nos dois sentidos. Em vários pontos a ferramenta era melhor do que os céticos admitiam: dá pra construir software de verdade com ela, e eu construí. Em outros, era bem pior do que os anúncios vendiam. Ela erra com a maior confiança, concorda com qualquer coisa que você já pensava, esquece o que foi combinado uma hora antes e precisa de alguém experiente conferindo o que sai.
 
-Este livro nasceu dessa distância. É o relato de um ano colocando a inteligência artificial à prova, contado por quem estava com as mãos no teclado.
+Este livro nasceu dessa distância. É o relato de oito meses colocando a inteligência artificial à prova, de fevereiro a outubro de 2026, contado por quem estava com as mãos no teclado.
 
 ## Pra quem eu escrevi
 
@@ -63,7 +64,7 @@ Eu programo desde o fim dos anos 80, escrevo num blog desde 2006 e passei seis a
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
 Muita gente me conhece por uma frase sobre empolgação e conhecimento, que você vai encontrar logo no primeiro capítulo. Por causa dela, uma turma acha que eu odeio IA. Por causa do que eu fiz em 2026, outra turma acha que eu me rendi a ela. As duas erram pelo mesmo motivo: imaginam que só existem esses dois lados.
 
-Eu uso IA pra programar desde o começo de 2023. Gosto da ferramenta, uso todo dia, e ela participou de quase tudo que você vai ler aqui. Ao mesmo tempo, passei o ano inteiro documentando os limites dela, porque é essa parte que some da conversa pública.
+Eu uso IA pra programar desde o começo de 2023. Gosto da ferramenta, uso todo dia, e ela participou de quase tudo que você vai ler aqui. Ao mesmo tempo, passei esses meses todos documentando os limites dela, porque é essa parte que some da conversa pública.
 
 <!-- src: original -->
 O empolgado demais e o que odeia demais têm uma coisa em comum: os dois costumam falar sem ter medido nada. Por isso o método deste livro é medir. Quando eu digo que um modelo foi bem, é porque ele passou numa prova que você vai ver como foi montada. Quando eu digo que errou, você vai ver o erro.
@@ -74,12 +75,12 @@ E quando o erro foi meu, o livro conta também. Teve ranking que eu publiquei, d
 
 ## Os medos que você trouxe
 
-<!-- src: original -->
+<!-- src: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2 -->
 O livro segue o meu ano, mais ou menos na ordem em que as coisas aconteceram. Cada uma das cinco partes responde a um medo que eu ouvi muitas e muitas vezes.
 
 O primeiro é o mais antigo: tem alguém ali dentro? A primeira parte abre a caixa, sem matemática. Mostra por que o texto que sai de um chatbot parece vir de alguém, por que ele esquece o que vocês combinaram, o que muda quando ele ganha ferramentas pra mexer no seu computador, e por que tende a concordar com você e inventar fontes pra isso. Só entender esse mecanismo já protege bastante.
 
-O segundo medo é o oposto do primeiro: e se for tudo só demonstração? Na segunda parte eu conto a maratona. Tem o aplicativo que funcionou em uma hora e deu trabalho por dias, o produto que foi do zero ao ar em menos de uma semana, e o projeto que fracassou mesmo com a máquina fazendo tudo o que eu pedia. Funciona, só que de um jeito bem diferente do que aparece nos vídeos de "fiz um app em dez minutos".
+O segundo medo é o oposto do primeiro: e se for tudo só demonstração? Na segunda parte eu conto a maratona. Tem o editor de texto que parecia pronto em hora e meia e precisou de umas trinta horas pra funcionar de verdade, o produto que foi do zero ao ar em menos de uma semana, e o projeto que fracassou mesmo com a máquina fazendo tudo o que eu pedia. Funciona, só que de um jeito bem diferente do que aparece nos vídeos de "fiz um app em dez minutos".
 
 O terceiro vem em forma de pergunta: qual é a melhor? Ela está ficando exponencialmente mais inteligente? Devo acreditar nos anúncios? A terceira parte é a briga com os números: como se mede uma IA, os modelos que eu peguei colando na prova, o que dá pra rodar no computador de casa e como funciona a fábrica de propaganda em volta de tudo isso.
 
@@ -92,7 +93,7 @@ Entre as partes há dois interlúdios mais leves, pra respirar. E, pra quem quis
 ## Como este livro foi feito
 
 <!-- src: original -->
-Tudo que está aqui começou como texto no meu blog, escrito ao longo de 2026, quase sempre no calor do experimento: quase cem textos em que a IA era o assunto principal ou boa parte dele. Pra virar livro, fiz o que o livro inteiro recomenda. Agentes de IA fizeram o trabalho braçal de reorganizar e reescrever, seguindo regras escritas sobre a minha voz e conferindo cada afirmação contra a fonte. A palavra final é minha: nenhum capítulo entra no livro sem que eu leia e aprove, do mesmo jeito que faço com o código que um agente escreve pra mim.
+Tudo que está aqui começou como texto no meu blog, escrito ao longo de 2026, quase sempre no calor do experimento: dezenas de textos em que a IA era o assunto principal ou boa parte dele. Pra virar livro, fiz o que o livro inteiro recomenda. Agentes de IA fizeram o trabalho braçal de reorganizar e reescrever, seguindo regras escritas sobre a minha voz e conferindo cada afirmação contra a fonte. A palavra final é minha: nenhum capítulo entra no livro sem que eu leia e aprove, do mesmo jeito que faço com o código que um agente escreve pra mim.
 
 > A máquina faz o trabalho braçal, alguma coisa de fora confere, e alguém que entende do assunto decide.
 

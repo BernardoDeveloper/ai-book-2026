@@ -2,7 +2,6 @@
 id: apB
 chapter: "Kit mínimo para usar agentes com segurança"
 sources:
-  - {post: 2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema, sha256: "4c69f21b41a7d410a4bb469d0b482a385b6545ec753171858a52c93b6599a809"}
   - {post: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real, sha256: "9f3b13a3c124f69e6a832ef5d6b8e4218d7dab134f639e8bad41c70580feebbb"}
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "247ad116f3c45c935f8a59156a72b8852733e259c70b65044f19fb56c6d32f3b"}
   - {post: 2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar, sha256: "f4efb1344b38638f025ff0b617ac8ff0311ed4b0adaabf7b6ae8ed13a08526e8"}
@@ -62,7 +61,7 @@ O último item parece detalhe e foi o furo que mais me ensinou no ano. O Docker,
 ### Como montar, em cada sistema
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-No Linux, a peça básica é o bubblewrap, o mesmo isolador que o Flatpak usa pros aplicativos instalados por ele. Ele monta pro programa uma visão falsa do sistema, com as pastas que você escolher. Em cima dele dá pra escrever um script próprio, que foi o que eu fiz em janeiro, ou usar uma ferramenta pronta.
+No Linux, a peça básica é o bubblewrap, o mesmo isolador que o Flatpak usa pros aplicativos instalados por ele. Ele monta pro programa uma visão falsa do sistema, com as pastas que você escolher. Em cima dele dá pra escrever um script próprio, que foi como eu comecei, ou usar uma ferramenta pronta.
 
 No macOS, o sistema tem um mecanismo de isolamento embutido, o `sandbox-exec`, que a Apple marca como obsoleto mas continua funcionando. É menos flexível que o do Linux, e algumas proteções funcionam só pela metade.
 
@@ -154,9 +153,10 @@ Se você não programa, a versão curta desta peça é a seguinte. No Mac, ligue
 
 ## 4. O que pode, o que pergunta, o que nunca
 
-<!-- src: 2026/01/10/ai-agents-garantindo-a-protecao-do-seu-sistema -->
+<!-- src: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas -->
 Por padrão, os agentes de programação pedem permissão antes de cada comando. É seguro e é exaustivo: depois da centésima confirmação de um comando inofensivo, você começa a apertar "sim" sem ler, e a trava perde o sentido. O outro extremo é o [modo YOLO]{.gls key=modo-yolo}, em que o agente executa tudo sem perguntar nada.
 
+<!-- src: ref:ai-jail/src/bootstrap.rs -->
 O meio-termo é uma lista de permissões em três colunas, que quase todo agente aceita num arquivo de configuração:
 
 - **pode sem perguntar**: comandos que só leem ou que são fáceis de desfazer, como ver o estado do repositório, listar arquivos, buscar texto, rodar os testes, gravar um commit local;
@@ -270,7 +270,7 @@ Por padrão, a pasta do projeto é gravável e a pasta pessoal é uma área temp
 Dois detalhes de uso que valem pra qualquer jaula. Arquivos de segredo dentro do próprio projeto, como o `.env`, ficam visíveis pro agente, a menos que você mande esconder com `--mask .env`. E o primeiro uso cria um arquivo `.ai-jail` na pasta, com a política daquele projeto, que pode ir pro repositório junto com o código. Como esse arquivo vem de dentro do projeto, a ferramenta desconfia dele: a menos que você marque aquela pasta como confiável na sua configuração pessoal, ele só consegue apertar a jaula, nunca afrouxar.
 
 <!-- src: ref:ai-jail/src/bootstrap.rs -->
-Por fim, a opção `--bootstrap` escreve configurações de permissão pro Claude Code, o Codex, o OpenCode, o Gemini CLI e o Crush. A do Claude Code é a lista de três colunas da peça 4, com o envio pro remoto no "pergunta antes" e o envio forçado no "nunca". Antes de sobrescrever qualquer arquivo, ela guarda uma cópia do antigo.
+Por fim, a opção `--bootstrap` escreve configurações de permissão pra cinco agentes, entre eles o Claude Code, o Codex, o OpenCode e o Gemini CLI. A do Claude Code é a lista de três colunas da peça 4, com o envio pro remoto no "pergunta antes" e o envio forçado no "nunca". Antes de sobrescrever qualquer arquivo, ela guarda uma cópia do antigo.
 
 ### ai-memory, as notas
 

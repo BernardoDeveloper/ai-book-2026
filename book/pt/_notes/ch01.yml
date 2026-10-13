@@ -15,3 +15,5 @@ integration:
   - "Ledger: image detail. The 02/08 image (file 'akita camiseta.jpg') shows Akita holding a white card with the phrase, garbled letters and his signature; text now says 'cartão' (was 'cartaz') and no longer suggests how the image was made (dropped 'o tipo de tropeço que gerador de imagem por IA cometia')."
   - "Ledger: 'Geoffrey Hinton' spelling already correct (only occurrence, AlexNet authors)."
   - "Verified unchanged: phrase origin in Akitando #135 transcript (5 Jan 2023, magic-trick comparison), 'como eu' quote (02/08), GPT-2 facts (14 Feb 2019, 10 tries, 1.5B, 8M pages/40GB, 5 Nov 2019), Rosenblatt (Jan 1957 report, Jul 1958 IBM 704 demo, NYT 8 Jul, died 1971 on 43rd birthday), AI Index costs, Eliza 1966, 31 March leak."
+cutoff_february:
+  - "Opening: January marathon (TV Clipboard + FrankMD) -> FrankMD post of 1 Feb (02/01 part-1, added to sources)."

@@ -16,3 +16,5 @@ integration:
   - "fingerprint owned here (device sense) confirmed; ch12 uses 'impressão digital de linhagem' per its notes. ch14 introduces Fable 5, so the @sec-ch14 callback holds."
   - "Verified, unchanged: app versions, 204 native libs, 91-app list, ~6 ad-ID third parties, libmetasec_ov, false-friend keylog/screenshot, Clash of Kings ~12k Lua scripts and four UUID copies, gov.br 3.8.4 findings, five attribution SDKs, ThreatMetrix."
   - "Hook from ch16 now reads 'No começo de julho', consistent with this opening."
+cutoff_february:
+  - "01/23 AI-3D aside (Nano Banana + Hunyuan 3D) removed; ref tencent2026hunyuan3d removed. Section now goes Sora line -> Deepfake subsection."

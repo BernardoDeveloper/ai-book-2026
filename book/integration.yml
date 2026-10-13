@@ -70,3 +70,5 @@ items:
     issue: "Before EN: chart scripts and render_diagram.rb write assets/figures/<fig>.png regardless of language, so an EN render overwrites PT. Make them write assets/figures/<lang>/... (or a build-time copy) and point each edition at its own figures."
   - chapters: [glossary]
     issue: "merge_glossary never overwrites curated entries, so some keys keep the first proposer's definition (e.g. prompt-injection from ch09, while ch16 owns it and has a fuller one in _gls/ch16.yml). Glossary editor pass: prefer the owner chapter's definition (continuity.yml explained_in), unify voice."
+  - chapters: [ch03, ch08, ch09]
+    issue: "After the February cut-off rewrite: ch03 now tells the April Claude Code vs Codex harness note (ch09:166 repeats it: shrink ch09's to a callback to @sec-ch03); ch03 teases the NES->SMS project, so ch08 should treat it as already mentioned (callback), not new."
