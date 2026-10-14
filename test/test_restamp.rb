@@ -110,10 +110,33 @@ class TestRestamp < ToolTest
     assert_exit 0, fx.run("drift", "--lang", "en")
   end
 
+  # Guards the unquoted hash some EN units were written with: restamp reads it
+  # and writes the quoted form.
+  def test_translation_unquoted_hash
+    fx.edit("book/en/ch01.md") { _1.sub(/sha256: "([0-9a-f]{64})"\}/, 'sha256: \\1}') }
+    fx.edit("book/pt/ch01.md") { _1 + "\nMais.\n" }
+    assert_exit 0, fx.run("restamp", "--translation", "ch01")
+    assert_equal %(translated_from: {file: book/pt/ch01.md, sha256: "#{fx.sha('book/pt/ch01.md')}"}), tf_line("book/en/ch01.md")
+  end
+
   # Guards typos: an unknown unit aborts.
   def test_translation_unknown_unit
     res = fx.run("restamp", "--translation", "nada")
     refute res.ok?
     assert_includes res.err, "unknown unit nada"
+  end
+
+  # Guards --parked: writes sources.yml with the current PT hash and blog commit
+  # of every post the parked material cites, and touches nothing else.
+  def test_parked_restamp
+    fx.write("book/parked/tema/pt-ch03.md", "<!-- src: #{POST} -->\nA.\n\n<!-- src: #{OTHER} -->\nB.\n\n<!-- src: original -->\nC.\n")
+    before = fx.read("book/pt/ch02.md")
+    assert_exit 0, fx.run("restamp", "--parked", "tema")
+    posts = fx.yaml("book/parked/tema/sources.yml")["posts"]
+    assert_equal [POST, OTHER].sort, posts.map { _1["post"] }.sort
+    assert_equal Fixture.sha(fx.post_path(POST)), posts.find { _1["post"] == POST }["sha256"]
+    assert_equal fx.blog_head, posts.first["commit"]
+    assert_equal before, fx.read("book/pt/ch02.md")
+    assert_exit 1, fx.run("restamp", "--parked", "nao-existe")
   end
 end

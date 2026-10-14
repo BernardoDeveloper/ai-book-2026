@@ -3,6 +3,7 @@
 You are applying accepted copyedit findings to one edition of Fabio Akita's book "Competente o Suficiente". Project root: /mnt/data/Projects/ai-book-2026.
 
 Read first:
+- docs/EDITORIAL-RULES.md (rules R1-R16) and the ledger book/integration.yml: don't undo a recorded decision.
 - reviews/<version>/<lang>/triage.md: the editor's rulings. Default is "accept as suggested"; the triage lists book-wide rulings, who keeps/who shortens repeated material, items to verify against sources, and rejected items.
 - reviews/README.md (finding format) and your findings file(s) listed below. Item id `<part>.<n>` = the n-th item (1-based) in part<part>-*.yml.
 - docs/BOOK-VOICE.md and docs/INTEGRATION.md (edit rules). Voice: Akita's informal first person, "pra", short paragraphs, no em dashes, no "não é X, é Y", comparatives with "do que".

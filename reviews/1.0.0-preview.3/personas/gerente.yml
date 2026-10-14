@@ -1,0 +1,228 @@
+persona: gerente
+summary: |
+  I came in with one worry: my board hired consultants to sell us an "AI transformation" and I cannot tell what is real. The book answered it, but late and in pieces. Chapter 14 (how to read an announcement), Appendix C (the two checklists) and Chapter 19 (why AI fails in a company, with the "before renewing the license" list) are the parts I would photocopy for my leadership team. Chapter 3 gave me the sentence I will repeat in meetings: you never use a model, you use a model plus the program around it, and the combination is what you test. Chapter 13 gave me the most operational idea for my business: keep the rule in code, and use the model only to turn messy text into a fact. What nearly made me quit: the long middle (chapters 8 to 12 and 15 to 17) is the author's lab diary, emulators, tokenizers, a NAS, TikTok internals. I skimmed a lot of it, and I never learned what any of this means for a logistics operation, because the book is almost entirely about software. I also kept doing arithmetic the book did not do for me: productivity multipliers that disagree between chapters (6-7x, 5x, 10x, then a study showing -19%), and a "noise" figure that rests on one repeated run. I trust the author more for admitting his own audit errors, but I would have liked one early page that says what to ask the consultants on Monday.
+best:
+  - "ch19: the Uber story and the closing 'Antes de renovar a licença' lists for managers and employees"
+  - "ch14: the eight questions for reading an announcement (who profits, against whom is the comparison, what is the ruler)"
+  - "ch03: the same model scored 24 or 91 depending on a forgotten plugin, so the harness is half the result"
+  - "ch13: a 4-billion-parameter classifier ties paid services, and 'zero' in the cost column of local AI is a lie"
+  - "apC: two one-page checklists (table and announcement) that I can hand to my team"
+worst:
+  - "ch12: pages of weight-merging and tokenizer fingerprints about a city hall model and a Brazilian startup the author says he cannot conclude on"
+  - "ch08: four days chasing a black screen in a PlayStation 4 emulator, and a Nintendo-to-Sega converter"
+  - "interlude2: the Go board and AlphaGo, charming but nothing for my decision"
+  - "ch17: the TikTok / Clash of Kings internals before the useful phishing habits"
+  - "ch15: copy jobs, 32 processes and 901 GB folders of a home NAS before the three rules I can reuse"
+units:
+  - {unit: index, score: 4, note: "Names me in the audience list and promises a mechanism, not hype; the Elektro opening is a bit long but the 'who profits from your anxiety' line hooked me."}
+  - {unit: como-ler, score: 3, note: "Good that it lets me skip, but it sends me to Part V's first chapter (programmers and punch cards), not to the ones about companies and announcements."}
+  - {unit: antes, score: 3, note: "An honest reading list; I will not read any of it, but I appreciate that the author says what he left out."}
+  - {unit: ch01, score: 3, note: "'Bubbles burst, technology stays' is exactly what I need in the boardroom; getting there through Rosenblatt and GPT-2 took too long."}
+  - {unit: ch02, score: 3, note: "The desk/context image is useful and the vector-database fad is the first consultant pitch I recognized; the leaked-code details drag."}
+  - {unit: ch03, score: 4, note: "Model plus harness is the best vendor-evaluation idea so far; I wish it had started with the business point instead of an error message."}
+  - {unit: ch04, score: 3, note: "Eight rules for serious questions are practical; the fact-checking tool's internals and the watermark mechanics lost me."}
+  - {unit: ch05, score: 3, note: "The 10 percent / 90 percent iceberg and 'what is left for people' list are clear; the editor's bug-by-bug story is a diary."}
+  - {unit: ch06, score: 4, note: "Finally numbers: only 37 percent of commits were features, the rest is what the demo hides. I wanted the productivity math to hold up."}
+  - {unit: ch07, score: 3, note: "'No one-shot prompt survives contact with users' is the point, repeated through four projects."}
+  - {unit: ch08, score: 2, note: "Emulators and black screens; the oracle idea matters to me but I only got it after a lot of console jargon."}
+  - {unit: ch09, score: 4, note: "The four-part request (want, how, do not want, how we know) is a briefing template I can give my team; the skills section is for programmers."}
+  - {unit: ch10, score: 3, note: "The report card is honest and the 'moat dried up' argument is relevant to strategy, but the evidence is the author's self-grades and anecdotes."}
+  - {unit: interlude1, score: 3, note: "Fun, and a real cost/quality data point (90 percent good, six refused texts), but it is the author's blog, not my business."}
+  - {unit: ch11, score: 3, note: "'How I read a table' is gold; I had to wade through model names and four benchmark versions to reach it."}
+  - {unit: ch12, score: 2, note: "Cheating models are a good warning; the Rio, Kimi and Genesys cases lost me in tokenizers and weight arithmetic."}
+  - {unit: ch13, score: 3, note: "Hardware half is more than I need; the classifier test and 'rule in code, model for text' half is the most useful thing for operations."}
+  - {unit: ch14, score: 4, note: "This is the chapter for my board: who profits, what is the ruler, who is the comparison against. Some of the September gossip is noise."}
+  - {unit: interlude2, score: 2, note: "I enjoyed the AlphaGo story for five minutes and learned nothing I can decide with."}
+  - {unit: ch15, score: 3, note: "The layers (jail, snapshot, backup, agents never in production) map to my IT risk list; the NAS saga is long."}
+  - {unit: ch16, score: 3, note: "The five questions for 'is AI-written software safe' are the keeper; the Bun versus Zig fight is not my fight."}
+  - {unit: ch17, score: 3, note: "The phishing-through-vanity part is something I should pass to my staff; the app reverse engineering was skimmed."}
+  - {unit: ch18, score: 3, note: "Punch-card analogy is neat and the junior-hiring advice is useful for HR; the language benchmark is irrelevant to me."}
+  - {unit: ch19, score: 5, note: "Finally someone says out loud that placar of usage rewards spending, and gives me a list of what to do before renewing the licenses."}
+  - {unit: ch20, score: 4, note: "The straight-line argument and the 'what would change my mind' list are board-ready; the AlphaEvolve and trained-on-public-code sections are heavier than needed."}
+  - {unit: epilogo, score: 4, note: "Clean list of what to learn and what to ignore; it is written for an individual, not for someone who must decide for a company."}
+  - {unit: posfacio, score: 3, note: "I like the traceability and the list of errors the checking caught; it reads as the author's own audit trail."}
+annotations:
+  - unit: como-ler
+    quote: 'Cada parte começa num capítulo que dá pra ler sozinho'
+    type: rewrite
+    why: "As a manager in a hurry I followed this and would land on Chapter 18 (punch cards, programmers), when the chapters that answer my worry are 14 and 19, plus Appendix C. The preface promised an answer to the 'AI transformation' worry but nobody points me to it."
+    suggestion: "Add a 'if you are deciding for a company' path: ch14, ch19, apC, then ch11 section 'Como eu leio uma tabela'."
+  - unit: ch01
+    quote: 'Quem acha que a empolgação de hoje é inédita precisa conhecer Frank Rosenblatt.'
+    type: boring
+    why: "Three pages of 1957-1971 history (Perceptron, Navy, boat accident) before the takeaway I actually want: bubble and technology are different cycles. I skimmed to the quote box."
+    suggestion: "Lead with the dot-com comparison and the box 'A bolha estoura e a tecnologia fica'; keep Rosenblatt to a short paragraph."
+  - unit: ch01
+    quote: 'Quando uma empresa diz que o produto dela é perigoso demais, ela está dizendo, na mesma frase, que o produto dela é mais poderoso que o dos concorrentes.'
+    type: logic
+    why: "Stated as a rule, but the GPT-2 section itself says the author cannot know what the authors thought. A company can be sincerely worried and also benefit; the motive is inferred, not shown. Chapter 14 repeats it as if proved."
+    suggestion: "Say 'it also works as advertising' instead of 'it means'."
+  - unit: ch02
+    quote: 'Montar e manter um encanamento de busca vetorial, por outro lado, consome semanas de trabalho de engenheiro, e engenheiro é caro.'
+    type: logic
+    why: "It compares a per-question cost (60 cents of tokens) with a one-off engineering cost and concludes that tokens are now the cheap part. At a thousand questions a day the 60 cents is the bigger bill. No volume, no break-even, so I cannot use the argument."
+    suggestion: "Add one line with break-even: at what number of queries does the pipeline pay for itself."
+  - unit: ch03
+    quote: 'reasoning_content must be passed back to the API'
+    type: rewrite
+    why: "The chapter opens with a raw API error message. I understood the story only after the explanation near the end; the real lead (same model, 69 points in one program, 84 and 89 in another) is in the third paragraph."
+    suggestion: "Open on the 69 versus 89 result and push the error message into the later technical section."
+  - unit: ch04
+    quote: 'se dois modelos dizem "sustentado" com 40% de confiança cada e um diz "misto" com 95%, o "misto" vence, porque 95 pesa mais do que 80'
+    type: logic
+    why: "Adding stated confidences is arbitrary (two modest votes lose to one loud one), and Chapter 13 later shows that small models' high-confidence guesses are the ones that lie (48 of 71 wrong) and Chapter 14 that the classifier answered 'A' with 76 to 92 percent certainty on a dice roll. The book's own evidence says declared confidence is the least trustworthy number."
+    suggestion: "Acknowledge the calibration problem here, or describe the vote as a heuristic."
+  - unit: ch06
+    quote: 'Numa contagem conservadora, deu entre 180 e 200 funcionalidades distintas'
+    type: logic
+    why: "Earlier in the chapter only 37 percent of the 274 commits (about 100) were new features, so 180 to 200 distinct features is more than the commits that added any. The '30 weeks of team work' figure, which I would quote to my board, rests on this number."
+    suggestion: "Show the conversion from commits to stories, or lower the claim."
+  - unit: ch08
+    quote: 'Foram 31 fases de investigação, 44 commits na minha cópia do emulador e mais de 15 mil linhas de código de diagnóstico.'
+    type: boring
+    why: "Four days of PlayStation 4 emulator debugging told in detail. The lessons (the AI wanted to stop; the 'shotgun' technique; know the terrain) fit in a page, and none of the hardware detail helps me."
+    suggestion: "Cut to a page and keep the 'A IA queria parar' moment."
+  - unit: ch08
+    quote: 'uma infraestrutura que roda os emuladores e mede a realidade, independente do que o modelo acha'
+    type: rewrite
+    why: "The 'oracle' is the most reusable idea in the book for me (independent check of the work), but it arrives inside a Nintendo-to-Sega converter, so I nearly missed it. Later chapters say 'the oracle of Chapter 8' as if I had absorbed it."
+    suggestion: "Introduce it with an everyday case (an auditor who does not report to the person being audited), then show the emulator as an example."
+  - unit: ch09
+    quote: 'quase sempre ele me dizia isso antes, em vez de inventar'
+    type: logic
+    why: "Contradicts Chapter 6 ('O agente nunca diz não... implementa sem reclamar') and Chapter 4 and 12 where models invent confidently or write false reports. Chapter 8 does show the AI proposing to stop, but that is a different behavior. I could not tell which description to rely on."
+    suggestion: "Reconcile: say when the model flags limits and when it does not."
+  - unit: ch09
+    quote: 'Quase sempre, quando a pessoa mostrava o pedido, o defeito estava ali.'
+    type: logic
+    why: "Unfalsifiable and anecdotal: if the person failed, the prompt was bad. Chapters 11 and 12 then show models that really do invent commands and cheat regardless of the prompt, and the author himself says model choice matters in a table. It also reads as blaming the user, and it is the base of the closing '42' argument."
+    suggestion: "Say 'in the cases people showed me, most had a vague request', and acknowledge real model differences."
+  - unit: ch10
+    quote: 'Minha estimativa, em maio de 2026, na média da maratona, ficou em umas cinco vezes'
+    type: logic
+    why: "I now have 6 to 7 times (Ch5), 'programador 10x' (Ch5), 5 times (here), about 19 times if I convert 30 weeks to 8 days (Ch6), and in Chapter 20 a controlled study where experienced developers were 19 percent slower while believing they were 24 percent faster. The book never says which number a manager should use, or that the author's figure is self-estimated by one senior on his own projects."
+    suggestion: "One short box early in Part II: what I measured, what I estimated, what a controlled study found."
+  - unit: ch10
+    quote: 'Se eu faço um clone funcional do Mega em um dia, quanto vale uma startup de armazenamento de arquivos na nuvem?'
+    type: logic
+    why: "The author graded his own Mega clone 5 out of 10 and said that selling code needs ten times more care. A one-day clone is not a competitor to a service with operations, support and trust. Chapter 19 (Ferrari bodywork on a Beetle engine) argues the opposite, and I found that version more convincing."
+    suggestion: "Add a forward pointer to Ch19 and soften 'o código deixa de proteger'."
+  - unit: ch11
+    quote: 'Eu uso um ranking, inclusive o meu, pra três coisas:'
+    type: rewrite
+    why: "This is the practical payoff of the chapter and it sits about 12 pages in, after a mea culpa about a library command, three versions of the benchmark and a saboteur colleague. I only found it because I was looking for it."
+    suggestion: "Start the chapter with the three uses and the 'above 90, read as a group' rule, then tell the story that justifies them."
+  - unit: ch11
+    quote: 'Nove pontos de diferença sem mudar absolutamente nada.'
+    type: logic
+    why: "The 'noise' that justifies reading everything above 90 as a group comes from two repeated pairs (94 versus 93 and 100 versus 91). A spreadsheet person wants a spread from many runs. One 9-point gap can be an unlucky run, and the near-ceiling scores also mean the test cannot show differences at the top, which the chapter itself says."
+    suggestion: "Say 'at least 9 points in the one case I repeated carefully' and that more runs are needed to size the noise."
+  - unit: ch11
+    quote: 'No topo, sete modelos empataram em 100:'
+    type: confusing
+    why: "A wall of names (GPT-6 Astra, Opus 5, Fable 5, Opus 5.5, GPT-5.6 Sol and Terra, GPT-5.5) plus four benchmark versions with different tier cut-offs (A from 80, then from 83) and different model counts (24, 37, 39, 46). I lost track of which table I was looking at."
+    suggestion: "A small timeline box with each version, its date, its model count and what it fixed."
+  - unit: ch12
+    quote: 'uma mistura direta, número a número, de cerca de 60% do Nex-N2-Pro com 40% do Qwen 3.5 original'
+    type: boring
+    why: "The lesson (separate what someone measured, what the seller claims and what nobody knows) is excellent, but the road there is a licensing dispute about weight arithmetic that I cannot evaluate and that does not touch my decisions."
+    suggestion: "Keep one page and the three-column habit; move the rest to an appendix or the blog."
+  - unit: ch12
+    quote: 'Chegaram até mim três versões da suspeita:'
+    type: boring
+    why: "Many pages on tokenizer distances for a company the author says he cannot conclude on ('mais do que eu esperava, menos do que o site deles vende'). I finished with no usable conclusion and with a private startup profiled in a book."
+    suggestion: "Cut to the 'checado, alegado, em aberto' list."
+  - unit: ch13
+    quote: 'custo por episódio: uns 8 centavos de dólar de GPU no Qwen3, uns 2,70 dólares na ElevenLabs'
+    type: logic
+    why: "The text says he subscribed to a 99 dollars per month plan for a weekly episode, which is roughly 23 dollars per episode if you count the subscription; the 2.70 seems to be credits only. And a few paragraphs later the book says 'zero' is a lie for local models because it ignores machine and hours, but the 8 cents also leaves out the hours. I cannot put either number in a spreadsheet."
+    suggestion: "State what each figure includes (subscription, credits, rented GPU, engineer time)."
+  - unit: ch13
+    quote: 'Nem a versão mais esmagada, a chamada "de 1 bit"'
+    type: boring
+    why: "Quantization, KV cache, bandwidth versus capacity, MoE, 1-bit variants, a Mac Studio at 110 thousand reais. The corridor-and-library image works, but I only needed 'it fits or it does not, and slow or fast'."
+    suggestion: "Compress the hardware half to two pages with the two images and a purchasing rule of thumb."
+  - unit: ch14
+    quote: 'Quem acredita de verdade que um produto pode extinguir a espécie humana fecha a fábrica.'
+    type: logic
+    why: "Presented as a clincher, but it ignores the race argument (if I stop, a rival does not), and it infers insincerity from behavior. The author spends the paragraph before saying he cannot know what is in anybody's head."
+    suggestion: "Say it is evidence of mixed incentives, not of insincerity."
+  - unit: ch14
+    quote: 'Gente que entende do assunto não está desesperada.'
+    type: logic
+    why: "Backed by LeCun and Ng only. Chapter 18 cites Hinton, a Nobel winner, with respect and as a counterweight on understanding, and he is among those who do warn. Selective experts, then the conclusion is 'experts are not worried'."
+    suggestion: "Name the experts on both sides, or drop the generalization."
+  - unit: ch14
+    quote: 'Em 8 de setembro, um pesquisador de pré-treino chamado Jacob Coxon anunciou no X que estava saindo da Anthropic.'
+    type: boring
+    why: "Resignations, who introduced whom to which PR agency, a podcast host calling it a psyop. The author himself writes 'nada disso prova coordenação'. Entertaining but it takes a lot of space for no decision."
+    suggestion: "Shrink to the pattern (fear also has a press office) and keep the checklist."
+  - unit: ch15
+    quote: 'Ficaram 32 cópias rodando ao mesmo tempo, brigando pelo mesmo disco doente'
+    type: boring
+    why: "The disk failure, copy tools and filters are a vivid personal story, but the three rules I can reuse (check the protection list is not empty, verify against an independent inventory of the source, copy-check-then-delete) come after a long description of a home NAS."
+    suggestion: "State the three rules first, then the story as evidence."
+  - unit: ch16
+    quote: 'As sete falhas críticas e as nove altas do relatório tinham correção'
+    type: logic
+    why: "The author's own rewrite is declared fixed according to the same kind of AI audit he criticized elsewhere, and he rates his own project 1 out of 10 and 'alfa, testado só em conversas simples'. It is fair as an exercise but is shown as if it solved the safety problem."
+    suggestion: "Add that fixes were checked by another AI and not by an independent human review."
+  - unit: ch16
+    quote: 'Eu queria ler o melhor argumento técnico possível em defesa do Zig.'
+    type: boring
+    why: "A programming-language custody dispute between two projects, plus the author asking two models to write the answer Zig deserved. Interesting to developers; I took only the four-question checklist at the end."
+    suggestion: "Reduce to the method and the cost (165 thousand dollars) and cut the language argument."
+  - unit: ch17
+    quote: 'Do lado preocupante, ele coleta muito:'
+    type: logic
+    why: "A list of what TikTok collects is stated as fact, while the chapter insists that static analysis shows only what an app can do, not what it does, and that the AI reading was not re-audited. A reader who skips the caveats comes away with conclusions the author says he cannot support."
+    suggestion: "Use 'ele tem capacidade de coletar' throughout the list."
+  - unit: ch18
+    quote: 'Ninguém sério olhou pra essa transição e disse que a programação tinha acabado porque o compilador passou a escrever as instruções de máquina por você.'
+    type: logic
+    why: "The central comparison (punch card, assembly, compiler, now agents) treats AI as one more layer of interface. A compiler is deterministic and verifiable; the book has spent 17 chapters showing that models are not. It is a good intuition but it is an analogy standing in for evidence, and 'every generation asked the same question and it worked out' is induction."
+    suggestion: "Say where the analogy breaks (non-determinism, need for independent checking)."
+  - unit: ch18
+    quote: 'Em outubro, a rigidez da linguagem não mudou nada, e a presença de testes mudou.'
+    type: logic
+    why: "The frontier models got 53 out of 53, a ceiling. Chapter 11 taught me that a test everybody passes cannot rank anything; here it is used to conclude that language does not matter. The only differences came from the weaker models, which are not the ones the author uses."
+    suggestion: "Say the test could not discriminate at the top and the result is about weaker models."
+  - unit: ch19
+    quote: 'A maioria dos profissionais foi treinada a não decidir.'
+    type: logic
+    why: "The chapter's diagnosis for why AI fails in companies is a sweeping generalization with no data, and the author marks the process proposal as speculation but not this premise. The proposals (PO, QA and tech lead circulating between programmers) come from one person's solo projects, which he admits in the limits list."
+    suggestion: "Mark the premise as opinion; add one external data point (a survey or case) if there is one."
+  - unit: ch19
+    quote: 'Se você é gerente ou dono:'
+    type: rewrite
+    why: "This closing list is the most usable page of the book for me, and it sits at the very end of a 25-page chapter; also every example is a software company. Nothing says what to measure in a warehouse, a route plan or a back office."
+    suggestion: "Move a short version of the list to the start; add two examples from non-software operations, using the classifier idea from Ch13."
+  - unit: ch20
+    quote: 'Onde o marketing desenhava uma curva subindo pro céu, os meus números mostravam uma linha reta, lá em cima.'
+    type: logic
+    why: "The 'straight line' comes from a benchmark the same chapter says is saturated ('não enxerga nada acima da nota máxima'), plus the Reuters and Sutskever points about pre-training. The METR measure cited later says agent task length doubles every seven months. The reconciliation (it is all harness) is asserted but not tested, and the Opus 5.5 doing the same in a quarter of the cost is an improvement."
+    suggestion: "Say 'saturation and external signals suggest' and state that the claim could not be measured at the top of the scale."
+  - unit: epilogo
+    quote: 'Eu não tenho plano de carreira pra vender, nem curso.'
+    type: rewrite
+    why: "Good individual advice (learn how it works, judgment, your domain; ignore courses and rankings), but I wanted a Monday list for someone who decides for a company: what to ask the consultants, what to pilot, what to measure."
+    suggestion: "Add a short block 'Se você decide por uma empresa', reusing the Ch19 and Ch14 lists."
+  - unit: interlude2
+    quote: 'Eu tenho um goban em casa.'
+    type: boring
+    why: "A pleasant personal essay about Go and AlphaGo, but at that point in the book it interrupts the argument and has no connection to a decision I have to make."
+    suggestion: "Shorten to the 'blind spot' paragraph, which is the only part that connects to the next chapter."
+cut_candidates:
+  - {unit: ch01, where: "### O primeiro hype (history of Rosenblatt and the Perceptron)", why: "Three pages of history before the useful point about bubbles; a paragraph would do."}
+  - {unit: ch02, where: "### O agente que sonha", why: "The autoDream conditions (24 hours, five sessions, a lock) are detail from a leak that I will never use."}
+  - {unit: ch04, where: "### Como se marca um texto sem mudar o texto", why: "The statistical watermark mechanics; the 'what it proves and what it does not' part is what matters."}
+  - {unit: ch05, where: "### Onde a máquina brilhou e onde rodou em círculos", why: "Bug-by-bug anecdotes (ignored folder, CodeMirror, timers) beyond what the iceberg image already says."}
+  - {unit: ch08, where: "## Quatro dias no escuro", why: "Driveclub black screen: the AI-wants-to-stop point can be made in a page."}
+  - {unit: ch12, where: "## O mistério brasileiro", why: "The author concludes nothing, I cannot use it, and it profiles a private company."}
+  - {unit: ch12, where: "## A receita da prefeitura", why: "Weight-merging dispute; the attribution lesson survives in one paragraph."}
+  - {unit: ch13, where: "### Muitos especialistas, poucos acordados", why: "MoE and 1-bit variants; no decision I make depends on it."}
+  - {unit: ch14, where: "### As demissões", why: "Resignation timeline and PR-agency claims; keep only the fear-has-a-press-office line."}
+  - {unit: ch16, where: "### O outro lado da briga", why: "Zig versus Rust argument between two projects."}
+  - {unit: ch17, where: "### O TikTok e a caixa-preta", why: "Reverse-engineering inventory of one app; the capability-versus-proof point is in the following section."}
+  - {unit: ch18, where: "### Setembro: a hipótese ganha corpo", why: "Bend 2 review and language benchmark details for a reader who is not choosing a programming language."}
+  - {unit: interlude2, where: "## Cinco partidas em Seul", why: "Match narration; only the blind-spot ending connects to the book."}

@@ -7,6 +7,16 @@
 #   1. chapters: front matter `sources: [{post, sha256}]` + `blog_commit`
 #   2. analyses: inventory/analysis/*.yml `source_sha256`
 #   3. coverage: 2026 posts with no analysis, and analyzed AI posts no chapter uses
+#   4. parked (informational, pt only, never counted as a problem): posts cited
+#      by `<!-- src: -->` markers in book/parked/<topic>/**/*.md and by no live
+#      unit. Each topic may record what it last reviewed in
+#      book/parked/<topic>/sources.yml:
+#        posts: [{post: 2026/MM/DD/slug, sha256: "<PT hash>", commit: "<blog commit>"}]
+#      A post whose current hash differs is reported CHANGED (with --diff, the
+#      blog diff since `commit`); a post missing from sources.yml, or a topic
+#      without the file, is reported untracked. `restamp.rb --parked <topic>`
+#      refreshes the file when the parked text was reviewed (or the topic is
+#      unparked and the file removed). book/<lang>/_staging is never scanned.
 #
 # For each stale chapter source it prints the blog diff since the recorded
 # commit, so the update can touch only the paragraphs marked
@@ -51,7 +61,7 @@ problems = 0
 used = Hash.new { |h, k| h[k] = [] }
 
 puts "== Chapters (#{opts[:lang]})"
-Dir.glob(File.join(ROOT, "book", opts[:lang], "**", "*.md")).sort.each do |path|
+Dir.glob(File.join(ROOT, "book", opts[:lang], "**", "*.md")).sort.reject { _1.include?("/_staging/") }.each do |path|
   fm = front_matter(path)
   rel = path.delete_prefix(ROOT + "/")
   Array(fm["sources"]).each do |src|
@@ -98,6 +108,33 @@ unless opts[:lang] == "pt"
       puts `git -C #{ROOT} diff --word-diff=plain #{base} -- #{tf['file']}`.gsub(/^/, "      ")
     else
       puts "      translated version not found in git history; compare against the whole PT unit"
+    end
+  end
+end
+
+if opts[:lang] == "pt"
+  puts "== Parked (informational)"
+  Dir.glob(File.join(ROOT, "book", "parked", "*")).sort.select { File.directory?(_1) }.each do |dir|
+    topic = File.basename(dir)
+    cited = Dir.glob(File.join(dir, "**", "*.md")).flat_map { File.read(_1).scan(%r{<!-- src: (\d{4}/\d\d/\d\d/[^ ]+) -->}).flatten }.uniq
+                .reject { used.key?(_1) }
+    sources_file = File.join(dir, "sources.yml")
+    recorded = File.exist?(sources_file) ? Array((YAML.load_file(sources_file) || {})["posts"]).to_h { [_1["post"], _1] } : {}
+    puts "  (#{topic}: no sources.yml; restamp.rb --parked #{topic} records the reviewed hashes)" if recorded.empty? && !cited.empty?
+    cited.each do |id|
+      rec = recorded[id]
+      post = by_id[id]
+      if post.nil?
+        puts "  MISSING   #{topic}: #{id} no longer exists in the blog"
+      elsif rec.nil?
+        puts "  untracked #{topic}: #{id}"
+      elsif post.dig("pt", "sha256") != rec["sha256"]
+        puts "  CHANGED   #{topic}: #{id}"
+        next unless opts[:diff]
+
+        from = rec["commit"] || inv["blog_commit"]
+        puts `git -C #{blog} diff --stat --patch #{from} -- content/#{id}/index.md`.gsub(/^/, "      ")
+      end
     end
   end
 end

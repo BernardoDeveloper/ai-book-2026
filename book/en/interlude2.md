@@ -6,7 +6,7 @@ sources:
   - {post: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas, sha256: "7721d4c6a1750ef667ba1007d1660cafe88fce35576e08524d37f24d0a2bdbf4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/interlude2.md, sha256: "a5638b0e6bd9d0ac8cb6fd451e1d9c5f8ab5ffcb196e38c8ff71198f81da0f0d"}
+translated_from: {file: book/pt/interlude2.md, sha256: "26ba11bb15abb0b0b5f392b3c8c5122b771c2378dd582a7d0ba2f86133d0defc"}
 ---
 
 # Interlude: From GNU Go to KataGo {#sec-interlude2 .unnumbered}
@@ -39,7 +39,7 @@ Go had a reputation as a game no computer would master anytime soon. The number 
 <!-- src: 2026/07/06/frank-go-brincando-de-go-com-ia -->
 That reputation died between March 9 and 15, 2016, in a Seoul hotel. AlphaGo, a program from DeepMind, Google's lab, faced South Korea's Lee Sedol, one of the greatest players in history, in a five-game series, and won 4 to 1 [@deepmind2026alphago; @wikipedia2026alphagoleesedol].
 
-The series became famous for two moves. In game 2, AlphaGo played stone 37 on a point most professionals wouldn't even consider, a "shoulder hit" against a white stone that commentators called creative and unique. Lee Sedol took an enormous amount of time to respond.
+The series became famous for two moves. In game 2, AlphaGo played stone 37 on a point a human professional would hardly consider, a "shoulder hit" against a white stone that commentators called creative and unique. Lee Sedol took an enormous amount of time to respond.
 
 <!-- src: 2026/07/06/frank-go-brincando-de-go-com-ia -->
 The human reply came in game 4, on March 13. With the series already lost, Lee Sedol played stone 78, a wedge in the middle of Black's area that no commentator had foreseen. AlphaGo didn't see the danger either: it went on thinking it was the favorite for several moves, only noticed the damage around move 87, and ended up resigning. Chinese professional Gu Li called the move divine, and it became known as the "hand of God."

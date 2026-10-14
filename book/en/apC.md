@@ -11,7 +11,6 @@ sources:
   - {post: 2026/07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra, sha256: "a926f716d937e2430d033fde217b69d41f1e9c4e91242875e32661a1e56bc359"}
   - {post: 2026/08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7, sha256: "c35b99008474fce51b2d259fcdbdc4346f1aa8e2ca9d022a99de036c8ac15c51"}
   - {post: 2026/06/15/controversia-llm-rio-3-5-plagio, sha256: "5934610a4f205cdeb84932f2107a81b4a0002115945d7293c8130298ed42a18c"}
-  - {post: 2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro, sha256: "305c23762629ccefe413868cb8c912ba813f2a0d5175e340d12c259aa2d8cd4a"}
   - {post: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic, sha256: "ab900c522b1e3798b82f918c636213aa8290807a14ce39300a21f4fda68ef9a8"}
   - {post: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia, sha256: "d77ce29923394a3f39a6ab0acf0a00200c35df3b6f443bf6396d3a055611f09f"}
   - {post: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit, sha256: "3bf57210a84a838886736656f0a1991e08a8b59900b6109cb5b0b78dcd02c6ce"}
@@ -20,7 +19,7 @@ sources:
 refs_projects:
   - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apC.md, sha256: "55860516a540b8d1a29a6e33a3bcdc02586549c06ff1b7ede954a6827d1790dc"}
+translated_from: {file: book/pt/apC.md, sha256: "3e0d21b83fe85b8df1784f488176b49858bdb6c506589761fb937228a25343d4"}
 ---
 
 # How to Read a Benchmark or an Announcement {#sec-apC}
@@ -52,7 +51,7 @@ This applies to any [benchmark]{.gls}, ranking or model leaderboard, mine includ
 
 ## Facing an Announcement
 
-<!-- src: 2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro -->
+<!-- src: original -->
 Before the questions, a habit I brought back from the model-origin tests (@sec-ch12):
 
 > Split the announcement into three columns: what someone outside measured, what is only the seller's word and what nobody knows. Almost all the noise lives in the middle one.

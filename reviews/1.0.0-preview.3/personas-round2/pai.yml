@@ -1,0 +1,212 @@
+persona: pai
+summary: |
+  I picked this up because my son (15) watched a video about a superintelligence and asked me if it was true, and I had nothing to say. The book did answer that, but late. The explanation of the "gerador de texto" in chapter 1, the "arquivo trancado" idea, the chatbot that agrees with you (ch04), the cartas-com-ordens (ch16) and the backup habits (ch15) are things I can repeat at the dinner table. What I will remember: the announcements about "perigoso demais" and "AGI chegou" are sold by the same people who profit, and a machine that cheats on a test or says "pronto" when it isn't. The whole middle (chapters 5 to 13) is a programmer talking about his projects, his benchmark versions and his model names, and I skimmed most of it; I nearly quit at chapter 11 and again at chapter 12. The ending (ch20 and the epilogue) gave me what I came for, and the honest admissions (the author's own wrong tables, the "what would change my mind" list) are why I trust him more than the people he criticises. I wish the answer for a worried father were at the start, not on page 400.
+best:
+  - "ch01: o corretor do celular em escala enorme, o arquivo trancado que não aprende com você"
+  - "ch04: dois pedidos sobre o mesmo texto do café dando respostas opostas, e as oito regras"
+  - "ch12: o modelo que abre o gabarito da prova (e a lição de não deixar a folha de respostas ao alcance)"
+  - "ch16: a secretária literal que obedece à carta do desconhecido"
+  - "epilogo: 'Medo vende' e a lista do que dá pra ignorar"
+worst:
+  - "ch11: o ranking, o RubyLLM, as quatro versões da prova e o colega sabotador Casey"
+  - "ch12: o caso Rio 3.5 / Nex / Qwen e a caçada ao Kimi"
+  - "ch06: XP, TDD, mocks e integração contínua"
+  - "ch03: DeepSeek, OpenCode, plugin esquecido, tabelas de modelos que não conheço"
+  - "ch13: banda de memória, mini-PC, ElevenLabs e classificadores"
+units:
+  - {unit: index, score: 4, note: "Gostei de ele dizer que escreveu pra gente como eu (o pai do vídeo), e do 'boa pra quê, conferida por quem, a que custo?'. Só achei vago falar de 'uma das maiores empresas' sem nome."}
+  - {unit: como-ler, score: 3, note: "O 'se você tem pressa' me mandou direto pra ch01, ch14 e ch20, bom. A lista de apêndices é comprida e eu já pulei."}
+  - {unit: antes, score: 3, note: "Seis termos difíceis num bloco antes de eu começar o livro me assustou um pouco. Mas gostei da honestidade de dizer o que ele não explica."}
+  - {unit: ch01, score: 4, note: "Aqui eu entendi 'o corretor do celular, só que enorme'. Perdi um tempo com a briga do podcast, mas a Eliza e o primeiro hype valeram."}
+  - {unit: ch02, score: 3, note: "A mesa e o bilhete funcionam. A parte do vazamento e do banco vetorial é conversa de programador."}
+  - {unit: ch03, score: 2, note: "A ideia 'o modelo só escreve texto, quem tem as mãos é o harness' é boa. O resto virou lista de nomes de ferramentas e modelos."}
+  - {unit: ch04, score: 4, note: "Primeiro capítulo que posso usar na segunda-feira. As oito regras, o cuidado com saúde e dinheiro. O trecho do carimbo invisível já fugiu um pouco."}
+  - {unit: ch05, score: 3, note: "'Os primeiros dez por cento' é uma boa imagem, mas a história de arquivos, Rails e CodeMirror me cansou."}
+  - {unit: ch06, score: 2, note: "Muito jargão (XP, TDD, CI, mock). Entendi a moral (testar de verdade), perdi o caminho."}
+  - {unit: ch07, score: 2, note: "'Software nunca está pronto' e o zero contra o vazio são ótimos; o resto são quatro projetos de um programador."}
+  - {unit: ch08, score: 3, note: "O fracasso do Yomik e o 'a IA queria parar' prendem. Master System e emulador, não."}
+  - {unit: ch09, score: 3, note: "As quatro partes de um bom pedido eu uso hoje. A parte de skills e repositórios parece vitrine."}
+  - {unit: ch10, score: 2, note: "O boletim e o 'sucesso ou fracasso' ficaram claros. Depois vem fork de programa de e-mail e treino de digitação: não é pra mim."}
+  - {unit: interlude1, score: 4, note: "Leve, curto, e a ironia do modelo chinês traduzindo o texto contra o nazismo foi o melhor momento de humor."}
+  - {unit: ch11, score: 1, note: "Fui reler três vezes a abertura e não entendi o que era 'chat.complete'. A conclusão prática só vem muito depois. Quase larguei."}
+  - {unit: ch12, score: 2, note: "A cola abrindo o gabarito é ótima. Depois vem controvérsia entre laboratórios que não conheço e teste de caixa-preta."}
+  - {unit: ch13, score: 2, note: "A resposta (em casa só serve pra tarefa pequena) está lá no fim. Até chegar eu li sobre chips e placas de vídeo."}
+  - {unit: ch14, score: 4, note: "É o capítulo do vídeo do meu filho. Entendi quem ganha com o 'perigoso demais' e a lista de como ler um anúncio. Densidade de nomes e datas é alta."}
+  - {unit: interlude2, score: 4, note: "Gostei do Lee Sedol e do ponto cego do KataGo. Mostra que a máquina boa também erra."}
+  - {unit: ch15, score: 3, note: "O susto do NAS e as camadas de backup me tocaram (tenho arquivos da loja). A ordem do começo me confundiu e a parte de auditoria do ai-jail não é pra mim."}
+  - {unit: ch16, score: 2, note: "A carta que dá ordens é excelente. O resto (OpenClaw, Rust, Bun contra Zig) é briga entre programadores."}
+  - {unit: ch17, score: 4, note: "Celular e golpe são do meu mundo. As dicas finais valem ouro. Muita ressalva no começo antes de dizer o que importa."}
+  - {unit: ch18, score: 3, note: "O cartão perfurado é uma boa imagem pra um não-programador. A parte de que linguagem aprender é demais pra mim."}
+  - {unit: ch19, score: 2, note: "Capítulo pra gerente de empresa grande, e ele mesmo avisa que é especulação. Pulei o Adobe."}
+  - {unit: ch20, score: 3, note: "Pela primeira vez a resposta pro meu filho: nem os maiores especialistas concordam se a máquina entende, e confira sempre. Gostei da lista do que o faria mudar de ideia. A prova principal, porém, é a tabela dele."}
+  - {unit: epilogo, score: 5, note: "Exatamente o que eu queria: o que fazer, o que ignorar e 'medo vende'. Leria isso primeiro se pudesse."}
+  - {unit: posfacio, score: 3, note: "Gostei de ele contar que o livro foi feito com IA e o que a conferência pegou. Já estava convencido; é mais pra curioso."}
+annotations:
+  - unit: antes
+    quote: "O que eu deixei de fora de propósito é a mecânica por dentro:"
+    type: rewrite
+    why: "Logo antes do primeiro capítulo recebo rede neural, descida do gradiente, retropropagação, embeddings, transformer, RLHF, e fico com a sensação de que não sei nada. Eu ia ler de qualquer jeito."
+    suggestion: "Dizer em uma frase que o livro não exige isso e deixar a lista de termos pro apêndice."
+  - unit: ch01
+    quote: "meu nome começou a circular em recortes de vídeo"
+    type: rewrite
+    why: "Abre com a briga do autor com a internet. Eu queria saber se tem alguém do outro lado da tela, e levei páginas pra chegar no corretor do celular."
+    suggestion: "Começar pelo corretor do celular e contar a briga depois, em dois parágrafos."
+  - unit: ch01
+    quote: "Do 4 pro 5, pelo que eu via em volta, pouca gente fora da área notou tanta diferença"
+    type: logic
+    why: "A curva em S é o argumento central do capítulo, e este ponto se apoia numa impressão pessoal que o próprio autor admite. O gráfico tem forma de S mas não mostra número nenhum."
+    suggestion: "Colocar um dado de fora (alguma medição) ou assumir que a curva é uma hipótese."
+  - unit: ch01
+    quote: "Do outro lado, porém, só tem a conta das probabilidades."
+    type: logic
+    why: "Afirmado com certeza total aqui. No capítulo 20 o autor diz que 'entender' não tem régua e que nem Hinton concorda com ele. Meu filho vai perguntar exatamente isso, e a primeira resposta é mais segura que a última."
+    suggestion: "Suavizar aqui ('pelo que dá pra medir') ou avisar que a discussão sobre 'entender' volta no capítulo 20."
+  - unit: ch02
+    quote: "1.279 sessões tinham tido 50 ou mais falhas seguidas de compactação"
+    type: boring
+    why: "Detalhe do código vazado que não me ajuda a entender nada de memória. Pulei o parágrafo."
+  - unit: ch02
+    quote: "A memória do Claude Code não tinha nenhum."
+    type: confusing
+    why: "RAG, banco vetorial, embedding e busca lexical em dois parágrafos. Só entendi que 'a moda passou'. Não sei por que isso é importante pra mim."
+    suggestion: "Cortar ou resumir em duas frases: 'uma moda cara que se tornou opcional'."
+  - unit: ch03
+    quote: "reasoning_content must be passed back to the API"
+    type: rewrite
+    why: "A ideia (o mesmo modelo foi do fracasso à elite só trocando o programa em volta) é forte, mas vem enterrada em mensagem de erro, OpenCode, DeepClaude e Opus. Levei duas leituras."
+    suggestion: "Contar com uma imagem só (mesmo motorista, carro diferente) e deixar os nomes pro apêndice técnico."
+  - unit: ch03
+    quote: "O MiniMax M3 saiu de 24 pra 91 pontos."
+    type: boring
+    why: "Números de modelos que eu nunca ouvi falar. Já tinha entendido a moral na frase anterior."
+  - unit: ch04
+    quote: "Eu sei que isso parece bater de frente com o que este capítulo acabou de mostrar"
+    type: logic
+    why: "Acabou de dizer que a confiança declarada pelo modelo não vale nada, e depois usa a mesma confiança pra pesar o voto. A desculpa de que o veto da fonte primária corrige não me convenceu totalmente: o remendo funciona, mas o argumento é frágil."
+    suggestion: "Admitir que é um paliativo e dizer quanto o veto realmente corrigiu."
+  - unit: ch05
+    quote: "Mandei trocar tudo pelo CodeMirror"
+    type: boring
+    why: "Parágrafos sobre arquivos de estilo, temporizadores e componentes. Entendi a moral no iceberg ('só 10% já funciona') e pulei o resto."
+  - unit: ch06
+    quote: "Vibe coding feito do jeito certo tem nome: Extreme Programming."
+    type: confusing
+    why: "Daqui até o fim do capítulo é XP, TDD, CI, mock, teste de integração. Pra quem nunca programou, é uma parede. Só a lição dos 300 assinantes recebendo newsletter quebrada ficou comigo."
+    suggestion: "Para o leigo, resumir em 'teste sempre, com dados de verdade' e mover o jargão pra um apêndice."
+  - unit: ch06
+    quote: "Eu fiz em oito dias, uma pessoa e um agente."
+    type: logic
+    why: "Compara a si mesmo com uma equipe imaginada de 30 semanas, em contagem feita 'a olho'. É o número que a propaganda adoraria. O livro o corrige depois, no capítulo 10, mas aqui ele convence demais."
+    suggestion: "Colocar o asterisco na mesma frase, não duas páginas depois."
+  - unit: ch08
+    quote: "O processador do Master System tem o dobro da velocidade de relógio do processador do Nintendinho"
+    type: boring
+    why: "Ciclos de processador, chips de cartucho e emuladores. A lição (dar ao agente um jeito de medir) era boa, mas ficou longe."
+  - unit: ch09
+    quote: "Quase mil itens, quase todos tratados por essas skills"
+    type: boring
+    why: "Soa a vitrine ('mais de 40 repositórios', '609 contribuições'). Eu desconfio de quem exibe volume."
+    suggestion: "Cortar os números; a lição de 'cada skill é uma cicatriz' fica de pé sem eles."
+  - unit: ch10
+    quote: "Fiz o fork, o Frank Geary, com as duas correções direto no código"
+    type: boring
+    why: "Programa de e-mail, relógio de terminal, treino de digitação. Não consigo me ver nisso e passa a impressão de que o autor gosta de mostrar o que faz."
+  - unit: ch11
+    quote: "O primeiro comando acusado era um tal de `chat.complete`."
+    type: confusing
+    why: "Abre o capítulo com um erro de auditoria numa biblioteca de programação que eu não conheço. Não entendi qual era o erro, quem errou, nem por que importa pra mim."
+    suggestion: "Abrir com a pergunta que meu filho faria ('qual IA é a melhor?') e contar o erro do autor numa frase simples."
+  - unit: ch11
+    quote: "Adianto a conclusão prática, e o resto do capítulo mostra de onde ela veio."
+    type: rewrite
+    why: "As três regras de como usar um ranking são a melhor coisa do capítulo e aparecem depois de uma página e meia de coisas que não entendi."
+    suggestion: "Mover as três regras pro começo e transformar o resto em exemplos."
+  - unit: ch11
+    quote: "Entre uma etapa e outra, um colega fictício chamado Casey faz commits no projeto."
+    type: boring
+    why: "Quatro versões da prova, quatorze sabotagens, 4 mil dólares, 37 ou 46 modelos. Eu já tinha entendido, lá atrás, que 'acima de 90 é um grupo'. O resto é a contabilidade do experimento."
+  - unit: ch12
+    quote: "uma mistura direta, número a número, de cerca de 60% do Nex-N2-Pro com 40% do Qwen 3.5 original"
+    type: boring
+    why: "Briga de atribuição entre laboratórios e uma prefeitura, com licenças. A conclusão ('credite quem você usou') é boa, mas a história é longa demais pro que ensina a quem não usa esses modelos."
+  - unit: ch13
+    quote: "Dá pra rodar uma IA boa em casa? Em outubro de 2026, sim, se a tarefa for pequena e fechada"
+    type: rewrite
+    why: "É a resposta que eu procurava, e ela só aparece nas últimas páginas, depois de VRAM, largura de banda e quantização. A analogia da estante e do corredor é boa."
+    suggestion: "Pôr a resposta em duas linhas no começo."
+  - unit: ch13
+    quote: "Em 8 de abril, à tarde, abri uma conta na ElevenLabs e assinei o plano de 99 dólares por mês."
+    type: boring
+    why: "Voz sintética e dublagem de 146 episódios são o projeto do autor, não a minha dúvida. A moral ('demo de cinco segundos não é produção') era rápida."
+  - unit: ch14
+    quote: "teve dano mínimo e uma corrente de decisões humanas por trás"
+    type: logic
+    why: "O autor se alinha ao lado menos alarmado porque o incidente real causou pouco dano. Mas a preocupação do meu filho é com o que pode vir, não com o que já veio. 'Nada ruim aconteceu ainda' não responde ao medo. O livro admite a divisão entre especialistas (Hinton), mas pesa a balança pelo ceticismo."
+    suggestion: "Dizer claramente que isso não prova que o risco futuro seja baixo, apenas que a evidência de hoje é fraca."
+  - unit: ch14
+    quote: "Mostra que o medo ganhou assessoria de imprensa"
+    type: logic
+    why: "Uma agência oferecer entrevista depois de uma postagem viralizar não mostra que o medo foi 'fabricado', e o próprio texto diz que não prova coordenação. Fiquei com a sensação de insinuação, e é exatamente o tipo de coisa que o livro critica nos outros."
+    suggestion: "Reconhecer que o pesquisador pode ter agido por convicção e que a agência só pegou carona."
+  - unit: ch14
+    quote: "E o nome do método de treino que a empresa divulgava, RLCD, já pertencia a um artigo de 2023"
+    type: boring
+    why: "A seção do Jev tem muito detalhe (calibração, 444 vezes, RLHF, artigo de 2017). Foi útil como exemplo de um anúncio inflado, mas eu teria aprendido a lição com a metade."
+  - unit: ch15
+    quote: "Aquele NAS estava doente."
+    type: rewrite
+    why: "Começa com a faxina de sábado, volta cinco dias, depois avança de novo. Perdi o fio de quem apagou o quê, e quando. O susto da lista vazia e dos onze álbuns é ótimo, só está mal ordenado."
+    suggestion: "Contar o NAS primeiro, depois a faxina, depois a lição."
+  - unit: ch15
+    quote: "A segunda foi feita sem ler a primeira"
+    type: boring
+    why: "As duas auditorias de segurança do ai-jail e o furo do Docker são detalhes de uma ferramenta que não vou usar. Quero as camadas, não a auditoria."
+  - unit: ch16
+    quote: "Um teorema provado por Henry Rice em 1953 mostra que não existe um algoritmo geral"
+    type: boring
+    why: "Cheira a demonstração de erudição. A ideia (todo código tem bug, humano ou máquina) já estava dita um parágrafo antes sem o teorema."
+  - unit: ch16
+    quote: "Segundo o relato, foram uns onze dias de trabalho, com até 64 instâncias do Claude rodando em paralelo no pico"
+    type: boring
+    why: "Bun contra Zig, Rust e briga entre criadores. A resposta curta ('é tão seguro quanto o processo') bastava, e as cinco perguntas finais são o que eu aproveito."
+  - unit: ch17
+    quote: "nada do que segue é cem por cento factual"
+    type: rewrite
+    why: "Quatro parágrafos de ressalvas (APK de espelho, binários, modelo que pode ter resumido) antes de dizer o que achou. Meu filho usa TikTok e eu queria o resultado primeiro. A honestidade é boa, mas me deixou ansioso e cansado."
+    suggestion: "Pôr um quadro de 'o que isso significa pra você' no começo e as ressalvas depois."
+  - unit: ch18
+    quote: "Em setembro, o pesquisador brasileiro Victor Taelin lançou o Bend 2"
+    type: boring
+    why: "Que linguagem aprender, Rust, Haskell, benchmark com sete linguagens. Não é minha dúvida, e o parágrafo seguinte já dá a resposta prática ('a que resolve o seu problema')."
+  - unit: ch19
+    quote: "Em junho de 2026 eu escrevi sobre isso, com o título que este capítulo herdou, e comecei avisando que era mais especulação do que tese fechada."
+    type: logic
+    why: "O título 'Por que a IA vai falhar na sua empresa' afirma como fato o que o corpo do capítulo chama de hipótese sem dados. O texto avisa, mas o leitor que só lê o título sai com uma certeza que o autor não tem."
+    suggestion: "Título mais cauteloso, ou uma frase de abertura mais forte sobre o que é observação e o que é palpite."
+  - unit: ch19
+    quote: "Eu fui olhar o que cada coisa fazia de verdade."
+    type: boring
+    why: "Adobe, Pantone, GIMP e CMYK. A lição (código copiável não é o fosso) já estava no capítulo 10, e eu não tenho software a vender."
+  - unit: ch20
+    quote: "Onde o marketing desenhava uma curva subindo pro céu, os meus números mostravam uma linha reta, lá em cima."
+    type: logic
+    why: "Sete modelos empatados na nota máxima de uma prova saturada formam uma linha reta por construção, e o próprio autor admite que 'um teto não mostra o que existe acima dele'. O que sustenta a tese são os relatos de fora e a leitura dele, e não esse gráfico. O texto reconhece isso, mas eu, que só queria saber se vem aí uma superinteligência, fico com a manchete da 'linha reta' primeiro e o aviso depois."
+    suggestion: "Começar pelo que está medido por outros (Stanford, Reuters, Sutskever) e deixar a tabela dele como ilustração."
+  - unit: epilogo
+    quote: "Se você é pai ou mãe, e o seu filho adolescente pergunta se a IA vai acabar com o mundo:"
+    type: rewrite
+    why: "É a minha pergunta, e a resposta cabe em três itens misturados com as de contadores, gestores e programadores. Gostaria de uma pequena conversa-modelo para ler com meu filho."
+    suggestion: "Uma caixa curta com a explicação simples pra um adolescente, em linguagem de conversa."
+cut_candidates:
+  - {unit: ch02, where: "## A moda do banco vetorial", why: "RAG, embedding e busca lexical sem utilidade para quem não programa; a lição do 'passa a moda' cabe numa frase."}
+  - {unit: ch04, where: "## O carimbo invisível", why: "Marca d'água e detector de texto de IA são um desvio longo no meio de um capítulo sobre confiar no chatbot. Útil, mas parece outro capítulo."}
+  - {unit: ch06, where: "## Os mocks mentem", why: "Aprofunda testes de programa. A lição já estava no 300 assinantes e na parte do castelo de cartas."}
+  - {unit: ch10, where: "### Um relógio, um e-mail, uma música", why: "Lista de ferramentas pessoais do autor, sem lição geral além de 'dá pra consertar coceiras'."}
+  - {unit: ch11, where: "### O colega sabotador", why: "Detalhe do desenho do benchmark que o leitor leigo não precisa pra entender 'acima de 90 é um grupo'."}
+  - {unit: ch12, where: "## A receita da prefeitura", why: "Caso longo de atribuição entre laboratórios. A lição cabe em um parágrafo."}
+  - {unit: ch13, where: "### Uma noite de abril", why: "Voz sintética e ElevenLabs são o projeto do autor, e a moral já foi dita pelo quote da demo de 5 segundos."}
+  - {unit: ch14, where: "## O classificador revolucionário", why: "Excelente como exemplo, mas longo e cheio de números. Metade bastava."}
+  - {unit: ch16, where: "## Uma reescrita que deu certo", why: "Bun, Zig e Rust, para um leitor que não programa. As cinco perguntas de 'Então, é seguro?' dizem o que importa."}
+  - {unit: ch18, where: "## Que linguagem aprender", why: "Resposta prática em uma frase; o benchmark de sete linguagens e o Bend 2 são para programadores."}
+  - {unit: ch19, where: "## O fosso e a Adobe", why: "Repete o fosso do capítulo 10 com um exemplo de software que o leitor comum não usa no trabalho."}

@@ -24,6 +24,22 @@ edition = outline.dig("meta", "edition") || "1.0"
 isbn = outline.dig("meta", "isbn")
 isbn_line = isbn ? "\n\nISBN #{isbn}" : "" # hidden until the author sets meta.isbn
 year = outline.dig("meta", "cutoff").to_s[0, 4]
+# Revision printed on the copyright page so a reader can match a copy to a
+# release: the tag on release builds (CI sets GITHUB_REF_NAME), otherwise
+# `git describe` (last tag + commits since), plus the short commit and the
+# build date. "+local" marks a build with uncommitted changes.
+git = ->(*a) { IO.popen(["git", "-C", ROOT, *a], err: File::NULL, &:read).to_s.strip }
+rev_tag = ENV["GITHUB_REF_TYPE"] == "tag" ? ENV["GITHUB_REF_NAME"].to_s : git.("describe", "--tags", "--abbrev=0")
+rev_sha = git.("rev-parse", "--short", "HEAD")
+ahead = rev_tag.empty? ? "" : git.("rev-list", "--count", "#{rev_tag}..HEAD")
+rev_name = rev_tag.empty? ? rev_sha : (ahead.to_i.positive? ? "#{rev_tag}+#{ahead}" : rev_tag)
+rev_name += "+local" unless ENV["CI"] || git.("status", "--porcelain", "--untracked-files=no").empty?
+rev_date = Time.now.strftime("%d/%m/%Y")
+releases = "https://github.com/akitaonrails/ai-book-2026/releases"
+revision_line = {
+  "pt" => "Revisão #{rev_name} (#{rev_sha}), gerada em #{rev_date}. Versões e correções: #{releases}",
+  "en" => "Revision #{rev_name} (#{rev_sha}), built #{Time.now.strftime('%Y-%m-%d')}. Versions and corrections: #{releases}",
+}
 author = outline.dig("meta", "author")
 owned = Array(outline.dig("meta", "owned_names"))
 licenses = outline.dig("meta", "open_source_licenses") || {}
@@ -47,6 +63,8 @@ COLOPHON = {
 
     Edição #{edition}, #{year}.#{isbn_line}
 
+    #{revision_line['pt']}
+
     As figuras criadas com inteligência artificial estão identificadas como tal nos créditos das imagens, com a ferramenta usada em cada uma.
 
     Composto em Source Serif 4 e Source Sans 3; título da capa em Limelight (todas sob a SIL Open Font License).
@@ -62,6 +80,8 @@ COLOPHON = {
     The names #{owned_en} are the property of #{author}. Some of these projects' code is open source under the licence stated in each repository (#{lic_pt}); those licences cover the code and do not extend to the names or to this book. Other product and company names belong to their respective owners and appear for identification only.
 
     Edition #{edition}, #{year}.#{isbn_line}
+
+    #{revision_line['en']}
 
     Figures made with artificial intelligence are disclosed as such in the image credits, with the tool used for each one.
 

@@ -1,0 +1,221 @@
+persona: pai
+summary: |
+  I picked this book up because my son (15) showed me a video saying a superintelligence is coming and asked if it was true, and I had nothing to answer. The first chapter gave me more than I expected: the phone keyboard that guesses the next word, the secretary who left the room to talk to Eliza, the "perigoso demais" announcement from 2019 that came to nothing. I finally understood why the chatbot agrees with me, and the coffee example in chapter 4 and the backup habits in chapter 15 are things I will actually do. The author also admits his own mistakes, which is the only reason I kept trusting him. But the middle of the book (chapters 3, 6, 11, 12, 13, 16) is written for programmers: commits, benchmarks, tokenizers, VRAM, Zig versus Rust. I skimmed whole sections and nearly quit twice, in chapter 11 and in chapter 13. The book never says in one plain paragraph "here is what you tell your son". I pieced it together from chapters 1, 14 and 20, and the ending in chapter 20 ("the numbers say it will not get smarter") is firmer than the evidence he showed me. I'll remember: the mesa, the martelo, "quem ganha com o seu medo?", and keep a copy of your files somewhere else.
+best:
+  - "ch01: o corretor do celular em escala absurda, a secretária da Eliza e o 'perigoso demais' de 2019"
+  - "ch04: a mesma reportagem do café, duas perguntas, duas respostas opostas, e as oito regras no fim"
+  - "ch07: 'Zero e nada', o campo vazio lido como zero (entendi sem saber programar)"
+  - "ch09: as quatro partes de um bom pedido, com o exemplo da carta pro plano de saúde"
+  - "ch15: o NAS que quase morreu e a lista de hábitos (cópia em outro lugar, abrir o backup pra ver se abre)"
+worst:
+  - "ch11: abre com 'chat.complete' e RubyLLM sem eu saber o que é uma coisa nem outra"
+  - "ch13: VRAM, KV cache, quantização, MoE e largura de banda em sequência"
+  - "ch03: abre com uma mensagem de erro em inglês e notas 69, 84, 89 de provas que ainda não conheço"
+  - "ch12: a impressão digital do tokenizador e o caso do modelo brasileiro"
+  - "ch16: Zig contra Rust, curl, rsync, Bun (não é o meu mundo)"
+units:
+  - {unit: index, score: 4, note: "Me reconheci no 'pai que viu um vídeo'. Entrei no livro com confiança, só achei a abertura histórica um pouco longa."}
+  - {unit: como-ler, score: 3, note: "Útil, mas não me diz qual capítulo responde a pergunta do meu filho; tive que descobrir sozinho."}
+  - {unit: antes, score: 2, note: "Uma lista de livros em inglês que eu não vou ler. Passei os olhos e segui."}
+  - {unit: ch01, score: 5, note: "Entendi como o truque funciona sem uma conta sequer. Fiquei com a sensação de que alguém finalmente falou comigo como gente."}
+  - {unit: ch02, score: 3, note: "A mesa de trabalho e o 'bilhete sobre você' ficaram. O vazamento e o banco vetorial me perderam."}
+  - {unit: ch03, score: 2, note: "Muito programador. A ideia 'o modelo só escreve, quem tem as mãos é o harness' é boa, mas chega enterrada em números."}
+  - {unit: ch04, score: 4, note: "Finalmente entendi por que o chatbot concorda comigo. As regras práticas valem ouro; a parte do carimbo invisível já me escapou."}
+  - {unit: ch05, score: 3, note: "O iceberg e o 'o que sobra pra gente' funcionam. As 30 horas, a febre e os commits me cansaram."}
+  - {unit: ch06, score: 2, note: "Commits, testes, integração contínua, mocks. Li na diagonal."}
+  - {unit: ch07, score: 3, note: "O 'zero e nada' é o melhor pedaço do livro até aqui. O resto, uma lista de projetos do autor."}
+  - {unit: ch08, score: 3, note: "O fracasso do mangá é fácil de entender (80% é pouco). O Driveclub e o Master System foram demais."}
+  - {unit: ch09, score: 4, note: "Aprendi a pedir melhor a um chatbot. As skills e o arquivo de regras são coisa de programador."}
+  - {unit: ch10, score: 3, note: "O boletim tem graça e a ideia de 'projeto sem usuário está morto' pegou. A lista de 18 projetos Frank é puro catálogo."}
+  - {unit: interlude1, score: 4, note: "Leve, curto, divertido. Os seis textos que a IA americana se recusou a traduzir me fizeram rir."}
+  - {unit: ch11, score: 2, note: "Quase parei aqui. O recado ('não confie em ranking, olhe como foi medido') é bom, mas custou 5 mil palavras de jargão."}
+  - {unit: ch12, score: 2, note: "O começo (a IA colando da prova) prende. Depois vira investigação de tokenizador e fiquei sem chão."}
+  - {unit: ch13, score: 2, note: "Parece catálogo de loja de informática, só que de peças que eu não vendo. A resposta final cabia em três linhas."}
+  - {unit: ch14, score: 4, note: "O capítulo que mais se aproxima da dúvida do meu filho. Gostei da lista de oito perguntas; me incomodou ele decidir pelo motivo de quem fala e não pelo que é dito."}
+  - {unit: interlude2, score: 3, note: "Bonito, curto. O ponto cego do KataGo me fez pensar, mas é um respiro e nada mais."}
+  - {unit: ch15, score: 4, note: "Entendi tudo sobre cópia de segurança, que é coisa que tenho na loja. A ordem dos fatos confunde, e RAID e snapshot são palavras demais."}
+  - {unit: ch16, score: 2, note: "Pedi uma resposta para 'é seguro usar software feito por IA?' e recebi um debate entre linguagens de programação."}
+  - {unit: ch17, score: 4, note: "Celular, golpe, deepfake e palavra-código com a família: isso eu uso amanhã. A primeira metade (jadx, código nativo) eu pulei."}
+  - {unit: ch18, score: 3, note: "O cartão perfurado é uma boa imagem. O resto é sobre carreira de programador, e no fim não consegui aplicar ao meu filho."}
+  - {unit: ch19, score: 2, note: "Escrito para quem tem equipe de software, sprint, PO e QA. Na minha loja de ferragens não aplica."}
+  - {unit: ch20, score: 4, note: "Responde o que eu queria ouvir (ela não vai ficar mais esperta do dia pra noite). Só que fiquei com a pulga: será que já podem afirmar isso?"}
+  - {unit: epilogo, score: 4, note: "Boa lista do que vale aprender e do que dá pra ignorar. Faltou escrever um parágrafo só para pai conversando com filho."}
+  - {unit: posfacio, score: 3, note: "Honesto sobre como o livro foi feito, e o fato de ele mostrar os próprios erros me dá mais confiança no resto."}
+annotations:
+  - unit: index
+    quote: "Em junho, uma das maiores empresas do setor, com o pedido pra abrir capital na bolsa recém-protocolado"
+    type: confusing
+    why: "Não diz qual empresa, nem qual modelo, nem o que é 'abrir capital'. Li o parágrafo duas vezes e só entendi onze capítulos depois (ch14)."
+    suggestion: "Ou nomear logo, ou deixar essa história inteira pro capítulo 14 e tirar da abertura."
+  - unit: como-ler
+    quote: "Cada parte começa num capítulo que dá pra ler sozinho"
+    type: rewrite
+    why: "Prometi a mim mesmo ler só o que respondesse a pergunta do meu filho, e esta página não me diz qual é. A resposta está espalhada entre ch01 (AGI), ch14 e ch20. Já o capítulo 11, indicado como porta da Parte III, não se lê sozinho."
+    suggestion: "Uma tabelinha 'se a sua pergunta é X, leia Y' com as dúvidas do prefácio (alguém lá dentro? vai ficar mais inteligente? é perigoso?)."
+  - unit: antes
+    quote: "A maior parte está só em inglês, e eu aviso quando não está."
+    type: boring
+    why: "Para quem não programa e lê devagar, onze livros e vídeos em inglês é um muro. Perdi a vontade ali, antes do primeiro capítulo."
+    suggestion: "Deixar só o texto de Lee e Trott no corpo do livro e mandar o resto pro apêndice."
+  - unit: ch01
+    quote: "Do 4 pro 5, a maioria das pessoas comuns nem notou tanta diferença."
+    type: logic
+    why: "Afirmado como fato, sem fonte. O gráfico que vem depois desenha uma curva de 'capacidade' sem número nenhum no eixo, mas parece medição. Para quem desconfia de especialista, isso é desenhar a conclusão."
+    suggestion: "Dizer que a curva é ilustração, ou trocar por um dado (nota num teste, preço por geração)."
+  - unit: ch02
+    quote: "Pra um sonho acontecer, três portas tinham que abrir ao mesmo tempo"
+    type: boring
+    why: "Vinte e quatro horas, cinco sessões, uma trava, nove seções de resumo, 1.279 sessões que falharam... Era detalhe de uma função que, o próprio autor diz, estava desligada. Pulei."
+    suggestion: "Duas frases: o programa relê e reescreve as anotações enquanto você não usa. Só isso."
+  - unit: ch02
+    quote: "Virou indústria. Pinecone, Weaviate, Qdrant, Chroma, LangChain, LlamaIndex"
+    type: boring
+    why: "Seis nomes de produto, embedding, banco vetorial, RAG. A lição final (a peça obrigatória de uma época vira opcional) é boa, mas cheguei nela cansado."
+    suggestion: "Condensar em um parágrafo e manter a ideia de que 'a mesa grande dispensou o bibliotecário esperto'."
+  - unit: ch03
+    quote: "reasoning_content must be passed back to the API"
+    type: confusing
+    why: "O capítulo abre com uma mensagem de erro em inglês, OpenCode, DeepClaude, tier A e notas 69, 84, 89 de um 'benchmark' que só é explicado no capítulo 11. Eu não sabia nem o que estava sendo medido."
+    suggestion: "Abrir com a imagem do arreio (cavalo forte, sem arreio corre pra qualquer lado) e deixar o DeepSeek para depois."
+  - unit: ch03
+    quote: "O MiniMax M3 saiu de 24 pra 91 pontos."
+    type: boring
+    why: "Nomes de modelo que não conheço, subindo e descendo. Entendi a ideia ('o harness mexe na nota') duas páginas antes."
+    suggestion: "Um exemplo só."
+  - unit: ch04
+    quote: 'se dois modelos dizem "sustentado" com 40% de confiança cada e um diz "misto" com 95%, o "misto" vence, porque 95 pesa mais do que 80'
+    type: logic
+    why: "Essa confiança é o próprio modelo que declara, e o capítulo acabou de dizer que 'o tom seguro não diz nada sobre a veracidade'. Peso maior pro mais seguro de si parece premiar justamente o defeito descrito."
+    suggestion: "Explicar por que a confiança declarada é confiável aqui, ou admitir que é só uma regra de desempate."
+  - unit: ch05
+    quote: "A conta dá de seis a sete vezes mais rápido, talvez mais."
+    type: logic
+    why: "As 200 horas 'que eu teria levado' são palpite do autor, não medição, e a conta vira número exato. No ch20 ele mesmo cita um estudo em que programadores experientes ficaram 19% mais lentos com IA. Quem desconfia de promessa de produtividade nota a diferença."
+    suggestion: "Chamar de 'minha estimativa' na hora, e avisar que o estudo do ch20 aponta o contrário em outro tipo de projeto."
+  - unit: ch06
+    quote: "Só 37% eram funcionalidade nova, aquilo que aparece na demonstração."
+    type: boring
+    why: "A ideia é ótima (a demonstração mostra um terço do software), mas vem com 274 commits, 1.323 testes, 22 segundos de CI, 21 commits de segurança, 27 de refatoração. Perdi o fio."
+    suggestion: "Ficar com o gráfico e uma frase. O resto vai pro apêndice dos projetos."
+  - unit: ch08
+    quote: "Foram 31 fases de investigação, 44 commits na minha cópia do emulador e mais de 15 mil linhas de código de diagnóstico."
+    type: boring
+    why: "Quatro dias de um defeito em tela de videogame de PlayStation. O que me interessou (a IA querendo parar, o autor confiando no palpite) cabe em um quarto do espaço."
+    suggestion: "Cortar a explicação técnica da exposição e do 'espingarda', manter só o episódio 'a IA queria parar'."
+  - unit: ch08
+    quote: "a memória das duas é comparada byte a byte, quadro a quadro."
+    type: confusing
+    why: "'Oráculo' é um conceito importante (ele volta nos ch11, 12, 15, 19), mas é apresentado com emulador de Nintendinho, ciclos de CPU e chips de cartucho. Só entendi o conceito quando ele disse 'um teste é um oráculo pequeno'."
+    suggestion: "Começar pela balança do banheiro: algo de fora que diz se você acertou. Depois o emulador."
+  - unit: ch09
+    quote: "Quase sempre, quando a pessoa mostrava o pedido, o defeito estava ali."
+    type: logic
+    why: "Se o modelo vai bem, o mérito é do pedido; se vai mal, a culpa é do pedido (e 'a resposta foi 42'). Assim ninguém consegue provar o contrário. E contradiz os ch11 e ch12, em que o modelo inventa comandos, cola e escreve teste que concorda com o próprio erro, sem culpa de quem pediu."
+    suggestion: "Admitir que há falha do modelo que um bom pedido não conserta."
+  - unit: ch10
+    quote: "Dinheiro pra investir eu tenho."
+    type: rewrite
+    why: "Na hora me soou como se exibir. O argumento (se eu achasse bom, abriria empresa) se sustenta sozinho. Esse tipo de frase me faz desconfiar do resto."
+    suggestion: "Cortar a frase."
+  - unit: ch10
+    quote: "É o mesmo espelho de @sec-ch06 e @sec-ch07, agora com três meses de evidência em vez de uma semana"
+    type: boring
+    why: "Esta é a quarta ou quinta vez que o 'espelho' (a IA acelera quem você é) aparece, e vai reaparecer nos ch18, 19 e 20. Da segunda vez eu já tinha entendido."
+    suggestion: "Deixar o espelho no ch06 e no ch20; nos outros, só uma menção de meia linha."
+  - unit: ch11
+    quote: "O primeiro comando acusado era um tal de `chat.complete`."
+    type: confusing
+    why: "Abertura de um capítulo que o como-ler diz que se lê sozinho: biblioteca RubyLLM, comandos inventados, 'grupo B', Kimi K2.5, Opus 4.7 no OpenCode. Não sabia o que era nada disso. É onde eu quase abandonei."
+    suggestion: "Abrir com a ideia: 'eu publiquei um ranking, descobri que o meu erro era meu, e corrigi'. Os comandos entram depois como exemplo."
+  - unit: ch12
+    quote: "A explicação estava no intermediário"
+    type: logic
+    why: "Para o Kimi dizer 'Anthropic' uma vez, ele diz que a causa foi o intermediário distribuir entre quinze servidores. Mas aí ele trava cada um dos catorze e todos respondem 'Moonshot AI'. Se nenhum dos servidores responde errado, o intermediário não explica a resposta errada. Depois a conclusão fala de 'artefato do intermediário' assim mesmo."
+    suggestion: "Dizer que a resposta única ficou sem explicação, ou ajustar a causa (treino com texto do Claude)."
+  - unit: ch12
+    quote: "Somando as diferenças de todos os textos, o tokenizador público da OpenAI, chamado o200k, ficou a 2 tokens de distância."
+    type: boring
+    why: "Tokenizador, o200k, Llama 3 a 68, Qwen a 193... a conclusão do próprio autor é 'nenhuma origem ficou provada'. Gastei dez minutos para chegar a lugar nenhum."
+    suggestion: "Mover para um quadro opcional, deixando só a mensagem 'de fora não dá pra provar de onde um modelo veio'."
+  - unit: ch13
+    quote: "Os especialistas que dormem continuam ocupando memória."
+    type: confusing
+    why: "VRAM, KV cache, quantização, memória unificada, largura de banda, MoE, denso, tudo em seis páginas. As analogias (a biblioteca e o corredor) ajudam, mas cada termo pede outro."
+    suggestion: "Uma analogia só (mesa pequena, corredor estreito) e mandar o resto pro glossário."
+  - unit: ch14
+    quote: "Quem acredita de verdade que um produto pode extinguir a espécie humana fecha a fábrica."
+    type: logic
+    why: "Argumento pelo motivo de quem fala: eles ganham dinheiro, logo é marketing. Mas uma empresa pode ter interesse e, ao mesmo tempo, o risco ser real (o próprio capítulo documenta a invasão da Hugging Face). E 'gente que entende do assunto não está desesperada' cita LeCun e um comentário do Ng de 2015, ignorando os que saíram da Anthropic no mesmo capítulo. Sobra a minha pergunta: afinal, o que meu filho viu é verdade ou não?"
+    suggestion: "Separar três colunas pro leitor: o que está comprovado (Hugging Face), o que é condicional (o texto do Amodei) e o que ninguém sabe. E dizer que há especialistas sérios dos dois lados."
+  - unit: ch14
+    quote: "Nate Soares, do MIRI, disse que apresentou o Coxon à agência quando o primeiro post passou de 100 mil curtidas"
+    type: confusing
+    why: "Sacks, Pirate Wires, MIRI, Coxon, Benton, Engels, Bubeck, Buckmaster, Alpoge, Tao, Clay. Em alguns parágrafos eu não sabia mais quem acusava quem."
+    suggestion: "Dois ou três nomes por seção, e uma frase final dizendo o que o leitor deve concluir."
+  - unit: ch15
+    quote: "Como a conferência dessa cópia quase falhou é assunto da próxima seção."
+    type: rewrite
+    why: "O capítulo abre com a faxina, volta cinco dias para o NAS, e a 'próxima seção' é outra faxina, não a conferência. Precisei desenhar uma linha do tempo no caderno. Também RAID, paridade, snapshot e copy-on-write chegam todos juntos."
+    suggestion: "Ordem cronológica: o aparelho morrendo, a cópia, a faxina, e só depois as camadas. Cada termo técnico com uma frase."
+  - unit: ch16
+    quote: "Ninguém revisa aquilo com seriedade."
+    type: logic
+    why: "Isso é deduzido do número de commits por dia, e a decisão de não rodar o OpenClaw vem de uma auditoria feita por um único Claude. Duas páginas depois o próprio autor mostra duas auditorias que acharam coisas diferentes, e no cap. 4 pedia três IAs. Aqui bastou uma."
+    suggestion: "Dizer 'parece que ninguém revisa' e avisar que a auditoria pode ter falsos positivos."
+  - unit: ch16
+    quote: "Eu queria ler o melhor argumento técnico possível em defesa do Zig."
+    type: boring
+    why: "Disputa entre dois criadores de linguagem, com mágoa pessoal e conflito de interesse, e a conclusão é que 'não temos o contrafactual'. Não faz diferença para mim."
+    suggestion: "Cortar a seção toda e manter o parágrafo final sobre processo."
+  - unit: ch17
+    quote: "Cai por vaidade."
+    type: logic
+    why: "'A maioria das pessoas que cai em phishing não cai por ignorância técnica. Cai por vaidade.' É uma afirmação grande, sem dado, e o próprio capítulo lista como sinal de golpe 'sua conta será bloqueada em 24 horas' (medo e pressa, não vaidade). Minha mãe caiu no golpe do banco por susto, não por elogio."
+    suggestion: "Dizer 'muita gente cai por vaidade, outras por medo ou pressa'."
+  - unit: ch17
+    quote: "nada do que segue é cem por cento factual."
+    type: rewrite
+    why: "Entendo a honestidade, mas o capítulo começa com três apps, um aviso longo e ferramentas (jadx, Blutter, APKPure) antes de eu saber se meu celular me espiona. A resposta útil aparece só no meio."
+    suggestion: "Abrir com a resposta em três linhas (coleta muito, não grava seus toques, não prova que escuta) e depois contar como o autor chegou lá."
+  - unit: ch18
+    quote: "O que separa as duas posições na prática é o assunto de @sec-ch20."
+    type: logic
+    why: "A discordância com Hinton (o Nobel que diz que o modelo 'entende') é exatamente a pergunta do vídeo do meu filho: tem alguém lá dentro? O livro resolve em dois parágrafos, empurra para o ch20, e o ch20 não volta nela. Só fala de desempenho."
+    suggestion: "Um quadro curto no ch20 ou no epílogo: o que Hinton diz, o que o autor diz, o que um teste poderia decidir."
+  - unit: ch18
+    quote: "foram 93 linhas de leis e provas pra garantir dois fatos simples sobre uma rotina de umas 30 linhas;"
+    type: boring
+    why: "Bend 2, PACT, Haskell contra Ruby, 112 tentativas, 43 cenários. A conclusão ('nenhuma linguagem foi melhor pra IA') é de uma linha."
+    suggestion: "Só a conclusão e a recomendação de estudar fundamentos."
+  - unit: ch19
+    quote: "Quase ninguém decide de verdade, banca a decisão até o fim e sofre a consequência."
+    type: logic
+    why: "Generalização sobre todos os funcionários, sem dado, e o autor só admite que é 'especulação' em outro trecho. Como dono de loja, me incomodou a conclusão de que o problema é gente 'treinada a não decidir' e não a empresa que não deixa decidir."
+    suggestion: "Dizer que é o que ele viu em empresas de software, e dar peso igual à culpa da direção."
+  - unit: ch20
+    quote: "os números dizem que ela não vai."
+    type: logic
+    why: "A frase completa é 'se você chegou com medo de que a máquina acordasse no ano que vem mais inteligente do que você, os números dizem que ela não vai'. Os números são de um teste de programação em que sete modelos empatam no teto, e o próprio capítulo reconhece que tal teste 'não enxerga nada acima da nota máxima'. Linha reta no teto de uma régua não mostra que o que há acima parou. A lista 'o que mudaria minha conclusão' ajuda, mas a frase final afirma demais."
+    suggestion: "'Nos meus testes, e pelo que se mede de fora, não há sinal de salto no próximo ano', sem prometer o futuro."
+  - unit: epilogo
+    quote: "o medo segue a mesma regra."
+    type: logic
+    why: "A frase do cartão diz que a empolgação cai com o conhecimento; o epílogo estende ao medo ('quanto menos a pessoa sabe, mais imagina o fim do mundo'). Só que no ch14 quem fala em fim do mundo inclui pesquisadores de dentro, e o ch18 cita Hinton. O livro mostra os dois lados, o epílogo escolhe um."
+    suggestion: "Trocar por 'muito medo vem de quem lucra com ele, e parte vem de gente que sabe e discorda do autor'."
+cut_candidates:
+  - {unit: ch02, where: "### O agente que sonha", why: "Detalhe de função desligada. Duas frases bastam."}
+  - {unit: ch02, where: "## A moda do banco vetorial", why: "RAG, embedding e seis nomes de produto. A lição final pode sobreviver em um parágrafo."}
+  - {unit: ch04, where: "## O carimbo invisível", why: "Boa informação, mas sai do assunto 'posso confiar no que o chatbot diz' e tem seis subseções."}
+  - {unit: ch06, where: "### Dados de verdade", why: "Lista de bugs de anime em japonês, feeds e CDNs. O leitor leigo só precisa de 'dado real traz surpresa'."}
+  - {unit: ch08, where: "## Quatro dias no escuro", why: "Explicação técnica longa de um defeito de videogame; o ponto útil (a IA quer parar, você decide) cabe em um parágrafo."}
+  - {unit: ch10, where: "lista de projetos com notas 1 a 5 (boletim)", why: "Catálogo de projetos com nome de Frank. Fica o gráfico e a frase 'projeto sem usuário está morto'."}
+  - {unit: ch11, where: "## Dois cérebros pelo preço de um", why: "Três rodadas de orquestração de modelos. Ficou só a analogia dos pintores e pedreiros, que é boa."}
+  - {unit: ch12, where: "## A receita da prefeitura", why: "Briga de crédito entre modelos abertos, tangencial."}
+  - {unit: ch12, where: "### A impressão digital", why: "Tokenizador e comparações numéricas com conclusão 'nada provado'."}
+  - {unit: ch13, where: "## O especialista pequeno", why: "Tabela de classificadores com nomes que não conheço; o recado (regra no código, modelo só lê o texto livre) vale uma página."}
+  - {unit: ch14, where: "### Os matemáticos de verdade", why: "Disputa de autoria entre pesquisadores, 'palavra de um contra a de outro', sem consequência para o leitor."}
+  - {unit: ch16, where: "## Uma reescrita que deu certo", why: "Bun, Zig e Rust. Fica o método em duas frases."}
+  - {unit: ch18, where: "### Setembro: a hipótese ganha corpo", why: "Linguagens, provas formais e benchmark de sete linguagens; só interessa a programador."}
+  - {unit: ch19, where: "## O fosso e a Adobe", why: "Clones da Adobe, REA, GIMP e Pantone. Fosso já foi explicado no ch10."}
+  - {unit: ch20, where: "## Sete anos numa página", why: "Duplica o apêndice A. Chinchilla, Mixtral, DeepSeek-V3 não precisam estar no capítulo que dá a resposta."}
+  - {unit: apC, where: "## Diante de um anúncio", why: "Repete quase item por item a lista de oito perguntas do ch14."}

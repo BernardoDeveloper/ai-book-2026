@@ -479,11 +479,6 @@ prompt-injection:
     file), written so that it obeys whoever wrote the text instead of whoever is using
     the tool. There is no known cure; the best protection is limiting what the agent
     can do and requiring human approval for dangerous actions.
-proxy:
-  term: Proxy
-  def: A middleman that receives requests and passes them on to another service. A
-    transparent proxy just forwards them, so the user may think they are talking to
-    one system when they are really talking to another.
 pull-request:
   term: Pull request
   def: A formal request to bring a change into a software project, usually from someone
@@ -657,11 +652,6 @@ token:
   term: Token
   def: The piece of text the model works with, usually a fragment of a word. Models
     read, write and charge by the token.
-tokenizador:
-  term: Tokenizer
-  def: The part of the model that breaks text into tokens before any processing. Each
-    family of models has its own vocabulary, and whoever fine-tunes a model inherits
-    its tokenizer, which makes it a clue to a model's lineage.
 tool-calling:
   term: Tool calling
   def: The model writes, in an agreed format, a request like "read such-and-such file";

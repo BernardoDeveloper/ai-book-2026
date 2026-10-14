@@ -4,7 +4,10 @@
 # Mechanical checks for book chapter sources (docs/BOOK-VOICE.md). Catches what
 # a reread misses: dashes, banned phrases, long paragraphs, raw URLs, unknown
 # citation or glossary keys, missing provenance, naming-rule violations
-# (book/continuity.yml `naming_rules`). Judgment calls stay with the
+# (book/continuity.yml `naming_rules`). Warnings (docs/EDITORIAL-RULES.md): R3
+# phrases from `generalization_watch`, R9 name-dense sentences (5+ distinct
+# versioned product names such as GPT-5.5 or Opus 4.8) and bullet lists of 9+
+# items in prose (appendices, ap*, are exempt). Judgment calls stay with the
 # humanizer and akita-finish passes.
 #
 # Usage: scripts/lint_chapter.rb FILE...   (BOOK_LANG=pt by default)
@@ -67,6 +70,17 @@ def unquoted_titles(line)
   line.gsub(/\[[^\]]*\]\([^)]*\)/) { |m| " " * m.size }
       .gsub(%r{\*[^*\n]+\*(?=\s*\(?\s*https?://)}) { |m| " " * m.size }
 end
+CONTINUITY = yaml_or_empty(File.join(ROOT, "book", "continuity.yml"))
+GENERALIZATIONS = Array(CONTINUITY.dig("generalization_watch", LANG)).map { Regexp.new(_1, Regexp::IGNORECASE) }
+# R9: capitalised tokens carrying a digit or hyphen, with an optional version
+# suffix ("GPT-5.5", "Opus 4.8").
+PRODUCT_TOKEN = /\b\p{Lu}[\p{L}\d]*(?:[-.][\p{L}\d]+)*(?:\s\d+(?:\.\d+)*)?/
+MAX_PRODUCTS = 4
+MAX_BULLETS = 8
+BULLET = /\A\s*(?:[-*+]|\d+\.) /
+def name_dense?(sentence)
+  sentence.gsub(/[*_`]/, "").scan(PRODUCT_TOKEN).select { _1.match?(/[\d-]/) }.uniq.size > MAX_PRODUCTS
+end
 NON_PROSE = /\A\s*(#|>|[-*+] |\d+\. |\||<!--|!\[|:::|\{)/
 
 errors = 0
@@ -98,6 +112,8 @@ ARGV.each do |path|
     report.("error", rel, 1, "source #{s.inspect} needs post + sha256") unless s.is_a?(Hash) && s["post"] && s["sha256"]
   end
 
+  appendix = File.basename(path, ".md").start_with?("ap")
+  bullets = 0
   in_code = false
   para = []
   para_start = 0
@@ -106,6 +122,11 @@ ARGV.each do |path|
       prose = para.join(" ").gsub(/\b(Sr|Dr|etc|ex|vs|p\.ex|cap|fig)\./i, "").gsub(/\d+\.\d+/, "0")
       sentences = prose.scan(/[^.!?]+[.!?]+(\s|\z)/).size
       report.("warning", rel, para_start, "paragraph has #{sentences} sentences (ceiling 4)") if sentences > 4
+      unless appendix
+        prose.split(/(?<=[.!?])\s+/).each do |sentence|
+          report.("warning", rel, para_start, "name-dense sentence (EDITORIAL-RULES R9): #{sentence.strip[0, 80]}") if name_dense?(sentence)
+        end
+      end
     end
     para.clear
   end
@@ -130,6 +151,9 @@ ARGV.each do |path|
         report.("error", rel, n, "naming: '#{m[0]}' should be '#{m[0].sub(re, use)}' (continuity.yml naming_rules)")
       end
     end
+    GENERALIZATIONS.each do |re|
+      report.("warning", rel, n, "possible unsupported generalization (EDITORIAL-RULES R3): #{line[re]}") if line =~ re && !line.lstrip.start_with?("#")
+    end
     report.("error", rel, n, "raw URL in prose; use a citation [@key]") if line =~ %r{https?://}
     line.scan(%r{(?<![\w./])@([\w:.-]*\w)}).flatten.each do |key|
       next if key.start_with?("fig-", "sec-", "tbl-")
@@ -141,6 +165,12 @@ ARGV.each do |path|
       report.("error", rel, n, "glossary key '#{key}' unknown (use key= or propose it in _gls/)") unless glossary_keys.include?(key)
     end
 
+    if line =~ BULLET
+      bullets += 1
+      report.("warning", rel, n, "bullet list longer than #{MAX_BULLETS} items (EDITORIAL-RULES R9): move to a table, figure or appendix") if bullets == MAX_BULLETS + 1 && !appendix
+    elsif !line.strip.empty? && line !~ /\A\s{2,}\S/
+      bullets = 0
+    end
     if line.strip.empty? || line =~ NON_PROSE
       check_para.()
     else

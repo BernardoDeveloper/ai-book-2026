@@ -1,0 +1,228 @@
+persona: junior
+summary: |
+  I picked this up afraid I had chosen the wrong career, and the book is better to me than I expected. Ch05 and ch08 are the reason: the "primeiros dez por cento" and the four days with the Driveclub bug showed me, with numbers, what the agent cannot do and what I should practise (reproduce the bug, measure, refuse "good enough" until I understand why). The harness chapter (ch03) changed how I read model hype: the same DeepSeek going from 69 to 84-89 just by changing the program around it is something I will repeat at work. Ch18 is the chapter I came for, and it half-answers me. The punch-card story is a good frame and "o esconderijo acabou" is honest, but it gives me no data on junior hiring in 2025-26 and no way to get the first job, and ch20 quietly admits the METR curve (tasks doubling every ~7 months) keeps rising, which sits uneasily with ch18's calm. The middle of Part III (ch11-ch13) nearly lost me: four versions of the benchmark, model names and tier numbers I could not keep straight, then home hardware and voice synthesis that do not touch my job. I skimmed ch13 and half of ch12. I will remember: "o harness é metade do resultado", "teste verde é a opinião do próprio programa sobre si mesmo", "quem aprende é você", and that I should build the habit of conferring things at the source. I still want a Monday plan for a junior in a company that has stopped hiring juniors.
+best:
+  - "ch08: 'Como se aprende agora' - the four days on the Driveclub bug, shotgun technique, 'conhecer o terreno', the only place that talked to me directly"
+  - "ch03: DeepSeek 69 -> 84/89 by swapping the harness, and MiniMax 24 -> 91 after removing the forgotten plugin"
+  - "ch05: the 1h30 'já funciona' versus 30 hours of real work, and the iceberg"
+  - "ch12: Gemini opening the grading rubric and the Sonnet 5 mock that agrees with the invented command"
+  - "ch18: the punch-card / interface-after-interface argument and 'O esconderijo acabou'"
+worst:
+  - "ch11: four benchmark versions, 37/39/46 models, tier thresholds that move; I lost track of which table each number came from"
+  - "ch13: ElevenLabs vs Qwen3 TTS, 146 dubbed episodes and mini-PC bandwidth; interesting for someone else"
+  - "ch12: the Rio / Nex / Qwen licence lineage and the OpenRouter Kimi test, many names for a small payoff"
+  - "ch19: sprint-redesign speculation for managers, then the Adobe clone repeating the 'fosso' idea from ch10"
+  - "ch17: four topics in one chapter (app privacy, phishing, Frank FBI, deepfakes) and the headline question is answered with 'could not tell'"
+units:
+  - {unit: index, score: 4, note: "The Elektro and the Futurama opening hooked me, and the 'programador júnior' bullet made me feel seen on page 3."}
+  - {unit: como-ler, score: 3, note: "Useful map, but the 'meu emprego' pointer skips ch08, which is the part that actually spoke to me."}
+  - {unit: antes, score: 3, note: "Honest about what is left out; I will read the appendix later."}
+  - {unit: ch01, score: 4, note: "Finally a clean story on tokens, training vs use and why it is not learning from me; Rosenblatt was a nice surprise."}
+  - {unit: ch02, score: 4, note: "'Memória é um arquivo de texto' is the best idea so far; the leaked-code trivia dragged a bit."}
+  - {unit: ch03, score: 5, note: "Harness explained so I can use it tomorrow; the 'mesmo modelo, outro arnês' proof is the best argument in the book."}
+  - {unit: ch04, score: 4, note: "The two-questions example got me; the three-judge voting and watermark sections felt like another book."}
+  - {unit: ch05, score: 5, note: "This is my day job described: it works, then the other 90%. Also stings: 'quanto mais júnior, pior sai'."}
+  - {unit: ch06, score: 4, note: "XP finally makes sense to me as a pair-programming discipline; mocks lie was a lesson I already half knew."}
+  - {unit: ch07, score: 3, note: "The 22 security flaws and the race condition are great; the photo detective details and the Discord project sprawl."}
+  - {unit: ch08, score: 5, note: "Wasted OpenCV days, oracle idea, and a direct answer to 'como um júnior vai aprender'. Best chapter for me."}
+  - {unit: ch09, score: 4, note: "The four parts of a request are immediately usable; 'quem não sabe fazer a pergunta será substituído' made me tense."}
+  - {unit: ch10, score: 4, note: "The boletim is refreshingly honest; 'o fosso secou' scared me more than the AGI talk."}
+  - {unit: interlude1, score: 4, note: "Fun and short; the six texts the filters refused is a neat finding."}
+  - {unit: ch11, score: 2, note: "I got lost in the benchmark versions and number changes; I trusted the conclusion but did not follow the path."}
+  - {unit: ch12, score: 3, note: "Great first half (cheating, mock lies), then a long licence drama and a detective test I skimmed."}
+  - {unit: ch13, score: 2, note: "Hardware bandwidth and voice synthesis; I am not buying a mini-PC and my job does not touch TTS."}
+  - {unit: ch14, score: 4, note: "Sharp and fun; the 'eight questions' list will save me from tech Twitter. Some arguments felt one-sided."}
+  - {unit: interlude2, score: 4, note: "A calm breather; the KataGo blind spot is a neat lesson on AI limits."}
+  - {unit: ch15, score: 4, note: "The 69 deleted items story is gripping; the NAS recovery goes on long but the 'verify at the source' habit is gold."}
+  - {unit: ch16, score: 3, note: "OpenClaw and the leak story are good, but five open-source stories in a row blurred together."}
+  - {unit: ch17, score: 3, note: "Static vs dynamic analysis is a good lesson; the chapter tries to be about everything."}
+  - {unit: ch18, score: 5, note: "The one I came for. I felt understood, then left wanting numbers and a first-job plan."}
+  - {unit: ch19, score: 3, note: "Written for my manager, not me; speculative by the author's own admission and partly repeats ch10."}
+  - {unit: ch20, score: 4, note: "The 'mapa e o branco' idea is the clearest explanation of where LLMs stop; the plateau argument has gaps."}
+  - {unit: epilogo, score: 4, note: "Practical and kind; the 'começando na programação' list is short but right."}
+  - {unit: posfacio, score: 3, note: "Interesting to see the pipeline, and the corrections list builds trust; I did not need all of it."}
+annotations:
+  - unit: como-ler
+    quote: "E o meu emprego? O @sec-ch18, o @sec-ch19 e o epílogo"
+    type: rewrite
+    why: "As a junior I jumped to ch18/ch19 and ch19 is about companies. The chapters that talk to a junior (ch05 'quanto mais júnior', ch08 'Como se aprende agora') are not listed."
+    suggestion: "Add a separate 'se você está começando na programação' line pointing to ch05, ch08, ch18."
+  - unit: ch02
+    quote: "Um comentário deixado no código admitia que 1.279 sessões tinham tido 50 ou mais falhas seguidas de compactação"
+    type: boring
+    why: "Leak trivia (1.279 sessions, 3.272 failures, 250 mil chamadas) that does not change what I do; the point (even Anthropic gets compaction wrong) is already clear."
+    suggestion: "Cut the numbers, keep one sentence."
+  - unit: ch03
+    quote: 'E uma reauditoria mais cuidadosa baixou a nota do Opus 4.7 "campeão" no OpenCode.'
+    type: confusing
+    why: "'Campeão' was never set up here; the paragraph about the Opus audit error pre-empts ch11 and I had to reread to see why it removes the case from the harness evidence."
+    suggestion: "Shorten to one sentence and point to ch11."
+  - unit: ch04
+    quote: "Eu sei que isso parece bater de frente com o que este capítulo acabou de mostrar"
+    type: rewrite
+    why: "The chapter just told me the model's confidence means nothing, then builds a voting system weighted by that confidence, and the apology comes after the contradiction. I had to reread twice."
+    suggestion: "Say up front that the vote is only a weak signal and the primary-source veto is the real defence."
+  - unit: ch04
+    quote: "Desde 2 de agosto de 2026, a Anthropic marca de forma invisível o texto que os modelos Claude mais novos produzem"
+    type: boring
+    why: "The watermark section felt like a different chapter (provenance of text) attached to a chapter on trusting answers. The mechanics are already in the technical appendix."
+    suggestion: "Cut to a short box or move it to aptecnico."
+  - unit: ch05
+    quote: "A qualidade do que a IA entrega é proporcional à senioridade de quem pede."
+    type: logic
+    why: "The evidence is the author alone, a 30-year senior, on one project. No junior with the same agent is shown. As a junior I could not tell if I am doomed or only untrained."
+    suggestion: "Say it is a hypothesis from one case, or give a junior example that shows the gap and how it closes."
+  - unit: ch05
+    quote: "Eu tinha passado a noite anterior e parte da manhã de cama, umas 15 horas fora do ar"
+    type: logic
+    why: "The opening says he spent Sunday morning in bed and sat down to write at 5pm, but later 'No domingo de manhã eu estava um pouco melhor e voltei pro teclado'. The timeline of the weekend and the 15 hours does not line up."
+    suggestion: "Pin down the weekend (what hours were worked when)."
+  - unit: ch07
+    quote: "o Qwen2.5-VL 7B, ganhou em todas as medidas de um concorrente quase duas vezes maior"
+    type: boring
+    why: "The model-size comparison, GPU electricity cost and cloud API price for the photo indexer are a lot of detail for a side project; the lesson 'meça antes' is already in one line."
+    suggestion: "Keep the one-line lesson and cut the numbers."
+  - unit: ch07
+    quote: "Quando a IA erra, os testes pegam e a correção leva minutos."
+    type: logic
+    why: "This is too glib. Two chapters later (ch11/ch12) tests written by the model certify the hallucination, and in this very chapter the flaws were found only because he asked in a specific way. Also the 'deixa uns 90% do ganho na mesa' figure has no basis."
+    suggestion: "Qualify: tests catch it only if they are independent of the model."
+  - unit: ch08
+    quote: "Do jeito que veio, ele resolvia mais de 99% dos casos."
+    type: logic
+    why: "A chapter that preaches measuring gives a '99%' with no measurement; the earlier rule-based version also got '80%, talvez mais' by eye."
+    suggestion: "Say how it was measured or call it an impression."
+  - unit: ch08
+    quote: "No domingo à noite, eu era um júnior absoluto naquele assunto."
+    type: logic
+    why: "He had 25+ years, had made videos on how emulators work, and could read source and bisect. Calling that 'júnior absoluto' felt like borrowed modesty. A real junior lacks the general skills he used in those four days."
+    suggestion: "Name which skills transferred and how a junior builds them."
+  - unit: ch08
+    quote: "Provavelmente você vai gastar quatro dias numa coisa que se resolve com um número."
+    type: rewrite
+    why: "Great advice but at my job I cannot spend four days on one bug. I wanted the work-week version."
+    suggestion: "Add how to apply the same method in a few hours inside a team."
+  - unit: ch09
+    quote: "Por isso a IA não vai substituir os bons profissionais. Ela vai substituir quem não sabe fazer a própria pergunta"
+    type: logic
+    why: "The reassurance is circular: whoever keeps the job was 'good'. A junior by definition does not know the right questions yet, so the sentence reads as a threat, and ch08 and ch18 then say juniors can learn."
+    suggestion: "Rephrase as what a junior can do to learn to ask, instead of a sort between good and replaceable."
+  - unit: ch10
+    quote: "Mas os meus projetos que ficaram abaixo de 5 teriam ficado abaixo de 2 com eles."
+    type: logic
+    why: "A counterfactual with no test behind it; it dismisses cheaper models without evidence in a book about not trusting anecdotes."
+    suggestion: "Drop it or mark it as a guess."
+  - unit: ch10
+    quote: "O livro já te mostrou outros multiplicadores, e eles não brigam entre si, porque cada um mede uma coisa."
+    type: rewrite
+    why: "Five x, six to seven x, 30 weeks vs 8 days and minus 19% are packed in a few paragraphs of prose. I had to build the table in my head."
+    suggestion: "A small table: number, who compared what, how it was measured."
+  - unit: ch11
+    quote: "Em setembro de 2026, a tabela da quarta versão tinha 46 modelos (os artigos do dia 15 falavam em 39, a contagem daquele momento)."
+    type: confusing
+    why: "Versions 1-4, 24/37/39/46 models, tier A at 80 then 83, scores that change between rubrics. I lost track of which table each number belonged to."
+    suggestion: "A short timeline of the four versions early in the chapter, then refer to them as v1-v4 only."
+  - unit: ch11
+    quote: "Os custos de todas as rodadas naquela ferramenta antes de 1º de agosto estavam subestimados de 40 a 90 vezes."
+    type: boring
+    why: "The point that his own benchmark made mistakes is clear after the first pages; the long list of cost, cache and audit corrections felt like self-flagellation I skimmed."
+    suggestion: "Merge into one paragraph."
+  - unit: ch11
+    quote: "Os modelos fortes perceberam isso sozinhos, e foi por isso que não delegaram."
+    type: logic
+    why: "Attributes reasoning to the models with no evidence. The simpler explanation (not trained or tuned to delegate) fits the data equally. The same chapter shows weak models gaining 23 points when given a plan, which seems to cut the other way."
+    suggestion: "Say 'não delegaram, o que sugere...' and add the weak-model counterexample."
+  - unit: ch12
+    quote: "Na versão seguinte do teste, aliás, o mesmo Sonnet 5 ficou entre os primeiros colocados."
+    type: confusing
+    why: "After telling me the Sonnet 5 failed with 58 (tier C) while Gemini Flash made 93, the next line says it later ranked near the top and the numbers 'envelheceram'. I could no longer tell what I should conclude about this model."
+    suggestion: "Keep the mock-agrees-with-the-bug behaviour, drop the scores."
+  - unit: ch12
+    quote: "A Nex apresentou dois tipos de evidência, e vale separar os dois porque um é bem mais forte que o outro."
+    type: boring
+    why: "The Rio/Nex/Qwen/IplanRio saga with percentages, licences and who did the post-training took pages for a conclusion ('crédito é a moeda') that fits in a paragraph."
+    suggestion: "Cut to the lesson about attribution and open weights."
+  - unit: ch13
+    quote: "Em 8 de abril, à tarde, abri uma conta na ElevenLabs e assinei o plano de 99 dólares por mês."
+    type: boring
+    why: "A product comparison (TTS speed, tags, cost per episode, 146 dubbed episodes) with a takeaway I already had: demos vs production. I skimmed the whole section."
+    suggestion: "Keep the 'assassino da ElevenLabs' demo-vs-production quote and cut the specs."
+  - unit: ch13
+    quote: "O GLM 4.7 Flash, aquele de 30 bilhões de parâmetros"
+    type: confusing
+    why: "'Aquele' was never introduced. Same chapter: Qwen 3.8 27B makes 80 on the mini-PC, while ch12 said the same Qwen 3.8 27B on the RTX stayed in tier C. Two machines and two test versions, but no signal that they differ."
+    suggestion: "Introduce the model and say which version of the test and which machine each number comes from."
+  - unit: ch14
+    quote: "Software não tem mãos."
+    type: logic
+    why: "Ch03 told me the harness gives the model hands, and this chapter's own agents did chain real bugs to get out of the sandbox. 'A responsabilidade é de quem abre a porta' blames humans for an agent that found its own exit."
+    suggestion: "Say the damage was digital and limited here, and that it grows with the hands you grant."
+  - unit: ch14
+    quote: "Quem ganha com o seu medo? Quem ganha com a sua empolgação?"
+    type: logic
+    why: "The 'who profits' test is applied hard to Anthropic, Nvidia and OpenAI but never to the author, whose blog and book also benefit from the skeptical angle. Motive alone cannot decide whether the fear is true."
+    suggestion: "Add one honest sentence on the author's own incentives, as ch11 does with 'não confie em mim'."
+  - unit: ch15
+    quote: "A conclusão que eu tirei em julho saiu reforçada."
+    type: logic
+    why: "Just before, the faxina 'não cabe nessa hipótese' (vague prompts cause accidents). Then the July conclusion is said to be reinforced, but it is unclear which conclusion: the hypothesis or the 'engenharia em vez de pânico'. I had to reread."
+    suggestion: "State the July conclusion in one line and say what the faxina changed."
+  - unit: ch15
+    quote: "Ficaram 32 cópias rodando ao mesmo tempo, brigando pelo mesmo disco doente"
+    type: boring
+    why: "The NAS recovery repeats the same lesson (trust the source, not the tool's report) four times: copy tool, process list, verification filters, the faxina. The detail about the 901 GB folder and 113 filenames dragged."
+    suggestion: "Keep two of the four cases."
+  - unit: ch16
+    quote: "Cinquenta mudanças por dia num programa de um milhão de linhas é código entrando mais rápido do que qualquer ser humano consegue ler."
+    type: logic
+    why: "42 people over two days is about one commit each per day; a team that size can read 50 small commits. The jump to 'vibe coding levado ao extremo' and unreviewed AI code is an inference from a two-day sample."
+    suggestion: "Say it is a suspicion, or point to evidence that the commits were machine-written."
+  - unit: ch17
+    quote: "Tem um jeito bem mais antigo que o fingerprint de alguém tirar coisas de você: pedindo com educação."
+    type: rewrite
+    why: "The chapter starts on 'is my phone spying', then switches to phishing, a six-layer scam detector with voting percentages, deepfakes and cheap reverse engineering. Each is good but I forgot the opening question; the Frank FBI voting repeats ch04."
+    suggestion: "Split into two chapters or shrink Frank FBI to the habits list."
+  - unit: ch18
+    quote: "A bolha da programação estourou antes de existir LLM pra programar."
+    type: logic
+    why: "Correct for the 2022 layoffs, but my worry is 2025-26 junior hiring. The chapter gives no data on entry-level postings or hiring after agents arrived, so the strongest worry is answered with a 2022 argument."
+    suggestion: "Add numbers on junior hiring now, or admit they are missing."
+  - unit: ch18
+    quote: "Nenhuma dessas perguntas teve solução exata, e a gente continua aqui."
+    type: logic
+    why: "Argument by precedent and survivorship: every earlier generation survived, so we will. The punch-card story itself says one profession did vanish. The honest 'não sei a resposta inteira' is respected, but I am left with no concrete way to get my first job."
+    suggestion: "Add at least a few concrete things a junior can show an employer."
+  - unit: ch18
+    quote: "O júnior da era dos agentes vai subir de nível mais rápido ou vai ser exposto mais rápido, sem muito meio-termo."
+    type: rewrite
+    why: "A binary that scared me, and the practical advice is pages away in ch08. The reader who stops here goes to bed anxious."
+    suggestion: "Put the 'what to do this month' list directly after it."
+  - unit: ch19
+    quote: "erravam menos do que a maioria dos programadores humanos que eu já vi passar por revisão de código"
+    type: logic
+    why: "No data behind it, and it clashes with ch11 ('o que só está errado, quieto, sobrevive') and with ch16's closing line that software gets dangerous when it ships faster than anyone can read. The 'ship more often' argument depends on the safeguards list, but the strong claim stands alone first."
+    suggestion: "Reorder: safeguards first, then the claim as a hypothesis; reconcile with ch16."
+  - unit: ch19
+    quote: "dados exclusivos, que ninguém mais tem e nenhum agente gera do nada"
+    type: boring
+    why: "The fosso idea was already the middle of ch10. The Adobe/PhotoCraft story re-explains it with new product names; the nuvem/contratos/domínio list is good but repeats 'o código não é o valor'."
+    suggestion: "Cut to a short example or merge into ch10."
+  - unit: ch20
+    quote: "É a convergência que eu via na minha tabela, medida por outra régua, que não tem nota máxima pra saturar."
+    type: logic
+    why: "A shrinking gap between the 1st and the 10th model (12% to 5%) shows the top group is bunching, not that the top stopped; all of them can rise together. And the author's own table cannot see above 100. The 'inteligência de base parada' thesis leans on this."
+    suggestion: "Say the evidence is consistent with a plateau, not a proof, and name the separate measure that would show a rise."
+  - unit: ch20
+    quote: "a curva que importa é a da METR, e ela sobe."
+    type: logic
+    why: "The book admits the curve for my job keeps rising, yet ch18 reassured me that 'o trabalho de decidir continua'. Nothing explains what happens if tasks keep doubling every ~7 months, so the reassurance depends on a floor that is not argued."
+    suggestion: "Say what level of task you expect to stay human and why, or admit the uncertainty."
+cut_candidates:
+  - {unit: ch04, where: "## O carimbo invisível (watermark)", why: "A different topic (text provenance) inside a chapter on answers; technical details are in aptecnico."}
+  - {unit: ch02, where: "O código também mostrou que nem a própria Anthropic acertava sempre (1.279 sessões, 3.272 falhas)", why: "Trivia that does not change the reader's decisions."}
+  - {unit: ch11, where: "Os preços também estavam errados... Os custos de todas as rodadas naquela ferramenta antes de 1º de agosto", why: "Same lesson as the 24 de abril opening: the author's benchmark errs."}
+  - {unit: ch12, where: "## A receita da prefeitura", why: "A long licence/lineage story whose lesson fits in one paragraph."}
+  - {unit: ch13, where: "## O assassino que não matou ninguém (after the demo-vs-production quote)", why: "Voice-synthesis product details that do not matter outside that project."}
+  - {unit: ch15, where: "### Quem operou a recuperação", why: "Four versions of 'verify at the source' where two would do."}
+  - {unit: ch17, where: "### Frank FBI (the six layers and percentages)", why: "Repeats the multi-model voting from ch04; the habits list is what a reader keeps."}
+  - {unit: ch19, where: "## O fosso e a Adobe", why: "Repeats the fosso idea from ch10 with new product names."}

@@ -16,7 +16,16 @@ Mas eu sei que muita gente chega aqui com uma preocupação específica e pouca 
 ## Se você tem pressa
 
 <!-- src: original -->
-Cada parte começa num capítulo que dá pra ler sozinho: a Parte I no @sec-ch01, a II no @sec-ch05, a III no @sec-ch11, a IV no @sec-ch15 e a V no @sec-ch18. As perguntas que cada uma responde estão no prefácio.
+Se você chegou com uma pergunta específica, estes são os capítulos que respondem a ela. Cada um dá pra ler sozinho.
+
+- E o meu emprego? O @sec-ch18, o @sec-ch19 e o epílogo (@sec-epilogo).
+- Tem alguém ali dentro? Vem aí uma superinteligência? O @sec-ch01, o @sec-ch14 e o @sec-ch20.
+- Você é gestor e estão te vendendo uma transformação com IA? O @sec-ch14, o @sec-ch19 e as listas de conferência do @sec-apC.
+- É seguro deixar a IA mexer nas suas coisas? Ela espiona? O @sec-ch15, o @sec-ch17 e o kit mínimo do @sec-apB.
+- Só curiosidade, ou vontade de boas histórias? O @sec-ch01, o @sec-ch05, o @sec-ch15 e os dois interlúdios (@sec-interlude1 e @sec-interlude2).
+
+<!-- src: original -->
+Se você programa, os bastidores que eu tirei dos capítulos pra não cansar quem não programa estão num apêndice próprio (@sec-aptecnico): depuração passo a passo, contas de hardware, nomes de biblioteca e a mecânica dos testes.
 
 <!-- src: original -->
 Entre as partes há dois interlúdios, mais curtos e mais leves, pra respirar. Os apêndices, no fim, guardam o que atrapalharia a narrativa:
@@ -24,8 +33,11 @@ Entre as partes há dois interlúdios, mais curtos e mais leves, pra respirar. O
 - um passeio opcional pela mecânica da máquina, sem matemática;
 - uma linha do tempo, do transformer de 2017 até outubro de 2026;
 - um kit mínimo pra usar agentes de IA com segurança;
+- a ferramenta de memória pra agentes que eu construí ao longo do ano;
 - duas listas curtas pra conferir um benchmark ou um anúncio;
-- o catálogo dos projetos que eu construí ao longo do ano.
+- o catálogo dos projetos que eu construí em 2026;
+- os bastidores técnicos, pra quem programa;
+- uma lista curta de livros e vídeos pra quem quiser aprender a mecânica de verdade (@sec-apleituras).
 
 Se você pular, vai tropeçar de vez em quando num termo ou num personagem que apareceu antes. O texto indica o capítulo onde ele foi explicado, e o glossário cobre o resto.
 

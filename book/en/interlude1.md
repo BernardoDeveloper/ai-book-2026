@@ -5,7 +5,7 @@ sources:
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "c6451afc1d26d440a2364ebee3249330f54d9e0ddcb493aa7fdba4c9ff72d8c4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/interlude1.md, sha256: c66a507dca01a4035b04420c1966c8042180a3f24953769a3f973dd5d261bda1}
+translated_from: {file: book/pt/interlude1.md, sha256: "c66a507dca01a4035b04420c1966c8042180a3f24953769a3f973dd5d261bda1"}
 ---
 
 # Interlude: Twenty Years of Blogging in a Weekend {#sec-interlude1 .unnumbered}

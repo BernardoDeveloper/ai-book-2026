@@ -125,4 +125,14 @@ class TestGenQuarto < ToolTest
     assert_includes profile["colophon"], "Os nomes akitaonrails e Frank são de propriedade de Autor Teste."
     assert_includes profile["colophon"], "ai-jail: GPL-3.0"
   end
+
+  # Guards the revision line on the copyright page: the release tag on CI tag
+  # builds, no "+local" in CI, and no ISBN line while meta.isbn is unset.
+  def test_revision_and_isbn
+    fx.run("gen_quarto", "pt", env: { "CI" => "1", "GITHUB_REF_TYPE" => "tag", "GITHUB_REF_NAME" => "v9.9.9" }) # exit 2: fixture lacks generated pages
+    colophon = profile["colophon"]
+    assert_match(/Revisão v9\.9\.9 \(\w*\), gerada em \d\d\/\d\d\/\d{4}\. Versões e correções: https:\/\/github\.com\/akitaonrails\/ai-book-2026\/releases/, colophon)
+    refute_includes colophon, "+local"
+    refute_includes colophon, "ISBN"
+  end
 end

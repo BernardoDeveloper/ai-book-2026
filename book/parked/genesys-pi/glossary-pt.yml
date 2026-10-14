@@ -1,0 +1,14 @@
+# Parked from book/back/glossary-pt.yml on 2026-10-13 (Genesys PI section).
+# Restore: put each entry back in alphabetical order in book/back/glossary-pt.yml
+# and in book/pt/_gls/ch12.yml (the per-chapter proposal file; `rake build` runs
+# `rake merge`, which would otherwise re-add or drop them).
+proxy:
+  term: Proxy
+  def: Um intermediário que recebe pedidos e os repassa a outro serviço. Um proxy
+    transparente só encaminha; quem usa pode achar que fala com um sistema quando,
+    na verdade, fala com outro.
+tokenizador:
+  term: Tokenizador
+  def: A parte do modelo que quebra o texto em tokens antes de qualquer processamento.
+    Cada família de modelo tem o seu vocabulário, e quem ajusta um modelo herda o
+    tokenizador dele, por isso ele serve como pista de parentesco.

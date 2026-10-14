@@ -37,7 +37,7 @@ refs_projects:
   - "ai-memory/README.md"
   - "ai-usagebar/README.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apD.md, sha256: "6329e99be475dbec8a178c218790388209c447626454701e5253ae6b937e68dc"}
+translated_from: {file: book/pt/apD.md, sha256: "946c317c7523e6c54c5a4c3bfd217081ae6ef157c3cb840eaa10069dfcb156b9"}
 ---
 
 # The Year's Projects {#sec-apD}
@@ -60,7 +60,7 @@ The projects I named Frank something are a tribute to Frank Rosenblatt, the crea
 **FrankMD.** A Markdown note editor, the first of the Franks, built with Claude Code in three days, at the turn from January to February [@akita2026frankmd]. In May it got a 7: I barely use it, but other people do and keep it alive with fixes. Appears in @sec-ch05, @sec-ch06, @sec-ch10 and @sec-ch20.
 
 <!-- src: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms -->
-**PACT.** The compiler prototype for an "ideal for AI" language, designed by Claude itself at my request in February. I published it without even testing it, as a record of a hypothesis I myself called a hunch [@akita2026pact]. Appears in @sec-ch18.
+**PACT.** The compiler prototype for an "ideal for AI" language, designed by Claude itself at my request in February. I published it without even testing it, as a record of a hypothesis I myself called a hunch [@akita2026pact]. Appears in @sec-ch18; the details are in @sec-aptecnico-linguagens.
 
 <!-- src: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles -->
 **The M.Akita Chronicles.** A weekly newsletter with an AI-narrated podcast, in which the robot M.Arvin comments on the news with me. Programmed between February 10 and 15, it ran on its own for the first time on the 16th. It got an 8 in May, tied with ai-jail for the highest grade on the report card, and it's the project I touch most often, because it has readers waiting every week. Appears in @sec-ch06, @sec-ch07, @sec-ch10 and @sec-ch13.
@@ -69,7 +69,7 @@ The projects I named Frank something are a tribute to Frank Rosenblatt, the crea
 **FrankMega.** A homemade clone of Mega, the large-file sharing service, built in one day to send a file to a friend from my home server [@akita2026frankmega]. A 5 in May: personal use. Appears in @sec-ch07 and @sec-ch10.
 
 <!-- src: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito -->
-**Frank Sherlock.** A photo indexer that lets a local AI describe each image and read the text in it, so you can search by content [@akita2026franksherlock]. In early March it was at version 0.7, with face detection and 621 tests. In May it sank to the bottom of the report card, because not even I use it. Appears in @sec-ch07, @sec-ch10, @sec-ch13 and @sec-ch20.
+**Frank Sherlock.** A photo indexer that lets a local AI describe each image and read the text in it, so you can search by content [@akita2026franksherlock]. In early March it was at version 0.7, with face detection and 621 tests. In May it sank to the bottom of the report card, with a 2, because not even I use it. Appears in @sec-ch07, @sec-ch10, @sec-ch13 and @sec-ch20.
 
 <!-- src: 2026/03/04/eu-fiz-um-sistema-de-data-mining-pra-minha-namorada-influencer-dicas-e-truques -->
 **A private project.** Built around the turn of February into March for a user who wasn't me, my girlfriend. No details here. Appears in @sec-ch04 and @sec-ch07.
@@ -98,7 +98,7 @@ In July it got a relative: a version that puts the little reading captions over 
 **Frank Investigator.** A tool for questioning the news, in which three models check each claim and the primary source has veto power [@akita2026frankinvestigator]. About nine days of work and 129 commits in March. It was up and working, and I stopped there: a 3 in May. Appears in @sec-ch04 and @sec-ch10.
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-**ai-jail.** It started in January as a script of about 170 lines wrapped around bubblewrap and became a real tool in March [@akita2026aijail; @aijail2026site]. It isolates the coding agent so it only sees the project folder. An 8 in May, tied with the Chronicles for the highest and, in May, the project that drew the most outside contributors.
+**ai-jail.** It started in January as a script of about 170 lines wrapped around bubblewrap and became a real tool in March [@akita2026aijail; @aijail2026site]. It isolates the coding agent so it only sees the project folder. An 8 in May, tied with the Chronicles for the highest, and the project that drew the most outside contributors: 19 code contributions merged and 23 reported issues resolved.
 
 <!-- src: ref:ai-jail/README.md -->
 In October 2026 it was at version 2.8.1, after a Docker escape fixed the same day, in July, and two security audits on September 30. Appears in @sec-ch10, @sec-ch15 and @sec-apB.
@@ -109,7 +109,7 @@ In October 2026 it was at version 2.8.1, after a Docker escape fixed the same da
 **Frank Karaoke.** An app that turns YouTube videos into karaoke, born from a weekend conversation with my siblings [@akita2026frankkaraoke]. A 3 in May. Appears in @sec-ch10.
 
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
-**The blog.** The code for my blog, which was already getting contributions from readers and got a 7 in May [@akita2026blog]. In April, for the blog's twentieth anniversary, an agent translated into English, in a little over a day and a half, a good chunk of the posts I'd been promising to translate for almost two decades. Appears in @sec-interlude1 and @sec-ch10.
+**The blog.** The code for my blog, which had already received some 30 contributions from readers and got a 7 in May [@akita2026blog]. In April, for the blog's twentieth anniversary, an agent translated into English, in a little over a day and a half, a good chunk of the posts I'd been promising to translate for almost two decades. Appears in @sec-interlude1 and @sec-ch10.
 
 <!-- src: 2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo -->
 **llm-coding-benchmark.** My benchmark of coding models, started in April and rebuilt over the year up to its fourth version [@akita2026llmbench]. The fourth version, from September, had 46 models and security sabotage planted in the middle of the task. It got a 5 in May, because it doesn't even run on its own: Claude Code runs it, under my command. Appears throughout Part III, starting at @sec-ch11, and in @sec-ch03, @sec-ch13 and @sec-ch20.
@@ -171,7 +171,7 @@ At the end of September I called the pause: 349 commits in almost four months, f
 **Classifier benchmark.** A battery of tests for small decision models, the same family as Jev (the classifier launched with great fanfare in September, @sec-ch14), run in October with local and cloud models. The October 12 result is in @sec-ch13.
 
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
-**Language benchmark.** The test that answered, in October, February's question about the best language for AI: the same hard task, in several languages, and the language changed nothing; what changed the result was the presence of tests [@akita2026vibebench]. Appears in @sec-ch18.
+**Language benchmark.** The test that answered, in October, February's question about the best language for AI: the same hard task, in several languages, with the frontier models getting everything right in all of them; the tests helped more than the choice of language [@akita2026vibebench]. Appears in @sec-ch18.
 
 ## What the Inventory Shows
 

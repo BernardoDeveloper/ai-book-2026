@@ -10,6 +10,7 @@
 #   rake audit          page-level layout audit of the PDFs (scripts/page_audit.rb)
 #   rake build BOOK_LANG=en  same for the EN edition
 #   rake review DIR=reviews/<version>/<lang>  validate + summarise copyedit findings (scripts/review.rb)
+#   rake balance        words per unit and per source post, overlap between units (build/<lang>/balance.md)
 #   rake test           regression tests of the tools (test/, isolated fixture book)
 
 require "digest"
@@ -87,6 +88,11 @@ end
 desc "Copyedit step 1: mechanical style report (repetition, tics, variants) in build/<lang>/style-report.md"
 task :style do
   ruby "scripts/style_report.rb", "--lang", LANG
+end
+
+desc "Structural balance: words per unit and per source post, overlap, in build/<lang>/balance.md"
+task :balance do
+  ruby "scripts/balance_report.rb", "--lang", LANG
 end
 
 desc "Strict pre-release check: doctor in release mode (placeholders and stale translations are errors)"

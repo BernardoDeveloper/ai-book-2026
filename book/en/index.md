@@ -10,7 +10,7 @@ sources:
   - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "65b3ce93900a46d8fe0b9cb7fdc627978e0e220926745dd8c5e4453edc2b3690"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/index.md, sha256: "41845e8796c7615b8a1e8e20c8a641525151bf0ece881e5c80b984c8114cfd50"}
+translated_from: {file: book/pt/index.md, sha256: "4ee804b47a7eadbfd028d4bd46c75591cd2401eb85d0dfbe624522714421c55e"}
 ---
 
 # Preface {#sec-prefacio .unnumbered}
@@ -89,7 +89,7 @@ The fourth is about trust: is it dangerous to let this thing touch my stuff? Is 
 
 The last is the one that keeps people up at night: what about my job? Part V talks about work and careers, explains why so many companies spend fortunes on AI without seeing results, and ends with the year's balance sheet: where this technology really stood in October 2026, and what that means for you.
 
-Between the parts there are two lighter interludes, to catch your breath. And for anyone who wants to go deeper into how the machine works, there's an appendix that explains the mechanism without a single formula (@sec-apmecanica) and a reading list right before the first chapter (@sec-antes).
+Between the parts there are two lighter interludes, to catch your breath. And for anyone who wants to go deeper into how the machine works, there's an appendix that explains the mechanism without a single formula (@sec-apmecanica) and a reading list at the end of the book (@sec-apleituras).
 
 ## How This Book Was Made
 

@@ -57,6 +57,10 @@ PT changes land first and need the author's approval before EN follows.
 
 - Voice: `docs/BOOK-VOICE.md` (inherits the blog's WRITER.md, humanizer and
   akita-finish rules). Drafting contract: `docs/DRAFTING.md`.
+- Argument and reader-experience rules learned from reviews:
+  `docs/EDITORIAL-RULES.md`; review procedures: `docs/COPYEDIT.md` (copyedit)
+  and `docs/PERSONA-REVIEW.md` (target readers). Parked material lives in
+  `book/parked/<topic>/` with restore notes; drift reports changes to its posts.
 - `book/outline.yml` is the source of truth for structure; `_quarto-*.yml`
   is generated (`scripts/gen_quarto.rb`).
 - Never present superseded content as current (`inventory/lineage.yml`).

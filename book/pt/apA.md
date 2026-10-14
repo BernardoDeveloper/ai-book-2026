@@ -49,10 +49,8 @@ sources:
   - {post: 2026/09/19/nova-linguagem-voltada-pra-ia-bend-2, sha256: "8a98f0d0f644b402a2ad9d95709c6dc204d92c04e390388b3bc148418223e7b1"}
   - {post: 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou, sha256: "0a4255b7f3b8974a7d3a8714f0f6479a0a8dd16152f356d8951bf6f2d05cc3c3"}
   - {post: 2026/09/22/pseudo-techcrunch-tentou-me-pegar-em-golpe-calendly-e-uma-merda, sha256: "bc328ccb2a5fdc5aa452538106d42f7f99a31e6109cacb8e0def3bd7effc94a0"}
-  - {post: 2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro, sha256: "ea64fb034378d2f7902bc60be9654f8edf07b649708a58cd48dc5c73b6b32b5c"}
   - {post: 2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7, sha256: "f25eac5a0fe68846d1e5744753f479b5e33d1c92fbea356d51adf506c9335ce8"}
   - {post: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas, sha256: "d0cbb55e7fefdb9aacc81e9b5fd1039940ab999808e75a568bb5b5bc4e6c8879"}
-  - {post: 2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro, sha256: "ec3091b9a4ff9295d0f3ff72cff9f584086c4a3d8f5ab4f9672a53956c4439d8"}
   - {post: 2026/10/03/entendendo-o-hype-do-jev-pra-que-serve, sha256: "003d104009e3c6bf7c342a51aca0fbe971432cbbc44fc9e591946e9b68b67c8b"}
   - {post: 2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados, sha256: "0feadb627f15c5bd325c7ac8d2e0c67519e86987a51e7645b5d46bf4674b3cab"}
   - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "90819aaee0a700994dc5dbcc83018b026811a12e9ea657a31c3e2d53c6270c0b"}
@@ -97,10 +95,10 @@ O primeiro hype da inteligência artificial tem quase setenta anos. O resto dest
 | 2018 | A OpenAI apresenta o GPT-1 [@radford2018improving] | @sec-ch01 |
 | 14 fev. 2019 | O GPT-2 é anunciado, com 1,5 bilhão de parâmetros, e o modelo completo fica guardado por ser perigoso demais [@radford2019better; @hern2019dangerous] | @sec-ch01 |
 | 5 nov. 2019 | O GPT-2 completo é publicado; o mundo não acaba [@openai2019gpt2] | @sec-ch01 |
-| 2020 | A lei de escala de Kaplan e colegas: o erro cai de forma previsível com tamanho, dados e processamento [@kaplan2020scaling] | @sec-ch20 |
+| 2020 | A lei de escala de Kaplan e colegas: o erro cai de forma previsível com tamanho, dados e processamento [@kaplan2020scaling] |  |
 | 2020 | O GPT-3, com 175 bilhões de parâmetros, abre a guerra dos parâmetros [@brown2020language] | @sec-ch01, @sec-ch20 |
 | 2021 | Dario Amodei, coautor do anúncio do GPT-2, já comanda a Anthropic [@anthropic2021raises] | @sec-ch01 |
-| 2022 | A Chinchilla, do DeepMind, mostra que os gigantes estavam mal alimentados de dados [@hoffmann2022training] | @sec-ch20 |
+| 2022 | A Chinchilla, do DeepMind, com 70 bilhões de parâmetros e umas quatro vezes mais texto, bate o Gopher, de 280 bilhões: os gigantes estavam mal alimentados de dados [@hoffmann2022training] | @sec-ch20 |
 | fim de 2022 | A OpenAI lança o ChatGPT [@openai2022chatgpt] | @sec-ch01 |
 
 ## Do ChatGPT aos agentes
@@ -112,10 +110,10 @@ De 2023 a 2025, o tamanho dos modelos sumiu do marketing, o raciocínio teve o �
 |---|---|---|
 | jan. 2023 | No meu canal, digo que a empolgação com IA é inversamente proporcional ao conhecimento sobre IA [@akita2023chatgpt] | @sec-ch01 |
 | 2023 | O relatório técnico do GPT-4 se recusa a dizer o tamanho do modelo [@openai2023gpt4] | @sec-ch01, @sec-ch20 |
-| 2023 | Vazamentos falam num GPT-4 de perto de 1,8 trilhão de parâmetros, nunca confirmado [@patel2023gpt4] | @sec-ch20 |
+| 2023 | Vazamentos falam num GPT-4 de perto de 1,8 trilhão de parâmetros, nunca confirmado [@patel2023gpt4] |  |
 | jun. 2023 | A OpenAI libera a [chamada de ferramentas]{.gls key=tool-calling} pros programadores [@openai2023function] | @sec-ch03 |
 | 2023 | Gravo um episódio do Akitando sobre snapshots e backup [@akita2023akitando146] | @sec-ch15 |
-| fim de 2023 | O Mixtral populariza a [mistura de especialistas]{.gls key=moe} [@mistral2023mixtral] | @sec-ch20 |
+| fim de 2023 | O Mixtral populariza a [mistura de especialistas]{.gls key=moe}: uns 47 bilhões de parâmetros no total, só uns 13 bilhões trabalhando em cada token [@mistral2023mixtral] | @sec-ch20 |
 | ago. 2024 | A Anthropic lança o [prompt caching]{.gls key=prompt-caching}, com corte de até 90% no custo de reler a conversa [@anthropic2024caching] | @sec-ch03 |
 | set. 2024 | A OpenAI lança o o1, treinado pra [raciocinar]{.gls key=raciocinio} por escrito antes de responder; na minha régua, o último grande salto [@openai2024o1] | @sec-ch03, @sec-ch20 |
 | 2024 | A OpenAI lança o próprio prompt caching, menos de dois meses depois da Anthropic [@openai2024caching] | @sec-ch20 |
@@ -123,7 +121,7 @@ De 2023 a 2025, o tamanho dos modelos sumiu do marketing, o raciocínio teve o �
 | fim de 2024 | A Anthropic propõe o [MCP]{.gls}, a tomada padrão pra plugar ferramentas em agentes [@anthropic2024mcp] | @sec-ch03 |
 | fim de 2024 | Ilya Sutskever diz na NeurIPS que o pré-treino como a gente conhece vai acabar [@sutskever2024neurips] | @sec-ch20 |
 | fim de 2024 | A Anthropic publica o guia de como construir agentes com padrões simples [@anthropic2024agents] | @sec-ch20 |
-| fim de 2024 | O DeepSeek-V3 treina com 671 bilhões de parâmetros, só 37 bilhões ativos por token [@deepseekai2024v3] | @sec-ch20 |
+| fim de 2024 | O DeepSeek-V3 treina com 671 bilhões de parâmetros, só 37 bilhões ativos por token; o treino final custa menos de 6 milhões de dólares em horas de placa de vídeo alugada [@deepseekai2024v3] | @sec-ch19, @sec-ch20 |
 | jan. 2025 | O DeepSeek-R1-Zero mostra raciocínio surgindo só com aprendizado por reforço [@deepseekai2025r1] | @sec-ch20 |
 | 2025 | A METR mede o tamanho das tarefas que agentes completam sozinhos dobrando a cada sete meses [@metr2025tasks] | @sec-ch03, @sec-ch20 |
 | 2025 | Chegam o Claude Code e o Codex | @sec-ch03, @sec-ch20 |
@@ -132,7 +130,7 @@ De 2023 a 2025, o tamanho dos modelos sumiu do marketing, o raciocínio teve o �
 | 2025 | Num experimento controlado da METR, programadores experientes ficam 19% mais lentos com IA [@becker2025measuring] | @sec-ch20 |
 | 2025 | O relatório do GitHub conta 81,5% das contribuições do ano em repositórios privados [@github2025octoverse] | @sec-ch20 |
 | dez. 2025 | A Anthropic doa o MCP a uma fundação ligada à Linux Foundation [@anthropic2025aaif] | @sec-ch03 |
-| dez. 2025 | A Anthropic compra o Bun [@sumner2025anthropic] | @sec-ch16, @sec-ch19 |
+| dez. 2025 | A Anthropic compra o Bun [@sumner2025anthropic] | @sec-ch16 |
 
 ## 2026, mês a mês
 
@@ -243,9 +241,6 @@ O ano do livro. A história começa em fevereiro; as poucas entradas de janeiro 
 <!-- src: 2026/06/15/controversia-llm-rio-3-5-plagio -->
 **Abril.** A prefeitura do Rio anuncia a família de modelos Rio 3 Open [@prefeiturario2026rio3open] (@sec-ch12).
 
-<!-- src: 2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro -->
-**Abril.** A LUA Vision, de São Paulo, lança o Genesys PI [@luavision2026empresa] (@sec-ch12).
-
 <!-- src: 2026/04/11/vs-code-e-o-novo-cartao-perfurado -->
 **11 de abril.** Vendo um agente digitar mais rápido do que qualquer pessoa, lembro do cartão perfurado (@sec-ch18).
 
@@ -313,7 +308,7 @@ O ano do livro. A história começa em fevereiro; as poucas entradas de janeiro 
 **Julho.** O Frank GO, um aplicativo de estudo de Go em cima do KataGo (@sec-interlude2). Cinco dias depois de publicá-lo, as redes falam de agentes apagando arquivos dos donos (@sec-interlude2, @sec-ch15).
 
 <!-- src: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito -->
-**8 de julho.** Jarred Sumner conta como reescreveu o Bun de Zig pra Rust com até 64 instâncias do Claude [@sumner2026bun] (@sec-ch16, @sec-ch19).
+**8 de julho.** Jarred Sumner conta como reescreveu o Bun de Zig pra Rust com até 64 instâncias do Claude [@sumner2026bun] (@sec-ch16, @sec-aptecnico-bun).
 
 <!-- src: ref:llm-coding-benchmark/docs/success_report.multi_model.md -->
 **Julho.** O Claude Opus 5, dentro do Claude Code, faz o melhor trabalho de engenharia que o benchmark tinha visto até ali (@sec-ch03).
@@ -376,9 +371,6 @@ O ano do livro. A história começa em fevereiro; as poucas entradas de janeiro 
 <!-- src: 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou -->
 **Setembro.** Defendo que as empresas coloquem mais código no ar, porque consertar ficou barato (@sec-ch19).
 
-<!-- src: 2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro -->
-**23 de setembro.** Primeira rodada do Genesys PI no meu benchmark (@sec-ch12).
-
 <!-- src: 2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7 -->
 **Fim de setembro.** O Claude Opus 5.5, o GPT-6 Sol e o Grok 4.7 entram no benchmark. Sete modelos empatam na nota máxima, e o Opus 5.5 chega lá por um quarto do custo do Opus 5 (@sec-ch11, @sec-ch20).
 
@@ -400,7 +392,7 @@ O ano do livro. A história começa em fevereiro; as poucas entradas de janeiro 
 **1º de outubro.** A Cloudflare lança o Clef, um classificador com pesos públicos [@chen2026clef] (@sec-ch14).
 
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
-**Começo de outubro.** O DHH converte o aplicativo de chat dele pra várias linguagens com agentes, e a discussão pega fogo [@dhh2026campfire] (@sec-ch18).
+**Começo de outubro.** O DHH converte o aplicativo de chat dele pra várias linguagens com agentes, e a discussão pega fogo [@dhh2026campfire] (@sec-aptecnico-linguagens).
 
 <!-- src: 2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados -->
 **5 de outubro.** Dois discos do meu NAS entram em estado crítico de uma vez (@sec-ch15).

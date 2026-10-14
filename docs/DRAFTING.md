@@ -7,6 +7,7 @@ write other chapters in parallel, so stick to this contract.
 ## Read first (in this order)
 
 1. `docs/BOOK-VOICE.md` — the book voice; it inherits the blog rules.
+   Then `docs/EDITORIAL-RULES.md` (argument and reader-experience rules learned from reviews) and the ledger `book/integration.yml` (one-off decisions about specific passages).
 2. `~/Projects/akitaonrails-hugo/WRITER.md` — voice section (rule 1) and rule 11.
 3. `~/Projects/my-skills/akita-finish/SKILL.md` and `~/Projects/my-skills/humanizer/SKILL.md`.
 4. `book/outline.yml` — the whole thing (know what other chapters cover), then your unit's entry.

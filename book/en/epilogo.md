@@ -9,7 +9,7 @@ sources:
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "309b129d7a93fb9b17e4efaefe75a56b8b85e95568adc2ecc9809306dab8b434"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/epilogo.md, sha256: "5b3843d6310a2d10048a6f4f0f7b9f1b7d9c74715da3723afc3681f81ccfb0c9"}
+translated_from: {file: book/pt/epilogo.md, sha256: "054a1be500d2c29026dda933e0058f165de1ea4e3392e723dc264e19dfb08eae"}
 ---
 
 # Epilogue: What I'd Tell You {#sec-epilogo .unnumbered}
@@ -19,13 +19,48 @@ Monday, then. You've reached the end of the book, or nearly, and the question yo
 
 I have no career plan to sell you, and no course. I have what a year of daily use taught me, and it fits in a few pages. A good part of it will sound obvious. The hard part is holding on to the obvious when the day's headline screams the opposite.
 
+I'll start with the concrete: two or three steps for this week, depending on who you are. The rest of the epilogue explains why these are the ones.
+
+## For This Week
+
+<!-- src: original -->
+If you work with offices, numbers or paperwork:
+
+- pick a repetitive task you already know how to do well, like the new report from the old one or the draft of a hard email, and ask the chatbot using the four parts from @sec-ch09: what you want, how, what you don't want and how to know it worked;
+- check the result against what you know is right and note where it erred; numbers, dates and rules get checked at the source (@sec-ch04);
+- keep customer and company data out of the chatbot until you know what the service stores and what your company allows.
+
+<!-- src: original -->
+If you're a manager:
+
+- before buying more licenses, pick one process, measure what reaches the customer today and measure again afterward (@sec-ch19);
+- set aside a week or two for the team to practice the new way with no delivery target;
+- when facing an announcement or a consultant, use the questions in @sec-apC.
+
+<!-- src: original -->
+If you're a parent, and your teenager asks whether AI is going to end the world:
+
+- tell them what the book showed: it's a program that generates the most likely text from a frozen file, that doesn't remember anyone and errs with total confidence (@sec-ch01, @sec-ch20);
+- also say that serious people are worried (@sec-ch14), and that in front of every headline the useful question is who profits from it;
+- agree with the family on a code word for emergencies against cloned-voice scams (@sec-ch17), which is this week's concrete risk.
+
+<!-- src: original -->
+If you're starting out in programming:
+
+- use the agent, but for every change it makes, ask it to explain why and check whether you could explain it too (@sec-ch18);
+- study what sits underneath (databases, networks, how to know whether the program is right) and write the test before asking for the code;
+- take a hard problem and don't let go until you understand why the solution worked (@sec-ch08); then publish, because real users are the best reviewer there is (@sec-ch19).
+
 ## Fear Sells
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-In @sec-ch01 you met the line on the card: your hype about AI is inversely proportional to your knowledge of AI. After this year, I'd add that fear follows the same rule. The less a person knows about how the thing works, the more room is left to imagine the end of the world.
+In @sec-ch01 you met the line on the card: your hype about AI is inversely proportional to your knowledge of AI. After this year, I'd add that a good part of the fear follows the same rule. The less a person knows about how the thing works, the more room is left to imagine the end of the world.
+
+<!-- src: original -->
+A good part, not all. In @sec-ch14 you saw serious researchers, who know very well how the thing works, genuinely worried, and that fear deserves to be heard and argued with on the merits. What doesn't deserve credit is fear manufactured by those who profit from it.
 
 <!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
-Fear and hype come out of the same factory. In August 2026 I wrote about the courses in "engineering" this and that which sprouted around agents, and the mechanism was an old one. First they make you anxious, thinking you're falling behind, that everyone else already migrated to the new paradigm and you haven't. Then they charge you to cure the anxiety they created.
+This manufactured fear and hype come out of the same factory. In August 2026 I wrote about the courses in "engineering" this and that which sprouted around agents, and the mechanism was an old one. First they make you anxious, thinking you're falling behind, that everyone else already migrated to the new paradigm and you haven't. Then they charge you to cure the anxiety they created.
 
 That fear of being left out has an acronym, FOMO, the fear of missing out, and in this market it's the business model. The announcement that general intelligence arrives in two years works the same way, on a bigger scale (@sec-ch14). Whoever has stock to sell, graphics cards to sell or a funding round to close needs you to feel that the world is going to end, or start over, next Tuesday.
 
@@ -44,7 +79,7 @@ Three things, and none of them expires in six months.
 <!-- src: original -->
 The first is the bare minimum about the machine. An [LLM]{.gls} generates the most likely text, piece by piece, from a frozen file that doesn't learn from you (@sec-ch01). Keeping just that in your head already defends you against half the promises: you don't expect consciousness from a text generator, you don't expect it to remember a conversation from the week before, and you get suspicious when it agrees with everything (@sec-ch04).
 
-If you want to go deeper, @sec-apmecanica shows the mechanism without math, and @sec-antes has a reading list for several levels.
+If you want to go deeper, @sec-apmecanica shows the mechanism without math, and @sec-apleituras has a reading list for several levels.
 
 <!-- src: 2026/04/11/vs-code-e-o-novo-cartao-perfurado -->
 The same goes for the fundamentals of your own trade. Think of the programmer with no foundation from @sec-ch18, who tests against 300 rows and has no idea what happens with a million. With an [agent]{.gls key=agente} in hand, people with a foundation learn faster. People without one just outsource their own ignorance.

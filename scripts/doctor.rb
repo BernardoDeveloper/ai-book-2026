@@ -22,6 +22,16 @@
 # Output checks (--output, after `rake build`):
 #   the render log (build/logs/render-<lang>.log) has no unresolved cross-references, unknown glossary keys
 #   or missing citations; the PDF text has no "??" / "key?" artefacts
+#   figures    (warning) R6, docs/EDITORIAL-RULES.md: a number stated next to a
+#              keyword of a `canonical_figures` key (book/continuity.yml) that is
+#              not among the numbers of that key's registered values. Heuristic:
+#              FIGURE_PATTERNS below holds, per key, a regex per language that
+#              captures the number(s) plus an optional range filter; a key with
+#              no entry is not checked. Extend by adding a key there.
+#   opening    (warning) R8: a chapter (ch*) whose first prose paragraph has inline
+#              code or three or more glossary marks, i.e. jargon before orientation
+# Scans read only the units listed in book/outline.yml, so book/<lang>/_staging
+# and book/parked are never looked at.
 # Also writes build/<lang>/seams.md: each unit's last paragraph next to the
 # next unit's first, for a quick human or agent review of the hand-offs.
 #
@@ -215,6 +225,81 @@ unless LANG == "pt"
       warn_.(id, "#{what} differ from PT: #{(a - b).first(3)} / #{(b - a).first(3)}") if a != b
     end
   end
+end
+
+# ---- canonical figures (R6, heuristic) -----------------------------------------
+# Per key, per language: `re` captures one or two numbers (digits or number
+# words) before the keyword; `only` limits which stated values are checked
+# (keeps "duas vezes" or "seis repositórios" about something else quiet).
+NUM = '(?<![\d.,])(\d+(?:[.,]\d+)?|um|uma|dois|duas|três|quatro|cinco|seis|sete|oito|nove|dez|onze|doze|quinze|vinte|one|two|three|four|five|six|seven|eight|nine|ten|twelve|fifteen|twenty)'
+RANGE = "(?:\\s*(?:a|ao|ou|-|to|or)\\s*#{NUM})?"
+# `ctx`: the sentence must look like the author talking about his own work
+# (first person); `skip`: sentences about someone else's claim or a figure of
+# speech. Both keep the heuristic quiet on vendor numbers ("prometia 193,6
+# vezes mais rápido") and rhetoric ("corda pra se enforcar dez vezes mais rápido").
+FIRST_PERSON = { "pt" => /\b(?:eu|me|meu|meus|minha|minhas|fiz|publiquei|mantenho)\b/i,
+                 "en" => /\b(?:I|me|my|mine)\b/ }.freeze
+NOT_MINE = { "pt" => /\b(?:prometia|promete|anuncia|anunciou|vende|enforcar|derrubou|mediu|mediram)\b/i,
+             "en" => /\b(?:promised|promises|announced|sells|hang yourself|took down|measured)\b/i }.freeze
+FIGURE_PATTERNS = {
+  "speedup" => {
+    "pt" => { re: /\b#{NUM}#{RANGE}\s*(?:vezes|x)\s+mais\s+(?:rápid|veloz|produtiv)/i, only: ->(n) { n >= 2 }, first_person: true },
+    "en" => { re: /\b#{NUM}#{RANGE}\s*(?:times|x)\s+(?:faster|more productive)/i, only: ->(n) { n >= 2 }, first_person: true },
+  },
+  "repositories" => {
+    "pt" => { re: /\b#{NUM}\s+repositórios/i, only: ->(n) { n >= 10 }, first_person: true },
+    "en" => { re: /\b#{NUM}\s+repositories/i, only: ->(n) { n >= 10 }, first_person: true },
+  },
+  "hours" => {
+    "pt" => { re: /(?<![\d.,])(\d{1,3}(?:[.,]\d{3})*|\d+)\s+horas/i, only: ->(n) { n.between?(300, 900) } },
+    "en" => { re: /(?<![\d.,])(\d{1,3}(?:[.,]\d{3})*|\d+)\s+hours/i, only: ->(n) { n.between?(300, 900) } },
+  },
+}.freeze
+WORDS = %w[zero um dois três quatro cinco seis sete oito nove dez onze doze].each_with_index.to_h
+WORDS.merge!({ "uma" => 1, "duas" => 2, "quinze" => 15, "vinte" => 20, "one" => 1, "two" => 2, "three" => 3, "four" => 4, "five" => 5,
+               "six" => 6, "seven" => 7, "eight" => 8, "nine" => 9, "ten" => 10, "twelve" => 12, "fifteen" => 15, "twenty" => 20 })
+to_n = lambda do |tok|
+  WORDS[tok.downcase] || (tok.match?(/\A\d{1,3}([.,]\d{3})+\z/) ? tok.delete(".,").to_i : tok.tr(",", ".").to_f.round)
+end
+continuity = File.join(ROOT, "book", "continuity.yml")
+registry = (File.exist?(continuity) && YAML.load_file(continuity) || {})["canonical_figures"] || {}
+registry.each do |key, entries|
+  pat = FIGURE_PATTERNS.dig(key, LANG) or next
+
+  allowed = Array(entries).flat_map { |e| e["value"].to_s.scan(/\d+|[[:alpha:]]+/).map { to_n.(_1) }.select(&:positive?) }.uniq
+  units.each do |id, u|
+    seen = []
+    flat = u[:text].gsub(/\s+/, " ")
+    flat.scan(pat[:re]) do
+      m = Regexp.last_match
+      if pat[:first_person]
+        start = flat.rindex(/[.!?]\s/, m.begin(0)) || 0
+        stop = flat.index(/[.!?](\s|\z)/, m.end(0)) || flat.size
+        sentence = flat[start..stop]
+        next unless sentence.match?(FIRST_PERSON[LANG]) && !sentence.match?(NOT_MINE[LANG])
+      end
+      nums = m.captures.compact.map { to_n.(_1) }
+      next if nums.none? { pat[:only].(_1) } || nums.all? { allowed.include?(_1) }
+
+      stated = m[0].strip
+      next if seen.include?(stated.downcase)
+
+      seen << stated.downcase
+      warn_.(id, "figure '#{key}': states \"#{stated}\", registry (continuity.yml canonical_figures) has #{entries.map { _1['value'] }.join(' / ')}")
+    end
+  end
+end
+
+# ---- opening jargon (R8) -------------------------------------------------------
+units.each do |id, u|
+  next unless id.match?(/\Ach\d/)
+
+  first = u[:text].split(/\n{2,}/).map(&:strip).find { !_1.empty? && !_1.start_with?("#", "!", ":::", "{", "|") }
+  next unless first
+
+  code = first.scan(/`[^`]+`/).size
+  gls = first.scan(/\]\{\.gls/).size
+  warn_.(id, "opening paragraph uses jargon before orienting the reader (R8): #{code} code span(s), #{gls} glossary mark(s): \"#{first[0, 80]}\"") if code.positive? || gls >= 3
 end
 
 # ---- seams ------------------------------------------------------------------

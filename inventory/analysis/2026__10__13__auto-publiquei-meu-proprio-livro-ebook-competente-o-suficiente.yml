@@ -1,5 +1,5 @@
 id: "2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente"
-source_sha256: "bfd899c4c31afcceeb223a8b4b850cede8fe308757b0ef126a014c0eac4f9291"
+source_sha256: "47abeba9230d168bd7bf990860e167b9f2fc25ded58b76fb139ea74b93c65001"
 title_en: "I self-published my own book/ebook: Competent Enough"
 ai_relevance: substantial
 ai_relevance_reason: "Launch post for this book; most of it is the technical backstage of building the book with agents (inventory, provenance, contracts, verification, build pipeline)."

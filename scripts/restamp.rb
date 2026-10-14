@@ -12,6 +12,9 @@
 # The second form is for EN units re-synced to their PT unit: it sets
 # translated_from.sha256 in book/en/<unit>.md to the PT file's current hash
 # (and nothing else). Never edit that hash by hand.
+# scripts/restamp.rb --parked <topic>   (pt) records, in
+# book/parked/<topic>/sources.yml, the current hash and blog commit of every post
+# the parked material cites (drift.rb "== Parked" compares against it).
 # Each edition tracks its own language of the post (index.md / index.en.md).
 # Only touches the front-matter block; prose is never modified. The
 # chapter-level blog_commit stays as the baseline for the chapter's other
@@ -50,7 +53,7 @@ if translations || all_translations
   files.each do |path|
     text = File.read(path)
     fm_end = text.start_with?("---\n") && text.index(/^---[ \t]*$/, 4)
-    tf = fm_end && text[0...fm_end].match(/^translated_from: \{file: (\S+?), sha256: "[0-9a-f]{64}"\}$/)
+    tf = fm_end && text[0...fm_end].match(/^translated_from: \{file: (\S+?), sha256: "?[0-9a-f]{64}"?\}$/)
     unless tf
       next if all_translations
 
@@ -67,7 +70,21 @@ if translations || all_translations
   exit
 end
 
-abort "usage: restamp.rb [--lang en] POST_ID... | --translation UNIT[,UNIT] | --all-translations" if ARGV.empty?
+if (i = ARGV.index("--parked"))
+  topic = ARGV[i + 1] or abort "--parked needs a topic"
+  dir = File.join(ROOT, "book", "parked", topic)
+  abort "no book/parked/#{topic}" unless File.directory?(dir)
+  ids = Dir[File.join(dir, "**", "*.md")].sort.flat_map { File.read(_1).scan(%r{<!-- src: (\d{4}/\d\d/\d\d/[^ ]+) -->}).flatten }.uniq
+  entries = ids.map do |id|
+    sha = posts.fetch(id) { abort "unknown post #{id}" }.dig("pt", "sha256")
+    { "post" => id, "sha256" => sha, "commit" => head }
+  end
+  File.write(File.join(dir, "sources.yml"), { "posts" => entries }.to_yaml)
+  warn "restamped book/parked/#{topic}/sources.yml (#{entries.size} posts)"
+  exit
+end
+
+abort "usage: restamp.rb [--lang en] POST_ID... | --translation UNIT[,UNIT] | --all-translations | --parked TOPIC" if ARGV.empty?
 
 ARGV.each do |id|
   sha = posts.fetch(id) { abort "unknown post #{id}" }.dig(lang, "sha256")

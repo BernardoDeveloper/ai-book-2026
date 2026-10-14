@@ -28,4 +28,19 @@ class TestStyleReport < ToolTest
     report = File.read(File.join(fx.root, "build", "pt", "style-report.md"))
     refute_match(/src: original|sha256|blog_commit/, report)
   end
+
+  # Guards R10: a signature line in a unit outside the registered ones is listed
+  # (report only, exit 0); --strict turns it into exit 1; allowed units stay quiet.
+  def test_signature_lines_outside_their_units
+    fx.write("book/continuity.yml", {"signature_lines" => [{"pattern" => "espelho da sua (própria )?competência", "units" => %w[ch01]}]}.to_yaml)
+    %w[ch01 ch02].each { |id| fx.edit(fx.unit_rel(id)) { _1 + "\n<!-- src: original -->\nA IA é o espelho da sua própria competência.\n" } }
+    res = fx.run("style_report", "--lang", "pt")
+    assert_exit 0, res
+    section = File.read(File.join(fx.root, "build", "pt", "style-report.md"))[/## Signature lines.*?(?=\n## |\z)/m]
+    assert_match(/: ch02$/, section)
+    refute_includes section, "ch01,"
+    assert_exit 1, fx.run("style_report", "--lang", "pt", "--strict")
+    fx.edit(fx.unit_rel("ch02")) { _1.sub("espelho da sua própria competência", "retrato de quem pergunta") }
+    assert_exit 0, fx.run("style_report", "--lang", "pt", "--strict")
+  end
 end

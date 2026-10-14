@@ -38,7 +38,7 @@ Go tinha fama de ser um jogo que computador nenhum ia dominar tão cedo. O núme
 <!-- src: 2026/07/06/frank-go-brincando-de-go-com-ia -->
 Essa fama acabou entre 9 e 15 de março de 2016, num hotel de Seul. O AlphaGo, programa do DeepMind, laboratório do Google, enfrentou o sul-coreano Lee Sedol, um dos maiores jogadores da história, numa série de cinco partidas, e venceu por 4 a 1 [@deepmind2026alphago; @wikipedia2026alphagoleesedol].
 
-A série ficou famosa por dois lances. Na partida 2, o AlphaGo jogou a pedra 37 num ponto que a maioria dos profissionais nem consideraria, um "ombro" encostado numa pedra branca que os comentaristas chamaram de criativo e único. Lee Sedol levou um tempo enorme pra responder.
+A série ficou famosa por dois lances. Na partida 2, o AlphaGo jogou a pedra 37 num ponto que um profissional humano dificilmente consideraria, um "ombro" encostado numa pedra branca que os comentaristas chamaram de criativo e único. Lee Sedol levou um tempo enorme pra responder.
 
 <!-- src: 2026/07/06/frank-go-brincando-de-go-com-ia -->
 A resposta humana veio na partida 4, em 13 de março. Já com a série perdida, Lee Sedol jogou a pedra 78, uma cunha no meio da área preta que nenhum comentarista tinha previsto. O AlphaGo também não viu o perigo: continuou se achando favorito por vários lances, só percebeu o estrago perto do lance 87 e acabou abandonando a partida. O profissional chinês Gu Li chamou a jogada de divina, e ela ficou conhecida como a "mão de Deus".

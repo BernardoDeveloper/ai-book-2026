@@ -72,3 +72,22 @@ items:
     issue: "merge_glossary never overwrites curated entries, so some keys keep the first proposer's definition (e.g. prompt-injection from ch09, while ch16 owns it and has a fuller one in _gls/ch16.yml). Glossary editor pass: prefer the owner chapter's definition (continuity.yml explained_in), unify voice."
   - chapters: [ch03, ch08, ch09]
     issue: "After the February cut-off rewrite: ch03 now tells the April Claude Code vs Codex harness note (ch09:166 repeats it: shrink ch09's to a callback to @sec-ch03); ch03 teases the NES->SMS project, so ch08 should treat it as already mentioned (callback), not new."
+  # --- 2026-10-13: author decisions and the target-reader pass (reviews/1.0.0-preview.3/personas/consolidated.md)
+  - chapters: [ch12, apA, apC]
+    issue: "Genesys PI section: 4/5 target readers would cut it (inconclusive by its own account); vendor due diligence pending."
+    ruling: "PARKED (author, 2026-10-13): section, apA entries, refs luavision2026empresa/livebench2026issue370 and glossary proxy/tokenizador moved to book/parked/genesys-pi/ with restore notes; posts 09/23 and 09/30 excluded as 'parked'. The three-column lesson stays in ch12 through Rio and Kimi. Earlier same day the author had kept it with a prudence note; superseded by this ruling."
+  - chapters: [ch15]
+    issue: "'Minha hipótese' (July) / 'Três meses depois' pair: the last sentence reads as a contradiction (hypothesis vs conclusion)."
+    ruling: "KEEP as is (author, 2026-10-13). If touched again, separate the July hypothesis (vague prompts) from the July conclusion (distrust turned into engineering)."
+  - chapters: [front matter]
+    issue: "ISBN placeholder on the copyright page."
+    ruling: "Hidden until meta.isbn is set (author, 2026-10-13)."
+  - chapters: [ch02, ch04, ch08, ch13, ch16, ch18, aptecnico]
+    issue: "Programmer-only detail that non-programmers skip (persona pass)."
+    ruling: "Move to the new technical appendix as standalone sections with one-line pointers (EDITORIAL-RULES R11; author approved 2026-10-13)."
+  - chapters: [ch06, ch10, ch14, ch20]
+    issue: "Passages that only repeat material owned elsewhere (bug list, project report card vs apD, mathematicians/resignations detail, 'Sete anos numa página' vs apA)."
+    ruling: "Condense or cut, with callbacks (R12; author approved 2026-10-13)."
+  - chapters: [antes]
+    issue: "Reading list before chapter 1 felt like homework (3/5 readers)."
+    ruling: "Move the list to a back-matter appendix; antes keeps one paragraph and a pointer (author approved 2026-10-13)."

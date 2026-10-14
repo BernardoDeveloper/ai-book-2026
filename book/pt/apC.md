@@ -11,7 +11,6 @@ sources:
   - {post: 2026/07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra, sha256: "7963a48cb5edda6211c8f8c37df67a62b97ca78cdd29dff37ba9b736a4a34672"}
   - {post: 2026/08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7, sha256: "8013f8c30e232cbecd9018f446ac08156f908ad04aeb7a952348d776186c7849"}
   - {post: 2026/06/15/controversia-llm-rio-3-5-plagio, sha256: "61a54d101f81b21d2fee42f753300b18d75271c745b8e681dec9418fdef38565"}
-  - {post: 2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro, sha256: "ec3091b9a4ff9295d0f3ff72cff9f584086c4a3d8f5ab4f9672a53956c4439d8"}
   - {post: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic, sha256: "ce3ac52806404b9410bbe7b38962bc96d1beaff182ad194e2dbc1f18630c5d30"}
   - {post: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia, sha256: "a84bedcd9978e6c7c3437da76c41f08c4a40648a92c50989949704cad2a80eb9"}
   - {post: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit, sha256: "903caf191c73bee2866924e22860432a7b13b42e4c7a7a170f3fe4a9293b7e25"}
@@ -51,7 +50,7 @@ Vale pra qualquer [benchmark]{.gls}, ranking ou placar de modelos, inclusive o m
 
 ## Diante de um anúncio
 
-<!-- src: 2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro -->
+<!-- src: original -->
 Antes das perguntas, um hábito que eu trouxe dos testes de origem de modelos (@sec-ch12):
 
 > Separe o anúncio em três colunas: o que alguém de fora mediu, o que é só a palavra de quem vende e o que ninguém sabe. Quase todo o barulho mora na do meio.

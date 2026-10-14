@@ -52,6 +52,8 @@ ruby scripts/impact.rb posts-before <date>           # must report 0 posts
 rake build            # all formats, epubcheck, page audit, doctor --output
 ```
 
+Checklist for structural changes (`docs/EDITORIAL-RULES.md` R12, R14, R16): update the "Como ler" routing, keep callbacks pointing at the unit that now owns the material, park instead of deleting when the reason isn't quality, and record the decision in `book/integration.yml`.
+
 Then read `build/<lang>/seams.md` (every unit's closing paragraph next to the
 next unit's opening) and the doctor's callback warnings: each warning is a
 sentence that points at another chapter by names that chapter no longer
@@ -77,14 +79,15 @@ errors) for each language, CHANGELOG entry, `vX.Y.Z` tag.
 | Tool | Guarantees |
 |---|---|
 | `scripts/outline_check.rb` | every AI post is placed or excluded with a reason; ids exist |
-| `scripts/drift.rb [--lang] [--diff] [--unit ID]` | the book matches the blog; translations match the PT units (`--unit` limits the report and diffs to those units) |
-| `scripts/restamp.rb <post> \| --translation <unit> \| --all-translations` | records that a unit was reviewed against a post's new hash, or that an EN unit follows its PT unit's current hash (sets only `translated_from.sha256`) |
+| `scripts/drift.rb [--lang] [--diff] [--unit ID]` | the book matches the blog; translations match the PT units (`--unit` limits the report and diffs to those units); an informational "Parked" section lists posts cited only by `book/parked/<topic>/` material that changed since `book/parked/<topic>/sources.yml` (`posts: [{post, sha256, commit}]`) or are untracked |
+| `scripts/restamp.rb <post> \| --parked <topic> \| --translation <unit> \| --all-translations` | records that a unit was reviewed against a post's new hash (or, with `--parked`, writes the topic's `sources.yml`), or that an EN unit follows its PT unit's current hash (sets only `translated_from.sha256`) |
 | `scripts/impact.rb` | the full blast radius of a change, before making it |
-| `scripts/doctor.rb [--output] [--release]` | cross-references, citations, glossary keys, figures and credits resolve; provenance consistent; cut-off and exclusions respected; callbacks plausible (versioned names match by stem); apA timeline in date order; translation parity; no unresolved references in the built PDF |
-| `scripts/lint_chapter.rb` | voice bans, paragraph length, raw URLs, unknown keys, provenance markers, naming rules (`naming_rules` in `book/continuity.yml`: GPT tiers, Z.ai, sprint) |
+| `scripts/doctor.rb [--output] [--release]` | cross-references, citations, glossary keys, figures and credits resolve; provenance consistent; cut-off and exclusions respected; callbacks plausible (versioned names match by stem); apA timeline in date order; warnings for numbers that contradict `canonical_figures` (R6, patterns per key in the script) and for jargon in a chapter's first paragraph (R8); translation parity; no unresolved references in the built PDF |
+| `scripts/lint_chapter.rb` | voice bans, paragraph length, raw URLs, unknown keys, provenance markers, naming rules (`naming_rules` in `book/continuity.yml`: GPT tiers, Z.ai, sprint); warnings for `generalization_watch` phrases (R3), name-dense sentences and bullet lists over 8 items outside appendices (R9) |
 | `scripts/en_quote_punct.rb [--check]` | EN house style: periods and commas inside closing quotes (`rake check BOOK_LANG=en` runs it with `--check`) |
 | `scripts/review.rb validate\|summary\|status` (`rake review DIR=...`) | copyedit findings files are well-formed, quotes exist in their units, items carry stable ids; after applying, which items are still unchanged (docs/COPYEDIT.md) |
 | `scripts/page_audit.rb` | no split blocks, stranded headings, gaps, runts, oversized images, overfull lines |
 | `epubcheck` | valid EPUB |
-| `scripts/style_report.rb` (`rake style`) | copyedit step 1: repeated passages, recurring phrases, overused words, term variants, PT comparatives (docs/COPYEDIT.md) |
+| `scripts/style_report.rb` (`rake style`) | copyedit step 1: repeated passages, recurring phrases, overused words, term variants, PT comparatives, `signature_lines` outside their units (R10; `--strict` exits 1) (docs/COPYEDIT.md) |
+| `scripts/balance_report.rb` (`rake balance`) | structural balance: words per unit and per source post, share of the narrative, overlap between units (build/<lang>/balance.md) |
 | `test/` (`rake test`) | the tools themselves keep doing the above |

@@ -1,8 +1,7 @@
 ---
 generated_from: "/home/akitaonrails/Projects/akitaonrails-hugo"
-blog_commit: b9c029231693369b8f895576b491c878aea3e8da
-dirty_files:
-- content/2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente/
+blog_commit: b54f14bf348a68cd8529004a4743d35dbbc5590d
+dirty_files: []
 year: '2026'
 posts:
 - id: 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush
@@ -16158,9 +16157,9 @@ posts:
 - id: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
   date: '2026-10-13T19:00:00-03:00'
   url_pt: https://www.akitaonrails.com/2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente/
-  url_en:
+  url_en: https://www.akitaonrails.com/en/2026/10/13/i-self-published-my-own-book-ebook-competent-enough/
   pt:
-    sha256: bfd899c4c31afcceeb223a8b4b850cede8fe308757b0ef126a014c0eac4f9291
+    sha256: 47abeba9230d168bd7bf990860e167b9f2fc25ded58b76fb139ea74b93c65001
     title: 'Auto-publiquei meu próprio Livro/e-book: Competente o Suficiente'
     description: 'Publiquei meu livro sobre IA, de graça, em EPUB e PDF: os 131 textos
       de 2026 do blog, quase meio milhão de palavras, reorganizados em 20 capítulos,
@@ -16175,18 +16174,32 @@ posts:
     - inteligencia-artificial
     - agentes-de-codigo
     - open-source
-    words: 3766
+    words: 4593
     links:
     - text: esta
       url: https://ailair.akitaonrails.com/pt-br/book/
     - text: repositório
       url: https://github.com/akitaonrails/ai-book-2026
+    - text: "![Competente o Suficiente, o livro, em 3D"
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/20261013190000_livro-competente-o-suficiente-3d.png
     - text: abra uma issue no GitHub
       url: https://github.com/akitaonrails/ai-book-2026/issues
     - text: a síntese do ano
       url: "/2026/10/12/llms-agentes-competente-o-suficiente/"
     - text: post sobre engenharia reversa
       url: "/2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu/"
+    - text: EPUB
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente.epub
+    - text: PDF
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente-ebook.pdf
+    - text: PDF
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente.pdf
+    - text: EPUB
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough.epub
+    - text: PDF
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough-ebook.pdf
+    - text: PDF
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough.pdf
     - text: página do livro
       url: https://ailair.akitaonrails.com/pt-br/book/
     - text: releases do GitHub
@@ -16198,6 +16211,58 @@ posts:
       url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/20261013190000_livro-competente-o-suficiente-3d.png
     youtube: []
   en:
+    sha256: dc2d197558d6533f19e8eb895ead06e506236bb995e77bad2ce57abb4a2304e2
+    title: 'I Self-Published My Own Book/e-book: Competent Enough'
+    description: 'I published my book about AI, for free, in EPUB and PDF: the blog''s
+      131 posts from 2026, almost half a million words, reorganized into 20 chapters,
+      6 appendices, a glossary and almost 300 references. This text is the technical
+      backstage: the inventory with a hash per post, the contract every agent read
+      before writing, the parallel drafts, the invisible per-paragraph marker that
+      ties the book to the blog, the checker that fails a chapter with an error, what
+      the fact-check caught wrong in my own posts, and the Quarto, Typst and Pandoc
+      pipeline that generates everything. It''s a preview: open an issue if you find
+      a mistake.'
+    slug: i-self-published-my-own-book-ebook-competent-enough
+    tags:
+    - artificial-intelligence
+    - coding-agents
+    - open-source
+    words: 4434
+    links:
+    - text: here
+      url: https://ailair.akitaonrails.com/book/
+    - text: repository
+      url: https://github.com/akitaonrails/ai-book-2026
+    - text: "![Competent Enough, the book, in 3D"
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/20261013190000_book-competent-enough-3d.png
+    - text: open an issue on GitHub
+      url: https://github.com/akitaonrails/ai-book-2026/issues
+    - text: the year's synthesis
+      url: "/en/2026/10/12/llms-agents-competent-enough/"
+    - text: reverse engineering post
+      url: "/en/2026/10/13/ai-reverse-engineering-is-adobe-dead/"
+    - text: EPUB
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough.epub
+    - text: PDF
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough-ebook.pdf
+    - text: PDF
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough.pdf
+    - text: EPUB
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente.epub
+    - text: PDF
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente-ebook.pdf
+    - text: PDF
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente.pdf
+    - text: book page
+      url: https://ailair.akitaonrails.com/book/
+    - text: GitHub releases
+      url: https://github.com/akitaonrails/ai-book-2026/releases
+    - text: open an issue
+      url: https://github.com/akitaonrails/ai-book-2026/issues
+    images:
+    - alt: Competent Enough, the book, in 3D
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/20261013190000_book-competent-enough-3d.png
+    youtube: []
 - id: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
   date: '2026-10-13T00:00:00-03:00'
   url_pt: https://www.akitaonrails.com/2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu/

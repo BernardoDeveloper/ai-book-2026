@@ -18,7 +18,7 @@ Um dia o polvo se sente sozinho, corta o cabo e passa a responder no lugar de um
 Essa história foi inventada em 2020 por dois linguistas, Emily Bender e Alexander Koller, pra discutir se uma máquina treinada só com texto consegue entender o que diz [@bender2020climbing]. Eu volto a ela no fim deste apêndice, porque a resposta depende de como a máquina funciona por dentro.
 
 <!-- src: original -->
-O @sec-ch01 deu as intuições: o corretor do celular em escala absurda, o painel de botões, o arquivo trancado depois do treino. Este apêndice desce um nível. Ele é opcional e foi escrito pra quem quer saber o que acontece entre a pergunta e a resposta, sem nenhuma fórmula. Se depois disso você quiser os detalhes de verdade, a seção @sec-antes indica livros pra isso.
+O @sec-ch01 deu as intuições: o corretor do celular em escala absurda, o painel de botões, o arquivo trancado depois do treino. Este apêndice desce um nível. Ele é opcional e foi escrito pra quem quer saber o que acontece entre a pergunta e a resposta, sem nenhuma fórmula. Se depois disso você quiser os detalhes de verdade, o @sec-apleituras indica livros pra isso.
 
 ## Um painel com bilhões de botões
 

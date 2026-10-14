@@ -88,7 +88,7 @@ O quarto é sobre confiança: é perigoso deixar essa coisa mexer nas minhas coi
 
 O último é o que mais tira gente do sono: e o meu emprego? A quinta parte fala de trabalho e de carreira, explica por que tantas empresas gastam fortunas em IA sem ver resultado e termina com o balanço do ano: onde essa tecnologia estava de verdade em outubro de 2026, e o que isso quer dizer pra você.
 
-Entre as partes há dois interlúdios mais leves, pra respirar. E, pra quem quiser ir mais fundo no funcionamento da máquina, há um apêndice que explica o mecanismo sem fórmula nenhuma (@sec-apmecanica) e uma lista de leituras logo antes do primeiro capítulo (@sec-antes).
+Entre as partes há dois interlúdios mais leves, pra respirar. E, pra quem quiser ir mais fundo no funcionamento da máquina, há um apêndice que explica o mecanismo sem fórmula nenhuma (@sec-apmecanica) e uma lista de leituras no fim do livro (@sec-apleituras).
 
 ## Como este livro foi feito
 

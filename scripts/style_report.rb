@@ -11,17 +11,22 @@
 #   variants     the same term spelled differently (case, hyphen, space)
 #   agreement    PT: "do que" followed by a conjugated verb (WRITER.md wants
 #                an infinitive on both sides of a comparison)
+#   signatures   R10 (docs/EDITORIAL-RULES.md): units matching a `signature_lines`
+#                pattern of book/continuity.yml outside the units allowed to
+#                state it. Report only; --strict exits 1 if any unit does.
 #
-# Usage: scripts/style_report.rb [--lang pt] [--min-run 7]
+# Usage: scripts/style_report.rb [--lang pt] [--min-run 7] [--strict]
 
 require "optparse"
 require "fileutils"
 require "set"
+require "yaml"
 
-opts = { lang: "pt", min_run: 7 }
+opts = { lang: "pt", min_run: 7, strict: false }
 OptionParser.new do |o|
   o.on("--lang LANG") { opts[:lang] = _1 }
   o.on("--min-run N", Integer) { opts[:min_run] = _1 }
+  o.on("--strict", "exit 1 when a signature line appears outside its units") { opts[:strict] = true }
 end.parse!
 
 ROOT = File.expand_path("..", __dir__)
@@ -149,8 +154,25 @@ if LANG == "pt"
   out.concat(found.empty? ? ["None."] : found.first(40)) << ""
 end
 
+# --- signature lines (R10) ----------------------------------------------------------
+continuity = File.exist?(f = File.join(ROOT, "book", "continuity.yml")) ? YAML.load_file(f) : {}
+out << "## Signature lines outside their units (EDITORIAL-RULES R10)" << ""
+stray = []
+Array(continuity["signature_lines"]).each do |sig|
+  re = Regexp.new(sig["pattern"], Regexp::IGNORECASE)
+  allowed = Array(sig["units"]).map(&:to_s)
+  hits = units.select { |id, t| !allowed.include?(id) && t.gsub(/\s+/, " ").match?(re) }.keys
+  next if hits.empty?
+
+  stray << sig["pattern"]
+  out << "- `#{sig['pattern']}` (allowed: #{allowed.join(', ')}): #{hits.join(', ')}"
+end
+out << "None." if stray.empty?
+out << ""
+
 dir = File.join(ROOT, "build", LANG)
 FileUtils.mkdir_p(dir)
 File.write(File.join(dir, "style-report.md"), out.join("\n"))
 puts "style report (#{LANG}): #{runs.size} repeated runs, #{recurring.size} recurring phrases, " \
-     "#{hits.size} overuse hits, #{variants.size} term variants -> build/#{LANG}/style-report.md"
+     "#{hits.size} overuse hits, #{variants.size} term variants, #{stray.size} stray signature lines -> build/#{LANG}/style-report.md"
+exit(opts[:strict] && !stray.empty? ? 1 : 0)

@@ -148,4 +148,35 @@ class TestDrift < ToolTest
     assert_includes res.out, "book/en/index.md"
     refute_includes res.out, "book/en/ch01.md"
   end
+
+  PARKED_POST = "2026/01/15/post-janeiro"
+
+  def park!(sources: nil)
+    fx.write("book/parked/tema/pt-ch03.md", "<!-- src: #{PARKED_POST} -->\nTexto estacionado.\n")
+    fx.write("book/parked/tema/sources.yml", sources.to_yaml) if sources
+  end
+
+  # Guards the Parked section: posts cited only by parked material are listed as
+  # untracked without sources.yml, flagged CHANGED when the hash differs from the
+  # recorded one, and never count as a problem; _staging is not scanned.
+  def test_parked_posts_are_informational
+    park!
+    fx.write("book/pt/_staging/x.md", "---\nid: x\nsources:\n  - {post: 2026/02/10/primeiro-post, sha256: \"#{'0' * 64}\"}\n---\n")
+    res = fx.run("drift")
+    assert_exit 0, res
+    assert_includes res.out, "== Parked"
+    assert_includes res.out, "untracked tema: #{PARKED_POST}"
+    refute_includes res.out, "_staging"
+
+    assert_exit 0, fx.run("restamp", "--parked", "tema")
+    assert_equal [PARKED_POST], fx.yaml("book/parked/tema/sources.yml")["posts"].map { _1["post"] }
+    refute_includes fx.run("drift").out, "tema: #{PARKED_POST}"
+
+    fx.edit_post(PARKED_POST) { _1 + "\nMudou.\n" }
+    fx.inventory!
+    res = fx.run("drift", "--diff")
+    assert_includes res.out, "1 item(s) need attention", "only the stale analysis counts, not the parked post"
+    assert_includes res.out, "CHANGED   tema: #{PARKED_POST}"
+    assert_includes res.out, "+Mudou."
+  end
 end

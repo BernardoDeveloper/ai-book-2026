@@ -475,11 +475,6 @@ prompt-injection:
     de instruções), feitas pra que ela obedeça quem escreveu o texto em vez de quem
     está usando a ferramenta. Não tem cura conhecida; o que mais protege é limitar
     o que o agente pode fazer e exigir aprovação humana pras ações perigosas.
-proxy:
-  term: Proxy
-  def: Um intermediário que recebe pedidos e os repassa a outro serviço. Um proxy
-    transparente só encaminha; quem usa pode achar que fala com um sistema quando,
-    na verdade, fala com outro.
 pull-request:
   term: Pull request
   def: Pedido formal pra incorporar uma mudança num projeto de software, geralmente
@@ -652,11 +647,6 @@ token:
   term: Token
   def: O pedaço de texto com que o modelo trabalha, em geral um fragmento de palavra.
     Modelos leem, escrevem e cobram por tokens.
-tokenizador:
-  term: Tokenizador
-  def: A parte do modelo que quebra o texto em tokens antes de qualquer processamento.
-    Cada família de modelo tem o seu vocabulário, e quem ajusta um modelo herda o
-    tokenizador dele, por isso ele serve como pista de parentesco.
 tool-calling:
   term: Tool calling
   def: Chamada de ferramentas. O modelo escreve, num formato combinado, um pedido

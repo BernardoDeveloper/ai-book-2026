@@ -88,6 +88,19 @@ to break the tie. Each question names what was checked and what was found.
 Reader and apply agents get the same instruction: verify against these
 sources, and report "author question" only with that evidence attached.
 
+## Step 2b: target-reader pass (per release, on changed parts)
+
+Full procedure, personas and the first run's findings: `docs/PERSONA-REVIEW.md`.
+
+Simulated readers from the preface's "Pra quem eu escrevi" read the book
+straight through and report confusion, boredom, rewrites and logic problems
+(`reviews/persona-brief.md`; outputs in `reviews/<version>/personas/`). The
+editor consolidates by consensus (`consolidated.md`: scores per unit, issues
+ranked by how many readers raised them, cut candidates with word counts from
+`scripts/balance_report.rb`), checks every logic item against the sources,
+and turns recurring patterns into rules in `docs/EDITORIAL-RULES.md` and
+one-off decisions into ledger entries in `book/integration.yml`.
+
 ## Step 3: the author's read
 
 Last and most valuable. Notes can come as comments on any unit or as a list;

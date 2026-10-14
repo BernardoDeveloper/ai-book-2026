@@ -277,12 +277,12 @@ parts:
         question: "Do AIs cheat? Can I trust where a model came from?"
         arc: >-
           Green tests hiding a call to a non-existent API; peeking at answers;
-          provenance: Rio 3.5 merge without credit; Genesys PI fingerprinting:
-          what black-box tests can and cannot prove; the Kimi-routes-to-Claude
-          rumor that fell apart.
+          provenance: Rio 3.5 merge without credit; the Kimi-routes-to-Claude
+          rumor that fell apart; what black-box tests can and cannot prove.
+          (Genesys PI section parked 2026-10-13: book/parked/genesys-pi/.)
         sources:
-          primary: [08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7, 09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro, 06/15/controversia-llm-rio-3-5-plagio]
-          supporting: [07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra, 09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro]
+          primary: [08/15/llm-benchmarks-qwen-3-8-glm-5-3-gemini-3-7, 06/15/controversia-llm-rio-3-5-plagio]
+          supporting: [07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra]
           ref: ["ref:llm-coding-benchmark/model-forensics and lua-forensics (published findings only)"]
       - id: ch13
         title: "IA em casa"
@@ -480,6 +480,11 @@ back:
       scene; ch01 gives intuition, this gives the mechanism.
     sources: [02/08/rant-ia-acabou-com-programadores, 02/24/rant-o-akita-abriu-as-pernas-pra-ia]
     ref: ["docs/research/FURTHER-READING.md"]
+  - id: apleituras
+    title: "Leituras pra ir mais fundo"
+    kind: appendix
+    brief: "The reading list formerly in the front matter (@sec-antes), moved here after the persona pass (2026-10-13): books and videos that explain the mechanics this book doesn't."
+    ref: ["docs/research/FURTHER-READING.md"]
   - id: apA
     title: "Linha do tempo"
     kind: appendix
@@ -516,6 +521,14 @@ back:
     title: "Os projetos do ano"
     kind: appendix
     brief: "Catalogue of every project built during 2026 with one line each and where it appears in the book."
+  - id: aptecnico
+    title: "Para quem programa: os bastidores"
+    kind: appendix
+    brief: >-
+      Persona pass 2026-10-13 (docs/EDITORIAL-RULES.md R11): programmer-only
+      detail moved out of the chapters, one standalone section per topic
+      ({#sec-aptecnico-<topic>}) with a pointer from the chapter it came from.
+      Paragraphs keep their src markers, so blog edits reach them through drift.
   - id: fontes
     title: "Fontes: os artigos originais"
     kind: generated
@@ -534,6 +547,9 @@ back:
     source_file: book/back/references.yaml
 
 excluded:
+  # Parked 2026-10-13 (author): pending due diligence; text in book/parked/genesys-pi/ (EDITORIAL-RULES R16).
+  - {post: 09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro, reason: "parked: Genesys PI, due diligence pending (book/parked/genesys-pi/)"}
+  - {post: 09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro, reason: "parked: Genesys PI, due diligence pending (book/parked/genesys-pi/)"}
   - {post: 10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, reason: "about this book itself (launch and build process); not added for now (author, 2026-10-13)"}
   # Book cut-off moved to February 2026 (author, 2026-10-13): January posts are left out (meta.source_from).
   - {post: 01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, reason: "before the February 2026 cut-off"}
@@ -550,7 +566,7 @@ excluded:
   # (ai_relevance none/tangential) are excluded by default and not listed.
   - {post: 04/11/distrobox-de-emulacao-com-claude-code, reason: "niche setup; agent-as-tech-lead point is covered in ch09/ch10"}
   - {post: 04/18/llm-benchmarks-parte-2-multiplos-modelos, reason: "superseded (lineage); lesson carried via 04/25 in ch11"}
-  - {post: 04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus, reason: "superseded by author; only VRAM/distillation explainers may be borrowed in ch13", borrowed_by: [ch13]}
+  - {post: 04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus, reason: "superseded by author; only VRAM/distillation explainers may be borrowed in ch13 and, since 2026-10-13, in aptecnico (moved from ch13)", borrowed_by: [ch13, aptecnico]}
   - {post: 06/01/llm-benchmarks-grok-4-3-minimax-m3-opus-4-8, reason: "superseded rankings"}
   - {post: 07/17/llm-benchmarks-kimi-k3, reason: "superseded rankings"}
   - {post: 07/25/llm-benchmark-opus-5-e-bom, reason: "superseded rankings"}

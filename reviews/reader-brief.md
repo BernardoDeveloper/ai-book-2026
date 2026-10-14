@@ -8,7 +8,7 @@ You are a professional copyeditor doing a READ-ONLY review of part of Fabio
 Akita's book about AI for lay readers. You change nothing in the book; you
 write a findings file in the format of `reviews/README.md`.
 
-Read first: `docs/COPYEDIT.md` (step 2, including "Facts: check them, don't
+Read first: `docs/EDITORIAL-RULES.md` (report violations of R1-R14 by rule number), `docs/COPYEDIT.md` (step 2, including "Facts: check them, don't
 ask"), `reviews/README.md`, `docs/BOOK-VOICE.md`, the voice section of
 `~/Projects/akitaonrails-hugo/WRITER.md` (informal "pra", first person, short
 paragraphs, dry humour and no em dashes are deliberate: don't flag them),

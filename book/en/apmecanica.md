@@ -6,7 +6,7 @@ sources:
   - {post: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia, sha256: "71bce137854c76e643c64c2888ff44ef33b12b3bd3cd7dc3214ade44a46d0f27"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apmecanica.md, sha256: "94a5b3c92a6fe1c118de4e6444e89119b48bdaae91b1b27631480515ed3b7e05"}
+translated_from: {file: book/pt/apmecanica.md, sha256: "7a1f577c435277ec66e9f46241d4414b66b50a04b5021366fee7384cc472f482"}
 ---
 
 # The Machine Inside, Without the Math {#sec-apmecanica}
@@ -19,7 +19,7 @@ One day the octopus gets lonely, cuts the cable and starts answering in place of
 That story was made up in 2020 by two linguists, Emily Bender and Alexander Koller, to argue about whether a machine trained only on text can understand what it says [@bender2020climbing]. I come back to it at the end of this appendix, because the answer depends on how the machine works inside.
 
 <!-- src: original -->
-@sec-ch01 gave you the intuitions: the phone's autocorrect at an absurd scale, the panel of knobs, the file locked after training. This appendix goes one level down. It's optional, and it was written for anyone who wants to know what happens between the question and the answer, without a single formula. If after that you want the real details, @sec-antes points you to books for that.
+@sec-ch01 gave you the intuitions: the phone's autocorrect at an absurd scale, the panel of knobs, the file locked after training. This appendix goes one level down. It's optional, and it was written for anyone who wants to know what happens between the question and the answer, without a single formula. If after that you want the real details, @sec-apleituras points you to books for that.
 
 ## A Panel With Billions of Knobs
 

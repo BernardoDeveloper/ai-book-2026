@@ -29,6 +29,8 @@ jobs:
       BOOK_LANG: ${{ matrix.lang }}
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0 # tags, for the revision printed on the copyright page
 
       - uses: ruby/setup-ruby@v1.327.0
         with:

@@ -321,4 +321,47 @@ class TestDoctor < ToolTest
     en = "### June\n\n<!-- src: original -->\n**Early June.** A.\n\n**June 3.** B.\n\n**June.** C.\n\n**Late June.** E.\n\n### July\n\n**July 2.** F.\n"
     refute_match(/apA: \w+: /, timeline("en", en).out)
   end
+
+  def registry(figures) = fx.write("book/continuity.yml", { "canonical_figures" => figures }.to_yaml)
+
+  SPEEDUP = { "speedup" => [{ "value" => "umas cinco vezes", "scope" => "x" }, { "value" => "seis a sete vezes", "scope" => "y" }] }.freeze
+
+  # Guards R6: a speed-up the author states about his own work (first person)
+  # that is not in the registry warns (warning only); registered values, other
+  # scopes ("duas vezes"), thousands separators and someone else's claim
+  # ("prometia ... 193 vezes") stay quiet.
+  def test_canonical_figures_speedup
+    registry(SPEEDUP)
+    append("ch01", "<!-- src: original -->\nEu fiquei dez vezes mais rápido. Outra vez eu fiquei 5x mais rápido, não, mas cinco vezes mais rápido sim. Rodei duas vezes. Eu fiquei 8.100 vezes mais rápido que nada. A empresa prometia um modelo 193 vezes mais rápido.")
+    res = doctor
+    assert_exit 0, res
+    assert_includes res.out, %(warn  ch01: figure 'speedup': states "dez vezes mais rápid")
+    assert_equal 2, res.out.scan("figure 'speedup'").size, res.out
+    refute_includes res.out, %(states "cinco vezes)
+  end
+
+  # Guards R6 for repositories and hours: only plausible counts are checked
+  # (10+ repositories, 300-900 hours); registered numbers pass.
+  def test_canonical_figures_repositories_and_hours
+    registry("repositories" => [{ "value" => "24" }, { "value" => "mais de 30" }], "hours" => [{ "value" => "mais de 500 horas" }])
+    append("ch01", "<!-- src: original -->\nEu mantenho 24 repositórios, ou 35 repositórios, ou seis repositórios. Foram 500 horas, ou 620 horas, ou 40 horas. A ordem derrubou 8.100 repositórios.")
+    out = doctor.out
+    assert_includes out, %(states "35 repositórios")
+    assert_includes out, %(states "620 horas")
+    assert_equal 2, out.scan("figure '").size, out
+  end
+
+  # Guards R8: a chapter whose first paragraph carries inline code or three
+  # glossary marks warns; two marks (a scene that names known terms), or a later
+  # paragraph, do not; non-chapters are exempt.
+  def test_opening_jargon
+    fx.edit(fx.unit_rel("ch02")) { _1.sub("O agente esquece tudo", "O agente `reasoning_content` esquece tudo") }
+    res = doctor
+    assert_exit 0, res
+    assert_includes res.out, "warn  ch02: opening paragraph uses jargon before orienting the reader (R8): 1 code span(s)"
+    refute_includes res.out, "warn  ch01: opening", "two glossary marks are fine"
+    refute_match(/warn  (prefacio|ch03|interlude1): opening/, res.out)
+    fx.edit(fx.unit_rel("ch01")) { _1.sub("Os [modelos grandes]{.gls key=llm}", "Os [modelos grandes]{.gls key=llm} e o [token]{.gls}") }
+    assert_includes doctor.out, "warn  ch01: opening paragraph uses jargon", "three marks warn"
+  end
 end

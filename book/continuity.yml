@@ -70,3 +70,29 @@ naming_rules:
   - {pattern: '\bGPT-(\d(?:\.\d)?)-(Sol|Luna|Terra|Astra)\b', use: 'GPT-\1 \2', langs: [pt, en]}
   - {pattern: '\bz\.ai\b', use: 'Z.ai', langs: [pt, en]}
   - {pattern: '(?i:\b(um|o|este|esse|aquele) sprint\b)', use: 'a/uma/esta/essa/aquela sprint (feminine)', langs: [pt]}
+
+# docs/EDITORIAL-RULES.md R6: figures that recur across chapters. Each value
+# carries its scope; a unit that states the figure must use one of these
+# values with its scope (doctor: canonical_figures).
+canonical_figures:
+  speedup:
+    - {value: "umas cinco vezes", scope: "média da maratona, fev-mai 2026, estimativa do autor (05/14)", home: ch10}
+    - {value: "seis a sete vezes", scope: "FrankMD, 30 h contra ~200 h estimadas (02/01)", home: ch05}
+    - {value: "19% mais lentos", scope: "estudo controlado do METR com programadores experientes em código que conheciam", home: ch20}
+  repositories:
+    - {value: "24", scope: "maratona, 27 jan a mai 2026, 6 privados (05/14)", home: ch10}
+    - {value: "mais de 30", scope: "repositórios públicos desde janeiro, em agosto (08/18)", home: ch14}
+    - {value: "mais de 40", scope: "repositórios públicos mantidos, em setembro (09/17)", home: ch09}
+  hours:
+    - {value: "mais de 500 horas", scope: "fevereiro a maio de 2026", home: ch10}
+
+# R10: recurring lines and the units allowed to state them; elsewhere call back
+# in new words (style report: signature_lines).
+signature_lines:
+  - {pattern: 'espelho da sua (própria )?competência', units: [ch06, ch07, ch20]}
+
+# R3: phrases that usually signal an unsupported generalization (lint warns;
+# fine when backed by data or framed as the author's view).
+generalization_watch:
+  pt: ['\b(a|da|na) maioria (dos|das) (pessoas|profissionais|empresas|usuários)\b', '\bninguém sério\b', '\btodo mundo sabe\b', '\bgente que entende\b']
+  en: ['\bmost (people|professionals|companies|users)\b', '\bnobody serious\b', '\beveryone knows\b']

@@ -220,4 +220,36 @@ class TestLintChapter < ToolTest
   def test_naming_rules_absent
     assert_exit 0, lint("\n<!-- src: original -->\nO GPT 5 na z.ai.\n")
   end
+
+  # Guards R3: watch-list phrases from continuity.yml warn (per language), never error.
+  def test_generalization_watch_warns
+    fx.write("book/continuity.yml", {"generalization_watch" => {"pt" => ['\\ba maioria (dos|das) pessoas\\b'], "en" => ['\\bmost people\\b']}}.to_yaml)
+    res = lint("<!-- src: original -->\nA maioria das pessoas desiste cedo.\n\n<!-- src: original -->\nNa minha experiência, desisto cedo.\n")
+    assert_exit 0, res
+    assert_includes res.out, "chx.md:#{line_of('A maioria das pessoas')}: warning: possible unsupported generalization (EDITORIAL-RULES R3)"
+    assert_equal 1, res.out.scan("R3").size
+    en = lint("<!-- src: original -->\nMost people give up early.\n", lang: "en")
+    assert_includes en.out, "R3"
+  end
+
+  # Guards R9: five distinct versioned names in one sentence warn; four, or the
+  # same name repeated, do not; appendices are exempt.
+  def test_name_dense_sentence
+    dense = "Testei GPT-5.5, Opus 4.8, Gemini-3, Kimi-K3 e DeepSeek-V4 no mesmo dia."
+    res = lint("<!-- src: original -->\n#{dense}\n\n<!-- src: original -->\nTestei GPT-5.5, Opus 4.8, Gemini-3 e GPT-5.5 de novo.\n")
+    assert_includes res.out, "chx.md:#{line_of('Testei GPT-5.5, Opus 4.8, Gemini-3, Kimi')}: warning: name-dense sentence (EDITORIAL-RULES R9)"
+    assert_equal 1, res.out.scan("R9").size
+    fx.write("book/pt/apZ.md", FM + "<!-- src: original -->\n#{dense}\n")
+    ap = fx.run("lint_chapter", fx.path("book/pt/apZ.md"))
+    refute_includes ap.out, "R9"
+  end
+
+  # Guards R9 for lists: nine bullets in prose warn once; eight do not; appendices are exempt.
+  def test_long_bullet_list
+    items = ->(n) { (1..n).map { "- item #{_1}\n" }.join }
+    assert_includes lint("<!-- src: original -->\nLista:\n\n#{items.(9)}").out, "bullet list longer than 8 items"
+    refute_includes lint("<!-- src: original -->\nLista:\n\n#{items.(8)}").out, "bullet list"
+    fx.write("book/pt/apZ.md", FM + "<!-- src: original -->\n#{items.(12)}")
+    refute_includes fx.run("lint_chapter", fx.path("book/pt/apZ.md")).out, "bullet list"
+  end
 end

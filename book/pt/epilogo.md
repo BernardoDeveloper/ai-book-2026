@@ -18,13 +18,48 @@ Segunda-feira, então. Você chegou ao fim do livro, ou quase, e a pergunta que 
 
 Eu não tenho plano de carreira pra vender, nem curso. Tenho o que um ano de uso diário me ensinou, e cabe em poucas páginas. Boa parte vai soar óbvia. O difícil é segurar o óbvio quando a manchete do dia grita o contrário.
 
+Começo pelo concreto: dois ou três passos pra esta semana, conforme quem você é. O resto do epílogo explica por que são esses.
+
+## Pra esta semana
+
+<!-- src: original -->
+Se você trabalha com escritório, números ou papéis:
+
+- escolha uma tarefa repetitiva que você já sabe fazer bem, como o relatório novo a partir do velho ou o rascunho de um e-mail difícil, e peça ao chatbot com as quatro partes de @sec-ch09: o que você quer, como, o que você não quer e como saber que deu certo;
+- confira o resultado contra o que você sabe que está certo e anote onde ele errou; número, data e regra se conferem na fonte (@sec-ch04);
+- deixe dado de cliente e da empresa fora do chatbot até saber o que o serviço guarda e o que a sua empresa permite.
+
+<!-- src: original -->
+Se você é gestor:
+
+- antes de comprar mais licença, escolha um processo, meça o que chega ao cliente hoje e meça de novo depois (@sec-ch19);
+- reserve uma ou duas semanas pro time treinar o jeito novo sem meta de entrega;
+- diante de um anúncio ou de um consultor, use as perguntas de @sec-apC.
+
+<!-- src: original -->
+Se você é pai ou mãe, e o seu filho adolescente pergunta se a IA vai acabar com o mundo:
+
+- conte o que o livro mostrou: é um programa que gera o texto mais provável a partir de um arquivo congelado, que não lembra de ninguém e erra com toda a confiança (@sec-ch01, @sec-ch20);
+- diga também que tem gente séria preocupada (@sec-ch14), e que diante de cada manchete a pergunta útil é quem ganha com ela;
+- combine com a família uma palavra-código pra emergências contra golpe de voz clonada (@sec-ch17), que é o risco concreto desta semana.
+
+<!-- src: original -->
+Se você está começando na programação:
+
+- use o agente, mas, pra cada mudança que ele fizer, peça que explique o porquê e confira se você saberia explicar também (@sec-ch18);
+- estude o que vem por baixo (banco de dados, rede, como saber se o programa está certo) e escreva o teste antes de pedir o código;
+- pegue um problema difícil e não largue até entender por que a solução funcionou (@sec-ch08); depois publique, porque usuário de verdade é o melhor revisor que existe (@sec-ch19).
+
 ## Medo vende
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-Você conheceu em @sec-ch01 a frase do cartão: a sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA. Depois deste ano, eu acrescentaria que o medo segue a mesma regra. Quanto menos a pessoa sabe como a coisa funciona, mais espaço sobra pra imaginar o fim do mundo.
+Você conheceu em @sec-ch01 a frase do cartão: a sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA. Depois deste ano, eu acrescentaria que boa parte do medo segue a mesma regra. Quanto menos a pessoa sabe como a coisa funciona, mais espaço sobra pra imaginar o fim do mundo.
+
+<!-- src: original -->
+Boa parte, não todo. Em @sec-ch14 você viu pesquisadores sérios, que sabem muito bem como a coisa funciona, preocupados de verdade, e esse medo merece ser ouvido e discutido com argumento. O que não merece crédito é o medo fabricado por quem lucra com ele.
 
 <!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
-Medo e empolgação saem da mesma fábrica. Em agosto de 2026 escrevi sobre os cursos de "engenharia" disso e daquilo que brotaram em volta dos agentes, e o mecanismo era velho. Primeiro deixam você ansioso, achando que está ficando pra trás, que todo mundo já migrou pro paradigma novo e só você não. Depois cobram pra curar a ansiedade que eles mesmos criaram.
+Esse medo fabricado e a empolgação saem da mesma fábrica. Em agosto de 2026 escrevi sobre os cursos de "engenharia" disso e daquilo que brotaram em volta dos agentes, e o mecanismo era velho. Primeiro deixam você ansioso, achando que está ficando pra trás, que todo mundo já migrou pro paradigma novo e só você não. Depois cobram pra curar a ansiedade que eles mesmos criaram.
 
 Esse medo de ficar de fora tem sigla em inglês, FOMO, e nesse mercado ele é o modelo de negócio. O anúncio de que a inteligência geral chega em dois anos funciona do mesmo jeito, numa escala maior (@sec-ch14). Quem tem ação pra vender, placa de vídeo pra vender ou rodada de investimento pra fechar precisa que você sinta que o mundo vai acabar, ou recomeçar, na terça que vem.
 
@@ -43,7 +78,7 @@ Três coisas, e nenhuma delas vence em seis meses.
 <!-- src: original -->
 A primeira é o mínimo sobre a máquina. Um [LLM]{.gls} gera o texto mais provável, pedaço por pedaço, a partir de um arquivo congelado que não aprende com você (@sec-ch01). Quem guarda só isso na cabeça já se defende de metade das promessas: não espera consciência de um gerador de texto, não espera que ele lembre da conversa da semana anterior, e desconfia quando ele concorda com tudo (@sec-ch04).
 
-Se quiser ir mais fundo, @sec-apmecanica mostra o mecanismo sem matemática, e @sec-antes traz uma lista de leitura pra vários níveis.
+Se quiser ir mais fundo, @sec-apmecanica mostra o mecanismo sem matemática, e @sec-apleituras traz uma lista de leitura pra vários níveis.
 
 <!-- src: 2026/04/11/vs-code-e-o-novo-cartao-perfurado -->
 Vale o mesmo pro fundamento do seu próprio ofício. Pense no programador sem base de @sec-ch18, que testa com 300 linhas e não imagina o milhão. Com [agente]{.gls} na mão, quem tem base aprende mais rápido. Quem não tem só terceiriza a própria ignorância.
