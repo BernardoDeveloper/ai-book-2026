@@ -18,7 +18,7 @@ Mas eu sei que muita gente chega aqui com uma preocupação específica e pouca 
 <!-- src: original -->
 Se você chegou com uma pergunta específica, estes são os capítulos que respondem a ela. Cada um dá pra ler sozinho.
 
-- E o meu emprego? O @sec-ch18, o @sec-ch19 e o epílogo (@sec-epilogo).
+- E o meu emprego? O @sec-ch18, o @sec-ch19 e o epílogo (@sec-epilogo); pra ver o padrão de outras crises, as três bolhas de @sec-apbolhas.
 - Tem alguém ali dentro? Vem aí uma superinteligência? O @sec-ch01, o @sec-ch14 e o @sec-ch20.
 - Você é gestor e estão te vendendo uma transformação com IA? O @sec-ch14, o @sec-ch19 e as listas de conferência do @sec-apC.
 - É seguro deixar a IA mexer nas suas coisas? Ela espiona? O @sec-ch15, o @sec-ch17 e o kit mínimo do @sec-apB.
@@ -30,14 +30,14 @@ Se você programa, os bastidores que eu tirei dos capítulos pra não cansar que
 <!-- src: original -->
 Entre as partes há dois interlúdios, mais curtos e mais leves, pra respirar. Os apêndices, no fim, guardam o que atrapalharia a narrativa:
 
-- um passeio opcional pela mecânica da máquina, sem matemática;
+- um passeio opcional pela mecânica da máquina, sem matemática, e uma lista curta de livros e vídeos pra quem quiser aprender a mecânica de verdade (@sec-apleituras);
+- um guia curto de como estudar com a IA do lado (@sec-apestudar) e as três bolhas que eu atravessei, lado a lado e com os números de cada uma (@sec-apbolhas);
 - uma linha do tempo, do transformer de 2017 até outubro de 2026;
 - um kit mínimo pra usar agentes de IA com segurança;
 - a ferramenta de memória pra agentes que eu construí ao longo do ano;
 - duas listas curtas pra conferir um benchmark ou um anúncio;
 - o catálogo dos projetos que eu construí em 2026;
-- os bastidores técnicos, pra quem programa;
-- uma lista curta de livros e vídeos pra quem quiser aprender a mecânica de verdade (@sec-apleituras).
+- os bastidores técnicos, pra quem programa.
 
 Se você pular, vai tropeçar de vez em quando num termo ou num personagem que apareceu antes. O texto indica o capítulo onde ele foi explicado, e o glossário cobre o resto.
 

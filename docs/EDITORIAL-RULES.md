@@ -142,6 +142,17 @@ limits stated; a saturated or single test never carries a headline.
 *Source:* persona rounds 1 and 2 (ch20 "linha reta", 5/5 both times).
 *Enforced:* briefs.
 
+**R21. The narrator's history is evidence, not credentials.** Use the
+author's past (bubbles lived, warnings given, methods practiced, crashes from
+inside) where it backs a claim with something the reader can check: a dated
+warning next to the admitted miss, a test run, a lived event. Never as "trust
+me because of my résumé"; the book says "currículo não é argumento". Tell the
+wrong calls with the right ones; no volume lines (repository counts,
+audience size). Background sources (`book/outline.yml` background_sources)
+are fact-checked like any claim. *Source:* Akitando round, persona check
+2026-10-14 (`reviews/akitando/personas/summary.md`). *Enforced:* briefs;
+persona check.
+
 ## Process
 
 **R15. Facts are checked, not asked.** See `docs/COPYEDIT.md`, "Facts:

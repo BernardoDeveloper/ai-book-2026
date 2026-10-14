@@ -29,3 +29,11 @@ references:
     URL: "https://qwen.ai/blog?id=qwen3tts-0115"
     accessed: {date-parts: [[2026, 10, 13]]}
     note: "cited-by: 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles; also 2026/02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles. Open-source release date 2026-01-22 per press coverage (gigazine.net, comfyui-wiki.com); the official page renders client-side and could not be read by fetch."
+  - id: akitando130
+    type: "post-weblog"
+    title: "[Akitando] #130 - Rant: Projetos, TESTES e Estimativa??? | Rated-R"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2022, 10, 25]]}
+    URL: "https://akitaonrails.com/2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r/"
+    note: "cited-by: 2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r (narrator background, Akitando era)"

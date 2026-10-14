@@ -87,7 +87,9 @@ end
 abort "usage: restamp.rb [--lang en] POST_ID... | --translation UNIT[,UNIT] | --all-translations | --parked TOPIC" if ARGV.empty?
 
 ARGV.each do |id|
-  sha = posts.fetch(id) { abort "unknown post #{id}" }.dig(lang, "sha256")
+  rec = posts.fetch(id) { abort "unknown post #{id}" }
+  # A post with no version in this language (e.g. a background post) is tracked by its PT text.
+  sha = rec.dig(lang, "sha256").to_s.empty? ? rec.dig("pt", "sha256") : rec.dig(lang, "sha256")
   entry = /\{post: #{Regexp.escape(id)}, sha256: "[0-9a-f]{64}"(, commit: "[0-9a-f]+")?\}/
   Dir[File.join(ROOT, "book", lang, "*.md")].sort.each do |path|
     text = File.read(path)

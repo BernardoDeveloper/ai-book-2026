@@ -1,0 +1,43 @@
+---
+references:
+- id: akitando132
+  type: post-weblog
+  title: "[Akitando] #132 - Rant: A Bolha de Startups Estourou?"
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2022
+      - 11
+      - 22
+  URL: https://akitaonrails.com/2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou/
+- id: akitando076
+  type: post-weblog
+  title: "[Akitando] #76 - Guia DEFINITIVO de Aprendendo a Aprender | A maior BRONCA
+    da sua vida [RATED R]"
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2020
+      - 4
+      - 1
+  URL: https://akitaonrails.com/2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r/
+- id: akitando063
+  type: post-weblog
+  title: "[Akitando] #63 - Não Terceirize suas Decisões! | A Lição MAIS Importante
+    da sua Vida"
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2019
+      - 10
+      - 9
+  URL: https://akitaonrails.com/2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida/

@@ -7,9 +7,13 @@ sources:
   - {post: 2026/04/11/vs-code-e-o-novo-cartao-perfurado, sha256: "c4a9ef44ff34e504686c7202868466c3a78ec86482a26890da501b4594920376"}
   - {post: 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior, sha256: "8560b2c684a6bfd9a8def203ba00d507b77c2b8e0164b4f7168ca68bbcba3dc4"}
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "309b129d7a93fb9b17e4efaefe75a56b8b85e95568adc2ecc9809306dab8b434"}
+  - {post: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou, sha256: "0ab9f5cdffe6b1d0ce41ca3642c8c17c3369c25f7e244e99e4384ae46d183fc7", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
+  - {post: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r, sha256: "4c8343cf9487f3e389341a2e5654a423cb2ff2cced3ecbbddb5aed5385b544c1", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
+  - {post: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar, sha256: "792f3304eb3ebe6570cc3e4a840c04e8acf32ffbf701bb188022801b6822cb80"}
+  - {post: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida, sha256: "2727fad41f2e46b8df4cbc36d4a7283894b02413b94f973356d5b2cb72845683"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/epilogo.md, sha256: "4aff49eb42bef7a4a7ef0e1562fe084c234e539b624256466a0e1914ad9077c6"}
+translated_from: {file: book/pt/epilogo.md, sha256: "32fb8cc4e22abf642638cee614cff09e6a7474544b3b45dbabece52b6a432009"}
 ---
 
 # Epilogue: What I'd Tell You {#sec-epilogo .unnumbered}
@@ -49,7 +53,7 @@ If you're starting out in programming:
 
 - use the agent, but for every change it makes, ask it to explain why and check whether you could explain it too (@sec-ch18);
 - study what sits underneath (databases, networks, how to know whether the program is right) and write the test before asking for the code;
-- take a hard problem and don't let go until you understand why the solution worked (@sec-ch08); then publish, because real users are the best reviewer there is (@sec-ch19).
+- take a problem you don't know how to solve and that has no ready-made tutorial, try on your own before asking the machine, and don't let go until you understand why the solution works (@sec-ch08, @sec-apestudar); then publish, because real users are the best reviewer there is (@sec-ch19).
 
 ## Fear Sells
 
@@ -61,6 +65,9 @@ A good part, not all. In @sec-ch14 you saw serious researchers, who know very we
 
 <!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
 This manufactured fear and hype come out of the same factory. In August 2026 I wrote about the courses in "engineering" this and that which sprouted around agents, and the mechanism was an old one. First they make you anxious, thinking you're falling behind, that everyone else already migrated to the new paradigm and you haven't. Then they charge you to cure the anxiety they created.
+
+<!-- src: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou -->
+In November 2022, when the hiring bubble burst (@sec-ch18), I told the young person pressured by influencers, on Akitando, to block whoever sold guaranteed jobs, cancel the courses and forget the shortcuts [@akitando132]. In 2026 the course changed its name, and the anxiety it sells is the same.
 
 That fear of being left out has an acronym, FOMO, the fear of missing out, and in this market it's the business model. The announcement that general intelligence arrives in two years works the same way, on a bigger scale (@sec-ch14). Whoever has stock to sell, graphics cards to sell or a funding round to close needs you to feel that the world is going to end, or start over, next Tuesday.
 
@@ -91,10 +98,16 @@ The second is judgment, the ability to look at an answer and know whether it's a
 
 Judgment is trained by doing, getting it wrong and checking. The agent makes the doing much cheaper, and you can test and throw out one hypothesis after another, as in @sec-ch08. The checking is still entirely yours.
 
+<!-- src: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r -->
+A calculation I used to repeat in the channel days: a course gives you about 1% as an introduction, and you hunt down the other 99% on your own, as you need it. The machine's ready-made answer goes into the same calculation: it's an introduction, and the hunting is still yours. How to study with an agent at your side is in @sec-apestudar.
+
 ### Your Domain
 
 <!-- src: original -->
 The third is your own trade. Remember the map in @sec-ch20: the model sees in detail what the world published and is blind to what stayed behind closed doors. Your company's unwritten rules, the difficult client, the exception only you know about, the reason that regulation exists: none of that went into training.
+
+<!-- src: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar -->
+I learned this from the inside, in the years I integrated systems for large companies (@sec-ch20): you can't model something you don't know. The machine runs into the same limit, never having spent a day inside your company.
 
 That's the part of the map that's blank for the machine and filled in inside your head. The deeper you know your trade, the more the tool pays off in your hands.
 
@@ -138,6 +151,9 @@ The line I don't cross is the decision. The machine can propose, research, compa
 - read before you approve, and whatever you can't read, don't approve;
 - every now and then, do yourself what you usually delegate, so you don't lose your touch;
 - keep what you learned somewhere of your own, because the model keeps nothing (@sec-ch20).
+
+<!-- src: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida -->
+That line is older than AI. It comes from "Não terceirize suas decisões" (Don't outsource your decisions), the 2019 Akitando episode you saw in @sec-ch09 [@akitando063], and from the rule I still follow: if I decide right, the credit is 100% mine, and if I decide wrong, so is the loss. In the same video I told people to distrust advice from anyone who has no skin in the game if it goes wrong. The model is exactly that adviser, and the one who pays for its mistakes is you.
 
 > The tool does almost anything you ask. Knowing what to ask, and whether what came back is any good, is still your job.
 

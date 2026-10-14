@@ -63,7 +63,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.multi_model.md"
   - "llm-coding-benchmark/docs/success_report.v2.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apA.md, sha256: "e17f0ec72d2b2e633508b3b9751ac38579ba06de02516de84466cf98f7caa24c"}
+translated_from: {file: book/pt/apA.md, sha256: "222b8851cf4dc71d52f7dd18b92163574a23f2a7192923537814fde2fec68a26"}
 ---
 
 # Timeline {#sec-apA}
@@ -72,7 +72,7 @@ translated_from: {file: book/pt/apA.md, sha256: "e17f0ec72d2b2e633508b3b9751ac38
 In October 2026, when I redid the AI timeline to write the year's synthesis, it split itself into phases: the parameter wars, the reasoning peak, optimization and the agent era. @sec-ch20 tells that story. This appendix keeps the full list, for reference.
 
 <!-- src: original -->
-It has three parts. The first runs from the Perceptron, in 1957, to the launch of ChatGPT, at the end of 2022. The second covers the three years in which the labs traded size for efficiency and the model learned to use tools. The third is 2026 month by month, with what this book tells and the chapter where each thing appears.
+It has three parts. The first runs from the Perceptron, in 1957, to the launch of ChatGPT, at the end of 2022, and closes with the method books this book leans on. The second covers the three years in which the labs traded size for efficiency and the model learned to use tools. The third is 2026 month by month, with what this book tells and the chapter where each thing appears.
 
 The model names are period details, like the car models in a novel. Each date is the one in the chapter that tells the episode, and when the chapter only gives the month, so does this list.
 
@@ -101,6 +101,20 @@ The first artificial intelligence hype is almost seventy years old. The rest of 
 | 2021 | Dario Amodei, co-author of the GPT-2 announcement, is already running Anthropic [@anthropic2021raises] | @sec-ch01 |
 | 2022 | DeepMind's Chinchilla, with 70 billion parameters and about four times more text, beats Gopher, at 280 billion: the giants were underfed on data [@hoffmann2022training] | @sec-ch20 |
 | Late 2022 | OpenAI launches ChatGPT [@openai2022chatgpt] | @sec-ch01 |
+
+### The Method Came First
+
+<!-- src: original -->
+The practices behind my agent projects are decades older than the agents. These are the dates of the books and texts they come from, and the chapter where each one appears.
+
+| When | What | Where |
+|---|---|---|
+| 1972 | Gordon Bell formulates the law that carries his name: roughly every decade a new class of computer is born, with a new platform and a new interface [@wikipedia2026belllaw] | @sec-ch18 |
+| 1975 | Fred Brooks publishes *The Mythical Man-Month*, with the chapter "Plan to throw one away"; the 20-year edition comes out in 1995 [@brooks1975mythical; @brooks1995mythical] | @sec-ch19 |
+| 1986 | Brooks presents "No Silver Bullet": no single technique promises to multiply software productivity by ten within a decade; the text becomes famous in *Computer* magazine, in 1987 [@brooks1987silver] | |
+| 1999 | Kent Beck publishes *Extreme Programming Explained*, the book of [XP]{.gls key=xp} [@beck1999xp] | @sec-ch06, @sec-ch19 |
+| Feb. 2001 | Seventeen people write the Agile Manifesto at Snowbird, Utah [@agile2001history] | @sec-ch19 |
+| 2003 | Eric Evans publishes *Domain-Driven Design*: software is modeled on the knowledge of the people who live the business [@evans2003ddd] | @sec-epilogo |
 
 ## From ChatGPT to Agents
 

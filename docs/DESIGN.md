@@ -47,6 +47,17 @@ tools/                 pinned Quarto (bundles Pandoc + Typst), epubcheck, d2 (gi
    `<!-- src: ref:<project>/<path> -->` for reference-project facts. A Lua
    filter strips them at build.
 
+**Background sources.** Older posts (Akitando, 2018-2023) may color the
+narrator's history. They sit outside the 2026 corpus and before
+`meta.source_from`, so they are listed in `book/outline.yml` under
+`background_sources: [{post: yyyy/mm/dd/slug, why}]` (full id, with the year).
+`inventory.rb` records them like any post, flagged `background: true`; units
+cite them with the usual `src` markers and `sources` entries, so drift,
+`--diff` and `restamp.rb` work unchanged. They need no analysis, are not
+counted as used AI posts, are exempt from the cut-off check, and `fontes`
+lists the cited ones in a group of their own. A marker pointing at a post that
+is neither in the corpus nor in `background_sources` is a doctor error.
+
 Images carry their own provenance in `assets/credits.yml`; bibliography
 entries record `note: cited-by <post ids>`.
 

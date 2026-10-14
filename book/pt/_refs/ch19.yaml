@@ -241,3 +241,56 @@ references:
       - 10
       - 13
   note: 'cited-by: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu'
+- id: akitando063
+  type: post-weblog
+  title: "[Akitando] #63 - Não Terceirize suas Decisões! | A Lição MAIS Importante
+    da sua Vida"
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2019
+      - 10
+      - 9
+  URL: https://akitaonrails.com/2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida/
+- id: akitando051
+  type: post-weblog
+  title: '[Akitando] #51 - Esqueça Metodologias "Ágeis" | [Rated R]'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2019
+      - 6
+      - 18
+  URL: https://akitaonrails.com/2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r/
+- id: akitando104
+  type: post-weblog
+  title: "[Akitando] #104 - RANT: Empreendendo com Software do JEITO ERRADO!"
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2021
+      - 9
+      - 28
+  URL: https://akitaonrails.com/2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado/
+- id: akitando106
+  type: post-weblog
+  title: "[Akitando] #106 - Recomendação de Livros - Introdução à Design Emergente"
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2021
+      - 10
+      - 11
+  URL: https://akitaonrails.com/2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente/

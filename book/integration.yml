@@ -91,3 +91,10 @@ items:
   - chapters: [antes]
     issue: "Reading list before chapter 1 felt like homework (3/5 readers)."
     ruling: "Move the list to a back-matter appendix; antes keeps one paragraph and a pointer (author approved 2026-10-13)."
+  # --- 2026-10-14: narrator background from the Akitando era (reviews/akitando/)
+  - chapters: [prefacio, ch01, ch04, ch05, ch06, ch07, ch08, ch12, ch14, ch16, ch18, ch19, ch20, epilogo, apbolhas, apestudar, apmecanica, apA]
+    issue: "The first-person narrator colored with the author's 2018-2023 Akitando history (author request), ~29 short touches plus two appendices; episodes registered as background_sources."
+    ruling: "Approved by the author 2026-10-14 (reviews/akitando/plan.md). Owners: ch18 the dated warnings and the crash; apbolhas the numbers; ch20 the SAP/private-domain story; epilogue 'não terceirize suas decisões'; ch08 the 80/20 trap; apestudar the learning method; apmecanica the base-rate example. Bio facts per reviews/akitando/profile.md (confirmed by the author); world facts per reviews/akitando/factcheck.yml. EDITORIAL-RULES R21."
+  - chapters: [ch18]
+    issue: "The 02/08 post dated the hiring bubble 'por volta de 2014' and Akitando 'até o começo de 2024'."
+    ruling: "Book says 'a partir de 2010, com juro perto de zero' and '2018 ao fim de 2023' (fact-check; author's own episodes). Blog errata for the author."

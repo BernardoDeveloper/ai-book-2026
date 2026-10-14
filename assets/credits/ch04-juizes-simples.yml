@@ -1,0 +1,24 @@
+---
+id: ch04-juizes-simples
+kind: chart_code
+file: assets/figures/ch04-juizes-simples.png
+sha256: 918ea81f849ec7b9800738b1b1cf9a2b71885a21b0c41259d4e860cbb8d77d2b
+pixels:
+  width: 2100
+  height: 1260
+source: assets/charts/ch04-juizes-simples.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I scripts/chart_check.py assets/charts/ch04-juizes-simples.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+description: 'ch04-juizes-simples: Three models from different companies judge a claim; a primary source overrides them (no numbers).'
+chapters:
+- 4
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

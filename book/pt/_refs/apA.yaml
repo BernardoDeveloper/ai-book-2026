@@ -1,0 +1,44 @@
+references:
+  - id: brooks1975mythical
+    type: "book"
+    title: "The Mythical Man-Month: Essays on Software Engineering"
+    author: [{family: "Brooks", given: "Frederick P."}]
+    publisher: "Addison-Wesley"
+    publisher-place: "Reading, MA"
+    issued: {date-parts: [[1975]]}
+    note: "cited-by: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software (original 1975 edition; reviews/akitando/factcheck.yml)"
+  - id: brooks1995mythical
+    type: "book"
+    title: "The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition"
+    author: [{family: "Brooks", given: "Frederick P."}]
+    publisher: "Addison-Wesley"
+    publisher-place: "Reading, MA"
+    ISBN: "0201835959"
+    issued: {date-parts: [[1995]]}
+    URL: "https://eu.pearson.com/mythical-man-month-the-essays-on-software-engineering-anniversary-edition/9780132119160"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software (20th-anniversary edition adds chapters 16-19, including 'No Silver Bullet'; reviews/akitando/factcheck.yml)"
+  - id: brooks1987silver
+    type: "article-journal"
+    title: "No Silver Bullet: Essence and Accidents of Software Engineering"
+    author: [{family: "Brooks", given: "Frederick P."}]
+    container-title: "Computer"
+    volume: "20"
+    issue: "4"
+    page: "10-19"
+    DOI: "10.1109/MC.1987.1663532"
+    issued: {date-parts: [[1987, 4]]}
+    URL: "https://doi.org/10.1109/MC.1987.1663532"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: original (first presented at IFIP Information Processing 86, Dublin, 1986; reprinted in IEEE Computer, April 1987; reviews/akitando/factcheck.yml)"
+  - id: evans2003ddd
+    type: "book"
+    title: "Domain-Driven Design: Tackling Complexity in the Heart of Software"
+    author: [{family: "Evans", given: "Eric"}]
+    publisher: "Addison-Wesley"
+    publisher-place: "Boston, MA"
+    ISBN: "0321125215"
+    issued: {date-parts: [[2003, 8]]}
+    URL: "https://openlibrary.org/books/OL51275329M/Domain-Driven_Design"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar (Addison-Wesley, Aug 2003; reviews/akitando/factcheck.yml)"

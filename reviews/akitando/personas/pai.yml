@@ -1,0 +1,196 @@
+persona: pai
+summary: |
+  I picked this up because my son watched a video about a superintelligence
+  and I had nothing to answer. The book did answer it, though in pieces: the
+  file that never learns (ch01), "ask who profits" (ch14), and finally the
+  line in ch20 about what to say if my son asks whether someone is in there.
+  The epilogue, with a section just for parents, is what I will remember
+  most, along with the eight questions for reading an announcement. I trusted
+  the author more every time he admitted a mistake (the wrong 2023 forecast,
+  the Opus cost he miscounted). I trusted him less every time he cited his
+  own old videos, listed his commit counts or told me how many people use his
+  program. ch08 and ch19 nearly lost me: emulators, PlayStation, Master System
+  and sprints are not my world. ch14 has too many names in a row. Overall I
+  would hand the preface, ch01, ch04, the end of ch14, ch20 and the epilogue
+  to a friend, and tell him to skip the rest.
+best:
+  - "epilogo: the 'Se você é pai ou mãe' list, with the code word for voice-clone scams"
+  - "ch01: the phone keyboard autocomplete comparison and the file that never learns"
+  - "ch14: the eight questions in 'Como ler um anúncio'"
+  - "ch04: the same article, two questions, two opposite answers (coffee example)"
+  - "ch18: 'Avisei da bolha e errei a data, e desconfio de quem diz que acerta as duas coisas'"
+worst:
+  - "ch08: Driveclub, shadPS4 and '31 fases de investigação' (a stranger's hobby)"
+  - "ch08: Nintendinho to Master System, oracle, memory compared byte by byte"
+  - "ch14: the run of Coxon, Sacks, Tao, Hinton, LeCun, Ng, Musk and Altman names"
+  - "ch19: sprint, PO, QA, feature flag, staging (a company meeting I never attended)"
+  - "ch20: METR curves and benchmark table percentages"
+units:
+  - {unit: index, score: 4, note: "I felt seen at 'o pai que viu um vídeo'. The 1939 robot story is a nice way in. The résumé paragraph made me wonder: is he telling me to trust him?"}
+  - {unit: ch01, score: 4, note: "Finally someone explains it without math. The smartphone autocomplete comparison is the thing I will repeat to my son. The names in the Perceptron and AlexNet part went over my head."}
+  - {unit: ch04, score: 4, note: "Useful and practical, I will try the two-questions test tonight. Then it goes into his program and the 15 steps, which is not for me. The health and money lists I liked."}
+  - {unit: ch08, score: 2, note: "I understood the lesson (the machine does a bad plan fast) but the PlayStation and Master System stories are far from my life. Felt like him telling me about his hobbies."}
+  - {unit: ch14, score: 3, note: "The best material in the book for me, 'quem ganha com isso', buried in a flood of names, dates and billions. Too long. I wanted the point sooner."}
+  - {unit: ch18, score: 3, note: "The punched card comparison works. The part about 'chef de Miojo' and the personal history helped me trust him. The language benchmark paragraph, no."}
+  - {unit: ch19, score: 2, note: "Written for managers of software teams. I own a hardware store; I took away the idea of 'people trained not to decide', and little else. The Adobe part lost me."}
+  - {unit: ch20, score: 3, note: "The mapa em branco picture is good and the line about my son is exactly what I needed. The first half is full of tables and acronyms; I skimmed."}
+  - {unit: epilogo, score: 5, note: "This is the part I wanted. Monday list, the 'medo vende' idea, 'don't trust me either'. Should be the first thing a worried parent reads."}
+  - {unit: apbolhas, score: 4, note: "Short, concrete, with dates. Reads like a man who lived it, and the 'errei o calendário duas vezes' made me believe the rest."}
+  - {unit: apestudar, score: 3, note: "Good advice for my son (try alone first, then ask the machine). A bit of 'my old videos' again."}
+annotations:
+  - unit: index
+    quote: "Muita gente me conhece por uma frase sobre empolgação e conhecimento"
+    type: rewrite
+    why: "He announces he is famous before I know why I should care. The next sentence names two crowds who got him wrong, which sounds like 'everyone misunderstands me'."
+    suggestion: "Drop the fame, say what he got wrong in the clippings and move on."
+  - unit: ch01
+    quote: "Sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA."
+    type: rewrite
+    why: "As a slogan it reads as 'whoever is excited is ignorant', which includes my son and half my customers. It put me on guard before the explanation began."
+    suggestion: "Present it as what he said back then and show the magic-trick comparison first; the slogan hurts more than it helps."
+  - unit: ch01
+    quote: "Quem conhece pouco de IA olha pra ela como o macaco do filme *2001: Uma Odisseia no Espaço* olha pro monolito"
+    type: rewrite
+    why: "Comparing readers who are impressed to a monkey kneeling before a monolith is condescending, and I am one of those people at the start of the book."
+    suggestion: "Cut the monkey, keep Eliza and the secretary, which make the same point kindly."
+  - unit: ch01
+    quote: "O marco da virada foi a AlexNet, de 2012, uma rede de Alex Krizhevsky, Ilya Sutskever e Geoffrey Hinton"
+    type: boring
+    why: "Three names and a technical milestone I will not remember. The chapter needs only that the idea came back once there was data and cheap chips."
+    suggestion: "Keep the three missing ingredients, drop the names."
+  - unit: ch04
+    quote: "Chamei de Frank Investigator, mais um dos meus projetos com nome de Frank"
+    type: confusing
+    why: "I did not know there was a family of Frank projects. It is an inside joke for people who read his blog, and a pointer to another chapter does not help someone reading slowly."
+    suggestion: "Just 'chamei de Frank Investigator'."
+  - unit: ch04
+    quote: "Desde agosto de 2026, a Anthropic marca de forma invisível o texto que os modelos Claude produzem"
+    type: boring
+    why: "A watermark in the middle of a chapter about not trusting the chatbot. It shifts the topic to 'was this text written by AI', which is not what the chapter promised."
+    suggestion: "Move it to the appendix he already points to."
+  - unit: ch08
+    quote: "Foram 31 fases de investigação, 44 commits na minha cópia do emulador e mais de 15 mil linhas de código de diagnóstico."
+    type: boring
+    why: "Numbers that only say 'look how much I worked'. I could not tell whether 15 thousand lines is a lot, and the point was the lesson, not the effort."
+    suggestion: "One number, or none; the 'four days in the dark' already says it."
+  - unit: ch08
+    quote: "Eu sei fazer os 80% iniciais de quase qualquer projeto."
+    type: rewrite
+    why: "Reads as showing off in the middle of a chapter called 'my first failure'."
+    suggestion: "Soften to what he is describing, that the last stretch is what takes the time."
+  - unit: ch08
+    quote: "Faz muitos anos que eu tenho uma ideia fixa: converter jogos de Nintendinho pra rodar no Master System"
+    type: boring
+    why: "The previous paragraph already announced this project ('Voltemos ao projeto que apareceu de passagem...'), so I read the same setup twice. Then comes console architecture, cycles and cartridge chips, which I skimmed."
+    suggestion: "Merge the two openings and cut the processor-cycles explanation."
+  - unit: ch14
+    quote: "Pra quem perdeu a conta dos nomes, os lados ficam assim."
+    type: rewrite
+    why: "I had indeed lost count, but that summary arrives after pages of Coxon, Sacks, Tao, Musk, Altman, Hinton, LeCun and Ng. It is the useful part and it comes too late."
+    suggestion: "Give the two sides in three lines first, then the examples for whoever wants them."
+  - unit: ch14
+    quote: "o isolamento era um filtro: eles tinham acesso a um servidor interno que baixava pacotes de software"
+    type: confusing
+    why: "I understood 'AI agents broke into a company' but not how, and the technical sentences (41 servers, cluster, credential) did not help me judge whether to be scared."
+    suggestion: "Say it in one picture, like a guard who left a side door open, and keep the numbers for later."
+  - unit: ch14
+    quote: "A pergunta é puramente matemática: a solução sempre se comporta bem, ou o fluido pode chegar, em tempo finito, a um ponto de velocidade infinita?"
+    type: boring
+    why: "A whole section on a math problem I cannot follow. What reached me is 'the headline hid that it was a variant', which fits in two sentences."
+    suggestion: "Shorten to the trick of the headline; skip the fluid explanation."
+  - unit: ch14
+    quote: "Eu já tinha visto esse roteiro com as redes sociais. Em 2020, comentando o documentário"
+    type: rewrite
+    why: "Another 'I said it first'. It repeats a pattern: the Akitando episodes show up as proof in almost every chapter (episódios 84, 100, 50, 72, 132, 138...)."
+    suggestion: "Keep the argument, not the 'I already told you in 2020'."
+  - unit: ch18
+    quote: "costurar framework, HTML, CSS, contêiner, nuvem, banco de dados e mais cinquenta camadas de parafernália"
+    type: confusing
+    why: "A list of words I do not know presented as the obvious state of the art. I got the idea (too many layers) but felt left out."
+    suggestion: "Say 'dezenas de camadas de ferramentas' and keep two examples."
+  - unit: ch18
+    quote: "Eu chamava esse profissional de \"chef de Miojo\""
+    type: rewrite
+    why: "Funny, but there were people who paid for those courses and believed the ad; calling them instant-noodle cooks is the very contempt the preface said the book would not have."
+    suggestion: "Aim the joke at the course sellers, not at the buyers."
+  - unit: ch18
+    quote: "uma tarefa contábil difícil, sete linguagens (de Rust e Haskell a Python e Ruby), quatro modelos"
+    type: boring
+    why: "A benchmark about programming languages in a chapter that was answering 'will AI take jobs'. The conclusion (tests helped more than language) is good, but I got lost in the design."
+    suggestion: "State the conclusion first and send the setup to the technical appendix."
+  - unit: ch19
+    quote: "Das 287 reclamações e sugestões registradas até ali, 249 vinham de gente que não era eu."
+    type: boring
+    why: "Statistics about his own open-source project in a chapter on why companies fail. It reads as proof of popularity."
+    suggestion: "One sentence: most reports came from other people."
+  - unit: ch20
+    quote: "Na faixa de cima da tabela, a nota variava uns 16% de ponta a ponta. O custo variava mais de cem vezes."
+    type: confusing
+    why: "I do not know which table or what a grade of 16% means, and the paragraph before says seven models tied at the maximum. I could not tell if I was meant to be impressed or reassured."
+    suggestion: "Say what was compared in plain words: seven machines got the same grade, one cost 100 times more."
+  - unit: ch20
+    quote: "a minha leitura é que a inteligência de base dos modelos parou de dar saltos"
+    type: logic
+    why: "The preface and ch20 state this as the book's conclusion, then ch20 admits his own table 'não serve de prova' and the support is indirect (reports, a ranking gap, daily use). The tone of the opening is firmer than the evidence, and it is the claim my son's video contradicts."
+    suggestion: "In the preface say 'o que eu vi sugere' and keep the strong form for after the evidence."
+  - unit: ch20
+    quote: "O ai-memory é projeto meu, então aplique a ele a pergunta de @sec-ch14"
+    type: boring
+    why: "Honest of him to flag the interest, but it is still several paragraphs of version numbers and promotion of his own tool near the end of the book's argument."
+    suggestion: "Shorten to the principle in the quote block ('a memória fica comigo') and drop the history."
+narrator:
+  credibility: |
+    Yes, in some places, and no in others. It helped most where the history is
+    used to say "I have seen this before and it ended": the dot-com crash from
+    inside (ch18, apbolhas), a week unemployed, a friend calling. That gave me
+    a face behind "bolhas estouram, tecnologias ficam". It also helped that he
+    uses the same history to admit he got the calendar wrong, twice
+    (apbolhas). The Akitando warnings (episode 50, 72, 132) are credible
+    because he lists the miss next to the hit. The SAP years made the "mapa em
+    branco" argument in ch20 land: someone who saw companies' private rules can
+    say what the machine has not seen. Where it works against him is when I am
+    asked to believe a claim because of a résumé: "Eu programo desde 1990",
+    the old episodes cited chapter after chapter, and the claim that his
+    skepticism comes from that memory. I am suspicious of experts, and the book
+    itself says "currículo não é argumento" (ch18). The book is more
+    convincing when it shows me the test than when it shows me the career.
+  bragging: |
+    Mostly restrained, with a few slips. The ones I noticed: (1) "Muita gente
+    me conhece por uma frase sobre empolgação e conhecimento" (index); (2)
+    "Eu sei fazer os 80% iniciais de quase qualquer projeto" (ch08); (3)
+    "Foram 31 fases de investigação, 44 commits na minha cópia do emulador e
+    mais de 15 mil linhas de código de diagnóstico" (ch08); (4) "Eu tinha os
+    meus pra mostrar, mais de trinta repositórios públicos feitos desde
+    janeiro" (ch14); (5) "Eu já tinha visto esse roteiro com as redes
+    sociais. Em 2020, comentando o documentário" (ch14) and "Os avisos têm
+    data" (ch18), both with a flavor of "I was right", though in ch18 the next
+    lines admit the wrong date; (6) the statistics about his open-source
+    project (ch19, "249 vinham de gente que não era eu") and the ai-memory
+    history in ch20; (7) the joke "Ele ganhou o prêmio Nobel de Física de 2024
+    e eu não" (ch18) is self-mocking, so it did not bother me. What saves the
+    book is that nearly every boast has a counterweight: the wrong ranking he
+    published, the wrong cost, the failed project, "não confie em mim".
+  inconsistency: |
+    Nothing serious. Small things I noticed. (1) The preface says he began
+    working "no fim dos anos 90" while ch18 says "nenhuma das empresas por onde
+    passei desde 1996" and the appendix says "Entre 1996 e 2001": 1996 is mid,
+    not late. (2) ch08 says "tem uns 30 anos de experiência" while the
+    preface counts from 1990, which is closer to 36. (3) Tone: ch18 says
+    "currículo não é argumento, e eu desconfio de quem encerra a discussão
+    apelando à autoridade de alguém", but the preface and many chapters lean
+    on his own history and old episodes to be believed. (4) Tone: he promises
+    in the preface to treat readers who were fooled by ads with respect
+    (the confusion is not their fault), yet gives us the monkey and the monolith (ch01) and "chef de
+    Miojo" (ch18). (5) The preface and ch20 repeat nearly word for word the
+    sentence "Quem treina os modelos vinha contando, desde o fim de 2024...",
+    which reads as the same paragraph pasted twice. (6) In ch01 it is "a
+    segunda bolha da IA", and in the appendix "a IA" is the third bubble he
+    went through; they count different things, but it confused me for a
+    moment.
+cut_candidates:
+  - {unit: ch04, where: "## O carimbo invisível", why: "Watermarks and AI detectors are a different topic from 'will it agree with me'; the appendix already carries the mechanism."}
+  - {unit: ch08, where: "## Traduzir no escuro (processor cycles and cartridge chips part)", why: "Console architecture detail that a non-technical reader cannot use; the oracle idea can be taught with the dieting scale alone."}
+  - {unit: ch14, where: "### O problema do milênio", why: "A long section on a math problem for a point that fits in two sentences (the headline hid a variant)."}
+  - {unit: ch14, where: "## O classificador revolucionário (Jev numbers)", why: "A single startup's numbers; the lessons already exist in the eight-question list."}
+  - {unit: ch19, where: "## O fosso e a Adobe", why: "Interesting for people who sell software; for a parent or a shop owner it is a detour."}
+  - {unit: ch20, where: "## O que é seu (ai-memory history)", why: "Self-promotion with version numbers; keep the principle quote only."}

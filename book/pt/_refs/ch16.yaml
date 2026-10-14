@@ -147,3 +147,11 @@ references:
     URL: "https://github.com/oven-sh/bun/issues/30693"
     accessed: {date-parts: [[2026, 10, 13]]}
     note: "cited-by: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito"
+  - id: akitando064
+    type: "post-weblog"
+    title: "[Akitando] #64 - Começando na Carreira de TI | Faculdade? Níveis de Experiência?"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2019, 10, 16]]}
+    URL: "https://akitaonrails.com/2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia/"
+    note: "cited-by: 2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia (narrator background, Akitando era)"

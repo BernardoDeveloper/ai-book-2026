@@ -4,9 +4,10 @@ chapter: "The Machine Inside, Without the Math"
 sources:
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "309b129d7a93fb9b17e4efaefe75a56b8b85e95568adc2ecc9809306dab8b434"}
   - {post: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia, sha256: "71bce137854c76e643c64c2888ff44ef33b12b3bd3cd7dc3214ade44a46d0f27"}
+  - {post: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado, sha256: "7ee4001a6b6712e98fa2deb8acf37d0ffc33fde8b0b8ed7838b2c4d59e3aa02d", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apmecanica.md, sha256: "7a1f577c435277ec66e9f46241d4414b66b50a04b5021366fee7384cc472f482"}
+translated_from: {file: book/pt/apmecanica.md, sha256: "f16f2e9f3811b7d7a8ae7ef0e63851006f664702065b03825e3b939fe072fb64"}
 ---
 
 # The Machine Inside, Without the Math {#sec-apmecanica}
@@ -117,6 +118,19 @@ Why not always pick the likeliest face? It looks like the safest bet, and it bac
 
 <!-- src: original -->
 Notice what this mechanism lacks: nowhere along the way is there a step that checks whether the sentence is true. The question the machine answers for each piece is "what usually comes here?" When the likeliest answer and the true one coincide, great. When they don't, out comes a [hallucination]{.gls key=alucinacao} with the same fluency as ever (@sec-ch04 covers this in full).
+
+### Ninety-Nine Percent
+
+<!-- src: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado -->
+Probability fools the reader of the result, too. In 2020, in an episode of my channel about manipulation, I used an example that works for any accuracy figure [@akitando084]. A test is right 99% of the time, and the disease affects one person in a thousand. You test positive: what are the odds you're sick?
+
+Almost everyone guesses 99%, and the math gives about 9%. Picture 100,000 people taking the test. A hundred have the disease, and the test catches 99 of them; of the 99,900 healthy people, 1% also test positive, about a thousand. Of roughly 1,100 positives, only 99 are sick.
+
+<!-- src: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado -->
+A second test, independent of the first, changes everything. Rerun on those 1,100, it confirms about 98 sick people and only about 10 healthy ones, and the odds climb to about 91%. The word that carries the weight is "independent": repeating the same test, with the same flaw, doesn't count as a second opinion (@sec-ch04).
+
+<!-- src: original -->
+It holds for any accuracy percentage, [benchmark]{.gls} scores included. "99%" alone says almost nothing: you need to know how rare the thing being sought is, how many cases were tested and what each kind of error costs. Before you get impressed by the number, ask where it started from (@sec-apC).
 
 ## From Encyclopedia to Assistant
 

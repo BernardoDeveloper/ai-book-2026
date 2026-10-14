@@ -1092,3 +1092,31 @@ references:
       - 13
   note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia. Arquivado
     em: https://web.archive.org/web/20260913204739/https://x.com/DavidSacks/status/2098973625252708460'
+- id: akitando084
+  type: post-weblog
+  title: '[Akitando #84] Entendendo "O Dilema Social" e Como Você é Manipulado'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2020
+      - 9
+      - 30
+  URL: https://akitaonrails.com/2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado/
+  note: 'cited-by: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado (narrator background, Akitando era)'
+- id: akitando100
+  type: post-weblog
+  title: '[Akitando] #100 - Mercado Financeiro Pós-Pandemia: A Tempestade Perfeita?'
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: AkitaOnRails.com
+  issued:
+    date-parts:
+    - - 2021
+      - 6
+      - 22
+  URL: https://akitaonrails.com/2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita/
+  note: 'cited-by: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita (narrator background, Akitando era)'

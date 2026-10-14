@@ -4,6 +4,35 @@ Editions of *Competente o Suficiente*. Each version is a git tag (`vX.Y.Z`);
 pushing the tag builds the book and publishes a GitHub Release with the
 files.
 
+## 1.0.0-preview.5
+
+The narrator's history, both languages.
+
+- **The author's longer story behind the first person**: short passages from
+  24 Akitando episodes (2018-2023) where his experience backs a claim: the
+  dot-com crash lived from inside, five years integrating SAP at large
+  companies, the hiring-bubble warnings given on video in 2019, 2020 and 2022
+  (and the 2023 call he got wrong), decades of method behind the 2026 agent
+  practices, "Não terceirize suas decisões". Every factual claim taken from
+  the episodes was checked (`reviews/akitando/factcheck.yml`).
+- **Two new appendices**: "Três bolhas" (the dot-com bubble, the
+  zero-interest hiring bubble and the AI wave, with verified numbers) and
+  "Como estudar com a IA do lado" (learning with an agent, from "Aprendendo a
+  aprender"). The mechanics appendix explains reading a "99% accurate"
+  claim; the timeline gains the classic method books.
+- **Corrections**: the hiring bubble dated from about 2010 (not 2014),
+  Akitando 2018-2023, the dot-com crash 2000-2002, 2022 layoffs ~165k.
+- **Four new figures** where readers got lost: the two curves in chapter 20
+  (base intelligence flattening, task length rising), the three bubbles on
+  one timeline, who is on which side in chapter 14, and the three judges in
+  chapter 4 without the arithmetic.
+- **Consistency**: a full read for the narrator's facts, repetition and tone,
+  then a scoped check with the five target readers; new editorial rule R21
+  (the narrator's history is evidence, not credentials).
+- **Tooling**: background sources (older posts cited and tracked by drift and
+  listed on the sources page); EN tracks posts without an English version by
+  their PT text; the PDF check ignores titles ending in "???"; 168 tests.
+
 ## 1.0.0-preview.4
 
 The edition revised with its target readers, both languages.

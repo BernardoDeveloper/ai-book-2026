@@ -11,7 +11,9 @@
 #   glossary   every {.gls} key exists; defined-but-unused keys (warning)
 #   figures    every image exists, has a credits record, isn't a placeholder
 #   provenance markers and front-matter sources agree; no source predates the
-#              cut-off (outline meta.source_from) or is in outline `excluded`
+#              cut-off (outline meta.source_from) or is in outline `excluded`;
+#              posts in outline `background_sources` are exempt from both, any
+#              other post missing from the inventory corpus is an error
 #   callbacks  heuristic: a sentence that points at another unit (@sec-x) and
 #              names something (quoted phrase, Capitalised Name, number) must
 #              find at least one of those names in the target unit (warning)
@@ -126,12 +128,17 @@ end
 # ---- provenance and cut-off -------------------------------------------------
 cutoff = outline.dig("meta", "source_from") && Date.parse(outline.dig("meta", "source_from").to_s)
 excluded = Array(outline["excluded"]).to_h { ["2026/#{_1['post']}", Array(_1["borrowed_by"])] }
+background = Array(outline["background_sources"]).map { _1["post"] }
+corpus = (YAML.load_file(File.join(ROOT, "inventory", "posts.yml"))["posts"] rescue []).reject { _1["background"] }.map { _1["id"] }
 units.each do |id, u|
   sources = Array(u[:fm]["sources"]).map { _1["post"] }
   markers = u[:body].scan(%r{<!-- src: (\d{4}/\d\d/\d\d/[^ ]+) -->}).flatten.uniq
   (markers - sources).each { err.(id, "src marker #{_1} not listed in front-matter sources") }
   (sources - markers).each { warn_.(id, "source #{_1} listed but no paragraph is marked with it") }
   (sources | markers).each do |post|
+    next if background.include?(post)
+
+    err.(id, "#{post} is neither in the corpus nor in outline `background_sources`") if !corpus.empty? && !corpus.include?(post)
     date = Date.parse(post[0, 10].tr("/", "-")) rescue nil
     err.(id, "#{post} predates the cut-off #{cutoff}") if cutoff && date && date < cutoff
     err.(id, "#{post} is in outline `excluded`") if excluded.key?(post) && !excluded[post].include?(id)
@@ -330,7 +337,7 @@ if opts[:output]
   Dir[File.join(ROOT, "build", LANG, "*.pdf")].each do |pdf|
     txt = `pdftotext -q #{pdf} - 2>/dev/null`
     # Standalone "??" or "?@id" only: titles like "Bend Over for AI??" are text.
-    { /(?<![\p{L}\d])\?\?(?![\p{L}\d])|\?@[\w-]+/ => "'??' (unresolved reference)", /\b[\w-]+\?\)/ => "'key?)' (missing citation)",
+    { /(?<![\p{L}\d?])\?\?(?![\p{L}\d?])|\?@[\w-]+/ => "'??' (unresolved reference)", /\b[\w-]+\?\)/ => "'key?)' (missing citation)",
       /(Se[cç][aã]o|Section|Figura|Figure) \?/ => "unresolved numbered reference" }.each do |re, what|
       hits = txt.scan(re).size
       err.(File.basename(pdf), "#{hits}× #{what}") if hits.positive?

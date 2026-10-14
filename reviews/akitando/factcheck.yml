@@ -1,0 +1,766 @@
+# Fact-check of reviews/akitando/extract-{bubbles,career,method,startups}.yml
+# Scope: every world_facts claim; bio_facts only where a public record exists
+# (bio claims that are pure memory are listed at the end as author-memory).
+# Checked 2026-10-14 with web search + the local blog repo (akitaonrails-hugo).
+checks:
+  # ================= ANCHOR FACTS =================
+  - claim: "Nasdaq Composite dot-com peak and trough"
+    from: anchor
+    verdict: correct
+    correct_version: "Peak close 5,048.62 on 10 Mar 2000; trough close 1,114.11 on 9 Oct 2002; price drop ~78% in 31 months. Price-only recovery of the 2000 high only in 2015 (Apr 2015 close)."
+    source: "https://dqydj.com/nasdaq-drawdown-history/ ; https://fred.stlouisfed.org/series/NASDAQCOM ; https://www.ebsco.com/research-starters/economics/nasdaq-dive-prompts-dot-com-crash"
+  - claim: "Dot-com crash timeline 1999-2002"
+    from: anchor
+    verdict: correct
+    correct_version: "Mania 1998-99 (Nasdaq +86% in 1999); peak Mar 2000; sell-off from Apr 2000, waves of dot-com failures through 2000-01 (Pets.com Nov 2000, Webvan Jul 2001); 9/11 and the Enron/WorldCom scandals (Dec 2001 / Jul 2002) extended it; bottom Oct 2002."
+    source: "https://en.wikipedia.org/wiki/Dot-com_bubble ; https://internationalbanker.com/history-of-financial-crises/the-dotcom-bubble-burst-2000/"
+  - claim: "Fed funds near zero 2008-2015 and 2020-2022; 2022 hiking cycle"
+    from: anchor
+    verdict: correct
+    correct_version: "0-0.25% from 16 Dec 2008 to 16 Dec 2015 (first hike); cut back to 0-0.25% on 15 Mar 2020 (two emergency cuts, 3 and 15 Mar); first hike 16 Mar 2022; 425 bp in 2022 (ending at 4.25-4.50% on 14 Dec 2022, four 75-bp hikes Jun-Nov); peak 5.25-5.50% on 26 Jul 2023. Note: the long 'cheap money' era is often given as 2008-2022 (rates never above 2.5% in 2016-19)."
+    source: "https://www.federalreserve.gov/monetarypolicy/openmarket.htm ; https://fred.stlouisfed.org/series/DFEDTARU ; https://raymondjames.com/talentfinancialservices/our-perspective/2024/11/08/journey-through-the-history-of-interest-rates"
+  - claim: "Tech layoffs 2022 and 2023 totals (layoffs.fyi)"
+    from: anchor
+    verdict: correct
+    correct_version: "layoffs.fyi: 2022 ~165,000 tech employees (snapshots range 153,160 in Jan 2023 to ~165k after back-fill; ~1,000-1,170 companies); 2023 ~263,000 (262,735 at year-end per TechCrunch; ~59% above 2022). Say 'cerca de 165 mil em 2022 e mais de 260 mil em 2023', and cite the tracker, not 'exactly'. Global, all tech companies, not only Big Tech nor only the US."
+    source: "https://layoffs.fyi/ ; https://techcrunch.com/2023/09/19/tech-industry-layoffs-2023/ ; https://www.pymnts.com/economy/2023/report-2022-tech-layoffs-exceed-pandemic-job-cuts/ ; https://www.businesstoday.in/technology/news/story/nearly-200000-employees-let-go-worldwide-in-2023-as-job-losses-plague-tech-sector-382157-2023-05-21"
+  - claim: "Amazon / Meta / Google layoffs late 2022 - early 2023"
+    from: anchor
+    verdict: correct
+    correct_version: "Meta: ~11,000 (13%) on 9 Nov 2022, plus ~10,000 announced 14 Mar 2023. Amazon: ~10,000 reported Nov 2022, total raised to 'just over 18,000' (Jassy memo, 4 Jan 2023), plus 9,000 more on 20 Mar 2023 (~27,000 total). Google/Alphabet: 12,000 (~6%) on 20 Jan 2023. Microsoft: 10,000 on 18 Jan 2023."
+    source: "https://www.cnbc.com/2023/01/18/tech-layoffs-microsoft-amazon-meta-others-have-cut-more-than-60000.html ; https://retail-systems.com/rs/Amazon_job_cuts.php ; https://about.fb.com/news/2022/11/mark-zuckerberg-layoff-message-to-employees/"
+  - claim: "ChatGPT public release 30 Nov 2022"
+    from: anchor
+    verdict: correct
+    correct_version: "Released as a free research preview on 30 Nov 2022."
+    source: "https://openai.com/index/chatgpt/ ; https://en.wikipedia.org/wiki/ChatGPT"
+  - claim: "GPT-2 release: staged Feb 2019, full Nov 2019"
+    from: anchor
+    verdict: correct
+    correct_version: "Announced 14 Feb 2019 with only the 124M model released (larger withheld for misuse concerns); 355M in May, 774M on 20 Aug 2019; full 1.5B on 5 Nov 2019."
+    source: "https://openai.com/index/better-language-models/ ; https://openai.com/index/gpt-2-1-5b-release/ ; https://thenextweb.com/artificial-intelligence/2019/11/05/remember-that-scary-ai-text-generator-that-was-too-dangerous-to-release-its-out-now/"
+  - claim: "Tech/programmer hiring bubble starts 'por volta de 2014' (book) vs 'from 2009' (Akitando)"
+    from: anchor
+    verdict: partly
+    correct_version: "Sources date the long tech hiring boom to the post-2008 zero-rate era: 'a very strong tech jobs market from about 2010' (Pragmatic Engineer), ZIRP 2008/09-2022, with the hottest market in 2021-22. No source dates the start to 2014. 2013-15 is when 'unicorn' was coined (Aileen Lee, Nov 2013, 39 companies) and when unicorns multiplied, which is a different milestone. Akita's own Akitando posts point the same way: #72 (programming became 'salvador da pátria' after the 2008 crisis), #90 (Jan 2021: cycle 'começou uns 10 anos atrás'), #100/#132 (Brazilian startup peak 2010-2015). Suggest 'a partir de 2010, com juro perto de zero' or 'ao longo da década de 2010', with the 2020-22 pandemic spike as the peak."
+    source: "https://newsletter.pragmaticengineer.com/p/zirp-software-engineers ; https://blog.pragmaticengineer.com/software-engineer-jobs-five-year-low/ ; https://en.wikipedia.org/wiki/Unicorn_(finance) ; https://techcrunch.com/2013/11/02/welcome-to-the-unicorn-club/"
+  - claim: "Bell's Law of computer classes, Gordon Bell 1972"
+    from: anchor
+    verdict: correct
+    correct_version: "Formulated by Gordon Bell in 1972 (Wikipedia notes a first mention around 1970 with the PDP-11); written up formally in 'Bell's Law for the birth and death of computer classes' (MSR-TR-2007-146; CACM Jan 2008). 'Roughly every decade a new, lower priced computer class forms based on a new programming platform, network, and interface.'"
+    source: "https://en.wikipedia.org/wiki/Bell%27s_law_of_computer_classes ; https://research.microsoft.com/en-us/people/gbell/Bell's_Law_MSR-2007-TR-146a.pdf"
+  - claim: "The Mythical Man-Month 1975; 20th anniversary edition 1995"
+    from: anchor
+    verdict: correct
+    correct_version: "Original 1975 (Addison-Wesley); Anniversary Edition 1995 adds chapters 16-19, including 'No Silver Bullet' (ch. 16), 'No Silver Bullet Refired' (17), 'Propositions of TMM-M: True or False?' (18) and 'The Mythical Man-Month after 20 Years' (19)."
+    source: "https://eu.pearson.com/mythical-man-month-the-essays-on-software-engineering-anniversary-edition/9780132119160 ; https://sebokwiki.org/wiki/The_Mythical_Man-Month"
+  - claim: "'No Silver Bullet' 1986"
+    from: anchor
+    verdict: correct
+    correct_version: "First published in Information Processing 86 (IFIP Tenth World Computing Conference, Dublin, 1986, ed. H.-J. Kugler, pp. 1069-1076); reprinted, and made famous, in IEEE Computer 20(4), April 1987. '1986' is correct; '1987 in IEEE Computer' is also correct if that venue is named."
+    source: "https://en.wikipedia.org/wiki/No_Silver_Bullet ; https://doi.org/10.1109/MC.1987.1663532"
+  - claim: "Extreme Programming Explained, 1999"
+    from: anchor
+    verdict: correct
+    correct_version: "Kent Beck, Extreme Programming Explained: Embrace Change, Addison-Wesley, Oct 1999 (2nd ed. with Cynthia Andres, 2004)."
+    source: "https://en.wikipedia.org/wiki/Extreme_programming ; https://en.wikipedia.org/wiki/Kent_Beck"
+  - claim: "Agile Manifesto 2001"
+    from: anchor
+    verdict: correct
+    correct_version: "Written 11-13 Feb 2001 at Snowbird, Utah, by 17 practitioners; official title 'Manifesto for Agile Software Development'."
+    source: "https://agilemanifesto.org/history.html ; https://www.martinfowler.com/bliki/AgileSignatory.html"
+  - claim: "Scrum: term 1986; Schwaber-Sutherland 1995"
+    from: anchor
+    verdict: correct
+    correct_version: "Takeuchi and Nonaka, 'The New New Product Development Game', HBR Jan-Feb 1986 (rugby analogy); DeGrace and Stahl applied the name to software in 1990 ('Wicked Problems, Righteous Solutions'); Sutherland used it at Easel in 1993; Schwaber and Sutherland presented Scrum together at OOPSLA 1995; first Scrum Guide 2010."
+    source: "https://en.wikipedia.org/wiki/Scrum_(project_management) ; https://hbr.org/1986/01/the-new-new-product-development-game"
+  - claim: "Evans, Domain-Driven Design, 2003"
+    from: anchor
+    verdict: correct
+    correct_version: "Addison-Wesley, Aug 2003 (20-22 Aug depending on listing)."
+    source: "https://openlibrary.org/books/OL51275329M/Domain-Driven_Design"
+  - claim: "Paul Graham, 'A Plan for Spam', 2002"
+    from: anchor
+    verdict: correct
+    correct_version: "Published Aug 2002 (blogged by Simon Willison on 16 Aug 2002). Graham reports fewer than 5 per 1,000 spams missed and 0 false positives on his own corpus."
+    source: "https://paulgraham.com/spam.html ; https://simonwillison.net/2002/Aug/16/aPlanForSpam/"
+  - claim: "Google Reader launch 2005"
+    from: anchor
+    verdict: correct
+    correct_version: "Launched 7 Oct 2005 via Google Labs; graduated Sep 2007; shut down 1 Jul 2013."
+    source: "https://en.wikipedia.org/wiki/Google_Reader ; https://techcrunch.com/2013/03/23/the-long-and-storied-history-of-google-reader"
+  - claim: "Milgram's doctoral advisor"
+    from: anchor
+    verdict: correct
+    correct_version: "Gordon Allport chaired Milgram's Harvard PhD (1960, social relations; dissertation on conformity in Norway and France). Solomon Asch was a visiting lecturer at Harvard (1955-56) whom Milgram assisted, and Milgram later worked for Asch at the Institute for Advanced Study, Princeton. Asch was mentor, not advisor."
+    source: "https://en.wikipedia.org/wiki/Stanley_Milgram ; https://www.psychologytoday.com/us/articles/200203/the-man-who-shocked-the-world"
+  - claim: "Balanced Scorecard 1992"
+    from: anchor
+    verdict: correct
+    correct_version: "Kaplan and Norton, 'The Balanced Scorecard: Measures That Drive Performance', HBR Jan-Feb 1992, pp. 71-79; book 1996. (Earlier precursor: Art Schneiderman at Analog Devices, 1987.)"
+    source: "https://en.wikipedia.org/wiki/Balanced_scorecard ; https://maaw.info/ArticleSummaries/ArtSumKaplanNorton92.htm"
+  - claim: "Erlang name origin"
+    from: anchor
+    verdict: correct
+    correct_version: "Officially named after Danish mathematician Agner Krarup Erlang (queueing theory/telephony); unofficially, and deliberately ambiguous, also 'Ericsson Language' (Joe Armstrong). Created 1986 at Ericsson by Armstrong, Virding and Williams; open-sourced 1998."
+    source: "https://en.wikipedia.org/wiki/Erlang_(programming_language) ; https://erlang.org/pipermail/erlang-questions/1999-February/000099.html"
+  - claim: "JUnit vs SUnit"
+    from: anchor
+    verdict: correct
+    correct_version: "SUnit (Smalltalk) came first: Beck's 'Simple Smalltalk Testing: With Patterns' (1989/1994, Smalltalk Report). JUnit was written by Beck and Erich Gamma on a flight from Zurich to OOPSLA 1997 (Atlanta) as a Java port; it spread xUnit beyond Smalltalk."
+    source: "https://martinfowler.com/bliki/Xunit.html ; https://en.wikipedia.org/wiki/SUnit ; https://en.wikipedia.org/wiki/JUnit"
+  - claim: "SPAC IPO counts 2019 / 2020 / 2021"
+    from: anchor
+    verdict: correct
+    correct_version: "SPACInsider/SPAC Research: 59 (2019, US$13.6 bi), 248 (2020, ~US$83 bi), 613 (2021, ~US$162 bi); 86 in 2022. Earlier years: ~10-20/yr 2013-16, 34 (2017), 46 (2018)."
+    source: "https://www.statista.com/chart/24008/growth-in-us-spac-ipos ; https://www.mayerbrown.com/ebooks/insurance-industry-year-in-review-2021/inc/html/24.html ; https://spacinsider.com/stats/"
+
+  # ================= #61 Meus Primeiros 5 Anos =================
+  - claim: "Em 1995 TCP no Windows 3.1 era opcional (Windows for Workgroups ou à parte); universidades dependiam do backbone da Fapesp."
+    from: 2019/09/12/akitando-61-meus-primeiros-5-anos-1990-1995
+    verdict: correct
+    correct_version: "Windows 3.1 had no TCP/IP; it used third-party stacks (Trumpet Winsock). Microsoft TCP/IP-32 for WfW 3.11 was a separate add-on (1994), not bundled. ANSP (Fapesp) was the São Paulo academic backbone from 1989."
+    source: "https://en.wikipedia.org/wiki/Windows_for_Workgroups ; https://en.wikipedia.org/wiki/Trumpet_Winsock ; https://www.ansp.br/"
+  - claim: "O arquivo shadow já existia desde 1986, mas muitos servidores UNIX não estavam atualizados."
+    from: 2019/09/12/akitando-61-meus-primeiros-5-anos-1990-1995
+    verdict: partly
+    correct_version: "Shadow passwords appear in System V Release 3.2 (1988) and 4.3BSD-Reno (1990); the free shadow suite (Haugh) circulated in 1987-88. Say 'desde o fim dos anos 80'. The 'many servers not updated' point holds: adoption took years."
+    source: "https://en.wikipedia.org/wiki/Passwd#Shadow_file ; https://www.tuhs.org/Usenet/alt.sources/1988-November/002826.html"
+  - claim: "Ele para a história antes da bolha: Java 1.0, Delphi 1.0 e Flash vêm em 1995-96; .NET não existia; PHP não tinha começado."
+    from: 2019/09/12/akitando-61-meus-primeiros-5-anos-1990-1995
+    verdict: partly
+    correct_version: "Delphi 1.0 Feb 1995; Java 1.0 Jan 1996; FutureSplash 1996 (Flash from Dec 1996); .NET 2002. PHP had started: Personal Home Page Tools announced 8 Jun 1995 (PHP 3, the version that spread, is 1998)."
+    source: "https://en.wikipedia.org/wiki/PHP#Early_history ; https://en.wikipedia.org/wiki/Java_version_history ; https://en.wikipedia.org/wiki/Delphi_(software)"
+  - claim: "Apresentou jogos em estande na Fenasoft, c. 1992."
+    from: 2019/09/12/akitando-61-meus-primeiros-5-anos-1990-1995
+    verdict: author-memory
+    correct_version: "Fenasoft was a real yearly São Paulo computer fair (Anhembi, late 1980s-2000s); his presence is author memory."
+    source: "https://pt.wikipedia.org/wiki/Fenasoft"
+  - claim: "Ilustrações na revista Videogame (1993)."
+    from: 2019/09/12/akitando-61-meus-primeiros-5-anos-1990-1995
+    verdict: unverifiable
+    correct_version: "Could not locate the magazine run online; only the author can confirm title/publisher."
+    source: "-"
+
+  # ================= #138 Começo de carreira na bolha =================
+  - claim: "O pico da NASDAQ foi em março de 2001; caiu quase 80% até quase o fim de 2002."
+    from: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+    verdict: wrong
+    correct_version: "Peak 10 Mar 2000 (5,048.62), not 2001; trough 9 Oct 2002 (1,114.11), -78%. The decline started Apr 2000; 2001 is when it hit him personally."
+    source: "https://dqydj.com/nasdaq-drawdown-history/ ; https://fred.stlouisfed.org/series/NASDAQCOM"
+  - claim: "Em 1997 a Apple estava a dias de falir, com Jobs voltando, 'negativo 1 bilhão'; depois iMac, Mac OS X, iPod (2001)."
+    from: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+    verdict: correct
+    correct_version: "Apple lost ~US$1.04 bi in fiscal 1997 (the 'negative 1 billion' is right as a yearly loss); Jobs returned via NeXT (Dec 1996), interim CEO Sep 1997; Microsoft invested US$150 mi on 6 Aug 1997. Jobs later said Apple was ~90 days from insolvency, so 'a dias' is hyperbole. iMac 1998, Mac OS X Mar 2001, iPod Oct 2001."
+    source: "https://appleinsider.com/articles/18/08/06/august-6-1997----the-day-apple-and-microsoft-made-peace ; https://en.wikipedia.org/wiki/History_of_Apple_Inc."
+  - claim: "Google e Amazon viraram gigantes na seca de 2002-2008; blogs e redes sociais nasceram nesse período."
+    from: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+    verdict: correct
+    correct_version: "Google IPO Aug 2004; Amazon first full-year profit 2003, AWS 2006; Facebook 2004, YouTube 2005, Twitter 2006."
+    source: "https://en.wikipedia.org/wiki/Google ; https://en.wikipedia.org/wiki/Amazon_(company)"
+  - claim: "As demissões das Big Techs em 2022-23 já superavam 120 mil nos EUA."
+    from: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+    verdict: partly
+    correct_version: "In mid-Nov 2022 layoffs.fyi counted ~121,000 at ~790 tech companies worldwide, all sizes; not 'only Big Tech' and not only the US. By Feb 2023 the 2023 figure alone was already ~100k."
+    source: "https://www.fastcompany.com/90811752/november-tech-layoffs-2022-worst-month ; https://layoffs.fyi/"
+  - claim: "Em 1997 internet discada de ~19 kbit/s; streaming impossível, por isso CD-ROM."
+    from: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+    verdict: partly
+    correct_version: "1997 modems were 28.8/33.6 kbit/s (56k X2/K56flex launched late 1997, V.90 1998); real throughput often ~20 kbit/s. The point (no streaming, hence CD-ROM) holds."
+    source: "https://en.wikipedia.org/wiki/Modem#Evolution_of_dial-up_speeds"
+  - claim: "Webmaster de pontocom esportiva (PSN, grupo dono do Corinthians) até dez/2001; empresa fechou no crash."
+    from: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+    verdict: correct
+    correct_version: "Public record fits: PSN (Pan-American Sports Network) belonged to Hicks, Muse, Tate & Furst, Corinthians' partner from 1999; HMTF pulled out of Latin America in 2001 (~US$700 mi loss); PSN was defunct by early 2002 and its assets went to Fox Pan American Sports (Feb 2002); Corinthians partnership formally ended Aug 2002. His role and dates are author memory. Corinthians was HMTF's partner, not 'owned'."
+    source: "https://telaviva.com.br/16/05/2002/fox-pan-american-sports-plans-launch-in-august/ ; https://www.meutimao.com.br/noticia/510627/bicho-atrasado-e-chapeu-na-adidas-como-foi-o-acerto-entre-corinthians-e-nike-em-2002 ; https://en.wikipedia.org/wiki/HM_Capital_Partners"
+  - claim: "HPG vendido ao iG."
+    from: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+    verdict: unverifiable
+    correct_version: "HPG did end up as an iG property (free hosting with iG e-mail), but no source found for the sale date or value; iG itself launched Jan 2000. Don't date the sale in the book."
+    source: "https://exame.com/tecnologia/seu-lugar-na-internet-m0043262/ ; https://en.wikipedia.org/wiki/Internet_Group"
+
+  # ================= #50 A bolha de startups vai estourar =================
+  - claim: "Previsão 'a partir de 2021'; correção real veio em 2022."
+    from: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+    verdict: correct
+    correct_version: "Nasdaq -33% in 2022; layoffs 2022-23 as in anchors."
+    source: "https://www.macrotrends.net/1320/nasdaq-historical-chart"
+  - claim: "Em 2018 surgiu um novo unicórnio a cada 4 dias; mais de 300 unicórnios somando mais de US$1 trilhão."
+    from: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+    verdict: partly
+    correct_version: "Globally ~112-120 new unicorns in 2018 (one every ~3 days); China alone one every 3.8 days (Bloomberg). '300+ unicorns worth ~US$1 tri' matches CB Insights in early 2019 (315-326)."
+    source: "https://qz.com/1510648/why-do-we-still-call-billion-dollar-startups-unicorns/ ; https://regional.chinadaily.com.cn/bjzpark/2019-03/18/c_444076.htm"
+  - claim: "80% das empresas que abriram capital em 2018 eram não-lucrativas, maior número desde 2000 (81%)."
+    from: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+    verdict: correct
+    correct_version: "Jay Ritter: ~81% of 2018 US IPOs had negative trailing EPS (83% in the first nine months), matching the 2000 record of 81%."
+    source: "https://wallstreetonparade.com/2019/03/is-wall-street-putting-lipstick-on-ipo-pigs-or-unicorns/ ; https://site.warrington.ufl.edu/ritter/ipo-data/"
+  - claim: "IPOs abaixo do esperado: Snap 17→11, Blue Apron 10→3, Fitbit 45→5, Lyft 88→61; Uber receita ~US$11 bi, prejuízo operacional ~US$3 bi."
+    from: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+    verdict: partly
+    correct_version: "Snap IPO US$17 (Mar 2017): ok. Blue Apron IPO US$10 (Jun 2017): ok. Fitbit IPO was US$20 (Jun 2015); ~US$48 was its Aug 2015 peak. Lyft priced at US$72, opened ~US$87 (29 Mar 2019). Uber IPO US$45 (10 May 2019); 2018 revenue US$11.3 bi, operating loss ~US$3.0 bi: ok."
+    source: "https://www.ktvu.com/news/ipo-of-fitness-tracker-maker-fitbit-prices-at-20-per-share ; https://www.renaissancecapital.com/IPO-Center/News/62436/US-IPO-Weekly-Recap-Lyft-makes-its-debut"
+  - claim: "Estudo: de 135 unicórnios americanos, 65 perdem o status ao ajustar termos."
+    from: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+    verdict: correct
+    correct_version: "Gornall and Strebulaev (Stanford), 'Squaring Venture Capital Valuations with Reality' (2018; J. Financial Economics 2020): 65 of 135 lose unicorn status; avg overvaluation ~48-50%."
+    source: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2955455"
+  - claim: "O legado da bolha de 2000 foi a fibra óptica; a de 2019 não deixaria nada comparável."
+    from: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+    verdict: partly
+    correct_version: "Fiber overbuild as dot-com legacy is well documented (dark fiber glut). 'Nothing comparable' is opinion."
+    source: "https://en.wikipedia.org/wiki/Dark_fibre"
+  - claim: "Programadores ruins foram pagos acima até 2001; depois terceirização para Índia e anos para estabilizar."
+    from: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+    verdict: partly
+    correct_version: "US IT employment fell 2001-2004 and offshoring to India grew strongly in that period (it already existed via Y2K work). The 'bad programmers overpaid' part is opinion."
+    source: "https://en.wikipedia.org/wiki/Outsourcing_in_India"
+
+  # ================= #132 A bolha de startups estourou =================
+  - claim: "Fim de 2022: Amazon (~10-11 mil), Meta (11 mil), Twitter (>3 mil, metade), Salesforce (2 mil), Netflix (450), Robinhood/Snap/Intel (20%), >120 mil só nas Big Techs dos EUA."
+    from: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou
+    verdict: partly
+    correct_version: "Meta 11,000 (9 Nov 2022) ok; Twitter ~3,700 (~50%, 4 Nov) ok; Amazon ~10,000 reported in Nov, later 18,000 (Jan 2023); Netflix ~450 across May-Jun 2022 ok; Snap 20% (Aug 2022) ok; Robinhood 23% (Aug 2022); Intel cuts were not a flat 20%. The 120k figure was layoffs.fyi's global total for all tech companies, not Big Tech in the US."
+    source: "https://www.fastcompany.com/90811752/november-tech-layoffs-2022-worst-month ; https://www.cnbc.com/2023/01/18/tech-layoffs-microsoft-amazon-meta-others-have-cut-more-than-60000.html"
+  - claim: "Facebook de US$34 a >US$200 e Amazon de US$14 a >US$100 (2013-2018)."
+    from: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou
+    verdict: correct
+    correct_version: "Amazon values are split-adjusted (20:1 split in 2022); nominal ~US$260-400 in 2013 and ~US$2,000 at the 2018 peak. Facebook ~US$28-54 in 2013, peak ~US$218 in Jul 2018."
+    source: "https://www.macrotrends.net/stocks/charts/AMZN/amazon/stock-price-history ; https://www.macrotrends.net/stocks/charts/META/meta-platforms/stock-price-history"
+  - claim: "QE e juros perto de zero após 2008 empurraram fundos para startups; Vision Fund US$100 bi; 2020-21 imprimiu muito mais que 2008."
+    from: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou
+    verdict: correct
+    correct_version: "Vision Fund final close US$98.6 bi (2017-18). Fed balance sheet grew ~US$4.5 tri in 2020-21 vs ~US$1.3 tri in QE1; the 'stock rise was inflation' reading is his interpretation."
+    source: "https://en.wikipedia.org/wiki/SoftBank_Vision_Fund ; https://fred.stlouisfed.org/series/WALCL"
+  - claim: "Zoom +800% (2020), Netflix +160%, Amazon +120%; em 2022 Netflix -55%, Zoom -85%, Amazon ~-50%."
+    from: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou
+    verdict: partly
+    correct_version: "Zoom ~US$68 (Jan 2020) to ~US$560 (Oct 2020), ~+720%. Netflix +67% and Amazon +76% in calendar 2020; his +160%/+120% only fit trough-to-peak windows into 2021. Calendar 2022: Netflix -51%, Amazon -50%, Zoom -63% (-88% from its peak). Use orders of magnitude only."
+    source: "https://www.macrotrends.net/stocks/charts/ZM/zoom-video-communications/stock-price-history ; https://www.macrotrends.net/stocks/charts/NFLX/netflix/stock-price-history"
+  - claim: "Meta FCF US$320 mi vs >US$3 bi de SBC no trimestre; Apple FCF US$111 bi vs SBC US$9 bi; Shopify FCF negativo."
+    from: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou
+    verdict: partly
+    correct_version: "Meta Q3 2022: FCF US$173 mi (not 320), SBC US$3.13 bi. Apple FY2022: FCF ~US$111 bi, SBC US$9.0 bi: ok. Shopify had negative FCF in 2022 quarters: ok."
+    source: "https://www.sec.gov/Archives/edgar/data/1326801/000132680122000105/meta09302022-exhibit991.htm"
+  - claim: "Previsão: segunda perna do crash; 2023 ano perdido; recuperação em 2-4 anos."
+    from: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou
+    verdict: wrong
+    correct_version: "No second leg: Nasdaq +43% in 2023 (best year since 1999), led by AI/Big Tech. The tech job market did stay weak (2023 layoffs > 2022)."
+    source: "https://www.cnbc.com/2023/12/29/stock-market-today-live-updates.html"
+  - claim: "FTX/SBF, WeWork, Theranos: Holmes sentenciada a 11 anos, SBF foragido."
+    from: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou
+    verdict: partly
+    correct_version: "FTX filed for bankruptcy 11 Nov 2022; Holmes sentenced 18 Nov 2022 to 11 years 3 months. SBF was not a fugitive: he stayed in the Bahamas and was arrested there 12 Dec 2022; convicted 2 Nov 2023, sentenced 28 Mar 2024 to 25 years (the extractor's 'condenado em nov/2023 a 25 anos' conflates the two dates)."
+    source: "https://en.wikipedia.org/wiki/Sam_Bankman-Fried ; https://en.wikipedia.org/wiki/Elizabeth_Holmes"
+
+  # ================= #100 Mercado financeiro pós-pandemia =================
+  - claim: "Crash de março de 2020 (45% em 21 dias); Ibovespa recuperou em 184 dias, Nasdaq em ~1,5 mês."
+    from: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+    verdict: partly
+    correct_version: "Ibovespa fell ~45-47% from Jan/Feb highs to 23 Mar 2020; it only regained the 23 Jan 2020 record (119,527) in late Dec 2020/early Jan 2021 (~9-10 months). Nasdaq regained its 19 Feb high in early Jun 2020, ~2.5 months after the 23 Mar low. '184 dias' does not match either."
+    source: "https://www.revistaoeste.com/economia/ibovespa-abre-2021-com-recorde-historico/ ; https://m.mondovisione.com/news/b3-ibovespa-breaks-new-record-and-reaches-119527-points/"
+  - claim: "GameStop de US$23 a US$347 em dias; prejuízo de ~US$3 bi para a Melvin."
+    from: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+    verdict: partly
+    correct_version: "GME ~US$20 in mid-Jan, closed US$347.51 on 27 Jan 2021 (intraday US$483 on 28 Jan). Melvin lost 53% in January (from ~US$12.5 bi AUM) and took a US$2.75 bi rescue from Citadel and Point72; the US$2.75 bi is the rescue, not the loss."
+    source: "https://www.cnbc.com/2021/01/31/melvin-capital-lost-more-than-50percent-after-betting-against-gamestop-wsj.html"
+  - claim: "Metade dos dólares em circulação foram impressos em um ano; >US$5 tri de dívida; inflação nos EUA passou de 4%."
+    from: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+    verdict: partly
+    correct_version: "Monetary base went from ~US$3.4 tri (Feb 2020) to ~US$6 tri (mid-2021), ~+75%; M2 +~30%. The 'X% of all dollars printed in a year' meme comes from the May 2020 M1 redefinition. Federal debt rose >US$5 tri Feb 2020-mid 2021: ok. CPI Apr 2021 4.2%: ok."
+    source: "https://fred.stlouisfed.org/series/BOGMBASE ; https://fred.stlouisfed.org/series/M2SL ; https://www.cnbc.com/2021/05/12/consumer-price-index-april-2021.html"
+  - claim: "SPACs: 2-3 IPOs/ano 2013-2019 (13 em 2019); 77 em 2020; >50 em 2021 até junho."
+    from: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+    verdict: wrong
+    correct_version: "SPAC IPOs: ~10-20/yr 2013-16, 46 in 2018, 59 in 2019, 248 in 2020, 613 in 2021 (~300 already in Q1 2021). Fell ~86% to 86 in 2022. The thesis (boom then bust, SEC scrutiny) holds."
+    source: "https://www.statista.com/chart/24008/growth-in-us-spac-ipos ; https://spacinsider.com/stats/"
+  - claim: "Tesla de US$80 (início 2020) a US$630 (maio/2021); Bitcoin de ~US$4 mil (mar/2020) a US$65 mil (abr/2021)."
+    from: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+    verdict: correct
+    correct_version: "Tesla split-adjusted (5:1 2020) ~US$86 Jan 2020 to ~US$600-700 in spring 2021; BTC low ~US$3,900 (12-13 Mar 2020), high ~US$64,800 (14 Apr 2021)."
+    source: "https://www.macrotrends.net/stocks/charts/TSLA/tesla/stock-price-history ; https://en.wikipedia.org/wiki/History_of_bitcoin"
+  - claim: "Previu 'hiper-inflação'; CPI chegou a ~9% em junho de 2022."
+    from: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+    verdict: partly
+    correct_version: "CPI peaked at 9.1% YoY in Jun 2022 (40-year high). No hyperinflation in the technical sense; use 'inflação alta'."
+    source: "https://www.bls.gov/opub/ted/2022/consumer-prices-up-9-1-percent-over-the-year-ended-june-2022-largest-increase-in-40-years.htm"
+  - claim: "Voltou no 'penúltimo voo' em março de 2020; EUA restringiram voos."
+    from: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+    verdict: author-memory
+    correct_version: "Context checks out: US travel ban on Schengen area announced 11 Mar 2020; the personal timeline is his."
+    source: "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States"
+
+  # ================= #90 O que os cursos não te ensinam =================
+  - claim: "Estamos saindo do último ciclo de abundância, que começou uns 10 anos atrás (jan/2021)."
+    from: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados
+    verdict: partly
+    correct_version: "Cycle start ~2010-11 agrees with the sources (see hiring-boom anchor), but the market overheated further until 2022; the turn came in 2022-23."
+    source: "https://newsletter.pragmaticengineer.com/p/zirp-software-engineers"
+  - claim: "Linguagens mais demandadas por década (90: VB, Delphi, Java; virada: PHP, ASP, Flash; 2010: Objective-C, Ruby, JS; 2020: Python, Flutter, React)."
+    from: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados
+    verdict: partly
+    correct_version: "Broadly matches TIOBE/SO trends, but it's his impression; Java and C# dominated enterprise demand throughout 2000-2020 and are absent from his list. Frame as impression."
+    source: "https://www.tiobe.com/tiobe-index/"
+  - claim: "Tweet somou 7 fundos de 0,5% a.m. como 42% a.a.; correto ~6% a.a."
+    from: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados
+    verdict: correct
+    correct_version: "1.005^12 - 1 = 6.17%; splitting money across funds does not add rates."
+    source: "arithmetic"
+  - claim: "Incidentes de 2020 no STF e no Ministério da Saúde com senhas em texto aberto e credenciais no front-end."
+    from: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados
+    verdict: partly
+    correct_version: "The big Nov 2020 court attack was the STJ (ransomware, 3 Nov 2020), not the STF. Ministério da Saúde: Estadão (Dec 2020) found database credentials (Base64) in a site's front-end source, exposing ~243 mi records; earlier (Nov 2020) ~16 mi Covid-patient records leaked via a credential on GitHub."
+    source: "https://www.migalhas.com.br/quentes/335987/hacker-invade-stj-sequestra-dados-e-cobra-resgate ; https://tecnoblog.net/390237/ministerio-saude-expoe-dados-243-milhoes-pessoas/ ; https://www.welivesecurity.com/br/2020/12/04/falha-do-ministerio-da-saude-expoe-dados-de-mais-de-243-milhoes-de-brasileiros/"
+  - claim: "Consultor c. 2004 numa operadora; vazamento de memória em framework BEA."
+    from: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados
+    verdict: author-memory
+    correct_version: "Not checkable; don't name operator/vendor."
+    source: "-"
+
+  # ================= #29 O que eu devo estudar =================
+  - claim: "Em 2018 a empresa dele tinha 7 anos, 80 funcionários (75 devs) e 11 escritórios."
+    from: 2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego
+    verdict: correct
+    correct_version: "7 years is consistent with Codeminer42 founded in 2011 (blog post 2011/09/19 'Minha carreira fase 5: Codeminer 42'); headcount is his 2018 figure, dated."
+    source: "akitaonrails.com/2011/09/19/off-topic-minha-carreira-fase-5-codeminer-42"
+  - claim: "Destaques de 2018: .NET Core, Kotlin, OpenJDK/Azul."
+    from: 2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego
+    verdict: correct
+    correct_version: "Accurate for 2018 (Kotlin official on Android May 2017; .NET Core 2.x; Azul Zing with Falcon/LLVM JIT 2017). Dated; don't reuse."
+    source: "https://en.wikipedia.org/wiki/Kotlin_(programming_language) ; https://www.azul.com/products/prime/"
+  - claim: "Escreveu o livro de Rails em 2006."
+    from: 2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego
+    verdict: correct
+    correct_version: "'Repensando a Web com Rails', Brasport, launched Oct 2006 (blog post 2006/10/01 announces pre-sale and FNAC Paulista launch)."
+    source: "akitaonrails.com/2006/10/01/um-pouco-de-propaganda-minha-entrevista-na-rubyonbr"
+  - claim: "Empresa própria em 2011, aos 34."
+    from: 2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego
+    verdict: correct
+    correct_version: "Codeminer42 2011 per his own blog; age consistent with birth in 1977 (42 in Oct 2019)."
+    source: "akitaonrails.com/2011/09/19/off-topic-minha-carreira-fase-5-codeminer-42"
+  - claim: "Projeto SAP/J2EE de RH (cliente nomeado: Suzano Bahia Sul)."
+    from: 2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego
+    verdict: author-memory
+    correct_version: "Company name existed then (Suzano Bahia Sul Papel e Celulose, until 2004); the engagement is his memory. Don't name the client."
+    source: "https://pt.wikipedia.org/wiki/Suzano_S.A."
+
+  # ================= #37 A dimensão do tempo =================
+  - claim: "Em 1995 internet comercial começando, ~1% da população em modems de 56 kbps."
+    from: 2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40
+    verdict: wrong
+    correct_version: "56k modems only from late 1997 (V.90 1998); 1995 was 14.4/28.8 kbit/s. ~16 mi internet users worldwide in Dec 1995 (~0.4% of world population); Brazilian commercial internet opened in 1995."
+    source: "https://www.internetworldstats.com/emarketing.htm ; https://en.wikipedia.org/wiki/V.90"
+  - claim: "Tecnologias dominantes de uma década (dBase/Clipper, VB/Delphi, Flash) em declínio dez anos depois."
+    from: 2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40
+    verdict: correct
+    correct_version: "Illustrative; Flash EOL announced 2017, ended Dec 2020."
+    source: "https://en.wikipedia.org/wiki/Adobe_Flash"
+  - claim: "Sun vendida para a Oracle em 2009."
+    from: 2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40
+    verdict: correct
+    correct_version: "Announced 20 Apr 2009, closed 27 Jan 2010."
+    source: "https://en.wikipedia.org/wiki/Acquisition_of_Sun_Microsystems_by_Oracle_Corporation"
+  - claim: "Lei de Bell (1972)."
+    from: 2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40
+    verdict: correct
+    correct_version: "See anchor."
+    source: "https://en.wikipedia.org/wiki/Bell%27s_law_of_computer_classes"
+  - claim: "Conheceu o GitHub em 2008, escritório pequeno."
+    from: 2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40
+    verdict: correct
+    correct_version: "GitHub launched publicly Apr 2008 (beta Feb 2008); Microsoft acquisition announced 4 Jun 2018 (US$7.5 bi). The visit is author memory."
+    source: "https://en.wikipedia.org/wiki/GitHub"
+
+  # ================= #63 Não terceirize suas decisões =================
+  - claim: "Netflix 1997, Google 1998, Facebook 2004."
+    from: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida
+    verdict: correct
+    correct_version: "Netflix founded Aug 1997 (DVD by mail; streaming 2007); Google incorporated 4 Sep 1998; Facebook 4 Feb 2004."
+    source: "https://en.wikipedia.org/wiki/Netflix ; https://en.wikipedia.org/wiki/Google"
+  - claim: "Netflix tinha mais de 100 milhões de assinantes."
+    from: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida
+    verdict: correct
+    correct_version: "Passed 100 mi in Q2 2017 (~151 mi by mid-2019)."
+    source: "https://en.wikipedia.org/wiki/Netflix"
+  - claim: "Clojure/Nubank, React/Facebook, Go/Google, squads/Spotify."
+    from: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida
+    verdict: correct
+    correct_version: "Associations are factual (Nubank is Clojure-heavy; Spotify model 2012 paper); the imitation argument is opinion."
+    source: "https://en.wikipedia.org/wiki/Nubank"
+  - claim: "Em 2005 apostou em Rails, quando ninguém ligava."
+    from: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida
+    verdict: correct
+    correct_version: "Rails open-sourced Jul 2004, 1.0 on 13 Dec 2005; his blog starts 2006 and #29 says 2006. Use 'em 2005-2006'."
+    source: "https://en.wikipedia.org/wiki/Ruby_on_Rails"
+
+  # ================= #64 Começando na carreira =================
+  - claim: "4 em cada 5 microempresas fecham antes de 5 anos."
+    from: 2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia
+    verdict: wrong
+    correct_version: "IBGE: ~6 in 10 companies close within 5 years (2012 cohort: ~40% survived to 2017; 2017 cohort 37.9% survival). Not 4 in 5."
+    source: "https://agenciadenoticias.ibge.gov.br/en/agencia-news/25751-six-out-of-every-ten-enterprises-born-in-2012-closed-their-doors-in-five-year-time.html"
+  - claim: "Júnior nos EUA ~US$40 mil/ano; sênior Accenture Índia ~600 mil rúpias."
+    from: 2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia
+    verdict: unverifiable
+    correct_version: "Informal 2019 examples; US junior dev pay was typically higher (~US$60-80k). Don't cite."
+    source: "-"
+  - claim: "iPhone/Objective-C com pico entre 2010 e 2014; defender Blackberry/Windows Mobile em 2011 era negar a curva."
+    from: 2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia
+    verdict: correct
+    correct_version: "Swift arrived Jun 2014; BlackBerry share collapsed 2011-13. Opinion, plausible."
+    source: "https://en.wikipedia.org/wiki/Swift_(programming_language)"
+  - claim: "Dunning-Kruger (o post diz cunhado por volta de 2011)."
+    from: 2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia
+    verdict: wrong
+    correct_version: "Kruger and Dunning, 'Unskilled and Unaware of It', J. Personality and Social Psychology, Dec 1999."
+    source: "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect"
+
+  # ================= #65 A dor de aprender =================
+  - claim: "Design Patterns (GoF) 1994; patterns vêm de A Pattern Language (Alexander)."
+    from: 2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros
+    verdict: correct
+    correct_version: "GoF Oct 1994; A Pattern Language 1977."
+    source: "https://en.wikipedia.org/wiki/Design_Patterns ; https://en.wikipedia.org/wiki/A_Pattern_Language"
+  - claim: "ActiveRecord vs Repository vs DAO já era antiga em 2003."
+    from: 2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros
+    verdict: correct
+    correct_version: "Fowler PoEAA (Nov 2002) named Active Record/Repository; Evans 2003."
+    source: "https://martinfowler.com/eaaCatalog/"
+  - claim: "Hacker = curioso; cracker = invasor."
+    from: 2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros
+    verdict: correct
+    correct_version: "Matches the Jargon File definitions."
+    source: "http://www.catb.org/jargon/html/H/hacker.html"
+
+  # ================= #69 Respondendo perguntas =================
+  - claim: "Escassez de qualificado e excesso de inexperiente; startups só contratam experiente."
+    from: 2019/12/11/akitando-69-respondendo-suas-perguntas-sobre-carreira-via-instagram
+    verdict: unverifiable
+    correct_version: "2019 market opinion."
+    source: "-"
+  - claim: "A maioria das startups queima dinheiro e vai quebrar ou ser adquirida."
+    from: 2019/12/11/akitando-69-respondendo-suas-perguntas-sobre-carreira-via-instagram
+    verdict: correct
+    correct_version: "Consistent with base rates (most VC-backed startups fail to return capital); general, not a dated prediction."
+    source: "https://hbr.org/2012/09/why-most-venture-backed-companies-fail"
+  - claim: "Bootcamp que promete júnior→pleno em x tempo é charlatão."
+    from: 2019/12/11/akitando-69-respondendo-suas-perguntas-sobre-carreira-via-instagram
+    verdict: unverifiable
+    correct_version: "Opinion."
+    source: "-"
+  - claim: "Codeminer com escritórios fora dos grandes centros (Santa Maria, Guarapuava, Poços de Caldas)."
+    from: 2019/12/11/akitando-69-respondendo-suas-perguntas-sobre-carreira-via-instagram
+    verdict: correct
+    correct_version: "Public company info (2019). Dated."
+    source: "https://www.codeminer42.com/"
+
+  # ================= #72 Programação não é fácil =================
+  - claim: "Programação virou 'salvador da pátria' após 2008 e o boom de apps; bolha vai estourar."
+    from: 2020/02/19/akitando-72-rant-programacao-nao-e-facil
+    verdict: correct
+    correct_version: "Timing consistent with sources (boom from ~2010); burst 2022-23."
+    source: "https://newsletter.pragmaticengineer.com/p/zirp-software-engineers"
+  - claim: "Salários SV US$150-500 mil, sobra US$1-2 mil/mês."
+    from: 2020/02/19/akitando-72-rant-programacao-nao-e-facil
+    verdict: unverifiable
+    correct_version: "Hypothetical arithmetic; don't cite."
+    source: "-"
+  - claim: "A Telltale Games demitiu dezenas do dia pra noite (2018)."
+    from: 2020/02/19/akitando-72-rant-programacao-nao-e-facil
+    verdict: partly
+    correct_version: "21 Sep 2018: ~225 of ~250 staff let go at once, many without severance."
+    source: "https://www.engadget.com/2018/09/21/telltale-games-layoffs-the-walking-dead/"
+  - claim: "Em 2001 caiu a bolha e a Índia virou referência em terceirização."
+    from: 2020/02/19/akitando-72-rant-programacao-nao-e-facil
+    verdict: partly
+    correct_version: "Indian IT outsourcing was already large through Y2K (late 90s) and accelerated in the 2000s."
+    source: "https://en.wikipedia.org/wiki/Outsourcing_in_India"
+  - claim: "~700h de curso + ~700h de estágio; workshop de 80-100h é 5%."
+    from: 2020/02/19/akitando-72-rant-programacao-nao-e-facil
+    verdict: unverifiable
+    correct_version: "His own estimate."
+    source: "-"
+  - claim: "Em 2012 usou Uber em SF e Waze em Tel Aviv antes de chegarem ao Brasil."
+    from: 2020/02/19/akitando-72-rant-programacao-nao-e-facil
+    verdict: correct
+    correct_version: "Uber launched in SF 2010 (UberCab founded 2009), in Brazil May 2014; Waze (Israel) launched 2009, bought by Google 2013. Personal use is author memory."
+    source: "https://en.wikipedia.org/wiki/Uber ; https://en.wikipedia.org/wiki/Waze"
+  - claim: "Em 2014 gravou vídeo para o 'Ano do Código'."
+    from: 2020/02/19/akitando-72-rant-programacao-nao-e-facil
+    verdict: author-memory
+    correct_version: "Code.org's Hour of Code ran Dec 2013/2014; the specific Brazilian campaign video is his memory."
+    source: "-"
+
+  # ================= #23 The MM-M =================
+  - claim: "Lei de Brooks; canais n(n-1)/2 (10=45, 20=190)."
+    from: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software
+    verdict: correct
+    correct_version: "Brooks ch. 2; arithmetic right."
+    source: "https://en.wikipedia.org/wiki/Brooks%27s_law"
+  - claim: "Plan to throw one away (cap. 11) e efeito do segundo sistema (cap. 5)."
+    from: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software
+    verdict: correct
+    correct_version: "Ch. 5 'The Second-System Effect'; ch. 11 'Plan to Throw One Away'."
+    source: "https://en.wikipedia.org/wiki/The_Mythical_Man-Month"
+  - claim: "Edição de 1995: cascata com duas falácias, construção incremental, nightly builds da Microsoft; No Silver Bullet; 'Most Viable Product'; Modula antes de Pascal."
+    from: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software
+    verdict: partly
+    correct_version: "Ch. 19 content correct. No Silver Bullet is 1986 (IFIP)/1987 (IEEE Computer), reprinted as ch. 16 in 1995. MVP = Minimum Viable Product. Pascal 1970 predates Modula (1975) / Modula-2 (1978)."
+    source: "https://en.wikipedia.org/wiki/No_Silver_Bullet ; https://en.wikipedia.org/wiki/Modula"
+  - claim: "Cada conserto tem 20 a 50% de chance de introduzir novo defeito; exige rodar a suíte inteira."
+    from: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software
+    verdict: correct
+    correct_version: "Brooks ch. 11: 'fixing a defect has a substantial (20-50 percent) chance of introducing another', hence regression testing."
+    source: "https://en.wikipedia.org/wiki/The_Mythical_Man-Month"
+  - claim: "Ouviu falar do livro em 27/07/2002 num post do Slashdot."
+    from: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software
+    verdict: author-memory
+    correct_version: "The linked Slashdot review URL (books/980805/...) dates the review to 5 Aug 1998; an e-mail in 2002 pointing to an older review is not a contradiction. Use 'por volta de 2002'."
+    source: "http://slashdot.org/books/980805/1148235.shtml"
+
+  # ================= #51 Esqueça metodologias ágeis =================
+  - claim: "Manifesto de 2001, 17 signatários, Snowbird; título é 'Manifesto for Agile Software Development'."
+    from: 2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r
+    verdict: correct
+    correct_version: "See anchor. Fix name typos: Ken Schwaber, Jeff Sutherland; 'Indivíduos e interações'."
+    source: "https://agilemanifesto.org/history.html"
+  - claim: "Scrum vem dos anos 80 e o guia não menciona 'ágil'."
+    from: 2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r
+    verdict: partly
+    correct_version: "The term comes from Takeuchi and Nonaka (HBR 1986); Scrum for software is 1993-95. The 2010-2017 Scrum Guides did not use the word 'agile'; the 2020 guide still barely does (only via 'Agile' in history notes). Say 'o termo vem de um artigo de 1986'."
+    source: "https://en.wikipedia.org/wiki/Scrum_(project_management) ; https://scrumguides.org/"
+  - claim: "Agilidade é PDCA (Deming) / DMAIC (Six Sigma)."
+    from: 2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r
+    verdict: correct
+    correct_version: "PDCA is Shewhart's cycle popularized by Deming; DMAIC is Six Sigma. The equivalence is his reading."
+    source: "https://en.wikipedia.org/wiki/PDCA ; https://en.wikipedia.org/wiki/DMAIC"
+  - claim: "Práticas de XP: TDD, small releases, CI, simple design, collective ownership."
+    from: 2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r
+    verdict: correct
+    correct_version: "All in Beck's 12 XP practices (1999)."
+    source: "https://en.wikipedia.org/wiki/Extreme_programming_practices"
+  - claim: "Entrevistou Robert Martin (Uncle Bob) em 2010."
+    from: 2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r
+    verdict: correct
+    correct_version: "Video interview at RailsConf 2010, blog post 16 Jun 2010."
+    source: "akitaonrails.com/2010/06/16/railsconf-2010-video-entrevista-robert-martin"
+  - claim: "Escreveu em 2014 'Ágil está morto', na época do post de Dave Thomas."
+    from: 2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r
+    verdict: partly
+    correct_version: "His 2014 post is titled 'Agile: a Verdade por trás do Método' (28 Sep 2014), not 'Ágil está morto'. Dave Thomas 'Agile is Dead (Long Live Agility)' was 4 Mar 2014; GOTO talk 2015."
+    source: "akitaonrails.com/2014/09/28/off-topic-agile-a-verdade-por-tras-do-metodo ; https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html"
+
+  # ================= #106 Design emergente =================
+  - claim: "Design e código separados nos anos 60-80 porque depurar era caro; depois código ruim primeiro, refatorar depois."
+    from: 2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente
+    verdict: unverifiable
+    correct_version: "His interpretation (he says so)."
+    source: "-"
+  - claim: "Refatorar (Fowler, 1999)."
+    from: 2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente
+    verdict: correct
+    correct_version: "Refactoring, 1999 (2nd ed. 2018)."
+    source: "https://martinfowler.com/books/refactoring.html"
+  - claim: "Manifesto (2001) resume ~20 anos de prática anterior."
+    from: 2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente
+    verdict: correct
+    correct_version: "Codified 1990s methods (Scrum 1995, XP 1996-99, DSDM 1994, Crystal, FDD) plus older iterative practice (IID since the 1950s-70s, Larman and Basili 2003)."
+    source: "https://www.craiglarman.com/wiki/downloads/misc/history-of-iterative-larman-and-basili-ieee-computer.pdf"
+  - claim: "Lean Startup (2011) coincide com o começo da bolha de startups."
+    from: 2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente
+    verdict: correct
+    correct_version: "Eric Ries, Sep 2011; bubble dating is his but consistent with ~2010 start."
+    source: "https://en.wikipedia.org/wiki/Lean_startup"
+  - claim: "Erlang: 'ER' de Ericsson; Jacobson saiu da Ericsson em 1987 para fundar a Objectory."
+    from: 2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente
+    verdict: partly
+    correct_version: "Erlang officially honors A. K. Erlang; 'Ericsson Language' is the unofficial double meaning. Jacobson left Ericsson and founded Objectory AB in 1987; Rational acquired it in 1995: correct."
+    source: "https://en.wikipedia.org/wiki/Erlang_(programming_language) ; https://en.wikipedia.org/wiki/Ivar_Jacobson"
+  - claim: "Livros: Wirth, Cormen 3ª ed. 2009, Knuth desde 1962, 4B inacabado."
+    from: 2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente
+    verdict: partly
+    correct_version: "Wirth 'Algorithms + Data Structures = Programs' 1976; CLRS 3rd ed. 2009 (4th ed. 2022); Knuth began TAOCP in 1962. Volume 4B was published Oct 2022, so 'unfinished' is dated."
+    source: "https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming"
+
+  # ================= #120 Discutindo gestão =================
+  - claim: "Takeuchi e Nonaka (1986) origem de 'scrum'; Drucker cunhou 'knowledge workers' a partir do fim dos anos 60; Balanced Scorecard do fim dos anos 80."
+    from: 2022/06/13/akitando-120-discutindo-gestao
+    verdict: partly
+    correct_version: "HBR 1986 correct. Drucker coined 'knowledge worker' in 1959 (Landmarks of Tomorrow), developed in The Age of Discontinuity (1969). Balanced Scorecard: Kaplan and Norton HBR 1992 (book 1996)."
+    source: "https://en.wikipedia.org/wiki/The_Landmarks_of_Tomorrow ; https://en.wikipedia.org/wiki/Balanced_scorecard"
+  - claim: "Contrato Microsoft-IBM veio pela amizade da mãe de Gates com o CEO da IBM; fundadores 'largaram Harvard e Stanford'."
+    from: 2022/06/13/akitando-120-discutindo-gestao
+    verdict: partly
+    correct_version: "Mary Gates served with IBM's John Opel (then president, CEO from 1981) on the United Way national board; the influence is widely reported but not established as cause. Gates and Zuckerberg left Harvard; Jobs left Reed; Page/Brin paused Stanford PhDs."
+    source: "https://en.wikipedia.org/wiki/Mary_Maxwell_Gates ; https://en.wikipedia.org/wiki/John_R._Opel"
+  - claim: "Unicórnios com 'dinheiro infinito' empurram problemas até a bolha estourar."
+    from: 2022/06/13/akitando-120-discutindo-gestao
+    verdict: unverifiable
+    correct_version: "Opinion (Jun 2022, ahead of the layoffs)."
+    source: "-"
+  - claim: "Em 2022 ML/IA já eram serviços que o programador só integra (AWS, Azure)."
+    from: 2022/06/13/akitando-120-discutindo-gestao
+    verdict: correct
+    correct_version: "True pre-ChatGPT (SageMaker 2017, Azure Cognitive Services, OpenAI API on Azure 2021). Dated marker."
+    source: "https://en.wikipedia.org/wiki/Amazon_SageMaker"
+
+  # ================= #130 Projetos, testes e estimativa =================
+  - claim: "TDD nasceu com Kent Beck e o primeiro jUnit, em Java."
+    from: 2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r
+    verdict: partly
+    correct_version: "SUnit (Smalltalk) came first; JUnit (Beck and Gamma, 1997) is the Java port. TDD as a named practice comes from XP (late 90s); Beck says he 'rediscovered' it."
+    source: "https://martinfowler.com/bliki/Xunit.html ; https://en.wikipedia.org/wiki/Test-driven_development"
+  - claim: "Equipe de 3 entregando 6-9 tarefas/semana sem testes cai a 1-2."
+    from: 2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r
+    verdict: unverifiable
+    correct_version: "Thought experiment, not data."
+    source: "-"
+  - claim: "COCOMO e fórmulas de estimativa são lixo."
+    from: 2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r
+    verdict: unverifiable
+    correct_version: "Opinion; COCOMO is Boehm 1981 (COCOMO II 2000)."
+    source: "https://en.wikipedia.org/wiki/COCOMO"
+  - claim: "Alguém atualizou Java 16→18 e subiu pra produção numa sexta."
+    from: 2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r
+    verdict: unverifiable
+    correct_version: "Anecdote from a tweet."
+    source: "-"
+  - claim: "Heroku (review apps, rollback) recomendado em 2022."
+    from: 2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r
+    verdict: correct
+    correct_version: "Heroku free tier ended 28 Nov 2022; dated."
+    source: "https://blog.heroku.com/next-chapter"
+
+  # ================= #144 Modelagem de software =================
+  - claim: "Livro de Rails ~2.700 linhas; Spree ~92 mil; Magento 2 ~2 milhões (>700x)."
+    from: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+    verdict: unverifiable
+    correct_version: "His tokei counts of Aug 2023; arithmetic (2M/2.7k ≈ 740) right. Recount if cited."
+    source: "-"
+  - claim: "Magento: Varien ~2007, eBay ~2011, separa do PayPal em 2015, Adobe compra em 2018; Magento 2 estável em 2015."
+    from: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+    verdict: partly
+    correct_version: "Varien founded 2001; Magento released Mar 2008 (beta 2007). eBay took 49% in 2010, full control 2011. In 2015, after the eBay/PayPal split, eBay sold eBay Enterprise and Magento to a Permira-led group (Magento independent Nov 2015). Magento 2.0 GA 17 Nov 2015. Adobe announced 21 May 2018 (US$1.68 bi), closed 19 Jun 2018."
+    source: "https://en.wikipedia.org/wiki/Magento ; https://www.buyoutsinsider.com/permira-make-5x-sale-magento-commerce/"
+  - claim: "Michelangelo pintou a Sistina 1508-1512 aos 33; estudou desde ~13 com Ghirlandaio."
+    from: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+    verdict: correct
+    correct_version: "Born 6 Mar 1475; ceiling 1508-1512; apprenticed to Ghirlandaio in 1488 at 13."
+    source: "https://en.wikipedia.org/wiki/Michelangelo"
+  - claim: "Overbooking como política: exemplo de Evans em DDD."
+    from: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+    verdict: correct
+    correct_version: "DDD ch. 1, cargo-shipping 10% overbooking policy example."
+    source: "https://openlibrary.org/books/OL51275329M/Domain-Driven_Design"
+  - claim: "Entrevistou Luke Kanies (Puppet) em 2009; RailsConf 2009."
+    from: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+    verdict: correct
+    correct_version: "Blog posts 2009/11/18 'chatting-with-luke-kaines' and 2009/05/08 RailsConf 09 audio interviews exist."
+    source: "akitaonrails.com/2009/11/18/chatting-with-luke-kaines ; akitaonrails.com/2009/05/08/railsconf-09-exclusive-audio-interviews"
+  - claim: "Twitter abriu o código de recomendação (antes de ago/2023)."
+    from: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+    verdict: correct
+    correct_version: "Published 31 Mar 2023."
+    source: "https://blog.x.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm"
+
+  # ================= #52 10 mitos sobre startups =================
+  - claim: "Papel inventado na China por volta de 105 'AC'; Gutenberg ~1440."
+    from: 2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1
+    verdict: partly
+    correct_version: "Cai Lun's process is dated 105 CE (d.C.), not a.C.; earlier paper fragments exist from ~2nd c. BCE. Gutenberg press ~1440: ok."
+    source: "https://www.britannica.com/biography/Cai-Lun ; https://en.wikipedia.org/wiki/Printing_press"
+  - claim: "6 em cada 10 empresas novas fecham antes de 5 anos."
+    from: 2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1
+    verdict: correct
+    correct_version: "IBGE: ~60% of companies born in 2012 had closed by 2017 (2017 cohort: 62%). The extractor's note that Brazilian data 'point to less' is wrong; it applies to SEBRAE's 2-year figure, not 5 years."
+    source: "https://agenciadenoticias.ibge.gov.br/en/agencia-news/25751-six-out-of-every-ten-enterprises-born-in-2012-closed-their-doors-in-five-year-time.html"
+  - claim: "Rappi atraiu o SoftBank em 2019."
+    from: 2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1
+    verdict: correct
+    correct_version: "SoftBank invested ~US$1 bi in Rappi (Apr 2019)."
+    source: "https://techcrunch.com/2019/04/29/softbank-rappi/"
+  - claim: "Mais de 4000 patentes de ratoeira, só ~20 lucrativas (Berkun)."
+    from: 2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1
+    verdict: correct
+    correct_version: "Berkun, The Myths of Innovation: 'over 4,400 patents' for mousetraps, 'only about 20' made money. Second-hand figure."
+    source: "https://scottberkun.com/books/the-myths-of-innovation/"
+  - claim: "Trinity, Alamogordo, 16/07/1945 às 05:29:45."
+    from: 2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1
+    verdict: correct
+    correct_version: "05:29:45 Mountain War Time."
+    source: "https://en.wikipedia.org/wiki/Trinity_(nuclear_test)"
+  - claim: "Em 2013 sugeriu a tirinha do 'programador ninja' ao Vida de Programador."
+    from: 2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1
+    verdict: author-memory
+    correct_version: "Strip exists at the linked URL (2013-04-10); his suggestion is his account."
+    source: "http://vidadeprogramador.com.br/2013/04/10/ninja/"
+
+  # ================= #104 Empreendendo com software errado =================
+  - claim: "LGPD em vigor torna a empresa responsável por dados vazados por terceiros."
+    from: 2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado
+    verdict: correct
+    correct_version: "Lei 13.709/2018 in force 18 Sep 2020; ANPD sanctions from 1 Aug 2021; joint liability of controller and operator (art. 42)."
+    source: "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+  - claim: "Protótipo ~10x e startup ~100x mil dólares (2021)."
+    from: 2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado
+    verdict: unverifiable
+    correct_version: "Order-of-magnitude opinion."
+    source: "-"
+  - claim: "Mercado aquecido para seniores em 2021."
+    from: 2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado
+    verdict: correct
+    correct_version: "2021-22 was the hottest market (Pragmatic Engineer; Indeed postings peaked 2022)."
+    source: "https://newsletter.pragmaticengineer.com/p/zirp-software-engineers"
+
+  # ================= #84 O Dilema Social =================
+  - claim: "Filtro bayesiano de Graham: ~5 em 1000 e zero falsos positivos, contra listas de ~95%."
+    from: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    verdict: correct
+    correct_version: "Graham's figures on his own corpus; the 95% for lists is his estimate."
+    source: "https://paulgraham.com/spam.html"
+  - claim: "Graham vendeu a Viaweb ao Yahoo e fundou a YC (Stripe, Airbnb, Dropbox, Rappi, GitLab, Docker, Twitch, Heroku)."
+    from: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    verdict: correct
+    correct_version: "Viaweb to Yahoo 1998 (~US$49 mi); YC co-founded 2005 with Livingston, Morris, Blackwell. All listed companies are YC alumni (Docker as dotCloud, Twitch as Justin.tv)."
+    source: "https://en.wikipedia.org/wiki/Y_Combinator ; https://www.ycombinator.com/companies"
+  - claim: "RSS 1999, Atom 2005, Athlon 64 2003, Facebook 2004, Twitter ~2007/4 anos depois, Instagram 2010, AWS e Hadoop 2006."
+    from: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    verdict: partly
+    correct_version: "All correct except Twitter: launched Mar/Jul 2006, two years after Facebook."
+    source: "https://en.wikipedia.org/wiki/Twitter ; https://en.wikipedia.org/wiki/RSS"
+  - claim: "Teste 99% preciso, doença 0,1%: ~9% após um positivo, ~91% após dois."
+    from: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    verdict: correct
+    correct_version: "9.0% and 90.7%."
+    source: "arithmetic; Veritasium 'The Bayesian Trap' (2017)"
+  - claim: "Asch foi conselheiro da tese de doutorado de Milgram."
+    from: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    verdict: wrong
+    correct_version: "Advisor/chair was Gordon Allport (Harvard, 1960); Asch was a mentor whose method Milgram adapted, and Milgram assisted him at Harvard and at the IAS in Princeton."
+    source: "https://en.wikipedia.org/wiki/Stanley_Milgram"
+  - claim: "Zimbardo é cheio de falhas, ao contrário de Asch e Milgram, replicados por décadas."
+    from: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    verdict: partly
+    correct_version: "Zimbardo critique is mainstream (Le Texier 2018/2019). Asch replicates with variation; Milgram has partial replications (Burger 2009, capped at 150 V) and serious methodological critiques too (Gina Perry 2012)."
+    source: "https://en.wikipedia.org/wiki/Stanford_prison_experiment ; https://en.wikipedia.org/wiki/Milgram_experiment"
+  - claim: "'Como Mentir com Estatística' de 1954; TED de Ariely de 2008; artigo do blog de 12 anos."
+    from: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    verdict: correct
+    correct_version: "Huff 1954; Ariely 'Are we in control of our own decisions?' (EG Dec 2008); blog post 2008-03-01 exists."
+    source: "https://en.wikipedia.org/wiki/How_to_Lie_with_Statistics ; akitaonrails.com/2008/03/01/off-topic-somos-matematicamente-ignorantes"
+  - claim: "Leu 'A Plan for Spam' em 2003 e usava 'o antigo Google Reader' na época."
+    from: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    verdict: partly
+    correct_version: "Reading the Aug 2002 essay in 2003 is plausible; Google Reader did not exist until Oct 2005, so 2003 reading used another aggregator."
+    source: "https://en.wikipedia.org/wiki/Google_Reader"
+
+# ================= BIO CLAIMS ONLY THE AUTHOR CAN CONFIRM =================
+# (author-memory; no public record) - see reply for the short list:
+# - first programming at 13 in 1990 (MBasic course) vs '14-15, dBase first' (#90) vs 'aos 12' (#29)
+# - university: IME-USP Ciência da Computação, entry 1995 ('aos 17' in #90 vs 18 in #37); did not graduate
+# - Videogame magazine illustrations (1993), Fenasoft stage (~1992)
+# - internships 1997 (CD-ROM agency, ~R$500), 1999 ISP rewrite (Y2K), HPG stint, PSN until Dec 2001
+# - SAP consultancy 2002-2007; operator/BEA memory-leak story (~2004); PMP in 2003
+# - read MMM ~2003; read Plan for Spam 2003; PHP Bayes prototype
+# - Objective-C 2010; Uber/Waze in 2012; 'Ano do Código' video 2014
+# - Codeminer headcounts (80 in 2018, ~100 in 2020); 2020-21 demand; RTX 3080 price; March 2020 flight

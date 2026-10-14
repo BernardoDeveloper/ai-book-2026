@@ -61,3 +61,11 @@ references:
     URL: "https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/"
     accessed: {date-parts: [[2026, 10, 13]]}
     note: "cited-by: original (ch04, not in the posts). Note added to the page: 'As of July 20, 2023, the AI Classifier is no longer available due to its low rate of accuracy.' Verified via secondary coverage (Inquirer Technology, 2023-07-26); the OpenAI page returned 403 to the fetcher."
+  - id: akitando084
+    type: "post-weblog"
+    title: "[Akitando #84] Entendendo \"O Dilema Social\" e Como Você é Manipulado"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2020, 9, 30]]}
+    URL: "https://akitaonrails.com/2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado/"
+    note: "cited-by: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado (narrator background, Akitando era)"

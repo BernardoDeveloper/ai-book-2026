@@ -1,0 +1,130 @@
+persona: junior
+summary: |
+  I came in scared that I picked the wrong career a year into my first job, and I got a more honest answer than I expected, though not a complete one. Chapter 18 (the punched-card chapter) and the "como estudar" appendix gave me things I can do this month: explain every change the agent makes, chase one hard problem until I know why the fix works, and write the test before asking for the code. The Yomik and PS4 stories in chapter 8 are the ones I'll remember, because they show a senior being a junior on purpose. What I did not get is numbers: nothing on how many junior positions disappeared in 2024-26, so "continue contratando júniors" reads as advice to companies that may not listen. The chapter 20 conclusion (the base model flattened, which is "good news") answers a fear I don't have; the METR curve that does worry me gets one paragraph and "cronograma ninguém tem". Chapter 14 is well argued but long, and I skimmed the Hugging Face and resignations stretch. I never doubted the narrator: the week in 2001, the wrong date on the second leg of the crash, and the "Nobel e eu não" joke made me trust him more. A few self-citations (so many "num vídeo do meu canal") started to feel like the argument leaning on the author instead of on data.
+best:
+  - "ch18: o cartão perfurado e a lista de interfaces, 'Prompt é interface. Framework é interface.'"
+  - "ch08: 'Profissional sênior é alguém que já foi júnior em cada tema que domina' and the four days in the dark"
+  - "ch18: 'Avisei da bolha e errei a data, e desconfio de quem diz que acerta as duas coisas.'"
+  - "ch18: the Bend 2 / test-battery result, testing the author's own February guess"
+  - "apestudar: 'tente sozinho antes de perguntar à máquina' and 'Se não saberia, você ainda não aprendeu, só recebeu.'"
+worst:
+  - "ch14: the Hugging Face intrusion, resignations and who-said-what stretch"
+  - "ch20: the ai-memory section, which reads like a product page for me"
+  - "ch01: the token and temperature mechanics, which I already knew"
+  - "ch19: Adobe/Photoshop clone section, off my path"
+  - "ch18: no hiring data for juniors, so the reassurance has no number behind it"
+units:
+  - {unit: index, score: 4, note: "The Elektro opening is a nice hook and 'o programador júnior' is named, so I knew I was invited. Wish it told me which chapter answers my fear."}
+  - {unit: ch01, score: 3, note: "I know most of this from Twitter; the bubble point and the 'perigoso demais' history were new and good."}
+  - {unit: ch04, score: 3, note: "The coffee example made the sycophancy click, the eight rules are usable at work. Frank Investigator details dragged."}
+  - {unit: ch08, score: 5, note: "The only chapter where I felt the author was talking to me. Failure is cheap now, and 'oráculo' is a word I'll steal."}
+  - {unit: ch14, score: 3, note: "Great checklist at the end, but the middle is a long news recap I skimmed."}
+  - {unit: ch18, score: 5, note: "This is the one I opened the book for. Honest, with 'ninguém sabe', but I wanted data and a clearer first-90-days plan."}
+  - {unit: ch19, score: 3, note: "Recognised my own sprint-ceremony life; the thesis that firms train people not to decide felt unproven and a bit aimed at people like me."}
+  - {unit: ch20, score: 4, note: "Convincing about the flat base model and the oracle idea; the answer to my job fear is one thin paragraph."}
+  - {unit: epilogo, score: 4, note: "The 'se você está começando na programação' list is what I'll screenshot."}
+  - {unit: apbolhas, score: 4, note: "Three bubbles side by side calmed me more than any argument, and the 'tive sorte de receber uma ligação' line is honest."}
+  - {unit: apestudar, score: 4, note: "Short and actionable. The 'por que' versus 'como' point is exactly my situation with Copilot."}
+annotations:
+  - unit: index
+    quote: "o programador júnior que se pergunta se escolheu a carreira errada"
+    type: rewrite
+    why: "I am named in the list, but the job fear is the last of five and I have to wait until Parte V to learn it gets answered. I nearly dropped the book in the Parte I mechanics."
+    suggestion: "In 'Os medos que você trouxe', say outright which chapter answers each reader (for the junior: ch08 and ch18, plus apestudar)."
+  - unit: ch01
+    quote: "Do 4 pro 5, pelo que eu via em volta, pouca gente fora da área notou tanta diferença"
+    type: logic
+    why: "The S-curve is the backbone of the book's reassurance, but here the evidence is the author's impression, and the figure draws a capability axis with no measurement behind it. The GPT-1 to GPT-5 'salto' sizes are asserted, not shown."
+    suggestion: "Label the figure as illustrative, and point forward to the numbers in ch20 at this exact spot."
+  - unit: ch01
+    quote: "Ilustrei o texto com uma imagem minha segurando um cartão com ela, assinado com o meu nome"
+    type: rewrite
+    why: "A paragraph on his own signature card, his catchphrase and what 'muita gente me conhece' by delays the explanation I came for. It reads like brand-building."
+    suggestion: "Keep the sentence and the quote, cut the card-image story."
+  - unit: ch01
+    quote: "O modelo não enxerga letras nem palavras inteiras."
+    type: boring
+    why: "Tokens, temperature and the training-versus-use split are things anyone who follows tech Twitter already knows. I skimmed to the Rosenblatt part."
+    suggestion: "A technical-reader shortcut ('se você já sabe o que é um token, pule para ...') would save the technical reader a page."
+  - unit: ch04
+    quote: "foram uns nove dias de trabalho e 129"
+    type: boring
+    why: "Commit counts (129 here, 90 and 111 for Yomik, 349 for the Master System port) appear everywhere as a measure of effort. As a developer I know commit counts mean nothing, and as a reader it feels like a flex."
+    suggestion: "Replace with what the thing did, or keep one number per project at most."
+  - unit: ch08
+    quote: "No domingo à noite, eu era um júnior absoluto naquele assunto."
+    type: logic
+    why: "The point (seniors become juniors in new domains) is good, but 'júnior absoluto' undersells it: he read emulator code and used decades of debugging habits, which he admits two paragraphs later ('Essa curiosidade antiga rendeu juros'). For me, with a year of experience, the comparison is flattering to him and discouraging to me."
+    suggestion: "Say 'novo naquele domínio, não novo em depurar', and name which of the 36 years of habits did the work."
+  - unit: ch08
+    quote: "Provavelmente você vai gastar quatro dias numa coisa que se resolve com um número."
+    type: rewrite
+    why: "The advice to dive for four days is right but ignores that a junior at a company has tickets and a standup. Who pays for those days?"
+    suggestion: "One sentence on how to carve out the time (a side project, or a bug you ask your lead to let you own)."
+  - unit: ch14
+    quote: "Os agentes deveriam estar isolados da internet, mas o isolamento era um filtro"
+    type: boring
+    why: "The Hugging Face incident, the resignations, the Sacks quote and the who-is-on-which-side list run about three pages. The takeaway ('responsabilidade é de quem abre a porta') arrives early and I skimmed the rest."
+    suggestion: "Trim to the facts that feed the final checklist."
+  - unit: ch18
+    quote: "Escrever compilador de C é matéria de faculdade, C é uma linguagem pequena, e quem copia o GCC chega em outro GCC."
+    type: logic
+    why: "An agent team compiling the Linux kernel is dismissed as undergrad work. That sounds defensive to a reader who can't write a C compiler, and 'quem copia o GCC' ignores that the GCC was only the test oracle, which the book itself praises in ch08."
+    suggestion: "Keep 'fato' versus 'minha leitura', but argue why the result is narrower than it looked instead of calling it easy."
+  - unit: ch18
+    quote: "nenhuma das empresas por onde passei desde 1996"
+    type: logic
+    why: "Preface says 'comecei a trabalhar no fim dos anos 90'; here and in apbolhas it is 1996 ('Entre 1996 e 2001'). Elsewhere he says he learned dBase 'no começo dos anos 90' and entered college in 1995. And ch08 quotes 'uns 30 anos de experiência' for 1990-2026 (36 years)."
+    suggestion: "Pick one timeline (first paid job 1996) and use it in the preface."
+  - unit: ch18
+    quote: "Os avisos têm data."
+    type: rewrite
+    why: "A list of episode numbers and months where he warned of the bubble, then 'Avisei da bolha e errei a data'. I like the honesty, but the paragraph still reads as a receipt, and I only know the episodes from his own channel."
+    suggestion: "Shorten to the two warnings and the wrong date, and let the numbers in apbolhas carry the rest."
+  - unit: ch18
+    quote: "É a pergunta de um bilhão de dólares, e eu não sei a resposta inteira."
+    type: logic
+    why: "My core worry is answered with 'toda geração fez essa pergunta' (cards, tape, Emacs). That analogy fails here: the earlier shifts didn't remove the entry-level task for everyone at once. He admits survivorship ('quem conta essa história é quem atravessou') but gives no hiring data for 2024-26."
+    suggestion: "Add any number on junior openings or layoffs attributed to AI, even if it is murky, so the reassurance rests on something."
+  - unit: ch18
+    quote: "Esse profissional é mais perigoso que o júnior antigo"
+    type: rewrite
+    why: "The 'esconderijo acabou' section tells me I will be exposed sooner and that I might be dangerous, then gives two habits. I felt accused before I felt helped."
+    suggestion: "Lead with the two habits and the test ('você sabe explicar por que a resposta certa é a certa?'), then the warning."
+  - unit: ch19
+    quote: "Não tenho número pra isso; é observação de quem passou a carreira dentro e em volta de times de software."
+    type: logic
+    why: "The whole chapter hangs on 'muita empresa treinou os seus profissionais a não decidir', which he admits has no data. It is hedged, but it still blames workers like me for processes I didn't design."
+    suggestion: "Say once, earlier, that the problem sits in the organisation, which the text does say a few lines later."
+  - unit: ch20
+    quote: "Pra esse medo, a premissa de planejamento está no começo do capítulo"
+    type: rewrite
+    why: "The book's biggest reassurance (the base model is flat, a 'boa notícia') answers the fear of a smarter machine. The fear I have is task automation, and the METR curve that matters gets a paragraph, then 'cronograma pra ela ninguém tem'."
+    suggestion: "Give the job-fear answer the same space as the flat-base answer, with concrete signs a junior can watch."
+  - unit: ch20
+    quote: "Foi daí que nasceu o ai-memory"
+    type: boring
+    why: "A product origin story with version numbers (2.0, 2.6.6) and contributor counts. He discloses the conflict of interest, which I respect, but I don't need it to reach the conclusion."
+    suggestion: "Keep the principle (memory in your own files) and move the project to an appendix, where apmemoria already is."
+  - unit: apestudar
+    quote: "aprendi Elixir, Crystal e Rust em uns 30 dias cada"
+    type: rewrite
+    why: "'O mais visto do meu canal' plus three languages in 30 days each made me feel behind, not taught. The point (a base makes new languages weeks, not months) is fine."
+    suggestion: "Say 'semanas' without the list, or use a smaller example."
+  - unit: apbolhas
+    quote: "O dinheiro de graça, 2010 a 2022"
+    type: logic
+    why: "The section itself says rates were near zero from Dec 2008 to Dec 2015 and again March 2020 to March 2022, so 2016-2019 is not 'de graça'. ch18 also says 'juro perto de zero por anos', which smooths over that gap."
+    suggestion: "Call it 'dinheiro barato' and mention the middle years in one clause."
+cut_candidates:
+  - {unit: ch01, where: "### Pedaços de palavra and ### Uma peça de cada vez", why: "Standard explanation; a technical reader can skip it if signposted."}
+  - {unit: ch14, where: "### As demissões and ### Desacelerar, mas nem tanto", why: "News recap; the checklist at the end carries the lesson."}
+  - {unit: ch19, where: "## O fosso e a Adobe", why: "Interesting, but off the track of the chapter and of my job question."}
+  - {unit: ch20, where: "## O que é seu (ai-memory story)", why: "Product detail; the principle fits in two sentences."}
+narrator:
+  credibility: |
+    Yes, in specific places. The 2001 week (a dot-com closes, a mentor calls, a SAP consultancy hires someone who "não se apresentava como programador de ferramenta nenhuma") is the best proof in the book that "aprenda o que fica por baixo" works, and it is the first argument in the Parte V that I believed without checking. The dated warnings in ch18 plus the admitted miss ("errei a data") make the rest of his hedging believable. The three-bubble appendix works because the numbers (Nasdaq, SPACs, layoffs) come from outside him. It helps less when the 1990 history is used as a license for AI claims, as in "Em 2026 eu sei coisas ... que nem sonhava quando entrei na faculdade, em 1995", and when Akitando episodes are cited as if they were evidence (so many "num vídeo do meu canal" lines; ep. 84 is cited for machine learning in ch01, for evidence quality in ch04, and for The Social Dilemma in ch14). A first-time reader can't check those.
+  bragging: |
+    Mostly no, and the book handles it carefully: he marks opinion versus fact, admits his miscalls, and even jokes "Ele ganhou o prêmio Nobel de Física de 2024 e eu não." Passages that still read as showing off or "I was right": (1) ch01 "Ilustrei o texto com uma imagem minha segurando um cartão com ela, assinado com o meu nome"; (2) ch18 "Os avisos têm data. Em junho de 2019, no episódio 50 do Akitando, eu disse que a bolha de startups ia estourar"; (3) ch20 "Lembra da curva em S do @sec-ch01? Agora ela tem alguns números." (after "Em 2023 eu fiz uma previsão"), since the only miss admitted is the calendar one; (4) ch14 "Eu tinha os meus pra mostrar, mais de trinta repositórios públicos feitos desde janeiro" and the repeated commit counts; (5) apestudar "o mais visto do meu canal" and the Elixir/Crystal/Rust line; (6) ch20 "uma frase que eu queria ter escrito" about Chollet is fine, but the ai-memory section ("aceleraram centenas, talvez milhares, de projetos") gives a flattering scope with no source.
+  inconsistency: |
+    (1) Career start: preface "comecei a trabalhar no fim dos anos 90" versus ch18 "nenhuma das empresas por onde passei desde 1996" and apbolhas "Entre 1996 e 2001". (2) Years of experience: ch08 quotes "uns 30 anos de experiência" while the preface says programming since 1990 (36 years); fine as a quoted objection but he does not correct it. (3) Tone about certainty: ch18 "Já foi tarde" (about typing code by hand) is flat and confident, while the same chapter hedges nearly every other claim ("Na minha leitura", "Trato isso como opinião minha"). (4) Prediction record: ch18 and apbolhas admit missing the calendar twice ("errei o calendário duas vezes") but ch18 says only "Avisei da bolha e errei a data" about the second leg; the pandemic miss is told differently in the two places. (5) The S-curve is presented as a 2023 prediction vindicated in ch20, but the preface and ch20 also say the curve moved by a different driver (harness), which is a result he didn't predict.

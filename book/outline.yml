@@ -399,7 +399,7 @@ parts:
         question: "Will AI replace programmers (and professionals in general)?"
         arc: >-
           Typing is the input mechanism being replaced; judgment, fundamentals and
-          domain knowledge become worth more; the 2014-2022 programming bubble
+          domain knowledge become worth more; the 2010-2022 programming bubble (zero interest rates)
           burst before LLMs; how juniors learn now (insist on 'why'); which
           language to learn: the February hypothesis about an LLM-native language
           vs the October test where none mattered and tests did; Bend 2.
@@ -485,6 +485,27 @@ back:
     kind: appendix
     brief: "The reading list formerly in the front matter (@sec-antes), moved here after the persona pass (2026-10-13): books and videos that explain the mechanics this book doesn't."
     ref: ["docs/research/FURTHER-READING.md"]
+  - id: apestudar
+    title: "Como estudar com a IA do lado"
+    kind: appendix
+    brief: >-
+      Approved 2026-10-14 (reviews/akitando/plan.md, C4). About two pages in
+      the narrator's voice: the three rules of "Aprendendo a aprender"
+      (Akitando 76: real problems, your own material, autonomy) applied to a
+      learner with an agent; the fundamentals that don't age; "try alone
+      before asking the machine". Serves the junior and the parent; no how-to
+      tone.
+  - id: apbolhas
+    title: "Três bolhas"
+    kind: appendix
+    brief: >-
+      Approved 2026-10-14 (reviews/akitando/plan.md, C1). About 1,200 words
+      crossing the cycles the narrator lived, with verified numbers
+      (reviews/akitando/factcheck.yml): the dot-com bubble (Nasdaq peak March
+      2000, bottom October 2002), the zero-interest hiring bubble (~2010-2022,
+      rates near zero, SPACs, layoffs ~165k in 2022 and ~263k in 2023), the AI
+      wave since ChatGPT (30 Nov 2022). What each left behind and what the
+      narrator did in each. Answers "will the career end?" with history.
   - id: apA
     title: "Linha do tempo"
     kind: appendix
@@ -545,6 +566,35 @@ back:
     title: "Referências"
     kind: generated
     source_file: book/back/references.yaml
+
+# Older posts (2018-2023, outside the 2026 corpus) that paragraphs may cite to color
+# the narrator's history. Full id (yyyy/mm/dd/slug), unlike `excluded`:
+#   - {post: 2019/10/09/akitando-63-..., why: "what the book uses it for"}
+background_sources:
+  - {post: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2018/12/26/akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2019/09/12/akitando-61-meus-primeiros-5-anos-1990-1995, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2019/12/11/akitando-69-respondendo-suas-perguntas-sobre-carreira-via-instagram, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2020/02/19/akitando-72-rant-programacao-nao-e-facil, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2022/06/13/akitando-120-discutindo-gestao, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
+  - {post: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
 
 excluded:
   # Parked 2026-10-13 (author): pending due diligence; text in book/parked/genesys-pi/ (EDITORIAL-RULES R16).

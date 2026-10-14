@@ -179,4 +179,61 @@ class TestDrift < ToolTest
     assert_includes res.out, "CHANGED   tema: #{PARKED_POST}"
     assert_includes res.out, "+Mudou."
   end
+
+  def cite_background(unit = "ch01")
+    post = "2019/10/09/episodio-antigo"
+    fx.edit(fx.unit_rel(unit)) do |t|
+      t.sub("sources:\n", %(sources:\n  - {post: #{post}, sha256: "#{Fixture.sha(fx.post_path(post))}"}\n))
+    end
+  end
+
+  # Guards the inventory: background posts are recorded like any post, flagged.
+  def test_inventory_records_background_post
+    post = fx.yaml("inventory/posts.yml")["posts"].find { _1["id"] == "2019/10/09/episodio-antigo" }
+    assert post["background"]
+    assert_equal "Episódio antigo", post.dig("pt", "title")
+    assert_equal Fixture.sha(fx.post_path(post["id"], "en")), post.dig("en", "sha256")
+    assert_equal "https://www.akitaonrails.com/2019/10/09/episodio-antigo/", post["url_pt"]
+    refute fx.yaml("inventory/posts.yml")["posts"].find { _1["id"] == "2026/02/10/primeiro-post" }["background"]
+  end
+
+  # Guards that a background post needs no analysis (no NEW) and is never UNUSED.
+  def test_background_post_needs_no_analysis
+    res = drift
+    assert_exit 0, res
+    refute_includes res.out, "episodio-antigo"
+  end
+
+  # Guards staleness: a unit citing a background post goes STALE when it changes, with --diff.
+  def test_background_post_change_makes_citing_unit_stale
+    cite_background
+    assert_exit 0, drift
+    fx.edit_post("2019/10/09/episodio-antigo") { _1.sub("demais", "demais, de verdade") }
+    fx.inventory!
+    res = drift("--diff")
+    assert_exit 1, res
+    assert_includes res.out, "STALE    book/pt/ch01.md: 2019/10/09/episodio-antigo"
+    assert_includes res.out, "+Anos atrás eu terceirizava decisões demais, de verdade."
+    refute_includes res.out, "NEW"
+  end
+
+  # Guards a post with no English version (background posts usually have none):
+  # the EN edition tracks it by its PT text, so a PT-hash entry is current and
+  # restamp writes the PT hash, never an empty one.
+  def test_en_unit_tracks_post_without_english_version_by_pt
+    post = "2019/10/09/episodio-antigo"
+    pt_sha = Fixture.sha(fx.post_path(post))
+    fx.edit("inventory/posts.yml") do |y|
+      data = YAML.safe_load(y)
+      data["posts"].find { _1["id"] == post }["en"] = {}
+      data.to_yaml
+    end
+    fx.edit(fx.unit_rel("ch01", "en")) do |t|
+      t.sub("sources:\n", %(sources:\n  - {post: #{post}, sha256: "#{pt_sha}"}\n))
+    end
+    refute_includes fx.run("drift", "--lang", "en").out, "STALE    book/en/ch01.md: #{post}"
+    fx.edit(fx.unit_rel("ch01", "en")) { _1.sub(pt_sha, "0" * 64) }
+    assert_exit 0, fx.run("restamp", "--lang", "en", post)
+    assert_includes fx.read(fx.unit_rel("ch01", "en")), %({post: #{post}, sha256: "#{pt_sha}")
+  end
 end

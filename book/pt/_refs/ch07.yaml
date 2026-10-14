@@ -26,3 +26,11 @@ references:
     URL: "https://mxtoolbox.com/dmarc/email/email-clipping"
     accessed: {date-parts: [[2026, 10, 13]]}
     note: "cited-by: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito (102 KB limit stated in the post without a link; verified online; page has no date, issued set to access year)"
+  - id: akitando104
+    type: "post-weblog"
+    title: "[Akitando] #104 - RANT: Empreendendo com Software do JEITO ERRADO!"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2021, 9, 28]]}
+    URL: "https://akitaonrails.com/2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado/"
+    note: "cited-by: 2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado (narrator background, Akitando era)"

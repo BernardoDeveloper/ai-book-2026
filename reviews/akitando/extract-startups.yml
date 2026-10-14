@@ -1,0 +1,240 @@
+posts:
+  - id: 2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1
+    title: '[Akitando] #52 - 10 Mitos sobre Tech Startups | Parte 1'
+    one_line: 'Ideia barata, produto bom que não se vende sozinho, programador ninja, ser o próprio chefe e hora extra são mitos de empreendedorismo de palco; o que vale é execução e consistência.'
+    bio_facts:
+      - claim: 'Já tinha dado palestra sobre mitos de startups em eventos nos anos anteriores ("Desmistificando Mitos de Startups"); o episódio condensa essa palestra.'
+        quote: 'Eu apresentei esse tema como palestra nos últimos anos em alguns eventos e quero condensar em vídeo'
+        check: 'Título da palestra está na descrição do post; eventos específicos não citados. Author memory, frame as such.'
+      - claim: 'Em 2013 sugeriu a tirinha do "programador ninja" ao Vida de Programador.'
+        quote: 'Em 2013 fiz uma sugestão pro Vida de Programador que faz tirinhas de piadas sobre nosso mundo de TI'
+        check: 'Verificável em vidadeprogramador.com.br/2013/04/10/ninja/ (link do post).'
+      - claim: 'Já varou muitas noites e ainda varava em 2019, e lê isso como sinal de que ainda não é bom o bastante.'
+        quote: 'Eu já varei muitas noites por diversos motivos. E até hoje ainda faço isso.'
+        check: 'Author memory, frame as such.'
+      - claim: 'Explica agilidade há cerca de 10 anos (desde ~2009) como consistência, não pico de horas.'
+        quote: 'Uma definição de agilidade que eu venho explicando nos últimos 10 anos é o seguinte.'
+        check: 'Author memory; palestras de 2008-2009 sobre Rails/ágil são verificáveis no blog.'
+      - claim: 'Tem funcionários e já foi chefe; diz que equipe em hora extra constante é falha do chefe.'
+        quote: 'Especialmente ruim quando eu vejo algum funcionário meu trabalhando horas extras.'
+        check: 'Author memory (Codeminer42, citada no ep. 104).'
+    world_facts:
+      - claim: 'Papel inventado na China por volta de 105 d.C. O post escreve "105 AC", que está errado (seria DC/EC); prensa de Gutenberg ~1440 está correta.'
+        quote: 'E o papel foi inventado na China ~105 AC'
+        check: 'Cai Lun, 105 d.C. (Encyclopaedia Britannica). Corrigir se for citar.'
+      - claim: 'Sobre 6 em cada 10 empresas novas fechariam antes de 5 anos.'
+        quote: 'o número costuma estar perto de no mínimo 6 de 10 empresas novas que abrem, vão fechar antes de completar 5 anos'
+        check: 'Autor já hedgeia ("dependendo de onde você buscar"). Dados do SEBRAE/IBGE no Brasil costumam apontar menos que isso em 5 anos; não citar o número sem fonte.'
+      - claim: 'Rappi atraiu o SoftBank em 2019 como exemplo de execução, não de ideia.'
+        quote: 'Rappi da vida, que de fato vem funcionando e por isso atraiu uma Softbank. Não foi a idéia, foi a execução.'
+        check: 'SoftBank investiu ~US$ 1 bi na Rappi em 2019 (Reuters/TechCrunch).'
+      - claim: 'Patentes de ratoeira: mais de 4000, só ~20 lucrativas (de Scott Berkun, Mitos da Inovação).'
+        quote: 'Existem mais de 4000 patentes de ratoeiras, e mesmo assim só uns 20 chegaram a ser produtos lucrativos.'
+        check: 'Berkun, The Myths of Innovation, cap. 4. Número de segunda mão.'
+      - claim: 'Primeira bomba atômica em Alamogordo, 16/07/1945 às 05:29:45 (citação de Harari, Sapiens).'
+        quote: 'às 05:29:45 do dia 16 de julho de 1945'
+        check: 'Teste Trinity, 05:29:45 MWT, 16/07/1945: correto.'
+    positions:
+      - stance: 'Ideia vale quase nada; execução é tudo.'
+        quote: 'Idéias são banais e baratas, lembrem-se disso.'
+      - stance: 'Contra o empreendedorismo de palco: retórica sem empresa lucrativa.'
+        quote: 'Gente que sequer fundou uma empresa lucrativa enganando as pessoas com pura retórica, sem nenhuma substância além de falar alto e de forma impressionante.'
+      - stance: 'Tolera o fraudador mas não poupa quem escolhe ser enganado; adulto não precisa de tutela.'
+        quote: 'Querer ser enganado também é um direito, e eu não faço nenhuma questão de achar que adultos devem ser protegidos, pelo contrário.'
+      - stance: 'FOMO e cargo cult como pior motivo para empreender.'
+        quote: 'E esse é o pior motivo de todos: cargo cult, seguir os outros só pra não se sentir de fora.'
+      - stance: 'O programador 10x é mito de foco: o resto faz 10x menos do que poderia.'
+        quote: 'a grande maioria dos programadores faz 10x menos do que poderia'
+      - stance: 'Ser ágil é ser consistente; hora extra crônica é incompetência de gestão, não esforço.'
+        quote: 'Consistência, é a única coisa que interessa, não produtividade máxima na maior quantidade de horas possível.'
+      - stance: 'Separar realidade, ficção, wishful thinking e fraude; incentivar a procurar com cuidado em vez de acreditar em salvadores.'
+        quote: 'Eu gosto de sempre tentar separar o que é realidade, o que é ficção, o que é wishful thinking e o que é puramente fraude.'
+    book_hooks:
+      - unit: ch14
+        where: 'abertura ou fecho da seção "como ler um anúncio" (checklist): quem lucra com a promessa'
+        touch: 'Em 2019, no Akitando 52, eu já chamava isso de empreendedorismo de palco: gente que nunca fundou uma empresa lucrativa vendendo retórica "sem nenhuma substância além de falar alto". O palco mudou de startup pra AGI; o método de desconfiar é o mesmo: quem fala já ganhou dinheiro com o que promete?'
+        strength: high
+      - unit: ch14
+        where: 'hype / "revolucionário" que é só um classificador; cobrança por taxonomia (harness, loop engineering)'
+        touch: 'Ideias são baratas, repeti em 2019: o que importa é a execução. Hoje o "framework de nome novo" é a ideia barata embalada em curso.'
+        strength: medium
+      - unit: ch20
+        where: 'a conclusão de que a evolução é incremental/linear e o ganho veio da execução (harness) e de gente disciplinada'
+        touch: 'Já dizia no Akitando 52: inovação é invenção que encontra mercado, e o que pesa é a execução e a consistência, não o pico. Com agentes não mudou: quem entrega todo dia, testando, ganha de quem vara noite no prompt.'
+        strength: medium
+      - unit: ch19
+        where: 'ciclos curtos diários de decidir-implementar-testar-revisar'
+        touch: 'A tese é a mesma que defendo desde que expliquei agilidade no Akitando 52: o ritmo que vale é o sustentável. Quem corre em hora extra produz bug e depois passa o tempo consertando; com agente gerando código, o efeito só ampliou.'
+        strength: high
+      - unit: ch18
+        where: 'seção sobre carreira e o que continua valendo (fundamentos, disciplina) / "o 10x"'
+        touch: 'O "desenvolvedor 10x" que o marketing de IA promete já era um mito em 2019: eu dizia que ele não é 10x melhor, é que o resto faz 10x menos do que poderia por falta de foco. Agora o agente acelera quem sabe o que está fazendo e acelera o erro de quem não sabe.'
+        strength: medium
+      - unit: ch04
+        where: 'abertura sobre confiar no chatbot / querer ser enganado'
+        touch: 'Eu já escrevi que "querer ser enganado também é um direito"; o chatbot concordando com você é a versão mais confortável disso. A diferença é que agora a fraude nem precisa de palco: está no seu bolso.'
+        strength: low
+    appendix_candidate: ''
+
+  - id: 2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado
+    title: '[Akitando] #104 - RANT: Empreendendo com Software do JEITO ERRADO!'
+    one_line: 'Fundador não técnico que especifica tudo em papel, terceiriza o core, economiza em júnior e em contrato erra; o certo é sócio técnico, MVP em 2-3 meses, equipe interna e software como trabalho contínuo.'
+    bio_facts:
+      - claim: 'Tem quase 30 anos de estrada e passou por centenas de projetos (a descrição do post diz "2+ décadas"; as duas versões não batem, usar "décadas").'
+        quote: 'ao longo de quase 30 anos, tendo passado por literalmente centenas de projetos'
+        check: 'Descrição do post: "2+ décadas atendendo centenas de projetos". Inconsistência interna; author memory, frame as such. Nascido ~1976, começou a programar no início dos anos 90 e profissionalmente na segunda metade.'
+      - claim: 'É dono de uma empresa que presta serviço de software (terceirizador) e se diz parte do problema que critica.'
+        quote: 'E eu digo isso sendo um terceirizador.'
+        check: 'Codeminer42 (citada em "become@codeminer42.com" na descrição). Verificar tempo de fundação em outros posts.'
+      - claim: 'Treina juniors e estagiários na própria empresa há anos.'
+        quote: 'É isso que eu pratico na minha empresa faz anos.'
+        check: 'Author memory; consistente com a prática da Codeminer42.'
+      - claim: 'Recusou baixar preço diante da ameaça de ir para uma empresa indiana; o cliente voltou seis meses depois.'
+        quote: 'Seis meses depois, ele voltou.'
+        check: 'Anedota sem nome nem data. Author memory, frame as such.'
+      - claim: 'Não participa de licitações por considerar o modelo tosco.'
+        quote: 'eu não participo de licitações porque acho o modelo inteiro tosco pra começo de conversa'
+        check: 'Author memory.'
+    world_facts:
+      - claim: 'LGPD já em vigor torna a empresa responsável por dados vazados por terceiros.'
+        quote: 'Se um terceiro faz bobagem com seu banco de dados e compromete dados pessoais dos seus usuários é sua empresa e você que são responsáveis.'
+        check: 'Lei 13.709/2018, em vigor desde set/2020; sanções administrativas desde ago/2021. Correto no sentido geral (controlador responde junto com operador).'
+      - claim: 'Protótipo de software custa ~10x e startup de verdade ~100x mil dólares (ordem de grandeza de 2021).'
+        quote: 'Um protótipo de software começa na ordem de grandeza de 10 vezes isso. Uma tech startup de verdade começa na ordem de 100 vezes isso.'
+        check: 'Ordem de grandeza de 2021, não preço. Não citar como número atual.'
+      - claim: 'Mercado aquecido para seniores em 2021 (contratar era difícil).'
+        quote: 'especialmente num mercado aquecido e competitivo como de agora'
+        check: 'Contraste útil com a retração pós-2022 (layoffs de big techs, Layoffs.fyi). Datar como 2021.'
+    positions:
+      - stance: 'Core business em tecnologia não se terceiriza inteiro.'
+        quote: 'Não se terceiriza o core business inteiro da sua empresa. E eu digo isso sendo um terceirizador.'
+      - stance: 'Design emerge do software; software nunca fica pronto.'
+        quote: 'Design emerge do software e não o contrário. Software nunca tá pronto na versão 1.0. É sempre um trabalho em andamento.'
+      - stance: 'Prefere um MVP de 2-3 meses a um projeto de 2 anos; gerenciar risco, não buscar risco zero.'
+        quote: 'Não existe risco zero, existe gerenciar riscos. E colocar todos os ovos num lugar só é o oposto disso.'
+      - stance: 'Todo projeto precisa de juniors; formar gente é obrigação da empresa.'
+        quote: 'O junior de hoje é o senior de amanhã.'
+      - stance: 'Economia porca sai cara; barato é proporcional ao resultado.'
+        quote: 'Toda economia porca sempre vai sair caro lá na frente.'
+      - stance: 'Quem não tem sócio técnico experiente nem deve começar.'
+        quote: 'nem pense em começar se não tem um sócio técnico experiente pra gerenciar tudo'
+      - stance: 'Linguagem e framework importam menos que a equipe e o processo.'
+        quote: 'A melhor linguagem e ferramentas são aquelas que seus melhores funcionários preferem.'
+    book_hooks:
+      - unit: ch19
+        where: 'a tese de que o problema é quem decide e não o modelo; empresa que gastou em licenças e não viu nada'
+        touch: 'Eu repeti isto por décadas, e no Akitando 104 foi quase um desabafo: não se terceiriza o core business inteiro. Com IA vale o mesmo: se ninguém na casa entende e decide, o fornecedor da ferramenta (ou o modelo) vira o freelancer com a senha da Amazon.'
+        strength: high
+      - unit: ch07
+        where: 'software nunca está pronto / manutenção contínua'
+        touch: 'Falei em 2021, no Akitando 104: "Design emerge do software e não o contrário." Software nunca fica pronto na 1.0, e quem acha que terminou a última linha "provavelmente é um software que ninguém usa". A IA gera a 1.0 mais rápido; a manutenção continua sua.'
+        strength: high
+      - unit: ch18
+        where: 'como juniors aprendem agora / quem forma os seniores de amanhã'
+        touch: 'Em 2021 eu dizia aos empreendedores que todo time precisa de juniors, porque "o junior de hoje é o senior de amanhã". Se a IA faz a tarefa mundana, a empresa que parar de formar júnior fica sem sênior em cinco anos. É isso que pratico na minha empresa faz anos.'
+        strength: high
+      - unit: ch06
+        where: 'MVP / do zero à produção, fatiar o escopo'
+        touch: 'Tanto o mockup de papel quanto a especificação gigante falham pelo mesmo motivo: ninguém prevê o que só aparece com gente usando. Prefiro risco pequeno: uma versão mínima em 2 ou 3 meses, como defendi no Akitando 104, e aprender com o uso.'
+        strength: medium
+      - unit: ch15
+        where: 'dar acesso/chaves ao agente (root, credenciais)'
+        touch: 'No Akitando 104 reclamei de dono que entrega a senha da conta de nuvem e a organização do GitHub a um freelancer: "nunca dê as chaves da sua casa pra um estranho". O estagiário de IA com acesso root é o mesmo erro com menos desculpa.'
+        strength: medium
+      - unit: ch12
+        where: 'vendedor/benchmark prometendo o melhor resultado; propaganda versus entrega'
+        touch: 'Palavras são só palavras, disse em 2021 sobre a promessa do vendedor de software. Vale para o slide de benchmark: o que conta é o que entrega na sua tarefa.'
+        strength: low
+    appendix_candidate: 'Pequeno apêndice ou caixa "Se você é dono do negócio e quer pôr IA nele" (sócio técnico, nunca terceirizar o core, MVP, equipe interna, contrato e propriedade intelectual com fornecedor de IA, LGPD ao mandar dados para API de modelo). Serve ao leitor leigo de gestão que o livro quer alcançar na Parte V. Adaptar, não copiar; o post fala de 2021 e de projeto de software tradicional.'
+
+  - id: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    title: '[Akitando #84] Entendendo "O Dilema Social" e Como Você é Manipulado'
+    one_line: 'Disseca o documentário The Social Dilemma (nota 5/10), mostra o precursor do ML (Bayes e filtro de spam, que ele quase implementou em 2003), explica por que o raciocínio humano falha e diz que redes e IA são ferramentas, a culpa é dos indivíduos e da educação.'
+    bio_facts:
+      - claim: 'Em 2003 era programador Java no mundo corporativo de SAP.'
+        quote: 'Em 2003 eu era programador Java, trabalhando no mundo corporativo de SAP'
+        check: 'Author memory; conferir cronologia com outros posts e com o capítulo de biografia do livro.'
+      - claim: 'Leu "A Plan for Spam" de Paul Graham em 2003 e foi quando entendeu o poder de estatística e probabilidade.'
+        quote: 'foi a primeira vez que eu entendi o poder da estatística e probabilidade que eu tanto falo'
+        check: 'Artigo de Graham é de agosto de 2002 (paulgraham.com/spam.html); ler em 2003 é plausível. Author memory.'
+      - claim: 'Montou um protótipo em PHP com Bayes e RSS para filtrar o que ler, em poucas horas; fracassou por lentidão e falsos positivos, e ele não reescreveu em Java.'
+        quote: 'Mas o experimento foi um fracasso porque PHP não era a linguagem adequada'
+        check: 'Author memory; um fracasso que ele conta sem enfeite, bom para o tema "meu primeiro fracasso" (ch08). Máquina: notebook Toshiba, Pentium 4, 1 GB RAM.'
+      - claim: 'Curadoria própria de leitura há mais de duas décadas (bookmarks pré-1999, Google Reader, hoje Feedly), sem seguir ninguém nas redes.'
+        quote: 'Até hoje eu faço minha própria curadoria.'
+        check: 'Author memory. Atenção: o post diz que usava "o antigo Google Reader" em 2003, mas o Google Reader foi lançado em 2005; anacronismo, não repetir.'
+      - claim: 'Só descobriu o Naive Bayes dentro do Mahout por volta de 2012-2013.'
+        quote: 'Eu só fui descobrir sobre isso acho que por volta de 2012 ou 2013.'
+        check: 'Author memory, frame as such.'
+      - claim: 'Aos 40+ já tinha perdido o espanto fácil; recusa ideologias ("promíscuo de ideologias") e diz que o mundo não acaba fácil.'
+        quote: 'Eu tenho mais de 40 e sei que ainda tem um monte que não sei.'
+        check: 'Author memory (nascido ~1976, 44 em 2020).'
+    world_facts:
+      - claim: 'Filtro bayesiano de Graham: ~5 spams em 1000 passando e zero falsos positivos (99,5%) contra listas de ~95%.'
+        quote: 'pra cada mil e-mails de spam, ele deixava passar uns cinco que o filtro não pegava, e tinha zero falsos positivos'
+        check: 'Graham, A Plan for Spam (2002): ~5 de 1000 e 0 FP nos testes dele. O 95% das listas é estimativa do autor.'
+      - claim: 'Graham vendeu a Viaweb ao Yahoo e fundou o Y Combinator (Stripe, Airbnb, Dropbox, Rappi, GitLab, Docker, Twitch, Heroku).'
+        quote: 'Ele fundou a Viaweb que foi vendida pro Yahoo.'
+        check: 'Verificável; Twitch (Justin.tv) e Heroku via YC são corretos. Rappi passou pelo YC em 2016.'
+      - claim: 'Cronologia: RSS 1999, Atom 2005, Athlon 64 em 2003, Facebook 2004, Twitter ~2007, Instagram 2010, AWS e Hadoop em 2006.'
+        quote: 'Daí em 1999 inventaram o RSS ou Really Simple Syndication.'
+        check: 'RSS 0.9 em 1999 e Hadoop/AWS 2006 corretos; Twitter foi lançado em 2006 (o post diz 4 anos depois de 2004, aprox.). Athlon 64: set/2003. Datas aproximadas.'
+      - claim: 'Exemplo do teste com 99% de acerto e doença de 0,1%: chance real ~9% após um positivo, ~91% após dois.'
+        quote: 'você tem só 9% de chance de realmente ter a doença depois de testar positivo'
+        check: 'Conta confere (1/(1+9,99)=9,1%; segunda rodada ~91%). Do vídeo "The Bayesian Trap" do Veritasium.'
+      - claim: 'Asch foi conselheiro da tese de doutorado de Milgram.'
+        quote: 'Asch foi conselheiro na tese de doutorado de outro pesquisador famoso e controverso, Stanley Milgram'
+        check: 'Impreciso: orientador de doutorado de Milgram em Harvard foi Gordon Allport; Asch foi mentor/supervisor em Princeton. Não repetir.'
+      - claim: 'Experimento de Zimbardo é cheio de falhas, ao contrário dos de Asch e Milgram, replicados por décadas.'
+        quote: 'o experimento de Zimbardo é cheio de falhas'
+        check: 'Crítica a Zimbardo (Stanford Prison Experiment) é consenso recente (Le Texier 2018); a alegação de replicação "sempre os mesmos resultados" para Milgram é simplificação.'
+      - claim: 'Livro "Como Mentir com Estatística" é de 1954; palestra de Ariely no TED é de 2008; artigo "Somos Matematicamente Ignorantes" no blog dele tem 12 anos.'
+        quote: 'um livro de 1954 entitulado "Como Mentir com Estatística"'
+        check: 'Darrell Huff, 1954: correto. Post do blog em 2008/03/01: confere.'
+    positions:
+      - stance: 'Redes sociais e IA são ferramentas; a culpa é dos indivíduos, e a ferramenta só acelera e amplifica.'
+        quote: 'Eles são ferramentas. Se quiser pode pensar que são como armas. Armas não atiram sozinhas, pessoas atiram.'
+      - stance: 'A pergunta do pensamento crítico é "a quem essa mensagem beneficia?"; criticar não basta, é preciso entender as engrenagens.'
+        quote: 'Pensamento crítico não é só criticar as coisas, a premissa é que você entende como funcionam as engrenagens dos sistemas do mundo.'
+      - stance: 'Entender, não acreditar; quanto menos crenças, menos difícil entender o mundo.'
+        quote: 'E a palavra chave aqui é "entende" e não "acredita". Quanto menos crenças você tiver, menos difícil é entender o mundo.'
+      - stance: 'A causa raiz da manipulação é educação falida; gente educada é menos influenciável.'
+        quote: 'Pessoas educadas não são facilmente influenciáveis assim.'
+      - stance: 'Probabilidade é a medida da sua confiança; evitar certeza de 100%; uma evidência contrária derruba a hipótese.'
+        quote: 'As probabilidades são a medida da "sua" confiança numa determinada crença.'
+      - stance: 'Desconfiar de pânico urgente e de quem vende a solução do problema que ajudou a criar.'
+        quote: 'Tudo que parece urgente e fatal hoje na verdade não é tanto assim.'
+      - stance: 'Não troque uma autoridade por outra; criar o problema e vender a solução é estratégia antiga (lobby de regulação).'
+        quote: 'É uma estratégia antiga: crie algo que gera problemas, depois venda uma solução desse problema.'
+      - stance: 'Não siga influencers nem a ele; julgue pelo resultado mensurável ao longo de anos.'
+        quote: 'Nunca siga uma pessoa por coisas assim, e sim pelos resultados mensuráveis de sucesso e consistência ao longo dos anos'
+    book_hooks:
+      - unit: ch01
+        where: 'IA como estatística (um gerador de texto muito bom) / "o que é essa coisa"'
+        touch: 'Em 2020, no Akitando 84, eu já dizia que machine learning "é basicamente estatística e probabilidade, álgebra linear e cálculo", e que o teorema de Bayes é o hello world da área. Os modelos de hoje são maiores, mas a natureza é a mesma: probabilidade condicionada ao que ele viu.'
+        strength: high
+      - unit: ch04
+        where: 'chatbot concordando e inventando fonte; "quantidade de evidência não é qualidade"; regra de pedir segunda fonte independente'
+        touch: 'A população "confunde quantidade de evidência com a qualidade das evidências", disse no Akitando 84, e mostrei por que uma segunda opinião independente muda a conta (de 9% para 91%). É a razão do veto por fonte primária no Frank Investigator: três modelos concordando sobre a mesma fonte ruim não é segunda opinião.'
+        strength: high
+      - unit: ch14
+        where: 'como ler um anúncio; quem lucra com o pânico (AGI, extinção)'
+        touch: 'Sobre o Dilema Social, 2020: ex-executivos que "viram a luz" e depois vendem a regulação que os coloca como a nova autoridade. Mudaram a tela, não o roteiro. Minha pergunta de sempre é a mesma: a quem essa mensagem beneficia?'
+        strength: high
+      - unit: ch08
+        where: 'meu primeiro fracasso / aprender com protótipo que não deu certo'
+        touch: 'Já tive um fracasso parecido em 2003: li o artigo do Paul Graham sobre filtro bayesiano e montei em PHP um leitor de RSS que aprendia meu gosto. Foi um fracasso, a máquina era lenta e os falsos positivos eram muitos, e eu larguei. Era a ideia certa, 15 anos cedo.'
+        strength: medium
+      - unit: ch18
+        where: 'fundamentos que continuam valendo / recomendação de estudo (matemática, estatística)'
+        touch: 'Em 2003, o artigo do Graham sobre spam foi quando entendi a estatística e a probabilidade que eu tanto falo. Quem entende Bayes entende como esses modelos erram e por quê. Essa base continua valendo quando a ferramenta muda de nome.'
+        strength: medium
+      - unit: ch11
+        where: 'como se mede uma IA / acurácia, falso positivo, base rate'
+        touch: 'Um teste de 99% de acerto para uma doença de 0,1% dá só ~9% de chance de estar doente após um positivo (Akitando 84). Todo número de acurácia de benchmark deve ser lido com isso na cabeça: quanto o dado de base e o processo de medição valem?'
+        strength: medium
+      - unit: epilogo
+        where: 'conselho final: não terceirize seu julgamento'
+        touch: 'Eu avisei em 2020: "não adianta trocar uma autoridade por outra". O chatbot é só mais uma autoridade tentadora. Use como ferramenta, e continue sendo quem decide.'
+        strength: medium
+    appendix_candidate: 'Caixa ou apêndice curto "Bayes e o filtro de spam: o hello world do aprendizado de máquina" (exercício do leitor e ligação com como um LLM estima probabilidade; o exemplo do teste de 99% serve a quem lê benchmark). Cabe no apmecanica ou aptecnico como seção de ~1 página. O post trata de ML de 2020; atualizar a ponte para LLMs.'

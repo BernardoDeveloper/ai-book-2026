@@ -1,0 +1,185 @@
+persona: gerente
+summary: |
+  I came because my board bought an "AI transformation" nobody can explain. The book did answer that, but late and
+  in pieces. Chapter 14 gave me the checklist I wanted (who profits, can it be tested from outside, against whom is
+  the comparison, what is the ruler), and chapter 19 gave me the diagnosis closest to my day: usage dashboards
+  reward spending, and the gap between a decision and its result is what kills the value. What I will remember:
+  "meça o que chegou ao cliente", the Uber story, the 0.9^10 chain, and "peça o recibo antes de pagar pelo nome novo".
+  What nearly made me quit: the emulator and Master System stories in chapter 8, the long name-and-date juggling in
+  chapter 14, and the software release machinery in chapter 19, none of which I can translate to a logistics
+  operation. The narrator's history helps me trust his skepticism, but his evidence is almost entirely his own
+  solo projects, and he says so himself. I leave with questions to ask the consultants, not with a plan I can take
+  to the board on Monday.
+best:
+  - "ch19: Uber burned its AI-tools budget in four months and nobody could point to what shipped"
+  - "ch14: the eight-question checklist 'Como ler um anúncio'"
+  - "ch19: the closing lists for gerente/dono ('Antes de renovar a licença')"
+  - "ch04: 'Antes de perguntar à máquina', the eight rules plus the data-privacy paragraph"
+  - "ch14: 'Um adversário pra cada manchete' (444x vs 8x vs 4x), the kind of number check I do every week"
+worst:
+  - "ch08: Driveclub emulator, 31 phases and 15 thousand lines of diagnostic code"
+  - "ch14: Navier-Stokes, Hugging Face intrusion, Coxon, Amodei, Sacks, Musk (too many names for a decision)"
+  - "ch19: staging, feature flags, rollback, database migrations, app-store review"
+  - "ch20: the ai-memory section inside the book's concluding chapter"
+  - "apestudar: written for people learning to program, nothing for my role"
+units:
+  - {unit: index, score: 4, note: "The Elektro opening is a bit long, but the 'Os medos' map told me ch14 and ch19 were mine. It never says so for the gerente explicitly."}
+  - {unit: ch01, score: 3, note: "Clear, but the Rosenblatt history and the GPT-2 story are background I did not need to decide anything. The S-curve is a picture, not data."}
+  - {unit: ch04, score: 4, note: "Finally something I can hand to my team: ask neutral questions, climb to the primary source, give the date. The privacy paragraph is exactly what compliance will ask."}
+  - {unit: ch08, score: 2, note: "Three engineering stories. The 80% vs 99% point and the 'oráculo' idea pay off; the PlayStation emulator hunt does not, for me."}
+  - {unit: ch14, score: 4, note: "Dense, but the final list is worth the book. The cost correction (10x became 2x) made me trust him more."}
+  - {unit: ch18, score: 3, note: "Good history, written for programmers. My part (two paragraphs on managers and accountants) is the shortest and I wanted it longer."}
+  - {unit: ch19, score: 5, note: "The only chapter that talks to my problem. It would be a 5 even if half of it were cut: the Uber case, the six questions to ask each person, the closing bullets."}
+  - {unit: ch20, score: 3, note: "The conclusion I wanted ('don't wait for the next model') is in there, but I have to dig through the benchmark tie, METR, AlphaEvolve and the memory tool to get it."}
+  - {unit: epilogo, score: 4, note: "Short and Monday-oriented, which I like, but my block is three bullets and no number to track."}
+  - {unit: apbolhas, score: 4, note: "Numbers I can use in a board meeting (Nasdaq -78%, SPACs 59/248/613, layoffs 165k/260k) and it admits the calendar errors."}
+  - {unit: apestudar, score: 2, note: "Good advice for learners, not for me. I would have stopped here if I had not been told to read it."}
+annotations:
+  - unit: index
+    quote: "explica por que tantas empresas gastam fortunas em IA sem ver resultado"
+    type: rewrite
+    why: "The preface lists a reader like me ('a gerente a quem estão vendendo uma transformação com IA'), but the part-by-part map folds my worry into the jobs fear. I did not know I should aim at ch14 and ch19."
+    suggestion: "Name the chapters per reader in one line each, including the gerente."
+  - unit: ch01
+    quote: "Do 4 pro 5, pelo que eu via em volta, pouca gente fora da área notou tanta diferença"
+    type: logic
+    why: "The author admits it is an impression, yet the figure draws a capability curve with GPT-5 flat. As someone who reads charts for a living, I see no axis units or data source; it reads as a measurement but it is an illustration."
+    suggestion: "Label the figure as illustrative, or point to the measurement in ch20."
+  - unit: ch01
+    quote: "Com a IA vai ser igual. A bolha estoura, empresas que apostaram tudo na onda somem"
+    type: logic
+    why: "Stated as certainty from an analogy. The appendix on bubbles later says 'eu não sei dizer se ela vai estourar como as outras, nem quando' and 'Três ciclos não fazem uma lei'. The two strengths of claim do not match."
+    suggestion: "Soften here to 'se for igual', as the appendix does."
+  - unit: ch08
+    quote: "chamei o Frank Yomik de meu primeiro fracasso de verdade"
+    type: confusing
+    why: "The chapter then says the project 'ficou de pé', solves 99%+ of cases and was open-sourced. The failure was the approach, not the project, and I had to reread to see that."
+    suggestion: "Title and first paragraph should say 'primeiro plano errado' or equivalent."
+  - unit: ch08
+    quote: "Foram 31 fases de investigação, 44 commits na minha cópia do emulador e mais de 15 mil linhas de código de diagnóstico."
+    type: boring
+    why: "I skimmed the whole Driveclub section. The lesson I could use (AI wants to stop early, a human decides it is not done) is two paragraphs inside a long technical story."
+    suggestion: "Cut to the 'A IA queria parar' episode and the blockquote."
+  - unit: ch14
+    quote: "Em 8 de setembro, a OpenAI anunciou ter resolvido o problema"
+    type: boring
+    why: "Navier-Stokes, the author dispute, Terence Tao, then Hugging Face, Coxon, Sacks, Musk, Amodei. The author even says 'Pra quem perdeu a conta dos nomes'. I lost the thread of what I should do differently."
+    suggestion: "Keep one example per technique of hype (fear, miracle, commodity, classifier) and move the rest to an appendix."
+  - unit: ch14
+    quote: "Quem esperou um mês antes de ter medo, ou de comprar, quase sempre economizou as duas coisas."
+    type: logic
+    why: "A generalization from a handful of 2026 stories, offered as the ninth rule. 'Wait a month' is not something I can tell a board that has already signed a contract, and 'quase sempre' has no count behind it."
+    suggestion: "Reframe as: ask for a pilot with a measurable exit before a long contract."
+  - unit: ch14
+    quote: "Você não precisa entender de fluidos, cibersegurança ou classificadores pra se defender dessa fábrica."
+    type: rewrite
+    why: "This is the most useful list in the book for my situation, and it arrives at the end of 25 pages. I only knew to apply it to the consultants' deck because I reached it."
+    suggestion: "Put the list, or a pointer to it, near the start of the chapter."
+  - unit: ch14
+    quote: "Eu tinha os meus pra mostrar, mais de trinta repositórios públicos feitos desde janeiro"
+    type: logic
+    why: "Thirty personal repositories are not evidence about business outcomes in a company; the question to the course seller is fair, but the author's own answer is the same kind of evidence he rejects elsewhere (solo, self-reported)."
+    suggestion: "Add what the repositories shows in cost or time, or drop the line."
+  - unit: ch18
+    quote: "Na gestão, o cartão perfurado é a ata, a planilha de acompanhamento, o relatório consolidado pra diretoria."
+    type: rewrite
+    why: "This is the one passage written for me and it is two paragraphs inside a chapter about programmers. I wanted a way to sort my team's tasks into 'punch card' and 'decision' with an example from an operation."
+    suggestion: "Expand with a short sorting exercise for a non-software team, with a logistics-like example."
+  - unit: ch18
+    quote: "Ele foi, no máximo, o último prego no caixão: as demissões viriam de qualquer jeito."
+    type: logic
+    why: "A counterfactual stated flatly, and the blockquote that follows ('olhando pro culpado errado') covers only 2022. Layoffs in 2023-26 and what companies say about AI are not addressed, so my board's AI-and-headcount question stays open."
+    suggestion: "Limit the claim to 2022 or say what the evidence is for later years."
+  - unit: ch19
+    quote: "Muita empresa treinou os seus profissionais a não decidir."
+    type: logic
+    why: "The Uber story shows a measurement problem (a usage leaderboard), but the chapter jumps to a cultural diagnosis (agile theater, fear) and admits 'Não tenho número pra isso'. It is persuasive and matches what I see, but it is the author's belief carrying the argument."
+    suggestion: "Say explicitly which part of the Uber case supports the diagnosis and which part is hypothesis."
+  - unit: ch19
+    quote: "cada programador com o agente sentaria por blocos curtos de trabalho com três pessoas, uma de cada vez"
+    type: rewrite
+    why: "The PO/QA/tech-lead rotation is a software-team design. I run warehouse and transport operations; I could not tell what my version would be."
+    suggestion: "One paragraph restating it as a general principle: decider, checker and senior reviewer in the same short loop as the person using the tool."
+  - unit: ch19
+    quote: "Banco de dados quebra a analogia."
+    type: boring
+    why: "Database migrations, public libraries and app-store review are real but I cannot use them. The section after it ('Quem revisa de verdade') was far more useful."
+    suggestion: "Compress the five caveats to two sentences plus the last one about solo ownership."
+  - unit: ch19
+    quote: "tirada do que eu vi por dentro de empresas e de um ano usando agentes"
+    type: rewrite
+    why: "He says he has seen this inside companies, and he spent five years in SAP integrations in big firms, which is my world. But there is no single concrete story from those companies in the chapter; the only company case is Uber, from the news."
+    suggestion: "One anonymous example from the integration years would make the diagnosis more credible than any citation."
+  - unit: ch20
+    quote: "Na faixa de cima da tabela, a nota variava uns 16% de ponta a ponta. O custo variava mais de cem vezes."
+    type: confusing
+    why: "Two paragraphs earlier seven models tie at the top costing about 10 to 70 dollars (7x), so I could not tell which set the 100x refers to. This is the number a buyer cares about most and it is muddy."
+    suggestion: "State the two ranges separately: among the tied seven, and across the broad second band."
+  - unit: ch20
+    quote: "esse tamanho vinha dobrando a cada sete meses desde 2019"
+    type: logic
+    why: "Doubling every seven months is an exponential curve, yet the preface and the end of ch19 frame the book as failing to find 'aquela curva exponencial'. The author resolves it by splitting base intelligence from harness, but a manager reading 'doubles every 7 months' will hear that the vendors are right."
+    suggestion: "Say up front in the chapter opening that there is one exponential that holds (task length) and one that does not (base capability)."
+  - unit: ch20
+    quote: "O único jogo que ficou de fato pronto foi o Super Mario Bros."
+    type: logic
+    why: "In chapter 8 the same game 'ainda precisa de uma ajuda do emulador', running under twice the frame budget. 'Pronto' and 'needs emulator help' contradict each other in a book that tells me to read the ruler."
+    suggestion: "Use the same wording in both places, for example 'o único que roda, com ajuda do emulador'."
+  - unit: ch20
+    quote: "Foi daí que nasceu o ai-memory"
+    type: boring
+    why: "It is a good principle (own your memory, rent the model), and the author discloses his interest, but a product description with a version number in the conclusion slowed the chapter down for me."
+    suggestion: "Keep the principle and the blockquote; move the tool's history to the appendix it already has."
+  - unit: epilogo
+    quote: "antes de comprar mais licença, escolha um processo, meça o que chega ao cliente hoje e meça de novo depois"
+    type: rewrite
+    why: "This is the most important advice for me and it gets one bullet. 'Meça o que chega ao cliente' needs an example of what to measure for a non-software process, and who owns the measurement."
+    suggestion: "Add two or three example metrics and a rule for how long to run the pilot."
+narrator:
+  credibility: |
+    Partly, and mostly in the right places. The crash from inside (ch18: a dot-com that closed, "nenhuma das
+    empresas por onde passei desde 1996 sobreviveu", one week unemployed) and the apbolhas numbers give me a frame I
+    can use with my board: companies die, technology stays, do not bet everything on one horse. The SAP years make
+    "regra de negócio de empresa grande não se adivinha de fora" (ch20) believable to me, because that is my daily
+    life. What raises trust most are the admitted misses: "errei o calendário", the obsolete ranking marked as such,
+    the Opus cost corrected from 10x to about 2x, the disclosure on ai-memory ("Eu ganho, nem que seja em
+    reputação") and the explicit "Não tenho número pra isso" in ch19. Where it helps less: his history is about
+    building software, solo or in small teams, and he says the evidence for company-scale rhythm is "projetos onde
+    eu sou o único dono". The Akitando warnings come across mixed: right on the bubble, wrong on the timing,
+    and they are quoted so often that they start to sound like an argument from authority (see bragging).
+    He also runs a consultancy-like firm himself, which he admits ("sendo terceirizador"), so I read the attacks
+    on "consultoria" in ch14 with that in mind.
+  bragging: |
+    Mostly restrained, with a few spots that read as "I was right":
+    - "Os avisos têm data." (ch18), followed by dated Akitando episodes (50, 72, 132); partly undone by "Avisei da
+      bolha e errei a data".
+    - "Meses de medição não mexeram nessa frase." (ch20), on the "espelho" quote from the marathon.
+    - "Eu já falava isso em janeiro de 2023" (ch01) and "Quem foi inimigo da internet em 2001 também perdeu" (ch01).
+    - "Eu tinha os meus pra mostrar, mais de trinta repositórios públicos feitos desde janeiro" (ch14).
+    - "Ele ganhou o prêmio Nobel de Física de 2024 e eu não" (ch18) is self-mocking and works, but it sits next to
+      "currículo não é argumento".
+    Pattern: the Akitando episode citations (084 is cited in ch01, ch04 and ch14 for three different ideas) recur in
+    almost every chapter, and a reader who does not know the channel experiences them as "I said it first".
+  inconsistency: |
+    - Years of experience: "Eu programo desde 1990" (index) vs "tem uns 30 anos de experiência" (ch08); 1990 to 2026
+      is 36 years.
+    - Start of career: "comecei a trabalhar no fim dos anos 90" (index) vs "nenhuma das empresas por onde passei
+      desde 1996" (ch18) and "Entre 1996 e 2001" (apbolhas).
+    - Certainty about the AI bubble: "Com a IA vai ser igual" (ch01) vs "eu não sei dizer se ela vai estourar como as
+      outras, nem quando" (apbolhas).
+    - Super Mario status: "O único jogo que ficou de fato pronto foi o Super Mario Bros" (ch20) vs "Ainda precisa de
+      uma ajuda do emulador" (ch08).
+    - Tone toward the reader's worry: the preface says the confusion "está longe de você" and that those who believed
+      ads did what the ad was designed for, while ch18 calls web developers "operador de formulário glorificado" and
+      bootcamp sellers "vendedores de óleo de cobra"; the same warm voice has a contemptuous edge toward some workers.
+    - Worth checking: the same Akitando 084 citation is used in ch01 (ML as statistics, 2020), ch04 (quantity vs
+      quality of evidence, 2020) and ch14 (O Dilema Social, 2020). It may be one long video, but it reads as three.
+    - The epilogue says "Eu não tenho plano de carreira pra vender, nem curso", while ch19/ch20 promote his own
+      ai-memory and he runs a company; it is disclosed, but the epilogue line is stronger than the facts.
+cut_candidates:
+  - {unit: ch01, where: "### ## O primeiro hype (Rosenblatt, Perceptron, New York Times 1958)", why: "History I enjoyed but did not need to evaluate any claim. The bubble point can be made in two sentences, and the full bubble story is in apbolhas."}
+  - {unit: ch08, where: "## Quatro dias no escuro (Driveclub) and the sub-section 'Atirar em tudo pra conhecer o terreno'", why: "Deep emulator detail; the transferable lesson is already in the blockquote 'A IA acelera a busca. Decidir que ainda não acabou...'."}
+  - {unit: ch14, where: "### O problema do milênio", why: "A story of 2026 hype, but the checklist already carries the lesson (cost, comparison, conditional). Names and disputes outside my decision."}
+  - {unit: ch19, where: "### Onde a conta não fecha (items 2-4)", why: "Database, public libraries and app stores are software release detail that I cannot apply to an operation."}
+  - {unit: ch20, where: "## O que é seu (history of ai-memory, versions and contributors)", why: "The principle fits in the blockquote; the project history belongs in the appendix."}
+  - {unit: apestudar, where: "whole appendix", why: "Aimed at people learning to program; nothing in it for a manager."}

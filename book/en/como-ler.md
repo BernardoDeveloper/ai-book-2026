@@ -4,7 +4,7 @@ chapter: "How to Read This Book"
 sources: []
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/como-ler.md, sha256: "fc0cc544551d5be96f10511f6f2dbe6c8dbaa904ee55670ccdc0f96dc338777a"}
+translated_from: {file: book/pt/como-ler.md, sha256: "086c62c299e6affbee3b6a70672080e9bf7a036c3f6e1dd21d23fdccd0a6c229"}
 ---
 
 # How to Read This Book {#sec-como-ler .unnumbered}
@@ -19,7 +19,7 @@ But I know plenty of people arrive with one specific worry and little patience t
 <!-- src: original -->
 If you arrived with a specific question, these are the chapters that answer it. Each one can be read on its own.
 
-- What about my job? @sec-ch18, @sec-ch19 and the epilogue (@sec-epilogo).
+- What about my job? @sec-ch18, @sec-ch19 and the epilogue (@sec-epilogo); for the pattern of other crises, the three bubbles in @sec-apbolhas.
 - Is anybody in there? Is a superintelligence coming? @sec-ch01, @sec-ch14 and @sec-ch20.
 - Are you a manager being sold an AI transformation? @sec-ch14, @sec-ch19 and the checklists in @sec-apC.
 - Is it safe to let AI touch your stuff? Is it spying on me? @sec-ch15, @sec-ch17 and the bare-minimum kit in @sec-apB.
@@ -31,14 +31,14 @@ If you program, the behind-the-scenes material I took out of the chapters so as 
 <!-- src: original -->
 Between the parts there are two interludes, shorter and lighter, to catch your breath. The appendices, at the back, hold whatever would get in the way of the story:
 
-- an optional tour of the machine's mechanics, with no math;
+- an optional tour of the machine's mechanics, with no math, and a short list of books and videos for anyone who wants to learn the mechanics for real (@sec-apleituras);
+- a short guide to studying with AI at your side (@sec-apestudar) and the three bubbles I lived through, side by side and with the numbers for each (@sec-apbolhas);
 - a timeline, from the 2017 transformer to October 2026;
 - a bare-minimum kit for using AI agents safely;
 - the memory tool for agents that I built over the year;
 - two short checklists for sizing up a benchmark or an ad;
 - the catalog of projects I built in 2026;
-- the technical behind-the-scenes, for those who program;
-- a short list of books and videos for anyone who wants to learn the mechanics for real (@sec-apleituras).
+- the technical behind-the-scenes, for those who program.
 
 If you skip around, you'll trip now and then over a term or a character that showed up earlier. The text points to the chapter where it was explained, and the glossary covers the rest.
 

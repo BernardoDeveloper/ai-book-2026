@@ -1,0 +1,147 @@
+persona: curioso
+summary: |
+  I came for the stories and I got a good many of them: the Elektro robot at the 1939 fair, Eliza and the secretary who asked to be left alone with her, poor Rosenblatt dying on his own birthday, the week in 2001 when the dot-com folded and a mentor phoned. That is the book I would recommend to my old colleagues. I had no fear to be cured of, so the "worry" question is moot for me, but I did finally understand why a chatbot is not "someone", and the "mapa em branco" image in ch20 will stay with me. What nearly made me quit was the machinery that keeps arriving once the stories pause: eight-rule lists, model names with version numbers, "444,6 vezes mais barato", feature flags, staging, rollback. Ch04, ch14 (the TypeSafe/Jev stretch) and ch19 read like manuals dressed in anecdotes. I also noticed that the author likes to cite his own old videos as proof he saw it coming; he softens it by confessing his wrong dates, which I appreciated, but the effect is still a little "ask me, I was there". The appendices on the three bubbles and on how to study were short and warm, and I read them with pleasure.
+best:
+  - "ch01: Eliza and the secretary who asked Weizenbaum to leave the room"
+  - "ch18: the punch-card operators and 'subir de camada a tempo', told with sympathy for the people who lost the job"
+  - "ch08: Driveclub, 'a IA queria parar' and the author becoming a junior again on Sunday night"
+  - "ch20: 'O mapa e o branco', the public map in detail and the private territory blank"
+  - "apbolhas: three bubbles side by side, with the honest 'errei o calendário duas vezes'"
+worst:
+  - "ch14: the TypeSafe/Jev section, a flood of multipliers, model names and a dice-roll test"
+  - "ch19: 'As travas que tornam a velocidade segura', a checklist of tools I have never heard of"
+  - "ch04: the eight rules plus Saúde/Dinheiro/Notícias, which read as an instruction sheet"
+  - "ch08: the Frank Yomik filter inventory (sete camadas, mais de 20 números mágicos)"
+  - "ch20: 'Sete anos numa página' with parameters, MoE and MCP packed into one figure"
+units:
+  - {unit: index, score: 4, note: "The 1939 fair and the 1951 film pulled me in at once; the long 'Os medos que você trouxe' tour of the whole book slowed me down, and I was only a one-line afterthought in the list of readers."}
+  - {unit: ch01, score: 4, note: "Eliza, the Perceptron and the 'perigoso demais' of 2019 were real storytelling; the part about parameters and training costs was the price of admission."}
+  - {unit: ch04, score: 2, note: "Good coffee-study trick at the start, then it turned into a how-to with model names and a numbered list; I skimmed from 'Três juízes e um veto'."}
+  - {unit: ch08, score: 4, note: "The Driveclub saga and the senior who is a junior again are lovely; the mangá code detail and the cycle counts of the Master System lost me for a few pages."}
+  - {unit: ch14, score: 3, note: "The Mythos, export-order and Hugging Face episodes read like a thriller; then names, dates, billions and multipliers piled up and I lost track of who was on which side."}
+  - {unit: ch18, score: 4, note: "Punch cards, Yahoo cataloguing sites by hand and the author's own week of unemployment made the argument human; the bootcamp arithmetic and the language benchmark were skippable."}
+  - {unit: ch19, score: 2, note: "The Uber budget and the Ferrari-on-a-Beetle clone are fun; sprints, PO, QA, feature flags and the rest of the checklist felt like someone else's office."}
+  - {unit: ch20, score: 3, note: "Strongest where it is about maps, parrots with hands and the pause of the game converter; weakest in the measurement paragraphs and the timeline."}
+  - {unit: epilogo, score: 3, note: "Warm tone and a fair 'não confie em mim', but four audience checklists and a roll-call of cross-references made it feel like a summary sheet."}
+  - {unit: apbolhas, score: 4, note: "Short, personal, a real through-line from 2000 to now; it should have come earlier because it made the author's history click."}
+  - {unit: apestudar, score: 3, note: "Pleasant and sensible, with the xerox-on-the-bus detail I enjoyed; mostly repeats what ch08 and ch18 already told me."}
+annotations:
+  - unit: index
+    quote: "Cada uma das cinco partes responde a um medo que eu ouvi muitas e muitas vezes."
+    type: boring
+    why: "The next several paragraphs walk through all five parts, giving away stories (the editor, the deleted files, the benchmark) I would rather meet in their place. It reads like a table of contents in prose."
+    suggestion: "Cut to one short paragraph about the five fears, or keep only the first sentence of each."
+  - unit: index
+    quote: "Eu programo desde 1990 e comecei a trabalhar no fim dos anos 90"
+    type: logic
+    why: "Ch18 and apbolhas say he went through agencies and dot-coms from 1996, and ch18 says he entered university in 1995. 'Fim dos anos 90' does not match."
+    suggestion: "Say 'em 1996' or 'em meados dos anos 90'."
+  - unit: ch01
+    quote: "Por isso eu digo, desde o podcast, que esta é a segunda bolha da IA."
+    type: confusing
+    why: "Here AI has had two bubbles (Rosenblatt's and today's). Later the author speaks of living through three bubbles (internet, programming, AI), and apbolhas calls the AI one 'a terceira'. I had to stop and count."
+    suggestion: "Name them by what inflated them each time, and say once that 'second AI bubble' and 'third bubble I lived through' are different counts."
+  - unit: ch01
+    quote: "só o processamento usado pra treinar o GPT-4 custou uns 78 milhões de dólares"
+    type: boring
+    why: "A run of GPT sizes and costs; I took in 'enormous and expensive' and the figures added nothing for me."
+    suggestion: "One round number, or leave the dollars out."
+  - unit: ch04
+    quote: "mais um dos meus projetos com nome de Frank"
+    type: confusing
+    why: "'Mais um' tells me there are others I should know, and the explanation is deferred to ch05. Reading the units in my order, the Franks arrive as a private joke."
+    suggestion: "One clause saying why the projects are called Frank, or drop the aside here."
+  - unit: ch04
+    quote: "Naquele março, cada afirmação era avaliada por três modelos de três empresas diferentes"
+    type: boring
+    why: "Model names with version numbers (Sonnet 4.6, GPT-5.4, Gemini 3.1 Pro) mean nothing to me and will be stale soon. From here the chapter became a design document and the eight rules a manual."
+    suggestion: "Say 'três modelos de três empresas' and move the names to a note; consider keeping only the three best rules in the text."
+  - unit: ch08
+    quote: "No pico, eram sete camadas de filtro, cada uma criada em resposta a um erro específico."
+    type: boring
+    why: "The bullet inventory (551 linhas, três passes, mais de 20 números mágicos) is detail for programmers. The face-instead-of-balloon image already carried the point."
+    suggestion: "Keep the girl with blue hair and the whack-a-mole line; drop the tally."
+  - unit: ch08
+    quote: "Mas a mudança que realmente destravou o projeto foi outra."
+    type: rewrite
+    why: "The chapter promises the answer, then adds a section break and another sentence of 'antes de contar o que destravou' before explaining the oracle. Two teasers in a row felt like stalling, and the intro had already told me this project ends in a pause."
+    suggestion: "Go straight into the oracle with the bathroom-scale example."
+  - unit: ch14
+    quote: "Sete anos depois, mesma frase, mesma pessoa, muito mais dinheiro na mesa."
+    type: logic
+    why: "In 2019 Amodei was one of the authors of an OpenAI announcement; in 2026 Anthropic announces Mythos. That is a different company, and the dangers the author lists afterwards (1,726 confirmed flaws) were checked by outsiders. The sentence nudges me to a conclusion the chapter itself later says it cannot prove about anyone's motives."
+    suggestion: "Keep the parallel, but say that this time part of the claim was verified by outsiders."
+  - unit: ch14
+    quote: "Pra quem perdeu a conta dos nomes, os lados ficam assim."
+    type: rewrite
+    why: "I had indeed lost count: Coxon, Sacks, Huang, LeCun, Ng, Hinton, Altman, Musk in a few pages. The author knows it and gives a summary, but it comes after I was already lost."
+    suggestion: "Introduce fewer names, or give the three camps with one person each, and use that grouping to tell the rest."
+  - unit: ch14
+    quote: "Um adversário pra cada manchete."
+    type: boring
+    why: "The whole TypeSafe/Jev section (credentials, 'zero alucinação', 193,6 vezes, dice test) is a long and fine-grained investigation of a company I have never heard of. The lesson is good, but I would take it from one paragraph."
+    suggestion: "Compress to the credential story plus the dice test; the 'Como ler um anúncio' list can carry the rest."
+  - unit: ch18
+    quote: "Tinha queimado a cota inteira do plano mais caro da Anthropic pro Claude Code, o Max 20x"
+    type: rewrite
+    why: "The chapter opens with subscription tiers and usage limits, and the powerful image (LGP-21, a lever and a typewriter) arrives two paragraphs later."
+    suggestion: "Start with the 1963 computer and the typed-back result, then show the author watching an agent edit twenty files."
+  - unit: ch18
+    quote: "Quem culpa a IA pelas demissões de 2022 está olhando pro culpado errado."
+    type: logic
+    why: "A neat slogan, but nobody in the pages I read blames AI for 2022; the worry is about what comes next. The chapter earlier concedes that ChatGPT arrived at the same time, so the argument settles the past and not the fear."
+    suggestion: "Rephrase as 'a bolha explica 2022; o que vem agora é outra pergunta', and link it to the punch-card point."
+  - unit: ch19
+    quote: "Não tenho número pra isso; é observação de quem passou a carreira dentro e em volta de times de software."
+    type: logic
+    why: "Honest, but the whole chapter then treats 'empresas treinaram as pessoas a não decidir' as the cause of failed AI adoption. A sweeping claim about millions of workers, resting on the author's impression, carries a lot of weight. The Uber story alone doesn't show it."
+    suggestion: "Say more clearly that this is one explanation among others (cost, bad tools, fear), and give a counter-example if there is one."
+  - unit: ch19
+    quote: "O mínimo que eu considero obrigatório, e que ficou barato de manter com agentes:"
+    type: boring
+    why: "Tests, CI, feature flag, staging, rollback: six undefined-in-practice items. The diagram helps, but this is where I stopped following and started skimming."
+    suggestion: "One sentence per layer in plain terms, or move the list to an appendix."
+  - unit: ch20
+    quote: "Sete anos numa página"
+    type: boring
+    why: "Four phases and a dense figure with parameters, mixture of experts and MCP. A good one-line summary per phase would have been enough; I got the idea from 'a guerra acabou e ninguém assinou armistício' and the rest was reference material."
+    suggestion: "Keep the armistice line and cut the technical vocabulary."
+  - unit: ch20
+    quote: "nos meus testes, não vejo melhora relevante de programação geral desde a geração do Claude Opus 4.5"
+    type: confusing
+    why: "Elsewhere the reader sees Opus 4.8, Fable 5.1, Opus 5, Opus 5.5 and GPT-6 Astra, with the new one cheaper and faster. For a layperson, rising version numbers sound like progress, and the text says 'the same intelligence'. I understood the argument only when I reread the 'mais rápido, o mesmo trabalho' bit."
+    suggestion: "Say right at the start that version numbers climb, and that 'base' means how clever, not how fast or cheap."
+  - unit: ch20
+    quote: "As duas curvas convivem."
+    type: confusing
+    why: "The chapter opens by saying it searched for the exponential curve and found none, then admits that the METR curve doubling every seven months is real, and the epilogue says 'a curva que importa é a da METR, e ela sobe'. I wasn't sure which curve the reader is meant to believe."
+    suggestion: "State the two-curve idea in the first pages, with a one-line image (the brain stopped, the hands keep growing)."
+  - unit: epilogo
+    quote: "Se você é pai ou mãe, e o seu filho adolescente pergunta se a IA vai acabar com o mundo:"
+    type: boring
+    why: "Four audience-sorted checklists and a roll-call of chapter cross-references. I belong to none, and it reads like the end of a manual. The closing pages ('Sem entregar o volante') were better."
+    suggestion: "Let the epilogue tell the Monday scene as a story (someone doing one of these things) and leave the lists to a reference page."
+cut_candidates:
+  - {unit: index, where: "## Os medos que você trouxe", why: "A prose table of contents that gives away the book; the 'Por onde começar' section already points the way."}
+  - {unit: ch04, where: "### Saúde / ### Dinheiro / ### Notícias", why: "Useful to Marina, but for me it is advice-column material after the chapter's strong argument had landed."}
+  - {unit: ch08, where: "### A conta da versão 0.1", why: "The bullet inventory of filters and magic numbers; the whack-a-mole image says it better."}
+  - {unit: ch14, where: "## O classificador revolucionário", why: "A long case study of a company most readers have never heard of; the lessons repeat the 'Como ler um anúncio' list."}
+  - {unit: ch19, where: "### Onde a conta não fecha", why: "Five caveats for managers (databases, app stores, public libraries) that break the story's flow."}
+  - {unit: ch20, where: "## Sete anos numa página", why: "A timeline that repeats ch01 and ch03; the armistice line is enough."}
+narrator:
+  credibility: |
+    Yes, more than I expected, and mostly through stories rather than résumé. "Eu vivi esse estouro por dentro", the week after the sports dot-com closed, the mentor's phone call, and "Eu nunca me defini como programador ASP" made the bubble argument believable because he lost something. The SAP years give ch20 its best idea (the private map that the model cannot see), and the story in ch08 of copying a dBase manual page by page makes the advice for juniors credible. Mentioning that he is "júnior absoluto" on PlayStation 4 on a Sunday evening kept the thirty years from reading as a pedestal. What most increases my trust is that he admits mistakes: the obsolete ranking, the Opus cost he had underestimated, "errei o calendário duas vezes", "Avisei da bolha e errei a data". Where it weakens: the Akitando episodes cited by number almost as footnotes (ch14 on the "porco" before slaughter and The Social Dilemma, ch18 and ch19 several in a row). There the history stops being a lived story and becomes a list of dated proofs.
+  bragging: |
+    Mostly no, and where it comes close he usually catches himself. The passages nearest to "I told you so":
+    - ch18: "Os avisos têm data." followed by the 2019 and 2020 episodes, though the next lines concede that he did not foresee the pandemic and was wrong about 2023.
+    - ch01: "Quem foi inimigo da internet em 2001 também perdeu."
+    - ch14: "Eu tinha os meus pra mostrar, mais de trinta repositórios públicos feitos desde janeiro" (a defence of his own method, a little proud).
+    - epilogo: "Passei 2026 sem medo dessa máquina e desconfiado de quase tudo o que se dizia sobre ela, e essa combinação me serviu bem."
+    - ch20: "Meses de medição não mexeram nessa frase", about his own line that AI mirrors its user, which reads as vindication.
+    What softens these: "currículo não é argumento", the joke about Hinton's Nobel, the "A pergunta de quem ganha vale pra mim também" paragraph in ch14 and the same warning about ai-memory in ch20. A reader like me forgives the pride because he keeps turning the lens on himself.
+  inconsistency: |
+    Nothing serious, but a few places to tidy.
+    - Start of career: index says "Eu programo desde 1990 e comecei a trabalhar no fim dos anos 90", while ch18 says "nenhuma das empresas por onde passei desde 1996" and mentions starting college in 1995, and apbolhas says "Entre 1996 e 2001".
+    - Counting bubbles: ch01 "esta é a segunda bolha da IA" against apbolhas "A IA, desde novembro de 2022" as the third bubble he lived through, and ch18's "Agora assisto à bolha da IA".
+    - Length of the experience: the index says "oito meses" and "de fevereiro a outubro", but the index and ch20 also say "um ano de uso diário", and the index says he has used AI to program since early 2023. Each is explainable, but side by side they blur how long the "experiment" really was.
+    - Tone: the maxim "Sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA" is a judgement on enthusiasts, dated January 2023, long before any measuring, and the preface then says that both enthusiasts and haters "costumam falar sem ter medido nada". Later (ch20) he admits that his March claim ("boa o suficiente") was an impression. Applying the 2023 sentence to others while his own early claims were impressions is a mild tonal inconsistency, and a curious reader like me might feel gently lectured.

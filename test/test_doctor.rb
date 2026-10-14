@@ -275,7 +275,7 @@ class TestDoctor < ToolTest
     fx.write("build/logs/render-pt.log", "Output created: book.pdf\n")
     FileUtils.mkdir_p(File.join(fx.root, "build", "pt"))
     src = File.join(fx.root, "build", "t.typ")
-    File.write(src, "RANT: Did Akita Bend Over for AI?? A real question.\n")
+    File.write(src, "RANT: Did Akita Bend Over for AI?? A real question. Projetos, TESTES e Estimativa??? | Rated-R.\n")
     assert system(typst, "compile", src, File.join(fx.root, "build", "pt", "book.pdf"), out: File::NULL, err: File::NULL)
     res = doctor("--output")
     refute_match(/unresolved reference/, res.out, "a title ending in ?? must not count")
@@ -363,5 +363,21 @@ class TestDoctor < ToolTest
     refute_match(/warn  (prefacio|ch03|interlude1): opening/, res.out)
     fx.edit(fx.unit_rel("ch01")) { _1.sub("Os [modelos grandes]{.gls key=llm}", "Os [modelos grandes]{.gls key=llm} e o [token]{.gls}") }
     assert_includes doctor.out, "warn  ch01: opening paragraph uses jargon", "three marks warn"
+  end
+
+  # Guards background sources: exempt from the cut-off; an unlisted old post stays an error.
+  def test_background_source_allowed_but_unlisted_post_is_error
+    post = "2019/10/09/episodio-antigo"
+    fx.edit(fx.unit_rel("ch01")) { _1.sub("sources:\n", %(sources:\n  - {post: #{post}, sha256: "#{Fixture.sha(fx.post_path(post))}"}\n)) }
+    append("ch01", "<!-- src: #{post} -->\nEu terceirizava decisões demais.")
+    res = doctor
+    refute_match(/ch01: #{post}/, res.out)
+    assert_exit 0, res
+
+    fx.edit("book/outline.yml") { _1.sub(/^background_sources:\n.*\n/, "background_sources: []\n") }
+    res = doctor
+    assert_exit 1, res
+    assert_includes res.out, "ERROR ch01: #{post} predates the cut-off 2026-02-01"
+    assert_includes res.out, "ERROR ch01: #{post} is neither in the corpus nor in outline `background_sources`"
   end
 end

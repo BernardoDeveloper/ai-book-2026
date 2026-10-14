@@ -1,0 +1,104 @@
+# Akitando extraction, group "learning". Quotes verbatim from the transcript
+# (validated by script). Transcript carries the author's own typos; kept as-is.
+# Note: many quotes below are excerpts the author replays from OLDER episodes
+# inside ep. 76 (marked in `stance`/`claim`); the dating of those older videos
+# is given by the author in the surrounding text.
+posts:
+  - id: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r
+    title: "[Akitando] #76 - Guia DEFINITIVO de Aprendendo a Aprender | A maior BRONCA da sua vida [RATED R]"
+    one_line: "Aprender de verdade é resolver problemas sem passo a passo, achar o próprio material, ter autonomia e suportar a dor, sobre fundações obrigatórias; cursos, certificados e atalhos só dão 1%, e quando a bolha estoura sobra espaço para quem se preparou."
+    bio_facts:
+      - claim: "Em abril de 2020 diz ter quase 30 anos de experiência como programador e empreendedor; o canal tinha pouco mais de 1 ano e meio."
+        quote: "Eu sou programador e empreendedor e tenho quase 30 anos de experiência na área"
+        check: "Coerente com programação desde 1990 (profile.md). Frame como memória do autor."
+      - claim: "Aprendeu a programar antes da internet: pegava ônibus até a casa de alguém para pegar material emprestado e tirar xerox."
+        quote: "Eu aprendi a programar antes da existência da internet. Eu pegava ônibus pra ir longe na casa de alguém que tinha algum programa ou material que eu não tinha pra pegar emprestado."
+        check: "Memória do autor. Atenção: o trecho replayed de outro episódio diz 'comecei no fim dos anos 80' (Basic, dBase III, Clipper), enquanto profile.md diz 1990; usar 'começou adolescente, no início dos anos 90' ou confirmar com o autor."
+      - claim: "Por volta de 2001 estudou para a certificação de Arquiteto Enterprise da Sun, mas nem fez a prova: não quis pagar por um papel; estudou e aplicou na prática."
+        quote: "Lá por 2001 eu cheguei a estudar pra me certificar como Arquiteto Enterprise pela Sun, mas nem cheguei a fazer a prova porque eu não tava a fim de pagar só por um papel."
+        check: "Memória do autor. 'A Sun nem existe mais': Oracle comprou a Sun (anúncio 2009, fechado em jan/2010), verificável."
+      - claim: "Em 2005 a consultoria pagou o curso e a prova do PMI; ele decorou, treinou simulados e passou em 30-40 minutos; ainda assim se considerou júnior em gerenciamento por anos, até praticar."
+        quote: "Eu continuei sendo junior em gerenciamento e só depois de anos praticando eu posso dizer que aprendi o suficiente pra me considerar um gerente."
+        check: "Memória do autor; 2005 cai no período da consultoria SAP (profile.md, 2001-2006). Bom exemplo de papel sem competência, contado contra si mesmo."
+      - claim: "Abandonou a faculdade; viveu a bolha das pontocom no fim dos anos 90 e o crash de 2001."
+        quote: "E eu sei a sensação porque eu também abandonei a faculdade. Na minha época começou a Bolha das Pontocom no fim dos anos 90. E que também acabou na Crash do ano 2001."
+        check: "Consistente com ep. 90 (não terminou). Não afirmar diploma. Frame como memória; a frase 'na minha época' liga a saída da faculdade ao boom."
+      - claim: "Diz ter sobrevivido a crises em cada década (anos 90, 2000, 2010) sem grandes problemas, seguindo a regra de ser quem a empresa mantém. (Trecho replayed do vídeo de junho de 2019.)"
+        quote: "Eu sou um cético pragmático. Eu já sobrevivi a 2 ou 3 grandes crises. Sobrevivi os anos 90, os anos 2000 e os anos 2010, cada década teve uma crise e eu realmente nunca tive grandes problemas durantes esses períodos de transição."
+        check: "Autoavaliação do autor em 2019; frase delicada ('nunca tive grandes problemas'), usar com cuidado para não soar como vantagem; combina com 'uma semana desempregado' do profile.md (ep. 138)."
+      - claim: "Na Codeminer 42 (que faria 10 anos em 2021) os estagiários estudam pagos, sem material oficial, sem professor e sem gerente; o autor não indica cursos nem aos funcionários."
+        quote: "eu não indico nem pros meus funcionários, eu quero que eles se virem sozinhos, porque eu acredito que encontrar o melhor material faz parte do treinamento."
+        check: "Descrição de 2020 do processo da empresa; empresa fundada em 2011 (bate com 'completar 10 anos ano que vem'). Não usar números de 2020 (12 cidades) como atuais."
+    world_facts:
+      - claim: "Os dois vídeos replayed: janeiro de 2019 (retrospectiva/previsões: nada de novo há uns 5 anos, 'só vaporware, só hype', investir nos estudos porque a recessão podia vir) e junho de 2019 ('A Bolha de Startups vai Estourar': cuidado com startup de caixa negativo)."
+        quote: "Já faz pelo menos uns 5 anos que nada de realmente interessante aparece, só vaporware, só hype, mas nada que se provou ainda."
+        check: "Conferir datas e trechos nos próprios vídeos/posts (jan/2019 e jun/2019; ep. 50 em profile.md). Auto-citação com data: usar a data do episódio, não a do ep. 76."
+      - claim: "Em abril de 2020 declara que a bolha estourou (pandemia, dinheiro mais caro, VCs sem captar, demissões em startups) e estima que talvez metade das startups sobreviva ao próximo ano."
+        quote: "Eu chutaria que se metade sobreviver o próximo ano, deram sorte. Na prática pelo menos um quarto deve fechar as portas."
+        check: "Palpite explícito ('chutaria'). O que veio depois: o mercado de contratação voltou a esquentar em 2021 com juros zero e só estourou de novo em 2022 (profile.md: 'avisei da bolha, errei o calendário'). Usar com essa honestidade; verificar fatos de startups em factcheck.yml."
+      - claim: "Afirma que 'bolha estourou' com 'um circuit breaker 6 e contando'."
+        quote: "Repetindo, estávamos em uma bolha, que 6 circuit breakers então, e contando, estourou."
+        check: "Provavelmente impreciso: a NYSE acionou circuit breakers 4 vezes em março de 2020 (9, 12, 16 e 18/03). Se citar, não repetir o número 6."
+      - claim: "A matéria da Exame na semana do carnaval de 2020 (estagiário que recusou proposta de 10 mil reais) como exemplo de clickbait que escondia o momento de bolha."
+        quote: "Na semana do carnaval a revista Exame continuou contribuindo pra idéia errada de que programação é um dos empregos mais bem remunerados"
+        check: "Conferir a matéria da Exame (fevereiro de 2020) antes de citar; o vídeo 'Programação Não é Fácil' é de 19/02/2020 segundo o autor."
+      - claim: "A École 42: fundada pelo bilionário Xavier Niel, Nicolas Sadirac como diretor, doação de 50 milhões de euros em 2014; a unidade brasileira (42 SP) abriu em 2019, gratuita, com 'piscina' presencial de 28 dias e 21 níveis."
+        quote: "Em 2014 Xavier resolveu doar 50 milhões de euros pra um novo projeto de educação"
+        check: "Datas/valores provavelmente imprecisos: a 42 Paris abriu em 2013 (Niel financiou cerca de 20 milhões de euros inicialmente); 'Equitech 1999' parece ser a Epitech; Station F abriu em 2017, não 'começo dos anos 2010'. Se citar, só o conceito (sem turmas, sem professores, piscina), verificado em fontes públicas da 42."
+      - claim: "A tese de prática deliberada: o 'talentoso' difere pela quantidade de prática deliberada, não por dom; Mozart como modelo de copiar, testar, avaliar, corrigir e recomeçar. (Trecho replayed de 'Talento: Matando Semi-Deuses', parte 2.)"
+        quote: "Prática deliberada é sobretudo um esforço de foco e concentração. É isso que o torna \"deliberado\"."
+        check: "Base: Anders Ericsson (prática deliberada); a ideia de 10 mil horas é popularização (Gladwell) e contestada. Usar a lição (prática focada no ponto fraco), não os números. 'Mozart fazia' é afirmação histórica solta."
+      - claim: "A frase 'tempos difíceis criam pessoas fortes...' usada para ilustrar a próxima crise."
+        quote: "tempos difíceis criam pessoas fortes, pessoas fortes criam tempos fáceis, tempos fáceis criam pessoas fracas e pessoas fracas criam tempos difíceis"
+        check: "Citação popular atribuída a G. Michael Hopf (romance de 2016), frequentemente tratada como máxima; o autor diz que repete entre amigos. Evitar atribuir ao autor."
+    positions:
+      - stance: "O jeito certo de aprender, em três frases: problemas para resolver, sem material oficial (achar o próprio), sem chefe que mastiga (autonomia e responsabilidade)."
+        quote: "o jeito certo de aprender é esse: 1) dando problemas pra serem resolvidos 2) não ter nenhum material oficial, e sim forçar as pessoas a saber encontrar os materiais que precisam 3) não ter nenhum supervisor ou chefe que dá mastigado"
+      - stance: "Aprender a aprender é se virar: sem validação, sem passo a passo, suportando a dor e a frustração sem desistir. 'No pain, no gain.'"
+        quote: "aprender a se virar, sem precisar da validação de ninguém, sem ninguém pra pegar na sua mão ou te dar tapinha nas costas, mergulhar em problemas que você não sabe resolver, sofrer, se frustrar mas continuar sem desistir, apesar da dor."
+      - stance: "O que o aprendiz de curso realmente quer: livro de colorir com número e elogio barato; o incentivo do curso é manter o aluno pagante contente."
+        quote: "E você quer alguém pra te dizer “nossa, conseguiu completar o passo a passo, você vai ser um Leonardo da Vinci um dia”."
+      - stance: "Fundações antes de ferramentas: quem sabe o 'por que' troca de linguagem fácil; quem só sabe o 'como' fica escravo da primeira ferramenta."
+        quote: "Como elas aprenderam só “como” usar a ferramenta mas nunca “por que” a ferramenta existe, toda nova ferramenta confunde elas."
+      - stance: "Curso dá 1% de introdução; os 99% restantes são caçados sozinho, e não há problema em usar curso sabendo disso."
+        quote: "O objetivo é usar esses cursos onlines como mais uma ferramenta, pra rapidamente ter uma introdução, sabendo que vai aprender o 1%. Os 99% seguintes você vai ter que caçar sozinho à medida que vai precisando."
+      - stance: "O mundo real é caótico; o que importa é saber fazer a pergunta certa (o 42 do nome da empresa)."
+        quote: "o mundo de verdade é complexo, desorganizado, caótico e só quem consegue ir pra frente é quem sabe fazer as perguntas certas."
+      - stance: "Competência real tem espaço com ou sem crise; o atalho vira concorrência menor para quem fez fundação."
+        quote: "com ou sem crise, o mercado sempre tem espaço pra gente competente de verdade, aquele que realmente faz a diferença no resultado da empresa."
+      - stance: "Não terceirize a escolha do material: quem não gasta neurônios avaliando material não vira programador. Qualquer curso ou livro serve."
+        quote: "Se a pessoa sequer gasta um pouco de tempo e neurônios no exercício de avaliar material, como ele espera um dia virar programador?"
+    book_hooks:
+      - unit: ch18
+        where: "Seção sobre como juniores aprendem agora (insistir no 'por quê'): quando o agente digita, o 'como' fica barato e só o 'por que' ensina."
+        touch: "Em 2020, no vídeo 'Aprendendo a Aprender', eu já dizia que quem aprende só o \"como\" usar a ferramenta, sem nunca saber \"por que\" ela existe, fica confuso a cada ferramenta nova. Troque a ferramenta por um agente que escreve o código e a frase continua inteira: quem não entende por que o código funciona não consegue dizer quando ele está errado."
+        strength: high
+      - unit: ch08
+        where: "Driveclub/shadPS4 ('IA acelera a busca, entender continua sendo humano') e o fracasso do Frank Yomik: código rápido e inútil quando não há entendimento."
+        touch: "Em 2020 eu descrevia a armadilha dos 80/20: com 20% do conhecimento você entrega o projeto, e os últimos 20% exigem os 80% que você não tem. Com IA o primeiro código sai em minutos e a armadilha ficou mais funda, porque agora ela entrega os 20% sozinha e esconde que faltam os outros. (Pode citar a 'teoria das pirâmides' do episódio de faculdade, citada no #76.)"
+        strength: high
+      - unit: epilogo
+        where: "Seção 'O que vale aprender': o que estudar quando o digitar ficou barato."
+        touch: "Aprendi a programar antes da internet, pegando ônibus para copiar material emprestado; hoje o material sobra e a IA responde na hora, e o filtro continua o mesmo que eu descrevi em 2020: curso e resposta pronta dão 1%, os 99% você caça sozinho, e só quem tem a fundação (processos, memória, redes, o porquê das ferramentas) sabe quando a resposta está errada."
+        strength: high
+      - unit: epilogo
+        where: "Seção 'Pra esta semana': exercício prático para o leitor."
+        touch: "Escolha um problema pequeno que você não sabe resolver, sem tutorial, e use a IA só para tirar dúvidas pontuais, como a 42 trata os colegas. Escreva dezenas de testes, tente primeiro sozinho, só depois peça a resposta e compare. Em 2020 eu citava a regra da prática deliberada: achar o ponto exato em que você falha e forçar nele, centenas de vezes. Se não incomoda, não é aprendizado."
+        strength: high
+      - unit: ch18
+        where: "Trecho sobre a bolha de programação de 2014-2022 estourando antes dos LLMs, e a tese 'a carreira não acaba, o atalho acaba'."
+        touch: "Em abril de 2020 eu disse que a bolha tinha estourado e que quem pegou atalho (cursos curtos, certificado, nenhuma fundação) perderia o espaço; errei o calendário, porque o mercado esquentou de novo em 2021 antes de cair de vez em 2022. A parte que não errei é a regra: quando a demanda seca, as empresas ficam com quem entrega resultado. O que mudou em 2026 é a ferramenta, não o filtro."
+        strength: medium
+      - unit: ch19
+        where: "Tese de que LLMs amplificam processos cheios de gente treinada a não decidir; ciclos curtos de decidir-implementar-testar-revisar."
+        touch: "Na minha empresa, desde antes de 2020, ninguém recebia tarefa para fazer às cegas: cada um falava direto com o cliente e aprendia a questionar se aquilo devia mesmo ser feito. Eu não era creche: contratava adulto. É o mesmo teste que vale para a IA na sua empresa: onde ninguém está acostumado a decidir, o agente só acelera a espera pela ordem."
+        strength: medium
+      - unit: ch04
+        where: "Abertura sobre o modelo que concorda com você (bajulação) e o perigo de pedir validação a uma máquina."
+        touch: "Em 2020 eu escrevi que o aluno de curso quer \"um elogio barato\" e que o curso tem incentivo para mantê-lo pagando e contente. Um chatbot tem o mesmo incentivo embutido, só que mais barato e sem parar: pergunte a ele se você é um Leonardo da Vinci."
+        strength: medium
+      - unit: ch14
+        where: "Seção sobre intermediários (influencers, coaches) que inventam a próxima 'coisa' para vender; hype de IA/data science como marketing."
+        touch: "Em 2020 eu já apontava que influencers e coaches inventavam coisas novas (Data Science, Machine Learning, Inteligência Artificial) para atrair gente num mercado aquecido, e que a maioria das empresas só fazia o básico com isso. A etiqueta mudou, o negócio é o mesmo: a quem essa mensagem beneficia?"
+        strength: low
+    appendix_candidate: "Roteiro curto 'Como estudar com a IA do lado' (apêndice, 2 a 3 páginas): as três regras do #76 (problemas, material que você acha, autonomia) aplicadas a um aprendiz com agente; uma lista de fundações que não envelhecem (processos, threads, alocação de memória, scheduler, container vs hypervisor, algoritmos e estruturas de dados, estatística), o modelo da 42 (sem aula, com piscina de problemas e revisão por colegas) como inspiração, e a regra de 'tentar sozinho antes de perguntar à máquina'. Serve ao leitor que chegou assustado e pergunta 'o que estudo agora', sem prometer nada e sem citar curso."

@@ -71,7 +71,7 @@ blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 Em outubro de 2026, quando refiz a linha do tempo da IA pra escrever a síntese do ano, ela se dividiu sozinha em fases: a guerra dos parâmetros, o pico do raciocínio, a otimização e a era dos agentes. O @sec-ch20 conta essa história. Este apêndice guarda a lista completa, pra consulta.
 
 <!-- src: original -->
-Ela tem três partes. A primeira vai do Perceptron, em 1957, ao lançamento do ChatGPT, no fim de 2022. A segunda cobre os três anos em que os laboratórios trocaram tamanho por eficiência e o modelo ganhou mãos. A terceira é 2026 mês a mês, com o que este livro conta e o capítulo onde cada coisa aparece.
+Ela tem três partes. A primeira vai do Perceptron, em 1957, ao lançamento do ChatGPT, no fim de 2022, e fecha com os livros de método em que este livro se apoia. A segunda cobre os três anos em que os laboratórios trocaram tamanho por eficiência e o modelo ganhou mãos. A terceira é 2026 mês a mês, com o que este livro conta e o capítulo onde cada coisa aparece.
 
 Os nomes de modelo são detalhes de época, como os modelos de carro num romance. Cada data é a do capítulo que conta o episódio, e quando o capítulo só diz o mês, aqui também fica só o mês.
 
@@ -100,6 +100,20 @@ O primeiro hype da inteligência artificial tem quase setenta anos. O resto dest
 | 2021 | Dario Amodei, coautor do anúncio do GPT-2, já comanda a Anthropic [@anthropic2021raises] | @sec-ch01 |
 | 2022 | A Chinchilla, do DeepMind, com 70 bilhões de parâmetros e umas quatro vezes mais texto, bate o Gopher, de 280 bilhões: os gigantes estavam mal alimentados de dados [@hoffmann2022training] | @sec-ch20 |
 | fim de 2022 | A OpenAI lança o ChatGPT [@openai2022chatgpt] | @sec-ch01 |
+
+### O método veio antes
+
+<!-- src: original -->
+As práticas que sustentaram os meus projetos com agentes são décadas mais velhas que eles. Estas são as datas dos livros e textos de onde elas vêm, e o capítulo em que cada um aparece.
+
+| Quando | O quê | Onde |
+|---|---|---|
+| 1972 | Gordon Bell formula a lei que leva o nome dele: mais ou menos a cada década nasce uma nova classe de computador, com nova plataforma e nova interface [@wikipedia2026belllaw] | @sec-ch18 |
+| 1975 | Fred Brooks publica *The Mythical Man-Month*, com o capítulo "Plan to throw one away"; a edição de 20 anos sai em 1995 [@brooks1975mythical; @brooks1995mythical] | @sec-ch19 |
+| 1986 | Brooks apresenta "No Silver Bullet": nenhuma técnica sozinha promete, numa década, multiplicar por dez a produtividade do software; o texto fica famoso na revista *Computer*, em 1987 [@brooks1987silver] |  |
+| 1999 | Kent Beck publica *Extreme Programming Explained*, o livro do [XP]{.gls key=xp} [@beck1999xp] | @sec-ch06, @sec-ch19 |
+| fev. 2001 | Dezessete pessoas escrevem o Manifesto Ágil em Snowbird, Utah [@agile2001history] | @sec-ch19 |
+| 2003 | Eric Evans publica *Domain-Driven Design*: o software se modela a partir do conhecimento de quem vive o negócio [@evans2003ddd] | @sec-epilogo |
 
 ## Do ChatGPT aos agentes
 

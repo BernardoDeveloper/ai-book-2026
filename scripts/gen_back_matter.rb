@@ -21,8 +21,10 @@ posts = YAML.load_file(File.join(ROOT, "inventory", "posts.yml"))["posts"].to_h 
 
 T = {
   "pt" => { gls: "Glossário", refs: "Referências", src: "Fontes: os artigos originais",
+            bg: "Episódios anteriores citados (Akitando, 2018-2023)",
             src_intro: "Este livro nasceu de artigos publicados em akitaonrails.com ao longo de 2026. Cada capítulo abaixo lista os artigos de que deriva, para quem quiser ler a versão original, com o contexto e as datas em que foram escritos." },
   "en" => { gls: "Glossary", refs: "References", src: "Sources: the original articles",
+            bg: "Earlier episodes cited (Akitando, 2018-2023)",
             src_intro: "This book grew out of articles published on akitaonrails.com during 2026. Each chapter below lists the articles it derives from, for readers who want the original, dated versions." },
 }.fetch(lang)
 
@@ -38,12 +40,15 @@ File.write(File.join(dir, "bibliografia.md"), "# #{T[:refs]} {#sec-bibliografia 
 
 units = outline["front"] + outline["parts"].flat_map { _1["chapters"] || [_1] } + outline["back"]
 lines = ["# #{T[:src]} {#sec-fontes .unnumbered}", "", T[:src_intro], ""]
+cited_background = []
 units.each do |u|
   file = File.join(dir, u["id"] == "prefacio" ? "index.md" : "#{u['id']}.md")
   next unless File.exist?(file)
 
   fm = front_matter(file)
   srcs = Array(fm["sources"]).map { _1["post"] }.uniq
+  cited_background.concat(srcs.select { posts.dig(_1, "background") })
+  srcs.reject! { posts.dig(_1, "background") }
   next if srcs.empty?
 
   # Plain titles: Typst can't cross-reference unnumbered units (preface, interludes).
@@ -54,6 +59,16 @@ units.each do |u|
     url = lang == "en" && p["url_en"] ? p["url_en"] : p["url_pt"]
     date = Date.parse(p["date"]).strftime("%d/%m/%Y")
     lines << "- #{date}: *#{title.gsub('*', '')}*. <#{url}>"
+  end
+  lines << ""
+end
+unless cited_background.empty?
+  lines << "**#{T[:bg]}**" << ""
+  cited_background.uniq.sort.each do |id|
+    p = posts[id]
+    title = (lang == "en" && p["en"] ? p["en"]["title"] : p["pt"]["title"]).to_s
+    url = lang == "en" && p["url_en"] ? p["url_en"] : p["url_pt"]
+    lines << "- #{Date.parse(p['date']).strftime('%d/%m/%Y')}: *#{title.gsub('*', '')}*. <#{url}>"
   end
   lines << ""
 end

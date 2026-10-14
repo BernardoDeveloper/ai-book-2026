@@ -147,3 +147,10 @@ references:
     URL: "https://arxiv.org/abs/1712.01815"
     accessed: {date-parts: [[2026, 10, 13]]}
     note: "cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas"
+  - id: akitando034
+    type: "post-weblog"
+    title: "[Akitando] #34 - Você não sabe nada de Enterprise. Conhecendo a SAP!"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2018, 12, 26]]}
+    URL: "https://akitaonrails.com/2018/12/26/akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap/"

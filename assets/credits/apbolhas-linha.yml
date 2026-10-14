@@ -1,0 +1,24 @@
+---
+id: apbolhas-linha
+kind: chart_code
+file: assets/figures/apbolhas-linha.png
+sha256: 99ef580e0da335c3b79e50f3a647456a67a97cc8c2e8460d08a2301260d3dabc
+pixels:
+  width: 2160
+  height: 1245
+source: assets/charts/apbolhas-linha.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I scripts/chart_check.py assets/charts/apbolhas-linha.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+description: 'apbolhas-linha: Three bubbles on one timeline, 1995-2026, with the narrator''s lane.'
+chapters:
+- apbolhas
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

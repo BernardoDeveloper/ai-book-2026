@@ -1,94 +1,168 @@
+---
 references:
-  - id: martin2008clean
-    type: "book"
-    title: "Clean Code: A Handbook of Agile Software Craftsmanship"
-    author: [{family: "Martin", given: "Robert C."}]
-    publisher: "Prentice Hall"
-    publisher-place: "Upper Saddle River, NJ"
-    ISBN: "978-0132350884"
-    issued: {date-parts: [[2008]]}
-    URL: "https://www.oreilly.com/library/view/clean-code-a/9780136083238/"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/04/20/clean-code-para-agentes-de-ia (named in the post without a link; well-known bibliographic fact)"
-  - id: anthropic2025agentskills
-    type: "webpage"
-    title: "Equipping agents for the real world with Agent Skills"
-    author: [{literal: "Anthropic"}]
-    container-title: "Anthropic Engineering"
-    issued: {date-parts: [[2025, 10, 16]]}
-    URL: "https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia"
-  - id: anthropic2025writingtools
-    type: "webpage"
-    title: "Writing effective tools for agents, with agents"
-    author: [{literal: "Anthropic"}]
-    container-title: "Anthropic Engineering"
-    issued: {date-parts: [[2025, 9, 11]]}
-    URL: "https://www.anthropic.com/engineering/writing-tools-for-agents"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia"
-  - id: wikipedia2025signsai
-    type: "webpage"
-    title: "Wikipedia:Signs of AI writing"
-    author: [{literal: "WikiProject AI Cleanup"}]
-    container-title: "Wikipedia"
-    issued: {date-parts: [[2025]]}
-    URL: "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia"
-  - id: akita2026myskills
-    type: "software"
-    title: "my-skills"
-    author: [{family: "Akita", given: "Fabio"}]
-    container-title: "GitHub"
-    issued: {date-parts: [[2026, 7, 10]]}
-    URL: "https://github.com/akitaonrails/my-skills"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia (public repository)"
-  - id: akita2019terceirize
-    type: "motion_picture"
-    title: "Akitando #63: Não terceirize suas decisões, a lição mais importante da sua vida"
-    author: [{family: "Akita", given: "Fabio"}]
-    container-title: "YouTube"
-    issued: {date-parts: [[2019, 10, 9]]}
-    URL: "https://www.youtube.com/watch?v=D3L8IOncLkg"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia"
-  - id: openai2023custominstructions
-    type: "webpage"
-    title: "ChatGPT Custom Instructions"
-    author: [{literal: "OpenAI"}]
-    container-title: "OpenAI Help Center"
-    issued: {date-parts: [[2023]]}
-    URL: "https://help.openai.com/en/articles/8096356-chatgpt-custom-instructions"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: original bridge in ch09 (verified online; not in the posts)"
-  - id: adams1979guia
-    type: "book"
-    title: "The Hitchhiker's Guide to the Galaxy"
-    author: [{family: "Adams", given: "Douglas"}]
-    publisher: "Pan Books"
-    publisher-place: "London"
-    issued: {date-parts: [[1979, 10, 12]]}
-    URL: "https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy_(novel)"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/04/15/como-falar-com-o-claude-code-efetivamente (named without a link; verified)"
-  - id: favreau2008ironman
-    type: "motion_picture"
-    title: "Iron Man"
-    author: [{family: "Favreau", given: "Jon"}]
-    publisher: "Marvel Studios"
-    issued: {date-parts: [[2008]]}
-    URL: "https://en.wikipedia.org/wiki/Iron_Man_(2008_film)"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/04/15/como-falar-com-o-claude-code-efetivamente (Mark I built in a cave, Mark II icing; verified)"
-  - id: russo2019endgame
-    type: "motion_picture"
-    title: "Avengers: Endgame"
-    author: [{family: "Russo", given: "Anthony"}, {family: "Russo", given: "Joe"}]
-    publisher: "Marvel Studios"
-    issued: {date-parts: [[2019]]}
-    URL: "https://en.wikipedia.org/wiki/Avengers:_Endgame"
-    accessed: {date-parts: [[2026, 10, 13]]}
-    note: "cited-by: 2026/04/15/como-falar-com-o-claude-code-efetivamente (Mark 85 as Stark's final armor; verified)"
+- id: martin2008clean
+  type: book
+  title: 'Clean Code: A Handbook of Agile Software Craftsmanship'
+  author:
+  - family: Martin
+    given: Robert C.
+  publisher: Prentice Hall
+  publisher-place: Upper Saddle River, NJ
+  ISBN: 978-0132350884
+  issued:
+    date-parts:
+    - - 2008
+  URL: https://www.oreilly.com/library/view/clean-code-a/9780136083238/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/20/clean-code-para-agentes-de-ia (named in the post without
+    a link; well-known bibliographic fact)'
+- id: anthropic2025agentskills
+  type: webpage
+  title: Equipping agents for the real world with Agent Skills
+  author:
+  - literal: Anthropic
+  container-title: Anthropic Engineering
+  issued:
+    date-parts:
+    - - 2025
+      - 10
+      - 16
+  URL: https://www.anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia'
+- id: anthropic2025writingtools
+  type: webpage
+  title: Writing effective tools for agents, with agents
+  author:
+  - literal: Anthropic
+  container-title: Anthropic Engineering
+  issued:
+    date-parts:
+    - - 2025
+      - 9
+      - 11
+  URL: https://www.anthropic.com/engineering/writing-tools-for-agents
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia'
+- id: wikipedia2025signsai
+  type: webpage
+  title: Wikipedia:Signs of AI writing
+  author:
+  - literal: WikiProject AI Cleanup
+  container-title: Wikipedia
+  issued:
+    date-parts:
+    - - 2025
+  URL: https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia'
+- id: akita2026myskills
+  type: software
+  title: my-skills
+  author:
+  - family: Akita
+    given: Fabio
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2026
+      - 7
+      - 10
+  URL: https://github.com/akitaonrails/my-skills
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia (public repository)'
+- id: openai2023custominstructions
+  type: webpage
+  title: ChatGPT Custom Instructions
+  author:
+  - literal: OpenAI
+  container-title: OpenAI Help Center
+  issued:
+    date-parts:
+    - - 2023
+  URL: https://help.openai.com/en/articles/8096356-chatgpt-custom-instructions
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: original bridge in ch09 (verified online; not in the posts)'
+- id: adams1979guia
+  type: book
+  title: The Hitchhiker's Guide to the Galaxy
+  author:
+  - family: Adams
+    given: Douglas
+  publisher: Pan Books
+  publisher-place: London
+  issued:
+    date-parts:
+    - - 1979
+      - 10
+      - 12
+  URL: https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy_(novel)
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/15/como-falar-com-o-claude-code-efetivamente (named without
+    a link; verified)'
+- id: favreau2008ironman
+  type: motion_picture
+  title: Iron Man
+  author:
+  - family: Favreau
+    given: Jon
+  publisher: Marvel Studios
+  issued:
+    date-parts:
+    - - 2008
+  URL: https://en.wikipedia.org/wiki/Iron_Man_(2008_film)
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/15/como-falar-com-o-claude-code-efetivamente (Mark I built
+    in a cave, Mark II icing; verified)'
+- id: russo2019endgame
+  type: motion_picture
+  title: 'Avengers: Endgame'
+  author:
+  - family: Russo
+    given: Anthony
+  - family: Russo
+    given: Joe
+  publisher: Marvel Studios
+  issued:
+    date-parts:
+    - - 2019
+  URL: https://en.wikipedia.org/wiki/Avengers:_Endgame
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 13
+  note: 'cited-by: 2026/04/15/como-falar-com-o-claude-code-efetivamente (Mark 85 as
+    Stark''s final armor; verified)'

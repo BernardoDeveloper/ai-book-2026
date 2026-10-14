@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Builds inventory/posts.yml: one entry per blog post of the target year,
+# Builds inventory/posts.yml: one entry per blog post of the target year (plus
+# the outline's `background_sources`, flagged `background: true`),
 # with content hashes for both language siblings. The hashes are the
 # provenance anchor: book chapters record the hash they were written from,
 # and scripts/drift.rb compares them against this file.
@@ -48,7 +49,7 @@ def read_post(path)
   }
 end
 
-posts = Dir.glob(File.join(opts[:blog], "content", opts[:year], "*/*/*/index.md")).sort.map do |pt_path|
+build_entry = lambda do |pt_path|
   dir = File.dirname(pt_path)
   id = dir.delete_prefix(File.join(opts[:blog], "content") + "/")
   pt = read_post(pt_path)
@@ -64,9 +65,26 @@ posts = Dir.glob(File.join(opts[:blog], "content", opts[:year], "*/*/*/index.md"
   }
 end
 
+posts = Dir.glob(File.join(opts[:blog], "content", opts[:year], "*/*/*/index.md")).sort.map { build_entry.(_1) }
+
+# Background sources (outline `background_sources`): older posts outside the
+# corpus that paragraphs may cite. Same record, flagged `background: true`.
+outline_path = File.join(ROOT, "book", "outline.yml")
+background = File.exist?(outline_path) ? Array((YAML.load_file(outline_path) || {})["background_sources"]) : []
+background.map { _1["post"] }.uniq.each do |id|
+  next if posts.any? { _1["id"] == id }
+
+  path = File.join(opts[:blog], "content", id, "index.md")
+  unless File.exist?(path)
+    warn "background source #{id} not found in the blog"
+    next
+  end
+  posts << build_entry.(path).merge("background" => true)
+end
+
 out = File.join(ROOT, "inventory", "posts.yml")
 commit = `git -C #{opts[:blog]} rev-parse HEAD`.strip
 dirty = `git -C #{opts[:blog]} status --porcelain -- content/#{opts[:year]}`.lines.map { _1[3..].strip }
 File.write(out, { "generated_from" => opts[:blog], "blog_commit" => commit, "dirty_files" => dirty,
                   "year" => opts[:year], "posts" => posts }.to_yaml)
-warn "wrote #{posts.size} posts to #{out.delete_prefix(ROOT + '/')}"
+warn "wrote #{posts.size} posts (#{background.size} background) to #{out.delete_prefix(ROOT + '/')}"

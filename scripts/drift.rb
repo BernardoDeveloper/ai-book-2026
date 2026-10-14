@@ -18,6 +18,9 @@
 #      refreshes the file when the parked text was reviewed (or the topic is
 #      unparked and the file removed). book/<lang>/_staging is never scanned.
 #
+# Background posts (outline `background_sources`, flagged in the inventory) need
+# no analysis and are never NEW/UNUSED; chapters citing them go STALE as usual.
+#
 # For each stale chapter source it prints the blog diff since the recorded
 # commit, so the update can touch only the paragraphs marked
 # `<!-- src: <post> -->` that the change affects.
@@ -72,7 +75,8 @@ Dir.glob(File.join(ROOT, "book", opts[:lang], "**", "*.md")).sort.reject { _1.in
     if post.nil?
       puts "  MISSING  #{rel}: #{src['post']} no longer exists in the blog"
       problems += 1
-    elsif post.dig(lang_key, "sha256") != src["sha256"]
+    elsif (post.dig(lang_key, "sha256").to_s.empty? ? post.dig("pt", "sha256") : post.dig(lang_key, "sha256")) != src["sha256"]
+      # (a post with no English version, e.g. a background post, is tracked by its PT text)
       puts "  STALE    #{rel}: #{src['post']}"
       problems += 1
       next unless opts[:diff]
@@ -151,7 +155,7 @@ end
 
 analyzed = Dir.glob(File.join(ROOT, "inventory", "analysis", "*.yml")).to_h { |p| a = YAML.load_file(p); [a["id"], a] }
 puts "== Coverage"
-(by_id.keys - analyzed.keys).each do |id|
+(by_id.reject { |_, p| p["background"] }.keys - analyzed.keys).each do |id|
   puts "  NEW      #{id} has no analysis yet"
   problems += 1
 end

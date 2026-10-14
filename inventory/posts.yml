@@ -16647,3 +16647,576 @@ posts:
       url: https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/
     images: []
     youtube: []
+- id: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software
+  date: '2018-11-01T17:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software/
+  url_en:
+  pt:
+    sha256: 6afb9177adc80777cde8f912ba26b3c729b1ea9890212e11ec42ed68f7f73cbb
+    title: "[Akitando] #23 - The MM-M: O Melhor Livro de Software?"
+    description: Akita revisita The Mythical Man-Month, de 1975, para mostrar que
+      comunicação, equipes pequenas, integridade conceitual, testes e construção incremental
+      continuam resolvendo problemas atuais.
+    slug: akitando-23-the-mm-m-o-melhor-livro-de-software
+    tags:
+    - engenharia-de-software
+    - gestao
+    - agile
+    - akitando
+    words: 3571
+    links:
+    - text: Akitando
+      url: https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ
+    images: []
+    youtube:
+    - wcGGklDfHM4
+  en:
+  background: true
+- id: 2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego
+  date: '2018-11-27T17:00:00-02:00'
+  url_pt: https://www.akitaonrails.com/2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego/
+  url_en:
+  pt:
+    sha256: 4e03cdaf5c4eaf7108dc08cdc62593928e57932089357a36b6111c3e601e5c74
+    title: "[Akitando] #29 - O que eu devo estudar? Vou conseguir emprego?"
+    description: Akita discute como equilibrar empregabilidade e estudo de novas linguagens,
+      defendendo domínio técnico no trabalho e aprendizado de longo prazo. Um legado
+      em ASP abriu caminho para seu maior projeto Java.
+    slug: akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego
+    tags:
+    - carreira
+    - aprendizado
+    - linguagens-de-programacao
+    - akitando
+    words: 3624
+    links:
+    - text: Akitando
+      url: https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ
+    images: []
+    youtube:
+    - Ll1uAZ-WRa0
+  en:
+  background: true
+- id: 2018/12/26/akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap
+  date: '2018-12-26T17:00:00-02:00'
+  url_pt: https://www.akitaonrails.com/2018/12/26/akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap/
+  url_en:
+  pt:
+    sha256: 46691d1aa6f8602ea97cfb27c0610c79945c18d19fdf844aed3011108f5150fb
+    title: "[Akitando] #34 - Você não sabe nada de Enterprise. Conhecendo a SAP!"
+    description: A partir de cinco anos com SAP, Akita explica R/3, ABAP, localização
+      brasileira, NetWeaver, HANA e S/4HANA, defendendo que o enterprise ensina regras
+      de negócio difíceis de aprender fora dele.
+    slug: akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap
+    tags:
+    - negocios
+    - arquitetura-de-software
+    - programacao
+    - akitando
+    words: 5980
+    links:
+    - text: Akitando
+      url: https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ
+    images: []
+    youtube:
+    - FXhcfJnlD2k
+  en:
+  background: true
+- id: 2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40
+  date: '2019-01-30T17:00:00-02:00'
+  url_pt: https://www.akitaonrails.com/2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40/
+  url_en:
+  pt:
+    sha256: 2967219d4522e021e87fb0f1e232d619cac1656dd5ed815a4d7b154c9174a420
+    title: '[Akitando] #37 - A Dimensão do TEMPO para Iniciantes em Programação |
+      Série "Começando aos 40"'
+    description: Saltos entre 1985 e 2015 mostram a velocidade das mudanças em linguagens,
+      empresas e plataformas. Akita recomenda planejar a carreira sem transformar
+      metas atuais em dogmas.
+    slug: akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40
+    tags:
+    - historia-da-computacao
+    - mercado-de-tecnologia
+    - carreira
+    - akitando
+    words: 3029
+    links:
+    - text: Akitando
+      url: https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ
+    images: []
+    youtube:
+    - Qb5b8ZE9tIY
+  en:
+  background: true
+- id: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+  date: '2019-06-11T17:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming/
+  url_en:
+  pt:
+    sha256: ef99201b54eac4d40fa676dd8c2b21cba025e15843c437512218e253bc570a94
+    title: "[Akitando] #50 - A Bolha de Startups vai Estourar? | Winter is Coming"
+    description: Fabio analisa sinais de uma possível correção na bolha de startups,
+      como valuations inflados, IPOs fracos e negócios sem lucro, e defende programação,
+      prática e visão de longo prazo.
+    slug: akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+    tags:
+    - startups
+    - mercado-de-tecnologia
+    - carreira
+    - akitando
+    words: 5734
+    links: []
+    images: []
+    youtube:
+    - wpPv1dJWjDs
+  en:
+  background: true
+- id: 2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r
+  date: '2019-06-18T17:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r/
+  url_en:
+  pt:
+    sha256: 5635e425c4ab4c02cb953cf4aa5177477bd5f803432bdf1eb8b906e8b2cf868a
+    title: '[Akitando] #51 - Esqueça Metodologias "Ágeis" | [Rated R]'
+    description: 'Fabio critica o Ágil vendido como processo, métrica ou cerimônia
+      e recupera a ideia central: profissionais responsáveis devem usar práticas como
+      XP para entregar valor e tomar decisões reais.'
+    slug: akitando-51-esqueca-metodologias-ageis-rated-r
+    tags:
+    - agile
+    - engenharia-de-software
+    - akitando
+    words: 5454
+    links: []
+    images: []
+    youtube:
+    - xjjX3R2WuoM
+  en:
+  background: true
+- id: 2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1
+  date: '2019-06-25T17:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2019/06/25/akitando-52-10-mitos-sobre-tech-startups-parte-1/
+  url_en:
+  pt:
+    sha256: 458528ef541ce584319e4e0ce6341bb0a88c3cc21c5d285190401d62a9ab2d54
+    title: "[Akitando] #52 - 10 Mitos sobre Tech Startups | Parte 1"
+    description: 'Fabio questiona os cinco primeiros mitos de startups: boas ideias
+      e produtos não bastam, programadores “ninja” não existem, empreender não é ser
+      o próprio chefe e horas extras não criam eficiência.'
+    slug: akitando-52-10-mitos-sobre-tech-startups-parte-1
+    tags:
+    - startups
+    - negocios
+    - mercado-de-tecnologia
+    - akitando
+    words: 4501
+    links: []
+    images: []
+    youtube:
+    - jkHnPxsiyGk
+  en:
+  background: true
+- id: 2019/09/12/akitando-61-meus-primeiros-5-anos-1990-1995
+  date: '2019-09-12T11:03:00-03:00'
+  url_pt: https://www.akitaonrails.com/2019/09/12/akitando-61-meus-primeiros-5-anos-1990-1995/
+  url_en:
+  pt:
+    sha256: 7d59df780eece1f551ffcef4459ae5d1d5a4cc991b76901271022cc78264b3b0
+    title: "[Akitando] #61 - Meus Primeiros 5 Anos | 1990-1995"
+    description: Dos 13 aos 18 anos, Akita aprendeu Basic, dBase, Clipper, CorelDraw
+      e UNIX movido por curiosidade e projetos banais. A trajetória mostra como uma
+      coisa levou à outra sem um plano fixo.
+    slug: akitando-61-meus-primeiros-5-anos-1990-1995
+    tags:
+    - pessoal
+    - historia-da-computacao
+    - retrocomputacao
+    - akitando
+    words: 6757
+    links: []
+    images: []
+    youtube:
+    - ksZjJQiaK2Y
+  en:
+  background: true
+- id: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida
+  date: '2019-10-09T11:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida/
+  url_en:
+  pt:
+    sha256: 2727fad41f2e46b8df4cbc36d4a7283894b02413b94f973356d5b2cb72845683
+    title: "[Akitando] #63 - Não Terceirize suas Decisões! | A Lição MAIS Importante
+      da sua Vida"
+    description: Akita defende assumir as próprias decisões, testar hipóteses e aceitar
+      perdas pequenas. Soluções de Netflix, Google ou Spotify só fazem sentido quando
+      combinam com seu contexto.
+    slug: akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida
+    tags:
+    - pessoal
+    - carreira
+    - akitando
+    words: 5254
+    links: []
+    images: []
+    youtube:
+    - D3L8IOncLkg
+  en:
+  background: true
+- id: 2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia
+  date: '2019-10-16T11:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia/
+  url_en:
+  pt:
+    sha256: cd31dbb01c28351c9a6ce7e304fb46766c33c8d6f8178fa8373f429c37ca6ae7
+    title: "[Akitando] #64 - Começando na Carreira de TI | Faculdade? Níveis de Experiência?"
+    description: Akita compara cursos de Computação, Engenharia de Software e Sistemas
+      de Informação e explica que a senioridade depende de experiência, decisões confiáveis,
+      orientação e revisão de código.
+    slug: akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia
+    tags:
+    - carreira
+    - aprendizado
+    - engenharia-de-software
+    - akitando
+    words: 7235
+    links: []
+    images: []
+    youtube:
+    - H84WD_xyj10
+  en:
+  background: true
+- id: 2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros
+  date: '2019-10-23T11:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros/
+  url_en:
+  pt:
+    sha256: 2b05e6d3d26f3a619e53e6350dcbcd6a3f36c3ea7a77961ce845ddbe9561b322
+    title: "[Akitando] #65 - A Dor de Aprender | Que Cursos/Livros?"
+    description: 'Akita defende prática deliberada e fundamentos: cursos e livros
+      ajudam, mas não substituem copiar, quebrar e ler código. Algoritmos e estruturas
+      de dados vêm antes de Design Patterns.'
+    slug: akitando-65-a-dor-de-aprender-que-cursos-livros
+    tags:
+    - aprendizado
+    - algoritmos-e-estruturas-de-dados
+    - akitando
+    words: 7630
+    links: []
+    images: []
+    youtube:
+    - HEaIsKm-pao
+  en:
+  background: true
+- id: 2019/12/11/akitando-69-respondendo-suas-perguntas-sobre-carreira-via-instagram
+  date: '2019-12-11T11:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2019/12/11/akitando-69-respondendo-suas-perguntas-sobre-carreira-via-instagram/
+  url_en:
+  pt:
+    sha256: c1ab4a9848efd61256aa06a88033aa24022d214091f472ab2327c7be5566a2e4
+    title: "[Akitando] #69 - Respondendo suas Perguntas sobre Carreira | via Instagram"
+    description: Akita responde 10 dúvidas de iniciantes sobre carreira, do trabalho
+      com tecnologias legadas no interior ao inglês, prática, níveis de experiência
+      e os riscos de empreender cedo.
+    slug: akitando-69-respondendo-suas-perguntas-sobre-carreira-via-instagram
+    tags:
+    - carreira
+    - aprendizado
+    - startups
+    - akitando
+    words: 7674
+    links: []
+    images: []
+    youtube:
+    - "-URfFFxQ3Rk"
+  en:
+  background: true
+- id: 2020/02/19/akitando-72-rant-programacao-nao-e-facil
+  date: '2020-02-19T10:30:00-03:00'
+  url_pt: https://www.akitaonrails.com/2020/02/19/akitando-72-rant-programacao-nao-e-facil/
+  url_en:
+  pt:
+    sha256: 1698c845d192d05df2bd2c1caf5ead84f64bf17755c60625dfb682bae16cc64d
+    title: "[Akitando] #72 - RANT: Programação NÃO É Fácil"
+    description: Akita desmonta a ideia de que programação é fácil ao ligar a corrida
+      por profissionais à abundância artificial do mercado. Sobreviver exige interesse
+      genuíno, prática prolongada e fundamentos para resolver problemas reais.
+    slug: akitando-72-rant-programacao-nao-e-facil
+    tags:
+    - programacao
+    - aprendizado
+    - carreira
+    - akitando
+    words: 5547
+    links: []
+    images: []
+    youtube:
+    - V7oUDL7E1g4
+  en:
+  background: true
+- id: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r
+  date: '2020-04-01T10:41:00-03:00'
+  url_pt: https://www.akitaonrails.com/2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r/
+  url_en:
+  pt:
+    sha256: 4c8343cf9487f3e389341a2e5654a423cb2ff2cced3ecbbddb5aed5385b544c1
+    title: "[Akitando] #76 - Guia DEFINITIVO de Aprendendo a Aprender | A maior BRONCA
+      da sua vida [RATED R]"
+    description: Akita questiona atalhos de cursos e certificados e defende aprender
+      programação com fundamentos, problemas reais, autonomia e prática. Na 42 SP,
+      encontra esse modelo aplicado numa escola gratuita e seletiva.
+    slug: akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r
+    tags:
+    - aprendizado
+    - programacao
+    - akitando
+    words: 12029
+    links: []
+    images: []
+    youtube:
+    - oUPaJxk6TZ0
+  en:
+  background: true
+- id: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+  date: '2020-09-30T19:15:00-03:00'
+  url_pt: https://www.akitaonrails.com/2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado/
+  url_en:
+  pt:
+    sha256: 7ee4001a6b6712e98fa2deb8acf37d0ffc33fde8b0b8ed7838b2c4d59e3aa02d
+    title: '[Akitando #84] Entendendo "O Dilema Social" e Como Você é Manipulado'
+    description: Akita disseca The Social Dilemma, explica machine learning, manipulação
+      e Bayes, e dá nota 5/10 ao documentário. Para ele, pensamento crítico importa
+      mais que culpar as ferramentas.
+    slug: akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado
+    tags:
+    - machine-learning
+    - psicologia
+    - cinema-e-cultura-pop
+    - akitando
+    words: 9279
+    links: []
+    images: []
+    youtube:
+    - mNHKNyhSn8I
+  en:
+  background: true
+- id: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados
+  date: '2021-01-06T10:30:00-03:00'
+  url_pt: https://www.akitaonrails.com/2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados/
+  url_en:
+  pt:
+    sha256: 5a6b08a8fdebc6eac5511e470883960e1f763187351f8df54e684349eee446c1
+    title: "[Akitando] #90 - O que os Cursos NÃO te Ensinam sobre Mercados"
+    description: Akita relaciona ciclos de oferta e procura, matemática, fundamentos
+      e segurança ao mercado de programação. Ferramentas envelhecem, mas aprender
+      a raciocinar e estudar sozinho sustenta a carreira.
+    slug: akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados
+    tags:
+    - carreira
+    - aprendizado
+    - mercado-de-tecnologia
+    - akitando
+    words: 4326
+    links: []
+    images: []
+    youtube:
+    - L0hTOY5n9G8
+  en:
+  background: true
+- id: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+  date: '2021-06-22T12:07:00-03:00'
+  url_pt: https://www.akitaonrails.com/2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita/
+  url_en:
+  pt:
+    sha256: 04d2af19a6d40c3915c19ae146e71b3806843b736d6c932abd86444429784740
+    title: "[Akitando] #100 - Mercado Financeiro Pós-Pandemia: A Tempestade Perfeita?"
+    description: Akita analisa a economia pós-pandemia e argumenta que estímulos e
+      juros baixos inflaram mercados, venture capital e SPACs, enquanto inflação e
+      promessas de riqueza fácil ampliaram os riscos.
+    slug: akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+    tags:
+    - economia
+    - mercado-de-tecnologia
+    - startups
+    - akitando
+    words: 8441
+    links: []
+    images: []
+    youtube:
+    - b-jnMi5Ff0I
+  en:
+  background: true
+- id: 2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado
+  date: '2021-09-28T11:20:00-03:00'
+  url_pt: https://www.akitaonrails.com/2021/09/28/akitando-104-rant-empreendendo-com-software-do-jeito-errado/
+  url_en:
+  pt:
+    sha256: b90bdfe60f91b0a914f6284aeb2a0f21d69093dc36bef065a89885c37ec82b2c
+    title: "[Akitando] #104 - RANT: Empreendendo com Software do JEITO ERRADO!"
+    description: Akita critica empreendedores que tentam especificar tudo, terceirizam
+      o core e economizam na equipe. Sua proposta combina um sócio técnico, um MVP,
+      equipe interna e evolução contínua.
+    slug: akitando-104-rant-empreendendo-com-software-do-jeito-errado
+    tags:
+    - startups
+    - engenharia-de-software
+    - gestao
+    - akitando
+    words: 4963
+    links: []
+    images: []
+    youtube:
+    - NuIOO5VWmXc
+  en:
+  background: true
+- id: 2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente
+  date: '2021-10-11T12:31:00-03:00'
+  url_pt: https://www.akitaonrails.com/2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente/
+  url_en:
+  pt:
+    sha256: f470fa1fd34a626936c3e45bbdcf15741283ed14dde6809c6afdf93f810d147d
+    title: "[Akitando] #106 - Recomendação de Livros - Introdução à Design Emergente"
+    description: Akita recomenda livros de algoritmos, compiladores, código limpo,
+      agilidade, padrões e DDD, defendendo que eles oferecem fundamentos e vocabulário,
+      mas que o design emerge do código em uso.
+    slug: akitando-106-recomendacao-de-livros-introducao-a-design-emergente
+    tags:
+    - arquitetura-de-software
+    - engenharia-de-software
+    - aprendizado
+    - akitando
+    words: 6799
+    links: []
+    images: []
+    youtube:
+    - uDqgcsK8Kbc
+  en:
+  background: true
+- id: 2022/06/13/akitando-120-discutindo-gestao
+  date: '2022-06-13T10:47:00-03:00'
+  url_pt: https://www.akitaonrails.com/2022/06/13/akitando-120-discutindo-gestao/
+  url_en:
+  pt:
+    sha256: b3e1573c772b4019ca5312bb78a48a83b1babd9fdcd6bd7d298389b71a5a1480
+    title: "[Akitando] #120 - Discutindo Gestão"
+    description: Depois de décadas gerenciando projetos, defendo que gestão é decidir,
+      priorizar e gerenciar expectativas com informação incompleta. Confiança, experiência
+      e equipes bem formadas sustentam a entrega.
+    slug: akitando-120-discutindo-gestao
+    tags:
+    - gestao
+    - agile
+    - akitando
+    words: 9325
+    links: []
+    images: []
+    youtube:
+    - 2tpshOTtleM
+  en:
+  background: true
+- id: 2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r
+  date: '2022-10-25T10:30:00-03:00'
+  url_pt: https://www.akitaonrails.com/2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r/
+  url_en:
+  pt:
+    sha256: f7d3f85c3822c6044aa14372519bccd22e41dcda5b5c3ab746be6e8626980ef5
+    title: "[Akitando] #130 - Rant: Projetos, TESTES e Estimativa??? | Rated-R"
+    description: Akita defende provas de conceito, testes, pull requests e integração
+      contínua para errar cedo e evitar regressões. Estimativas servem como ordem
+      de grandeza, não como previsões exatas.
+    slug: akitando-130-rant-projetos-testes-e-estimativa-rated-r
+    tags:
+    - testes
+    - engenharia-de-software
+    - agile
+    - akitando
+    words: 9556
+    links: []
+    images: []
+    youtube:
+    - H_-7o_pLn1s
+  en:
+  background: true
+- id: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou
+  date: '2022-11-22T10:15:00-03:00'
+  url_pt: https://www.akitaonrails.com/2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou/
+  url_en:
+  pt:
+    sha256: 0ab9f5cdffe6b1d0ce41ca3642c8c17c3369c25f7e244e99e4384ae46d183fc7
+    title: "[Akitando] #132 - Rant: A Bolha de Startups Estourou?"
+    description: Akita liga juros baixos, dinheiro fácil e pandemia à bolha de tecnologia
+      e às demissões que vieram depois. Para programadores, recomenda estudo consistente
+      e avaliar empresas pelo fluxo de caixa livre.
+    slug: akitando-132-rant-a-bolha-de-startups-estourou
+    tags:
+    - mercado-de-tecnologia
+    - economia
+    - startups
+    - akitando
+    words: 7765
+    links: []
+    images: []
+    youtube:
+    - xxoVJQvEyEU
+  en:
+  background: true
+- id: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+  date: '2023-02-14T09:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash/
+  url_en:
+  pt:
+    sha256: 79a02c73df595ddf8952c7bfbbd8023f51a3297b259610afa65901112dfe4160
+    title: "[Akitando] #138 - Meu Começo de Carreira Durante a Bolha - 1997 a 2002,
+      Bug do Milênio, Crash"
+    description: Akita relembra os empregos entre 1997 e 2002, da agência de CD-ROMs
+      à Web, ASP, PHP, Y2K e às pontocom. A carreira atravessou o crash porque ele
+      aprendeu a resolver problemas, não a depender de uma tecnologia.
+    slug: akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+    tags:
+    - carreira
+    - pessoal
+    - mercado-de-tecnologia
+    - akitando
+    words: 10955
+    links: []
+    images: []
+    youtube:
+    - 4_59jz7BOMA
+  en:
+  background: true
+- id: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+  date: '2023-08-11T15:57:00-03:00'
+  url_pt: https://www.akitaonrails.com/2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar/
+  url_en:
+  pt:
+    sha256: 792f3304eb3ebe6570cc3e4a840c04e8acf32ffbf701bb188022801b6822cb80
+    title: '[Akitando] #144 - Modelagem de Software é Difícil? | "Ver" vs "Enxergar"'
+    description: 'Modelagem e arquitetura não seguem uma receita pronta: nascem da
+      experiência com problemas e código real. Livros, open source e mentoria ajudam
+      a desenvolver o olhar para tomar decisões melhores.'
+    slug: akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+    tags:
+    - arquitetura-de-software
+    - engenharia-de-software
+    - aprendizado
+    - akitando
+    words: 9425
+    links:
+    - text: Magento 2
+      url: https://github.com/magento/magento2
+    - text: Spree
+      url: https://github.com/spree/spree
+    - text: Agile Web Development with Rails - GitHub
+      url: https://github.com/morinoko/agile-dev-rails6
+    - text: Agile Web Development with Rails
+      url: https://pragprog.com/titles/rails7/agile-web-development-with-rails-7/
+    - text: The Architecture of Open Source Applications
+      url: https://aosabook.org/en/
+    - text: Chatting with Luke Kanies
+      url: https://www.akitaonrails.com/2009/11/18/conversando-com-luke-kanies
+    - text: RailsConf 09 - Exclusive Audio Interviews | AkitaOnRails.com
+      url: https://www.akitaonrails.com/2009/05/08/railsconf-09-entrevistas-exclusivas-em-audio/
+    images: []
+    youtube:
+    - SmYQcaP1Jgw
+  en:
+  background: true

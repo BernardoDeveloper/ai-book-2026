@@ -1,0 +1,28 @@
+references:
+  - id: akitando065
+    type: "post-weblog"
+    title: "[Akitando] #65 - A Dor de Aprender | Que Cursos/Livros?"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2019, 10, 23]]}
+    URL: "https://akitaonrails.com/2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros/"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros (narrator background, reviews/akitando/plan.md)"
+  - id: akitando076
+    type: "post-weblog"
+    title: "[Akitando] #76 - Guia DEFINITIVO de Aprendendo a Aprender | A maior BRONCA da sua vida [RATED R]"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2020, 4, 1]]}
+    URL: "https://akitaonrails.com/2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r/"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r (narrator background, reviews/akitando/plan.md)"
+  - id: akitando090
+    type: "post-weblog"
+    title: "[Akitando] #90 - O que os Cursos NÃO te Ensinam sobre Mercados"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2021, 1, 6]]}
+    URL: "https://akitaonrails.com/2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados/"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados (narrator background, reviews/akitando/plan.md)"

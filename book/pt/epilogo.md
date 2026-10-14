@@ -7,6 +7,10 @@ sources:
   - {post: 2026/04/11/vs-code-e-o-novo-cartao-perfurado, sha256: "1fd3ad1e7cb92b4531666f44a3df805498aa5b6e4e58ef0b07ea31c3ad85ceae"}
   - {post: 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior, sha256: "0c064de942568d0b2b29ff979ee157d364b94817d2374aa5937bee377402daa5"}
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "09830f1d69488d527d241814a30269786cd7a5548e5d34fdf33b7fa21af0f417"}
+  - {post: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou, sha256: "0ab9f5cdffe6b1d0ce41ca3642c8c17c3369c25f7e244e99e4384ae46d183fc7"}
+  - {post: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r, sha256: "4c8343cf9487f3e389341a2e5654a423cb2ff2cced3ecbbddb5aed5385b544c1"}
+  - {post: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar, sha256: "792f3304eb3ebe6570cc3e4a840c04e8acf32ffbf701bb188022801b6822cb80"}
+  - {post: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida, sha256: "2727fad41f2e46b8df4cbc36d4a7283894b02413b94f973356d5b2cb72845683"}
 refs_projects: []
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 ---
@@ -48,7 +52,7 @@ Se você está começando na programação:
 
 - use o agente, mas, pra cada mudança que ele fizer, peça que explique o porquê e confira se você saberia explicar também (@sec-ch18);
 - estude o que vem por baixo (banco de dados, rede, como saber se o programa está certo) e escreva o teste antes de pedir o código;
-- pegue um problema difícil e não largue até entender por que a solução funcionou (@sec-ch08); depois publique, porque usuário de verdade é o melhor revisor que existe (@sec-ch19).
+- pegue um problema que você não sabe resolver e que não tenha tutorial pronto, tente sozinho antes de perguntar à máquina e só largue quando entender por que a solução funciona (@sec-ch08, @sec-apestudar); depois publique, porque usuário de verdade é o melhor revisor que existe (@sec-ch19).
 
 ## Medo vende
 
@@ -60,6 +64,9 @@ Boa parte, não todo. Em @sec-ch14 você viu pesquisadores sérios, que sabem mu
 
 <!-- src: 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit -->
 Esse medo fabricado e a empolgação saem da mesma fábrica. Em agosto de 2026 escrevi sobre os cursos de "engenharia" disso e daquilo que brotaram em volta dos agentes, e o mecanismo era velho. Primeiro deixam você ansioso, achando que está ficando pra trás, que todo mundo já migrou pro paradigma novo e só você não. Depois cobram pra curar a ansiedade que eles mesmos criaram.
+
+<!-- src: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou -->
+Em novembro de 2022, quando a bolha de contratação estourou (@sec-ch18), eu disse no Akitando pro jovem pressionado por influencer que bloqueasse quem vendia emprego garantido, cancelasse os cursos e esquecesse os atalhos [@akitando132]. Em 2026 o curso trocou de nome, e a ansiedade que ele vende é a mesma.
 
 Esse medo de ficar de fora tem sigla em inglês, FOMO, e nesse mercado ele é o modelo de negócio. O anúncio de que a inteligência geral chega em dois anos funciona do mesmo jeito, numa escala maior (@sec-ch14). Quem tem ação pra vender, placa de vídeo pra vender ou rodada de investimento pra fechar precisa que você sinta que o mundo vai acabar, ou recomeçar, na terça que vem.
 
@@ -90,10 +97,16 @@ A segunda é julgamento, a capacidade de olhar uma resposta e saber se ela prest
 
 Julgamento se treina fazendo, errando e conferindo. O agente deixa a parte do fazer muito mais barata, e dá pra testar e descartar uma hipótese atrás da outra, como em @sec-ch08. A parte do conferir continua inteira com você.
 
+<!-- src: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r -->
+Uma conta que eu repetia no tempo do canal: curso dá uns 1% de introdução, e os outros 99% você caça sozinho, à medida que precisa. A resposta pronta da máquina entra na mesma conta: é introdução, e a caça continua sua. Como estudar com um agente do lado está em @sec-apestudar.
+
 ### O seu domínio
 
 <!-- src: original -->
 A terceira é o seu ofício. Lembre do mapa de @sec-ch20: o modelo enxerga em detalhe o que o mundo publicou e é cego pro que ficou fechado. As regras não escritas da sua empresa, o cliente difícil, a exceção que só você conhece, o motivo pelo qual aquela norma existe: nada disso entrou no treino.
+
+<!-- src: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar -->
+Eu aprendi isso por dentro, nos anos em que integrei sistemas de empresas grandes (@sec-ch20): não tem como modelar uma coisa que você não conhece. A máquina esbarra no mesmo limite, sem nunca ter passado um dia dentro da sua empresa.
 
 Essa é a parte do mapa que está em branco pra máquina e preenchida na sua cabeça. Quanto mais fundo você conhece o seu ofício, mais a ferramenta rende na sua mão.
 
@@ -137,6 +150,9 @@ A linha que eu não cruzo é a da decisão. A máquina pode propor, pesquisar, c
 - leia antes de aprovar, e o que não conseguir ler, não aprove;
 - de vez em quando, faça você mesmo o que costuma delegar, pra não perder a mão;
 - guarde o que aprendeu num lugar seu, porque o modelo não guarda nada (@sec-ch20).
+
+<!-- src: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida -->
+Essa linha é mais velha que a IA. Ela vem do "Não terceirize suas decisões", o episódio do Akitando de 2019 que você viu em @sec-ch09 [@akitando063], e da regra que sigo até hoje: se eu decido certo, o mérito é 100% meu, e se decido errado, o prejuízo também. No mesmo vídeo eu mandava desconfiar do conselho de quem não corta da própria pele se der errado. O modelo é exatamente esse conselheiro, e quem paga pelo erro dele é você.
 
 > A ferramenta faz quase tudo o que você pedir. Saber o que pedir, e se o que voltou presta, continua sendo trabalho seu.
 

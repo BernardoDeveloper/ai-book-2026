@@ -1,0 +1,24 @@
+---
+id: ch20-duas-curvas
+kind: chart_code
+file: assets/figures/ch20-duas-curvas.png
+sha256: 3a6aae0940f8abde6ab649975acd80667b23176dabc324edadda0aa78668eaed
+pixels:
+  width: 2160
+  height: 1110
+source: assets/charts/ch20-duas-curvas.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib --with numpy python -I scripts/chart_check.py assets/charts/ch20-duas-curvas.py pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+description: 'ch20-duas-curvas: Schematic: base intelligence of the top models flattening vs. the METR task-length curve still rising.'
+chapters:
+- 20
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

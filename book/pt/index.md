@@ -8,6 +8,7 @@ sources:
   - {post: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic, sha256: "ce3ac52806404b9410bbe7b38962bc96d1beaff182ad194e2dbc1f18630c5d30"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "ee499fef89fe8fe35d652f193b51f1660cd08e8ed77adee74e036ca1444cc54b"}
   - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "fe55c3fbbd2ecbd0b51b059c1f46bf9e308b8b6a25c5953ffac9ad43d23f6839"}
+  - {post: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash, sha256: "79a02c73df595ddf8952c7bfbbd8023f51a3297b259610afa65901112dfe4160"}
 refs_projects: []
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 ---
@@ -33,7 +34,7 @@ Em junho, uma das maiores empresas do setor, com o pedido pra abrir capital na b
 O outro mundo era o do meu terminal. De fevereiro a maio, passei mais de 500 horas programando quase só com [agentes]{.gls key=agente} de IA, os programas que deixam o modelo ler arquivos, rodar comandos e trabalhar sozinho por horas. Foram 24 projetos, uns que deram certo, outros que viraram lixo.
 
 <!-- src: 2026/10/12/llms-agentes-competente-o-suficiente -->
-Depois vieram meses colocando dezenas de modelos numa prova de programação que eu mesmo montei, conferindo o resultado um por um, mês a mês. Quando juntei tudo, em outubro, fui procurar a curva que a propaganda desenhava subindo pro céu nas medições que não dependem de quem vende o modelo. Quem treina os modelos vinha contando, desde o fim de 2024, que aumentar o treino básico rendia cada vez menos, e os melhores modelos se espremiam num pelotão cada vez mais apertado. Somando isso a um ano de uso diário, a minha leitura é que a inteligência de base dos modelos parou de dar saltos.
+Depois vieram meses colocando dezenas de modelos numa prova de programação que eu mesmo montei, conferindo o resultado um por um, mês a mês. Quando juntei tudo, em outubro, fui procurar a curva que a propaganda desenhava subindo pro céu nas medições que não dependem de quem vende o modelo. Os relatos de quem treina os modelos e as medições independentes apontavam pro mesmo lado, e, somando isso aos meus testes, a minha leitura é que a inteligência de base parou de dar saltos; o que continuou crescendo foi o que ela consegue fazer com ferramentas na mão (@sec-ch20).
 
 <!-- src: original -->
 A distância entre os dois mundos ia nos dois sentidos. Em vários pontos a ferramenta era melhor do que os céticos admitiam: dá pra construir software de verdade com ela, e eu construí. Em outros, era bem pior do que os anúncios vendiam. Ela erra com a maior confiança, concorda com qualquer coisa que você já pensava, esquece o que foi combinado uma hora antes e precisa de alguém experiente conferindo o que sai.
@@ -58,8 +59,11 @@ Você não precisa saber programar. Eu sou programador, e muito do que eu conto 
 
 ## De que lado eu estou
 
+<!-- src: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash -->
+Eu programo desde 1990 e comecei a trabalhar em 1996, em agências e empresas pontocom que não sobreviveram ao estouro da bolha da internet, e depois passei cinco anos integrando sistemas SAP em empresas grandes. Em 2007 fui pro Ruby on Rails, organizei a RubyConf Brasil de 2008 a 2016, fundei a Codeminer 42 em 2011 e, de 2018 a 2023, mantive o Akitando, um canal de vídeo que fiz pra ensinar o conhecimento que sobrevive às bolhas.
+
 <!-- src: 2026/02/08/rant-ia-acabou-com-programadores -->
-Eu programo desde o fim dos anos 80, escrevo num blog desde 2006 e passei seis anos ensinando programação num canal de vídeo. Vi a bolha da internet estourar e a internet continuar existindo. Vi profissões inteiras aparecerem e sumirem. Essa memória ajuda a ouvir um anúncio de "revolução" com alguma calma.
+Também escrevo num blog desde 2006. Vi a internet continuar existindo depois do estouro, e vi profissões inteiras aparecerem e sumirem. Essa memória ajuda a ouvir um anúncio de "revolução" com alguma calma, e é dela que vem o ceticismo que você vai encontrar neste livro.
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
 Muita gente me conhece por uma frase sobre empolgação e conhecimento, que você vai encontrar logo no primeiro capítulo. Por causa dela, uma turma acha que eu odeio IA. Por causa do que eu fiz em 2026, outra turma acha que eu me rendi a ela. As duas erram pelo mesmo motivo: imaginam que só existem esses dois lados.

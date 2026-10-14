@@ -4,6 +4,7 @@ chapter: "A máquina por dentro, sem matemática"
 sources:
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "09830f1d69488d527d241814a30269786cd7a5548e5d34fdf33b7fa21af0f417"}
   - {post: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia, sha256: "eba7e0379feb2d062e312e755b44b31fbc056217040c9107cbae1848bf1e5623"}
+  - {post: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado, sha256: "7ee4001a6b6712e98fa2deb8acf37d0ffc33fde8b0b8ed7838b2c4d59e3aa02d"}
 refs_projects: []
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 ---
@@ -116,6 +117,19 @@ A [temperatura]{.gls} é o ajuste que mexe no vício do dado. Temperatura baixa 
 
 <!-- src: original -->
 Repare no que esse mecanismo não tem: em nenhum ponto do caminho existe uma etapa que confira se a frase é verdadeira. A pergunta que a máquina responde a cada pedaço é "o que costuma vir aqui?". Quando a resposta mais provável e a verdadeira coincidem, ótimo. Quando não coincidem, sai uma [alucinação]{.gls key=alucinacao} com a mesma fluência de sempre (o @sec-ch04 trata disso por inteiro).
+
+### Noventa e nove por cento
+
+<!-- src: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado -->
+Probabilidade engana também quem lê o resultado. Em 2020, num episódio do meu canal sobre manipulação, eu usava um exemplo que serve pra qualquer número de acerto [@akitando084]. Um exame acerta 99% das vezes, e a doença atinge uma pessoa em cada mil. Você testa positivo: qual a chance de estar doente?
+
+Quase todo mundo chuta 99%, e a conta dá uns 9%. Pense em 100 mil pessoas fazendo o exame. Cem têm a doença, e o exame pega 99 delas; das 99.900 saudáveis, 1% também dá positivo, umas mil pessoas. De cerca de 1.100 positivos, só 99 estão doentes.
+
+<!-- src: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado -->
+Um segundo exame, independente do primeiro, muda tudo. Refeito nesses 1.100, ele confirma uns 98 doentes e só uns 10 saudáveis, e a chance sobe pra uns 91%. A palavra que pesa é "independente": repetir o mesmo exame, com o mesmo defeito, não vale como segunda opinião (@sec-ch04).
+
+<!-- src: original -->
+Vale pra qualquer porcentagem de acerto, inclusive a de [benchmark]{.gls}. "99%" sozinho não diz quase nada: falta saber quão raro é o que se procura, quantos casos foram testados e quanto custa cada tipo de erro. Antes de se impressionar com o número, pergunte de onde ele partiu (@sec-apC).
 
 ## Da enciclopédia ao assistente
 

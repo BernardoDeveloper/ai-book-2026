@@ -153,3 +153,12 @@ references:
     URL: "https://blog.pragmaticengineer.com/stack-overflow-is-almost-dead/"
     accessed: {date-parts: [[2026, 10, 13]]}
     note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores"
+  - id: akitando084
+    type: "post-weblog"
+    title: "[Akitando #84] Entendendo \"O Dilema Social\" e Como Você é Manipulado"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2020, 9, 30]]}
+    URL: "https://akitaonrails.com/2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado/"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado (narrator background, reviews/akitando/plan.md)"

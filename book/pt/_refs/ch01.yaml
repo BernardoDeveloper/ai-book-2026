@@ -183,3 +183,11 @@ references:
     URL: "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks"
     accessed: {date-parts: [[2026, 10, 13]]}
     note: "cited-by: 2026/02/08/rant-ia-acabou-com-programadores (post credits AlexNet to 'George Hinton, Yann LeCunn e Ilya Sutskever'; corrected to the paper's authors)"
+  - id: akitando084
+    type: "post-weblog"
+    title: "[Akitando #84] Entendendo \"O Dilema Social\" e Como Você é Manipulado"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "AkitaOnRails.com"
+    issued: {date-parts: [[2020, 9, 30]]}
+    URL: "https://akitaonrails.com/2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado/"
+    note: "cited-by: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado (narrator background, Akitando era)"

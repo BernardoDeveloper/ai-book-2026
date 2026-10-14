@@ -10,7 +10,7 @@ class TestOutlineCheck < ToolTest
   def test_clean_outline
     res = check
     assert_exit 0, res
-    assert_includes res.out, "3 posts used, 2 excluded, 0 error(s)"
+    assert_includes res.out, "3 posts used, 2 excluded, 1 background sources, 0 error(s)"
   end
 
   # Guards coverage: a core post with an analysis but no place in the outline is an error.
@@ -40,5 +40,16 @@ class TestOutlineCheck < ToolTest
     fx.edit("book/outline.yml") { _1.sub("primary: [04/01/terceiro-post]", "primary: [04/01/terceiro-post, 04/20/post-excluido]") }
     res = check
     assert_includes res.out, "BOTH used+excluded 2026/04/20/post-excluido: ch03(p)"
+  end
+
+  # Guards background sources: counted apart, never "used", need no placing, must exist.
+  def test_background_sources
+    res = check
+    assert_includes res.out, "1 background sources"
+    refute_includes res.out, "episodio-antigo"
+    fx.edit("book/outline.yml") { _1.sub("2019/10/09/episodio-antigo", "2019/10/09/nao-existe") }
+    res = check
+    assert_exit 1, res
+    assert_includes res.out, "UNKNOWN background source 2019/10/09/nao-existe"
   end
 end

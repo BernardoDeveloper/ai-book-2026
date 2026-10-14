@@ -46,6 +46,10 @@ module FixtureData
       pt: ["Terceiro post", "Traduzi vinte anos de blog.\n"],
       en: ["Third post", "third-post", "I translated twenty years of blog posts.\n"],
     },
+    "2019/10/09/episodio-antigo" => {
+      pt: ["Episódio antigo", "Anos atrás eu terceirizava decisões demais.\n"],
+      en: ["Old episode", "old-episode", "Years ago I outsourced too many decisions.\n"],
+    },
     "2026/04/20/post-excluido" => {
       pt: ["Post excluído", "Memória de vídeo limita o modelo.\n"],
       en: ["Excluded post", "excluded-post", "Video memory limits the model.\n"],
@@ -119,6 +123,9 @@ module FixtureData
       - id: bibliografia
         title: "Referências"
         kind: generated
+
+    background_sources:
+      - {post: 2019/10/09/episodio-antigo, why: "colors the narrator's history"}
 
     excluded:
       - {post: 01/15/post-janeiro, reason: "before the cut-off"}

@@ -1,0 +1,437 @@
+posts:
+  - id: 2019/09/12/akitando-61-meus-primeiros-5-anos-1990-1995
+    title: "[Akitando] #61 - Meus Primeiros 5 Anos | 1990-1995"
+    one_line: "Dos 13 aos 18 anos o autor aprendeu Basic, dBase, Clipper, CorelDraw e UNIX por curiosidade e por motivos banais (até pirataria), sem plano de carreira, e diz que aprender sem objetivo grandioso foi o que o preparou."
+    bio_facts:
+      - claim: "Primeiro contato com programação de verdade em 1990, aos 13 anos, num curso de MBasic e Wordstar (telemarketing ofereceu desconto; os pais o matricularam)."
+        quote: "Meu primeiro contato com programação de verdade foi em 1990, eu tinha 13 anos."
+        check: "author memory, frame as such (ele mesmo diz 'se eu não me engano'). Tensão com #90, que diz 'catorze ou quinze anos' e dBase como primeira linguagem; #61 é mais detalhado, prefira #61 ('Basic em 1990, dBase/Clipper em 1991-92')."
+      - claim: "Foi 'estagiário' do tio analista de sistemas nas férias (~1991-92, aos 14), programando dBase e depois Clipper (controle de estoque, escritório de advocacia); copiou uma apostila inteira de dBase III no Wordstar e assim aprendeu a linguagem."
+        quote: "eu copiei digitando, página a página dessa apostila no Wordstar pra imprimir minha própria versão."
+        check: "author memory, frame as such; datas aproximadas ('final de 91?')."
+      - claim: "Aos 15 anos (c. 1992) apresentou jogos em estande da Brasoftgames na Fenasoft e foi parar no palco; foi a primeira vez que falou em público direito, depois de ter fugido do palco aos ~10 anos."
+        quote: "Essa foi a primeira vez que eu consegui falar em público direito"
+        check: "author memory; Fenasoft (Anhembi) é feira pública de 1990s, ano 'acho que 1992'. Não citar empresa/pessoas pelo nome sem necessidade."
+      - claim: "Aprendeu UNIX (HP-UX via Telnet, Lynx, Pine, Vi, Usenet, IRC, FTP, jobs em background) em 1995 como monitor/estagiário do CCE da Poli-USP, com a motivação (declarada) de baixar warez mais rápido."
+        quote: "Se  resumir a última metade do vídeo você pode dizer que eu aprendi UNIX pra baixar pirataria mais rápido."
+        check: "author memory. Cuidado editorial: confissão de pirataria/phreaking nos anos 90; usar só a frase 'aprendi UNIX por um motivo banal', sem detalhar blue box/warez. Não citar BBS nem apelidos de terceiros."
+      - claim: "Passou em Fatec, Unicamp e USP em 1994 e escolheu Ciência da Computação (IME-USP), sem entender a diferença entre os cursos; entrou em 1995."
+        quote: "No final passei nos 3 e escolhi fazer ciências da computação."
+        check: "author memory; consistente com #138 ('entrei na faculdade em 1995'). #90 diz 'aos dezessete' e 'eu mesmo não me formei' (cursou os dois primeiros anos): verificar se a fala 'não me formei' é consenso antes de afirmar diploma no livro."
+      - claim: "Aprendeu a ilustrar em CorelDraw em um mês porque o editor da revista Videogame exigiu ilustração vetorial; publicou ilustrações na revista por alguns meses (1993)."
+        quote: "Naquele mesmo dia eu fui pra uma livraria e comprei um livro de CorelDraw 3."
+        check: "author memory; revista Videogame (Editora Tambor) é pública, a edição não foi checada."
+    world_facts:
+      - claim: "Em 1995 o stack TCP no Windows 3.1 era opcional (vinha no Windows for Workgroups ou instalado à parte); internet era opcional e universidades dependiam do backbone da Fapesp."
+        quote: "o stack TCP ainda era opcional"
+        check: "história da computação, verificável (Windows 3.11 for Workgroups trazia TCP/IP opcional; Fapesp/ANSP foi o backbone acadêmico de SP). Contexto, não prioridade."
+      - claim: "Na época o arquivo shadow já existia desde 1986, mas muitos servidores UNIX não estavam atualizados."
+        quote: "O arquivo shadow já existia desde 86"
+        check: "o autor afirma; shadow passwords surgiram em SunOS/System V por volta de 1987. Dado secundário, imprecisão possível de um ano."
+      - claim: "O autor para a história 'exatamente antes de começar a primeira bolha da internet': Java 1.0, Delphi 1.0 e Flash vêm em 1995-96; .NET não existia; PHP não tinha começado."
+        quote: "eu estou parando a história exatamente antes de começar a primeira bolha da internet"
+        check: "Java 1.0 (jan/1996), Delphi 1.0 (1995), FutureSplash/Flash (1996), PHP/FI 1995: datas verificáveis. 'PHP ainda não tinha começado' é aproximação (PHP/FI é de 1995)."
+    positions:
+      - stance: "Não planejar a carreira nos primeiros anos; curiosidade e coisas banais levam a conhecimentos que viram importantes depois."
+        quote: "Se eu ficasse toda hora pensando \"ah, não vou perder tempo com isso porque não sei se vai ser útil daqui 5 anos\" eu ia ficar estagnado o tempo todo só planejando, planejando e nunca de fato fazendo."
+      - stance: "Nunca atrelou aprender a um objetivo grandioso ou lucrativo."
+        quote: "Eu nunca penso \"vou aprender X porque isso pode ser mais lucrativo no futuro\""
+      - stance: "Definição de hacker: curiosidade com tecnologia. Uma coisa leva à outra."
+        quote: "a definição de hacker pra mim é uma pessoa curiosa com tecnologia."
+      - stance: "A faculdade vale também pelo networking com gente melhor; ele era 'uma esponja'."
+        quote: "Eu era o mais novo e o mais noobie de todos, e eu era uma esponja aprendendo tudo que conseguia deles."
+    book_hooks:
+      - unit: ch18
+        where: "seção 'Que linguagem aprender' (e o tom de conselho de carreira no fim do capítulo)"
+        touch: "Uma ou duas frases: 'No meu primeiro contato, em 1990, aos 13 anos, aprendi MBasic num curso que meus pais me deram por causa de uma ligação de telemarketing. Dali vieram dBase, Clipper, CorelDraw e UNIX, nenhum por plano de carreira (Akitando #61).' Serve de prova de que a ferramenta da vez muda e a curiosidade fica."
+        strength: medium
+      - unit: epilogo
+        where: "seção 'O que vale aprender'"
+        touch: "Contrapor a ansiedade de escolher a ferramenta certa: 'Aos 13 anos eu só queria dar um comando e ver o computador responder. Aprendi UNIX pra baixar coisa mais rápido. Cada uma dessas coisas banais virou base do que vim a fazer depois.' Citar o episódio #61."
+        strength: medium
+      - unit: ch08
+        where: "seção 'Como se aprende agora' (aprender com a máquina)"
+        touch: "Um parágrafo curto: antes, aprender era digitar uma apostila de 100 páginas no Wordstar pra aprender dBase; hoje a dúvida tem resposta imediata, mas copiar sem entender continua sendo copiar. Autoridade vivida sobre 'aprender na marra' vs 'aprender com ajuda'."
+        strength: low
+    appendix_candidate: ""
+
+  - id: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash
+    title: "[Akitando] #138 - Meu Começo de Carreira Durante a Bolha - 1997 a 2002, Bug do Milênio, Crash"
+    one_line: "O autor conta empregos de 1997 a 2002 (agência de CD-ROM, Y2K, provedor, HPG, PSN) e conclui que atravessou o estouro da primeira bolha ileso porque se definia por resolver problemas e aprender a aprender, não por uma tecnologia."
+    bio_facts:
+      - claim: "Primeiro emprego (estágio, ~1997, aos 20) numa pequena agência, fazendo CD-ROMs em Macromedia Director (Lingo), depois HTML, Flash, ASP e SQL Server; salário de estágio de uns R$ 500 (≈ R$ 2 mil hoje, segundo ele)."
+        quote: "Eu tava empolgado pra mexer mais na Web, mas queriam que eu aprendesse a fazer CD-ROMs."
+        check: "author memory, frame as such. Conversão de salário pelo IPCA é do autor; recalcular se citar. Não nomear a agência/cliente no livro sem necessidade."
+      - claim: "Em 1999 (22 anos), num provedor de internet, liderou/participou da reescrita do sistema administrativo (Clipper de DOS, bug do milênio) para ASP + SQL Server, com menos de 6 meses de prazo; boletos para 2000 já falhavam em 1999."
+        quote: "Mas eu era um moleque de 22 anos que só queria a oportunidade de mexer com coisas novas."
+        check: "author memory; checar nomes de empresas (STI, PSINet) em registros públicos antes de citar. Fato de mundo: Y2K começou a falhar antes de 31/12/1999 em contas a prazo."
+      - claim: "Viu o primeiro layoff em massa num merge (provedor adquirido) e o primeiro produto 'engordar o porco' (HPG, vendido ao iG); saiu do HPG em menos de 6 meses por ceticismo com o modelo de negócios."
+        quote: "Eu tinha 23 anos e na minha cabeça esse produto não fazia sentido."
+        check: "author memory. A venda da HPG ao iG é registro público (verificar data e valor); ele próprio diz 'acho que'."
+      - claim: "Foi webmaster de uma pontocom esportiva (PSN, do grupo que era dono do Corinthians) até dezembro de 2001; a empresa fechou no crash e ele ficou 'uma semana' desempregado antes de entrar numa consultoria SAP (2002-2007)."
+        quote: "Fiquei só uma semana desempregado."
+        check: "author memory. Fatos públicos checáveis: Hicks, Muse, Tate & Furst e Corinthians (parceria ISL/Hicks Muse 1999-2002)."
+      - claim: "Nunca fez cursos; aprendia por livro importado em inglês (encomendado à Livraria Cultura, espera de um mês) e documentação; chegou a escrever, por conta própria, um mini ASP.NET em ASP clássico em 2000."
+        quote: "Notem outra coisa: em nenhum momento eu cito cursos. Porque eu nunca fiz nenhum."
+        check: "author memory. Coerente com #61, #90 (autodidata)."
+      - claim: "Todas as empresas em que trabalhou de 1996 a 2002 fecharam; ele saía porque ia fechar."
+        quote: "nenhuma das empresas que eu trabalhei nesse período existem mais."
+        check: "author statement; plausível, não verificável de fora."
+    world_facts:
+      - claim: "Pico da Nasdaq e crash: o autor diz 'o pico da NASDAQ foi em março de 2001' e que caiu quase 80% até quase o fim de 2002."
+        quote: "Na verdade o pico da NASDAQ foi em março de 2001"
+        check: "ERRO DE DATA: o pico da Nasdaq foi em 10 de março de 2000 (≈5.048), não 2001; a queda total até out/2002 foi ≈78%. O 'crash em outubro' de 2001 também é impreciso (a queda começou em 2000). Não repetir 2001 como pico; a data 2001 serve só para 'quando a bolha estourou de verdade para ele'."
+      - claim: "Em 1997 a Apple estava a dias de falir, com Jobs voltando; depois iMac, Mac OS X e iPod (2001)."
+        quote: "A empresa mais valiosa de tecnologia hoje, em 1997 estava praticamente falida."
+        check: "público (Apple 1997, aporte da Microsoft de US$150 mi). A frase 'negativo 1 bilhão de dólares' é dele e é impreciso; evitar."
+      - claim: "Crashes de 2000-2002 eliminaram empresas, mas Google e Amazon viraram gigantes na 'seca' de 2002 a 2008; blogs e redes sociais nasceram nesse período."
+        quote: "não é porque teve crash da bolha que a tecnologia parou"
+        check: "histórico, verificável (Google IPO 2004, Facebook 2004, YouTube 2005). Gancho forte para 'bolha estoura, tecnologia fica'."
+      - claim: "As demissões das Big Techs em 2022-23 já superavam 120 mil nos EUA (citado em #132; #138 só alude 'Crash da Bolha Tech atual')."
+        quote: "Muitos agora começando carreira ou vendo o atual Crash da Bolha Tech estão inseguros"
+        check: "o número está em #132; aqui é só a moldura do episódio (fev/2023)."
+      - claim: "Em 1997 internet discada de ~19 kbit/s; streaming era impossível, por isso CD-ROM."
+        quote: "E a conexão média era de 19 kilobits por segundo."
+        check: "razoável; modems de 28.8/33.6/56k conviviam. Não é a hook principal."
+    positions:
+      - stance: "Nunca se definiu por uma tecnologia, mas por resolver problemas; 'aprender a aprender' foi a arma contra o estouro."
+        quote: "eu nunca me defini como \"programador ASP\" ou \"programador Java\" ou \"administrador de SQL Server\". Minha especialidade não era nenhuma dessas ferramentas."
+      - stance: "Esperar 2 ou 3 anos 'pra ver se a tecnologia vinga' faz perder a onda e vira vítima do crash."
+        quote: "teria perdido a primeira Bolha da Internet, pior, teria sido mais uma vítima do crash."
+      - stance: "Crise não acaba com o trabalho; toda empresa continua precisando manter e evoluir tecnologia."
+        quote: "Mesmo com o crash da bolha, não significa que acabou todos os empregos."
+      - stance: "Não tente adivinhar o que será relevante em 5 anos; nem guru, influencer ou ele sabem para a carreira de cada um."
+        quote: "O você de hoje tentando escolher a ferramenta \"ideal\" não tem idéia do que realmente vai ser importante daqui 5 anos."
+      - stance: "Cursos não existem para o que acabou de sair; livro importado e documentação; 'não existe falta de oportunidade, existe falta de vontade de pegar pra resolver'."
+        quote: "Java saiu ano passado, obviamente não tem curso pra isso."
+      - stance: "Networking de verdade é o colega que confia no seu trabalho; o júnior do lado pode ser o próximo fundador."
+        quote: "o júnior da sua própria equipe, colega da sua faculdade, vai ser o próximo founder, CTO, CEO da startup inovadora de amanhã."
+      - stance: "Aviso de que varar noites foi falta de noção e promessa acima da entrega, não virtude."
+        quote: "eu varava noite porque eu não era bom e prometia mais do que conseguia entregar."
+    book_hooks:
+      - unit: ch18
+        where: "seção 'A bolha que estourou antes', parágrafo 'Na minha carreira eu já vi isso acontecer várias vezes. Sobrevivi ao fim da bolha dos microcomputadores... bolha da internet, que estourou em 2001'"
+        touch: "Dar rosto ao 'sobrevivi': 'Em 2001 eu era webmaster de uma pontocom que fechou no crash. Fiquei uma semana desempregado. Todas as empresas por onde passei entre 1996 e 2002 fecharam, e eu fui parar numa consultoria porque não me definia pela tecnologia da vez (Akitando #138).' Atenção: dizer 'estourou em 2001' está ok pelo lado do autor (data pessoal) mas o pico da Nasdaq foi mar/2000."
+        strength: high
+      - unit: ch18
+        where: "seção 'Que linguagem aprender'"
+        touch: "'Entre 1996 e 2001 aprendi Delphi, HTML, Flash, ASP, PHP, Perl, SQL Server, MySQL e um pouco de Python. Eu não era programador de nenhuma delas.' E a prova de que a escolha 'ideal' era inútil: o ASP de 1999 voltou em 2001, o Java de 1996 só serviu em 2002."
+        strength: high
+      - unit: ch01
+        where: "seção 'Bolhas estouram, tecnologias ficam'"
+        touch: "Reforçar com vivência: 'Vi isso por dentro: depois do crash, Google e Amazon viraram gigantes na seca de 2002-2008, blogs e redes sociais nasceram nela. A internet não parou, as empresas que apostaram tudo na onda sim.'"
+        strength: high
+      - unit: ch19
+        where: "seção 'Antes de renovar a licença' ou 'A premissa mudou' (como gestor vê tecnologia nova)"
+        touch: "Um exemplo de projeto Y2K: reescrever Clipper em ASP/SQL Server em 6 meses mostra o custo de decidir tecnologia por empolgação; usar apenas se o capítulo tratar de reescrita de sistema legado."
+        strength: low
+      - unit: epilogo
+        where: "seção 'O que vale aprender'"
+        touch: "'Se em 1996 eu tivesse esperado 2 ou 3 anos pra ver se o ASP ia vingar, teria perdido a onda. Pelo mesmo motivo, não espere a IA 'assentar' pra aprender, e também não aposte tudo nela.' Fecha com 'aprender a aprender'."
+        strength: medium
+      - unit: ch08
+        where: "seção 'Como se aprende agora' ou 'Traduzir no escuro'"
+        touch: "Contrastar: em 1997, mensagem de erro 'Handler not defined' e um livro impresso; hoje a máquina responde. O autor até comenta que 'nem ChatGPT sabe responder' sobre Lingo em 2023: bom exemplo de limite do modelo com tecnologia obscura."
+        strength: medium
+    appendix_candidate: "Linha do tempo pessoal de 1990 a 2022 (uma página) para o Posfácio ou o apêndice 'Linha do tempo': cruza as bolhas (micro 1990, internet 2000-02, imobiliária 2008, tech 2022) com onde o autor estava em cada uma. Serve ao leitor do livro de IA como prova de que o autor já viu o ciclo quatro vezes. Só vale se for curta e marcada como memória do autor."
+
+  - id: 2019/06/11/akitando-50-a-bolha-de-startups-vai-estourar-winter-is-coming
+    title: "[Akitando] #50 - A Bolha de Startups vai Estourar? | Winter is Coming"
+    one_line: "Em junho de 2019 o autor argumenta que a bolha de startups vai estourar (valuations inflados, IPOs fracos, cash flow negativo) e que, nesse cenário, só quem pratica programação deliberadamente e entrega o que promete se mantém."
+    bio_facts:
+      - claim: "Programa por prazer desde o fim dos anos 80, sem o objetivo de ser bem pago."
+        quote: "Quando eu comecei a programar eu nunca programei com o objetivo de ser bem remunerado ou qualquer outro objetivo."
+        check: "author memory; consistente com #61 (1990, aos 13)."
+      - claim: "Diz ter sobrevivido a três décadas e três crises (anos 90, 2000, 2010) sem grandes problemas porque seguiu a descrição de profissional que dá."
+        quote: "Sobrevivi os anos 90, os anos 2000 e os anos 2010, cada década teve uma crise e eu realmente nunca tive grandes problemas durantes esses períodos de transição."
+        check: "author statement. A versão atual do livro (ch18) usa 'sobrevivi ao fim da bolha dos microcomputadores... 2001... 2008'; aqui ele conta por décadas."
+      - claim: "Lembra 'da devastação' do crash das pontocom por experiência própria."
+        quote: "eu lembro da devastação que foi o crash da bolha das ponto com."
+        check: "ver #138 para os detalhes pessoais."
+      - claim: "Define-se como 'cético pragmático' e conservador, que detesta ser otimista demais."
+        quote: "Eu sou um cético pragmático."
+        check: "autodefinição; coerente com os demais posts."
+    world_facts:
+      - claim: "Previsão datada: 'o mercado pode começar a ficar muito diferente a partir de 2021 já'; a correção real de Big Tech/startups veio em 2022. Ele disse em #132 que previu 2020-21 e que a pandemia adiou."
+        quote: "Se eu tivesse que chutar eu diria que o mercado pode começar a ficar muito diferente a partir de 2021 já."
+        check: "Previsão do autor, marcada como chute; verificável: Nasdaq caiu ~33% em 2022; layoffs 2022-23 (ver #132). Ótimo exemplo de 'aviso certo, data um ano errada, pandemia no meio'."
+      - claim: "Em 2018 surgiu um novo unicórnio a cada 4 dias; mais de 300 unicórnios somando mais de US$ 1 trilhão em valuation."
+        quote: "Só em 2018 surgiu um novo unicórnio - que são empresas avaliadas em mais de 1 bilhão de dólares, a cada 4 dias."
+        check: "números de CB Insights / Bloomberg / Forbes de 2019; ver 'China created a new unicorn every 3.8 days' (Bloomberg, jan/2019). Número de 'a cada 4 dias' provavelmente é global/China, checar."
+      - claim: "80% das empresas que abriram capital em 2018 eram não-lucrativas, o maior número desde o pico da bolha de 2000 (81%)."
+        quote: "80% das empresas que abriram capital ano passado não são lucrativos, o maior número desde o pico da bolha das ponto com em 2000 quando 81% das empresas que abriram capital naquela época não tinham lucro."
+        check: "dado de Jay Ritter (Univ. of Florida) para 2018: 83% sem lucro? Verificar; o autor cita fontes jornalísticas de 2019."
+      - claim: "IPOs de unicórnios abaixo do esperado: Snap (US$17 → 11), Blue Apron (US$10 → 3), Fitbit (US$45 → 5), Lyft (US$88 → 61), Uber perto do preço de abertura; Uber com receita de ~US$ 11 bi e prejuízo operacional de ~US$ 3 bi."
+        quote: "Uber começou em queda e está perto do mesmo preço de abertura, nada bombástico."
+        check: "Lyft IPO a US$72, abriu a ~US$87,2 em 29/3/2019; o autor diz '88'. Snap IPO US$17 (mar/2017). Uber IPO US$45 em 10/5/2019. Conferir os números antes de usar qualquer um; seu 'IPO US$88' é a abertura, não o preço de oferta."
+      - claim: "Estudo da Forbes: de 135 unicórnios americanos, ao ajustar termos que inflam valuation, 65 perdem o status."
+        quote: "pelo menos metade, 65 dos 135 perdem o status de unicórnio."
+        check: "Fonte: Stanford (Gornall & Strebulaev, 'Squaring Venture Capital Valuations with Reality', 2018), noticiada pela Forbes: 65 de 135 unicórnios. Verificável."
+      - claim: "O legado positivo da bolha de 2000 foi a infraestrutura de fibra óptica; a bolha de 2019 não deixaria nada comparável."
+        quote: "O legado da exuberância do ano 2000 foi a colossal infraestrutura de fibra ótica que foi construído no meio da loucura acelerada."
+        check: "tese conhecida (Guardian, fev/2019). Para o livro: a bolha da IA deixa data centers/GPU como 'fibra'? Pergunta aberta, não afirmar."
+      - claim: "Programadores ruins foram pagos acima do devido até 2001; depois do estouro, mais terceirização para a Índia e demora de anos para o mercado se estabilizar."
+        quote: "até 2001 programadores ruins eram remunerados muito acima do que deveriam"
+        check: "narrativa do autor, qualitativa. Dados BLS de emprego em software 2001-2004 confirmariam."
+    positions:
+      - stance: "Programar é uma 'profissão de prática': só se melhora com prática deliberada; seguir tutorial não faz programador."
+        quote: "Escrever código é uma coisa muito simples. Qualquer idiota consegue copiar e colar algum código, modificar algumas poucas coisas e fazer rodar."
+      - stance: "Armadilha 80/20: com pouco conhecimento você já entrega algo e se sente empoderado, mas continua amador; ninguém deixa de ser júnior em menos de 1 ano nem é sênior antes de 5."
+        quote: "Em profissões de prática, sabendo muito pouco, você se torna capaz de entregar alguma coisa. Você se sente empoderado. E isso é um sério problema."
+      - stance: "Barreira de entrada baixa e todo mundo cantando como é fácil virar programador é sinal de alerta: oferta sobe, remuneração cai."
+        quote: "Você fica feliz de ver que a barreira de entrada está cada vez menor, e que toda hora todo mundo gosta de ficar cantando como é fácil qualquer um ser programador? Preocupe-se."
+      - stance: "Na crise, as empresas mantêm quem promete o que entrega, com consistência, sem desculpas."
+        quote: "você é o tipo que promete o que entrega, do jeito que prometeu, no custo que prometeu, no tempo que prometeu e na qualidade que prometeu"
+      - stance: "Desconfie de coach e mentor: pergunte quantas patentes ou empresas lucrativas de mais de 10 anos ele tem."
+        quote: "da próxima vez que você ver um “coach de inovação”, me façam um favor, perguntem pra ele quantas patentes ele tem."
+      - stance: "Bolha estourando é correção saudável; mercados precisam de correção; o jogo do longo prazo vence."
+        quote: "A maior recompensa sempre vem praqueles que jogam o jogo do longo prazo."
+      - stance: "Stock options como promessa são um golpe para o funcionário; quem lucra é o VC."
+        quote: "nunca caiam no golpe das stock options."
+    book_hooks:
+      - unit: ch18
+        where: "seção 'A bolha que estourou antes', parágrafo 'Ela tinha um propósito declarado... estouro de uma bolha que, na minha conta, tinha começado por volta de 2014'"
+        touch: "Ancorar com a data do aviso: 'Em junho de 2019 (episódio #50) eu disse que a bolha de startups ia estourar, errei o ano em um (apostei em 2021) e não previ a pandemia, que adiou tudo. Estourou em 2022.' Ponto delicado: o livro diz que a bolha começou 'por volta de 2014'; o #50 conta a partir de 2009. Reconciliar (2009 nasce o dinheiro barato, 2014 a fase final?) ou ajustar para 'depois de 2008'."
+        strength: high
+      - unit: ch18
+        where: "mesma seção, 'Os engenheiros de bootcamp' / 'chef de Miojo'"
+        touch: "Citar a metáfora original do #50: o cozinheiro de livro de receitas versus o chef (ovo frito, sushi em poucos dias), e a frase 'Qualquer idiota consegue copiar e colar algum código'. Para a IA: o 'copia e cola' agora é feito pela máquina, o que torna ainda mais clara a diferença entre entregar algo e ser profissional. É a origem do 'chef de Miojo' do livro (verificar se o termo vem de #50 ou de outro episódio)."
+        strength: high
+      - unit: ch14
+        where: "seção 'Quem vende a pá' ou 'A panela de pressão' (hype, dinheiro fácil, valuations)"
+        touch: "'Em 2019 eu escrevi: Uber, com receita de 11 bilhões, tinha prejuízo operacional de 3 bilhões. A exuberância irracional criou empresas de cash flow negativo. Hoje a IA repete o desenho: quem gasta mais do que ganha prometendo que agora é a hora de crescer.' Compare com os números de capex de IA do capítulo; usar só números já presentes no livro."
+        strength: medium
+      - unit: ch01
+        where: "seção 'Bolhas estouram, tecnologias ficam'"
+        touch: "Trazer o argumento do legado: a bolha de 2000 deixou fibra óptica; a bolha de 2019 'só deixaria um sorrisinho amarelo'; a da IA deixa os modelos (e os data centers?). Citar #50 como origem da tese."
+        strength: medium
+      - unit: epilogo
+        where: "seção 'Medo vende'"
+        touch: "Coach de inovação e patentes: reaproveitar 'pergunte quantas patentes ele tem; pergunte quantas empresas lucrativas de mais de 10 anos tem o mentor' como teste prático contra o curso de 'engenharia de agentes'."
+        strength: medium
+    appendix_candidate: "Apêndice curto 'Como ler um aviso de bolha' (junto do apêndice 'Como ler um benchmark ou um anúncio'): os sinais do #50 e #132 (cash flow negativo, IPO fraco, contratação em massa para 'engordar o porco', FCF versus stock options), aplicados às empresas de IA, com a ressalva de que são sinais e não calendário."
+
+  - id: 2022/11/22/akitando-132-rant-a-bolha-de-startups-estourou
+    title: "[Akitando] #132 - Rant: A Bolha de Startups Estourou?"
+    one_line: "Em novembro de 2022 o autor explica as demissões em massa em Big Tech como o fim de uma década de juros zero, QE e pandemia, ensina a ler fluxo de caixa livre versus stock options (Apple, Meta, Shopify) e avisa jovens para cancelar cursos de influencer."
+    bio_facts:
+      - claim: "Seu vídeo de junho de 2019 avisou que a bolha ia estourar; ele pensava em 2020-21 e não podia prever a pandemia."
+        quote: "eu tinha na cabeça que se fosse vir uma correção, era provável que seria por volta de 2020 ou 2021."
+        check: "verificável pelo #50 (jun/2019); o #50 diz 'a partir de 2021'."
+      - claim: "Entre 2020 e 2021 a demanda por programadores de sua empresa 'aumentou de forma absurda'; ele recusou-se a dobrar o quadro e comprar concorrentes."
+        quote: "Se eu tivesse sido ganancioso e aproveitado a ocasião pra, por exemplo, consolidar e comprar concorrentes menores, dobrar o número de colabores, eu teria alocado todos com facilidade pelo dobro do preço."
+        check: "author memory (empresa Codeminer). Boa evidência de que ele escolheu não inflar na bolha; checar se o livro já fala da empresa."
+      - claim: "Investe de forma conservadora e fundamentalista (TradingView, análise de fluxo de caixa); 'não tenho vocação pra day trading'."
+        quote: "Prefiro colocar meu dinheiro em empresas confiáveis e deixar lá por anos."
+        check: "author statement; não afirmar patrimônio no livro."
+      - claim: "Diz que 'desde que comecei o canal' avisa para não acreditar em influencers que vendem cursos e emprego garantido."
+        quote: "não acreditem em influencers, e era especificamente influencers que vendem cursos e sonho de emprego garantido"
+        check: "coerente com #50, #90 e a playlist 'Eu Avisei'."
+      - claim: "Já ouviu de coaches e vendedores de curso que 'o Akita é negativo, espalha medo, terra planista' quando avisou da bolha."
+        quote: "todos falando que o Akita é negativo, que tá só espalhando medo, que é teoria da conspiração, terra planista."
+        check: "author memory; evitar nomear ninguém."
+    world_facts:
+      - claim: "Final de 2022: Amazon (~10-11 mil), Meta (11 mil), Twitter (mais de 3 mil, metade), Salesforce (2 mil), Netflix (450), Robinhood/Snap/Intel (20%), mais de 120 mil só nas Big Techs dos EUA."
+        quote: "Só nas Big Tech dos Estados Unidos, foram pra lá de 120 mil demissões."
+        check: "O próprio autor diz Amazon '10 mil' no início e '11 mil' depois: o anúncio de nov/2022 era ~10 mil, e a Amazon chegou a 18 mil em jan/2023. Meta 11 mil (9/11/2022) confere. Layoffs.fyi/TrueUp para o total."
+      - claim: "Ações de Facebook (de US$34 a mais de US$200, 2013-2018) e Amazon (de US$14 a mais de US$100, 2013-2018, +600%) subiram muito; 'o mundo de tecnologia se tornou a menina dos olhos de Wall Street'."
+        quote: "De 2013 até meados de 2018, meros 5 anos, essa empresa valorizou mais de 500%."
+        check: "Preços de Amazon a US$14 e US$100 ignoram o split 20:1 de 2022 (valores ajustados); nominal em 2013 era ~US$ 300, 2018 ~US$ 1.800. Facebook: ~US$ 34 (IPO 2012) e ~US$ 200 em 2018, confere. Dado ajustado, ok para ordem de grandeza."
+      - claim: "QE e juros perto de zero após 2008 empurraram fundos para mercado de risco e startups; SoftBank Vision Fund (US$100 bi); em 2020-21 a quantidade de dinheiro impresso foi muito maior que em 2008."
+        quote: "Se não rende nada deixar em renda fixa, sua única alternativa é o mercado de risco, de ações, startups e coisas assim."
+        check: "mecanismo amplamente aceito, mas simplificado; Vision Fund captou ~US$ 98 bi (2017). A afirmação de que as altas de ações em 2020-21 'foi justamente inflação' é interpretação do autor, não consenso."
+      - claim: "Zoom +800% (2020), Netflix +160%, Amazon +120%; em 2022 Netflix perdeu 55%, Zoom 85%, Amazon cerca de 50%, voltando ao patamar pré-pandemia."
+        quote: "Zoom, que cresceu quase 800%, em 2022 perdeu 85% do valor, novamente, voltando pros patamares de antes da pandemia."
+        check: "ordem de grandeza confere (ZM: ~US$ 70 em jan/2020, pico ~US$ 560 em out/2020, ~US$ 70 em nov/2022); porcentagens exatas variam com a data de corte."
+      - claim: "Análise de free cash flow versus compensação em stock options: Meta com FCF de US$ 320 milhões versus mais de US$ 3 bi em SBC no trimestre; Apple com US$ 111 bi de FCF contra US$ 9 bi de SBC; Shopify FCF negativo."
+        quote: "320 milhões de fluxo de caixa nesse trimestre contra nada menos que mais de 3 bilhões em compensação de stock options!"
+        check: "Meta Q3/2022: FCF reportado ≈ US$ 0,3 bi, SBC ≈ US$ 3,2 bi (bate com os números do autor); Apple FY2022 FCF ≈ US$ 111 bi, SBC ≈ US$ 9 bi (confere). Verificável em 10-Q/10-K."
+      - claim: "Previsão: 'primeira perna' do crash, segunda perna provável como em 2001; '2023 vai ser um ano perdido'; recuperação demoraria de 2 a 4 anos."
+        quote: "No mínimo, 2023 vai ser um ano perdido pra empresas de tecnologia."
+        check: "NÃO SE CONFIRMOU como previsto: a Nasdaq subiu cerca de 43% em 2023 e as Big Techs (Meta, Amazon, Nvidia) dispararam com a onda de IA; o emprego em tech continuou fraco, mas o mercado de ações não teve segunda perna. Ele ressalva: 'É muito possível que eu esteja completamente enganado'. Honestidade: usar o aviso, não o calendário."
+      - claim: "FTX/Alameda, Sam Bankman-Fried, WeWork/SoftBank, Theranos como exemplos de 'gurus' expostos: Holmes sentenciada a 11 anos, SBF foragido."
+        quote: "Todos foram expostos como tendo tido sorte durante um período econômico favorável e não porque eram gênios."
+        check: "FTX faliu 11/11/2022; Holmes foi sentenciada em 18/11/2022 a 11 anos e 3 meses. SBF foi condenado em nov/2023 a 25 anos (o texto do autor 'sentenciado agora' está datado). Linguagem do episódio é rant; não reproduzir adjetivos."
+    positions:
+      - stance: "Fluxo de caixa livre positivo é a conta mais fundamental; empresa que gasta mais do que ganha prometendo crescimento é charlatã."
+        quote: "nunca gaste mais do que ganha. Só isso."
+      - stance: "Gurus financeiros e fundadores 'salvadores' são sorte em mercado favorável; um gênio ganharia dinheiro quando todos perdem."
+        quote: "Um verdadero gênio estaria ganhando dinheiro em 2022 onde todo mundo perdeu."
+      - stance: "Cursos de influencer e bootcamps de 6 meses só funcionaram porque o mercado contratava qualquer um; na crise, vai para o fim da fila quem fez só curso."
+        quote: "Se agora a empresa tem opção de contratar alguém que fez 4 anos de faculdade e alguém que fez 4 meses de curso, quem acha que vão escolher?"
+      - stance: "Programação não é fácil, nem todo mundo nasceu pra isso; quem vende o contrário quer vender curso."
+        quote: "Esqueça o que um influencer vendedor de curso diz: não é fácil. Ele vai sempre te dizer que é, porque obviamente, quer enfiar um curso goela abaixo."
+      - stance: "Na crise, ganha quem aprende rápido e se vira; programador é programador, não 'meio-programador' (front sem back, back sem devops)."
+        quote: "Numa crise, quem sabe aprender rápido, não ficar só reclamando e sabe se virar, é quem não vai ter problemas."
+      - stance: "Ele descreve evidências, não prevê; admite que pode estar enganado."
+        quote: "É muito possível que eu esteja completamente enganado e daqui 1 ano tudo volta ao normal."
+      - stance: "A pandemia adiou o estouro que ele esperava para 2020-21; avisos não são calendários."
+        quote: "A pandemia veio nos 45 do segundo tempo, na prorrogação, e salvou o mundo da tecnologia do crash iminente."
+    book_hooks:
+      - unit: ch18
+        where: "seção 'A bolha que estourou antes', parágrafos 'A pandemia, que eu não previ, inflou ainda mais a fase final. A bolha estourou no fim de 2022' e a citação 'A bolha da programação estourou antes de existir LLM pra programar'"
+        touch: "Acrescentar a linha do tempo dos avisos: jun/2019 (#50), jun/2021 (#100), nov/2022 (#132), e a explicação do mecanismo em uma frase: juros perto de zero e dinheiro impresso empurraram fundos para startups, e quando os juros subiram o dinheiro voltou para o Tesouro. Isso sustenta a tese 'não foi a IA' com dados e não só opinião. Usar os números de layoffs já presentes (Meta 11 mil, 150 mil no ano) e conferir a discrepância Amazon 10/11 mil."
+        strength: high
+      - unit: ch18
+        where: "mesma seção, depois de 'Quem culpa a IA pelas demissões de 2022 está olhando pro culpado errado'"
+        touch: "Incluir uma frase de honestidade que o autor já praticava: 'Em novembro de 2022 eu disse que 2023 seria um ano perdido e que viria uma segunda perna do crash. Não veio; a onda de IA levantou o mercado em 2023. Avisei da bolha, errei o calendário.' Dá credibilidade ao 'não sou guru, não prevejo o futuro'."
+        strength: high
+      - unit: ch14
+        where: "seção 'Quem vende a pá' ou 'A fábrica de propaganda'"
+        touch: "Aplicar o teste FCF versus compensação em ações à indústria de IA: quem gasta mais do que ganha prometendo escala. Citar #132 ('Fluxo de caixa livre: faturar mais do que gasta') como método do autor. Não incluir cálculos novos sem fonte."
+        strength: medium
+      - unit: epilogo
+        where: "seção 'Medo vende' ou 'O que dá pra ignorar'"
+        touch: "'Em 2022 mandei o jovem cancelar curso de influencer e ir para uma faculdade de verdade, aprender inglês e esquecer atalhos. Em 2026 a oferta mudou de nome (curso de agentes, de 'engenharia' disso e daquilo), o mecanismo é o mesmo.' Casa com a passagem sobre 'agosto de 2026'."
+        strength: high
+      - unit: ch20
+        where: "seção 'Competente o suficiente' ou 'A linha reta' (carreira)"
+        touch: "O argumento de que em crise ficam os que sabem de tudo um pouco (full-stack, 'programador é programador') liga-se à tese de que quem decide e confere permanece. Uma frase com a citação do #132: 'quem sabe aprender rápido e se virar é quem não vai ter problemas'."
+        strength: medium
+    appendix_candidate: "Apêndice 'Como ler o balanço de uma empresa de IA em 10 minutos' (FCF vs stock options vs capex, diluição, buybacks), com Apple/Meta/Shopify de 2022 como exercício resolvido. Serve ao leitor do livro porque ele ouve 'a IA é uma bolha' e não tem como julgar. Risco: números de 2022 estão datados; só vale como método, com dados atuais."
+
+  - id: 2021/06/22/akitando-100-mercado-financeiro-pos-pandemia-a-tempestade-perfeita
+    title: "[Akitando] #100 - Mercado Financeiro Pós-Pandemia: A Tempestade Perfeita?"
+    one_line: "Em junho de 2021 o autor argumenta que dinheiro impresso, juros zero, venture capital e SPACs inflaram o mercado e preparam uma 'tempestade perfeita', e aconselha cautela, nada de opções/margem e nunca seguir gurus financeiros."
+    bio_facts:
+      - claim: "Na viagem anual aos EUA em março de 2020, voltou no 'penúltimo voo' para o Brasil e decretou home office na empresa por e-mail do aeroporto em 13/3/2020; já operava com equipe distribuída."
+        quote: "Nesse mesmo dia, do aeroporto, mandei email pra todos os colaboradores da empresa declarando o home office imediato a partir de segunda, dia 16."
+        check: "author memory; datas dos fechamentos de voo (EUA restringiu Londres/Europa em 11/3/2020) são públicas. Cenário curioso mas secundário."
+      - claim: "Sua carteira de investimentos caiu uns R$ 500 mil em 21 dias em 2020 (queda de 45% entre 19/2 e 23/3)."
+        quote: "minha carteira de investimentos desvalorizou por volta de meio milhão de reais."
+        check: "author statement sobre patrimônio; evitar no livro (valor privado). Queda de Ibovespa/ S&P no período é pública (S&P -34%; Ibovespa -46%); '45%' vale para o Ibovespa."
+      - claim: "Em 10 anos nunca teve tanta demanda por seus programadores quanto em 2020-21, nem no pico das startups brasileiras (2010-2015)."
+        quote: "eu nunca tive que lidar com tanta demanda por programadores em 10 anos. Nem no pico do mercado de startups aqui no Brasil que foi entre 2010 a 2015 mais ou menos."
+        check: "author memory. Ver #132, que repete."
+      - claim: "Comprou uma RTX 3080 em dezembro de 2020 por cerca de R$ 7 mil; seis meses depois custava R$ 21 mil."
+        quote: "Lembram que eu comprei minha RTX 3080 dezembro do ano passado? Eu paguei super caro, uns 7 mil reais."
+        check: "author memory; preços de revenda no Mercado Livre eram voláteis. Bom detalhe humano para o capítulo de hardware local (ch09?), mas só como curiosidade."
+      - claim: "Mantém parte do patrimônio em cripto, metais e commodities como proteção contra inflação, e evita VC e SPAC."
+        quote: "Eu como investidor até que conservador, fico longe de VC ou SPAC."
+        check: "author statement privada; NÃO usar no livro."
+    world_facts:
+      - claim: "Crash de março de 2020 (45% em 21 dias) e recuperação rápida: Ibovespa recuperou em 184 dias, Nasdaq em ~1,5 mês; depois tech subiu quase 50% até maio de 2021."
+        quote: "do dia 28 de março do ano passado, até fim de maio deste ano, só uns 250 dias, o mercado de tech ainda subiu quase 50%."
+        check: "Nasdaq recuperou a máxima de fev/2020 em junho de 2020 (cerca de 2 meses após a mínima de 23/3), não bate 100% com '26 de maio'; checar. Ibovespa só voltou ao patamar de fev/2020 em jan/2021 (≈ 10 meses), então '184 dias' parece impreciso."
+      - claim: "Short squeeze da GameStop em janeiro de 2021 (de US$ 23 a US$ 347 em dias), prejuízo de ~US$ 3 bi para a Melvin Capital."
+        quote: "as ações da Gamestop nos Estados Unidos subiram nada menos que 1370 porcento! Num período de só 10 dias!"
+        check: "GME fechou a ~US$ 19 em 11/1/2021 e chegou a US$ 347 (fechamento 27/1; máxima intradiária US$ 483 em 28/1). Melvin perdeu ~53% no mês de janeiro e teve resgate de US$ 2,75 bi. Número do autor ('3 bi de prejuízo') aproximado."
+      - claim: "Metade dos dólares em circulação foram impressos em um ano; o governo americano emitiu mais de US$ 5 trilhões de dívida; inflação nos EUA passou de 4%."
+        quote: "metade dos dólares em circulação na economia foi impressa no período de 1 ano."
+        check: "M2 cresceu cerca de 25% entre fev/2020 e jun/2021; a base monetária dobrou. 'Metade dos dólares' é verdade para a base monetária (M0), não para M2. CPI de abril/2021: 4,2% (CNBC, 12/5/2021): confere."
+      - claim: "SPACs: de 2013 a 2019 eram 2-3 IPOs por ano (13 em 2019); 77 em 2020; mais de 50 em 2021 até junho. Ele chama de 'golpes a céu aberto' e diz que a SEC passou a investigar."
+        quote: "Em 2020 esse número foi pra 77, que é mais que todos os SPACs que teve desde 2013 somado!"
+        check: "Números do autor estão MUITO abaixo dos reais: houve 248 IPOs de SPAC em 2020 e 613 em 2021 (SPACInsider). Provável confusão com SPACs de 'tamanho/marca'; não repetir 13/77 sem checar. A tese (explosão e depois estouro dos SPACs) se confirmou: SPAC IPOs caíram quase 90% em 2022."
+      - claim: "Tesla de US$ 80 (início de 2020) a US$ 630 (maio/2021); Bitcoin de ~US$ 4 mil (março/2020) a US$ 65 mil (abril/2021)."
+        quote: "No começo de 2020 uma ação da Tesla valia 80 dólares. Em maio de 2021 tava valendo 630 dólares."
+        check: "Tesla ajustada por splits: ~US$ 80 em jan/2020 e ~US$ 600 em maio/2021: confere. Bitcoin: mínima ~US$ 3,8 mil (12/3/2020) e máxima ~US$ 64,9 mil (14/4/2021): confere."
+      - claim: "O autor previu uma 'hiper-inflação' no mercado financeiro e inflação geral; a inflação americana chegou a ~9% em junho de 2022."
+        quote: "É um fato: o mercado financeiro está em hiper-inflação faz meses."
+        check: "A inflação CPI subiu a 9,1% em jun/2022 (BLS). 'Hiperinflação' no sentido técnico (50%/mês) NÃO ocorreu; ele usa a palavra em sentido figurado para ativos financeiros. Cuidado ao citar."
+    positions:
+      - stance: "Desconfiar de qualquer empresa que fala em 'investimento' e 'contratações' mas nunca em lucro: é 'engordar o porco antes do abate'."
+        quote: "É o que eu chamo de engordar o porco antes do abate."
+      - stance: "Sinais de bolha: dinheiro fácil, investidores de primeira viagem, SPACs e gurus; 'se a esmola é muita até o santo desconfia'."
+        quote: "E aqui vale aquele velho ditado: se a esmola é muita até o santo desconfia."
+      - stance: "Não existe riqueza fácil; nunca siga guru financeiro; invista só no que estudou; isso leva anos."
+        quote: "Nunca invista em nada que você não estudou muito bem. E nunca, nunca, jamais siga gurus financeiros. Não existe riqueza fácil."
+      - stance: "Não julgar informação pela reputação de quem fala."
+        quote: "nunca associe a validade ou invalidade de uma informação baseado na reputação da pessoa que tá falando."
+      - stance: "Opinião não é recomendação; ele diz que não é economista e que a economia tem variáveis não lineares."
+        quote: "eu não sou economista, absolutamente nada do que disser aqui ou o que falei nos outros vídeos é recomendação financeira nem nada."
+      - stance: "Admite que errou pontos e que os mercados têm 'centenas de variáveis'."
+        quote: "tirando poucos pontos que errei, no geral tá caminhando como falei."
+      - stance: "Defende o risco: se ninguém se arriscasse, não haveria Apple, mas o risco é de cada um."
+        quote: "Ninguém botou uma arma na sua cabeça pra fazer a aposta."
+    book_hooks:
+      - unit: ch14
+        where: "seção 'A panela de pressão' ou 'Quem vende a pá' (dinheiro fácil, FOMO, gurus)"
+        touch: "'Em junho de 2021 eu descrevi os sintomas: empresas que mudam ”despesa” para ”investimento”, contratam em massa antes de ter lucro, e SPACs prometendo atalhos. Chamei de engordar o porco antes do abate. A IA tem seus próprios porcos.' Útil para o leitor reconhecer o padrão sem precisar de uma data."
+        strength: high
+      - unit: ch18
+        where: "seção 'A bolha que estourou antes', depois de 'A pandemia, que eu não previ, inflou ainda mais a fase final'"
+        touch: "Um parágrafo curto que explique o 'por quê agora': com os estímulos e os juros em zero, o dinheiro de fundos e de gente física inundou startups e SPACs (cada vez com menos escrutínio), e a demanda por programadores bateu o recorde. Citar #100 e depois #132 como prova de que a conta fechou depois. Dado a verificar: números de SPAC."
+        strength: medium
+      - unit: epilogo
+        where: "seção 'Medo vende'"
+        touch: "O FOMO: 'No #100 eu disse: o risco é cair em FOMO, ver os outros se dando bem e entrar numa aposta arriscada fraudulenta e perder tudo.' Em 2026 a aposta tem outro nome (agentes, 'engenharia' de qualquer coisa), o mecanismo é o do SPAC. Já há ponte com o texto de agosto de 2026."
+        strength: medium
+      - unit: apmemoria
+        where: "(se o apêndice tratar de fontes e verificação)"
+        touch: "'Informação que depende da pessoa falando tem pouco valor' como regra de verificação, paralela a 'confira você mesmo'."
+        strength: low
+    appendix_candidate: "Nenhum apêndice. O episódio é quase todo economia financeira e a maior parte envelheceu mal (números de SPAC, 'hiperinflação'); vale usar apenas 1 ou 2 frases como método ('engordar o porco', FOMO)."
+
+  - id: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados
+    title: "[Akitando] #90 - O que os Cursos NÃO te Ensinam sobre Mercados"
+    one_line: "Palestra de dez/2020 em que o autor liga oferta e procura ao mercado de programação, diz que o ciclo de abundância acabou, que cursos de ferramenta envelhecem e que matemática, fundamentos e aprender a aprender sustentam a carreira."
+    bio_facts:
+      - claim: "Programador há 'quase trinta anos', passou por front, back, infra, segurança, mobile, gerente, PO, consultor; há 10 anos tem empresa de outsourcing com quase 100 desenvolvedores, projetos majoritariamente nos EUA."
+        quote: "eu sou desenvolvedor de software há quase trinta anos."
+        check: "author statement (dez/2020). 'Quase 100' é número do autor naquele momento; atualizar se citar."
+      - claim: "Aprendeu dBase lendo um livro por quase um ano na adolescência (14-15 anos), fez freelas; aos 17 entrou em Ciência da Computação e o choque foi descobrir que tudo o que sabia não servia, e que dois anos eram só matemática."
+        quote: "Aos dezessete resolvi entrar na faculdade de ciências da computação e foi um choque absurdo."
+        check: "author memory. Inconsistências com #61: lá começa a programar aos 13 (Basic, 1990) e entra na USP em 1995; aqui diz 'catorze ou quinze' e 'dezessete'. Também 'eu mesmo não me formei', com dois anos concluídos. Alinhar com o texto do livro (que fala em ciência da computação?) antes de usar qualquer detalhe."
+      - claim: "Foi consultor (c. 2004) num grande projeto de uma operadora (Atena/Vivo), onde apontou um vazamento de memória num framework proprietário da BEA/Oracle; foi acusado de querer prejudicar o projeto e depois o sistema precisou ser reiniciado a cada meia hora."
+        quote: "Eu mandei e-mail pro meu chefe avisando e ele marcou uma reunião com os arquitetos da Oracle."
+        check: "author memory; cita nomes de empresas e produto. Para o livro: contar sem nomear (uma operadora, um framework de fornecedor grande). Pode ser a história 'ele avisou e não ouviram' mais forte do livro, par com 'avisei da bolha'."
+      - claim: "Hoje aprende uma linguagem nova até ficar minimamente produtivo em um mês; antes levava um ano; a cada geração deixou as ferramentas para trás."
+        quote: "Hoje eu consigo aprender uma linguagem nova, a ponto de ficar minimamente produtivo, em um mês."
+        check: "author statement (2020). Boa base para 'aprender a aprender' com IA."
+      - claim: "Continuou programando em tempo integral em projetos até quase dois anos antes (c. 2019), mesmo sendo empresário."
+        quote: "Apesar de ter me tornado empresário eu continuei programando tempo integral em projetos até quase dois anos atrás."
+        check: "author statement."
+    world_facts:
+      - claim: "Ciclos de oferta e procura: a facilidade de formar programadores em 6 meses leva a oferta de iniciantes a superar a demanda; 'estamos saindo do último ciclo de abundância, que começou uns 10 anos atrás'."
+        quote: "estamos saindo do último ciclo de abundância, que começou uns 10 anos atrás."
+        check: "aviso de jan/2021; o mercado superaqueceu até 2022 e a correção veio em 2022-23. Antecipou o fim, errou o ritmo (como em #50 e #132)."
+      - claim: "As linguagens mais demandadas por década (anos 90: Visual Basic, Delphi, Java; virada: PHP, ASP, Flash; 2010: Objective-C, Ruby, JavaScript; 2020: Python, Flutter, React)."
+        quote: "Hoje as linguagens mais demandadas talvez sejam Python e frameworks como Flutter ou React."
+        check: "impressão do autor ('talvez'); verificável com Stack Overflow Developer Survey / TIOBE por década."
+      - claim: "Exemplo de matemática: um tweet somou 7 fundos de 0,5% ao mês como se desse 42% ao ano; o correto seria ~6% ao ano antes de inflação (~4%) e taxas, restando talvez 1%."
+        quote: "fica preocupado, aliás, fica BEM preocupado porque isso é juros compostos e ao final de doze meses não é quarenta e dois porcento e sim perto de seis porcento só."
+        check: "a erratas do próprio episódio diz que a matemática do tweet é pior ainda (juros simples). Se (1,005)^12 = 6,17%, o número 'perto de seis por cento' confere para um fundo; mas sete fundos de R$ 10 mil a 0,5% a.m. dá 6,17% sobre o total, não 42%. Correto."
+      - claim: "Vazamentos/incidentes de 2020 no STF e no Ministério da Saúde com senhas em texto aberto e credenciais de banco no front-end."
+        quote: "Senhas de usuários sendo gravados em banco de dados como texto aberto."
+        check: "ataques de 2020 ao STJ (nov/2020) e ao Ministério da Saúde (dez/2020, Lapsus$ aparece em 2021); o autor fala 'Supremo Tribunal Federal'; o caso de nov/2020 foi no STJ. Checar antes de citar."
+    positions:
+      - stance: "Ferramentas envelhecem (cursos de ferramenta têm validade curta); o que dura é raciocinar e aprender a aprender; matemática 'não envelhece'."
+        quote: "existem dois tipos de cursos: os que te ensinam ferramentas e os que te ensinam a aprender. Os que ensinam ferramentas tem validade super curta, os que te ensinam a aprender duram anos a fio."
+      - stance: "Seguir tutorial ensina a ler, copiar e colar, não a raciocinar; programação não é montar Lego."
+        quote: "Todo curso baseado em seguir tutorial te ensina só copiar e colar coisas e mais nada."
+      - stance: "Sem lealdade a ferramenta nem marca; tecnologia não é time de futebol; 'se você só sabe martelo, todos os problemas parecem pregos'."
+        quote: "Ferramenta é só isso, ferramenta."
+      - stance: "Na queda de demanda, o prêmio vai para quem otimiza e eleva a qualidade, não para quem só produz funcionalidade nova."
+        quote: "Quando a demanda cair, a prioridade não vai ser só sair produzindo funcionalidades novas a rodo e sim em otimizar e aumentar a qualidade do que foi produzido até agora"
+      - stance: "Aprender de verdade é achar a lacuna, buscar sozinho, testar hipóteses, falhar e criticar; o estudo só começa depois da escola."
+        quote: "Aprender não é decorar matérias e fazer uma prova. É enxergar o problema e aceitar que te falta conhecimento, procurar você mesmo por esse conhecimento, testar hipóteses e falhar"
+      - stance: "Escola e curso são 'rodinhas na bicicleta'; aprender dói, e deve doer por causa da lei da oferta e da procura."
+        quote: "Faculdades, cursos, e qualquer tipo de instituição de ensino tradicional não são ruins. Mas elas são rodinhas na bicicleta."
+      - stance: "Quem nasceu na alta não entende a baixa; o mercado filtra quem só teve sorte de entrar num momento aquecido."
+        quote: "Quem nasceu na alta não entende a baixa. Só quem já caiu é que enxerga e valoriza as oportunidades."
+    book_hooks:
+      - unit: ch18
+        where: "seção 'Como alguém vira sênior' ou 'O que sobra quando a digitação some'"
+        touch: "Uma frase com a tese do #90: 'cursos de ferramenta têm validade curta; os que ensinam a aprender duram anos' e o exemplo do programador de Visual Basic que perdeu todas as ondas. Hoje a ferramenta mais volátil é o próprio assistente de IA; o que não envelhece é saber raciocinar sobre o problema (complexidade, dados, segurança)."
+        strength: high
+      - unit: ch18
+        where: "seção 'Quem decide' ou 'Que linguagem aprender'"
+        touch: "'Eu aprendo uma linguagem nova em um mês; antes levava um ano. Isso só foi possível porque desapeguei de cada uma que aprendi, a começar pelo dBase, que já tinha morrido quando entrei na faculdade' (#90). Reforça 'não escolha a linguagem pelo calendário'."
+        strength: high
+      - unit: ch20
+        where: "seção 'Competente o suficiente' (competência real vs. aparente)"
+        touch: "O caso do framework com vazamento de memória é uma anedota 'competente o suficiente pra desconfiar': ele testou, mediu, avisou e foi desacreditado pelo arquiteto certificado; meses depois rebootavam os servidores a cada meia hora. Contar sem nomes: 'ele avisou, mediu e foi ignorado' liga com 'confira você mesmo' e com 'Código que ninguém leu' (ch16)."
+        strength: high
+      - unit: ch16
+        where: "seção de abertura ('Código que ninguém leu') ou alguma seção sobre senhas/segurança"
+        touch: "Reaproveitar a regra do #90: 'ninguém em sã consciência grava senha de usuário em texto aberto' como régua de que o agente também precisa ser auditado em básico. Conectar a lição: quem não sabe o básico não sabe checar o que a IA gerou."
+        strength: medium
+      - unit: epilogo
+        where: "seção 'O que vale aprender'"
+        touch: "Fechar com o par 'matemática, estatística e fundamentos não envelhecem' (do #90) e a lista do livro do que aprender. Um parágrafo curto dizendo que o autor viu a ferramenta mudar quatro vezes por década e que continuou valendo o raciocínio."
+        strength: high
+      - unit: ch01
+        where: "seção que explica que LLM é estatística/probabilidade"
+        touch: "'Quando falaram de data science e machine learning, me lembrei da faculdade: é basicamente um pacote de estatística e probabilidade' (#90). Dá autoridade vivida a quem explica o modelo sem matemática."
+        strength: low
+    appendix_candidate: "Mini-apêndice 'Contas que todo leitor deveria fazer de cabeça' (juros compostos, percentuais de queda/alta, complexidade de uma busca): aproveita o exemplo do tweet de 7 fundos a 0,5% e o 'cair 55% exige subir 100%' do #132. Serve ao leitor do livro de IA porque números de anúncio e benchmark se enganam do mesmo jeito. Já há apêndice 'Como ler um benchmark ou um anúncio' (apC); melhor incorporar 2 parágrafos lá do que criar apêndice novo."

@@ -8,9 +8,10 @@ sources:
   - {post: 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic, sha256: "ab900c522b1e3798b82f918c636213aa8290807a14ce39300a21f4fda68ef9a8"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "0178f4ea75a7f6b79e7ae1878ccf3ccfd7fe7c0c4edf57d4cfd3bac2dee3e921"}
   - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "65b3ce93900a46d8fe0b9cb7fdc627978e0e220926745dd8c5e4453edc2b3690"}
+  - {post: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash, sha256: "79a02c73df595ddf8952c7bfbbd8023f51a3297b259610afa65901112dfe4160", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/index.md, sha256: "c3115f6f0b18f65cecce155e17f554db9a568db75a629de314b5f6d61e72fe85"}
+translated_from: {file: book/pt/index.md, sha256: "757102c6cc57a2fcd7efbf23b380bda6654b761ff78ee9ff753b601b949e44f9"}
 ---
 
 # Preface {#sec-prefacio .unnumbered}
@@ -34,7 +35,7 @@ In June, one of the biggest companies in the field, its paperwork to go public f
 The other world was my terminal. From February to May, I spent more than 500 hours programming almost entirely with AI [agents]{.gls key=agente}, the programs that let the model read files, run commands and work on its own for hours. That came to 24 projects, some that worked out, others that turned into garbage.
 
 <!-- src: 2026/10/12/llms-agentes-competente-o-suficiente -->
-Then came months of putting dozens of models through a programming test I built myself, checking the results one by one, month after month. When I put it all together, in October, I went looking for the curve the ads drew shooting up to the sky in the measurements that don't depend on whoever sells the model. The people who train the models had been saying since late 2024 that scaling up the basic training paid off less and less, and the best models were squeezing into an ever tighter pack. Add that to a year of daily use, and my reading is that the base intelligence of the models stopped making leaps.
+Then came months of putting dozens of models through a programming test I built myself, checking the results one by one, month after month. When I put it all together, in October, I went looking for the curve the ads drew shooting up to the sky in the measurements that don't depend on whoever sells the model. The reports from the people who train the models and the independent measurements pointed the same way, and, adding my own tests, my reading is that base intelligence stopped making leaps; what kept growing was what it can do with tools in hand (@sec-ch20).
 
 <!-- src: original -->
 The distance between the two worlds ran both ways. In plenty of places the tool was better than the skeptics would admit: you can build real software with it, and I did. In others, it was much worse than the ads were selling. It gets things wrong with total confidence, agrees with whatever you already thought, forgets what was agreed an hour earlier, and needs someone experienced checking what comes out.
@@ -59,8 +60,11 @@ You don't need to know how to program. I'm a programmer, and a lot of what I tel
 
 ## Whose Side I'm On
 
+<!-- src: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash -->
+I've been programming since 1990. I started working in 1996, at ad agencies and dot-com companies that didn't survive the bursting of the internet bubble, and then I spent five years integrating SAP systems at large companies. In 2007 I moved to Ruby on Rails, I organized RubyConf Brasil from 2008 to 2016, I founded Codeminer 42 in 2011, and from 2018 to 2023 I ran Akitando, a video channel I made to teach the knowledge that survives bubbles.
+
 <!-- src: 2026/02/08/rant-ia-acabou-com-programadores -->
-I've been programming since the late 1980s, blogging since 2006, and I spent six years teaching programming on a video channel. I watched the dot-com bubble burst and the internet keep right on existing. I watched entire professions appear and vanish. That memory helps when you hear an ad for a "revolution" and want to keep your head.
+I've also been blogging since 2006. I watched the internet keep right on existing after the bubble burst, and I watched entire professions appear and vanish. That memory helps when you hear an ad for a "revolution" and want to keep your head, and it's where the skepticism you'll find in this book comes from.
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
 A lot of people know me for a line about hype and knowledge, which you'll find right in the first chapter. Because of it, one crowd thinks I hate AI. Because of what I did in 2026, another crowd thinks I caved to it. Both get it wrong for the same reason: they imagine those are the only two sides.

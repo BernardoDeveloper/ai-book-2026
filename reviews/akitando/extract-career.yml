@@ -1,0 +1,456 @@
+# Akitando extraction, group "career". Quotes verbatim from the transcripts
+# (validated by script). Transcripts carry the author's own typos; kept as-is.
+# Cross-post notes:
+#  - First-programming date differs between episodes: ep 29 says "aprendi a programar aos 12 anos";
+#    ep 65 says a Basic course in 1990 "uns 13 anos" and "programador desde 1991"; ep 69 says
+#    "carreira de 30 anos de programação" (Dec 2019). Use "começou na adolescência, no início dos
+#    anos 90" unless the author confirms the exact year.
+#  - Ep 29/63 age: "42 anos" in Oct 2019 (born 1976/77).
+posts:
+  - id: 2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego
+    title: "[Akitando] #29 - O que eu devo estudar? Vou conseguir emprego?"
+    one_line: "Não pergunte se tem emprego para a tecnologia da moda: domine a ferramenta do trabalho, pratique o resto nas horas vagas, e jogue o jogo de longo prazo, porque os pontos só se ligam em retrospectiva."
+    bio_facts:
+      - claim: "Em 2006 decidiu aprender e trabalhar com Ruby, quando não havia mercado no Brasil; pediu demissão de um bom emprego de consultor Java e recomeçou do zero. Primeiro emprego remoto com Ruby em 2007, empresa própria em 2011."
+        quote: "quando eu decidi que ia aprender Ruby E trabalhar com Ruby, havia zero mercado de trabalho no Brasil."
+        check: "Datas 2006/2007/2011 batem com o restante do blog (Codeminer42 em 2011, ele diz 34 anos na abertura). Frame como memória do autor; a data de abertura da empresa conferir contra o texto do livro."
+      - claim: "Escreveu o livro de Rails em 2006, em cerca de 2 meses, nas horas vagas, enquanto trabalhava como consultor Java."
+        quote: "Eu escrevi em 2 meses nas horas vagas não porque eu era bom, mas porque eu não tinha outra alternativa."
+        check: "Conferir título/ano do livro (Repensando a Web com Rails, 2006) em registro público ou no blog. Memória do autor."
+      - claim: "Em dez/2002-jan/2003 consertou um sistema ASP legado (RH, banco de horas) numa grande empresa; isso levou à RFP perdida em 2003 e, em 2004, ao projeto SAP/J2EE de RH com mais de 4000 funcionários (cliente nomeado no vídeo: Suzano Bahia Sul), onde passou cerca de 2 anos com a própria equipe."
+        quote: "o projeto era a implementação SAP do módulo de recursos humanos pra gerenciar os mais de 4000 funcionários que eles tinham na época."
+        check: "Memória do autor; nome do cliente está no vídeo mas evitar citá-lo no livro sem aval (nome de cliente). Frame como 'uma grande empresa de papel e celulose' se necessário."
+      - claim: "Aos 30 anos sabia que ainda não era bom; abriu a empresa só aos 34, embora quisesse antes dos 30."
+        quote: "Eu também queria abrir minha própria empresa antes dos 30 anos. Mas eu esperei. Até os 34 anos."
+        check: "Autor memória. 34 anos em 2011 é coerente com nascimento ~1977."
+      - claim: "Nos primeiros 5 anos de carreira (dos 20 aos 25) não frequentava eventos, fóruns ou comunidades, o que o blindou do hype."
+        quote: "Teria sido um desastre se eu ficasse toda hora correndo atrás do hype."
+        check: "Autor memória; ver também o episódio dos 'primeiros 5 anos' (fora deste grupo)."
+    world_facts:
+      - claim: "Em 2018 a empresa dele tinha 7 anos, 80 funcionários (75 devs) e 11 escritórios fora das capitais principais."
+        quote: "Em 2018 minha empresa tem 7 anos, 80 funcionários sendo 75 desenvolvedores"
+        check: "Dado de empresa em 2018; não usar como número atual. Nomes de cidades de escritórios são do vídeo, não precisam entrar no livro."
+      - claim: "Dado datado: .NET Core, Kotlin e OpenJDK/Azul sendo os destaques de 2018."
+        quote: "mas alternativas como o próprio OpenJDK ou a nova JDK da Azul Systems, baseado em LLVM, e o dialeto Kotlin da Jetbrains, também aumentaram o padrão do jogo."
+        check: "Afirmação técnica datada de 2018 (Azul Zing/LLVM). Não reutilizar no livro."
+    positions:
+      - stance: "Aprender a linguagem é meio, não objetivo; a pergunta 'tem emprego?' vale para qualquer tecnologia e é a pergunta errada."
+        quote: "Aprender Ruby ou Aprender Elixir não é o objetivo, é só um meio."
+      - stance: "O diferencial de um profissional é absorver o ambiente e decidir rápido, não saber ferramentas."
+        quote: "A característica mais importante de qualquer profissional não é saber usar bem suas ferramentas, isso é o básico. É a capacidade de absorver o ambiente, entender as limitações desse ambiente, e tomar as melhores decisões o mais rápido possível e executar."
+      - stance: "Melhorar legado é mais difícil e mais valioso do que começar do zero."
+        quote: "qualquer imbecil consegue começar um projeto novo do zero. Mas só caras realmente bons conseguem melhorar sistemas legados."
+      - stance: "Conhecimento e experiência são o único ativo que não se perde; os pontos só se ligam depois."
+        quote: "É impossível juntar os pontos no presente. Só no futuro que tudo se conecta."
+      - stance: "Competência óbvia dá voz nas decisões."
+        quote: "Você só ganha voz pra tomar decisões de verdade no dia que sua competência técnica é reconhecida porque ela é óbvia. Se você precisa explicar, ela ainda não é óbvia."
+    book_hooks:
+      - unit: ch18
+        where: "## Que linguagem aprender (a pergunta do iniciante, 'que linguagem eu aprendo agora?')"
+        touch: "Em 2018 eu já respondia isso no canal: a pergunta 'tem emprego pra essa linguagem?' vale pra Ruby, pra Elixir, pra qualquer uma, e é a pergunta errada. Eu mesmo larguei um bom emprego de consultor Java em 2006 pra apostar em Ruby, quando não existia mercado nenhum no Brasil, e não recomendei a ninguém me copiar (Akitando #29)."
+        strength: medium
+      - unit: ch18
+        where: "## Como alguém vira sênior (ou a seção sobre o júnior que vai ser formado com agente)"
+        touch: "Peguei meu maior projeto Java até então porque aceitei consertar um sistema ASP horrível que ninguém queria. Quem escolhe só a oportunidade confortável perde as que mudam a carreira (Akitando #29). Vale como contraponto ao medo do 'trabalho chato que a IA vai tirar do júnior': o serviço ingrato é onde se aprende a decidir."
+        strength: medium
+      - unit: ch20
+        where: "## Competente o suficiente (o que sobra é saber decidir, não digitar)"
+        touch: "Desde 2018 eu digo que a característica mais importante do profissional não é dominar a ferramenta, e sim absorver o ambiente, entender os limites e decidir rápido (Akitando #29). A ferramenta mudou, a frase continua."
+        strength: medium
+      - unit: epilogo
+        where: "## O que vale aprender"
+        touch: "Aprenda o que a IA ainda não faz por você nas horas vagas, sem perguntar se tem vaga. Em 2018 eu já dizia: conhecimento e experiência são o único bem que ninguém rouba de você, e os pontos só se ligam depois (Akitando #29)."
+        strength: low
+    appendix_candidate: ""
+
+  - id: 2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40
+    title: "[Akitando] #37 - A Dimensão do Tempo para Iniciantes em Programação (Série Começando aos 40)"
+    one_line: "A cada dez anos as plataformas e linguagens mudam por completo; quem aos 20 projeta o futuro com base no presente está sempre errado, então apaixone-se pelo processo de aprender, não pela tecnologia ou pela empresa."
+    bio_facts:
+      - claim: "Entrou na faculdade em 1995, aos 18 anos."
+        quote: "Agora vamos pular pra 1995, ano que eu entrei na faculdade e tinha 18 anos."
+        check: "Ep 64 diz que escolheu cursos 'lá por 94'; ep 63 diz que saiu antes de terminar. Conferir 1995 na cronologia do blog (post dos primeiros 5 anos)."
+      - claim: "Viu as transições de classe de computador na própria carreira (4 décadas de vida): mainframe, mini, desktop, web, mobile, cloud."
+        quote: "só na minha curta história de 4 décadas eu diria que vi isso acontecer com meus próprios olhos."
+        check: "Autor memória; consistente com 'carreira de 30 anos' do ep 69."
+      - claim: "Conheceu o GitHub em 2008, quando era um escritório pequeno com poucas pessoas."
+        quote: "Eu conheci o GitHub em 2008, era um escritório pequeno, poucas pessoas."
+        check: "Autor memória (visita?). GitHub foi lançado em abril de 2008; adquirido pela Microsoft em 2018 (US$ 7,5 bi, anunciado em jun/2018). Confere."
+    world_facts:
+      - claim: "Em 1995 a internet comercial estava começando, com cerca de 1% da população em modems de 56 kbps."
+        quote: "A internet comercial estava só começando com cerca de Um Porcento da população experimentando a “ultra” velocidade de modems discados de Cinquenta e Seis kbps."
+        check: "Dado impreciso: em 1995 o padrão era 14.4/28.8 kbps, 56k chegou em 1997-98; no Brasil a internet comercial começa em 1995 com muito menos de 1%. Não citar o número."
+      - claim: "Cada tecnologia dominante de uma década (dBase/Clipper, Visual Basic/Delphi, Flash) estava em declínio dez anos depois."
+        quote: "Sabe o dBase ou Clipper ou Dataflex de 10 anos atrás? Já estavam no caminho de queda."
+        check: "Fatos históricos amplamente documentados; seguro como ilustração."
+      - claim: "Sun vendida para a Oracle em 2009; Microsoft e Apple tiveram altos e baixos; a startup de ontem vira o enterprise de amanhã."
+        quote: "Toda startup inovadora de ontem se torna o enterprise de amanhã."
+        check: "Sun/Oracle: acordo anunciado abr/2009, concluído jan/2010. 'Em 2009' é aceitável. Citar como 'anunciada em 2009'."
+      - claim: "Lei de Bell (1972): cerca de a cada década nasce uma nova classe de computadores de menor custo, com nova plataforma, rede e interface."
+        quote: "Mais ou menos a cada década uma nova classe de computadores de menor custo se forma baseada em uma nova plataforma de programação, rede e interface resultando em uma nova usabilidade e o estabelecimento de uma nova indústria."
+        check: "Lei de Bell: Gordon Bell, 1972; confirmar em Wikipedia (Bell's law). É boa âncora para 'LLM como mais uma classe/interface'."
+    positions:
+      - stance: "Nenhum projeto de carreira aos 20 sobrevive à década seguinte; quem acha que acertou tudo limitou as opções."
+        quote: "E se quando chegar aos 40 você olhar pra trás e disser “sim, tudo aconteceu exatamente como eu tinha imaginado aos 20 anos” eu sinto dizer que você provavelmente limitou muito suas opções e viveu muito abaixo do seu potencial."
+      - stance: "Cada linguagem de uma década vira obsoleta na seguinte; por isso 'aprender a aprender'."
+        quote: "cada nova linguagem que aprenderíamos numa década se tornaria obsoleta já na década seguinte e teríamos que aprender mais e mais linguagens e tecnologias novas. Entenderam agora porque eu constantemente falo tanto sobre “Aprendendo a Aprender”?"
+      - stance: "Amar o processo, não a tecnologia nem a empresa por trás."
+        quote: "Apaixone-se pelo processo de aprender e usar as tecnologias, nunca pelas tecnologias em si e as empresas por trás."
+      - stance: "Nada permanece igual por mais de uma década."
+        quote: "Nada permanece igual por mais de uma década neste nosso mundo de tecnologia."
+      - stance: "Ninguém está atrasado; uma nova década sempre se abre."
+        quote: "Talvez, talvez você esteja atrasado, pra década passada, mas uma nova década já se abriu."
+    book_hooks:
+      - unit: ch18
+        where: "## Uma interface atrás da outra (a sequência chaves, cartão, montador, compilador, framework, agente)"
+        touch: "Eu falava disso no canal em 2019, no episódio 'A Dimensão do Tempo': em 1985, 1995, 2005 e 2015 a escolha de quem começava era outra, e cada tecnologia dominante estava em declínio dez anos depois. A Lei de Bell (1972) descreve o ciclo: a cada década nasce uma nova classe de computador, com nova interface. O agente é só a interface da próxima década."
+        strength: high
+      - unit: ch20
+        where: "## A linha reta (ou o fecho sobre o que não muda)"
+        touch: "Tenho 4 décadas de vida e vi mainframe, desktop, web, celular e nuvem chegarem 'pra acabar' com o que veio antes. Em 2019 eu já avisava (Akitando #37): quem projeta o futuro com base no presente erra, e a única constante é gostar do jogo e do próprio esforço."
+        strength: medium
+      - unit: epilogo
+        where: "## Pra esta semana / ## Medo vende"
+        touch: "Se você se pergunta 'será que estou atrasado?', a resposta que eu dei em 2019 vale pra IA: talvez você esteja atrasado pra década passada, mas uma nova década já se abriu (Akitando #37)."
+        strength: medium
+    appendix_candidate: "Linha do tempo de 1985 a 2025, uma página: o que um jovem de 20 anos escolheria em cada década, e o que estava em queda dez anos depois. Serve ao leitor do livro de IA como prova visual de que 'interface da década' muda sempre (Lei de Bell). Já existe quase pronto no episódio; precisaria atualizar com 2015-2025 (cloud, mobile, LLM)."
+
+  - id: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida
+    title: "[Akitando] #63 - Não Terceirize suas Decisões: a lição mais importante da sua vida"
+    one_line: "Não terceirize decisões de carreira nem de projeto para influencers ou para o que Google, Netflix e Facebook fazem: erre barato, assuma o prejuízo, desconfie de quem não tem skin in the game."
+    bio_facts:
+      - claim: "Nunca teve ídolos na área nem perguntou a ninguém o que fazer na carreira; todas as decisões importantes foram dele."
+        quote: "Todas as decisões importantes são minhas, certas ou erradas. Se eu tomar a decisão certa, 100% do mérito é meu. Se eu tomar a decisão errada, 100% do prejuízo é meu também."
+        check: "Autor memória; frame como estilo pessoal e 'ninguém deve me copiar', como ele mesmo diz."
+      - claim: "Tinha 42 anos em outubro de 2019; só teve internet aos 17 ou 18 anos, principalmente à noite."
+        quote: "eu só fui ter acesso à internet, principalmente de noite, lá pros 17 ou 18 anos."
+        check: "42 anos em 2019 bate com nascimento ~1977; 17-18 anos = ~1994-95. Autor memória."
+      - claim: "Saiu da faculdade antes de terminar, quando já se equilibrava 'sem rodinhas'."
+        quote: "foi um dos motivos de porque eu saí antes de terminar a faculdade, quando eu me vi já conseguindo me equilibrar na bicicleta sem rodinhas e tentando saltar a rampa antes."
+        check: "Autor memória (diz noutros episódios, 'Devo fazer faculdade?'). Não citar como recomendação."
+      - claim: "Fez da consultoria a profissão de achar defeito nas coisas, e por isso é 'do contra por padrão'."
+        quote: "Eu fui consultor por muitos anos, minha profissão era achar defeito nas coisas."
+        check: "Autor memória; ancora a postura de cético diante de hype."
+      - claim: "Em 2005, quando ninguém ligava para Rails, apostou nele; usa-se hoje produtos Rails (cita o GitHub). Aposta sempre em ciclos de ~10 anos e em várias opções."
+        quote: "Em 2005 ninguém tava muito interessado, eu tive sorte e minha aposta deu certo."
+        check: "Rails foi lançado em jul/2004 (open source), 1.0 em dez/2005; ele diz 2006 como decisão no ep 29. Pequena discrepância 2005 vs 2006: ambas são 'quando começou a olhar'. GitHub é de fato Rails."
+    world_facts:
+      - claim: "Netflix foi lançada em 1997, Google fundado em 1998, Facebook em 2004; o código do dia 1 deles quase não existe mais."
+        quote: "O Netflix foi lançado em 97, provavelmente quase nenhum código que eles escreveram no dia 1 deles existe hoje. O Google foi fundado em 98"
+        check: "Netflix: fundada 1997, streaming só em 2007. Google: set/1998. Facebook: fev/2004. Datas conferem."
+      - claim: "Netflix tinha 'mais de 100 milhões de assinantes' na época do vídeo."
+        quote: "como eles resolveram o problema deles de suportar os mais de 100 milhões de assinantes"
+        check: "Netflix passou de 100 milhões em 2017 (~139 milhões em 2018, ~158 milhões em 2019). Confere como 'mais de'."
+      - claim: "Exemplos de decisão por imitação: Clojure porque o Nubank usa, React porque o Facebook usa, Go porque o Google usa, squads do Spotify."
+        quote: "Eu deveria escolher Clojure porque o Nubank usa. Eu deveria escolher React porque o Facebook usa, eu deveria escolher Go porque o Google usa."
+        check: "Opinião, não fato. Útil como paralelo: 'escolher IA porque a big tech usa'."
+    positions:
+      - stance: "Não terceirizar decisões; quem não tem skin in the game não tem autoridade para opinar sobre sua vida."
+        quote: "A única pessoa que pode de fato opinar com alguma propriedade é alguém que tem skin in the game: ou seja que vai cortar da própria pele se der errado."
+      - stance: "Quem oferece resposta fácil e garantida está vendendo algo."
+        quote: "algumas pessoas realmente acham que conseguem dar a resposta certa: suspeite dessa pessoa, ela provavelmente está tentando te vender alguma coisa."
+      - stance: "Palestra de big tech descreve solução para o contexto e a escala dela, não a sua; seu dia 1 é sobreviver até o dia 2."
+        quote: "No dia 1 sua preocupação não é se você tá usando kubernetes ou não. No dia 1 sua preocupação não é usar GraphQL. No dia 1 sua preocupação não é CQRS. No dia 1 sua preocupação é durar até o dia 2."
+      - stance: "O problema não é errar, é como se recupera; aposte de forma anti-frágil, perca pouco, ganhe muito."
+        quote: "O problema não é acertar sempre, é como você se recupera depois de um erro."
+      - stance: "Contexto, não copiar; ciência de verdade em ciência da computação (provas de conceito, experimentos)."
+        quote: "Puta que pariu, cadê a “ciência” em ciências da computação?"
+      - stance: "Quantidade de likes não torna algo verdade (2 mais 2 continua 4)."
+        quote: "Quantidade de likes não torna uma coisa verdade."
+    book_hooks:
+      - unit: ch20
+        where: "## O que é seu (a decisão que o modelo não toma por você)"
+        touch: "Em 2019 o episódio mais importante do meu canal foi o 'Não Terceirize suas Decisões'. Se eu acertar, o mérito é meu; se errar, o prejuízo também. Com IA a tentação só cresceu: terceirizar pro modelo é a versão nova de terceirizar pro influencer. Quem responde pelo resultado ainda é você, e só quem tem skin in the game pode opinar com propriedade."
+        strength: high
+      - unit: ch14
+        where: "A fábrica de propaganda (o benchmark e a palestra da big tech como argumento de venda)"
+        touch: "Já em 2019 eu avisava (Akitando #63): quando um engenheiro da Netflix explica como resolveu o problema de 100 milhões de assinantes, ele está dizendo 'se você for a Netflix, isso tem chances de funcionar'. Ponto. A mesma conta vale pro slide de 'empresa X economizou Y% com IA': é a solução do contexto dela, não a sua."
+        strength: high
+      - unit: ch19
+        where: "## Gente treinada pra não decidir / ## Antes de renovar a licença"
+        touch: "A frase que mais repeti no canal foi 'seu dia 1 é durar até o dia 2' (Akitando #63): empresa com 2 devs e zero clientes copiando a arquitetura da Netflix está terceirizando a decisão. A versão 2026 é comprar a licença de IA corporativa porque 'todo mundo tem'."
+        strength: medium
+      - unit: epilogo
+        where: "## Sem entregar o volante"
+        touch: "Eu falo isso desde 2019: pare de terceirizar as decisões da sua vida, erre rápido, assuma que errou e mude de direção. Pra IA vale igual. Assuma que o agente vai errar e que você vai ter prejuízo; o que importa é como você se recupera (Akitando #63)."
+        strength: high
+      - unit: ch04
+        where: "Ela vai concordar com você (bajulação do modelo)"
+        touch: "Nunca deixei o aplauso decidir por mim: 'quantidade de likes não torna uma coisa verdade', 2 mais 2 continua 4 (Akitando #63). Um modelo treinado pra concordar é um like que fala."
+        strength: medium
+    appendix_candidate: ""
+
+  - id: 2019/10/16/akitando-64-comecando-na-carreira-de-ti-faculdade-niveis-de-experiencia
+    title: "[Akitando] #64 - Começando na Carreira de TI: Faculdade, Níveis de Experiência"
+    one_line: "Júnior, pleno e sênior diferem no tempo e na confiança, não na qualidade do código; sênior é quem decide, assume a responsabilidade e multiplica os outros; code review obrigatório e curvas S de adoção organizam a carreira."
+    bio_facts:
+      - claim: "Cursou Ciência da Computação (decidiu por volta de 1994) e sempre teve viés para ciências, embora seja mais analista/engenheiro no perfil."
+        quote: "Ciência da Computação foi o que eu fiz, e eu diria que é uma especialização da Matemática Aplicada."
+        check: "Autor memória. Cuidado: 'USP' aparece como exemplo de grade de engenharia, não necessariamente a faculdade dele."
+      - claim: "Passou pelo efeito Dunning-Kruger quando era júnior e levou 'vários tapas na cara'; odeia ser elogiado por quem não é tecnicamente melhor."
+        quote: "Mas eu mesmo passei por algo assim na fase que eu era júnior também. Felizmente eu tomei vários tapas na cara e voltei pra realidade"
+        check: "Autor memória, humilde e quotável. O nome 'Dunning-Kruger' é de 1999 (Kruger e Dunning); ele diz que foi cunhado por volta de 2011, o que está impreciso: popularizado em blogs ~2011."
+      - claim: "Aprendeu Objective-C em 2010, quando já era pleno em Ruby (no pico da curva); gosta de ser pleno na tecnologia em early majority e explorar as do início da curva."
+        quote: "Eu aprendi Objective-C em 2010 por exemplo, e nessa época eu era pelo menos um pleno em Ruby, que estava no pico da sua curva."
+        check: "Autor memória; consistente com ep 63 ('mobile em 2010'). Ele publicou app iOS? Conferir no blog antes de afirmar produtos."
+    world_facts:
+      - claim: "4 em cada 5 microempresas fecham antes de completar 5 anos (segundo 'dependendo da estatística')."
+        quote: "Dependendo de qual estatística você procurar, 4 em cada 5 devem fechar antes de completar 5 anos."
+        check: "Número impreciso: SEBRAE mostra ~21-25% de mortalidade em 2 anos no Brasil e ~35-40% em 5 anos; '4 em cada 5' é exagero, não citar."
+      - claim: "Salário de júnior nos EUA ~US$ 40 mil/ano; sênior na Accenture da Índia ~600 mil rúpias (<R$ 3 mil/mês)."
+        quote: "o salário varia na faixa de uns 40 mil dólares ao ano."
+        check: "Exemplo de 2019, informal; não citar valores. A ideia útil: valor é determinado pelo mercado, sempre haverá alguém mais barato."
+      - claim: "Adoção de iPhone/Objective-C teve pico entre 2010 e 2014; defender Blackberry/Windows Mobile em 2011 era negar a curva."
+        quote: "Quem saltou e pegou o early adopter de iPhone em 2009 e aprendeu Objective-C se deu muito bem porque o pico foi entre 2010 e 2014, desde então a curva desacelerou já."
+        check: "Opinião de mercado; plausível. Exemplo útil para curva S de LLM: 'quem já sabia quando todos começaram'."
+    positions:
+      - stance: "Júnior, pleno e sênior entregam qualidade similar; muda o tempo, proporcional à inexperiência. Sênior elimina caminhos inúteis."
+        quote: "o mesmo problema dado pra um júnior, um pleno e um sênior, podem ser resolvidos com qualidade similar. O que vai variar é o tempo."
+      - stance: "O valor do sênior é a capacidade de decidir e assumir a responsabilidade; delegar e orientar vem junto."
+        quote: "O valor de um sênior começa na sua capacidade de tomar de decisões - que se não ficou claro, também implica que ele assume a responsabilidade da decisão. Decidir sem ter o ônus do fracasso não serve pra nada, não tem skin in the game."
+      - stance: "Sênior escala 'horizontalmente': com as orientações certas, elimina 18 das 20 tentativas do júnior."
+        quote: "Mas se o sênior ajuda ele a eliminar as 18 opções que ele já sabe que não funcionam, o júnior consegue focar só nas 2 que que tem mais chances de funcionar, e o resultado vai ser ordens de grandeza melhor."
+      - stance: "Nenhum código imune à revisão; quem escreve não faz merge."
+        quote: "nenhum código deve ser imune à revisão, não importa de quem seja."
+      - stance: "Elogios não dizem nada; só a autoavaliação e a crítica importam; qualidade (testes) independe de sinal externo."
+        quote: "A única avaliação que interessa é sua auto-avaliação. Avaliação externa que tem importância é a crítica, porque ela pode indicar um defeito na sua auto-avaliação."
+      - stance: "Curva S de adoção: ganha quem pega o fim do early adopter, e carreira é como carteira de investimentos (renda fixa, ações, opções)."
+        quote: "Quem sempre vai ganhar mais é quem souber “surfar” como eu vivo dizendo."
+      - stance: "Matérias de baixo nível (cálculo, estatística) duram; as de alto nível (Flash) envelhecem rápido."
+        quote: "Quanto mais específico em alto nível, mais rápido tende a ficar defasado, mas mais prático no dia 1. Quanto mais específico em baixo nível, mais tende a ter valor ao longo do tempo mas menos prático vai ser no dia 1"
+    book_hooks:
+      - unit: ch18
+        where: "## Como alguém vira sênior"
+        touch: "Desde 2019 eu defendo que júnior, pleno e sênior resolvem o mesmo problema com qualidade parecida; o que muda é o tempo e a confiança. Sênior é quem decide e responde pela decisão, e quem consegue cortar 18 das 20 tentativas do júnior (Akitando #64). Com o agente, o 'júnior' é o agente: ele testa vinte caminhos, e você precisa ser o sênior que poda."
+        strength: high
+      - unit: ch16
+        where: "Código que ninguém leu (revisão do código gerado)"
+        touch: "Já em 2019 eu dizia: nenhum código é imune à revisão, de quem for. Quem escreveu não faz merge. A regra é a mesma para o código do agente (Akitando #64)."
+        strength: high
+      - unit: ch15
+        where: "Um estagiário com acesso root (a metáfora de júnior e supervisão)"
+        touch: "A analogia não é nova: no canal eu já explicava que as empresas de 99% do mercado não têm tempo de supervisionar o júnior, por isso a qualidade média do código é baixa (Akitando #64). O agente é o júnior que não aprende com o erro de ontem; o ônus de revisar continua humano."
+        strength: medium
+      - unit: ch20
+        where: "## Sete anos numa página / ## O que é seu"
+        touch: "Valor é o que o mercado paga, não o que você acha que merece. É uma frase do meu canal de 2019 (Akitando #64) e continua verdadeira: em 2026 o preço do que a IA faz de graça cai a zero, o que sobra caro é decidir."
+        strength: medium
+      - unit: epilogo
+        where: "## O que vale aprender"
+        touch: "Curva S de adoção: quem sobe quando todo mundo está começando vale mais. Com LLM é a mesma coisa que foi com iPhone em 2009 (Akitando #64): a vantagem é de quem já usa com método quando a maioria ainda está aprendendo."
+        strength: low
+    appendix_candidate: "Júnior, pleno, sênior segundo o autor (2019): mesmo problema, tempo diferente; sênior é decisão, responsabilidade e orientação; code review como regra. Serve ao leitor do livro que pergunta 'a IA substitui o júnior?'. Seria uma página curta de glossário de carreira com a tese do episódio, atualizada para o agente como 'júnior infinito'."
+
+  - id: 2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros
+    title: "[Akitando] #65 - A Dor de Aprender: que cursos? que livros?"
+    one_line: "Ninguém aprende a programar seguindo procedimento: copie muito código, aceite a dor de cair, estude algoritmos e estruturas de dados antes de patterns, e não se apaixone por framework."
+    bio_facts:
+      - claim: "Fez um pequeno curso de Basic em 1990, com cerca de 13 anos; programa desde 1991; aprendeu quase tudo sozinho; trabalhou com dezenas de linguagens e frameworks (Java, C#, PHP, Ruby, Objective-C)."
+        quote: "eu fiz um pequeno curso de programação sim, em 1990, quando tinha uns 13 anos, de Basic."
+        check: "Discrepância: no ep 29 'aprendi a programar aos 12 anos'; aqui 1990 aos 13 e 'programador desde 1991'. Usar 'adolescente, no começo dos anos 90'."
+      - claim: "Nunca leu um livro técnico de cabo a rabo; faz anos que não faz curso nem lê livro técnico, só consulta a documentação e o código-fonte quando precisa."
+        quote: "eu leio muito pouco livro técnico e acho que nunca fiz nenhum curso de programação de verdade até hoje"
+        check: "Ep 69 vai além: 'Eu realmente nunca li um livro técnico de cabo a rabo'; ep 63 diz 'raramente'. Frame: 'raramente, quase nunca de cabo a rabo'."
+      - claim: "Aprendeu a datilografar copiando enciclopédia, às vezes o mesmo verbete várias vezes; copiar código é o mesmo método de memória muscular."
+        quote: "Eu aprendi a datilografar desse jeito. Lembram no episódio de Henry Jones que eu disse que eu copiava enciclopédia?"
+        check: "Autor memória (episódio do Henry Jones, fora deste grupo)."
+      - claim: "Aprendeu Elixir, Crystal e Rust em ~30 dias cada para ficar produtivo (Rust é o que menos treinou); em 1990 Basic e dBase levaram meses por falta de base de referência."
+        quote: "eu não levei mais que 30 dias pra aprender cada uma."
+        check: "Autor memória; 'produtivo, não expert' (ele ressalva). Útil para 'IA acelera o aprendizado de linguagem nova para quem já tem fundação' (ver ch18 Que linguagem aprender)."
+      - claim: "Aos 41-42 anos aprendeu a andar de uniciclo em 2 dias, caindo, para ilustrar a dor de aprender."
+        quote: "Aprendizado, no seu núcleo, é uma briga de você contra você mesmo."
+        check: "Autor memória, anedota; possivelmente usar só a frase."
+    world_facts:
+      - claim: "O livro Design Patterns (Gang of Four) saiu em 1994 e ganhou notoriedade junto com o nascimento do mercado Java; patterns vêm de A Pattern Language, de Christopher Alexander."
+        quote: "Eu pensei isso quando o livro do Gang of Four saiu pela primeira vez em 1994."
+        check: "GoF: 1994 (Addison-Wesley). Alexander: A Pattern Language, 1977. Confere."
+      - claim: "A discussão ActiveRecord vs Repository vs DAO já era antiga em 2003 e continua sem consenso em 2019."
+        quote: "Vejam, 16 anos depois e até agora as pessoas ainda não chegaram num consenso sobre acesso e abstração de dados."
+        check: "Opinião do autor; Fowler PoEAA 2002, Evans DDD 2003. Confere."
+      - claim: "O significado original de 'hacker' é uma pessoa curiosa que busca a resposta; cracker é o invasor criminoso."
+        quote: "a definição original de hacker é só uma pessoa curiosa. Na verdade mais que só curioso, alguém que é curioso é alguém que faz a pergunta. Mas um hacker é alguém que também procura a resposta."
+        check: "Definição pessoal de uso comum; ok."
+    positions:
+      - stance: "Autodidata é quem decide pelo procedimento, não o procedimento por ele; o aprendizado passivo seguindo receita é 'passatempo'."
+        quote: "O procedimento não decide por mim, eu decido pelo procedimento."
+      - stance: "Cursos ensinam o 'o que', não o 'por quê'; seguir o procedimento dá sensação falsa de aprendizado."
+        quote: "E a satisfação no final vai ser maior porque fica a falsa sensação que aprendeu alguma coisa, quando na verdade só seguiu um procedimento."
+      - stance: "Copie código dos outros, em grande quantidade, sem objetivo, para ganhar memória muscular e reconhecer patterns; o objetivo aparece depois."
+        quote: "Copia um monte de código. Parece idiota isso, mas abre um código do GitHub de um lado, o editor do outro lado e vai copiando, da mesma forma como você copiaria um texto de um livro no Word."
+      - stance: "Fundação sólida (algoritmos e estruturas de dados) antes de patterns, frameworks e arquitetura; aprender framework novo tem que ser simples se a fundação é boa."
+        quote: "Antes de dominar o básico, esquece o avançado, não vai acontecer."
+      - stance: "Se tem boa fundação, framework e linguagem novos são simples; o difícil adiado é a fundação."
+        quote: "Se você aprender a aprender, que é hackeando seu caminho, resolvendo problemas que o material não previu, ou seja, aprendendo a ser autodidata, a vantagem é que quanto mais você aprender assim e criar seu próprio ritmo, menos difícil vai ficando aprender coisas novas."
+      - stance: "Patterns são repetições, não regras; estudar patterns sem prática leva a usar tudo errado. Quem só conhece martelo vê prego."
+        quote: "Patterns não representam uma regra ou regulamento ou o melhor jeito, são simplesmente coisas que se repetem várias vezes."
+    book_hooks:
+      - unit: ch18
+        where: "## O que sobra quando a digitação some (a defesa de que 'agora precisa mais ciência da computação')"
+        touch: "Em 2019 eu já dizia que, se uma matéria separa o amador de quem vai ter carreira, é Algoritmos e Estruturas de Dados: sem ela você não sabe o que pedir nem como conferir. O agente esconde essas coisas como as linguagens modernas já escondiam (Akitando #65). Fundação sólida, não hype da moda."
+        strength: high
+      - unit: ch18
+        where: "## Que linguagem aprender"
+        touch: "Com fundação, aprender linguagem nova é questão de semanas, não de anos: aprendi Elixir, Crystal e Rust em uns 30 dias cada (produtivo, não expert). Em 1990, sem referência, Basic e dBase me custaram meses (Akitando #65). A IA encurta o caminho de quem já tem o mapa; pra quem não tem, só acelera a perdição."
+        strength: high
+      - unit: ch04
+        where: "Ela vai concordar com você"
+        touch: "O mesmo problema do curso: ele te dá o 'o que' mastigado e a sensação falsa de ter aprendido, quando na verdade você seguiu um procedimento (Akitando #65). O modelo faz isso por você, com mais simpatia ainda."
+        strength: medium
+      - unit: ch09
+        where: "Como falar com a máquina (prompt como skill)"
+        touch: "No canal eu já dizia que copiar muito código dos outros, sem objetivo, e depois quebrá-lo e combiná-lo é como se forma o olho para patterns (Akitando #65). Com o agente a prática de ler código alheio é ainda mais central: você passa a maior parte do tempo lendo."
+        strength: medium
+      - unit: epilogo
+        where: "## O que vale aprender"
+        touch: "A dor de aprender não foi terceirizada: 'a menos que você esteja disposto a encarar a dor, engolir o choro, esquecer a frustração, e começar a cair e ficar roxo na frente dos outros, não adianta nenhum curso' (Akitando #65). Se a IA tira toda a dor, tira o aprendizado junto."
+        strength: high
+    appendix_candidate: "Como aprender com IA sem terceirizar a dor: copiar, ler, quebrar, fundações (algoritmos e estruturas de dados). Curto (1-2 páginas), serve ao leitor iniciante do livro; contrapõe o aprendizado por 'procedimento' ao por 'prática' do #65, hoje com agente."
+
+  - id: 2019/12/11/akitando-69-respondendo-suas-perguntas-sobre-carreira-via-instagram
+    title: "[Akitando] #69 - Respondendo suas Perguntas sobre Carreira (via Instagram)"
+    one_line: "Respostas a dez perguntas de iniciantes: a escassez é de profissional qualificado, cursos rápidos não passam de júnior, tech startup é lugar ruim para iniciante, honestidade é a soft skill central, e a estratégia é estudar inglês, praticar com código aberto e ir um caminho de cada vez."
+    bio_facts:
+      - claim: "Tem 30 anos de carreira em programação e testemunhou em primeira mão a revolução do circuito integrado, do desktop, da web e do smartphone."
+        quote: "Durante minha carreira de 30 anos de programação eu tive o privilégio de testemunhar boa parte dessa história em primeira mão"
+        check: "Trecho final (convite do Código Fonte TV, ao fim do arquivo). Dezembro/2019, 30 anos desde ~1990. Consistente com ep 65."
+      - claim: "Visitou por mais de uma década cidades como Xanxerê, Maringá, Rio Branco, Criciúma, Macapá e Campos; viu empresas do interior presas a tecnologias dos anos 90."
+        quote: "Durante mais de uma década eu visitei cidades como Xanxerê, Maringá, Rio Branco, Criciúma, Macapá, Campos de Goytacazes."
+        check: "Autor memória (palestras). Bom para 'viajei o país'; não precisa listar cidades."
+      - claim: "Reconhece de relance se um código é de iniciante e quais trechos têm cheiro de copy e paste."
+        quote: "Vira e mexe eu avalio código e de bater o olho eu já sei se é um iniciante ou alguém mais experiente."
+        check: "Autor memória; útil para o paralelo com código gerado por IA."
+      - claim: "Parou de usar Clipper em 1994."
+        quote: "Clipper, que eu parei de usar em 1994."
+        check: "Autor memória; combina com ep 37 (1995 faculdade)."
+      - claim: "Contratou centenas de pessoas e avaliou centenas de currículos ao longo de 20 anos (ep 72), e sente falta de sênior que critique o código do júnior."
+        quote: "se alguém que se diz senior, olhar pro seu código de junior, e não tiver nada a dizer, provavelmente é porque ele também é junior e só tem o título de senior."
+        check: "'Centenas' está no ep 72, aqui só a observação do sênior; combinar as fontes."
+      - claim: "Tem a empresa Codeminer com escritórios fora dos grandes centros (Santa Maria, Guarapuava, Poços de Caldas)."
+        quote: "A minha própria empresa, a Codeminer, costuma procurar cidades fora de São Paulo pra montar escritório"
+        check: "Fato público (Codeminer42). Citar só se necessário."
+    world_facts:
+      - claim: "Existe escassez de profissional qualificado e excesso de inexperiente; startups com muito investimento só contratam experientes, pagam caro, e não treinam júnior."
+        quote: "E sim, existe escassez de profissionais qualificados neste mercado. Não é alarmismo."
+        check: "Opinião de mercado 2019; confrontar com o fim da bolha em 2022 (ch18) para mostrar a virada."
+      - claim: "A maioria das startups queima dinheiro sem lucro, vive de rodada em rodada, e 'a maioria vai quebrar ou ser adquirida'."
+        quote: "A maioria vai quebrar ou ser adquirida por outra empresa maior."
+        check: "Previsão, confirmada em parte em 2022-2024. Cuidar para não parecer profecia perfeita."
+      - claim: "Bootcamp/curso que promete 'pule de júnior para pleno em x tempo' é charlatão."
+        quote: "se você ver algum curso ou bootcamp que faça promessas imbecis como \"estude com a gente e pule de júnior pra pleno em x tempos\" eles são charlatães, fuja."
+        check: "Posição do autor, útil para ch14 e ch18 ('chef de Miojo')."
+    positions:
+      - stance: "Todo curso online gera no máximo júnior; ninguém queima as etapas de prática em empresa real."
+        quote: "Via de regra, qualquer curso online, os melhores, só vão conseguir gerar, no máximo do máximo, programadores júniors."
+      - stance: "Tech startups são péssimo lugar para iniciante; prefira empresas com histórico de 10 anos ou mais."
+        quote: "Tech startups no geral são péssimos lugares pra iniciantes, porque a prioridade não é te ensinar nada, a prioridade é crescimento acelerado acima de tudo"
+      - stance: "O que mais importa em soft skill é honestidade: saber dizer 'não' quando não vai entregar."
+        quote: "O mais importante é aprender a ser honesto."
+      - stance: "Programador ruim não acha vaga; qualificado acha. Lei da oferta e da procura a seu favor: acumule mais conhecimento que a maioria."
+        quote: "Se você está seguindo a maioria, você provavelmente está indo na direção errada."
+      - stance: "Sem inglês, você usa material incompleto e defasado; vá direto na fonte original (documentação, Stack Overflow, Wikipedia em inglês)."
+        quote: "Por isso a grande maioria dos programadores que estão à frente não estão estudando por livros, mas sim pelas documentações nos sites oficiais de cada tecnologia e foruns de discussão, e adivinhem: 100% delas é em inglês."
+      - stance: "Não comece projeto do zero sendo iniciante; copie o código dos outros."
+        quote: "Muita gente recomenda você começar um projeto pessoal do zero. É a pior recomendação que se pode dar, justamente porque se você não tem experiência, como vai imaginar como se começa um projeto do zero?"
+      - stance: "Empreender cedo não é recomendação; primeiro ganhar calo como programador."
+        quote: "Empreender muito cedo não é nunca uma recomendação."
+      - stance: "Sênior de fachada: título sem contribuição."
+        quote: "se alguém que se diz senior, olhar pro seu código de junior, e não tiver nada a dizer, provavelmente é porque ele também é junior e só tem o título de senior."
+    book_hooks:
+      - unit: ch18
+        where: "## A bolha que estourou antes (a passagem sobre o 'chef de Miojo' e o bootcamp)"
+        touch: "Já em dezembro de 2019 eu escrevia: quem faz curso online chega no máximo a júnior, e quem promete 'pule de júnior pra pleno em x tempo' é charlatão (Akitando #69). Eu também avisava que startup com muito dinheiro contrata só experiente e não treina o júnior, o que fabrica o desequilíbrio que depois estourou."
+        strength: high
+      - unit: ch18
+        where: "## Como alguém vira sênior"
+        touch: "Teste do sênior: se alguém que se diz sênior olha seu código de júnior e não tem nada a dizer, provavelmente também é júnior com título de sênior (Akitando #69). Vale para quem revisa código de agente: se você não acha nada a dizer, talvez falte repertório pra enxergar."
+        strength: medium
+      - unit: ch16
+        where: "Código que ninguém leu (cheiro de copy-paste; código de iniciante)"
+        touch: "Eu bato o olho num código e sei se é de iniciante, quais trechos têm cheiro de copy e paste (Akitando #69). Agora o 'copy e paste' é do modelo, e o cheiro é o mesmo: parece funcionar, não tem estilo próprio, e quem revisa precisa de repertório pra perceber."
+        strength: medium
+      - unit: ch20
+        where: "## A linha reta"
+        touch: "Em dezembro de 2019 eu fechei o episódio dizendo que 'não existiu melhor momento pra se tornar programador do que agora' e que eu não imaginava a próxima década (Akitando #69). Em 2026 não imagino a seguinte, e o conselho é o mesmo: entenda como as coisas funcionam."
+        strength: medium
+      - unit: epilogo
+        where: "## O que vale aprender"
+        touch: "Inglês: a documentação oficial e o código-fonte são a fonte original; tradução e resumo (hoje, o do modelo) são cópia de cópia. É conselho que eu dava em 2019 pra iniciante do interior (Akitando #69) e vale mais agora que o modelo responde tudo em português."
+        strength: low
+    appendix_candidate: ""
+
+  - id: 2020/02/19/akitando-72-rant-programacao-nao-e-facil
+    title: "[Akitando] #72 - Rant: Programação não é fácil"
+    one_line: "Programação virou 'salvador da pátria' numa bolha de abundância; da próxima vez que a bolha estourar, quem não entrega resultado proporcional ao que ganha fica sem emprego, e cursos de semanas são só 5% do caminho de 1400 horas."
+    bio_facts:
+      - claim: "Falando como 'sobrevivente de umas 3 crises': anos 90, anos 2000 e anos 2010. Viu a bolha da internet cair em 2001 e o mercado indiano de terceirização crescer em seguida."
+        quote: "Falando como um sobrevivente de umas 3 crises, nos anos 90, nos anos 2000 e nos anos 2010, uma coisa permanece constante."
+        check: "Autor memória, a base do 'eu já vi isso antes' do ch18. O livro (ch18) diz 'bolha dos microcomputadores no começo dos anos 90, bolha da internet em 2001, crise de 2008'. Conferir equivalência."
+      - claim: "Contratou literalmente centenas de pessoas e avaliou centenas de currículos ao longo de 20 anos, em várias empresas."
+        quote: "Eu já contratei literalmente centenas de pessoas e avaliei centenas de curriculos e acompanhei a evolução deles."
+        check: "Autor memória. 'Centenas' é do autor."
+      - claim: "Em 2012 usou Uber em São Francisco e Waze em Tel Aviv, antes de popularizarem no Brasil."
+        quote: "A primeira vez que eu peguei Uber foi em 2012 em São Francisco."
+        check: "Autor memória; datas públicas compatíveis (Uber criado em 2009 como UberCab, SF; Waze em Israel)."
+      - claim: "Sempre foi ruim em esportes e culinária e escolheu não investir; só programação o prendia por horas, até ver o sol nascer. Nos anos 80 'basicamente ninguém' tinha esse interesse."
+        quote: "eu já cansei de ficar entretido e só parar quando vejo o sol nascendo, de novo."
+        check: "Autor memória; anedota boa para 'vocação' e contra 'qualquer um consegue'."
+      - claim: "Em 2014 gravou um vídeo para o 'Ano do Código' que depois renegou por dar a entender que qualquer um programa."
+        quote: "Eu pessoalmente não gosto desse vídeo que eu fiz. E eu acho que muita gente assume que minha mensagem é sempre próxima disso que eu disse. Eu nunca quero dizer isso."
+        check: "Autor memória; humildade e correção pública. Frase de exemplo de 'mudar de opinião e dizer'."
+    world_facts:
+      - claim: "Em 2020, ele já prevê que 'a bolha vai estourar, em breve ou em poucos anos', e que quem ganha sem entregar o equivalente fica sem emprego; programação virou 'salvador da pátria' após a crise de 2008 e o boom de apps."
+        quote: "Da próxima vez que a bolha estourar, e isso pode ser em breve ou pode ser em poucos anos, quem não for programador de verdade, ou seja, quem não souber como de verdade entregar resultados proporcionais ao que ganha, vai ficar sem emprego."
+        check: "Verificável: fev/2020 (antes da pandemia). A bolha estourou em 2022 (Meta cortou 11 mil em nov/2022; ch18). Prova do 'aviso antecipado' sem profecia: ele não previu a pandemia e diz no ch18 que a pandemia inflou o fim."
+      - claim: "Em Silicon Valley há programadores com salários de US$ 150-500 mil, mas parte é equity (promessa), aluguel caro e impostos; sobra US$ 1-2 mil por mês."
+        quote: "No final do mês, você achou que tinha 12 mil dólares, mas tire tudo isso e muito mais que você precisa gastar numa das cidades mais caras do mundo, e se tiver sorte, vai sobrar mil dólares, talvez 2 mil."
+        check: "Conta hipotética do autor (câmbio 4,30); explicitamente hipotética. Não citar números."
+      - claim: "A TellTale Games demitiu dezenas do dia pra noite por falta de dinheiro (2018)."
+        quote: "a empresa de jogos TellTale Games demitiu dezenas de pessoas do dia pra noite porque eles ficaram sem dinheiro."
+        check: "Fato: Telltale Games fechou em set/2018, demitiu ~225 pessoas (maioria) de um dia pra outro. 'Dezenas' é subestimado."
+      - claim: "Em 2001 caiu a bolha da internet e a Índia se tornou referência em terceirização; sempre haverá alguém que faz por menos da metade."
+        quote: "Em 2001 não foi só as torres gêmeas que caíram, caiu também a bolha especulativa da internet. Centenas de programadores que achavam que eram bons de repente não tinham pra onde ir."
+        check: "Fato de mercado conhecido; Índia como polo de outsourcing já existia nos anos 90 (Y2K), mas se consolidou nos 2000. Exagerado dizer que 'foi assim que cresceu', formular com cuidado."
+      - claim: "Faculdade/estágio: o estagiário tem ~700 horas de curso, mais ~700 de estágio para virar júnior: ~1400 horas, e um workshop de 80-100 horas é 5% do percurso."
+        quote: "pra sair do zero até chegar ao primeiro estágio de júnior, estamos falando de uma carga aproximada de 1400 horas entre estudo teórico e treino prático. No mínimo."
+        check: "Estimativa do autor, de cabeça; ele mesmo diz 'chutando na média'. Frame como estimativa."
+    positions:
+      - stance: "Programação não é para todo mundo, não é fácil, não é salvador da pátria; e ele nunca incentivou ninguém a virar programador."
+        quote: "eu tomei cuidado pra minha carreira inteira eu nunca incentivei ninguém a virar programador."
+      - stance: "Quem não souber entregar resultado proporcional ao que ganha fica sem emprego na próxima bolha."
+        quote: "Nunca se esqueça: sempre vai existir um indiano que faz o que você faz por menos da metade do preço."
+      - stance: "Você raramente vale o que acha que vale; em bolha a demanda sobe, em crise o preço cai abaixo do normal."
+        quote: "Sempre tenha em mente, você raramente vale o que você “acha” que vale."
+      - stance: "O emprego que nunca acaba é o do solucionador de problemas reais; ele precisa de fundação."
+        quote: "um tipo de emprego que nunca acaba são as posições reservadas ao reais solucionadores de problemas."
+      - stance: "Cursos e workshops de semanas prometendo salário de seis dígitos são fraude ou ouro de tolo."
+        quote: "Eu acho que cursos, workshops, coaches e todo o aparato de intermediários que está surfando a onda da abundância está realmente realizando fraude."
+      - stance: "Os que ficam pra trás são os que estacionaram no básico, cegos por uma valorização fora do normal."
+        quote: "Os que ficam pra trás foram os que estacionaram no básico, cegos por um valorização fora do normal, achando que já são bons o suficiente já que existe demanda por eles."
+      - stance: "Reclamar de abundância é problema de primeiro mundo de quem nunca viveu a primeira crise."
+        quote: "é literalmente problema de primeiro mundo de uma geração que ainda não teve a experiência da primeira crise."
+    book_hooks:
+      - unit: ch18
+        where: "## A bolha que estourou antes (abrir ou fechar com a data do aviso)"
+        touch: "O aviso está datado: 19 de fevereiro de 2020, antes da pandemia. 'Da próxima vez que a bolha estourar, e isso pode ser em breve ou em poucos anos, quem não souber entregar resultados proporcionais ao que ganha vai ficar sem emprego.' (Akitando #72). Não previ a pandemia, mas previ a bolha. O que ela encerrou foi o dinheiro fantasma, não a profissão."
+        strength: high
+      - unit: ch18
+        where: "### Os engenheiros de bootcamp"
+        touch: "No mesmo episódio eu fiz a conta: 700 horas de curso, mais 700 de estágio, uns 1400 horas até o primeiro nível de júnior. Um workshop de 80 a 100 horas é 5% do percurso (Akitando #72). Não é mágoa com o bootcamp, é aritmética. A promessa 'vire engenheiro em dois meses' nunca fechou a conta."
+        strength: high
+      - unit: ch19
+        where: "## Antes de renovar a licença / ## A premissa mudou"
+        touch: "Bolha tem uma assinatura: sobra dinheiro, ninguém olha eficiência, aparecem posições que num mercado normal não existiriam. Eu escrevi em 2020 (Akitando #72) que 'coach de coach' certificado era o sinal de que estávamos num período de abundância excessiva. Em 2026, o sinal equivalente é certificado de 'prompt engineer'."
+        strength: medium
+      - unit: ch14
+        where: "A fábrica de propaganda"
+        touch: "Cursos, workshops e coaches 'surfando a onda da abundância' são fraude, eu disse em 2020 (Akitando #72). Mudou a onda, não o negócio: hoje é o curso de IA que promete seis dígitos."
+        strength: medium
+      - unit: epilogo
+        where: "## Medo vende"
+        touch: "Sobrevivi a umas três crises (anos 90, 2000 e 2010) e a constante é a mesma: quem fica pra trás parou no básico achando que a demanda era mérito; quem segue em frente tem o mérito de resolver problemas reais, e solucionador de problema não acaba (Akitando #72)."
+        strength: high
+      - unit: ch20
+        where: "## Competente o suficiente"
+        touch: "Programação não é salvador da pátria, nem fácil, e eu disse isso em 2020. O que o livro defende é a mesma tese um passo adiante: a IA torna fácil digitar, não torna fácil decidir. Competente o suficiente pra entregar de verdade continua sendo o que o mercado paga (Akitando #72)."
+        strength: medium
+    appendix_candidate: "As contas da bolha: equity é promessa, custo de vida come o salário, 1400 horas até o primeiro nível de júnior. Uma página de 'faça a conta antes de acreditar' serve ao leitor do livro que ouve 'vire dev com IA em semanas' ou 'IA vai pagar seis dígitos'. É aritmética datada de 2020 e precisa ser atualizada para 2026."

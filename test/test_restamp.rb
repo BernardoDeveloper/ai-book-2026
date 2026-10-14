@@ -139,4 +139,16 @@ class TestRestamp < ToolTest
     assert_equal before, fx.read("book/pt/ch02.md")
     assert_exit 1, fx.run("restamp", "--parked", "nao-existe")
   end
+
+  # Guards restamp for a background post: the citing unit's hash is refreshed.
+  def test_restamp_background_post
+    post = "2019/10/09/episodio-antigo"
+    fx.edit(fx.unit_rel("ch01")) { _1.sub("sources:\n", %(sources:\n  - {post: #{post}, sha256: "#{Fixture.sha(fx.post_path(post))}"}\n)) }
+    fx.edit_post(post) { _1.sub("demais", "demais, de verdade") }
+    fx.inventory!
+    assert_exit 1, fx.run("drift")
+    assert_exit 0, fx.run("restamp", post)
+    assert_includes fx.read(fx.unit_rel("ch01")), %(sha256: "#{Fixture.sha(fx.post_path(post))}", commit: "#{fx.blog_head}")
+    assert_exit 0, fx.run("drift")
+  end
 end

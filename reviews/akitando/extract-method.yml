@@ -1,0 +1,443 @@
+# Akitando extraction, group "method". Quotes validated verbatim against the posts (whitespace-normalized).
+posts:
+  - id: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software
+    title: "[Akitando] #23 - The MM-M: O Melhor Livro de Software?"
+    one_line: "The Mythical Man-Month (Brooks, 1975/1995) já descrevia os problemas, e boa parte das 'novidades' ágeis, de projetos de software; livro bom é o que passa pelo teste do tempo."
+    bio_facts:
+      - claim: "Leu o livro de Brooks cerca de 15 anos antes de 2018 (~2003) e achou que teria evitado muitos problemas se tivesse lido 10 anos antes, no começo da carreira."
+        quote: "Quando eu li esse livro uns 15 anos atrás, eu pensei, cara se eu tivesse lido esse livro uns 10 anos antes, no começo da minha carreira, talvez eu tivesse evitado muitos problemas"
+        check: "author memory, frame as such. Cross-check with the Slashdot date below."
+      - claim: "Ouviu falar do livro pela primeira vez em 27 de julho de 2002, num post do Slashdot, achado depois nos e-mails antigos."
+        quote: "Foi no dia 27 de julho de 2002 (então eu estava certo, 15 anos atrás), e foi no Slashdot.org"
+        check: "Link web.archive.org no post (slashdot.org/books/980805/1148235.shtml). Note: 2002 to 2018 is 16 years, and the URL path says 1998. Use 'por volta de 2002', not an exact date, unless the archive page is opened."
+      - claim: "Começou a programar no fim dos anos 80; viu Agile, XP, Git e o open source nascerem e achou tudo evolução do que já sabia."
+        quote: "pra mim que começou a programar no fim dos anos 80, nada foi realmente surpreendente, só uma evolução do que eu já sabia."
+        check: "author memory. Other posts say 'desenvolvia software desde os anos 90' and faculdade in 1995; the book says 1990 at 13 elsewhere (check ch intro before combining)."
+      - claim: "Já passava pelos projetos dos anos 90 e diz que dev da época entregava software, não era 'burro' antes do Ágil."
+        quote: "Eu digo isso por experiência porque isso assume que programadores dos anos 90 como eu eram todos burros."
+        check: "author memory, frame as such."
+      - claim: "Trabalha a partir de Brooks mais do que do 'Agile moderno' e tem 'zero interesse' nas discussões de agile."
+        quote: "a forma como eu trabalho deriva mais de Brooks do que de Agile moderno."
+        check: "author statement of method, 2018."
+    world_facts:
+      - claim: "Lei de Brooks: adicionar gente a um projeto atrasado atrasa mais; canais de comunicação n(n-1)/2 (10 pessoas = 45, 20 = 190)."
+        quote: "adicionar mais gente num projeto atrasado só vai deixá-lo mais atrasado."
+        check: "Brooks, The Mythical Man-Month, cap. 2 (1975). Arithmetic is right."
+      - claim: "Plan to throw one away / efeito do segundo sistema (caps. 11 e 5)."
+        quote: "Ele avisa que o segundo é o mais perigoso sistema que uma pessoa vai desenhar."
+        check: "Brooks cap. 5 'The Second-System Effect'; cap. 11 'Plan to Throw One Away'."
+      - claim: "Edição de 1995: modelo cascata com duas falácias (passa uma vez; construído de uma vez), construção incremental, nightly builds da Microsoft; 'No Silver Bullet'."
+        quote: "a primeira falácia básica do modelo de cascata é que ele assume que o projeto avança pelo processo somente UMA vez"
+        check: "Brooks 1995 anniversary edition, cap. 19 'The Mythical Man-Month after 20 Years'. DATED/WRONG details in the post: 'No Silver Bullet' is from 1986 (IEEE Computer), appended in 1995, not 'o primeiro paper'; 'Most Viable Product' should be Minimum Viable Product; Modula (1975) did not come before Pascal (1970); 'quase descreveu TDD' is the author's reading, not Brooks's."
+      - claim: "A manutenção introduz novo defeito com chance de 20 a 50% a cada conserto, o que exige rodar a suíte inteira de casos de teste."
+        quote: "O problema fundamental com manutenção é que consertar um defeito tem uma chance substancial - 20 a 50%- de introduzir outro defeito."
+        check: "Brooks cap. 11, 'Passing the Buck'/maintenance passage; verify wording in the book before quoting Brooks directly."
+    positions:
+      - stance: "Livro bom é o que passa pelo teste do tempo; evite lista de 'celebridadezinhas' recentes."
+        quote: "pra um livro ser considerado realmente bom, ele PRECISA passar pelo teste do TEMPO."
+      - stance: "Quem ignora o que se sabia do passado repete os mesmos erros."
+        quote: "se toda vez você ignora o que já se sabe do passado, vai simplesmente cometer os mesmos erros e, se tiver sorte, chegar às mesmas conclusões."
+      - stance: "Não leia Brooks como doutrina: é uma conversa de um programador experiente com o de hoje, e pouco mudou em 50 anos."
+        quote: "Não leia o livro de Brooks como um procedimento ou doutrina a ser seguida."
+      - stance: "Prazo é gerência: mude equipe, escopo, arquitetura, mas não a data."
+        quote: "Mude, só não mude a data. Isso é gerência, qualquer coisa diferente é ingerência."
+      - stance: "Aprender a aprender, não ser doutrinado em ferramentas."
+        quote: "Se você se tornar doutrinado, só seguir certas marcas e só usar certas ferramentas, você nunca vai evoluir como programador."
+    book_hooks:
+      - unit: ch19
+        where: "'Isso tem vinte e cinco anos' (travas que tornam a velocidade segura): XP de Kent Beck e lote pequeno"
+        touch: "Antes do XP já tinha Brooks. Na edição de 1995 de The Mythical Man-Month ele descreve construir o esqueleto do sistema e ter 'em todo estágio um sistema que roda', e cita os builds noturnos da Microsoft. Eu falei disso no Akitando #23, em 2018: a ideia de integrar toda noite e testar na manhã seguinte é bem mais velha que o meu canal."
+        strength: high
+      - unit: ch19
+        where: "'Jogar código fora': com IA, protótipo e descarte ficaram baratos"
+        touch: "Brooks já dizia em 1975, no capítulo 'Plan to Throw One Away', que o primeiro sistema é quase inusável e que você vai jogá-lo fora, queira ou não. O que mudou com os agentes foi o preço: descartar uma versão que custava meses agora custa uma tarde (Akitando #23)."
+        strength: high
+      - unit: ch16
+        where: "'Reescrever um gigante, um pedaço por vez' (OpenClaw em Rust)"
+        touch: "Brooks batizou esse perigo há meio século: o efeito do segundo sistema, a tentação de enfiar na reescrita todas as ideias que ficaram de fora da primeira versão (Akitando #23). Ir devagar, uma funcionalidade por vez, com teste, é também o jeito de não cair nele."
+        strength: medium
+      - unit: ch18
+        where: "'Como alguém vira sênior' ou 'Que linguagem aprender': fundamento que não envelhece"
+        touch: "Eu disse em 2018 que livro de tecnologia bom é o que passa pelo teste do tempo, e que a área erra nos mesmos lugares desde os anos 60. Em 2026 o que mudou foi a ferramenta; o que Brooks descreveu sobre gente, comunicação e integridade do design continua aí."
+        strength: medium
+      - unit: ch19
+        where: "'Quatro cadeiras na mesma mesa' ou 'Gente treinada pra não decidir': quem responde pelo conjunto do produto"
+        touch: "Brooks chamava de integridade conceitual a coisa mais importante num sistema e dizia que alguém precisa responder por ela, um 'ditador benevolente' (Akitando #23). Com agentes gerando código por todos os lados, essa pessoa fica mais necessária, não menos."
+        strength: medium
+    appendix_candidate: "Linha do tempo de método (Brooks 1975/1995, XP 1999, Manifesto 2001, DORA) como complemento de apA: mostra que commits pequenos, CI e descarte de protótipo são práticas antigas que viram as travas da era dos agentes."
+
+  - id: 2019/06/18/akitando-51-esqueca-metodologias-ageis-rated-r
+    title: "[Akitando] #51 - Esqueça Metodologias \"Ágeis\" | [Rated R]"
+    one_line: "Ágil é adjetivo e atitude de profissional accountable (dar um passo, avaliar, ajustar), não processo, cerimônia ou consultoria; o que vale está em XP; terceirizar a decisão é medo."
+    bio_facts:
+      - claim: "Acompanhou o movimento ágil do nascimento à 'decadência', desenvolvendo software desde os anos 90; as práticas ágeis foram bem-vindas pra ele."
+        quote: "Eu acompanhei o nascimento, a evolução e a decadência desde quase quando o movimento surgiu."
+        check: "author memory."
+      - claim: "Tem a própria empresa de desenvolvimento e não 'vende' agilidade; foco em práticas básicas de desenvolvimento."
+        quote: "Eu tenho minha própria empresa de desenvolvimento de software, mas eu não “vendo” agilidade."
+        check: "company: Codeminer42 (public). Frame as his own account."
+      - claim: "Entrevistou Robert Martin (Uncle Bob) em 2010; usou trechos no vídeo."
+        quote: "Em 2010 eu tive a oportunidade de trocar idéia com o Bob Martin."
+        check: "Description also says 'entrevista que fiz com Robert Martin (em 2010!)'. Look for the interview on akitaonrails.com 2010."
+      - claim: "Escreveu em 2014 um artigo no blog chamado 'Ágil está morto', na mesma época do post de Dave Thomas."
+        quote: "Ele também escreveu um blog post um ano antes em 2014 na mesma época em que eu escrevi um artigo no meu blog: Ágil está morto"
+        check: "Links in the post: 'Agile: a Verdade por trás do Método' (2014/09/28) and '#noEstimates Debunked' (2013/10/07) on akitaonrails.com. Dave Thomas 'Agile is Dead' is 2014-03-04; the GOTO talk is 2015."
+      - claim: "Recusa projetos mal definidos que dariam mais dor de cabeça do que valem."
+        quote: "Eu tô cansado de recusar projetos porque eu acho que tá tão mal definido que vai me dar mais dor de cabeça do que vale a pena."
+        check: "author memory."
+    world_facts:
+      - claim: "Manifesto de 2001 por 17 signatários em Snowbird, Utah; é 'Manifesto do Desenvolvimento Ágil de Software', não 'Manifesto Ágil'; ágil é adjetivo."
+        quote: "Ágil não é um nome, é um adjetivo."
+        check: "agilemanifesto.org/history; Dave Thomas, GOTO 2015. Post has typos: 'Ken Schwabber', 'Jeff Sutterland', and 'Indivíduos e Iterações' (should be Interações)."
+      - claim: "Scrum vem dos anos 80 e o guia não menciona 'ágil'."
+        quote: "Scrum na verdade foi inventado nos anos 80, o guia sequer menciona o termo “ágil”."
+        check: "Imprecise: the term comes from Takeuchi and Nonaka (HBR 1986); Schwaber/Sutherland formalized Scrum in 1995; the Scrum Guide dates from 2010. Say 'o termo vem de um artigo de 1986'."
+      - claim: "Agilidade é o ciclo PDCA de Deming / DMAIC do Six Sigma: passo, avaliar, ajustar."
+        quote: "agilidade é simplesmente andar um passo de cada vez, avaliar o resultado a cada passo, ajustar o caminho se o resultado não estiver de acordo com o esperado e repetir."
+        check: "Deming PDCA; DMAIC is Six Sigma. Definition is the author's, attributed to Dave Thomas."
+      - claim: "Práticas de XP: TDD, small releases, CI, simple design, collective code ownership."
+        quote: "Test Driven Development, Small Releases, Continuous Integration, Simple Design, Collective Code Ownership"
+        check: "Kent Beck, Extreme Programming Explained (1999)."
+    positions:
+      - stance: "Terceirizar a decisão a coach, mentor ou consultoria é medo e insegurança; ninguém pode dizer que errou se fez o que todo mundo manda."
+        quote: "Um medroso ou medíocre sempre vai terceirizar a decisão pra algum expert ou coach ou mentor ou consultoria"
+      - stance: "O que importa é entregar valor, não bater número num gráfico arbitrário."
+        quote: "O objetivo não é atingir determinado número em algum gráfico arbitrário: é entregar valor."
+      - stance: "Decidir com informação incompleta; a pior opção é não decidir."
+        quote: "Não tem como saber com 100% de certeza qual decisão é a melhor. Mas a pior coisa é não tomar nenhuma."
+      - stance: "Software não é fábrica: dois programadores, mesma especificação, resultados de ordens de grandeza diferentes."
+        quote: "software se chama soft porque não é hard."
+      - stance: "Metodologia é muleta; sem ela sobra o trabalho, que se mede por mérito. Accountability é o centro."
+        quote: "Todo mundo que não quer trabalhar ou que vai seguir a lei do menor esforço, sempre vai se esconder atrás de todos os procedimentos que você der."
+      - stance: "Números que parecem evidência não são prova; 'no Google funciona' sem condições não diz nada."
+        quote: "ter algo que parecem ser evidências não é nem de longe perto de ter provas."
+    book_hooks:
+      - unit: ch19
+        where: "'Gente treinada pra não decidir' (intro cita 'vídeos de 2019 sobre não terceirizar decisões e o que as metodologias ágeis viraram')"
+        touch: "O episódio a que me refiro é o #51 do Akitando, 'Esqueça Metodologias Ágeis', de junho de 2019. Lá eu dizia que quem terceiriza a decisão pra consultoria faz isso por medo de estar errado, e que sem a muleta do procedimento 'sobra o trabalho em si'. A IA tira a muleta; é por isso que o problema aparece agora."
+        strength: high
+      - unit: ch19
+        where: "'A cerimônia' (Manifesto Ágil virou burocracia em ciclos menores)"
+        touch: "Em 2019 eu já reclamava disso no Akitando #51: ser ágil é andar um passo, avaliar e ajustar, e o resto (sprint, story points, throughput) é jargão vendido a quem não quer decidir. O Manifesto é um adjetivo, como lembrou Dave Thomas, não um produto que se compra por quilo."
+        strength: high
+      - unit: ch19
+        where: "'Isso tem vinte e cinco anos': XP, lote pequeno, integração contínua"
+        touch: "Quando eu digo que as práticas que valem são as de XP, testes primeiro, releases pequenos, integração contínua, código compartilhado, não é conversão recente. Foi a mensagem do Akitando #51, em 2019: 'se você é iniciante, as práticas que realmente interessam começam no Extreme Programming e não no Scrum'."
+        strength: medium
+      - unit: ch05
+        where: "'Duzentas horas em trinta' (a estimativa de 200 horas é minha)"
+        touch: "Todo cliente sabe que se o programador estima 200 horas, em 200 horas o que foi pedido vai estar pela metade; eu dizia isso no #51 como 'quase uma lei universal'. Por isso as 200 horas do FrankMD aparecem aqui como chute de ordem de grandeza, não como medição."
+        strength: low
+      - unit: ch11
+        where: "Método de medir IA: números que 'provam' qualquer coisa"
+        touch: "Já em 2019 eu escrevia que é fácil torturar números pra contar a história que a gente quer ouvir, e que a pergunta é sempre sob quais condições, com que precisão, com que grupo de controle. A mesma régua vale pra benchmark de modelo (Akitando #51)."
+        strength: medium
+    appendix_candidate: "Frase de 'como ler anúncio' (apC): ecoar 'sob quais condições? quais premissas?' do #51 como pergunta-padrão antes de aceitar 'no Google/na empresa X funciona'."
+
+  - id: 2021/10/11/akitando-106-recomendacao-de-livros-introducao-a-design-emergente
+    title: "[Akitando] #106 - Recomendação de Livros - Introdução à Design Emergente"
+    one_line: "Lista cronológica de livros (Cormen/Knuth, Dragão, C++, UML/RUP, Refactoring, XP, Clean Code, Pragmatic Programmer, DDD, Lean Startup, Brooks) para defender que design emerge do código em uso e que a ciência da computação envelhece melhor que a engenharia de software."
+    bio_facts:
+      - claim: "Entrou na faculdade em 1995 e conheceu Design Patterns (1994) por volta de 1998, já programando há alguns anos; reconhecia os padrões de emuladores e jogos."
+        quote: "Esse livro foi publicado em 1994, um ano antes de entrar na faculdade. E eu só fui conhecer ele alguns anos depois, lá por 1998."
+        check: "GoF Design Patterns: 1994. Matches the book's 'faculdade em 1995'."
+      - claim: "Usou Flex/Bison na faculdade, meio dos anos 90, e não lembra mais nem uma fração de compiladores, mas os conceitos o ajudam a avaliar linguagens novas."
+        quote: "Se você me perguntar se eu ainda sei essas coisas, não, não lembro nem uma fração mais hoje. Mas os conceitos que guardei me ajudam a avaliar toda vez que uma nova linguagem aparece"
+        check: "author memory. Strong candidate for 'fundamento = vocabulário de julgamento'."
+      - claim: "Aprendeu o básico de algoritmos com o livro do Wirth, não o Cormen; tem Knuth volumes 1 a 3 e 4A."
+        quote: "Eu mesmo não usei ele na faculdade. Eu aprendi o básico com um muito mais simples, este do Niklaus Wirth."
+        check: "Wirth, Algorithms + Data Structures (1976/1986 ed.). Post says Cormen 3rd ed. is 2009, correct. The post says Knuth started 'em 1962' (correct) and 4B still unfinished in 2021 (dated: 4B fascicles continue)."
+      - claim: "Acumulou os livros ao longo dos primeiros 10 a 15 anos de carreira e muitos nunca leu inteiros."
+        quote: "muitos nem li inteiro, e vim acumulando ao longo dos primeiros 10 a 15 anos da minha carreira, durante e depois da faculdade."
+        check: "author memory."
+      - claim: "Já avaliou pilhas de 500 páginas de especificação e UML, e nunca viu um design assim que desse pra traduzir em software."
+        quote: "eu já tive que avaliar calhamaços, literalmente pilhas de quinhentas páginas de especificações e diagramas de UML."
+        check: "author memory; no client named."
+    world_facts:
+      - claim: "Design emergente: design e código eram etapas separadas nos anos 60-80 porque depurar era caro e computador era compartilhado; com PCs potentes e rede, passou a valer código ruim primeiro, refatorar depois."
+        quote: "Fazer o design antecipadamente era crucial nas décadas de 60 a 80, mas depois disso a tecnologia avançou o suficiente pra gente conseguir fazer código ruim primeiro e refatorar depois pra ter código bom"
+        check: "Author's own interpretation ('Isso é uma interpretação minha'); also Brooks cap. 11 and 1995 edition on incremental builds. Strong parallel to the book's 'a premissa mudou'."
+      - claim: "Refatorar (Fowler, 1999) é mudar estrutura interna sem mudar comportamento externo; reescrever é outra coisa."
+        quote: "Muita gente falando “refatoração” na verdade está querendo dizer “reescrever”"
+        check: "Fowler, Refactoring (1999). Fine."
+      - claim: "Manifesto Ágil (2001) é resumo de ~20 anos de prática anterior, não o começo dela."
+        quote: "Essa ordem é importante, porque o Manifesto é só um resuminho de 20 anos de experiência de cada um deles que veio antes."
+        check: "Author's interpretation; the Manifesto is a 2001 codification of practices from the 80s/90s (XP 1996-99)."
+      - claim: "Lean Startup (2011) coincide com o começo da 'atual bolha de tech startups'."
+        quote: "Foi exatamente quando começou a atual bolha de tech startups e esse livro apareceu na hora certa pra se tornar meio que a bíblia das novas tech startups."
+        check: "Eric Ries, The Lean Startup, 2011. The 'bubble from 2011' dating is the author's call in 2021."
+      - claim: "Erlang: 'ER' de Ericsson; Jacobson veio da Ericsson e saiu em 1987 para fundar a Objectory."
+        quote: "Se você não sabe, o “ER” de Erlang é de Ericsson."
+        check: "Imprecise: Erlang is named for A. K. Erlang and is also read as 'Ericsson Language'. Jacobson left Ericsson in 1987 and founded Objectory: correct. Rational bought Objectory in 1995: correct."
+    positions:
+      - stance: "O código é o design; o design perfeito no papel é impossível, então começa mínimo, constrói, aprende e refatora."
+        quote: "Na realidade o código \"é\" o design e ele nunca vai estar perfeito, muito menos na primeira vez."
+      - stance: "Código que roda mas é sujo é lixo; precisa estar limpo pro próximo programador."
+        quote: "Código que roda, mas é sujo, com baixa mantenabilidade, é lixo, pode jogar fora."
+      - stance: "Livros de ciência da computação envelhecem melhor que os de engenharia de software; os fundamentos seguem válidos."
+        quote: "livros de ciência da computação tendem a envelhecer melhor que livros de engenharia de software."
+      - stance: "Usar biblioteca sem saber por baixo serve pra 80% dos casos (nível júnior); o sênior precisa da fundação."
+        quote: "E isso é ok pra 80% dos casos, por isso que muito iniciante consegue ir até longe em alguns projetos sem nunca ter lido um único livro sobre algoritmos e estruturas de dados."
+      - stance: "Vá atrás dos autores originais; evite derivativos que simplificam ou alteram o original."
+        quote: "Minha recomendação é sempre ir atrás dos autores originais de um determinado tema"
+      - stance: "Livro de padrões é catálogo e vocabulário, não manual de design."
+        quote: "Design Patterns é um catálogo, e não um manual de como fazer design."
+      - stance: "Livros técnicos se lêem aos poucos ao longo de 10 anos; só depois da experiência vem o 'ahá'."
+        quote: "só daí vai vir o \"ahhhh, era isso que o livro queria dizer\", aquele momento \"ahá\"."
+    book_hooks:
+      - unit: ch19
+        where: "'A premissa mudou' (consertar depois ficou rápido e barato; deploy frequente)"
+        touch: "Não é a primeira vez que a economia do conserto muda o método. No Akitando #106 eu expliquei que fazer o design inteiro antes do código fazia sentido nos anos 60 a 80, quando depurar era caro e o computador era compartilhado; quando o PC ficou potente, código ruim primeiro e refatorar depois passou a ser possível, e nasceu o design emergente. Com agentes, o custo de consertar caiu de novo, e a premissa muda outra vez."
+        strength: high
+      - unit: ch19
+        where: "'Gente treinada pra não decidir' / spec-driven development (especificação de requisitos inteira antes do agente)"
+        touch: "Spec-driven é o RUP de volta. Eu já avaliei pilhas de 500 páginas de especificação e UML e nunca vi uma que desse pra traduzir em software sem buracos (Akitando #106); o código é o design, e ele só aparece de verdade no uso."
+        strength: high
+      - unit: ch18
+        where: "'Que linguagem aprender' ou 'O que sobra quando a digitação some' (fundamento)"
+        touch: "No Akitando #106 eu confessei que não lembro mais nem uma fração do livro do Dragão sobre compiladores. O que ficou foi o suficiente pra avaliar qualquer linguagem nova que aparece. É esse tipo de fundamento, vocabulário pra julgar, que o agente não substitui."
+        strength: high
+      - unit: ch16
+        where: "'Reescrever um gigante, um pedaço por vez' ou 'Bug não foi inventado pela IA'"
+        touch: "Refatorar e reescrever não são a mesma coisa, e eu já reclamava disso em 2021 (Akitando #106): refatorar muda a estrutura sem mudar o comportamento; reescrever joga fora e não garante melhoria. Pedir ao agente 'reescreva tudo em Rust' em uma frase é pedir a segunda coisa achando que é a primeira."
+        strength: medium
+      - unit: ch18
+        where: "'O esconderijo acabou' (junior que usa framework sem saber o que há por baixo)"
+        touch: "Já em 2021 eu dizia que usar lista, cache ou thread de um framework sem saber como é feito funciona em 80% dos casos e é o nível do júnior; o sênior é pago pelos outros 20% (Akitando #106). Com agente, esses 80% ficaram ainda mais fáceis de fingir."
+        strength: medium
+      - unit: apleituras
+        where: "Lista de leituras: Brooks, Beck (XP Explained), Pragmatic Programmer, Fowler"
+        touch: "Nota curta: eu recomendo ir aos autores originais (Brooks, Beck, Fowler, Martin, Thomas e Hunt) e ler aos poucos ao longo de uns dez anos, como expliquei no Akitando #106."
+        strength: low
+    appendix_candidate: "Seção de apleituras 'Livros que envelhecem bem': cinco ou seis títulos de ciência da computação e método e a regra 'leia aos poucos, volte depois da experiência'."
+
+  - id: 2022/06/13/akitando-120-discutindo-gestao
+    title: "[Akitando] #120 - Discutindo Gestão"
+    one_line: "Gestão é decidir no tempo certo com informação incompleta, priorizar e gerenciar expectativas; confiança entre profissionais experientes, senioridade que forma sucessores, e metodologia/métrica como muletas de burocrata."
+    bio_facts:
+      - claim: "Cerca de 30 anos gerenciando projetos, de um jeito ou de outro."
+        quote: "depois de 30 anos gerenciando projetos de uma forma ou de outra"
+        check: "Description of the episode. 1992 start would fit the 'anos 90'. Frame as 'trinta anos de projetos', author memory."
+      - claim: "Teve certificado PMP (colocava 'vírgula PMP' no nome, em 2003) e depois rasgou o certificado no vídeo do Guia de Aprendendo a Aprender."
+        quote: "eu também colocava “virgula PMP” no meu, mas a vergonha alheia me fez tirar rápido. Também era 2003."
+        check: "Other episode: 'Guia de Aprendendo a Aprender' (rasgou o certificado). Confirm the PMP year with that post if the book cites it."
+      - claim: "Era 'kamikaze' no começo: pegava brigas que não eram dele e demorou anos para aprender a escolher batalhas."
+        quote: "eu mesmo lá no começo era estilo mais kamikaze, ficava pegando briga que não era minha, e perdendo tempo com batalhas inúteis. Demorei anos pra aprender isso."
+        check: "author memory, frame as such."
+      - claim: "Cerca de dez anos antes (~2012) teve um cliente que pediu um chat 'igual o Facebook Messenger' em um mês; resposta padrão: pague o que o Facebook pagou."
+        quote: "Minha resposta é sempre a mesma “igual? Claro que dá. Se você pagar a mesma coisa que o Facebook pagou, a gente faz”."
+        check: "Same anecdote in #51 (Messenger no MVP) and in #130 context. Do not name the client."
+      - claim: "Só confia em quem conheceu pessoalmente; não aceita convite de LinkedIn de desconhecido."
+        quote: "Quem eu confio tá no speed dial do meu celular, o resto é resto."
+        check: "author statement."
+    world_facts:
+      - claim: "Takeuchi e Nonaka, 'The New New Product Development Game' (1986), origem do termo 'scrum'; Drucker cunhou 'knowledge workers' a partir do fim dos anos 60."
+        quote: "The New New Product Development Game, que é de onde surgiu o termo \"scrum\" que depois o Ken Schwaber usou"
+        check: "HBR Jan-Feb 1986 (link in the post). Drucker: 'The Age of Discontinuity' (1969). The post places the Balanced Scorecard 'a partir do fim dos anos 80'; Kaplan and Norton's HBR article is 1992 and the book 1996: DATED, fix if cited."
+      - claim: "O contrato da Microsoft com a IBM saiu pela amizade da mãe de Gates com o CEO da IBM; fundadores citados 'largaram Harvard e Stanford'."
+        quote: "O famoso contrato da Microsoft com a IBM pra licenciar o MS-DOS só saiu porque o a mãe do Bill Gates era amiga do CEO da IBM daquela época."
+        check: "Mary Gates and John Opel sat on the United Way board; widely repeated, simplified. Jobs left Reed (not Stanford); Gates and Zuckerberg left Harvard. Do not repeat as fact."
+      - claim: "Startups unicórnio com 'dinheiro infinito' geram gente fraca porque o problema rola até a próxima rodada, 'até a bolha estourar'."
+        quote: "Até a bolha estourar. E podem acreditar, ela sempre estoura."
+        check: "2022 opinion, before the layoffs/bubble burst of 2022-2023. Posted 2022-06-13, so it called the correction early; verify layoffs.fyi dates if the book wants a numeric tie."
+      - claim: "Em 2022 até machine learning e IA já eram serviços que o programador só integra (AWS, Azure)."
+        quote: "até machine learning e inteligência artifical hoje são serviços que a gente só integra."
+        check: "Dated: pre-ChatGPT (30 Nov 2022). Good 'before' marker."
+    positions:
+      - stance: "Gestão é decidir na hora, com informação incompleta; quem só preenche planilha é burocrata."
+        quote: "Se eu fosse resumir o que é gestão em poucas palavras diria que é a capacidade de tomar decisões na hora que precisa, mesmo tendo informações incompletas."
+      - stance: "O programador não é o operário: o trabalho braçal já é automatizado pelo compilador; todo programador é arquiteto."
+        quote: "O trabalho de operário ou do músico da orquestra, o trabalho repetitivo, braçal, já é totalmente automatizado. Quem cumpre esse papel é o compilador ou interpretador."
+      - stance: "O código é a especificação; especificar tudo antes de codificar é impossível."
+        quote: "O código é a especificação. E o erro é justamente esse: achar que é possível especificar um software com precisão antes de comecar a codificar."
+      - stance: "Equipe só de sêniores é desperdício, só de júniores é desastre; sênior se faz mentorando; terceiro fica sob sênior interno."
+        quote: "Uma equipe só de seniors é um desperdício e uma equipe só de juniors é um desastre esperando pra acontecer."
+      - stance: "Quem tem cicatrizes reconhece cicatrizes; iniciante não tem ainda. Experiência não vem de livro."
+        quote: "a gente que tem cicatrizes sabe reconhecer as cicatrizes dos outros. Só que um recém formado ou iniciante não tem cicatrizes ainda."
+      - stance: "Métrica ruim cria o incentivo errado (contar bugs corrigidos gera bugs)."
+        quote: "Já que a métrica é corrigir bugs, então o incentivo vai ser em criar mais bugs."
+      - stance: "Se tudo é prioridade, nada é; gerenciar é cortar."
+        quote: "se tudo é uma prioridade, por definição, nada é prioridade."
+      - stance: "Estimar não é prever."
+        quote: "Muita gente ainda pede estimativa mas na realidade estão esperando previsão."
+    book_hooks:
+      - unit: ch18
+        where: "'O que sobra quando a digitação some' ou 'VS Code é o novo cartão perfurado' (o que a IA automatiza)"
+        touch: "Em 2022, antes de o ChatGPT existir, eu já dizia no Akitando #120 que o programador nunca foi o operário da linha de montagem: o trabalho braçal de transformar a planta em binário é do compilador, e o programador sempre foi o arquiteto, mais perto de um grupo de jazz que de uma orquestra. Os agentes empurram mais uma camada da digitação para a máquina; a parte de decidir continua nossa."
+        strength: high
+      - unit: ch18
+        where: "'Continue contratando júniors' (a segunda tarefa mais importante de um sênior é formar o substituto)"
+        touch: "Eu falei do ciclo no Akitando #120: sênior vira sênior quando aprende a mentorar, terceiro entra como júnior sob um sênior interno, e 'uma equipe só de seniors é um desperdício e uma equipe só de juniors é um desastre esperando pra acontecer'. A IA não mexe nessa conta."
+        strength: high
+      - unit: ch12
+        where: "Modelos que colam na prova (benchmark como alvo, não como medida)"
+        touch: "É a lei de qualquer métrica, e eu citava o exemplo no Akitando #120: um lugar medindo bugs corrigidos acabou premiando quem cria bugs. Modelo treinado pra pontuar no benchmark segue o mesmo incentivo."
+        strength: high
+      - unit: ch14
+        where: "Hype e dinheiro investido em IA ('A fábrica de propaganda'), bolha"
+        touch: "Em junho de 2022 eu escrevi, no Akitando #120, que startup que vive de rodada acredita ter dinheiro infinito, o problema vai rolando para a próxima rodada 'até a bolha estourar', e que 'podem acreditar, ela sempre estoura'. Não foi previsão de data; foi o mecanismo, que se repete."
+        strength: medium
+      - unit: ch20
+        where: "'O que se mede de fora' / 'Competente o suficiente' (como saber se alguém é bom)"
+        touch: "Quem tem cicatriz reconhece cicatriz. É por isso que checar uma resposta de IA exige alguém que já errou o bastante pra saber como o erro aparece (Akitando #120). Competência não se mede por certificado; eu rasguei o meu PMP em vídeo."
+        strength: medium
+      - unit: ch19
+        where: "'Quatro cadeiras na mesma mesa' (PO, tech lead, QA, programador) e 'Gente treinada pra não decidir'"
+        touch: "O papel do gestor, no Akitando #120, é decidir no momento certo e ser o firewall da equipe. Quando o código sai em minutos, a decisão errada também chega em minutos ao cliente; o gestor que empurra o problema com a barriga fica ainda mais caro."
+        strength: medium
+    appendix_candidate: ""
+
+  - id: 2022/10/25/akitando-130-rant-projetos-testes-e-estimativa-rated-r
+    title: "[Akitando] #130 - Rant: Projetos, TESTES e Estimativa??? | Rated-R"
+    one_line: "Errar cedo com provas de conceito de prazo fixo, teste em todo pull request, CI e deploy tedioso; estimativa é ordem de grandeza e não previsão; produtividade sustentável vem de disciplina, não de contratar mais."
+    bio_facts:
+      - claim: "O blog dele foi feito em Rails em 2012 (talvez Rails 3 ou 4), atualizado até Rails 6 / Ruby 3, com RSpec; atualiza uma vez por ano em ~30 minutos há 10 anos."
+        quote: "Eu mesmo que fiz em 2012. Não lembro se foi em Rails versão 3 ou 4."
+        check: "DATED: the blog now runs on Hugo (akitaonrails-hugo). Cite as 'o blog que eu mantive em Rails por mais de 10 anos' and cross-check with interlude1 (Vinte anos de blog)."
+      - claim: "Já teve cliente cujo CTO exigia descrever classes e métodos antes de escrever qualquer código."
+        quote: "Eu tive um cliente que o imbecil do CTO mandava todo programador descrever em detalhes como ia programar, antes de escrever uma linha de códigos."
+        check: "author memory. Do not name the client."
+      - claim: "Usa e recomenda Heroku (review apps, rollback) e CI com Brakeman nos projetos internos da empresa."
+        quote: "Esse é outro motivo de porque eu sempre recomendo Heroku."
+        check: "2022 stack; may be dated (Heroku free tier ended Nov 2022). Do not present as current."
+      - claim: "A turma já fazia testes automatizados antes do TDD ter nome: scripts à parte para trechos sensíveis; os agilistas deram nome aos bois."
+        quote: "A gente fazia alguns scripts separados do código pra rodar partes que eram mais sensíveis se quebrasse"
+        check: "author memory, frame as such."
+      - claim: "Mostrou ao vivo as suítes de testes de Firefox, React, Tailwind, Django, Laravel, VS Code, Tokio e Spring Boot."
+        quote: "eu baixei o código fonte da biblioteca Tokio, que é o framework pra desenvolvimento assíncrono em aplicativos feitos em Rust."
+        check: "Test counts (React >7k, Tailwind ~900, Django >16k, Laravel ~8k) are Oct 2022 and DATED."
+    world_facts:
+      - claim: "TDD nasceu com Kent Beck e o primeiro jUnit, em Java."
+        quote: "Foi com Kent Beck, que fez o primeiro jUnit, em Java."
+        check: "Imprecise: Beck's SUnit (Smalltalk) came first; JUnit (Beck and Erich Gamma, 1997-98) is the Java port. TDD as a named practice is from XP (1999)."
+      - claim: "Equipe de 3 que entrega 6 a 9 tarefas/semana sem testes cai a 1 ou 2 e depois dobra a equipe sem recuperar; com testes mantém 4 a 6 constantes."
+        quote: "Se lá no começo tivesse decidido entregar tudo com testes, em vez de 6 a 9 tarefas, a equipe estaria entregando só de 4 a 6 coisas, talvez menos."
+        check: "Illustrative thought experiment, not data. Do not cite as measurement."
+      - claim: "Estimativa é ordem de grandeza; COCOMO e fórmulas são lixo; prever é outra coisa."
+        quote: "Estimativas nunca estão erradas, porque não são previsões."
+        check: "Author stance. COCOMO (Boehm, 1981) is the model he dismisses."
+      - claim: "Anedota: alguém atualizou o Java do 16 ao 18 e subiu direto pra produção numa sexta."
+        quote: "Eu vi um tweet alguns dias atrás, de alguém que tava relatando como um idiota da equipe resolveu atualizar a versão do Java"
+        check: "Unverifiable tweet; do not cite as an event."
+    positions:
+      - stance: "Errar cedo e consertar rápido vale mais que horas de consenso; incerteza se resolve com teste, não com planejamento infinito."
+        quote: "Errar antes e consertar rápido é infinitamente melhor do que horas e horas de discussão tentando chegar em consenso e bikeshedding."
+      - stance: "Prova de conceito de 2 dias a 2 semanas, prazo fixo, para descartar o que não vai dar certo; é seguro, não desperdício."
+        quote: "Não é jogar tempo fora, é pagar um pouco pra não jogar muito mais fora."
+      - stance: "Teste é seguro; sem ele a produtividade cai até a equipe só apagar incêndio, e contratar mais gente não resolve."
+        quote: "Ter testes não é burocracia, não é perda de tempo. É um seguro."
+      - stance: "Compilar não é funcionar; nem o Rust dispensa testes."
+        quote: "Só porque compila não significa que bugs não foram introduzidos."
+      - stance: "O importante é não estragar o que já funcionava; deploy deve ser dia normal e tedioso."
+        quote: "O importante não é andar rápido, o importante é não estragar o que já funcionava."
+      - stance: "Bug corrigido começa com teste que falha; o mesmo bug não volta."
+        quote: "Toda correção de bugs, deveria começar com um teste que simula o bug, pra que já comece falhando, e você sabe que corrigiu quando esse teste passa."
+      - stance: "Quem é contra teste e se diz sênior não deveria; quem diz que 'não sabe' ataca o que não pratica."
+        quote: "Todo mundo que se sente incapaz de fazer alguma coisa, tenta denegrir esse alguma coisa."
+      - stance: "Medo de deploy na sexta só existe em equipe sem o básico."
+        quote: "Medo de deploy na sexta-feira só existe em equipes disfuncionais que não fazem esse básico que acabei de falar."
+    book_hooks:
+      - unit: ch19
+        where: "'As travas que tornam a velocidade segura' (testes, CI, staging, rollback) e 'A premissa mudou' (deploy na sexta)"
+        touch: "Essa lista de travas não é invenção do ano dos agentes. Eu a defendi no Akitando #130, em outubro de 2022: teste em todo pull request, CI, review app, rollback com um clique, e a frase 'medo de deploy na sexta-feira só existe em equipes disfuncionais que não fazem o básico'. A IA só tornou o conserto mais barato; a rede de segurança é a mesma."
+        strength: high
+      - unit: ch06
+        where: "'A rede de segurança' / 'Rodou sem erro, saiu errado' (testes que o agente escreve, mocks que mentem)"
+        touch: "Já no Akitando #130 eu batia que 'só porque compila não significa que bugs não foram introduzidos'. O código do agente que compila e passa no próprio teste é a mesma ilusão, com sotaque novo; o bug corrigido tem que virar teste que falha antes (e que não seja o agente a decidir sozinho que passou)."
+        strength: high
+      - unit: ch16
+        where: "'Um milhão de linhas a cinquenta por dia' / 'Quem revisa o que chega' (volume sem teste)"
+        touch: "Eu desenhei a espiral no Akitando #130: sem teste, a equipe entrega muito, os bugs consomem a semana, contrata-se mais gente, o volume dobra e a produtividade cai de novo. Troque 'mais gente' por 'mais agentes' e a conta é a mesma."
+        strength: high
+      - unit: ch05
+        where: "'Duzentas horas em trinta' (a estimativa de 200 horas) e 'O que sobra pra gente'"
+        touch: "As 200 horas são estimativa no sentido que eu defendia em 2022, no Akitando #130: ordem de grandeza, não previsão. Dá pra saber que um projeto é 'perto de 6 meses e menos de 1 ano'; dizer 5 meses, 2 semanas e 4 dias é futilidade."
+        strength: medium
+      - unit: ch07
+        where: "'A vida depois do deploy' / 'Software nunca está pronto'"
+        touch: "Meu blog em Rails sobreviveu mais de dez anos com uma regra: atualizar uma vez por ano rodando a suíte primeiro, 30 minutos. A conta do 'software nunca está pronto' só fecha se o que já funcionava continua funcionando, e quem garante isso é o teste (Akitando #130)."
+        strength: medium
+      - unit: ch08
+        where: "'Meu primeiro fracasso' / prova de conceito descartada"
+        touch: "Prova de conceito de prazo fixo para descartar a ideia ruim barato: eu pregava isso em 2022 (Akitando #130). A maratona e o fracasso do capítulo foram isso, com agente: o prazo era de horas e a ideia errada morreu rápido."
+        strength: low
+    appendix_candidate: "Apêndice B (kit mínimo para usar agentes com segurança): uma caixa curta 'o mínimo que não é novo' com teste por bug, CI, review antes de merge, rollback e prova de conceito de prazo fixo, creditando o Akitando #130."
+
+  - id: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+    title: "[Akitando] #144 - Modelagem de Software é Difícil? | \"Ver\" vs \"Enxergar\""
+    one_line: "Modelar e arquitetar não tem receita: depende de conhecer o domínio e ter quilometragem; os livros (DDD, Patterns) são vocabulário e só rendem depois de anos de prática; ninguém sabe tudo, nem o Magento de 2 milhões de linhas."
+    bio_facts:
+      - claim: "Trabalhou ao longo de 30 anos em projetos de telecomunicações, varejo, manufatura, RH, infraestrutura, agências, grandes corporações e startups."
+        quote: "Telecomunicações, varejo, manufatura, RH, infraestrutura, agências, grandes corporações, startups."
+        check: "author memory (the sentence before: 'eu trabalhei em projetos de software de vários tipos de negócios diferentes')."
+      - claim: "Nunca leu o código do Spree nem do Magento, embora tenha trabalhado em projetos com eles; não é preciso ler tudo."
+        quote: "eu, Fabio Akita, nunca li o código do Spree, muito menos do Magento."
+        check: "author statement."
+      - claim: "Teve vários mentores que nem sabiam: aprendeu marketing, contabilidade e vendas trabalhando ao lado de quem era treinado nelas."
+        quote: "Eu tive vários mentores que nem sabiam que estavam me mentorando."
+        check: "author memory."
+      - claim: "Em Asterisk (VoIP) é júnior; sênior numa coisa não é sênior em tudo."
+        quote: "Em Asterisk eu não sou mais que um junior."
+        check: "author statement; short and quotable for 'sênior volta a ser júnior'."
+      - claim: "Conheceu o autor do Spree (Sean Schofield), entrevistou Luke Kanies (Puppet) em 2009, fez workshop de Francesco Cesarini (Erlang) em 2009 e trouxe Ilya Grigorik à RailsConf Brasil 2009."
+        quote: "Eu entrevistei ele pro meu blog em 2009, vou deixar o link nas descrições."
+        check: "Links in the post: akitaonrails.com/2009/11/18/conversando-com-luke-kanies and 2009/05/08 RailsConf 09 audio interviews. Good for the 'lived history' of the narrator, not for AI chapters."
+      - claim: "Em 2023 já explicava embeddings de álgebra linear para recomendação (episódio do código do Twitter), LLVM para tensors de IA, e filas/sala de espera (Ingresso.com)."
+        quote: "No episódio do Twitter explico como embeddings de álgebra linear ajudam a resolver o problema de relevância e recomendação de tweets."
+        check: "Twitter open-sourced its recommendation algorithm 31 Mar 2023; episode precedes this one (Aug 2023)."
+    world_facts:
+      - claim: "Escala de e-commerce: livro de Rails ~2.700 linhas de Ruby; Spree ~92 mil; Magento 2 ~2 milhões de linhas de PHP (> 700 vezes o livro)."
+        quote: "O Magento sozinho, só no javascript, tem o dobro de linhas de código do que Ruby no Spree"
+        check: "Counts via tokei in Aug 2023: DATED, recount if cited. Arithmetic 2M/2.7k = 740 is right."
+      - claim: "Magento: criado pela Varien (~2007), eBay entra ~2011, separa do PayPal em 2015, Adobe compra em 2018; Magento 2 primeira versão estável em 2015."
+        quote: "Daí entra a Adobe em 2018 que adquire a empresa."
+        check: "Adobe announced the Magento purchase in May 2018 (US$1.68 billion): correct. eBay: acquired a stake in 2010 and full control in 2011. Magento 2.0 GA: Nov 2015. Author hedges 'pelo pouco que puxei no Google'."
+      - claim: "Michelangelo pintou a Capela Sistina de 1508 a 1512 aos 33 anos, tendo estudado desde ~13 com Ghirlandaio."
+        quote: "Quatro anos inteiros, de 1508 a 1512, usando tecnologia do século XVI."
+        check: "Sistine ceiling: 1508-1512, correct. Born 1475, so 33 in 1508, correct. Apprenticed to Ghirlandaio at 13 (1488): correct."
+      - claim: "Regra de negócio como política (overbooking): exemplo de Eric Evans em DDD."
+        quote: "Segundo o Eric, essa regra de overbooking é uma política."
+        check: "Evans, Domain-Driven Design (2003), intro, 'Cargo/Voyage' example. Correct."
+    positions:
+      - stance: "Não existe 'o jeito certo' de fazer software, mas o processo não é aleatório; programador existe para decidir o que é melhor na circunstância."
+        quote: "O spoiler é que não existe o \"jeito certo\" de se fazer software, mas por outro lado, o processo não é aleatório."
+      - stance: "Melhor programador é o que decide no momento em que precisa, nem antes nem depois (ecoa 'Não terceirize suas decisões')."
+        quote: "O pior programador é aquele que é incapaz de tomar decisões."
+      - stance: "Não dá pra modelar o que não se conhece; a regra de negócio vem antes do pattern."
+        quote: "Não tem como modelar alguma coisa que não se conhece."
+      - stance: "Software nunca está pronto; modelagem e arquitetura são respostas à evolução e emergem do software."
+        quote: "Entendam isso: software nunca está \"pronto\" ou \"finalizado\"."
+      - stance: "Livros de modelagem dão vocabulário; só rendem com quilometragem, relidos ao longo de 3 a 5 anos."
+        quote: "livros DDD ou qualquer outro de modelagem e arquitetura servem pra nos dar um vocabulário pra tentarmos nos comunicar."
+      - stance: "Você nunca vai saber tudo; o que importa é saber onde usar, não como."
+        quote: "Saber onde usar é mais importante do que saber como usar."
+      - stance: "Só se sabe o que é bom software depois de fazer e herdar muito software ruim."
+        quote: "você nunca vai saber o que é um \"bom software\" sem antes fazer muito mau software e lidar com mau software dos outros."
+      - stance: "O maior problema do iniciante é não saber o que não sabe; mentoria é alguém apontar o que você não sabia que não sabia."
+        quote: "O maior problema no estágio inicial é que você não sabe o que não sabe."
+    book_hooks:
+      - unit: epilogo
+        where: "'O seu domínio' (a parte do mapa em branco pra máquina e preenchida na sua cabeça)"
+        touch: "Eu disse no Akitando #144 que 'não tem como modelar alguma coisa que não se conhece': o exemplo de overbooking no livro do Eric Evans é uma regra que qualquer empresário de logística sabe e o programador não. O modelo conhece o que o mundo publicou; a regra da sua empresa continua na sua cabeça."
+        strength: high
+      - unit: ch18
+        where: "'Como alguém vira sênior' / 'O esconderijo acabou' (sênior volta a ser júnior; experiência não vem de tutorial)"
+        touch: "Em 2023, no Akitando #144, eu mostrei a conta: o projeto de e-commerce de um livro de Rails tem uns 2.700 linhas de Ruby, e o Spree, 92 mil; o Magento passa de 2 milhões. Ninguém lê tudo, eu nunca li o Magento. Sênior numa coisa é júnior em outra, e eu sou júnior em Asterisk."
+        strength: high
+      - unit: ch16
+        where: "'Um milhão de linhas a cinquenta por dia' / 'Código que ninguém leu' (escala que ninguém lê inteira)"
+        touch: "O argumento de que ninguém lê um milhão de linhas não é novo e não nasceu com a IA: no Akitando #144 eu mostrei que o Magento tem 2 milhões de linhas e que nenhum programador lê tudo; o ofício sempre foi saber onde olhar e conhecer a estrutura. A diferença é que agora a maior parte desse código foi escrita por quem também não leu."
+        strength: medium
+      - unit: ch07
+        where: "'Software nunca está pronto' / 'Começar pelas palavras dela' (o domínio vem do usuário)"
+        touch: "Todo projeto tem o dia 1 com zero linhas, e o Magento levou de 2007 a 2023 para chegar a 2 milhões, moldado por feedback real, por eBay, PayPal e Adobe que ninguém previu (Akitando #144). 'Modelagens que faziam sentido em 2011 provavelmente não fazem mais sentido em 2018.'"
+        strength: medium
+      - unit: ch01
+        where: "Abertura: 'um gerador de texto muito bom' (embeddings, o que o modelo faz por baixo)"
+        touch: "Eu já explicava embeddings de álgebra linear num vídeo de código do Twitter antes de qualquer LLM virar assunto de jantar (Akitando #144 cita o episódio). O vocabulário de vetores e relevância que o livro usa é o mesmo de lá."
+        strength: low
+      - unit: ch19
+        where: "'Quatro cadeiras na mesma mesa' (PO, dev, QA) ou 'Gente treinada pra não decidir'"
+        touch: "O pior programador é o que não decide, e o melhor decide 'no momento em que precisa, nem antes, nem depois' (Akitando #144, citando o #63 'Não terceirize suas decisões'). Spec-driven puxa a decisão para antes; o agente barateia decidir depois."
+        strength: medium
+    appendix_candidate: "Caixa em apleituras: 'Aprenda com projetos de verdade': The Architecture of Open Source Applications e 500 Lines or Less (gratuitos online) como forma de treinar leitura de código real, recomendados pelo Akitando #144. Serve ao leitor que quer fundamento além do livro."

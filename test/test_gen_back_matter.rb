@@ -104,4 +104,20 @@ class TestGenBackMatter < ToolTest
     gen
     assert_equal 1, fx.read("book/pt/creditos.md").scan("@fig-ch02-diagrama").size
   end
+
+  # Guards the background group: only cited background posts, in their own group at the end.
+  def test_fontes_background_group
+    post = "2019/10/09/episodio-antigo"
+    gen
+    refute_includes fx.read("book/pt/fontes.md"), "Episódios anteriores"
+    fx.edit(fx.unit_rel("ch02")) { _1.sub("sources:\n", %(sources:\n  - {post: #{post}, sha256: "#{Fixture.sha(fx.post_path(post))}"}\n)) }
+    gen
+    pt = fx.read("book/pt/fontes.md")
+    assert_includes pt, "**Episódios anteriores citados (Akitando, 2018-2023)**\n\n- 09/10/2019: *Episódio antigo*. <https://www.akitaonrails.com/2019/10/09/episodio-antigo/>"
+    assert_operator pt.index("**Números e propaganda**"), :<, pt.index("Episódios anteriores")
+    refute_match(/\*\*A memória de um peixe\*\*\n\n- 09\/10\/2019/, pt)
+    fx.edit(fx.unit_rel("ch02", "en")) { _1.sub("sources:\n", %(sources:\n  - {post: #{post}, sha256: "#{Fixture.sha(fx.post_path(post, 'en'))}"}\n)) }
+    gen("en")
+    assert_includes fx.read("book/en/fontes.md"), "**Earlier episodes cited (Akitando, 2018-2023)**\n\n- 09/10/2019: *Old episode*. <https://www.akitaonrails.com/en/2019/10/09/old-episode/>"
+  end
 end

@@ -122,3 +122,12 @@ stopped there, with a backlog for the author's read in
 `reviews/1.0.0-preview.3/personas-round3/comparison.md`. Cost: about 5.2M
 tokens of persona reads plus ~3M for edits and EN re-syncs across the three
 rounds.
+
+## Scoped checks
+
+After a targeted round (not a full rewrite), a cheaper check reads only the
+touched units with a few extra questions. Example: after the narrator was
+colored with the Akitando history (2026-10-14), `reviews/akitando/persona-check.md`
+asked each persona about credibility, bragging and inconsistencies in the
+narrator; results in `reviews/akitando/personas/summary.md` (led to
+EDITORIAL-RULES R21). About 160k tokens per persona.

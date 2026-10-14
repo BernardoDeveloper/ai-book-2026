@@ -1,0 +1,174 @@
+persona: profissional
+summary: |
+  I picked this book up because I read my job "ends in two years". It did calm me down about the scary part:
+  I now understand the chatbot is a text generator that agrees with me and invents things, and the "dangerous
+  model" headlines are a sales routine. Chapter 4 and the epilogue are what I will keep: the eight rules for
+  using a chatbot, the warning about pasting client data, and the Monday list. What I did not get is a straight
+  answer about accounting. The only passages written for me are a couple of paragraphs in chapter 18 and one in
+  chapter 20, and both say "this is my extrapolation, I am a programmer". I respect that honesty, but I wanted
+  those paragraphs to be a section. I nearly quit in chapter 14 (names, dates, lawsuits, a math prize I will
+  never understand) and again in chapter 19, which is about sprints and product owners. On my phone those two
+  felt like someone else's book.
+best:
+  - "ch04: the same article, two questions, two opposite answers; finally I see why the chatbot agrees with me"
+  - "ch04: the paragraph on what to check before pasting a client's statement into a chatbot"
+  - "ch20: conciliação do mês, the one paragraph that talks about my actual work"
+  - "epilogo: 'Pra esta semana' with a list for people who work with numbers and papers"
+  - "ch14: 'Como ler um anúncio', a checklist I can reuse on any headline"
+worst:
+  - "ch14: Navier-Stokes, Hugging Face intrusion and the who-is-on-which-side list of executives"
+  - "ch19: sprint, PO, QA, staging, feature flag, rollback; I do not work in software"
+  - "ch08: OpenCV filters, RT-DETR, emulator synchronization; the lesson is good but buried in detail"
+  - "ch20: the seven-years timeline (mistura de especialistas, MCP, lei de escala) in one page"
+  - "ch01: Rosenblatt and the Perceptron history before I got to what a chatbot does"
+units:
+  - {unit: index, score: 4, note: "The robot fair hooked me and 'Pra quem eu escrevi' listed me by name; the part-by-part list of fears is where I decided to keep going."}
+  - {unit: ch01, score: 4, note: "The phone keyboard comparison made it click; I skimmed the 1950s Perceptron story but the 'bolha estoura, tecnologia fica' point stuck."}
+  - {unit: ch04, score: 5, note: "Most useful chapter for me: the two-question test, the eight rules, the money and data cautions; I screenshotted the list."}
+  - {unit: ch08, score: 3, note: "Good lesson that the machine speeds up the wrong plan too, but too much manga and emulator detail for someone who has never programmed."}
+  - {unit: ch14, score: 2, note: "Smart idea (who profits from the headline) but drowned in company names, dates and lawsuits; I kept losing track of who was who."}
+  - {unit: ch18, score: 4, note: "The punch-card operators felt uncomfortably close to bookkeeping clerks; I wish the accounting part were not a few paragraphs at the end of a programmer chapter."}
+  - {unit: ch19, score: 2, note: "Written for software teams and managers; I could not map sprint, PO and QA to my firm."}
+  - {unit: ch20, score: 3, note: "The 'what to plan around' paragraphs are good, the benchmark and timeline sections lost me, and the Game Gear story was not for me."}
+  - {unit: epilogo, score: 5, note: "Finally what to do on Monday; calm, short bullets, and the 'what can be ignored' list freed up time."}
+  - {unit: apbolhas, score: 4, note: "Short, factual, and the dated mistakes make me trust the rest; helped with the 'is my career over' feeling."}
+  - {unit: apestudar, score: 3, note: "Sensible rules about trying alone before asking the machine; the closing paragraph for non-programmers was the useful one and it is too brief."}
+annotations:
+  - unit: index
+    quote: "A quinta parte fala de trabalho e de carreira"
+    type: rewrite
+    why: "This is the sentence I opened the book for, and it does not say whether Part V is also for people who do not code. Later I found out it is mostly about programmers."
+    suggestion: "Say plainly which chapters of Part V and which epilogue section speak to office and accounting work."
+  - unit: ch01
+    quote: "Rosenblatt era psicólogo e trabalhava no Laboratório Aeronáutico"
+    type: boring
+    why: "Three paragraphs of 1950s and 60s history (Navy, IBM 704, Minsky, a boat accident) before I get back to the chatbot. Interesting, but I skimmed on my phone."
+    suggestion: "Keep the one point (hype, then winter, then the technology came back) in a short paragraph."
+  - unit: ch01
+    quote: "pouca gente fora da área notou tanta diferença"
+    type: logic
+    why: "The GPT-4 to GPT-5 step is the key claim of the S-curve, and the evidence is that few people noticed. The author says it is an impression, but I was still asked to accept it before the 'concrete signs'."
+    suggestion: "Move the Reuters report and the missing parameter counts first, and mark this as a weak sign."
+  - unit: ch04
+    quote: "## Antes de perguntar à máquina"
+    type: rewrite
+    why: "The eight rules and the health, money and news cautions are what I wanted, and they come after a long tour of the Frank Investigator's 15 steps. I almost did not reach them."
+    suggestion: "Open the chapter's practical half earlier, or add a one-line pointer near the top: 'the rules are at the end'."
+  - unit: ch04
+    quote: "Entre 11 e 16 de março, e depois de 25 a 27"
+    type: boring
+    why: "Dates, commit counts and the 15-step pipeline describe the author's program, not something I can use."
+    suggestion: "One sentence on what the program does is enough; the design choices already carry the lesson."
+  - unit: ch08
+    quote: "um projeto empacado só andou quando ganhou um oráculo"
+    type: confusing
+    why: "'Oráculo' is used in the opening of the chapter and only explained pages later, after the emulator story. I stopped to wonder if I had missed a definition."
+    suggestion: "Gloss it at first use ('uma conferência de fora') or hold the word back until the section that defines it."
+  - unit: ch08
+    quote: "Foram 31 fases de investigação, 44 commits na minha cópia do emulador"
+    type: boring
+    why: "The PlayStation emulator and Master System stories are long and technical. The 'AI wanted to stop, I insisted' idea is what mattered to me, and it fits in a page."
+    suggestion: "Trim the numbers and the shotgun-debugging explanation; keep the human decision."
+  - unit: ch14
+    quote: "Em 8 de setembro, a OpenAI anunciou ter resolvido o problema"
+    type: boring
+    why: "A millennium math problem, a Fields-medal statement and an authorship dispute. I cannot judge any of it and nothing in it changes what I do Monday."
+    suggestion: "Reduce to two sentences (headline said solved, the famous version is still open) or cut."
+  - unit: ch14
+    quote: "Pra quem perdeu a conta dos nomes, os lados ficam assim."
+    type: rewrite
+    why: "I had lost count, yes. A paragraph of ten executives sorted into camps is a memory test. The point (experts disagree, check who profits) was already clear."
+    suggestion: "Cut the roll call, or show it as a small two-column table."
+  - unit: ch14
+    quote: "mais de trinta repositórios públicos feitos desde janeiro"
+    type: rewrite
+    why: "In the middle of a chapter about not trusting claims, this reads as 'look at everything I built'. It slightly undercuts the argument."
+    suggestion: "Drop the count, or just say the projects are public and can be checked."
+  - unit: ch14
+    quote: "Quem esperou um mês antes de ter medo, ou de comprar, quase sempre economizou as duas coisas."
+    type: logic
+    why: "A tidy rule built from a handful of 2026 headlines that changed shape. 'Quase sempre' is stronger than the evidence, and waiting a month is bad advice for some purchases."
+    suggestion: "Say 'in the cases above' instead of 'quase sempre'."
+  - unit: ch18
+    quote: "Se o seu trabalho é quase todo a primeira parte, eu ficaria preocupado"
+    type: rewrite
+    why: "This is the closest the book comes to my fear, and the answer is a hedge: worry if your job is data entry, move up a layer. I wanted to know what 'move up' looks like for an accountant, with an example I can try."
+    suggestion: "Expand the contabilidade paragraph into a short section with 3 concrete tasks to hand over and 3 to keep."
+  - unit: ch18
+    quote: "sete linguagens (de Rust e Haskell a Python e Ruby), quatro modelos"
+    type: boring
+    why: "'Que linguagem aprender' is a section for a would-be programmer. After it, I was still waiting for the answer about other professions."
+    suggestion: "Move the language section to the technical appendix and let the chapter go from the senior/junior question straight to 'Quem decide'."
+  - unit: ch19
+    quote: "### Quatro cadeiras na mesma mesa"
+    type: confusing
+    why: "The heading says four chairs and the list names the programmer plus three roles (PO, QA, tech lead); then a diagram of people rotating. Without the software vocabulary I could not picture it."
+    suggestion: "Add a one-line non-software version ('whoever decides, whoever checks, whoever has the final say') or flag that this section is for software teams."
+  - unit: ch19
+    quote: "um desenvolvedor de Atlanta, Brandon Thomas"
+    type: boring
+    why: "Adobe clones, GIMP and CMYK. The idea (value lives in the cloud, contracts and domain knowledge) is good for my firm too, but it is wrapped in a software-market story."
+    suggestion: "Lead with the three sources of value and use Adobe as the short example."
+  - unit: ch20
+    quote: "a tomada padrão pra plugar ferramentas em qualquer"
+    type: confusing
+    why: "'Sete anos numa página' packs mixture of experts, caching, MCP, scaling law, Claude Code and Codex into one paragraph. I read it and retained only the picture."
+    suggestion: "Let the figure carry the timeline and keep one sentence per phase without new terms."
+  - unit: ch20
+    quote: "A conciliação do mês, bater o extrato com os lançamentos"
+    type: rewrite
+    why: "The best paragraph in the book for my job (the agent reconciles; the accountant decides what the difference means) sits inside a subsection between benchmark tables."
+    suggestion: "Promote it to its own heading and put it earlier, near the chapter opening or next to the ch18 accounting example."
+  - unit: ch20
+    quote: "as tarefas dentro de um emprego são automatizadas mais rápido do que o emprego some"
+    type: logic
+    why: "Stated as what 'eu vi na programação', then applied to other jobs. The same chapter cites a study where experienced developers were 19% slower with AI, so I could not tell how firmly I should believe the claim for my own field."
+    suggestion: "Say explicitly that this is untested outside software and what would show it for an accounting firm."
+  - unit: epilogo
+    quote: "a pergunta que trouxe na primeira página continua aí, talvez um pouco menor"
+    type: rewrite
+    why: "True for me, but I also never got a direct sentence on 'will my job be gone in two years?'. The book's honest answer is 'nobody has a timeline', and that should be said in the epilogue in so many words."
+    suggestion: "Add two lines under 'Pra esta semana' for office workers: what can change in two years, what will not, and what to watch for."
+  - unit: apbolhas
+    quote: "já vi o ciclo de perto três vezes"
+    type: logic
+    why: "The title and this sentence say three bubbles, but ch18 says 'vi isso acontecer várias vezes' and lists microcomputers, internet, 2008, programming and now AI. Small, but I noticed."
+    suggestion: "Say 'three bubbles that hit my work directly' or align the counts."
+cut_candidates:
+  - {unit: ch01, where: "## O primeiro hype (Rosenblatt story, up to the Perceptron photo)", why: "History I enjoyed once but did not need to understand the chatbot."}
+  - {unit: ch08, where: "### Atirar em tudo pra conhecer o terreno", why: "Debugging technique for programmers."}
+  - {unit: ch14, where: "### O problema do milênio", why: "Math problem I cannot evaluate; the 'quem ganha' lesson is already in the section before."}
+  - {unit: ch14, where: "Pra quem perdeu a conta dos nomes, os lados ficam assim.", why: "Name roll call; adds no decision."}
+  - {unit: ch18, where: "## Que linguagem aprender", why: "Pure programmer question; already in the technical appendix."}
+  - {unit: ch19, where: "## O fosso e a Adobe", why: "Software-market story; the three-source idea can be one paragraph."}
+  - {unit: ch20, where: "### Quando o mapa acaba (Master System and Game Gear counts)", why: "Project statistics; the 'mapa' idea is clear without them."}
+narrator:
+  credibility: |
+    Yes, in three places. In ch18 the narrator tells me he warned in 2019 and 2020 about the hiring bubble, then
+    says "Avisei da bolha e errei a data" and that the second crash leg never came; that is what made me believe the
+    rest. The 2001 dot-com story (company closed, a week unemployed, a call from a mentor, "tive sorte de receber
+    uma ligação na semana certa" in apbolhas) also makes the "tools change, the problem stays" advice feel earned
+    rather than abstract. In ch14 he corrects his own Fable cost figure ("o meu número também precisava de
+    auditoria") and in ch20 he lists what would change his mind. Where the history works less well for me is that
+    it is a programmer's history: SAP and Rails tell me he survived changes in his field, not that my accounting
+    job will. ch18 admits this with "quem conta essa história é quem atravessou", and I noticed and appreciated it.
+  bragging: |
+    Mostly no, because each claim of being right is paired with an admitted mistake. A few lines still tipped
+    over for me. ch18: "Os avisos têm data." (a list of dated predictions, even though softened right after).
+    ch18: "Ele ganhou o prêmio Nobel de Física de 2024 e eu não." (the joke is self-deprecating, but it still sets
+    him next to a Nobel laureate). ch14: "mais de trinta repositórios públicos feitos desde janeiro" (a flex in a
+    chapter about checking evidence). ch20: "uma frase que eu queria ter escrito" about someone else's line reads
+    fine. ch14 also says "Eu já tinha visto esse roteiro com as redes sociais. Em 2020..." which is a small
+    'I saw it coming' beat. None of it made me stop trusting him; I would trim the repository count and the Nobel
+    line.
+  inconsistency: |
+    1) Career start: index says "comecei a trabalhar no fim dos anos 90", while ch18 says "nenhuma das empresas
+    por onde passei desde 1996" and apbolhas says "Entre 1996 e 2001 passei por agência, provedor e pontocom".
+    2) Programming start versus university: index says "Eu programo desde 1990", ch18 says "quando entrei na
+    faculdade, em 1995"; fine, but the 1990 year is never anchored. 3) "Três bolhas" in the appendix versus "vi
+    isso acontecer várias vezes" (five episodes listed) in ch18. 4) Tone: the author warns against hype-sellers
+    and claims "Eu sou programador, não advogado, contador ou jornalista" (ch18), yet gives opinions on
+    accountants' work in ch18 and ch20 with the same assurance as on programming; he labels them extrapolation,
+    which is honest but uneven. 5) Possibly a citation slip: @akitando084 backs a 2020 remark on machine learning
+    in ch01, the 'quantidade de evidência' remark in ch04, and the Social Dilemma commentary in ch14. It may be one
+    long video, but I could not tell from the text.
