@@ -1,0 +1,226 @@
+persona: pai
+summary: |
+  I picked this up because my 15-year-old watched a video about superintelligence and I had nothing to say. The book did
+  answer that, but late: the clearest help for me is the coffee-article example in chapter 4, the "mesa" and "arquivo
+  trancado" images in chapters 1-2, the "Como ler um anúncio" list in chapter 14 and the "pai ou mãe" bullet in the
+  epilogue. What I will remember is that the thing is a text generator in a harness, it agrees with whoever asks, it
+  forgets, and whoever profits from a scary or exciting announcement deserves extra suspicion. I liked that the author
+  corrects himself in public (the "Embaraçoso" page) and tells me not to trust him either. I nearly quit twice: in chapter
+  3 (OpenCode, DeepSeek, tiers, plugins in the first pages) and from chapters 11 to 12 and 16 (model names, versions,
+  Bun, Zig, rsync, Nex, Rio), where I was reading names I could not hold on to. For a man who runs a hardware store the
+  middle of the book is a book about programmers. The jargon is explained, but the sheer number of projects, commits and
+  versions reads as showing off. The Partes IV-V pay off again (backup, golpes, phone), but nobody tells a small shop
+  owner what to do on Monday.
+best:
+  - "ch04: o mesmo artigo do café, duas perguntas, duas respostas opostas; finalmente entendi por que o chatbot concorda comigo"
+  - "ch01: o corretor do celular em escala enorme, e 'um martelo' (por que glorificar ou odiar)"
+  - "ch17: hábitos contra golpe e a palavra-código de família contra voz clonada"
+  - "ch14: a lista 'Como ler um anúncio' (quem lucra, contra quem é a comparação, leia o condicional)"
+  - "epilogo: 'Pra esta semana' para pai ou mãe, e a lista 'O que dá pra ignorar'"
+worst:
+  - "ch16: OpenClaw, FrankClaw, Bun, Zig e rsync, um milhão de linhas e nomes que não consigo guardar"
+  - "ch11: tabelas de modelos, versões e 'Terra' e 'Sol'; o sabotador Casey e quatro mil dólares"
+  - "ch03: abertura com DeepSeek, OpenCode, DeepClaude e tier A antes de eu saber o que é harness"
+  - "ch06: três seções de teste, CI e mocks para quem nunca programou"
+  - "ch19: sprint, PO, QA, staging, rollback; é livro de gerente de software"
+units:
+  - {unit: index, score: 4, note: "A feira de 1939 me pegou; achei a promessa e o medo saindo da mesma vitrine uma boa abertura, e me reconheci no 'pai que viu um vídeo'. Um pouco longo antes de chegar ao ponto."}
+  - {unit: como-ler, score: 3, note: "Útil o 'Se você tem pressa': me mandou pro 1, 14 e 20. Mas é aviso demais antes de começar."}
+  - {unit: antes, score: 3, note: "Gostei da honestidade de dizer o que não explica, mas é mais uma página antes da história."}
+  - {unit: ch01, score: 4, note: "O corretor do celular e o arquivo trancado resolveram minha dúvida mais básica. A história do Perceptron e do 'perigoso demais' de 2019 mostrou que o susto é velho. O 'quem conhece pouco de IA' me incomodou."}
+  - {unit: ch02, score: 3, note: "A mesa e o bilhete sobre mim foram boas ideias; o vazamento de código, source map e npm nem tanto."}
+  - {unit: ch03, score: 3, note: "'O modelo só escreve texto, quem tem as mãos é o harness' ficou. O resto da abertura me perdeu em nomes de ferramenta."}
+  - {unit: ch04, score: 5, note: "O melhor capítulo para mim. Exemplo inventado, regras numeradas, saúde e dinheiro, e a pergunta que eu faria."}
+  - {unit: ch05, score: 3, note: "A ideia dos 10% e 90% e o 'estagiário' passam; o fim de semana de 30 horas com febre e commits cansa quem não programa."}
+  - {unit: ch06, score: 2, note: "Boa tese (a IA é espelho), mas três seções sobre testes, CI e mocks, e uma newsletter que não é minha. Pulei metade."}
+  - {unit: ch07, score: 3, note: "A parte 'o prompt único é um mito' e o caso do zero versus vazio entenderam-se bem; projetos demais."}
+  - {unit: ch08, score: 3, note: "A história do OpenCV versus modelo pronto é boa, o 'oráculo' (balança do banheiro) idem; o emulador de PS4 não tem nada a ver comigo."}
+  - {unit: ch09, score: 4, note: "As quatro partes de um bom pedido e a carta ao plano de saúde são práticas de verdade. A parte de skills e arquivo de regras é para programador."}
+  - {unit: ch10, score: 3, note: "O boletim nota 1 a 10 mostra um autor honesto. Fosso, startup e coceiras eu entendo; Geary, Rust e TUI não."}
+  - {unit: interlude1, score: 4, note: "Leve e divertido; o modelo chinês traduzindo o texto contra o nazismo me fez rir. Mostra o filtro das empresas em ação."}
+  - {unit: ch11, score: 2, note: "Perdi-me nas tabelas e nos nomes (Terra, Sol, Opus 5.5, GPT-6). A mensagem 'o topo é um grupo' é boa, mas custou paciência."}
+  - {unit: ch12, score: 3, note: "O começo (o modelo colou e o relatório falso) é ótimo para o leigo; a parte da prefeitura, mescla de pesos e teste do Kimi foi demais."}
+  - {unit: ch13, score: 3, note: "A estante e o corredor explicam por que a máquina de casa é lenta, e a conta do podcast ElevenLabs foi clara. Mini-PC, 122 bilhões e classificadores já estão fora do meu mundo."}
+  - {unit: ch14, score: 4, note: "É o capítulo do vídeo do meu filho. Gostei do 'quem ganha com isso'; um desfile de nomes (Sacks, Coxon, Musk, Ng) cansa."}
+  - {unit: interlude2, score: 3, note: "Bonito e curto, ensina o ponto cego da IA no Go; não é meu assunto mas descansei."}
+  - {unit: ch15, score: 4, note: "NAS, disco morrendo e backup eu entendo bem: tenho o computador da loja. A lista final de hábitos é a coisa mais útil do livro para mim."}
+  - {unit: ch16, score: 1, note: "Quase parei aqui. Reescrever o Bun de Zig para Rust, o curl, o rsync; a 'carta que dá ordens' é a única parte que ficou."}
+  - {unit: ch17, score: 4, note: "Celular, fingerprint e golpe são o que eu tenho no dia a dia. Os três aplicativos são interessantes e a lista final de hábitos é boa."}
+  - {unit: ch18, score: 3, note: "O cartão perfurado é boa metáfora e dá esperança, mas as linguagens e o júnior são de programador; as outras profissões tomam quatro parágrafos."}
+  - {unit: ch19, score: 2, note: "Escrito para quem tem time de software e sprints. A Adobe e a Ferrari com motor de Fusca me acordaram."}
+  - {unit: ch20, score: 4, note: "O capítulo que responde ao meu filho: o modelo não aprende, a curva achatou, e a lista do que mudaria a opinião do autor. Cansa um pouco com as comparações de benchmark."}
+  - {unit: epilogo, score: 5, note: "Finalmente a resposta direta: o que fazer na segunda-feira e o que ignorar. Gostaria de ter lido isso antes."}
+  - {unit: posfacio, score: 3, note: "Honesto sobre como o livro foi feito e sobre os erros que a conferência pegou; para mim é curiosidade."}
+annotations:
+  - unit: index
+    quote: "a minha leitura é que a inteligência de base dos modelos parou de dar saltos"
+    type: logic
+    why: "O livro me pede para não confiar em especialista nenhum, e a tese central do prefácio é a leitura do próprio autor. Só no capítulo 20 descobri que a tabela dele satura e não enxerga acima do teto."
+    suggestion: "No prefácio, dizer 'minha leitura, com as limitações do capítulo 20' ou apontar para a lista do que o faria mudar de ideia."
+  - unit: ch01
+    quote: "Sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA."
+    type: rewrite
+    why: "Como frase de abertura soa como se quem se empolga, ou tem medo, fosse ignorante. Eu vim por causa do meu filho, não por ignorância, e senti a alfinetada."
+    suggestion: "Apresentar como regra de bolso do autor, e já avisar que gente que sabe muito também se assusta (Hinton, capítulo 14)."
+  - unit: ch01
+    quote: "Do 4 pro 5, pelo que eu via em volta, pouca gente fora da área notou tanta diferença"
+    type: logic
+    why: "A curva em S é o argumento central do capítulo, e este degrau final se apoia em uma impressão. O gráfico parece medida e não é."
+    suggestion: "Rotular a figura como ilustração e deixar a prova da desaceleração para o capítulo 20."
+  - unit: ch02
+    quote: "1.279 sessões tinham tido 50 ou mais falhas seguidas de compactação"
+    type: boring
+    why: "Número de bastidor de uma empresa para mostrar que o código vazado tinha defeitos; não muda nada do que eu preciso saber sobre memória."
+    suggestion: "Cortar; manter a mesa, o bilhete e as cinco dicas finais."
+  - unit: ch03
+    quote: "O DeepSeek simplesmente não deixava ser medido."
+    type: confusing
+    why: "Nas primeiras páginas aparecem DeepSeek, OpenCode, Opus 4.7, DeepClaude, tier A e uma mensagem de erro em inglês, antes de eu saber o que é um harness. Tive que reler."
+    suggestion: "Abrir com a ideia ('o mesmo cérebro, mãos diferentes, notas muito diferentes') e deixar o caso do DeepSeek para depois da explicação."
+  - unit: ch03
+    quote: "O MiniMax M3 saiu de 24 pra 91 pontos."
+    type: boring
+    why: "Seção do plugin esquecido e dos onze modelos: números sobre modelos que não conheço, para provar algo que o parágrafo anterior já tinha provado."
+    suggestion: "Reduzir a um exemplo."
+  - unit: ch04
+    quote: "A instrução reduz bastante a alucinação, sem eliminar."
+    type: logic
+    why: "Afirmado sem nenhuma medida. O capítulo é todo sobre desconfiar de resposta confiante, e aqui o autor é confiante sem número."
+    suggestion: "Dizer 'na minha experiência' ou citar o que se mediu."
+  - unit: ch06
+    quote: "A maioria dos testes que programadores escrevem testa uma peça de cada vez, isolada do resto."
+    type: boring
+    why: "Mock, teste de integração, CI e TDD em sequência; o resultado (a IA precisa de conferência) eu já tinha entendido no capítulo 5."
+    suggestion: "Encurtar a uma seção e deixar o resto para o apêndice técnico."
+  - unit: ch07
+    quote: "Foram sete commits de ajuste de prompt em dez dias."
+    type: boring
+    why: "'A vida depois do deploy' (Gmail cortando e-mail, meses em português, sotaque de Lisboa, nove humores do robô) é catálogo de detalhes de um projeto meu desconhecido."
+    suggestion: "Ficar com um ou dois episódios e o aprendizado 'o software nunca está pronto'."
+  - unit: ch08
+    quote: "e a única que foi fracasso de verdade"
+    type: logic
+    why: "O capítulo diz que o Yomik foi 'o único fracasso de verdade', mas ele terminou funcionando em mais de 99% dos casos, e o conversor de Master System (o fracasso real, parado no capítulo 20) aparece na mesma página como história com final em aberto."
+    suggestion: "Chamar o Yomik de 'abordagem errada que deu certo' e deixar claro que o Master System é o fracasso."
+  - unit: ch08
+    quote: "Foram 31 fases de investigação, 44 commits na minha cópia do emulador e mais de 15 mil linhas de código de diagnóstico."
+    type: boring
+    why: "Emulador de PS4, shadPS4 e brilho da tela do Driveclub não pagam para quem não joga; a lição ('a IA queria parar e ele não') cabe em um parágrafo."
+    suggestion: "Mover o detalhe para o apêndice técnico."
+  - unit: ch09
+    quote: "Nos casos em que a pessoa me mostrou o pedido, muitas vezes o defeito começava ali."
+    type: logic
+    why: "Amostra enviesada: só vê o pedido de quem mostra. O capítulo ainda termina sugerindo que quem cancela o modelo recebeu um '42', o que culpa o usuário."
+    suggestion: "Equilibrar com os casos em que o modelo falhou mesmo com pedido bom (o autor lembra disso só de passagem)."
+  - unit: ch09
+    quote: "é uma pasta com um arquivo de texto dentro"
+    type: boring
+    why: "Skills, arquivo de regras e Clean Code são para quem programa; li por obrigação."
+    suggestion: "Marcar a seção 'Um leitor com pressa' e 'Prompts com cicatriz' como opcional para quem não programa."
+  - unit: ch10
+    quote: "19% mais lentos"
+    type: confusing
+    why: "Na tabela de multiplicadores aparece um estudo que diz o contrário de tudo (programadores 19% mais lentos com IA) e uma remissão para o capítulo 20, dez capítulos à frente. Fiquei sem entender qual número vale."
+    suggestion: "Uma frase explicando o estudo ali mesmo."
+  - unit: ch10
+    quote: "Dinheiro pra investir eu tenho."
+    type: rewrite
+    why: "Frase que parece gabar-se e não acrescenta nada ao argumento (a nota 8 como prova de que o projeto era de hobby)."
+    suggestion: "Cortar."
+  - unit: ch11
+    quote: "O GPT-5.6 Terra e o GPT-5.6 Sol são o mesmo modelo em níveis diferentes de esforço de raciocínio"
+    type: confusing
+    why: "Parágrafos de nomes, versões e notas (Opus 5.5, DeepSeek V4.1 Flash, GLM 5.3, Grok 4.7) que não consigo guardar; o ponto ('no topo é tudo empate') some."
+    suggestion: "Dizer 'sete modelos de duas empresas empataram' e mandar a lista de nomes para o apêndice."
+  - unit: ch11
+    quote: "Entre uma etapa e outra, um colega fictício chamado Casey faz commits no projeto."
+    type: boring
+    why: "A construção da prova com o sabotador e os 4 mil dólares é detalhe do laboratório do autor."
+    suggestion: "Um parágrafo."
+  - unit: ch12
+    quote: "uma mistura direta, número a número, de cerca de 60% do Nex-N2-Pro com 40% do Qwen 3.5 original"
+    type: boring
+    why: "A briga entre prefeitura, Nex e Qwen, com licenças e proporções, mais o teste de caixa-preta do Kimi, é assunto entre empresas; o que importa (não dá para confiar de onde o modelo veio só pelo anúncio) cabe em três linhas."
+    suggestion: "Resumir e mover o detalhe para o apêndice."
+  - unit: ch13
+    quote: "virou febre um produto chamado Jev, da TypeSafe"
+    type: confusing
+    why: "O Jev é apresentado aqui com remissão para o capítulo seguinte e só ali sei quem é. Ler duas vezes a mesma história em ordem trocada confunde."
+    suggestion: "Apresentar o Jev primeiro no capítulo 14 e aqui só referenciar."
+  - unit: ch14
+    quote: "Pra quem perdeu a conta dos nomes, os lados ficam assim."
+    type: rewrite
+    why: "É o resumo de que eu precisava para a pergunta do meu filho, mas só chega depois de páginas de Sacks, Coxon, Amodei, Musk, Altman, LeCun e Ng."
+    suggestion: "Colocar esse resumo no início da seção e reduzir as citações a três ou quatro nomes."
+  - unit: ch14
+    quote: "uma agência de comunicação já oferecia entrevistas com o Coxon"
+    type: logic
+    why: "A sequência (agência, 'operação', 'psyop') sugere que o aviso foi encenado, e logo depois o autor diz 'nada disso prova coordenação'. A insinuação fica na cabeça do leitor."
+    suggestion: "Ou apresentar a hipótese com seus limites, ou cortar a agência."
+  - unit: ch15
+    quote: "Desde a segunda-feira, 5 de outubro, cinco dias antes, eu vinha tirando os dados dele às pressas"
+    type: rewrite
+    why: "O capítulo começa pelo fim (a faxina de sábado), volta cinco dias, volta ao sábado, e eu precisei de um 'essa história vem depois' para me orientar."
+    suggestion: "Começar pelo NAS que morria e fechar com a faxina; ou deixar a faxina só no início e contar a recuperação em ordem."
+  - unit: ch16
+    quote: "Essa auditoria foi feita por uma IA só, e eu não conferi os 39 achados item por item."
+    type: logic
+    why: "O autor chama um projeto alheio de arriscado a partir de uma auditoria de IA que não conferiu e do ritmo de dois dias de commits, e depois compara o seu FrankClaw '22 vezes menor'. Ressalvas honestas, mas o texto se apoia na conclusão."
+    suggestion: "Dizer que não rodaria por prudência, sem sugerir que o projeto é inseguro."
+  - unit: ch16
+    quote: "Em 8 de julho de 2026, Jarred Sumner, o criador do Bun"
+    type: boring
+    why: "O Bun, o Zig, o curl e o rsync são brigas internas de quem faz software; me perdi e quase parei."
+    suggestion: "Cortar a briga do Bun e do Zig; manter a carta que dá ordens e o 'tão seguro quanto o processo'."
+  - unit: ch17
+    quote: "nada do que segue é cem por cento factual"
+    type: rewrite
+    why: "Um aviso de abertura que me desanima antes do conteúdo. A resposta à pergunta 'meu celular me espiona?' só aparece no meio: capaz de coletar, ninguém provou que envia."
+    suggestion: "Dar o veredito em uma frase simples logo na abertura e deixar as ressalvas para a seção 'O que a planta não mostra'."
+  - unit: ch17
+    quote: "uma biblioteca chamada libmetasec_ov"
+    type: boring
+    why: "Nome de biblioteca, jadx, Blutter e 91 aplicativos checados: detalhe técnico que não muda o que faço com o meu celular."
+    suggestion: "Deixar no apêndice técnico."
+  - unit: ch18
+    quote: "Eu sou programador, não advogado, contador ou jornalista."
+    type: rewrite
+    why: "O medo do emprego é o que mais traz gente ao livro, e a resposta para quem não programa é uma extrapolação de quatro parágrafos. A maior parte do capítulo é para programadores (Bootcamp, Rust, Haskell)."
+    suggestion: "Dar à pessoa sem código uma seção própria, com exemplos de comércio e serviço."
+  - unit: ch19
+    quote: "um servidor de integração contínua que roda tudo a cada mudança"
+    type: boring
+    why: "Sprint, PO, QA, staging, rollback, feature flag: vocabulário de empresa de software que eu nem tenho."
+    suggestion: "Um parágrafo com a lição (a IA amplia o processo que você já tem) para quem não é de TI."
+  - unit: ch19
+    quote: "Muita empresa treinou os seus profissionais a não decidir."
+    type: logic
+    why: "A tese que sustenta o capítulo é, nas palavras do autor, 'observação, não tenho número'. Um capítulo inteiro sobre ela vira acusação genérica."
+    suggestion: "Marcar mais cedo e com mais clareza o que é hipótese."
+  - unit: ch20
+    quote: "Se o seu filho perguntar se tem alguém lá dentro"
+    type: rewrite
+    why: "É a frase que eu procurava, mas está enterrada na seção 'Ele entende?', e responde a outra pergunta (consciência) e não à do meu filho (superinteligência)."
+    suggestion: "Um quadro 'o que dizer ao seu filho' no fim do capítulo 1 ou do 14, com a resposta para cada pergunta."
+  - unit: epilogo
+    quote: "Quanto menos a pessoa sabe como a coisa funciona, mais espaço sobra pra imaginar o fim do mundo."
+    type: logic
+    why: "Estende a regra da empolgação ao medo, mas o próprio livro mostra gente que sabe muito e se assusta (Hinton, Amodei, capítulo 14). 'Boa parte, não todo' dilui a regra, não a salva."
+    suggestion: "Cortar ou reformular como 'quem lucra com o medo...'."
+  - unit: epilogo
+    quote: "Se você é gestor:"
+    type: rewrite
+    why: "Há bullets para escritório, gestor, pai e programador iniciante, mas nada para o dono de um comércio pequeno: o que eu faria Monday com o estoque, o atendimento, o WhatsApp dos clientes."
+    suggestion: "Acrescentar um bloco 'Se você tem um negócio pequeno'."
+cut_candidates:
+  - {unit: ch02, where: "### O que o vazamento mostrou", why: "Números e comentários do código vazado de uma empresa; a lição sobre memória já está na seção 'Memória é um arquivo de texto'."}
+  - {unit: ch03, where: "### O plugin que eu esqueci ligado", why: "Notas de modelos desconhecidos para um ponto já provado (DeepSeek e o mesmo Opus)."}
+  - {unit: ch06, where: "## Os mocks mentem", why: "Teste de integração e dublês de teste: o ponto 'a IA precisa de conferência' já veio nos capítulos 4 e 5."}
+  - {unit: ch08, where: "## Quatro dias no escuro", why: "Emulador de PS4; o aprendizado 'a IA quer parar' e 'sênior vira júnior de novo' cabe em um parágrafo."}
+  - {unit: ch10, where: "### Um relógio, um e-mail, uma música", why: "Geary, Frank Lyrics, Frank Type e Rust são lista de projetos pessoais; ficar só com a ideia das pequenas coceiras."}
+  - {unit: ch11, where: "### O colega sabotador", why: "Método do benchmark do autor e custo de 4 mil dólares."}
+  - {unit: ch12, where: "## A receita da prefeitura", why: "Disputa de licenças e pesos entre laboratórios; bastava uma frase sobre 'não confie na origem anunciada'."}
+  - {unit: ch16, where: "## Uma reescrita que deu certo", why: "Bun, Zig e Rust; é conversa entre programadores."}
+  - {unit: ch17, where: "### O Clash of Kings e a carteira", why: "Jogo de estratégia chinês; os pontos de privacidade se repetem no TikTok."}
+  - {unit: ch18, where: "## Que linguagem aprender", why: "Benchmark de sete linguagens e Bend 2; só interessa a programador."}
+  - {unit: ch19, where: "## O fosso e a Adobe", why: "Interessante, mas é a terceira vez que o livro fala do 'fosso' (cap. 10, 14, 19)."}

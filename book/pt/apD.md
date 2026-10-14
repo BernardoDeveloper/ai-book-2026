@@ -167,7 +167,7 @@ No fim de setembro eu decretei a pausa: 349 commits em quase quatro meses, quatr
 **Conversor de Game Gear.** A conversão de jogos de Game Gear pro Master System, começada no mesmo dia em que o nes-to-sms parou, num repositório privado. Dessa vez o problema tinha referência: em um dia, a pesquisa e o catálogo de umas 186 conversões feitas à mão estavam prontos. Até o fim de setembro, nenhuma conversão de Game Gear tinha passado na revisão final. Aparece em @sec-ch20.
 
 <!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
-**Benchmark de classificadores.** Uma bateria de testes pra modelos pequenos de decisão, os da mesma família do Jev, rodada em outubro com modelos locais e na nuvem. O resultado de 12 de outubro está em @sec-ch13.
+**Benchmark de classificadores.** Uma bateria de testes pra modelos pequenos de decisão, os da mesma família do Jev (o classificador lançado com estardalhaço em setembro, @sec-ch14), rodada em outubro com modelos locais e na nuvem. O resultado de 12 de outubro está em @sec-ch13.
 
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
 **Benchmark de linguagens.** O teste que respondeu, em outubro, a pergunta de fevereiro sobre a melhor linguagem pra IA: uma mesma tarefa difícil, em várias linguagens, com os modelos de fronteira acertando tudo em todas; os testes ajudaram mais do que a escolha da linguagem [@akita2026vibebench]. Aparece em @sec-ch18.

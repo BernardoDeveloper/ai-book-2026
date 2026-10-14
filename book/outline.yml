@@ -409,7 +409,7 @@ parts:
         illustrations:
           - {kind: photo, idea: "IBM punch cards / keypunch operators (public domain)"}
       - id: ch19
-        title: "Por que a IA vai falhar na sua empresa"
+        title: "Por que a IA pode falhar na sua empresa"
         scene: >-
           June 2026: a company that spent a fortune on AI licences and saw
           nothing; the problem was who decides, not which model.

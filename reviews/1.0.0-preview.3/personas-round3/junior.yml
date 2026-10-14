@@ -1,0 +1,240 @@
+persona: junior
+summary: |
+  I came in afraid I picked the wrong career, and the book answered that better than I expected: not with
+  "relax", but with a mechanism. The model is a locked file that does not learn from me (ch01, ch02),
+  the speed I felt in 2026 came mostly from the harness around it (ch03), and the part that stays
+  with the human is deciding and checking, which is exactly what ch08 ("Como se aprende agora") tells a
+  junior to practice. I will remember the memory-as-a-note story from the Claude Code leak, the 10% / 90%
+  iceberg of FrankMD, the "lista de proteção vazia" deletion and the "a tela diz pronto" lesson.
+  What nearly made me quit was the middle: ch11 to ch14 are a blizzard of model names, versions and tiers
+  (GPT-5.6 Terra, Sol, Astra, Fable, Opus 5.5...), and I started skimming. I also felt a bit
+  lectured by the repeated "the AI is a mirror of your competence", which for a junior means "you are the weak
+  link"; the counterweight (ch08, ch18, epilogue) is there but arrives late. ch18 is the chapter I came for
+  and I wanted harder facts there (junior hiring in 2025-26) instead of the author's career history.
+  Net: I leave less scared, with a concrete Monday list, and with a habit of asking "who checked this?".
+best:
+  - "ch02: the leak showing that agent 'memory' is a text file and a note about you, not you stored inside the model"
+  - "ch05: the 1.5 hours to 'it works' versus 30 hours to real, and what is left for the human"
+  - "ch08: 'Como se aprende agora', four days in the Driveclub bug as a total beginner, with the shotgun technique"
+  - "ch15: the empty protection list and the agent that checked 'file exists' instead of 'file is whole'"
+  - "epilogo: the Monday list per reader type, ending with 'only delegate what you can evaluate'"
+worst:
+  - "ch11: model/version names pile up (Terra, Sol, Opus 5, 5.5, Grok 4.6/4.7, GPT-6 Sol) with no table to hold them"
+  - "ch14: 'Pra quem perdeu a conta dos nomes' (Coxon, Sacks, Huang, LeCun, Ng, Hinton...) lost me for good"
+  - "ch19: process/sprint theory that reads like a book for my manager, then a detour into Adobe clones"
+  - "ch17: three chapters in one (app privacy, scams, deepfake video) and pricing of a video tool"
+  - "ch13: hardware memory/bandwidth is great, then the Jev classifier appears out of nowhere and is split with ch14"
+units:
+  - {unit: index, score: 4, note: "The Elektro opening is nice and 'four readers' list included a junior, so I felt seen; I wanted the career answer sooner than ch18."}
+  - {unit: como-ler, score: 3, note: "Useful map, but my fear ('wrong career?') is not in the 'se você tem pressa' list; I had to guess ch08 and ch18."}
+  - {unit: antes, score: 3, note: "Honest that the book skips the maths; I appreciated being told, and will open apmecanica."}
+  - {unit: ch01, score: 4, note: "Autocomplete-at-scale and 'locked file that doesn't learn from you' finally clicked; Rosenblatt history dragged a little."}
+  - {unit: ch02, score: 5, note: "Best chapter for me: the context 'mesa', compaction, memory as text files. I finally get why my agent forgets what we agreed."}
+  - {unit: ch03, score: 4, note: "Loop + tools + system prompt demystified the agent; the DeepSeek/OpenCode story is a bit name-heavy but the 'same model, 15-20 points' point lands."}
+  - {unit: ch04, score: 3, note: "Sycophancy explanation is useful; the news-checker tool details are less relevant to me. The 8 rules are good."}
+  - {unit: ch05, score: 5, note: "Couldn't put it down: the iceberg, the 'estagiário sem instrução', the CodeMirror decision. Exactly what happens in my job."}
+  - {unit: ch06, score: 5, note: "XP with an AI pair, mocks lie, 274 commits split by type. Taught me what to ask for from my own agent."}
+  - {unit: ch07, score: 4, note: "'Software nunca está pronto' + zero vs empty. Four project stories in a row is a lot, but each has a lesson."}
+  - {unit: ch08, score: 5, note: "The chapter that spoke to my fear: failure is cheap now, juniors learn by diving in, and the oracle idea is a keeper."}
+  - {unit: ch09, score: 4, note: "The four parts of a request are immediately usable; the Stark/Jarvis and '42' parts are flourish."}
+  - {unit: ch10, score: 4, note: "Honest report card (nobody got a 10) and the multipliers table. The 'fosso secou' part made me nervous about startups, in a useful way."}
+  - {unit: interlude1, score: 4, note: "Fun, and the six refused posts and the Chinese model that translated them made me laugh."}
+  - {unit: ch11, score: 3, note: "Great opening (the auditor was wrong) and 'o topo é um grupo', but I got lost in model names and rubric details."}
+  - {unit: ch12, score: 4, note: "Models that read the answer key is a story I'd retell; the Rio and Kimi parts are interesting but feel like a different chapter."}
+  - {unit: ch13, score: 3, note: "The shelf-and-corridor analogy is the best hardware explanation I've read; the ElevenLabs and Jev parts diluted it."}
+  - {unit: ch14, score: 3, note: "'Quem ganha se você acreditar' is a good habit, but too many names, dates and quotes to follow. I trusted it less when it got long."}
+  - {unit: interlude2, score: 4, note: "Lee Sedol's move 78 and the KataGo blind spot are a nice breather and a real point about blind spots."}
+  - {unit: ch15, score: 4, note: "Gripping and practical (layers: jail, snapshot, backup). The timeline jumps made me re-read the first pages."}
+  - {unit: ch16, score: 3, note: "Prompt injection as 'a carta que dá ordens' is clear; the Claude Code spaghetti and DMCA parts are gossip."}
+  - {unit: ch17, score: 3, note: "Static vs dynamic analysis caveat is honest; the chapter tries to cover too much and I skimmed the Frank FBI and Seedance parts."}
+  - {unit: ch18, score: 4, note: "The punch-card analogy is good and 'exoesqueleto ou muleta' stuck, but I wanted data on junior jobs, not only the author's story."}
+  - {unit: ch19, score: 2, note: "Written for my manager. The 'sem sprint' idea is interesting, but the thesis is asserted, and the Adobe section is another topic."}
+  - {unit: ch20, score: 4, note: "The mapa e o branco and 'arquivo que não aprende' close the loop with ch01; the dates for 'when did the base stop' wobble, and the ai-memory pitch is an ad."}
+  - {unit: epilogo, score: 4, note: "Exactly the Monday list I wanted; the junior items are concrete. 'Só delegue o que você consegue avaliar' is going on my wall."}
+  - {unit: posfacio, score: 3, note: "Interesting that the corrections were listed, builds trust, but it's inside baseball for most readers."}
+annotations:
+  - unit: index
+    quote: "a minha leitura é que a inteligência de base dos modelos parou de dar saltos"
+    type: logic
+    why: "Stated in the preface as the headline conclusion, before I've seen any evidence. Later (ch11, ch20) the author admits his own table is saturated and 'não serve de prova'. I felt the preface promised a firmer result than the book delivers."
+    suggestion: "Keep the claim but add 'e eu mostro no último capítulo com que ressalvas'."
+  - unit: como-ler
+    quote: "E o meu emprego?"
+    type: rewrite
+    why: "The fear list sends me to ch18, ch19 and the epilogue, but ch19 is about companies, and the best junior material (ch05's last section, ch08 'Como se aprende agora', ch18 'Como alguém vira sênior') is not named. I almost skipped ch08 because it looked like a gaming/emulator story."
+    suggestion: "Add a line for 'estou começando na programação': ch08, ch18 and the epilogue."
+  - unit: ch01
+    quote: "pouca gente fora da área notou tanta diferença"
+    type: logic
+    why: "The S-curve argument uses 'GPT-4 to 5 wasn't noticed outside the field' as evidence, which the author calls his own impression. The figure draws a 'capacity' curve with no units, so it looks like data but is an illustration."
+    suggestion: "Label the figure 'ilustração, sem escala' or support GPT-5 with one measurement."
+  - unit: ch01
+    quote: "Quem acha que a empolgação de hoje é inédita precisa conhecer Frank Rosenblatt."
+    type: boring
+    why: "Rosenblatt, Minsky, AI winter and a boat accident was a long detour while I was still trying to understand tokens and training. It pays off later as the 'Frank' naming gag, but not for me at this point."
+    suggestion: "Cut by half and keep the 1958 NYT line."
+  - unit: ch03
+    quote: "O que separou as gerações, nesse teste, foi a capacidade de usar ferramentas em sequência, sem supervisão"
+    type: logic
+    why: "The chapter argues the leap came from the harness, not from the model. But this sentence says GPT-4o/4.1 failed because they could not use tools in sequence, and that vendors trained for it on purpose. That is a model capability, so the 'brain vs hands' split is blurrier than the chapter admits."
+    suggestion: "Say explicitly: part of the 'hands' is trained into the model, part is the harness."
+  - unit: ch03
+    quote: "Aí apareceu o DeepClaude, um pequeno script que engana o Claude Code"
+    type: confusing
+    why: "OpenCode, Opus 4.7, DeepClaude, Claude Code, tier A, benchmark and an API error all land in the first page. I understood the moral ('same model, different wrapper') only after the second reading."
+    suggestion: "Open with the moral in two lines, then give the names."
+  - unit: ch04
+    quote: "Ele vai achar méritos."
+    type: logic
+    why: "The coffee-article demo is announced as 'faça o teste' and then the outcomes are stated as certain. I have not seen a real transcript, and recent models might behave differently. The 2023 Anthropic study backs it, but I wanted to see the demo, not only be told."
+    suggestion: "Show a short real transcript (with date and model) or say 'costuma achar'."
+  - unit: ch06
+    quote: "Numa contagem conservadora, e feita a olho por mim, deu entre 180 e 200 funcionalidades distintas"
+    type: logic
+    why: "The 30-weeks-vs-8-days comparison compares a hand-counted feature list against an imagined team. The author flags it, and ch10's table classifies it, but the 'eu fiz em oito dias' line still sticks as the headline."
+    suggestion: "Move the 'palpite' label to the sentence that gives the 8 days."
+  - unit: ch07
+    quote: "A IA é o espelho da sua própria competência."
+    type: boring
+    why: "By now I've read the mirror idea in ch05, ch06, ch07, then again in ch10, ch18, ch20 and the postface. As a junior it also quietly says 'you are the weak link'. The counter-message (juniors can learn fast) comes too late."
+    suggestion: "Say it once or twice and put the 'how a junior grows' pointer next to the first use."
+  - unit: ch08
+    quote: "chamei o Frank Yomik de meu primeiro fracasso de verdade"
+    type: logic
+    why: "The story ends with the app working (more than 99%, open source, 400 tests), so the failure is the five lost days, not the project. The title and opening promise a failure that the chapter then walks back."
+    suggestion: "Call it 'meu primeiro desvio caro' or say up front that the project survived."
+  - unit: ch08
+    quote: "Carreguei o código do lackoftrack27 no Claude Fable e depois no recém-lançado GPT Astra"
+    type: confusing
+    why: "The NES-to-Master-System section has cycles, mappers, three model names and a hand-made port by someone else. I followed the oracle idea but lost the thread of what was achieved, because the story is cut and finished only in ch20."
+    suggestion: "Close the story in one place, or add a two-line 'where we are' before the oracle section."
+  - unit: ch09
+    quote: "Nos casos em que a pessoa me mostrou o pedido, muitas vezes o defeito começava ali."
+    type: logic
+    why: "The chapter opens by implying that whoever says 'the model failed' probably asked badly. Evidence: cases where people showed him the prompt, a self-selected group, and ch11/ch12 show models failing with good prompts. The paragraph that hedges this comes after. An anxious junior hears 'it's your fault'."
+    suggestion: "Lead with the hedge, then the claim."
+  - unit: ch09
+    quote: "A imagem que eu uso pra isso vem do cinema."
+    type: boring
+    why: "Iron Man armor versions as iterative development, plus the 'Jarvis executes, Stark decides' point, repeats the pair-programming idea from ch06 with a long movie recap."
+    suggestion: "Two sentences."
+  - unit: ch10
+    quote: "Dinheiro pra investir eu tenho."
+    type: rewrite
+    why: "The argument is that if one of the projects were really good he'd start a company on it. It reads as a boast and doesn't follow: not starting a company isn't evidence about quality. The honest report card that follows is much stronger without it."
+    suggestion: "Cut the paragraph; start at 'Então sentei e fiz o que deveria ter feito antes'."
+  - unit: ch10
+    quote: "A lista continua:"
+    type: boring
+    why: "Frank Lyrics, Frank Type, Geary fork... a long list of personal tools. The point (small itches are now cheap to fix) was clear after the clock and the email client."
+    suggestion: "Keep two examples and move the rest to apD."
+  - unit: ch11
+    quote: "O GPT-5.6 Terra e o GPT-5.6 Sol são o mesmo modelo em níveis diferentes de esforço de raciocínio"
+    type: confusing
+    why: "From here to ch14 I could not hold which model is which: Fable 5, 5.1, Opus 4.8, 5, 5.5, GPT-5.5, 5.6 Terra/Sol, GPT-6 Sol, Astra, Grok 4.6/4.7, Gemini Flash versions. I understood the argument ('the top is a group') only by ignoring the names."
+    suggestion: "A small table in ch11 with model, maker, what it was in the story, and keep the others in the text."
+  - unit: ch12
+    quote: "Até aqui, a pergunta era se dá pra confiar no que o modelo faz."
+    type: rewrite
+    why: "The chapter title and first half are about models cheating. Then it turns to a city hall's model (Rio) and a rumor about Kimi, which are about provenance. Both are good, but I lost the through-line and the title no longer describes the chapter."
+    suggestion: "Split, or retitle ('Modelos que colam, e de onde eles vêm')."
+  - unit: ch12
+    quote: "O boato que não sobreviveu ao teste"
+    type: logic
+    why: "The heading sounds conclusive, but the section's own conclusion is narrower: one identity question, 14 providers, and 'não achar vazamento não prova que não houve desvio'. The hedged text is fine, the heading overclaims."
+    suggestion: "'O que o meu teste não achou'."
+  - unit: ch13
+    quote: "virou febre um produto chamado Jev, da TypeSafe, vendido como uma revolução"
+    type: confusing
+    why: "Jev is introduced at the end of ch13 as a classifier, with a pointer to ch14 'desmonta o anúncio'. Then ch14 introduces it again from zero and points back to ch13 for the benchmark. I jumped between chapters to assemble one story."
+    suggestion: "Tell the whole Jev story in one chapter, and keep ch13 on home hardware."
+  - unit: ch14
+    quote: "Software não tem mãos."
+    type: logic
+    why: "In the same section, the agents found a way out of a filtered network, chained real bugs and executed code on 41 servers. In ch15 the book says agents do have hands and root. 'Alguém precisa conectá-lo' is true for the first door, but the agents opened the later doors themselves."
+    suggestion: "Say 'software não tem mãos por si só, mas um agente ganha as que você dá, e às vezes acha mais'."
+  - unit: ch14
+    quote: "Pra quem perdeu a conta dos nomes, os lados ficam assim."
+    type: confusing
+    why: "The author himself knows the names pile up. Coxon, Sacks, Amodei, Altman, Musk, Huang, LeCun, Ng, Hinton, Tao, the Senate... I stopped trying to remember who said what and kept only the pattern 'incentives'."
+    suggestion: "Pick 3-4 voices that carry the argument and drop the rest."
+  - unit: ch14
+    quote: "Em 8 de setembro, a OpenAI anunciou ter resolvido o problema"
+    type: boring
+    why: "Navier-Stokes, the Clay Institute, the NYU mathematician dispute and 24 Fields medalists is a lot of detail for a lesson I had after two sentences ('verdadeiro numa variante, anunciado como o problema todo')."
+    suggestion: "Shorten to the variant-vs-famous-problem point."
+  - unit: ch15
+    quote: "volte cinco dias antes da faxina"
+    type: rewrite
+    why: "Order is Oct 10 (cleanup), flashback Oct 5 (dying NAS), forward to July headlines, back to January (the jail). I re-read the first three pages to know what had happened when. The 'why does the agent have keys' answer comes after both stories."
+    suggestion: "Chronological order, or a one-line timeline at the top."
+  - unit: ch15
+    quote: "A conclusão que eu tirei em julho saiu reforçada."
+    type: confusing
+    why: "The previous sentence says the new case 'não cabe' in the July hypothesis (vague prompts cause accidents). Then the July conclusion is 'reinforced'. I couldn't tell which conclusion survived: the hypothesis or the 'treat distrust as engineering' stance."
+    suggestion: "Say the hypothesis was wrong or incomplete, and that the layers conclusion stands."
+  - unit: ch16
+    quote: "Teve ainda o modo que o código chamava de *Undercover*, à paisana."
+    type: boring
+    why: "The 'Em casa de ferreiro' section (3,100-line function, spaghetti rating, DRM, DMCA takedown of 8,100 repos, Undercover mode) is gossip about a vendor. The one lesson is 'speed without discipline produces mess everywhere', which was clear after the first example."
+    suggestion: "Keep the 3,100-line function and the security-by-obscurity line."
+  - unit: ch17
+    quote: "Se o texto perfeito ficou barato, o vídeo também ficou."
+    type: boring
+    why: "The video section lists Seedance credits per month and number of scenes per plan. It's product pricing from April that will age within weeks, and it changes nothing about the deepfake advice that follows."
+    suggestion: "Drop the pricing; keep the reference-video test and the deepfake habits."
+  - unit: ch17
+    quote: "Uma pessoa comum, sem treino, não consegue mais distinguir vídeo gerado de vídeo real batendo o olho."
+    type: logic
+    why: "Strong, unsourced generalization in a book that otherwise asks for sources for every claim. Probably true for good generators, but 'uma pessoa comum' and 'não consegue' are carrying a lot."
+    suggestion: "Cite a study or soften to 'cada vez mais difícil'."
+  - unit: ch18
+    quote: "Quem culpa a IA pelas demissões de 2022 está olhando pro culpado errado."
+    type: logic
+    why: "True for 2022, but my worry is the 2025-26 entry-level market. The book argues the 2022 layoffs were before LLMs and never addresses whether junior hiring is falling now. It answers an easier question than the one I have."
+    suggestion: "Add what is known (or say honestly that nobody has solid numbers) on junior hiring after 2024."
+  - unit: ch18
+    quote: "Em 2026 eu sei coisas de programação que nem sonhava quando entrei na faculdade, em 1995."
+    type: logic
+    why: "The argument that juniors will be fine rests on every generation asking the same question and adapting. The author later concedes this is survivorship ('quem conta essa história é quem atravessou'), but the section stays reassurance, not evidence. A punch-card operator who lost the job is exactly the person I fear being."
+    suggestion: "Give one concrete 'what a junior should do in the first 12 months' plan here, not only in the epilogue."
+  - unit: ch18
+    quote: "Testes ajudaram mais do que a escolha da linguagem."
+    type: logic
+    why: "Summarized as a blockquote conclusion, but the evidence is one task, two repeats per combination, with the frontier models at 100%. The text admits all this in the paragraph above, then ch20 uses it as an explanation. The claim looks stronger than the test."
+    suggestion: "Qualify the blockquote ('nesta tarefa')."
+  - unit: ch19
+    quote: "Muita empresa treinou os seus profissionais a não decidir."
+    type: logic
+    why: "This is the chapter's thesis. The author says he has no numbers, and the opening Uber story is about a usage scoreboard and a blown budget, not about people unable to decide. I couldn't follow how the story leads to the thesis."
+    suggestion: "Connect the Uber story to 'placar de uso premia gasto' as the evidence, and mark the decision-training claim as a hypothesis from the start."
+  - unit: ch19
+    quote: "Desde o fim de setembro, um desenvolvedor de Atlanta, Brandon Thomas, vinha publicando sete programas"
+    type: boring
+    why: "Adobe clones, Pantone, CMYK in GIMP: an interesting product-moat argument, but it breaks the process thread of the chapter and repeats the 'fosso' idea from ch10."
+    suggestion: "Move to ch10 or cut to a short paragraph."
+  - unit: ch20
+    quote: "nos meus testes, não vejo melhora relevante de programação geral desde a geração do Claude Opus 4.5"
+    type: confusing
+    why: "The book gives three dates for 'the last big jump': Sept 2024 (o1, ch01/ch03/ch20), 'fim de 2025' as the turning point (ch18), and Opus 4.5 here. The reader has to reconcile 'base stopped in 2024' with 'models only plateaued after Opus 4.5'."
+    suggestion: "One timeline sentence: base in 2024, product and harness in 2025-26, plateau of the tested frontier since Opus 4.5."
+  - unit: ch20
+    quote: "Nada disso entrou no treino."
+    type: logic
+    why: "The 81.5% figure is the share of contributions made to private repositories, which isn't the share of code, and 'nothing entered the training' is asserted without a source. Vendors may license or train on some private data. The 'mapa em branco' image is great, but this step is stated too flatly."
+    suggestion: "'Quase nada, até onde se sabe'."
+  - unit: ch20
+    quote: "Foi daí que nasceu o ai-memory"
+    type: boring
+    why: "A product origin story and version numbers in the final chapter read like an ad, even with the conflict-of-interest sentence. There is already an appendix (apmemoria) for it."
+    suggestion: "Keep only the principle ('memória nos seus arquivos') and point to the appendix."
+cut_candidates:
+  - {unit: ch01, where: "## O primeiro hype (Rosenblatt)", why: "Half the history can go; the 1958 headline is enough for the bubble point."}
+  - {unit: ch09, where: "### O Stark e o Jarvis", why: "Movie recap for a point already made in ch06."}
+  - {unit: ch10, where: "### Um relógio, um e-mail, uma música", why: "List of personal tools; two examples would carry the 'pequenas coceiras' point."}
+  - {unit: ch11, where: "## Dois cérebros pelo preço de um", why: "Same conclusion as ch03 ('modelos fortes não delegam'); three rounds of numbers add little."}
+  - {unit: ch14, where: "### O problema do milênio", why: "Long for a lesson that fits in three sentences."}
+  - {unit: ch16, where: "### Segredos que dependem de ninguém olhar", why: "DRM trivia, Undercover and DMCA are gossip, not a lesson for the reader."}
+  - {unit: ch17, where: "the Seedance pricing paragraph under '## Ver não é mais crer'", why: "Product pricing that will age in weeks."}
+  - {unit: ch19, where: "## O fosso e a Adobe", why: "Another topic (product moats), already half-covered in ch10."}
+  - {unit: ch20, where: "the ai-memory paragraphs under '## O que é seu'", why: "Appendix material; reads as a pitch in the closing chapter."}

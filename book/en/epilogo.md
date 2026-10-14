@@ -9,7 +9,7 @@ sources:
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "309b129d7a93fb9b17e4efaefe75a56b8b85e95568adc2ecc9809306dab8b434"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/epilogo.md, sha256: "054a1be500d2c29026dda933e0058f165de1ea4e3392e723dc264e19dfb08eae"}
+translated_from: {file: book/pt/epilogo.md, sha256: "4aff49eb42bef7a4a7ef0e1562fe084c234e539b624256466a0e1914ad9077c6"}
 ---
 
 # Epilogue: What I'd Tell You {#sec-epilogo .unnumbered}
@@ -54,7 +54,7 @@ If you're starting out in programming:
 ## Fear Sells
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-In @sec-ch01 you met the line on the card: your hype about AI is inversely proportional to your knowledge of AI. After this year, I'd add that a good part of the fear follows the same rule. The less a person knows about how the thing works, the more room is left to imagine the end of the world.
+In @sec-ch01 you met the line on the card: your hype about AI is inversely proportional to your knowledge of AI. After this year, I'd add that part of the fear follows the same rule. When a person doesn't know how the thing works, there's room left to imagine the end of the world.
 
 <!-- src: original -->
 A good part, not all. In @sec-ch14 you saw serious researchers, who know very well how the thing works, genuinely worried, and that fear deserves to be heard and argued with on the merits. What doesn't deserve credit is fear manufactured by those who profit from it.
@@ -106,7 +106,7 @@ This list is longer, and it frees up more time:
 - courses and certifications in the name of the fad of the month (harness engineering, loop engineering and relatives). When the technology becomes a commodity, the money migrates to the new name: five names for chaining API calls and a certification that expires in six months. Anyone working with method, tests and review already does what they teach;
 - announcements of [AGI]{.gls key=agi}, of extinction, of a model too dangerous to release. The script has existed since at least 2019 (@sec-ch01), and @sec-ch14 shows who profits from it;
 - ranking fights over a tenth of a point. At the top, the models form a pack, and the gap between them fits inside the [run-to-run noise]{.gls key=ruido-entre-execucoes} (@sec-ch11);
-- the promise that the next model will fix it. The numbers in @sec-ch20 show a flat line up top, and what changes the result is the process around it;
+- the promise that the next model will fix it. The accounts from the people who train them and the outside measurements, in @sec-ch20, show base intelligence flattening; what still rises is what the agent does with tools, and what changes the result is the process around it;
 - the video of the app built in ten minutes. The first few hours are the easy part, and the other ninety percent is what @sec-ch05 is about.
 
 ## Check for Yourself

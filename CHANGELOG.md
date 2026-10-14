@@ -4,11 +4,41 @@ Editions of *Competente o Suficiente*. Each version is a git tag (`vX.Y.Z`);
 pushing the tag builds the book and publishes a GitHub Release with the
 files.
 
-## Unreleased
+## 1.0.0-preview.4
 
-- Chapter 12, Genesys PI section: a prudence note, the case is
-  still open and the section is not a recommendation or endorsement.
-- Copyright page: the ISBN line is hidden until one is assigned.
+The edition revised with its target readers, both languages.
+
+- **Read by the people it was written for**: five simulated readers from the
+  preface's list (an accountant, a father, a manager, a junior developer, a
+  curious retiree) read the whole book three times, between rounds of edits.
+  Their reports, the comparison between rounds and every decision are in
+  `reviews/1.0.0-preview.3/` (procedure: `docs/PERSONA-REVIEW.md`).
+- **Arguments tightened**: the year's conclusion now leads with outside
+  evidence and says what the author's saturated benchmark can't show; what
+  rising task length (METR) means for jobs, with examples beyond programming;
+  no more argument that blames every failure on the request; the worried
+  side of the AI-risk debate stated at its strongest, Hinton included;
+  generalisations marked as the author's view; the book's own "who profits?"
+  test applied to the author's projects.
+- **Easier to read**: chapters open by orienting the reader; "Como ler" sends
+  each reader to the chapters that answer their question; the speed-up
+  figures in one table; a practical "this week" list per reader in the
+  epilogue; a paragraph on not pasting client data into a chatbot.
+- **Lighter chapters, nothing lost**: programmer-only detail (debugging
+  walkthroughs, hardware math, benchmark history, tool internals) moved to a
+  new appendix, "Para quem programa: os bastidores"; the reading list moved
+  to its own appendix; repetitions cut. Every moved paragraph keeps its link
+  to the source post.
+- **Chapter 12**: the Genesys PI section is out of the book while due
+  diligence is pending (kept, not deleted, in `book/parked/`).
+- **Chapter 19** is now "Por que a IA pode falhar na sua empresa", matching
+  what the chapter argues.
+- **Copyright page**: prints the book's revision and build date, with the
+  releases link; the ISBN line is hidden until one is assigned.
+- **Tooling**: editorial rules R1-R20 (`docs/EDITORIAL-RULES.md`) with checks
+  for canonical figures, opening jargon, generalisations, name-dense prose
+  and signature lines; drift also watches parked material;
+  `persona_compare.rb`, `balance_report.rb`; 160 tests.
 
 ## 1.0.0-preview.3
 

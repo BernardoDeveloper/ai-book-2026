@@ -10,7 +10,7 @@ sources:
   - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "65b3ce93900a46d8fe0b9cb7fdc627978e0e220926745dd8c5e4453edc2b3690"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/index.md, sha256: "4ee804b47a7eadbfd028d4bd46c75591cd2401eb85d0dfbe624522714421c55e"}
+translated_from: {file: book/pt/index.md, sha256: "c3115f6f0b18f65cecce155e17f554db9a568db75a629de314b5f6d61e72fe85"}
 ---
 
 # Preface {#sec-prefacio .unnumbered}
@@ -34,7 +34,7 @@ In June, one of the biggest companies in the field, its paperwork to go public f
 The other world was my terminal. From February to May, I spent more than 500 hours programming almost entirely with AI [agents]{.gls key=agente}, the programs that let the model read files, run commands and work on its own for hours. That came to 24 projects, some that worked out, others that turned into garbage.
 
 <!-- src: 2026/10/12/llms-agentes-competente-o-suficiente -->
-Then came months of putting dozens of models through a programming test I built myself, checking the results one by one, month after month. When I put it all together, in October, the curve the ads drew shooting up to the sky showed up in my numbers as an almost flat line.
+Then came months of putting dozens of models through a programming test I built myself, checking the results one by one, month after month. When I put it all together, in October, I went looking for the curve the ads drew shooting up to the sky in the measurements that don't depend on whoever sells the model. The people who train the models had been saying since late 2024 that scaling up the basic training paid off less and less, and the best models were squeezing into an ever tighter pack. Add that to a year of daily use, and my reading is that the base intelligence of the models stopped making leaps.
 
 <!-- src: original -->
 The distance between the two worlds ran both ways. In plenty of places the tool was better than the skeptics would admit: you can build real software with it, and I did. In others, it was much worse than the ads were selling. It gets things wrong with total confidence, agrees with whatever you already thought, forgets what was agreed an hour earlier, and needs someone experienced checking what comes out.

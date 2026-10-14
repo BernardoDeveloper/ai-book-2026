@@ -37,7 +37,7 @@ refs_projects:
   - "ai-memory/README.md"
   - "ai-usagebar/README.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apD.md, sha256: "946c317c7523e6c54c5a4c3bfd217081ae6ef157c3cb840eaa10069dfcb156b9"}
+translated_from: {file: book/pt/apD.md, sha256: "2d477fd5694b80689ac9b1708af7265bbca526fff51de394f9d468bec4034848"}
 ---
 
 # The Year's Projects {#sec-apD}

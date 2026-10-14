@@ -116,6 +116,32 @@ question to the chapters that answer it; update it whenever chapters are
 added, cut or reordered. *Source:* 4/5 personas misrouted. *Enforced:*
 `docs/CHANGE-PLAYBOOK.md` checklist.
 
+**R17. Fix the design, not the apology.** When a passage contradicts a
+lesson of the book, change the passage (move the mechanics out, change the
+claim). An apology placed next to the contradiction ("eu sei que isso parece
+bater de frente...") draws every reader to it. *Source:* persona round 2,
+ch04 confidence-weighted vote (5/5 readers after the apology was added).
+*Enforced:* briefs.
+
+**R18. The book's tests apply to the author.** "Quem ganha se você
+acreditar?" applies to the author's own tools, projects and skepticism too;
+say so where his projects are presented, and decide by evidence, not motive.
+*Source:* persona round 2 (ch14 rule 1 vs ch20 ai-memory). *Enforced:*
+briefs.
+
+**R19. One owner per lesson.** A lesson ("teste verde com dado falso mente",
+"o espelho") is taught once, in the unit that owns it
+(`continuity.yml` explained_in / signature_lines); later units add only
+their new case and call back. *Source:* persona round 2 (green-test lesson in
+ch06, ch11 and ch12). *Enforced:* style report (repetition), briefs.
+
+**R20. Headlines carry the strongest evidence.** A chapter's or the book's
+headline finding leads with the evidence that can bear it (independent,
+outside sources), with the author's own measurement as support and its
+limits stated; a saturated or single test never carries a headline.
+*Source:* persona rounds 1 and 2 (ch20 "linha reta", 5/5 both times).
+*Enforced:* briefs.
+
 ## Process
 
 **R15. Facts are checked, not asked.** See `docs/COPYEDIT.md`, "Facts:

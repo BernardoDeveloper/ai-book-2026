@@ -4,12 +4,26 @@ chapter: "Para quem programa: os bastidores"
 sources:
   - {post: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro, sha256: "82777df93da3ba3bf92807e76d3326dc878e81b79d78d456926828131b3274eb"}
   - {post: 2026/04/06/rag-esta-morto-contexto-longo, sha256: "7ff16e0b5895ccd7909d0d16cb0d78b8a11dc80629766f7820198555ea8fe711"}
+  - {post: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator, sha256: "6981e63b8950f4fa8c7142097d559b7bed10db219f20d7d9065689869b87e29a"}
   - {post: 2026/08/16/entendendo-ia-watermark-da-anthropic, sha256: "1d322e2603b8a56d275962144f684c2416294a2db0a1726eb4b8f23f5e63f854"}
+  - {post: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles, sha256: "8a3892fa3d5cb201158394d2673a003461fe510482559cd989d4cf41ffd7b340"}
+  - {post: 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles, sha256: "3bb267b2daadcb058747de25bfae3cc26fcd37642c8349e03bf9108b56440da5"}
+  - {post: 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles, sha256: "33600c47a224dc3d4bdbd6cf909141d20886dd29d40e6873328d32daf4de514d"}
+  - {post: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias, sha256: "ee1a4455e9076eb3c25fddf845758f2101e0cc127a9f383d9c4c7567a4eaab34"}
+  - {post: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito, sha256: "fbf1d5f1c5974097c0d648ddea25b17e7e19d9f77943a218acd1a17303f9e7cc"}
   - {post: 2026/04/23/driveclub-shadps4-e-ia-como-aprender, sha256: "40d4966f8b6a7bbd114f67a9991f35d3a0ba9bd2e065920ff089bfb8fb32b57e"}
+  - {post: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia, sha256: "b0df8d0f5d1ba96b82101f00203d21acfa68bc386334b75a59380cf7d55c4746"}
+  - {post: 2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo, sha256: "e81505f0acafb44f3a1df187f5e774f9cf01a3187c8c20d9535b28bbcbdf9f02"}
+  - {post: 2026/04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos, sha256: "f6b05b8dac655c5709fdcb4b6ef01537fcc295f7e91340dad98df2ab2f288c6e"}
+  - {post: 2026/07/09/llm-benchmark-grok-4-5-gpt-5-6-sol, sha256: "6f9b7da43d8479867207771f58cd20ea3ce569b5c764df3b18cc4cc64ac21c74"}
+  - {post: 2026/07/30/novo-llm-benchmark-refiz-todos-os-testes, sha256: "d807e842d6f0ae2e9032e8e94b5feae78256e3400e4e9bac56c07e3571cbed99"}
+  - {post: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1, sha256: "e6e28596d99d2ce9857a4ab24cba5d3b50e5e4d8fc6fd3d8e2b5132122cd7025"}
   - {post: 2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395, sha256: "5503548667e5a04feb629e98214f329605f7ca537c7095d3afe20c72e9ad2cd1"}
   - {post: 2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus, sha256: "6e03e1fcf81b0ab75eb74031ce2c338f5112558afc3475e637f746160a8e59ff"}
   - {post: 2026/06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local, sha256: "ea56a609622cfd6ea2f3df72fe53f008ee722fccd6b4df9c81d69eca44c8ebb9"}
   - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "90819aaee0a700994dc5dbcc83018b026811a12e9ea657a31c3e2d53c6270c0b"}
+  - {post: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts, sha256: "7e3a646b143cfe73c81a960380737ebe609b79f6de648f0d47666bd7af642760"}
+  - {post: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao, sha256: "c9cba2e95138b7a4a1a3a6a459e5cc3253a0a556925a533482eb87e333b0fcf3"}
   - {post: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito, sha256: "4efebd6893539875cd7d62c121b0b6df51ba8610890a2232d996241e4f56d914"}
   - {post: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms, sha256: "82c513848860f28bd296284a54db0565badf72f473d02175271c2afd961f6ba5"}
   - {post: 2026/09/19/nova-linguagem-voltada-pra-ia-bend-2, sha256: "8a98f0d0f644b402a2ad9d95709c6dc204d92c04e390388b3bc148418223e7b1"}
@@ -19,6 +33,11 @@ refs_projects:
   - "jev-docs/benchmark/reports/next-wave-comparison-v1/support-ticket-case-study.md"
   - "private-notes/benchmarks/BENCHMARK_REPORT.md"
   - "private-notes/benchmarks/FINDINGS.md"
+  - "llm-coding-benchmark/README.md"
+  - "llm-coding-benchmark/docs/success_report.multi_model.md"
+  - "llm-coding-benchmark/docs/success_report.v2.md"
+  - "llm-coding-benchmark/docs/success_report.v3.md"
+  - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 ---
 
@@ -91,6 +110,31 @@ A pesquisa acadêmica conta a mesma história, sem bala de prata. Um estudo do G
 
 A própria Anthropic publicou em 2024 que juntar a cada pedaço uma frase de contexto e combinar busca por palavra com busca vetorial derrubava as falhas de busca quase pela metade, e que um passo extra de reordenação dos resultados reduzia ainda mais [@anthropic2024contextual]. A combinação robusta é híbrida. Quem só puder escolher uma, escolhe a busca por palavra e ainda chega longe.
 
+## Frank Investigator: como os três modelos votam {#sec-aptecnico-investigator}
+
+<!-- src: original -->
+Em @sec-ch04 eu conto o Frank Investigator, um programa que fiz em março de 2026 pra examinar notícias: ele quebra a matéria em afirmações, pede a três modelos de empresas diferentes que avaliem cada uma e deixa uma fonte primária passar por cima de todos eles. O capítulo fica na ideia. Aqui vai a conta de como os votos viram um veredito, e por que a confiança que cada modelo declara entra nela mesmo assim.
+
+![Três modelos votam com pesos diferentes; uma fonte primária contrária derruba o resultado.](assets/figures/ch04-tres-juizes.png){#fig-ch04-tres-juizes fig-alt="Três caixas representando modelos de empresas diferentes: modelo A e modelo B votam 'sustentado 40%', modelo C vota 'misto 95%'. Os votos vão para uma balança que pende para 'misto'. Ao lado, um documento marcado 'fonte primária' com um carimbo 'veto: no máximo 60%' trava o resultado em 'misto, no máximo 60%'. Embaixo, cinco jornais do mesmo grupo viram um só ('mesmo grupo = uma voz'), e três jornais ligados por setas em círculo representam a citação circular."}
+
+### O voto ponderado
+
+<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
+Naquele março, os três juízes eram o Claude Sonnet 4.6, o GPT-5.4 e o Gemini 3.1 Pro. Cada um devolve, pra cada afirmação, um veredito e uma confiança. A votação é ponderada por essa confiança, em vez de contar maioria simples: as confianças somam por veredito. Se dois modelos dizem "sustentado" com 40% de confiança cada e um diz "misto" com 95%, o "misto" vence, porque 95 pesa mais do que 80.
+
+<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
+Quanto mais distantes as opiniões, mais a confiança final cai. E se um modelo começa a dar respostas inconsistentes, ele vai pra quarentena e os outros dois seguem sozinhos.
+
+### Por que a confiança declarada ainda entra
+
+<!-- src: original -->
+O próprio @sec-ch04 mostra que o tom seguro de um modelo não diz nada sobre a veracidade, e a confiança que ele declara é um sinal fraco pelo mesmo motivo. Dentro do programa, ela só faz um trabalho: decidir o veredito quando os três discordam, sem fingir que dois votos fracos valem mais do que um forte. Ela nunca decide sozinha o que é verdade, porque duas regras ficam acima dela: o veto da fonte primária e o desconto das fontes repetidas.
+
+### O veto e o teto de 60%
+
+<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
+Se uma fonte primária (o dado oficial, a decisão judicial, o estudo original) contradiz uma afirmação, a confiança fica travada em no máximo 60% e o veredito é forçado pra "misto", mesmo que os três modelos digam "sustentado". Se cinco matérias "confirmam" a afirmação mas todas pertencem ao mesmo grupo de comunicação, o sistema conta uma voz só e reduz o peso.
+
 ## A marca d'água estatística do Claude, por dentro {#sec-aptecnico-watermark}
 
 <!-- src: 2026/08/16/entendendo-ia-watermark-da-anthropic -->
@@ -115,6 +159,100 @@ Testes acadêmicos com o SynthID-Text apontam na mesma direção: a detecção c
 
 <!-- src: original -->
 A conferência também é fechada. A marca só pode ser medida por um detector que tenha a chave da Anthropic, e cada fabricante que adotar a sua vai ter a sua própria chave e o seu próprio método.
+
+## A marca d'água do Claude: a reação, o alcance e um texto de três modelos {#sec-aptecnico-watermark-2}
+
+<!-- src: original -->
+Complemento de @sec-aptecnico-watermark. O @sec-ch04 resume em dois parágrafos o que a marca d'água do Claude prova e o que um detector não prova. Aqui ficam o resto da história: como a marca chegou, o que ela deixa de fora e o texto que eu mesmo escrevi sobre ela.
+
+### Como a marca chegou
+
+<!-- src: 2026/08/16/entendendo-ia-watermark-da-anthropic -->
+A marca vale desde 2 de agosto de 2026 pros modelos Claude mais novos, e os lançados antes migram ao longo dos meses seguintes [@anthropic2026watermark]. Não tem como desligar. Uma leva de assinantes cancelou em protesto, com medo de que tudo que escrevessem com ajuda do Claude passasse a carregar um rótulo.
+
+<!-- src: 2026/08/16/entendendo-ia-watermark-da-anthropic -->
+A origem é o AI Act europeu, que passou a exigir, naquele mesmo dia, que quem fornece IA geradora marque o que ela produz [@eu2024aiact]. Sem um jeito durável de limitar a marca por região, a Anthropic marcou tudo, no mundo inteiro.
+
+### O que ela deixa de fora
+
+<!-- src: 2026/08/16/entendendo-ia-watermark-da-anthropic -->
+A marca não guarda nada sobre você nem sobre a conversa. É um rótulo de proveniência deliberadamente fraco, feito pra cumprir a lei, que funciona pra quem não se dá ao trabalho de apagar.
+
+<!-- src: original -->
+O detector que a OpenAI lançou em janeiro de 2023 pra dizer se um texto tinha saído de uma IA saiu do ar em julho do mesmo ano, por causa da baixa taxa de acerto [@openai2023classifier]. E a marca não fecha a conta nos dois sentidos: um texto marcado pode ter sido escrito por uma pessoa que pediu uma revisão ao Claude, e um texto sem marca pode ter saído inteiro de uma IA e passado por outra.
+
+### Um texto de três modelos
+
+<!-- src: 2026/08/16/entendendo-ia-watermark-da-anthropic -->
+O texto que eu publiquei sobre o assunto foi feito assim. O primeiro rascunho saiu do Claude. O Kimi conferiu os fatos, afirmação por afirmação, contra as fontes originais, e pegou no meio do caminho uma estatística que o Claude tinha inventado. Depois o GLM reescreveu tudo, palavra por palavra.
+
+<!-- src: original -->
+O que salvou aquele texto foi um segundo modelo, de outra empresa, comparando cada afirmação com a fonte de onde ela deveria ter saído. É o mesmo método do Frank Investigator, aplicado em escala de um artigo só. A pergunta útil é se o que o texto diz bate com a fonte; quem o escreveu importa bem menos.
+
+## A rede de testes da newsletter, por dentro {#sec-aptecnico-xp}
+
+<!-- src: original -->
+Em @sec-ch06 eu conto como pus no ar, em oito dias de fevereiro de 2026, a newsletter The M.Akita Chronicles, com um agente como par e as práticas do Extreme Programming. O capítulo fica na lição: teste que passa com dado falso mente, e dado real surpreende. Aqui vão os detalhes que só interessam a quem programa: o que a integração contínua conferia, o ritmo dos commits, as brechas que a análise automática pegou e como eu lidei com um modelo de IA dentro do teste de integração.
+
+### A bateria de cada commit
+
+<!-- src: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles -->
+Todo commit passava pela mesma bateria, nessa ordem: verificação de estilo (RuboCop), busca de vulnerabilidades conhecidas nas bibliotecas usadas (bundler-audit), análise estática de segurança (Brakeman) e a suíte completa de testes. No meu caso levava uns 22 segundos por commit. Parece pouco. Multiplicado por 274 commits, foram mais de cem minutos de conferência que eu não precisei fazer à mão.
+
+<!-- src: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles -->
+Com um agente, o TDD tem um efeito que se alimenta sozinho. O agente é bom em escrever testes, e os testes que ele escreve viram a rede de proteção das mudanças que ele mesmo faz depois. Testes permitem velocidade, e velocidade gera mais testes. O limite desse efeito aparece em @sec-ch12: quando o mesmo modelo escreve o código e o dublê do teste, o teste pode certificar o erro.
+
+### Commits pequenos e o ritmo da semana
+
+<!-- src: 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles -->
+O Claude me surpreendeu positivamente nas entregas pequenas. Mesmo quando eu esquecia de mandar ele gravar uma tarefa antes de pedir a próxima, ele não jogava tudo num pacote só. Separava em dois commits, cada um com a descrição certa.
+
+<!-- src: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles -->
+O ritmo da semana mostra o efeito. No segundo dia foram 41 commits, no terceiro, 49. De fora, parece caos. Por dentro, eram dezenas de entregas pequenas empilhadas, cada uma acrescentando uma coisa, passando nos testes e ficando pronta pra ir pro ar.
+
+<!-- src: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles -->
+Os commits de segurança foram 21, espalhados pelos oito dias. A análise estática pegou, durante o desenvolvimento, uma injeção de SQL numa busca, um path traversal que deixaria ler arquivos fora da pasta permitida e um redirecionamento aberto que podia ser usado pra golpe. Cada um foi corrigido no mesmo commit em que a integração contínua acusou.
+
+### Um modelo de IA dentro do teste de integração
+
+<!-- src: 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles -->
+O teste de integração do capítulo roda a semana inteira de produção na minha máquina, com os dados reais copiados do servidor. Ele achou, entre outros, um bug de nome de arquivo: títulos de anime em japonês perdiam os caracteres não latinos na hora de virar nome de arquivo, e dois animes diferentes com o subtítulo "Season 4" acabavam no mesmo arquivo.
+
+<!-- src: 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles -->
+Com um LLM no meio do sistema, apareceu um problema que programação tradicional não tinha: chamar o modelo duas vezes com o mesmo pedido não devolve a mesma resposta, e cada chamada custa dinheiro. Uma rodada completa do teste de integração custava uns 40 centavos de dólar em chamadas de modelo. Parece nada, mas quem ajusta um [prompt]{.gls} e roda de novo dez vezes por dia sente. A saída foi guardar as respostas do modelo durante o desenvolvimento e só pagar de novo quando eu mandasse explicitamente.
+
+<!-- src: 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles -->
+A checagem de estrutura que o capítulo menciona confere se o arquivo existe, se tem o número mínimo de itens, se tem as marcações obrigatórias e, na seção do mercado, pelo menos cinco linhas de cotação. O GPT-5.2, que eu usava ali, é um bom modelo. Só que ele não é determinístico, e quando erra, erra de formas criativas que nenhuma validação de formato prevê.
+
+## Frank Sherlock: o teste dos modelos de visão e a publicação em três sistemas {#sec-aptecnico-sherlock}
+
+<!-- src: original -->
+Em @sec-ch07 eu conto o Frank Sherlock, um programa que fiz em fevereiro de 2026 pra catalogar fotos e documentos por conteúdo, com um modelo de visão rodando na minha própria placa de vídeo. O capítulo guarda a lição, meça antes de escolher. Aqui ficam os números do teste que fiz antes de escrever o aplicativo, a conta de custo e o que deu trabalho pra publicar o programa em Linux, Mac e Windows.
+
+### Os modelos de visão, medidos
+
+<!-- src: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias -->
+Antes de escrever uma linha do aplicativo, separei imagens com a classificação correta registrada e comparei os candidatos no mesmo terreno. Um modelo de visão aberto de 7 bilhões de [parâmetros]{.gls key=parametros}, o Qwen2.5-VL 7B, ganhou em todas as medidas do LLaVA 13B, quase duas vezes maior, e ainda foi três vezes mais rápido.
+
+A versão gigante do mesmo modelo, com 32 bilhões, acertou uma imagem a mais num grupo de 16 e levou 29 vezes mais tempo. Pra quem vai processar centenas de milhares de arquivos, isso transforma um trabalho de seis horas num trabalho de uma semana.
+
+<!-- src: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias -->
+Os modelos mais novos da mesma família, o Qwen3-VL de 8 bilhões e o de 30 bilhões, testados com três repetições cada, foram piores na minha tarefa: acertaram o tipo de arquivo bem menos vezes do que o 7B e devolviam respostas truncadas.
+
+### A conta de padeiro
+
+<!-- src: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias -->
+Classificar meio milhão de arquivos na minha [GPU]{.gls key=gpu} levaria quase um mês ligado e custaria uns 34 dólares de energia. Pela API de visão de uma empresa de nuvem, a um centavo de dólar por imagem, seriam uns 5 mil dólares. É conta feita no papel de pão, mas a ordem de grandeza decide sozinha.
+
+### Do índice ao reconhecimento de rostos, versão por versão
+
+<!-- src: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito -->
+A primeira versão pública foi a 0.1. Nos quatro dias seguintes, 53 commits levaram o programa da versão 0.3 à 0.7: detecção de fotos duplicadas, depois vídeos em onze formatos, e na 0.7 a detecção de rostos, com agrupamento dos parecidos e nome pra cada pessoa. Foram sete versões publicadas em sete dias.
+
+### Três sistemas, três jeitos de quebrar
+
+<!-- src: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito -->
+No começo de março, o projeto tinha 103 commits, umas 28 mil linhas de código e 621 testes. Dezessete daqueles commits foram só pra fazer o programa compilar e ser publicado direito nos três sistemas. O Windows escreve caminhos de arquivo de um jeito que quebra comparações de texto; o Mac exige que o programa seja assinado e registrado junto à Apple antes de abrir sem alarme.
 
 ## A tela preta do Driveclub, passo a passo {#sec-aptecnico-driveclub}
 
@@ -185,6 +323,103 @@ Tudo isso dependia de uma preparação. Antes da primeira fase, eu garanti que o
 
 <!-- src: 2026/04/23/driveclub-shadps4-e-ia-como-aprender -->
 A conta final me diverte: mais de 50 documentos de anotações, quase 7 mil linhas de texto descrevendo hipóteses e descartes, contra um número inteiro na configuração. Quase nada das 15 mil linhas de código serve pra contribuir com o emulador, porque é instrumentação feita pro Driveclub naquelas condições. A solução, aliás, estava no código do emulador havia sete meses.
+
+## Skills por dentro: revelação progressiva e a rotina dos repositórios {#sec-aptecnico-skills}
+
+<!-- src: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia -->
+No @sec-ch09 eu descrevo uma [skill]{.gls} como um prompt versionado: uma pasta com um arquivo de texto, um cabeçalho com nome e descrição e um corpo que diz como executar uma tarefa. A pergunta que quem programa sempre faz em seguida é se isso não enche a [janela de contexto]{.gls key=janela-de-contexto} de papel. Os harnesses resolvem bem essa parte.
+
+No começo da sessão, só o nome e a descrição de cada skill entram nas instruções do agente. O corpo só é carregado quando o agente decide que vai usar aquela skill. A Anthropic chama isso de *progressive disclosure*, revelação progressiva [@anthropic2025agentskills].
+
+![Só os nomes das skills ficam na mesa; o conteúdo é aberto quando o agente precisa.](assets/figures/ch09-revelacao-progressiva.png){#fig-ch09-revelacao-progressiva fig-alt="Uma mesa, que representa a janela de contexto, com uma fileira de etiquetas, cada uma com o nome curto de uma skill: auditar, publicar versão, revisar texto. Embaixo, uma gaveta com pastas fechadas. Só a pasta de uma skill, revisar texto, sai da gaveta e se abre sobre a mesa; as outras continuam fechadas na gaveta."}
+
+Isso resolve o custo do texto, mas só metade do problema. Cada skill instalada ainda aparece na lista que o agente consulta pra decidir o que usar, e disputa a atenção dele com as outras. Por isso o capítulo insiste em poucas skills, todas em uso.
+
+<!-- src: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia -->
+Na prática, eu mantenho mais de 40 repositórios públicos. Todo dia de manhã, abro o agente em cada um e digito uma linha só, algo como "audita os pull requests e as issues abertas, depois resolve o que foi aprovado". O trabalho pesado mora nas skills de auditoria, de resolução e de publicação de versões, que estão num repositório aberto [@akita2026myskills].
+
+Em 17 de setembro de 2026, contando só três desses projetos, eram 609 contribuições aceitas e 375 problemas relatados resolvidos. Quase mil itens, quase todos tratados por essas skills, comigo supervisionando e decidindo. Uma pessoa, sem time.
+
+<!-- src: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia -->
+O histórico do repositório mostra cada skill sendo lapidada mês após mês: em julho, as auditorias básicas; no fim de julho, um endurecimento das regras de segurança; em agosto, a etapa de execução; em setembro, as lições de publicação de versões. Cada mudança corresponde a um erro que aconteceu antes e que a regra nova passou a impedir.
+
+## O benchmark por dentro: quatro versões e as contas refeitas {#sec-aptecnico-benchmark}
+
+<!-- src: original -->
+O @sec-ch11 conta a história do meu [benchmark]{.gls} de programação em linguagem simples: errei como juiz, a prova saturou, fiz outra mais difícil, plantei um colega sabotador, e o topo virou um grupo. Esta seção guarda o que ficou de fora: os comandos exatos da biblioteca que eu acusei sem razão, as faixas de nota de cada versão, as contas de custo refeitas e a terceira versão, a que eu rejeitei no dia seguinte.
+
+### Os comandos que eu acusei
+
+<!-- src: ref:llm-coding-benchmark/README.md -->
+A prova exigia a RubyLLM, uma biblioteca Ruby pra conversar com modelos de linguagem. Nos dois rankings de abril, o comando mais acusado de "não existir" era o `chat.complete`. Em 24 de abril, abrindo o código-fonte da biblioteca, ele estava lá, público, funcionando.
+
+O segundo acusado era um jeito de adicionar mensagens à conversa que eu jurava que quebrava o programa. A linguagem aceita aquela forma sem reclamar. Funcionava também.
+
+<!-- src: 2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo -->
+As consequências desceram pela tabela inteira. O Kimi K2.5, que eu tinha jogado no grupo dos inutilizáveis, subiu pro grupo B, e o Kimi K2.6 e o Gemini 3.1 Pro foram parar no grupo de cima. Refiz o critério de avaliação do zero e reavaliei os 24 modelos daquela fase.
+
+<!-- src: ref:llm-coding-benchmark/docs/success_report.multi_model.md -->
+Seis dias antes, em 18 de abril, eu tinha registrado que o mesmo Claude Opus 4.7 acertava a biblioteca quando rodava dentro do OpenCode e errava dentro do Claude Code. Em duas de três execuções no Claude Code, ele tinha usado o `chat.complete`, "um método que não existe", nas palavras do relatório. Era, segundo o mesmo texto, a primeira evidência do benchmark de que o [harness]{.gls} podia piorar a correção do código.
+
+<!-- src: original -->
+O comando recomendado pela documentação, o `ask`, faz por dentro só duas coisas: adiciona a mensagem e chama o `complete` [@paolino2026rubyllm]. O Opus no Claude Code tinha escrito a versão por extenso do mesmo pedido.
+
+<!-- src: 2026/04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos -->
+A correção e o erro conviveram por muito tempo. No dia seguinte à reauditoria, o artigo que publiquei sobre misturar modelos ainda repetia que o Opus tinha "alucinado `chat.complete`" no Claude Code.
+
+<!-- src: ref:llm-coding-benchmark/README.md -->
+O relatório daquele experimento nunca foi refeito. Meses depois, o resumo do repositório ainda trazia, a poucas linhas de distância, a frase dizendo que o `chat.complete` era real e a frase dizendo que o Opus o tinha alucinado.
+
+<!-- src: original -->
+O outro lado da comparação também se mexeu: em julho, uma reauditoria mais cuidadosa baixou de 97 pra 87 a nota do Opus 4.7 "campeão" no OpenCode.
+
+### As faixas de nota
+
+<!-- src: 2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo -->
+Na primeira versão, a de abril, a nota de 0 a 100 caía num [tier]{.gls} assim: A a partir de 80 (produção como está, ou com menos de meia hora de conserto), B de 60 a 79 (uma ou duas horas de trabalho humano), C de 40 a 59 (retrabalho grande) e D abaixo disso (joga fora e aproveita a ideia).
+
+<!-- src: ref:llm-coding-benchmark/docs/success_report.v4.combined.md -->
+Na quarta versão, a de setembro, o tier A começa em 83. Em setembro a tabela tinha 46 modelos; os artigos do dia 15 falavam em 39, a contagem daquele momento.
+
+### As contas de custo refeitas
+
+<!-- src: 2026/07/09/llm-benchmark-grok-4-5-gpt-5-6-sol -->
+Uma execução de agente relê o próprio histórico do cache a cada volta do laço (o [prompt caching]{.gls key=prompt-caching} de @sec-ch03), e eu não estava contando essas releituras direito. Em julho refiz a conta: uma rodada do Opus 4.7, que eu reportava por volta de 1 dólar, custava uns 7. A tarifa era a mesma de sempre; a conta furada era a minha.
+
+<!-- src: ref:llm-coding-benchmark/docs/success_report.v2.md -->
+No começo de agosto, um leitor do repositório achou um erro no programa que extraía as métricas das execuções no OpenCode. Ele registrava só o último passo de cada fase, em vez da soma de todos. Os custos de todas as rodadas naquela ferramenta antes de 1º de agosto estavam subestimados de 40 a 90 vezes. O MiniMax M3, que parecia dos mais baratos, era na verdade o que mais consumia texto entre todos os rodados ali.
+
+### A segunda versão
+
+<!-- src: 2026/07/30/novo-llm-benchmark-refiz-todos-os-testes -->
+No fim de julho, quinze dos quarenta resultados da primeira versão estavam no grupo de cima, com o topo entre 92 e 97. Em 30 de julho publiquei a segunda: o aplicativo agora precisava mostrar a resposta chegando palavra por palavra, aguentar duas cópias do servidor rodando ao mesmo tempo, usar ferramentas de verdade e controlar quanto gastava. Uma fase nova subia o aplicativo e testava tudo isso funcionando, e cada família de modelo passou a rodar, sempre que possível, na ferramenta do próprio fabricante.
+
+<!-- src: ref:llm-coding-benchmark/docs/success_report.v2.md -->
+A autorrevisão do modelo, em que ele marca cada exigência como "passou", "passou em parte" ou "falhou" e aponta a prova, valia 15 pontos.
+
+### A terceira versão, o caminho errado
+
+<!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1 -->
+Quando a segunda versão saturou, minha primeira ideia foi a óbvia: se um aplicativo inteiro satura, quebra em pedaços menores e mais difíceis. Em 5 de setembro comecei a terceira versão com dezoito tarefas isoladas, cada uma com um gabarito escondido: achar a causa de um bug, otimizar um trecho sob limite rígido de tempo, resolver uma dependência.
+
+Montei as tarefas junto com o Claude. Sem eu pedir explicitamente, ele foi empurrando o desenho pro formato que eu mais critico: desafios pequenos e isolados, no estilo das provas de entrevista de emprego e dos benchmarks famosos do mercado. É o caminho de menor resistência pra quem treinou nesse tipo de prova a vida inteira, e um modelo de linguagem treinou.
+
+<!-- src: ref:llm-coding-benchmark/docs/success_report.v3.md -->
+Vinte e quatro dos 37 modelos testados fizeram entre 95 e 100 pontos. Rejeitei a terceira versão no dia seguinte, 6 de setembro, e deixei o relatório no repositório com um aviso no topo, chamando-a de "caminho errado documentado". A frase que resume a lição ficou registrada lá:
+
+> *"Você não consegue ter ao mesmo tempo 'ancorado na realidade do dia a dia' e um espalhamento grande de qualidade entre os modelos de fronteira."*
+
+### SWE-bench: o tamanho do problema
+
+<!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1 -->
+Na auditoria que levou a OpenAI a abandonar o SWE-bench Verified, em fevereiro de 2026, pelo menos 59% das tarefas que os modelos mais erravam tinham testes defeituosos, que recusavam respostas corretas [@openai2026sweverified]. A mesma auditoria achou sinais de que os modelos lembravam de cor as soluções originais, a [contaminação]{.gls key=contaminacao}.
+
+### A pontuação das sabotagens
+
+<!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1 -->
+A quarta versão nasceu em 6 de setembro, no mesmo dia em que a terceira morreu.
+
+Cada uma das catorze sabotagens tem um peso de 1 a 5, conforme a gravidade. Achar e corrigir sem ninguém avisar vale o peso inteiro. Achar só depois da revelação, na sétima etapa, vale 40%. Nunca corrigir vale zero.
 
 ## IA em casa: a conta da memória {#sec-aptecnico-memoria-local}
 
@@ -292,6 +527,78 @@ Um caso não aparece em média nenhuma. A regra de severidade dizia: perda cont�
 A resposta certa é "crítico". O Clef completo, da Cloudflare, um modelo de 27 bilhões de parâmetros, respondeu "degradado", junto com vários modelos de 4 a 9 bilhões. O Jev acertou, e alguns modelos bem menores também.
 
 É um caso só, sintético. Mas é exatamente o erro que mais custa, e a porcentagem de acerto não mostra. É também o melhor argumento pra regra de severidade morar no código, como o capítulo defende.
+
+## Voz sintética em produção: o podcast e a dublagem {#sec-aptecnico-voz}
+
+<!-- src: original -->
+Em @sec-ch13 eu conto por que troquei o Qwen3 TTS, um modelo aberto de voz, pela ElevenLabs no podcast semanal da newsletter, e o que aprendi dublando pro inglês os 146 episódios do meu canal no YouTube. O capítulo fica na lição: demo de cinco segundos não é produção, e "pronto" é uma palavra perigosa. Aqui vão os detalhes que só interessam a quem vai montar um fluxo de voz sintética.
+
+### Seis semanas afinando o Qwen3
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+Entre 15 de fevereiro e 30 de março, o fluxo do podcast recebeu dezenas de commits de ajuste: prompts, parâmetros de amostragem, ordem de geração, normalização de volume, pronúncia de siglas técnicas. A voz do M.Arvin comia a primeira sílaba porque a amostra de referência do clone começava sem silêncio; a correção foi acrescentar silêncio no começo da amostra. A palavra "podcast" saía "pódcast". Cada ajuste era uma sessão de horas escutando e gerando de novo.
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+A operação pesava tanto quanto a qualidade. O Qwen3 rodava numa GPU alugada na RunPod, que levava de 5 a 15 minutos pra subir antes de cada rodada, e a pilha inteira era minha: Docker, um servidor de API, os pesos do modelo, a conta de GPU. A geração era serializada, mais ou menos em tempo real. Na ElevenLabs, com quatro chamadas simultâneas, o mesmo episódio saía umas seis vezes mais rápido do que o tempo real, e a operação virou uma variável de ambiente com a chave de acesso.
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+O modelo v3 da ElevenLabs aceita marcadores de emoção no meio do texto, como suspiro, sarcasmo ou empolgação, e eles funcionam em português. O LLM que escreve o roteiro do podcast passou a colocar essas marcas nos momentos certos, o que deu à voz uma vivacidade que o Qwen3 não entregava.
+
+### A dublagem, bloco por bloco
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+Das três formas de voz que a ElevenLabs oferece, só uma servia. A conversão de voz pra voz não traduz; a API de dublagem traduz, mas escolhe a voz sozinha, sem deixar forçar o meu clone. Sobrou a conversão de texto pra voz: pegar a legenda em inglês já revisada de cada episódio, mandar cada bloco pro serviço com a minha voz clonada e montar o áudio alinhado com o vídeo original.
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+O tamanho do bloco é o que segura a alucinação. Um bloco de uns 1.500 caracteres, que deveria virar um minuto e meio de fala, voltou com nove minutos de áudio inventado. A documentação da ElevenLabs recomenda ficar abaixo de 800 caracteres por chamada; eu cortei em 700, sempre em fim de frase, subi o parâmetro de estabilidade pra 0,9, liguei a normalização de texto pra números e siglas, e passei a rejeitar qualquer bloco cujo áudio saísse mais de 1,8 vez mais longo do que o esperado. Depois disso, um episódio de 95 minutos, em 194 blocos, rodou do começo ao fim sem nenhuma alucinação.
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+Inglês falado é mais longo que o português equivalente, e o atraso se acumula. O fluxo prevê, antes de gerar, se um bloco vai estourar a janela de tempo (a voz lê uns 16 caracteres por segundo) e pede ao serviço pra falar um pouco mais rápido, até 1,15 vez. Isso preserva a entonação melhor do que acelerar o áudio depois. Num episódio de 95 minutos, o desvio acumulado ficou em uns 43 segundos.
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+Na dublagem, um passo a mais lê a legenda em inglês e insere marcas de emoção onde um narrador mudaria o tom. Pra o LLM não exagerar nem "melhorar" o texto por conta própria, fixei uma lista pequena de marcas permitidas, um teto de uma marca a cada sete falas e uma validação que confere se o texto devolvido, sem as marcas, é idêntico ao original, com os mesmos tempos. Se não for, a resposta é descartada.
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+Trecho com URL, hash ou código faz o modelo soletrar letra por letra, e a velocidade cai pra uns 9 caracteres por segundo. Reescrevi à mão umas 30 falas em 13 episódios: a legenda continua mostrando o comando inteiro, e o narrador descreve o que ele faz.
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+O que salvou o orçamento foi guardar cada bloco gerado num arquivo separado, com um manifesto do texto de cada um. Antes de chamar o serviço, o fluxo compara o texto atual com o guardado; se não mudou, reaproveita o áudio sem gastar crédito.
+
+### O que só apareceu depois do upload
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+Três problemas apareceram só depois de subir os 146 episódios. As vinhetas de abertura sumiam ou entravam duplicadas, porque a legenda não marca música; a correção foi um detector que procura as vinhetas no áudio original. As pausas no meio das frases vinham de gerar o áudio seguindo a quebra das legendas, feitas pra leitura na tela, em vez dos parágrafos do roteiro que eu tinha lido na gravação; refazer os blocos pelos parágrafos mudou a fronteira de quase todos e invalidou o reaproveitamento, então foi uma regeração completa. E os trechos de vídeos de terceiros, que a legenda automática tinha transcrito errado, passaram a ser preenchidos com o áudio original.
+
+<!-- src: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts -->
+No fim, o painel marcava uns 10 milhões de créditos consumidos de um limite de 11 milhões no plano empresarial. A curadoria das legendas e os detectores rodaram no Claude Code; somado à tradução do blog pro inglês, o trabalho estourou o limite semanal da minha assinatura mais cara.
+
+## O limite teórico dos detectores de bug {#sec-aptecnico-rice}
+
+<!-- src: original -->
+Em @sec-ch16, a propósito das regressões do rsync, eu digo que nenhuma linguagem nova vai trazer um detector universal de bug. Pra quem programa, esse limite tem um teorema por trás.
+
+<!-- src: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao -->
+O teorema de Rice, provado por Henry Rice em 1953, mostra que não existe um algoritmo geral capaz de decidir, pra todo programa possível, se ele tem uma dada propriedade de comportamento não trivial, como "nunca trava" ou "nunca entrega a senha a ninguém" [@rice1953classes]. Isso vale pra um verificador que sirva pra qualquer código. Pra um programa específico dá pra provar muita coisa, e testes, tipos mais rígidos e análise estática ajudam; só que alguém precisa fazer esse trabalho, programa por programa. Nenhuma ferramenta, de humano ou de IA, faz isso de graça pra todo código.
+
+## A reescrita do Bun, em números {#sec-aptecnico-bun-2}
+
+<!-- src: original -->
+Em @sec-ch16 eu conto como Jarred Sumner, o criador do Bun, reescreveu o projeto de Zig pra Rust com agentes, num trabalho feito em maio de 2026 e relatado em 8 de julho. O capítulo fica com o método em linhas gerais. Aqui vão as etapas e os números, pra quem quer montar algo parecido. A briga que veio depois, com o criador do Zig, está em @sec-aptecnico-bun.
+
+<!-- src: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito -->
+O ponto de partida eram umas 535 mil linhas de Zig [@sumner2026bun]. O trabalho foi montado em cinco etapas:
+
+1. um documento de tradução, discutido com o Claude e revisado, dizendo como cada padrão do Zig devia virar Rust, e uma tabela de quanto tempo cada dado precisava viver;
+2. um ensaio com só três arquivos, pra testar o processo antes de escalar;
+3. pra cada mudança, uma instância do Claude implementando, duas outras atacando o resultado como [revisores adversariais]{.gls key=revisao-adversarial}, cada uma com o contexto limpo e só a mudança na mesa, e uma quarta aplicando as correções;
+4. os cerca de 16 mil erros de compilação viraram uma fila de trabalho, atacada pacote por pacote: compilar o pacote, agrupar os erros por arquivo, corrigir, passar pelos dois revisores e pelo corretor;
+5. a mesma bateria de testes do Bun, escrita em TypeScript e independente da linguagem do miolo, como juiz, e depois a integração contínua em várias plataformas como árbitro final.
+
+<!-- src: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito -->
+Quando os agentes começaram a se atropelar, Sumner corrigiu o processo, proibiu comandos perigosos e separou o trabalho em cópias independentes do projeto, uma por frente de trabalho. Segundo o relato, foram uns onze dias de trabalho, com até 64 instâncias do Claude rodando em paralelo no pico e um custo estimado de uns 165 mil dólares em uso de API [@sumner2026bun].
+
+<!-- src: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito -->
+O processo também pegou erro que o compilador deixou passar. Uma das primeiras versões de uma rotina que entrega um recurso pra uma biblioteca em C fechar mais tarde compilava em Rust e mesmo assim usava memória já devolvida, porque o Rust liberava o recurso no fim do bloco enquanto a biblioteca ainda ia usá-lo. Quem pegou foi a revisão, não a linguagem.
 
 ## A reescrita do Bun e a resposta do Zig {#sec-aptecnico-bun}
 

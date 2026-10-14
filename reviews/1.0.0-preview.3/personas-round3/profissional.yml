@@ -1,0 +1,225 @@
+persona: profissional
+summary: |
+  I came because I read that my job as an accountant "ends in two years", and I wanted to know what to do on Monday. The book answered half of that. I now understand why a chatbot agrees with me, invents dates and turns an empty cell into a zero (chapters 2, 4 and 7), and I have a real checklist for what to paste into it, what to check and what to keep away from client data. The epilogue's "Pra esta semana" is exactly what I wanted, but I only reached it after roughly 100k words, and the middle of the book (benchmarks, hardware, NAS recovery, Rust rewrites, Zig versus Bun) is written for someone who programs. The direct answer about my profession is two paragraphs in chapter 18 and one in chapter 20, both marked as the author's extrapolation, and the honest "cronograma eu não tenho" left my two-year worry open, though the picture of tasks shrinking while the checking-and-deciding part grows is something I can plan around. What I'll remember: the model rereads the whole table every time, "o chatbot devolve a sua pergunta com cara de resposta", the four-part request (what I want, how, what I don't want, how we know it worked), and the habit of checking the destination against the source instead of trusting the tool's "done" screen, which is basically my daily audit work. I nearly quit in chapters 11 to 13 (model names, scores, tokens per second) and again in 16; I kept going on a promise of "segunda-feira" that the book does keep, but late. The glossary and the two checklists in apC helped; apB felt aimed at Linux users.
+best:
+  - "ch04: colar a mesma matéria com duas perguntas e ver duas respostas opostas, e as oito regras com cuidados para saúde, dinheiro e dados de cliente"
+  - "ch07: 'Zero e nada', o campo vazio lido como zero: é exatamente o erro que eu cometeria numa planilha"
+  - "ch09: o pedido em quatro partes aplicado à carta de contestação do plano de saúde"
+  - "ch15: o hábito de verificar o destino contra a origem, e não contra o relatório da ferramenta"
+  - "epilogo: 'Pra esta semana' para quem trabalha com escritório, números ou papéis"
+worst:
+  - "ch11: dois cérebros pelo preço de um, o colega sabotador Casey e dezenas de nomes de modelo sem âncora"
+  - "ch13: a estante e o corredor, GB/s e tokens por segundo de hardware que eu nunca vou comprar"
+  - "ch16: um milhão de linhas de OpenClaw, Zig contra Bun, função de 3.100 linhas"
+  - "ch03: DeepSeek, OpenCode, DeepClaude e Opus na mesma abertura, sem eu saber quem é quem"
+  - "ch08: os 13 ciclos por instrução do Master System e o oráculo de emulador"
+units:
+  - {unit: index, score: 4, note: "Me reconheci na lista da profissional, mas gastei três parágrafos de robô de 1939 antes de chegar nela."}
+  - {unit: como-ler, score: 4, note: "O 'se você tem pressa' é bom; só que 'e o meu emprego?' me manda para um capítulo sobre programadores."}
+  - {unit: antes, score: 3, note: "Honesto, mas a lista de descida do gradiente e retropropagação me assustou antes do capítulo 1."}
+  - {unit: ch01, score: 4, note: "Finalmente entendi o corretor do celular em escala enorme e por que o modelo não aprende comigo; a parte do Rosenblatt arrastou."}
+  - {unit: ch02, score: 4, note: "A mesa de trabalho explica por que o chat esquece; as dicas finais valem ouro, o código vazado nem tanto."}
+  - {unit: ch03, score: 3, note: "A ideia (mesmo modelo, outro arreio) é boa, mas me perdi nos nomes de ferramenta e nos pontos do benchmark."}
+  - {unit: ch04, score: 5, note: "O capítulo que eu levaria para o escritório: sicofancia, data inventada, dado faltando virando zero, e o que não colar."}
+  - {unit: ch05, score: 3, note: "Entendi os 10 por cento contra os 90, mas é história de programador; li o iceberg e pulei o resto."}
+  - {unit: ch06, score: 3, note: "Os dublês que fazem o teste ficar verde mentindo lembram auditoria circular; o resto é XP e commits."}
+  - {unit: ch07, score: 3, note: "Software nunca está pronto convence, mas a parte do clone do Mega e do indexador de fotos não era para mim; zero e nada, sim."}
+  - {unit: ch08, score: 3, note: "O fracasso do mangá e o 'prompting não substitui pensar' fazem sentido; emulador de PS4 e Master System me perderam."}
+  - {unit: ch09, score: 4, note: "As quatro partes do pedido dá para usar amanhã; a seção sobre Clean Code e skills é de programador."}
+  - {unit: ch10, score: 3, note: "O boletim honesto e a tabela de multiplicadores me deram confiança; o fosso e as coceiras não são para quem nunca programou."}
+  - {unit: interlude1, score: 4, note: "Leve e divertido: o modelo chinês traduzindo o que os ocidentais recusaram."}
+  - {unit: ch11, score: 2, note: "Perdi-me nas tabelas; só a regra 'o topo é um grupo' e o 'peça o seu próprio teste' ficaram."}
+  - {unit: ch12, score: 3, note: "Teste verde que concorda com o erro é a melhor parte; Rio versus Nex e Kimi não mudam nada para mim."}
+  - {unit: ch13, score: 2, note: "Não vou comprar mini-PC; saí com 'modelo de graça não é de graça' e mais nada."}
+  - {unit: ch14, score: 3, note: "A lista de oito perguntas para ler um anúncio é ótima, mas o caminho até ela tem nomes demais."}
+  - {unit: interlude2, score: 3, note: "Bonito e fácil de ler; o ponto cego do KataGo é a única lição que aproveitei."}
+  - {unit: ch15, score: 3, note: "Backup, snapshot e 'copie, confira, só então apague' eu vou usar; os 90 TB e os 32 processos não."}
+  - {unit: ch16, score: 2, note: "O trecho da carta com ordens escondidas é claro; o resto é briga de projetos de código aberto."}
+  - {unit: ch17, score: 4, note: "Permissões, palavra-código e golpe pela vaidade: finalmente algo para casa e para o WhatsApp; a análise do TikTok é longa."}
+  - {unit: ch18, score: 4, note: "O cartão perfurado ilumina a minha pergunta, mas a resposta sobre contabilidade ocupa dois parágrafos."}
+  - {unit: ch19, score: 3, note: "PO, QA, sprint, staging: pouco mapeia para um escritório de contabilidade, e a Adobe é desvio."}
+  - {unit: ch20, score: 4, note: "O mapa em branco e as tarefas encolhendo antes dos empregos me deram um modelo mental; a conversão de jogos é a terceira vez que aparece."}
+  - {unit: epilogo, score: 5, note: "Era isto que eu queria desde a página 1: três passos para a semana, o que ignorar e o que conferir."}
+  - {unit: posfacio, score: 3, note: "Gostei de ver os erros do próprio autor listados; os detalhes do inventário e das marcas por parágrafo, não."}
+annotations:
+  - unit: como-ler
+    quote: "E o meu emprego? O @sec-ch18, o @sec-ch19 e o epílogo"
+    type: confusing
+    why: "Segui a indicação e caí num capítulo sobre a história da programação e noutro sobre sprints; o que fala de quem não programa é um pedaço pequeno de cada um."
+    suggestion: "Dizer quais seções tratam de trabalho de escritório (ch04, ch18 'E as outras profissões?', ch20 'O que isso quer dizer pro seu trabalho', epílogo), ou abrir o roteiro da pressa com o epílogo."
+  - unit: antes
+    quote: "Cada um desses assuntos pede um livro inteiro, e esses livros existem"
+    type: rewrite
+    why: "A lista de descida do gradiente, retropropagação, embedding e RLHF, logo antes do capítulo 1, me fez achar que o livro exigiria isso e que eu ia ficar para trás."
+    suggestion: "Inverter: abrir dizendo que não precisa saber nada disso, e deixar os termos em uma frase só."
+  - unit: index
+    quote: "Em 1939, quem visitou a Feira Mundial de Nova York"
+    type: boring
+    why: "Lendo no celular, atravessei três parágrafos de Elektro, Futurama e disco voador antes de chegar à lista 'Pra quem eu escrevi', que é onde eu me reconheci."
+    suggestion: "Condensar a abertura histórica a um parágrafo, ou subir a lista de leitoras e leitores."
+  - unit: index
+    quote: "a minha leitura é que a inteligência de base dos modelos parou de dar saltos."
+    type: logic
+    why: "No prefácio isto aparece como conclusão firme; só no capítulo 20 descobri que a tabela do autor não enxerga acima de 100 e que a conclusão se apoia em relatos de dentro dos laboratórios e numa medida de Stanford. Eu já tinha guardado a frase como fato."
+    suggestion: "Colocar o 'na minha leitura, com estas três evidências' já no prefácio."
+  - unit: ch01
+    quote: "Quem acha que a empolgação de hoje é inédita precisa conhecer Frank Rosenblatt."
+    type: boring
+    why: "Perceptron, IBM 704, Marinha, Minsky e inverno da IA em seis parágrafos; a lição (bolha estoura, tecnologia fica) cabe em dois, e a repetição do 'perigoso demais' do GPT-2 volta inteira no capítulo 14."
+    suggestion: "Encurtar Rosenblatt e deixar o GPT-2 só onde é principal."
+  - unit: ch01
+    quote: "Pra você, que não programa, a curva em S traz uma notícia boa."
+    type: logic
+    why: "A notícia boa é sobre o modelo ficar menos surpreendente, mas o meu medo é o emprego. No capítulo 20 o autor admite que a curva do que o agente consegue fazer sozinho continua subindo, então a tranquilidade daqui é mais estreita do que parece."
+    suggestion: "Dizer 'a inteligência de base', não 'notícia boa para você', e apontar a ressalva do capítulo 20."
+  - unit: ch02
+    quote: "Um comentário deixado no código admitia que 1.279 sessões tinham tido 50 ou mais falhas seguidas de compactação"
+    type: boring
+    why: "Detalhes do código vazado (limites de 2 mil linhas, 50 mil caracteres, nove seções do resumo) que não mudam o que eu faria; o que importa é a mesa e as dicas do fim."
+    suggestion: "Reduzir a seção 'O que o vazamento mostrou' a dois exemplos."
+  - unit: ch03
+    quote: "Aí apareceu o DeepClaude, um pequeno script que engana o Claude Code"
+    type: confusing
+    why: "Na abertura entraram DeepSeek, OpenCode, Opus, DeepClaude e Claude Code; só quando cheguei ao arreio e ao cavalo é que entendi a ideia, e só então descobri quem era quem."
+    suggestion: "Abrir com a imagem do mesmo cozinheiro em duas cozinhas e deixar os nomes de produto para depois."
+  - unit: ch03
+    quote: "O MiniMax M3 saiu de 24 pra 91 pontos."
+    type: boring
+    why: "Mais três parágrafos de pontos de modelos que eu nunca vou usar; a lição já estava clara com o DeepSeek."
+    suggestion: "Manter um único exemplo numérico e cortar o plugin esquecido."
+  - unit: ch04
+    quote: "Antes de colar o extrato, a planilha de um cliente ou o laudo de alguém, pense em pra onde esse texto vai."
+    type: rewrite
+    why: "É o parágrafo mais útil do livro para o meu trabalho (dado de cliente, política da empresa, trocar CPF por marcador), e está num bloco denso no fim da seção 'Dinheiro'."
+    suggestion: "Destacar como caixa própria 'Dado de outras pessoas', com os três passos em lista."
+  - unit: ch04
+    quote: "foram uns nove dias de trabalho e 129"
+    type: boring
+    why: "Antes de chegar ao que o chatbot faz de errado, tenho de passar por datas, commits e as 15 etapas do programa; só quero saber o que fazer na minha conversa."
+    suggestion: "Cortar a estatística e deixar o experimento do café como gancho."
+  - unit: ch05
+    quote: "Eu tinha mandado o controle de versão ignorar uma pasta chamada"
+    type: boring
+    why: "A caça ao estilo quebrado (duas horas de tentativa e erro) é um bom exemplo de agente girando, mas os termos (controle de versão, pasta ignorada, ferramenta que monta o estilo) me tiraram da história."
+    suggestion: "Contar com uma analogia de escritório (uma regra de arquivar que apagou a pasta errada)."
+  - unit: ch06
+    quote: "Pra quem nunca trabalhou com software, as práticas que importam aqui são cinco"
+    type: boring
+    why: "XP, TDD, integração contínua, commits pequenos: a moral (sem teste cada mudança é uma aposta) eu entendi, o catálogo não me serviu."
+    suggestion: "Reduzir a uma frase e remeter ao apêndice técnico."
+  - unit: ch07
+    quote: "Pra um programador, vazio e zero são coisas diferentes."
+    type: rewrite
+    why: "Esta é a lição que mais se aplica ao meu trabalho (célula vazia contra zero medido, data de hoje que o modelo não sabe), mas está dentro de um capítulo sobre sistema de influenciadora que eu pulei."
+    suggestion: "Repetir ou antecipar no capítulo 4, junto com a regra 'diga o que ela não sabe'."
+  - unit: ch07
+    quote: "Antes de escrever uma linha do aplicativo, passei a noite de sábado, 21 de fevereiro, só pesquisando."
+    type: boring
+    why: "Modelos de visão, 94 arquivos, conta de energia contra API: o ponto 'meça em vez de adivinhar' é bom, o desenvolvimento não."
+    suggestion: "Condensar a um parágrafo."
+  - unit: ch08
+    quote: "cada instrução dele gasta, em média, uns 13 ciclos, contra uns 4 do Nintendinho"
+    type: confusing
+    why: "A terceira história do capítulo (ciclos de processador, port feito à mão, chips no cartucho) me perdeu; só o conceito do oráculo ficou, graças à balança e ao extrato do banco."
+    suggestion: "Cortar a mecânica do Master System e manter o oráculo como ideia (já aparece no ch11, ch12, ch15)."
+  - unit: ch09
+    quote: "Em 2008, Robert C. Martin, o Uncle Bob, publicou"
+    type: boring
+    why: "A seção 'Um leitor com pressa' (fatias de 2 mil linhas, grep, arquivos pequenos, AGENTS.md) é para quem programa; eu só aproveitei o parágrafo final sobre instruções permanentes no chatbot."
+    suggestion: "Marcar a seção como opcional para quem não programa."
+  - unit: ch10
+    quote: "Se você não é programador, o que essa maratona tem pra você são as coceiras."
+    type: logic
+    why: "O conselho 'nunca foi tão barato tentar' supõe que eu saiba abrir um agente em terminal e revisar Rust; o capítulo todo mostra que sem experiência o resultado é slop, então não está claro o que eu, sem programar, deveria tentar."
+    suggestion: "Dizer qual versão não-programadora das coceiras é segura (planilha, modelo de e-mail), ou assumir que é para programadores."
+  - unit: ch11
+    quote: "Na primeira, montei sete combinações em três ferramentas diferentes"
+    type: confusing
+    why: "Rodadas, planejador e executor, Qwen, Kimi, Opus: mais de dez nomes sem eu saber se são bons ou ruins; só a analogia dos pintores e dos pedreiros me devolveu o fio."
+    suggestion: "Começar pela analogia e tirar os nomes de modelo do corpo, deixando-os para uma nota."
+  - unit: ch11
+    quote: "Entre uma etapa e outra, um colega fictício chamado Casey faz commits no projeto."
+    type: boring
+    why: "Catorze sabotagens, sete etapas, US$ 4 mil em nove dias: o desenho do teste é engenhoso, mas para mim só importa o resultado ('modelo pega o que quebra, o que está errado quieto sobrevive'), que serviria para qualquer revisor."
+    suggestion: "Tratar o sabotador em um parágrafo e levar a lição de 'erro quieto' para cima."
+  - unit: ch12
+    quote: "Em abril, a Prefeitura do Rio de Janeiro tinha anunciado, por meio da IplanRio"
+    type: boring
+    why: "Mescla de pesos, 57 a 59 por cento, licença Apache e MIT, e depois o teste do Kimi com 14 provedores: duas investigações de origem de modelo que não mudam como eu uso IA."
+    suggestion: "Manter só a conclusão ('separe o medido, a palavra de quem vende e o que ninguém sabe') e mover o caso para o apêndice."
+  - unit: ch13
+    quote: "A RTX 5090 tem estante pequena e corredor larguíssimo"
+    type: boring
+    why: "A analogia da estante e do corredor é boa, mas depois vêm VRAM, banda de memória, quantização e MoE; é conversa de comprador de hardware."
+    suggestion: "Reduzir a duas frases ('rodar em casa exige memória e custa tempo') e deixar o resto para o apêndice."
+  - unit: ch14
+    quote: "Pra quem perdeu a conta dos nomes, os lados ficam assim."
+    type: confusing
+    why: "Eu tinha perdido mesmo: Huang, Brockman, Coxon, Sacks, Tao, Hinton, LeCun, Ng, Altman, Musk, Amodei em poucas páginas, além de Navier-Stokes e do incidente da Hugging Face."
+    suggestion: "Escolher três vozes e deixar o resto para uma nota, mantendo a lista 'Como ler um anúncio' como centro."
+  - unit: ch15
+    quote: "Quase nada da recuperação foi eu digitando comando."
+    type: boring
+    why: "A recuperação dos 90 TB (32 cópias simultâneas, filtros herdados na verificação, 952 arquivos) repete o mesmo aprendizado três vezes; o padrão 'confiar no relato, não na coisa' já estava claro."
+    suggestion: "Ficar com um único tropeço e com a regra 'verifique contra a origem'."
+  - unit: ch16
+    quote: "Um único arquivo tinha quase 5.600 linhas, e dentro dele uma única função ocupava mais de 3.100 linhas"
+    type: boring
+    why: "Código do Claude Code, DMCA, curl, Zig, rsync, Bun: o capítulo vira discussão interna de projetos de código aberto; só 'a carta que dá ordens' e a lista final de perguntas me serviram."
+    suggestion: "Cortar 'Em casa de ferreiro' e 'Uma reescrita que deu certo' ou movê-los para o apêndice técnico."
+  - unit: ch17
+    quote: "O TikTok foi o mais denso: 37 pacotes de código Java compilado e 204 bibliotecas em código nativo"
+    type: boring
+    why: "A análise estática do TikTok, com libmetasec_ov e a lista de 91 aplicativos, é longa; o que eu levo são as quatro medidas para o celular e a lista de hábitos contra golpe."
+    suggestion: "Condensar o TikTok em um parágrafo e subir a seção 'O que dá pra fazer com o seu celular'."
+  - unit: ch18
+    quote: "Se o seu trabalho é quase todo a primeira parte, eu ficaria preocupado"
+    type: rewrite
+    why: "Esta é a resposta mais direta do livro à minha pergunta, mas fica quase no fim de um capítulo sobre cartões perfurados e júniors, e o autor mesmo avisa 'o que segue é extrapolação minha'. Eu quis mais exemplos de contabilidade e de gestão, com pelo menos uma evidência de fora da programação."
+    suggestion: "Mover 'E as outras profissões?' para o início do capítulo e dar dois ou três ofícios com o seu 'teste de subir de camada'."
+  - unit: ch18
+    quote: "Eu sou programador, não advogado, contador ou jornalista."
+    type: logic
+    why: "O autor reconhece que a evidência vem só da programação; ainda assim o capítulo e o ch20 aplicam a conclusão a contadores sem nenhum dado de contabilidade. A honestidade é bem-vinda, mas a conclusão fica menos firme do que o tom sugere."
+    suggestion: "Dizer explicitamente que não há medição de outros ofícios e indicar o que um contador poderia medir sozinho (como no epílogo)."
+  - unit: ch19
+    quote: "No meu desenho ideal, cada programador com o agente sentaria por blocos curtos de trabalho"
+    type: rewrite
+    why: "PO, QA, líder técnico, sprint, feature flag, staging e rollback: o glossário ajudou, mas nada disso mapeia para um escritório de contabilidade, e a seção para funcionário é só quatro itens no fim."
+    suggestion: "Dar para quem não é de software um exemplo traduzido (fechamento mensal, revisão da conciliação no mesmo dia)."
+  - unit: ch19
+    quote: "O clone do Photoshop, o PhotoCraft, dizia no próprio aviso que era uma versão bem inicial"
+    type: boring
+    why: "A Adobe, o Pantone e o GIMP em CMYK são outra história que o capítulo sobre 'por que IA falha na sua empresa' não pedia."
+    suggestion: "Mover para o ch10 ou cortar."
+  - unit: ch20
+    quote: "as tarefas dentro de um emprego são automatizadas mais rápido do que o emprego some."
+    type: logic
+    why: "A frase carrega a resposta do livro para o meu medo, mas é apresentada como o que o autor viu na programação, sem prazo ('Cronograma eu não tenho') e sem dado de fora. Fiquei sem saber se isso me tranquiliza ou me avisa."
+    suggestion: "Dizer em uma linha que a evidência da METR mostra tarefas de agentes dobrando de duração e que isso, sozinho, não é conforto para quem faz tarefas."
+  - unit: ch20
+    quote: "Os números da tentativa: 349 commits em quase quatro meses"
+    type: boring
+    why: "O conversor de Nintendinho para Master System já tinha ocupado parte do ch03 e do ch08; aqui volta com mais números (176 commits em 17 dias) e depois o Game Gear."
+    suggestion: "Uma frase de recapitulação; guardar o 'mapa e o branco' com um exemplo só."
+  - unit: epilogo
+    quote: "Se você trabalha com escritório, números ou papéis:"
+    type: rewrite
+    why: "Foi aqui que obtive o que queria no dia 1, depois de mais de 100 mil palavras. Quem lê no celular e sai no ch12 nunca chega."
+    suggestion: "Antecipar uma versão de três linhas no prefácio ou no 'como ler' e deixar o epílogo como aprofundamento."
+  - unit: posfacio
+    quote: "Um script leu os 131 textos e guardou, pra cada um, um código calculado"
+    type: boring
+    why: "A parte sobre inventário, marcas por parágrafo e linhagem é processo interno; a lista do que a conferência pegou é que me convence."
+    suggestion: "Condensar o processo e manter os exemplos de erro."
+cut_candidates:
+  - {unit: ch13, where: "## A estante e o corredor", why: "Memória, banda e quantização para hardware que não vou comprar; a lição cabe em duas frases."}
+  - {unit: ch16, where: "## Reescrever um gigante, um pedaço por vez", why: "FrankClaw e IronClaw: detalhes de projeto que ficaram como nota 1."}
+  - {unit: ch16, where: "## Uma reescrita que deu certo", why: "Bun, Zig e Rust não ajudam quem quer saber se pode confiar em software feito por IA."}
+  - {unit: ch12, where: "## A receita da prefeitura", why: "Mescla de pesos e licenças; o caso não muda nada para o leitor leigo."}
+  - {unit: ch08, where: "## Traduzir no escuro", why: "A mecânica do Master System; o oráculo já é explicado de forma mais simples."}
+  - {unit: ch11, where: "### O colega sabotador", why: "Desenho do teste que o resultado ('erro quieto sobrevive') explica melhor."}
+  - {unit: ch19, where: "## O fosso e a Adobe", why: "Tangente ao tema de empresas que gastam sem resultado; já há fosso no ch10."}
+  - {unit: ch09, where: "## Um leitor com pressa", why: "Clean Code, grep e arquivos pequenos: só útil para programadores."}
+  - {unit: ch15, where: "### Quem operou a recuperação", why: "Três variações do mesmo erro de confiar no relatório da ferramenta."}
+  - {unit: ch17, where: "### O TikTok e a caixa-preta", why: "Minúcias de código nativo; as medidas para o celular valem mais."}

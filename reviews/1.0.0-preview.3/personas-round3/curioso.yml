@@ -1,0 +1,241 @@
+persona: curioso
+summary: |
+  I came for stories and the book mostly paid me in stories. The opening with the Elektro robot and the
+  1951 film hooked me at once, and the best stretches were the ones where something happened to the
+  author: the leaked source code, the blog translated overnight while he slept, the six texts that only a
+  Chinese model would translate, the agent that deleted music because a list was empty, Lee Sedol's move 78.
+  I will remember the "mesa" (the context as a desk), the arquivo trancado (the model does not learn from you),
+  the punched-card comparison, and "42". I stopped enjoying myself whenever the page turned into tiers, scores,
+  model names with version numbers, lists of commits, or "do this on Monday" checklists. The benchmark chapters
+  (11, 12, 13) and the corporate chapter (19) felt like someone else's homework. What nearly made me quit was
+  the run of three instructional pieces (como-ler, antes, the long roadmap in the preface) before any story starts.
+  The mirror line ("a IA é o espelho de quem usa") came back five times and by the fifth I nodded without
+  listening. The book did answer the worry I did not have (fear), and it answered my real question (what is this
+  thing, and who is selling me what) better than I expected.
+best:
+  - "interlude1: the blog translated while he slept, and the six texts only a model running at home would translate"
+  - "ch02: the leaked source code as a window into how an agent fakes memory, and the desk-of-papers image"
+  - "ch15: the cleanup that trusted an empty protection list, told as a small detective story"
+  - "interlude2: Lee Sedol's move 78 and the blind spot of a superhuman Go program"
+  - "index: the Elektro robot at the 1939 fair and the 1951 film as two faces of the same shop window"
+worst:
+  - "como-ler: a user manual for the book placed before the first story"
+  - "ch19: Product Owner, QA, staging, rollback and sprint arguments; I felt I was in a meeting"
+  - "ch11: tiers, rubrics, saturation and walls of model names"
+  - "ch12: the arithmetic of merged model weights (Rio, Nex, Qwen) with percentages I could not picture"
+  - "ch17: the long capability lists for TikTok and the abrupt jump to phishing and video generation"
+units:
+  - {unit: index, score: 5, note: "Best opening of the book; I wanted the Elektro story to go on. The 'Os medos que você trouxe' roadmap is long but I forgave it."}
+  - {unit: como-ler, score: 2, note: "Reads like the leaflet inside a washing machine. I skipped half of it and nothing was lost."}
+  - {unit: antes, score: 3, note: "Honest and short, but listing 'retropropagação' and 'descida do gradiente' made me feel I was being warned before I had started."}
+  - {unit: ch01, score: 5, note: "Corretor do celular, Eliza, Rosenblatt's tragic story, the GPT-2 'perigoso demais' joke. I finally get why it sounds like a person."}
+  - {unit: ch02, score: 5, note: "The leak is a real story and the 'mesa' makes memory graspable. The three-layer MEMORY.md part is where I slowed down."}
+  - {unit: ch03, score: 3, note: "Great idea (the arreio, the model has no hands) buried under DeepSeek, OpenCode, DeepClaude, Oh-My-Pi and point scores."}
+  - {unit: ch04, score: 3, note: "The coffee example is clear and funny; then eight numbered rules, health, money and a watermark detour made it a manual."}
+  - {unit: ch05, score: 4, note: "A human story: fever, a YouTube video running while the agent worked, the iceberg. I liked being told the ten percent."}
+  - {unit: ch06, score: 3, note: "Vivid when the 300 inboxes and the 'Ah,' appear; drags in commit percentages and the 30-week estimate."}
+  - {unit: ch07, score: 4, note: "The Linux installer, the Gmail clipping, the zero that was really 'nothing': small, true, memorable stories."}
+  - {unit: ch08, score: 4, note: "Face mistaken for a speech bubble made me laugh; the Master System cycles were over my head but the oracle idea landed."}
+  - {unit: ch09, score: 3, note: "The Jarvis/Stark armor and the final '42' are delightful; the Clean Code and AGENTS.md middle is for programmers."}
+  - {unit: ch10, score: 3, note: "The bulletin (nobody got a 10) is a good device; the fosso and the little-itches sections are fine; the Frank-project parade blurred together."}
+  - {unit: interlude1, score: 5, note: "Exactly what an interlude should be: short, personal, funny, with a twist (a Chinese model translating the anti-Nazi text)."}
+  - {unit: ch11, score: 2, note: "'Embaraçoso' is a superb first page. After that, tiers, rubrics and ties at 100; I read the last page only."}
+  - {unit: ch12, score: 3, note: "The model that peeked at the answer key is a great scene; the Rio/Nex mixing and the Kimi detective test lost me in technical detail."}
+  - {unit: ch13, score: 3, note: "The estante and corredor image is the best explanation of hardware I have read; the surrounding tokens-per-second figures are not for me."}
+  - {unit: ch14, score: 4, note: "Fun and angry in a good way: the IPO, the AGI declaration by the shovel seller, 'perigoso demais, de novo'. Too many names at once in the fear section."}
+  - {unit: interlude2, score: 5, note: "Hikaru no Go, move 37 and 78, the adversarial blind spot. I had to restrain myself from buying a goban."}
+  - {unit: ch15, score: 4, note: "The empty protection list and the 90 terabytes held my attention; the ai-jail audits section turned into product documentation."}
+  - {unit: ch16, score: 3, note: "The letter that gives orders to the secretary is perfect; curl, Zig and rsync are good context; the Bun rewrite is shop talk."}
+  - {unit: ch17, score: 3, note: "Opening the phone apps was interesting; then four different subjects (phishing, Frank FBI, Seedance, reverse engineering) under one title."}
+  - {unit: ch18, score: 4, note: "The punch-card operators and 'chef de Miojo' are the history I came for. The language benchmark near the end is not for me."}
+  - {unit: ch19, score: 2, note: "A chapter for managers; sprints, PO, QA, feature flags. The Ferrari-on-a-Fusca picture was the one thing I enjoyed."}
+  - {unit: ch20, score: 3, note: "The mapa e o branco and the arquivo que não aprende are the book's best ideas; the timeline retread and the ai-memory pitch dragged."}
+  - {unit: epilogo, score: 3, note: "'Medo vende' is the paragraph I would quote to friends; the Monday checklists addressed four people and none was me."}
+  - {unit: posfacio, score: 3, note: "Interesting to learn how the book was made; the list of corrections the process caught was the good part."}
+annotations:
+  - unit: como-ler
+    quote: "Mas eu sei que muita gente chega aqui com uma preocupação específica e pouca paciência pra esperar o livro inteiro pela resposta."
+    type: boring
+    why: "Before the first story I get three roadmaps: the preface's 'Os medos que você trouxe', this chapter, and 'Antes de começar'. I felt held at the door."
+    suggestion: "Fold the 'se você tem pressa' list into the preface and cut the glossary/references/sources paragraphs to two lines, or move them to the back."
+  - unit: antes
+    quote: "Um livro de narrativa que tentasse fazer o mesmo viraria apostila na página dez."
+    type: rewrite
+    why: "The bullet list of retropropagação, embeddings, atenção and RLHF scared me before page one, even though the next sentence says I do not need any of it."
+    suggestion: "Open with the reassurance ('você não precisa disso'), keep the list to one sentence, and let the car-and-hood quote carry the point."
+  - unit: ch01
+    quote: "Do 4 pro 5, pelo que eu via em volta, pouca gente fora da área notou tanta diferença; é uma impressão minha"
+    type: logic
+    why: "The S-curve figure shows GPT-5 flattening as if it were data, but the only evidence at that point is the author's impression. I felt the argument went further than the proof."
+    suggestion: "Mark the figure explicitly as illustrative, or hold the claim until the Reuters and Stanford evidence."
+  - unit: ch02
+    quote: "um índice curto, chamado MEMORY.md, sempre colocado na mesa"
+    type: boring
+    why: "Three layers, line counts, autoDream and file-writing discipline read like a manual for people who run these tools. The 'bilhete' conclusion that follows is the part I cared about."
+    suggestion: "Keep the 'a IA lê um bilhete sobre você' idea first; push the layers into the technical appendix, which the text already points to."
+  - unit: ch03
+    quote: "A nota que o DeepSeek tinha tirado nessa configuração, 69 de 100, media uma autoria misturada."
+    type: confusing
+    why: "In six paragraphs I met DeepSeek, OpenCode, Opus, DeepClaude and Claude Code, plus a scoring scale I had not been taught. I reread to know who was impersonating whom."
+    suggestion: "Tell it as a single image (a ghostwriter signing another person's name) and name only two products."
+  - unit: ch03
+    quote: "Esse benchmark vai ganhar capítulo próprio (@sec-ch11)."
+    type: rewrite
+    why: "Almost every paragraph carries a pointer to another chapter. On a phone or on paper this broke my reading rhythm and made the book feel like a reference manual."
+    suggestion: "Keep pointers only where the reader would otherwise be lost; drop the 'you saw this in' echoes."
+  - unit: ch03
+    quote: "E essa capacidade os fabricantes passaram a treinar de propósito, junto com os seus harnesses."
+    type: logic
+    why: "The chapter argues the leap came from the hands (harness), not the brain; but if makers trained the model to use tools in sequence, that skill lives in the model. GPT-4o failing with two models on one task does not separate hands from brain."
+    suggestion: "Say plainly that hands and brain are intertwined, and soften 'o salto veio das mãos'."
+  - unit: ch04
+    quote: "Em janeiro, resolvi construir um editor de texto sem escrever uma linha de código."
+    type: confusing
+    why: "The preface says the book follows his year in order, but ch04 is in March and ends by jumping back to January/February for ch05. I briefly thought I had missed a chapter."
+    suggestion: "Add a half-sentence in ch04's close ('voltando dois meses') or reorder."
+  - unit: ch04
+    quote: "Junto aqui, numa lista curta, o que o ano me ensinou sobre usar essas ferramentas pra assuntos que importam."
+    type: boring
+    why: "Eight numbered rules plus Saúde, Dinheiro and Notícias subsections turned a good story about an invented coffee article into a handout."
+    suggestion: "Keep three rules in prose and send the rest to the apêndice C style of checklist."
+  - unit: ch04
+    quote: "Desde agosto de 2026, a Anthropic marca de forma invisível o texto que os modelos Claude produzem"
+    type: rewrite
+    why: "The watermark section arrives after the chapter's conclusion and has nothing to do with sycophancy. It felt stuck on."
+    suggestion: "Move it to the chapter about trusting announcements, or to the appendix with the cross-reference."
+  - unit: ch06
+    quote: "O primeiro foi o excesso de engenharia."
+    type: confusing
+    why: "Under the heading 'Quatro cenas de uma semana', the first sentence just says 'o primeiro' with no setup. I had to hold the count in my head until 'o quarto' appeared pages later."
+    suggestion: "Open with one line: 'Quatro coisas aconteceram naquela semana que mostram como o agente trabalha.'"
+  - unit: ch06
+    quote: "Numa equipe tradicional de dois ou três programadores, com revisão, controle de qualidade e reuniões, uma história bem feita leva em média um ou dois dias."
+    type: logic
+    why: "The '30 semanas contra 8 dias' figure comes from an imagined team and a count made by eye; the author says so, yet the number is the one I remember and it reappears in ch10's table."
+    suggestion: "Drop the figure from the narrative or keep only the sentence that warns against it."
+  - unit: ch07
+    quote: "A IA é o espelho da sua própria competência."
+    type: boring
+    why: "The mirror idea shows up in ch06 (twice), ch07, ch10, ch18 ('IA reflete quem você é') and ch20. By the fifth time I nodded without reading."
+    suggestion: "Use the line once as a punchline in ch06 and let later chapters refer to it in half a sentence."
+  - unit: ch08
+    quote: "Só que cada instrução dele gasta, em média, uns 13 ciclos, contra uns 4 do Nintendinho."
+    type: confusing
+    why: "Clock cycles, mappers, chips in the cartridge: I followed the heroic spirit but not the explanation of why the faster console is slower."
+    suggestion: "An everyday comparison (a faster talker who needs thirteen words for what another says in four) would carry it."
+  - unit: ch09
+    quote: "Em 2008, Robert C. Martin, o Uncle Bob, publicou *Clean Code*, um dos livros mais influentes da engenharia de software"
+    type: boring
+    why: "From here to the skills section it is about files with fewer than 500 lines, grep and a CLAUDE.md. Interesting for a programmer; I skimmed to the Jarvis passage."
+    suggestion: "Compress to two paragraphs and point to the technical appendix."
+  - unit: ch09
+    quote: "Nos casos em que a pessoa me mostrou o pedido, muitas vezes o defeito começava ali."
+    type: logic
+    why: "The chapter starts with a sample of people who showed him their prompts and ends 'a resposta que ela recebeu foi 42', as if a failure usually means a bad question. He grants models differ, but the arc leans on blaming the user."
+    suggestion: "End the chapter with the balance he wrote in the first pages: sometimes the model fails, sometimes the question."
+  - unit: ch10
+    quote: "o Frank Type, um treino de digitação com trechos de livros em domínio público"
+    type: boring
+    why: "Frank Lyrics, Frank Type, Frank Geary, Frank Yomik, Frank Sherlock, FrankMD: by this chapter the names merged into one blur and I could not recall which was which."
+    suggestion: "Keep two projects as characters (FrankMD, Yomik) and mention the rest as 'e outros'."
+  - unit: ch11
+    quote: "No topo, sete modelos de duas empresas, OpenAI e Anthropic, empataram em 100, entre eles o GPT-5.6 Terra, o Claude Opus 5 e o Claude Opus 5.5."
+    type: boring
+    why: "Terra and Sol, Flash and Max, 83,5 versus 92,5: a cascade of names and decimals. The takeaway (the top is a group) was already clear from the figure."
+    suggestion: "Say 'sete modelos empataram' and name one."
+  - unit: ch12
+    quote: "Se o Rio fosse 60% Nex e 40% Qwen, então, em cada bloco de pesos do modelo, a diferença entre o Rio e o Qwen deveria ser uns 60% da diferença entre o Nex e o Qwen."
+    type: confusing
+    why: "I could not picture the arithmetic, and without it the whole 'prova mais forte' paragraph is lost on me."
+    suggestion: "Use paint: mix 60% red with 40% white and every shade lies 60% of the way from white to red."
+  - unit: ch13
+    quote: "Um modelo pequeno que a RTX escrevia a 155 tokens por segundo, o mini-PC escrevia a 23."
+    type: rewrite
+    why: "The chapter opens on a hardware comparison in tokens per second. The estante-and-corredor image three pages later is what actually explained it."
+    suggestion: "Open on the escritor who walks to the shelf for every word; bring the numbers after."
+  - unit: ch13
+    quote: "Em setembro de 2026 virou febre um produto chamado Jev, da TypeSafe, vendido como uma revolução"
+    type: confusing
+    why: "I got test results for Jev (97,6%) in ch13 and the whole exposé of why it is hype only in ch14, so I read the numbers without knowing the story."
+    suggestion: "Swap the order of the two sections or tell the Jev story first."
+  - unit: ch14
+    quote: "Pra quem perdeu a conta dos nomes, os lados ficam assim."
+    type: rewrite
+    why: "In three pages I met Coxon, Sacks, Amodei, Musk, Altman, Huang, LeCun, Ng and Hinton. The author had to add a scoreboard sentence, which is a sign the telling is too crowded."
+    suggestion: "Tell the Hugging Face incident and the resignations as a scene; reserve the names for the scoreboard."
+  - unit: ch14
+    quote: "Quem esperou um mês antes de ter medo, ou de comprar, quase sempre economizou as duas coisas."
+    type: logic
+    why: "'Wait a month' is drawn from three 2026 headlines that changed shape. It works as a heuristic but 'quase sempre' is more than three cases can bear, and a real security breach does not become smaller by waiting."
+    suggestion: "Say 'muitas vezes' and keep it as advice, not a law."
+  - unit: ch15
+    quote: "Em 30 de setembro de 2026, o código do ai-jail passou por duas auditorias de segurança no mesmo dia, sobre a mesma versão."
+    type: boring
+    why: "The chapter has a gripping first half (faxina, NAS). Here it turned into the changelog of the author's own product."
+    suggestion: "Condense the Docker door and the two audits to one paragraph about 'segunda opinião' and keep the layers image."
+  - unit: ch17
+    quote: "nada do que segue é cem por cento factual"
+    type: logic
+    why: "A big disclaimer up front made me doubt everything, and then the findings are stated flatly (91 apps, 204 libraries). I could not tell what to believe."
+    suggestion: "State the limits once, briefly, then hedge each uncertain item in place."
+  - unit: ch17
+    quote: "Tem um jeito bem mais antigo que o fingerprint de alguém tirar coisas de você: pedindo com educação."
+    type: rewrite
+    why: "The title promises 'o que os aplicativos sabem de você'; by the midpoint I was in phishing, then a scam-detector, then video generation, then reverse engineering again. Four chapters in one."
+    suggestion: "Split after 'O que dá pra fazer com o seu celular' or give the scams a separate title."
+  - unit: ch18
+    quote: "Em cada degrau a interface mudou e a máquina continuou exigindo precisão."
+    type: logic
+    why: "A compiler really does demand precision; a chatbot does not, and its tolerance for vague requests is exactly the book's complaint. The punched-card analogy is lovely but this sentence overreaches."
+    suggestion: "Say the demand for precision moved from the syntax to the intent."
+  - unit: ch18
+    quote: "sete linguagens (de Rust e Haskell a Python e Ruby), quatro modelos"
+    type: boring
+    why: "For someone who will never choose a programming language, the Bend 2 and language-benchmark section is a different book. The conclusion ('testes ajudaram mais') is good but short."
+    suggestion: "Cut to two paragraphs and leave the rest to the appendix."
+  - unit: ch19
+    quote: "O mínimo que eu considero obrigatório, e que ficou barato de manter com agentes:"
+    type: boring
+    why: "Six items: automated tests, CI, feature flag, staging, rollback, monitoring. Terms I know nothing about, defined in half a line each, in a list. I was in a corporate training."
+    suggestion: "One paragraph on the idea (you must be able to undo quickly) and the details in an appendix for managers."
+  - unit: ch19
+    quote: "O cliente é o revisor mais barato e mais confiável que existe"
+    type: logic
+    why: "Sounds like using customers as unpaid testers, in the same book that warns that code goes out faster than anyone can read it and that 300 subscribers would have received a broken newsletter. The caveats come later, but the sentence is jarring."
+    suggestion: "Rephrase: real use finds what review misses, so release small to few people first."
+  - unit: ch19
+    quote: "Até aqui eu falei de como a empresa trabalha. Falta falar do que ela vende."
+    type: rewrite
+    why: "The Adobe/Photoshop section is lively but belongs to the earlier 'fosso' conversation, not to 'why AI fails at your company'. A third topic in one chapter."
+    suggestion: "Move it to ch10 next to the fosso or give it a short interlude of its own."
+  - unit: ch20
+    quote: "Nada disso entrou no treino."
+    type: logic
+    why: "The mapa em branco argument rests on 81,5% of GitHub contributions being private and then asserts that none of it was used for training. Contribution counts are not code volume, and nobody outside the labs can know that."
+    suggestion: "Say 'quase nada, até onde se sabe' and drop the percentage or explain its limits."
+  - unit: ch20
+    quote: "Se a inteligência de base parou, a mudança que eu senti veio do"
+    type: logic
+    why: "The book's central claim is that the base stopped and the hands improved. The evidence is a saturated test, a shrinking gap in a leaderboard, and reports from labs; the author admits each is only 'compatível'. I wanted the conclusion to be more tentative than the big title."
+    suggestion: "State in one sentence that this is a reading, not a proof, right where it becomes the book's thesis."
+  - unit: ch20
+    quote: "Foi daí que nasceu o ai-memory, o sistema de memória pra agentes que eu prometi contar em"
+    type: rewrite
+    why: "After the book's best idea (the model is a locked file, what is learned stays with you) the chapter slides into the story of the author's own tool. He flags the conflict of interest, which I appreciated, but the shift in tone is abrupt."
+    suggestion: "End the chapter on 'O que é seu' as a principle and leave the product to the appendix."
+  - unit: epilogo
+    quote: "Se você é pai ou mãe, e o seu filho adolescente pergunta se a IA vai acabar com o mundo:"
+    type: rewrite
+    why: "Monday lists for office worker, manager, parent, beginner programmer; the preface promised a place for the reader who came 'só por curiosidade' and the epilogue never gives one."
+    suggestion: "Add a short closing for the curious reader: where to go next (apleituras, the interludes, the Go story)."
+cut_candidates:
+  - {unit: como-ler, where: "## Glossário, referências e fontes", why: "Describes the apparatus of the book in detail; a reader finds it by using it."}
+  - {unit: antes, where: "O que eu deixei de fora de propósito é a mecânica por dentro:", why: "The technical bullet list scared me; one sentence would do."}
+  - {unit: ch03, where: "### O plugin que eu esqueci ligado", why: "Numbers (24 to 91, 57 to 18) for a point already made by the DeepSeek story."}
+  - {unit: ch07, where: "### Do índice ao reconhecimento de rostos", why: "Sherlock commit counts and cross-platform builds; the chapter has enough stories."}
+  - {unit: ch09, where: "## Um leitor com pressa", why: "Clean Code, grep and rule-file syntax; the information is for programmers and has an appendix."}
+  - {unit: ch12, where: "## O boato que não sobreviveu ao teste", why: "A long detective story that ends in 'no evidence found'."}
+  - {unit: ch15, where: "### Duas auditorias, os mesmos dois furos", why: "Product maintenance detail; the lesson (second opinion) is already in ch06 and in the faxina."}
+  - {unit: ch16, where: "### O outro lado da briga", why: "Zig vs Rust argument inside a story about trust in AI-written code."}
+  - {unit: ch18, where: "## Que linguagem aprender", why: "Useful to programmers only; the chapter's heart is the punched card."}
+  - {unit: ch20, where: "## Sete anos numa página", why: "Retells ch01 and ch03 and duplicates the timeline appendix."}

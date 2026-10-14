@@ -33,7 +33,7 @@ Em junho, uma das maiores empresas do setor, com o pedido pra abrir capital na b
 O outro mundo era o do meu terminal. De fevereiro a maio, passei mais de 500 horas programando quase só com [agentes]{.gls key=agente} de IA, os programas que deixam o modelo ler arquivos, rodar comandos e trabalhar sozinho por horas. Foram 24 projetos, uns que deram certo, outros que viraram lixo.
 
 <!-- src: 2026/10/12/llms-agentes-competente-o-suficiente -->
-Depois vieram meses colocando dezenas de modelos numa prova de programação que eu mesmo montei, conferindo o resultado um por um, mês a mês. Quando juntei tudo, em outubro, a curva que a propaganda desenhava subindo pro céu aparecia nos meus números como uma linha quase plana.
+Depois vieram meses colocando dezenas de modelos numa prova de programação que eu mesmo montei, conferindo o resultado um por um, mês a mês. Quando juntei tudo, em outubro, fui procurar a curva que a propaganda desenhava subindo pro céu nas medições que não dependem de quem vende o modelo. Quem treina os modelos vinha contando, desde o fim de 2024, que aumentar o treino básico rendia cada vez menos, e os melhores modelos se espremiam num pelotão cada vez mais apertado. Somando isso a um ano de uso diário, a minha leitura é que a inteligência de base dos modelos parou de dar saltos.
 
 <!-- src: original -->
 A distância entre os dois mundos ia nos dois sentidos. Em vários pontos a ferramenta era melhor do que os céticos admitiam: dá pra construir software de verdade com ela, e eu construí. Em outros, era bem pior do que os anúncios vendiam. Ela erra com a maior confiança, concorda com qualquer coisa que você já pensava, esquece o que foi combinado uma hora antes e precisa de alguém experiente conferindo o que sai.

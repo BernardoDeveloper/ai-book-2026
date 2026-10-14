@@ -53,7 +53,7 @@ Se você está começando na programação:
 ## Medo vende
 
 <!-- src: 2026/02/24/rant-o-akita-abriu-as-pernas-pra-ia -->
-Você conheceu em @sec-ch01 a frase do cartão: a sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA. Depois deste ano, eu acrescentaria que boa parte do medo segue a mesma regra. Quanto menos a pessoa sabe como a coisa funciona, mais espaço sobra pra imaginar o fim do mundo.
+Você conheceu em @sec-ch01 a frase do cartão: a sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA. Depois deste ano, eu acrescentaria que parte do medo segue a mesma regra. Quando a pessoa não sabe como a coisa funciona, sobra espaço pra imaginar o fim do mundo.
 
 <!-- src: original -->
 Boa parte, não todo. Em @sec-ch14 você viu pesquisadores sérios, que sabem muito bem como a coisa funciona, preocupados de verdade, e esse medo merece ser ouvido e discutido com argumento. O que não merece crédito é o medo fabricado por quem lucra com ele.
@@ -105,7 +105,7 @@ Essa lista é mais longa, e libera mais tempo:
 - curso e certificação do nome da moda do mês (harness engineering, loop engineering e parentes). Quando a tecnologia vira commodity, o dinheiro migra pro nome novo: cinco nomes pra encadear chamada de API e um certificado que expira em seis meses. Quem trabalha com método, teste e revisão já faz o que eles ensinam;
 - anúncio de [AGI]{.gls key=agi}, de extinção, de modelo perigoso demais pra lançar. O roteiro existe pelo menos desde 2019 (@sec-ch01), e @sec-ch14 mostra quem lucra com ele;
 - briga de ranking por décimo de ponto. No topo, os modelos formam um grupo, e a diferença entre eles cabe no [ruído entre execuções]{.gls key=ruido-entre-execucoes} (@sec-ch11);
-- a promessa de que o próximo modelo resolve. Os números de @sec-ch20 mostram uma linha reta lá em cima, e o que muda o resultado é o processo em volta;
+- a promessa de que o próximo modelo resolve. Os relatos de quem treina e as medições de fora, em @sec-ch20, mostram a inteligência de base achatando; o que ainda sobe é o que o agente faz com ferramentas, e o que muda o resultado é o processo em volta;
 - o vídeo do aplicativo feito em dez minutos. As primeiras horas são a parte fácil, e os outros noventa por cento estão em @sec-ch05.
 
 ## Confira você mesmo
