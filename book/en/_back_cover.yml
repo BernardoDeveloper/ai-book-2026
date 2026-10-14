@@ -1,0 +1,28 @@
+# Back cover of the printed English edition (scripts/compose_kdp_cover.rb).
+# Pango markup: <i>, <b>; &amp; for &. Adapted from the Amazon description.
+headline: "Will AI take your job? Will it become smarter than you? Is there someone in there?"
+paragraphs:
+  - >-
+    In 2026, Fabio Akita, a programmer since 1990 who lived through the
+    dot‑com crash from the inside, set out to answer those questions by
+    measuring: eight months building real software almost entirely with AI
+    agents, dozens of models put through a homemade benchmark, mistakes
+    made in public and corrected.
+  - >-
+    <i>Competent Enough</i> is the account of that year, written for people
+    who don’t program. No formulas, no hype. Why a chatbot’s text feels like
+    it comes from someone, why it agrees with you and invents sources. What
+    actually works when you use AI for real work. How to read a model ranking
+    or an “artificial general intelligence” announcement. How to let an agent
+    touch your files without losing them. And what happens to careers, and
+    what stays yours: deciding and checking.
+  - >-
+    Each chapter answers a concrete fear, with real stories, checked numbers
+    and the sources at the end of the book.
+bio: >-
+  <b>Fabio Akita</b> has been programming since 1990: ad agencies and
+  dot‑coms in the late 1990s, five years integrating SAP systems at large
+  companies, Ruby on Rails since 2007. Organizer of RubyConf Brasil from 2008
+  to 2016, founder of Codeminer 42 in 2011 and, from 2018 to 2023, host of
+  Akitando, a YouTube channel on computing fundamentals, the market and
+  careers. Writing at akitaonrails.com since 2006.

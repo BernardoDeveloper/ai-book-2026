@@ -63,6 +63,8 @@ generation:
   selected: 2
 post_processing:
 - 'flattened onto #FBF9F4, sRGB, alpha removed'
+- 'ebook covers: cropped to 1600x2560 with title, subtitle, author and portrait sticker set as type (scripts/compose_cover.rb)'
+- 'hardcover wraparound (EN): upscaled (Lanczos) to the front panel of the KDP template at 600 dpi, faded into a navy spine and back with type and sticker, converted to CMYK (scripts/compose_kdp_cover.rb)'
 human_contribution: art direction (scene brief), selection, placement and caption
 terms:
   provider_terms: https://openai.com/policies/services-agreement/

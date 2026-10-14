@@ -17,6 +17,7 @@ require "digest"
 require "fileutils"
 require "open3"
 require "rake/testtask"
+require "shellwords"
 
 ROOT = __dir__
 LANG = ENV.fetch("BOOK_LANG", "pt")
@@ -234,6 +235,28 @@ task :epubcheck do
   Dir[File.join(ROOT, "build", LANG, "*.epub")].each do |epub|
     sh "java", "-jar", EPUBCHECK_JAR, "--failonwarnings", epub
   end
+end
+
+# The hardcover's wraparound cover is built locally from KDP's cover template
+# (cover calculator PNG, unzipped under assets/cover/kdp/). The template is
+# drawn for one page count: after the interior's page count changes, download
+# a new template. Upload build/kdp/<title>-hardcover-cover.pdf to KDP.
+desc "Compose the hardcover wraparound cover PDF from the KDP template (TEMPLATE=path optional)"
+task :kdp_cover do
+  template = ENV["TEMPLATE"] || Dir[File.join(ROOT, "assets", "cover", "kdp", "*", "*.png")].max_by { File.mtime(_1) }
+  raise "no KDP template under assets/cover/kdp/ (pass TEMPLATE=)" unless template
+
+  print_pdf = Dir[File.join(ROOT, "build", LANG, "*.pdf")].reject { _1.end_with?("-ebook.pdf") }.first
+  raise "run `rake build BOOK_LANG=#{LANG}` first (the cover name and page count come from the print PDF)" unless print_pdf
+
+  pages = `pdfinfo #{print_pdf.shellescape}`[/^Pages:\s+(\d+)/, 1].to_i
+  tpl_pages = File.basename(template)[/_(\d+)_(?:BW|COLOR|STANDARD|PREMIUM)/i, 1].to_i
+  raise "template is for #{tpl_pages} pages, #{File.basename(print_pdf)} has #{pages}: get a new template from KDP" unless tpl_pages == pages
+
+  # build/kdp/, not build/<lang>/: the build tasks treat every PDF there as the book.
+  out = File.join(ROOT, "build", "kdp", File.basename(print_pdf, ".pdf") + "-hardcover-cover.pdf")
+  FileUtils.mkdir_p(File.dirname(out))
+  ruby "scripts/compose_kdp_cover.rb", template, out, "--lang", LANG
 end
 
 task default: %i[check build]
