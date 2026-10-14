@@ -29,7 +29,7 @@ Before going on, who I am in this story. I've been programming for more than thi
 ## Two Hundred Lines
 
 <!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
-The starting point came from February. Andrej Karpathy, one of OpenAI's founders and Tesla's former head of AI, published a file called microgpt: 200 lines of Python, with no external libraries, that train and run a GPT [@karpathy2026microgpt]. He called it "the full algorithmic content of what is needed". And added: "Everything else is just efficiency."
+The starting point came from February. Andrej Karpathy, one of OpenAI's founders and Tesla's former head of AI, published a file called microgpt: 200 lines of Python, with no external libraries, that train and run a GPT [@karpathy2026microgpt]. He called it "the full algorithmic content of what is needed." And added: "Everything else is just efficiency."
 
 The file closes a lineage of teaching projects of his: micrograd, which shows in a few dozen lines how the error flows back through the knobs; makemore, which generates names; nanoGPT, a compact GPT-2. And, one step further, nanochat, which he called the best ChatGPT that $100 can buy [@karpathy2025nanochat].
 
@@ -249,7 +249,7 @@ And if you're a manager, you don't need to train anything from scratch. Training
 The hard decision for whoever manages is a different one: which task is worth specializing, and how you're going to measure whether it turned out well. @sec-ch13 showed the size of that with the small classifiers.
 
 <!-- src: original -->
-And if you neither program nor manage anything, and just hear about this at work, the chapter gives you a yardstick. When a vendor announces it "trained its own model", ask three questions: trained on how much text, measured against which test, and did anyone outside check? You now know that a model trained from scratch at an ordinary company looks a lot more like my 337-million one than like GPT-4, and the questions in @sec-apC help tell one from the other.
+And if you neither program nor manage anything, and just hear about this at work, the chapter gives you a yardstick. When a vendor announces it "trained its own model," ask three questions: trained on how much text, measured against which test, and did anyone outside check? You now know that a model trained from scratch at an ordinary company looks a lot more like my 337-million one than like GPT-4, and the questions in @sec-apC help tell one from the other.
 
 ## The Future Is Smaller
 
