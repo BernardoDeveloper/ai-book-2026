@@ -4,6 +4,20 @@ Editions of *Competente o Suficiente*. Each version is a git tag (`vX.Y.Z`);
 pushing the tag builds the book and publishes a GitHub Release with the
 files.
 
+## 1.0.0-preview.6
+
+For the hardcover.
+
+- **New appendix "Este livro foi escrito por IA?"** / "Was This Book Written
+  by AI?": what the agents did and what the author did, why it wasn't two
+  prompts, what separates it from slop, and why only an experienced
+  professional gets a complete product out of AI agents, with this book as
+  the example. Built from the author's making-of post (10/13); the afterword
+  points to it.
+- **ISBN**: the English edition's copyright page carries the hardcover ISBN
+  (9798162395362, assigned by KDP); the Portuguese
+  edition has none yet. ISBNs are set per edition in `book/outline.yml`.
+
 ## 1.0.0-preview.5
 
 The narrator's history, both languages.

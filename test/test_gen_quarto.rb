@@ -135,4 +135,14 @@ class TestGenQuarto < ToolTest
     refute_includes colophon, "+local"
     refute_includes colophon, "ISBN"
   end
+
+  # Guards the per-edition ISBN: meta.isbn {pt: ...} prints only on the PT
+  # copyright page, labeled as the hardcover's; the EN edition prints none.
+  def test_isbn_per_edition
+    fx.edit("book/outline.yml") { _1.sub("meta:\n", "meta:\n  isbn:\n    pt: \"9798162395362\"\n") }
+    gen("pt")
+    assert_includes profile("pt")["colophon"], "ISBN 9798162395362 (edição em capa dura)"
+    gen("en")
+    refute_includes profile("en")["colophon"], "ISBN"
+  end
 end

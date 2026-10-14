@@ -7,7 +7,7 @@ sources:
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "c6451afc1d26d440a2364ebee3249330f54d9e0ddcb493aa7fdba4c9ff72d8c4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/posfacio.md, sha256: "f5e37ac8224a52db5efaef70f154097284a56d6e775f4f4a0642c71d0e36a143"}
+translated_from: {file: book/pt/posfacio.md, sha256: "73158d52e0c8457e65be461ad31e9c576a56f5d90539f4c2e5ed325c81d81ac0"}
 ---
 
 # Afterword: How This Book Was Made {#sec-posfacio .unnumbered}
@@ -18,7 +18,7 @@ On October 12, 2026, I published the year's synthesis on the blog, the piece tha
 <!-- src: original -->
 I had written 131 posts on the blog in 2026, almost half a million words, on subjects ranging from model [benchmarks]{.gls key=benchmark} to bitcoin wallets. Reorganizing all that by hand, alone, would have taken months I didn't have. So I did what this whole book describes: I handed the grunt work to [agents]{.gls key=agente} and kept the deciding, the setting up of the process and the checking for myself.
 
-It's worth telling how it went, for two reasons. You have the right to know how the text you just read was produced. And the process itself is the last example of the book's thesis.
+It's worth telling how it went, for two reasons. You have the right to know how the text you just read was produced. And the process itself is the last example of the book's thesis. The most obvious question, whether this book was written by AI, gets a direct answer in @sec-apfeito.
 
 ## A Sealed Inventory
 

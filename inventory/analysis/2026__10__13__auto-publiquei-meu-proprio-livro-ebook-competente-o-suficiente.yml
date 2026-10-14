@@ -1,5 +1,5 @@
 id: "2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente"
-source_sha256: "47abeba9230d168bd7bf990860e167b9f2fc25ded58b76fb139ea74b93c65001"
+source_sha256: "0d435e79de9e1f54ea1807e862f303e235607474050bc7b2e85f0a8ed71ba55d"
 title_en: "I self-published my own book/ebook: Competent Enough"
 ai_relevance: substantial
 ai_relevance_reason: "Launch post for this book; most of it is the technical backstage of building the book with agents (inventory, provenance, contracts, verification, build pipeline)."
@@ -15,8 +15,8 @@ reader_value: "low for the book itself (meta: it describes how the book was made
 technical_depth: 3
 evergreen: 2
 book_use:
-  keep: []
-  cut: ["whole post: about this book itself; excluded by the author for now (2026-10-13)"]
+  keep: ["the answers to: written by AI? easy, a couple of prompts? slop? (appendix apfeito, author request 2026-10-14)", "only an experienced professional gets a complete product out of agents: decisions, rules, checks and cuts were the author's"]
+  cut: ["build pipeline and tooling detail (stays in the posfácio and the repository)"]
 jargon: []
 illustration_ideas: []
 people_events: []

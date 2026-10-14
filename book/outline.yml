@@ -10,6 +10,8 @@ meta:
   subtitle_en: "A year putting artificial intelligence to the test, without fear and without hype"
   author: "Fabio Akita"
   # Names owned by the author (copyright page, EPUB rights, HTML footer).
+  isbn:
+    en: "9798162395362"   # KDP free ISBN, EN hardcover (2026-10-14)
   owned_names: ["akitaonrails", "Akitando", "The M.Akita Chronicles", "ai-memory", "ai-jail", "ai-usagebar", "ghpending", "AI Lair", "Frank (FrankMD, Frank Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, FrankMega, Frank Karaoke, Frank GO, Frank Manga+ e demais projetos da série)"]
   open_source_licenses: {ai-jail: "GPL-3.0", ai-memory: "MIT", ai-usagebar: "MIT", ghpending: "MIT"}
   cutoff: "2026-10-13"
@@ -458,6 +460,18 @@ back:
       Meta-story: posts → analyses → outline → drafts → fact-check → human
       review, with provenance tracked per paragraph. The book as a final example
       of the book's thesis.
+  - id: apfeito
+    title: "Este livro foi escrito por IA?"
+    kind: appendix
+    brief: >-
+      Author request 2026-10-14. Answers three questions readers ask, plainly,
+      not technically: "Was this book written by AI?", "So it was easy, a
+      couple of prompts and done?", "So it's just slop, random text?". Draws on
+      the making-of post (10/13) and points to the posfácio for the process.
+      Makes the case, with this book as the example, that only an experienced
+      professional gets a complete product out of AI agents: the decisions,
+      the rules, the checks and the cuts were the author's; the agents typed.
+    sources: [10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente]
   - id: apmecanica
     title: "A máquina por dentro, sem matemática"
     kind: appendix
@@ -600,7 +614,6 @@ excluded:
   # Parked 2026-10-13 (author): pending due diligence; text in book/parked/genesys-pi/ (EDITORIAL-RULES R16).
   - {post: 09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro, reason: "parked: Genesys PI, due diligence pending (book/parked/genesys-pi/)"}
   - {post: 09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro, reason: "parked: Genesys PI, due diligence pending (book/parked/genesys-pi/)"}
-  - {post: 10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, reason: "about this book itself (launch and build process); not added for now (author, 2026-10-13)"}
   # Book cut-off moved to February 2026 (author, 2026-10-13): January posts are left out (meta.source_from).
   - {post: 01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush, reason: "before the February 2026 cut-off"}
   - {post: 01/10/ai-agents-garantindo-a-protecao-do-seu-sistema, reason: "before the February 2026 cut-off"}

@@ -17,7 +17,7 @@ Em 12 de outubro de 2026 publiquei no blog a síntese do ano, o texto que virou 
 <!-- src: original -->
 Eu tinha escrito 131 textos no blog em 2026, quase meio milhão de palavras, com assuntos que iam de [benchmark]{.gls} de modelo a carteira de bitcoin. Reorganizar aquilo à mão, sozinho, levaria meses que eu não tinha. Então fiz o que este livro inteiro descreve: entreguei o trabalho braçal a [agentes]{.gls key=agente} e fiquei com a parte de decidir, montar o processo e conferir.
 
-Vale contar como foi, por dois motivos. Você tem o direito de saber como o texto que leu foi produzido. E o próprio processo é o último exemplo da tese do livro.
+Vale contar como foi, por dois motivos. Você tem o direito de saber como o texto que leu foi produzido. E o próprio processo é o último exemplo da tese do livro. A pergunta mais óbvia, se este livro foi escrito por IA, tem resposta direta em @sec-apfeito.
 
 ## Um inventário lacrado
 

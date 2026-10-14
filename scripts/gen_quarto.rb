@@ -21,8 +21,13 @@ LANGS = {
 }.freeze
 cfg = LANGS.fetch(lang)
 edition = outline.dig("meta", "edition") || "1.0"
+# meta.isbn is per edition ({pt: ...}): an ISBN belongs to one language and
+# format (the KDP one is the PT hardcover's), so the other edition prints none.
+# Hidden until the author sets it.
 isbn = outline.dig("meta", "isbn")
-isbn_line = isbn ? "\n\nISBN #{isbn}" : "" # hidden until the author sets meta.isbn
+isbn = isbn[lang] if isbn.is_a?(Hash)
+isbn_label = { "pt" => "ISBN %s (edição em capa dura)", "en" => "ISBN %s (hardcover edition)" }
+isbn_line = isbn ? "\n\n#{format(isbn_label.fetch(lang), isbn)}" : ""
 year = outline.dig("meta", "cutoff").to_s[0, 4]
 # Revision printed on the copyright page so a reader can match a copy to a
 # release: the tag on release builds (CI sets GITHUB_REF_NAME), otherwise

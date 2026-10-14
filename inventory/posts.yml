@@ -1,6 +1,6 @@
 ---
 generated_from: "/home/akitaonrails/Projects/akitaonrails-hugo"
-blog_commit: b54f14bf348a68cd8529004a4743d35dbbc5590d
+blog_commit: 956fc9ed1cc8e32f61deeef64518eece134fd510
 dirty_files: []
 year: '2026'
 posts:
@@ -16159,11 +16159,11 @@ posts:
   url_pt: https://www.akitaonrails.com/2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente/
   url_en: https://www.akitaonrails.com/en/2026/10/13/i-self-published-my-own-book-ebook-competent-enough/
   pt:
-    sha256: 47abeba9230d168bd7bf990860e167b9f2fc25ded58b76fb139ea74b93c65001
+    sha256: 0d435e79de9e1f54ea1807e862f303e235607474050bc7b2e85f0a8ed71ba55d
     title: 'Auto-publiquei meu próprio Livro/e-book: Competente o Suficiente'
     description: 'Publiquei meu livro sobre IA, de graça, em EPUB e PDF: os 131 textos
       de 2026 do blog, quase meio milhão de palavras, reorganizados em 20 capítulos,
-      6 apêndices, glossário e quase 300 referências. Este texto é o bastidor técnico:
+      10 apêndices, glossário e mais de 300 referências. Este texto é o bastidor técnico:
       o inventário com hash de cada post, o contrato que cada agente lia antes de
       escrever, os rascunhos em paralelo, a marca invisível por parágrafo que liga
       o livro ao blog, o verificador que reprova capítulo com erro, o que a conferência
@@ -16174,7 +16174,7 @@ posts:
     - inteligencia-artificial
     - agentes-de-codigo
     - open-source
-    words: 4593
+    words: 6085
     links:
     - text: esta
       url: https://ailair.akitaonrails.com/pt-br/book/
@@ -16188,18 +16188,20 @@ posts:
       url: "/2026/10/12/llms-agentes-competente-o-suficiente/"
     - text: post sobre engenharia reversa
       url: "/2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu/"
+    - text: Akitando
+      url: https://www.youtube.com/@Akitando
     - text: EPUB
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente.epub
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.epub
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente-ebook.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente-ebook.pdf
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.pdf
     - text: EPUB
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough.epub
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.epub
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough-ebook.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough-ebook.pdf
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.pdf
     - text: página do livro
       url: https://ailair.akitaonrails.com/pt-br/book/
     - text: releases do GitHub
@@ -16211,11 +16213,11 @@ posts:
       url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/20261013190000_livro-competente-o-suficiente-3d.png
     youtube: []
   en:
-    sha256: dc2d197558d6533f19e8eb895ead06e506236bb995e77bad2ce57abb4a2304e2
+    sha256: f92fe64c51f8d817e9ec698391d1f251326c8052c5053f5119b29e83b0261ceb
     title: 'I Self-Published My Own Book/e-book: Competent Enough'
     description: 'I published my book about AI, for free, in EPUB and PDF: the blog''s
       131 posts from 2026, almost half a million words, reorganized into 20 chapters,
-      6 appendices, a glossary and almost 300 references. This text is the technical
+      10 appendices, a glossary and more than 300 references. This text is the technical
       backstage: the inventory with a hash per post, the contract every agent read
       before writing, the parallel drafts, the invisible per-paragraph marker that
       ties the book to the blog, the checker that fails a chapter with an error, what
@@ -16227,7 +16229,7 @@ posts:
     - artificial-intelligence
     - coding-agents
     - open-source
-    words: 4434
+    words: 5859
     links:
     - text: here
       url: https://ailair.akitaonrails.com/book/
@@ -16241,18 +16243,20 @@ posts:
       url: "/en/2026/10/12/llms-agents-competent-enough/"
     - text: reverse engineering post
       url: "/en/2026/10/13/ai-reverse-engineering-is-adobe-dead/"
+    - text: Akitando
+      url: https://www.youtube.com/@Akitando
     - text: EPUB
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough.epub
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.epub
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough-ebook.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough-ebook.pdf
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competent-Enough.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.pdf
     - text: EPUB
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente.epub
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.epub
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente-ebook.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente-ebook.pdf
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.3/Competente-o-Suficiente.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.pdf
     - text: book page
       url: https://ailair.akitaonrails.com/book/
     - text: GitHub releases
