@@ -5,9 +5,9 @@ sources:
   - {post: 2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros, sha256: "2b05e6d3d26f3a619e53e6350dcbcd6a3f36c3ea7a77961ce845ddbe9561b322"}
   - {post: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r, sha256: "4c8343cf9487f3e389341a2e5654a423cb2ff2cced3ecbbddb5aed5385b544c1", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
   - {post: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados, sha256: "5a6b08a8fdebc6eac5511e470883960e1f763187351f8df54e684349eee446c1"}
-refs_projects: []
+refs_projects: ["microgpt/README.md"]
 blog_commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"
-translated_from: {file: book/pt/apestudar.md, sha256: "14a69678fbc8d2c0db47707659f77fdfd9d4f28303acce292eb5abb0d26ca9a0"}
+translated_from: {file: book/pt/apestudar.md, sha256: "59f8180ccd01d957bcb29a194a6ab37e863a0fa57cc868055ba32fcb56fcc160"}
 ---
 
 # How to Study with AI at Your Side {#sec-apestudar}
@@ -26,6 +26,9 @@ Back then, the enemy was the step-by-step course. In 2026 a much friendlier adve
 The first rule asks for a real problem, with no script. The tutorial takes you by the hand to a result someone already knew; the real problem leaves you alone with something nobody has solved your way.
 
 With AI, the tutorial got even more comfortable, because now it adapts to you and even types the steps. That's why the problem has to be yours: a spreadsheet that irritates you at work, a little program you want to use, a doubt no video answers. That's how I spent four days hunting a defect in an emulator (@sec-ch08), and it's what turns the machine's answer into learning.
+
+<!-- src: ref:microgpt/README.md -->
+If the itch you want to scratch is AI itself, there's a good one to start with. The first lesson of my microgpt lab trains a model of under a million parameters on an ordinary CPU, in under a minute, and shows the whole cycle of @sec-ch13b in code you can actually read [@akita2026microgpt]. Run it, break it on purpose, change the size and see what happens before you ask any agent to explain it.
 
 ## Find the Material Yourself
 

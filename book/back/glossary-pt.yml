@@ -435,6 +435,11 @@ parametros:
   term: Parâmetros
   def: Os números ajustados durante o treino que guardam o que o modelo aprendeu,
     como bilhões de botões de um painel de som. "70B" quer dizer 70 bilhões de parâmetros.
+perda:
+  term: Perda
+  def: O número que mede o tamanho do erro de um modelo durante o treino, quanto ele
+    errou ao adivinhar o próximo pedaço de texto. O treino tenta diminuí-la; uma perda
+    menor nem sempre quer dizer um modelo mais útil.
 pesos:
   term: Pesos
   def: O mesmo que parâmetros. Depois do treino ficam congelados; o modelo não aprende
@@ -647,6 +652,11 @@ token:
   term: Token
   def: O pedaço de texto com que o modelo trabalha, em geral um fragmento de palavra.
     Modelos leem, escrevem e cobram por tokens.
+tokenizador:
+  term: Tokenizador
+  def: A parte do modelo que quebra o texto em tokens e os converte em números, e
+    de volta. Cada modelo tem o seu vocabulário, montado antes do treino; quanto maior
+    o vocabulário, mais parâmetros vão pra tabela que guarda cada entrada.
 tool-calling:
   term: Tool calling
   def: Chamada de ferramentas. O modelo escreve, num formato combinado, um pedido

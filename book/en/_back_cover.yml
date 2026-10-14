@@ -16,9 +16,6 @@ paragraphs:
     or an “artificial general intelligence” announcement. How to let an agent
     touch your files without losing them. And what happens to careers, and
     what stays yours: deciding and checking.
-  - >-
-    Each chapter answers a concrete fear, with real stories, checked numbers
-    and the sources at the end of the book.
 bio: >-
   <b>Fabio Akita</b> has been programming since 1990: ad agencies and
   dot‑coms in the late 1990s, five years integrating SAP systems at large
@@ -26,3 +23,8 @@ bio: >-
   to 2016, founder of Codeminer 42 in 2011 and, from 2018 to 2023, host of
   Akitando, a YouTube channel on computing fundamentals, the market and
   careers. Writing at akitaonrails.com since 2006.
+# The author's sayings, set as pull quotes above the bio.
+quotes:
+  - "“Do not outsource your decisions.”"
+  - "“Your enthusiasm for AI is inversely proportional to your knowledge about AI.”"
+  - "“AI is a mirror: it reflects who you are.”"

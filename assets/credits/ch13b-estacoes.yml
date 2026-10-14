@@ -1,0 +1,26 @@
+---
+id: ch13b-estacoes
+kind: chart_code
+file: assets/figures/ch13b-estacoes.png
+sha256: 5ffb196a01818cfd62febe66f32e0340cf7287c6cd68b1ca58b2ac6f075ba2ed
+pixels:
+  width: 1920
+  height: 1065
+source: assets/charts/ch13b-estacoes.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I scripts/chart_check.py assets/charts/ch13b-estacoes.py
+    pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+description: 'ch13b-estacoes: the six stations of building an LLM, with the microgpt
+  lab numbers.'
+chapters:
+- ch13b
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

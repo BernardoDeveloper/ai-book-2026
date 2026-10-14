@@ -1,0 +1,170 @@
+persona: junior
+summary: |
+  I'm Lucas, a year into my first job, and I came to this chapter hoping it would tell me whether the people who build models are a different species from me. It did. The Karpathy 200 lines, the 100-dollar nanochat and the rented-GPU price (about US$165 for the whole run) gave me an actual Saturday project, and "Difícil, não feitiçaria" is the line I'll remember. The failure ladder (valid Python 100/100, correct 58/100, repo fixes 0/4) is the best part, because it shows exactly what "looks like code" hides and why my job of checking and wiring things up is not going away next year. What nearly lost me: the six-stations tour is a bit long on numbers I can't place (305 mil rodadas, 64 mil sorteios, 97 mil de 99 mil), and a few terms (SFT, perda, camadas, contexto) are used before I'm sure I own them. The "para o estudante" advice is good but still vague about what to do after the 200 lines, and the closing "O futuro é menor" turns into market prediction that doesn't help me decide anything. The hand-off from ch13 into ch13b is smooth, and the hand-off into ch14 is abrupt but works as a hook.
+best:
+  - "ch13b: 'Difícil, não feitiçaria', with the amateur doing the whole cycle in under two weeks on a gaming GPU"
+  - "ch13b: the 'abismo' figure, valid Python 100/100 down to 0/4 repo fixes"
+  - "ch13b: 'Tamanho do cérebro, anos de escola', parameters vs tokens finally clicked"
+  - "ch13b: the dictionary that ate the brain (154M of 239M params in the vocabulary table)"
+  - "ch13b: the student advice with real costs (RTX 5090 rental, nanochat 100 dollars)"
+worst:
+  - "ch13b: 'Pré-treino' paragraph, a pile of counts (305 mil rodadas, 32.768 tokens, 2.048 janelas) with no anchor"
+  - "ch13b: 'Ajuste (SFT)', 99 mil candidatos / 97 mil passaram / 64 mil sorteios / 10 milhões de tokens in one block"
+  - "ch13b: 'O futuro é menor', drifts into market forecasting and a list of domain models"
+  - "ch13b: the 'tropeços' section hints at more mistakes in the appendix without saying which one matters"
+  - "ch14 opening: jumps from the home-model story to Fable benchmark with little bridge beyond the last paragraph"
+units:
+  - {unit: ch13b, score: 4, note: "I finally believe I could build a toy model; the numbers in the middle slowed me but the failure ladder paid it all back"}
+annotations:
+  - unit: ch13b
+    quote: "Parece coisa de mago, feita num porão por meia dúzia de gênios."
+    type: rewrite
+    why: "Good hook, and it sets up the question I actually had. But the 78 million dollar GPT-4 number just before it makes the contrast with a home GPU feel unfair; I was not sure yet what the comparison was meant to prove."
+    suggestion: "Say up front that the home model is a different class of object (small, not useful) so the comparison is not read as 'frontier models are easy'."
+  - unit: ch13b
+    quote: "Os 337 milhões de botões do modelo começaram em posições sorteadas"
+    type: confusing
+    why: "'Botões' is the book's metaphor for parameters, but the real term only shows up later in 'modelo final, de 337 milhões de parâmetros'. In the opening I wasn't sure if botões = parâmetros."
+    suggestion: "Write 'parâmetros (os botões do apêndice)' once at first use."
+  - unit: ch13b
+    quote: "Cada rodada de ajuste dos botões olha 32.768 tokens de uma vez."
+    type: confusing
+    why: "I know a batch size, but the text never uses that word, and 305 mil rodadas x 32.768 = 10 bi isn't shown, so I couldn't connect the three numbers."
+    suggestion: "Show the multiplication in one line: 305 mil rodadas x ~32 mil tokens = 10 bilhões."
+  - unit: ch13b
+    quote: "De quase 99 mil candidatos, 97 mil passaram. O modelo escolhido treinou em 64 mil sorteios desses exemplos"
+    type: boring
+    why: "Four numbers in three sentences, none of which I can judge. I skimmed. Meanwhile the figure says '4.000 atualizações', which I couldn't reconcile with 64 mil."
+    suggestion: "Keep only: nearly all examples were re-run and checked before use. Move counts to the technical appendix."
+  - unit: ch13b
+    quote: "4.000 atualizações com exemplos"
+    type: logic
+    why: "The figure says SFT is 4.000 updates, but the text later says doubling 4 mil to 8 mil made things worse and the chosen model used 64 mil examples. I had to guess that 4.000 updates is the final recipe and 64 mil is the number of examples."
+    suggestion: "Say 'atualizações' vs 'exemplos' explicitly in the SFT section."
+  - unit: ch13b
+    quote: "O SmolLM2, um modelo aberto de 360 milhões de parâmetros, praticamente do tamanho do meu, foi treinado com 4 trilhões de tokens"
+    type: rewrite
+    why: "This is the comparison that made the chapter click, but it comes after a long list of stations. The log-scale figure helped, though I had to reread 'cada marca vale dez vezes'."
+    suggestion: "Move the 'cérebro vs anos de escola' idea earlier, right after the stations, and keep the Llama/Qwen bars as the figure only."
+  - unit: ch13b
+    quote: "Pro meu modelo, isso dá uns 6,7 bilhões, e eu passei disso. Só que os modelos pequenos modernos passam muito desse ponto de propósito"
+    type: confusing
+    why: "Chinchilla is dropped in and immediately qualified; I couldn't tell whether I should treat 20 tokens/param as a rule or as something people ignore. I stopped following the reasoning on 'barato de usar pelo resto da vida'."
+    suggestion: "One sentence on why more training makes inference cheaper (smaller model for same quality), or cut the Chinchilla paragraph."
+  - unit: ch13b
+    quote: "Ninguém mediu o consumo de energia de verdade, então eu fiz conta de padeiro."
+    type: rewrite
+    why: "I liked the honesty, but then 79 kWh and 80 reais are given as a ceiling; the real note I'd want is the plain 'a few tens of reais'. The unit slide from kWh to R$ costs a few seconds."
+    suggestion: "Lead with the cost in reais, kWh in parentheses."
+  - unit: ch13b
+    quote: "Só o Llama somou umas 225 mil vezes as minhas horas, em placas bem mais rápidas que a minha."
+    type: boring
+    why: "Three comparisons in a row (Llama, DeepSeek, mine). The 225 mil is striking, the DeepSeek 5,6 milhões de dólares sentence added nothing for me."
+    suggestion: "Keep Llama only."
+  - unit: ch13b
+    quote: "Aí eu pedi, na mão, uma função de \"olá, mundo\""
+    type: rewrite
+    why: "Strong moment for me: it matches the junior experience of passing the tests I wrote and failing on a new task. But the 91M model story comes before I know the sizes were a progression, so I wasn't sure which model this was."
+    suggestion: "Add a small timeline of the four sizes before 'Os tropeços', or name each model by size at every mention."
+  - unit: ch13b
+    quote: "a perda é a opinião do treino sobre si mesmo"
+    type: confusing
+    why: "Nice line, but 'perda' was defined one paragraph above as 'tamanho do erro na adivinhação' and I had met it as 'loss' elsewhere. Good, except 'a perda continuou caindo' while accuracy fell needs one more sentence on why lower loss can mean worse code."
+    suggestion: "Add: the model gets better at imitating text, not better at passing tests."
+  - unit: ch13b
+    quote: "154 milhões eram a tabela de vocabulário, com suas 200 mil entradas. Sobravam 85 milhões pras camadas que pensam"
+    type: confusing
+    why: "I understood the point from the figure, not the text. Why does a bigger vocabulary cost parameters? The text never says each entry is a vector of numbers."
+    suggestion: "Add one sentence: each of the 200 mil words is stored as a long list of numbers, so a big dictionary is a big table."
+  - unit: ch13b
+    quote: "essa virada mudou o vocabulário, o tamanho, o começo do treino e a quantidade de texto de uma vez só"
+    type: logic
+    why: "Fair caveat, but the section title and figure caption present the dictionary as the cause ('Onde foram parar os parâmetros... dedicou quase tudo às camadas que pensam'). The reader leaves believing vocabulary size fixed it."
+    suggestion: "Soften the title and caption to say the budget shifted, not that it was the fix."
+  - unit: ch13b
+    quote: "Sintaxe, protocolo e janela de contexto saíram em duas semanas numa placa de jogo."
+    type: logic
+    why: "The 'janela de contexto' part contradicts the body: the 0/9 long-context result says the model did not work with long context; only the server accepted long inputs. As a takeaway line it overstates."
+    suggestion: "Replace with 'o servidor aceita contexto longo, o modelo não usa'."
+  - unit: ch13b
+    quote: "a versão de 10 bilhões resolveu 8 de 100, e as de 2 e 5 bilhões, zero"
+    type: confusing
+    why: "Good detail, but the earlier sentence says 65 de 100 for 10 bi with the short fine-tune and then 68 e 58 for the final. Three different 'out of 100' scores (choice tasks vs reserved) are hard to keep straight."
+    suggestion: "A small table: version x with/without fine-tune x choice set x reserved set."
+  - unit: ch13b
+    quote: "Como autocompletar de função isolada, serve pra estudo."
+    type: rewrite
+    why: "Best honest summary of the model and it arrives late. I wanted this verdict right at the start of the results section."
+    suggestion: "Move it to the first paragraph of 'O que saiu do outro lado'."
+  - unit: ch13b
+    quote: "Das 42 que erraram, 39 pareciam perfeitas e faziam a coisa errada."
+    type: rewrite
+    why: "This is the key sentence for my career fear: plausible but wrong code is exactly what a reviewer is for. It's buried between the ladder and the examples."
+    suggestion: "Make it a blockquote or tie it directly to the reviewer role."
+  - unit: ch13b
+    quote: "Dias de engenharia e dezenas de horas de placa em cada passo, sem nenhuma garantia de que um número fixo de horas resolva."
+    type: logic
+    why: "In the student section the book says a useful task model 'sai em horas' with fine-tuning; here the gap to an agent is 'dias de engenharia'. Both can be true but the reader gets 'hours' and 'days and no guarantee' without a bridge."
+    suggestion: "Say clearly that fine-tuning an existing model for a narrow task is a different, much easier job than training from scratch."
+  - unit: ch13b
+    quote: "Com qualquer uma, um modelo útil pra uma tarefa sai em horas."
+    type: logic
+    why: "Overclaim stated flatly right after the chapter spent pages on how hard measuring 'useful' is; it contradicts the next paragraph, which says the hard part is deciding and measuring."
+    suggestion: "'um primeiro modelo treinável sai em horas; saber se ficou bom é o trabalho de verdade.'"
+  - unit: ch13b
+    quote: "Conte em anos de estudo, nunca em fins de semana."
+    type: confusing
+    why: "Contradicts the earlier 'comece pelas 200 linhas, que rodam em qualquer notebook'. I couldn't tell whether the weekend project is realistic or not."
+    suggestion: "Split: the 200 lines are a weekend, the profession is years."
+  - unit: ch13b
+    quote: "Comece pelas 200 linhas do Karpathy"
+    type: rewrite
+    why: "As a junior I wanted a concrete order: 200 lines, then micrograd/makemore, then nanochat, then the book's project, with what each teaches. The advice is spread over three paragraphs and mixes in cost."
+    suggestion: "A short ordered list of four steps."
+  - unit: ch13b
+    quote: "Se você é pai ou mãe de alguém que pergunta se vale a pena estudar isso, a resposta curta é sim."
+    type: boring
+    why: "The audience-by-audience wrap-up (student, parent, manager, everybody else) felt like a stack of mini-sermons. I only needed the student one, and I skipped the rest."
+    suggestion: "Cut or compress the parent and the 'quem não programa' paragraphs; ch20 covers them."
+  - unit: ch13b
+    quote: "cada bilhão de parâmetros a mais rende menos do que o anterior"
+    type: logic
+    why: "Stated as fact with no source or example, in a chapter that spent pages on being careful with claims; it also sits awkwardly beside the Mythos hype the next chapter debunks."
+    suggestion: "Either cite the scaling-law result or label it as the author's read."
+  - unit: ch13b
+    quote: "Vale lembrar quem está fazendo a previsão."
+    type: boring
+    why: "The disclaimer is honest but the section is still a forecast; for my career question the useful part is 'narrow models + harness', which is two paragraphs, not ten."
+    suggestion: "Trim the MedGemma/SaulLM/Apple/NVIDIA citation run to one example."
+  - unit: ch13b
+    quote: "Pela régua que eu tenho hoje, se treina em meses, em data center, com trilhões de tokens, e depois se especializa."
+    type: confusing
+    why: "A leap: the book shows that a home GPU model fails, then asserts that months in a data center would fix it. Nothing measured supports 'meses'."
+    suggestion: "Say it's an inference from the size gap, not a result."
+  - unit: ch13b
+    quote: "A pergunta que ficou foi por que a história em volta dele era tão maior que o resultado."
+    type: rewrite
+    why: "As a hook into ch14 it works for me, but it appears after a paragraph of dollar figures ('centenas de milhões'), and the transition from the home model to Anthropic's IPO filing is abrupt."
+    suggestion: "One bridging sentence on 'story vs result' that applies to the home model too."
+  - unit: ch14
+    quote: "Esse empate me fez rir, e pra entender por quê é preciso voltar dois meses no calendário."
+    type: rewrite
+    why: "After ch13b's long technical walk, ch14 starts with a fresh anecdote, which is a relief. But the first lines (benchmark, 94 vs 95) assume I remember the benchmark from ch11."
+    suggestion: "Name the chapter that introduced the benchmark in the first paragraph."
+chapter:
+  followable: |
+    I followed the arc but stopped following the numbers in three places. "Cada rodada de ajuste dos botões olha 32.768 tokens de uma vez" and "Foram 305 mil rodadas, 10 bilhões de tokens lidos" (what a "rodada" is, how it relates to the 10 bi). Second, "De quase 99 mil candidatos, 97 mil passaram. O modelo escolhido treinou em 64 mil sorteios" against the "4.000 atualizações com exemplos" in the stations figure. Third, "154 milhões eram a tabela de vocabulário", because the text never says why vocabulary costs parameters; the parameter-split figure rescued that one. The stations figure was a clean map and helped me hold the order; the escala and abismo figures did their job at once. The scores in the results section (68 / 58 / 65 / 52 / 39) were the hardest to keep apart and no figure covers them.
+  wizardry: |
+    Difficult but within reach of someone who studies. What made me feel that: "Eu, um amador no assunto, montei o ciclo inteiro em menos de duas semanas, com uma placa de vídeo que se compra em loja", the six-station breakdown that makes each step something I recognise (data, tokenizer, loop, fine-tune, server, tests), "É paciência e método, e isso se aprende", and "O que os laboratórios fazem a mais é o mesmo ciclo com mais zeros". The 200 lines of Karpathy and the US$165 rental price make it concrete. The 0/4 and 0/9 results also keep it honest: a toy is within reach, a useful agent is not.
+  so_what: |
+    My career worry is partly answered: the model writes plausible code that is wrong 39 times out of 42 when it fails, and cannot act in a repo at all, so someone has to review, test and wire it up. And I now have a real study path (200 lines, then nanochat, then rent a GPU) that would make me someone who knows how the thing works, not only someone who uses it.
+  seams: |
+    ch13 to ch13b reads as one story: "quanto de um modelo desses eu consigo construir sozinho, do zero?" is a natural question after the pantry/mini-PC comparison, and the same GPU carries over. The only roughness is that ch13's two pages on classifiers (Jev) lead to "O que cabe na prateleira" and then the new chapter changes topic from using to building. ch13b to ch14 is abrupt: the last paragraph jumps from a consumer GPU model to Anthropic's IPO and Mythos with only the 'story larger than the result' hook. It works as a cliffhanger rather than a bridge, and I'd tolerate it, but the "O futuro é menor" section sits oddly between the two.
+  jargon: |
+    SFT (explained, but the acronym is introduced after "Ajuste"), "perda" (explained but I kept translating it as loss), "tokenizer" vs "tokenizador" (both used, figure says Tokenizer), "janela de contexto" (used for the server and the failed long text with no definition here), "camadas" (never said what a layer is), "contêiner" (assumed), "MoE" (ref'd to ch13 only), "destilação" and "fine-tuning" (named in one sentence; a manager would stumble), "rodada" / "atualizações" / "sorteios" (used for related but different things), "grupo de controle" and "ponto de decisão" in a context where I wasn't sure what was being controlled.
+cut_candidates:
+  - {unit: ch13b, where: "Pesquisadores da NVIDIA defenderam em 2025 que modelos pequenos bastam...", why: "Four citations in a row (MedGemma, SaulLM, NVIDIA, Apple) say the same thing; one suffices."}
+  - {unit: ch13b, where: "Do outro lado da escala, o Llama 3.1 de 405 bilhões...", why: "The DeepSeek comparison adds a second number without a new idea."}
+  - {unit: ch13b, where: "Se você é pai ou mãe de alguém que pergunta...", why: "Short, generic, and the parent persona is served elsewhere."}
+  - {unit: ch13b, where: "Existe uma regra de bolso famosa sobre isso... Chinchilla", why: "Useful to experts, a detour for a general reader; one clause would do."}
+  - {unit: ch13b, where: "Teve mais: um treino recomeçado do ponto errado...", why: "A teaser of mistakes that live in the appendix; no payoff here."}

@@ -436,6 +436,11 @@ parametros:
   term: Parameters
   def: The numbers adjusted during training that hold what the model learned, like
     billions of knobs on a sound mixing desk. "70B" means 70 billion parameters.
+perda:
+  term: Loss
+  def: The number that measures the size of a model's error during training, how far
+    off it was when guessing the next piece of text. Training tries to push it down;
+    a lower loss doesn't always mean a more useful model.
 pesos:
   term: Weights
   def: Another name for parameters. After training they are frozen; the model learns
@@ -652,6 +657,11 @@ token:
   term: Token
   def: The piece of text the model works with, usually a fragment of a word. Models
     read, write and charge by the token.
+tokenizador:
+  term: Tokenizer
+  def: The part of the model that breaks text into tokens and turns them into numbers,
+    and back. Each model has its own vocabulary, built before training; the bigger
+    the vocabulary, the more parameters go to the table that stores each entry.
 tool-calling:
   term: Tool calling
   def: The model writes, in an agreed format, a request like "read such-and-such file";

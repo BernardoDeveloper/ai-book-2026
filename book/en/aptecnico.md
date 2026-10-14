@@ -2,15 +2,13 @@
 id: aptecnico
 chapter: "For Programmers: Behind the Scenes"
 sources:
+  - {post: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo, sha256: "c39990023635f5788e970e87ab6984105f7e3a24fe6d09b714e82179eaabe4d9"}
   - {post: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro, sha256: "163bf43bdcd13f66a49fba814324394e1158a23e490e2e1ad1300f845dfe01ab"}
   - {post: 2026/04/06/rag-esta-morto-contexto-longo, sha256: "3ef900794dc109d4ee2958f13bf712ad114a890c7822b72361ba81cf0ea3bd05"}
-  - {post: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator, sha256: "446dd91bcf9a526cef9b9776257855d59fcc3d8917e77570ec23636e00a1e828"}
   - {post: 2026/08/16/entendendo-ia-watermark-da-anthropic, sha256: "86f9a0c1396e07ddf1e4074ad5bc17159e39fcb6d10f993d68803792545fa175"}
   - {post: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles, sha256: "fba5ebda8a2cd78817b7566e407adb180b0a67fb1fdd45d689e2f1a2a8248e1d"}
   - {post: 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles, sha256: "8dbaf243da96406bb294817e5425bc895fd5bba51b2d66411b0b5859f2ce0bb0"}
   - {post: 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles, sha256: "c0dab1e5a0a04e0e4158c066e62df01648801173231368b7e7aecc95a3755e86"}
-  - {post: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias, sha256: "38675a84166e7238c09c1d907bbefbe1c0a5f8df5891154a59dc77fdb1568d43"}
-  - {post: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito, sha256: "e810efc31240d882790842a1e9db99664df28d1db1243ec42f977e847d4c05d1"}
   - {post: 2026/04/23/driveclub-shadps4-e-ia-como-aprender, sha256: "83e46a5b3a5f612a08753d368772a9757cbb9289107337a26a5281030208a2c6"}
   - {post: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia, sha256: "44a9519bfd14253e70ce56dfff9f28520d49cad34944b927e84c21627da0bb5f"}
   - {post: 2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo, sha256: "bbf1702a8938981cc7ea57b20996419e915e3256ac20f1bcc2f36008aa3e6f50"}
@@ -39,7 +37,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.v3.md"
   - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
-translated_from: {file: book/pt/aptecnico.md, sha256: "85d4164b802b5fdbf771f0395ceee0a5fbdedce07785b684f792c15d05feb865"}
+translated_from: {file: book/pt/aptecnico.md, sha256: "06954a10c598ed494f98715b427568e54ff21687625697ab97424613d83c1ca4"}
 ---
 
 # For Programmers: Behind the Scenes {#sec-aptecnico}
@@ -110,31 +108,6 @@ None of this means RAG is dead. It still wins in well-defined cases:
 Academic research tells the same story, with no silver bullet. A 2024 Google DeepMind study concluded that, when resources allow, the big window tends to win on quality, while RAG stays much cheaper in tokens [@li2024rag]. Search evaluations have shown for years that good old keyword search remains hard to beat outside the domain the embeddings were trained on [@thakur2021beir].
 
 Anthropic itself published in 2024 that attaching a sentence of context to each chunk and combining keyword search with vector search cut retrieval failures almost in half, and that an extra step of reranking the results reduced them further [@anthropic2024contextual]. The combination that holds up is hybrid. If you can only pick one, pick keyword search and you'll still get far.
-
-## Frank Investigator: How the Three Models Vote {#sec-aptecnico-investigator}
-
-<!-- src: original -->
-In @sec-ch04 I tell the story of Frank Investigator, a program I built in March 2026 to examine news: it breaks a story into claims, asks three models from different companies to evaluate each one, and lets a primary source override all of them. The chapter stays with the idea. Here is the arithmetic of how the votes become a verdict, and why the confidence each model declares goes into it anyway.
-
-![Three models vote with different weights; a contradicting primary source overrides the result.](assets/figures/en/ch04-tres-juizes.png){#fig-ch04-tres-juizes fig-alt="Three boxes representing models from different companies: model A and model B vote 'supported 40%', model C votes 'mixed 95%'. The votes go onto a scale that tips toward 'mixed'. Beside it, a document labeled 'primary source' with a stamp reading 'veto: 60% at most' locks the result at 'mixed, 60% at most'. Below, five newspapers from the same group become a single one ('same group = one voice'), and three newspapers linked by arrows in a circle represent circular citation."}
-
-### The Weighted Vote
-
-<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
-That March, the three judges were Claude Sonnet 4.6, GPT-5.4 and Gemini 3.1 Pro. For each claim, each one returns a verdict and a confidence. The vote is weighted by that confidence, instead of counting a simple majority: confidences are summed per verdict. If two models say "supported" with 40% confidence each and one says "mixed" with 95%, the "mixed" wins, because 95 weighs more than 80.
-
-<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
-The further apart the opinions, the more the final confidence drops. And if a model starts giving inconsistent answers, it goes into quarantine and the other two carry on alone.
-
-### Why the Declared Confidence Still Counts
-
-<!-- src: original -->
-@sec-ch04 itself shows that a model's confident tone says nothing about truthfulness, and the confidence it declares is a weak signal for the same reason. Inside the program, it does only one job: deciding the verdict when the three disagree, without pretending that two weak votes are worth more than one strong one. It never decides on its own what is true, because two rules sit above it: the primary-source veto and the discount on repeated sources.
-
-### The Veto and the 60% Cap
-
-<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
-If a primary source (the official data, the court ruling, the original study) contradicts a claim, confidence is capped at 60% and the verdict is forced to "mixed," even if all three models say "supported." If five stories "confirm" the claim but they all belong to the same media group, the system counts a single voice and reduces the weight.
 
 ## The Statistical Watermark in Claude, Up Close {#sec-aptecnico-watermark}
 
@@ -224,36 +197,6 @@ With an LLM in the middle of the system, a problem showed up that traditional pr
 
 <!-- src: 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles -->
 The structure check the chapter mentions verifies that the file exists, that it has the minimum number of items, that it has the required markers and, in the market section, at least five lines of quotes. GPT-5.2, which I was using for that step, is a good model. But it isn't deterministic, and when it fails, it fails in creative ways no format validation anticipates.
-
-## Frank Sherlock: The Vision Model Test and Publishing on Three Systems {#sec-aptecnico-sherlock}
-
-<!-- src: original -->
-In @sec-ch07 I tell the story of Frank Sherlock, a program I built in February 2026 to catalog photos and documents by content, with a vision model running on my own graphics card. The chapter keeps the lesson: measure before you choose. Here are the numbers from the test I ran before writing the app, the cost math and what it took to publish the program on Linux, Mac and Windows.
-
-### The Vision Models, Measured
-
-<!-- src: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias -->
-Before writing a single line of the app, I set aside images with the correct classification recorded and compared the candidates on the same ground. An open 7-billion-[parameter]{.gls key=parametros} vision model, Qwen2.5-VL 7B, beat LLaVA 13B, almost twice its size, on every measure, and was three times faster to boot.
-
-The giant version of the same model, with 32 billion, got one more image right out of 16 labeled test images and took 29 times longer. For anyone who's going to process hundreds of thousands of files, that turns a six-hour job into a one-week job.
-
-<!-- src: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias -->
-The newer models from the same family, Qwen3-VL at 8 billion and at 30 billion, tested with three repetitions each, did worse on my task: they got the file type right far less often than the 7B and returned truncated answers.
-
-### The Napkin Math
-
-<!-- src: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias -->
-Classifying half a million files on my [GPU]{.gls key=gpu} would take almost a month of running and cost about $34 in electricity. Through a cloud company's vision API, at one cent per image, it would be about $5,000. It's math done on the back of a napkin, but the order of magnitude decides it on its own.
-
-### From Index to Face Recognition, Version by Version
-
-<!-- src: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito -->
-The first public version was 0.1. In the next four days, 53 commits took the program from version 0.3 to 0.7: duplicate photo detection, then videos in eleven formats, and in 0.7 face detection, with grouping of similar faces and a name for each person. That was seven versions published in seven days.
-
-### Three Systems, Three Ways to Break
-
-<!-- src: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito -->
-By early March, the project had 103 commits, about 28,000 lines of code and 621 tests. Seventeen of those commits were just to get the program to build and publish properly on the three systems. Windows writes file paths in a way that breaks text comparisons; the Mac requires the program to be signed and registered with Apple before it opens without an alarm.
 
 ## The Driveclub Black Screen, Step by Step {#sec-aptecnico-driveclub}
 
@@ -528,6 +471,55 @@ One case doesn't show up in any average. The severity rule said: ongoing data lo
 The right answer is "critical." Cloudflare's Clef, the 27-billion-parameter version, answered "degraded," along with several models of 4 to 9 billion. Jev got it right, and so did some much smaller models.
 
 It's a single case, and synthetic. But it's exactly the error that costs the most, and the accuracy percentage doesn't show it. It's also the best argument for the severity rule to live in code, as the chapter argues.
+
+## microgpt Inside {#sec-aptecnico-microgpt}
+
+<!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
+@sec-ch13b tells the story of the model I trained from scratch. Here are the spec sheet, the stumbles that only matter to people who program, and what it would take to reach an agent. Everything comes from the project's closeout report, published alongside the code [@akita2026microgpt].
+
+### The Model's Spec Sheet
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+The final model has 337,167,360 parameters: 33.6 million in the embedding table, tied to the output layer, and 303.6 million in the transformer. That's 24 layers of width 1,024, with 16 attention heads of dimension 64, a SwiGLU dense layer with a hidden width of 2,752, RMSNorm and RoPE positions. The vocabulary is a custom byte-level BPE with 32,768 entries, fitted on 92 MB of training-only text.
+
+The server accepts up to 32,768 tokens of context, but pre-training used 2,048-token windows. The difference matters: the allocated space exists; the trained memory doesn't.
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+Pre-training used AdamW (betas 0.9 and 0.95, weight decay 0.1), a peak learning rate of 3e-4 with a thousand-update warmup and cosine decay to 10%, and gradient clipping at 1.0. Each update gathers two 2,048-position sequences, accumulated eight times: 32,768 tokens. Weights stored in FP32, math in BF16 on the card, attention through PyTorch's SDPA with the Flash backend. Peak allocated memory was about 13.9 GB in pre-training and 6.8 GB in tuning.
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+Tuning is full-weight, with the loss computed only over the assistant's tokens; what the user, the system and the tools say goes in as context and stays out of the loss. The chosen version ran 4,000 updates at a constant rate of 1e-5 and consumed 10.3 million response tokens.
+
+### The Pre-training Corpus
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+The final corpus has 3.48 billion training tokens in 2.35 million documents, sampled by weight: 60% Python code from CodeParrot, 16% instruction and code from OpenCoder, 12% synthetic educational text from Cosmopedia, 8% conversation from SmolTalk and 4% multilingual conversation. The training/validation split is by repository or conversation group.
+
+Because sampling is by weight, the 10 billion tokens aren't three equal passes. The code was seen about twice on average; OpenCoder, about ten times; the educational text and conversations, about nine.
+
+### The Stumbles Left Out of the Chapter
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+- **The `last.pt` that went back in time.** On a resume of the 10-billion phase, after maintenance on the file server, the trainer loaded step 81,500 instead of the frozen 152,588. The working file carried a timestamp from before the pause, and the cause was never proven. I threw away 1.24 hours of training, checked the hash of the 5-billion milestone and, from then on, every resume required the hash, the exact step, the optimizer and random-generator state, a corpus check and an fsync write probe. Never resume a training run just because the file is called `last.pt`.
+- **A desktop card is a shared card.** Spare video memory didn't keep the browser from freezing. The fix was a cooperative duty cycle: the trainer synchronizes the card and sleeps between batches, working 75% of the time during the day and 100% from three to nine in the morning. And reading the corpus over the file server left the card idle waiting on disk: after one maintenance, average throughput dropped to about 5,000 tokens per second before returning to 23,000.
+- **Training format and serving format have to match.** The session-switch announcement, the tool-call identifier, the edit anchor, the way OpenCode quotes the user's request: every difference between what the model saw in training and what it got from the server knocked over the old agent. The fix was a single protocol file for both sides.
+- **Tokenization crosses correctness boundaries.** The literal text of the end-of-document marker inside source code has to stay ordinary text. UTF-8 documents have to be reassembled without splitting a character in half. The first evaluation at the 2-billion milestone failed while building the grammar that constrains the output, and it was fixed and rerun instead of counting as a model error.
+- **Tests that lie, in several ways.** "Correct" answers from the public dataset failed when rerun; tests depended on Python's hash order; standard-library functions were shadowed; `SystemExit(0)` counted as success; empty edits passed as fixes. Each case got a control: three hash seeds, a completion sentinel, an empty program that has to fail.
+- **I stopped at a pipeline boundary.** The last phase's controller did pre-training, code tuning and the held-out test. It finished clean, and "finished clean" covered as far as the isolated function, while the goal was the agent. The final model was only tested in OpenCode at closeout, and it failed. It should have been tested before any sentence with "done" in it.
+
+### What a Simple Agent Would Still Need
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+The report closes with engineering estimates that were never executed, with no promised success rate, in this order:
+
+1. **Teach tool use on the strongest model:** 10,000 to 30,000 short, verified repository trajectories (read, edit, check), mixed with 30 to 50% code so it doesn't unlearn. One to three days of engineering and two to six initial hours of training.
+2. **Fix its own mistakes:** collect hundreds to a few thousand of the model's failures on training tasks, rebuild the file state, verify the corrections and train while masking the wrong action. Another one to three days and two to eight hours of training.
+3. **Give conversation back:** a balanced mix of conversation, tools and code, so it stops answering everything with Python. One to four hours of training.
+4. **Real long context:** only after the short tasks pass, in windows of 4,000, 8,000 and only then 16,000 and 32,000 tokens, with real compaction and session-switch trajectories. One to two days of engineering and 6 to 24 hours of training.
+5. **More pre-training, with better data:** each additional 10 billion tokens costs between 93 and 139 hours on this card, before preparation and evaluation, and repeating the same 3.5-billion mix doesn't pay off.
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+None of these steps is guaranteed. What the exercise left measured are three easy confusions: right syntax with right semantics, protocol support with tool skill, and context capacity with memory.
 
 ## Synthetic Voice in Production: The Podcast and the Dubbing {#sec-aptecnico-voz}
 

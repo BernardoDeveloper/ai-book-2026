@@ -5,7 +5,7 @@ sources:
   - {post: 2019/10/23/akitando-65-a-dor-de-aprender-que-cursos-livros, sha256: "2b05e6d3d26f3a619e53e6350dcbcd6a3f36c3ea7a77961ce845ddbe9561b322"}
   - {post: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r, sha256: "4c8343cf9487f3e389341a2e5654a423cb2ff2cced3ecbbddb5aed5385b544c1"}
   - {post: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados, sha256: "5a6b08a8fdebc6eac5511e470883960e1f763187351f8df54e684349eee446c1"}
-refs_projects: []
+refs_projects: ["microgpt/README.md"]
 blog_commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"
 ---
 
@@ -25,6 +25,9 @@ Na época, o inimigo era o curso de passo a passo. Em 2026 apareceu um adversár
 A primeira regra pede um problema de verdade, sem roteiro. O tutorial te leva pela mão até um resultado que alguém já conhecia; o problema real te deixa sozinho com algo que ninguém resolveu do seu jeito.
 
 Com IA, o tutorial ficou ainda mais confortável, porque agora ele se adapta a você e até digita os passos. Por isso o problema precisa ser seu: uma planilha que te irrita no trabalho, um programinha que você quer usar, uma dúvida que nenhum vídeo responde. Foi assim que eu passei quatro dias caçando um defeito num emulador (@sec-ch08), e é isso que transforma a resposta da máquina em aprendizado.
+
+<!-- src: ref:microgpt/README.md -->
+Se o problema que te coça é a própria IA, existe um bom pra começar. A primeira lição do meu microgpt lab treina um modelo de menos de um milhão de parâmetros num processador comum, em menos de um minuto, e mostra o ciclo inteiro do @sec-ch13b em código que dá pra ler [@akita2026microgpt]. Rode, quebre de propósito, mude o tamanho e veja o que acontece antes de pedir explicação a qualquer agente.
 
 ## O material, você que acha
 

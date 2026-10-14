@@ -1,0 +1,132 @@
+references:
+  - id: karpathy2026microgpt
+    type: "post-weblog"
+    title: "microgpt"
+    author: [{family: "Karpathy", given: "Andrej"}]
+    container-title: "karpathy.github.io"
+    issued: {date-parts: [[2026, 2, 12]]}
+    URL: "https://karpathy.github.io/2026/02/12/microgpt/"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (200 lines of dependency-free Python; 'the full algorithmic content of what is needed. Everything else is just efficiency')"
+  - id: karpathy2025nanochat
+    type: "software"
+    title: "nanochat: The best ChatGPT that $100 can buy"
+    author: [{family: "Karpathy", given: "Andrej"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2025, 10, 13]]}
+    URL: "https://github.com/karpathy/nanochat"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (GPT-2-capability model in about four hours on one 8xH100 node at launch, about US$ 100)"
+  - id: akita2026microgpt
+    type: "software"
+    title: "MicroGPT Lab"
+    author: [{family: "Akita", given: "Fabio"}]
+    container-title: "GitHub"
+    issued: {date-parts: [[2026, 10, 14]]}
+    URL: "https://github.com/akitaonrails/microgpt"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (closeout report docs/report/experiment-closeout.md is the source of every number in ch13b)"
+  - id: huggingface2024smollm2
+    type: "software"
+    title: "SmolLM2-360M"
+    author: [{literal: "Hugging Face"}]
+    container-title: "Hugging Face"
+    issued: {date-parts: [[2024, 11]]}
+    URL: "https://huggingface.co/HuggingFaceTB/SmolLM2-360M"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (model card: 4 trillion pretraining tokens)"
+  - id: meta2024llama31card
+    type: "software"
+    title: "Llama 3.1 405B model card"
+    author: [{literal: "Meta"}]
+    container-title: "Hugging Face"
+    issued: {date-parts: [[2024, 7, 23]]}
+    URL: "https://huggingface.co/meta-llama/Llama-3.1-405B"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (~15T+ pretraining tokens; 30.84M H100 GPU hours for the 405B model)"
+  - id: qwen2025qwen3
+    type: "article"
+    title: "Qwen3 Technical Report"
+    author: [{literal: "Qwen Team"}]
+    container-title: "arXiv"
+    number: "arXiv:2505.09388"
+    issued: {date-parts: [[2025, 5, 14]]}
+    URL: "https://arxiv.org/abs/2505.09388"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (pretraining on about 36 trillion tokens)"
+  - id: nvidia2025rtx5090
+    type: "webpage"
+    title: "GeForce RTX 5090"
+    author: [{literal: "NVIDIA"}]
+    container-title: "NVIDIA"
+    issued: {date-parts: [[2025]]}
+    URL: "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (575 W total graphics power; 575 W x 137 h = ~79 kWh, the author's upper bound; energy was not metered)"
+  - id: openai2025gptoss
+    type: "article"
+    title: "gpt-oss-120b & gpt-oss-20b Model Card"
+    author: [{literal: "OpenAI"}]
+    container-title: "arXiv"
+    number: "arXiv:2508.10925"
+    issued: {date-parts: [[2025, 8]]}
+    URL: "https://arxiv.org/abs/2508.10925"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (117B total parameters, 5.1B active per token)"
+  - id: google2025medgemma
+    type: "post-weblog"
+    title: "MedGemma: Our most capable open models for health AI development"
+    author: [{literal: "Google Research"}]
+    container-title: "Google Research Blog"
+    issued: {date-parts: [[2025, 7, 9]]}
+    URL: "https://research.google/blog/medgemma-our-most-capable-open-models-for-health-ai-development/"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (MedGemma 4B)"
+  - id: colombo2024saullm
+    type: "article"
+    title: "SaulLM-7B: A pioneering Large Language Model for Law"
+    author: [{family: "Colombo", given: "Pierre"}, {family: "Pires", given: "Telmo Pessoa"}, {family: "Boudiaf", given: "Malik"}]
+    container-title: "arXiv"
+    number: "arXiv:2403.03883"
+    issued: {date-parts: [[2024, 3, 6]]}
+    URL: "https://arxiv.org/abs/2403.03883"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo"
+  - id: belcak2025small
+    type: "article"
+    title: "Small Language Models are the Future of Agentic AI"
+    author: [{family: "Belcak", given: "Peter"}, {family: "Heinrich", given: "Greg"}]
+    container-title: "arXiv"
+    number: "arXiv:2506.02153"
+    issued: {date-parts: [[2025, 6, 2]]}
+    URL: "https://arxiv.org/abs/2506.02153"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (NVIDIA Research position paper)"
+  - id: apple2025foundation
+    type: "webpage"
+    title: "Updates to Apple's On-Device and Server Foundation Language Models"
+    author: [{literal: "Apple Machine Learning Research"}]
+    container-title: "Apple Machine Learning Research"
+    issued: {date-parts: [[2025, 6, 9]]}
+    URL: "https://machinelearning.apple.com/research/apple-foundation-models-2025-updates"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (~3B on-device model, tool calling, task adapters)"
+  - id: wu2023bloomberggpt
+    type: "article"
+    title: "BloombergGPT: A Large Language Model for Finance"
+    author: [{family: "Wu", given: "Shijie"}, {family: "Irsoy", given: "Ozan"}, {family: "Lu", given: "Steven"}]
+    container-title: "arXiv"
+    number: "arXiv:2303.17564"
+    issued: {date-parts: [[2023, 3, 30]]}
+    URL: "https://arxiv.org/abs/2303.17564"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (50B parameters, built for finance)"
+  - id: runpod2026pricing
+    type: "webpage"
+    title: "Pricing"
+    author: [{literal: "Runpod"}]
+    container-title: "Runpod"
+    issued: {date-parts: [[2026]]}
+    URL: "https://www.runpod.io/pricing"
+    accessed: {date-parts: [[2026, 10, 14]]}
+    note: "cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo (RTX 5090 at about US$ 1.20/hour, per the post; 137 h = ~US$ 165)"

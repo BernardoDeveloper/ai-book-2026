@@ -56,7 +56,7 @@ As notas dessas ferramentas são texto, como o @sec-ch02 mostrou, então em tese
 O ai-memory é uma memória de longo prazo pra agentes de programação, de [código aberto]{.gls key=codigo-aberto}, distribuída como um [binário]{.gls key=binario} só, um programa único que não depende de outros serviços pra rodar. A promessa é que a sessão seguinte, em qualquer agente compatível, continue de onde a anterior parou, sem você explicar de novo a arquitetura, as tentativas que falharam e as perguntas em aberto.
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-A origem do projeto, de maio de 2026, está contada em @sec-ch20. Começou como uma versão pra um usuário, numa máquina, num sistema operacional, e cresceu com gente de fora usando e mandando correção. No dia em que eu fechei este livro, 13 de outubro de 2026, estava na versão 2.6.6.
+A origem do projeto, de maio de 2026, está contada em @sec-ch20. Começou como uma versão pra um usuário, numa máquina, num sistema operacional, e cresceu com gente de fora usando e mandando correção. No dia em que eu fechei este livro, 13 de outubro de 2026, saiu a versão 3.0.
 
 ### Como funciona
 
@@ -125,32 +125,30 @@ O ai-memory começa a pagar o investimento em quatro situações:
 Ele também não substitui os documentos do projeto. A memória automática guarda o que talvez importe depois; decisão, regra e procedimento que precisam durar meses continuam merecendo um documento revisado por você, dentro do repositório. Sessão bruta é evidência. Documento é conhecimento organizado.
 
 <!-- src: ref:ai-memory/README.md -->
-E tem custo. É mais um programa rodando no seu computador, com um servidor que precisa estar de pé quando o agente começa. Ele grava o que acontece nas suas sessões, filtrado, mas grava, então vale saber onde a pasta de dados mora e fazer backup dela como de qualquer coisa importante. Na configuração inicial, o servidor só aceita conexões do próprio computador e não pede senha; antes de abrir pra uma rede ou pra uma equipe, ligue a autenticação, como a documentação descreve.
+E tem custo. É mais um programa rodando no seu computador, com um servidor que precisa estar de pé quando o agente começa. Ele grava o que acontece nas suas sessões, filtrado, mas grava, então vale saber onde a pasta de dados mora e fazer backup dela como de qualquer coisa importante. Na configuração inicial, o servidor só aceita conexões do próprio computador e já vem com senha; antes de abrir pra uma rede ou pra uma equipe, leia a parte de autenticação da documentação.
 
 > Uma memória automática economiza a explicação repetida. A decisão importante continua merecendo um documento que você revisou.
 
 ## Pra começar
 
-<!-- src: ref:ai-memory/docs/install.md -->
-O caminho mais curto, em outubro de 2026, era este, num terminal de Linux ou macOS que já tenha o mise, um instalador de ferramentas de linha de comando:
+<!-- src: ref:ai-memory/README.md -->
+O caminho mais curto, com a versão 3.0 de outubro de 2026, são dois comandos num terminal de Linux ou macOS:
 
 ```bash
-mise use -g github:akitaonrails/ai-memory
-ai-memory init
-ai-memory serve --transport http --bind 127.0.0.1:49374
-ai-memory run claude
+curl -fsSL https://github.com/akitaonrails/ai-memory/releases/latest/download/install.sh | sh
+ai-memory setup
 ```
 
 <!-- src: ref:ai-memory/README.md -->
-A primeira linha baixa o binário da versão publicada, confere se o arquivo chegou íntegro e coloca o programa no seu caminho de comandos. A segunda cria a pasta de dados. A terceira sobe o servidor, ouvindo só o próprio computador, e fica rodando naquele terminal.
+O primeiro baixa o programa certo pro seu sistema, confere se o arquivo chegou íntegro comparando com a soma de verificação publicada, e só instala se ela bater. O segundo cria a pasta de dados com uma senha guardada num arquivo que só você lê, deixa o servidor rodando como um serviço do seu usuário e liga o ai-memory a cada agente que encontrar no computador. Ele mostra o plano e pergunta antes de mexer em qualquer coisa. Depois, reinicie os agentes.
 
-A quarta, num terminal novo, de dentro da pasta do projeto, abre o Claude Code através do ai-memory. Na primeira vez, ela instala sozinha os hooks e a conexão MCP daquele agente. Pra outro agente, troque o nome: `ai-memory run codex`, por exemplo.
+Quem usa Claude Code ou Codex também pode ligar o agente como plugin, pelo próprio sistema de extensões de cada um; o programa continua sendo instalado do mesmo jeito.
 
 <!-- src: ref:ai-memory/README.md -->
 A partir daí, você conversa com o agente normalmente. Pergunte "onde a gente parou?" pra retomar uma passagem de turno, "a gente já discutiu isso?" pra ele buscar na memória, ou "me atualiza" pra um resumo do que aconteceu no projeto. Num projeto antigo, com meses de histórico, o comando `ai-memory bootstrap`, rodado uma vez, aproveita o que já existe.
 
 <!-- src: original -->
-Esses quatro comandos são um retrato de outubro de 2026. Existem caminhos pra Docker, pacotes pra Arch Linux e Fedora, um aplicativo de barra de menu pro macOS e um modo pra Windows, e todos mudam de versão em versão. As instruções atualizadas, em português inclusive, ficam no site do projeto, aimemory.sh [@aimemory2026site]. Comece por lá.
+Esses dois comandos são um retrato de outubro de 2026. Existem caminhos pra Docker, pacotes pra Arch Linux e Fedora, um aplicativo de barra de menu pro macOS e um modo pra Windows, e todos mudam de versão em versão. As instruções atualizadas, em português inclusive, ficam no site do projeto, aimemory.sh [@aimemory2026site]. Comece por lá.
 
 <!-- src: 2026/09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times -->
 Você não precisa do meu programa pra seguir o princípio. Pode ser ele, pode ser outro, pode ser uma pasta de arquivos de texto mantida na mão. O que importa é que a memória do projeto more num lugar seu, num formato que você lê, e que sobreviva à troca de agente, de máquina e de empresa. É a mesma conta de @sec-ch20: o modelo se aluga de quem estiver melhor no mês, e a memória fica com você.

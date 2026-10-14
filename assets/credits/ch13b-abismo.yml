@@ -1,0 +1,26 @@
+---
+id: ch13b-abismo
+kind: chart_code
+file: assets/figures/ch13b-abismo.png
+sha256: e2f1f35577cad1d64dc80dc7129860157712dc03e32ff12ebaab0ce26ab0e94c
+pixels:
+  width: 1920
+  height: 1080
+source: assets/charts/ch13b-abismo.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I scripts/chart_check.py assets/charts/ch13b-abismo.py
+    pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+description: 'ch13b-abismo: looking like code vs working; the final microgpt model
+  results.'
+chapters:
+- ch13b
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

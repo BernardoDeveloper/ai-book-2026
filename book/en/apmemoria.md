@@ -15,7 +15,7 @@ refs_projects:
   - "ai-memory/docs/local-embeddings.md"
   - "ai-memory/docs/cross-project-profile.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apmemoria.md, sha256: "19e46f9ea26907d35dd4defe24bb107cf28ff9bb32294ce6d7907cf2f7f448ab"}
+translated_from: {file: book/pt/apmemoria.md, sha256: "4b399f671a7ed1e07e27e8f502d777af0e15dabbd2cbae75e3846697f0f01e82"}
 ---
 
 # ai-memory: The Memory That's Yours {#sec-apmemoria}
@@ -57,7 +57,7 @@ These tools' notes are text, as @sec-ch02 showed, so in theory you can take them
 ai-memory is long-term memory for coding agents, [open source]{.gls key=codigo-aberto}, distributed as a single [binary]{.gls key=binario}, one program that doesn't depend on other services to run. The promise is that the next session, in any compatible agent, picks up where the previous one stopped, without you re-explaining the architecture, the failed approaches or the open questions.
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-The origin of the project, in May 2026, is told in @sec-ch20. It started as a version for one user, on one machine, on one operating system, and grew with outside people using it and sending fixes. On the day I closed this book, October 13, 2026, it was at version 2.6.6.
+The origin of the project, in May 2026, is told in @sec-ch20. It started as a version for one user, on one machine, on one operating system, and grew with outside people using it and sending fixes. On the day I closed this book, October 13, 2026, version 3.0 came out.
 
 ### How It Works
 
@@ -126,32 +126,30 @@ ai-memory starts paying for itself in four situations:
 It also doesn't replace the project's documents. Automatic memory keeps what might matter later; decisions, rules and procedures that need to last for months still deserve a document you reviewed, inside the repository. A raw session is evidence. A document is organized knowledge.
 
 <!-- src: ref:ai-memory/README.md -->
-And it has a cost. It's one more program running on your computer, with a server that has to be up when the agent starts. It records what happens in your sessions, filtered, but it records, so it's worth knowing where the data folder lives and backing it up like anything important. In the initial configuration, the server only accepts connections from the computer itself and doesn't ask for a password; before opening it to a network or a team, turn on authentication, as the documentation describes.
+And it has a cost. It's one more program running on your computer, with a server that has to be up when the agent starts. It records what happens in your sessions, filtered, but it records, so it's worth knowing where the data folder lives and backing it up like anything important. In the initial configuration, the server only accepts connections from the computer itself and already comes with a password; before opening it to a network or a team, read the authentication part of the documentation.
 
 > Automatic memory saves you the repeated explanation. The important decision still deserves a document you reviewed.
 
 ## Getting Started
 
-<!-- src: ref:ai-memory/docs/install.md -->
-The shortest path, as of October 2026, was this one, in a Linux or macOS terminal that already has mise, an installer for command-line tools:
+<!-- src: ref:ai-memory/README.md -->
+The shortest path, with version 3.0 from October 2026, is two commands in a Linux or macOS terminal:
 
 ```bash
-mise use -g github:akitaonrails/ai-memory
-ai-memory init
-ai-memory serve --transport http --bind 127.0.0.1:49374
-ai-memory run claude
+curl -fsSL https://github.com/akitaonrails/ai-memory/releases/latest/download/install.sh | sh
+ai-memory setup
 ```
 
 <!-- src: ref:ai-memory/README.md -->
-The first line downloads the binary of the published release, checks that the file arrived intact and installs the program so you can run it from any folder. The second creates the data folder. The third starts the server, listening only to the computer itself, and keeps running in that terminal.
+The first downloads the right program for your system, checks that the file arrived intact against the published checksum, and only installs it if they match. The second creates the data folder with a password kept in a file only you can read, leaves the server running as a service of your user and connects ai-memory to every agent it finds on the computer. It shows the plan and asks before touching anything. Afterwards, restart your agents.
 
-The fourth, in a new terminal, from inside the project folder, opens Claude Code through ai-memory. The first time, it installs that agent's hooks and MCP connection on its own. For another agent, swap the name: `ai-memory run codex`, for example.
+Claude Code and Codex users can also connect their agent as a plugin, through each one's own extension system; the program is still installed the same way.
 
 <!-- src: ref:ai-memory/README.md -->
 From then on, you talk to the agent as usual. Ask "where did we leave off?" to resume a handoff, "have we discussed this?" to have it search the memory, or "catch me up" for a summary of what happened in the project. On an old project, with months of history, the `ai-memory bootstrap` command, run once, makes use of what's already there.
 
 <!-- src: original -->
-Those four commands are a snapshot of October 2026. There are paths for Docker, packages for Arch Linux and Fedora, a menu bar app for macOS and a mode for Windows, and all of them change from version to version. The up-to-date instructions, in English and Portuguese, live on the project's site, aimemory.sh [@aimemory2026site]. Start there.
+Those two commands are a snapshot of October 2026. There are paths for Docker, packages for Arch Linux and Fedora, a menu bar app for macOS and a mode for Windows, and all of them change from version to version. The up-to-date instructions, in English and Portuguese, live on the project's site, aimemory.sh [@aimemory2026site]. Start there.
 
 <!-- src: 2026/09/02/ai-memory-2-0-melhor-sistema-memoria-agentes-e-times -->
 You don't need my program to follow the principle. The tool can be this one, another one, or a folder of text files kept by hand. What matters is that the project's memory lives somewhere that's yours, in a format you can read, and that it survives a change of agent, of machine and of company. It's the same math as in @sec-ch20: you rent the model from whoever is best that month, and the memory stays with you.

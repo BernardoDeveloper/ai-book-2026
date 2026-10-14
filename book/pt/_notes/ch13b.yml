@@ -1,0 +1,7 @@
+notes:
+  - "ch13b owns the 'build your own model' story; tokenizador (new key, restored with a new definition independent of the parked Genesys entry) and perda are proposed in _gls/ch13b.yml."
+  - "ch13's closing Anthropic/Fable 5 paragraph (src 06/11) moved to the end of ch13b as the hook into ch14; ch13 now ends on a hook into ch13b and no longer lists 06/11 in its sources. The outline entry for ch13b lists 06/11 nowhere: add it to ch13b supporting (outline owner)."
+  - "MoE: ch13b follows the book's correction (experts are not topic specialists; @sec-aptecnico-memoria-local) instead of the post's 'collection of small models' framing."
+  - "Electricity (~R$ 80) is the author's upper-bound estimate from rated power; the closeout report says energy was not metered. Text says so."
+  - "apA closes with '13 de outubro ... este livro fecha'; ch13b's lab closed 14 October (staging entry in _staging/apA-microgpt.md). apA owner: move the closing line or date."
+  - "Four figures (contract says max 3); requested by the coordinator."

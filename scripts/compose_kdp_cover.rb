@@ -111,57 +111,90 @@ Dir.mktmpdir("kdp-cover") do |tmp|
   magick(art, "-filter", "Lanczos", "-resize", "#{fw}x#{h}^", "-gravity", "center", "-extent", "#{fw}x#{h}",
          "-unsharp", "0x1.2+0.6+0.02",
          *CoverLayout.front_layers(lang:, w: fw, h:, s:, dx: vx0 + vw / 2 - fw / 2.0, top: vy0, bottom: h - (vy0 + vh),
-                                   right: fw - (vx0 + vw), sticker_k: s.round(1)),
+                                   right: fw - (vx0 + vw), with_sticker: false, author_size: 96),
          "(", "-size", "#{h}x#{feather}", "gradient:#{NAVY}FF-#{NAVY}00", "-rotate", "-90", ")",
          "-gravity", "west", "-compose", "over", "-composite", front)
 
   # --- spine: reads top to bottom, title at the head, author at the foot --------
+  # A long title (the PT one) shrinks until at least half an inch separates it
+  # from the author.
   t = CoverLayout.texts(lang)
   sw = spine_x1 - spine_x0
   spine = File.join(tmp, "spine.png")
-  title_pt = (sw * 0.36).round
+  title_font, author_font = "#{FONTS}/Limelight-Regular.ttf", "#{FONTS}/SourceSans3-Bold.otf"
+  text_w = ->(font, pt, kern, text) { capture("-font", font, "-pointsize", pt, "-kerning", kern, "label:#{text}", "-format", "%w", "info:").to_i }
   author_pt = (sw * 0.2).round
-  head = live_y0 + (sw * 0.45).round
+  author_kern = (author_pt * 0.22).round
+  head = (sw * 0.45).round
+  room = live_y1 - live_y0 - 2 * head - (0.5 * DPI).round - text_w.(author_font, author_pt, author_kern, t[:author])
+  title_pt = (sw * 0.36).round
+  until text_w.(title_font, title_pt, (title_pt * 0.04).round, t[:title_line]) <= room
+    title_pt -= 4
+    abort "spine too narrow for the title" if title_pt < sw * 0.15
+  end
   magick("-size", "#{h}x#{fold_r - fold_l}", "xc:none", "-gravity", "west",
-         "-font", "#{FONTS}/Limelight-Regular.ttf", "-pointsize", title_pt, "-kerning", (title_pt * 0.04).round,
-         "-fill", CREAM, "-annotate", "+#{head}+0", t[:title_line],
-         "-gravity", "east", "-font", "#{FONTS}/SourceSans3-Bold.otf", "-pointsize", author_pt,
-         "-kerning", (author_pt * 0.22).round, "-fill", BRASS, "-annotate", "+#{head}+0", t[:author],
+         "-font", title_font, "-pointsize", title_pt, "-kerning", (title_pt * 0.04).round,
+         "-fill", CREAM, "-annotate", "+#{live_y0 + head}+0", t[:title_line],
+         "-gravity", "east", "-font", author_font, "-pointsize", author_pt,
+         "-kerning", author_kern, "-fill", BRASS, "-annotate", "+#{live_y0 + head}+0", t[:author],
          "-rotate", "90", spine)
 
   # --- back -------------------------------------------------------------------------
+  # The body starts at 11 pt and steps down until the copy ends at least a
+  # quarter inch above the barcode box.
   copy = YAML.load_file(File.join(ROOT, "book", lang, "_back_cover.yml"))
   pad = (0.42 * DPI).round
   cx0, cx1 = back_x0 + pad, back_x1 - pad
   cw = cx1 - cx0
-  layers = []
-  y = live_y0 + (0.4 * DPI).round
-  path, _, ph = pango.("headline", %(<span font="Source Sans 3 Bold #{px.(17)}" foreground="#{BRASS}">#{copy['headline']}</span>), width: cw)
-  layers << [path, cx0, y]
-  y += ph + (0.22 * DPI).round
-  copy["paragraphs"].each_with_index do |para, i|
-    path, _, ph = pango.("p#{i}", %(<span font="Source Serif 4 #{px.(11)}" foreground="#{CREAM}" line_height="1.3">#{para}</span>), width: cw)
-    layers << [path, cx0, y]
-    y += ph + (0.2 * DPI).round
-  end
-  y += (0.12 * DPI).round
-  rule_y = y
-  y += (0.3 * DPI).round
   st_d = (1.15 * DPI).round
   sticker = CoverLayout.sticker(File.join(tmp, "sticker.png"), k: st_d / 400.0)
   magick(sticker, "-resize", "#{st_d}x#{st_d}", sticker)
   bio_x = cx0 + st_d + (0.25 * DPI).round
-  path, _, bh = pango.("bio", %(<span font="Source Sans 3 #{px.(9.5)}" foreground="#{CREAM}" line_height="1.25">#{copy['bio']}</span>), width: cx1 - bio_x)
-  layers << [sticker, cx0 - (0.06 * DPI).round, y - (0.08 * DPI).round]
-  layers << [path, bio_x, y]
-  bottom = [y + bh, y + st_d].max
-  abort "back copy runs into the barcode area (#{bottom} > #{bc_y})" if bottom > bc_y && cx1 > bc_x
+  limit = (cx1 > bc_x ? bc_y : live_y1) - (0.25 * DPI).round
+  # The author's sayings: a pull-quote block behind a brass bar, each quote's
+  # last two words tied so no line holds a lone word.
+  qx = cx0 + (0.22 * DPI).round
+  sayings = copy["quotes"].map { _1.sub(/ (\S+)\z/, "\u00A0\\1") }
+  back_layout = lambda do |body_pt|
+    layers = []
+    y = live_y0 + (0.3 * DPI).round
+    path, _, ph = pango.("headline", %(<span font="Source Sans 3 Bold #{px.(17)}" foreground="#{BRASS}">#{copy['headline']}</span>), width: cw)
+    layers << [path, cx0, y]
+    y += ph + (0.22 * DPI).round
+    copy["paragraphs"].each_with_index do |para, i|
+      path, _, ph = pango.("p#{i}", %(<span font="Source Serif 4 #{px.(body_pt)}" foreground="#{CREAM}" line_height="1.3">#{para}</span>), width: cw)
+      layers << [path, cx0, y]
+      y += ph + (0.2 * DPI).round
+    end
+    y += (0.1 * DPI).round
+    q_top = y
+    sayings.each_with_index do |q, i|
+      path, _, qh = pango.("q#{i}", %(<span font="Source Serif 4 Italic #{px.(body_pt + 0.5)}" foreground="#{CREAM}" line_height="1.2">#{q}</span>), width: cx1 - qx)
+      layers << [path, qx, y]
+      y += qh + (0.2 * DPI).round
+    end
+    q_span = [q_top, y - (0.2 * DPI).round]
+    y += (0.3 * DPI).round
+    path, _, bh = pango.("bio", %(<span font="Source Sans 3 #{px.(body_pt - 1.5)}" foreground="#{CREAM}" line_height="1.25">#{copy['bio']}</span>), width: cx1 - bio_x)
+    layers << [sticker, cx0 - (0.06 * DPI).round, y - (0.08 * DPI).round]
+    layers << [path, bio_x, y]
+    [layers, q_span, [y + bh, y + st_d].max]
+  end
+  body_pt = 11.0
+  layers, q_span, bottom = back_layout.(body_pt)
+  while bottom > limit
+    warn "back: #{body_pt} pt ends at #{bottom}, limit #{limit}" if ENV["DEBUG"]
+    abort "back copy does not fit above the barcode even at #{body_pt} pt: shorten book/#{lang}/_back_cover.yml" if body_pt <= 9.5
+    body_pt -= 0.25
+    layers, q_span, bottom = back_layout.(body_pt)
+  end
+  warn "spine title #{title_pt} px, back body #{body_pt} pt"
 
   # --- flatten ----------------------------------------------------------------------
   rgb = File.join(tmp, "cover.png")
   magick(bg, front, "-geometry", "+#{fold_r}+0", "-compose", "over", "-composite",
          spine, "-geometry", "+#{fold_l}+0", "-composite",
-         "-fill", BRASS, "-draw", "rectangle #{cx0},#{rule_y} #{cx0 + (1.2 * DPI).round},#{rule_y + 5}",
+         "-fill", BRASS, "-draw", "rectangle #{cx0},#{q_span[0]} #{cx0 + 9},#{q_span[1]}",
          *layers.flat_map { |p, x, yy| [p, "-geometry", "+#{x}+#{yy}", "-composite"] },
          "-alpha", "remove", "-alpha", "off", "-units", "PixelsPerInch", "-density", DPI, rgb)
   magick(rgb, "(", template, "-crop", "#{w}x#{h}+0+0", "+repage", "-fuzz", "8%", "-transparent", "#FFFFFF",

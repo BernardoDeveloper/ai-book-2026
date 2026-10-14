@@ -1,10 +1,11 @@
 ---
 id: apleituras
 chapter: "Further Reading"
-sources: []
+sources:
+  - {post: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo, sha256: "c39990023635f5788e970e87ab6984105f7e3a24fe6d09b714e82179eaabe4d9"}
 refs_projects: ["docs/research/FURTHER-READING.md"]
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
-translated_from: {file: book/pt/apleituras.md, sha256: "8450c4a303f841a4e28efaa05da4d696f669c3ef0cff008b2fb96bfabb0c9d61"}
+translated_from: {file: book/pt/apleituras.md, sha256: "05539b5590f292c580c001ba17798b427494e0a3eaadd282b9a26488e19f9d34"}
 ---
 
 # Further Reading {#sec-apleituras}
@@ -29,6 +30,11 @@ The list below is short on purpose and runs from easiest to most technical. I ch
 
 - Sebastian Raschka, *Build a Large Language Model (From Scratch)*: builds a GPT-style model piece by piece; the book is paid, the code is free [@raschka2024build].
 - Jay Alammar and Maarten Grootendorst, *Hands-On Large Language Models*: nearly 300 original illustrations [@alammar2024handson].
+
+<!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
+- Andrej Karpathy, *microgpt*: a whole GPT in 200 lines of Python, no libraries at all, that trains in a minute on a laptop; the starting point of @sec-ch13b [@karpathy2026microgpt].
+- Andrej Karpathy, *nanochat*: the next step, a GPT-2-level model trained in a few hours on rented GPUs; the code is free [@karpathy2025nanochat].
+- My microgpt lab: the full cycle of @sec-ch13b, from data to evaluation, with a report on every stumble; the first lesson runs on an ordinary CPU [@akita2026microgpt].
 
 ## Free Videos
 

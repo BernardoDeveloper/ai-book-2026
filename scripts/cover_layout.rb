@@ -65,10 +65,12 @@ module CoverLayout
   end
 
   # ImageMagick arguments that draw the front-cover type (and the sticker) over
-  # a w x h canvas already holding the art.
-  def front_layers(lang:, w:, h:, s: 1, dx: 0, top: 0, bottom: 0, right: 0, sticker_k: 1)
+  # a w x h canvas already holding the art. Without the sticker (the printed
+  # cover keeps it for the back) the author name is centred instead of shifted
+  # left of it; `author_size` is in the virtual cover's pixels.
+  def front_layers(lang:, w:, h:, s: 1, dx: 0, top: 0, bottom: 0, right: 0, sticker_k: 1, with_sticker: true, author_size: 78)
     t = texts(lang)
-    st = sticker(File.join(ROOT, "build", sticker_k == 1 ? "cover-sticker.png" : "cover-sticker@#{sticker_k}.png"), k: sticker_k)
+    st = with_sticker && sticker(File.join(ROOT, "build", sticker_k == 1 ? "cover-sticker.png" : "cover-sticker@#{sticker_k}.png"), k: sticker_k)
     [
       # a gentle darkening behind the title keeps it legible on bright skies
       "(", "-size", "#{w}x#{(top + 900 * s).round}", "gradient:#0B1A26B0-#0B1A2600", ")", "-gravity", "north", "-composite",
@@ -79,8 +81,8 @@ module CoverLayout
       "(", "-size", "#{w}x#{(bottom + 820 * s).round}", "gradient:#0B1A2600-#0B1A26E0", ")", "-gravity", "south", "-composite",
       *text_layer(w:, h:, s:, font: "#{FONTS}/SourceSans3-Semibold.otf", size: 54, text: t[:subtitle], gravity: "south",
                   offset: [dx, bottom + 430 * s], kerning: 2),
-      *text_layer(w:, h:, s:, font: "#{FONTS}/SourceSans3-Bold.otf", size: 78, text: t[:author], gravity: "south",
-                  offset: [dx - 190 * s, bottom + 150 * s], kerning: 18),
+      *text_layer(w:, h:, s:, font: "#{FONTS}/SourceSans3-Bold.otf", size: author_size, text: t[:author], gravity: "south",
+                  offset: [st ? dx - 190 * s : dx, bottom + 150 * s], kerning: 18),
       # Bottom-right corner, beside the author name, like a signature badge.
       *(st ? ["(", st, "-resize", "#{(360 * s).round}x#{(360 * s).round}", ")", "-gravity", "southeast",
               "-geometry", format("+%d+%d", (right + 70 * s).round, (bottom + 40 * s).round), "-compose", "over", "-composite"] : [])

@@ -248,7 +248,7 @@ O que vem a seguir são as três ferramentas que eu escrevi em 2026 pra cobrir a
 ### ai-jail, a jaula
 
 <!-- src: ref:ai-jail/README.md -->
-O ai-jail roda um agente de programação dentro de uma sandbox: no Linux, com o bubblewrap e mais algumas proteções do próprio núcleo do sistema; no macOS, com o `sandbox-exec` [@akita2026aijail; @aijail2026site]. No Windows, ele só funciona dentro do WSL2. Em outubro de 2026 estava na versão 2.8.1.
+O ai-jail roda um agente de programação dentro de uma sandbox: no Linux, com o bubblewrap e mais algumas proteções do próprio núcleo do sistema; no macOS, com o `sandbox-exec` [@akita2026aijail; @aijail2026site]. No Windows, ele só funciona dentro do WSL2. Em outubro de 2026 estava na versão 2.9.0.
 
 A documentação diz o que ele promete: proteção contra acidentes, o limite que vimos na peça 1. Contra um atacante tentando fugir de propósito, ele manda usar uma máquina virtual descartável (@sec-ch15).
 

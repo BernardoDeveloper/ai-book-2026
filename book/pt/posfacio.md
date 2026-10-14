@@ -2,6 +2,7 @@
 id: posfacio
 chapter: "Posfácio: Como este livro foi feito"
 sources:
+  - {post: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, sha256: "0d435e79de9e1f54ea1807e862f303e235607474050bc7b2e85f0a8ed71ba55d"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "ee499fef89fe8fe35d652f193b51f1660cd08e8ed77adee74e036ca1444cc54b"}
   - {post: 2026/04/15/como-falar-com-o-claude-code-efetivamente, sha256: "1b8795f593d0bf02003614559d134daa34121962de303cf664aa5e7bc9a3eed0"}
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "247ad116f3c45c935f8a59156a72b8852733e259c70b65044f19fb56c6d32f3b"}
@@ -73,6 +74,30 @@ Ela serve pra manutenção. Se amanhã eu corrigir um post, um script refaz o c�
 As imagens seguem a mesma lógica. Os diagramas e gráficos foram escritos como código, e cada gráfico traz no próprio código a indicação do capítulo de onde vieram os dados. As ilustrações geradas por IA estão marcadas como tais, e o pedido, o modelo e a data de cada uma ficam registrados.
 
 Pessoas reais só aparecem em fotos com licença livre, com o crédito na legenda e em @sec-creditos. Nenhuma imagem de pessoa real foi gerada por IA.
+
+## Leitores de mentira
+
+<!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
+Copidesque confere o texto. Ele deixa passar a pergunta que importa num livro pra leigo: a pessoa pra quem eu escrevi consegue ler até o fim, entende e sai convencida? Pra responder, o livro passou por leitores simulados. Da seção "Pra quem eu escrevi", no prefácio, saíram cinco: a Marina, contadora com medo de perder o emprego; o Roberto, dono de loja cujo filho perguntou sobre superinteligência; a Carla, gerente a quem venderam uma "transformação por IA"; o Lucas, programador júnior com medo de ter escolhido a carreira errada; e a Helena, professora aposentada que veio pelas histórias.
+
+<!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
+Cada um foi um agente só de leitura, lendo o livro inteiro em ordem, como aquela pessoa leria, com a instrução de ser leitor e não editor. Cada um devolveu uma nota por capítulo, o que o fez se perder ou se entediar e as falhas de lógica que encontrou. Um editor juntou tudo. Falha de lógica, conferida contra o texto e os posts, era corrigida independentemente de voto; questão de clareza só entrava se mais de um leitor levantasse; gosto de um leitor só ficava de fora.
+
+<!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
+A primeira leitura deu a medida do desequilíbrio. Histórias e ferramentas práticas funcionavam pra todo mundo, e o miolo cheio de medição, os capítulos de @sec-ch11 a @sec-ch13, perdia quem não programa. Os cinco pegaram as mesmas falhas de argumento: uma conclusão maior que a evidência em @sec-ch20, um raciocínio que nunca perde em @sec-ch09, um guia de leitura que mandava quatro dos cinco pro capítulo errado. Cada padrão virou uma regra escrita, que os agentes passaram a ler antes de editar.
+
+<!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
+Daí veio o rebalanceamento. Umas 8 mil palavras de caderno de laboratório saíram dos capítulos pra @sec-aptecnico, cada parágrafo com a sua marca de origem; a lista de leituras virou apêndice; uma seção inteira foi guardada fora do livro enquanto a verificação estava pendente; cada capítulo passou a orientar o leitor antes do primeiro jargão; e o epílogo ganhou uma lista do que fazer nesta semana, por tipo de leitor. Foram três rodadas, ler, editar e ler de novo, porque a edição conserta o problema velho e cria o novo: as falhas de lógica caíram de 73 pra 53 e 51, e a revisão parou quando os problemas deixaram de voltar.
+
+<!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
+Os mesmos cinco leitores conferiram depois os capítulos que ganharam a minha história de antes de 2026. O veredito virou regra: a história do narrador convence quando é evidência que o leitor consegue checar, como o aviso com data ao lado do erro admitido, e atrapalha quando vira currículo. As linhas que três ou quatro deles marcaram como exibição saíram do livro.
+
+## O que eu mantenho hoje
+
+<!-- src: original -->
+O livro cita muitos programas meus, e boa parte foi experimento de poucos dias, feito pra medir alguma coisa e deixado no estado em que parou. Em outubro de 2026, o que eu mantinha de fato era pouca coisa.
+
+De um lado, as ferramentas pra trabalhar com agentes: o ai-memory (@sec-apmemoria), o ai-jail (@sec-apB), o ai-usagebar, que mostra o consumo dos planos de IA, e o ghpending, que junta as pendências dos meus repositórios. Do outro, os benchmarks: o de programação de @sec-ch11, o dos classificadores de @sec-ch13 e o das linguagens de @sec-ch18. A série Frank continua publicada, cada projeto no ponto em que eu o deixei. A lista completa está no GitHub, em github.com/akitaonrails.
 
 ## O que continua sendo meu
 

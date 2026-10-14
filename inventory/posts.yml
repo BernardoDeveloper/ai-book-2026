@@ -1,6 +1,6 @@
 ---
 generated_from: "/home/akitaonrails/Projects/akitaonrails-hugo"
-blog_commit: 956fc9ed1cc8e32f61deeef64518eece134fd510
+blog_commit: 620e97e1a5d5b2a18454d512cc1ae7851db5df31
 dirty_files: []
 year: '2026'
 posts:
@@ -16649,6 +16649,189 @@ posts:
       url: "/en/2026/10/11/are-there-better-languages-for-programming-with-llms/"
     - text: Octoverse 2025
       url: https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/
+    images: []
+    youtube: []
+- id: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+  date: '2026-10-14T15:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo/
+  url_en: https://www.akitaonrails.com/en/2026/10/14/i-trained-my-own-ai-model-spoiler-its-just-for-study/
+  pt:
+    sha256: ad97af1386db2d2b4ecc0429acb08c852b2124f509923bf7a45df17f22f233b4
+    title: 'Treinei meu próprio modelo de IA (Spoiler: é só pra estudo)'
+    description: 'Faltava um exercício: treinar um LLM do zero. Parti do microgpt
+      do Karpathy, 200 linhas de Python puro, e expandi pra um laboratório com tokenizer,
+      pré-treino, SFT, servidor compatível com OpenAI e integração com o OpenCode.
+      Menos de duas semanas, uma RTX 5090, 10 bilhões de tokens, 137 horas de treino,
+      no máximo uns R$ 80 de luz. O modelo final tem 337 milhões de parâmetros, acerta
+      58 de 100 funções Python simples e zera em tudo que exige agir num repositório.
+      Explico cada etapa, os tropeços, as dimensões contra GPT-2 e modelos de fronteira,
+      e por que acho que o futuro são modelos menores e especializados.'
+    slug: treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    tags:
+    - inteligencia-artificial
+    - llms
+    - machine-learning
+    - modelos-locais
+    words: 4822
+    links:
+    - text: AI Index de Stanford
+      url: https://hai.stanford.edu/ai-index/2024-ai-index-report
+    - text: gpt-oss-120b
+      url: https://arxiv.org/abs/2508.10925
+    - text: DeepSeek-V3
+      url: https://arxiv.org/abs/2412.19437
+    - text: ULMFiT
+      url: https://arxiv.org/abs/1801.06146
+    - text: LoRA
+      url: https://arxiv.org/abs/2106.09685
+    - text: QLoRA
+      url: https://arxiv.org/abs/2305.14314
+    - text: Hinton, 2015
+      url: https://arxiv.org/abs/1503.02531
+    - text: DeepSeek-R1
+      url: https://arxiv.org/abs/2501.12948
+    - text: '"Don''t Stop Pretraining"'
+      url: https://arxiv.org/abs/2004.10964
+    - text: InstructGPT
+      url: https://arxiv.org/abs/2203.02155
+    - text: DPO
+      url: https://arxiv.org/abs/2305.18290
+    - text: repositório é público
+      url: https://github.com/akitaonrails/microgpt
+    - text: SmolLM2 de 360 milhões
+      url: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
+    - text: microgpt
+      url: https://karpathy.github.io/2026/02/12/microgpt/
+    - text: nanochat
+      url: https://github.com/karpathy/nanochat
+    - text: microgpt lab
+      url: https://github.com/akitaonrails/microgpt
+    - text: CodeParrot
+      url: https://huggingface.co/datasets/codeparrot/codeparrot-clean
+    - text: OpenCoder
+      url: https://huggingface.co/datasets/OpenCoder-LLM/opc-sft-stage1
+    - text: Cosmopedia
+      url: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
+    - text: SmolTalk
+      url: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
+    - text: OpenCodeInstruct
+      url: https://huggingface.co/datasets/nvidia/OpenCodeInstruct
+    - text: 575 W de potência nominal
+      url: https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/
+    - text: Runpod
+      url: https://www.runpod.io/pricing
+    - text: Chinchilla
+      url: https://arxiv.org/abs/2203.15556
+    - text: relatório de fechamento
+      url: https://github.com/akitaonrails/microgpt/blob/main/docs/report/experiment-closeout.md
+    - text: os modelos crus convergiram
+      url: "/2026/10/12/llms-agentes-competente-o-suficiente/"
+    - text: MedGemma
+      url: https://research.google/blog/medgemma-our-most-capable-open-models-for-health-ai-development/
+    - text: SaulLM
+      url: https://arxiv.org/abs/2403.03883
+    - text: Fin-R1
+      url: https://arxiv.org/abs/2503.16252
+    - text: BloombergGPT
+      url: https://arxiv.org/abs/2303.17564
+    - text: NVIDIA publicou em 2025
+      url: https://arxiv.org/abs/2506.02153
+    - text: roda um modelo de 3 bilhões no aparelho
+      url: https://machinelearning.apple.com/research/apple-foundation-models-2025-updates
+    - text: modelos de decisão que eu testei
+      url: "/2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor/"
+    - text: repositório
+      url: https://github.com/akitaonrails/microgpt
+    images: []
+    youtube: []
+  en:
+    sha256: c39990023635f5788e970e87ab6984105f7e3a24fe6d09b714e82179eaabe4d9
+    title: 'I Trained My Own AI Model (Spoiler: It''s Just for Study)'
+    description: 'One exercise was missing: training an LLM from scratch. I started
+      from Karpathy''s microgpt, 200 lines of pure Python, and expanded it into a
+      lab with a tokenizer, pretraining, SFT, an OpenAI-compatible server and OpenCode
+      integration. Under two weeks, one RTX 5090, 10 billion tokens, 137 hours of
+      training, at most around R$ 80 of electricity. The final model has 337 million
+      parameters, gets 58 out of 100 simple Python functions right and scores zero
+      on anything that requires acting in a repository. I explain each step, the stumbles,
+      the dimensions against GPT-2 and frontier models, and why I think the future
+      is smaller, specialized models.'
+    slug: i-trained-my-own-ai-model-spoiler-its-just-for-study
+    tags:
+    - artificial-intelligence
+    - llms
+    - machine-learning
+    - local-models
+    words: 4564
+    links:
+    - text: Stanford AI Index
+      url: https://hai.stanford.edu/ai-index/2024-ai-index-report
+    - text: gpt-oss-120b
+      url: https://arxiv.org/abs/2508.10925
+    - text: DeepSeek-V3
+      url: https://arxiv.org/abs/2412.19437
+    - text: ULMFiT
+      url: https://arxiv.org/abs/1801.06146
+    - text: LoRA
+      url: https://arxiv.org/abs/2106.09685
+    - text: QLoRA
+      url: https://arxiv.org/abs/2305.14314
+    - text: Hinton, 2015
+      url: https://arxiv.org/abs/1503.02531
+    - text: DeepSeek-R1
+      url: https://arxiv.org/abs/2501.12948
+    - text: '"Don''t Stop Pretraining"'
+      url: https://arxiv.org/abs/2004.10964
+    - text: InstructGPT
+      url: https://arxiv.org/abs/2203.02155
+    - text: DPO
+      url: https://arxiv.org/abs/2305.18290
+    - text: repository is public
+      url: https://github.com/akitaonrails/microgpt
+    - text: 360-million SmolLM2
+      url: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
+    - text: microgpt
+      url: https://karpathy.github.io/2026/02/12/microgpt/
+    - text: nanochat
+      url: https://github.com/karpathy/nanochat
+    - text: microgpt lab
+      url: https://github.com/akitaonrails/microgpt
+    - text: CodeParrot
+      url: https://huggingface.co/datasets/codeparrot/codeparrot-clean
+    - text: OpenCoder
+      url: https://huggingface.co/datasets/OpenCoder-LLM/opc-sft-stage1
+    - text: Cosmopedia
+      url: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
+    - text: SmolTalk
+      url: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
+    - text: OpenCodeInstruct
+      url: https://huggingface.co/datasets/nvidia/OpenCodeInstruct
+    - text: 575 W rated power
+      url: https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/
+    - text: Runpod
+      url: https://www.runpod.io/pricing
+    - text: Chinchilla
+      url: https://arxiv.org/abs/2203.15556
+    - text: closeout report
+      url: https://github.com/akitaonrails/microgpt/blob/main/docs/report/experiment-closeout.md
+    - text: the raw models converged
+      url: "/en/2026/10/12/llms-agents-competent-enough/"
+    - text: MedGemma
+      url: https://research.google/blog/medgemma-our-most-capable-open-models-for-health-ai-development/
+    - text: SaulLM
+      url: https://arxiv.org/abs/2403.03883
+    - text: Fin-R1
+      url: https://arxiv.org/abs/2503.16252
+    - text: BloombergGPT
+      url: https://arxiv.org/abs/2303.17564
+    - text: NVIDIA published in 2025
+      url: https://arxiv.org/abs/2506.02153
+    - text: runs a 3-billion model on the device
+      url: https://machinelearning.apple.com/research/apple-foundation-models-2025-updates
+    - text: decision models I tested
+      url: "/en/2026/10/10/which-jev-like-ai-decision-classifier-model-is-best/"
+    - text: repository
+      url: https://github.com/akitaonrails/microgpt
     images: []
     youtube: []
 - id: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software

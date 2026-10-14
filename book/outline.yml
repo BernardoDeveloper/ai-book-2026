@@ -11,6 +11,7 @@ meta:
   author: "Fabio Akita"
   # Names owned by the author (copyright page, EPUB rights, HTML footer).
   isbn:
+    pt: "9798162465683"   # KDP free ISBN, PT hardcover (2026-10-14)
     en: "9798162395362"   # KDP free ISBN, EN hardcover (2026-10-14)
   owned_names: ["akitaonrails", "Akitando", "The M.Akita Chronicles", "ai-memory", "ai-jail", "ai-usagebar", "ghpending", "AI Lair", "Frank (FrankMD, Frank Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, FrankMega, Frank Karaoke, Frank GO, Frank Manga+ e demais projetos da série)"]
   open_source_licenses: {ai-jail: "GPL-3.0", ai-memory: "MIT", ai-usagebar: "MIT", ghpending: "MIT"}
@@ -306,6 +307,35 @@ parts:
           ref: ["ref:private-notes/decision-models.md", "ref:jev-docs/benchmark"]
         illustrations:
           - {kind: diagram, idea: "bandwidth vs capacity: narrow fast pipe vs wide slow pipe"}
+      - id: ch13b
+        title: "Um modelo feito em casa"
+        scene: >-
+          October 2026: eleven days training a GPT from random weights on the
+          desktop RTX 5090, starting from Karpathy's 200-line microgpt; 337
+          million parameters, 10 billion tokens, 137 hours, about R$ 80 of
+          electricity, against US$ 78 million for GPT-4's training compute.
+        question: "Is building an AI model wizardry only a few geniuses can do? Do I need a giant model?"
+        arc: >-
+          The whole algorithm fits in 200 lines ("everything else is just
+          efficiency"); the six stations (data, tokenizer, pre-training, SFT,
+          protocol/server, evaluation) in plain words; parameters are the size of
+          the brain, tokens the years of school (SmolLM2: same size, 400x the
+          text); the stumbles echo the book (measuring near training, loss vs
+          competence, a model that learned to claim tests passed, the vocabulary
+          eating the model); the result (58/100 small functions, valid syntax,
+          zero on tools and memory: syntax is not semantics); difficult, not
+          wizardry: students can try; the future is smaller, specialised models
+          (mixture of experts, Jev-class classifiers) with the harness fetching
+          the world. Hands over to ch14: the frontier's cost and how it is sold.
+        sources:
+          primary: [10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo]
+          supporting: [10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, 10/12/llms-agentes-competente-o-suficiente]
+          ref: ["ref:microgpt/docs/report/experiment-closeout.md", "https://github.com/akitaonrails/microgpt", "https://karpathy.github.io/2026/02/12/microgpt/"]
+        illustrations:
+          - {kind: diagram, idea: "the six stations of building an LLM, with this run's numbers"}
+          - {kind: chart, idea: "scale ladder: tokens seen in pre-training, log scale"}
+          - {kind: chart, idea: "where the parameters went: vocabulary table vs transformer, 239M vs 337M"}
+          - {kind: chart, idea: "the gap: valid syntax, right name, correct result, tool use, memory"}
       - id: ch14
         title: "A fábrica de propaganda"
         scene: >-
@@ -552,10 +582,6 @@ back:
     title: "Como ler um benchmark ou um anúncio"
     kind: appendix
     brief: "Two one-page checklists distilled from ch11 and ch14."
-  - id: apD
-    title: "Os projetos do ano"
-    kind: appendix
-    brief: "Catalogue of every project built during 2026 with one line each and where it appears in the book."
   - id: aptecnico
     title: "Para quem programa: os bastidores"
     kind: appendix
@@ -611,6 +637,9 @@ background_sources:
   - {post: 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar, why: "narrator background (Akitando era), approved 2026-10-14: reviews/akitando/plan.md"}
 
 excluded:
+  # Appendix "Os projetos do ano" cut (author, 2026-10-14): side projects with no other home in the book (text in book/parked/projetos-secundarios/).
+  - {post: 03/07/crystal-e-um-wrapper-inteligente-pro-ffmpeg-feito-em-3-horas-easy-ffmpeg, reason: "parked: side project, appendix of projects cut (book/parked/projetos-secundarios/)"}
+  - {post: 04/05/transformando-youtube-num-app-de-karaoke-frank-karaoke, reason: "parked: side project, appendix of projects cut (book/parked/projetos-secundarios/)"}
   # Parked 2026-10-13 (author): pending due diligence; text in book/parked/genesys-pi/ (EDITORIAL-RULES R16).
   - {post: 09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro, reason: "parked: Genesys PI, due diligence pending (book/parked/genesys-pi/)"}
   - {post: 09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro, reason: "parked: Genesys PI, due diligence pending (book/parked/genesys-pi/)"}

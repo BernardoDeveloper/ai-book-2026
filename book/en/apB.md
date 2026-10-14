@@ -18,7 +18,7 @@ refs_projects:
   - "ai-memory/README.md"
   - "ai-usagebar/README.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apB.md, sha256: "8ceae2e05c3de7d8c1441ab81bc9bb228c103b5dea2b6e408c4039b143b069b3"}
+translated_from: {file: book/pt/apB.md, sha256: "06f80416a4e12bbeb2aad7d507ca0c6df97a42fb386a8c081b018cd1dceb751a"}
 ---
 
 # A Minimum Kit for Using Agents Safely {#sec-apB}
@@ -249,7 +249,7 @@ What follows are the three tools I wrote in 2026 to cover pieces 1, 6 and 7 on m
 ### ai-jail, the Jail
 
 <!-- src: ref:ai-jail/README.md -->
-ai-jail runs a coding agent inside a sandbox: on Linux, with bubblewrap plus a few protections from the system's own kernel; on macOS, with `sandbox-exec` [@akita2026aijail; @aijail2026site]. On Windows, it only works inside WSL2. In October 2026 it was at version 2.8.1.
+ai-jail runs a coding agent inside a sandbox: on Linux, with bubblewrap plus a few protections from the system's own kernel; on macOS, with `sandbox-exec` [@akita2026aijail; @aijail2026site]. On Windows, it only works inside WSL2. In October 2026 it was at version 2.9.0.
 
 The documentation says what it promises: protection against accidents, the limit we saw in piece 1. Against an attacker trying to escape on purpose, it tells you to use a disposable virtual machine (@sec-ch15).
 

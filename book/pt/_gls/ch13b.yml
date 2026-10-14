@@ -1,0 +1,6 @@
+tokenizador:
+  term: Tokenizador
+  def: A parte do modelo que quebra o texto em tokens e os converte em números, e de volta. Cada modelo tem o seu vocabulário, montado antes do treino; quanto maior o vocabulário, mais parâmetros vão pra tabela que guarda cada entrada.
+perda:
+  term: Perda
+  def: O número que mede o tamanho do erro de um modelo durante o treino, quanto ele errou ao adivinhar o próximo pedaço de texto. O treino tenta diminuí-la; uma perda menor nem sempre quer dizer um modelo mais útil.

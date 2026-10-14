@@ -1,0 +1,26 @@
+---
+id: ch13b-escala
+kind: chart_code
+file: assets/figures/ch13b-escala.png
+sha256: 6629beef86db2f08ce699fb6a92d774c495b114e7a9855d45eab367c6db62118
+pixels:
+  width: 1920
+  height: 990
+source: assets/charts/ch13b-escala.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I scripts/chart_check.py assets/charts/ch13b-escala.py
+    pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+description: 'ch13b-escala: tokens seen in pre-training, log scale; the microgpt model
+  vs public models.'
+chapters:
+- ch13b
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

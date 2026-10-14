@@ -1,0 +1,25 @@
+---
+id: ch13b-parametros
+kind: chart_code
+file: assets/figures/ch13b-parametros.png
+sha256: 2b7ab8d67705d256696b78c6578728ed8eeb04e8b5b2d1bedd8dea427b01610c
+pixels:
+  width: 1920
+  height: 870
+source: assets/charts/ch13b-parametros.py
+labels: inline dict per language (pt, en) in the source
+tool:
+  name: matplotlib
+  run: uv run --with matplotlib python -I scripts/chart_check.py assets/charts/ch13b-parametros.py
+    pt
+  theme: house-v1 (docs/research/IMAGES.md §4)
+  font: Noto Sans (assets/fonts)
+description: 'ch13b-parametros: where the parameters went, vocabulary table vs transformer.'
+chapters:
+- ch13b
+editions:
+- pt
+- en
+authored_by: author+llm
+kdp_disclosure: none
+credit:

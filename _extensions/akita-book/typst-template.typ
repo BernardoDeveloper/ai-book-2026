@@ -297,7 +297,10 @@
   set document(title: title, author: author)
   set text(font: ak-serif, size: ak-body-size, lang: lang, region: region,
     hyphenate: true, fill: black, number-type: "old-style",
-    costs: (widow: 1000%, orphan: 1000%, runt: 200%, hyphenation: 100%))
+    // hyphenation 400%: a word is broken only when the alternative is a loose
+    // line (a reader asked for fewer breaks; 100% -> 400% cut them by ~2/3
+    // with no visibly loose lines; 800% gained little more).
+    costs: (widow: 1000%, orphan: 1000%, runt: 200%, hyphenation: 400%))
   set par(justify: true, leading: 0.62em, spacing: 0.62em,
     first-line-indent: (amount: 1.2em, all: false))
   set page(

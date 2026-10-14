@@ -98,3 +98,10 @@ items:
   - chapters: [ch18]
     issue: "The 02/08 post dated the hiring bubble 'por volta de 2014' and Akitando 'até o começo de 2024'."
     ruling: "Book says 'a partir de 2010, com juro perto de zero' and '2018 ao fim de 2023' (fact-check; author's own episodes). Blog errata for the author."
+  # --- 2026-10-14: the microgpt chapter and the side-project trim
+  - chapters: [ch13, ch13b, ch14, como-ler, apleituras, apestudar, aptecnico, apA]
+    issue: "The book explains how LLMs are trained but never shows one being built (author request, post 10/14 and the microgpt repo)."
+    ruling: "New chapter ch13b 'Um modelo feito em casa' between ch13 and ch14 (author approved 2026-10-14): difficult, not wizardry; small specialised models. Technical detail in aptecnico 'O microgpt por dentro'; numbers per the repo's closeout report."
+  - chapters: [apD, aptecnico, apA, ch04, ch05, ch15, ch16, ch17, posfacio]
+    issue: "Appendices too long; minor Frank projects over-weighted (author, 2026-10-14)."
+    ruling: "apD cut and parked (book/parked/projetos-secundarios/); aptecnico Investigator and Sherlock sections parked; minor Frank entries out of apA; ch04 and ch17 condense Investigator/FBI (low-effort projects, few contributions; not to be overstated); FrankClaw is cited as a discontinued experiment; posfácio lists what the author maintains (public repos only). Typst hyphenation cost 400% (reader feedback)."

@@ -1,7 +1,8 @@
 ---
 id: apleituras
 chapter: "Leituras pra ir mais fundo"
-sources: []
+sources:
+  - {post: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo, sha256: "ad97af1386db2d2b4ecc0429acb08c852b2124f509923bf7a45df17f22f233b4"}
 refs_projects: ["docs/research/FURTHER-READING.md"]
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
 ---
@@ -28,6 +29,11 @@ A lista abaixo é curta de propósito e vai do mais fácil ao mais técnico. Con
 
 - Sebastian Raschka, *Build a Large Language Model (From Scratch)*: constrói um modelo no estilo do GPT, peça por peça; o livro é pago, o código é gratuito [@raschka2024build].
 - Jay Alammar e Maarten Grootendorst, *Hands-On Large Language Models*: quase 300 ilustrações originais; tem uma tradução feita com auxílio de IA, *Modelos de linguagem grandes e práticos*, só na plataforma por assinatura da O'Reilly [@alammar2024handson].
+
+<!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
+- Andrej Karpathy, *microgpt*: um GPT inteiro em 200 linhas de Python, sem biblioteca nenhuma, que treina em um minuto num notebook; o ponto de partida do @sec-ch13b [@karpathy2026microgpt].
+- Andrej Karpathy, *nanochat*: o passo seguinte, um modelo do nível do GPT-2 treinado em poucas horas de placas alugadas; código gratuito [@karpathy2025nanochat].
+- O meu microgpt lab: o ciclo completo do @sec-ch13b, dos dados à avaliação, com o relatório de cada tropeço; a primeira lição roda num processador comum [@akita2026microgpt].
 
 ## Vídeos gratuitos
 

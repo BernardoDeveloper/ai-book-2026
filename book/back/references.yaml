@@ -272,24 +272,6 @@ references:
       - 13
   note: 'cited-by: 2026/05/24/criei-widget-waybar-omarchy-monitorar-uso-llms-ai-usagebar;
     current state checked against README at v1.36.0 (2026-10-13)'
-- id: akita2026blog
-  type: software
-  title: akitaonrails.github.io
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-  URL: https://github.com/akitaonrails/akitaonrails.github.io
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
-    linked in the post)'
 - id: akita2026clashofkings
   type: software
   title: clash_of_kings_analysis
@@ -309,126 +291,6 @@ references:
       - 10
       - 13
   note: 'cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint'
-- id: akita2026clocktui
-  type: software
-  title: clock-tui
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 6
-      - 7
-  URL: https://github.com/akitaonrails/clock-tui
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
-    (public repository linked in the post)'
-- id: akita2026distroboxgaming
-  type: software
-  title: distrobox-gaming
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 4
-      - 11
-  URL: https://github.com/akitaonrails/distrobox-gaming
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
-    linked in the post)'
-- id: akita2026distroboxllm
-  type: software
-  title: distrobox-llm
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 4
-      - 23
-  URL: https://github.com/akitaonrails/distrobox-llm
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
-    linked in the post)'
-- id: akita2026easyffmpeg
-  type: software
-  title: easy-ffmpeg
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 3
-      - 8
-  URL: https://github.com/akitaonrails/easy-ffmpeg
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/03/07/crystal-e-um-wrapper-inteligente-pro-ffmpeg-feito-em-3-horas-easy-ffmpeg
-    (public repository linked in the post)'
-- id: akita2026easysubtitle
-  type: software
-  title: easy-subtitle
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 3
-      - 8
-  URL: https://github.com/akitaonrails/easy-subtitle
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle
-    (public repository linked in the post)'
-- id: akita2026frankclaw
-  type: software
-  title: FrankClaw
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 3
-      - 10
-  URL: https://github.com/akitaonrails/FrankClaw
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw (public
-    repository linked in the post)'
 - id: akita2026frankfbi
   type: software
   title: 'Frank FBI: Fraud Bureau of Investigation'
@@ -448,126 +310,6 @@ references:
       - 10
       - 13
   note: 'cited-by: 2026/03/09/atacando-fraudes-via-email-frank-fbi'
-- id: akita2026frankgeary
-  type: software
-  title: frank_geary
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 7
-      - 12
-  URL: https://github.com/akitaonrails/frank_geary
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
-    (public repository linked in the post)'
-- id: akita2026frankgo
-  type: software
-  title: frank_go
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 7
-      - 3
-  URL: https://github.com/akitaonrails/frank_go
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (public repository linked
-    in the post)'
-- id: akita2026frankinvestigator
-  type: software
-  title: frank_investigator
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 3
-      - 25
-  URL: https://github.com/akitaonrails/frank_investigator
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator (public
-    repository linked in the post)'
-- id: akita2026frankkaraoke
-  type: software
-  title: frank_karaoke
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 4
-      - 5
-  URL: https://github.com/akitaonrails/frank_karaoke
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/04/05/transformando-youtube-num-app-de-karaoke-frank-karaoke
-    (public repository linked in the post)'
-- id: akita2026franklyrics
-  type: software
-  title: frank_lyrics
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 7
-      - 10
-  URL: https://github.com/akitaonrails/frank_lyrics
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
-    (public repository linked in the post)'
-- id: akita2026frankmd
-  type: software
-  title: FrankMD
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 1
-      - 30
-  URL: https://github.com/akitaonrails/FrankMD
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2
-    (public repository linked in the post)'
 - id: akita2026frankmega
   type: software
   title: FrankMega
@@ -606,46 +348,6 @@ references:
       - 10
       - 13
   note: 'cited-by: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias'
-- id: akita2026franktype
-  type: software
-  title: frank_type
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 6
-      - 14
-  URL: https://github.com/akitaonrails/frank_type
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
-    (public repository linked in the post)'
-- id: akita2026frankyomik
-  type: software
-  title: FrankYomik
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 2
-      - 26
-  URL: https://github.com/akitaonrails/FrankYomik
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik
-    (public repository linked in the post)'
 - id: akita2026govbr
   type: software
   title: govbr_analysis
@@ -665,9 +367,9 @@ references:
       - 10
       - 13
   note: 'cited-by: 2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint'
-- id: akita2026llmbench
+- id: akita2026microgpt
   type: software
-  title: llm-coding-benchmark
+  title: MicroGPT Lab
   author:
   - family: Akita
     given: Fabio
@@ -675,16 +377,17 @@ references:
   issued:
     date-parts:
     - - 2026
-      - 4
-      - 5
-  URL: https://github.com/akitaonrails/llm-coding-benchmark
+      - 10
+      - 14
+  URL: https://github.com/akitaonrails/microgpt
   accessed:
     date-parts:
     - - 2026
       - 10
-      - 13
-  note: 'cited-by: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar
-    (public repository linked in the post)'
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (closeout report docs/report/experiment-closeout.md is the source of every number
+    in ch13b)'
 - id: akita2026myskills
   type: software
   title: my-skills
@@ -704,46 +407,6 @@ references:
       - 10
       - 13
   note: 'cited-by: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia (public repository)'
-- id: akita2026nestosms
-  type: software
-  title: nes-to-sms
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 9
-      - 5
-  URL: https://github.com/akitaonrails/nes-to-sms
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/09/07/desafio-pra-ia-converter-roms-de-nes-pra-master-system-sms
-    (public repository linked in the post)'
-- id: akita2026nwomarchy
-  type: software
-  title: NW-Omarchy
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 4
-      - 29
-  URL: https://github.com/akitaonrails/NW-Omarchy
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
-    linked in the post)'
 - id: akita2026pact
   type: software
   title: 'pact-lang: an AI opinionated ideal language that ignores human-friendliness'
@@ -763,26 +426,6 @@ references:
       - 10
       - 13
   note: 'cited-by: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms'
-- id: akita2026shadps4
-  type: software
-  title: shadPS4
-  author:
-  - family: Akita
-    given: Fabio
-  container-title: GitHub
-  issued:
-    date-parts:
-    - - 2026
-      - 4
-      - 20
-  URL: https://github.com/akitaonrails/shadPS4
-  accessed:
-    date-parts:
-    - - 2026
-      - 10
-      - 13
-  note: 'cited-by: 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso (public repository
-    linked in the post)'
 - id: akita2026tiktok
   type: software
   title: tiktok_analysis
@@ -1673,6 +1316,25 @@ references:
       - 10
       - 13
   note: 'cited-by: 2026/06/15/controversia-llm-rio-3-5-plagio'
+- id: apple2025foundation
+  type: webpage
+  title: Updates to Apple's On-Device and Server Foundation Language Models
+  author:
+  - literal: Apple Machine Learning Research
+  container-title: Apple Machine Learning Research
+  issued:
+    date-parts:
+    - - 2025
+      - 6
+      - 9
+  URL: https://machinelearning.apple.com/research/apple-foundation-models-2025-updates
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (~3B on-device model, tool calling, task adapters)'
 - id: apple2025m3ultra
   type: webpage
   title: Apple reveals M3 Ultra, taking Apple silicon to a new extreme
@@ -1822,6 +1484,29 @@ references:
   note: 'cited-by: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
     (16 devs, 246 tasks, forecast -24% time, measured +19%). Repos were large OPEN-SOURCE
     projects; the post calls them private, the book does not.'
+- id: belcak2025small
+  type: article
+  title: Small Language Models are the Future of Agentic AI
+  author:
+  - family: Belcak
+    given: Peter
+  - family: Heinrich
+    given: Greg
+  container-title: arXiv
+  number: arXiv:2506.02153
+  issued:
+    date-parts:
+    - - 2025
+      - 6
+      - 2
+  URL: https://arxiv.org/abs/2506.02153
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (NVIDIA Research position paper)'
 - id: bender2020climbing
   type: paper-conference
   title: 'Climbing towards NLU: On Meaning, Form, and Understanding in the Age of
@@ -2431,6 +2116,30 @@ references:
       - 10
       - 13
   note: 'cited-by: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2'
+- id: colombo2024saullm
+  type: article
+  title: 'SaulLM-7B: A pioneering Large Language Model for Law'
+  author:
+  - family: Colombo
+    given: Pierre
+  - family: Pires
+    given: Telmo Pessoa
+  - family: Boudiaf
+    given: Malik
+  container-title: arXiv
+  number: arXiv:2403.03883
+  issued:
+    date-parts:
+    - - 2024
+      - 3
+      - 6
+  URL: https://arxiv.org/abs/2403.03883
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo'
 - id: cottier2024rising
   type: article
   title: The rising costs of training frontier AI models
@@ -3094,6 +2803,25 @@ references:
       - 13
   note: 'cited-by: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas
     (title paraphrased; exact day not checked)'
+- id: google2025medgemma
+  type: post-weblog
+  title: 'MedGemma: Our most capable open models for health AI development'
+  author:
+  - literal: Google Research
+  container-title: Google Research Blog
+  issued:
+    date-parts:
+    - - 2025
+      - 7
+      - 9
+  URL: https://research.google/blog/medgemma-our-most-capable-open-models-for-health-ai-development/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (MedGemma 4B)'
 - id: guthrie2026drm
   type: post
   title: Tonight, the DRM is dead
@@ -3400,6 +3128,24 @@ references:
       - 13
   note: 'cited-by: 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia (verified
     online 2026-10-13; not linked in the post) Associated Press, syndicated by NBC.'
+- id: huggingface2024smollm2
+  type: software
+  title: SmolLM2-360M
+  author:
+  - literal: Hugging Face
+  container-title: Hugging Face
+  issued:
+    date-parts:
+    - - 2024
+      - 11
+  URL: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (model card: 4 trillion pretraining tokens)'
 - id: huggingface2026intrusion
   type: post-weblog
   title: 'Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July
@@ -3700,6 +3446,27 @@ references:
       - 13
   note: 'cited-by: antes (leituras prévias); nível: leigo; gratuito; cobre pré-treino,
     ajuste fino e RLHF para público geral; PT: só legendas automáticas'
+- id: karpathy2025nanochat
+  type: software
+  title: 'nanochat: The best ChatGPT that $100 can buy'
+  author:
+  - family: Karpathy
+    given: Andrej
+  container-title: GitHub
+  issued:
+    date-parts:
+    - - 2025
+      - 10
+      - 13
+  URL: https://github.com/karpathy/nanochat
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (GPT-2-capability model in about four hours on one 8xH100 node at launch, about
+    US$ 100)'
 - id: karpathy2026llmwiki
   type: webpage
   title: LLM Wiki
@@ -3720,6 +3487,27 @@ references:
       - 13
   note: 'cited-by: 2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos
     (05/18 linked a VentureBeat article about it)'
+- id: karpathy2026microgpt
+  type: post-weblog
+  title: microgpt
+  author:
+  - family: Karpathy
+    given: Andrej
+  container-title: karpathy.github.io
+  issued:
+    date-parts:
+    - - 2026
+      - 2
+      - 12
+  URL: https://karpathy.github.io/2026/02/12/microgpt/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (200 lines of dependency-free Python; ''the full algorithmic content of what is
+    needed. Everything else is just efficiency'')'
 - id: kelleher2019deep
   type: book
   title: Deep Learning
@@ -4260,6 +4048,25 @@ references:
       - 13
   note: 'cited-by: original (pretrained on over 15T tokens; tokenizer vocabulary of
     128K tokens; figures confirmed via IEEE Spectrum and The Decoder coverage)'
+- id: meta2024llama31card
+  type: software
+  title: Llama 3.1 405B model card
+  author:
+  - literal: Meta
+  container-title: Hugging Face
+  issued:
+    date-parts:
+    - - 2024
+      - 7
+      - 23
+  URL: https://huggingface.co/meta-llama/Llama-3.1-405B
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (~15T+ pretraining tokens; 30.84M H100 GPU hours for the 405B model)'
 - id: metr2025tasks
   type: report
   title: Measuring AI Ability to Complete Long Tasks
@@ -4526,6 +4333,24 @@ references:
       - 13
   note: 'cited-by: original (book bridge: John Hopfield and Geoffrey Hinton awarded
     the 2024 Nobel Prize in Physics)'
+- id: nvidia2025rtx5090
+  type: webpage
+  title: GeForce RTX 5090
+  author:
+  - literal: NVIDIA
+  container-title: NVIDIA
+  issued:
+    date-parts:
+    - - 2025
+  URL: https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (575 W total graphics power; 575 W x 137 h = ~79 kWh, the author''s upper bound;
+    energy was not metered)'
 - id: ogkalu2025bubble
   type: software
   title: comic-text-and-bubble-detector
@@ -4715,6 +4540,25 @@ references:
       - 13
   note: 'cited-by: 2026/01/24/ai-agents-qual-e-o-melhor-opencode-crush-claude-code-gpt-codex-copilot-cursor-windsurf-antigravity,
     Arquivado em: https://web.archive.org/web/20260201125545/https://github.com/openai/codex/blob/main/codex-rs/core/prompt.md'
+- id: openai2025gptoss
+  type: article
+  title: gpt-oss-120b & gpt-oss-20b Model Card
+  author:
+  - literal: OpenAI
+  container-title: arXiv
+  number: arXiv:2508.10925
+  issued:
+    date-parts:
+    - - 2025
+      - 8
+  URL: https://arxiv.org/abs/2508.10925
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (117B total parameters, 5.1B active per token)'
 - id: openai2026hfreport
   type: report
   title: 'OpenAI Hugging Face Incident: Technical Report'
@@ -5217,6 +5061,26 @@ references:
   note: 'cited-by: antes (leituras prévias); nível: intermediário/técnico; gratuito:
     PDF no site do livro (CC BY-NC-ND; versão 5.0.3, 9 fev. 2026); edição PT: nenhuma
     encontrada'
+- id: qwen2025qwen3
+  type: article
+  title: Qwen3 Technical Report
+  author:
+  - literal: Qwen Team
+  container-title: arXiv
+  number: arXiv:2505.09388
+  issued:
+    date-parts:
+    - - 2025
+      - 5
+      - 14
+  URL: https://arxiv.org/abs/2505.09388
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (pretraining on about 36 trillion tokens)'
 - id: qwen2026qwen35
   type: software
   title: Qwen3.5-35B-A3B
@@ -5488,6 +5352,23 @@ references:
       - 13
   note: 'cited-by: original (backpropagation for multi-layer networks; bibliographic
     data verified online)'
+- id: runpod2026pricing
+  type: webpage
+  title: Pricing
+  author:
+  - literal: Runpod
+  container-title: Runpod
+  issued:
+    date-parts:
+    - - 2026
+  URL: https://www.runpod.io/pricing
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (RTX 5090 at about US$ 1.20/hour, per the post; 137 h = ~US$ 165)'
 - id: russo2019endgame
   type: motion_picture
   title: 'Avengers: Endgame'
@@ -6663,6 +6544,31 @@ references:
   note: 'cited-by: 2026/07/06/frank-go-brincando-de-go-com-ia (surpasses ELF''s final
     model after 19 days on fewer than 30 GPUs vs thousands for ELF/AlphaZero; verified
     online)'
+- id: wu2023bloomberggpt
+  type: article
+  title: 'BloombergGPT: A Large Language Model for Finance'
+  author:
+  - family: Wu
+    given: Shijie
+  - family: Irsoy
+    given: Ozan
+  - family: Lu
+    given: Steven
+  container-title: arXiv
+  number: arXiv:2303.17564
+  issued:
+    date-parts:
+    - - 2023
+      - 3
+      - 30
+  URL: https://arxiv.org/abs/2303.17564
+  accessed:
+    date-parts:
+    - - 2026
+      - 10
+      - 14
+  note: 'cited-by: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+    (50B parameters, built for finance)'
 - id: yang2023rlcd
   type: article
   title: 'RLCD: Reinforcement Learning from Contrastive Distillation for Language

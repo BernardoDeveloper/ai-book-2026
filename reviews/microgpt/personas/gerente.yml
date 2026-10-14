@@ -1,0 +1,148 @@
+persona: gerente
+summary: |
+  I came for a decision, and the chapter gives me one only in the last third. The first half is a tour of
+  six stations with a lot of numbers that I enjoyed as a spreadsheet person (137 hours, 79 kWh, 225 thousand
+  times the Llama hours), but a board member would ask "so what do I buy or not buy?" and the answer sits
+  under "Difícil, não feitiçaria", in a paragraph that starts with "E se você é gestor". The best thing is the
+  ladder figure: valid Python 100, right answer 58, repository fixes 0 of 4. That is exactly the gap between
+  a vendor demo and a result, and I will reuse it in my next meeting with the consultants. The "parameters
+  measure brain size, tokens measure years of school" line is also something I can repeat. What nearly lost me
+  was the stretch of failure stories (91M, 239M, dictionary) that read as a lab diary, and the final advice for
+  managers, which says "um modelo útil pra uma tarefa sai em horas" with no evidence, right after a chapter
+  where the useful model never arrived. ch13 -> ch13b is smooth; ch13b -> ch14 is an abrupt jump to Anthropic.
+best:
+  - "ch13b: figure ch13b-abismo (parecer código vs funcionar) with 58/100, 0/4, 0/9"
+  - "ch13b: 'Parâmetro mede o tamanho do cérebro. Token de treino mede os anos de escola.'"
+  - "ch13b: the cost block (137 h, 79 kWh, ~R$80 of electricity vs 30,84 million H100 hours)"
+  - "ch13: 'regra que dá pra escrever fica no código; o modelo só transforma texto livre em fato'"
+  - "ch13b: the vendor ruler 'com quanto texto, contra o quê foi medido e se alguém de fora conferiu'"
+worst:
+  - "ch13b: 'Os tropeços' (91M, 239M, dictionary), a lab diary with no decision attached"
+  - "ch13b: 'Duzentas linhas' and the Karpathy lineage (micrograd, makemore, nanoGPT, nanochat)"
+  - "ch13b: manager paragraph claiming a useful model 'sai em horas' with no evidence"
+  - "ch13b: closing paragraphs of 'O futuro é menor' repeating the Anthropic hook that ch14 retells"
+  - "ch13b: 'O que saiu do outro lado' training curve numbers (39/52/65, 8/100, 58 vs 68)"
+units:
+  - {unit: ch13b, score: 3, note: "Good numbers and one great figure; I wanted the manager takeaway up front, not in paragraph 40, and the failure diary dragged."}
+annotations:
+  - unit: ch13b
+    quote: "E se você é gestor, não precisa treinar nada do zero."
+    type: rewrite
+    why: "This is the only passage written for my job, and it is buried near the end after pages of lab detail. I read three sections before knowing why a manager should care."
+    suggestion: "State the decision up front (one short paragraph after the opening: 'you will not train a model; here is what you need to ask') and let the build story serve it."
+  - unit: ch13b
+    quote: "Com qualquer uma, um modelo útil pra uma tarefa sai em horas."
+    type: logic
+    why: "The chapter just showed that the author's model never became useful after two weeks. No source or number backs 'em horas', and 'útil' is undefined. A board hearing this would approve a budget on it. It also sits oddly next to 'Dias de engenharia e dezenas de horas de placa em cada passo'."
+    suggestion: "Say what 'útil' means (the ch13 classifier case), cite a source or number, and add the cost of data preparation and evaluation, which the chapter itself says dominate the work."
+  - unit: ch13b
+    quote: "Eu, um amador no assunto, montei o ciclo inteiro em menos de duas semanas"
+    type: logic
+    why: "The 'within reach of whoever studies' conclusion rests on a long-time professional programmer with a 5090, plus a year-long lineage of tutorials and an earlier 91M and 239M run. 'Conte em anos de estudo' later contradicts 'menos de duas semanas'. As a reader I do not know how much of the speed was his existing expertise."
+    suggestion: "Qualify 'amador' (30+ years of programming) and say how many weeks the earlier models took, or drop 'menos de duas semanas' as the headline."
+  - unit: ch13b
+    quote: "Quando eu disser que ele acertou 58 de 100, isso quer dizer 58 daquelas 100 tarefas"
+    type: confusing
+    why: "Later the text says 68 on the 'tarefas de escolha', 58 on the 'reservadas', 39/52/65 for the checkpoints, and 8 of 100 without tuning. I lost track of which set is which and which number is the final result."
+    suggestion: "One small table: version, tuning, tasks used for choosing, reserved tasks."
+  - unit: ch13b
+    quote: "o relatório não consegue separar"
+    type: confusing
+    why: "'O relatório' appears several times as an authority (also 'o relatório de fechamento') but is never introduced in the body. I did not know whether it was a document I could read or a paper."
+    suggestion: "Introduce it once ('o relatório de fechamento do projeto, publicado no repositório') with its reference."
+  - unit: ch13b
+    quote: "Os tropeços"
+    type: boring
+    why: "Four failure stories (parecida demais com a aula, erro caiu, jurou que passou, dicionário) each repeat a lesson already given in ch06, ch11 and ch12. I skimmed. Only the dictionary one adds something new (where the parameters went), and that is the one with a figure."
+    suggestion: "Cut to two short stories, or tie each to a business lesson in one line (e.g., test accuracy must come from running the work, not the training loss)."
+  - unit: ch13b
+    quote: "O ajuste final só tinha respostas de código, sem conversa e sem uso de ferramenta, e a mania de responder tudo com Python combina com isso. Combinar não prova"
+    type: confusing
+    why: "A reasonable hedge, but the paragraph is hard to follow: the oats/Python example comes before the explanation, so I read it as a bug without knowing why it matters."
+    suggestion: "Put the cause (tuning only on code) first, then the oats anecdote as the symptom."
+  - unit: ch13b
+    quote: "Parece detalhe de encanador. Mais adiante você vai ver que essa escolha decidiu onde foi parar metade do cérebro de um dos modelos."
+    type: rewrite
+    why: "Good teaser that pays off in 'O dicionário que comeu o cérebro', but 'tokenizer' and 'tokenizador' alternate in heading and text, and the 200 mil vs 32.768 comparison needs a sentence on why a bigger dictionary eats parameters."
+    suggestion: "One plain sentence: 'cada entrada do dicionário ocupa uma linha de números; 200 mil linhas pesam mais que as camadas que pensam num modelo pequeno'."
+  - unit: ch13b
+    quote: "Edições vazias passavam como conserto."
+    type: confusing
+    why: "Rapid list of data defects (ordem que muda, programas que saem com sucesso, edições vazias) with no example for a non-programmer. I got the idea 'data lied' but not what each was."
+    suggestion: "Keep one example and drop the rest to the appendix."
+  - unit: ch13b
+    quote: "Um modelo pra escritórios de contabilidade, que conhece o plano de contas"
+    type: logic
+    why: "The 'future is smaller' prediction rests on one 337M model that failed, plus examples (MedGemma, SaulLM) with no results given. The 337M data shows only that tiny models cannot act as agents, so it does not support 'o futuro é menor'. The author admits it is 'uma leitura', but the claim is stated confidently."
+    suggestion: "Say that the personal result supports 'a small model learns syntax fast', and that the market claim comes from the cited papers, not from the experiment."
+  - unit: ch13b
+    quote: "E quem gasta centenas de milhões num modelo precisa de uma história à altura do gasto."
+    type: logic
+    why: "An insinuation: it suggests a motive for the 'perigoso demais' story without evidence in this chapter. Also a non sequitur coming straight after a section about small models. The paragraph also retells what ch14 opens with, so ch14 loses its surprise."
+    suggestion: "Cut the paragraph and let ch14 open on its own, or keep one sentence as a bridge."
+  - unit: ch13b
+    quote: "Chinchilla: pra usar melhor o processamento, dê uns 20 tokens de treino pra cada parâmetro"
+    type: confusing
+    why: "Jargon dense paragraph: Chinchilla, 6,7 bilhões, 'passei disso', 'passam muito desse ponto de propósito'. I understood only that going over is deliberate, not why it is cheaper later."
+    suggestion: "Say it in money terms: training costs once, running costs every day, so spend more on training a small model."
+  - unit: ch13b
+    quote: "Ninguém mediu o consumo de energia de verdade, então eu fiz conta de padeiro."
+    type: boring
+    why: "Not boring in itself; I liked it. But the following Llama and DeepSeek hours in H100 hours take effort to compare with 137 h on a different GPU."
+    suggestion: "Add a one-line comparison in reais or kWh so the scale reads like a budget line."
+  - unit: ch13b
+    quote: "Em outubro de 2026, alugar uma RTX 5090 na nuvem saía por uns US$ 1,20 por hora; as minhas 137 horas custariam uns US$ 165."
+    type: rewrite
+    why: "This is the number a manager wants and it is hidden in the advice for students. It should sit next to the electricity calculation, since it is the real cost of the experiment (~R$ 900 vs R$ 80 of light)."
+    suggestion: "Move to 'A conta' and give both figures."
+  - unit: ch13b
+    quote: "Pro meu modelo, isso dá uns 6,7 bilhões, e eu passei disso."
+    type: logic
+    why: "337M x 20 = 6,7 bi checks out. Fine. But the figure ch13b-escala puts 'este modelo' at 10 bi against 4 to 36 trilhões, and the log scale makes the first bar almost invisible, which is the point; the chart helps."
+    suggestion: "None; keep."
+  - unit: ch13b
+    quote: "Ajuste (SFT)"
+    type: confusing
+    why: "The station figure says '4.000 atualizações' for the tuning, but the text says the chosen model trained on '64 mil sorteios' and later 4 mil vs 8 mil rodadas. I could not reconcile 'atualizações', 'rodadas' and 'sorteios' for the same thing."
+    suggestion: "Use one word for the step and one for the example, and align the figure with the text."
+  - unit: ch13b
+    quote: "Se você é pai ou mãe de alguém que pergunta se vale a pena estudar isso, a resposta curta é sim."
+    type: boring
+    why: "As a manager I skipped the persona-by-persona advice block; it reads like a list of audiences and dilutes the message. The 'sim' is also unsupported for career outcomes."
+    suggestion: "Keep the manager and the vendor-ruler paragraphs; shorten the student and parent ones."
+  - unit: ch14
+    quote: "Em 9 de junho de 2026 a Anthropic lançou o Claude Fable 5"
+    type: rewrite
+    why: "After the last ch13b paragraph already told me the Fable story, this opening repeats it and the surprise is gone. The jump from 'small home models' to a lab release feels like a different book."
+    suggestion: "Let ch13b end on 'o futuro é menor' and the cost question, and let ch14 begin cold."
+  - unit: ch13
+    quote: "A decisão final, quem toma é o código que você escreveu."
+    type: rewrite
+    why: "The best managerial sentence in the section, which I would put on a slide. It anticipates ch13b well."
+    suggestion: "None; keep."
+chapter:
+  followable: |
+    I followed the narrative and the figures until "Chinchilla" and the training-curve paragraph in "O que saiu do outro lado" ("a versão de 2 bilhões de tokens resolveu 39 de 100 tarefas; a de 5 bilhões, 52; a de 10 bilhões, 65. Com o ajuste mais longo, a versão final chegou a 68 nas tarefas de escolha e a 58 nas 100 reservadas"). Too many task sets and numbers in a row, and no figure for the curve, which is the one place a chart would help. The station figure and the "abismo" figure helped a lot, the latter most. The 337M vs 239M parameters figure explained the dictionary story where the text alone was hard.
+  wizardry: |
+    Difficult but within reach of someone who studies. What made me feel that: "Difícil, não feitiçaria", "É paciência e método, e isso se aprende", "Não foi tentativa e erro no escuro" and the electricity cost of about R$ 80. What pulls me the other way is that the author is a professional programmer who says "amador" and "menos de duas semanas", while the model he built "nunca" acts on a repository. So: reachable to learn, not reachable to use.
+  so_what: |
+    I will not train anything. I will use the "parâmetros x tokens" distinction and the "parece código x funciona" ladder as questions for the consultants: how much data, measured against what, by whom, and what is the share that actually works, not what looks right.
+  seams: |
+    ch13 -> ch13b is one story: the ending question ("quanto eu consigo construir sozinho, do zero?") leads naturally into the opening of ch13b with the same GPU. ch13b -> ch14 is abrupt: the last paragraphs of ch13b move from small models to a Fable story that ch14 then tells again from the start. The "future is smaller" section also feels like a second chapter, closer in theme to ch13 and ch20 than to the building story.
+  jargon:
+    - "o relatório (de fechamento) -- used as authority before being introduced"
+    - "SFT / ajuste / pós-treino / fine-tuning -- four names for similar things within a few pages"
+    - "tokenizer vs tokenizador vs vocabulário vs dicionário -- one thing, four words"
+    - "perda -- explained, but 'a perda continuou caindo' came before I could picture it"
+    - "Chinchilla / 'tokens por parâmetro'"
+    - "camadas / transformer -- 'camadas que pensam' without a line on what a layer does"
+    - "contêiner sem rede e sem permissão de administrador"
+    - "H100 horas -- unit used for scale, never explained"
+    - "MoE -- explained only by pointer to ch13"
+    - "harness -- pointed to a glossary, but used in the closing paragraphs as if known"
+cut_candidates:
+  - {unit: ch13b, where: "### Servidor", why: "Plumbing without intelligence, as the text itself says; one sentence in the stations figure would do."}
+  - {unit: ch13b, where: "O arquivo fecha uma linhagem de projetos didáticos dele: o micrograd, ... o nanochat", why: "Name list with no payoff for a non-student; keep nanochat for the student advice."}
+  - {unit: ch13b, where: "### O modelo que jurou que passou", why: "Repeats the ch12 lesson; the data-defect list is the only new part."}
+  - {unit: ch13b, where: "Teve mais: um treino recomeçado do ponto errado depois de uma manutenção no meu servidor de arquivos", why: "A teaser for a list sent to the appendix; no value to my situation."}
+  - {unit: ch13b, where: "E quem gasta centenas de milhões num modelo precisa de uma história à altura do gasto.", why: "Insinuation and duplicate of the ch14 opening."}

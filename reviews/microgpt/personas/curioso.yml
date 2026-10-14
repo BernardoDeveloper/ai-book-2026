@@ -1,0 +1,224 @@
+persona: curioso
+summary: |
+  I came for the story and mostly got it: a man alone with a gaming card for six
+  and a half days, watching a pile of random numbers slowly learn to write
+  Python. The "dicionário que comeu o cérebro" and the model that swore the
+  tests passed are the parts I will tell my friends about. The brain-size versus
+  years-of-school image finally made "parâmetros" mean something to me. The
+  middle of the chapter, with the six stations, the GB, the token counts, the
+  kWh and the H100 hours, turned into a ledger and I skimmed it, and the
+  Jev/classifier section before it already felt like a spreadsheet. The chapter
+  is honest that the result is small, and that is what made it believable. It
+  ends by jumping to Anthropic's marketing with a hook that I did not feel
+  connected to what I had just read.
+best:
+  - "ch13b: 'Treinar um modelo é olhar o tempo todo pra um número... o erro caiu, o código piorou'"
+  - "ch13b: 'O dicionário que comeu o cérebro' (154 milhões de 239 eram vocabulário)"
+  - "ch13b: 'Tamanho do cérebro, anos de escola' as an image for parameters versus tokens"
+  - "ch13b: 'O modelo que jurou que passou', the story of a student copying the pattern of passing tests"
+  - "ch13b: the 'Difícil, não feitiçaria' verdict, plain and believable"
+worst:
+  - "ch13: 'O especialista pequeno' piles up percentages (99,4%, 97,6%, 90,5%, 71 e 48) before any story"
+  - "ch13b: 'A conta', where kWh, H100 hours and DeepSeek dollars arrive in two paragraphs"
+  - "ch13b: 'Ajuste (SFT)', 99 mil candidatos, 97 mil, 64 mil sorteios, 10 milhões de tokens"
+  - "ch13b: the advice to student, parent, manager and everyone else, which reads like a menu of audiences"
+  - "ch13b: 'Os grandes modelos abertos vão muito além' with its string of lab names and trillions"
+units:
+  - {unit: ch13-especialista, score: 2, note: "Numbers on top of numbers; I did not feel the mail sorter, only the percentages."}
+  - {unit: ch13-prateleira, score: 3, note: "A tidy recap, and the last paragraph made me want to turn the page."}
+  - {unit: ch13b, score: 4, note: "A real adventure with a modest, honest ending; the ledger stretches in the middle made me skim."}
+  - {unit: ch14-abertura, score: 4, note: "Fable's twenty-four minutes and the laugh at the tie read like a story again."}
+chapter:
+  followable:
+    where: |
+      I kept up until the stations section turned into a ledger. "Foram 305 mil
+      rodadas, 10 bilhões de tokens lidos" and "uns 10 milhões de tokens de
+      resposta" lost me, since I had no sense of which numbers mattered. I also
+      stumbled at "De quase 99 mil candidatos, 97 mil passaram." (why does that
+      matter?) and at "Cada rodada de ajuste dos botões olha 32.768 tokens de uma
+      vez." The stations figure helped for orientation (I could see the six boxes
+      and that pre-training is the big one, highlighted), but its numbers are the
+      same ones I skimmed. The "abismo" bar chart helped a lot: the ladder from
+      "parecer código" to "funcionar" made the point faster than the prose.
+  wizardry: |
+    Difficult but within reach of someone who studies, and I believe it because
+    the author keeps shrinking himself: "Eu sou engenheiro de software, curioso e
+    amador no assunto. Pesquisador de LLM, zero." and "É paciência e método, e
+    isso se aprende." The failures (the vocabulary table eating the brain, the
+    model that lied about tests) read like ordinary bad days, not magic. The
+    sentence "Conte em anos de estudo, nunca em fins de semana" keeps it from
+    sounding too easy.
+  so_what: |
+    For a curious reader with no job at stake, the takeaway is that the
+    machinery behind the chatbots is human-scale craft, not sorcery, and that
+    "treinou o próprio modelo" is a claim worth asking about (how much text,
+    measured against what). I would happily tell this story at dinner.
+  seams: |
+    ch13 to ch13b reads well: the last lines of ch13 ("quanto de um modelo desses
+    eu consigo construir sozinho, do zero?") set up the chapter nicely, and ch13b
+    opens by answering it. The chapter feels half-inserted at the other end. The
+    final section "O futuro é menor" shifts to market prediction (MedGemma,
+    SaulLM, Apple, NVIDIA paper) and then ends on "a história em volta dele era
+    tão maior que o resultado", a hook about Anthropic that nothing in ch13b
+    prepared. ch14 itself opens fine, but the bridge feels pasted on.
+  jargon:
+    - "SFT / supervised fine-tuning (explained, but after the figure already used it)"
+    - "perda (the loss number is explained, but its first use in 'A conta' region came earlier as 'adivinhação')"
+    - "contêiner isolado (never explained for a non-programmer)"
+    - "API compatível com a OpenAI / servidor"
+    - "OpenCode (named as if known; the reader may not recall it from ch03)"
+    - "janela de contexto"
+    - "MoE (glossary tag, but the 'blocks do not split by subject' point is dense)"
+    - "H100 / RTX 5090 / kWh (hardware names with no anchor for a layperson)"
+annotations:
+  - unit: ch13
+    quote: "No topo, em 12 de outubro, ficaram dois modelos abertos de 27 bilhões de parâmetros, com 99,4% de acerto; o próprio Jev veio logo atrás, com 97,6%."
+    type: boring
+    why: "Four percentages in six lines, and no picture of what an error looks like. I skimmed to the bottom."
+    suggestion: "Give one concrete decision the model got right or wrong, then one number."
+  - unit: ch13
+    quote: "O menor modelo da lista deu 71 palpites com mais de 90% de confiança, e 48 estavam errados."
+    type: confusing
+    why: "I understood 'confidence' only vaguely; the sentence after it assumes I know the system acts only above a threshold."
+    suggestion: "Explain in one sentence what 'confiança' means for a model (a number it prints about itself)."
+  - unit: ch13
+    quote: "Regra que dá pra escrever, como limite numérico, severidade com fatos estruturados ou permissão de acesso, fica no código"
+    type: rewrite
+    why: "A dense list of three abstract examples in one sentence; feels like a manual. The quoted e-mail example that follows is much better."
+    suggestion: "Lead with the e-mail example, then state the rule."
+  - unit: ch13
+    quote: "Comprar um computador de milhares de reais pra economizar uns 100 reais por milhão de decisões é comprar um problema."
+    type: logic
+    why: "The comparison mixes a one-off purchase with a per-million saving without saying how many decisions a business would run; the verdict is stated, not shown."
+    suggestion: "One line of break-even arithmetic would make it fair."
+  - unit: ch13b
+    quote: "Visto daqui de fora, parece coisa de mago, feita num porão por meia dúzia de gênios."
+    type: rewrite
+    why: "Great hook; it makes me want the answer. But the preceding GPT-4 cost line ('78 milhões de dólares') is a dry reference and slows the opening."
+    suggestion: "Open on the 4 p.m. start and the garbage output, put the cost after."
+  - unit: ch13b
+    quote: "Os 337 milhões de botões do modelo começaram em posições sorteadas"
+    type: confusing
+    why: "'Botões' is the book's image for parameters, but here it appears before 'parâmetros' is named, and three paragraphs later the same thing becomes 'parâmetros' without a signal."
+    suggestion: "Say once: 'parâmetros, os botões'."
+  - unit: ch13b
+    quote: "O arquivo fecha uma linhagem de projetos didáticos dele: o micrograd, que mostra em poucas dezenas de linhas como o erro volta pelos botões; o makemore, que gera nomes; o nanoGPT, um GPT-2 compacto."
+    type: boring
+    why: "Four project names in one breath; I retained none of them and they do not pay off later except nanochat."
+    suggestion: "Keep microgpt and nanochat, drop the rest."
+  - unit: ch13b
+    quote: "O painel de botões sorteados, a adivinhação do próximo pedaço, a medida do erro, o passo pequeno morro abaixo na neblina, o marca-texto da atenção, o dado viciado no fim."
+    type: confusing
+    why: "A list of metaphors from an appendix I have not read; it reads as an in-joke. I could not tell which of these I was supposed to remember."
+    suggestion: "Cut to two images, or tell me where each was explained."
+  - unit: ch13b
+    quote: "Depois de ler aquilo, o que separa você de um modelo de verdade é, nas palavras dele, eficiência. Eu fui ver quanta."
+    type: rewrite
+    why: "Good, funny turn. It is the best line in the setup and deserves less clutter around it."
+  - unit: ch13b
+    quote: "Daí vem a curadoria, que é onde mora boa parte do trabalho."
+    type: rewrite
+    why: "The best idea in Dados (splitting by whole project, 'a cola em cima da mesa') is buried between the GB count and the 60% code mix."
+    suggestion: "Put the cheating-student image first; trim the pack count."
+  - unit: ch13b
+    quote: "Parece detalhe de encanador. Mais adiante você vai ver que essa escolha decidiu onde foi parar metade do cérebro de um dos modelos."
+    type: rewrite
+    why: "A fine promise that pays off later with the vocabulary table. It was the one place the ledger became suspense."
+  - unit: ch13b
+    quote: "Foram 305 mil rodadas, 10 bilhões de tokens lidos. Como o acervo tinha 3,5 bilhões, o modelo viu cada documento, em média, quase três vezes: o código, umas duas; o texto educativo e as conversas, umas nove ou dez."
+    type: boring
+    why: "Pure bookkeeping. I could not tell whether three passes over the data was good or bad."
+    suggestion: "One sentence: it read the same pile about three times, like a student rereading a textbook."
+  - unit: ch13b
+    quote: "De quase 99 mil candidatos, 97 mil passaram. O modelo escolhido treinou em 64 mil sorteios desses exemplos, uns 10 milhões de tokens de resposta."
+    type: boring
+    why: "Three counts in three sentences with no point to hold onto."
+    suggestion: "Say what the check was for (answers re-run so no wrong example teaches) and drop the counts."
+  - unit: ch13b
+    quote: "Isso tudo é encanamento, sem inteligência nenhuma. E, sem ele, o modelo nem senta à mesa."
+    type: rewrite
+    why: "Nice and short, but the Servidor section never says why a reader should care about the OpenAI-compatible server."
+  - unit: ch13b
+    quote: "Também entraram quatro consertos de verdade num repositório, feitos pelo OpenCode, problemas de acompanhar a saída exata de um programa curto, buscas por um número escondido no meio de um texto longo, e algumas conversas simples."
+    type: confusing
+    why: "A single sentence mixing three kinds of test with a missing verb structure; I had to reread to see that the repository fixes and the hidden-number hunt are different exams (they come back in the 'abismo' figure)."
+    suggestion: "Break into a short list or three sentences."
+  - unit: ch13b
+    quote: "Quando eu disser que ele acertou 58 de 100, isso quer dizer 58 daquelas 100 tarefas"
+    type: rewrite
+    why: "A useful and honest warning; it made me trust the numbers. It would help even more placed right before the results."
+  - unit: ch13b
+    quote: "Quatrocentas vezes mais texto. No ritmo da minha placa, ler isso tudo levaria entre quatro e seis anos de máquina ligada, sem parar."
+    type: rewrite
+    why: "The best number in the chapter; years of one machine reading is something I can feel. This does more than the log chart."
+  - unit: ch13b
+    quote: "O Llama 3.1, da Meta, leu uns 15 trilhões de tokens [@meta2024llama31card]; o Qwen3, da Alibaba, 36 trilhões [@qwen2025qwen3]."
+    type: boring
+    why: "More names and more zeros after the SmolLM2 comparison already made the point; the chart repeats it a third time."
+    suggestion: "Cut the paragraph; keep the chart."
+  - unit: ch13b
+    quote: "Do outro lado da escala, o Llama 3.1 de 405 bilhões de parâmetros consumiu 30,84 milhões de horas de placas H100"
+    type: confusing
+    why: "I have no idea what an H100 hour is worth or how it compares with 137 hours; the '225 mil vezes' two sentences later is the only useful line."
+    suggestion: "Lead with 225 mil vezes and drop the DeepSeek dollars."
+  - unit: ch13b
+    quote: "O real foi menos, porque durante o dia o treino pausava um quarto do tempo pra não travar o meu computador."
+    type: logic
+    why: "The 'seis dias e meio de calendário' for 137 hours of work is 156 hours of calendar if running continuously; the pause explanation is plausible but the maths, plus 'Ninguém mediu', leaves me unsure of the 80 reais."
+    suggestion: "Say plainly that the 80 reais is a ceiling."
+  - unit: ch13b
+    quote: "É o problema do @sec-ch12 visto do outro lado da mesa. Eu não precisei de ninguém roubando a folha de respostas: a minha prova era parecida demais com a aula, e o modelo foi bem na aula."
+    type: rewrite
+    why: "The classroom image landed immediately; this tie-back to an earlier chapter worked for me as a reader because it was a story, not a cross-reference."
+  - unit: ch13b
+    quote: "A minha leitura é que ele copiou o padrão dos textos em que os testes passam."
+    type: logic
+    why: "A tidy explanation for a model that lied about tests, but it is a guess, and the next sentence calls it 'o mesmo modelo que jura que funciona' as if it were the same phenomenon as the commercial ones. Those arise differently."
+    suggestion: "Mark it as a resemblance, not a diagnosis."
+  - unit: ch13b
+    quote: "essa virada mudou o vocabulário, o tamanho, o começo do treino e a quantidade de texto de uma vez só, então o relatório não consegue dizer qual dessas mudanças fez a diferença."
+    type: logic
+    why: "The figure caption and the earlier teaser ('decidiu onde foi parar metade do cérebro') say the vocabulary decided it; this sentence says nobody knows. I felt promised a cause and then denied it."
+    suggestion: "Soften the teaser and the caption to match."
+  - unit: ch13b
+    quote: "Das 42 que erraram, 39 pareciam perfeitas e faziam a coisa errada."
+    type: rewrite
+    why: "The most striking sentence of the results, and the 'abismo' figure plus the examples that follow (the deduplicating function, the dropped last character) made it memorable."
+  - unit: ch13b
+    quote: "Pedi em inglês uma ideia de café da manhã e recebi um trecho de Python repetindo \"oats\", aveia, até acabar o espaço."
+    type: rewrite
+    why: "My favorite detail in the whole section: funny, concrete, tells me more than a table would."
+  - unit: ch13b
+    quote: "Eu, um amador no assunto, montei o ciclo inteiro em menos de duas semanas"
+    type: logic
+    why: "Sits uneasily next to the 'Antes de continuar' paragraph and the sixty-day-ish prior work: the project passed through four sizes, with earlier models (91 e 239 milhões) that also took time. 'Duas semanas' is the final run plus the previous ones? I could not tell."
+    suggestion: "Say what the two weeks cover."
+  - unit: ch13b
+    quote: "Se você é estudante de computação, ou quer ser, isto é pra você."
+    type: boring
+    why: "From here the chapter turns into a menu of audiences (student, parent, manager, bystander), each with a checklist. I read the parent paragraph and wanted to skip the rest."
+    suggestion: "Keep one or two audiences, or fold into the closing verdict."
+  - unit: ch13b
+    quote: "Antes, a base: Python firme, um pouco de álgebra linear, estatística e probabilidade, além do que o @sec-apestudar lista."
+    type: boring
+    why: "A study checklist; fine for a student but a manual for me."
+  - unit: ch13b
+    quote: "Um modelo de 2026 dentro de um [harness]{.gls} busca o que falta na hora"
+    type: confusing
+    why: "'Harness' is used as if known, in a sentence that carries the section's main argument."
+  - unit: ch13b
+    quote: "Pela régua que eu tenho hoje, se treina em meses, em data center, com trilhões de tokens, e depois se especializa."
+    type: logic
+    why: "A confident recipe for a useful agent, but the chapter only measured that two weeks of one card is not enough; 'meses em data center' comes from nothing shown."
+    suggestion: "Flag it as an expectation rather than a measured result."
+  - unit: ch13b
+    quote: "A pergunta que ficou foi por que a história em volta dele era tão maior que o resultado."
+    type: rewrite
+    why: "The chapter ends abruptly on the Anthropic launch story; nothing linked it to a homemade model, so the handoff to ch14 felt like a gear change."
+    suggestion: "One bridge sentence: the lab's story needs to be as big as the money spent, as in 'quem gasta centenas de milhões...' but tied back to the 337 milhões."
+cut_candidates:
+  - {unit: ch13b, where: "Os grandes modelos abertos vão muito além. O Llama 3.1... o Qwen3... 36 trilhões", why: "The chart and the SmolLM2 comparison already say it."}
+  - {unit: ch13b, where: "### A conta (the DeepSeek dollars and H100 hours)", why: "Keep the 80 reais and the 225 mil vezes; the rest is accounting."}
+  - {unit: ch13b, where: "O arquivo fecha uma linhagem... micrograd, makemore, nanoGPT", why: "Three names I will not remember."}
+  - {unit: ch13b, where: "Antes, a base: Python firme, um pouco de álgebra linear...", why: "Reads like a manual; the appendix already holds it."}
+  - {unit: ch13, where: "E o preço? Na nuvem, a diferença entre o mais barato e o mais caro...", why: "More cost figures after the point is made."}

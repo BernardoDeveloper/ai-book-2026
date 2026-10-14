@@ -1,0 +1,44 @@
+id: "2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo"
+source_sha256: "ad97af1386db2d2b4ecc0429acb08c852b2124f509923bf7a45df17f22f233b4"
+title_en: "I trained my own AI model (spoiler: it's just for study)"
+ai_relevance: core
+ai_relevance_reason: "Hands-on account of building and training an LLM from random weights; demystifies how models are made and argues for small specialised models."
+genre: project-log
+themes: [what-llms-are, limits-of-llms, open-vs-closed-and-local-models, hardware-and-infrastructure]
+thesis: "The whole algorithm of a GPT fits in 200 lines and anyone who studies seriously can train one; what separates a toy from a useful model is data, scale and evaluation, and the future favours small specialised models with a harness fetching the world."
+summary: >-
+  Starting from Karpathy's 200-line microgpt (Feb 2026), the author expanded it
+  into a PyTorch lab (tokenizer, pre-training, SFT, OpenAI-compatible server,
+  OpenCode integration) and trained, in under two weeks on one RTX 5090, a
+  337M-parameter model on 10B tokens (137 GPU hours, about R$ 80 of
+  electricity). It writes valid small Python functions (58/100 held-out
+  correct) but scores zero on repository tasks, tool use, long-context recall
+  and conversation. The post walks through the stations of building an LLM,
+  the dimensions against GPT-2 and frontier models (SmolLM2 same size saw 400x
+  the tokens), the stumbles (measuring near training, vocabulary eating the
+  model, lower loss with worse code, lying datasets, train/serve format
+  mismatch, a stale checkpoint after NAS maintenance) and argues that mixture
+  of experts, domain models and Jev-like classifiers point to smaller,
+  specialised models.
+key_claims:
+  - {claim: "Karpathy's microgpt trains a GPT in 200 lines of dependency-free Python on 32k names in about a minute", time_sensitive: false}
+  - {claim: "Final model: 337,167,360 parameters, 24 layers, 32,768-entry BPE, 10B pre-training tokens, 305,176 updates", time_sensitive: false}
+  - {claim: "137 hours of GPU process time on one RTX 5090; at most about R$ 80 of electricity", time_sensitive: true}
+  - {claim: "58/100 held-out tasks correct; 100/100 valid Python; 97 with the right name and parameters; 0/4 repository fixes; 0/9 long-context probes; 0/12 output tracing", time_sensitive: false}
+  - {claim: "In the 239M model, 154M parameters were the vocabulary table (o200k)", time_sensitive: false}
+  - {claim: "SmolLM2-360M was trained on 4 trillion tokens, 400x this model", time_sensitive: false}
+  - {claim: "AI Index estimated GPT-4 compute at US$ 78M and Gemini Ultra at US$ 191M", time_sensitive: false}
+fears_addressed: ["only a few geniuses can build AI", "you need a giant model for anything useful"]
+reader_value: "Shows a lay reader what training a model concretely involves and how far a hobbyist gets; gives students a realistic path."
+technical_depth: 4
+evergreen: 4
+book_use:
+  keep: ["200 lines: everything else is efficiency", "six stations in plain words", "parameters = brain size, tokens = years of school", "stumbles as lessons (measurement, loss vs competence, lying data)", "syntax is not semantics; protocol support is not tool skill; context capacity is not memory", "difficult but not wizardry", "future is smaller and specialised"]
+  cut: ["full hyperparameters", "dataset URLs list", "Runpod prices", "server endpoint details"]
+jargon: [tokenizer, pre-training, SFT, checkpoint, BPE, mixture of experts, loss, embedding]
+illustration_ideas: ["pipeline of six stations", "token scale ladder (log)", "vocabulary vs transformer parameters", "the gap: valid syntax vs correct vs tool use vs memory"]
+people_events: ["Andrej Karpathy", "microgpt (Feb 2026)", "nanochat", "SmolLM2", "Chinchilla"]
+related_posts: ["2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor", "2026/10/12/llms-agentes-competente-o-suficiente"]
+prerequisites: ["tokens", "training vs use"]
+series: ""
+obsolescence: "Cost and hardware figures date to October 2026."

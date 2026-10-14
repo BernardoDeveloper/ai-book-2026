@@ -22,6 +22,7 @@ Se você chegou com uma pergunta específica, estes são os capítulos que respo
 - Tem alguém ali dentro? Vem aí uma superinteligência? O @sec-ch01, o @sec-ch14 e o @sec-ch20.
 - Você é gestor e estão te vendendo uma transformação com IA? O @sec-ch14, o @sec-ch19 e as listas de conferência do @sec-apC.
 - É seguro deixar a IA mexer nas suas coisas? Ela espiona? O @sec-ch15, o @sec-ch17 e o kit mínimo do @sec-apB.
+- Dá pra construir uma IA dessas em casa, ou é coisa de gênio? O @sec-ch13b, com o modelo que eu treinei do zero numa placa de vídeo, e depois o @sec-apestudar.
 - Só curiosidade, ou vontade de boas histórias? O @sec-ch01, o @sec-ch05, o @sec-ch15 e os dois interlúdios (@sec-interlude1 e @sec-interlude2).
 
 <!-- src: original -->
@@ -36,7 +37,6 @@ Entre as partes há dois interlúdios, mais curtos e mais leves, pra respirar. O
 - um kit mínimo pra usar agentes de IA com segurança;
 - a ferramenta de memória pra agentes que eu construí ao longo do ano;
 - duas listas curtas pra conferir um benchmark ou um anúncio;
-- o catálogo dos projetos que eu construí em 2026;
 - os bastidores técnicos, pra quem programa.
 
 Se você pular, vai tropeçar de vez em quando num termo ou num personagem que apareceu antes. O texto indica o capítulo onde ele foi explicado, e o glossário cobre o resto.

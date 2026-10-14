@@ -2,18 +2,16 @@
 id: apA
 chapter: "Timeline"
 sources:
+  - {post: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo, sha256: "c39990023635f5788e970e87ab6984105f7e3a24fe6d09b714e82179eaabe4d9"}
   - {post: 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2, sha256: "65b3ce93900a46d8fe0b9cb7fdc627978e0e220926745dd8c5e4453edc2b3690"}
   - {post: 2026/02/08/rant-ia-acabou-com-programadores, sha256: "309b129d7a93fb9b17e4efaefe75a56b8b85e95568adc2ecc9809306dab8b434"}
   - {post: 2026/02/09/ai-agents-qual-seria-a-melhor-linguagem-de-programacao-para-llms, sha256: "d93556fda3856a19b1c0baf917aa1cca83c3fc939198966005c7ffd6acfb396f"}
   - {post: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles, sha256: "fba5ebda8a2cd78817b7566e407adb180b0a67fb1fdd45d689e2f1a2a8248e1d"}
-  - {post: 2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server, sha256: "4586a4d381c1f1a2e74537cc18c433e414f96045382f073858b133bd707cd6df"}
   - {post: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real, sha256: "7d63767d989884b817bbac1269c970c71952e6fad97fe6cbf93ae433d45d005f"}
   - {post: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito, sha256: "e810efc31240d882790842a1e9db99664df28d1db1243ec42f977e847d4c05d1"}
   - {post: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio, sha256: "eb9751aefa292bf5759418b7c58459a8c09d2e5325fac2c4407998fbe80f5043"}
   - {post: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik, sha256: "8c69d3d807e2bc3287cdd35a1069b42ec2ac8b688d327a531a19847c2692c8d7"}
-  - {post: 2026/03/09/atacando-fraudes-via-email-frank-fbi, sha256: "f410b35aecf70ee050d5b5525342cd14c314c1335306cda4fcc3bfc97ec7a81b"}
   - {post: 2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw, sha256: "e9a45e8befa1ecebbb5278a6620e7ee27e4fda6e70cae802431cbcbeaa27939e"}
-  - {post: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator, sha256: "446dd91bcf9a526cef9b9776257855d59fcc3d8917e77570ec23636e00a1e828"}
   - {post: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro, sha256: "163bf43bdcd13f66a49fba814324394e1158a23e490e2e1ad1300f845dfe01ab"}
   - {post: 2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395, sha256: "c603cd2e1a6631994d48a83b4fdc1c4bd76469dff547455ad642b4cb3fa3b50b"}
   - {post: 2026/04/06/rag-esta-morto-contexto-longo, sha256: "3ef900794dc109d4ee2958f13bf712ad114a890c7822b72361ba81cf0ea3bd05"}
@@ -63,7 +61,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.multi_model.md"
   - "llm-coding-benchmark/docs/success_report.v2.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apA.md, sha256: "222b8851cf4dc71d52f7dd18b92163574a23f2a7192923537814fde2fec68a26"}
+translated_from: {file: book/pt/apA.md, sha256: "dc9ed0ba5028629b73c0268d8c4b51e20a3c66ba900fe48b2404196b6f32f06c"}
 ---
 
 # Timeline {#sec-apA}
@@ -186,14 +184,14 @@ The book's year. The story starts in February; the few January entries are the b
 <!-- src: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles -->
 **February 10 to 16.** The M.Akita Chronicles, a newsletter with an AI-narrated podcast, goes from idea to its first automated edition (@sec-ch06).
 
+<!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
+**February 12.** Andrej Karpathy publishes microgpt, a whole GPT in 200 lines of Python with no libraries at all [@karpathy2026microgpt] (@sec-ch13b).
+
 <!-- src: 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio -->
 **February.** Cloudflare reports that one engineer reimplemented an entire web framework in less than a week with Claude [@cloudflare2026vinext] (@sec-ch10).
 
 <!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1 -->
 **February.** OpenAI stops using the most popular version of SWE-bench, the industry's reference test, after finding flawed tests [@openai2026sweverified] (@sec-ch11).
-
-<!-- src: 2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server -->
-**February.** FrankMega and Frank Sherlock go live (@sec-ch07).
 
 <!-- src: 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik -->
 **February 24.** I start Frank Yomik, which will become my first failure (@sec-ch08).
@@ -210,19 +208,13 @@ The book's year. The story starts in February; the few January entries are the b
 **March 9 and 10.** OpenClaw gets a hundred commits from 42 people in two days, with nobody able to keep up with reviewing them (@sec-ch16).
 
 <!-- src: 2026/03/16/reescrevi-o-openclaw-em-rust-funcionou-frankclaw -->
-**March 10 to 16.** I rewrite OpenClaw in Rust: FrankClaw (@sec-ch16).
+**March 10 to 16.** I rewrite OpenClaw in Rust: FrankClaw, an experiment that stopped at version 0.1 (@sec-ch16).
 
 <!-- src: 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1 -->
 **March.** METR shows that roughly half of the fixes that pass SWE-bench wouldn't be accepted by the maintainers [@metr2026swebench] (@sec-ch11).
 
-<!-- src: 2026/03/09/atacando-fraudes-via-email-frank-fbi -->
-**March.** Frank FBI, the email scam hunter (@sec-ch17).
-
 <!-- src: 2026/09/22/pseudo-techcrunch-tentou-me-pegar-em-golpe-calendly-e-uma-merda -->
 **March.** José Valim, creator of Elixir, says he fell for a scam by someone claiming to be from TechCrunch [@valim2026hacked] (@sec-ch17).
-
-<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
-**March 11 to 16 and 25 to 27.** Frank Investigator, a tool for questioning the news, in about nine days of work (@sec-ch04).
 
 <!-- src: original -->
 **March.** OpenAI announces the end of Sora, its video app [@axios2026sora] (@sec-ch17).
@@ -329,7 +321,7 @@ The book's year. The story starts in February; the few January entries are the b
 **July.** Claude Opus 5, inside Claude Code, does the best engineering work the benchmark had seen up to then (@sec-ch03).
 
 <!-- src: 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia -->
-**July.** The small itches: Frank Geary, Frank Lyrics, Frank Type and a desk clock in the terminal (@sec-ch10).
+**July.** The small itches: a batch of little programs for personal use (@sec-ch10).
 
 <!-- src: 2026/07/25/ai-jail-update-seguranca-docker-opt-in -->
 **July 25.** A user demonstrates an escape from ai-jail through Docker; the fix ships the same day [@mdindoffer2026docker] (@sec-ch15).
@@ -425,4 +417,7 @@ The book's year. The story starts in February; the few January entries are the b
 **October.** I write the year's synthesis: in my tests, no relevant improvement in general programming since Claude Opus 4.5 (@sec-ch20).
 
 <!-- src: ref:ai-memory/README.md -->
-**October 13.** ai-memory reaches version 2.6.6, and this book closes (@sec-ch20).
+**October 13.** ai-memory 3.0 comes out, with more than 150 people who had already contributed code (@sec-ch20).
+
+<!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
+**October 14.** I close my microgpt lab: a 337-million-parameter model trained from scratch on a home graphics card, on 10 billion tokens, that writes small functions and scores zero as an agent (@sec-ch13b). With it, this book closes.

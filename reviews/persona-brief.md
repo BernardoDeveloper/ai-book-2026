@@ -17,11 +17,11 @@ Read, in this order, each file in full (`book/pt/<id>.md`; skip YAML front
 matter and `<!-- src -->` comments; `[term]{.gls}` and `[@key]` are markup):
 
 index (the preface), como-ler, antes, ch01, ch02, ch03, ch04, ch05, ch06,
-ch07, ch08, ch09, ch10, interlude1, ch11, ch12, ch13, ch14, interlude2,
+ch07, ch08, ch09, ch10, interlude1, ch11, ch12, ch13, ch13b, ch14, interlude2,
 ch15, ch16, ch17, ch18, ch19, ch20, epilogo, posfacio
 
 Then glance at the appendices (apmecanica, apleituras, apA, apB, apmemoria, apC,
-apD, aptecnico) and
+aptecnico) and
 the glossary (`book/back/glossary-pt.yml`) only as far as your persona would
 (e.g. when a chapter sends you there), and say whether they helped.
 

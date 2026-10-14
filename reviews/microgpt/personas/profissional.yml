@@ -1,0 +1,125 @@
+persona: profissional
+summary: |
+  I came to this stretch wanting to know whether any of this touches my Monday. It mostly doesn't, and the chapter is honest about that. I liked the "tamanho do cérebro, anos de escola" idea; it is the one thing I'd repeat to a colleague. The abismo figure made the result clear in ten seconds: writes code that looks right, fails at acting. I got lost in the Dados and Pré-treino stations (tokens, 2.048-token windows, rodadas, SFT, contêiner) and skimmed the "Os tropeços" detail. The practical payoff for someone like me is a single paragraph near the end (the question to ask a supplier) and the accountant-model idea in ch13b's last section. Both are good but arrive late. Nothing made me want to quit, but this is the chapter I'd read at night half-attentively.
+chapter:
+  followable:
+    - where: "Cada rodada de ajuste dos botões olha 32.768 tokens de uma vez."
+      note: "Lost the thread in Pré-treino: janelas, rodadas, tokens per round, 305 mil rodadas, three times the corpus. Too many numbers without a picture. The estações figure helps as a map but not for these numbers."
+    - where: "O modelo escolhido treinou em 64 mil sorteios desses exemplos"
+      note: "SFT paragraph: 99 mil candidatos, 97 mil passaram, 64 mil sorteios. Which model was 'escolhido'? I didn't know there were several until later."
+    - where: "Das 42 que erraram, 39 pareciam perfeitas e faziam a coisa errada."
+      note: "Followed fine; the abismo figure helped a lot here."
+  wizardry: |
+    Difficult but within reach of someone who studies, and the text says so outright: "Difícil, não feitiçaria", "um amador no assunto, montei o ciclo inteiro em menos de duas semanas", "É paciência e método, e isso se aprende". The cost comparison (80 reais de luz vs 225 mil vezes as minhas horas) demystifies the money. Caveat: "Conte em anos de estudo, nunca em fins de semana" reminds me it is not within reach of someone like me, only of a student of computing.
+  so_what: |
+    Not for my job directly: I take that a vendor saying "treinamos nosso modelo" deserves three questions (how much text, measured against what, who checked). The idea of a small model for accounting offices is the first thing in the whole book that spoke to my profession, but it is a prediction, not something I can do Monday.
+  seams: |
+    ch13 to ch13b reads well: the last line of ch13 ("quanto de um modelo desses eu consigo construir sozinho") is a real hook. ch13b to ch14 feels abrupt: the chapter closes on the accountancy model and then jumps to Anthropic going public and "perigoso demais"; the bridge sentence about "a história em volta dele" is clever but the shift from small models to marketing needs one more sentence. Also the ch13b end section "O futuro é menor" feels like a different chapter from the build diary.
+  jargon:
+    - "SFT / ajuste: sigla explained but I only retained it after the second mention"
+    - "contêiner isolado: never explained"
+    - "rodadas / passos: used for training steps without definition"
+    - "janela de contexto: used in the conclusion and the abismo figure, defined only in earlier chapters"
+    - "perda: explained, but 'a perda continuou caindo' confused me until the next paragraph"
+    - "Chinchilla / 20 tokens por parâmetro: rule of thumb with no payoff for me"
+    - "MoE and harness: pointers back to earlier chapters, I did not remember them"
+    - "RTX 5090, H100, kWh: hardware names assumed known"
+best:
+  - "ch13b: 'Parâmetro mede o tamanho do cérebro. Token de treino mede os anos de escola.'"
+  - "ch13b: figura do abismo (parecer código vs funcionar)"
+  - "ch13b: 'Difícil, não feitiçaria'"
+  - "ch13b: the question to ask a vendor who 'treinou o próprio modelo'"
+  - "ch13: the rule that rules stay in code and the model only turns text into facts"
+worst:
+  - "ch13b: Pré-treino, 305 mil rodadas and 32.768 tokens per round"
+  - "ch13b: Dados, 14 pacotes, 20 GB, 60% código, curadoria"
+  - "ch13b: O dicionário que comeu o cérebro (154 vs 85 milhões)"
+  - "ch13b: the paragraph on DeepSeek/Llama GPU hours"
+  - "ch13b: to the student, 'Se você é estudante de computação' block, not me"
+units:
+  - {unit: ch13b, score: 3, note: "Good ideas and one great figure, but the middle is a build diary full of numbers I could not use; the end finally speaks to me."}
+annotations:
+  - unit: ch13b
+    quote: "Cada rodada de ajuste dos botões olha 32.768 tokens de uma vez."
+    type: confusing
+    why: "Tokens, janelas and rodadas pile up; I could not tell what was big or small."
+    suggestion: "One everyday comparison (a page of text is about so many tokens, a round reads about so many pages)."
+  - unit: ch13b
+    quote: "De quase 99 mil candidatos, 97 mil passaram."
+    type: boring
+    why: "Detail of data cleaning that does not pay off for a non-programmer."
+    suggestion: "Cut the numbers and keep 'cada resposta foi executada de novo antes de entrar'."
+  - unit: ch13b
+    quote: "Cada resposta roda num contêiner sem rede e sem permissão de administrador"
+    type: confusing
+    why: "Contêiner and permissão de administrador are never explained."
+    suggestion: "Say 'num ambiente isolado, sem internet, que não pode mexer em nada do computador'."
+  - unit: ch13b
+    quote: "A perda continuou caindo, e o acerto nas tarefas executadas caiu de 68 pra 62."
+    type: rewrite
+    why: "The lesson is great (the error number can improve while the work gets worse) but it is buried in jargon; 'perda' sounds like a loss of money."
+    suggestion: "Lead with the lesson: o número que o treino mostra melhorou, a nota real piorou."
+  - unit: ch13b
+    quote: "Com o ajuste mais longo, a versão final chegou a 68 nas tarefas de escolha e a 58 nas 100 reservadas"
+    type: confusing
+    why: "Two different 'acertos' (68, 62, 58, 65, 52, 39) in the same page; I lost which number is the final result."
+    suggestion: "Pick one headline number (58 de 100, never seen before) and move the rest to the appendix."
+  - unit: ch13b
+    quote: "Pra comparar com o que você já conhece: o GPT-2 completo, de 2019, tinha 1,5 bilhão de parâmetros"
+    type: logic
+    why: "Says the model is 'quatro vezes e meia menor' than GPT-2 and then compares with SmolLM2 as 'praticamente do tamanho do meu'; but the intro says it is 'menor que o GPT-2' as if impressive. Fine, but 'você já conhece' assumes I remember a number from ch01."
+    suggestion: "Restate one line what GPT-2 was and why it matters."
+  - unit: ch13b
+    quote: "Sintaxe, protocolo e janela de contexto saíram em duas semanas numa placa de jogo."
+    type: logic
+    why: "The text says 'protocolo' and 'janela de contexto' came out, but the abismo figure shows 0 of 9 on finding a number in long context and zero tool calls. Contradicts the figure."
+    suggestion: "Say 'a sintaxe saiu; o servidor aceitou o formato e textos longos, mas o modelo não os usa'."
+  - unit: ch13b
+    quote: "Pedi em inglês uma ideia de café da manhã e recebi um trecho de Python repetindo \"oats\""
+    type: rewrite
+    why: "My favorite moment, the only one that made me smile, and it comes late in a dense section."
+    suggestion: "Move it up to open 'O que saiu do outro lado'."
+  - unit: ch13b
+    quote: "Conte em anos de estudo, nunca em fins de semana."
+    type: logic
+    why: "Clashes with 'montei o ciclo inteiro em menos de duas semanas' and 'difícil, não feitiçaria': the author did it fast because he is an experienced engineer ('amador no assunto' undersells that)."
+    suggestion: "Admit once that two weeks was possible because of 30 years of programming."
+  - unit: ch13b
+    quote: "Se você é pai ou mãe de alguém que pergunta se vale a pena estudar isso, a resposta curta é sim."
+    type: rewrite
+    why: "The 'se você é X' list is a nice idea but my paragraph (quem não programa) is last and shortest; I read four others first."
+    suggestion: "Put the 'ouve falar disso no trabalho' reader first or give her a Monday action."
+  - unit: ch13b
+    quote: "Quando um fornecedor anunciar que \"treinou o próprio modelo\", pergunte com quanto texto"
+    type: rewrite
+    why: "Best practical sentence of the chapter and I almost missed it at the bottom."
+    suggestion: "Turn into a 3-bullet checklist."
+  - unit: ch13b
+    quote: "Um modelo pra escritórios de contabilidade"
+    type: boring
+    why: "Exciting for me but only a hypothetical; no pointer to anything I can try or any date."
+    suggestion: "One line on what today's accountant can do with an ordinary model now."
+  - unit: ch13b
+    quote: "O gpt-oss-120b, da OpenAI, tem 117 bilhões de parâmetros e usa 5,1 bilhões a cada token"
+    type: boring
+    why: "Numbers about MoE I cannot use; the following paragraph already says it in plain words."
+  - unit: ch13b
+    quote: "Do outro lado da escala, o Llama 3.1 de 405 bilhões de parâmetros consumiu 30,84 milhões de horas"
+    type: boring
+    why: "Three comparison datapoints where one (225 mil vezes) would do."
+  - unit: ch13b
+    quote: "Pela régua que eu tenho hoje, se treina em meses, em data center, com trilhões de tokens, e depois se especializa."
+    type: logic
+    why: "Conclusion that small specialised models are the future rests on one failed home model plus others' papers; the home result shows a small model cannot be an agent, which seems to argue against the point."
+    suggestion: "Say specialised models start from a big pretrained one, which ties back to the 'sem atalho' lesson."
+  - unit: ch14
+    quote: "Em junho de 2026, uma semana depois de pedir em sigilo pra abrir capital"
+    type: confusing
+    why: "End of ch13b jumps into Anthropic IPO and 'perigoso demais' before ch14 starts; I felt whiplash."
+    suggestion: "Cut the last paragraph from ch13b and let ch14 open with it."
+cut_candidates:
+  - {unit: ch13b, where: "### Dados (curadoria details)", why: "14 pacotes, deduplicação and split by project add nothing for a non-programmer"}
+  - {unit: ch13b, where: "### Servidor", why: "'Isso tudo é encanamento' admits it is not interesting"}
+  - {unit: ch13b, where: "Existe uma regra de bolso famosa ... Chinchilla", why: "Rule of thumb with no use for me"}
+  - {unit: ch13b, where: "### O dicionário que comeu o cérebro", why: "Needs the tokenizer detail; the figure alone says enough"}
+  - {unit: ch13b, where: "Os próprios gigantes já trabalham com uma fração do corpo de cada vez", why: "MoE aside repeated from ch13"}

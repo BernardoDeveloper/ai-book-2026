@@ -1,0 +1,30 @@
+# Quarta capa da edição impressa em português (scripts/compose_kdp_cover.rb).
+# Marcação Pango: <i>, <b>; &amp; para &. Adaptada da descrição da Amazon.
+headline: "A inteligência artificial vai tomar o seu emprego? Vai ficar mais inteligente que você? Tem alguém ali dentro?"
+paragraphs:
+  - >-
+    Em 2026, Fabio Akita, programador desde 1990, que viveu por dentro o
+    estouro da bolha da internet, resolveu responder a essas perguntas
+    medindo: oito meses programando quase só com agentes de IA, dezenas de
+    modelos testados num benchmark próprio, erros cometidos em público e
+    corrigidos.
+  - >-
+    <i>Competente o Suficiente</i> é o relato desse ano, escrito pra quem não
+    programa. Sem fórmulas e sem propaganda. Por que o texto de um chatbot
+    parece vir de alguém, por que ele concorda com você e inventa fontes. O
+    que funciona de verdade no trabalho com IA. Como ler um
+    ranking de modelos e um anúncio de “inteligência geral”. Como deixar um
+    agente mexer nos seus arquivos sem perdê-los. E o que acontece
+    com as carreiras, e o que continua sendo seu: decidir e conferir.
+bio: >-
+  <b>Fabio Akita</b> programa desde 1990. Passou por agências e pontocom no
+  fim dos anos 90, integrou sistemas SAP em grandes empresas por
+  cinco anos e adotou Ruby on Rails em 2007. Organizou a RubyConf
+  Brasil de 2008 a 2016, fundou a Codeminer 42 em 2011 e, de 2018 a 2023,
+  manteve o Akitando, canal sobre fundamentos de computação, mercado e
+  carreira. Escreve em akitaonrails.com desde 2006.
+# Frases do autor, em destaque acima da biografia.
+quotes:
+  - "“Não terceirize suas decisões.”"
+  - "“Sua empolgação com IA é inversamente proporcional ao seu conhecimento sobre IA.”"
+  - "“A IA é um espelho: ela reflete quem você é.”"

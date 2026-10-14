@@ -2,15 +2,13 @@
 id: aptecnico
 chapter: "Para quem programa: os bastidores"
 sources:
+  - {post: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo, sha256: "ad97af1386db2d2b4ecc0429acb08c852b2124f509923bf7a45df17f22f233b4"}
   - {post: 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro, sha256: "82777df93da3ba3bf92807e76d3326dc878e81b79d78d456926828131b3274eb"}
   - {post: 2026/04/06/rag-esta-morto-contexto-longo, sha256: "7ff16e0b5895ccd7909d0d16cb0d78b8a11dc80629766f7820198555ea8fe711"}
-  - {post: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator, sha256: "6981e63b8950f4fa8c7142097d559b7bed10db219f20d7d9065689869b87e29a"}
   - {post: 2026/08/16/entendendo-ia-watermark-da-anthropic, sha256: "1d322e2603b8a56d275962144f684c2416294a2db0a1726eb4b8f23f5e63f854"}
   - {post: 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles, sha256: "8a3892fa3d5cb201158394d2673a003461fe510482559cd989d4cf41ffd7b340"}
   - {post: 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles, sha256: "3bb267b2daadcb058747de25bfae3cc26fcd37642c8349e03bf9108b56440da5"}
   - {post: 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles, sha256: "33600c47a224dc3d4bdbd6cf909141d20886dd29d40e6873328d32daf4de514d"}
-  - {post: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias, sha256: "ee1a4455e9076eb3c25fddf845758f2101e0cc127a9f383d9c4c7567a4eaab34"}
-  - {post: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito, sha256: "fbf1d5f1c5974097c0d648ddea25b17e7e19d9f77943a218acd1a17303f9e7cc"}
   - {post: 2026/04/23/driveclub-shadps4-e-ia-como-aprender, sha256: "40d4966f8b6a7bbd114f67a9991f35d3a0ba9bd2e065920ff089bfb8fb32b57e"}
   - {post: 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia, sha256: "b0df8d0f5d1ba96b82101f00203d21acfa68bc386334b75a59380cf7d55c4746"}
   - {post: 2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo, sha256: "e81505f0acafb44f3a1df187f5e774f9cf01a3187c8c20d9535b28bbcbdf9f02"}
@@ -110,31 +108,6 @@ A pesquisa acadêmica conta a mesma história, sem bala de prata. Um estudo do G
 
 A própria Anthropic publicou em 2024 que juntar a cada pedaço uma frase de contexto e combinar busca por palavra com busca vetorial derrubava as falhas de busca quase pela metade, e que um passo extra de reordenação dos resultados reduzia ainda mais [@anthropic2024contextual]. A combinação robusta é híbrida. Quem só puder escolher uma, escolhe a busca por palavra e ainda chega longe.
 
-## Frank Investigator: como os três modelos votam {#sec-aptecnico-investigator}
-
-<!-- src: original -->
-Em @sec-ch04 eu conto o Frank Investigator, um programa que fiz em março de 2026 pra examinar notícias: ele quebra a matéria em afirmações, pede a três modelos de empresas diferentes que avaliem cada uma e deixa uma fonte primária passar por cima de todos eles. O capítulo fica na ideia. Aqui vai a conta de como os votos viram um veredito, e por que a confiança que cada modelo declara entra nela mesmo assim.
-
-![Três modelos votam com pesos diferentes; uma fonte primária contrária derruba o resultado.](assets/figures/ch04-tres-juizes.png){#fig-ch04-tres-juizes fig-alt="Três caixas representando modelos de empresas diferentes: modelo A e modelo B votam 'sustentado 40%', modelo C vota 'misto 95%'. Os votos vão para uma balança que pende para 'misto'. Ao lado, um documento marcado 'fonte primária' com um carimbo 'veto: no máximo 60%' trava o resultado em 'misto, no máximo 60%'. Embaixo, cinco jornais do mesmo grupo viram um só ('mesmo grupo = uma voz'), e três jornais ligados por setas em círculo representam a citação circular."}
-
-### O voto ponderado
-
-<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
-Naquele março, os três juízes eram o Claude Sonnet 4.6, o GPT-5.4 e o Gemini 3.1 Pro. Cada um devolve, pra cada afirmação, um veredito e uma confiança. A votação é ponderada por essa confiança, em vez de contar maioria simples: as confianças somam por veredito. Se dois modelos dizem "sustentado" com 40% de confiança cada e um diz "misto" com 95%, o "misto" vence, porque 95 pesa mais do que 80.
-
-<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
-Quanto mais distantes as opiniões, mais a confiança final cai. E se um modelo começa a dar respostas inconsistentes, ele vai pra quarentena e os outros dois seguem sozinhos.
-
-### Por que a confiança declarada ainda entra
-
-<!-- src: original -->
-O próprio @sec-ch04 mostra que o tom seguro de um modelo não diz nada sobre a veracidade, e a confiança que ele declara é um sinal fraco pelo mesmo motivo. Dentro do programa, ela só faz um trabalho: decidir o veredito quando os três discordam, sem fingir que dois votos fracos valem mais do que um forte. Ela nunca decide sozinha o que é verdade, porque duas regras ficam acima dela: o veto da fonte primária e o desconto das fontes repetidas.
-
-### O veto e o teto de 60%
-
-<!-- src: 2026/03/27/ensinando-a-questionar-noticias-frank-investigator -->
-Se uma fonte primária (o dado oficial, a decisão judicial, o estudo original) contradiz uma afirmação, a confiança fica travada em no máximo 60% e o veredito é forçado pra "misto", mesmo que os três modelos digam "sustentado". Se cinco matérias "confirmam" a afirmação mas todas pertencem ao mesmo grupo de comunicação, o sistema conta uma voz só e reduz o peso.
-
 ## A marca d'água estatística do Claude, por dentro {#sec-aptecnico-watermark}
 
 <!-- src: 2026/08/16/entendendo-ia-watermark-da-anthropic -->
@@ -223,36 +196,6 @@ Com um LLM no meio do sistema, apareceu um problema que programação tradiciona
 
 <!-- src: 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles -->
 A checagem de estrutura que o capítulo menciona confere se o arquivo existe, se tem o número mínimo de itens, se tem as marcações obrigatórias e, na seção do mercado, pelo menos cinco linhas de cotação. O GPT-5.2, que eu usava ali, é um bom modelo. Só que ele não é determinístico, e quando erra, erra de formas criativas que nenhuma validação de formato prevê.
-
-## Frank Sherlock: o teste dos modelos de visão e a publicação em três sistemas {#sec-aptecnico-sherlock}
-
-<!-- src: original -->
-Em @sec-ch07 eu conto o Frank Sherlock, um programa que fiz em fevereiro de 2026 pra catalogar fotos e documentos por conteúdo, com um modelo de visão rodando na minha própria placa de vídeo. O capítulo guarda a lição, meça antes de escolher. Aqui ficam os números do teste que fiz antes de escrever o aplicativo, a conta de custo e o que deu trabalho pra publicar o programa em Linux, Mac e Windows.
-
-### Os modelos de visão, medidos
-
-<!-- src: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias -->
-Antes de escrever uma linha do aplicativo, separei imagens com a classificação correta registrada e comparei os candidatos no mesmo terreno. Um modelo de visão aberto de 7 bilhões de [parâmetros]{.gls key=parametros}, o Qwen2.5-VL 7B, ganhou em todas as medidas do LLaVA 13B, quase duas vezes maior, e ainda foi três vezes mais rápido.
-
-A versão gigante do mesmo modelo, com 32 bilhões, acertou uma imagem a mais num grupo de 16 e levou 29 vezes mais tempo. Pra quem vai processar centenas de milhares de arquivos, isso transforma um trabalho de seis horas num trabalho de uma semana.
-
-<!-- src: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias -->
-Os modelos mais novos da mesma família, o Qwen3-VL de 8 bilhões e o de 30 bilhões, testados com três repetições cada, foram piores na minha tarefa: acertaram o tipo de arquivo bem menos vezes do que o 7B e devolviam respostas truncadas.
-
-### A conta de padeiro
-
-<!-- src: 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias -->
-Classificar meio milhão de arquivos na minha [GPU]{.gls key=gpu} levaria quase um mês ligado e custaria uns 34 dólares de energia. Pela API de visão de uma empresa de nuvem, a um centavo de dólar por imagem, seriam uns 5 mil dólares. É conta feita no papel de pão, mas a ordem de grandeza decide sozinha.
-
-### Do índice ao reconhecimento de rostos, versão por versão
-
-<!-- src: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito -->
-A primeira versão pública foi a 0.1. Nos quatro dias seguintes, 53 commits levaram o programa da versão 0.3 à 0.7: detecção de fotos duplicadas, depois vídeos em onze formatos, e na 0.7 a detecção de rostos, com agrupamento dos parecidos e nome pra cada pessoa. Foram sete versões publicadas em sete dias.
-
-### Três sistemas, três jeitos de quebrar
-
-<!-- src: 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito -->
-No começo de março, o projeto tinha 103 commits, umas 28 mil linhas de código e 621 testes. Dezessete daqueles commits foram só pra fazer o programa compilar e ser publicado direito nos três sistemas. O Windows escreve caminhos de arquivo de um jeito que quebra comparações de texto; o Mac exige que o programa seja assinado e registrado junto à Apple antes de abrir sem alarme.
 
 ## A tela preta do Driveclub, passo a passo {#sec-aptecnico-driveclub}
 
@@ -527,6 +470,55 @@ Um caso não aparece em média nenhuma. A regra de severidade dizia: perda cont�
 A resposta certa é "crítico". O Clef completo, da Cloudflare, um modelo de 27 bilhões de parâmetros, respondeu "degradado", junto com vários modelos de 4 a 9 bilhões. O Jev acertou, e alguns modelos bem menores também.
 
 É um caso só, sintético. Mas é exatamente o erro que mais custa, e a porcentagem de acerto não mostra. É também o melhor argumento pra regra de severidade morar no código, como o capítulo defende.
+
+## O microgpt por dentro {#sec-aptecnico-microgpt}
+
+<!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
+O @sec-ch13b conta a história do modelo que eu treinei do zero. Aqui ficam a ficha técnica, os tropeços que só interessam a quem programa e o que faltaria pra chegar a um agente. Tudo vem do relatório de fechamento do projeto, publicado junto com o código [@akita2026microgpt].
+
+### A ficha do modelo
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+O modelo final tem 337.167.360 parâmetros: 33,6 milhões na tabela de embeddings, amarrada à camada de saída, e 303,6 milhões no transformer. São 24 camadas de largura 1.024, com 16 cabeças de atenção de dimensão 64, camada densa SwiGLU com largura oculta de 2.752, RMSNorm e posição por RoPE. O vocabulário é um BPE próprio, em nível de byte, com 32.768 entradas, ajustado em 92 MB de texto só de treino.
+
+O servidor aceita até 32.768 tokens de contexto, mas o pré-treino usou janelas de 2.048. A diferença importa: o espaço alocado existe, a memória treinada, não.
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+O pré-treino usou AdamW (betas 0,9 e 0,95, decaimento de pesos 0,1), taxa de aprendizado de pico 3e-4 com aquecimento de mil atualizações e decaimento em cosseno até 10%, e recorte de gradiente em 1,0. Cada atualização junta duas sequências de 2.048 posições, acumuladas oito vezes: 32.768 tokens. Pesos guardados em FP32, contas em BF16 na placa, atenção pelo SDPA do PyTorch com o backend Flash. O pico de memória alocada foi de uns 13,9 GB no pré-treino e 6,8 GB no ajuste.
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+O ajuste é de pesos completos, com a perda calculada só sobre os tokens do assistente; o que o usuário, o sistema e as ferramentas dizem entra como contexto e fica fora da perda. A versão escolhida fez 4 mil atualizações, com taxa constante de 1e-5, e consumiu 10,3 milhões de tokens de resposta.
+
+### O acervo de pré-treino
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+O acervo final tem 3,48 bilhões de tokens de treino em 2,35 milhões de documentos, sorteados por peso: 60% código Python do CodeParrot, 16% instrução e código do OpenCoder, 12% texto educativo sintético do Cosmopedia, 8% conversa do SmolTalk e 4% conversa multilíngue. A separação entre treino e validação é por repositório ou grupo de conversa.
+
+Como o sorteio é por peso, os 10 bilhões de tokens não são três passadas iguais. O código foi visto, em média, umas duas vezes; o OpenCoder, umas dez; o texto educativo e as conversas, umas nove.
+
+### Os tropeços que ficaram fora do capítulo
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+- **O `last.pt` que voltou no tempo.** Numa retomada da fase de 10 bilhões, depois de uma manutenção no servidor de arquivos, o treinador carregou o passo 81.500 em vez do 152.588 congelado. O arquivo de trabalho tinha um carimbo de data anterior à pausa, e a causa nunca foi provada. Descartei 1,24 hora de treino, conferi o hash do marco de 5 bilhões e, dali em diante, toda retomada passou a exigir hash, passo exato, estado do otimizador e do gerador aleatório, conferência do acervo e um teste de escrita com fsync. Nunca retome um treino só porque o arquivo se chama `last.pt`.
+- **Placa de desktop é placa compartilhada.** Memória de vídeo sobrando não impediu o navegador de travar. A solução foi um ciclo cooperativo: o treinador sincroniza a placa e dorme entre lotes, trabalhando 75% do tempo de dia e 100% das três às nove da manhã. E ler o acervo pelo servidor de arquivos deixava a placa ociosa esperando disco: depois de uma manutenção, a vazão média caiu pra uns 5 mil tokens por segundo antes de voltar aos 23 mil.
+- **Formato de treino e formato de uso precisam bater.** Anúncio de troca de sessão, identificador de chamada de ferramenta, âncora de edição, o jeito como o OpenCode cita o pedido do usuário: cada diferença entre o que o modelo viu no treino e o que recebeu no servidor derrubava o agente antigo. A solução foi um único arquivo de protocolo pros dois lados.
+- **A tokenização cruza fronteiras de correção.** O texto literal do marcador de fim de documento dentro de um código-fonte precisa continuar sendo texto comum. Documentos em UTF-8 precisam ser remontados sem partir um caractere no meio. A primeira avaliação no marco de 2 bilhões falhou na montagem da gramática que restringe a saída, e foi consertada e rodada de novo, em vez de contar como erro do modelo.
+- **Testes que mentem, de vários jeitos.** Respostas "corretas" do acervo público falhavam ao rodar de novo; testes dependiam da ordem do hash do Python; funções da biblioteca padrão sombreadas; `SystemExit(0)` contando como sucesso; edições vazias passando como conserto. Cada caso ganhou um controle: três sementes de hash, uma sentinela de conclusão, um programa vazio que precisa falhar.
+- **Parei numa fronteira do pipeline.** O controlador da última fase fazia pré-treino, ajuste de código e prova reservada. Ele terminou limpo, e "terminou limpo" cobria até a função isolada, enquanto o objetivo era o agente. O modelo final só foi testado no OpenCode no fechamento, e falhou. Devia ter sido testado antes de qualquer frase com "pronto".
+
+### O que faltaria pra um agente simples
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+O relatório fecha com estimativas de engenharia que nunca foram executadas, sem promessa de taxa de acerto, nesta ordem:
+
+1. **Ensinar uso de ferramenta no modelo mais forte:** de 10 a 30 mil trajetórias curtas e verificadas de repositório (ler, editar, conferir), misturadas com 30 a 50% de código pra ele não desaprender. Um a três dias de engenharia e de duas a seis horas iniciais de treino.
+2. **Corrigir os próprios erros:** coletar de centenas a alguns milhares de falhas do modelo em tarefas de treino, reconstruir o estado do arquivo, verificar as correções e treinar mascarando a ação errada. Mais um a três dias e de duas a oito horas de treino.
+3. **Devolver a conversa:** uma mistura equilibrada de conversa, ferramenta e código, pra ele parar de responder tudo com Python. De uma a quatro horas de treino.
+4. **Contexto longo de verdade:** só depois das tarefas curtas passarem, em janelas de 4 mil, 8 mil e só então 16 e 32 mil tokens, com trajetórias reais de compactação e troca de sessão. Um a dois dias de engenharia e de 6 a 24 horas de treino.
+5. **Mais pré-treino, com dados melhores:** cada 10 bilhões de tokens a mais custam entre 93 e 139 horas nesta placa, antes de preparação e avaliação, e repetir a mesma mistura de 3,5 bilhões não compensa.
+
+<!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
+Nenhum desses passos tem garantia. O que o exercício deixou medido foram três confusões fáceis de cometer: sintaxe certa com semântica certa, suporte ao protocolo com habilidade com ferramenta, e capacidade de contexto com memória.
 
 ## Voz sintética em produção: o podcast e a dublagem {#sec-aptecnico-voz}
 

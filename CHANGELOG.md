@@ -4,6 +4,33 @@ Editions of *Competente o Suficiente*. Each version is a git tag (`vX.Y.Z`);
 pushing the tag builds the book and publishes a GitHub Release with the
 files.
 
+## 1.0.0-preview.7
+
+A homemade model, a leaner back matter, the hardcover covers.
+
+- **New chapter 14, "Um modelo feito em casa"** / "A Homemade Model": the
+  author trains a GPT from random weights on a gaming GPU, starting from
+  Karpathy's 200-line microgpt (337 million parameters, 10 billion tokens,
+  137 hours, about R$ 80 of electricity). The six stations of building a
+  model, parameters as brain size and tokens as years of school, the
+  stumbles, the gap between valid syntax and a working agent, and why it is
+  difficult but not wizardry. Four new figures; technical detail in the
+  appendix section "O microgpt por dentro". Checked by the five target
+  readers (`reviews/microgpt/`).
+- **Leaner back matter**: the projects catalogue (appendix "Os projetos do
+  ano") and the technical sections on Frank Investigator and Frank Sherlock
+  are parked (`book/parked/projetos-secundarios/`); ch04 and ch17 tell the
+  Investigator and FBI experiments in about half the words; FrankClaw is
+  described as a stopped experiment.
+- **Afterword**: how the simulated readers rebalanced the book, and what
+  the author maintains today.
+- **Updates**: ai-memory 3.0 (new two-command install), ai-jail 2.9.0.
+- **Typesetting**: fewer hyphenated line breaks (about two-thirds fewer),
+  after a reader's request.
+- **ISBN**: the Portuguese hardcover carries 9798162465683.
+- **Hardcover covers**: `rake kdp_cover` builds the wraparound cover from
+  KDP's template for each edition's page count.
+
 ## 1.0.0-preview.6
 
 For the hardcover.

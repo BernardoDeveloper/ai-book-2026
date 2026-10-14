@@ -4,7 +4,7 @@ chapter: "How to Read This Book"
 sources: []
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/como-ler.md, sha256: "086c62c299e6affbee3b6a70672080e9bf7a036c3f6e1dd21d23fdccd0a6c229"}
+translated_from: {file: book/pt/como-ler.md, sha256: "586c76f8fb1da411a12952bde5980e6776e9e2f2657f9b4b1527a8ca976db6db"}
 ---
 
 # How to Read This Book {#sec-como-ler .unnumbered}
@@ -23,6 +23,7 @@ If you arrived with a specific question, these are the chapters that answer it. 
 - Is anybody in there? Is a superintelligence coming? @sec-ch01, @sec-ch14 and @sec-ch20.
 - Are you a manager being sold an AI transformation? @sec-ch14, @sec-ch19 and the checklists in @sec-apC.
 - Is it safe to let AI touch your stuff? Is it spying on me? @sec-ch15, @sec-ch17 and the bare-minimum kit in @sec-apB.
+- Can you build one of these AIs at home, or is it genius territory? @sec-ch13b, with the model I trained from scratch on a graphics card, and then @sec-apestudar.
 - Just curious, or in the mood for good stories? @sec-ch01, @sec-ch05, @sec-ch15 and the two interludes (@sec-interlude1 and @sec-interlude2).
 
 <!-- src: original -->
@@ -37,7 +38,6 @@ Between the parts there are two interludes, shorter and lighter, to catch your b
 - a bare-minimum kit for using AI agents safely;
 - the memory tool for agents that I built over the year;
 - two short checklists for sizing up a benchmark or an ad;
-- the catalog of projects I built in 2026;
 - the technical behind-the-scenes, for those who program.
 
 If you skip around, you'll trip now and then over a term or a character that showed up earlier. The text points to the chapter where it was explained, and the glossary covers the rest.
