@@ -1,7 +1,9 @@
 # Accessibility research and implementation plan
 
-**Status:** research and artifact audit, 2026-10-15  
-**Scope:** PT-BR and EN EPUB, HTML, PDF, DOCX, and print outputs  
+**Status:** research and artifact audit, 2026-10-15
+
+**Scope:** PT-BR and EN EPUB, HTML, PDF, DOCX, and print outputs
+
 **Recommended target:** EPUB Accessibility 1.2 and WCAG 2.2 Level AA
 
 ## Conclusion
@@ -401,4 +403,3 @@ Primary and specialist sources used for this plan:
 - PAC, [PDF Accessibility Checker](https://pac.pdf-accessibility.org/en/download)
 - Brasil, [Lei 13.146/2015](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm)
 - European Union, [Directive 2019/882](https://eur-lex.europa.eu/eli/dir/2019/882)
-
