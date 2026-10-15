@@ -261,7 +261,11 @@ task a11y: :tools do
     report = File.join(ROOT, "build", "a11y", LANG, File.basename(epub, ".epub"))
     FileUtils.rm_rf(report)
     FileUtils.mkdir_p(File.dirname(report))
-    sh ACE, "--exiterror2", "--force", "--outdir", report, epub
+    # GitHub's hosted runner cannot provide Electron's setuid sandbox. CI only
+    # checks EPUBs generated from this trusted checkout; local checks retain it.
+    ace_args = []
+    ace_args << "--no-sandbox" if ENV["CI"]
+    sh ACE, *ace_args, "--exiterror2", "--force", "--outdir", report, epub
   end
 end
 
