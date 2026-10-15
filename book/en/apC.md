@@ -19,7 +19,7 @@ sources:
 refs_projects:
   - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apC.md, sha256: "3e0d21b83fe85b8df1784f488176b49858bdb6c506589761fb937228a25343d4"}
+translated_from: {file: book/pt/apC.md, sha256: "8633a35f5229e728ad1d57c6f23756f2a90d3753740b45a124f00a7c00f9345e"}
 ---
 
 # How to Read a Benchmark or an Announcement {#sec-apC}

@@ -63,7 +63,7 @@ O último item parece detalhe e foi o furo que mais me ensinou no ano. O Docker,
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
 No Linux, a peça básica é o bubblewrap, o mesmo isolador que o Flatpak usa pros aplicativos instalados por ele. Ele monta pro programa uma visão falsa do sistema, com as pastas que você escolher. Em cima dele dá pra escrever um script próprio, que foi como eu comecei, ou usar uma ferramenta pronta.
 
-No macOS, o sistema tem um mecanismo de isolamento embutido, o `sandbox-exec`, que a Apple marca como obsoleto mas continua funcionando. É menos flexível do que o do Linux, e algumas proteções funcionam só pela metade.
+No macOS, o sistema tem um mecanismo de isolamento embutido, o `sandbox-exec`, que a Apple marca como obsoleto, mas continua funcionando. É menos flexível do que o do Linux, e algumas proteções funcionam só pela metade.
 
 <!-- src: ref:ai-jail/README.md -->
 No Windows, o caminho mais simples é rodar o agente dentro do WSL2, o Linux que a Microsoft embute no sistema, e usar as ferramentas do Linux lá dentro. É o que a documentação do ai-jail, a minha jaula, manda fazer [@akita2026aijail; @aijail2026site].
@@ -72,7 +72,7 @@ No Windows, o caminho mais simples é rodar o agente dentro do WSL2, o Linux que
 Os agentes grandes também trazem uma sandbox própria, configurável nas opções de cada um. Vale ligar. Só lembre que ela protege apenas aquele agente, e que o dia em que você trocar de ferramenta, a proteção não vai junto.
 
 <!-- src: ref:ai-jail/README.md -->
-E tem um limite que nenhuma dessas jaulas cruza. Elas existem pra conter os erros de um programa em que você confia mas que é falível. Pra rodar código de origem duvidosa, que pode estar tentando fugir de propósito, a resposta é uma [máquina virtual]{.gls key=maquina-virtual} descartável, um computador inteiro simulado que você joga fora depois.
+E tem um limite que nenhuma dessas jaulas cruza. Elas existem pra conter os erros de um programa em que você confia, mas que é falível. Pra rodar código de origem duvidosa, que pode estar tentando fugir de propósito, a resposta é uma [máquina virtual]{.gls key=maquina-virtual} descartável, um computador inteiro simulado que você joga fora depois.
 
 ### O Git como rede
 

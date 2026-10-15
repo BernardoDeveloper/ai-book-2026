@@ -66,7 +66,7 @@ A lista completa que eu uso, com os casos de 2026, está em @sec-como-ler-anunci
 6. **Isso aconteceu ou poderia acontecer?** Leia os verbos: "poderia", "em poucos meses", "se fosse mais capaz" têm um peso diferente do de um fato documentado, e o apocalipse dos anúncios costuma morar inteiro no condicional (@sec-ch14).
 7. **Quem ganha com o seu medo?** O aviso de catástrofe e o anúncio do milagre empurram o mesmo carrinho, e um pedido de regulação escrito sob medida pros líderes trava o concorrente pequeno (@sec-ch14).
 8. **Quanto custou o feito?** Um resultado obtido com milhões de dólares de computação mostra força bruta e dinheiro, e diz bem menos sobre a inteligência da máquina (@sec-ch14).
-9. **As vozes que concordam são independentes?** Dez influenciadores repetindo o mesmo comunicado contam como uma voz, e duas IAs concordando com a hipótese que você escreveu na pergunta são eco (@sec-ch04, @sec-ch14).
+9. **As vozes que concordam são independentes?** Dez influenciadores repetindo o mesmo comunicado contam como uma voz, e duas IAs concordando com a hipótese que você escreveu na pergunta são um eco (@sec-ch04, @sec-ch14).
 10. **A credencial confere com as datas?** Nome do artigo, ano e lista de autores estão a uma busca de distância, e a credencial anunciada às vezes é maior do que a real (@sec-ch14).
 11. **Você precisa disso hoje?** Quase toda manchete grande de 2026 mudou de forma em poucas semanas, e eu só adoto uma ferramenta nova quando sinto a falta dela doer (@sec-ch14).
 

@@ -239,7 +239,7 @@ Antes, a base: Python firme, um pouco de álgebra linear, estatística e probabi
 <!-- src: original -->
 Se você é pai ou mãe, o capítulo serve pra duas conversas. Se o seu filho viu um vídeo sobre superinteligência, conte o que tem lá dentro: números sorteados, ajustados aos poucos pra errar menos a próxima palavra. Eu vi isso acontecer na minha mesa, e em nenhum momento apareceu alguém ali.
 
-E se ele pergunta se vale a pena estudar isso, a resposta curta é sim. As pessoas dos laboratórios leram os mesmos artigos que estão abertos pra qualquer um; a diferença está nos anos de estudo e no acesso a máquina, e máquina pra aprender cabe numa mesa.
+E se ele pergunta se vale a pena estudar isso, a resposta curta é sim. As pessoas dos laboratórios leram os mesmos artigos que estão abertos pra qualquer um; a diferença está nos anos de estudo e no acesso às máquinas, e máquina pra aprender cabe numa mesa.
 
 <!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
 E se você é gestor, não precisa treinar nada do zero. Treinar do zero foi a regra do meu exercício, e eu escolhi o caminho mais difícil de propósito. Na vida real, existem técnicas bem documentadas pra adaptar um [modelo aberto]{.gls key=modelo-aberto} pronto aos seus dados: o [fine-tuning]{.gls}, que continua o treino com o material da empresa; variantes que treinam só uma fração pequena dos pesos e cabem numa placa só; a [destilação]{.gls key=destilacao}, que ensina um modelo menor a imitar um maior. Partindo de um modelo que já sabe falar, o treino em si leva horas, não semanas; o trabalho de verdade é preparar os exemplos e medir o resultado.

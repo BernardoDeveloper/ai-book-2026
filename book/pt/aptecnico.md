@@ -136,7 +136,7 @@ A conferência também é fechada. A marca só pode ser medida por um detector q
 ## A marca d'água do Claude: a reação, o alcance e um texto de três modelos {#sec-aptecnico-watermark-2}
 
 <!-- src: original -->
-Complemento de @sec-aptecnico-watermark. O @sec-ch04 resume em dois parágrafos o que a marca d'água do Claude prova e o que um detector não prova. Aqui ficam o resto da história: como a marca chegou, o que ela deixa de fora e o texto que eu mesmo escrevi sobre ela.
+Complemento de @sec-aptecnico-watermark. O @sec-ch04 resume em dois parágrafos o que a marca d'água do Claude prova e o que um detector não prova. Aqui fica o resto da história: como a marca chegou, o que ela deixa de fora e o texto que eu mesmo escrevi sobre ela.
 
 ### Como a marca chegou
 
