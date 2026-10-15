@@ -51,7 +51,7 @@ Enquanto escrevia, eu pensava em algumas pessoas:
 - a gerente a quem estão vendendo uma "transformação com IA" que ninguém consegue explicar direito;
 - o programador júnior que se pergunta se escolheu a carreira errada.
 
-Se você se reconheceu em alguma delas, comece sabendo que a confusão tem origem conhecida, e ela está longe de você. Faz anos que você é exposto a propaganda feita por gente que ganha com a sua ansiedade: empresas a caminho da bolsa, fabricantes de chip, vendedores de curso com nome novo pra coisa velha. Quem acreditou num anúncio fez exatamente o que o anúncio foi desenhado pra provocar.
+Se você se reconheceu em alguma delas, comece sabendo que a confusão tem origem conhecida, e ela está longe de você. Faz anos que você é exposto à propaganda feita por gente que ganha com a sua ansiedade: empresas a caminho da bolsa, fabricantes de chip, vendedores de curso com nome novo pra coisa velha. Quem acreditou num anúncio fez exatamente o que o anúncio foi desenhado pra provocar.
 
 E se você chegou aqui só por curiosidade, sem medo nenhum, ótimo. Você vai se divertir com algumas histórias deste ano.
 
