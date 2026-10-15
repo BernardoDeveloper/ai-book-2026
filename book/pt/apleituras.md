@@ -35,7 +35,7 @@ A lista abaixo é curta de propósito e vai do mais fácil ao mais técnico. Con
 - Andrej Karpathy, *nanochat*: o passo seguinte, um modelo do nível do GPT-2 treinado em poucas horas de placas alugadas; código gratuito [@karpathy2025nanochat].
 - O meu microgpt lab: o ciclo completo do @sec-ch13b, dos dados à avaliação, com o relatório de cada tropeço; a primeira lição roda num processador comum [@akita2026microgpt].
 
-## Vídeos gratuitos
+## Vídeos e guias visuais gratuitos
 
 - Grant Sanderson (3Blue1Brown), série *Neural networks*: a explicação visual mais clara de neurônios, gradiente, retropropagação e atenção; parte dela tem dublagem ou legendas em português do Brasil [@sanderson2017neural].
 - Andrej Karpathy, *Intro to Large Language Models* e *Deep Dive into LLMs like ChatGPT*: pré-treino, ajuste fino e RLHF explicados pro público geral; em inglês, só com legendas automáticas [@karpathy2023intro; @karpathy2025deepdive].

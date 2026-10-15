@@ -8,7 +8,7 @@ sources:
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "c6451afc1d26d440a2364ebee3249330f54d9e0ddcb493aa7fdba4c9ff72d8c4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/posfacio.md, sha256: "1d10b97f87387f7adda6a527094ea0a6de82844d720ce7b528d8dfb4a565f87c"}
+translated_from: {file: book/pt/posfacio.md, sha256: "cf0666fd7820171aff0163f4cd1ca2998f8d9b092360da924ac9a4715e4a2389"}
 ---
 
 # Afterword: How This Book Was Made {#sec-posfacio .unnumbered}
@@ -88,7 +88,7 @@ Each one was a read-only agent, reading the whole book in order the way that per
 The first read gave the imbalance a measure. Stories and practical tools worked for everyone, and the measurement-heavy middle, the chapters from @sec-ch11 to @sec-ch13, lost the non-programmers. All five caught the same argument flaws: a conclusion bigger than its evidence in @sec-ch20, reasoning that can never lose in @sec-ch09, a reading guide that sent four of the five to the wrong chapter. Each pattern became a written rule, which the agents read before editing.
 
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
-The rebalancing came from there. About 8,000 words of lab notebook left the chapters for @sec-aptecnico, each paragraph carrying its provenance marker; the reading list became an appendix; a whole section was kept outside the book while its verification was pending; every chapter started orienting the reader before the first jargon; and the epilogue got a list of what to do this week, per type of reader. There were three rounds, read, edit and read again, because edits fix the old problem and create the new one: the logic flaws fell from 73 to 53 and 51, and the review stopped when the problems stopped coming back.
+The rebalancing came from there. About 8,000 words of lab notebook left the chapters for @sec-aptecnico, each paragraph carrying its provenance marker; the reading list became an appendix; a whole section was kept outside the book while its verification was pending; every chapter started orienting the reader before the first technical term; and the epilogue got a list of what to do this week, per type of reader. There were three rounds, read, edit and read again, because edits fix the old problem and create the new one: the logic flaws fell from 73 to 53 and 51, and the review stopped when the problems stopped coming back.
 
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
 The same five readers later checked the chapters that got my history from before 2026. The verdict became a rule: the narrator's history convinces when it's evidence the reader can check, like the dated warning next to the admitted mistake, and gets in the way when it turns into a résumé. The lines that three or four of them flagged as showing off were cut from the book.
@@ -103,7 +103,7 @@ On one side, the tools for working with agents: ai-memory (@sec-apmemoria), ai-j
 ## What's Still Mine
 
 <!-- src: 2026/04/15/como-falar-com-o-claude-code-efetivamente -->
-In @sec-ch09 I told you how the blog post about talking to Claude Code was written by Claude itself, from a request of mine, and corrected by me while it wrote. This book was made the same way, on a larger scale. This afterword too: the draft came from Claude, running in Claude Code, from a request of mine. The English edition you're reading is a translation of the Portuguese text, made the same way, by agents working under the same rules, and reviewed by me.
+In @sec-ch09 I told you how the blog post about talking to Claude Code was written by Claude itself, from a request of mine, and corrected by me while it wrote. This book was made the same way, on a larger scale. This afterword too: the draft came from Claude, running in Claude Code, from a request of mine.
 
 <!-- src: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo -->
 It wasn't the first time that year. In April, Claude Code translated twenty years of blog posts in a little over a day and a half (@sec-interlude1). Ninety percent went smoothly, and the other ten only got sorted because someone read the list of what had failed and went looking for another way.
@@ -112,7 +112,7 @@ It wasn't the first time that year. In April, Claude Code translated twenty year
 That's the point of @sec-ch20 applied to the book itself. Any of the good models of October 2026 would have written similar drafts, because the model became a commodity, a nearly interchangeable good. What made the process work was what surrounds it: the inventory, the written contract, the automatic checker, the sources as [oracle]{.gls key=oraculo}, the trail for every paragraph. It's the same old engineering I defended in every chapter, applied to text.
 
 <!-- src: original -->
-The repository records the first commit and the drafts of every chapter on the same day. That's the first ten percent from @sec-ch05: impressive, and it says almost nothing about the rest. The other ninety percent is reading, cutting and correcting.
+The repository records the first commit and the drafts of the chapters in the initial structure on the same day. That's the first ten percent from @sec-ch05: impressive, and it says almost nothing about the rest. The other ninety percent is reading, cutting and correcting.
 
 And that part is mine. The experiences in the book are the ones I lived, and the opinions are the ones I wrote over the year, none invented to fill a chapter. I approved the structure. No chapter goes into the book without me reading and approving it, and whatever I send back for rework goes through the same process again.
 

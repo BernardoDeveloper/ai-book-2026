@@ -30,7 +30,7 @@ E as decisões também são minhas: a estrutura em cinco partes, o que entra e o
 Não. Fazer um livro com IA está longe de ser um pedido de "escreva um livro pra mim". Eu tive que inventar o processo inteiro e pilotar os agentes pra montar cada peça dele: a consolidação dos posts, a estratégia narrativa, o que fica e o que sai, a revisão de texto, a checagem de fatos, o lançamento de cada versão.
 
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
-O primeiro rascunho de todos os capítulos ficou pronto no mesmo dia em que o repositório do livro nasceu, 13 de outubro. Esse é o pedaço rápido. Pra dar uma ideia do resto, alguns números:
+Os primeiros rascunhos dos capítulos da estrutura inicial ficaram prontos no mesmo dia em que o repositório do livro nasceu, 13 de outubro. Esse é o pedaço rápido. Pra dar uma ideia do resto, alguns números:
 
 - quase meio milhão de palavras de blog na entrada, 96 textos sobre IA, e cada texto deixado de fora com o motivo anotado;
 - uma revisão de texto completa em cada língua, além da conferência de fatos;
@@ -87,12 +87,12 @@ Quando dois números meus discordavam, a regra foi descobrir por quê e dizer o 
 <!-- src: original -->
 Saber o que decidir não veio de 2026. Em 2019 eu gravei um vídeo chamado "Não terceirize suas decisões" [@akitando063]. Em outubro de 2022, um mês antes do ChatGPT, eu defendia no canal testes, integração contínua e estimativa como ordem de grandeza [@akitando130].
 
-Também errei previsões nesse período, e @sec-ch18 conta uma delas. O que este livro aproveitou foram as práticas, que eu tinha testado por anos antes de pôr um agente pra executá-las.
+Também errei previsões nesse período, e o @sec-ch18 conta uma delas. O que este livro aproveitou foram as práticas, que eu tinha testado por anos antes de pôr um agente pra executá-las.
 
 <!-- src: original -->
-É isso que @sec-ch18 chama de senioridade: decidir e responder pela decisão. Os agentes foram competentes o suficiente pra escrever, traduzir e conferir. Saber o que pedir, o que aceitar e o que jogar fora continuou sendo trabalho de quem fez isso por décadas.
+É isso que o @sec-ch18 chama de senioridade: decidir e responder pela decisão. Os agentes foram competentes o suficiente pra escrever, traduzir e conferir. Saber o que pedir, o que aceitar e o que jogar fora continuou sendo trabalho de quem fez isso por décadas.
 
 <!-- src: original -->
-E vale aqui a pergunta que @sec-ch14 manda fazer a qualquer anúncio: quem ganha se você acreditar? Eu ganho, porque o livro é meu. Então não acredite só na minha palavra.
+E vale aqui a pergunta que o @sec-ch14 manda fazer a qualquer anúncio: quem ganha se você acreditar? Eu ganho, porque o livro é meu. Então não acredite só na minha palavra.
 
 As fontes estão listadas, cada parágrafo sabe de onde veio, e o repositório é público. Abra, confira, e se achar onde eu errei, me conte.

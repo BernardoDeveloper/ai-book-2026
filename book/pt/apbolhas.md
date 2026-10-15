@@ -80,4 +80,4 @@ As empresas que viviam da bolha morreram, e a tecnologia ficou: a internet depoi
 <!-- src: original -->
 O padrão não garante nada pra ninguém em particular. Gente boa também perdeu o emprego nos dois estouros, e eu tive sorte de receber uma ligação na semana certa. O que os ciclos mostram é qual lado da transição costuma atravessar.
 
-> Pelo que eu vi três vezes, a bolha acaba com o atalho. A profissão tem continuado, mudando de ferramenta, nas mãos de quem aprende a resolver o problema por baixo dela.
+> Pelo que eu vi nos dois estouros, a bolha acaba com o atalho. A profissão tem continuado, mudando de ferramenta, nas mãos de quem aprende a resolver o problema por baixo dela.

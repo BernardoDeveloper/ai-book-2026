@@ -85,7 +85,7 @@ Três coisas, e nenhuma delas vence em seis meses.
 <!-- src: original -->
 A primeira é o mínimo sobre a máquina. Um [LLM]{.gls} gera o texto mais provável, pedaço por pedaço, a partir de um arquivo congelado que não aprende com você (@sec-ch01). Quem guarda só isso na cabeça já se defende de metade das promessas: não espera consciência de um gerador de texto, não espera que ele lembre da conversa da semana anterior, e desconfia quando ele concorda com tudo (@sec-ch04).
 
-Se quiser ir mais fundo, @sec-apmecanica mostra o mecanismo sem matemática, e @sec-apleituras traz uma lista de leitura pra vários níveis.
+Se quiser ir mais fundo, o @sec-apmecanica mostra o mecanismo sem matemática, e o @sec-apleituras traz uma lista de leitura pra vários níveis.
 
 <!-- src: 2026/04/11/vs-code-e-o-novo-cartao-perfurado -->
 Vale o mesmo pro fundamento do seu próprio ofício. Pense no programador sem base de @sec-ch18, que testa com 300 linhas e não imagina o milhão. Com [agente]{.gls} na mão, quem tem base aprende mais rápido. Quem não tem só terceiriza a própria ignorância.
@@ -116,7 +116,7 @@ Essa é a parte do mapa que está em branco pra máquina e preenchida na sua cab
 Essa lista é mais longa, e libera mais tempo:
 
 - curso e certificação do nome da moda do mês (harness engineering, loop engineering e parentes). Quando a tecnologia vira commodity, o dinheiro migra pro nome novo: cinco nomes pra encadear chamada de API e um certificado que expira em seis meses. Quem trabalha com método, teste e revisão já faz o que eles ensinam;
-- anúncio de [AGI]{.gls key=agi}, de extinção, de modelo perigoso demais pra lançar. O roteiro existe pelo menos desde 2019 (@sec-ch01), e @sec-ch14 mostra quem lucra com ele;
+- anúncio de [AGI]{.gls key=agi}, de extinção, de modelo perigoso demais pra lançar. O roteiro existe pelo menos desde 2019 (@sec-ch01), e o @sec-ch14 mostra quem lucra com ele;
 - briga de ranking por décimo de ponto. No topo, os modelos formam um grupo, e a diferença entre eles cabe no [ruído entre execuções]{.gls key=ruido-entre-execucoes} (@sec-ch11);
 - a promessa de que o próximo modelo resolve. Os relatos de quem treina e as medições de fora, em @sec-ch20, mostram a inteligência de base achatando; o que ainda sobe é o que o agente faz com ferramentas, e o que muda o resultado é o processo em volta;
 - o vídeo do aplicativo feito em dez minutos. As primeiras horas são a parte fácil, e os outros noventa por cento estão em @sec-ch05.

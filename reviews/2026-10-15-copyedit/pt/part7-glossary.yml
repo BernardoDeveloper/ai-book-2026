@@ -1,0 +1,35 @@
+---
+- id: '7.1'
+  unit: glossary
+  quote: treinamento
+  category: consistency
+  severity: medium
+  problem: The generic definition says training is always done by a company, takes
+    weeks or months and costs millions, while ch13b explicitly trains a small model
+    at home in 137 GPU-hours. Scope the large-model cost and duration rather than
+    contradicting that chapter.
+  suggestion: Describe training as the stage before use; qualify weeks/months and
+    millions as possible costs of large commercial models. Mirror the qualification
+    in PT and EN.
+- id: '7.2'
+  unit: glossary
+  quote: vram
+  category: consistency
+  severity: medium
+  problem: The definition says weights must fit wholly in VRAM and determine the largest
+    model the card can run, while ch13 describes CPU offloading at 2-3 tokens per
+    second. Distinguish fitting entirely on the card from running partly outside it.
+  suggestion: State that VRAM limits the model that can run entirely on the graphics
+    card, without denying the slower offloading case already described in ch13.
+- id: '7.3'
+  unit: glossary
+  quote: tipagem-forte
+  category: consistency
+  severity: medium
+  problem: 'The definition describes compile-time checking, which is static typing
+    rather than the separate strong/weak distinction. This is coordinated with accepted
+    part5 findings in ch18 and the technical appendix. Primary sources: https://doc.rust-lang.org/book/ch03-02-data-types.html
+    and https://typing.python.org/en/latest/spec/concepts.html.'
+  suggestion: Display Tipagem estática / Static typing, retain the stable key tipagem-forte,
+    and define checking value types before execution without conflating it with strong
+    typing.

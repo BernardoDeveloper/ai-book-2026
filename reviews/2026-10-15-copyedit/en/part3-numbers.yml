@@ -1,0 +1,201 @@
+---
+- id: '3.1'
+  unit: ch12
+  line: 210
+  quote: That rules out a live detour on those routes
+  category: error
+  severity: high
+  problem: 'R1/R17: one identity answer per provider cannot exclude concealed or request-dependent
+    relaying. The same chapter correctly acknowledges identity concealment and the
+    limits of a negative test at line 224. ''Decisive test'' (208), guaranteed consistency
+    (199), and ''rule out hypotheses'' (233) repeat the overstatement.'
+  suggestion: 'At 210: ''Every one answered "Moonshot AI." Zero for fourteen: I didn''t
+    find the same identity signal on those routes, but that still doesn''t explain
+    the first pass''s answer.'' At 208 use ''next test''; at 199 describe consistency
+    as the signal being sought, not a guarantee. At 233 use ''the tests help investigate
+    hypotheses and rumors''.'
+- id: '3.2'
+  unit: ch13
+  line: 185
+  quote: a clip from someone else's video.
+  category: consistency
+  severity: medium
+  problem: 'Content parity: PT ch13:182 says ''trecho de vídeo de terceiros transcrito
+    errado''. EN drops the mistranscription, making the clip itself the problem. Both
+    aptecnico editions explain that automatic captions mistranscribed external clips
+    (PT:562, EN:563), so the missing meaning is independently recoverable from tracked
+    text.'
+  suggestion: a clip from someone else's video transcribed incorrectly.
+- id: '3.3'
+  unit: ch14
+  line: 268
+  quote: says 90% about a coin flip.
+  category: consistency
+  severity: medium
+  problem: 'Content parity: PT:265 says ''sobre um sorteio'', referring to the fair
+    die in PT:263 / EN:266. A coin flip changes the random experiment from six outcomes
+    to two.'
+  suggestion: says 90% about a die roll.
+- id: '3.4'
+  unit: ch12
+  line: 64
+  quote: The change was all in the environment, with the same model.
+  category: consistency
+  severity: medium
+  problem: The immediately preceding passage changes from the cheating Gemini/Qwen
+    models to Grok 4.6. The tracked August-post analysis distinguishes the clean reruns
+    from the next Grok run; the phrasing implies an unsupported same-model comparison.
+  suggestion: The fix was in the test environment. It's the logic of not giving the
+    intern the vault password on day one.
+- id: '3.5'
+  unit: ch13
+  line: 39
+  quote: that's why all of AI runs on graphics cards
+  category: error
+  severity: medium
+  problem: The universal claim contradicts the CPU training example in ch13b:48 and
+    :232, and the CPU inference example in aptecnico:402. Scope the role of GPUs without
+    claiming every AI system requires them.
+  suggestion: that's why graphics cards became a central part of this race
+- id: '3.6'
+  unit: ch13
+  line: 57
+  quote: On mine, the graphics side got 64 GB
+  category: clarity
+  severity: medium
+  problem: 'The undated 64 GB allocation appears to apply to the March comparison,
+    whose 81 GB model supposedly has to fit whole in video memory. The technical appendix
+    resolves the timeline: 96 GB in March (aptecnico:402), reduced to 64 GB on April
+    8 (:405).'
+  suggestion: On April 8 I dropped the graphics side to 64 GB, double the card, because
+    the rest of the server needs memory to breathe too.
+- id: '3.7'
+  unit: ch13
+  line: 180
+  quote: the 146 episodes of my YouTube channel
+  category: consistency
+  severity: medium
+  problem: The definite article makes 146 sound like the channel's total. continuity.yml
+    and reviews/akitando/profile.md:40 give 149 total episodes, while the tracked
+    April-post analysis supports 146 dubbed. Keep the dubbed count and its narrower
+    scope (R6).
+  suggestion: 146 episodes from my YouTube channel
+- id: '3.8'
+  unit: ch13b
+  line: 170
+  quote: It's the same model that swears it works from @sec-ch12
+  category: consistency
+  severity: medium
+  problem: This is the homemade 239-million-parameter model, while ch12 discusses
+    Qwen/Gemini/Sonnet. The behavior recurs; the model is not the same. The literal
+    translation makes the identity error especially explicit.
+  suggestion: It's the same false assurance you saw in @sec-ch12
+- id: '3.9'
+  unit: ch13b
+  line: 288
+  quote: My model cost about R$ 80
+  category: consistency
+  severity: medium
+  problem: 'R7: line 133 calls this an unmetered upper estimate for GPU electricity,
+    while the ending presents it as the total measured cost of the model. Tracked
+    reference nvidia2025rtx5090 explicitly scopes it to 575 W x 137 h = 78.775 kWh;
+    NVIDIA''s primary comparison specifications confirm 575 W. The same sentence also
+    uses ''what it zeroes'', a literal translation that does not mean ''tests it scores
+    zero on'' in English.'
+  suggestion: 'The card''s electricity bill was estimated at no more than about R$
+    80, and my model hides nothing: the report says what it does and where it scores
+    zero.'
+- id: '3.10'
+  unit: ch14
+  line: 113
+  quote: general intelligence is a revenue target.
+  category: error
+  severity: medium
+  problem: The preceding sentence specifies at least $100 billion in profit. Revenue
+    and profit are different quantities; the paraphrase switches the metric (R7),
+    mirroring PT's lucro/faturamento error.
+  suggestion: general intelligence is a profit target.
+- id: '3.11'
+  unit: ch14
+  line: 254
+  quote: such as whether an email a scam or not, is this ticket billing, support or
+    sales.
+  category: error
+  severity: medium
+  problem: The embedded clause is missing 'is', and it changes mid-list from an embedded
+    question into a direct question. PT's two classifier examples are straightforward.
+  suggestion: such as whether an email is a scam, or whether a ticket belongs in billing,
+    support or sales.
+- id: '3.12'
+  unit: ch11
+  line: 54
+  quote: The question everyone asks me, "which AI is the best?," looks like it has
+    an answer in a table.
+  category: error
+  severity: low
+  problem: The quoted question contains both a question mark and an appositive comma
+    inside the quote. The punctuation is malformed and distracts from an otherwise
+    clear sentence.
+  suggestion: 'A table seems to answer the question everyone asks me: "Which AI is
+    the best?"'
+- id: '3.13'
+  unit: ch12
+  line: 163
+  quote: commercially included
+  category: error
+  severity: low
+  problem: Literal phrasing from PT 'inclusive comercialmente' produces the unidiomatic
+    modifier 'commercially included'. The following 'merge included' has the same
+    construction problem.
+  suggestion: Use 'including commercially' and end the next sentence with 'including
+    by merging them'.
+- id: '3.14'
+  unit: ch13
+  line: 166
+  quote: about 8 cents of GPU on Qwen3
+  category: error
+  severity: low
+  problem: The English modifier makes GPU itself a quantity bought in cents. The cost
+    is for GPU runtime, as stated by PT and the surrounding cloud-rental discussion.
+  suggestion: about 8 cents in GPU time on Qwen3
+- id: '3.15'
+  unit: ch13b
+  line: 48
+  quote: the stumbles I'm about to tell.
+  category: error
+  severity: low
+  problem: "'Tell' does not take 'stumbles' as a natural object in this sense; this
+    is a literal carryover of PT 'tropeços que vou contar'."
+  suggestion: the missteps I'm about to describe.
+- id: '3.16'
+  unit: ch13b
+  line: 84
+  quote: For it to answer a request comes tuning
+  category: clarity
+  severity: low
+  problem: The literal inverted construction obscures that tuning is the next step,
+    used to teach request-following.
+  suggestion: To teach it to answer a request, the next step is tuning
+- id: '3.17'
+  unit: ch13b
+  line: 204
+  quote: And then there's what it zeroed.
+  category: error
+  severity: low
+  problem: In English 'zeroed' suggests resetting or aiming at a target; it does not
+    naturally mean scoring zero on tests. This literal translation obscures the transition
+    to the measured failures.
+  suggestion: And then there are the tests it scored zero on.
+- id: '3.18'
+  unit: ch14
+  line: 209
+  quote: The full idea is simple, and it's in the quote below.
+  category: consistency
+  severity: low
+  problem: 'Paragraph-level parity: PT:206 states the thesis directly (''quando a
+    tecnologia vira commodity, o dinheiro migra pra taxonomia''). EN substitutes a
+    pointer to the later blockquote. The thesis exists later in both editions, so
+    no chapter-level concept is missing, but the counterpart paragraph has been editorially
+    abbreviated contrary to the translation contract.'
+  suggestion: 'The full idea is simple: when technology becomes a commodity, the money
+    migrates to taxonomy.'

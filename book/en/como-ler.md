@@ -48,7 +48,7 @@ If you skip around, you'll trip now and then over a term or a character that sho
 This book was closed in October 2026. The story takes place between February and October of that year, and the dates are spelled out on purpose: "in March 2026," never "recently."
 
 <!-- src: original -->
-The names of models and products will age fast. By the time you read this, Claude Opus 4.5, GPT-5.5 or Kimi K3 will probably sound as dated as a Ford Model T: they tell you when the story is set, and nobody reads the novel to pick a car. The mechanisms underneath change much more slowly. How a language model generates text, why it forgets what the two of you agreed on, why it agrees with you, why an unsupervised agent screws things up: that's what I want you to take away.
+The names of models and products will age fast. By the time you read this, Claude Opus 4.5, GPT-5.5 or Kimi K3 will probably sound like the car models in an old novel: they tell you when the story is set, and nobody reads the novel to pick a car. The mechanisms underneath change much more slowly. How a language model generates text, why it forgets what the two of you agreed on, why it agrees with you, why an unsupervised agent screws things up: that's what I want you to take away.
 
 <!-- src: original -->
 Numbers deserve the same care. Price, benchmark score, amount of memory, position in a ranking: each one is a snapshot taken in a specific month, and the text says which. A score from September 2026 tells you what happened in September 2026, and that's it.

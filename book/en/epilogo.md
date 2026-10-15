@@ -13,7 +13,7 @@ sources:
   - {post: 2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida, sha256: "2727fad41f2e46b8df4cbc36d4a7283894b02413b94f973356d5b2cb72845683"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/epilogo.md, sha256: "32fb8cc4e22abf642638cee614cff09e6a7474544b3b45dbabece52b6a432009"}
+translated_from: {file: book/pt/epilogo.md, sha256: "bfb5c0e4aee55b50f5ed3cd4a8c5f83e9f7e52f768bb59afa2e666160ec87324"}
 ---
 
 # Epilogue: What I'd Tell You {#sec-epilogo .unnumbered}
@@ -28,7 +28,7 @@ I'll start with the concrete: two or three steps for this week, depending on who
 ## For This Week
 
 <!-- src: original -->
-If you work with offices, numbers or paperwork:
+If you do office work, deal with numbers or handle paperwork:
 
 - pick a repetitive task you already know how to do well, like the new report from the old one or the draft of a hard email, and ask the chatbot using the four parts from @sec-ch09: what you want, how, what you don't want and how to know it worked;
 - check the result against what you know is right and note where it erred; numbers, dates and rules get checked at the source (@sec-ch04);
@@ -53,7 +53,7 @@ If you're starting out in programming:
 
 - use the agent, but for every change it makes, ask it to explain why and check whether you could explain it too (@sec-ch18);
 - study what sits underneath (databases, networks, how to know whether the program is right) and write the test before asking for the code;
-- take a problem you don't know how to solve and that has no ready-made tutorial, try on your own before asking the machine, and don't let go until you understand why the solution works (@sec-ch08, @sec-apestudar); then publish, because real users are the best reviewer there is (@sec-ch19).
+- take a problem you don't know how to solve and that has no ready-made tutorial, try on your own before asking the machine, and don't let go until you understand why the solution works (@sec-ch08, @sec-apestudar); then publish, because a real user is the best reviewer there is (@sec-ch19).
 
 ## Fear Sells
 

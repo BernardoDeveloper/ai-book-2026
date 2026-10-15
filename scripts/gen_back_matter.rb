@@ -25,7 +25,7 @@ T = {
             src_intro: "Este livro nasceu de artigos publicados em akitaonrails.com ao longo de 2026. Cada capítulo abaixo lista os artigos de que deriva, para quem quiser ler a versão original, com o contexto e as datas em que foram escritos." },
   "en" => { gls: "Glossary", refs: "References", src: "Sources: the original articles",
             bg: "Earlier episodes cited (Akitando, 2018-2023)",
-            src_intro: "This book grew out of articles published on akitaonrails.com during 2026. Each chapter below lists the articles it derives from, for readers who want the original, dated versions." },
+            src_intro: "This book grew out of articles published on akitaonrails.com during 2026. Each chapter below lists the articles it derives from, so readers can find the originals with their context and dates." },
 }.fetch(lang)
 
 def front_matter(path)
@@ -97,6 +97,8 @@ units.each do |u|
            when "photo"
              if lang == "pt"
                rec.dig("credit", "backmatter")
+             elsif rec.dig("credit", "backmatter_en")
+               rec.dig("credit", "backmatter_en")
              else # built from the record's fields; the stored strings are Portuguese
                mods = { "redimensionada" => "resized", "recortada" => "cropped", "convertida de SVG para PNG" => "converted from SVG to PNG",
                         "em tons de cinza" => "converted to grayscale",

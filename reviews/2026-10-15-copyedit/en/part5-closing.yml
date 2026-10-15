@@ -1,0 +1,189 @@
+---
+- id: '5.1'
+  unit: ch18
+  line: 131
+  quote: The programming bubble popped before there were LLMs that could program.
+  category: error
+  severity: medium
+  problem: 'Shared PT chronology error: the authors published their Codex code-writing
+    LLM paper on July 7, 2021, before the 2022 layoffs (https://arxiv.org/abs/2107.03374).
+    The narrative can distinguish the layoffs from the ChatGPT launch without denying
+    earlier coding models.'
+  suggestion: The programming bubble was already bursting when ChatGPT launched.
+- id: '5.2'
+  unit: ch18
+  line: 114
+  quote: To call yourself a "software engineer," you need no council at all
+  category: error
+  severity: medium
+  problem: 'Shared PT categorical legal claim: current Confea Resolution 1.156/2025,
+    article 7, expressly covers software engineers (https://normativos.confea.org.br/Ementas/Visualizar?id=82360).
+    General software development and the regulated engineering title cannot simply
+    be equated. The superseded 2018 resolution is not the current authority.'
+  suggestion: 'Replace the paragraph with: There is a detail few people notice. Writing
+    "software engineer" on LinkedIn proves neither training, experience nor the ability
+    to deliver.'
+- id: '5.3'
+  unit: ch18
+  line: 209
+  quote: if you copy GCC, you arrive at another GCC
+  category: error
+  severity: medium
+  problem: 'R5, shared PT issue: the cited primary report describes a clean-room compiler
+    implementation with no internet access; GCC served as the known-good compiler
+    oracle. Consulting a reference implementation through outputs is not copying its
+    source. See https://www.anthropic.com/engineering/building-c-compiler.'
+  suggestion: having GCC as an oracle gives you a ready-made reference for checking
+    the result
+- id: '5.4'
+  unit: ch18
+  line: 308
+  quote: "[strongly typed]{.gls key=tipagem-forte}"
+  category: consistency
+  severity: medium
+  problem: 'Shared PT terminology issue: the glossary/compiler mechanism is static
+    typing, not the separate strong/weak distinction. Rust explicitly defines static
+    typing as compile-time type knowledge; Python defines its runtime system as dynamic
+    typing: https://doc.rust-lang.org/book/ch03-02-data-types.html; https://typing.python.org/en/latest/spec/concepts.html.'
+  suggestion: Use [statically typed]{.gls key=tipagem-forte}, preserving the stable
+    glossary key, and at line 319 use in statically or dynamically typed languages
+    instead of in typed or dynamic languages. Coordinate glossary/appendix labels
+    with their owners.
+- id: '5.5'
+  unit: ch20
+  line: 201
+  quote: Outside that territory there's nowhere to get the signal from.
+  category: error
+  severity: medium
+  problem: 'R5, shared PT error: RLHF, cited in the preceding paragraph, gets its
+    signal from human evaluations rather than necessarily from objective game/proof/test
+    outcomes. The paper already registered as ouyang2022training explicitly describes
+    human demonstrations and rankings: https://arxiv.org/abs/2203.02155.'
+  suggestion: 'Introduce reinforcement learning as one way for AI to train AI rather
+    than their synonym. End the preceding paragraph with: In the self-play and verifiable-reasoning
+    examples, the reward is easy to check: games have a scoreboard, math has proofs,
+    code has tests. Start this paragraph: Outside that territory, getting a reliable
+    automatic signal is harder; in RLHF, it comes from human evaluations. Preserve
+    the subsequent frozen-weights explanation.'
+- id: '5.6'
+  unit: ch20
+  line: 159
+  quote: With one, the machine iterates until it gets it right. Without one, it spins
+    indefinitely.
+  category: consistency
+  severity: medium
+  problem: 'R2/R5, shared PT continuity problem: the game converter was just described
+    as paused after 349 commits and 600-plus tests despite having an oracle. A checker
+    enables feedback; it guarantees neither a solution nor termination.'
+  suggestion: With one, the machine can check whether it is making progress. Without
+    one, it can spin indefinitely.
+- id: '5.7'
+  unit: ch18
+  line: 250
+  quote: A well-specified request comes out like a dish from a Michelin-starred restaurant;
+    a lame request from someone inexperienced comes out as instant noodles.
+  category: clarity
+  severity: medium
+  problem: 'R2, shared PT overstatement: this again makes outcome quality depend only
+    on request quality, despite the well-specified failure in ch08 and model limitations
+    acknowledged in ch09. Qualify the metaphor as a change in chances.'
+  suggestion: A well-specified request gives the model a better chance of delivering
+    something useful; a sloppy request from someone inexperienced makes instant noodles
+    more likely.
+- id: '5.8'
+  unit: ch20
+  line: 253
+  quote: the difference between an excellent result and a pile of garbage falls entirely
+    on our side
+  category: clarity
+  severity: medium
+  problem: 'R1/R2, shared PT issue: a tie in a saturated benchmark does not establish
+    that every remaining quality difference is the user’s responsibility. The chapter
+    itself says effort settings and the harness change outcomes.'
+  suggestion: the difference between an excellent result and a pile of garbage depends
+    a lot on what we do on our side
+- id: '5.9'
+  unit: ch20
+  line: 121
+  quote: 'Every LLM was trained on what''s public: the open internet and, in the case
+    of code, the open repositories.'
+  category: clarity
+  severity: medium
+  problem: 'R1, shared PT scope issue: the absolute public/private setup suggests
+    a public-only corpus, despite the next paragraph acknowledging uncertainty. GPT-4’s
+    technical report, section 2, also records licensed third-party data (https://arxiv.org/pdf/2303.08774).
+    The private business-context point survives a narrower training-data statement.'
+  suggestion: 'An important part of an LLM’s training comes from what is public: the
+    open internet and, in the case of code, the open repositories. Use straight apostrophes
+    in the manuscript.'
+- id: '5.10'
+  unit: ch19
+  line: 129
+  quote: I say this as someone who outsources
+  category: clarity
+  severity: medium
+  problem: The paragraph identifies the narrator as a service provider, first consulting
+    on SAP and then running his own software company. Someone who outsources reads
+    as the client buying outside work, which reverses the role underpinning the point.
+    PT terceirizador is contextualized by the same service-provider history.
+  suggestion: I say this as someone who provides outsourced services
+- id: '5.11'
+  unit: ch18
+  line: 150
+  quote: an 80-to-100-hour workshop covers about 5% of that
+  category: error
+  severity: low
+  problem: 'R7, shared PT arithmetic: 80/1,400 is 5.71% and 100/1,400 is 7.14%; about
+    6% to 7% matches the explicitly stated range.'
+  suggestion: an 80-to-100-hour workshop covers about 6% to 7% of that
+- id: '5.12'
+  unit: ch20
+  line: 65
+  quote: as I tell in @sec-ch11
+  category: error
+  severity: low
+  problem: Objectless tell in is a calque of como conto. The natural English verb
+    here is explain or describe.
+  suggestion: as I explain in @sec-ch11
+- id: '5.13'
+  unit: ch20
+  line: 253
+  quote: Months of measuring didn't touch that sentence. It only explained why it's
+    true
+  category: error
+  severity: low
+  problem: The singular It lacks a clear singular antecedent after Months of measuring.
+    PT explicitly uses the plural explicaram, referring to those months of measurement.
+  suggestion: Months of measuring didn't touch that sentence. They only explained
+    why it's true
+- id: '5.14'
+  unit: ch20
+  line: 87
+  quote: the difference that doesn't close
+  category: clarity
+  severity: low
+  problem: This literally transfers the Portuguese accounting expression diferença
+    que não fecha. English would refer to an unreconciled difference/discrepancy;
+    closes does not clearly convey the intended accounting problem.
+  suggestion: an unreconciled difference
+- id: '5.15'
+  unit: ch20
+  line: 226
+  quote: I measured the caveat too.
+  category: consistency
+  severity: low
+  problem: The extra English paragraph is a split of PT ch20:223 at A ressalva eu
+    também medi; there is no added or missing substantive content. The translation
+    contract still requires the same paragraph counterparts/order.
+  suggestion: Join this paragraph to the preceding My bet, in October 2026 paragraph.
+    Keep all existing English text and the same provenance marker.
+- id: '5.16'
+  unit: ch18
+  line: 140
+  quote: a SAP consultancy
+  category: error
+  severity: low
+  problem: The indefinite article is awkward for the initialism S-A-P. A phrasing
+    that avoids dependence on pronunciation is clearer and retains the Portuguese
+    meaning.
+  suggestion: a consultancy working with SAP

@@ -643,11 +643,11 @@ tier:
   def: Faixa de classificação numa tabela de comparação de modelos (A, B, C, D), que
     agrupa notas próximas em vez de tratar cada ponto de diferença como real.
 tipagem-forte:
-  term: Tipagem forte
-  def: Característica de linguagens em que cada valor tem um tipo (número, texto,
-    lista) conferido pelo compilador antes de o programa rodar, que recusa o programa
-    quando os tipos não combinam. Pega alguns erros antes de o programa rodar, ao
-    custo de mais burocracia na escrita.
+  term: Tipagem estática
+  def: Característica de linguagens em que os tipos dos valores (número, texto, lista)
+    são conferidos antes de o programa rodar. O compilador pode recusar o programa
+    quando eles não combinam. Pega alguns erros antes da execução, ao custo de mais
+    burocracia na escrita.
 token:
   term: Token
   def: O pedaço de texto com que o modelo trabalha, em geral um fragmento de palavra.
@@ -668,9 +668,9 @@ transformer:
     que está na base de todos os LLMs atuais. A peça central é o mecanismo de atenção.
 treinamento:
   term: Treino
-  def: A fase, feita pela empresa antes do lançamento, em que o modelo lê uma montanha
-    de texto e tem seus parâmetros ajustados a cada erro de previsão. Leva semanas
-    ou meses e custa milhões; depois dela, os pesos ficam congelados.
+  def: A fase, feita antes do uso, em que o modelo lê uma montanha de texto e tem
+    seus parâmetros ajustados a cada erro de previsão. Nos grandes modelos comerciais,
+    pode levar semanas ou meses e custar milhões; depois dela, os pesos ficam congelados.
 tts:
   term: TTS
   long: Text-to-Speech
@@ -696,8 +696,9 @@ vibe-coding:
 vram:
   term: VRAM
   long: Video Random Access Memory
-  def: A memória própria da placa de vídeo. Os pesos do modelo precisam caber inteiros
-    nela, por isso é ela que determina o tamanho do modelo que a placa consegue rodar.
+  def: A memória própria da placa de vídeo. O espaço disponível limita o tamanho do
+    modelo que cabe inteiro na placa; deixar parte dos pesos fora dela costuma tornar
+    a execução bem mais lenta.
 vulnerabilidade:
   term: Vulnerabilidade
   def: Falha num programa que permite a alguém de fora fazer o que não deveria, como

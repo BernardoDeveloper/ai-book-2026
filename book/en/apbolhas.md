@@ -9,7 +9,7 @@ sources:
   - {post: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash, sha256: "79a02c73df595ddf8952c7bfbbd8023f51a3297b259610afa65901112dfe4160", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
 refs_projects: []
 blog_commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"
-translated_from: {file: book/pt/apbolhas.md, sha256: "fced13b84d28f49d610ca99547807f99dc02dbb0ffa613a3cbe9ff3100a9ac08"}
+translated_from: {file: book/pt/apbolhas.md, sha256: "a5dbd47b11990e2135a2f1d121385ad3ec219b1cc7cdd2c1cac2ac5510006e7f"}
 ---
 
 # Three Bubbles {#sec-apbolhas}
@@ -81,4 +81,4 @@ The companies that lived off the bubble died, and the technology stayed: the int
 <!-- src: original -->
 The pattern guarantees nothing for anyone in particular. Good people lost their jobs in both crashes too, and I was lucky to get a phone call in the right week. What the cycles show is which side of the transition usually makes it across.
 
-> From what I've seen three times, the bubble ends the shortcut. The profession has gone on, changing tools, in the hands of those who learn to solve the problem underneath it.
+> From what I've seen in the two crashes, the bubble ends the shortcut. The profession has gone on, changing tools, in the hands of those who learn to solve the problem underneath it.

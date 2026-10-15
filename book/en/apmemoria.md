@@ -15,7 +15,7 @@ refs_projects:
   - "ai-memory/docs/local-embeddings.md"
   - "ai-memory/docs/cross-project-profile.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apmemoria.md, sha256: "4b399f671a7ed1e07e27e8f502d777af0e15dabbd2cbae75e3846697f0f01e82"}
+translated_from: {file: book/pt/apmemoria.md, sha256: "291f99b1206e0e365438381b1af49c936ac2268ded202e9e6af67602f99e437b"}
 ---
 
 # ai-memory: The Memory That's Yours {#sec-apmemoria}
@@ -33,10 +33,10 @@ This appendix is about the tool I wrote to stop doing that, ai-memory [@akita202
 <!-- src: 2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos -->
 You already know the goldfish from @sec-ch02. The model remembers nothing from one conversation to the next, the desk starts empty every session, and when it fills up midway [compaction]{.gls key=compactacao} swaps the start of the conversation for a summary that loses detail. A huge [context window]{.gls key=janela-de-contexto} doesn't change that: it's big, but it belongs only to the current session.
 
-What gets lost is precisely the expensive part of the work. The code shows what survived. The session holds the rest: the experiment that failed, the intermittent bug, the reasoning behind a decision. Close the agent and it's gone.
+What gets lost is precisely the expensive part of the work. The code shows what survived. The session holds the rest: the experiment that failed, the intermittent bug, the reason we changed our minds after three hours. Close the agent and it's gone.
 
 <!-- src: 2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar -->
-In @sec-ch02 I also showed the home remedy, which still works: agent memory is text, and you can write your own notes in a docs folder in the project. The remedy's flaw is discipline. The agent doesn't take notes on its own, and I have to remember to ask, every time, including on the days I'm tired.
+In @sec-ch02 I also showed the home remedy, which still works: agent memory is text, and you can write your own notes in a docs folder in the project. The remedy's flaw is discipline. To keep those notes up to date, I still have to remember to ask and check, every time, including on the days I'm tired.
 
 ### The Vendor's Padlock
 
@@ -57,7 +57,7 @@ These tools' notes are text, as @sec-ch02 showed, so in theory you can take them
 ai-memory is long-term memory for coding agents, [open source]{.gls key=codigo-aberto}, distributed as a single [binary]{.gls key=binario}, one program that doesn't depend on other services to run. The promise is that the next session, in any compatible agent, picks up where the previous one stopped, without you re-explaining the architecture, the failed approaches or the open questions.
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-The origin of the project, in May 2026, is told in @sec-ch20. It started as a version for one user, on one machine, on one operating system, and grew with outside people using it and sending fixes. On the day I closed this book, October 13, 2026, version 3.0 came out.
+The origin of the project, in May 2026, is told in @sec-ch20. It started as a version for one user, on one machine, on one operating system, and grew with outside people using it and sending fixes. On October 13, 2026, version 3.0 came out.
 
 ### How It Works
 
@@ -143,7 +143,7 @@ ai-memory setup
 <!-- src: ref:ai-memory/README.md -->
 The first downloads the right program for your system, checks that the file arrived intact against the published checksum, and only installs it if they match. The second creates the data folder with a password kept in a file only you can read, leaves the server running as a service of your user and connects ai-memory to every agent it finds on the computer. It shows the plan and asks before touching anything. Afterwards, restart your agents.
 
-Claude Code and Codex users can also connect their agent as a plugin, through each one's own extension system; the program is still installed the same way.
+Claude Code and Codex users can also connect the memory to the agent through a plugin, using each one's own extension system; the program is still installed the same way.
 
 <!-- src: ref:ai-memory/README.md -->
 From then on, you talk to the agent as usual. Ask "where did we leave off?" to resume a handoff, "have we discussed this?" to have it search the memory, or "catch me up" for a summary of what happened in the project. On an old project, with months of history, the `ai-memory bootstrap` command, run once, makes use of what's already there.

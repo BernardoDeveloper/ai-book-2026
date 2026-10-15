@@ -56,7 +56,7 @@ O sonhador podia ler o projeto inteiro, mas não podia mudar nada nele. Só mexi
 ## RAG, embeddings e a volta da busca por palavra {#sec-aptecnico-rag}
 
 <!-- src: 2026/04/06/rag-esta-morto-contexto-longo -->
-O @sec-ch02 conta que, entre 2023 e 2025, quem queria um chatbot que respondesse sobre os próprios documentos ouvia que precisava de [RAG]{.gls key=rag} e de um [banco vetorial]{.gls key=banco-vetorial}, e que o Claude Code de 2026 não usava nenhum dos dois. Esta seção guarda a parte técnica dessa história.
+O @sec-ch02 conta que, entre 2023 e 2025, quem queria um chatbot que respondesse sobre os próprios documentos ouvia que precisava de [RAG]{.gls key=rag} com busca vetorial e de um [banco vetorial]{.gls key=banco-vetorial}, e que o Claude Code de 2026 não usava esse encanamento. Esta seção guarda a parte técnica dessa história.
 
 O jeito clássico de fazer a busca do RAG dava trabalho:
 
@@ -165,7 +165,7 @@ O que salvou aquele texto foi um segundo modelo, de outra empresa, comparando ca
 ## A rede de testes da newsletter, por dentro {#sec-aptecnico-xp}
 
 <!-- src: original -->
-Em @sec-ch06 eu conto como pus no ar, em oito dias de fevereiro de 2026, a newsletter The M.Akita Chronicles, com um agente como par e as práticas do Extreme Programming. O capítulo fica na lição: teste que passa com dado falso mente, e dado real surpreende. Aqui vão os detalhes que só interessam a quem programa: o que a integração contínua conferia, o ritmo dos commits, as brechas que a análise automática pegou e como eu lidei com um modelo de IA dentro do teste de integração.
+Em @sec-ch06 eu conto como desenvolvi, ao longo de oito dias de fevereiro de 2026, a newsletter The M.Akita Chronicles, com um agente como par e as práticas do Extreme Programming. O capítulo fica na lição: teste que passa com dado falso mente, e dado real surpreende. Aqui vão os detalhes que só interessam a quem programa: o que a integração contínua conferia, o ritmo dos commits, as brechas que a análise automática pegou e como eu lidei com um modelo de IA dentro do teste de integração.
 
 ### A bateria de cada commit
 
@@ -430,7 +430,7 @@ O nome engana um pouco. Ninguém treinou um especialista em medicina e outro em 
 ![Num modelo denso, o modelo inteiro trabalha em cada token; num MoE, um roteador acorda só alguns blocos, mas todos precisam estar na memória.](assets/figures/ch13-especialistas.png){#fig-ch13-especialistas fig-alt="Dois painéis." fig-desc="Dois painéis. No primeiro, modelo denso: uma grade de blocos todos acesos, com a legenda todos os pesos lidos a cada token. No segundo, MoE: a mesma grade com apenas dois blocos acesos e um pequeno roteador apontando pra eles, e a legenda só alguns blocos trabalham, mas todos ocupam memória."}
 
 <!-- src: 2026/06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local -->
-Tem uma pegadinha, e ela me pegou em junho. Os especialistas que dormem continuam ocupando memória. Pra rodar um MoE, você precisa caber o modelo inteiro, e só ganha velocidade porque lê uma parte dele.
+Tem uma pegadinha, e ela me pegou em junho. Os especialistas que dormem continuam ocupando memória. Pra rodar um MoE, você precisa de espaço pro modelo inteiro, e só ganha velocidade porque lê uma parte dele.
 
 Quando a MiniMax publicou os pesos do M3, um MoE de uns 428 bilhões de parâmetros com uns 23 bilhões ativos, fiz a conta pra rodar em casa. Nem a versão mais esmagada, a chamada "de 1 bit", que já seria inútil pra programar, caberia. Ela sozinha ocuparia uns 128 GB, a memória unificada inteira do mini-PC e o dobro dos 64 GB reservados pra vídeo, sem deixar espaço pro caderno de anotações nem pro sistema. O nome engana, aliás: essas versões guardam as partes mais sensíveis do modelo com mais precisão, e a média fica perto de 2,4 bits por parâmetro.
 
@@ -454,10 +454,10 @@ Um modelo de 4 bilhões de parâmetros, que cabe numa placa de vídeo comum, emp
 <!-- src: ref:private-notes/decision-models.md -->
 O Decision 3.0 ocupou uns 49 GB de memória de vídeo, e no pico o total encostou em 63,5 dos 64 GB do mini-PC. Os dois campeões tinham que rodar sozinhos, com todo o resto desligado, e cada decisão levava perto de um segundo e meio. Os serviços na nuvem respondiam, quase todos, em menos de meio segundo.
 
-### A moeda
+### O chute
 
 <!-- src: ref:jev-docs/README.md -->
-As tarefas tinham três ou quatro opções, então chutar ao acaso acertaria uns 31%. O Julia-1, o menor modelo da lista, com 144 milhões de parâmetros, acertou 31,5%. Respondia em 12 milissegundos, o mais rápido de todos, e acertava como uma moeda.
+As tarefas tinham três ou quatro opções, então chutar ao acaso acertaria uns 31%. O Julia-1, o menor modelo da lista, com 144 milhões de parâmetros, acertou 31,5%. Respondia em 12 milissegundos, o mais rápido de todos, e acertava como um chute ao acaso.
 
 <!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
 Dos 71 palpites que ele deu com mais de 90% de confiança, 48 estavam errados. Esses modelos minúsculos foram feitos pra ser ajustados com os dados de quem vai usar; de fábrica, aplicando regras que nunca viram, não servem.
@@ -523,7 +523,7 @@ Nenhum desses passos tem garantia. O que o exercício deixou medido foram três 
 ## Voz sintética em produção: o podcast e a dublagem {#sec-aptecnico-voz}
 
 <!-- src: original -->
-Em @sec-ch13 eu conto por que troquei o Qwen3 TTS, um modelo aberto de voz, pela ElevenLabs no podcast semanal da newsletter, e o que aprendi dublando pro inglês os 146 episódios do meu canal no YouTube. O capítulo fica na lição: demo de cinco segundos não é produção, e "pronto" é uma palavra perigosa. Aqui vão os detalhes que só interessam a quem vai montar um fluxo de voz sintética.
+Em @sec-ch13 eu conto por que troquei o Qwen3 TTS, um modelo aberto de voz, pela ElevenLabs no podcast semanal da newsletter, e o que aprendi dublando pro inglês 146 episódios do meu canal no YouTube. O capítulo fica na lição: demo de cinco segundos não é produção, e "pronto" é uma palavra perigosa. Aqui vão os detalhes que só interessam a quem vai montar um fluxo de voz sintética.
 
 ### Seis semanas afinando o Qwen3
 
@@ -595,7 +595,7 @@ O processo também pegou erro que o compilador deixou passar. Uma das primeiras 
 ## A reescrita do Bun e a resposta do Zig {#sec-aptecnico-bun}
 
 <!-- src: original -->
-Em @sec-ch16 eu conto como Jarred Sumner reescreveu o Bun, o ambiente de JavaScript que a Anthropic comprou e sobre o qual o Claude Code roda, de Zig pra Rust com agentes, em julho de 2026. O capítulo fica com o método. Aqui vai a briga que veio depois, entre o criador do Zig e o time do Bun, e o que eu tirei dela.
+Em @sec-ch16 eu conto como Jarred Sumner reescreveu o Bun, o ambiente de JavaScript que a Anthropic comprou e sobre o qual o Claude Code roda, de Zig pra Rust com agentes, num trabalho feito em maio de 2026 e relatado em julho. O capítulo fica com o método. Aqui vai a briga que veio depois, entre o criador do Zig e o time do Bun, e o que eu tirei dela.
 
 <!-- src: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito -->
 No dia seguinte ao relato do Sumner, Andrew Kelley, o criador do Zig, publicou a resposta dele [@kelley2026bun]. Eu queria ler o melhor argumento técnico possível em defesa do Zig. Ele traz alguns, e eles merecem ser ouvidos:
@@ -676,7 +676,7 @@ Uma conversão única feita por agente mede o quanto o modelo conhece cada lingu
 Aquilo ressuscitou duas crenças que circulam desde que LLM virou ferramenta de trabalho:
 
 - linguagem enxuta, de script, seria melhor pra IA porque gastaria menos [tokens]{.gls key=token};
-- linguagem de tipagem forte seria melhor pra IA porque o compilador pegaria os erros, e o agente precisaria consertar menos.
+- linguagem de tipagem estática seria melhor pra IA porque o compilador pegaria os erros, e o agente precisaria consertar menos.
 
 A segunda é prima direta da minha hipótese de fevereiro (@sec-aptecnico-bend). Em vez de discutir no X, eu fui medir.
 
@@ -694,7 +694,7 @@ Os resultados, naquele outubro:
 - nas tentativas do Opus que auditei, em Ruby, Rust e Haskell, não houve nenhum ciclo de conserto de erro de compilação: o código compilou de primeira.
 
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
-Onde os modelos erraram, erraram regra de negócio: uma propriedade do livro-razão que precisava valer entre uma operação e outra. Compilador nenhum pega esse tipo de erro, em linguagem tipada ou dinâmica.
+Onde os modelos erraram, erraram regra de negócio: uma propriedade do livro-razão que precisava valer entre uma operação e outra. Compilador nenhum pega esse tipo de erro, em linguagem de tipagem estática ou dinâmica.
 
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
 Os freios fazem parte do resultado. Foi uma tarefa só, com duas repetições por combinação, e mede o piso que cada linguagem entrega sob o mesmo esforço curto, sem mostrar o máximo que um engenheiro paciente extrairia dela. Um empate no teto também não diz qual linguagem iria mais longe numa tarefa mais difícil, só que nenhuma atrapalhou nesta. Se a sua tarefa não se parece com um livro-razão, os números não se transferem.

@@ -71,6 +71,23 @@ class TestGenBackMatter < ToolTest
     assert_includes fx.read("book/en/creditos.md"), "File:Sala.jpg. Public domain. Changes:"
   end
 
+  # A bespoke attribution can contain provenance the generic fields omit.
+  # Keep its translated date and public-domain basis through regeneration.
+  def test_creditos_en_preserves_translated_attribution
+    attribution = '"Sala de máquinas", U.S. Navy photograph, 1960. ' \
+                  'https://commons.wikimedia.org/wiki/File:Sala.jpg. ' \
+                  'Public domain (work of the U.S. federal government). Changes: resized.'
+    fx.edit("assets/credits/ch03-foto.yml") do |y|
+      rec = YAML.safe_load(y)
+      rec["credit"]["backmatter_en"] = attribution
+      rec.to_yaml
+    end
+    assert_exit 0, gen("en")
+    assert_includes fx.read("book/en/creditos.md"), "- @fig-ch03-foto: #{attribution}"
+    assert_exit 0, gen("pt")
+    assert_includes fx.read("book/pt/creditos.md"), %(- @fig-ch03-foto: "Sala de máquinas", Fulano de Tal. CC BY-SA 4.0. Modificações: redimensionada.)
+  end
+
   # Guards composites (several photos in one figure, `composite_of`): the EN
   # page credits each photo by subject and translates plural modifications.
   # 1.0.0-preview.2 shipped an empty credit line for such a figure.

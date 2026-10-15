@@ -121,7 +121,7 @@ Repare no que esse mecanismo não tem: em nenhum ponto do caminho existe uma eta
 ### Noventa e nove por cento
 
 <!-- src: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado -->
-Probabilidade engana também quem lê o resultado. Em 2020, num episódio do meu canal sobre manipulação, eu usava um exemplo que serve pra qualquer número de acerto [@akitando084]. Um exame acerta 99% das vezes, e a doença atinge uma pessoa em cada mil. Você testa positivo: qual a chance de estar doente?
+Probabilidade engana também quem lê o resultado. Em 2020, num episódio do meu canal sobre manipulação, eu usava um exemplo que serve pra qualquer número de acerto [@akitando084]. Um exame acerta 99% dos casos doentes e 99% dos saudáveis, e a doença atinge uma pessoa em cada mil. Você testa positivo: qual a chance de estar doente?
 
 Quase todo mundo chuta 99%, e a conta dá uns 9%. Pense em 100 mil pessoas fazendo o exame. Cem têm a doença, e o exame pega 99 delas; das 99.900 saudáveis, 1% também dá positivo, umas mil pessoas. De cerca de 1.100 positivos, só 99 estão doentes.
 
@@ -185,7 +185,7 @@ Tudo que você leu até aqui cabe nessa frase:
 
 Bender e Koller terminam a história do polvo assim. Enquanto os náufragos trocavam amenidades, o polvo se saía bem.
 
-Daí um dos náufragos inventa uma catapulta de cocos e pede opinião; o polvo, que não sabe o que é corda nem coco, responde com o "ideia legal, bom trabalho!" que costumava aparecer nessas horas. Ele pode até aceitar, mas só porque é ele quem faz todo o trabalho de dar sentido à resposta.
+Daí um dos náufragos inventa uma catapulta de cocos e pede opinião; o polvo, que não sabe o que é corda nem coco, responde com o "ideia legal, bom trabalho!" que costumava aparecer nessas horas. O náufrago pode até aceitar, mas só porque é ele quem faz todo o trabalho de dar sentido à resposta.
 
 No fim, ele é perseguido por um urso e pede socorro: precisa saber como montar uma arma com uns gravetos. O polvo não tem de onde tirar isso [@bender2020climbing].
 

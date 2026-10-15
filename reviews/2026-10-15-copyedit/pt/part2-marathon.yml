@@ -1,0 +1,139 @@
+---
+- id: '2.1'
+  unit: ch10
+  line: 18
+  quote: os [agentes]{.gls key=agente} de programação da Anthropic e da OpenAI, os
+    [modelos de fronteira]{.gls key=modelo-de-fronteira}
+  category: error
+  severity: medium
+  problem: A aposição equipara agentes a modelos, embora o livro explique em ch03
+    que o agente/harness é o programa que usa o modelo. A abertura perde justamente
+    essa distinção.
+  suggestion: 'Substituir por: os [agentes]{.gls key=agente} de programação da Anthropic
+    e da OpenAI, usando [modelos de fronteira]{.gls key=modelo-de-fronteira}'
+- id: '2.2'
+  unit: ch07
+  line: 67
+  quote: Ele só aparece em produção, quando duas requisições chegam juntas.
+  category: error
+  severity: medium
+  problem: 'R1: simultaneidade, e não produção, é a condição do erro descrito. A CWE-362
+    da MITRE explica que condições de corrida podem ser detectadas por testes concorrentes
+    com threads/processos; o parágrafo transforma a limitação do teste feito sozinho
+    numa impossibilidade de testar antes do deploy. Fonte: https://cwe.mitre.org/data/definitions/362.html,
+    Detection Methods.'
+  suggestion: 'Substituir o parágrafo por: Esse erro pode passar despercebido quando
+    você testa sozinho, com um navegador só. Ele aparece quando duas requisições chegam
+    juntas.'
+- id: '2.3'
+  unit: ch07
+  line: 18
+  quote: Dez dias antes eu tinha publicado no blog o que chamei de "post final"
+  category: error
+  severity: medium
+  problem: A abertura está datada de 1º de março de 2026, mas o post final identificado
+    na proveniência e em inventory/analysis é de 20 de fevereiro. A diferença entre
+    essas datas é de nove dias; 2026 tem fevereiro de 28 dias.
+  suggestion: Substituir Dez dias antes por Nove dias antes.
+- id: '2.4'
+  unit: ch10
+  line: 273
+  quote: Eu tinha uma dívida com ele, e cobrei numa segunda-feira de abril.
+  category: error
+  severity: medium
+  problem: Quem tem a dívida com o blog é o narrador; cobrar inverte os papéis de
+    devedor e credor. O interlude1 confirma que ele começou o trabalho na segunda-feira,
+    6 de abril, e terminou na quarta, portanto a dívida também não foi quitada inteira
+    na segunda.
+  suggestion: 'Substituir por: Eu tinha uma dívida com ele, e comecei a quitar numa
+    segunda-feira de abril.'
+- id: '2.5'
+  unit: ch06
+  line: 146
+  quote: toda funcionalidade vem acompanhada do teste que prova que ela funciona
+  category: clarity
+  severity: medium
+  problem: 'A definição de TDD omite o passo que o distingue de apenas acrescentar
+    testes junto com a implementação: escrever e executar primeiro um teste que falha.
+    A lista da linha 77 chama a prática de testes primeiro, mas a explica como nascer
+    junto; a Agile Alliance explicita a ordem teste falhando, implementação mínima,
+    refatoração em https://agilealliance.org/glossary/tdd/.'
+  suggestion: 'Na linha 146, usar: primeiro vem um teste que falha por falta da funcionalidade;
+    depois, o código que o faz passar. Na linha 77, usar: **testes primeiro**: primeiro
+    vem o teste que falha; depois, o código que o faz passar. Manter a frase seguinte
+    sobre o teste de regressão de cada correção.'
+- id: '2.6'
+  unit: ch06
+  line: 196
+  quote: o [teste de integração]{.gls key=teste-de-integracao}, que roda o sistema
+    inteiro junto
+  category: clarity
+  severity: medium
+  problem: 'R1: o teste específico do narrador cobre o sistema inteiro, mas a oração
+    faz isso parecer obrigatório em todo teste de integração. A própria descrição
+    posterior de peças e contratos não exige executar tudo. A Agile Alliance distingue
+    integração de componentes, subsistemas e sistemas completos: https://agilealliance.org/glossary/integration/.'
+  suggestion: 'Substituir o trecho por: o [teste de integração]{.gls key=teste-de-integracao},
+    que no meu caso roda o sistema inteiro junto'
+- id: '2.7'
+  unit: ch09
+  line: 214
+  quote: E várias coisas ele simplesmente não propõe. Tentar de novo quando um serviço
+    externo falha
+  category: consistency
+  severity: medium
+  problem: 'R5: ch07:180 diz que, se o agente decidisse, adotaria justamente novas
+    tentativas quando o serviço falhasse; aqui o texto afirma que ele simplesmente
+    não as propõe. São generalizações contraditórias sobre o mesmo comportamento,
+    sem uma diferença de contexto explicitada.'
+  suggestion: 'Substituir a abertura do parágrafo por: E várias proteções eu precisei
+    pedir. Tentar de novo quando um serviço externo falha, desistir depois de um tempo-limite,
+    degradar com elegância quando algo cai: o agente implementa tudo isso direitinho
+    quando você pede. No fim, usar: Sem essas instruções, ele podia ficar só no caminho
+    feliz, porque não sabia quais eram os pontos frágeis do meu sistema.'
+- id: '2.8'
+  unit: ch07
+  line: 88
+  quote: Nenhum prompt no mundo prevê que seus usuários vão querer compartilhar um
+    instalador de Linux no primeiro dia.
+  category: clarity
+  severity: medium
+  problem: 'R1/R2: o episódio comprova uma omissão no pedido do autor, não a impossibilidade
+    de especificar formatos de instaladores de antemão. Além disso, o próprio incidente
+    é introduzido como ocorrido três dias depois; o bloco muda para primeiro dia sem
+    explicar o recorte.'
+  suggestion: 'Substituir por: O meu prompt não previa os instaladores que os usuários
+    tentaram compartilhar três dias depois.'
+- id: '2.9'
+  unit: ch06
+  line: 67
+  quote: Nenhuma especificação do mundo prevê isso.
+  category: clarity
+  severity: medium
+  problem: 'R1/R2: a experiência narrada mostra que a especificação daquele projeto
+    não previa validar a seção, não que uma especificação não possa prever falhas
+    silenciosas ou uma validação de conteúdo. O absoluto enfraquece a conclusão válida
+    sobre aprender com o uso.'
+  suggestion: 'Substituir por: A minha especificação não previa essa falha.'
+- id: '2.10'
+  unit: ch08
+  line: 260
+  quote: no recém-lançado GPT Astra
+  category: consistency
+  severity: low
+  problem: O nome do mesmo modelo é GPT-6 Astra em EN ch08:261 e na nomenclatura de
+    continuity.yml. A análise rastreada do benchmark de 15 de setembro também registra
+    GPT-6 Astra; esta é a única divergência de versão numérica encontrada na comparação
+    manual destes oito pares.
+  suggestion: Usar o nome completo GPT-6 Astra, harmonizando com a edição inglesa
+    e com continuity.yml.
+- id: '2.11'
+  unit: ch10
+  line: 133
+  quote: Chego então à resposta pra pergunta do título.
+  category: consistency
+  severity: low
+  problem: O título do capítulo é O fim da maratona e não contém a pergunta Sucesso
+    ou fracasso? A referência parece ter sobrevivido do título do post-fonte; a pergunta
+    está efetivamente no início do capítulo e no subtítulo imediatamente anterior.
+  suggestion: 'Substituir por: Chego então à resposta pra pergunta do começo.'

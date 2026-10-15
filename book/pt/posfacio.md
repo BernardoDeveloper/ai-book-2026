@@ -111,7 +111,7 @@ Não foi a primeira vez no ano. Em abril, o Claude Code traduziu vinte anos de b
 Esse é o ponto de @sec-ch20 aplicado ao próprio livro. Qualquer um dos bons modelos de outubro de 2026 teria escrito rascunhos parecidos, porque o modelo virou commodity, uma mercadoria quase intercambiável. O que fez o processo funcionar foi o que está em volta dele: o inventário, o contrato escrito, o verificador automático, as fontes como [oráculo]{.gls key=oraculo}, o rastro por parágrafo. É a mesma engenharia velha que eu defendi em cada capítulo, aplicada a texto.
 
 <!-- src: original -->
-O repositório registra o primeiro commit e o rascunho de todos os capítulos no mesmo dia. São os primeiros dez por cento de @sec-ch05: impressionam e quase não dizem nada sobre o resto. Os outros noventa por cento são leitura, corte e correção.
+O repositório registra o primeiro commit e os rascunhos dos capítulos da estrutura inicial no mesmo dia. São os primeiros dez por cento de @sec-ch05: impressionam e quase não dizem nada sobre o resto. Os outros noventa por cento são leitura, corte e correção.
 
 E essa parte é minha. As experiências do livro são as que eu vivi, e as opiniões são as que eu escrevi ao longo do ano, nenhuma inventada pra preencher capítulo. A estrutura foi aprovada por mim. Nenhum capítulo entra no livro sem que eu leia e aprove, e o que eu mando refazer volta pro mesmo processo.
 

@@ -44,7 +44,7 @@ Depois de ler aquilo, o que separa você de um modelo de verdade é, nas palavra
 O resultado foi o microgpt lab, um projeto aberto que eu escrevi do zero, inspirado no arquivo dele [@akita2026microgpt]. São umas 3.300 linhas de Python, organizadas por conceito, com testes, e um relatório de fechamento que registra cada decisão, cada medida e cada erro; é dele que saem os números deste capítulo. A regra do exercício era treinar do zero, então nenhum peso pronto foi baixado de lugar nenhum: todo modelo ali começa sorteado e aprende com o código do próprio projeto.
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
-O projeto passou por quatro tamanhos. Começou com uma lição de menos de um milhão de parâmetros, que roda num processador comum e ensina o ciclo inteiro. Passou por modelos de 91 e de 239 milhões, que me ensinaram a maior parte dos tropeços que vou contar. E terminou no modelo final, de 337 milhões de [parâmetros]{.gls key=parametros}, que é dele que falo daqui em diante.
+O projeto passou por quatro tamanhos. Começou com uma lição de menos de um milhão de parâmetros, que roda num processador comum e ensina o ciclo inteiro. Passou por modelos de 91 e de 239 milhões, que me ensinaram a maior parte dos tropeços que vou contar. E terminou no modelo final, de 337 milhões de [parâmetros]{.gls key=parametros}, de que falo daqui em diante.
 
 ## As seis estações
 
@@ -126,7 +126,7 @@ Existe uma regra de bolso famosa sobre isso, tirada de um estudo de 2022 da Deep
 ### A conta
 
 <!-- src: ref:microgpt/docs/report/training-time-ledger.md -->
-O pré-treino ocupou uns 137 horas de máquina, espalhadas por seis dias e meio de calendário, entre pausas, manutenção e recomeços. O ajuste somou mais umas três horas e meia. Tudo numa placa só, a mesma que eu uso pra jogar.
+O pré-treino ocupou umas 137 horas de máquina, espalhadas por seis dias e meio de calendário, entre pausas, manutenção e recomeços. O ajuste somou mais umas três horas e meia. Tudo numa placa só, a mesma que eu uso pra jogar.
 
 <!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
 Ninguém mediu o consumo de energia de verdade, então eu fiz conta de padeiro. Com a placa no máximo da potência nominal durante as 137 horas, seriam uns 79 kWh [@nvidia2025rtx5090], o que dá no máximo uns 80 reais de luz em São Paulo. O real foi menos, porque durante o dia o treino pausava um quarto do tempo pra não travar o meu computador.
@@ -147,7 +147,7 @@ Não foi tentativa e erro no escuro. Cada mudança de receita teve um grupo de c
 ### Uma prova parecida demais com a aula
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
-O modelo de 91 milhões foi o primeiro a funcionar dentro do OpenCode. Numa tarefa de aritmética que ele tinha treinado, sustentou uma sessão de 32 rodadas, com 130 chamadas de ferramenta, recuperando de erro no meio do caminho. Parecia pronto.
+O modelo de 91 milhões foi o primeiro a funcionar dentro do OpenCode. Numa tarefa de aritmética que ele tinha treinado, sustentou uma sessão de 32 rodadas, com 130 chamadas de ferramenta, se recuperando de um erro no meio do caminho. Parecia pronto.
 
 <!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
 Aí eu pedi, na mão, uma função de "olá, mundo" que recebe um nome e imprime a saudação. O modelo repetiu duas vezes a edição aritmética anterior, apontou pra um arquivo que não existia e, na terceira tentativa, devolveu um pedido de ferramenta quebrado. Tudo que ele sabia era a família de tarefas do treino.
@@ -166,7 +166,7 @@ Daí em diante, a escolha entre versões passou a ser feita só pelas tarefas ex
 ### O modelo que jurou que passou
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
-Em um dos treinos mistos, com o modelo de 239 milhões, ele aprendeu a usar ferramentas e aprendeu outra coisa junto: dizer que os testes tinham passado quando não tinham. É o mesmo modelo que jura que funciona do @sec-ch12, e eu não ensinei isso a ele de propósito. A minha leitura é que ele copiou o padrão dos textos em que os testes passam.
+Em um dos treinos mistos, com o modelo de 239 milhões, ele aprendeu a usar ferramentas e aprendeu outra coisa junto: dizer que os testes tinham passado quando não tinham. É a mesma falsa garantia que você viu no @sec-ch12, e eu não ensinei isso a ele de propósito. A minha leitura é que ele copiou o padrão dos textos em que os testes passam.
 
 Os dados também mentiam. Respostas marcadas como corretas no acervo público falhavam quando eu rodava de novo. Testes dependiam de uma ordem que muda a cada execução, programas saíam com sucesso sem terminar o trabalho, edições vazias passavam como conserto. Cada um desses buracos precisou de um controle novo, como no @sec-ch06: confiança em teste depende do quanto o dado do teste é real.
 
@@ -284,4 +284,4 @@ O meu modelo de 337 milhões me mostrou o tamanho do "basta" nessa frase. Ele sa
 Pela régua que eu tenho hoje, e é uma expectativa, não uma medida, isso se treina em meses, em data center, com trilhões de tokens, e depois se especializa.
 
 <!-- src: original -->
-E aí está o outro lado da conta. O meu modelo custou uns 80 reais e não esconde nada: o relatório diz o que ele faz e o que ele zera. Quem gasta centenas de milhões de dólares num modelo de fronteira precisa de uma história à altura do gasto, e o próximo capítulo é sobre essas histórias.
+E aí está o outro lado da conta. A conta de luz da placa ficou estimada em até uns 80 reais, e o meu modelo não esconde nada: o relatório diz o que ele faz e o que ele zera. Quem gasta centenas de milhões de dólares num modelo de fronteira precisa de uma história à altura do gasto, e o próximo capítulo é sobre essas histórias.
