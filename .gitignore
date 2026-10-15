@@ -4,6 +4,10 @@
 .DS_Store
 /tools/*
 !/tools/SHA256SUMS
+!/tools/a11y/
+!/tools/a11y/package.json
+!/tools/a11y/package-lock.json
+/tools/a11y/node_modules/
 /.quarto/
 /_quarto-*.yml
 /index.md

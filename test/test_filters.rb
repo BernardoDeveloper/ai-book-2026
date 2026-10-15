@@ -127,4 +127,36 @@ class TestFilters < ToolTest
     refute_includes out, "alt="
     assert_includes out, %(id="fig-x")
   end
+
+  # Guards the dual figure contract: reflowable editions get concise alt text
+  # plus a visible long description, while print gets the long semantic text
+  # without an added paragraph.
+  def test_figure_accessibility_reflowable_and_print
+    input = <<~MD
+      ![Caption.](x.png){#fig-x fig-alt="Short alternative." fig-desc="Complete description with every relevant detail."}
+    MD
+    html, = pandoc("figure-accessibility", input, to: "html", args: ["-M", "lang=en-US"])
+    assert_includes html, 'alt="Short alternative."'
+    assert_includes html, "Detailed image description:"
+    assert_includes html.gsub("\n", " "), "Complete description with every relevant detail."
+    assert_includes html, 'id="fig-x-description"'
+
+    typst, = pandoc("figure-accessibility", input, to: "typst", args: ["-M", "lang=en-US"])
+    assert_includes typst, "Complete description with every relevant detail."
+    refute_includes typst, "Detailed image description:"
+  end
+
+  def test_figure_accessibility_localizes_description_label
+    input = '![Legenda.](x.png){#fig-x fig-alt="Resumo." fig-desc="Descrição completa."}'
+    html, = pandoc("figure-accessibility", input, to: "html", args: ["-M", "lang=pt-BR"])
+    assert_includes html, "Descrição detalhada da imagem:"
+  end
+
+  def test_table_caption_is_kept_for_html_and_removed_from_typst
+    input = "| A | B |\n|---|---|\n| 1 | 2 |\n\n: Useful results.\n"
+    html, = pandoc("figure-accessibility", input, to: "html")
+    assert_includes html, "<caption>Useful results.</caption>"
+    typst, = pandoc("figure-accessibility", input, to: "typst")
+    refute_includes typst, "Useful results."
+  end
 end

@@ -37,7 +37,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.v3.md"
   - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
-translated_from: {file: book/pt/aptecnico.md, sha256: "35c2fda97359edfab6258a7e9fa13d2a82029e0612a225f4bf115dc37c5f605b"}
+translated_from: {file: book/pt/aptecnico.md, sha256: "c225d6266403ee14329e0a60ccd6663e7c2b4d5784570050be92b4564ad14b79"}
 ---
 
 # For Programmers: Behind the Scenes {#sec-aptecnico}
@@ -117,7 +117,7 @@ Anthropic itself published in 2024 that attaching a sentence of context to each 
 <!-- src: 2026/08/16/entendendo-ia-watermark-da-anthropic -->
 The mark, a [watermark]{.gls}, uses no hidden character, invisible space or altered font. It's statistical. The model assembles text by choosing the next word from a list of likely candidates (@sec-ch01). When two or three work equally well, a random number settles it; with the watermark, that number now comes from a secret key combined with the preceding words.
 
-![At every fork between synonyms, the key tilts the choice; in a long text, the tilts add up to a signature.](assets/figures/en/ch04-marca-dagua.png){#fig-ch04-marca-dagua fig-alt="A sentence that forks at two points: 'cloudy' or 'overcast', 'empty' or 'deserted'. At each fork, a small key pushes the choice to one side. Below, a grid with hundreds of choices, most of them marked, forms a pattern labeled signature. Beside it, the same grid after the text has been rewritten by another model, with the marks scattered at random: the signal is gone."}
+![At every fork between synonyms, the key tilts the choice; in a long text, the tilts add up to a signature.](assets/figures/en/ch04-marca-dagua.png){#fig-ch04-marca-dagua fig-alt="A sentence that forks at two points: 'cloudy' or 'overcast', 'empty' or 'deserted'." fig-desc="A sentence that forks at two points: 'cloudy' or 'overcast', 'empty' or 'deserted'. At each fork, a small key pushes the choice to one side. Below, a grid with hundreds of choices, most of them marked, forms a pattern labeled signature. Beside it, the same grid after the text has been rewritten by another model, with the marks scattered at random: the signal is gone."}
 
 "The sky was cloudy" and "the sky was overcast" say the same thing. At these synonym junctions, the key nudges Claude toward one of the two words more often than pure chance would. Each individual choice goes unnoticed, but a long text repeats this decision point hundreds of times, and the whole adds up to a signature only the keyholder can measure.
 
@@ -275,7 +275,7 @@ In @sec-ch09 I describe a [skill]{.gls} as a versioned prompt: a folder with a t
 
 At session start, only each skill's name and description go into the agent's instructions. The body only loads when the agent decides to use that skill. Anthropic calls this *progressive disclosure* [@anthropic2025agentskills].
 
-![Only the skill names sit on the desk; the content opens when the agent needs it.](assets/figures/en/ch09-revelacao-progressiva.png){#fig-ch09-revelacao-progressiva fig-alt="A desk, representing the context window, with a row of labels, each with the short name of a skill: audit, cut release, review text. Below it, a drawer of closed folders. Only one skill's folder, review text, comes out of the drawer and opens on the desk; the others stay closed in the drawer."}
+![Only the skill names sit on the desk; the content opens when the agent needs it.](assets/figures/en/ch09-revelacao-progressiva.png){#fig-ch09-revelacao-progressiva fig-alt="A desk, representing the context window, with a row of labels, each with the short name of a skill: audit, cut release, review text." fig-desc="A desk, representing the context window, with a row of labels, each with the short name of a skill: audit, cut release, review text. Below it, a drawer of closed folders. Only one skill's folder, review text, comes out of the drawer and opens on the desk; the others stay closed in the drawer."}
 
 That solves the text cost, but only half the problem. Every installed skill still shows up in the list the agent consults to decide what to use, and competes for its attention with the others. That's why the chapter insists on few skills, all of them in use.
 
@@ -428,7 +428,7 @@ An MoE splits a good part of the model into blocks, the so-called experts, and h
 <!-- src: original -->
 The name is a little misleading. Nobody trained one expert in medicine and another in law. When Mistral's researchers looked at how Mixtral's router distributed the work, they found no split by subject: what showed up looked more like types of words and punctuation [@jiang2024mixtral]. "Expert" here just means "the block the router woke up this time."
 
-![In a dense model, the whole model works on every token; in an MoE, a router wakes up only a few blocks, but all of them have to be in memory.](assets/figures/en/ch13-especialistas.png){#fig-ch13-especialistas fig-alt="Two panels. In the first, dense model: a grid of blocks all lit up, captioned all weights read for every token. In the second, MoE: the same grid with only two blocks lit and a small router pointing at them, captioned only a few blocks work, but all of them take up memory."}
+![In a dense model, the whole model works on every token; in an MoE, a router wakes up only a few blocks, but all of them have to be in memory.](assets/figures/en/ch13-especialistas.png){#fig-ch13-especialistas fig-alt="Two panels." fig-desc="Two panels. In the first, dense model: a grid of blocks all lit up, captioned all weights read for every token. In the second, MoE: the same grid with only two blocks lit and a small router pointing at them, captioned only a few blocks work, but all of them take up memory."}
 
 <!-- src: 2026/06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local -->
 There's a catch, and it caught me in June. The experts that are asleep still take up memory. To run an MoE, you have to fit the whole model, and you only gain speed because you read part of it.

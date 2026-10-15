@@ -448,6 +448,19 @@
   - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
   - 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas
   - 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
+- url: https://www.youtube.com/@Akitando
+  kind: video
+  texts:
+  - Meu canal
+  - meu canal
+  - Akitando no YouTube
+  - Akitando
+  cited_by:
+  - 2026/02/08/rant-ia-acabou-com-programadores
+  - 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo
+  - 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts
+  - 2026/04/11/vs-code-e-o-novo-cartao-perfurado
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
 - url: "/2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server"
   kind: internal
   texts:
@@ -540,18 +553,15 @@
   - 2026/03/31/migrando-meu-home-server-com-claude-code
   - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
   - 2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo
-- url: https://www.youtube.com/@Akitando
+- url: https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ
   kind: video
   texts:
-  - Meu canal
-  - meu canal
-  - Akitando no YouTube
   - Akitando
   cited_by:
-  - 2026/02/08/rant-ia-acabou-com-programadores
-  - 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo
-  - 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts
-  - 2026/04/11/vs-code-e-o-novo-cartao-perfurado
+  - 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software
+  - 2018/11/27/akitando-29-o-que-eu-devo-estudar-vou-conseguir-emprego
+  - 2018/12/26/akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap
+  - 2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40
 - url: "/2024/04/03/meu-netflix-pessoal-com-docker-compose"
   kind: internal
   texts:
@@ -703,6 +713,28 @@
   - 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1
   - 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam
   - 2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7
+- url: "/2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor"
+  kind: internal
+  texts:
+  - benchmark de modelos de decisão
+  - Qual modelo de decisão tipo Jev é melhor?
+  - meu benchmark com 21 configurações
+  - modelos de decisão que eu testei
+  cited_by:
+  - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
+  - 2026/10/12/llms-agentes-competente-o-suficiente
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+- url: "/2026/10/12/llms-agentes-competente-o-suficiente"
+  kind: internal
+  texts:
+  - a síntese do ano
+  - parou de crescer exponencialmente
+  - a convergência
+  - os modelos crus convergiram
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+  - 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: "/tags/vibe-coding"
   kind: internal
   texts:
@@ -714,6 +746,15 @@
   - 2026/03/31/codigo-fonte-do-claude-code-vazou-o-que-achamos-dentro
   - 2026/04/01/meu-cockpit-de-sim-racing-formula-fx1
   - 2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus
+- url: https://arxiv.org/abs/2501.12948
+  kind: paper
+  texts:
+  - DeepSeek-R1-Zero
+  - DeepSeek-R1
+  cited_by:
+  - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+  - 2026/10/12/llms-agentes-competente-o-suficiente
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://github.com/akitaonrails/ai-memory/tree/main/docs
   kind: repo
   texts:
@@ -1161,15 +1202,6 @@
   cited_by:
   - 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor
   - 2026/10/12/llms-agentes-competente-o-suficiente
-- url: "/2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor"
-  kind: internal
-  texts:
-  - benchmark de modelos de decisão
-  - Qual modelo de decisão tipo Jev é melhor?
-  - meu benchmark com 21 configurações
-  cited_by:
-  - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
-  - 2026/10/12/llms-agentes-competente-o-suficiente
 - url: "/2026/10/11/existem-linguagens-melhores-pra-programar-com-llms"
   kind: internal
   texts:
@@ -1203,13 +1235,29 @@
   cited_by:
   - 2026/01/11/ai-agents-comparando-as-principais-llm-no-desafio-de-zig
   - 2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus
-- url: https://arxiv.org/abs/2501.12948
+- url: https://arxiv.org/abs/2203.02155
   kind: paper
   texts:
-  - DeepSeek-R1-Zero
+  - paper do InstructGPT
+  - InstructGPT
   cited_by:
-  - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+  - 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+- url: https://arxiv.org/abs/2203.15556
+  kind: paper
+  texts:
+  - 400 modelos e mostrou
+  - Chinchilla
+  cited_by:
   - 2026/10/12/llms-agentes-competente-o-suficiente
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+- url: https://arxiv.org/abs/2412.19437
+  kind: paper
+  texts:
+  - DeepSeek-V3
+  cited_by:
+  - 2026/10/12/llms-agentes-competente-o-suficiente
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://bitcoinops.org/en/newsletters/2026/07/31
   kind: web
   texts:
@@ -2152,6 +2200,12 @@
   - Kimi v2.7 code, GLM 5.2, MiniMax M3 local
   cited_by:
   - 2026/07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra
+- url: "/2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint"
+  kind: internal
+  texts:
+  - coloquei o Fable 5 pra analisar o código do TikTok, do Clash of Kings e do gov.br
+  cited_by:
+  - 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
 - url: "/2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito"
   kind: internal
   texts:
@@ -2243,13 +2297,12 @@
   - desastre no meu NAS
   cited_by:
   - 2026/10/12/usuarios-linux-sempre-escolham-btrfs-nao-ext4
-- url: "/2026/10/12/llms-agentes-competente-o-suficiente"
+- url: "/2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu"
   kind: internal
   texts:
-  - parou de crescer exponencialmente
-  - a convergência
+  - post sobre engenharia reversa
   cited_by:
-  - 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
 - url: "/off-topic"
   kind: internal
   texts:
@@ -2389,6 +2442,13 @@
   - ai-jail
   cited_by:
   - 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou
+- url: https://ailair.akitaonrails.com/pt-br/book
+  kind: internal
+  texts:
+  - esta
+  - página do livro
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
 - url: https://aimemorybr.netlify.app
   kind: web
   texts:
@@ -2557,6 +2617,12 @@
   - Antigravity CLI
   cited_by:
   - 2026/06/16/ai-memory-memoria-longo-prazo-karpathy-wiki-auto-aprendizado-hermes-projetos
+- url: https://aosabook.org/en
+  kind: web
+  texts:
+  - The Architecture of Open Source Applications
+  cited_by:
+  - 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
 - url: https://api.bcb.gov.br/dados/serie/bcdata.sgs.1/dados
   kind: web
   texts:
@@ -2617,6 +2683,12 @@
   - Artigo 50 do AI Act
   cited_by:
   - 2026/08/16/entendendo-ia-watermark-da-anthropic
+- url: https://arxiv.org/abs/1503.02531
+  kind: paper
+  texts:
+  - Hinton, 2015
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/1706.03741
   kind: paper
   texts:
@@ -2635,6 +2707,12 @@
   - AlphaZero
   cited_by:
   - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+- url: https://arxiv.org/abs/1801.06146
+  kind: paper
+  texts:
+  - ULMFiT
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/1909.00161
   kind: paper
   texts:
@@ -2647,6 +2725,12 @@
   - lei de escala do Kaplan
   cited_by:
   - 2026/10/12/llms-agentes-competente-o-suficiente
+- url: https://arxiv.org/abs/2004.10964
+  kind: paper
+  texts:
+  - '"Don''t Stop Pretraining"'
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/2005.14165
   kind: paper
   texts:
@@ -2661,6 +2745,12 @@
     Models'
   cited_by:
   - 2026/04/06/rag-esta-morto-contexto-longo
+- url: https://arxiv.org/abs/2106.09685
+  kind: paper
+  texts:
+  - LoRA
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/2107.03374
   kind: paper
   texts:
@@ -2673,30 +2763,36 @@
   - MBPP
   cited_by:
   - 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1
-- url: https://arxiv.org/abs/2203.02155
-  kind: paper
-  texts:
-  - paper do InstructGPT
-  cited_by:
-  - 2026/09/16/por-que-coisas-como-typesafe-ia-nao-me-interessam
-- url: https://arxiv.org/abs/2203.15556
-  kind: paper
-  texts:
-  - 400 modelos e mostrou
-  cited_by:
-  - 2026/10/12/llms-agentes-competente-o-suficiente
 - url: https://arxiv.org/abs/2303.08774
   kind: paper
   texts:
   - relatório técnico
   cited_by:
   - 2026/10/12/llms-agentes-competente-o-suficiente
+- url: https://arxiv.org/abs/2303.17564
+  kind: paper
+  texts:
+  - BloombergGPT
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/2305.12520
   kind: paper
   texts:
   - SLaDe
   cited_by:
   - 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
+- url: https://arxiv.org/abs/2305.14314
+  kind: paper
+  texts:
+  - QLoRA
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+- url: https://arxiv.org/abs/2305.18290
+  kind: paper
+  texts:
+  - DPO
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/2307.03172
   kind: paper
   texts:
@@ -2722,6 +2818,12 @@
   - Nova
   cited_by:
   - 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
+- url: https://arxiv.org/abs/2403.03883
+  kind: paper
+  texts:
+  - SaulLM
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/2403.05286
   kind: paper
   texts:
@@ -2766,12 +2868,6 @@
   - GSM-Symbolic da Apple
   cited_by:
   - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
-- url: https://arxiv.org/abs/2412.19437
-  kind: paper
-  texts:
-  - DeepSeek-V3
-  cited_by:
-  - 2026/10/12/llms-agentes-competente-o-suficiente
 - url: https://arxiv.org/abs/2501.01880
   kind: paper
   texts:
@@ -2779,18 +2875,36 @@
   - 'Long Context vs. RAG for LLMs: An Evaluation and Revisits'
   cited_by:
   - 2026/04/06/rag-esta-morto-contexto-longo
+- url: https://arxiv.org/abs/2503.16252
+  kind: paper
+  texts:
+  - Fin-R1
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/2505.11340
   kind: paper
   texts:
   - DecompileBench
   cited_by:
   - 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
+- url: https://arxiv.org/abs/2506.02153
+  kind: paper
+  texts:
+  - NVIDIA publicou em 2025
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/2507.09089
   kind: paper
   texts:
   - RCT da METR
   cited_by:
   - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+- url: https://arxiv.org/abs/2508.10925
+  kind: paper
+  texts:
+  - gpt-oss-120b
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://arxiv.org/abs/2508.20228
   kind: paper
   texts:
@@ -4466,6 +4580,61 @@
   - github.com/akitaonrails/NW-Omarchy/issues
   cited_by:
   - 2026/05/01/omarchy-no-xlibre
+- url: https://github.com/akitaonrails/ai-book-2026
+  kind: repo
+  texts:
+  - repositório
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://github.com/akitaonrails/ai-book-2026/issues
+  kind: repo
+  texts:
+  - abra uma issue no GitHub
+  - abra uma issue
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://github.com/akitaonrails/ai-book-2026/releases
+  kind: repo
+  texts:
+  - releases do GitHub
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough-ebook.pdf
+  kind: repo
+  texts:
+  - PDF
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.epub
+  kind: repo
+  texts:
+  - EPUB
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.pdf
+  kind: repo
+  texts:
+  - PDF
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente-ebook.pdf
+  kind: repo
+  texts:
+  - PDF
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.epub
+  kind: repo
+  texts:
+  - EPUB
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.pdf
+  kind: repo
+  texts:
+  - PDF
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
 - url: https://github.com/akitaonrails/ai-jail-web
   kind: repo
   texts:
@@ -5139,6 +5308,20 @@
   - "`e2af88c`"
   cited_by:
   - 2026/06/15/controversia-llm-rio-3-5-plagio
+- url: https://github.com/akitaonrails/microgpt
+  kind: repo
+  texts:
+  - repositório é público
+  - microgpt lab
+  - repositório
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+- url: https://github.com/akitaonrails/microgpt/blob/main/docs/report/experiment-closeout.md
+  kind: repo
+  texts:
+  - relatório de fechamento
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://github.com/akitaonrails/my-skills
   kind: repo
   texts:
@@ -6054,6 +6237,12 @@
   - detecção de injeção
   cited_by:
   - 2026/10/03/entendendo-o-hype-do-jev-pra-que-serve
+- url: https://github.com/karpathy/nanochat
+  kind: repo
+  texts:
+  - nanochat
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://github.com/lightvector/KataGo
   kind: repo
   texts:
@@ -6078,6 +6267,12 @@
   - RT-DETR-v2
   cited_by:
   - 2026/03/05/meu-primeiro-fracasso-com-vibe-code-e-como-consertei-frank-yomik
+- url: https://github.com/magento/magento2
+  kind: repo
+  texts:
+  - Magento 2
+  cited_by:
+  - 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
 - url: https://github.com/marcosmartinez/jev-acento
   kind: repo
   texts:
@@ -6096,6 +6291,12 @@
   - "@mdindoffer"
   cited_by:
   - 2026/07/25/ai-jail-update-seguranca-docker-opt-in
+- url: https://github.com/morinoko/agile-dev-rails6
+  kind: repo
+  texts:
+  - Agile Web Development with Rails - GitHub
+  cited_by:
+  - 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
 - url: https://github.com/morluto/rea
   kind: repo
   texts:
@@ -6447,6 +6648,12 @@
   - "`discordrb`"
   cited_by:
   - 2026/02/20/discord-como-admin-panel-bastidores-do-the-m-akita-chronicles
+- url: https://github.com/spree/spree
+  kind: repo
+  texts:
+  - Spree
+  cited_by:
+  - 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
 - url: https://github.com/storytold/photocraft
   kind: repo
   texts:
@@ -6654,6 +6861,12 @@
   - Hackaday
   cited_by:
   - 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao
+- url: https://hai.stanford.edu/ai-index/2024-ai-index-report
+  kind: web
+  texts:
+  - AI Index de Stanford
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://hai.stanford.edu/ai-index/2025-ai-index-report
   kind: web
   texts:
@@ -6720,6 +6933,12 @@
   - "`akitaonrails/github-visualize`"
   cited_by:
   - 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
+- url: https://huggingface.co/HuggingFaceTB/SmolLM2-360M
+  kind: web
+  texts:
+  - SmolLM2 de 360 milhões
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
   kind: web
   texts:
@@ -6745,12 +6964,42 @@
   - API de commits do Hugging Face
   cited_by:
   - 2026/06/15/controversia-llm-rio-3-5-plagio
+- url: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
+  kind: web
+  texts:
+  - Cosmopedia
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+- url: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
+  kind: web
+  texts:
+  - SmolTalk
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+- url: https://huggingface.co/datasets/OpenCoder-LLM/opc-sft-stage1
+  kind: web
+  texts:
+  - OpenCoder
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://huggingface.co/datasets/bigcode/the-stack-v2
   kind: web
   texts:
   - The Stack v2
   cited_by:
   - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+- url: https://huggingface.co/datasets/codeparrot/codeparrot-clean
+  kind: web
+  texts:
+  - CodeParrot
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+- url: https://huggingface.co/datasets/nvidia/OpenCodeInstruct
+  kind: web
+  texts:
+  - OpenCodeInstruct
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://huggingface.co/docs/inference-providers/tasks/zero-shot-classification
   kind: web
   texts:
@@ -6932,6 +7181,12 @@
   - Sun et al. rodou um experimento causal de verdade
   cited_by:
   - 2026/09/14/codigo-de-conduta-e-a-raiz-de-todo-o-mal
+- url: https://karpathy.github.io/2026/02/12/microgpt
+  kind: web
+  texts:
+  - microgpt
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://kdp.amazon.com/pt_BR/help/topic/GDDXGH9VR22ACM8U
   kind: web
   texts:
@@ -7132,6 +7387,12 @@
   - removeu do GitHub todos os maintainers de longa data do RubyGems e do Bundler
   cited_by:
   - 2026/09/14/codigo-de-conduta-e-a-raiz-de-todo-o-mal
+- url: https://machinelearning.apple.com/research/apple-foundation-models-2025-updates
+  kind: web
+  texts:
+  - roda um modelo de 3 bilhões no aparelho
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://malus.sh
   kind: web
   texts:
@@ -7516,6 +7777,12 @@
   - '![Capa do livro "An Inconvenient Deception", de Roy Spencer'
   cited_by:
   - 2026/09/17/ia-desmascarou-histeria-mudancas-climaticas
+- url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/20261013190000_livro-competente-o-suficiente-3d.png
+  kind: web
+  texts:
+  - "![Competente o Suficiente, o livro, em 3D"
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
 - url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/frankmd/2026/02/Why-Colour-Contrast-Accessibility-Matters-More-Than-Ever.jpg
   kind: web
   texts:
@@ -7919,6 +8186,12 @@
   - refez os circuitos de forma aberta
   cited_by:
   - 2026/08/16/o-que-significa-o-paper-do-google-sobre-vulnerabilidade-quantica
+- url: https://pragprog.com/titles/rails7/agile-web-development-with-rails-7
+  kind: web
+  texts:
+  - Agile Web Development with Rails
+  cited_by:
+  - 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
 - url: https://prefeitura.rio/cidade/prefeitura-do-rio-anuncia-projetos-de-inovacao-que-serao-testados-na-cidade
   kind: web
   texts:
@@ -8065,6 +8338,12 @@
     de carbono
   cited_by:
   - 2026/09/17/ia-desmascarou-histeria-mudancas-climaticas
+- url: https://research.google/blog/medgemma-our-most-capable-open-models-for-health-ai-development
+  kind: web
+  texts:
+  - MedGemma
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://research.tue.nl/files/198367174/Enache_B.pdf
   kind: web
   texts:
@@ -8590,6 +8869,18 @@
   - guia de graph engineering
   cited_by:
   - 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit
+- url: https://www.akitaonrails.com/2009/05/08/railsconf-09-entrevistas-exclusivas-em-audio
+  kind: internal
+  texts:
+  - RailsConf 09 - Exclusive Audio Interviews | AkitaOnRails.com
+  cited_by:
+  - 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
+- url: https://www.akitaonrails.com/2009/11/18/conversando-com-luke-kanies
+  kind: internal
+  texts:
+  - Chatting with Luke Kanies
+  cited_by:
+  - 2023/08/11/akitando-144-modelagem-de-software-e-dificil-ver-vs-enxergar
 - url: https://www.alexcloudstar.com/blog/spec-driven-development-2026
   kind: web
   texts:
@@ -9766,6 +10057,12 @@
   - dataset de temperatura por satélite da UAH
   cited_by:
   - 2026/09/17/ia-desmascarou-histeria-mudancas-climaticas
+- url: https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090
+  kind: web
+  texts:
+  - 575 W de potência nominal
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://www.nytimes.com/2021/04/30/technology/basecamp-politics-ban-resignations.html
   kind: web
   texts:
@@ -9984,6 +10281,12 @@
   - RubyGems
   cited_by:
   - 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia
+- url: https://www.runpod.io/pricing
+  kind: web
+  texts:
+  - Runpod
+  cited_by:
+  - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
 - url: https://www.samsung.com/br/monitors/gaming/odyssey-oled-g8-g81sf-32-inch-240hz-oled-uhd-ls32fg810snxzd
   kind: web
   texts:

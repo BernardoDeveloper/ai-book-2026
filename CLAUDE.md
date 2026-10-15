@@ -67,6 +67,8 @@ PT changes land first and need the author's approval before EN follows.
 - Never name private repositories, hostnames or IPs in book text; the
   author's girlfriend is never named.
 - Every image has a record in `assets/credits/`; AI images are disclosed.
+- New figures and tables follow `docs/ACCESSIBILITY.md`; `rake check` enforces
+  the figure text contract for both editions.
 - Layout must look professionally typeset: run `rake audit` and inspect the
   pages you touched after every build.
 - Ledger of cross-chapter decisions and open author questions:

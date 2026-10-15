@@ -23,6 +23,8 @@ blockquote p { text-indent: 0; margin-bottom: 0.5em; }
 figure { margin: 1.5em 0; text-align: center; }
 figure img { max-width: 100%; height: auto; }
 figcaption { font-size: 0.85em; margin-top: 0.4em; text-align: left; }
+.figure-description { margin: -0.8em 0 1.5em; font-size: 0.9em; }
+.figure-description p { text-indent: 0; }
 a.gls { color: inherit; text-decoration: none; border-bottom: 1px dotted; }
 dl dt { font-weight: 600; margin-top: 0.8em; }
 dl dd { margin-left: 1.2em; }
@@ -31,7 +33,7 @@ dl dd { margin-left: 1.2em; }
    them): never split a figure, its caption, a table, a quote, a code block
    or a list item; keep headings with what follows; keep images inside one
    screen, scaled down without distortion. */
-figure, .quarto-figure, .quarto-float, table, blockquote, pre, li, dl dd {
+figure, .quarto-figure, .quarto-float, .figure-description, table, blockquote, pre, li, dl dd {
   page-break-inside: avoid; break-inside: avoid;
 }
 figure img, .quarto-figure img {

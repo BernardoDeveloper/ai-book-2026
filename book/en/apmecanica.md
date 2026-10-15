@@ -7,7 +7,7 @@ sources:
   - {post: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado, sha256: "7ee4001a6b6712e98fa2deb8acf37d0ffc33fde8b0b8ed7838b2c4d59e3aa02d", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apmecanica.md, sha256: "f16f2e9f3811b7d7a8ae7ef0e63851006f664702065b03825e3b939fe072fb64"}
+translated_from: {file: book/pt/apmecanica.md, sha256: "b0a23dad59aec07e7e3e57b7b3456a9a1274fc8ad8e847a8e11d5f56627a59e3"}
 ---
 
 # The Machine Inside, Without the Math {#sec-apmecanica}
@@ -40,7 +40,7 @@ Now picture yourself at the top of a hill, in fog so thick you can only see the 
 
 Training a network is exactly that. The "hill" is the size of the error, and every possible position of the billions of knobs is a point on the terrain. On each round, a procedure works out which way each knob should turn so the error shrinks a little, and all of them turn a little in that direction. The technical name is [gradient descent]{.gls key=descida-do-gradiente}, and "gradient" is just the slope of the ground.
 
-![Training is walking down a hill in the fog: at each step, every knob turns a little in the direction where the error shrinks.](assets/figures/en/apmecanica-descida-na-neblina.png){#fig-apmecanica-descida-na-neblina fig-alt="A rolling terrain seen from the side, with height labeled 'size of the error'. A small human figure walks down the slope in short steps, each step marked by a dot. A band of fog covers almost everything, leaving only the ground near the feet visible. At the bottom of the valley, the label 'small error'. Beside it, a panel of knobs, each with a curved arrow showing a small turn."}
+![Training is walking down a hill in the fog: at each step, every knob turns a little in the direction where the error shrinks.](assets/figures/en/apmecanica-descida-na-neblina.png){#fig-apmecanica-descida-na-neblina fig-alt="A rolling terrain seen from the side, with height labeled 'size of the error'." fig-desc="A rolling terrain seen from the side, with height labeled 'size of the error'. A small human figure walks down the slope in short steps, each step marked by a dot. A band of fog covers almost everything, leaving only the ground near the feet visible. At the bottom of the valley, the label 'small error'. Beside it, a panel of knobs, each with a curved arrow showing a small turn."}
 
 <!-- src: original -->
 One piece is missing. When the network gets it wrong, whose fault is it? With 96 layers, a knob way back at the start affects everything that comes after.
@@ -83,7 +83,7 @@ What matters here is how the map organizes itself, and nobody draws that map. Th
 
 "Dog" lives in the same neighborhood as "cat," far from "tax." "Monday" lives near "Tuesday."
 
-![On the map of meanings, words used in similar situations live close together, and some relationships turn into directions.](assets/figures/en/apmecanica-mapa-de-sentidos.png){#fig-apmecanica-mapa-de-sentidos fig-alt="A flat map with labeled points grouped into neighborhoods: an animal neighborhood (dog, cat, horse), a weekday neighborhood (Monday, Tuesday, Wednesday) and one of taxes and money. In a corner, four points form a parallelogram: 'man' and 'woman' at the bottom, 'king' and 'queen' at the top, with two parallel arrows running from 'man' to 'woman' and from 'king' to 'queen'."}
+![On the map of meanings, words used in similar situations live close together, and some relationships turn into directions.](assets/figures/en/apmecanica-mapa-de-sentidos.png){#fig-apmecanica-mapa-de-sentidos fig-alt="An embedding map groups animals, weekdays and financial terms into separate neighborhoods." fig-desc="A flat map with labeled points grouped into neighborhoods: an animal neighborhood (dog, cat, horse), a weekday neighborhood (Monday, Tuesday, Wednesday) and one of taxes and money. In a corner, four points form a parallelogram: 'man' and 'woman' at the bottom, 'king' and 'queen' at the top, with two parallel arrows running from 'man' to 'woman' and from 'king' to 'queen'."}
 
 <!-- src: original -->
 Better still: some relationships turn into directions on the map. In 2013, Microsoft researchers showed that, on a map like this, the path from "man" to "woman" is nearly the same as the one from "king" to "queen" [@mikolov2013linguistic]. Nobody taught the machine the concept of gender. It showed up as a side effect of predicting words.
@@ -157,7 +157,7 @@ The model generated several answers to the same question, and those people ranke
 
 The effect is huge. In the same study, the answers of an InstructGPT with 1.3 billion parameters were preferred over those of the original GPT-3, which was more than a hundred times that size [@ouyang2022training]. Same architecture, same kind of base data. The difference was having learned what pleases.
 
-![From text continuer to assistant: three training stages and, at the end, a locked file.](assets/figures/en/apmecanica-tres-etapas.png){#fig-apmecanica-tres-etapas fig-alt="A conveyor belt with three stations from left to right. First, 'pretraining': a huge pile of text goes in and a document continuer comes out. Second, 'instruction tuning': a smaller pile of question-and-answer examples written by people. Third, 'RLHF': people ranking answers and an automatic judge handing out grades. At the end of the belt, a file with a padlock, labeled 'frozen weights'."}
+![From text continuer to assistant: three training stages and, at the end, a locked file.](assets/figures/en/apmecanica-tres-etapas.png){#fig-apmecanica-tres-etapas fig-alt="A conveyor belt with three stations from left to right." fig-desc="A conveyor belt with three stations from left to right. First, 'pretraining': a huge pile of text goes in and a document continuer comes out. Second, 'instruction tuning': a smaller pile of question-and-answer examples written by people. Third, 'RLHF': people ranking answers and an automatic judge handing out grades. At the end of the belt, a file with a padlock, labeled 'frozen weights'."}
 
 <!-- src: original -->
 Notice the detail the paper itself admits: the model ends up aligned to the preferences of a specific group of people, the labelers and the researchers, and not to some broad notion of human values [@ouyang2022training]. And people, on average, give a higher grade to the answer that agrees with them. [Sycophancy]{.gls key=sicofancia}, the habit of agreeing with you and praising your idea, is born right here, and @sec-ch04 shows the size of the damage [@sharma2023sycophancy].

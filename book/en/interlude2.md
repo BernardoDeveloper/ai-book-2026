@@ -6,7 +6,7 @@ sources:
   - {post: 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas, sha256: "7721d4c6a1750ef667ba1007d1660cafe88fce35576e08524d37f24d0a2bdbf4"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/interlude2.md, sha256: "26ba11bb15abb0b0b5f392b3c8c5122b771c2378dd582a7d0ba2f86133d0defc"}
+translated_from: {file: book/pt/interlude2.md, sha256: "cb3efe5a2d46e92bbf1110dc846967b8846c26735f19f2502543edc1f4f8b64f"}
 ---
 
 # Interlude: From GNU Go to KataGo {#sec-interlude2 .unnumbered}
@@ -44,7 +44,7 @@ The series became famous for two moves. In game 2, AlphaGo played stone 37 on a 
 <!-- src: 2026/07/06/frank-go-brincando-de-go-com-ia -->
 The human reply came in game 4, on March 13. With the series already lost, Lee Sedol played stone 78, a wedge in the middle of Black's area that no commentator had foreseen. AlphaGo didn't see the danger either: it went on thinking it was the favorite for several moves, only noticed the damage around move 87, and ended up resigning. Chinese professional Gu Li called the move divine, and it became known as the "hand of God."
 
-![Game 4 of Lee Sedol (White) against AlphaGo (Black), on March 13, 2016: the only human win in the series, turned around by move 78. Diagram: Wesalius, CC BY-SA 4.0, via Wikimedia Commons.](assets/figures/interlude2-partida-4.png){#fig-interlude2-partida-4 fig-alt="Diagram of a 19 by 19 Go board, covered with black and white stones numbered in the order they were played, recording game 4 between Lee Sedol and AlphaGo, which ended with AlphaGo resigning."}
+![Game 4 of Lee Sedol (White) against AlphaGo (Black), on March 13, 2016: the only human win in the series, turned around by move 78. Diagram: Wesalius, CC BY-SA 4.0, via Wikimedia Commons.](assets/figures/interlude2-partida-4.png){#fig-interlude2-partida-4 fig-alt="Board records game 4 between Lee Sedol and AlphaGo, the only human win in the series." fig-desc="Diagram of a 19 by 19 Go board, covered with black and white stones numbered in the order they were played, recording game 4 between Lee Sedol and AlphaGo, which ended with AlphaGo resigning."}
 
 It was the only game AlphaGo lost to a human being in that series. Anyone who wants to feel the mood of that week, without knowing anything about Go, has a documentary, *AlphaGo*, from 2017, that follows the series closely [@kohs2017alphago].
 

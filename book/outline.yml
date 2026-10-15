@@ -9,6 +9,14 @@ meta:
   working_title_en: "Competent Enough"
   subtitle_en: "A year putting artificial intelligence to the test, without fear and without hype"
   author: "Fabio Akita"
+  accessibility_summary: >-
+    Esta publicação contém texto refluível, ordem de leitura e navegação
+    estruturadas, sumário, texto alternativo conciso e descrições detalhadas
+    para as figuras. Não contém riscos de lampejo, movimento ou som.
+  accessibility_summary_en: >-
+    This publication contains reflowable text, structured reading order and
+    navigation, a table of contents, concise alternative text and detailed
+    descriptions for figures. It contains no flashing, motion or sound hazards.
   # Names owned by the author (copyright page, EPUB rights, HTML footer).
   isbn:
     pt: "9798162465683"   # KDP free ISBN, PT hardcover (2026-10-14)

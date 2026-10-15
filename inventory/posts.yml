@@ -1,6 +1,6 @@
 ---
 generated_from: "/home/akitaonrails/Projects/akitaonrails-hugo"
-blog_commit: 620e97e1a5d5b2a18454d512cc1ae7851db5df31
+blog_commit: b558ea0047d8c90fa5ff8502c095ab44f3e8888a
 dirty_files: []
 year: '2026'
 posts:
@@ -16272,7 +16272,7 @@ posts:
   url_pt: https://www.akitaonrails.com/2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu/
   url_en: https://www.akitaonrails.com/en/2026/10/13/ai-reverse-engineering-is-adobe-dead/
   pt:
-    sha256: deadcd56a7224857fd51925747a119fc9cecbf26300360afea516cd1de5765ac
+    sha256: 40660ae1ab1655e31fda54ba8b9e51e672e7840afa28db6e7dc876329953f3c0
     title: 'Engenharia Reversa com IA: a Adobe morreu?'
     description: 'Na mesma semana, um dev soltou sete clones da Adobe feitos com Claude,
       o REA passou de 100 mil estrelas prometendo ''engenharia reversa de qualquer
@@ -16289,7 +16289,7 @@ posts:
     - vibe-coding
     - retrocomputacao
     - open-source
-    words: 5569
+    words: 5786
     links:
     - text: REA
       url: https://github.com/morluto/rea
@@ -16357,6 +16357,9 @@ posts:
       url: https://plugins.hex-rays.com/aidapal
     - text: REA
       url: https://github.com/morluto/rea
+    - text: coloquei o Fable 5 pra analisar o código do TikTok, do Clash of Kings
+        e do gov.br
+      url: "/2026/07/08/fable-5-analisar-codigo-tiktok-clash-of-kings-govbr-fingerprint/"
     - text: experimento
       url: https://github.com/morluto/rea/tree/main/experiments/analysis-efficiency
     - text: repositório do PhotoCraft
@@ -16462,7 +16465,7 @@ posts:
     images: []
     youtube: []
   en:
-    sha256: 4507305488a642dbad276679312fe09a2ab0a70fe0d5a60d71a78da101c4b0b3
+    sha256: d970fb2c469b6b24594deff56ad2513292054452e647cedaddd8ef21ef5766fd
     title: 'AI Reverse Engineering: Is Adobe Dead?'
     description: 'In the same week, a dev dropped seven Adobe clones built with Claude,
       REA passed 100K stars promising to ''reverse engineer anything'', and retro
@@ -16479,7 +16482,7 @@ posts:
     - vibe-coding
     - retrocomputing
     - open-source
-    words: 5247
+    words: 5466
     links:
     - text: REA
       url: https://github.com/morluto/rea
@@ -16547,6 +16550,8 @@ posts:
       url: https://plugins.hex-rays.com/aidapal
     - text: REA
       url: https://github.com/morluto/rea
+    - text: had Fable 5 analyze the code of TikTok, Clash of Kings and gov.br
+      url: "/en/2026/07/08/fable-5-analyze-tiktok-clash-of-kings-govbr-fingerprint/"
     - text: experiment
       url: https://github.com/morluto/rea/tree/main/experiments/analysis-efficiency
     - text: PhotoCraft repository

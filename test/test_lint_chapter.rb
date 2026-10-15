@@ -172,6 +172,22 @@ class TestLintChapter < ToolTest
     assert_exit 0, res
   end
 
+  # Guards the authoring contract that keeps future figures accessible in both editions.
+  def test_figure_accessibility_fields
+    missing = lint("\n<!-- src: original -->\n![Legenda.](assets/figures/x.png){#fig-x}\n")
+    assert_exit 1, missing
+    assert_includes missing.out, "figure lacks fig-alt"
+    assert_includes missing.out, "figure lacks fig-desc"
+
+    long = "a" * 141
+    over = lint("\n<!-- src: original -->\n![Legenda.](assets/figures/x.png){#fig-x fig-alt=\"#{long}\" fig-desc=\"Descrição completa.\"}\n")
+    assert_exit 1, over
+    assert_includes over.out, "fig-alt has 141 characters (maximum 140)"
+
+    good = lint("\n<!-- src: original -->\n![Legenda.](assets/figures/x.png){#fig-x fig-alt=\"Resumo.\" fig-desc=\"Descrição completa.\"}\n")
+    assert_exit 0, good
+  end
+
   RULES = <<~YAML
     naming_rules:
       - {pattern: '\\bGPT (\\d)', use: 'GPT-\\1', langs: [pt, en]}

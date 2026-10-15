@@ -77,6 +77,7 @@ GENERALIZATIONS = Array(CONTINUITY.dig("generalization_watch", LANG)).map { Rege
 PRODUCT_TOKEN = /\b\p{Lu}[\p{L}\d]*(?:[-.][\p{L}\d]+)*(?:\s\d+(?:\.\d+)*)?/
 MAX_PRODUCTS = 4
 MAX_BULLETS = 8
+MAX_FIG_ALT = 140
 BULLET = /\A\s*(?:[-*+]|\d+\.) /
 def name_dense?(sentence)
   sentence.gsub(/[*_`]/, "").scan(PRODUCT_TOKEN).select { _1.match?(/[\d-]/) }.uniq.size > MAX_PRODUCTS
@@ -153,6 +154,14 @@ ARGV.each do |path|
     end
     GENERALIZATIONS.each do |re|
       report.("warning", rel, n, "possible unsupported generalization (EDITORIAL-RULES R3): #{line[re]}") if line =~ re && !line.lstrip.start_with?("#")
+    end
+    if line.include?("![")
+      attrs = line[/\}\s*\z/] ? line[/\{(.*)\}\s*\z/, 1].to_s : ""
+      alt = attrs[/\bfig-alt="([^"]*)"/, 1]
+      desc = attrs[/\bfig-desc="([^"]*)"/, 1]
+      report.("error", rel, n, "figure lacks fig-alt (concise alternative, max #{MAX_FIG_ALT} characters)") if alt.nil? || alt.empty?
+      report.("error", rel, n, "figure lacks fig-desc (complete image description)") if desc.nil? || desc.empty?
+      report.("error", rel, n, "fig-alt has #{alt.length} characters (maximum #{MAX_FIG_ALT})") if alt && alt.length > MAX_FIG_ALT
     end
     report.("error", rel, n, "raw URL in prose; use a citation [@key]") if line =~ %r{https?://}
     line.scan(%r{(?<![\w./])@([\w:.-]*\w)}).flatten.each do |key|

@@ -10,7 +10,7 @@ refs_projects:
   - "microgpt/docs/report/experiment-closeout.md"
   - "microgpt/docs/report/training-time-ledger.md"
 blog_commit: "620e97e1a5d5b2a18454d512cc1ae7851db5df31"
-translated_from: {file: book/pt/ch13b.md, sha256: "480a747cc57bb3816e3320494d15b9ed8c4f41c892c08b70b7a057ed1aba0ba9"}
+translated_from: {file: book/pt/ch13b.md, sha256: "7d4f938e1b4ab21f02f6f2210086c118b58b3b09401ffb2275d5472ae75f71bf"}
 ---
 
 # A Homemade Model {#sec-ch13b}
@@ -52,7 +52,7 @@ The project went through four sizes. It started with a lesson of under a million
 <!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
 Regardless of size, building a language model goes through the same stations. What changes from a garage model to a frontier one is the trailing zeros at each of them.
 
-![The six stations of building a language model, with the numbers from my 337-million-parameter model.](assets/figures/en/ch13b-estacoes.png){#fig-ch13b-estacoes fig-alt="Six boxes connected by arrows, left to right. Data: 20 GB downloaded, 3.5 billion tokens. Tokenizer: a dictionary of 32,768 entries. Pre-training: 10 billion tokens, 137 hours on an RTX 5090. Tuning (SFT): 4,000 updates on examples. Server: OpenAI-compatible API. Evaluation: 100 held-out tasks."}
+![The six stations of building a language model, with the numbers from my 337-million-parameter model.](assets/figures/en/ch13b-estacoes.png){#fig-ch13b-estacoes fig-alt="Six boxes connected by arrows, left to right." fig-desc="Six boxes connected by arrows, left to right. Data: 20 GB downloaded, 3.5 billion tokens. Tokenizer: a dictionary of 32,768 entries. Pre-training: 10 billion tokens, 137 hours on an RTX 5090. Tuning (SFT): 4,000 updates on examples. Server: OpenAI-compatible API. Evaluation: 100 held-out tasks."}
 
 ### Data
 
@@ -110,7 +110,7 @@ The final model has 337 million parameters, 24 layers, and was trained on 10 bil
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
 The comparison that teaches the most, though, is another one. SmolLM2, an open model with 360 million parameters, practically the size of mine, was trained on 4 trillion tokens [@huggingface2024smollm2]. Four hundred times more text. At my card's pace, reading all of that would take between four and six years of the machine running nonstop.
 
-![How much text each model read in pre-training. The scale is logarithmic: each mark is worth ten times the previous one.](assets/figures/en/ch13b-escala.png){#fig-ch13b-escala fig-alt="Horizontal bar chart on a logarithmic scale with the tokens seen in pre-training. This model, 337 million parameters: 10 billion. SmolLM2, 360 million parameters: 4 trillion. Llama 3.1: 15 trillion. Qwen3: 36 trillion. This model's bar is the shortest and Qwen3's the longest; an arrow between the first two reads same size, 400 times more text."}
+![How much text each model read in pre-training. The scale is logarithmic: each mark is worth ten times the previous one.](assets/figures/en/ch13b-escala.png){#fig-ch13b-escala fig-alt="Horizontal bar chart on a logarithmic scale with the tokens seen in pre-training." fig-desc="Horizontal bar chart on a logarithmic scale with the tokens seen in pre-training. This model, 337 million parameters: 10 billion. SmolLM2, 360 million parameters: 4 trillion. Llama 3.1: 15 trillion. Qwen3: 36 trillion. This model's bar is the shortest and Qwen3's the longest; an arrow between the first two reads same size, 400 times more text."}
 
 <!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
 Even the raw material shows the scale. GPT-2 was trained on about 40 GB of text, taken from 8 million web pages [@radford2019better]. I downloaded 20 GB, and more than half of it was code.
@@ -176,7 +176,7 @@ The data lied too. Answers marked as correct in the public collection failed whe
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
 The 239-million model had more layers than the 91, erred less in the guessing and solved 24 out of 100 programming tasks. When I went to see where the parameters were, 154 million were the vocabulary table. Each of the 200 thousand entries of the borrowed vocabulary holds a row of 768 numbers, that piece's address on the map of meanings from the appendix, and 200 thousand rows of that size add up to 154 million. That left 85 million for the layers that think, the [transformer]{.gls}.
 
-![Where the parameters went. The vocabulary table took up almost two thirds of the 239-million model; in the 337-million one, with a smaller vocabulary of its own, almost everything went to the layers that think.](assets/figures/en/ch13b-parametros.png){#fig-ch13b-parametros fig-alt="Two stacked bars. The first, 239-million model with a 200k vocabulary: 154 million in the vocabulary table and 85 million in the layers that think (transformer). The second, final 337-million model with a 32k vocabulary: 33.6 million in the vocabulary table and 303.6 million in the layers that think (transformer)."}
+![Where the parameters went. The vocabulary table took up almost two thirds of the 239-million model; in the 337-million one, with a smaller vocabulary of its own, almost everything went to the layers that think.](assets/figures/en/ch13b-parametros.png){#fig-ch13b-parametros fig-alt="Two stacked bars." fig-desc="Two stacked bars. The first, 239-million model with a 200k vocabulary: 154 million in the vocabulary table and 85 million in the layers that think (transformer). The second, final 337-million model with a 32k vocabulary: 33.6 million in the vocabulary table and 303.6 million in the layers that think (transformer)."}
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
 The final model switched to its own 32-thousand-entry vocabulary, and the vocabulary table shrank to 34 million. The layers that think got more than 300 million. A fair caveat: that turn changed the vocabulary, the size, the start of training and the amount of text all at once, so the report can't say which of those changes made the difference.
@@ -193,7 +193,7 @@ There's a detail in that curve that says more than the numbers. With no tuning a
 
 So what it does: it writes a small Python function, with the right syntax and the right name, from a clear one-line request. Median, factorial, binary conversion, leap year. As autocomplete for an isolated function, it's fine for study.
 
-![The chasm between looking like code and solving the problem. Writing valid Python it always does; acting in a repository and remembering a long text, never.](assets/figures/en/ch13b-abismo.png){#fig-ch13b-abismo fig-alt="Horizontal bars with the final model's results, split by a dashed line into looking like code and working. Valid Python: 100 out of 100. Right name and parameters: 97 out of 100. Correct result on the held-out tasks: 58 out of 100. Repairing a repository in OpenCode: 0 out of 4. Finding a number hidden in a long text: 0 out of 9. The bars shrink from top to bottom until they vanish."}
+![The chasm between looking like code and solving the problem. Writing valid Python it always does; acting in a repository and remembering a long text, never.](assets/figures/en/ch13b-abismo.png){#fig-ch13b-abismo fig-alt="Horizontal bars with the final model's results, split by a dashed line into looking like code and working." fig-desc="Horizontal bars with the final model's results, split by a dashed line into looking like code and working. Valid Python: 100 out of 100. Right name and parameters: 97 out of 100. Correct result on the held-out tasks: 58 out of 100. Repairing a repository in OpenCode: 0 out of 4. Finding a number hidden in a long text: 0 out of 9. The bars shrink from top to bottom until they vanish."}
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
 Look at the staircase. All 100 held-out answers were valid Python, and 97 had the requested name and parameters. Of the 42 that failed, 39 looked perfect and did the wrong thing.

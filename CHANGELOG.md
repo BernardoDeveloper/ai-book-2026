@@ -4,6 +4,28 @@ Editions of *Competente o Suficiente*. Each version is a git tag (`vX.Y.Z`);
 pushing the tag builds the book and publishes a GitHub Release with the
 files.
 
+## 1.0.0-preview.8
+
+Accessible digital editions and a guarded Kindle pipeline.
+
+- **Accessible EPUB and HTML**: all 55 figures in each language now have a
+  concise alternative and a complete description; tables have captions; cover
+  alternatives, localized accessibility summaries and EPUB landmarks identify
+  the body, glossary, references and image credits.
+- **Future chapters are covered**: `rake check` rejects figures without both
+  descriptions or with alternatives over 140 characters. The authoring
+  contract is documented in `docs/ACCESSIBILITY.md`.
+- **Release validation**: every build runs EPUBCheck, DAISY Ace and
+  book-specific HTML/EPUB checks. Ace reports are retained under
+  `build/a11y/`.
+- **Kindle compatibility**: every build removes Quarto's unused inline CSS,
+  embedded `data:` icons and flex-panel rules before validation. Regression
+  tests fail if Amazon-rejected markup returns or if a chapter starts relying
+  on CSS that cannot safely be stripped.
+- **Print interiors unchanged**: the PT print/ebook PDFs remain 518/490 pages
+  and the EN PDFs 505/478 pages; affected table pages are pixel-identical to
+  the previous build.
+
 ## 1.0.0-preview.7
 
 A homemade model, a leaner back matter, the hardcover covers.

@@ -152,7 +152,12 @@ profile = {
   "toc-title" => { "pt" => "Sumário", "en" => "Contents" }.fetch(lang),
   "colophon" => COLOPHON.fetch(lang),
   "rights" => RIGHTS.fetch(lang), # EPUB dc:rights
+  "accessibilitySummary" => outline.dig("meta", lang == "pt" ? "accessibility_summary" : "accessibility_summary_en"),
 }
+profile["book"]["cover-image-alt"] = {
+  "pt" => "Capa de Competente o Suficiente, de Fabio Akita.",
+  "en" => "Cover of Competent Enough, by Fabio Akita.",
+}.fetch(lang)
 profile["book"]["page-footer"] = { "center" => "#{RIGHTS.fetch(lang)} akitaonrails.com" } # HTML edition
 profile["csl"] = cfg["csl"] if cfg["csl"]
 begin # every edition reads a filtered copy of the bibliography

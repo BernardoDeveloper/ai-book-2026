@@ -13,7 +13,7 @@ docs/
   DESIGN.md            this file
   BOOK-VOICE.md        blog voice → book voice rules (narrative, conversions)
   analysis-schema.yml  schema for per-post analyses
-  research/            TOOLCHAIN.md, IMAGES.md, FURTHER-READING.md, LINKCHECK.md
+  research/            TOOLCHAIN.md, ACCESSIBILITY.md, IMAGES.md, FURTHER-READING.md, LINKCHECK.md
 private/               (gitignored) research on private reference projects, alias map for private provenance markers, public-guard patterns
 inventory/             (machine-generated or machine-checked; never hand-prose)
   posts.yml            scripts/inventory.rb: every 2026 post, PT/EN sha256, links, blog commit
@@ -75,8 +75,8 @@ entries record `note: cited-by <post ids>`.
 | 7. Humanizer + akita-finish | per chapter | yes | final prose |
 | 8. Lint | `rake lint` (lint_chapter.rb) | n/a | zero errors |
 | 9. Figures | D2 diagrams, generated art, Commons photos | yes | assets/ + credits.yml |
-| 10. Build | `rake build` → Quarto profiles | n/a | EPUB, PDF, HTML (+DOCX for editors) |
-| 11. Validate | epubcheck, DAISY Ace | n/a | reports in build/ |
+| 10. Build | `rake build` → Quarto profiles; Kindle cleanup; EPUB landmarks | n/a | EPUB, PDF, HTML (+DOCX for editors) |
+| 11. Validate | epubcheck, DAISY Ace, book-specific accessibility and Kindle checks | n/a | reports in build/a11y/ + page audits |
 
 Continuity across parallel drafters: drafters get the full outline, the
 voice guide, and a shared `book/continuity.yml` (recurring characters, terms
@@ -89,6 +89,13 @@ I-II, then III-V) so later chapters can build on earlier ones.
 ### Build
 `rake build` (or `rake build:pt`, `build:epub`, `build:pdf`). Deterministic
 from the repo plus pinned tools; no network.
+
+Every build cleans the EPUB before validation: Quarto's unused inline styles,
+embedded `data:` icons and flex-panel rules are removed because Amazon Kindle's
+converter rejected them. The cleaner refuses to proceed if a chapter actually
+uses a callout or layout class, and the accessibility gate verifies that none
+of the rejected markup survived. See `docs/ACCESSIBILITY.md` for the authoring
+contract enforced on new chapters.
 
 ### "I edited a blog post, update the book"
 1. `rake drift` re-inventories and lists stale chapters and analyses, with

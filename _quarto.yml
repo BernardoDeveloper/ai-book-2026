@@ -18,6 +18,7 @@ filters:
   - filters/unnumbered-refs.lua
   - filters/glossary.lua
   - quarto
+  - filters/figure-accessibility.lua
   - filters/strip-div-alt.lua
 format:
   epub:

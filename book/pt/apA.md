@@ -54,7 +54,7 @@ sources:
   - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "90819aaee0a700994dc5dbcc83018b026811a12e9ea657a31c3e2d53c6270c0b"}
   - {post: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms, sha256: "d0ad6a79b80f5d9dd74bf39c0782d291889f9de32b964c6ea06c580f02bb4079"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "ee499fef89fe8fe35d652f193b51f1660cd08e8ed77adee74e036ca1444cc54b"}
-  - {post: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu, sha256: "deadcd56a7224857fd51925747a119fc9cecbf26300360afea516cd1de5765ac", commit: "b9c029231693369b8f895576b491c878aea3e8da"}
+  - {post: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu, sha256: "40660ae1ab1655e31fda54ba8b9e51e672e7840afa28db6e7dc876329953f3c0", commit: "b558ea0047d8c90fa5ff8502c095ab44f3e8888a"}
 refs_projects:
   - "ai-memory/README.md"
   - "ai-jail/docs/SECURITY_AUDIT_2026-09-30_COMPARISON.md"
@@ -99,6 +99,8 @@ O primeiro hype da inteligência artificial tem quase setenta anos. O resto dest
 | 2022 | A Chinchilla, do DeepMind, com 70 bilhões de parâmetros e umas quatro vezes mais texto, bate o Gopher, de 280 bilhões: os gigantes estavam mal alimentados de dados [@hoffmann2022training] | @sec-ch20 |
 | fim de 2022 | A OpenAI lança o ChatGPT [@openai2022chatgpt] | @sec-ch01 |
 
+: Linha do tempo da inteligência artificial antes do ChatGPT.
+
 ### O método veio antes
 
 <!-- src: original -->
@@ -112,6 +114,8 @@ As práticas que sustentaram os meus projetos com agentes são décadas mais vel
 | 1999 | Kent Beck publica *Extreme Programming Explained*, o livro do [XP]{.gls key=xp} [@beck1999xp] | @sec-ch06, @sec-ch19 |
 | fev. 2001 | Dezessete pessoas escrevem o Manifesto Ágil em Snowbird, Utah [@agile2001history] | @sec-ch19 |
 | 2003 | Eric Evans publica *Domain-Driven Design*: o software se modela a partir do conhecimento de quem vive o negócio [@evans2003ddd] | @sec-epilogo |
+
+: Marcos dos métodos de engenharia usados neste livro.
 
 ## Do ChatGPT aos agentes
 
@@ -143,6 +147,8 @@ De 2023 a 2025, o tamanho dos modelos sumiu do marketing, o raciocínio teve o �
 | 2025 | O relatório do GitHub conta 81,5% das contribuições do ano em repositórios privados [@github2025octoverse] | @sec-ch20 |
 | dez. 2025 | A Anthropic doa o MCP a uma fundação ligada à Linux Foundation [@anthropic2025aaif] | @sec-ch03 |
 | dez. 2025 | A Anthropic compra o Bun [@sumner2025anthropic] | @sec-ch16 |
+
+: Linha do tempo dos modelos e agentes entre 2023 e 2025.
 
 ## 2026, mês a mês
 

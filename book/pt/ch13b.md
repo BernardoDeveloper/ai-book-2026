@@ -51,7 +51,7 @@ O projeto passou por quatro tamanhos. Começou com uma lição de menos de um mi
 <!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
 Independente do tamanho, construir um modelo de linguagem passa pelas mesmas estações. O que muda de um modelo de garagem pra um de fronteira são os zeros à direita em cada uma.
 
-![As seis estações de construir um modelo de linguagem, com os números do meu modelo de 337 milhões de parâmetros.](assets/figures/ch13b-estacoes.png){#fig-ch13b-estacoes fig-alt="Seis caixas lado a lado, ligadas por setas da esquerda pra direita. Dados: 20 GB baixados, 3,5 bilhões de tokens. Tokenizador: 32.768 entradas. Pré-treino: 10 bilhões de tokens, 137 horas. Ajuste (SFT): 4.000 atualizações com exemplos. Servidor: API compatível com a OpenAI. Avaliação: 100 tarefas reservadas."}
+![As seis estações de construir um modelo de linguagem, com os números do meu modelo de 337 milhões de parâmetros.](assets/figures/ch13b-estacoes.png){#fig-ch13b-estacoes fig-alt="Seis caixas lado a lado, ligadas por setas da esquerda pra direita." fig-desc="Seis caixas lado a lado, ligadas por setas da esquerda pra direita. Dados: 20 GB baixados, 3,5 bilhões de tokens. Tokenizador: 32.768 entradas. Pré-treino: 10 bilhões de tokens, 137 horas. Ajuste (SFT): 4.000 atualizações com exemplos. Servidor: API compatível com a OpenAI. Avaliação: 100 tarefas reservadas."}
 
 ### Dados
 
@@ -109,7 +109,7 @@ O modelo final tem 337 milhões de parâmetros, 24 camadas, e foi treinado com 1
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
 A comparação que mais ensina, porém, é outra. O SmolLM2, um modelo aberto de 360 milhões de parâmetros, praticamente do tamanho do meu, foi treinado com 4 trilhões de tokens [@huggingface2024smollm2]. Quatrocentas vezes mais texto. No ritmo da minha placa, ler isso tudo levaria entre quatro e seis anos de máquina ligada, sem parar.
 
-![Quanto texto cada modelo leu no pré-treino. A escala é logarítmica: cada marca vale dez vezes a anterior.](assets/figures/ch13b-escala.png){#fig-ch13b-escala fig-alt="Gráfico de barras horizontais em escala logarítmica com os tokens lidos no pré-treino. Este modelo: 10 bilhões. SmolLM2-360M: 4 trilhões. Llama 3.1: 15 trilhões. Qwen3: 36 trilhões. A barra deste modelo é a menor, e a do Qwen3, a maior."}
+![Quanto texto cada modelo leu no pré-treino. A escala é logarítmica: cada marca vale dez vezes a anterior.](assets/figures/ch13b-escala.png){#fig-ch13b-escala fig-alt="Gráfico de barras horizontais em escala logarítmica com os tokens lidos no pré-treino." fig-desc="Gráfico de barras horizontais em escala logarítmica com os tokens lidos no pré-treino. Este modelo: 10 bilhões. SmolLM2-360M: 4 trilhões. Llama 3.1: 15 trilhões. Qwen3: 36 trilhões. A barra deste modelo é a menor, e a do Qwen3, a maior."}
 
 <!-- src: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo -->
 Até a matéria-prima dá escala. O GPT-2 foi treinado com uns 40 GB de texto, tirados de 8 milhões de páginas da web [@radford2019better]. Eu baixei 20 GB, e mais da metade era código.
@@ -175,7 +175,7 @@ Os dados também mentiam. Respostas marcadas como corretas no acervo público fa
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
 O modelo de 239 milhões tinha mais camadas que o de 91, errava menos na adivinhação e resolvia 24 de 100 tarefas de programação. Quando fui ver onde estavam os parâmetros, 154 milhões eram a tabela de vocabulário. Cada uma das 200 mil entradas do vocabulário emprestado guarda uma fileira de 768 números, o endereço daquele pedaço no mapa de sentidos do apêndice, e 200 mil fileiras desse tamanho somam 154 milhões. Sobravam 85 milhões pras camadas que pensam, o [transformer]{.gls}.
 
-![Onde foram parar os parâmetros. A tabela de vocabulário ocupava quase dois terços do modelo de 239 milhões; no de 337 milhões, com um vocabulário próprio e menor, quase tudo foi pras camadas que pensam.](assets/figures/ch13b-parametros.png){#fig-ch13b-parametros fig-alt="Duas barras empilhadas. A primeira, modelo de 239 milhões: 154 milhões na tabela de vocabulário e 85 milhões nas camadas que pensam (transformer). A segunda, modelo de 337 milhões: 33,6 milhões na tabela de vocabulário e 303,6 milhões nas camadas que pensam (transformer)."}
+![Onde foram parar os parâmetros. A tabela de vocabulário ocupava quase dois terços do modelo de 239 milhões; no de 337 milhões, com um vocabulário próprio e menor, quase tudo foi pras camadas que pensam.](assets/figures/ch13b-parametros.png){#fig-ch13b-parametros fig-alt="Duas barras empilhadas." fig-desc="Duas barras empilhadas. A primeira, modelo de 239 milhões: 154 milhões na tabela de vocabulário e 85 milhões nas camadas que pensam (transformer). A segunda, modelo de 337 milhões: 33,6 milhões na tabela de vocabulário e 303,6 milhões nas camadas que pensam (transformer)."}
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
 O modelo final trocou pro vocabulário próprio de 32 mil entradas, e a tabela de vocabulário encolheu pra 34 milhões. As camadas que pensam ficaram com mais de 300 milhões. Uma ressalva justa: essa virada mudou o vocabulário, o tamanho, o começo do treino e a quantidade de texto de uma vez só, então o relatório não consegue dizer qual dessas mudanças fez a diferença.
@@ -192,7 +192,7 @@ Tem um detalhe nessa curva que conta mais que os números. Sem nenhum ajuste, s�
 
 O que ele faz, portanto: escreve uma função Python pequena, com a sintaxe certa e o nome certo, a partir de um pedido claro de uma linha. Mediana, fatorial, conversão pra binário, ano bissexto. Como autocompletar de função isolada, serve pra estudo.
 
-![O abismo entre parecer código e resolver o problema. Escrever Python válido ele faz sempre; agir num repositório e lembrar de um texto longo, nunca.](assets/figures/ch13b-abismo.png){#fig-ch13b-abismo fig-alt="Barras horizontais com os resultados do modelo final. Python válido: 100 de 100. Nome e parâmetros certos: 97 de 100. Resultado correto: 58 de 100. Consertos de repositório no OpenCode: 0 de 4. Achar um número escondido num contexto longo: 0 de 9. As barras encolhem de cima pra baixo até sumir."}
+![O abismo entre parecer código e resolver o problema. Escrever Python válido ele faz sempre; agir num repositório e lembrar de um texto longo, nunca.](assets/figures/ch13b-abismo.png){#fig-ch13b-abismo fig-alt="Barras horizontais com os resultados do modelo final." fig-desc="Barras horizontais com os resultados do modelo final. Python válido: 100 de 100. Nome e parâmetros certos: 97 de 100. Resultado correto: 58 de 100. Consertos de repositório no OpenCode: 0 de 4. Achar um número escondido num contexto longo: 0 de 9. As barras encolhem de cima pra baixo até sumir."}
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
 Repare na escada. Todas as 100 respostas reservadas eram Python válido, e 97 tinham o nome e os parâmetros pedidos. Das 42 que erraram, 39 pareciam perfeitas e faziam a coisa errada.

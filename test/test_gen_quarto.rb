@@ -94,7 +94,9 @@ class TestGenQuarto < ToolTest
     gen("en")
     refute profile["book"].key?("cover-image")
     refute profile.key?("format")
+    assert_equal "Capa de Competente o Suficiente, de Fabio Akita.", profile.dig("book", "cover-image-alt")
     en = profile("en")
+    assert_equal "Cover of Competent Enough, by Fabio Akita.", en.dig("book", "cover-image-alt")
     assert_equal "assets/cover/cover-en.png", en["book"]["cover-image"]
     assert_equal "assets/cover/cover-en.png", en.dig("format", "epub", "epub-cover-image")
     assert_equal "assets/cover/cover-en.png", en.dig("format", "akita-book-typst", "pdf-cover")
@@ -122,8 +124,17 @@ class TestGenQuarto < ToolTest
   def test_colophon_and_rights
     gen
     assert_equal "© 2026 Autor Teste. Todos os direitos reservados.", profile["rights"]
+    assert_equal "Texto refluível com descrições de imagens.", profile["accessibilitySummary"]
     assert_includes profile["colophon"], "Os nomes akitaonrails e Frank são de propriedade de Autor Teste."
     assert_includes profile["colophon"], "ai-jail: GPL-3.0"
+  end
+
+
+  def test_accessibility_summary_is_localized
+    gen("pt")
+    gen("en")
+    assert_equal "Texto refluível com descrições de imagens.", profile("pt")["accessibilitySummary"]
+    assert_equal "Reflowable text with image descriptions.", profile("en")["accessibilitySummary"]
   end
 
   # Guards the revision line on the copyright page: the release tag on CI tag

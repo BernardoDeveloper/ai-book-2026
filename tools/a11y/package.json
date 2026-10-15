@@ -1,0 +1,7 @@
+{
+  "name": "ai-book-accessibility-tools",
+  "private": true,
+  "devDependencies": {
+    "@daisy/ace": "1.4.6"
+  }
+}

@@ -54,14 +54,14 @@ sources:
   - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "9557e0d08cd5fa75de197b87ebeb0ebc632bc76d8a46e85041ad75a5ee9bb18c"}
   - {post: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms, sha256: "bee5a97eedf6feceda46af16d79f0fecdea5e75ac25a57130a7123113c4b1f1f"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "0178f4ea75a7f6b79e7ae1878ccf3ccfd7fe7c0c4edf57d4cfd3bac2dee3e921"}
-  - {post: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu, sha256: "4507305488a642dbad276679312fe09a2ab0a70fe0d5a60d71a78da101c4b0b3"}
+  - {post: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu, sha256: "d970fb2c469b6b24594deff56ad2513292054452e647cedaddd8ef21ef5766fd", commit: "b558ea0047d8c90fa5ff8502c095ab44f3e8888a"}
 refs_projects:
   - "ai-memory/README.md"
   - "ai-jail/docs/SECURITY_AUDIT_2026-09-30_COMPARISON.md"
   - "llm-coding-benchmark/docs/success_report.multi_model.md"
   - "llm-coding-benchmark/docs/success_report.v2.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apA.md, sha256: "dc9ed0ba5028629b73c0268d8c4b51e20a3c66ba900fe48b2404196b6f32f06c"}
+translated_from: {file: book/pt/apA.md, sha256: "bf7c0c266bc0f77732e8b78fc19af18c29259e3e3d87767ab333e358ead05bbf"}
 ---
 
 # Timeline {#sec-apA}
@@ -100,6 +100,8 @@ The first artificial intelligence hype is almost seventy years old. The rest of 
 | 2022 | DeepMind's Chinchilla, with 70 billion parameters and about four times more text, beats Gopher, at 280 billion: the giants were underfed on data [@hoffmann2022training] | @sec-ch20 |
 | Late 2022 | OpenAI launches ChatGPT [@openai2022chatgpt] | @sec-ch01 |
 
+: Artificial intelligence timeline before ChatGPT.
+
 ### The Method Came First
 
 <!-- src: original -->
@@ -113,6 +115,8 @@ The practices behind my agent projects are decades older than the agents. These 
 | 1999 | Kent Beck publishes *Extreme Programming Explained*, the book of [XP]{.gls key=xp} [@beck1999xp] | @sec-ch06, @sec-ch19 |
 | Feb. 2001 | Seventeen people write the Agile Manifesto at Snowbird, Utah [@agile2001history] | @sec-ch19 |
 | 2003 | Eric Evans publishes *Domain-Driven Design*: software is modeled on the knowledge of the people who live the business [@evans2003ddd] | @sec-epilogo |
+
+: Milestones in the engineering methods used in this book.
 
 ## From ChatGPT to Agents
 
@@ -144,6 +148,8 @@ From 2023 to 2025, model size vanished from the marketing, reasoning had its las
 | 2025 | GitHub's report counts 81.5% of the year's contributions in private repositories [@github2025octoverse] | @sec-ch20 |
 | Dec. 2025 | Anthropic donates MCP to a foundation tied to the Linux Foundation [@anthropic2025aaif] | @sec-ch03 |
 | Dec. 2025 | Anthropic buys Bun [@sumner2025anthropic] | @sec-ch16 |
+
+: Timeline of models and agents from 2023 through 2025.
 
 ## 2026, Month by Month
 

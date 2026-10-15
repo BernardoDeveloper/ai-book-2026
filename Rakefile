@@ -25,6 +25,7 @@ TOOLS = File.join(ROOT, "tools")
 QUARTO = File.join(TOOLS, "quarto-1.10.19", "bin", "quarto")
 EPUBCHECK_JAR = File.join(TOOLS, "epubcheck-5.4.0", "epubcheck.jar")
 D2 = File.join(TOOLS, "d2-v0.9.0", "bin", "d2")
+ACE = File.join(TOOLS, "a11y", "node_modules", ".bin", "ace")
 DOWNLOADS = {
   "quarto-1.10.19-linux-amd64.tar.gz" => "https://github.com/quarto-dev/quarto-cli/releases/download/v1.10.19/quarto-1.10.19-linux-amd64.tar.gz",
   "epubcheck-5.4.0.zip" => "https://github.com/w3c/epubcheck/releases/download/v5.4.0/epubcheck-5.4.0.zip",
@@ -46,6 +47,9 @@ task :tools do
     sh "tar xzf cache/quarto-1.10.19-linux-amd64.tar.gz" unless File.exist?(QUARTO)
     sh "unzip -qo cache/epubcheck-5.4.0.zip" unless File.exist?(EPUBCHECK_JAR)
     sh "tar xzf cache/d2-v0.9.0-linux-amd64.tar.gz" unless File.exist?(D2)
+  end
+  unless File.exist?(ACE)
+    sh({ "PUPPETEER_SKIP_DOWNLOAD" => "1" }, "npm", "ci", chdir: File.join(TOOLS, "a11y"))
   end
 end
 
@@ -162,7 +166,10 @@ task build: %i[tools merge backmatter config] do
   raise "quarto render failed (see #{log})" unless status.success?
   Rake::Task[:fit].invoke
   Rake::Task[:ebook_pdf].invoke
+  Rake::Task[:epub_clean].invoke
+  Rake::Task[:epub_accessibility].invoke
   Rake::Task[:epubcheck].invoke
+  Rake::Task[:a11y].invoke
   Rake::Task[:audit].invoke
   ruby "scripts/doctor.rb", "--lang", LANG, "--output"
 end
@@ -230,10 +237,31 @@ task :audit do
   ruby "scripts/page_audit.rb", *args, "--edition", "ebook"
 end
 
+desc "Strip Quarto's unused inline CSS (data: URI icons, flex panels) from the EPUBs, for Kindle"
+task :epub_clean do
+  Dir[File.join(ROOT, "build", LANG, "*.epub")].each { ruby "scripts/epub_clean.rb", _1 }
+end
+
+desc "Add body, glossary, bibliography and credits landmarks to the EPUBs"
+task :epub_accessibility do
+  Dir[File.join(ROOT, "build", LANG, "*.epub")].each { ruby "scripts/epub_accessibility.rb", _1 }
+end
+
 desc "Validate built EPUBs with epubcheck"
 task :epubcheck do
   Dir[File.join(ROOT, "build", LANG, "*.epub")].each do |epub|
     sh "java", "-jar", EPUBCHECK_JAR, "--failonwarnings", epub
+  end
+end
+
+desc "Check generated accessibility semantics and run DAISY Ace on the EPUBs"
+task a11y: :tools do
+  ruby "scripts/a11y_check.rb", "--lang", LANG
+  Dir[File.join(ROOT, "build", LANG, "*.epub")].each do |epub|
+    report = File.join(ROOT, "build", "a11y", LANG, File.basename(epub, ".epub"))
+    FileUtils.rm_rf(report)
+    FileUtils.mkdir_p(File.dirname(report))
+    sh ACE, "--exiterror2", "--force", "--outdir", report, epub
   end
 end
 

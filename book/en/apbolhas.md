@@ -9,7 +9,7 @@ sources:
   - {post: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash, sha256: "79a02c73df595ddf8952c7bfbbd8023f51a3297b259610afa65901112dfe4160", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
 refs_projects: []
 blog_commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"
-translated_from: {file: book/pt/apbolhas.md, sha256: "fb745193b11af2d4cea83172ecfb2be6f32e9a87a0c7dab1d57ed67370e0fca1"}
+translated_from: {file: book/pt/apbolhas.md, sha256: "fced13b84d28f49d610ca99547807f99dc02dbb0ffa613a3cbe9ff3100a9ac08"}
 ---
 
 # Three Bubbles {#sec-apbolhas}
@@ -19,7 +19,7 @@ One question kept coming back all through 2026: is the career over? I don't have
 
 This appendix puts the three side by side. For each one: what happened, what was left afterward and what I did in the middle of it. The story of the second, the programming bubble, is told in @sec-ch18; here it sits next to the other two, which is where the pattern becomes visible.
 
-![Three bubbles on a single line, from 1995 to 2026, with my own path underneath.](assets/figures/en/apbolhas-linha.png){#fig-apbolhas-linha fig-alt="Timeline from 1995 to 2026 with three bands. The internet, 1995 to 2002: Nasdaq peak on 10 March 2000 and bottom on 9 October 2002, 78% lower. Free money, 2010 to 2022, with two hatched stretches of rates near zero, December 2008 to December 2015 and March 2020 to March 2022, and the tech layoffs right after: about 165 thousand in 2022 and 263 thousand in 2023. AI, from ChatGPT on 30 November 2022, still open. Underneath, my own line: first job in 1996, the dot-com closes and I move to SAP in 2001, Rails in 2007, Codeminer 42 in 2011, Akitando from 2018 to 2023 and this book in 2026."}
+![Three bubbles on a single line, from 1995 to 2026, with my own path underneath.](assets/figures/en/apbolhas-linha.png){#fig-apbolhas-linha fig-alt="Timeline from 1995 to 2026 with three bands." fig-desc="Timeline from 1995 to 2026 with three bands. The internet, 1995 to 2002: Nasdaq peak on 10 March 2000 and bottom on 9 October 2002, 78% lower. Free money, 2010 to 2022, with two hatched stretches of rates near zero, December 2008 to December 2015 and March 2020 to March 2022, and the tech layoffs right after: about 165 thousand in 2022 and 263 thousand in 2023. AI, from ChatGPT on 30 November 2022, still open. Underneath, my own line: first job in 1996, the dot-com closes and I move to SAP in 2001, Rails in 2007, Codeminer 42 in 2011, Akitando from 2018 to 2023 and this book in 2026."}
 
 ## The Internet, 1995 to 2002
 

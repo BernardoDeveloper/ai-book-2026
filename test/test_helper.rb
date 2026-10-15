@@ -66,6 +66,8 @@ module FixtureData
       working_title_en: "Test Book"
       subtitle_en: "A subtitle"
       author: "Autor Teste"
+      accessibility_summary: "Texto refluível com descrições de imagens."
+      accessibility_summary_en: "Reflowable text with image descriptions."
       owned_names: ["akitaonrails", "Frank"]
       open_source_licenses: {ai-jail: "GPL-3.0"}
       cutoff: "2026-10-13"
@@ -167,7 +169,7 @@ module FixtureData
         <!-- src: 2026/02/10/primeiro-post -->
         O Perceptron de 1958 já prometia demais, como mostra a @fig-ch01-arte.
 
-        ![Uma máquina antiga.](assets/figures/ch01-arte.png){#fig-ch01-arte}
+        ![Uma máquina antiga.](assets/figures/ch01-arte.png){#fig-ch01-arte fig-alt="Máquina antiga." fig-desc="Uma máquina antiga ocupando uma sala."}
 
         <!-- src: original -->
         A memória fica para @sec-ch02.
@@ -181,7 +183,7 @@ module FixtureData
         <!-- src: 2026/02/10/primeiro-post -->
         The 1958 Perceptron already promised too much, as @fig-ch01-arte shows.
 
-        ![An old machine.](assets/figures/en/ch01-arte.png){#fig-ch01-arte}
+        ![An old machine.](assets/figures/en/ch01-arte.png){#fig-ch01-arte fig-alt="Old machine." fig-desc="An old machine occupying a room."}
 
         <!-- src: original -->
         Memory is for @sec-ch02.
@@ -198,7 +200,7 @@ module FixtureData
         <!-- src: 2026/02/10/primeiro-post -->
         Como contei em @sec-ch01, o Perceptron já prometia demais.
 
-        ![Diagrama da memória.](assets/figures/ch02-diagrama.png){#fig-ch02-diagrama}
+        ![Diagrama da memória.](assets/figures/ch02-diagrama.png){#fig-ch02-diagrama fig-alt="Diagrama da memória." fig-desc="Blocos mostram a memória entrando e saindo do contexto."}
       MD
       en: ["A Goldfish Memory", <<~MD],
         # A Goldfish Memory {#sec-ch02}
@@ -209,7 +211,7 @@ module FixtureData
         <!-- src: 2026/02/10/primeiro-post -->
         As I told in @sec-ch01, the Perceptron already promised too much.
 
-        ![Memory diagram.](assets/figures/ch02-diagrama.png){#fig-ch02-diagrama}
+        ![Memory diagram.](assets/figures/ch02-diagrama.png){#fig-ch02-diagrama fig-alt="Memory diagram." fig-desc="Blocks show memory entering and leaving the context."}
       MD
     },
     "interlude1" => {
@@ -235,7 +237,7 @@ module FixtureData
         <!-- src: 2026/04/01/terceiro-post -->
         Um teste de modelos leva dias. A @fig-ch03-foto mostra uma sala de máquinas.
 
-        ![Uma sala de máquinas.](assets/figures/ch03-foto.jpg){#fig-ch03-foto}
+        ![Uma sala de máquinas.](assets/figures/ch03-foto.jpg){#fig-ch03-foto fig-alt="Sala de máquinas." fig-desc="Fileiras de computadores ocupam uma sala de máquinas."}
 
         <!-- src: 2026/04/20/post-excluido -->
         A memória de vídeo limita o tamanho do modelo [@doe2026].
@@ -246,7 +248,7 @@ module FixtureData
         <!-- src: 2026/04/01/terceiro-post -->
         A model test takes days. @fig-ch03-foto shows a machine room.
 
-        ![A machine room.](assets/figures/ch03-foto.jpg){#fig-ch03-foto}
+        ![A machine room.](assets/figures/ch03-foto.jpg){#fig-ch03-foto fig-alt="Machine room." fig-desc="Rows of computers occupy a machine room."}
 
         <!-- src: 2026/04/20/post-excluido -->
         Video memory limits the size of the model [@doe2026].
