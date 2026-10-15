@@ -42,7 +42,7 @@ jobs:
           java-version: "21"
 
       - name: System tools (page audit)
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils xvfb
 
       - name: Cache pinned toolchain downloads
         uses: actions/cache@v6.1.0

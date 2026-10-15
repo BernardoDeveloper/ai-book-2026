@@ -263,9 +263,8 @@ task a11y: :tools do
     FileUtils.mkdir_p(File.dirname(report))
     # GitHub's hosted runner cannot provide Electron's setuid sandbox. CI only
     # checks EPUBs generated from this trusted checkout; local checks retain it.
-    ace_args = []
-    ace_args << "--no-sandbox" if ENV["CI"]
-    sh ACE, *ace_args, "--exiterror2", "--force", "--outdir", report, epub
+    ace_command = ENV["CI"] ? ["xvfb-run", "-a", ACE, "--no-sandbox"] : [ACE]
+    sh(*ace_command, "--exiterror2", "--force", "--outdir", report, epub)
   end
 end
 
