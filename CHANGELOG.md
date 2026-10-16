@@ -25,6 +25,10 @@ production targets and templates.
 - Add binding-aware KDP cover builds: PT-BR hardcover and paperback, EN
   hardcover. Template selection checks binding as well as page count; paperback
   composition uses its own spine and bleed geometry, without hardcover hinges.
+- Add `rake audiobook`: reads the built EPUB aloud with Microsoft Edge's
+  online voices (epub2tts-edge, pinned) into an M4B with chapters and cover.
+  The generated back matter, citations, URLs, images and code blocks are left
+  out; figure captions and table rows are read. Not run in CI.
 
 ## 1.0.0-preview.9
 
