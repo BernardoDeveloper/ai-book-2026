@@ -20,12 +20,13 @@
 # -bbox-layout, pdfimages -list). Pages are physical PDF pages; the folio
 # printed on the page is shown as "fl. N".
 #
-# Usage: scripts/page_audit.rb [--lang pt] [--edition print|ebook] [--strict] [--verbose] [--runts]
+# Usage: scripts/page_audit.rb [--lang pt] [--edition print|paperback|ebook] [--strict] [--verbose] [--runts]
 #   --runts   print only the comma-separated ids of RUNT-END chapters (used by `rake fit`)
 #   --strict  exit 1 when anything is reported (default: report only)
 
 require "json"
 require "open3"
+require_relative "print_editions"
 
 ROOT = File.expand_path("..", __dir__)
 # Quarto's bundled typst, called directly (`quarto typst query` sends the
@@ -38,8 +39,8 @@ strict = args.include?("--strict")
 verbose = args.include?("--verbose") # also list blocks too tall to keep whole
 runts_only = args.include?("--runts") # print only the ids of chapters ending in a runt page
 
-pdf = Dir[File.join(ROOT, "build", lang, "*.pdf")].find { edition == "ebook" ? _1.end_with?("-ebook.pdf") : !_1.end_with?("-ebook.pdf") }
-typ = File.join(ROOT, "index.typ")
+pdf = PrintEditions.pdf(File.join(ROOT, "build", lang), edition)
+typ = PrintEditions.typ(ROOT, lang)
 abort "no #{edition} PDF in build/#{lang}; run `rake build`" unless pdf
 abort "no #{typ} (keep-typ); run `rake build`" unless File.exist?(typ)
 
@@ -66,7 +67,8 @@ end
 tighten_file = File.join(ROOT, "build", lang, ".tighten")
 tighten = File.exist?(tighten_file) ? File.read(tighten_file).strip : ""
 meta = JSON.parse(run(TYPST, "query", "--root", ROOT, "--font-path", File.join(ROOT, "assets", "fonts"),
-                      "--input", "edition=#{edition}", "--input", "tighten=#{tighten}",
+                      "--input", "edition=#{edition == 'ebook' ? 'ebook' : 'print'}",
+                      "--input", "binding=#{edition == 'paperback' ? 'paperback' : 'hardcover'}", "--input", "tighten=#{tighten}",
                       typ, "metadata", "--field", "value"))
 meta.select! { _1.is_a?(Hash) && _1["ak"] }
 h1s = meta.select { _1["ak"] == "h1" }

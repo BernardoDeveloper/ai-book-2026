@@ -21,6 +21,8 @@ meta:
   isbn:
     pt: "9798162465683"   # KDP free ISBN, PT hardcover (2026-10-14)
     en: "9798162395362"   # KDP free ISBN, EN hardcover (2026-10-14)
+  isbn_paperback:
+    pt: "9798162938088"   # PT-BR paperback, supplied by author (2026-10-16)
   owned_names: ["akitaonrails", "Akitando", "The M.Akita Chronicles", "ai-memory", "ai-jail", "ai-usagebar", "ghpending", "AI Lair", "Frank (FrankMD, Frank Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, FrankMega, Frank Karaoke, Frank GO, Frank Manga+ e demais projetos da série)"]
   open_source_licenses: {ai-jail: "GPL-3.0", ai-memory: "MIT", ai-usagebar: "MIT", ghpending: "MIT"}
   cutoff: "2026-10-16"

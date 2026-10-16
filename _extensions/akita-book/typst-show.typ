@@ -25,7 +25,15 @@ $if(quarto.language.crossref-apx-prefix)$
   appendix-label: "$quarto.language.crossref-apx-prefix$",
 $endif$
 $if(colophon)$
+$if(colophon-paperback)$
+  colophon: if sys.inputs.at("binding", default: "hardcover") == "paperback" {
+    [$colophon-paperback$]
+  } else {
+    [$colophon$]
+  },
+$else$
   colophon: [$colophon$],
+$endif$
 $endif$
 $if(pdf-cover)$
   cover: "$pdf-cover$",

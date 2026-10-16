@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Composes the printed hardcover's wraparound cover (back | spine | front) on
+# Composes a hardcover or paperback wraparound cover (back | spine | front) on
 # KDP's cover template and writes the flattened CMYK PDF KDP asks for.
 #
 # Usage: scripts/compose_kdp_cover.rb TEMPLATE.png OUT.pdf [--lang en] [--art PATH]
@@ -19,6 +19,7 @@
 # lines over the art) for checking; neither is uploaded.
 
 require_relative "cover_layout"
+require_relative "kdp_template"
 require "tmpdir"
 
 ROOT = CoverLayout::ROOT
@@ -28,6 +29,7 @@ lang = opt.("--lang", "en")
 art = opt.("--art", File.join(ROOT, "assets", "cover", "cover-d.png"))
 template, out = args
 abort "usage: compose_kdp_cover.rb TEMPLATE.png OUT.pdf [--lang en] [--art PATH]" unless template && out
+binding = KdpTemplate.metadata(template).fetch(:binding)
 
 DPI = 600
 NAVY = "#0B1A26"
@@ -60,8 +62,7 @@ pink = "#FFAFAF" # the wrap colour reaches every edge of the template; KDP pads 
 w = runs(template, pink, row: 100).last.last + 1
 h = runs(template, pink, col: 100).last.last + 1
 blue = runs(template, "#0000FF", row: h - 300, band: 250).map { (_1 + _2) / 2 }
-abort "expected 4 blue guide lines, found #{blue.size}" unless blue.size == 4
-hinge_l, fold_l, fold_r, hinge_r = blue
+hinge_l, fold_l, fold_r, hinge_r = KdpTemplate.guides(binding, blue)
 probe = (fold_l + fold_r) / 2 + 150 # inside the spine's live area, clear of its label
 trim = runs(template, "#000000", col: probe).first.then { (_1 + _2) / 2 }
 live_y0 = runs(template, "#FFFFFF", col: probe).first.first
@@ -107,7 +108,8 @@ Dir.mktmpdir("kdp-cover") do |tmp|
   vw, vh = 1600 * s, 2560 * s
   vx0, vy0 = lx0 + (lx1 - lx0 - vw) / 2, live_y0 + (live_y1 - live_y0 - vh) / 2
   front = File.join(tmp, "front.png")
-  feather = ((hinge_r - fold_r) * 1.6).round # fades the art into the navy spine across the hinge
+  # Paperback has no hinge: use a narrow fade at the spine instead.
+  feather = binding == "paperback" ? (0.125 * DPI).round : ((hinge_r - fold_r) * 1.6).round
   magick(art, "-filter", "Lanczos", "-resize", "#{fw}x#{h}^", "-gravity", "center", "-extent", "#{fw}x#{h}",
          "-unsharp", "0x1.2+0.6+0.02",
          *CoverLayout.front_layers(lang:, w: fw, h:, s:, dx: vx0 + vw / 2 - fw / 2.0, top: vy0, bottom: h - (vy0 + vh),

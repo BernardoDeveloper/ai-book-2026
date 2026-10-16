@@ -79,6 +79,10 @@ rake drift    # what in the book is out of date with the blog
 
 Requires Ruby, Java (for epubcheck) and poppler-utils.
 
+The PT-BR build emits hardcover and paperback interiors with separate ISBNs;
+English emits a hardcover interior. See [print builds and covers](docs/PRINT-COVERS.md)
+for filenames, binding-specific cover commands and template checks.
+
 ## License
 
 The book's text, cover and illustrations are © 2026 Fabio Akita, all rights

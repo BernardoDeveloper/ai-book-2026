@@ -12,6 +12,7 @@
 /_quarto-*.yml
 /index.md
 /index.typ
+/index-*.typ
 
 **/*.quarto_ipynb
 /book/*/glossario.md

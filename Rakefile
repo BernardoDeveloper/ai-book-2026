@@ -18,6 +18,9 @@ require "fileutils"
 require "open3"
 require "rake/testtask"
 require "shellwords"
+require "yaml"
+require_relative "scripts/kdp_template"
+require_relative "scripts/print_editions"
 
 ROOT = __dir__
 LANG = ENV.fetch("BOOK_LANG", "pt")
@@ -164,7 +167,9 @@ task build: %i[tools merge backmatter config] do
     wait.value
   end
   raise "quarto render failed (see #{log})" unless status.success?
+  FileUtils.cp(File.join(ROOT, "index.typ"), PrintEditions.typ(ROOT, LANG))
   Rake::Task[:fit].invoke
+  Rake::Task[:paperback_pdf].invoke if YAML.load_file(File.join(ROOT, "book", "outline.yml")).dig("meta", "isbn_paperback", LANG)
   Rake::Task[:ebook_pdf].invoke
   Rake::Task[:epub_clean].invoke
   Rake::Task[:epub_accessibility].invoke
@@ -176,7 +181,8 @@ end
 
 # Quarto renders the print PDF (6x9 in, mirrored margins, no cover) and keeps
 # the Typst source (keep-typ) as index.typ. The tasks below recompile that
-# source with Quarto's bundled typst; build/<lang>/.tighten holds the
+# per-language index-<lang>.typ source with Quarto's bundled typst;
+# build/<lang>/.tighten holds the
 # per-chapter tightening (`--input tighten=...`) shared by every compile and
 # by the audit, so they all see the same layout.
 # Resolved lazily: in a fresh checkout Quarto (which bundles Typst) is only
@@ -187,17 +193,17 @@ end
 TIGHTEN = File.join(ROOT, "build", LANG, ".tighten")
 
 def typst_sources
-  typ = File.join(ROOT, "index.typ")
-  print_pdf = Dir[File.join(ROOT, "build", LANG, "*.pdf")].reject { _1.end_with?("-ebook.pdf") }.first
+  typ = PrintEditions.typ(ROOT, LANG)
+  print_pdf = PrintEditions.pdf(File.join(ROOT, "build", LANG))
   raise "run `rake build` first (missing #{typ} or the print PDF)" unless File.exist?(typ) && print_pdf
 
   [typ, print_pdf]
 end
 
-def typst_compile(typ, pdf, edition)
+def typst_compile(typ, pdf, edition, binding: "hardcover")
   tighten = File.exist?(TIGHTEN) ? File.read(TIGHTEN).strip : ""
   sh typst_bin, "compile", "--root", ROOT, "--font-path", File.join(ROOT, "assets", "fonts"), "--pdf-standard", "ua-1",
-     "--input", "edition=#{edition}", "--input", "tighten=#{tighten}", typ, pdf
+     "--input", "edition=#{edition}", "--input", "binding=#{binding}", "--input", "tighten=#{tighten}", typ, pdf
 end
 
 # A chapter whose last page holds 1-3 lines (RUNT-END in the audit) is set a
@@ -229,12 +235,23 @@ task :ebook_pdf do
   typst_compile(typ, print_pdf.sub(/\.pdf\z/, "-ebook.pdf"), "ebook")
 end
 
+desc "Compile the paperback interior with its own ISBN (only configured languages)"
+task :paperback_pdf do
+  isbn = YAML.load_file(File.join(ROOT, "book", "outline.yml")).dig("meta", "isbn_paperback", LANG)
+  raise "no paperback ISBN configured for #{LANG}" unless isbn
+
+  typ, print_pdf = typst_sources
+  raise "paperback ISBN missing from rendered source; run rake build BOOK_LANG=#{LANG}" unless File.read(typ).include?(isbn)
+  typst_compile(typ, print_pdf.sub(/\.pdf\z/, "-paperback.pdf"), "print", binding: "paperback")
+end
+
 desc "Page-level layout audit of the print and ebook PDFs (STRICT=1 fails on findings)"
 task :audit do
   args = ["--lang", LANG]
   args << "--strict" if ENV["STRICT"]
   ruby "scripts/page_audit.rb", *args, "--edition", "print"
   ruby "scripts/page_audit.rb", *args, "--edition", "ebook"
+  ruby "scripts/page_audit.rb", *args, "--edition", "paperback" if PrintEditions.pdf(File.join(ROOT, "build", LANG), "paperback")
 end
 
 desc "Strip Quarto's unused inline CSS (data: URI icons, flex panels) from the EPUBs, for Kindle"
@@ -268,25 +285,25 @@ task a11y: :tools do
   end
 end
 
-# The hardcover's wraparound cover is built locally from KDP's cover template
+# Each binding's wraparound cover is built locally from KDP's cover template
 # (cover calculator PNG, unzipped under assets/cover/kdp/). The template is
 # drawn for one page count (one per edition): after an interior's page count
-# changes, download a new template. Upload build/kdp/<title>-hardcover-cover.pdf to KDP.
-desc "Compose the hardcover wraparound cover PDF from the KDP template (TEMPLATE=path optional)"
+# changes, download a new template. Upload build/kdp/<title>-<binding>-cover.pdf to KDP.
+desc "Compose a wraparound cover (BINDING=hardcover|paperback, TEMPLATE=path optional)"
 task :kdp_cover do
-  print_pdf = Dir[File.join(ROOT, "build", LANG, "*.pdf")].reject { _1.end_with?("-ebook.pdf") }.first
+  binding = ENV.fetch("BINDING", "hardcover")
+  raise "BINDING must be hardcover or paperback" unless %w[hardcover paperback].include?(binding)
+  print_pdf = PrintEditions.pdf(File.join(ROOT, "build", LANG), binding)
   raise "run `rake build BOOK_LANG=#{LANG}` first (the cover name and page count come from the print PDF)" unless print_pdf
 
-  # Each edition has its own page count, so its own template: pick the one
-  # drawn for this interior.
+  # Match both the actual interior's page count and the requested binding.
   pages = `pdfinfo #{print_pdf.shellescape}`[/^Pages:\s+(\d+)/, 1].to_i
-  tpl_pages = ->(path) { File.basename(path)[/_(\d+)_(?:BW|COLOR|STANDARD|PREMIUM)/i, 1].to_i }
-  template = ENV["TEMPLATE"] || Dir[File.join(ROOT, "assets", "cover", "kdp", "*", "*.png")].find { tpl_pages.(_1) == pages }
-  raise "no KDP template for #{pages} pages under assets/cover/kdp/: download one from KDP's cover calculator" unless template
-  raise "template is for #{tpl_pages.(template)} pages, #{File.basename(print_pdf)} has #{pages}" unless tpl_pages.(template) == pages
+  template = KdpTemplate.select(Dir[File.join(ROOT, "assets", "cover", "kdp", "*", "*.png")],
+                                binding:, pages:, explicit: ENV["TEMPLATE"])
 
   # build/kdp/, not build/<lang>/: the build tasks treat every PDF there as the book.
-  out = File.join(ROOT, "build", "kdp", File.basename(print_pdf, ".pdf") + "-hardcover-cover.pdf")
+  title = File.basename(print_pdf, ".pdf").delete_suffix("-paperback")
+  out = File.join(ROOT, "build", "kdp", title + "-#{binding}-cover.pdf")
   FileUtils.mkdir_p(File.dirname(out))
   ruby "scripts/compose_kdp_cover.rb", template, out, "--lang", LANG
 end

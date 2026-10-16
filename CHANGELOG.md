@@ -4,6 +4,14 @@ Editions of *Competente o Suficiente*. Each version is a git tag (`vX.Y.Z`);
 pushing the tag builds the book and publishes a GitHub Release with the
 files.
 
+## Unreleased
+
+- Build separate PT-BR hardcover and paperback interiors with their respective
+  ISBNs. Paperback ISBN: 9798162938088. English remains hardcover-only.
+- Add binding-aware KDP cover builds: PT-BR hardcover and paperback, EN
+  hardcover. Template selection checks binding as well as page count; paperback
+  composition uses its own spine and bleed geometry, without hardcover hinges.
+
 ## 1.0.0-preview.9
 
 The world will not wait: work, authorship and learning in the age of agents.

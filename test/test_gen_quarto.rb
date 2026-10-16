@@ -156,4 +156,21 @@ class TestGenQuarto < ToolTest
     gen("en")
     refute_includes profile("en")["colophon"], "ISBN"
   end
+
+  def test_paperback_colophon_has_its_own_isbn_only
+    fx.edit("book/outline.yml") do
+      _1.sub("meta:\n", "meta:\n  isbn:\n    pt: '9798162465683'\n    en: '9798162395362'\n  isbn_paperback:\n    pt: '9798162938088'\n")
+    end
+    assert_exit 0, gen("pt")
+    hc = profile("pt")["colophon"]
+    pb = profile("pt")["colophon-paperback"]
+    assert_includes hc, "ISBN 9798162465683 (edição em capa dura)"
+    refute_includes hc, "9798162938088"
+    assert_includes pb, "ISBN 9798162938088 (edição em brochura)"
+    refute_includes pb, "9798162465683"
+    assert_equal hc.sub("9798162465683 (edição em capa dura)", "9798162938088 (edição em brochura)"), pb
+    assert_exit 0, gen("en")
+    refute profile("en").key?("colophon-paperback")
+    assert_includes profile("en")["colophon"], "9798162395362"
+  end
 end

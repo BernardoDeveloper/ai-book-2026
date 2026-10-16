@@ -21,13 +21,15 @@ LANGS = {
 }.freeze
 cfg = LANGS.fetch(lang)
 edition = outline.dig("meta", "edition") || "1.0"
-# meta.isbn is per edition ({pt: ...}): an ISBN belongs to one language and
-# format (the KDP one is the PT hardcover's), so the other edition prints none.
-# Hidden until the author sets it.
+# meta.isbn contains hardcover ISBNs by language; isbn_paperback is separate.
+# Hidden until the author sets it. Never reuse a hardcover ISBN for paperback.
 isbn = outline.dig("meta", "isbn")
 isbn = isbn[lang] if isbn.is_a?(Hash)
 isbn_label = { "pt" => "ISBN %s (edição em capa dura)", "en" => "ISBN %s (hardcover edition)" }
 isbn_line = isbn ? "\n\n#{format(isbn_label.fetch(lang), isbn)}" : ""
+paperback_isbn = outline.dig("meta", "isbn_paperback", lang)
+abort "paperback ISBN requires a configured hardcover ISBN" if paperback_isbn && !isbn
+paperback_label = { "pt" => "ISBN %s (edição em brochura)", "en" => "ISBN %s (paperback edition)" }
 year = outline.dig("meta", "cutoff").to_s[0, 4]
 # Revision printed on the copyright page so a reader can match a copy to a
 # release: the tag on release builds (CI sets GITHUB_REF_NAME), otherwise
@@ -154,6 +156,10 @@ profile = {
   "rights" => RIGHTS.fetch(lang), # EPUB dc:rights
   "accessibilitySummary" => outline.dig("meta", lang == "pt" ? "accessibility_summary" : "accessibility_summary_en"),
 }
+if paperback_isbn
+  profile["colophon-paperback"] = COLOPHON.fetch(lang).sub(isbn_line,
+    "\n\n#{format(paperback_label.fetch(lang), paperback_isbn)}")
+end
 profile["book"]["cover-image-alt"] = {
   "pt" => "Capa de Competente o Suficiente, de Fabio Akita.",
   "en" => "Cover of Competent Enough, by Fabio Akita.",
