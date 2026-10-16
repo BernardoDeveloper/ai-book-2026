@@ -67,7 +67,8 @@ This repository is the book's source and the machinery that keeps it in sync
 with the blog. Every paragraph records which article it came from; when an
 article changes, `rake drift` shows which chapters are affected and the diff.
 Diagrams are drawn as code, AI-generated illustrations are disclosed in the
-image credits, and real photos carry their licences. The details are in
+image credits, and photographs have source and rights-status records (including
+explicitly unverified permissions). The details are in
 [docs/DESIGN.md](docs/DESIGN.md).
 
 ```sh
@@ -83,4 +84,4 @@ Requires Ruby, Java (for epubcheck) and poppler-utils.
 The book's text, cover and illustrations are © 2026 Fabio Akita, all rights
 reserved; see [LICENSE.md](LICENSE.md). The build scripts and templates are
 MIT-licensed. Fonts, the citation style and the photographs keep their own
-licences, listed in the same file.
+rights, documented in the same file and the individual image records.

@@ -3,7 +3,7 @@ id: ch13b
 chapter: "Um modelo feito em casa"
 sources:
   - {post: 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo, sha256: "ad97af1386db2d2b4ecc0429acb08c852b2124f509923bf7a45df17f22f233b4"}
-  - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "90819aaee0a700994dc5dbcc83018b026811a12e9ea657a31c3e2d53c6270c0b"}
+  - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "5e72d1910de7c5160fd1b976a99c83cc892e8c43efb86b045b29181fd5bc55d5", commit: "557350127df181c4b124a2c8759648a79e17e4d5"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "ee499fef89fe8fe35d652f193b51f1660cd08e8ed77adee74e036ca1444cc54b"}
 refs_projects:
   - "microgpt/README.md"

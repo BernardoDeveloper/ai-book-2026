@@ -3,6 +3,27 @@
 # if already decided. Drafter notes live in book/pt/_notes/; this file is the
 # editor's ledger.
 items:
+  - chapters: [ch18, ch19, ch19b, ch20, como-ler]
+    issue: "Author requested a late chapter from the October 16 six-site redesign article, Akitando 76/90 and the Nolan/Michelin analogies, with Roadster and Nolan-on-Odyssey-set photographs."
+    ruling: >-
+      PT draft ch19b, O mundo não vai esperar, inserted before the former final
+      chapter: printed chapter 21, with stable ch20 becoming printed chapter 22.
+      Owns explicit job displacement, direction/authorship and obsolete work;
+      ch18 retains interface history and the hiring bubble; apestudar retains
+      the learning method; ch06/ch07 retain the competence-mirror introduction.
+      Minimal ch18/ch20 edits remove seniority/job-immunity implications;
+      ch19's final hook and como-ler route readers to the addition. Six existing
+      sites in about a day is a scoped personal account, not a controlled study.
+      Nolan analogy credits specialist creativity and does not deny his camera
+      or editing involvement; Michelin stars belong to restaurants. Author
+      approved the PT chapter, persona-driven cuts and a concrete practice
+      exercise, then authorized EN translation and release v1.0.0-preview.9.
+      Both author-selected photos are included with accessible descriptions
+      and truthful provenance in assets/credits; reuse rights remain unverified,
+      as disclosed before the author's explicit instruction to publish them.
+      The Nolan file is not the earlier Universal candidate. Final scope includes
+      local and hosted builds, release publication and exact PDF page counts
+      for replacement cover templates.
   - chapters: [ch03, ch11]
     issue: >-
       Benchmark repo contradicts itself on whether Opus 4.7's `chat.complete`

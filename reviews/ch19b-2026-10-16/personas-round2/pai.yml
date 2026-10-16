@@ -1,0 +1,28 @@
+persona: pai
+summary: |
+  This chapter makes the change feel concrete: the author actually handed off work he used to do for money, and he does not pretend that every displaced worker will quickly find something better. I trust the careful distinction between a controlled car demo and a product, and between simulated readers and real customers. But my son asked whether superintelligence is real, and this chapter mostly talks about jobs, design, and learning; it doesn’t give me much to say about that fear. The film and cooking comparisons make the point about judgment, though there are enough examples that I started to feel the same lesson coming around again.
+best:
+  - "ch19b: The author admits that competent people can lose jobs and that new work is not guaranteed to replace them."
+  - "ch19b: The Roadster opening clearly separates a demonstration from something people can use."
+  - "ch19b: The discount-and-return exercise gives a practical example of how to check an AI answer."
+worst:
+  - "ch19b: My son’s question about superintelligence is still unanswered."
+  - "ch19b: The Nolan and Ramsay comparisons extend the same point about judgment after it was already clear."
+units:
+  - {unit: ch19b, score: 3, note: "I believe the warning about jobs, but I still need a clearer answer for my son about superintelligence."}
+annotations:
+  - unit: ch19b
+    quote: "a pergunta sobre os limites da IA [...] continua importante"
+    type: confusing
+    why: "This points to the limits question at the end, but the chapter doesn’t answer it. My son’s worry is whether superintelligence is real, and I’m not sure what I should tell him after reading this."
+    suggestion: "Give me a short, direct answer about what this chapter can and cannot say about superintelligence."
+  - unit: ch19b
+    quote: "É aí que entram repertório, experiência e atenção."
+    type: boring
+    why: "The film example has already shown that someone needs to judge the whole result. The cooking example makes the same point again, so I began skimming."
+    suggestion: "Keep one comparison and move sooner to the practical advice."
+  - unit: ch19b
+    quote: "O trabalho que eu fiquei feliz de perder"
+    type: rewrite
+    why: "This story is interesting, but the chapter spends a long time on redesigning websites before getting to the question I care about: what happens to people whose work is automated."
+    suggestion: "Bring the job consequence closer to the opening, then use the site story as evidence."

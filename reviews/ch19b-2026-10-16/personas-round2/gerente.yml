@@ -1,0 +1,26 @@
+persona: gerente
+summary: |
+  As an operations manager, I found the chapter’s strongest point useful: an AI transformation needs someone who understands the whole process and can tell whether the result actually works. The billing example made that concrete, and the warning that productivity gains do not automatically save jobs felt candid. I can take away a useful question for consultants: what problem are we solving, and how will we know the solution is acceptable? I still wanted more help turning that question into a decision about a real company project. The film and cooking comparisons reinforced the point, but together they made the chapter feel longer than its practical payoff.
+best:
+  - "The billing problem example: it shows why a vague request cannot replace understanding the operation."
+  - "The distinction between automation gains and the immediate cost to a laid-off worker."
+worst:
+  - "The film and Michelin comparisons: both illustrate judgment and execution, so the second felt repetitive."
+  - "The closing advice: sensible, but not very specific to a manager deciding whether to approve a transformation."
+score: 3
+annotations:
+  - unit: ch19b
+    quote: "Ainda precisamos descobrir o que está acontecendo e como reconhecer uma solução aceitável."
+    type: rewrite
+    why: "This is the chapter’s most useful advice for someone facing an AI transformation, but it stays at the level of a principle."
+    suggestion: "Give a short set of questions I can use with consultants to define the problem, success measures, risks, and who owns the result."
+  - unit: ch19b
+    quote: "Um diretor de fotografia desenvolve a imagem com o diretor"
+    type: boring
+    why: "The film section has several examples of specialized collaboration after the chapter has already made the point through the billing scenario."
+    suggestion: "Shorten the film example or connect it directly to a concrete management decision."
+  - unit: ch19b
+    quote: "E vale acertar a expressão: o Guia Michelin concede estrelas a restaurantes, não a chefs individualmente."
+    type: boring
+    why: "The correction is accurate, but it pulls attention toward a detail that does not help me judge an AI project."
+    suggestion: "Keep the cooking analogy focused on practice and repeatable quality."

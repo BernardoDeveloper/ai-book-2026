@@ -1,0 +1,22 @@
+persona: profissional
+summary: |
+  As an accountant, I felt the chapter was aimed mostly at people who build software and websites, so I had to translate some of its examples to my own work. The clearest answer to my worry is honest but uncomfortable: studying helps, yet it cannot guarantee that the market will keep paying for the work I do now. The example about checking a discount, then changing the condition to include a return, finally gave me something I could try at work. I’ll remember that the tool can help me practice, but I still need to understand the rule and catch a wrong answer. I wanted a more direct Monday plan here; the chapter points me to the epilogue for that.
+best:
+  - "ch19b: the concrete exercise of checking a discount and changing the scenario"
+  - "ch19b: the plain admission that people can lose jobs even when they work competently"
+  - "ch19b: the distinction between having a task automated and having a job protected"
+worst:
+  - "ch19b: the detailed website redesign story, which is far from my day-to-day work"
+  - "ch19b: the film and restaurant analogies take a while to return to what I can do in my own job"
+score: 4
+annotations:
+  - unit: ch19b
+    quote: "Os seis sites eram o AI Lair, os sites do ai-memory e do ai-jail"
+    type: boring
+    why: "I don’t work in web design, and the list of sites made the opening example feel distant from my own risk."
+    suggestion: "A short parallel example from office work would help readers like me see the same change in familiar tasks."
+  - unit: ch19b
+    quote: "Dá pra praticar assim numa planilha de contabilidade ou numa tarefa de programação atribuída pelo chefe"
+    type: rewrite
+    why: "This is the most useful passage for me, but it arrives late, after several examples about design and programming."
+    suggestion: "Bring the accounting example closer to the start, then use it to explain how to practice and check the agent’s work."

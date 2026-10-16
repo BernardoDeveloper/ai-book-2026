@@ -10,7 +10,7 @@ refs_projects:
   - "microgpt/docs/report/experiment-closeout.md"
   - "microgpt/docs/report/training-time-ledger.md"
 blog_commit: "620e97e1a5d5b2a18454d512cc1ae7851db5df31"
-translated_from: {file: book/pt/ch13b.md, sha256: "24f87fa878341557e80f9b0c9b3bf17069790205491c92485e889778608ccde8"}
+translated_from: {file: book/pt/ch13b.md, sha256: "97cf39e94573dd65899df1bff39a9a4987cff9010363150f02f4dba7a65fedae"}
 ---
 
 # A Homemade Model {#sec-ch13b}

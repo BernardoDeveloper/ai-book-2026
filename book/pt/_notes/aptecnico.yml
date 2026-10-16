@@ -1,0 +1,5 @@
+drift_2026_10_16:
+  source: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor
+  reviewed_blog_commit: 557350127df181c4b124a2c8759648a79e17e4d5
+  editions: [pt, en]
+  decision: "Added RTX 5090 rerun: Jebadiah 205 to 39 ms, specialized 4B 39-91 ms, 27B champions do not fit 32 GB. Preserved whole-deployment and accuracy caveats; scoped prior 200 ms and Julia 12 ms to mini-PC. EN blog has not received CUDA additions, so translated the canonical PT book update rather than restamping the unchanged EN post as new evidence."

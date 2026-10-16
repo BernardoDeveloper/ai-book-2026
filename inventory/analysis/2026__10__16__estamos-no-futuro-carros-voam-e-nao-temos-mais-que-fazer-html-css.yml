@@ -1,0 +1,39 @@
+id: "2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css"
+source_sha256: "7121376e290f8b048c55d281d454ef8e3078005171aac01af7a59e81f548c370"
+title_en: "We are in the future: cars fly and we no longer have to write HTML/CSS"
+ai_relevance: core
+ai_relevance_reason: "Connects an observed six-site redesign to automation, judgment and career adaptation."
+genre: essay
+themes: [jobs-and-careers, vibe-coding-practice, generative-media, software-engineering-discipline]
+thesis: "Automating mechanical implementation is welcome; professionals must solve problems and adapt rather than identify permanently with a task or interface."
+summary: >-
+  After watching the Tesla Roadster controlled demonstration, Akita describes
+  redesigning six existing sites from five repositories in about a day.
+  Stitch supplied visual proposals while Claude Code and Codex implemented
+  them, with repeated selection and rejection by the author. Simulated persona
+  reviews found contradictory product claims and confusing information order,
+  but remain hypotheses rather than human user research. The author welcomes
+  automation of repetitive interface implementation while retaining the need
+  for judgment, fundamentals and verification. He connects labour-market
+  bubbles with weak incentives to automate, explicitly as his economic reading.
+  His own career changes and earlier Akitando episodes support an argument
+  against assuming present occupations will last indefinitely.
+key_claims:
+  - {claim: "Six existing sites, five repositories, about one day of redesign; not six products built from scratch or a controlled productivity study", time_sensitive: true}
+  - {claim: "The Roadster scene describes a controlled prototype demonstration, not ordinary road availability", time_sensitive: true}
+  - {claim: "Persona review uncovered misleading network-default and permission claims; simulated feedback is not real-user evidence", time_sensitive: true}
+  - {claim: "Automation can eliminate tasks and jobs; timing and replacement opportunities are not guaranteed", time_sensitive: false}
+fears_addressed: ["AI will take my job", "AI-made work is necessarily inferior", "my present technical role must remain valuable"]
+reader_value: "Separates useful automation from promises of job immunity and makes creative direction concrete."
+technical_depth: 2
+evergreen: 4
+book_use:
+  keep: ["bounded six-site scene", "iteration and rejection", "welcome obsolete tasks without dismissing displaced people", "ongoing learning"]
+  cut: ["car acceleration claims and product promises", "tool installation", "long persona prompt", "platform lists", "repeat punch-card history and bubble statistics"]
+jargon: [HTML, CSS, agent]
+illustration_ideas: ["authentic October 2026 Roadster photo with cleared rights", "Nolan directing The Odyssey, requested separately by author"]
+people_events: ["Tesla Roadster demonstration, October 2026", "Christopher Nolan (author-requested analogy)"]
+related_posts: ["2026/04/11/vs-code-e-o-novo-cartao-perfurado", "2026/02/08/rant-ia-acabou-com-programadores", "2026/10/12/llms-agentes-competente-o-suficiente"]
+prerequisites: ["agents", "verification"]
+series: ""
+obsolescence: "Tool capabilities and Roadster production promises are dated; neither is a timeless forecast."

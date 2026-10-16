@@ -4,7 +4,7 @@ chapter: "How to Read This Book"
 sources: []
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/como-ler.md, sha256: "586c76f8fb1da411a12952bde5980e6776e9e2f2657f9b4b1527a8ca976db6db"}
+translated_from: {file: book/pt/como-ler.md, sha256: "c4a730b1db0951ad2482a05afb751883447336ca998d2c6d4931ff0d2bb34b32"}
 ---
 
 # How to Read This Book {#sec-como-ler .unnumbered}
@@ -19,7 +19,7 @@ But I know plenty of people arrive with one specific worry and little patience t
 <!-- src: original -->
 If you arrived with a specific question, these are the chapters that answer it. Each one can be read on its own.
 
-- What about my job? @sec-ch18, @sec-ch19 and the epilogue (@sec-epilogo); for the pattern of other crises, the three bubbles in @sec-apbolhas.
+- What about my job? @sec-ch18 and @sec-ch19b; for changes at your company, @sec-ch19; for next steps, the epilogue (@sec-epilogo). The three bubbles in @sec-apbolhas show the pattern of other crises.
 - Is anybody in there? Is a superintelligence coming? @sec-ch01, @sec-ch14 and @sec-ch20.
 - Are you a manager being sold an AI transformation? @sec-ch14, @sec-ch19 and the checklists in @sec-apC.
 - Is it safe to let AI touch your stuff? Is it spying on me? @sec-ch15, @sec-ch17 and the bare-minimum kit in @sec-apB.

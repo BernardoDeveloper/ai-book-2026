@@ -1,5 +1,5 @@
 id: "2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor"
-source_sha256: "90819aaee0a700994dc5dbcc83018b026811a12e9ea657a31c3e2d53c6270c0b"
+source_sha256: "5e72d1910de7c5160fd1b976a99c83cc892e8c43efb86b045b29181fd5bc55d5"
 title_en: "Which Jev-style AI decision model/classifier is best?"
 ai_relevance: core
 ai_relevance_reason: "Own benchmark comparing 23 AI decision/classifier models, hosted and local."
@@ -8,6 +8,8 @@ themes: [benchmarks-model-comparison, open-vs-closed-and-local-models, hardware-
 thesis: "In the author's own English and Portuguese tests, two open-weight 27B models top the table, a hosted Microsoft model matches Jev at one third of the cost, tiny models are near chance out of the box, and the right choice depends on language, latency, cost and the user's own data."
 summary: "Akita built his own benchmark for typed decision models (classifiers), with 13 operational use cases in English and 7 tasks written in both English and Brazilian Portuguese, and ran 23 competitors: five hosted APIs (Jev, Clef, Clef-flash, OpenAI Decisions, Microsoft Decision-1) and eighteen open configurations on a Strix Halo home server. The Perplexity Decider 27B and the Decision 3.0 27B tied at 99.4% with identical labels, Jev and Microsoft Decision-1 at 97.6%, while the smallest models (Julia-1, Laya) performed near chance and made high-confidence errors. He converts price into cost per 10,000 support e-mails, noting price differences are negligible compared to the cost of errors, and gives situational recommendations. He documents setup pain on AMD hardware, language token cost (Portuguese costs about 14% more), pitfalls like truncation and confident wrong guesses, and concludes that deterministic rules should stay in code and users should test with their own data."
 key_claims:
+  - claim: "A second deployment on RTX 5090 measured Jebadiah at 39 ms versus 205 ms on Strix Halo; specialized 4B classifiers ran at 39-91 ms, while the roughly 49 GB 27B champions did not fit in the card's 32 GB. These are whole-deployment observations, not an isolated CUDA-versus-ROCm comparison. Compact accuracy was identical or within two cases per model; individual labels could change."
+    time_sensitive: true
   - claim: "Perplexity Decider 27B and Decision 3.0 (27B) tied at 99.4% accuracy on compact cases with identical labels across 1,024 classifications; Jev and Microsoft Decision-1 scored 97.6%."
     time_sensitive: true
   - claim: "Microsoft Decision-1 was the cheapest hosted option (about US$0.065 per 10,000 decisions) and scored 100% in Portuguese on compact cases."
@@ -30,6 +32,7 @@ technical_depth: 4
 evergreen: 1
 book_use:
   keep:
+    - "RTX 5090 rerun reinforces speed versus memory capacity: fast 4B models, no room for unquantized 27B champions; retain whole-deployment caveat"
     - "Cost of an error dwarfs the price difference between models"
     - "Confident wrong answers: a model's confidence is not accuracy"
     - "Keep deterministic rules in code; AI converts free text into structured facts"

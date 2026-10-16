@@ -37,7 +37,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.v3.md"
   - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
-translated_from: {file: book/pt/aptecnico.md, sha256: "7f0ec15902d243224bae40b009677d8f9464fa4c23f850f70c80d85f3bdb8f7e"}
+translated_from: {file: book/pt/aptecnico.md, sha256: "b73fc1333cded594342aaaa4bbea4645d9ef281bf691758ae8f3a26645bf904a"}
 ---
 
 # For Programmers: Behind the Scenes {#sec-aptecnico}
@@ -447,7 +447,7 @@ The result, on October 12, 2026, was this:
 
 - at the top, two 27-billion-parameter open models, Perplexity Decider and Decision 3.0, both with 99.4% accuracy on the compact cases and 100% in Portuguese; the two gave exactly the same answers on all 1,024 classifications;
 - right behind, tied at 97.6%, Jev itself and Microsoft Decision-1, the latter being the cheapest paid service I measured, about 6 cents per 10 thousand decisions;
-- the best 4-billion-parameter open models, like Jebadiah, landed between 87% and 90%, answering in about 200 milliseconds.
+- the best 4-billion-parameter open models, like Jebadiah, landed between 87% and 90%, answering in about 200 milliseconds on the mini-PC.
 
 <!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
 A 4-billion-parameter model, which fits on an ordinary graphics card, tied with OpenAI's decision service, which debuted at 90.5%. And the best result in the entire table came from two models anyone can download and run at home.
@@ -455,10 +455,15 @@ A 4-billion-parameter model, which fits on an ordinary graphics card, tied with 
 <!-- src: ref:private-notes/decision-models.md -->
 Decision 3.0 took about 49 GB of video memory, and at peak the total brushed 63.5 of the mini-PC's 64 GB. The two champions had to run alone, with everything else shut down, and each decision took close to a second and a half. The cloud services answered, almost all of them, in under half a second.
 
+<!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
+Then I ran the models that fit in the RTX 5090's 32 GB on that card, with the same weights and requests. Jebadiah dropped from 205 to 39 milliseconds, faster than any hosted service measured, and the specialized 4-billion-parameter classifiers landed between 39 and 91 milliseconds. The two 27-billion-parameter champions, with about 49 GB of weights each, were left out for lack of memory.
+
+Accuracy on the compact cases was identical or within two cases per model, though some individual labels changed. The comparison is between two complete deployments, with different machines, software and networks; it doesn't isolate the effect of changing only the software that runs the model. The accuracy table continued to use the mini-PC round.
+
 ### The Guess
 
 <!-- src: ref:jev-docs/README.md -->
-The tasks had three or four options, so guessing at random would get about 31% right. Julia-1, the smallest model on the list, with 144 million parameters, got 31.5%. It answered in 12 milliseconds, the fastest of all, and was no more accurate than random guessing.
+The tasks had three or four options, so guessing at random would get about 31% right. Julia-1, the smallest model on the list, with 144 million parameters, got 31.5%. On the mini-PC, it answered in 12 milliseconds, the fastest of all, and was no more accurate than random guessing.
 
 <!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
 Of the 71 guesses it gave with more than 90% confidence, 48 were wrong. These tiny models were built to be fine-tuned on the data of whoever is going to use them; out of the factory, applying rules they have never seen, they're no good.

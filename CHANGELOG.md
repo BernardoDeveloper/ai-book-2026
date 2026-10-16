@@ -4,6 +4,29 @@ Editions of *Competente o Suficiente*. Each version is a git tag (`vX.Y.Z`);
 pushing the tag builds the book and publishes a GitHub Release with the
 files.
 
+## 1.0.0-preview.9
+
+The world will not wait: work, authorship and learning in the age of agents.
+
+- **New chapter 21, "O mundo não vai esperar" / "The World Won't Wait"**:
+  the six-site redesign, real job displacement, Nolan's direction and the
+  craft of learning beyond recipes. The existing final chapter becomes 22.
+- **Target-reader adjustments**: tighter explanations around the cinema and
+  cooking analogies, plus a discount-and-return exercise that fits ordinary
+  assigned work. The five-persona review is recorded in `reviews/ch19b-2026-10-16/`.
+- **Two photographs** selected by the author: the Roadster demonstration and
+  Nolan on the set of The Odyssey, with accessible alternatives and full
+  descriptions. Source and unverified-rights records accompany the assets.
+- **Employment claims**: surrounding passages no longer imply that seniority
+  or useful judgment guarantees a developer's job survives automation.
+- **Copyedit and PT/EN parity**: carries the reviewed corrections merged in
+  PR #4 and the precise prompt-caching timeline dates.
+- **Blog synchronization**: incorporates the RTX 5090 decision-model rerun,
+  distinguishing its deployment timings from the original mini-PC results.
+- Both editions retain automatic Kindle cleanup, EPUBCheck, accessibility
+  checks and print-page audits. New interior page counts require new KDP
+  cover templates; old wraparound covers are not regenerated for this release.
+
 ## 1.0.0-preview.8
 
 Accessible digital editions and a guarded Kindle pipeline.

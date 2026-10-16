@@ -1,0 +1,21 @@
+persona: junior
+summary: |
+  As Lucas, I felt seen by the direct admission that competent people can lose jobs and that learning more does not guarantee the market will reward them. The chapter gives me a useful way to practice with agents: predict an answer, change a condition, compare the result, and ask someone who knows the rule about any mismatch. I’ll remember the distinction between making code and deciding whether the result solves the right problem. The six-site example is more credible because it explains what already existed and what the one-day result does not prove. The Nolan and Michelin comparisons make the same point about judgment several times, so the middle stretches before the practical advice arrives. I’m still anxious about what to do in my own job, but the chapter doesn’t pretend there’s a guaranteed career strategy.
+best:
+  - "ch19b: The practice exercise gives me something I could try on a task at work."
+  - "ch19b: The author plainly says competent people can lose their jobs."
+worst:
+  - "ch19b: The film and cooking comparisons revisit the need for judgment at length."
+units:
+  - {unit: ch19b, score: 4, note: "I feel addressed as a junior developer; the exercise helps, though repeated analogies slow the chapter."}
+annotations:
+  - unit: ch19b
+    quote: "Nolan participa das escolhas de câmera e montagem sem executar sozinho cada ofício."
+    type: boring
+    why: "I got the point about coordinating specialists, but the following list and examples keep expanding it before the chapter returns to software."
+    suggestion: "Shorten the film section and move sooner to the concrete software example."
+  - unit: ch19b
+    quote: "O iniciante pode acertar um prato excelente seguindo a receita. Falta conseguir repetir e adaptar quando o ingrediente ou a situação muda."
+    type: rewrite
+    why: "This lands the distinction between following instructions and building skill, but it arrives after another long analogy about expertise and credits."
+    suggestion: "Keep this concise version of the point and connect it directly to the practice exercise."

@@ -2,7 +2,7 @@
 id: posfacio
 chapter: "Posfácio: Como este livro foi feito"
 sources:
-  - {post: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, sha256: "0d435e79de9e1f54ea1807e862f303e235607474050bc7b2e85f0a8ed71ba55d"}
+  - {post: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, sha256: "2cf74b842ce1800799bddb690bf839f846f5804b8aaa656a4e78ecd7b8465c51", commit: "557350127df181c4b124a2c8759648a79e17e4d5"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "ee499fef89fe8fe35d652f193b51f1660cd08e8ed77adee74e036ca1444cc54b"}
   - {post: 2026/04/15/como-falar-com-o-claude-code-efetivamente, sha256: "1b8795f593d0bf02003614559d134daa34121962de303cf664aa5e7bc9a3eed0"}
   - {post: 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo, sha256: "247ad116f3c45c935f8a59156a72b8852733e259c70b65044f19fb56c6d32f3b"}
@@ -73,7 +73,7 @@ Ela serve pra manutenção. Se amanhã eu corrigir um post, um script refaz o c�
 <!-- src: original -->
 As imagens seguem a mesma lógica. Os diagramas e gráficos foram escritos como código, e cada gráfico traz no próprio código a indicação do capítulo de onde vieram os dados. As ilustrações geradas por IA estão marcadas como tais, e o pedido, o modelo e a data de cada uma ficam registrados.
 
-Pessoas reais só aparecem em fotos com licença livre, com o crédito na legenda e em @sec-creditos. Nenhuma imagem de pessoa real foi gerada por IA.
+Pessoas reais aparecem em fotografias, com a origem e o crédito disponível na legenda e em @sec-creditos. A situação de licença ou permissão de cada foto fica registrada individualmente, inclusive quando a autorização de reprodução ainda não foi verificada. Nenhuma imagem de pessoa real foi gerada por IA.
 
 ## Leitores de mentira
 

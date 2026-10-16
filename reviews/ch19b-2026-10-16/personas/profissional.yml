@@ -1,0 +1,42 @@
+persona: profissional
+summary: |
+  As Marina, I felt the chapter take my fear of job loss seriously: it says plainly that competent people can lose work and that new jobs may not arrive in time to help them. The six-site story made the change feel concrete, and the accounting example at the start of the next chapter helped me connect it to my own work. I came away with a useful principle—learn to judge the result and the problem behind the task—but not a clear Monday plan for an accountant. The film and cooking comparisons made the argument easier to grasp at first, then started to feel like several versions of the same point.
+best:
+  - "ch19b: The author admits that automation can eliminate good workers' jobs."
+  - "ch19b: The six-site story shows what changed in his own work."
+  - "ch20 seam: The reconciliation example makes the argument relevant to accounting."
+worst:
+  - "ch19b: The Nolan and Ramsay comparisons extend the same point about judgment and execution."
+  - "ch19b: The employee checklist points back to six questions from an earlier chapter, so this excerpt alone doesn't give me a first step."
+units:
+  - {unit: ch19b, score: 3, note: "I believe the warning and remember the principle, but I still want a Monday-sized action for someone in accounting."}
+lowest_scored_units:
+  - {unit: ch19b, score: 3}
+  - {unit: "not scored", note: "Outside this scoped review"}
+  - {unit: "not scored", note: "Outside this scoped review"}
+annotations:
+  - unit: ch19b
+    quote: "Se você é funcionário:\n\n- aprenda a responder as seis perguntas da lista do começo do capítulo sobre a sua própria tarefa, antes de abrir o agente;"
+    type: rewrite
+    why: "This is the clearest advice for employees, but it sends me elsewhere instead of telling me what to try on Monday."
+    suggestion: "Give one compact example of applying those questions to a routine task, such as reconciling an account."
+  - unit: ch19b
+    quote: "Vale nomear alguns desses trabalhos, porque a comparação fica mais interessante quando a equipe deixa de ser uma massa anônima:"
+    type: boring
+    why: "The detailed list of film roles slowed me down; I had already understood that a director coordinates many kinds of work."
+    suggestion: "Shorten the role-by-role explanation and move sooner to the connection with evaluating AI output."
+  - unit: ch19b
+    quote: "Pense agora em **Gordon Ramsay** diante de uma receita e numa pessoa que nunca cozinhou preparando o mesmo prato."
+    type: boring
+    why: "After the film analogy, this felt like another extended example of the same distinction between instructions and judgment."
+    suggestion: "Keep one analogy and use the space to show what this means for a worker outside software."
+  - unit: ch19b
+    quote: "Se a automação libera parte do seu tempo, há uma oportunidade de estudar o trecho que você sempre evitou."
+    type: rewrite
+    why: "I understand the encouragement, but it assumes I can choose how to use released work time; my employer may simply expect fewer people to do the same workload."
+    suggestion: "Acknowledge that constraint and offer a small action an employee can take within ordinary work."
+  - unit: ch19b
+    quote: "Com os agentes, essa aposta ficou ainda pior. Uma parte crescente dessa execução já pode ser comprada como serviço."
+    type: confusing
+    why: "I wasn't sure whether 'essa aposta' means staying in the same role, refusing to learn, or relying on repetitive procedures."
+    suggestion: "Name the behavior the sentence refers to directly."

@@ -15,3 +15,8 @@ integration:
   - "Open: METR task-length row dated 2025 only via the citation year (chapters give no year); '14 de maio' is the day of the boletim question (ch10 says 'meados de maio' for the end). Acquisition of Bun cited with two keys (sumner2025anthropic in ch16/apA, anthropic2025bun in ch19)."
 cutoff_february:
   - "January entries from 01/09 (Zig/Crush), 01/22 (GLM 4.7 Flash), 01/28 (TV Clipboard) removed with their sources. Kept: sandbox script (03/01), Qwen3 TTS (04/09, ch13), Davos (02/08, ch18), FrankMD 30 Jan (02/01, ch05). Intro of the 2026 section says the story starts in February."
+drift_2026_10_16:
+  source: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor
+  reviewed_blog_commit: 557350127df181c4b124a2c8759648a79e17e4d5
+  editions: [pt, en]
+  decision: "No prose impact: timeline records the October 12 classifier ranking and hosted costs, unchanged by the later RTX 5090 latency rerun. New deployment belongs in ch13 and aptecnico."

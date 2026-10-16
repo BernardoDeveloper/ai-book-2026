@@ -2,7 +2,7 @@
 id: apfeito
 chapter: "Este livro foi escrito por IA?"
 sources:
-  - {post: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, sha256: "0d435e79de9e1f54ea1807e862f303e235607474050bc7b2e85f0a8ed71ba55d"}
+  - {post: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, sha256: "2cf74b842ce1800799bddb690bf839f846f5804b8aaa656a4e78ecd7b8465c51", commit: "557350127df181c4b124a2c8759648a79e17e4d5"}
 refs_projects: []
 blog_commit: "956fc9ed1cc8e32f61deeef64518eece134fd510"
 ---

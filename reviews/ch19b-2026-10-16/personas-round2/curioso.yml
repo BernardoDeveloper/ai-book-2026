@@ -1,0 +1,27 @@
+persona: curioso
+summary: |
+  I came for the stories, and the midnight Roadster scene pulled me in. The account of redesigning six existing sites gave the chapter a concrete thread: the tools made execution cheaper, but someone still had to choose and judge the result. The Nolan example made that idea easy to picture. I lost patience when the chapter turned to lists and then introduced another analogy with Michelin stars; by then I understood the point. I’ll remember the tension between celebrating change and admitting that people can lose work before new opportunities arrive.
+best:
+  - "ch19b: the late-night Roadster demonstration and the author’s excitement"
+  - "ch19b: the account of rejecting bad prototypes and revising the sites"
+  - "ch19b: the Nolan example of coordinating creative work"
+worst:
+  - "ch19b: the list of film crew roles slows the story into explanation"
+  - "ch19b: the Michelin recipe analogy repeats the point about expertise"
+score: 4
+annotations:
+  - unit: ch19b
+    quote: "O elenco interpreta os personagens, trabalhando a atuação com a direção."
+    type: boring
+    why: "The role-by-role list felt like a manual after the more vivid account of making the sites."
+    suggestion: "Keep the example focused on one scene and the decisions that make the departments work together."
+  - unit: ch19b
+    quote: "Pense agora em Gordon Ramsay diante de uma receita"
+    type: boring
+    why: "The recipe analogy arrives after the film analogy has already made the point about judgment and practice."
+    suggestion: "Consider cutting or shortening this section so the chapter can move toward its ending."
+  - unit: ch19b
+    quote: "Também espero que apareçam trabalhos que hoje mal consigo descrever."
+    type: confusing
+    why: "I understand that new work may appear, but the chapter leaves that possibility abstract; the concrete part is the lost job."
+    suggestion: "A brief example of what a transition could look like would make the uncertainty easier to picture."

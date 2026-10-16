@@ -61,7 +61,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.multi_model.md"
   - "llm-coding-benchmark/docs/success_report.v2.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apA.md, sha256: "59685c23f6f8e4623a1044ea66dd7ad45b570450d7895ab3e4227f17976dd447"}
+translated_from: {file: book/pt/apA.md, sha256: "1011acc2e59c752a7a0ad3fe6ff4aabf809f9db1a61eb338ab82c8ed79f838f3"}
 ---
 
 # Timeline {#sec-apA}

@@ -2,10 +2,10 @@
 id: apfeito
 chapter: "Was This Book Written by AI?"
 sources:
-  - {post: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, sha256: "f92fe64c51f8d817e9ec698391d1f251326c8052c5053f5119b29e83b0261ceb"}
+  - {post: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, sha256: "a5d74995c975312731dcd96702e6f813f9e1148dbe315a92436c3c045346d70f", commit: "557350127df181c4b124a2c8759648a79e17e4d5"}
 refs_projects: []
 blog_commit: "956fc9ed1cc8e32f61deeef64518eece134fd510"
-translated_from: {file: book/pt/apfeito.md, sha256: "53dbd17f914d08af0e240b5f25a70ccde0b2a7a878b19b80443bea51a22b68dd"}
+translated_from: {file: book/pt/apfeito.md, sha256: "24daffce476923c3ff4bc83be64b9a8841cd87ee7d28ec44c6ad7df54d2e7ca2"}
 ---
 
 # Was This Book Written by AI? {#sec-apfeito}

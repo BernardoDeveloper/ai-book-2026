@@ -1,0 +1,24 @@
+id: ch19b-nolan
+kind: photo
+file: assets/figures/ch19b-nolan.png
+sha256: b8302ad8a3e8cee71822bd051232eaf6130fa2add86f3ed55bf8d36c5a2909cc
+pixels: {width: 1100, height: 733}
+source:
+  repository: author_supplied_download
+  page_url: https://people.com/christopher-nolan-calls-the-odyssey-casting-backlash-irrelevant-12016977
+  retrieved: '2026-10-16'
+  title: Christopher Nolan on the set of The Odyssey
+  original_sha256: 3d75dd9ce00c57e228fd4a5e5feff6022f58814482fd19bc20483e0d78967965
+  verification: 'Source URL supplied by author. Page fetch did not expose the article or photo credit; do not infer photographer or license.'
+author: unknown
+license:
+  short: unverified
+  attribution_required: unknown
+  restrictions: ['No commercial reuse grant verified']
+publication_decision: 'Author supplied the image and source and explicitly instructed inclusion and release after being informed that reuse permission was unverified. This is not a claim of an open license or verified permission.'
+modifications: ['Lossless format conversion of the supplied WebP to PNG; no resizing or retouching']
+placement: interior
+kdp_disclosure: none
+credit:
+  backmatter: 'Christopher Nolan nas filmagens de A Odisseia. Imagem fornecida pelo autor; fonte indicada: PEOPLE, https://people.com/christopher-nolan-calls-the-odyssey-casting-backlash-irrelevant-12016977. Fotógrafo não identificado.'
+  backmatter_en: 'Christopher Nolan on the set of The Odyssey. Image supplied by the author; stated source: PEOPLE, https://people.com/christopher-nolan-calls-the-odyssey-casting-backlash-irrelevant-12016977. Photographer unidentified.'

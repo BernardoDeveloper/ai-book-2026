@@ -1,5 +1,5 @@
 id: "2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente"
-source_sha256: "0d435e79de9e1f54ea1807e862f303e235607474050bc7b2e85f0a8ed71ba55d"
+source_sha256: "2cf74b842ce1800799bddb690bf839f846f5804b8aaa656a4e78ecd7b8465c51"
 title_en: "I self-published my own book/ebook: Competent Enough"
 ai_relevance: substantial
 ai_relevance_reason: "Launch post for this book; most of it is the technical backstage of building the book with agents (inventory, provenance, contracts, verification, build pipeline)."
@@ -8,6 +8,8 @@ themes: [coding-agents-tools, software-engineering-discipline, personal-journey]
 thesis: "A book can be built from hundreds of blog posts with agents without losing control of what it says, if structure is data, every paragraph carries provenance and nothing ships without mechanical checks."
 summary: "Announces the free EPUB/PDF preview of Competente o Suficiente and its English edition. Explains the problem of turning ~131 posts that disagree with each other into one book, and the steps used: a sealed inventory with hashes and lineage, the outline as data generating the build config, a pilot chapter as contract, parallel drafts, a provenance marker per paragraph, verification that caught errors, and a build where a chapter with errors doesn't pass. Covers the assembly pipeline and figures, the English edition, releasing by pushing a tag, and what remains the author's own work. Asks readers to report errors as GitHub issues."
 key_claims:
+  - claim: "The preview.8 update adds an accessibility publishing contract: short alternatives and detailed figure descriptions, table captions, semantic EPUB navigation, automated validation and recurring Kindle cleanup; automated checks do not replace manual review or certify WCAG conformance."
+    time_sensitive: true
   - claim: "The book is free, in EPUB and PDF, and still a preview with new versions to come."
     time_sensitive: true
 fears_addressed: []

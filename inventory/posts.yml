@@ -1,6 +1,6 @@
 ---
 generated_from: "/home/akitaonrails/Projects/akitaonrails-hugo"
-blog_commit: b558ea0047d8c90fa5ff8502c095ab44f3e8888a
+blog_commit: 557350127df181c4b124a2c8759648a79e17e4d5
 dirty_files: []
 year: '2026'
 posts:
@@ -15675,24 +15675,26 @@ posts:
   url_pt: https://www.akitaonrails.com/2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor/
   url_en: https://www.akitaonrails.com/en/2026/10/10/which-jev-like-ai-decision-classifier-model-is-best/
   pt:
-    sha256: 90819aaee0a700994dc5dbcc83018b026811a12e9ea657a31c3e2d53c6270c0b
+    sha256: 5e72d1910de7c5160fd1b976a99c83cc892e8c43efb86b045b29181fd5bc55d5
     title: Qual modelo de decisão/classificador de IA tipo Jev é melhor?
     description: 'Rodei meu próprio benchmark de modelos de decisão: Jev, Clef, OpenAI
       Decisions e Microsoft Decision-1 na nuvem, mais dezoito configurações abertas
       (Perplexity Decider 27B, Decision 3.0 e Edge, Clef-flash, Kev, Jebadiah, Mapika,
-      Eikos, Laya, Julia, GLiNER, Simple-Jev) no meu Strix Halo, em mais de 22 mil
-      classificações com casos em inglês e português. O topo agora tem dois de pesos
-      abertos: Perplexity e Decision 3.0 empataram em 99,4%, com rótulos idênticos
-      nas 1.024 classificações e 100% em português. O Microsoft Decision-1 empatou
-      com o Jev em 97,6% sendo o hospedado mais barato. Tabela completa, custo em
-      e-mails de suporte, pegadinhas e onde os dados convergem.'
+      Eikos, Laya, Julia, GLiNER, Simple-Jev) no meu Strix Halo via ROCm e numa RTX
+      5090 via CUDA, em mais de 22 mil classificações com casos em inglês e português.
+      O topo agora tem dois de pesos abertos: Perplexity e Decision 3.0 empataram
+      em 99,4%, com rótulos idênticos nas 1.024 classificações e 100% em português.
+      O Microsoft Decision-1 empatou com o Jev em 97,6% sendo o hospedado mais barato.
+      Na 5090 os 4B caem pra 39-91 ms, mais rápidos que qualquer hospedado, e os campeões
+      de 27B nem cabem nos 32 GB da placa. Tabela completa, custo em e-mails de suporte,
+      pegadinhas e onde os dados convergem.'
     slug: qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor
     tags:
     - benchmarks-de-llm
     - modelos-locais
     - inteligencia-artificial
     - llms
-    words: 8107
+    words: 9277
     links:
     - text: um texto longo sobre o Jev
       url: "/2026/10/03/entendendo-o-hype-do-jev-pra-que-serve/"
@@ -15702,6 +15704,8 @@ posts:
       url: "/2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395/"
     - text: repositório do benchmark
       url: https://github.com/akitaonrails/jev-docs-benchmarks
+    - text: repositório
+      url: https://github.com/akitaonrails/jev-docs-benchmarks/blob/master/benchmark/reports/cuda-comparison/results.md
     - text: repositório
       url: https://github.com/akitaonrails/jev-docs-benchmarks/blob/master/benchmark/reports/decision3-comparison-v2/results.md
     - text: issue 170
@@ -16159,7 +16163,7 @@ posts:
   url_pt: https://www.akitaonrails.com/2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente/
   url_en: https://www.akitaonrails.com/en/2026/10/13/i-self-published-my-own-book-ebook-competent-enough/
   pt:
-    sha256: 0d435e79de9e1f54ea1807e862f303e235607474050bc7b2e85f0a8ed71ba55d
+    sha256: 2cf74b842ce1800799bddb690bf839f846f5804b8aaa656a4e78ecd7b8465c51
     title: 'Auto-publiquei meu próprio Livro/e-book: Competente o Suficiente'
     description: 'Publiquei meu livro sobre IA, de graça, em EPUB e PDF: os 131 textos
       de 2026 do blog, quase meio milhão de palavras, reorganizados em 20 capítulos,
@@ -16174,7 +16178,7 @@ posts:
     - inteligencia-artificial
     - agentes-de-codigo
     - open-source
-    words: 6085
+    words: 6329
     links:
     - text: esta
       url: https://ailair.akitaonrails.com/pt-br/book/
@@ -16190,18 +16194,20 @@ posts:
       url: "/2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu/"
     - text: Akitando
       url: https://www.youtube.com/@Akitando
+    - text: documentado no repositório
+      url: https://github.com/akitaonrails/ai-book-2026/blob/main/docs/ACCESSIBILITY.md
     - text: EPUB
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.epub
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competente-o-Suficiente.epub
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente-ebook.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competente-o-Suficiente-ebook.pdf
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competente-o-Suficiente.pdf
     - text: EPUB
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.epub
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competent-Enough.epub
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough-ebook.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competent-Enough-ebook.pdf
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competent-Enough.pdf
     - text: página do livro
       url: https://ailair.akitaonrails.com/pt-br/book/
     - text: releases do GitHub
@@ -16213,7 +16219,7 @@ posts:
       url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/20261013190000_livro-competente-o-suficiente-3d.png
     youtube: []
   en:
-    sha256: f92fe64c51f8d817e9ec698391d1f251326c8052c5053f5119b29e83b0261ceb
+    sha256: a5d74995c975312731dcd96702e6f813f9e1148dbe315a92436c3c045346d70f
     title: 'I Self-Published My Own Book/e-book: Competent Enough'
     description: 'I published my book about AI, for free, in EPUB and PDF: the blog''s
       131 posts from 2026, almost half a million words, reorganized into 20 chapters,
@@ -16229,7 +16235,7 @@ posts:
     - artificial-intelligence
     - coding-agents
     - open-source
-    words: 5859
+    words: 6095
     links:
     - text: here
       url: https://ailair.akitaonrails.com/book/
@@ -16245,18 +16251,20 @@ posts:
       url: "/en/2026/10/13/ai-reverse-engineering-is-adobe-dead/"
     - text: Akitando
       url: https://www.youtube.com/@Akitando
+    - text: documented in the repository
+      url: https://github.com/akitaonrails/ai-book-2026/blob/main/docs/ACCESSIBILITY.md
     - text: EPUB
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.epub
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competent-Enough.epub
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough-ebook.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competent-Enough-ebook.pdf
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competent-Enough.pdf
     - text: EPUB
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.epub
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competente-o-Suficiente.epub
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente-ebook.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competente-o-Suficiente-ebook.pdf
     - text: PDF
-      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.pdf
+      url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competente-o-Suficiente.pdf
     - text: book page
       url: https://ailair.akitaonrails.com/book/
     - text: GitHub releases
@@ -16839,6 +16847,211 @@ posts:
       url: https://github.com/akitaonrails/microgpt
     images: []
     youtube: []
+- id: 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
+  date: '2026-10-16T02:00:00-03:00'
+  url_pt: https://www.akitaonrails.com/2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css/
+  url_en: https://www.akitaonrails.com/en/2026/10/16/living-in-the-future-cars-fly-no-more-html-css/
+  pt:
+    sha256: 7121376e290f8b048c55d281d454ef8e3078005171aac01af7a59e81f548c370
+    title: 'Estamos no Futuro: Carros voam e não temos mais que fazer HTML/CSS'
+    description: O Roadster da Tesla girou no ar enquanto eu redesenhava seis sites
+      em cerca de um dia. Com agentes fazendo web, mobile e desktop, trabalho mecânico
+      virou automação; carreira exige adaptação.
+    slug: estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
+    tags:
+    - inteligencia-artificial
+    - frontend
+    - automacao
+    - carreira
+    words: 3563
+    links:
+    - text: segundo Elon Musk, de puxar até 2 G
+      url: https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
+    - text: transmissão oficial da Tesla
+      url: https://livestream.tesla.com/
+    - text: Road & Track mediu e descreveu as manobras
+      url: https://www.roadandtrack.com/news/a74151425/the-air-assisted-tesla-roadster-flies-in-demo-hits-0-60-in-08-seconds/
+    - text: TechCrunch detalhou as três versões
+      url: https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/
+    - text: Akita's AI Lair
+      url: https://ailair.akitaonrails.com/
+    - text: ai-memory
+      url: https://aimemory.sh/
+    - text: ai-jail
+      url: https://aijail.io/
+    - text: The M.Akita Chronicles
+      url: https://themakitachronicles.com/
+    - text: arquivo da newsletter
+      url: https://blog.themakitachronicles.com/
+    - text: AkitaOnRails.com
+      url: https://akitaonrails.com/
+    - text: algumas telas e o resultado da mudança no Twitter
+      url: https://x.com/AkitaOnRails/status/2110809199890300986
+    - text: Stitch, do Google
+      url: https://stitch.withgoogle.com/
+    - text: primeira versão foi apresentada em 2025
+      url: https://developers.googleblog.com/en/stitch-a-new-way-to-design-uis/
+    - text: a versão atual
+      url: https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
+    - text: "![O canvas do Google Stitch com várias interfaces, variações visuais
+        e controles do design system"
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/2026/10/stitch-ai-native-canvas-google.webp
+    - text: proofreading do ai-jail
+      url: https://github.com/akitaonrails/ai-jail-web/blob/main/docs/research/PROOFREAD-2026-10-15-BRIEF.md
+    - text: relatório do ai-memory
+      url: https://github.com/akitaonrails/ai-memory-web/blob/main/docs/research/persona-review.md
+    - text: redesign do AI Lair
+      url: https://github.com/akitaonrails/ai-toolkit-web/pull/4
+    - text: revisão seguinte
+      url: https://github.com/akitaonrails/ai-toolkit-web/commit/c2a5237e876f662a8b53450f23f0162fdc1d4a76
+    - text: correção
+      url: https://github.com/akitaonrails/ai-toolkit-web/pull/5
+    - text: os juros americanos ficaram perto de zero
+      url: https://fred.stlouisfed.org/series/EFFR
+    - text: 83 slides estão no meu SlideShare
+      url: https://www.slideshare.net/slideshow/devconf-2019-so-carlos/143923367
+    - text: '"Restrições são libertadoras: menos é mais"'
+      url: https://startupi.com.br/restricoes-sao-libertadoras-menos-e-mais/
+    - text: repeti esse aviso no começo de 2026
+      url: "/2026/02/08/rant-ia-acabou-com-programadores/"
+    - text: '"VS Code é o novo Cartão Perfurado"'
+      url: "/2026/04/11/vs-code-e-o-novo-cartao-perfurado/"
+    - text: Escolha o framework
+      url: "/2026/10/11/existem-linguagens-melhores-pra-programar-com-llms/"
+    - text: FrankYomik
+      url: https://github.com/akitaonrails/FrankYomik
+    - text: Frank Sherlock
+      url: https://github.com/akitaonrails/FrankSherlock
+    - text: Frank Karaoke
+      url: https://github.com/akitaonrails/frank_karaoke
+    - text: FRANK MANGA+
+      url: https://github.com/akitaonrails/frank_mangaplus
+    - text: meu GitHub
+      url: https://github.com/akitaonrails?tab=repositories
+    - text: lista atual de profissões em maior declínio do Bureau of Labor Statistics
+      url: https://www.bls.gov/emp/tables/fastest-declining-occupations.htm
+    - text: OIT mostra que a tecnologia costuma automatizar tarefas sem necessariamente
+        eliminar ocupações inteiras
+      url: https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure
+    - text: Comecei com multimídia e sites estáticos
+      url: "/2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash/"
+    - text: Akitando sobre SAP
+      url: "/2018/12/26/akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap/"
+    - text: "**Eu Avisei**"
+      url: https://www.youtube.com/playlist?list=PLdsnXVqbHDUehzKjiRruy--gncHz9Injy
+    - text: "**Que curso devo fazer??**"
+      url: https://www.youtube.com/playlist?list=PLdsnXVqbHDUd6wEL932R7dW9Zazt2oNWF
+    images:
+    - alt: 'Os seis sites redesenhados em produção: Akita''s AI Lair, ai-memory, ai-jail,
+        The M.Akita Chronicles, o arquivo da newsletter e AkitaOnRails'
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/2026/10/redesign-seis-sites-stitch.jpg
+    - alt: O canvas do Google Stitch com várias interfaces, variações visuais e controles
+        do design system
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/2026/10/stitch-ai-native-canvas-google.webp
+    youtube:
+    - V0D3PuTLOZ8
+    - oUPaJxk6TZ0
+  en:
+    sha256: a72e372a2be4de4b7420ca141a2a6f556fa84dad88552ec9129b113c7b779aa8
+    title: 'We''re Living in the Future: Cars Fly and We Don''t Have to Write HTML/CSS
+      Anymore'
+    description: Tesla's Roadster spun in midair while I redesigned six sites in about
+      a day. With agents handling web, mobile, and desktop, mechanical work became
+      automation; careers demand adaptation.
+    slug: living-in-the-future-cars-fly-no-more-html-css
+    tags:
+    - artificial-intelligence
+    - frontend
+    - automation
+    - career
+    words: 3517
+    links:
+    - text: according to Elon Musk, of pulling up to 2 G
+      url: https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
+    - text: Tesla's official livestream
+      url: https://livestream.tesla.com/
+    - text: Road & Track measured and described the maneuvers
+      url: https://www.roadandtrack.com/news/a74151425/the-air-assisted-tesla-roadster-flies-in-demo-hits-0-60-in-08-seconds/
+    - text: TechCrunch detailed the three versions
+      url: https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style/
+    - text: Akita's AI Lair
+      url: https://ailair.akitaonrails.com/
+    - text: ai-memory
+      url: https://aimemory.sh/
+    - text: ai-jail
+      url: https://aijail.io/
+    - text: The M.Akita Chronicles
+      url: https://themakitachronicles.com/
+    - text: newsletter archive
+      url: https://blog.themakitachronicles.com/
+    - text: AkitaOnRails.com
+      url: https://akitaonrails.com/
+    - text: some screens and the result of the change on Twitter
+      url: https://x.com/AkitaOnRails/status/2110809199890300986
+    - text: Stitch by Google
+      url: https://stitch.withgoogle.com/
+    - text: first version launched in 2025
+      url: https://developers.googleblog.com/en/stitch-a-new-way-to-design-uis/
+    - text: current version
+      url: https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design/
+    - text: "![The Google Stitch canvas with multiple interfaces, visual variations,
+        and design-system controls"
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/2026/10/stitch-ai-native-canvas-google.webp
+    - text: ai-jail proofreading
+      url: https://github.com/akitaonrails/ai-jail-web/blob/main/docs/research/PROOFREAD-2026-10-15-BRIEF.md
+    - text: ai-memory report
+      url: https://github.com/akitaonrails/ai-memory-web/blob/main/docs/research/persona-review.md
+    - text: AI Lair redesign
+      url: https://github.com/akitaonrails/ai-toolkit-web/pull/4
+    - text: later revision
+      url: https://github.com/akitaonrails/ai-toolkit-web/commit/c2a5237e876f662a8b53450f23f0162fdc1d4a76
+    - text: fix
+      url: https://github.com/akitaonrails/ai-toolkit-web/pull/5
+    - text: US interest rates stayed near zero
+      url: https://fred.stlouisfed.org/series/EFFR
+    - text: 83 slides are on my SlideShare
+      url: https://www.slideshare.net/slideshow/devconf-2019-so-carlos/143923367
+    - text: '"Constraints are liberating: less is more"'
+      url: https://startupi.com.br/restricoes-sao-libertadoras-menos-e-mais/
+    - text: repeated this warning at the beginning of 2026
+      url: "/en/2026/02/08/rant-ai-killed-programmers/"
+    - text: '"VS Code Is the New Punch Card"'
+      url: "/en/2026/04/11/vs-code-is-the-new-punch-card/"
+    - text: Pick the framework
+      url: "/en/2026/10/11/are-there-better-languages-for-programming-with-llms/"
+    - text: FrankYomik
+      url: https://github.com/akitaonrails/FrankYomik
+    - text: Frank Sherlock
+      url: https://github.com/akitaonrails/FrankSherlock
+    - text: Frank Karaoke
+      url: https://github.com/akitaonrails/frank_karaoke
+    - text: FRANK MANGA+
+      url: https://github.com/akitaonrails/frank_mangaplus
+    - text: my GitHub
+      url: https://github.com/akitaonrails?tab=repositories
+    - text: current list of fastest-declining occupations
+      url: https://www.bls.gov/emp/tables/fastest-declining-occupations.htm
+    - text: ILO shows that technology tends to automate tasks without necessarily
+        eliminating entire occupations
+      url: https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure
+    - text: I started with multimedia and static websites
+      url: "/2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash/"
+    - text: Akitando episode about SAP
+      url: "/2018/12/26/akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap/"
+    - text: "**I Warned You**"
+      url: https://www.youtube.com/playlist?list=PLdsnXVqbHDUehzKjiRruy--gncHz9Injy
+    - text: "**Which course should I take?**"
+      url: https://www.youtube.com/playlist?list=PLdsnXVqbHDUd6wEL932R7dW9Zazt2oNWF
+    images:
+    - alt: 'The six redesigned sites in production: Akita''s AI Lair, ai-memory, ai-jail,
+        The M.Akita Chronicles, the newsletter archive, and AkitaOnRails'
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/2026/10/redesign-seis-sites-stitch.jpg
+    - alt: The Google Stitch canvas with multiple interfaces, visual variations, and
+        design-system controls
+      url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/2026/10/stitch-ai-native-canvas-google.webp
+    youtube:
+    - V0D3PuTLOZ8
+    - oUPaJxk6TZ0
 - id: 2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software
   date: '2018-11-01T17:00:00-03:00'
   url_pt: https://www.akitaonrails.com/2018/11/01/akitando-23-the-mm-m-o-melhor-livro-de-software/

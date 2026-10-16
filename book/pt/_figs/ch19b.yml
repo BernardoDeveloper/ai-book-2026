@@ -1,0 +1,53 @@
+- fig: ch19b-roadster
+  kind: photo
+  status: included_by_author_instruction_rights_unverified
+  publication_record: assets/credits/ch19b-roadster.yml
+  local_candidate: tmp/image-review/ch19b-roadster.jpg
+  pixels: {width: 618, height: 496}
+  candidate_sha256: 7638e4936d12c2c05edcceca7d396e74aa07875a4faa3f1941777951b8c71387
+  inspection: "User-supplied Google Images download, inspected 2026-10-16: silver sports car above a dark test surface with visible downward plumes. Exact original source and image authenticity not independently established. At 300 ppi, native width is 2.06 inches; unsuitable for a sharp full-width print figure."
+  idea: "Authentic new Tesla Roadster from the October 2026 controlled demonstration, ideally airborne with the ramp visible. Never substitute the 2017 prototype or an AI rendering."
+  placement: "After opening scene, before the narrator connects it to his former manual work."
+  photo_query: "Tesla Roadster October 15 2026 controlled demonstration Rocket"
+  source_page: https://www.ynetnews.com/culture/article/skawbzkhze
+  source_credit_verbatim: "Photo: X"
+  source_checked: "2026-10-16; article HTML fetched directly; matching still downloaded and visually compared with the user file. Credit does not name a photographer."
+  higher_resolution_candidate: tmp/image-review/ch19b-roadster-ynet.jpg
+  higher_resolution_pixels: {width: 1024, height: 821}
+  higher_resolution_sha256: 26a20704a07905cb6ce9bff944ddcc146bfe52e298b15ae972c399214d629e01
+  higher_resolution_url: https://ynet-pic1.yit.co.il/picserver6/crop_images/2026/10/16/BylxIW12Me/BylxIW12Me_0_0_1401_1123_0_x-large.jpg
+  print_note: "Retrieved image is 1024x821 despite larger dimensions in the URL. Native width at 300 ppi is 3.41 inches. No upscaling performed."
+  alternative_source_page: https://livestream.tesla.com/
+  rights_page: https://www.tesla.com/tesla-gallery?redirect=no
+  rights_status: "No verified grant for commercial-book reuse. Tesla gallery restricts its assets to qualifying news-media use and excludes other commercial purposes. Obtain written permission covering both editions, print/EPUB/HTML and public-repository distribution, or license a photographer's image."
+  caption: "O novo Roadster na demonstração controlada de outubro de 2026. Um protótipo em teste, não um carro já disponível pra sair voando pela cidade."
+  alt: "Carro esportivo prateado suspenso acima de uma pista escura, com jatos visíveis sob a carroceria."
+  description: "O carro aparece com as quatro rodas afastadas do chão. Vários jatos claros saem da parte inferior em direção à pista, onde se espalha uma nuvem iluminada. A imagem isolada não estabelece duração, velocidade ou condições de segurança da manobra."
+  labels_pt: []
+- fig: ch19b-nolan
+  kind: photo
+  status: included_by_author_instruction_rights_unverified
+  publication_record: assets/credits/ch19b-nolan.yml
+  local_candidate: tmp/image-review/ch19b-nolan.webp
+  source_page: https://people.com/christopher-nolan-calls-the-odyssey-casting-backlash-irrelevant-12016977
+  source_supplied_by: author
+  source_checked: "2026-10-16: web open failed; direct HTTP returned a generic Simple Page rather than the article. Caption/photographer could not be verified. Browser fallback unavailable because installed CLI does not provide its required core skill guide. Do not infer credit from the unrelated earlier Universal candidate."
+  candidate_sha256: 3d75dd9ce00c57e228fd4a5e5feff6022f58814482fd19bc20483e0d78967965
+  pixels: {width: 1100, height: 733}
+  inspection: "User-supplied Google Images download, inspected 2026-10-16. Different image from the earlier Universal candidate: Nolan at left with a raised hand, camera crew on a track in the center and two costumed performers at right. Native width at 300 ppi is 3.67 inches. Exact source/photographer and publication rights remain unverified."
+  idea: "Nolan working beside the camera crew on The Odyssey; show the collaborative production rather than a detached celebrity portrait."
+  placement: "In Um filme de Christopher Nolan, before the list of specialist roles."
+  photo_query: "Christopher Nolan The Odyssey black sand beach camera crew Universal"
+  earlier_candidate_source_page: https://gizmodo.com/christopher-nolan-looks-lost-in-this-glorious-new-image-from-the-odyssey-2000754337
+  earlier_candidate_image: https://gizmodo.com/app/uploads/2026/05/Odyssey-Christopher-Nolan-4-1280x853.jpg
+  earlier_candidate_rightsholder: Universal
+  rights_status: "Author supplied the People article as the source and explicitly instructed inclusion after notice that reuse permission is unverified. Photographer and commercial-book/public-repository permission for this exact file remain unverified. Earlier candidate was credited to Universal; do not transfer that credit to this file without evidence."
+  caption: "Christopher Nolan e a equipe nas filmagens de A Odisseia. A direção reúne trabalhos especializados, que também têm autoria e créditos próprios."
+  alt: "Nolan à esquerda, equipe e câmera sobre trilhos ao centro, dois intérpretes de figurino à direita, numa locação aberta."
+  description: "Nolan ergue uma mão à esquerda da composição. No centro, profissionais trabalham junto de uma câmera IMAX montada sobre trilhos, com um microfone suspenso acima. À direita estão dois intérpretes com trajes de época. O enquadramento reúne direção, operação de câmera, som e atuação na mesma locação; não revela as instruções dadas naquele momento."
+  labels_pt: []
+  rejected_substitute:
+    source: https://commons.wikimedia.org/wiki/File:ChristopherNolan-byPhilipRomano3.jpg
+    license: CC BY-SA 4.0
+    author: Philip Romano
+    reason: "Open-license image shows the premiere, not Nolan directing. Does not meet the author's requested subject."

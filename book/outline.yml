@@ -23,7 +23,7 @@ meta:
     en: "9798162395362"   # KDP free ISBN, EN hardcover (2026-10-14)
   owned_names: ["akitaonrails", "Akitando", "The M.Akita Chronicles", "ai-memory", "ai-jail", "ai-usagebar", "ghpending", "AI Lair", "Frank (FrankMD, Frank Sherlock, Frank Yomik, Frank FBI, FrankClaw, Frank Investigator, FrankMega, Frank Karaoke, Frank GO, Frank Manga+ e demais projetos da série)"]
   open_source_licenses: {ai-jail: "GPL-3.0", ai-memory: "MIT", ai-usagebar: "MIT", ghpending: "MIT"}
-  cutoff: "2026-10-13"
+  cutoff: "2026-10-16"
   source_from: "2026-02-01"   # earliest post date the book may use (author, 2026-10-13)
   target_words: 90000
   spine: >-
@@ -464,6 +464,29 @@ parts:
           primary: [06/24/por-que-llms-vao-falhar-na-sua-empresa, 09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou, 10/13/engenharia-reversa-com-ia-a-adobe-morreu]
           supporting: [03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio]
         tone_note: "06/24 flags its proposal as speculation; keep that framing."
+      - id: ch19b
+        title: "O mundo não vai esperar"
+        scene: >-
+          16 October 2026, after 2 a.m.: watching the controlled Tesla Roadster
+          demonstration after redesigning six existing sites in about a day.
+        question: "If AI can do my work, what am I actually being paid to do?"
+        arc: >-
+          Author-requested addition: real displacement, including capable
+          professionals, without treating a static labour market as desirable.
+          Six-site redesign as a bounded experience, not a productivity study.
+          Nolan directing The Odyssey: creative judgment and collaboration,
+          with explicit credit to specialist crafts; software solves problems,
+          code is a means. Recipes versus practised judgment; Akitando 76 and
+          90 support the critique of memorised procedures. Call back to ch18
+          for the hiring bubble, ch06/ch07 for the competence mirror and
+          apestudar for the learning method. No immunity for seniority, no
+          guarantee of prizes from AI, no equation of unemployment with fault.
+          Hand off to ch20: displacement does not require exponential model growth.
+        sources:
+          primary: [10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css]
+        illustrations:
+          - {kind: photo, idea: "New Tesla Roadster, October 2026 demonstration; author-selected photo included with source and unverified-rights record"}
+          - {kind: photo, idea: "Christopher Nolan directing The Odyssey with the crew; author-selected photo included with source and unverified-rights record"}
       - id: ch20
         title: "Competente o suficiente"
         scene: >-

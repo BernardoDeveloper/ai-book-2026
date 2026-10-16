@@ -1,0 +1,36 @@
+persona: pai
+summary: |
+  As Roberto, I found the chapter’s honesty about disappearing jobs more convincing than a promise that everyone will find something better. It gives me a useful way to talk about work with my son: learning to check an answer and understand the problem matters, even when a tool does the execution. The discount example is the clearest practical advice in the chapter. The film and cooking comparisons made sense, but together they kept circling the same point and slowed me down. I still don’t have an answer here to whether superintelligence is real; the handoff to the next chapter makes clear that question is still coming.
+best:
+  - "ch19b: The discount example turns learning to verify into something I can picture."
+  - "ch19b: The author admits that jobs may disappear and that new work is no guarantee."
+worst:
+  - "ch19b: The long Nolan section felt like more detail than I needed to understand the point."
+  - "ch19b: The chapter leaves my son’s question about superintelligence for the next chapter."
+lowest_scored_units:
+  - ch19b
+units:
+  - {unit: ch19b, score: 3, note: "The job warning feels honest and the exercise is useful; the middle repeats its point through several comparisons."}
+annotations:
+  - unit: ch19b
+    quote: "Vale nomear alguns desses trabalhos, porque a comparação fica mais interessante quando a equipe deixa de ser uma massa anônima:"
+    type: boring
+    why: "The list of film roles slows the chapter down for me. I understood the comparison before it, and the list feels more like a lesson about filmmaking than help with my worry."
+    suggestion: "Keep only the roles needed to explain how direction and execution fit together."
+  - unit: ch19b
+    quote: "É parecido com um sistema em que cada tela parece boa, cada serviço passa nos próprios testes e a jornada completa do cliente continua impossível."
+    type: rewrite
+    why: "This makes sense, but the chapter has already explained that someone must judge whether the whole result works. By this point, I wanted the connection to my son’s question, not another version of the same lesson."
+  - unit: ch19b
+    quote: "Se você só sabe repetir a explicação anterior, encontrou algo concreto pra estudar."
+    type: confusing
+    why: "The idea is useful, but I had to read the surrounding example again to work out what counts as checking the solution rather than repeating the explanation."
+    suggestion: "Say plainly that I should change a condition and see whether I can predict what the system ought to do."
+  - unit: ch19b
+    quote: "Pense agora em Gordon Ramsay diante de uma receita e numa pessoa que nunca cozinhou preparando o mesmo prato."
+    type: boring
+    why: "The cooking comparison is understandable, but it follows a long film comparison that already made the point about experience and judgment. The extra analogy felt repetitive."
+  - unit: ch19b
+    quote: "É por isso que a pergunta sobre os limites da IA, adiada no fim de @sec-ch19, continua importante"
+    type: rewrite
+    why: "This sets up the question I came for, but postponing it again means I still cannot tell my son what the chapter thinks superintelligence is or whether it is close."

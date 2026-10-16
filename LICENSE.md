@@ -69,7 +69,11 @@ SOFTWARE.
 | Noto Sans | `assets/fonts/` | SIL Open Font License 1.1 (`assets/fonts/OFL-NotoSans.txt`) |
 | Limelight (Sorkin Type) | `assets/fonts/` | SIL Open Font License 1.1 (`assets/fonts/OFL-Limelight.txt`) |
 | ABNT citation style (patched) | `assets/csl/abnt-akita.csl` | CC BY-SA 3.0, Citation Style Language project (`assets/csl/SOURCES.md`) |
-| Photographs and diagrams from Wikimedia Commons and other sources | `assets/figures/` | Each file's own licence (public domain, CC BY, CC BY-SA); author, source and licence in `assets/credits/<figure>.yml` and in the book's image credits |
+| Photographs and diagrams from Wikimedia Commons and other sources | `assets/figures/` | Each file's own rights status (including public domain, CC BY, CC BY-SA, or unverified reuse permission); available author, source and rights information in `assets/credits/<figure>.yml` and in the book's image credits |
+
+The chapter 21 Roadster and Nolan photographs were selected for inclusion by
+the author; commercial-book and public-repository reuse permissions have not
+been verified. Their inclusion does not grant any downstream reuse licence.
 
 AI-generated illustrations (including the cover art) are identified in
 `assets/credits/` and in the book's "Créditos das imagens" page, with the

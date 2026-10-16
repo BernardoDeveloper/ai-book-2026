@@ -1,0 +1,38 @@
+persona: junior
+summary: |
+  As Lucas, I came in worried that I chose a career whose work is disappearing. This chapter doesn’t offer job security, but it does give me a useful way to think about what to learn: understand the problem, check the agent’s work, and practice what I can’t yet explain. The discount example is the most useful part because I can try it on a real coding task. The long run of examples about directing, authorship, cooking, and learning sometimes repeats the same point, and I wanted more concrete guidance on what to do at work next.
+best:
+  - "ch19b: The discount example turns deliberate practice into something I can try."
+  - "ch19b: The author admits that competent people can lose their jobs."
+worst:
+  - "ch19b: The Nolan section takes a while to return to software work."
+  - "ch19b: The career advice stays broad until the study exercise."
+units:
+  - {unit: ch19b, score: 4, note: "I got a useful way to keep learning, but wanted more specific next steps for my job."}
+annotations:
+  - unit: ch19b
+    quote: "A minha expectativa é que desapareçam muitas, inclusive vagas ocupadas por gente competente."
+    type: rewrite
+    why: "This answers my fear plainly, which I appreciate, but then the chapter leaves me with a broad lesson about adapting rather than a clear first move for someone in a junior role."
+    suggestion: "Add one concrete example of how a junior developer could ask for, or choose, a task that builds judgment while using agents."
+  - unit: ch19b
+    quote: "Vale nomear alguns desses trabalhos, porque a comparação fica mais interessante quando a equipe deixa de ser uma massa anônima:"
+    type: boring
+    why: "The list of film jobs slows me down after the chapter has already made the point that a director coordinates specialists."
+    suggestion: "Shorten the role list and get sooner to the software example of how separate parts can fail as a whole."
+  - unit: ch19b
+    quote: "Seria confortável terminar dizendo que basta virar o Nolan da programação."
+    type: boring
+    why: "By this point, the chapter has already used film direction to explain judgment and coordination, so returning to Nolan feels like another pass over the same idea."
+    suggestion: "Move directly from the learning exercise into the closing advice."
+  - unit: ch19b
+    quote: "Imagine que o agente implemente um desconto numa compra."
+    type: confusing
+    why: "This is the clearest learning advice in the chapter, but the chapter doesn’t show how I could get this kind of practice in a real junior job when someone else assigns my tasks."
+    suggestion: "Briefly connect the exercise to a workplace habit, such as asking to explain a change or test an edge case during review."
+  - unit: ch19b
+    quote: "quanto da mudança já cabe no que temos, mesmo que a próxima versão não dê salto nenhum?"
+    type: rewrite
+    why: "It’s a strong question, but as the chapter’s final line it feels like the answer has been deferred again. The next chapter may answer it, but this leaves my career question hanging."
+    suggestion: "Add a short transition that tells me what the next chapter’s answer will help clarify."
+cut_candidates: []

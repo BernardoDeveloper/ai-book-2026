@@ -14,3 +14,8 @@ integration:
   - "Checked and kept: 131 posts, 96 core+substantial (68+28), ~486k words in 2026 posts, five parts/20 chapters/2 interludes, lint rules, AI-illustration credits record prompt/model/date, real people only in CC-licensed photos, Strix Halo 64 GB (ch13), GLM 4.7 Flash separate 30B (ch13 ref), DRM ~30 h / 'no dia seguinte' (ch16 note), METR open-source repos (ch20 ref). No private repo named; homelab notes described only as 'um repositório privado'. Agrees with the preface paragraph (index.md:95)."
 cutoff_february:
   - "GLM 4.7 Flash correction bullet -> Bun acquisition date (03/31 said 'final de 2024'; ch16 uses Dec 2025, sumner2025anthropic). Added the cut-off change to the inventory section. ch05 callback now 'os primeiros dez por cento de @sec-ch05' (matches ch05's new title/arc)."
+drift_2026_10_16:
+  source: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+  reviewed_blog_commit: 557350127df181c4b124a2c8759648a79e17e4d5
+  editions: [pt, en]
+  decision: "Source adds accessibility implementation and preview download links; neither changes the existing narrative of editorial review. Accessibility mechanics remain documented in docs/ACCESSIBILITY.md. Separately corrected the blanket free-license claim for real-person photos: permission status is recorded per image, including unverified reuse, matching the author-requested new photographs."

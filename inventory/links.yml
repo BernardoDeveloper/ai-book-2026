@@ -38,6 +38,26 @@
   - 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1
   - 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-2
   - 2026/09/30/o-misterio-do-genesys-pi-da-lua-vision-modelo-frontier-brasileiro
+- url: https://themakitachronicles.com
+  kind: web
+  texts:
+  - The M.Akita Chronicles
+  - The Makita Chronicles
+  cited_by:
+  - 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles
+  - 2026/02/17/enviando-emails-sem-spammar-bastidores-do-the-m-akita-chronicles
+  - 2026/02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles
+  - 2026/02/18/web-scrapping-em-2026-bastidores-do-the-m-akita-chronicles
+  - 2026/02/19/frontend-sem-framework-bastidores-do-the-m-akita-chronicles
+  - 2026/02/19/jobs-asssincronos-que-sobrevivem-ao-caos-bastidores-do-the-m-akita-chronicles
+  - 2026/02/20/discord-como-admin-panel-bastidores-do-the-m-akita-chronicles
+  - 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles
+  - 2026/02/20/sqlite-kamal-deploy-de-rails-sem-drama-bastidores-do-the-m-akita-chronicles
+  - 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles
+  - 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito
+  - 2026/03/27/ensinando-a-questionar-noticias-frank-investigator
+  - 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: "/2026/04/24/llm-benchmarks-parte-3-deepseek-kimi-mimo"
   kind: internal
   texts:
@@ -112,25 +132,6 @@
   - 2026/09/15/novo-llm-benchmark-v4-retestando-todos-llms-parte-1
   - 2026/09/17/falando-um-pouco-sobre-minhas-skills-de-ia
   - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
-- url: https://themakitachronicles.com
-  kind: web
-  texts:
-  - The M.Akita Chronicles
-  - The Makita Chronicles
-  cited_by:
-  - 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles
-  - 2026/02/17/enviando-emails-sem-spammar-bastidores-do-the-m-akita-chronicles
-  - 2026/02/18/servindo-ia-na-nuvem-meu-tts-pessoal-bastidores-do-the-m-akita-chronicles
-  - 2026/02/18/web-scrapping-em-2026-bastidores-do-the-m-akita-chronicles
-  - 2026/02/19/frontend-sem-framework-bastidores-do-the-m-akita-chronicles
-  - 2026/02/19/jobs-asssincronos-que-sobrevivem-ao-caos-bastidores-do-the-m-akita-chronicles
-  - 2026/02/20/discord-como-admin-panel-bastidores-do-the-m-akita-chronicles
-  - 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles
-  - 2026/02/20/sqlite-kamal-deploy-de-rails-sem-drama-bastidores-do-the-m-akita-chronicles
-  - 2026/02/20/testes-de-integracao-em-monorepo-bastidores-do-the-m-akita-chronicles
-  - 2026/03/01/software-nunca-esta-pronto-4-projetos-a-vida-pos-deploy-e-por-que-one-shot-prompt-e-mito
-  - 2026/03/27/ensinando-a-questionar-noticias-frank-investigator
-  - 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou
 - url: "/tags/the-m-akita-chronicles"
   kind: internal
   texts:
@@ -172,20 +173,6 @@
   - 2026/05/04/llm-benchmarks-deepseek-unlocked-deepclaude
   - 2026/06/01/llm-benchmarks-grok-4-3-minimax-m3-opus-4-8
   - 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior
-- url: https://github.com/akitaonrails/FrankMD
-  kind: repo
-  texts:
-  - meu repositório no GitHub
-  - FrankMD
-  cited_by:
-  - 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2
-  - 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles
-  - 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles
-  - 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
-  - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
-  - 2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo
-  - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
-  - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
 - url: https://github.com/akitaonrails/FrankYomik
   kind: repo
   texts:
@@ -202,6 +189,21 @@
   - 2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo
   - 2026/05/30/manga-plus-shueisha-desktop-frank-manga-plus
   - 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
+- url: https://github.com/akitaonrails/FrankMD
+  kind: repo
+  texts:
+  - meu repositório no GitHub
+  - FrankMD
+  cited_by:
+  - 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-parte-2
+  - 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles
+  - 2026/02/20/do-zero-a-pos-producao-em-1-semana-como-usar-ia-em-projetos-de-verdade-bastidores-do-the-m-akita-chronicles
+  - 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
+  - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
+  - 2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo
+  - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+  - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
 - url: https://github.com/akitaonrails/ai-usagebar
   kind: repo
   texts:
@@ -297,6 +299,19 @@
   - 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar
   - 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel
   - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
+- url: "/2026/04/11/vs-code-e-o-novo-cartao-perfurado"
+  kind: internal
+  texts:
+  - VS Code é o novo cartão perfurado
+  - '"VS Code é o novo Cartão Perfurado"'
+  - nem largar o volante pro agente, nem virar fiscal de vírgula
+  cited_by:
+  - 2026/04/20/clean-code-para-agentes-de-ia
+  - 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar
+  - 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao
+  - 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit
+  - 2026/10/12/llms-agentes-competente-o-suficiente
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: "/2026/04/20/clean-code-para-agentes-de-ia"
   kind: internal
   texts:
@@ -328,6 +343,20 @@
   - 2026/06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local
   - 2026/07/01/llm-benchmark-sonnet-5-gemini-3-5-flash-sakana-fugu-ultra
   - 2026/08/22/llm-benchmarks-os-ultimos-deepseek-v4-parem-de-perguntar
+- url: https://github.com/akitaonrails/FrankSherlock
+  kind: repo
+  texts:
+  - "**Frank Sherlock**"
+  - github.com/akitaonrails/FrankSherlock
+  - FrankSherlock
+  - Frank Sherlock
+  cited_by:
+  - 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias
+  - 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
+  - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
+  - 2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo
+  - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: "/2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1"
   kind: internal
   texts:
@@ -356,18 +385,6 @@
   - 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar
   - 2026/06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local
   - 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor
-- url: "/2026/04/11/vs-code-e-o-novo-cartao-perfurado"
-  kind: internal
-  texts:
-  - VS Code é o novo cartão perfurado
-  - '"VS Code é o novo Cartão Perfurado"'
-  - nem largar o volante pro agente, nem virar fiscal de vírgula
-  cited_by:
-  - 2026/04/20/clean-code-para-agentes-de-ia
-  - 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar
-  - 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao
-  - 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit
-  - 2026/10/12/llms-agentes-competente-o-suficiente
 - url: "/2026/04/25/llm-benchmarks-vale-a-pena-misturar-2-modelos"
   kind: internal
   texts:
@@ -424,19 +441,6 @@
   - 2026/09/23/llm-benchmark-v4-genesys-pi-novo-competidor-brasileiro
   - 2026/09/23/llm-benchmark-v4-opus-5-5-gpt-6-sol-luna-mimo-2-6-grok-4-7
   - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
-- url: https://github.com/akitaonrails/FrankSherlock
-  kind: repo
-  texts:
-  - "**Frank Sherlock**"
-  - github.com/akitaonrails/FrankSherlock
-  - FrankSherlock
-  - Frank Sherlock
-  cited_by:
-  - 2026/02/23/vibe-code-fiz-um-indexador-inteligente-de-imagens-com-ia-em-2-dias
-  - 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
-  - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
-  - 2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo
-  - 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas
 - url: https://github.com/akitaonrails/distrobox-gaming
   kind: repo
   texts:
@@ -461,6 +465,17 @@
   - 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts
   - 2026/04/11/vs-code-e-o-novo-cartao-perfurado
   - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: "/2026/02/08/rant-ia-acabou-com-programadores"
+  kind: internal
+  texts:
+  - 'RANT: IA acabou com os programadores?'
+  - '"RANT: IA acabou com os programadores?"'
+  - repeti esse aviso no começo de 2026
+  cited_by:
+  - 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
+  - 2026/04/11/vs-code-e-o-novo-cartao-perfurado
+  - 2026/05/25/primeiras-impressoes-usando-oh-my-pi-e-opencode
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: "/2026/02/21/vibe-code-fiz-um-clone-do-mega-em-rails-em-1-dia-pro-meu-home-server"
   kind: internal
   texts:
@@ -553,6 +568,17 @@
   - 2026/03/31/migrando-meu-home-server-com-claude-code
   - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
   - 2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo
+- url: https://github.com/akitaonrails/frank_mangaplus
+  kind: repo
+  texts:
+  - github.com/akitaonrails/frank_mangaplus
+  - FRANK MANGA+
+  - Frank Manga+
+  cited_by:
+  - 2026/05/30/manga-plus-shueisha-desktop-frank-manga-plus
+  - 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
+  - 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://www.youtube.com/channel/UCib793mnUOhWymCh2VJKplQ
   kind: video
   texts:
@@ -612,15 +638,6 @@
   - 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1
   - 2026/02/08/rant-ia-acabou-com-programadores
   - 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
-- url: "/2026/02/08/rant-ia-acabou-com-programadores"
-  kind: internal
-  texts:
-  - 'RANT: IA acabou com os programadores?'
-  - '"RANT: IA acabou com os programadores?"'
-  cited_by:
-  - 2026/03/05/37-dias-de-imersão-em-vibe-coding-conclusão-quanto-a-modelos-de-negócio
-  - 2026/04/11/vs-code-e-o-novo-cartao-perfurado
-  - 2026/05/25/primeiras-impressoes-usando-oh-my-pi-e-opencode
 - url: "/2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real"
   kind: internal
   texts:
@@ -724,6 +741,17 @@
   - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
   - 2026/10/12/llms-agentes-competente-o-suficiente
   - 2026/10/14/treinei-meu-proprio-modelo-de-ia-spoiler-e-so-pra-estudo
+- url: "/2026/10/11/existem-linguagens-melhores-pra-programar-com-llms"
+  kind: internal
+  texts:
+  - Existem linguagens melhores pra programar com LLMs?
+  - benchmark de linguagens
+  - o benchmark de linguagens
+  - Escolha o framework
+  cited_by:
+  - 2026/10/12/llms-agentes-competente-o-suficiente
+  - 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: "/2026/10/12/llms-agentes-competente-o-suficiente"
   kind: internal
   texts:
@@ -813,16 +841,17 @@
   - 2026/03/27/ensinando-a-questionar-noticias-frank-investigator
   - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
   - 2026/05/30/boas-praticas-projetos-codigo-aberto-llm-o-minimo
-- url: https://github.com/akitaonrails/frank_mangaplus
+- url: https://github.com/akitaonrails/frank_karaoke
   kind: repo
   texts:
-  - github.com/akitaonrails/frank_mangaplus
-  - FRANK MANGA+
-  - Frank Manga+
+  - github.com/akitaonrails/frank_karaoke
+  - Frank Karaoke
+  - GitHub
+  - frank_karaoke
   cited_by:
-  - 2026/05/30/manga-plus-shueisha-desktop-frank-manga-plus
-  - 2026/07/12/usando-ia-pra-resolver-meus-probleminhas-do-dia-a-dia
-  - 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit
+  - 2026/04/05/transformando-youtube-num-app-de-karaoke-frank-karaoke
+  - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://github.com/akitaonrails/geary-hide-sidebar-module
   kind: repo
   texts:
@@ -904,6 +933,14 @@
   - 2026/05/28/backup-gmail-maildir-linux
   - 2026/07/11/como-me-precaver-pros-meus-agentes-nao-apagarem-minhas-coisas
   - 2026/10/12/usuarios-linux-sempre-escolham-btrfs-nao-ext4
+- url: "/2018/12/26/akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap"
+  kind: internal
+  texts:
+  - consultoria enterprise trabalhando com SAP
+  - Akitando sobre SAP
+  cited_by:
+  - 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: "/2019/10/09/akitando-63-nao-terceirize-suas-decisoes-a-licao-mais-importante-da-sua-vida"
   kind: internal
   texts:
@@ -1202,15 +1239,6 @@
   cited_by:
   - 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor
   - 2026/10/12/llms-agentes-competente-o-suficiente
-- url: "/2026/10/11/existem-linguagens-melhores-pra-programar-com-llms"
-  kind: internal
-  texts:
-  - Existem linguagens melhores pra programar com LLMs?
-  - benchmark de linguagens
-  - o benchmark de linguagens
-  cited_by:
-  - 2026/10/12/llms-agentes-competente-o-suficiente
-  - 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
 - url: "/tags/inteligencia-artificial"
   kind: internal
   texts:
@@ -1227,6 +1255,13 @@
   cited_by:
   - 2026/02/01/vibe-code-fiz-um-editor-de-markdown-do-zero-com-claude-code-frankmd-part-1
   - 2026/04/18/omarchy-no-thinkpad-t14-gen-6
+- url: https://aijail.io
+  kind: web
+  texts:
+  - ai-jail
+  cited_by:
+  - 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://akitaonrails.com/2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush
   kind: internal
   texts:
@@ -1274,6 +1309,14 @@
   cited_by:
   - 2026/07/31/urgente-se-voce-guarda-bitcoins-em-coldcard-mova-tudo
   - 2026/08/01/explorando-o-problema-escandaloso-do-rng-da-coinkite
+- url: https://blog.themakitachronicles.com
+  kind: web
+  texts:
+  - Blog
+  - arquivo da newsletter
+  cited_by:
+  - 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://bun.com/blog/bun-in-rust
   kind: web
   texts:
@@ -1463,16 +1506,6 @@
   cited_by:
   - 2026/03/07/portando-10-mil-linhas-de-python-pra-crystal-com-claude-easy-subtitle
   - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
-- url: https://github.com/akitaonrails/frank_karaoke
-  kind: repo
-  texts:
-  - github.com/akitaonrails/frank_karaoke
-  - Frank Karaoke
-  - GitHub
-  - frank_karaoke
-  cited_by:
-  - 2026/04/05/transformando-youtube-num-app-de-karaoke-frank-karaoke
-  - 2026/05/14/terminando-maratona-ia-sucesso-ou-fracasso
 - url: https://github.com/akitaonrails/frank_scanlation
   kind: repo
   texts:
@@ -1535,6 +1568,15 @@
   cited_by:
   - 2026/01/28/vibe-code-eu-fiz-um-appzinho-100-com-glm-4-7-tv-clipboard
   - 2026/01/29/vibe-code-qual-llm-é-a-melhor-vamos-falar-a-real
+- url: https://github.com/akitaonrails?tab=repositories
+  kind: repo
+  texts:
+  - mais de 30 repositórios públicos
+  - está tudo público
+  - meu GitHub
+  cited_by:
+  - 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://github.com/cculianu/Fulcrum
   kind: repo
   texts:
@@ -1872,12 +1914,6 @@
   - '"Manifesto Anti-Parasita: Seja um Criador"'
   cited_by:
   - 2026/09/14/codigo-de-conduta-e-a-raiz-de-todo-o-mal
-- url: "/2018/12/26/akitando-34-voce-nao-sabe-nada-de-enterprise-conhecendo-a-sap"
-  kind: internal
-  texts:
-  - consultoria enterprise trabalhando com SAP
-  cited_by:
-  - 2026/04/09/20-anos-de-blog-o-ano-em-que-a-ia-finalmente-me-deixou-traduzir-tudo
 - url: "/2019/01/30/akitando-37-a-dimensao-do-tempo-para-iniciantes-em-programacao-serie-comecando-aos-40"
   kind: internal
   texts:
@@ -1944,6 +1980,12 @@
   - transcrição aqui
   cited_by:
   - 2026/09/14/codigo-de-conduta-e-a-raiz-de-todo-o-mal
+- url: "/2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash"
+  kind: internal
+  texts:
+  - Comecei com multimídia e sites estáticos
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: "/2023/06/19/akitando-142-entendendo-como-chatgpt-funciona-rodando-sua-propria-ia"
   kind: internal
   texts:
@@ -2436,12 +2478,12 @@
   - Aider
   cited_by:
   - 2026/01/09/omarchy-3-um-dos-melhores-agentes-pra-programacao-crush
-- url: https://aijail.io
-  kind: web
+- url: https://ailair.akitaonrails.com
+  kind: internal
   texts:
-  - ai-jail
+  - Akita's AI Lair
   cited_by:
-  - 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://ailair.akitaonrails.com/pt-br/book
   kind: internal
   texts:
@@ -2449,6 +2491,12 @@
   - página do livro
   cited_by:
   - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://aimemory.sh
+  kind: web
+  texts:
+  - ai-memory
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://aimemorybr.netlify.app
   kind: web
   texts:
@@ -2468,6 +2516,12 @@
   - Microsoft Visual C++ Redistributable x86 oficial
   cited_by:
   - 2026/07/30/removendo-drm-de-ebooks-de-kindle-em-2026
+- url: https://akitaonrails.com
+  kind: internal
+  texts:
+  - AkitaOnRails.com
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://akitaonrails.com/2018/09/18/akitando-11-projetos-aprendendo-a-priorizar
   kind: internal
   texts:
@@ -3062,6 +3116,12 @@
   - 12 mil
   cited_by:
   - 2026/09/14/codigo-de-conduta-e-a-raiz-de-todo-o-mal
+- url: https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-ai-ui-design
+  kind: web
+  texts:
+  - a versão atual
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://blog.google/innovation-and-ai/technology/research/google-willow-quantum-chip
   kind: web
   texts:
@@ -3086,12 +3146,6 @@
   - PS5
   cited_by:
   - 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu
-- url: https://blog.themakitachronicles.com
-  kind: web
-  texts:
-  - Blog
-  cited_by:
-  - 2026/02/16/vibe-code-do-zero-a-producao-em-6-dias-the-m-akita-chronicles
 - url: https://blog.themakitachronicles.com/podcast-transcripts
   kind: web
   texts:
@@ -3510,6 +3564,12 @@
   - US$ 0,24 por milhão de tokens no Clef e US$ 0,09 no Clef-flash
   cited_by:
   - 2026/10/03/entendendo-o-hype-do-jev-pra-que-serve
+- url: https://developers.googleblog.com/en/stitch-a-new-way-to-design-uis
+  kind: web
+  texts:
+  - primeira versão foi apresentada em 2025
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://developers.openai.com/api/docs/guides/structured-outputs
   kind: web
   texts:
@@ -4059,6 +4119,12 @@
   - Forza Horizon 6
   cited_by:
   - 2026/04/01/meu-cockpit-de-sim-racing-formula-fx1
+- url: https://fred.stlouisfed.org/series/EFFR
+  kind: web
+  texts:
+  - os juros americanos ficaram perto de zero
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://freedomhouse.org/country/china/freedom-net/2024
   kind: web
   texts:
@@ -4586,6 +4652,12 @@
   - repositório
   cited_by:
   - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+- url: https://github.com/akitaonrails/ai-book-2026/blob/main/docs/ACCESSIBILITY.md
+  kind: repo
+  texts:
+  - documentado no repositório
+  cited_by:
+  - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
 - url: https://github.com/akitaonrails/ai-book-2026/issues
   kind: repo
   texts:
@@ -4599,37 +4671,37 @@
   - releases do GitHub
   cited_by:
   - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
-- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough-ebook.pdf
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competent-Enough-ebook.pdf
   kind: repo
   texts:
   - PDF
   cited_by:
   - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
-- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.epub
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competent-Enough.epub
   kind: repo
   texts:
   - EPUB
   cited_by:
   - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
-- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competent-Enough.pdf
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competent-Enough.pdf
   kind: repo
   texts:
   - PDF
   cited_by:
   - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
-- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente-ebook.pdf
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competente-o-Suficiente-ebook.pdf
   kind: repo
   texts:
   - PDF
   cited_by:
   - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
-- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.epub
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competente-o-Suficiente.epub
   kind: repo
   texts:
   - EPUB
   cited_by:
   - 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
-- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.5/Competente-o-Suficiente.pdf
+- url: https://github.com/akitaonrails/ai-book-2026/releases/download/v1.0.0-preview.8/Competente-o-Suficiente.pdf
   kind: repo
   texts:
   - PDF
@@ -4641,6 +4713,12 @@
   - ai-jail-web
   cited_by:
   - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
+- url: https://github.com/akitaonrails/ai-jail-web/blob/main/docs/research/PROOFREAD-2026-10-15-BRIEF.md
+  kind: repo
+  texts:
+  - proofreading do ai-jail
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://github.com/akitaonrails/ai-jail/blob/master/.github/workflows/release.yml
   kind: repo
   texts:
@@ -4701,6 +4779,12 @@
   - ai-memory-web
   cited_by:
   - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
+- url: https://github.com/akitaonrails/ai-memory-web/blob/main/docs/research/persona-review.md
+  kind: repo
+  texts:
+  - relatório do ai-memory
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://github.com/akitaonrails/ai-memory/blob/main/.github/workflows/release.yml
   kind: repo
   texts:
@@ -4829,6 +4913,24 @@
   - "`evals/`"
   cited_by:
   - 2026/05/23/criei-sistema-memoria-agentes-codigo-ai-memory
+- url: https://github.com/akitaonrails/ai-toolkit-web/commit/c2a5237e876f662a8b53450f23f0162fdc1d4a76
+  kind: repo
+  texts:
+  - revisão seguinte
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
+- url: https://github.com/akitaonrails/ai-toolkit-web/pull/4
+  kind: repo
+  texts:
+  - redesign do AI Lair
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
+- url: https://github.com/akitaonrails/ai-toolkit-web/pull/5
+  kind: repo
+  texts:
+  - correção
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://github.com/akitaonrails/ai-usagebar/blob/main/.github/workflows/release.yml
   kind: repo
   texts:
@@ -5128,6 +5230,12 @@
   kind: repo
   texts:
   - repositório do benchmark
+  cited_by:
+  - 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor
+- url: https://github.com/akitaonrails/jev-docs-benchmarks/blob/master/benchmark/reports/cuda-comparison/results.md
+  kind: repo
+  texts:
+  - repositório
   cited_by:
   - 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor
 - url: https://github.com/akitaonrails/jev-docs-benchmarks/blob/master/benchmark/reports/decision3-comparison-v2/results.md
@@ -5921,13 +6029,6 @@
   - repositório
   cited_by:
   - 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms
-- url: https://github.com/akitaonrails?tab=repositories
-  kind: repo
-  texts:
-  - mais de 30 repositórios públicos
-  - está tudo público
-  cited_by:
-  - 2026/08/18/hot-take-harness-loop-engineering-graph-engineering-sao-bullshit
 - url: https://github.com/alfredopiquet/claudebar
   kind: repo
   texts:
@@ -7308,6 +7409,12 @@
   - LiteServer
   cited_by:
   - 2026/08/19/guia-de-sobrevivencia-para-uma-internet-censurada
+- url: https://livestream.tesla.com
+  kind: web
+  texts:
+  - transmissão oficial da Tesla
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://llvm.org/docs/LangRef.html
   kind: web
   texts:
@@ -7609,6 +7716,13 @@
   - "![Timeline animada de commits no github-visualize"
   cited_by:
   - 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito
+- url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/2026/10/stitch-ai-native-canvas-google.webp
+  kind: web
+  texts:
+  - "![O canvas do Google Stitch com várias interfaces, variações visuais e controles
+    do design system"
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://new-uploads-akitaonrails.s3.us-east-2.amazonaws.com/20260109200839_screenshot-2026-01-09_20-08-17.png
   kind: web
   texts:
@@ -8083,6 +8197,12 @@
   - estudo de 2021 da CSCW
   cited_by:
   - 2026/09/14/codigo-de-conduta-e-a-raiz-de-todo-o-mal
+- url: https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028
+  kind: web
+  texts:
+  - segundo Elon Musk, de puxar até 2 G
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://petapixel.com/2022/10/28/you-have-to-pay-a-subscription-to-use-pantone-colors-in-photoshop-now
   kind: web
   texts:
@@ -8472,6 +8592,18 @@
   - guia do Sparrow
   cited_by:
   - 2026/07/31/urgente-se-voce-guarda-bitcoins-em-coldcard-mova-tudo
+- url: https://startupi.com.br/restricoes-sao-libertadoras-menos-e-mais
+  kind: web
+  texts:
+  - '"Restrições são libertadoras: menos é mais"'
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
+- url: https://stitch.withgoogle.com
+  kind: web
+  texts:
+  - Stitch, do Google
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://store.qnap.com/ts-873a-8g-us.html
   kind: web
   texts:
@@ -8599,6 +8731,12 @@
   - contado ao TechCrunch
   cited_by:
   - 2026/09/09/propagandas-enganosas-da-openai-anthropic-nvidia
+- url: https://techcrunch.com/2026/10/15/tesla-reveals-spacex-powered-roadster-that-flies-and-falls-with-style
+  kind: web
+  texts:
+  - TechCrunch detalhou as três versões
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://teletime.com.br/06/07/2026/vpn-senado-entidaddes
   kind: web
   texts:
@@ -9132,6 +9270,12 @@
   - o mesmo modelo sem as travas, disponível só pro consórcio do Glasswing
   cited_by:
   - 2026/06/11/llm-benchmark-fable-5-e-a-novela-da-anthropic
+- url: https://www.bls.gov/emp/tables/fastest-declining-occupations.htm
+  kind: web
+  texts:
+  - lista atual de profissões em maior declínio do Bureau of Labor Statistics
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://www.boatos.org/tecnologia/ia-tera-acesso-a-todas-conversas-do-whatsapp-a-partir-de-hoje.html
   kind: web
   texts:
@@ -9742,6 +9886,13 @@
   - mais de 80% de cada etapa da cadeia de manufatura de painéis solares
   cited_by:
   - 2026/09/17/ia-desmascarou-histeria-mudancas-climaticas
+- url: https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure
+  kind: web
+  texts:
+  - OIT mostra que a tecnologia costuma automatizar tarefas sem necessariamente eliminar
+    ocupações inteiras
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://www.imf.org/-/media/files/publications/dp/2021/english/apdfea.pdf
   kind: web
   texts:
@@ -10275,6 +10426,12 @@
   - 551 perguntas formais
   cited_by:
   - 2026/09/17/ia-desmascarou-histeria-mudancas-climaticas
+- url: https://www.roadandtrack.com/news/a74151425/the-air-assisted-tesla-roadster-flies-in-demo-hits-0-60-in-08-seconds
+  kind: web
+  texts:
+  - Road & Track mediu e descreveu as manobras
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://www.rubyhack.ai
   kind: web
   texts:
@@ -10337,6 +10494,12 @@
   - renunciou em 2014
   cited_by:
   - 2026/09/14/codigo-de-conduta-e-a-raiz-de-todo-o-mal
+- url: https://www.slideshare.net/slideshow/devconf-2019-so-carlos/143923367
+  kind: web
+  texts:
+  - 83 slides estão no meu SlideShare
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://www.smh.com.au/world/eu-power-companies-set-for-windfall-profits-wwf-20080407-24aq.html
   kind: web
   texts:
@@ -10730,6 +10893,18 @@
   - minissérie inteira de vídeos sobre armazenamento e sistemas de arquivos
   cited_by:
   - 2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados
+- url: https://www.youtube.com/playlist?list=PLdsnXVqbHDUd6wEL932R7dW9Zazt2oNWF
+  kind: video
+  texts:
+  - "**Que curso devo fazer??**"
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
+- url: https://www.youtube.com/playlist?list=PLdsnXVqbHDUehzKjiRruy--gncHz9Injy
+  kind: video
+  texts:
+  - "**Eu Avisei**"
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://www.youtube.com/watch?v=0KNGiOp7eoE
   kind: video
   texts:
@@ -10964,6 +11139,12 @@
   - no segundo post
   cited_by:
   - 2026/09/22/parem-de-inventar-desculpas-e-facam-mais-deploy-a-premissa-mudou
+- url: https://x.com/AkitaOnRails/status/2110809199890300986
+  kind: social
+  texts:
+  - algumas telas e o resultado da mudança no Twitter
+  cited_by:
+  - 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css
 - url: https://x.com/AndrewCurran_/status/2097839975190720935
   kind: social
   texts:

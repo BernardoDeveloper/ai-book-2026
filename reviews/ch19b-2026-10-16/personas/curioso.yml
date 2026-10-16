@@ -1,0 +1,28 @@
+persona: curioso
+summary: |
+  I came for stories, and the opening delivered: the flying car and the late-night redesign gave the chapter a vivid, personal start. I liked the film examples and the thought that a tool can make it easier to try, reject, and improve ideas. As the chapter went on, though, the same point—that execution is cheaper, while judgment still takes experience—returned through several analogies. I finished with a clear idea, but wished the chapter had reached its ending sooner.
+best:
+  - "ch19b: the late-night Roadster presentation beside the practical story of redesigning six existing sites"
+  - "ch19b: the example of a prolonged silence changing a film scene"
+worst:
+  - "ch19b: the repeated lesson about judgment across software, cinema, authorship, cooking, and study"
+units:
+  - {unit: ch19b, score: 3, note: "The stories kept me reading, but the chapter circles its central idea for too long."}
+annotations:
+  - unit: ch19b
+    quote: "O problema de dizer \"a IA só substitui quem digita\" é que parece oferecer imunidade a quem se considera um programador de verdade."
+    type: boring
+    why: "The opening has already made the harder point that competent people can lose work. This restates it before the chapter moves into another version of the same argument."
+    suggestion: "Keep the concrete example of layoffs and move on; the extra framing slowed the story for me."
+  - unit: ch19b
+    quote: "Vale nomear alguns desses trabalhos, porque a comparação fica mais interessante quando a equipe deixa de ser uma massa anônima:"
+    type: boring
+    why: "The film analogy is engaging, but the role-by-role list begins to feel like a manual. I had understood that filmmaking depends on many skilled collaborators."
+    suggestion: "Choose one or two roles that illuminate the comparison and let the scene carry the point."
+  - unit: ch19b
+    quote: "O iniciante pode aprender com a receita. Pode até acertar um prato excelente."
+    type: rewrite
+    why: "The cooking example arrives after the chapter has already used cinema, software, and authorship to explain why producing an output is different from judging it. It felt like one analogy too many."
+    suggestion: "Shorten this section and connect the course example directly to the earlier discussion of practice."
+cut_candidates:
+  - {unit: ch19b, where: "A receita não dá três estrelas", why: "I would not miss this extra analogy; the chapter has already established its point about experience and evaluation through the film and software examples."}

@@ -51,7 +51,7 @@ sources:
   - {post: 2026/09/28/llms-sao-boas-em-reproduzir-o-que-existe-e-coisas-novas, sha256: "d0cbb55e7fefdb9aacc81e9b5fd1039940ab999808e75a568bb5b5bc4e6c8879"}
   - {post: 2026/10/03/entendendo-o-hype-do-jev-pra-que-serve, sha256: "003d104009e3c6bf7c342a51aca0fbe971432cbbc44fc9e591946e9b68b67c8b"}
   - {post: 2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados, sha256: "0feadb627f15c5bd325c7ac8d2e0c67519e86987a51e7645b5d46bf4674b3cab"}
-  - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "90819aaee0a700994dc5dbcc83018b026811a12e9ea657a31c3e2d53c6270c0b"}
+  - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "5e72d1910de7c5160fd1b976a99c83cc892e8c43efb86b045b29181fd5bc55d5", commit: "557350127df181c4b124a2c8759648a79e17e4d5"}
   - {post: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms, sha256: "d0ad6a79b80f5d9dd74bf39c0782d291889f9de32b964c6ea06c580f02bb4079"}
   - {post: 2026/10/12/llms-agentes-competente-o-suficiente, sha256: "ee499fef89fe8fe35d652f193b51f1660cd08e8ed77adee74e036ca1444cc54b"}
   - {post: 2026/10/13/engenharia-reversa-com-ia-a-adobe-morreu, sha256: "40660ae1ab1655e31fda54ba8b9e51e672e7840afa28db6e7dc876329953f3c0", commit: "b558ea0047d8c90fa5ff8502c095ab44f3e8888a"}

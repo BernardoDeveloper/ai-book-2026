@@ -5,3 +5,8 @@ notes:
   - "Electricity (~R$ 80) is the author's upper-bound estimate from rated power; the closeout report says energy was not metered. Text says so."
   - "apA closes with '13 de outubro ... este livro fecha'; ch13b's lab closed 14 October (staging entry in _staging/apA-microgpt.md). apA owner: move the closing line or date."
   - "Four figures (contract says max 3); requested by the coordinator."
+drift_2026_10_16:
+  source: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor
+  reviewed_blog_commit: 557350127df181c4b124a2c8759648a79e17e4d5
+  editions: [pt, en]
+  decision: "No prose impact: callback uses the 4B classifier/OpenAI accuracy tie, unchanged by the RTX 5090 deployment update. No latency or hardware comparison is repeated here."

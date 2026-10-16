@@ -19,7 +19,7 @@ sources:
   - {post: 2026/03/31/review-minisforum-ms-s1-max-amd-ai-max-395, sha256: "5503548667e5a04feb629e98214f329605f7ca537c7095d3afe20c72e9ad2cd1"}
   - {post: 2026/04/05/testando-llms-open-source-e-comerciais-quem-consegue-bater-o-claude-opus, sha256: "6e03e1fcf81b0ab75eb74031ce2c338f5112558afc3475e637f746160a8e59ff"}
   - {post: 2026/06/14/llm-benchmark-kimi-v2-7-code-glm-5-2-minimax-m3-local, sha256: "ea56a609622cfd6ea2f3df72fe53f008ee722fccd6b4df9c81d69eca44c8ebb9"}
-  - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "90819aaee0a700994dc5dbcc83018b026811a12e9ea657a31c3e2d53c6270c0b"}
+  - {post: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor, sha256: "5e72d1910de7c5160fd1b976a99c83cc892e8c43efb86b045b29181fd5bc55d5", commit: "557350127df181c4b124a2c8759648a79e17e4d5"}
   - {post: 2026/04/09/como-a-elevenlabs-nao-foi-morta-pelo-qwen3-tts, sha256: "7e3a646b143cfe73c81a960380737ebe609b79f6de648f0d47666bd7af642760"}
   - {post: 2026/06/05/controversia-ia-contribuicoes-projetos-codigo-aberto-minha-opiniao, sha256: "c9cba2e95138b7a4a1a3a6a459e5cc3253a0a556925a533482eb87e333b0fcf3"}
   - {post: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito, sha256: "4efebd6893539875cd7d62c121b0b6df51ba8610890a2232d996241e4f56d914"}
@@ -446,7 +446,7 @@ O resultado, em 12 de outubro de 2026, foi este:
 
 - no topo, dois modelos abertos de 27 bilhões de parâmetros, o Perplexity Decider e o Decision 3.0, ambos com 99,4% de acerto nos casos compactos e 100% em português; os dois deram exatamente as mesmas respostas em todas as 1.024 classificações;
 - logo atrás, empatados em 97,6%, o próprio Jev e o Microsoft Decision-1, este o serviço pago mais barato que eu medi, uns 6 centavos de dólar a cada 10 mil decisões;
-- os melhores modelos abertos de 4 bilhões de parâmetros, como o Jebadiah, ficaram entre 87% e 90%, respondendo em uns 200 milissegundos.
+- os melhores modelos abertos de 4 bilhões de parâmetros, como o Jebadiah, ficaram entre 87% e 90%, respondendo em uns 200 milissegundos no mini-PC.
 
 <!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
 Um modelo de 4 bilhões de parâmetros, que cabe numa placa de vídeo comum, empatou com o serviço de decisões da OpenAI, que estreou com 90,5%. E o melhor resultado da tabela inteira veio de dois modelos que qualquer um pode baixar e rodar em casa.
@@ -454,10 +454,15 @@ Um modelo de 4 bilhões de parâmetros, que cabe numa placa de vídeo comum, emp
 <!-- src: ref:private-notes/decision-models.md -->
 O Decision 3.0 ocupou uns 49 GB de memória de vídeo, e no pico o total encostou em 63,5 dos 64 GB do mini-PC. Os dois campeões tinham que rodar sozinhos, com todo o resto desligado, e cada decisão levava perto de um segundo e meio. Os serviços na nuvem respondiam, quase todos, em menos de meio segundo.
 
+<!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
+Depois rodei na RTX 5090 os modelos que cabiam nos seus 32 GB, com os mesmos pesos e pedidos. O Jebadiah caiu de 205 pra 39 milissegundos, mais rápido que qualquer hospedado medido, e os classificadores especializados de 4 bilhões ficaram entre 39 e 91 milissegundos. Os dois campeões de 27 bilhões, com uns 49 GB de pesos cada, ficaram de fora por falta de memória.
+
+O acerto nos casos compactos ficou igual ou a até dois casos de distância por modelo, embora alguns rótulos individuais tenham mudado. A comparação é entre duas implantações completas, com máquinas, software e rede diferentes; não isola o efeito de trocar só o software que executa o modelo. A tabela de acerto continuou usando a rodada do mini-PC.
+
 ### O chute
 
 <!-- src: ref:jev-docs/README.md -->
-As tarefas tinham três ou quatro opções, então chutar ao acaso acertaria uns 31%. O Julia-1, o menor modelo da lista, com 144 milhões de parâmetros, acertou 31,5%. Respondia em 12 milissegundos, o mais rápido de todos, e acertava como um chute ao acaso.
+As tarefas tinham três ou quatro opções, então chutar ao acaso acertaria uns 31%. O Julia-1, o menor modelo da lista, com 144 milhões de parâmetros, acertou 31,5%. No mini-PC, respondia em 12 milissegundos, o mais rápido de todos, e acertava como um chute ao acaso.
 
 <!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
 Dos 71 palpites que ele deu com mais de 90% de confiança, 48 estavam errados. Esses modelos minúsculos foram feitos pra ser ajustados com os dados de quem vai usar; de fábrica, aplicando regras que nunca viram, não servem.

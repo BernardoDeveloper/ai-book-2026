@@ -1,0 +1,39 @@
+persona: gerente
+summary: |
+  This chapter answers the employment worry directly: useful experience can travel to new problems, but it does not protect a person or a role from disappearing. I trusted the account of redesigning six existing sites because it explains what was already in place and what the agents actually changed. The billing example made the value of judgment concrete, and the “before renewing” checklist in the next chapter is the most useful payoff for my job. I did start to skim when the chapter used film, software authorship, cooking, and deliberate practice to circle the same point: producing a result is easier than knowing whether it is good. I wanted a little more help turning that insight into questions for the consultants selling our transformation.
+best:
+  - "ch19b: the billing example shows how an apparently technical problem can really be a disagreement about business rules"
+  - "ch19b: the candid explanation of what the six-site experiment does and does not prove"
+  - "ch20 seam: the manager checklist before renewing a license"
+worst:
+  - "ch19b: the film and Michelin analogies together keep extending the same judgment-versus-execution point"
+  - "ch19b: advice to study the next problem stays broad for a manager facing a live transformation proposal"
+units:
+  - {unit: ch19b, score: 4, note: "I believe the employment warning and got a useful lens for evaluating AI work, though the repeated analogies slowed me down."}
+annotations:
+  - unit: ch19b
+    quote: "Ter as tarefas existentes exigiria abrir mão justamente desse ganho."
+    type: confusing
+    why: "As a manager, I agree that preserving every task blocks efficiency, but this leaves the tradeoff at the level of society. I still want to know how to weigh the gain against the people who lose work during the transition."
+    suggestion: "A brief example of a company deciding how to share productivity gains or support displaced staff would make the tradeoff more actionable."
+  - unit: ch19b
+    quote: "É parecido com um sistema em que cada tela parece boa, cada serviço passa nos próprios testes e a jornada completa do cliente continua impossível."
+    type: rewrite
+    why: "This is the clearest bridge from the film example to my work. The surrounding film detail takes a while to reach this point, which is the one I wanted."
+    suggestion: "Get to the customer journey example sooner; keep only the film details needed to make the connection."
+  - unit: ch19b
+    quote: "Pense agora em **Gordon Ramsay** diante de uma receita"
+    type: boring
+    why: "By this point I have heard the same core idea through the director and software examples: a recipe or instruction does not supply judgment. The cooking analogy felt like another lap."
+    suggestion: "Trim this section or connect it directly to a practical way to build and assess judgment."
+  - unit: ch19b
+    quote: "Prefiro escolher um trabalho real, entender suas restrições e experimentar o que permite fazê-lo melhor."
+    type: rewrite
+    why: "This is sensible, but for someone being sold an AI transformation it remains a principle rather than a decision I can take to the next consultant meeting."
+    suggestion: "Add one or two concrete questions a manager can ask about the work, its constraints, and how success will be measured."
+  - unit: ch19b
+    quote: "Essa liberdade exige algum gosto desenvolvido, alguma noção de uso e disposição pra comparar."
+    type: confusing
+    why: "I understand the point, but “gosto” and “noção de uso” are hard to turn into team expectations or a hiring and training plan."
+    suggestion: "Name observable behaviors, such as checking a workflow with users, testing edge cases, or explaining why a result is acceptable."
+cut_candidates: []

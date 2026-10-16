@@ -1,0 +1,73 @@
+references:
+  - id: universal2026odyssey
+    type: webpage
+    title: "The Odyssey"
+    author: [{literal: Universal Pictures}]
+    issued: {date-parts: [[2026]]}
+    URL: https://www.odysseymovie.com/
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b (author-requested cinema analogy)"
+  - id: academy2024oscars
+    type: webpage
+    title: "The 96th Academy Awards, 2024"
+    author: [{literal: Academy of Motion Picture Arts and Sciences}]
+    issued: {date-parts: [[2024, 3, 10]]}
+    URL: https://www.oscars.org/oscars/ceremonies/2024
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b (distinct awards for distinct crafts)"
+  - id: screenskillsdirector
+    type: webpage
+    title: "Director (Film and TV Drama)"
+    author: [{literal: ScreenSkills}]
+    URL: https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/development-film-and-tv-drama-job-profiles/director-film-and-tv-drama/
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b; undated role profile"
+  - id: screenskillscostume
+    type: webpage
+    title: "Costume Designer (Film and TV Drama)"
+    author: [{literal: ScreenSkills}]
+    URL: https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/craft/costume-designer-film-and-tv-drama/
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b; undated role profile"
+  - id: screenskillsdop
+    type: webpage
+    title: "Director of Photography Skills"
+    author: [{literal: ScreenSkills}]
+    URL: https://www.screenskills.com/skills-checklists/scripted-film-and-tv/camera-department/director-of-photography-skills/
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b; undated role checklist"
+  - id: screenskillscomposer
+    type: webpage
+    title: "Composer (Post-production)"
+    author: [{literal: ScreenSkills}]
+    URL: https://www.screenskills.com/job-profiles/browse/post-production/sound-studios/composer-post-production/
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b; undated role profile"
+  - id: screenskillseditor
+    type: webpage
+    title: "Picture Editor (Post-production)"
+    author: [{literal: ScreenSkills}]
+    URL: https://www.screenskills.com/job-profiles/browse/post-production/edit-suite/picture-editor-post-production/
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b; undated role profile"
+  - id: screenskillssound
+    type: webpage
+    title: "Supervising Sound Editor"
+    author: [{literal: ScreenSkills}]
+    URL: https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/post-production/supervising-sound-editor/
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b; undated role profile"
+  - id: michelindistinctions
+    type: webpage
+    title: "What Are the MICHELIN Guide Distinctions?"
+    author: [{literal: MICHELIN Guide}]
+    URL: https://intercom.help/michelin-guide-apps/en/articles/8618608-what-are-the-michelin-guide-distinctions
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b; undated help page"
+  - id: michelinstar
+    type: webpage
+    title: "What Is a MICHELIN Star?"
+    author: [{literal: MICHELIN Guide}]
+    URL: https://guide.michelin.com/sg/en/article/features/what-is-a-michelin-star
+    accessed: {date-parts: [[2026, 10, 16]]}
+    note: "cited-by: original ch19b; evaluation criteria"

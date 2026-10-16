@@ -1,0 +1,5 @@
+drift_2026_10_16:
+  source: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente
+  reviewed_blog_commit: 557350127df181c4b124a2c8759648a79e17e4d5
+  editions: [pt, en]
+  decision: "No prose impact: source adds accessibility implementation detail and updates preview download links. Existing authorship, editorial-review and initial-draft history remain unchanged; neither edition reproduces those download links. Accessibility contract lives in docs/ACCESSIBILITY.md."
