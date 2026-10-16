@@ -104,7 +104,7 @@ calibracao:
   term: Calibration
   def: How well the confidence a model states matches how often it is actually right.
     A calibrated model that says "90%" is right about nine times in ten; a poorly
-    calibrated one may say 90% about a coin toss.
+    calibrated one may say 90% about a random draw.
 cartao-perfurado:
   term: Punched card
   def: A stiff paper card on which data and instructions were recorded as holes in
@@ -119,7 +119,7 @@ circuit-breaker:
   term: Circuit breaker
   def: The software version of the breaker in a fuse box. When an outside service
     fails or complains about too many requests, the program stops calling it for a
-    while and carries on without it, instead of insisting with an avalanche of retries.
+    while and carries on without it, instead of flooding it with repeated attempts.
 classificador:
   term: Classifier
   def: A model that receives a text and picks one option from a closed list (for example,
@@ -235,10 +235,9 @@ fine-tuning:
     it in a task or a way of working.
 fingerprint:
   term: Device fingerprint
-  def: An identifier built by combining dozens of characteristics of a phone or computer
-    (model, language, screen, fonts, installed apps). It recognizes the device even
-    without cookies or a login and often survives wiping the data and reinstalling
-    the app. Unrelated to fingerprint sensors.
+  def: An identifier built by combining dozens of characteristics of a phone or computer.
+    It recognizes the device even without cookies or a login and often survives wiping
+    the data and reinstalling the app.
 fomo:
   term: FOMO
   long: Fear of Missing Out
@@ -247,7 +246,7 @@ fomo:
 fonte-primaria:
   term: Primary source
   def: The origin of a piece of data or a claim, such as the original study, the official
-    statistics, the court ruling or the contract. It is worth more than any amount
+    statistics, the court ruling or the contract. It is worth more than any number
     of texts that repeat it.
 fork:
   term: Fork
@@ -369,7 +368,7 @@ mescla-de-modelos:
     the qualities, and the authorship, of both.
 mock:
   term: Mock
-  def: A stand-in used in tests that pretends to be an outside service (email, a bank,
+  def: A stand-in used in tests that pretends to be an outside service (email, a database,
     an AI model) and always answers in the agreed way. It makes the test fast and
     cheap, but it hides how the real service behaves.
 modelo-aberto:
@@ -471,8 +470,7 @@ producao:
     and test environments, where mistakes are cheap.
 prompt:
   term: Prompt
-  def: The text you send the model asking for something. In an agent it also includes
-    the instructions and files the tool adds on your behalf.
+  def: The text you send the model asking for something.
 prompt-caching:
   term: Prompt caching
   def: The server keeps the processing of the opening part of a conversation, which
@@ -649,10 +647,11 @@ tier:
   def: A ranking band in a model comparison table (A, B, C, D) that groups close scores
     together instead of treating every point of difference as real.
 tipagem-forte:
-  term: Strong typing
-  def: A trait of languages in which every value has a type (number, text, list) and
-    the compiler rejects the program when the types do not match. It catches some
-    errors before the program ever runs, at the cost of more paperwork while writing.
+  term: Static typing
+  def: A property of languages in which the types of values (number, text, list) are
+    checked before the program runs. The compiler can reject the program when they
+    do not match. It catches some errors before execution, at the cost of more paperwork
+    while writing.
 token:
   term: Token
   def: The piece of text the model works with, usually a fragment of a word. Models
@@ -673,9 +672,10 @@ transformer:
     underlies every current LLM. Its centerpiece is the attention mechanism.
 treinamento:
   term: Training
-  def: The phase, done by the company before launch, in which the model reads a mountain
-    of text and has its parameters adjusted after every prediction error. It takes
-    weeks or months and costs millions; after it, the weights are frozen.
+  def: The phase, done before use, in which the model reads a mountain of text and
+    has its parameters adjusted after every prediction error. For large commercial
+    models, it can take weeks or months and cost millions; after it, the weights are
+    frozen.
 tts:
   term: TTS
   long: Text-to-Speech
@@ -701,8 +701,9 @@ vibe-coding:
 vram:
   term: VRAM
   long: Video Random Access Memory
-  def: The graphics card's own memory. The model's weights have to fit in it entirely,
-    so it determines the size of model the card can run.
+  def: The graphics card's own memory. The available space limits the size of model
+    that fits entirely on the card; keeping some weights outside it usually makes
+    execution much slower.
 vulnerabilidade:
   term: Vulnerability
   def: A flaw in a program that lets an outsider do what they should not, such as

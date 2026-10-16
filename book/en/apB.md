@@ -18,7 +18,7 @@ refs_projects:
   - "ai-memory/README.md"
   - "ai-usagebar/README.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apB.md, sha256: "0760f47d27ea45aef607c8f03d3147d5e2b66beeb7bb1d5822b9dafa86b48306"}
+translated_from: {file: book/pt/apB.md, sha256: "8e36411caf00f1c6f4d4561067a600ca6752f87047695268e4b4d22f784e4399"}
 ---
 
 # A Minimum Kit for Using Agents Safely {#sec-apB}
@@ -51,7 +51,7 @@ The first five protect your stuff. The last two protect your work.
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
 A [sandbox]{.gls} is an isolated environment in which a program only sees and changes what you allowed (@sec-ch15 walks through the idea). For a coding agent, the minimum jail has to guarantee four things:
 
-- only the current project folder is real and writable; the rest of your home folder shows up empty or doesn't show up at all;
+- the project folder is writable; the rest of your home folder appears empty or does not appear at all, with declared exceptions for areas such as the agent's own credentials;
 - sensitive folders stay out: server access keys, cloud credentials, browser profiles with saved passwords;
 - the network is cut off or filtered, letting through only what the agent needs to talk to the model and download libraries;
 - no shortcut to programs that run as [root]{.gls}, the system administrator.
@@ -140,7 +140,7 @@ The retention policy is the part almost everyone forgets. Mine keeps seven daily
 restic forget --keep-daily 7 --keep-weekly 4 --keep-monthly 6 --keep-yearly 1 --prune
 ```
 
-In plain English: keep the last copy of each of the last seven days, of each of the last four weeks, of each of the last six months and of the last year, and delete the rest to free up space.
+In plain English: keep the last copy from each of the seven most recent days with backups, the four most recent weeks with backups, the six most recent months with backups and the most recent year with backups, and delete the rest to free up space.
 
 <!-- src: 2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados -->
 In October 2026 I learned that this layer has layers too. A NAS that survives losing one disk protects you against a dead disk, but not against losing the whole device (@sec-ch15). For what's truly critical, keep a third copy outside the house, in the cloud or on a drive kept at another address.
@@ -181,7 +181,7 @@ Notice where pushing to the remote sits: in the middle column. The agent can mak
 ### YOLO Mode, Only Inside the Jail
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
-Since May 2026, I run my agents in YOLO mode nearly all the time (@sec-ch15). That looks like it contradicts everything above, and it would, except for one detail: I remove the lock inside the agent and put a fence at the operating-system level. The agent works fast inside the project, and the rest of the disk stays out of its reach.
+Since May 2026, I've run my agents in YOLO mode nearly all the time (@sec-ch15). That looks like it contradicts everything above, and it would, except for one detail: I remove the lock inside the agent and put a fence at the operating-system level. The agent works fast inside the project, and data I haven't shared stays out of its reach.
 
 The rule I follow is that combination. YOLO mode without a jail means trusting that no wrong command, from any source, will ever show up. With a jail, a remote Git and manual pushes, the realistic worst case is redoing an afternoon of local work.
 
@@ -192,7 +192,7 @@ The most common accident I saw all year was a secret leaking into the repository
 
 Three habits fix almost all of it:
 
-- before pushing, look at exactly what is about to be sent (in Git, `git status` and `git diff --cached` show exactly that);
+- before committing, inspect what is staged (`git status` and `git diff --cached`); before pushing, also review every local commit that has not been sent yet, including files removed by a later commit;
 - keep passwords and keys in a password manager, so losing the project folder doesn't mean losing the keys to the kingdom;
 - if a key leaks, rotate the key; cleaning up the history helps, but whoever copied it before still has it.
 
@@ -265,7 +265,7 @@ ai-jail --lockdown claude   # strictest mode: project read-only, almost everythi
 The first shows everyday use. The second is for auditing before you trust it: it prints the jail's configuration and doesn't execute. The third is the full lockdown mode, which, the documentation warns, is still no substitute for a virtual machine.
 
 <!-- src: ref:ai-jail/README.md -->
-By default, the project folder is writable and the home folder is an empty temporary area that disappears at the end of the session. The agent's own credentials get in, so it starts logged in; the documentation calls that a conscious trade-off, and anyone who doesn't accept it runs with `--no-agent-state`. Broad network access, GPU, audio, Docker, SSH keys and cloud credentials come off, each with an option to turn it on.
+By default, the project folder is writable and the home folder is an empty temporary area that disappears at the end of the session. The agent's own credentials get in, so it starts logged in; the documentation calls that a conscious trade-off, and anyone who doesn't accept it runs with `--no-agent-state`. Broad network access, GPU, audio, Docker, SSH keys and cloud credentials are off by default, each with an option to turn it on.
 
 <!-- src: ref:ai-jail/README.md -->
 Two usage details that hold for any jail. Secret files inside the project itself, like `.env`, are visible to the agent unless you tell it to hide them with `--mask .env`. And the first run creates an `.ai-jail` file in the folder, with that project's policy, which can go into the repository along with the code. Since that file comes from inside the project, the tool distrusts it: unless you mark that folder as trusted in your personal configuration, it can only tighten the jail, never loosen it.
@@ -297,7 +297,7 @@ The bar version was made for the Linux I use, but the terminal one runs anywhere
 <!-- src: original -->
 If you take only one list from this appendix, take this one:
 
-- run the agent in a jail that only sees the project folder;
+- run the agent in a jail that limits access to your data to the project and the exceptions you have checked;
 - have automatic snapshots and know how to recover a file from them;
 - have an automatic, encrypted backup on another device, and test the restore;
 - let the agent do on its own only what's easy to undo, and publish, delete or leave the machine only with your approval;

@@ -1,0 +1,136 @@
+---
+- id: '3.1'
+  unit: ch12
+  line: 209
+  quote: Isso descarta um desvio ao vivo nessas rotas
+  category: error
+  severity: high
+  problem: 'R1/R17: uma resposta de identidade por provedor não exclui um repasse
+    que esconda a identidade ou varie com o pedido. O próprio capítulo reconhece isso
+    na linha 223; a conclusão categórica contradiz essa ressalva. As formulações ''teste
+    decisivo'' (207) e a regra de consistência (198) também tratam a hipótese como
+    uma garantia.'
+  suggestion: 'Na linha 209: ''Todos responderam "Moonshot AI". Deu zero em catorze:
+    não achei o mesmo sinal de identidade nessas rotas, mas isso ainda não explica
+    a resposta da primeira passada.'' Em 207, trocar ''teste decisivo'' por ''teste
+    seguinte''; em 198, apresentar a consistência como sinal procurado, não como garantia
+    de qualquer repasse. Em 232, trocar ''os testes excluem hipóteses e desfazem boatos''
+    por ''os testes ajudam a investigar hipóteses e boatos''.'
+- id: '3.2'
+  unit: ch12
+  line: 63
+  quote: A mudança foi toda no ambiente, com o mesmo modelo.
+  category: consistency
+  severity: medium
+  problem: A frase parece afirmar uma comparação controlada com o mesmo modelo, mas
+    as linhas 53-61 acabaram de trocar os modelos que colaram pelo Grok 4.6. A análise
+    rastreada do post de 15/08 distingue os reensaios limpos de Gemini/Qwen da rodada
+    seguinte do Grok.
+  suggestion: O conserto foi no ambiente da prova. É a lógica de não dar a senha do
+    cofre ao estagiário no primeiro dia.
+- id: '3.3'
+  unit: ch13
+  line: 38
+  quote: por isso a IA inteira roda em placas de vídeo
+  category: error
+  severity: medium
+  problem: 'A generalização contradiz os exemplos do próprio livro: ch13b:47 e :231
+    fazem o ciclo inteiro no processador comum, e aptecnico:401 descreve inferência
+    no processador. GPU é central nesses experimentos, mas não é requisito de toda
+    IA.'
+  suggestion: por isso as placas de vídeo viraram peça central dessa corrida
+- id: '3.4'
+  unit: ch13
+  line: 56
+  quote: No meu, a parte de vídeo ficou com 64 GB
+  category: clarity
+  severity: medium
+  problem: 'Sem data, os 64 GB parecem a configuração da comparação de março, mas
+    o modelo do início precisa de 81 GB e a explicação diz que os pesos têm que caber
+    inteiros. O apêndice técnico já resolve a aparente contradição: aptecnico:401
+    registra 96 GB em março; :404 registra a redução para 64 GB em 8 de abril.'
+  suggestion: Em 8 de abril baixei a parte de vídeo pra 64 GB, o dobro da placa, porque
+    o resto do servidor também precisa de memória pra respirar.
+- id: '3.5'
+  unit: ch13
+  line: 177
+  quote: os 146 episódios do meu canal no YouTube
+  category: consistency
+  severity: medium
+  problem: O artigo definido faz 146 parecer o total do canal, enquanto continuity.yml
+    e reviews/akitando/profile.md:40 registram 149 episódios. A análise rastreada
+    do post de 09/04 sustenta 146 para o trabalho de dublagem; são escopos diferentes,
+    que podem coexistir sem inventar por que três ficaram de fora (R6).
+  suggestion: 146 episódios do meu canal no YouTube
+- id: '3.6'
+  unit: ch13b
+  line: 169
+  quote: É o mesmo modelo que jura que funciona do @sec-ch12
+  category: consistency
+  severity: medium
+  problem: O experimento da seção usa o modelo caseiro de 239 milhões; ch12 trata
+    de Qwen/Gemini/Sonnet. A expressão identifica os modelos como se fossem o mesmo,
+    quando o que se repete é o comportamento. A EN traduz literalmente e reforça a
+    identificação incorreta.
+  suggestion: É a mesma falsa garantia que você viu no @sec-ch12
+- id: '3.7'
+  unit: ch13b
+  line: 287
+  quote: O meu modelo custou uns 80 reais
+  category: consistency
+  severity: medium
+  problem: 'R7: a linha 132 diz que o consumo não foi medido e que 80 reais é uma
+    estimativa máxima da eletricidade da placa, não o custo total do modelo. A ficha
+    nvidia2025rtx5090 confirma esse escopo (575 W x 137 h = 78,775 kWh), e os 575
+    W foram reconferidos na especificação primária da NVIDIA. A conclusão perde tanto
+    a incerteza quanto o que ficou fora da conta.'
+  suggestion: A conta de luz da placa ficou estimada em até uns 80 reais, e o meu
+    modelo não esconde nada
+- id: '3.8'
+  unit: ch14
+  line: 112
+  quote: inteligência geral é uma meta de faturamento.
+  category: error
+  severity: medium
+  problem: A frase anterior define a meta como 100 bilhões de dólares de lucro. Faturamento
+    é receita, não lucro; o comentário troca a grandeza que acabou de citar (R7),
+    e a EN repete a troca com 'revenue'.
+  suggestion: inteligência geral é uma meta de lucro.
+- id: '3.9'
+  unit: ch14
+  line: 289
+  quote: O modelo perigoso vazou, saiu do ar e voltou
+  category: consistency
+  severity: medium
+  problem: 'A linha 40 só relata investigação de uma denúncia de acesso ao Mythos
+    Preview; as linhas 53-55 tratam da suspensão e do retorno dos sucessores Fable
+    5/Mythos 5. A conclusão transforma denúncia em vazamento confirmado e funde modelos
+    diferentes. A EN:292 já preserva esses dois limites. A declaração primária da
+    Anthropic de 12/06 foi reconferida: https://www.anthropic.com/news/fable-mythos-access.'
+  suggestion: Houve uma denúncia de vazamento do modelo perigoso; depois, seu sucessor
+    saiu do ar no mundo inteiro e voltou
+- id: '3.10'
+  unit: ch13b
+  line: 47
+  quote: que é dele que falo daqui em diante.
+  category: error
+  severity: low
+  problem: O relativo 'que' se repete na construção clivada 'é dele que', quebrando
+    a ligação com 'modelo final'.
+  suggestion: de que falo daqui em diante.
+- id: '3.11'
+  unit: ch13b
+  line: 129
+  quote: uns 137 horas
+  category: error
+  severity: low
+  problem: O determinante masculino não concorda com 'horas'.
+  suggestion: umas 137 horas
+- id: '3.12'
+  unit: ch13b
+  line: 150
+  quote: recuperando de erro no meio do caminho.
+  category: error
+  severity: low
+  problem: Nesse sentido, 'recuperar-se' é pronominal; falta o pronome reflexivo.
+  suggestion: se recuperando de um erro no meio do caminho.

@@ -35,7 +35,7 @@ Você já conhece o peixinho de @sec-ch02. O modelo não lembra de nada entre um
 O que se perde é justamente a parte cara do trabalho. O código mostra o que sobreviveu. A sessão guarda o resto: o experimento que falhou, o defeito que só aparecia de vez em quando, o motivo de a gente ter mudado de ideia depois de três horas. Fechou o agente, isso some.
 
 <!-- src: 2026/05/18/como-memoria-de-agentes-funciona-e-como-melhorar -->
-Em @sec-ch02 eu também mostrei o remédio caseiro, que continua valendo: memória de agente é texto, e você pode escrever os seus próprios bilhetes numa pasta de documentos do projeto. O defeito do remédio é a disciplina. O agente não anota sozinho, e eu tenho que lembrar de pedir, toda vez, inclusive nos dias em que estou cansado.
+Em @sec-ch02 eu também mostrei o remédio caseiro, que continua valendo: memória de agente é texto, e você pode escrever os seus próprios bilhetes numa pasta de documentos do projeto. O defeito do remédio é a disciplina. Pra manter esses bilhetes em dia, eu ainda tenho que lembrar de pedir e conferir, toda vez, inclusive nos dias em que estou cansado.
 
 ### O cadeado do fornecedor
 
@@ -56,7 +56,7 @@ As notas dessas ferramentas são texto, como o @sec-ch02 mostrou, então em tese
 O ai-memory é uma memória de longo prazo pra agentes de programação, de [código aberto]{.gls key=codigo-aberto}, distribuída como um [binário]{.gls key=binario} só, um programa único que não depende de outros serviços pra rodar. A promessa é que a sessão seguinte, em qualquer agente compatível, continue de onde a anterior parou, sem você explicar de novo a arquitetura, as tentativas que falharam e as perguntas em aberto.
 
 <!-- src: 2026/06/14/ai-memory-arquitetura-emergente-e-software-maleavel -->
-A origem do projeto, de maio de 2026, está contada em @sec-ch20. Começou como uma versão pra um usuário, numa máquina, num sistema operacional, e cresceu com gente de fora usando e mandando correção. No dia em que eu fechei este livro, 13 de outubro de 2026, saiu a versão 3.0.
+A origem do projeto, de maio de 2026, está contada em @sec-ch20. Começou como uma versão pra um usuário, numa máquina, num sistema operacional, e cresceu com gente de fora usando e mandando correção. Em 13 de outubro de 2026, saiu a versão 3.0.
 
 ### Como funciona
 
@@ -142,7 +142,7 @@ ai-memory setup
 <!-- src: ref:ai-memory/README.md -->
 O primeiro baixa o programa certo pro seu sistema, confere se o arquivo chegou íntegro comparando com a soma de verificação publicada, e só instala se ela bater. O segundo cria a pasta de dados com uma senha guardada num arquivo que só você lê, deixa o servidor rodando como um serviço do seu usuário e liga o ai-memory a cada agente que encontrar no computador. Ele mostra o plano e pergunta antes de mexer em qualquer coisa. Depois, reinicie os agentes.
 
-Quem usa Claude Code ou Codex também pode ligar o agente como plugin, pelo próprio sistema de extensões de cada um; o programa continua sendo instalado do mesmo jeito.
+Quem usa Claude Code ou Codex também pode ligar a memória ao agente por um plugin, pelo próprio sistema de extensões de cada um; o programa continua sendo instalado do mesmo jeito.
 
 <!-- src: ref:ai-memory/README.md -->
 A partir daí, você conversa com o agente normalmente. Pergunte "onde a gente parou?" pra retomar uma passagem de turno, "a gente já discutiu isso?" pra ele buscar na memória, ou "me atualiza" pra um resumo do que aconteceu no projeto. Num projeto antigo, com meses de histórico, o comando `ai-memory bootstrap`, rodado uma vez, aproveita o que já existe.

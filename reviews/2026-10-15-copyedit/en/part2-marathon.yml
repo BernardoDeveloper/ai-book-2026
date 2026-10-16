@@ -1,0 +1,254 @@
+---
+- id: '2.1'
+  unit: ch05
+  line: 194
+  quote: If you're just starting out, that's not a sentence.
+  category: error
+  severity: medium
+  problem: Sentença in PT ch05:193 means a condemning verdict, not a grammatical sentence.
+    The literal English translation loses the reassurance that beginners can build
+    seniority.
+  suggestion: If you're just starting out, that isn't a life sentence.
+- id: '2.2'
+  unit: ch09
+  line: 20
+  quote: 16 hours a day for two and a half months straight
+  category: error
+  severity: medium
+  problem: PT ch09:19 says the pace reached 16 hours a day during two and a half months.
+    English removes chegava a and adds straight, turning an upper-end pace into a
+    claim about every day.
+  suggestion: at a pace that reached 16 hours a day, over two and a half months
+- id: '2.3'
+  unit: ch10
+  line: 19
+  quote: the coding [agents]{.gls key=agente} from Anthropic and OpenAI, the [frontier
+    models]{.gls key=modelo-de-fronteira}
+  category: error
+  severity: medium
+  problem: 'Shared PT error: the apposition identifies agents as models, contradicting
+    the program/model distinction taught in ch03.'
+  suggestion: the coding [agents]{.gls key=agente} from Anthropic and OpenAI, using
+    [frontier models]{.gls key=modelo-de-fronteira}
+- id: '2.4'
+  unit: ch07
+  line: 68
+  quote: It only shows up in production, when two requests arrive together.
+  category: error
+  severity: medium
+  problem: 'R1, shared PT error: concurrency is the condition, not production deployment.
+    MITRE CWE-362 explicitly describes detecting race conditions through concurrent
+    stress tests with multiple threads/processes: https://cwe.mitre.org/data/definitions/362.html.'
+  suggestion: 'Replace the paragraph with: That bug can slip past you when you test
+    alone, with a single browser. It shows up when two requests arrive together.'
+- id: '2.5'
+  unit: ch07
+  line: 19
+  quote: Ten days earlier I had published on the blog what I called the "final post"
+  category: error
+  severity: medium
+  problem: 'Shared PT date error: the scene is March 1, 2026, and the identified final
+    post is February 20. The date difference is nine days.'
+  suggestion: Replace Ten days earlier with Nine days earlier.
+- id: '2.6'
+  unit: ch10
+  line: 274
+  quote: I had owed it something, hundreds of posts that only existed in Portuguese
+    and that I always promised to translate, and I collected on a Monday in April.
+  category: error
+  severity: medium
+  problem: The debtor cannot collect the debt he owes; PT has the same reversed verb.
+    English also adds an explanation about hundreds of untranslated posts absent from
+    the canonical PT paragraph. Interlude1 establishes that the work began Monday
+    and finished Wednesday.
+  suggestion: I owed it a debt, and I began paying it off on a Monday in April.
+- id: '2.7'
+  unit: ch08
+  line: 163
+  quote: 'They aggregated: they read the code with me'
+  category: error
+  severity: medium
+  problem: Agregavam here means contributing/helping, as the ensuing list explains.
+    Aggregated means collecting or combining material and is the wrong English verb
+    for this use.
+  suggestion: 'They helped: they read the code with me'
+- id: '2.8'
+  unit: interlude2
+  line: 82
+  quote: the handicap points White gets for playing second
+  category: error
+  severity: medium
+  problem: 'PT correctly calls these compensation points. Komi compensates for moving
+    second; handicap stones address unequal player strength, a separate concept. The
+    AGA introductory rules distinguish both: https://www.usgo-archive.org/files/handouts/RulesetDouble2up.pdf.'
+  suggestion: the compensation points White gets for playing second
+- id: '2.9'
+  unit: ch10
+  line: 166
+  quote: R$ 500 a month (around $90)
+  category: consistency
+  severity: medium
+  problem: PT ch10:165 gives only 500 reais. The USD conversion is an added numeric
+    claim with no date or source and is unnecessary under the translation contract,
+    which explicitly preserves R$ amounts.
+  suggestion: R$ 500 a month
+- id: '2.10'
+  unit: ch10
+  line: 235
+  quote: in manga for adults that don't print it
+  category: consistency
+  severity: medium
+  problem: PT ch10:234 specifies manga for adult readers, about business or war. English
+    omits the business/war examples, so the list item does not retain all its content.
+  suggestion: in manga for adult readers, about business or war, that don't print
+    it
+- id: '2.11'
+  unit: ch06
+  line: 147
+  quote: every feature comes with the test that proves it works
+  category: clarity
+  severity: medium
+  problem: 'Shared PT definition issue: this omits writing and running the failing
+    test before the implementation, the defining test-first order. The list at line
+    78 similarly says together after labeling the practice tests first. Primary explanation:
+    https://agilealliance.org/glossary/tdd/.'
+  suggestion: 'For the TDD definition use: a failing test comes first, followed by
+    the code that makes it pass. For the list item use: **tests first**: a failing
+    test comes first, followed by the code that makes it pass. Preserve the following
+    explanation of regression tests for bug fixes.'
+- id: '2.12'
+  unit: ch06
+  line: 197
+  quote: the [integration test]{.gls key=teste-de-integracao}, which runs the whole
+    system together
+  category: clarity
+  severity: medium
+  problem: 'R1, shared PT scope issue: the author ran a whole-system integration test,
+    but the relative clause makes executing the entire system part of the generic
+    definition. Component/subsystem integration is also integration; see https://agilealliance.org/glossary/integration/.'
+  suggestion: the [integration test]{.gls key=teste-de-integracao}, which in my case
+    runs the whole system together
+- id: '2.13'
+  unit: ch09
+  line: 215
+  quote: And there are things it simply doesn't propose. Retrying when an outside
+    service fails
+  category: consistency
+  severity: medium
+  problem: 'R5, shared PT contradiction: ch07:181 says automatic retries are exactly
+    what the agent would do if left to decide, while this paragraph says it does not
+    propose them. Narrow the statement to safeguards the narrator had to request.'
+  suggestion: 'Start with: And there were safeguards I had to ask for. Retrying when
+    an outside service fails, giving up after a timeout, degrading gracefully when
+    something goes down: the agent implements all of that nicely when you ask. End
+    with: Without those instructions, it could stick to the happy path, because it
+    didn''t know where my system''s weak points were.'
+- id: '2.14'
+  unit: ch07
+  line: 89
+  quote: No prompt in the world predicts that your users will want to share a Linux
+    installer on day one.
+  category: clarity
+  severity: medium
+  problem: 'R1/R2, shared PT issue: the story establishes an omission in this initial
+    prompt, not that file-format requirements cannot be specified. The incident was
+    introduced as three days later, not day one.'
+  suggestion: My prompt did not anticipate the installers users tried to share three
+    days later.
+- id: '2.15'
+  unit: ch06
+  line: 68
+  quote: No spec in the world predicts that.
+  category: clarity
+  severity: medium
+  problem: 'R1/R2, shared PT issue: discovering a validation requirement through a
+    silent failure does not establish that no specification could anticipate that
+    failure. State what this particular specification omitted.'
+  suggestion: My spec did not anticipate that failure.
+- id: '2.16'
+  unit: ch06
+  line: 291
+  quote: the pair just stopped being human
+  category: clarity
+  severity: medium
+  problem: PT par refers to one partner; English pair refers to the two-person combination.
+    The narrator remains human, so this literal translation changes the claim. Other
+    singular uses in this chapter have the same ambiguity.
+  suggestion: 'Use: only the partner is no longer human. Also use Partner in the A
+    Pair That Never Says No heading, I use the agent as a partner, XP was only missing
+    a partner, and using AI as your partner. Preserve pair in pair programming and
+    references to the actual two-member pair. In ch07:290, human pair should likewise
+    be human partner.'
+- id: '2.17'
+  unit: ch07
+  line: 167
+  quote: with "Ah,."
+  category: error
+  severity: low
+  problem: 'Malformed quoted punctuation: the comma is the actual repeated opener;
+    the added period belongs to the enclosing sentence, not inside the quoted opener.
+    The same duplication creates Ah,, in the later recap at line 198.'
+  suggestion: 'Use: Worse, he opened almost every comment with the same "Ah," opener.
+    In the recap use: the repeated "Ah," opener, the Linux installer'
+- id: '2.18'
+  unit: ch08
+  line: 29
+  quote: as I tell in @sec-ch20
+  category: error
+  severity: low
+  problem: Tell in requires an object here; this is a literal rendering of como conto,
+    which makes the English sentence stumble.
+  suggestion: as I explain in @sec-ch20
+- id: '2.19'
+  unit: ch08
+  line: 258
+  quote: it's a hand reimplementation
+  category: error
+  severity: low
+  problem: Hand reimplementation is an awkward calque of reimplementação feita à mão.
+    The intended meaning is that the port was manually rewritten and optimized.
+  suggestion: it's a reimplementation written by hand
+- id: '2.20'
+  unit: ch10
+  line: 191
+  quote: '"can I build this software?,"'
+  category: error
+  severity: low
+  problem: The quoted question has an extraneous comma inside its closing quote after
+    the question mark.
+  suggestion: 'Use: It used to be "can I build this software?" and now the answer
+    is almost always yes, fast and cheap.'
+- id: '2.21'
+  unit: ch06
+  line: 298
+  quote: AI is your mirror, it reveals faster who you are.
+  category: error
+  severity: low
+  problem: The translated quotation joins two independent clauses with a comma and
+    places faster unnaturally before who you are. Correcting English punctuation and
+    word order preserves the quoted meaning.
+  suggestion: AI is your mirror; it reveals who you are faster.
+- id: '2.22'
+  unit: ch06
+  line: 37
+  quote: Up to that point, everything I had built with AI had a single user, me. Can
+    one person alone ship a real product?
+  category: consistency
+  severity: low
+  problem: The translation contract requires paragraph counterparts. PT ch06:36 ends
+    at eu mesmo; the question starts the next paragraph with its answer at line 38.
+    English moves the question into the preceding paragraph despite keeping the same
+    paragraph count.
+  suggestion: 'End this paragraph after me. Begin the following paragraph: Can one
+    person alone ship a real product? Yes. The way it gets done just looks very different
+    from what shows up in the videos.'
+- id: '2.23'
+  unit: ch10
+  line: 134
+  quote: the answer to the question in the title
+  category: consistency
+  severity: low
+  problem: 'Shared PT leftover: the chapter title is The End of the Marathon and contains
+    no question. Success or Failure is the preceding section heading and the opening
+    question.'
+  suggestion: the answer to the question from the beginning

@@ -42,7 +42,7 @@ Vale pra qualquer [benchmark]{.gls}, ranking ou placar de modelos, inclusive o m
 7. **A resposta pode ter vazado pro treino?** Prova famosa e antiga corre o risco de [contaminação]{.gls key=contaminacao}, e passar no corretor automático é diferente de ter o trabalho aceito por quem mantém o projeto de verdade (@sec-ch11).
 8. **Quem escreveu a verificação?** Teste verde escrito pelo mesmo modelo que escreveu o código pode concordar com o próprio erro, como um [mock]{.gls} feito sob medida pra aceitar um comando que não existe (@sec-ch12).
 9. **O modelo tinha o gabarito ao alcance?** Agente usa tudo que estiver na pasta, inclusive a rubrica e o trabalho dos concorrentes, então nota boa demais pede leitura do registro da execução (@sec-ch12).
-10. **O que o teste prova sobre a origem do modelo?** Com os pesos na mão dá pra fazer conta e chegar perto de uma prova; por fora, só pela API, um [teste de caixa-preta]{.gls key=caixa-preta} exclui hipóteses e desfaz boatos, mas não certifica a origem (@sec-ch12).
+10. **O que o teste prova sobre a origem do modelo?** Com os pesos na mão dá pra fazer conta e chegar perto de uma prova; por fora, só pela API, um [teste de caixa-preta]{.gls key=caixa-preta} ajuda a investigar hipóteses e boatos, mas não certifica a origem (@sec-ch12).
 11. **Você já rodou o seu?** Se a escolha vale dinheiro ou risco, pegue uma tarefa parecida com a sua, rode os candidatos mais de uma vez, compare sem saber quem fez o quê e meça quanto trabalho humano faltou no fim (@sec-ch11).
 
 <!-- src: 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior -->
@@ -60,7 +60,7 @@ A lista completa que eu uso, com os casos de 2026, está em @sec-como-ler-anunci
 
 1. **Quem ganha dinheiro se você acreditar?** Atrás da frase costuma ter um [IPO]{.gls key=ipo}, uma placa de vídeo pra vender ou um curso, e interesse financeiro não torna nada falso, só pede prova mais forte (@sec-ch14).
 2. **Alguém de fora consegue testar?** "Perigoso demais pra lançar", consórcio fechado e lista de espera são alegações até um independente medir, e esse roteiro já tinha sido usado em 2019 (@sec-ch01, @sec-ch14).
-3. **Qual é a definição da palavra grande?** Quando quem vende o equipamento declara que a [AGI]{.gls key=agi} chegou, pergunte o que ela quer dizer, porque no contrato entre OpenAI e Microsoft a palavra virou meta de faturamento [@zeff2024agi] (@sec-ch14).
+3. **Qual é a definição da palavra grande?** Quando quem vende o equipamento declara que a [AGI]{.gls key=agi} chegou, pergunte o que ela quer dizer, porque no contrato entre OpenAI e Microsoft a palavra virou meta de lucro [@zeff2024agi] (@sec-ch14).
 4. **Contra quem é a comparação, e com qual régua?** "Centenas de vezes mais barato" sempre tem um adversário escolhido a dedo, e "zero alucinação" pode ser zero por definição, então ache a frase que explica como o número foi medido (@sec-ch14).
 5. **O que esse produto é, tirando o nome?** O lançamento revolucionário de setembro de 2026 era um [classificador]{.gls key=classificador}, técnica de décadas, e muito "novo paradigma" é prática velha com nome novo pra vender consultoria (@sec-ch14).
 6. **Isso aconteceu ou poderia acontecer?** Leia os verbos: "poderia", "em poucos meses", "se fosse mais capaz" têm um peso diferente do de um fato documentado, e o apocalipse dos anúncios costuma morar inteiro no condicional (@sec-ch14).

@@ -1,0 +1,339 @@
+---
+- id: '6.1'
+  unit: apB
+  line: 195
+  quote: before pushing, look at exactly what is about to be sent (in Git, `git status`
+    and `git diff --cached` show exactly that)
+  category: error
+  severity: high
+  problem: 'These commands inspect the working tree/index and changes staged for the
+    next commit, not all committed history about to be pushed. After the agent commits
+    a secret, both can be clean while push publishes it. Verified in primary git-diff
+    documentation: https://git-scm.com/docs/git-diff (the --cached form compares staged
+    changes with HEAD). This directly undercuts the stated secret-review safeguard.'
+  suggestion: before committing, inspect what is staged (`git status` and `git diff
+    --cached`); before pushing, also review every local commit that has not been sent
+    yet, including files removed by a later commit
+- id: '6.2'
+  unit: posfacio
+  line: 106
+  quote: The English edition you're reading is a translation of the Portuguese text,
+    made the same way, by agents working under the same rules, and reviewed by me.
+  category: consistency
+  severity: medium
+  problem: 'Paridade: a frase inteira sobre o processo e a revisão da edição inglesa
+    não tem contraparte em PT:105. Não é uma breve explicação de referência cultural
+    brasileira; é uma declaração editorial acrescentada à tradução.'
+  suggestion: Remover a frase adicional para que o parágrafo corresponda ao PT. As
+    declarações compartilhadas sobre autoria e revisão permanecem nos dois textos.
+- id: '6.3'
+  unit: posfacio
+  line: 115
+  quote: the drafts of every chapter on the same day.
+  category: consistency
+  severity: medium
+  problem: The original twenty-chapter structure was drafted on October 13, but integration.yml
+    records ch13b added on October 14. 'Every chapter' wrongly extends the original-history
+    claim to the later addition.
+  suggestion: the drafts of the chapters in the initial structure on the same day.
+- id: '6.4'
+  unit: apfeito
+  line: 34
+  quote: The first draft of every chapter was done
+  category: consistency
+  severity: medium
+  problem: The later ch13b addition (integration.yml, October 14) makes 'every chapter'
+    too broad for the initial October 13 draft. Mirror the scope correction in the
+    afterword.
+  suggestion: The first drafts of the chapters in the initial structure were done
+- id: '6.5'
+  unit: apmecanica
+  line: 125
+  quote: A test is right 99% of the time
+  category: clarity
+  severity: medium
+  problem: The worked arithmetic assumes 99% sensitivity and 99% specificity. A global
+    99% accuracy rate alone cannot give the quoted posterior probabilities; recomputation
+    confirms about 9% and 91% with both conditional rates set to 99%.
+  suggestion: A test correctly identifies 99% of sick people and 99% of healthy people
+- id: '6.6'
+  unit: apleituras
+  line: 14
+  quote: 'I checked every item in October 2026: author, publisher, and whether you
+    can legally read it for free.'
+  category: consistency
+  severity: medium
+  problem: 'Systematic content omissions: PT preserves Portuguese-language availability
+    and translation information; EN removes it from the introduction and six entries.
+    Missing are the official Brazilian Portuguese Lee/Trott translation, Wolfram''s
+    Portugal edition/title, the AI-assisted Portuguese Hands-On translation restricted
+    to O''Reilly''s subscription platform, 3Blue1Brown''s Portuguese dubbing/subtitles,
+    the Karpathy videos'' English/automatic-subtitles limit and the Illustrated Transformer''s
+    lack of a Portuguese translation. The translation contract explicitly retains
+    Brazilian references; these details also matter to bilingual readers.'
+  suggestion: Restore 'whether a Portuguese edition exists' and the introduction's
+    'Most are available only in English; I point out the exceptions.' Restore the
+    six item-specific clauses from PT:17,18,31,40,41,43, translating the surrounding
+    explanations while retaining the Portuguese edition titles.
+- id: '6.7'
+  unit: apbolhas
+  line: 84
+  quote: From what I've seen three times, the bubble ends the shortcut.
+  category: consistency
+  severity: medium
+  problem: The appendix says the AI bubble is still unfinished (69), and correctly
+    counts only two crashes at 82. The closing line claims three completed observations
+    of what a bubble's end does, contradicting that distinction (R1).
+  suggestion: From what I've seen in the two crashes, the bubble ends the shortcut.
+- id: '6.8'
+  unit: apB
+  line: 54
+  quote: only the current project folder is real and writable
+  category: consistency
+  severity: medium
+  problem: The exclusive guarantee contradicts the agent-credentials exception explicitly
+    described at 268; the pocket list repeats it at 300. Scope personal-data access
+    to the project plus the declared exceptions the reader has checked.
+  suggestion: 'In the four-item list: ''the project folder is writable; the rest of
+    your home folder appears empty or does not appear at all, with declared exceptions
+    for areas such as the agent''s own credentials''. In the pocket list: ''run the
+    agent in a jail that limits access to your data to the project and the exceptions
+    you have checked''.'
+- id: '6.9'
+  unit: apmemoria
+  line: 39
+  quote: The agent doesn't take notes on its own, and I have to remember to ask, every
+    time
+  category: consistency
+  severity: medium
+  problem: The absolute claim contradicts line 44, where Claude Code takes its own
+    notes. Scope the discipline problem to keeping the user's project notes current.
+  suggestion: To keep those notes up to date, I still have to remember to ask and
+    check, every time
+- id: '6.10'
+  unit: apmemoria
+  line: 60
+  quote: On the day I closed this book, October 13, 2026
+  category: consistency
+  severity: medium
+  problem: ai-memory3.0's October 13 release matches apA:426, but the book now closes
+    with the October 14 microgpt addition at apA:429 / integration.yml. Separate the
+    valid release date from the outdated closing-date claim.
+  suggestion: On October 13, 2026
+- id: '6.11'
+  unit: apC
+  line: 46
+  quote: rules out hypotheses and dispels rumors
+  category: consistency
+  severity: medium
+  problem: The summary retains the categorical model-identity conclusion corrected
+    in ch12. The negative identity tests cannot exclude concealed relaying; mirror
+    the accepted limited wording.
+  suggestion: helps investigate hypotheses and rumors
+- id: '6.12'
+  unit: apC
+  line: 64
+  quote: the word became a revenue target
+  category: error
+  severity: medium
+  problem: Repeats ch14's profit/revenue switch. The chapter describes a target measured
+    in profit.
+  suggestion: the word became a profit target
+- id: '6.13'
+  unit: aptecnico
+  line: 60
+  quote: the Claude Code of 2026 used neither.
+  category: clarity
+  severity: medium
+  problem: 'The callback overstates ch02: that chapter says the agent had no vector
+    database, not that it did no retrieval to support generation. This appendix itself
+    describes keyword retrieval at 75 and hybrid retrieval at 110. Name the conventional
+    vector pipeline under discussion.'
+  suggestion: Specify 'RAG with vector search' earlier in the sentence and end it
+    with 'the Claude Code of 2026 did not use that pipeline'. Leave ch02 unchanged.
+- id: '6.14'
+  unit: aptecnico
+  line: 169
+  quote: I put The M.Akita Chronicles newsletter live in eight days of February 2026
+  category: consistency
+  severity: medium
+  problem: The eight-day/274-commit tally includes work after the first production
+    run. ch06:34 and the tracked February 16 source analysis give six development
+    days (Feb10-15) with the first automatic run Feb16; ch06:55 and the February 20
+    analysis describe the later eight-day tally. Keep the windows separate (R6).
+  suggestion: 'I developed The M.Akita Chronicles newsletter over eight days in February
+    2026. Preserve the 274-commit and 21-security-commit tally: it includes development
+    after the first autonomous mailing on February 16.'
+- id: '6.15'
+  unit: aptecnico
+  line: 527
+  quote: the 146 episodes of my YouTube channel
+  category: consistency
+  severity: medium
+  problem: The definite phrase makes 146 the channel's total, but continuity.yml/reviews/akitando/profile.md
+    give 149. The April 9 source supports 146 as the dubbed subset, matching the accepted
+    ch13 correction. The later definite mention at 563 may remain as an anaphoric
+    reference to that subset.
+  suggestion: 146 episodes of my YouTube channel
+- id: '6.16'
+  unit: aptecnico
+  line: 599
+  quote: from Zig to Rust with agents, in July 2026.
+  category: consistency
+  severity: medium
+  problem: 'The preceding section at 579 says the work happened in May and was reported
+    on July 8. The primary source confirms July 8 publication and dates compiler and
+    CI work to May: https://bun.com/blog/bun-in-rust. Preserve the distinction between
+    work and publication.'
+  suggestion: from Zig to Rust with agents, in work done in May 2026 and reported
+    in July.
+- id: '6.17'
+  unit: aptecnico
+  line: 680
+  quote: a strongly typed language would be better for AI because the compiler would
+    catch the errors
+  category: error
+  severity: medium
+  problem: This describes static type checking, not strong typing. Python and Ruby
+    are also strongly typed but dynamically checked. The later 'typed or dynamic languages'
+    at 698 repeats the false contrast; align with ch18 and the glossary correction.
+  suggestion: Use 'a statically typed language' here and 'in statically or dynamically
+    typed languages' at 698.
+- id: '6.18'
+  unit: epilogo
+  line: 31
+  quote: 'If you work with offices, numbers or paperwork:'
+  category: clarity
+  severity: low
+  problem: "'Work with offices' sugere lidar com escritórios como objetos ou clientes;
+    PT diz trabalhar em atividade de escritório."
+  suggestion: 'If you do office work, deal with numbers or handle paperwork:'
+- id: '6.19'
+  unit: epilogo
+  line: 56
+  quote: real users are the best reviewer there is
+  category: error
+  severity: low
+  problem: O sujeito plural 'users' é seguido por um predicativo singular de forma
+    desajeitada. A ideia de PT é o usuário real como revisor.
+  suggestion: a real user is the best reviewer there is
+- id: '6.20'
+  unit: posfacio
+  line: 91
+  quote: before the first jargon
+  category: error
+  severity: low
+  problem: "'Jargon' is an uncountable collective noun here; the singular ordinal
+    needs a countable term or expression."
+  suggestion: before the first technical term
+- id: '6.21'
+  unit: apmecanica
+  line: 115
+  quote: Researchers showed that always choosing the likeliest piece
+  category: consistency
+  severity: low
+  problem: 'Content parity: PT:114 dates this research to 2019; English silently drops
+    the date. The citation remains the same and the paragraph order is otherwise faithful.'
+  suggestion: Researchers showed in 2019 that always choosing the likeliest piece
+- id: '6.22'
+  unit: apleituras
+  line: 39
+  quote: "## Free Videos"
+  category: clarity
+  severity: low
+  problem: The section also recommends The Illustrated Transformer and explicitly
+    calls it free text, so the heading wrongly classifies every item as a video.
+  suggestion: "## Free Videos and Visual Guides"
+- id: '6.23'
+  unit: apA
+  line: 136
+  quote: "| Oct. 2024 | OpenAI launches its own prompt caching"
+  category: consistency
+  severity: low
+  problem: 'Date precision differs: canonical PT:135 says only 2024, while the
+    cited OpenAI record is dated October 1, 2024. The English month is supported;
+    canonical PT is less precise.'
+  suggestion: 'Retain "| Oct. 2024 |" in English and use "| out. 2024 |" in PT.'
+- id: '6.24'
+  unit: apB
+  line: 143
+  quote: keep the last copy of each of the last seven days, of each of the last four
+    weeks, of each of the last six months and of the last year
+  category: error
+  severity: low
+  problem: 'The restic command counts days/weeks/months/years that contain snapshots,
+    not a strict window measured back from today. With missed backups those retained
+    periods can be older. Primary restic documentation explicitly distinguishes --keep-daily
+    from --keep-within-daily: https://restic.readthedocs.io/en/stable/060_forget.html.'
+  suggestion: keep the last copy from each of the seven most recent days with backups,
+    the four most recent weeks with backups, the six most recent months with backups
+    and the most recent year with backups
+- id: '6.25'
+  unit: apB
+  line: 184
+  quote: Since May 2026, I run my agents
+  category: error
+  severity: low
+  problem: The ongoing practice began at a dated point in the past; standard English
+    uses the present perfect with 'since' in this construction.
+  suggestion: Since May 2026, I've run my agents
+- id: '6.26'
+  unit: apB
+  line: 268
+  quote: cloud credentials come off
+  category: error
+  severity: low
+  problem: "'Come off' does not mean disabled by default here. PT says these capabilities
+    'vêm desligados'."
+  suggestion: cloud credentials are off by default
+- id: '6.27'
+  unit: apmemoria
+  line: 36
+  quote: the reasoning behind a decision.
+  category: consistency
+  severity: low
+  problem: 'Content parity: PT:35 gives the concrete example ''o motivo de a gente
+    ter mudado de ideia depois de três horas''. English loses both changing one''s
+    mind and the three-hour cost, replacing them with a generic decision.'
+  suggestion: the reason we changed our minds after three hours.
+- id: '6.28'
+  unit: apmemoria
+  line: 146
+  quote: can also connect their agent as a plugin
+  category: clarity
+  severity: low
+  problem: The intended plugin connects memory to the agent; the wording instead appears
+    to make the agent a plugin. The following statement that the memory binary is
+    still installed shows the intended direction.
+  suggestion: can also connect the memory through a plugin
+- id: '6.29'
+  unit: aptecnico
+  line: 441
+  quote: "@sec-ch13 tells the test I built"
+  category: error
+  severity: low
+  problem: The verb 'tell' cannot take 'the test' as its narrative object in this
+    construction. Portuguese says the chapter recounts the test; use the direct English
+    verb.
+  suggestion: "@sec-ch13 describes the test I built"
+- id: '6.30'
+  unit: aptecnico
+  line: 461
+  quote: got things right like a coin toss.
+  category: clarity
+  severity: low
+  problem: The stated random baseline is 31% across three or four options. A coin
+    toss suggests two choices and 50%, the same misleading image corrected in ch13.
+  suggestion: Use 'was no more accurate than random guessing' and change the heading
+    'The Coin' to 'The Guess'.
+- id: '6.31'
+  unit: aptecnico
+  line: 503
+  quote: On a resume of the 10-billion phase
+  category: error
+  severity: low
+  problem: The English turns 'retomada' into an awkward technical count noun and uses
+    'maintenance' as a bare count noun in the adjacent bullet at 504. Use ordinary
+    action/session wording.
+  suggestion: Use 'When resuming the 10-billion phase' at 503 and 'after one maintenance
+    session' at 504.

@@ -7,7 +7,7 @@ sources:
   - {post: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado, sha256: "7ee4001a6b6712e98fa2deb8acf37d0ffc33fde8b0b8ed7838b2c4d59e3aa02d", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apmecanica.md, sha256: "b0a23dad59aec07e7e3e57b7b3456a9a1274fc8ad8e847a8e11d5f56627a59e3"}
+translated_from: {file: book/pt/apmecanica.md, sha256: "9e86919ef4604d9e0c628f354853a4b72245fb5449e3c4ae0822ea8675c6bb6d"}
 ---
 
 # The Machine Inside, Without the Math {#sec-apmecanica}
@@ -112,7 +112,7 @@ What comes out of the layers is a list with a chance for every piece in the voca
 Think of that draw as a loaded die, with one face for each piece and each face weighted in proportion to its chance. The likeliest faces come up almost always, but not always. In practice, the systems discard the long list of unlikely faces and draw only among the heaviest ones.
 
 <!-- src: original -->
-Why not always pick the likeliest face? It looks like the safest bet, and it backfires. Researchers showed that always choosing the likeliest piece produces bland, weirdly repetitive text that gets stuck in a loop repeating the same sentence [@holtzman2020curious]. The draw is what makes the text look like written text.
+Why not always pick the likeliest face? It looks like the safest bet, and it backfires. Researchers showed in 2019 that always choosing the likeliest piece produces bland, weirdly repetitive text that gets stuck in a loop repeating the same sentence [@holtzman2020curious]. The draw is what makes the text look like written text.
 
 [Temperature]{.gls key=temperatura} is the setting that adjusts how the die is loaded. Low temperature piles the weight onto the favorite faces: the model gets predictable. High temperature spreads the weight around: less obvious words get in, which sometimes sound creative and sometimes are just wrong.
 
@@ -122,7 +122,7 @@ Notice what this mechanism lacks: nowhere along the way is there a step that che
 ### Ninety-Nine Percent
 
 <!-- src: 2020/09/30/akitando-84-entendendo-o-dilema-social-e-como-voce-e-manipulado -->
-Probability fools the reader of the result, too. In 2020, in an episode of my channel about manipulation, I used an example that works for any accuracy figure [@akitando084]. A test is right 99% of the time, and the disease affects one person in a thousand. You test positive: what are the odds you're sick?
+Probability fools the reader of the result, too. In 2020, in an episode of my channel about manipulation, I used an example that works for any accuracy figure [@akitando084]. A test correctly identifies 99% of sick people and 99% of healthy people, and the disease affects one person in a thousand. You test positive: what are the odds you're sick?
 
 Almost everyone guesses 99%, and the math gives about 9%. Picture 100,000 people taking the test. A hundred have the disease, and the test catches 99 of them; of the 99,900 healthy people, 1% also test positive, about a thousand. Of roughly 1,100 positives, only 99 are sick.
 

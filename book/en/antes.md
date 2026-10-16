@@ -28,7 +28,7 @@ Each of these subjects calls for a whole book, and those books exist, written by
 Even so, this book gets better if you understand those mechanisms first. Several claims in Parts I and III rest on them. When I say the model doesn't learn from your conversation, that it agrees with you because it was trained to please, or that each new generation costs much more and improves much less, I'm summing up consequences of how training works.
 
 <!-- src: original -->
-Readers who know the mechanics read those sentences as conclusions. Readers who don't have to trust me, and the whole book is a plea not to trust anyone blindly, me included.
+Readers who know the mechanics read those sentences as conclusions. Readers unfamiliar with the mechanics have to trust me, and the whole book is a plea not to trust anyone blindly, me included.
 
 <!-- src: original -->
 That said, nobody needs to do homework before turning the page. The book was written to be read without any of this, and the story stands on its own.
@@ -41,4 +41,4 @@ If you'd like a middle ground, there's an optional appendix, *The Machine Inside
 ## For Anyone Who Wants to Go Deeper
 
 <!-- src: original -->
-If you want the books and videos that explain the mechanics for real, I left a short list at the end, in @sec-apleituras. It runs from easiest to most technical, with what's free. For now, turn the page. The story starts in February 2026, with a line I never said making the rounds on the internet under my name.
+If you want the books and videos that explain the mechanics for real, I left a short list at the end, in @sec-apleituras. It runs from easiest to most technical, with what's free and what's available in Portuguese. For now, turn the page. The story starts in February 2026, with a line I never said making the rounds on the internet under my name.

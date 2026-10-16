@@ -1,0 +1,212 @@
+---
+- id: '4.1'
+  unit: ch16
+  line: 201
+  quote: which kept only the main repository and 96 copies listed one by one
+  category: clarity
+  severity: medium
+  problem: 'The object of ''kept'' is ambiguous, and the canonical PT sentence actually
+    reverses the retraction. The cited primary notice withdrew the takedown for all
+    OTHER repositories, leaving the main repository and 96 individually listed forks
+    covered. It asked GitHub to restore the others: https://github.com/github/dmca/blob/master/2026/04/2026-04-01-anthropic-retraction.md.'
+  suggestion: After the verified PT correction, use 'which left the notice in force
+    only against the main repository and 96 individually listed forks, and asked for
+    all the others to be restored'. Keep the citation.
+- id: '4.2'
+  unit: ch16
+  line: 316
+  quote: too fast for a serious review
+  category: consistency
+  severity: high
+  problem: 'R1/R20: line 37 says 42 people could review fifty small changes a day
+    and explicitly calls inadequate review a suspicion, not proof. The conclusion
+    upgrades the same rate to a demonstrated impossibility of serious review.'
+  suggestion: Follow PT with 'One took in about fifty changes a day, a pace that made
+    me doubt the review process, and an audit done by an AI...' Preserve the caveat
+    that the findings were not checked item by item.
+- id: '4.3'
+  unit: ch17
+  line: 106
+  quote: a keylogger, a program that injects taps on the screen as if it were you
+  category: error
+  severity: medium
+  problem: 'The apposition wrongly defines keylogging as input injection. The cited
+    native-library report lists keystroke logging and input injection as separate
+    searched-for capabilities, neither identified in that scan: https://github.com/akitaonrails/tiktok_analysis/blob/main/docs/13-native-library-analysis.md.'
+  suggestion: Use 'a keylogger or a program that injects taps on the screen as if
+    it were you'. Mirror PT.
+- id: '4.4'
+  unit: ch15
+  line: 273
+  quote: An agent would have to be very dedicated to punch through both
+  category: consistency
+  severity: medium
+  problem: 'R5: both layers here are the snapshot and the external backup, yet the
+    sentence implies a further last-night copy survives both. Last night''s NAS copy
+    is the same backup just described. Saying its device is unreachable also conflicts
+    with this chapter''s admin agents having direct access to both NASes at lines
+    56 and 101.'
+  suggestion: Keep the first three sentences and replace the last with 'For that to
+    work, the backup needs to stay out of reach of the agent working on the original.'
+    Do not invent a third copy or a restriction absent from the narrator's setup.
+- id: '4.5'
+  unit: ch15
+  line: 178
+  quote: only the current project's folder is real and persistent
+  category: consistency
+  severity: medium
+  problem: The later credential-sharing paragraph says other host-backed files are
+    deliberately exposed by default. The primary ai-jail README also lists persistent
+    agent state and toolchain caches. The word 'only' overstates isolation and contradicts
+    the chapter's own qualification. The matching apB wording needs the same scoped
+    correction.
+  suggestion: Follow PT with 'the current project's folder stays real and persistent'.
+    Preserve the subsequent credential trade-off and accident-guard explanation.
+- id: '4.6'
+  unit: ch17
+  line: 135
+  quote: and it doesn't go to third parties
+  category: consistency
+  severity: medium
+  problem: 'R1/R5: the chapter explicitly did no dynamic analysis and cannot inspect
+    server-side logic. Its static-reading scope cannot guarantee that the uploaded
+    selfie never reaches a third party; it can only say such forwarding was not identified
+    in this reading.'
+  suggestion: Follow PT with 'with no forwarding to third parties identified in this
+    reading'. Keep the following open CPF/crash-report question.
+- id: '4.7'
+  unit: ch17
+  line: 111
+  quote: Nobody has proven that TikTok is spyware.
+  category: consistency
+  severity: medium
+  problem: 'R1: the claim ranges over every outside investigation, while the evidence
+    and the cited public assessment concern this static analysis. The chapter consistently
+    limits what its own work can prove elsewhere.'
+  suggestion: Use 'This analysis did not prove that TikTok is spyware.' Mirror the
+    scoped PT wording.
+- id: '4.8'
+  unit: ch16
+  line: 41
+  quote: A Million Lines at Fifty a Day
+  category: clarity
+  severity: low
+  problem: The rate reads as fifty lines per day, but line 31 reports fifty commits
+    per day. The heading loses the unit that makes the argument intelligible.
+  suggestion: Use 'A Million Lines, Fifty Commits a Day'.
+- id: '4.9'
+  unit: ch15
+  line: 47
+  quote: They came back.
+  category: clarity
+  severity: low
+  problem: The nearest plural subject is the 31 incomplete downloads, which were untouched.
+    The intended restored objects are the eleven albums.
+  suggestion: Use 'The eleven albums came back.' Mirror PT.
+- id: '4.10'
+  unit: ch15
+  line: 47
+  quote: as I tell right after this
+  category: error
+  severity: low
+  problem: "'Tell' is missing its object here. This is a literal calque of Portuguese
+    'como conto logo a seguir', rather than a natural English clause."
+  suggestion: Use 'as I explain next'.
+- id: '4.11'
+  unit: ch15
+  line: 139
+  quote: may I list the files?,
+  category: error
+  severity: low
+  problem: A comma appears inside the quotation after its question mark. This is the
+    same punctuation defect accepted for Part I.
+  suggestion: Use 'In practice, after being asked "May I list the files?" for the
+    fiftieth time, everyone gets tired and picks the option that unlocks everything
+    for the rest of the session.'
+- id: '4.12'
+  unit: ch15
+  line: 288
+  quote: has a name on a payroll
+  category: consistency
+  severity: low
+  problem: PT says the person pressing the production button has a CPF, emphasizing
+    a real, accountable individual. A payroll adds an employment/salary condition
+    absent from PT and drops the Brazilian identifier, contrary to the translation
+    contract.
+  suggestion: Use 'has a CPF, a Brazilian taxpayer ID'. This retains the narrator's
+    metonym and the accountability point.
+- id: '4.13'
+  unit: ch16
+  line: 224
+  quote: Whoever maintains decides.
+  category: error
+  severity: low
+  problem: In this sense, English 'maintain' needs the project as its object. The
+    Portuguese permits this ellipsis more naturally.
+  suggestion: Use 'Whoever maintains it decides.'
+- id: '4.14'
+  unit: ch16
+  line: 253
+  quote: The ai-memory (the memory system for agents from @sec-ch20)
+  category: error
+  severity: low
+  problem: The standalone product name does not take this definite article in English.
+    The construction is a literal carryover of Portuguese 'O ai-memory'.
+  suggestion: Use 'The ai-memory project (the memory system for agents from @sec-ch20)'
+    or simply 'ai-memory (the memory system for agents from @sec-ch20)'. Retain the
+    measured June figures.
+- id: '4.15'
+  unit: ch17
+  line: 209
+  quote: you've been nominated as a reference in your sector
+  category: error
+  severity: low
+  problem: Portuguese 'referência no seu setor' means an authority or leading figure
+    in the field. English 'a reference' instead suggests a citation or a person providing
+    a recommendation. The mistranslation makes an example meant to sound like polished
+    flattery sound unnatural.
+  suggestion: Use 'you've been recognized as a leader in your field'.
+- id: '4.16'
+  unit: ch17
+  line: 98
+  quote: further on applies to the whole list
+  category: error
+  severity: low
+  problem: The preceding comma begins a parenthetical 'further on' but no closing
+    comma follows it. The resulting relative clause is awkwardly punctuated.
+  suggestion: Use 'The limit I explain later in "What the Blueprint Doesn't Show"
+    applies to the whole list:'. Preserve the remainder of the sentence.
+- id: '4.17'
+  unit: ch17
+  line: 226
+  quote: A "bank" message full of typos and broken grammar was a scam.
+  category: consistency
+  severity: low
+  problem: 'Semantic parity: PT ch17:225 supplies the concrete example of ''voce''
+    missing its accent. EN replaces that with unspecified typos. Retaining the brief
+    Portuguese example also fits the following paragraph''s explicit claim about perfect
+    Portuguese.'
+  suggestion: Use 'A "bank" message with "voce" missing its accent and mangled Portuguese
+    grammar was a scam.'
+- id: '4.18'
+  unit: ch17
+  line: 289
+  quote: the math didn't close
+  category: error
+  severity: low
+  problem: This is a literal translation of 'não fechava a conta'. English does not
+    use 'close' this way to say a production cost is uneconomic.
+  suggestion: Use 'the economics didn't work'.
+- id: '4.19'
+  unit: ch15
+  line: 96
+  quote: what it would cost in the US
+  category: consistency
+  severity: low
+  problem: 'Semantic parity: PT says ''o preço de lá'', in the context of an imported
+    NAS, but never specifies the United States. EN adds that particular country. The
+    private blog checkout is unavailable and the public source page did not return
+    usable text in this check, so this added detail could not be independently confirmed.
+    The comparison can be retained without it.'
+  suggestion: Use 'the price abroad'. This preserves the imported-versus-local price
+    comparison without adding an unverified country.

@@ -1,0 +1,101 @@
+---
+- id: '1.1'
+  unit: ch03
+  line: 45
+  quote: Foram de 15 a 20 pontos, ganhos sem tocar no modelo.
+  category: consistency
+  severity: high
+  problem: 'R1: the 69-point baseline was explicitly identified at line 38 as mixed
+    DeepSeek/Opus authorship and impossible to measure. Subtracting it from 84/89
+    cannot establish a 15–20-point gain by the unchanged DeepSeek model. The arithmetic
+    is correct but the compared populations are not.'
+  suggestion: 'Replace with: ''O modelo não mudou. O que mudou foi o programa em volta
+    dele.'' Keep the valid 84/89 results in the preceding paragraph, without quantifying
+    improvement over the contaminated baseline.'
+- id: '1.2'
+  unit: ch01
+  line: 208
+  quote: nasceram os blogs e as redes sociais
+  category: error
+  severity: medium
+  problem: The sentence dates the birth of blogs to 2002–2008, although blogs existed
+    earlier. The official Blogger history dates its launch to 23 August 1999 (https://blogger.googleblog.com/2006/08/happy-birthday-blogger.html);
+    its 2009 tenth-birthday post independently confirms that date. This is a verified
+    chronology error, not an objection to the author's account of the post-crash boom.
+  suggestion: 'Replace the end of the sentence with: ''que os blogs e as redes sociais
+    se popularizaram''. Propagate the correction to EN ch01.'
+- id: '1.3'
+  unit: ch03
+  line: 52
+  quote: Quando você conversa com um chatbot no site, o máximo que ele faz é escrever.
+  category: consistency
+  severity: medium
+  problem: 'R1: the passage equates every website chatbot with a model that has no
+    tools. Browser chats already had web search well before the book''s 2026 snapshot:
+    OpenAI''s dated 31 October 2024 announcement documents search directly in ChatGPT
+    (https://openai.com/index/introducing-chatgpt-search/). The distinction the chapter
+    needs is tools enabled versus tools absent, rather than website versus coding
+    agent.'
+  suggestion: Begin 'Num chatbot sem ferramentas, o máximo que o modelo faz é escrever.'
+    Apply the same scope to line 70 ('no chat sem ferramentas') and to the closing
+    example at line 275 ('numa caixa de chat sem busca nem outras ferramentas'). Keep
+    the model-versus-harness lesson.
+- id: '1.4'
+  unit: ch03
+  line: 100
+  quote: Ele executa o comando, pega a saída inteira e devolve pro modelo como uma
+    mensagem nova.
+  category: consistency
+  severity: medium
+  problem: 'R5: ch02:120 has just explained that tool output may be silently truncated
+    to 50,000 characters and files to 2,000 lines. The unqualified claim that the
+    harness gives the model the entire output contradicts that warning.'
+  suggestion: 'Use: ''Ele executa o comando, recolhe a saída e devolve pro modelo
+    como uma mensagem nova, dentro dos limites da ferramenta que vimos no @sec-ch02.'''
+- id: '1.5'
+  unit: ch04
+  line: 109
+  quote: sem opinião na pergunta a sicofancia fica sem ter a quem agradar
+  category: consistency
+  severity: medium
+  problem: 'R5: the opening example at lines 25–34 demonstrates that ''quais são os
+    problemas?'' steers the answer even without the user''s personal opinion. This
+    section then offers ''liste as falácias'' and ''diga que contexto está faltando''
+    and treats the absence of that opinion as removing the pressure to agree. Line
+    70 also says an opinion-free prompt can still pull toward the agreeable middle.'
+  suggestion: 'Remove the guarantee and state the actual safeguard: ''O modelo não
+    recebe a opinião de quem opera; cada achado precisa se apoiar no material recebido.''
+    Retain the following instruction to cite explicit evidence and mark unverifiable
+    claims.'
+- id: '1.6'
+  unit: ch02
+  line: 60
+  quote: e a algo parecido em português
+  category: consistency
+  severity: low
+  problem: 'Semantic parity: PT says the English three-quarters-of-a-word ratio is
+    similar in Portuguese, while EN ch02:61 says it is often lower in other languages.
+    OpenAI''s primary token guide restricts the three-quarters estimate to English
+    and says the relationship varies with language and encoding (https://help.openai.com/en/articles/4936856-understanding-and-counting-tokens).
+    Neither language needs an unsupported fixed Portuguese ratio.'
+  suggestion: Use 'em inglês; a relação varia com a língua e com o modelo'. Match
+    the same qualification in EN.
+- id: '1.7'
+  unit: ch03
+  line: 41
+  quote: O script troca o endereço com quem ele conversa
+  category: error
+  severity: low
+  problem: The relative pronoun 'quem' refers to a person but its antecedent here
+    is an address. It also makes the direction of the request harder to parse for
+    the lay reader.
+  suggestion: Use 'O script troca o endereço pra onde os pedidos são enviados'.
+- id: '1.8'
+  unit: ch04
+  line: 138
+  quote: contra-evidência
+  category: error
+  severity: low
+  problem: 'Orthography: the prefix contra- joins a word beginning with a different
+    vowel without a hyphen, as in contraexemplo.'
+  suggestion: Use 'contraevidência'.

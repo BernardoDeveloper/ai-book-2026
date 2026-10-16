@@ -19,7 +19,7 @@ sources:
 refs_projects:
   - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apC.md, sha256: "8633a35f5229e728ad1d57c6f23756f2a90d3753740b45a124f00a7c00f9345e"}
+translated_from: {file: book/pt/apC.md, sha256: "1ce7c2a13d3fb17c6070012bd3d19c96ff96956e87398260d2c7c39a940713e1"}
 ---
 
 # How to Read a Benchmark or an Announcement {#sec-apC}
@@ -43,7 +43,7 @@ This applies to any [benchmark]{.gls}, ranking or model leaderboard, mine includ
 7. **Could the answers have leaked into training?** A famous, old test runs the risk of [contamination]{.gls key=contaminacao}, and passing the automatic grader is different from having the work accepted by the people who actually maintain the project (@sec-ch11).
 8. **Who wrote the check?** A green test written by the same model that wrote the code can agree with its own mistake, like a [mock]{.gls} tailor-made to accept a command that doesn't exist (@sec-ch12).
 9. **Did the model have the answer key within reach?** An agent uses everything in the folder, including the rubric and the competitors' work, so a suspiciously good score calls for reading the run's log (@sec-ch12).
-10. **What does the test prove about the model's origin?** With the weights in hand you can do the math and get close to proof; from the outside, through the API alone, a [black-box test]{.gls key=caixa-preta} rules out hypotheses and dispels rumors, but doesn't certify origin (@sec-ch12).
+10. **What does the test prove about the model's origin?** With the weights in hand you can do the math and get close to proof; from the outside, through the API alone, a [black-box test]{.gls key=caixa-preta} helps investigate hypotheses and rumors, but doesn't certify origin (@sec-ch12).
 11. **Have you run your own?** If the choice carries money or risk, take a task similar to yours, run the candidates more than once, compare without knowing who did what and measure how much human work was left at the end (@sec-ch11).
 
 <!-- src: 2026/07/19/llm-benchmark-devo-usar-o-que-tem-nota-maior -->
@@ -61,7 +61,7 @@ The full list I use, with the 2026 cases, is in @sec-como-ler-anuncio. This is t
 
 1. **Who makes money if you believe it?** Behind the sentence there's usually an [IPO]{.gls key=ipo}, a graphics card to sell or a course, and a financial interest doesn't make anything false; it just calls for stronger proof (@sec-ch14).
 2. **Can someone outside test it?** "Too dangerous to release," a closed consortium and a waiting list are claims until someone independent measures them, and the "too dangerous to release" line was already used with GPT-2 in 2019 (@sec-ch01, @sec-ch14).
-3. **What's the definition of the big word?** When the people selling the hardware declare that [AGI]{.gls key=agi} has arrived, ask what they mean by it, because in the contract between OpenAI and Microsoft the word became a revenue target [@zeff2024agi] (@sec-ch14).
+3. **What's the definition of the big word?** When the people selling the hardware declare that [AGI]{.gls key=agi} has arrived, ask what they mean by it, because in the contract between OpenAI and Microsoft the word became a profit target [@zeff2024agi] (@sec-ch14).
 4. **Compared against whom, and with which yardstick?** "Hundreds of times cheaper" always has a hand-picked opponent, and "zero hallucination" can be zero by definition, so find the sentence that explains how the number was measured (@sec-ch14).
 5. **What is this product, minus the name?** The revolutionary launch of September 2026 was a [classifier]{.gls key=classificador}, a decades-old technique, and plenty of "new paradigms" are old practice with a new name to sell consulting (@sec-ch14).
 6. **Did it happen, or could it happen?** Read the verbs: "could," "within a few months," "if it were more capable" carry a different weight from a documented fact, and the apocalypse in announcements usually lives entirely in the conditional (@sec-ch14).

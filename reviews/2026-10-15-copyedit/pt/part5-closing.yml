@@ -1,0 +1,158 @@
+---
+- id: '5.1'
+  unit: ch18
+  line: 130
+  quote: A bolha da programação estourou antes de existir LLM pra programar.
+  category: error
+  severity: medium
+  problem: 'O Codex de 2021 já era um modelo de linguagem que escrevia código: o artigo
+    dos próprios autores foi submetido em 7 de julho de 2021 e avalia geração funcional
+    de programas (https://arxiv.org/abs/2107.03374). A cronologia das demissões em
+    2022 pode sustentar o argumento sobre o ChatGPT, mas não a inexistência de LLMs
+    de programação. Blog errata: a formulação veio do post de fevereiro.'
+  suggestion: 'Substituir por: A bolha da programação já estava estourando quando
+    o ChatGPT foi lançado.'
+- id: '5.2'
+  unit: ch18
+  line: 113
+  quote: Pra se apresentar como "engenheiro de software", não precisa de conselho
+    nenhum
+  category: error
+  severity: medium
+  problem: 'A afirmação legal categórica não se sustenta: a atual Resolução Confea
+    1.156/2025, art. 7, trata expressamente do engenheiro de software (https://normativos.confea.org.br/Ementas/Visualizar?id=82360).
+    Ela substituiu a Resolução 1.100/2018; não usar a norma revogada como atual nem
+    confundir desenvolvimento de software em geral com o título de engenheiro.'
+  suggestion: 'Preservar o argumento sobre credenciais sem uma digressão jurídica,
+    substituindo o parágrafo por: Tem um detalhe que pouca gente nota. Escrever "engenheiro
+    de software" no LinkedIn não prova formação, experiência nem capacidade de entregar.'
+- id: '5.3'
+  unit: ch18
+  line: 208
+  quote: quem copia o GCC chega em outro GCC
+  category: error
+  severity: medium
+  problem: 'R5: usar o GCC como oráculo, conforme o parágrafo anterior, não é copiar
+    sua implementação. A fonte citada descreve implementação clean-room sem acesso
+    à internet, com o GCC como compilador de referência: https://www.anthropic.com/engineering/building-c-compiler,
+    Evaluation e Make parallelism easy. A opinião cética pode ficar, mas o fundamento
+    precisa corresponder ao experimento.'
+  suggestion: 'Substituir apenas essa oração por: ter o GCC como oráculo dá uma referência
+    pronta pra conferir o resultado'
+- id: '5.4'
+  unit: ch18
+  line: 306
+  quote: "[tipagem forte]{.gls key=tipagem-forte}"
+  category: consistency
+  severity: medium
+  problem: 'O mecanismo explicado no glossário e no apêndice é checagem antes da execução,
+    isto é, tipagem estática. Forte/fraca é outra distinção; Python também tem tipos
+    e checagens. O livro de Rust explicita static typing como tipos conhecidos na
+    compilação, e a especificação oficial de Python distingue estática/dinâmica: https://doc.rust-lang.org/book/ch03-02-data-types.html;
+    https://typing.python.org/en/latest/spec/concepts.html.'
+  suggestion: Usar [tipagem estática]{.gls key=tipagem-forte}, preservando a chave
+    estável, e na linha 317 trocar em linguagem tipada ou dinâmica por em linguagem
+    de tipagem estática ou dinâmica. Coordenar o rótulo e a definição do glossário
+    e aptecnico com os respectivos responsáveis.
+- id: '5.5'
+  unit: ch20
+  line: 200
+  quote: Fora desse território não tem de onde tirar o sinal.
+  category: error
+  severity: medium
+  problem: 'R5: o parágrafo anterior inclui RLHF, cujo sinal vem de avaliações humanas,
+    não necessariamente de placar/prova/teste objetivo. A fonte já cadastrada como
+    ouyang2022training descreve exemplos e rankings produzidos por avaliadores humanos
+    (https://arxiv.org/abs/2203.02155). A afirmação de ausência de sinal fora de resultados
+    verificáveis contradiz o próprio exemplo e a explicação de ch04.'
+  suggestion: 'Na linha 195, introduzir o aprendizado por reforço como uma forma de
+    fazer isso, não como sinônimo de toda IA treinando IA. Na linha 197, substituir
+    o final por: Nos exemplos de autojogo e raciocínio verificável, a recompensa é
+    fácil de conferir: jogo tem placar, matemática tem prova, código tem teste. Na
+    linha 200, usar: Fora desse território, é mais difícil obter um sinal automático
+    confiável; no RLHF, ele vem de avaliações humanas. Preservar a explicação seguinte
+    sobre treino no laboratório e pesos congelados.'
+- id: '5.6'
+  unit: ch20
+  line: 158
+  quote: Com ele, a máquina itera até acertar. Sem ele, gira indefinidamente.
+  category: consistency
+  severity: medium
+  problem: 'R2/R5: o conversor de jogos acabou de ser descrito como pausado após 349
+    commits e mais de 600 testes, mesmo tendo o oráculo de ch08. Um verificador dá
+    retorno sobre os erros; não garante que a busca ache uma solução nem que termine.'
+  suggestion: 'Substituir por: Com ele, a máquina consegue conferir se está avançando.
+    Sem ele, pode girar indefinidamente.'
+- id: '5.7'
+  unit: ch18
+  line: 249
+  quote: Pedido bem especificado sai prato de restaurante estrelado, pedido tosco
+    de alguém inexperiente sai miojo.
+  category: clarity
+  severity: medium
+  problem: 'R2: a comparação volta a garantir o resultado em função apenas da qualidade
+    do pedido, embora ch08 mostre um plano bem especificado fracassando e ch09 reconheça
+    limites do modelo mesmo com bom pedido. Manter a imagem, qualificando a relação
+    como chance, preserva a tese sem apagar esses casos.'
+  suggestion: 'Substituir por: Pedido bem especificado dá ao modelo mais chance de
+    entregar algo que presta; pedido tosco de alguém inexperiente aumenta a chance
+    de sair miojo.'
+- id: '5.8'
+  unit: ch20
+  line: 250
+  quote: a diferença entre um resultado excelente e um monte de lixo sobra inteira
+    pro lado de cá
+  category: clarity
+  severity: medium
+  problem: 'R1/R2: o empate de modelos num teste saturado não demonstra que toda diferença
+    de qualidade restante seja responsabilidade do usuário. O próprio capítulo diz
+    que configuração de esforço e harness afetam o resultado. A conclusão inteira
+    ultrapassa as ressalvas que o capítulo faz sobre o teste.'
+  suggestion: 'Substituir por: a diferença entre um resultado excelente e um monte
+    de lixo depende muito do que a gente faz do lado de cá'
+- id: '5.9'
+  unit: ch20
+  line: 120
+  quote: 'Todo LLM foi treinado no que é público: a internet aberta e, no caso de
+    código, os repositórios abertos.'
+  category: clarity
+  severity: medium
+  problem: 'R1: a formulação absoluta prepara uma divisão público/privado que sugere
+    um corpus restrito ao público, embora a frase seguinte admita desconhecimento
+    do treino. O relatório técnico do GPT-4, seção 2, registra dados públicos e dados
+    licenciados de terceiros (https://arxiv.org/pdf/2303.08774). O argumento sobre
+    não conhecer as regras privadas do cliente não depende de excluir toda outra fonte
+    de treino.'
+  suggestion: 'Substituir por: Uma parte importante do treino de um LLM vem do que
+    é público: a internet aberta e, no caso de código, os repositórios abertos. Manter
+    a ressalva seguinte de que ninguém de fora sabe exatamente o que entrou.'
+- id: '5.10'
+  unit: ch18
+  line: 149
+  quote: um workshop de 80 a 100 horas cobre uns 5% disso
+  category: error
+  severity: low
+  problem: 'R7: 80/1.400 corresponde a 5,71% e 100/1.400 a 7,14%. Como o texto fornece
+    os dois operandos, a aproximação adequada é 6% a 7%; a conclusão sobre a diferença
+    de escala permanece.'
+  suggestion: 'Substituir por: um workshop de 80 a 100 horas cobre uns 6% a 7% disso'
+- id: '5.11'
+  unit: ch19
+  line: 101
+  quote: A especificação guiada não salva isso.
+  category: consistency
+  severity: low
+  problem: O termo definido na abertura é desenvolvimento guiado por especificação.
+    Especificação guiada inverte a relação e dá nome diferente ao mesmo método; a
+    edição EN mantém spec-driven development.
+  suggestion: 'Substituir por: O desenvolvimento guiado por especificação não salva
+    isso.'
+- id: '5.12'
+  unit: ch20
+  line: 265
+  quote: substitua o transformer, (em @sec-ch01
+  category: error
+  severity: low
+  problem: A vírgula antes do parêntese não cumpre função sintática. A edição inglesa
+    já omite essa vírgula.
+  suggestion: 'Usar: substitua o transformer (em @sec-ch01'

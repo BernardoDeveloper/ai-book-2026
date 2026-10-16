@@ -5,7 +5,7 @@ sources:
   - {post: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente, sha256: "f92fe64c51f8d817e9ec698391d1f251326c8052c5053f5119b29e83b0261ceb"}
 refs_projects: []
 blog_commit: "956fc9ed1cc8e32f61deeef64518eece134fd510"
-translated_from: {file: book/pt/apfeito.md, sha256: "b5b78d854c713ae571a60dd29416711d4d494c34b02285d1da21112d093c0f69"}
+translated_from: {file: book/pt/apfeito.md, sha256: "53dbd17f914d08af0e240b5f25a70ccde0b2a7a878b19b80443bea51a22b68dd"}
 ---
 
 # Was This Book Written by AI? {#sec-apfeito}
@@ -31,7 +31,7 @@ And the decisions are mine too: the structure in five parts, what goes in and wh
 No. Making a book with AI is a long way from a "write me a book" prompt. I had to invent the whole process and steer the agents to build every piece of it: the consolidation of the posts, the narrative strategy, what stays and what goes, the copyedit, the fact-checking, the release of each version.
 
 <!-- src: 2026/10/13/auto-publiquei-meu-proprio-livro-ebook-competente-o-suficiente -->
-The first draft of every chapter was done on the same day the book's repository was born, October 13. That's the fast part. To give you an idea of the rest, some numbers:
+The first drafts of the chapters in the initial structure were done on the same day the book's repository was born, October 13. That's the fast part. To give you an idea of the rest, some numbers:
 
 - almost half a million words of blog going in, 96 posts about AI, and every post left out with its reason recorded;
 - a full copyedit in each language, on top of the fact-check;

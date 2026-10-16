@@ -1,0 +1,17 @@
+---
+- id: '8.1'
+  unit: fontes
+  line: 3
+  quote: This book grew out of articles published on akitaonrails.com during 2026. Each chapter below lists the articles it derives from, for readers who want the original, dated versions.
+  category: consistency
+  severity: low
+  problem: The generated source-page introduction drops the PT reference to the context in which the original articles were written. Restore the full meaning in the generator so rebuilding does not erase the correction.
+  suggestion: Refer to the original articles with their context and writing dates.
+- id: '8.2'
+  unit: creditos
+  line: 7
+  quote: '- @fig-ch01-perceptron: "330-PSA-80-60 (USN 710739) (20897323365)", National Museum of the U.S. Navy. https://commons.wikimedia.org/wiki/File:330-PSA-80-60_(USN_710739)_(20897323365).jpg. Public domain. Changes: resized.'
+  category: consistency
+  severity: low
+  problem: The computed English photo credit drops the canonical attribution's 1960 photograph date and the explanation that it is a U.S. Navy photograph in the public domain as a federal-government work. Those details are already present in the shared credit record. The generic generator cannot preserve its bespoke PT attribution.
+  suggestion: Store a faithful English back-matter attribution beside the existing Portuguese text, and allow the generator to use it while retaining the current fallback for other records.

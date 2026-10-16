@@ -1,0 +1,83 @@
+---
+- id: '7.1'
+  unit: glossary
+  quote: mock
+  category: error
+  severity: medium
+  problem: In this testing context PT 'banco' means database; EN incorrectly says
+    bank, a financial institution.
+  suggestion: Replace '(email, a bank, an AI model)' with '(email, a database, an
+    AI model)'.
+- id: '7.2'
+  unit: glossary
+  quote: fonte-primaria
+  category: error
+  severity: low
+  problem: Countable plural texts takes number, not amount.
+  suggestion: Replace 'any amount of texts' with 'any number of texts'.
+- id: '7.3'
+  unit: glossary
+  quote: fingerprint
+  category: consistency
+  severity: low
+  problem: EN adds a parenthetical list of device attributes and a sensor disclaimer
+    not present in canonical PT.
+  suggestion: Translate the PT definition without the extra attribute list and sensor
+    sentence, preserving the device-fingerprint explanation.
+- id: '7.4'
+  unit: glossary
+  quote: prompt
+  category: consistency
+  severity: low
+  problem: EN adds a second sentence expanding prompt to harness-added files and instructions;
+    canonical PT contains only the user's request.
+  suggestion: Remove the added second sentence to restore one-to-one definition parity.
+- id: '7.5'
+  unit: glossary
+  quote: circuit-breaker
+  category: clarity
+  severity: low
+  problem: "'insisting with an avalanche of retries' is an unnatural literal construction."
+  suggestion: Use 'instead of flooding it with repeated attempts'.
+- id: '7.6'
+  unit: glossary
+  quote: treinamento
+  category: consistency
+  severity: medium
+  problem: The generic definition says training is always done by a company, takes
+    weeks or months and costs millions, while ch13b explicitly trains a small model
+    at home in 137 GPU-hours. Scope the large-model cost and duration rather than
+    contradicting that chapter.
+  suggestion: Describe training as the stage before use; qualify weeks/months and
+    millions as possible costs of large commercial models. Mirror the qualification
+    in PT and EN.
+- id: '7.7'
+  unit: glossary
+  quote: vram
+  category: consistency
+  severity: medium
+  problem: The definition says weights must fit wholly in VRAM and determine the largest
+    model the card can run, while ch13 describes CPU offloading at 2-3 tokens per
+    second. Distinguish fitting entirely on the card from running partly outside it.
+  suggestion: State that VRAM limits the model that can run entirely on the graphics
+    card, without denying the slower offloading case already described in ch13.
+- id: '7.8'
+  unit: glossary
+  quote: calibracao
+  category: consistency
+  severity: low
+  problem: PT uses the general 'sorteio'; the EN coin-toss example unnecessarily narrows
+    the random event. Keep the same scope as the canonical definition.
+  suggestion: Replace 'about a coin toss' with 'about a random draw'.
+- id: '7.9'
+  unit: glossary
+  quote: tipagem-forte
+  category: consistency
+  severity: medium
+  problem: 'The definition describes compile-time checking, which is static typing
+    rather than the separate strong/weak distinction. This is coordinated with accepted
+    part5 findings in ch18 and the technical appendix. Primary sources: https://doc.rust-lang.org/book/ch03-02-data-types.html
+    and https://typing.python.org/en/latest/spec/concepts.html.'
+  suggestion: Display Tipagem estática / Static typing, retain the stable key tipagem-forte,
+    and define checking value types before execution without conflating it with strong
+    typing.

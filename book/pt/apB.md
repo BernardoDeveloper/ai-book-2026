@@ -48,9 +48,9 @@ As cinco primeiras protegem as suas coisas. As duas últimas protegem o seu trab
 ## 1. A jaula
 
 <!-- src: 2026/03/01/ai-jail-sandbox-para-agentes-de-ia-de-shell-script-a-ferramenta-real -->
-Uma [sandbox]{.gls} é um ambiente isolado em que o programa só vê e só altera o que você permitiu (@sec-ch15 explica a ideia com calma). Pra um agente de programação, a jaula mínima precisa garantir quatro coisas:
+Uma [sandbox]{.gls} é um ambiente isolado em que o programa só vê e só altera o que você permitiu (o @sec-ch15 explica a ideia com calma). Pra um agente de programação, a jaula mínima precisa garantir quatro coisas:
 
-- só a pasta do projeto atual é real e gravável; o resto da sua pasta pessoal aparece vazio ou nem aparece;
+- a pasta do projeto é gravável; o resto da sua pasta pessoal aparece vazio ou nem aparece, com exceções declaradas pra áreas como as credenciais do próprio agente;
 - as pastas sensíveis ficam de fora: chaves de acesso a servidores, credenciais de nuvem, perfis do navegador com senhas salvas;
 - a rede vem desligada ou filtrada, liberando só o necessário pro agente conversar com o modelo e baixar bibliotecas;
 - nada de atalho pra programas que rodam como [root]{.gls}, o administrador do sistema.
@@ -139,7 +139,7 @@ A política de retenção é a parte que quase todo mundo esquece. A minha mant�
 restic forget --keep-daily 7 --keep-weekly 4 --keep-monthly 6 --keep-yearly 1 --prune
 ```
 
-Traduzindo: guarde a última cópia de cada um dos últimos sete dias, de cada uma das últimas quatro semanas, de cada um dos últimos seis meses e do último ano, e apague o resto pra liberar espaço.
+Traduzindo: guarde a última cópia de cada um dos sete dias mais recentes com backup, das quatro semanas mais recentes com backup, dos seis meses mais recentes com backup e do ano mais recente com backup, e apague o resto pra liberar espaço.
 
 <!-- src: 2026/10/06/desastre-no-meu-nas-como-quase-perdi-90-tb-de-dados -->
 Em outubro de 2026 eu aprendi que essa camada também tem camadas. Um NAS que aguenta a perda de um disco protege contra um disco morto, mas não contra a perda do aparelho inteiro (@sec-ch15). Pro que é crítico de verdade, mantenha uma terceira cópia fora de casa, na nuvem ou num HD guardado em outro endereço.
@@ -180,7 +180,7 @@ Repare onde está o envio pro remoto: na coluna do meio. O agente pode gravar co
 ### Modo YOLO, só dentro da jaula
 
 <!-- src: 2026/05/24/dicas-e-toolkit-de-ia-do-akita-ai-jail-ai-memory-ai-usagebar -->
-Desde maio de 2026, rodo os agentes quase o tempo todo em modo YOLO (@sec-ch15). Parece contraditório com tudo acima, e seria, se não fosse um detalhe: eu tiro a trava de dentro do agente e coloco uma cerca no sistema operacional. O agente trabalha rápido dentro do projeto, e o resto do disco fica fora do alcance dele.
+Desde maio de 2026, rodo os agentes quase o tempo todo em modo YOLO (@sec-ch15). Parece contraditório com tudo acima, e seria, se não fosse um detalhe: eu tiro a trava de dentro do agente e coloco uma cerca no sistema operacional. O agente trabalha rápido dentro do projeto, e os dados que eu não compartilhei ficam fora do alcance dele.
 
 A regra que eu sigo é essa combinação. Modo YOLO sem jaula é confiar que nenhum comando errado, de nenhuma origem, vai aparecer. Com jaula, Git remoto e envio manual, o pior caso realista é refazer o trabalho local de uma tarde.
 
@@ -191,7 +191,7 @@ O acidente mais comum que eu vi no ano foi segredo vazando pro repositório: um 
 
 Três hábitos resolvem quase tudo:
 
-- antes de enviar, olhe o que vai no pacote (no Git, `git status` e `git diff --cached` mostram exatamente isso);
+- antes de gravar um commit, confira o que está preparado (`git status` e `git diff --cached`); antes de enviar, revise também todos os commits locais que ainda não foram enviados, inclusive arquivos removidos num commit posterior;
 - guarde as senhas e chaves num gerenciador de senhas, pra que perder a pasta do projeto não seja perder a chave do reino;
 - se uma chave vazar, troque a chave; limpar o histórico ajuda, mas quem copiou antes continua com ela.
 
@@ -296,7 +296,7 @@ A versão de barra foi feita pro Linux que eu uso, mas a de terminal roda em qua
 <!-- src: original -->
 Se você só levar uma lista deste apêndice, leve esta:
 
-- rode o agente numa jaula que só enxerga a pasta do projeto;
+- rode o agente numa jaula que limita o acesso aos seus dados ao projeto e às exceções que você conferiu;
 - tenha snapshots automáticos e saiba recuperar um arquivo deles;
 - tenha um backup automático, criptografado, em outro aparelho, e teste a restauração;
 - deixe o agente fazer sozinho só o que é fácil de desfazer, e publicar, apagar e sair da máquina só com a sua aprovação;

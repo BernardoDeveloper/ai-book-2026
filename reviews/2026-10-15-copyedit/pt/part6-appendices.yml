@@ -1,0 +1,268 @@
+---
+- id: '6.1'
+  unit: apB
+  line: 194
+  quote: antes de enviar, olhe o que vai no pacote (no Git, `git status` e `git diff
+    --cached` mostram exatamente isso)
+  category: error
+  severity: high
+  problem: 'Os comandos mostram a árvore de trabalho/índice e as mudanças preparadas
+    para o próximo commit, não todo o histórico já gravado que o push enviará. Depois
+    de um segredo entrar num commit, ambos podem parecer limpos e o envio ainda publicá-lo.
+    Conferido no manual primário de git-diff: https://git-scm.com/docs/git-diff, forma
+    --cached comparada com HEAD.'
+  suggestion: antes de gravar um commit, confira o que está preparado (`git status`
+    e `git diff --cached`); antes de enviar, revise também todos os commits locais
+    que ainda não foram enviados, inclusive arquivos removidos num commit posterior
+- id: '6.2'
+  unit: posfacio
+  line: 114
+  quote: o rascunho de todos os capítulos no mesmo dia.
+  category: consistency
+  severity: medium
+  problem: A afirmação absoluta ficou desatualizada com ch13b, acrescentado em 14/10
+    segundo integration.yml, depois do primeiro commit de 13/10 relatado na linha
+    16. O histórico descrito continua válido para a estrutura inicial, de vinte capítulos
+    (linha 33).
+  suggestion: os rascunhos dos capítulos da estrutura inicial no mesmo dia.
+- id: '6.3'
+  unit: apfeito
+  line: 33
+  quote: O primeiro rascunho de todos os capítulos ficou pronto
+  category: consistency
+  severity: medium
+  problem: Repete a afirmação absoluta do posfácio. integration.yml registra ch13b
+    acrescentado em 14/10, depois dos vinte capítulos iniciais de 13/10.
+  suggestion: Os primeiros rascunhos dos capítulos da estrutura inicial ficaram prontos
+- id: '6.4'
+  unit: apmecanica
+  line: 124
+  quote: Um exame acerta 99% das vezes
+  category: clarity
+  severity: medium
+  problem: A conta das duas linhas seguintes pressupõe 99% de sensibilidade e 99%
+    de especificidade, não só 99% de acurácia global. Só o segundo par define a taxa
+    de falso positivo necessária para chegar aos 9%/91%; os resultados aritméticos
+    foram recomputados e estão corretos sob essa hipótese.
+  suggestion: Um exame acerta 99% dos casos doentes e 99% dos saudáveis
+- id: '6.5'
+  unit: apmecanica
+  line: 188
+  quote: Ele pode até aceitar, mas só porque é ele quem faz todo o trabalho de dar
+    sentido à resposta.
+  category: clarity
+  severity: medium
+  problem: O último sujeito explícito é o polvo, mas os dois 'ele' seguintes devem
+    designar o náufrago. A EN:189 já explicita o náufrago e desfaz a ambiguidade.
+  suggestion: O náufrago pode até aceitar, mas só porque é ele quem faz todo o trabalho
+    de dar sentido à resposta.
+- id: '6.6'
+  unit: apbolhas
+  line: 83
+  quote: Pelo que eu vi três vezes, a bolha acaba com o atalho.
+  category: consistency
+  severity: medium
+  problem: O apêndice afirma que a terceira bolha ainda não terminou (68) e fala corretamente
+    dos dois estouros (81). A frase final generaliza o resultado de três encerramentos,
+    quando só dois foram narrados como concluídos (R1).
+  suggestion: Pelo que eu vi nos dois estouros, a bolha acaba com o atalho.
+- id: '6.7'
+  unit: apB
+  line: 53
+  quote: só a pasta do projeto atual é real e gravável
+  category: consistency
+  severity: medium
+  problem: 'A exclusividade literal contradiz a exceção descrita na linha 267: as
+    credenciais do agente também entram, por padrão, como estado persistente. O resumo
+    da linha 299 repete a promessa de enxergar somente o projeto. O leitor precisa
+    saber que deve conferir as exceções configuradas, de acordo com o limite de proteção
+    contra acidentes.'
+  suggestion: 'Na lista: ''a pasta do projeto é gravável; o resto da sua pasta pessoal
+    aparece vazio ou nem aparece, com exceções declaradas pra áreas como as credenciais
+    do próprio agente''. No resumo: ''rode o agente numa jaula que limita o acesso
+    aos seus dados ao projeto e às exceções que você conferiu''.'
+- id: '6.8'
+  unit: apmemoria
+  line: 38
+  quote: O agente não anota sozinho, e eu tenho que lembrar de pedir, toda vez
+  category: consistency
+  severity: medium
+  problem: A afirmação absoluta entra em conflito com a linha43, onde Claude Code
+    já faz as próprias anotações. O remédio caseiro depende de manter os bilhetes
+    do projeto em dia, não de uma impossibilidade geral de anotar automaticamente.
+  suggestion: Pra manter esses bilhetes em dia, eu ainda tenho que lembrar de pedir
+    e conferir, toda vez
+- id: '6.9'
+  unit: apmemoria
+  line: 59
+  quote: No dia em que eu fechei este livro, 13 de outubro de 2026
+  category: consistency
+  severity: medium
+  problem: 'A data de lançamento do ai-memory3.0 é coerente com apA:425, mas o fechamento
+    do livro é posterior: apA:428 e integration.yml registram o microgpt/ch13b em
+    14/10. Não atrelar a data do lançamento à data final do livro.'
+  suggestion: Em 13 de outubro de 2026
+- id: '6.10'
+  unit: apC
+  line: 45
+  quote: exclui hipóteses e desfaz boatos
+  category: consistency
+  severity: medium
+  problem: O resumo conserva a conclusão categórica dos testes de identidade de ch12,
+    que foi corrigida neste passe por não excluir repasse oculto. Deve acompanhar
+    a formulação limitada aceita no capítulo.
+  suggestion: ajuda a investigar hipóteses e boatos
+- id: '6.11'
+  unit: apC
+  line: 63
+  quote: a palavra virou meta de faturamento
+  category: error
+  severity: medium
+  problem: Repete o lucro/faturamento trocado de ch14. O contrato é descrito no capítulo
+    como uma meta de lucro, não de receita.
+  suggestion: a palavra virou meta de lucro
+- id: '6.12'
+  unit: aptecnico
+  line: 59
+  quote: o Claude Code de 2026 não usava nenhum dos dois.
+  category: clarity
+  severity: medium
+  problem: 'O callback para ch02 está mais amplo que o capítulo: lá se diz que não
+    havia banco vetorial, não que o agente deixava de recuperar texto para gerar respostas.
+    As linhas 74 e 109 deste apêndice também descrevem recuperação de texto por palavra
+    e busca híbrida. Delimitar o encanamento vetorial específico criticado.'
+  suggestion: Especificar 'RAG com busca vetorial' no início do período e encerrar
+    com 'e que o Claude Code de 2026 não usava esse encanamento'. Ch02 não precisa
+    mudar.
+- id: '6.13'
+  unit: aptecnico
+  line: 168
+  quote: como pus no ar, em oito dias de fevereiro de 2026, a newsletter The M.Akita
+    Chronicles
+  category: consistency
+  severity: medium
+  problem: Oito dias é o recorte de 274 commits depois do lançamento, não o prazo
+    do primeiro envio. ch06:33 e a análise rastreada do post de 16/02 dizem seis dias
+    de construção (10-15/02) e primeira execução automática em 16/02; ch06:54 e a
+    análise de 20/02 explicitam a conta posterior de oito dias. apfeito:78 e apA:190
+    usam corretamente o prazo até o primeiro envio (R6).
+  suggestion: 'como desenvolvi, ao longo de oito dias de fevereiro de 2026, a newsletter
+    The M.Akita Chronicles. Preservar o recorte de 274 commits e 21 commits de segurança:
+    é a conta posterior ao primeiro envio autônomo, ocorrido em 16/02.'
+- id: '6.14'
+  unit: aptecnico
+  line: 526
+  quote: os 146 episódios do meu canal no YouTube
+  category: consistency
+  severity: medium
+  problem: A formulação faz 146 parecer o total do canal; continuity.yml/reviews/akitando/profile.md
+    registram 149 no total. A fonte de 09/04 sustenta 146 como o conjunto dublado,
+    conforme a correção aceita em ch13. A referência posterior a 'os 146 episódios'
+    em 562 já retoma esse conjunto e pode permanecer.
+  suggestion: 146 episódios do meu canal no YouTube
+- id: '6.15'
+  unit: aptecnico
+  line: 598
+  quote: de Zig pra Rust com agentes, em julho de 2026.
+  category: consistency
+  severity: medium
+  problem: 'O início da seção anterior, em 578, data o trabalho de maio e o relato
+    de 8 de julho; o resumo desta seção desloca o trabalho para julho. A fonte primária
+    confirma publicação em 8/07 e registra as etapas de compilação e integração em
+    maio: https://bun.com/blog/bun-in-rust (R6).'
+  suggestion: de Zig pra Rust com agentes, num trabalho feito em maio de 2026 e relatado
+    em julho.
+- id: '6.16'
+  unit: aptecnico
+  line: 679
+  quote: linguagem de tipagem forte seria melhor pra IA porque o compilador pegaria
+    os erros
+  category: error
+  severity: medium
+  problem: O argumento trata de verificação estática pelo compilador, não de tipagem
+    forte. Python e Ruby também têm tipagem forte, embora dinâmica. O contraste 'tipada
+    ou dinâmica' em 697 repete a confusão; alinhar aos termos aceitos em ch18 e ao
+    glossário.
+  suggestion: Usar 'linguagem de tipagem estática' aqui e 'em linguagem de tipagem
+    estática ou dinâmica' em 697.
+- id: '6.17'
+  unit: epilogo
+  line: 88
+  quote: "@sec-apmecanica mostra o mecanismo sem matemática, e @sec-apleituras traz"
+  category: error
+  severity: low
+  problem: O guia de nomes em continuity.yml exige artigo quando a referência é sujeito.
+    Faltam os dois artigos aqui; há outro caso com '@sec-ch14 mostra' na linha 119.
+  suggestion: Usar 'o @sec-apmecanica mostra ... e o @sec-apleituras traz' e, na linha
+    119, 'e o @sec-ch14 mostra'.
+- id: '6.18'
+  unit: apfeito
+  line: 90
+  quote: e @sec-ch18 conta uma delas.
+  category: error
+  severity: low
+  problem: continuity.yml pede artigo quando a referência é sujeito. O mesmo ocorre
+    em 'o que @sec-ch18 chama' (93) e 'que @sec-ch14 manda' (96), para os quais o
+    guia também exige artigo.
+  suggestion: Usar 'e o @sec-ch18 conta', 'o que o @sec-ch18 chama' e 'que o @sec-ch14
+    manda'.
+- id: '6.19'
+  unit: apleituras
+  line: 38
+  quote: "## Vídeos gratuitos"
+  category: clarity
+  severity: low
+  problem: A seção inclui The Illustrated Transformer e o descreve como texto gratuito;
+    o título classifica esse guia visual como vídeo.
+  suggestion: "## Vídeos e guias visuais gratuitos"
+- id: '6.20'
+  unit: apB
+  line: 51
+  quote: "(@sec-ch15 explica a ideia com calma)"
+  category: error
+  severity: low
+  problem: continuity.yml exige o artigo quando a referência é sujeito.
+  suggestion: "(o @sec-ch15 explica a ideia com calma)"
+- id: '6.21'
+  unit: apB
+  line: 142
+  quote: guarde a última cópia de cada um dos últimos sete dias, de cada uma das últimas
+    quatro semanas, de cada um dos últimos seis meses e do último ano
+  category: error
+  severity: low
+  problem: 'O comando restic conta os períodos que têm snapshots, não uma janela fixa
+    a partir de hoje. Se um backup falhar, pode preservar períodos mais antigos; a
+    documentação diferencia --keep-daily e --keep-within-daily: https://restic.readthedocs.io/en/stable/060_forget.html.'
+  suggestion: guarde a última cópia de cada um dos sete dias mais recentes com backup,
+    das quatro semanas mais recentes com backup, dos seis meses mais recentes com
+    backup e do ano mais recente com backup
+- id: '6.22'
+  unit: apmemoria
+  line: 145
+  quote: também pode ligar o agente como plugin
+  category: clarity
+  severity: low
+  problem: A extensão conecta a memória ao agente; a frase sugere que Claude Code
+    ou Codex vira um plugin de outra ferramenta. A sequência sobre o binário da memória
+    continuar instalado deixa a intenção clara.
+  suggestion: também pode ligar a memória ao agente por um plugin
+- id: '6.23'
+  unit: aptecnico
+  line: 433
+  quote: Pra rodar um MoE, você precisa caber o modelo inteiro
+  category: error
+  severity: low
+  problem: A construção atribui a 'você' o papel de caber dentro de algo, quando quem
+    tem que caber é o modelo. A tradução inglesa já explicita a necessidade de espaço.
+  suggestion: Pra rodar um MoE, você precisa de espaço pro modelo inteiro
+- id: '6.24'
+  unit: aptecnico
+  line: 460
+  quote: acertava como uma moeda.
+  category: clarity
+  severity: low
+  problem: A mesma frase mede um chute entre três ou quatro opções em 31%, enquanto
+    uma moeda evoca duas opções e 50%. O callback foi corrigido em ch13; manter aqui
+    a ideia de acaso sem trocar o denominador.
+  suggestion: Usar 'acertava como um chute ao acaso' e trocar o subtítulo 'A moeda'
+    por 'O chute'.

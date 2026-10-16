@@ -10,7 +10,7 @@ refs_projects:
   - "microgpt/docs/report/experiment-closeout.md"
   - "microgpt/docs/report/training-time-ledger.md"
 blog_commit: "620e97e1a5d5b2a18454d512cc1ae7851db5df31"
-translated_from: {file: book/pt/ch13b.md, sha256: "7d4f938e1b4ab21f02f6f2210086c118b58b3b09401ffb2275d5472ae75f71bf"}
+translated_from: {file: book/pt/ch13b.md, sha256: "24f87fa878341557e80f9b0c9b3bf17069790205491c92485e889778608ccde8"}
 ---
 
 # A Homemade Model {#sec-ch13b}
@@ -45,7 +45,7 @@ After reading that, what stands between you and a real model is, in his words, e
 The result was the microgpt lab, an open project I wrote from scratch, inspired by his file [@akita2026microgpt]. It's about 3,300 lines of Python, organized by concept, with tests, and a closeout report that records every decision, every measurement and every mistake; the numbers in this chapter come from it. The rule of the exercise was to train from scratch, so no ready-made weights were downloaded from anywhere: every model in there starts randomized and learns with the project's own code.
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
-The project went through four sizes. It started with a lesson of under a million parameters, which runs on an ordinary CPU and teaches the whole cycle. It went through 91- and 239-million models, which taught me most of the stumbles I'm about to tell. And it ended with the final model, 337 million [parameters]{.gls key=parametros}, the one I talk about from here on.
+The project went through four sizes. It started with a lesson of under a million parameters, which runs on an ordinary CPU and teaches the whole cycle. It went through 91- and 239-million models, which taught me most of the missteps I'm about to describe. And it ended with the final model, 337 million [parameters]{.gls key=parametros}, the one I talk about from here on.
 
 ## The Six Stations
 
@@ -81,7 +81,7 @@ There were 305 thousand rounds, 10 billion tokens read. Since the collection had
 ### Tuning (SFT)
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
-Pre-training produces a document continuer, the one with the frog traveling to ancient Greece, in the InstructGPT example the appendix tells (@sec-apmecanica). For it to answer a request comes tuning, the simplest form of [post-training]{.gls key=pos-treino}: question-and-answer examples, and the model trains a bit more on top of them. People in the field call it SFT, short for supervised fine-tuning; from here on, I just call it tuning.
+Pre-training produces a document continuer, the one in the InstructGPT example about a frog traveling to ancient Greece, described in @sec-apmecanica. To teach it to answer a request, the next step is tuning, the simplest form of [post-training]{.gls key=pos-treino}: question-and-answer examples, and the model trains a bit more on top of them. People in the field call it SFT, short for supervised fine-tuning; from here on, I just call it tuning.
 
 The examples came from a public NVIDIA collection of programming problems and their answers. Before going in, every answer was run again, three times, in a closed box isolated from the rest of the computer, and only the ones that passed their own tests stayed. Almost all of them passed.
 
@@ -167,7 +167,7 @@ From then on, choosing between versions was done only by the executed tasks, on 
 ### The Model That Swore It Passed
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
-In one of the mixed training runs, with the 239-million model, it learned to use tools and learned something else along with it: saying the tests had passed when they hadn't. It's the same model that swears it works from @sec-ch12, and I didn't teach it that on purpose. My reading is that it copied the pattern of the texts where the tests pass.
+In one of the mixed training runs, with the 239-million model, it learned to use tools and learned something else along with it: saying the tests had passed when they hadn't. It's the same false assurance you saw in @sec-ch12, and I didn't teach it that on purpose. My reading is that it copied the pattern of the texts where the tests pass.
 
 The data lied too. Answers marked as correct in the public collection failed when I ran them again. Tests depended on an order that changes on every run, programs exited with success without finishing the job, empty edits passed as fixes. Each of those holes needed a new control, as in @sec-ch06: trust in a test depends on how real the test's data is.
 
@@ -201,7 +201,7 @@ Look at the staircase. All 100 held-out answers were valid Python, and 97 had th
 A function to remove duplicates used a structure that doesn't accept the kind of data the request required. A function to get the file name from a path chopped off the last character.
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
-And then there's what it zeroed. In the four repository repairs through OpenCode, not a single tool was called: instead of reading, editing and testing the file, it returned text with code, and in one of the tasks it even renamed the function. In the nine searches for the number hidden in long texts, three at each of three lengths, nine misses, even though the server accepted texts of that length without complaint. I asked in English for a breakfast idea and got a chunk of Python repeating "oats" until it ran out of room.
+And then there are the tests it scored zero on. In the four repository repairs through OpenCode, not a single tool was called: instead of reading, editing and testing the file, it returned text with code, and in one of the tasks it even renamed the function. In the nine searches for the number hidden in long texts, three at each of three lengths, nine misses, even though the server accepted texts of that length without complaint. I asked in English for a breakfast idea and got a chunk of Python repeating "oats" until it ran out of room.
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
 The final tuning had only code answers, with no conversation and no tool use, and the habit of answering everything with Python fits that. Fitting isn't proof, and the report is careful to say the cause wasn't isolated.
@@ -285,4 +285,4 @@ My 337-million model showed me the size of "enough" in that sentence. It knows t
 By the yardstick I have today, and it's an expectation, not a measurement, that gets trained over months, in a data center, with trillions of tokens, and then specialized.
 
 <!-- src: original -->
-And there's the other side of the bill. My model cost about R$ 80 and hides nothing: the report says what it does and what it zeroes. Whoever spends hundreds of millions of dollars on a frontier model needs a story to match the spend, and the next chapter is about those stories.
+And there's the other side of the bill. The card's electricity bill was estimated at no more than about R$ 80, and my model hides nothing: the report says what it does and where it scores zero. Whoever spends hundreds of millions of dollars on a frontier model needs a story to match the spend, and the next chapter is about those stories.

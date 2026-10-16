@@ -72,7 +72,7 @@ A lot of people know me for a line about hype and knowledge, which you'll find r
 I've been using AI to write code since early 2023. I like the tool, I use it every day, and it took part in almost everything you're about to read. At the same time, I spent all those months documenting its limits, because that's the part that disappears from the public conversation.
 
 <!-- src: original -->
-The over-hyped and the over-haters have one thing in common: both usually talk without having measured anything. That's why this book's method is to measure. When I say a model did well, it's because it passed a test whose setup you'll get to see. When I say it got something wrong, you'll see the mistake.
+The biggest enthusiasts and the fiercest haters have one thing in common: both usually talk without having measured anything. That's why this book's method is to measure. When I say a model did well, it's because it passed a test whose setup you'll get to see. When I say it got something wrong, you'll see the mistake.
 
 And when the mistake was mine, the book tells that too. There was a ranking I published, found out was wrong and marked as obsolete, with the notice at the top, for anyone who cared to look.
 

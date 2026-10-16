@@ -1,0 +1,227 @@
+---
+- id: '1.1'
+  unit: ch03
+  line: 46
+  quote: That's 15 to 20 points, gained without touching the model.
+  category: consistency
+  severity: high
+  problem: 'R1: line 39 identifies the 69-point baseline as mixed DeepSeek/Opus authorship
+    and impossible to measure. Subtracting it from 84/89 does not establish a 15–20-point
+    improvement by unchanged DeepSeek. This mirrors the PT continuity error.'
+  suggestion: 'After the PT correction, use: ''The model didn''t change. What changed
+    was the program around it.'' Keep the valid 84/89 results in the preceding paragraph.'
+- id: '1.2'
+  unit: ch04
+  line: 21
+  quote: reads the headline, read the first two paragraphs and go about their day
+  category: error
+  severity: medium
+  problem: The subject 'Whoever has neither the time nor the tools' is singular, but
+    the second and third verbs switch to plural/base forms.
+  suggestion: Use 'reads the headline, reads the first two paragraphs and goes about
+    their day'.
+- id: '1.3'
+  unit: ch02
+  line: 63
+  quote: something like *The Great Gatsby* twice over
+  category: error
+  severity: medium
+  problem: 'R7 and semantic parity: PT uses The Old Man and the Sea with room to spare.
+    EN substitutes two copies of Gatsby, which conflicts with the preceding estimate
+    of 100,000 tokens ≈75,000 words. The Gutenberg text, excluding its boilerplate,
+    has about 48,000 whitespace-delimited words; twice that is about 96,000 words
+    (https://www.gutenberg.org/ebooks/64317).'
+  suggestion: 'Restore the canonical example: ''100,000 tokens is an entire short
+    novel, something like *The Old Man and the Sea* with room to spare.'''
+- id: '1.4'
+  unit: ch02
+  line: 30
+  quote: What hooked me was another part.
+  category: repetition
+  severity: medium
+  problem: This sentence already ends the preceding paragraph at line 28. It appears
+    only once in PT and is an accidental EN addition.
+  suggestion: Delete this sentence at the start of line 30, retaining the occurrence
+    at line 28 and beginning the next paragraph 'For the first time...'.
+- id: '1.5'
+  unit: ch03
+  line: 282
+  quote: It puts three different models to work checking the claims in each story.
+  category: consistency
+  severity: medium
+  problem: 'Semantic parity: PT ch03:281 continues this sentence with ''e uma fonte
+    primária vale mais que dez jornais repetindo a mesma coisa''. EN omits the primary-source
+    weighting rule entirely, weakening the handoff to ch04''s evidence-versus-consensus
+    lesson.'
+  suggestion: Use 'It puts three different models to work checking the claims in each
+    story, and one primary source counts for more than ten newspapers repeating the
+    same thing.'
+- id: '1.6'
+  unit: ch04
+  line: 78
+  quote: 'LLMs hallucinate: they fabricate plausible citations and data'
+  category: consistency
+  severity: medium
+  problem: 'Semantic parity: PT ch04:77 has an additional causal qualification: ''Quando
+    não têm evidência suficiente pra sustentar a resposta que acham que você quer''.
+    EN compresses it away, removing the explicit connection between insufficient evidence,
+    the desired answer and fabrication.'
+  suggestion: Use 'LLMs hallucinate. When they don't have enough evidence to support
+    the answer they think you want, they fabricate plausible citations and data and
+    attribute to people statements they never made.'
+- id: '1.7'
+  unit: ch01
+  line: 209
+  quote: blogs and social networks were born
+  category: error
+  severity: medium
+  problem: The sentence places the birth of blogs in 2002–2008, mirroring the PT chronology
+    error. The official Blogger history dates that platform's launch to 23 August
+    1999 (https://blogger.googleblog.com/2006/08/happy-birthday-blogger.html), so
+    blogs demonstrably predate the stated window.
+  suggestion: After the PT correction, use 'blogs and social networks grew popular'.
+- id: '1.8'
+  unit: ch03
+  line: 53
+  quote: When you chat with a chatbot on a website, the most it does is write.
+  category: consistency
+  severity: medium
+  problem: 'R1: this confuses a chat interface with absence of tools. OpenAI''s 31
+    October 2024 primary announcement documents web search in ChatGPT itself (https://openai.com/index/introducing-chatgpt-search/),
+    predating the book''s snapshot. The relevant comparison is with an unassisted,
+    tool-free model.'
+  suggestion: Use 'In a chatbot without tools, the most the model does is write.'
+    Match the scope at line 71 ('the chat without tools') and line 276 ('a chat box
+    without search or other tools') after PT is settled.
+- id: '1.9'
+  unit: ch03
+  line: 101
+  quote: grabs the entire output and hands it back to the model as a new message
+  category: consistency
+  severity: medium
+  problem: 'R5: ch02:121 explicitly warns that Claude Code can truncate tool output
+    and file reads. The unqualified promise of the entire output contradicts that
+    immediately preceding lesson.'
+  suggestion: Use 'collects the output and hands it back to the model as a new message,
+    within the tool limits we saw in @sec-ch02'. Follow the PT correction.
+- id: '1.10'
+  unit: ch04
+  line: 110
+  quote: with no opinion in the question, sycophancy has no one to please
+  category: consistency
+  severity: medium
+  problem: 'R5: the opening example shows that asking for problems can steer an answer
+    without stating an opinion. This section''s ''list the fallacies'' and ''say what
+    context is missing'' carry the same expectation. Line 71 also notes that a prompt
+    without an opinion can still pull toward the agreeable middle.'
+  suggestion: 'After the PT correction, state the evidence safeguard: ''The model
+    isn''t given the operator''s opinion; each finding has to be grounded in the material
+    received.'' Keep the next sentence''s requirement to cite explicit material and
+    mark unverifiable claims.'
+- id: '1.11'
+  unit: ch01
+  line: 62
+  quote: Long or rare words become two, three, four pieces, a rare word
+  category: error
+  severity: low
+  problem: Two independent clauses are joined only by a comma, producing a splice
+    in the token explanation.
+  suggestion: 'Use ''Long or rare words become two, three, four pieces. A word like
+    "unconstitutionally" might become three: "un," "constitution" and "ally."'''
+- id: '1.12'
+  unit: antes
+  line: 31
+  quote: Readers who don't have to trust me
+  category: clarity
+  severity: low
+  problem: The intended ellipsis means readers who don't know the mechanics must trust
+    the narrator, but 'don't have to trust me' initially reads as the opposite. PT
+    makes the intended obligation explicit.
+  suggestion: Use 'Readers unfamiliar with the mechanics have to trust me'.
+- id: '1.13'
+  unit: prefacio
+  line: 75
+  quote: The over-hyped and the over-haters
+  category: error
+  severity: low
+  problem: "'Over-hyped' means excessively promoted or praised, rather than the excessively
+    enthusiastic people named in PT. 'Over-haters' is also an opaque coinage in a
+    passage meant for a general audience. The same translation recurs in ch01:173."
+  suggestion: Use 'The biggest enthusiasts and the fiercest haters'. At ch01:173 use
+    'That's why I don't understand either the biggest enthusiasts or the fiercest
+    haters.'
+- id: '1.14'
+  unit: antes
+  line: 44
+  quote: with what's free.
+  category: consistency
+  severity: low
+  problem: 'Semantic parity: PT antes:43 says the reading list identifies both what
+    is free and what is available in Portuguese. EN drops the latter information.
+    The translation contract requires keeping this cultural information rather than
+    cutting it.'
+  suggestion: Use 'with what's free and what's available in Portuguese.'
+- id: '1.15'
+  unit: como-ler
+  line: 51
+  quote: will probably sound as dated as a Ford Model T
+  category: clarity
+  severity: low
+  problem: The PT analogy introduces car models in an old novel; EN replaces that
+    with a Ford Model T and then refers to 'the novel', which has no antecedent in
+    this paragraph.
+  suggestion: Use 'will probably sound like the car models in an old novel'. This
+    restores the setup for the existing 'nobody reads the novel to pick a car'.
+- id: '1.16'
+  unit: ch02
+  line: 61
+  quote: and often less in other languages
+  category: consistency
+  severity: low
+  problem: 'Semantic parity: PT says the ratio is similar in Portuguese, while EN
+    makes a different claim about other languages. OpenAI''s primary guide describes
+    the three-quarters rule specifically as an English estimate and says the relationship
+    varies by language and encoding (https://help.openai.com/en/articles/4936856-understanding-and-counting-tokens).'
+  suggestion: Agree on the neutral PT correction, then use 'in English; the ratio
+    varies with the language and the model'.
+- id: '1.17'
+  unit: ch04
+  line: 151
+  quote: A pile of summaries repeating the same thing is worth one.
+  category: consistency
+  severity: low
+  problem: 'Semantic parity of quantities: PT ch04:150 specifies ten summaries. EN
+    replaces that number with an unspecified pile even though docs/TRANSLATING.md
+    requires preserving numbers.'
+  suggestion: Use 'Ten summaries repeating the same thing are worth one.'
+- id: '1.18'
+  unit: ch04
+  line: 172
+  quote: swap names, tax IDs, account numbers
+  category: consistency
+  severity: low
+  problem: The PT example specifically names CPFs, Brazilian individual taxpayer IDs.
+    The translation contract says to retain Brazilian references with a brief explanation;
+    the generic 'tax IDs' removes the named reference.
+  suggestion: Use 'swap names, CPFs (Brazilian taxpayer IDs), account numbers'.
+- id: '1.19'
+  unit: ch04
+  line: 68
+  quote: this has its merits, but....
+  category: error
+  severity: low
+  problem: The trailing pause has four periods although the quoted sentence is unfinished.
+    PT has a three-period ellipsis.
+  suggestion: Use 'this has its merits, but...' inside the existing quotation marks.
+- id: '1.20'
+  unit: ch02
+  line: 100
+  quote: why did we decide not to use that database again?,
+  category: error
+  severity: low
+  problem: The comma is placed inside the quotation after its question mark. The same
+    punctuation pattern occurs in EN ch04:148 ('is this right?,'). Recast these two
+    short sentences to avoid duplicated terminal punctuation.
+  suggestion: Use 'Ask "Why did we decide not to use that database again?" and the
+    agent doesn't know.' At ch04:148 use 'Replace "Is this right?" with a request
+    for the arguments for and against.'

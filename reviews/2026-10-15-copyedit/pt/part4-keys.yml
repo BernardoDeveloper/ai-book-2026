@@ -1,0 +1,116 @@
+---
+- id: '4.1'
+  unit: ch16
+  line: 200
+  quote: que poupou só o repositório principal e 96 cópias listadas uma a uma
+  category: error
+  severity: high
+  problem: The cited primary document says the opposite. The 1 April partial retraction
+    withdrew the notice for all repositories EXCEPT the main repository and 96 individually
+    listed forks, and requested reinstatement of the others. Those 97 remained subject
+    to the takedown; they were not the only ones spared. Verified against the bibliography's
+    own https://github.com/github/dmca/blob/master/2026/04/2026-04-01-anthropic-retraction.md.
+  suggestion: Use 'que manteve o pedido só contra o repositório principal e 96 cópias
+    listadas uma a uma, e pediu a restauração dos demais'. Keep the existing citation.
+- id: '4.2'
+  unit: ch16
+  line: 313
+  quote: rápido demais pra uma revisão séria
+  category: consistency
+  severity: high
+  problem: 'R1/R20: line 36 explicitly says 42 people could review fifty small changes
+    a day and labels inadequate review as a suspicion, not proof. The conclusion turns
+    that same rate into a demonstrated impossibility of serious review. The unverified
+    one-model audit cannot remove the earlier evidentiary limit.'
+  suggestion: Use 'Um recebia umas cinquenta mudanças por dia, um ritmo que me fez
+    desconfiar da revisão, e uma auditoria feita por uma IA...' Preserve the audit's
+    explicit item-by-item qualification and the contrast with Bun's documented process.
+- id: '4.3'
+  unit: ch17
+  line: 105
+  quote: um registrador de teclas, um programa que injeta toques na tela como se fosse
+    você
+  category: error
+  severity: medium
+  problem: 'The comma makes tap injection look like the definition of a keylogger.
+    Recording keystrokes and injecting input are different capabilities. The cited
+    project''s native-library report treats them as separate searched-for capabilities,
+    both absent from that scan: https://github.com/akitaonrails/tiktok_analysis/blob/main/docs/13-native-library-analysis.md,
+    section ''What is NOT there''.'
+  suggestion: Use 'um registrador de teclas ou um programa que injeta toques na tela
+    como se fosse você'. This retains both searched-for threats while removing the
+    false apposition.
+- id: '4.4'
+  unit: ch15
+  line: 272
+  quote: Um agente teria que ser muito dedicado pra atravessar as duas
+  category: consistency
+  severity: medium
+  problem: 'R5: ''as duas'' here are snapshot and external backup, yet the sentence
+    says another previous-night copy would remain after both were crossed. That previous-night
+    NAS copy is the backup just described, not an identified third layer. The absolute
+    claim that the agent cannot reach its device also conflicts with the admin agents''
+    direct access to both NASes at lines 55 and 100.'
+  suggestion: Keep the first three sentences. Replace the last with 'Pra isso funcionar,
+    a cópia de segurança precisa ficar fora do alcance do agente que mexe no original.'
+    Do not invent an additional backup or access restriction in the narrator's setup.
+- id: '4.5'
+  unit: ch15
+  line: 177
+  quote: só a pasta do projeto atual é real e permanente
+  category: consistency
+  severity: medium
+  problem: The same chapter later says the invoked agent's credential files are deliberately
+    exposed by default (line 194). The current primary README also documents persistent
+    agent state and toolchain caches. 'Só' incorrectly promises that no other host-backed
+    persistent area exists; the accident-guard explanation does not need that absolute
+    claim. The wording also recurs in apB and should be aligned there by its owner.
+  suggestion: Use 'a pasta do projeto atual continua real e permanente'. Keep the
+    later explanation of deliberate credential sharing and the accident-guard limitation.
+    Coordinate the corresponding apB sentence.
+- id: '4.6'
+  unit: ch17
+  line: 134
+  quote: e não vai pra terceiros
+  category: consistency
+  severity: medium
+  problem: 'R1/R5: the chapter says it performed static analysis only, did not inspect
+    all native components and cannot see the company''s server-side logic (lines 158,
+    163 and 318). That scope cannot establish an unconditional guarantee that a selfie
+    never reaches a third party. State what this reading did not identify, rather
+    than a runtime/server-side conclusion it did not measure.'
+  suggestion: Use 'sem envio a terceiros identificado nessa leitura'. Preserve the
+    open CPF/crash-report question that follows.
+- id: '4.7'
+  unit: ch17
+  line: 110
+  quote: Ninguém provou que o TikTok seja um programa espião.
+  category: consistency
+  severity: medium
+  problem: 'R1: this is an unrestricted claim about all evidence and all investigators,
+    but the chapter and its cited report establish only the limits of this particular
+    static analysis. The public analysis''s own assessment says the study did not
+    establish spyware, rather than ruling on every outside investigation.'
+  suggestion: Use 'Esta análise não provou que o TikTok seja um programa espião.'
+    Keep the second sentence about the collection capability and opacity.
+- id: '4.8'
+  unit: ch16
+  line: 40
+  quote: Um milhão de linhas a cinquenta por dia
+  category: clarity
+  severity: low
+  problem: The heading makes 'cinquenta por dia' read as fifty lines per day. The
+    measured rate in line 30 is fifty commits per day. The omitted unit changes the
+    apparent pace dramatically.
+  suggestion: Use 'Um milhão de linhas, cinquenta commits por dia'. Mirror the unit
+    in EN.
+- id: '4.9'
+  unit: ch15
+  line: 46
+  quote: Eles voltaram.
+  category: clarity
+  severity: low
+  problem: The immediately preceding subject is the 31 incomplete downloads, which
+    were never deleted. The intended referent is the eleven albums from the prior
+    list, so the pronoun briefly implies a restoration of the wrong items.
+  suggestion: Use 'Os onze álbuns voltaram.'

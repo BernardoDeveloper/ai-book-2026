@@ -37,7 +37,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.v3.md"
   - "llm-coding-benchmark/docs/success_report.v4.combined.md"
 blog_commit: "cc8b467dd4d6d3b5c57fad6bb6fae70ec5839a01"
-translated_from: {file: book/pt/aptecnico.md, sha256: "c225d6266403ee14329e0a60ccd6663e7c2b4d5784570050be92b4564ad14b79"}
+translated_from: {file: book/pt/aptecnico.md, sha256: "7f0ec15902d243224bae40b009677d8f9464fa4c23f850f70c80d85f3bdb8f7e"}
 ---
 
 # For Programmers: Behind the Scenes {#sec-aptecnico}
@@ -57,7 +57,7 @@ The dreamer could read the whole project, but it couldn't change anything in it.
 ## RAG, Embeddings and the Return of Word Search {#sec-aptecnico-rag}
 
 <!-- src: 2026/04/06/rag-esta-morto-contexto-longo -->
-@sec-ch02 tells how, between 2023 and 2025, anyone who wanted a chatbot that answered questions about their own documents was told they needed [RAG]{.gls key=rag} and a [vector database]{.gls key=banco-vetorial}, and how the Claude Code of 2026 used neither. This section keeps the technical side of that story.
+@sec-ch02 tells how, between 2023 and 2025, anyone who wanted a chatbot that answered questions about their own documents was told they needed [RAG]{.gls key=rag} with vector search and a [vector database]{.gls key=banco-vetorial}, and how the Claude Code of 2026 did not use that pipeline. This section keeps the technical side of that story.
 
 The classic way of doing the RAG search took work:
 
@@ -166,7 +166,7 @@ What saved that text was a second model, from another company, comparing each cl
 ## The Newsletter's Safety Net, Up Close {#sec-aptecnico-xp}
 
 <!-- src: original -->
-In @sec-ch06 I tell how I put The M.Akita Chronicles newsletter live in eight days of February 2026, with an agent as my pair and the practices of Extreme Programming. The chapter stays with the lesson: a test that passes on fake data lies, and real data surprises. Here are the details that only matter to people who program: what continuous integration checked, the commit rhythm, the holes the automated analysis caught and how I dealt with an AI model inside the integration test.
+In @sec-ch06 I tell how I developed The M.Akita Chronicles newsletter over eight days in February 2026, with an agent as my partner and the practices of Extreme Programming. The chapter stays with the lesson: a test that passes on fake data lies, and real data surprises. Here are the details that only matter to people who program: what continuous integration checked, the commit rhythm, the holes the automated analysis caught and how I dealt with an AI model inside the integration test.
 
 ### The Battery on Every Commit
 
@@ -438,7 +438,7 @@ When MiniMax published the weights for M3, an MoE of about 428 billion parameter
 ## The Classifier Test, Up Close {#sec-aptecnico-classificadores}
 
 <!-- src: original -->
-@sec-ch13 tells the test I built in October 2026 for decision models from Jev's family, the [classifiers]{.gls key=classificador} that take a text, some rules and a list of options and pick one. The chapter keeps the lesson: a small, specialized model ties with paid services on a closed decision, and the rule you can write down stays in code. Here are the results in detail.
+@sec-ch13 describes the test I built in October 2026 for decision models from Jev's family, the [classifiers]{.gls key=classificador} that take a text, some rules and a list of options and pick one. The chapter keeps the lesson: a small, specialized model ties with paid services on a closed decision, and the rule you can write down stays in code. Here are the results in detail.
 
 <!-- src: ref:jev-docs/README.md -->
 The cases were support, refunds, moderation and routing, half written in English and half in Portuguese, each with the right answer frozen before any model ran. There were twenty-three configurations: five paid cloud services and eighteen open models running on the mini-PC.
@@ -455,10 +455,10 @@ A 4-billion-parameter model, which fits on an ordinary graphics card, tied with 
 <!-- src: ref:private-notes/decision-models.md -->
 Decision 3.0 took about 49 GB of video memory, and at peak the total brushed 63.5 of the mini-PC's 64 GB. The two champions had to run alone, with everything else shut down, and each decision took close to a second and a half. The cloud services answered, almost all of them, in under half a second.
 
-### The Coin
+### The Guess
 
 <!-- src: ref:jev-docs/README.md -->
-The tasks had three or four options, so guessing at random would get about 31% right. Julia-1, the smallest model on the list, with 144 million parameters, got 31.5%. It answered in 12 milliseconds, the fastest of all, and got things right like a coin toss.
+The tasks had three or four options, so guessing at random would get about 31% right. Julia-1, the smallest model on the list, with 144 million parameters, got 31.5%. It answered in 12 milliseconds, the fastest of all, and was no more accurate than random guessing.
 
 <!-- src: 2026/10/10/qual-modelo-de-decisao-classificador-de-ia-tipo-jev-e-melhor -->
 Of the 71 guesses it gave with more than 90% confidence, 48 were wrong. These tiny models were built to be fine-tuned on the data of whoever is going to use them; out of the factory, applying rules they have never seen, they're no good.
@@ -500,8 +500,8 @@ Because sampling is by weight, the 10 billion tokens aren't three equal passes. 
 ### The Stumbles Left Out of the Chapter
 
 <!-- src: ref:microgpt/docs/report/experiment-closeout.md -->
-- **The `last.pt` that went back in time.** On a resume of the 10-billion phase, after maintenance on the file server, the trainer loaded step 81,500 instead of the frozen 152,588. The working file carried a timestamp from before the pause, and the cause was never proven. I threw away 1.24 hours of training, checked the hash of the 5-billion milestone and, from then on, every resume required the hash, the exact step, the optimizer and random-generator state, a corpus check and an fsync write probe. Never resume a training run just because the file is called `last.pt`.
-- **A desktop card is a shared card.** Spare video memory didn't keep the browser from freezing. The fix was a cooperative duty cycle: the trainer synchronizes the card and sleeps between batches, working 75% of the time during the day and 100% from three to nine in the morning. And reading the corpus over the file server left the card idle waiting on disk: after one maintenance, average throughput dropped to about 5,000 tokens per second before returning to 23,000.
+- **The `last.pt` that went back in time.** When resuming the 10-billion phase, after maintenance on the file server, the trainer loaded step 81,500 instead of the frozen 152,588. The working file carried a timestamp from before the pause, and the cause was never proven. I threw away 1.24 hours of training, checked the hash of the 5-billion milestone and, from then on, every resume required the hash, the exact step, the optimizer and random-generator state, a corpus check and an fsync write probe. Never resume a training run just because the file is called `last.pt`.
+- **A desktop card is a shared card.** Spare video memory didn't keep the browser from freezing. The fix was a cooperative duty cycle: the trainer synchronizes the card and sleeps between batches, working 75% of the time during the day and 100% from three to nine in the morning. And reading the corpus over the file server left the card idle waiting on disk: after one maintenance session, average throughput dropped to about 5,000 tokens per second before returning to 23,000.
 - **Training format and serving format have to match.** The session-switch announcement, the tool-call identifier, the edit anchor, the way OpenCode quotes the user's request: every difference between what the model saw in training and what it got from the server knocked over the old agent. The fix was a single protocol file for both sides.
 - **Tokenization crosses correctness boundaries.** The literal text of the end-of-document marker inside source code has to stay ordinary text. UTF-8 documents have to be reassembled without splitting a character in half. The first evaluation at the 2-billion milestone failed while building the grammar that constrains the output, and it was fixed and rerun instead of counting as a model error.
 - **Tests that lie, in several ways.** "Correct" answers from the public dataset failed when rerun; tests depended on Python's hash order; standard-library functions were shadowed; `SystemExit(0)` counted as success; empty edits passed as fixes. Each case got a control: three hash seeds, a completion sentinel, an empty program that has to fail.
@@ -524,7 +524,7 @@ None of these steps is guaranteed. What the exercise left measured are three eas
 ## Synthetic Voice in Production: The Podcast and the Dubbing {#sec-aptecnico-voz}
 
 <!-- src: original -->
-In @sec-ch13 I tell why I swapped Qwen3 TTS, an open voice model, for ElevenLabs on the newsletter's weekly podcast, and what I learned dubbing into English the 146 episodes of my YouTube channel. The chapter stays with the lesson: a five-second demo isn't production, and "done" is a dangerous word. Here are the details that only matter to someone building a synthetic voice workflow.
+In @sec-ch13 I tell why I swapped Qwen3 TTS, an open voice model, for ElevenLabs on the newsletter's weekly podcast, and what I learned dubbing into English 146 episodes of my YouTube channel. The chapter stays with the lesson: a five-second demo isn't production, and "done" is a dangerous word. Here are the details that only matter to someone building a synthetic voice workflow.
 
 ### Six Weeks Tuning Qwen3
 
@@ -596,7 +596,7 @@ The process also caught an error the compiler let through. One of the first vers
 ## Bun's Rewrite and Zig's Answer {#sec-aptecnico-bun}
 
 <!-- src: original -->
-In @sec-ch16 I tell how Jarred Sumner rewrote Bun, the JavaScript runtime that Anthropic bought and that Claude Code runs on, from Zig to Rust with agents, in July 2026. The chapter keeps the method. Here is the fight that came after, between Zig's creator and the Bun team, and what I took from it.
+In @sec-ch16 I tell how Jarred Sumner rewrote Bun, the JavaScript runtime that Anthropic bought and that Claude Code runs on, from Zig to Rust with agents in May 2026 and reported the work in July. The chapter keeps the method. Here is the fight that came after, between Zig's creator and the Bun team, and what I took from it.
 
 <!-- src: 2026/07/09/resposta-sobre-bun-em-rust-que-andrew-kelly-deveria-ter-feito -->
 The day after Sumner's account, Andrew Kelley, Zig's creator, published his response [@kelley2026bun]. I wanted to read the best possible technical argument defending Zig. He makes a few, and they deserve a hearing:
@@ -677,7 +677,7 @@ A one-shot conversion done by an agent measures how well the model knows each la
 That resurrected two beliefs that have been circulating since LLMs became work tools:
 
 - a lean scripting language would be better for AI because it would spend fewer [tokens]{.gls key=token};
-- a strongly typed language would be better for AI because the compiler would catch the errors, so the agent would need less repair.
+- a statically typed language would be better for AI because the compiler would catch the errors, so the agent would need less repair.
 
 The second is a first cousin of my February hypothesis (@sec-aptecnico-bend). Instead of arguing on X, I went and measured.
 
@@ -689,13 +689,13 @@ I crossed seven languages, from Rust and Haskell to Python and Ruby, with four m
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
 The results, that October:
 
-- the two [frontier models]{.gls key=modelo-de-fronteira}, Opus and Sol, got 53 out of 53 valid attempts right, in every language (the other three attempts failed on infrastructure, not on the code); the task was too easy to separate the models, let alone the languages, so there was no ranking left to publish;
+- the two frontier models, Opus and Sol, got 53 out of 53 valid attempts right, in every language (the other three attempts failed on infrastructure, not on the code); the task was too easy to separate the models, let alone the languages, so there was no ranking left to publish;
 - in the weaker models, what changed the result was the presence of tests: 24 correct deliveries with the suite in hand, against 16 without it;
 - Ruby, the leanest language in lines, spent practically the same tokens as Rust on Sol, and on Opus it was the most expensive of all, more than double C#;
 - in the Opus attempts I audited, in Ruby, Rust and Haskell, there was not a single cycle of fixing compilation errors: the code compiled on the first try.
 
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
-Where the models erred, they erred on business rules: a property of the ledger that had to hold from one operation to the next. No compiler catches that kind of error, in typed or dynamic languages.
+Where the models erred, they erred on business rules: a property of the ledger that had to hold from one operation to the next. No compiler catches that kind of error, in statically or dynamically typed languages.
 
 <!-- src: 2026/10/11/existem-linguagens-melhores-pra-programar-com-llms -->
 The caveats are part of the result. It was a single task, with two repetitions per combination, and it measures the floor each language delivers under the same short effort, without showing the most a patient engineer would extract from it. A tie at the ceiling doesn't say which language would go further on a harder task either, only that none got in the way on this one. If your task doesn't look like a ledger, the numbers don't transfer.
