@@ -132,7 +132,7 @@ De 2023 a 2025, o tamanho dos modelos sumiu do marketing, o raciocínio teve o �
 | fim de 2023 | O Mixtral populariza a [mistura de especialistas]{.gls key=moe}: uns 47 bilhões de parâmetros no total, só uns 13 bilhões trabalhando em cada token [@mistral2023mixtral] | @sec-ch20 |
 | ago. 2024 | A Anthropic lança o [prompt caching]{.gls key=prompt-caching}, com corte de até 90% no custo de reler a conversa [@anthropic2024caching] | @sec-ch03 |
 | set. 2024 | A OpenAI lança o o1, treinado pra [raciocinar]{.gls key=raciocinio} por escrito antes de responder; na minha régua, o último grande salto [@openai2024o1] | @sec-ch03, @sec-ch20 |
-| 2024 | A OpenAI lança o próprio prompt caching, menos de dois meses depois da Anthropic [@openai2024caching] | @sec-ch20 |
+| out. 2024 | A OpenAI lança o próprio prompt caching, menos de dois meses depois da Anthropic [@openai2024caching] | @sec-ch20 |
 | nov. 2024 | A Reuters reporta ganhos menores do que o esperado em simplesmente aumentar os modelos [@reuters2024limitations] | @sec-ch01, @sec-ch20 |
 | fim de 2024 | A Anthropic propõe o [MCP]{.gls}, a tomada padrão pra plugar ferramentas em agentes [@anthropic2024mcp] | @sec-ch03 |
 | fim de 2024 | Ilya Sutskever diz na NeurIPS que o pré-treino como a gente conhece vai acabar [@sutskever2024neurips] | @sec-ch20 |

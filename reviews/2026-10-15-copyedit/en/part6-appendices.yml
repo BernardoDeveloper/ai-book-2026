@@ -250,10 +250,10 @@
   quote: "| Oct. 2024 | OpenAI launches its own prompt caching"
   category: consistency
   severity: low
-  problem: 'Date precision differs: canonical PT:135 says only 2024; English adds
-    October. The introduction says dates follow the precision of the chapter. This
-    is a small factual addition rather than a missing table row.'
-  suggestion: "| 2024 | OpenAI launches its own prompt caching"
+  problem: 'Date precision differs: canonical PT:135 says only 2024, while the
+    cited OpenAI record is dated October 1, 2024. The English month is supported;
+    canonical PT is less precise.'
+  suggestion: 'Retain "| Oct. 2024 |" in English and use "| out. 2024 |" in PT.'
 - id: '6.24'
   unit: apB
   line: 143

@@ -61,7 +61,7 @@ refs_projects:
   - "llm-coding-benchmark/docs/success_report.multi_model.md"
   - "llm-coding-benchmark/docs/success_report.v2.md"
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/apA.md, sha256: "bf7c0c266bc0f77732e8b78fc19af18c29259e3e3d87767ab333e358ead05bbf"}
+translated_from: {file: book/pt/apA.md, sha256: "59685c23f6f8e4623a1044ea66dd7ad45b570450d7895ab3e4227f17976dd447"}
 ---
 
 # Timeline {#sec-apA}
@@ -133,7 +133,7 @@ From 2023 to 2025, model size vanished from the marketing, reasoning had its las
 | Late 2023 | Mixtral popularizes [mixture of experts]{.gls key=moe}: some 47 billion parameters in total, only about 13 billion working on each token [@mistral2023mixtral] | @sec-ch20 |
 | Aug. 2024 | Anthropic launches [prompt caching]{.gls key=prompt-caching}, cutting up to 90% off the cost of rereading the conversation [@anthropic2024caching] | @sec-ch03 |
 | Sep. 2024 | OpenAI launches o1, trained to [reason]{.gls key=raciocinio} in writing before answering; by my yardstick, the last big leap [@openai2024o1] | @sec-ch03, @sec-ch20 |
-| 2024 | OpenAI launches its own prompt caching, less than two months after Anthropic [@openai2024caching] | @sec-ch20 |
+| Oct. 2024 | OpenAI launches its own prompt caching, less than two months after Anthropic [@openai2024caching] | @sec-ch20 |
 | Nov. 2024 | Reuters reports smaller-than-expected gains from simply making models bigger [@reuters2024limitations] | @sec-ch01, @sec-ch20 |
 | Late 2024 | Anthropic proposes [MCP]{.gls}, the standard plug for hooking tools into agents [@anthropic2024mcp] | @sec-ch03 |
 | Late 2024 | Ilya Sutskever says at NeurIPS that pretraining as we know it will end [@sutskever2024neurips] | @sec-ch20 |
