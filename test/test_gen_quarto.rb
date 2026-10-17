@@ -4,6 +4,29 @@ require_relative "test_helper"
 
 # scripts/gen_quarto.rb: the Quarto profile (_quarto-<lang>.yml) generated from book/outline.yml.
 class TestGenQuarto < ToolTest
+  def test_uiclap_is_isolated_pt_print_profile_without_amazon_isbn
+    fx.edit("book/outline.yml") { _1.sub("meta:\n", "meta:\n  isbn:\n    pt: '9798162465683'\n  isbn_paperback:\n    pt: '9798162938088'\n") }
+    gen
+    original = fx.read("_quarto-pt.yml")
+    assert_exit 0, fx.run("gen_quarto", "pt", "uiclap")
+    uiclap = profile("pt-uiclap")
+    assert_equal "build/uiclap/pt", uiclap.dig("project", "output-dir")
+    assert_equal "Competente-o-Suficiente-uiclap-16x23", uiclap.dig("book", "output-file")
+    assert_equal "160mm", uiclap["print-width"]
+    assert_equal "230mm", uiclap["print-height"]
+    refute_match(/9798162465683|9798162938088|ISBN/, uiclap["colophon"])
+    refute uiclap.key?("colophon-paperback")
+    assert_equal original, fx.read("_quarto-pt.yml")
+    assert_exit 1, fx.run("gen_quarto", "en", "uiclap")
+  end
+
+  def test_uiclap_uses_only_its_configured_isbn
+    fx.edit("book/outline.yml") { _1.sub("meta:\n", "meta:\n  isbn_uiclap:\n    pt: '9780000000002'\n") }
+    fx.run("gen_back_matter", "pt")
+    assert_exit 0, fx.run("gen_quarto", "pt", "uiclap")
+    assert_includes profile("pt-uiclap")["colophon"], "ISBN 9780000000002 (edição em brochura, UICLAP)"
+  end
+
   def gen(lang = "pt", env: {})
     fx.run("gen_back_matter", lang) # the generated appendices must exist
     fx.run("gen_quarto", lang, env: env)

@@ -6,6 +6,17 @@ files.
 
 ## Unreleased
 
+## 1.0.0 — 2026-10-17
+
+First stable release of the published Brazilian Portuguese and English editions.
+The book text is unchanged from preview.9; this release finalizes the print
+production targets and templates.
+
+- Add a local-only PT-BR UICLAP print target at 16x23 cm, with
+  isolated layout auditing and ISBN metadata; Amazon and ebook outputs remain unchanged.
+- Add the UICLAP 600-dpi CMYK JPG cover with its supplied 28 mm spine
+  template and a clear 70x50 mm barcode/ISBN area. The 547-page interior
+  is retained unchanged; UICLAP files remain local, outside GitHub release assets.
 - Build separate PT-BR hardcover and paperback interiors with their respective
   ISBNs. Paperback ISBN: 9798162938088. English remains hardcover-only.
 - Add binding-aware KDP cover builds: PT-BR hardcover and paperback, EN

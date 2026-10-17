@@ -33,11 +33,12 @@ Download the latest edition from
 |---|---|
 | `Competente-o-Suficiente.epub` | Kindle, Kobo, Apple Books, any e-reader |
 | `Competente-o-Suficiente-ebook.pdf` | Reading on a screen |
-| `Competente-o-Suficiente.pdf` | Print (6 × 9 in) |
+| `Competente-o-Suficiente.pdf` | Hardcover interior (6 × 9 in) |
+| `Competente-o-Suficiente-paperback.pdf` | Paperback interior (6 × 9 in) |
 | `Competent-Enough.epub`, `Competent-Enough-ebook.pdf`, `Competent-Enough.pdf` | The English edition, same formats |
 
-**Status:** preview editions in Brazilian Portuguese and English. The book is
-still open: new versions will follow until it is declared final.
+**Status:** version 1.0, published in Brazilian Portuguese and English.
+Future corrections and updates will be versioned separately.
 
 ## What's inside
 
@@ -82,6 +83,9 @@ Requires Ruby, Java (for epubcheck) and poppler-utils.
 The PT-BR build emits hardcover and paperback interiors with separate ISBNs;
 English emits a hardcover interior. See [print builds and covers](docs/PRINT-COVERS.md)
 for filenames, binding-specific cover commands and template checks.
+
+`rake uiclap_pdf` builds only a separate PT-BR 16 × 23 cm print interior for
+UICLAP in `build/uiclap/pt/`, without rebuilding Amazon or ebook files.
 
 ## License
 

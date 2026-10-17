@@ -20,6 +20,9 @@
 
 #let akita-edition = sys.inputs.at("edition", default: "print")
 #let akita-ebook = akita-edition == "ebook"
+#let ak-page-w = $if(print-width)$$print-width$$else$6in$endif$
+#let ak-page-h = $if(print-height)$$print-height$$else$9in$endif$
+#let ak-uiclap = $if(uiclap-print)$true$else$false$endif$
 
 #let ak-serif = ("Source Serif 4",)
 #let ak-sans = ("Source Sans 3",)
@@ -78,7 +81,7 @@
 // text block); taller ones may break (tables then repeat their header row).
 // Records start/end for the audit's SPLIT check.
 #let ak-blk = counter("ak-blk")
-#let ak-text-w = 4.5in
+#let ak-text-w = ak-page-w - if ak-uiclap { 45mm } else { 1.5in }
 #let ak-keep(kind, body, limit: 6.9in, ..block-args) = {
   ak-blk.step()
   context {
@@ -304,15 +307,17 @@
   set par(justify: true, leading: 0.62em, spacing: 0.62em,
     first-line-indent: (amount: 1.2em, all: false))
   set page(
-    width: 6in, height: 9in,
-    margin: if akita-ebook {
+    width: ak-page-w, height: ak-page-h,
+    margin: if ak-uiclap {
+      (inside: 25mm, outside: 20mm, top: 25.4mm, bottom: 25.4mm)
+    } else if akita-ebook {
       (x: 0.75in, top: 0.8in, bottom: 0.85in)
     } else {
       (inside: 0.875in, outside: 0.625in, top: 0.8in, bottom: 0.85in)
     },
     binding: left,
-    header-ascent: 35%,
-    footer-descent: 35%,
+    header-ascent: if ak-uiclap { 20% } else { 35% },
+    footer-descent: if ak-uiclap { 20% } else { 35% },
     numbering: "i",
     header: none,
     footer: none,

@@ -20,7 +20,7 @@
 # -bbox-layout, pdfimages -list). Pages are physical PDF pages; the folio
 # printed on the page is shown as "fl. N".
 #
-# Usage: scripts/page_audit.rb [--lang pt] [--edition print|paperback|ebook] [--strict] [--verbose] [--runts]
+# Usage: scripts/page_audit.rb [--lang pt] [--edition print|paperback|ebook|uiclap] [--strict] [--verbose] [--runts]
 #   --runts   print only the comma-separated ids of RUNT-END chapters (used by `rake fit`)
 #   --strict  exit 1 when anything is reported (default: report only)
 
@@ -39,18 +39,20 @@ strict = args.include?("--strict")
 verbose = args.include?("--verbose") # also list blocks too tall to keep whole
 runts_only = args.include?("--runts") # print only the ids of chapters ending in a runt page
 
-pdf = PrintEditions.pdf(File.join(ROOT, "build", lang), edition)
-typ = PrintEditions.typ(ROOT, lang)
-abort "no #{edition} PDF in build/#{lang}; run `rake build`" unless pdf
+uiclap = edition == "uiclap"
+abort "UICLAP is PT-BR only" if uiclap && lang != "pt"
+pdf = uiclap ? File.join(ROOT, "build/uiclap/pt/Competente-o-Suficiente-uiclap-16x23.pdf") : PrintEditions.pdf(File.join(ROOT, "build", lang), edition)
+typ = uiclap ? File.join(ROOT, "index-pt-uiclap.typ") : PrintEditions.typ(ROOT, lang)
+abort "no #{edition} PDF; run the corresponding build task" unless pdf && File.file?(pdf)
 abort "no #{typ} (keep-typ); run `rake build`" unless File.exist?(typ)
 
 # Geometry, in pt, must match _extensions/akita-book/typst-template.typ.
-PAGE_W = 432.0
-PAGE_H = 648.0
-TOP = 0.8 * 72
-BOTTOM = PAGE_H - 0.85 * 72
-INSIDE = edition == "ebook" ? 54.0 : 63.0
-OUTSIDE = edition == "ebook" ? 54.0 : 45.0
+PAGE_W = uiclap ? 160.0 / 25.4 * 72 : 432.0
+PAGE_H = uiclap ? 230.0 / 25.4 * 72 : 648.0
+TOP = uiclap ? 72.0 : 0.8 * 72
+BOTTOM = PAGE_H - (uiclap ? 72.0 : 0.85 * 72)
+INSIDE = uiclap ? 25.0 / 25.4 * 72 : (edition == "ebook" ? 54.0 : 63.0)
+OUTSIDE = uiclap ? 20.0 / 25.4 * 72 : (edition == "ebook" ? 54.0 : 45.0)
 BODY_H = BOTTOM - TOP
 TOL = 0.6
 HANG = %w[. , ; : - – — ) ( " “ ” ’ ‘ « » ! ?].push("\u00AD").freeze
@@ -64,7 +66,7 @@ end
 
 # --- structure records from the Typst source
 # Same per-chapter tightening the PDFs were compiled with (see `rake fit`).
-tighten_file = File.join(ROOT, "build", lang, ".tighten")
+tighten_file = uiclap ? File.join(ROOT, "build/uiclap/pt/.tighten") : File.join(ROOT, "build", lang, ".tighten")
 tighten = File.exist?(tighten_file) ? File.read(tighten_file).strip : ""
 meta = JSON.parse(run(TYPST, "query", "--root", ROOT, "--font-path", File.join(ROOT, "assets", "fonts"),
                       "--input", "edition=#{edition == 'ebook' ? 'ebook' : 'print'}",
@@ -79,6 +81,11 @@ pages = []
 cur = nil
 run("pdftotext", "-bbox-layout", pdf, "-").each_line do |l|
   if l.include?("<page ")
+    if uiclap
+      dimensions = l.match(/width="([\d.]+)" height="([\d.]+)"/)
+      abort "UICLAP PDF page is not 160 x 230 mm" unless dimensions &&
+        (dimensions[1].to_f - PAGE_W).abs < 0.1 && (dimensions[2].to_f - PAGE_H).abs < 0.1
+    end
     cur = []
     pages << cur
   elsif (m = l.match(/<line xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="([\d.]+)"/))

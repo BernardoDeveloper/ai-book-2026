@@ -171,6 +171,11 @@ local function wrap_units(doc)
 end
 
 return {
+  { Meta = function(meta)
+      -- UICLAP has a shorter text block after its print safety margins.
+      TEXT_W = meta['uiclap-print'] and (115 / 25.4) or 4.5
+      MAX_H = meta['uiclap-print'] and 4.2 or 4.4
+    end },
   { Pandoc = unlink_missing_citations },
   quarto.utils.combineFilters({
   quarto.utils.file_metadata_filter(),

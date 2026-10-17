@@ -21,6 +21,7 @@ require "shellwords"
 require "yaml"
 require_relative "scripts/kdp_template"
 require_relative "scripts/print_editions"
+require_relative "scripts/uiclap_template"
 
 ROOT = __dir__
 LANG = ENV.fetch("BOOK_LANG", "pt")
@@ -243,6 +244,55 @@ task :paperback_pdf do
   typ, print_pdf = typst_sources
   raise "paperback ISBN missing from rendered source; run rake build BOOK_LANG=#{LANG}" unless File.read(typ).include?(isbn)
   typst_compile(typ, print_pdf.sub(/\.pdf\z/, "-paperback.pdf"), "print", binding: "paperback")
+end
+
+desc "Build only the PT-BR UICLAP 16x23 print interior (no Amazon/ebook outputs)"
+task :uiclap_pdf do
+  raise "UICLAP is PT-BR print only" unless LANG == "pt"
+  %i[tools merge backmatter].each { Rake::Task[_1].invoke }
+  ruby "scripts/gen_quarto.rb", "pt", "uiclap"
+  dir = File.join(ROOT, "build/uiclap/pt")
+  log = File.join(ROOT, "build/logs/render-pt-uiclap.log")
+  FileUtils.mkdir_p(File.dirname(log))
+  status = Open3.popen2e(QUARTO, "render", "--profile", "pt-uiclap", "--to", "akita-book-typst") do |_input, out, wait|
+    File.open(log, "w") { |f| out.each_line { |line| f.write(line) } }
+    wait.value
+  end
+  raise "UICLAP render failed: #{log}" unless status.success?
+  if File.read(log).match?(/Unable to resolve crossref|\[glossary\] unknown key:|citation (?:not found|missing)|citation .* not found/i)
+    raise "Unresolved reference in UICLAP render: #{log}"
+  end
+  typ = File.join(ROOT, "index-pt-uiclap.typ")
+  FileUtils.cp(File.join(ROOT, "index.typ"), typ)
+  pdf = File.join(dir, "Competente-o-Suficiente-uiclap-16x23.pdf")
+  tighten = File.join(dir, ".tighten")
+  File.write(tighten, "")
+  levels = {}
+  4.times do
+    out, status = Open3.capture2(RbConfig.ruby, File.join(ROOT, "scripts/page_audit.rb"), "--edition", "uiclap", "--runts")
+    raise "UICLAP runt audit failed" unless status.success?
+    grow = out.strip.split(",").reject { levels.fetch(_1, 0) >= 3 }
+    break if grow.empty?
+    grow.each { levels[_1] = levels.fetch(_1, 0) + 1 }
+    File.write(tighten, levels.map { "#{_1}:#{_2}" }.join(","))
+    sh typst_bin, "compile", "--root", ROOT, "--font-path", File.join(ROOT, "assets/fonts"), "--pdf-standard", "ua-1",
+       "--input", "tighten=#{File.read(tighten)}", typ, pdf
+  end
+  ruby "scripts/page_audit.rb", "--edition", "uiclap", "--strict"
+  puts "UICLAP interior: #{pdf} (ISBN omitted unless meta.isbn_uiclap.pt is configured)"
+end
+
+desc "Build the UICLAP upload JPG and a PDF proof from the supplied cover measurements"
+task :uiclap_cover do
+  raise "UICLAP is PT-BR only" unless LANG == "pt"
+  dir = File.join(ROOT, "build/uiclap/pt")
+  pdf = File.join(dir, "Competente-o-Suficiente-uiclap-16x23.pdf")
+  info, status = Open3.capture2("pdfinfo", pdf)
+  raise "UICLAP interior missing or unreadable" unless status.success?
+  template = File.join(ROOT, "assets/cover/uiclap-medidas-capa.jpg")
+  UiclapTemplate.validate!(template, info[/^Pages:\s+(\d+)/, 1].to_i)
+  raise "UICLAP interior must be 160 x 230 mm" unless info.match?(/Page size:\s+453\.54\d* x 651\.96\d* pts/)
+  ruby "scripts/compose_kdp_cover.rb", template, File.join(dir, "Competente-o-Suficiente-uiclap-cover.pdf"), "--lang", "pt", "--uiclap"
 end
 
 desc "Page-level layout audit of the print and ebook PDFs (STRICT=1 fails on findings)"

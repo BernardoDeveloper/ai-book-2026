@@ -5,6 +5,8 @@
 # KDP's cover template and writes the flattened CMYK PDF KDP asks for.
 #
 # Usage: scripts/compose_kdp_cover.rb TEMPLATE.png OUT.pdf [--lang en] [--art PATH]
+# UICLAP: add --uiclap with its schematic JPG; measurements come from
+# uiclap_template.rb, and OUT.jpg is the upload file (OUT.pdf is a proof).
 #
 # TEMPLATE.png is the PNG from KDP's cover calculator (assets/cover/kdp/...),
 # drawn at 600 dpi for one trim size, page count and paper. Every measure is
@@ -20,16 +22,18 @@
 
 require_relative "cover_layout"
 require_relative "kdp_template"
+require_relative "uiclap_template"
 require "tmpdir"
 
 ROOT = CoverLayout::ROOT
 args = ARGV.dup
+uiclap = args.delete("--uiclap")
 opt = ->(name, default) { (i = args.index(name)) ? args.slice!(i, 2).last : default }
 lang = opt.("--lang", "en")
 art = opt.("--art", File.join(ROOT, "assets", "cover", "cover-d.png"))
 template, out = args
 abort "usage: compose_kdp_cover.rb TEMPLATE.png OUT.pdf [--lang en] [--art PATH]" unless template && out
-binding = KdpTemplate.metadata(template).fetch(:binding)
+binding = uiclap ? "paperback" : KdpTemplate.metadata(template).fetch(:binding)
 
 DPI = 600
 NAVY = "#0B1A26"
@@ -58,6 +62,19 @@ def runs(template, color, row: nil, col: nil, band: 1)
 end
 
 # --- template geometry ---------------------------------------------------------
+if uiclap
+  UiclapTemplate.validate!(template, UiclapTemplate::PAGES)
+  geom = UiclapTemplate.geometry
+  w, h = geom.fetch(:canvas)
+  fold_l, fold_r = geom.fetch(:folds)
+  hinge_l, hinge_r = geom.fetch(:hinges)
+  trim = geom.fetch(:trim)
+  live_y0, live_y1 = geom.fetch(:live_y)
+  back_x0, back_x1 = geom.fetch(:back)
+  spine_x0, spine_x1 = geom.fetch(:spine)
+  front_x0, front_x1 = geom.fetch(:front)
+  bc_x, bc_y, bc_w, bc_h = geom.fetch(:barcode)
+else
 pink = "#FFAFAF" # the wrap colour reaches every edge of the template; KDP pads it with white
 w = runs(template, pink, row: 100).last.last + 1
 h = runs(template, pink, col: 100).last.last + 1
@@ -74,6 +91,7 @@ bc = capture(template, "-fuzz", "10%", "-fill", "black", "+opaque", "#FFFF00", "
 bc_w, bc_h, bc_x, bc_y = bc.scan(/\d+/).map(&:to_i)
 geom = { canvas: [w, h], folds: [fold_l, fold_r], hinges: [hinge_l, hinge_r], trim:, live_y: [live_y0, live_y1],
          back: [back_x0, back_x1], spine: [spine_x0, spine_x1], front: [front_x0, front_x1], barcode: [bc_x, bc_y, bc_w, bc_h] }
+end
 warn "template: #{geom}"
 
 Dir.mktmpdir("kdp-cover") do |tmp|
@@ -159,24 +177,25 @@ Dir.mktmpdir("kdp-cover") do |tmp|
   sayings = copy["quotes"].map { _1.sub(/ (\S+)\z/, "\u00A0\\1") }
   back_layout = lambda do |body_pt|
     layers = []
+    gap = uiclap ? 0.45 : 1.0
     y = live_y0 + (0.3 * DPI).round
     path, _, ph = pango.("headline", %(<span font="Source Sans 3 Bold #{px.(17)}" foreground="#{BRASS}">#{copy['headline']}</span>), width: cw)
     layers << [path, cx0, y]
-    y += ph + (0.22 * DPI).round
+    y += ph + (0.22 * DPI * gap).round
     copy["paragraphs"].each_with_index do |para, i|
       path, _, ph = pango.("p#{i}", %(<span font="Source Serif 4 #{px.(body_pt)}" foreground="#{CREAM}" line_height="1.3">#{para}</span>), width: cw)
       layers << [path, cx0, y]
-      y += ph + (0.2 * DPI).round
+      y += ph + (0.2 * DPI * gap).round
     end
-    y += (0.1 * DPI).round
+    y += (0.1 * DPI * gap).round
     q_top = y
     sayings.each_with_index do |q, i|
       path, _, qh = pango.("q#{i}", %(<span font="Source Serif 4 Italic #{px.(body_pt + 0.5)}" foreground="#{CREAM}" line_height="1.2">#{q}</span>), width: cx1 - qx)
       layers << [path, qx, y]
-      y += qh + (0.2 * DPI).round
+      y += qh + (0.2 * DPI * gap).round
     end
-    q_span = [q_top, y - (0.2 * DPI).round]
-    y += (0.3 * DPI).round
+    q_span = [q_top, y - (0.2 * DPI * gap).round]
+    y += (0.3 * DPI * gap).round
     path, _, bh = pango.("bio", %(<span font="Source Sans 3 #{px.(body_pt - 1.5)}" foreground="#{CREAM}" line_height="1.25">#{copy['bio']}</span>), width: cx1 - bio_x)
     layers << [sticker, cx0 - (0.06 * DPI).round, y - (0.08 * DPI).round]
     layers << [path, bio_x, y]
@@ -199,12 +218,28 @@ Dir.mktmpdir("kdp-cover") do |tmp|
          "-fill", BRASS, "-draw", "rectangle #{cx0},#{q_span[0]} #{cx0 + 9},#{q_span[1]}",
          *layers.flat_map { |p, x, yy| [p, "-geometry", "+#{x}+#{yy}", "-composite"] },
          "-alpha", "remove", "-alpha", "off", "-units", "PixelsPerInch", "-density", DPI, rgb)
-  magick(rgb, "(", template, "-crop", "#{w}x#{h}+0+0", "+repage", "-fuzz", "8%", "-transparent", "#FFFFFF",
+  if uiclap
+    magick(rgb, "-fill", "none", "-stroke", "red", "-strokewidth", "6",
+           "-draw", "rectangle #{trim},#{trim} #{w-trim},#{h-trim}",
+           "-stroke", "cyan", "-draw", "line #{fold_l},0 #{fold_l},#{h} line #{fold_r},0 #{fold_r},#{h}",
+           "-stroke", "lime", "-draw", "rectangle #{back_x0},#{live_y0} #{back_x1},#{live_y1} rectangle #{front_x0},#{live_y0} #{front_x1},#{live_y1} rectangle #{spine_x0},#{live_y0} #{spine_x1},#{live_y1}",
+           "-stroke", "yellow", "-draw", "rectangle #{bc_x},#{bc_y} #{bc_x + bc_w},#{bc_y + bc_h}",
+           "-resize", "25%", out.sub(/\.pdf\z/, "-guides.jpg"))
+  else
+    magick(rgb, "(", template, "-crop", "#{w}x#{h}+0+0", "+repage", "-fuzz", "8%", "-transparent", "#FFFFFF",
          "-channel", "A", "-evaluate", "multiply", "0.55", "+channel", ")", "-composite", "-resize", "25%",
          "-depth", "8", "-quality", "88", out.sub(/\.pdf\z/, "-guides.jpg"))
+  end
   magick(rgb, "-depth", "8", "-quality", "92", out.sub(/\.pdf\z/, "-preview.jpg"))
   # Press PDF: CMYK through Ghostscript's default profiles, one flattened image.
   magick(rgb, "-profile", "#{ICC}/default_rgb.icc", "-profile", "#{ICC}/default_cmyk.icc",
          "-units", "PixelsPerInch", "-density", DPI, "-compress", "jpeg", "-quality", "94", out)
+  if uiclap
+    jpg = out.sub(/\.pdf\z/, ".jpg")
+    magick(rgb, "-profile", "#{ICC}/default_rgb.icc", "-profile", "#{ICC}/default_cmyk.icc",
+           "-units", "PixelsPerInch", "-density", DPI, "-depth", "8", "-quality", "94", jpg)
+    abort "UICLAP JPG exceeds 50 MB" if File.size(jpg) > 50_000_000
+    warn "UICLAP upload: #{jpg}"
+  end
 end
 warn "wrote #{out} (#{format('%.3f x %.3f in', w.to_f / DPI, h.to_f / DPI)})"

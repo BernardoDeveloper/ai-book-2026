@@ -1,5 +1,49 @@
 # Print covers
 
+## UICLAP: PT-BR print only
+
+`rake uiclap_pdf` builds a separate 160 x 230 mm paperback interior at
+`build/uiclap/pt/Competente-o-Suficiente-uiclap-16x23.pdf`. It renders current
+PT sources, adjusts chapter endings, and runs a strict page audit. It does
+not build ebooks or English, or replace any Amazon output. Use
+`ruby scripts/page_audit.rb --edition uiclap --strict` to repeat the audit.
+The saved source is `index-pt-uiclap.typ`; its tightening settings live in
+`build/uiclap/pt/.tighten`, separate from Amazon's 6x9 layout.
+
+Amazon ISBNs are never inherited. Until the author supplies this edition's
+ISBN in `meta.isbn_uiclap.pt` in `book/outline.yml`, the copyright page omits
+the ISBN. Do not upload the KDP wraparound
+cover: its dimensions and spine are specific to Amazon's production.
+This target is local/opt-in and is not included in release automation.
+
+Margins are 25 mm inside, 20 mm outside, and 25.4 mm top/bottom, with
+mirrored pages. These retain the previously checked 16x23 layout unchanged.
+The existing fonts and figure sizes are retained; the final page count is
+reported by the audit, not assumed from the Amazon edition.
+
+Local proof verified on 2026-10-17: 547 pages, 160 x 230 mm, strict page
+audit clean. The interior was renamed from the abandoned Clube de Autores
+target without rebuilding or changing its bytes. No UICLAP ISBN is configured.
+
+`rake uiclap_cover` builds the upload file
+`build/uiclap/pt/Competente-o-Suficiente-uiclap-cover.jpg`, plus a PDF proof
+and preview/guide JPGs. Upload the full-resolution JPG, not the PDF or guides.
+UICLAP accepts JPG up to 50 MB; its guidance recommends 600 dpi:
+https://suporte.uiclap.com/support/solutions/articles/67000705782-capa-formato-tipo-de-arquivo-e-material
+
+The supplied `assets/cover/uiclap-medidas-capa.jpg` is a schematic, NOT a
+scale drawing. Use its printed values: 8409 x 5646 px at 600 dpi, 3874 px
+per panel including outer bleed, 661 px (28 mm) spine, 5 mm bleed and 10 mm
+panel safety margins. It labels the cover panels 159 x 229 mm, distinct
+from the unchanged 160 x 230 mm PDF interior. Spine lettering is inset
+3 mm from the folds. The lower back reserves 70 x 50 mm for UICLAP's
+barcodes, 10 mm from the right fold and bottom trim (15 mm from the file's
+bottom including bleed). Text ends above this box. UICLAP adds the codes:
+https://suporte.uiclap.com/support/solutions/articles/67000463871-tenho-isbn-preciso-comprar-o-c%C3%B3digo-de-barras-
+The build pins this template's hash and the 547-page count and refuses a
+changed template/count until its geometry is reviewed. Reconfirm the portal
+template after changes to page count or paper; do not infer spine width from KDP.
+
 ## Interiors and ISBNs
 
 `rake build BOOK_LANG=pt` produces both print interiors automatically:
