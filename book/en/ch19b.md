@@ -2,12 +2,12 @@
 id: ch19b
 chapter: "The World Won't Wait"
 sources:
-  - {post: 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css, sha256: "a72e372a2be4de4b7420ca141a2a6f556fa84dad88552ec9129b113c7b779aa8"}
+  - {post: 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css, sha256: "f613b05ef48e2e87059d8aff68466ed58548dfb61f27cb387e2b6520897c4178", commit: "760caa8f77017b84661ed95fcca0f0d61b222594"}
   - {post: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r, sha256: "4c8343cf9487f3e389341a2e5654a423cb2ff2cced3ecbbddb5aed5385b544c1"}
   - {post: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados, sha256: "5a6b08a8fdebc6eac5511e470883960e1f763187351f8df54e684349eee446c1"}
 refs_projects: []
 blog_commit: "79bca4b5ce7a7bc72f950b923318e9ca2c04b01d"
-translated_from: {file: book/pt/ch19b.md, sha256: "9eab4c0022ffbfad891a1e5cfa294eefb8f35aaa89e79c4cc2675db6300e284c"}
+translated_from: {file: book/pt/ch19b.md, sha256: "42713d194e0fc7eeb33fe72d7071d96d05f4ed9fefc3426cbcb101fe089afc12"}
 ---
 
 # The World Won't Wait {#sec-ch19b}

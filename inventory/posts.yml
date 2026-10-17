@@ -1,6 +1,6 @@
 ---
 generated_from: "/home/akitaonrails/Projects/akitaonrails-hugo"
-blog_commit: 557350127df181c4b124a2c8759648a79e17e4d5
+blog_commit: 760caa8f77017b84661ed95fcca0f0d61b222594
 dirty_files: []
 year: '2026'
 posts:
@@ -16852,7 +16852,7 @@ posts:
   url_pt: https://www.akitaonrails.com/2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css/
   url_en: https://www.akitaonrails.com/en/2026/10/16/living-in-the-future-cars-fly-no-more-html-css/
   pt:
-    sha256: 7121376e290f8b048c55d281d454ef8e3078005171aac01af7a59e81f548c370
+    sha256: de077ef703c6e8c2f78d26fb0a4a7cc7d56913b37c5d46ccb4eaa791c4120787
     title: 'Estamos no Futuro: Carros voam e não temos mais que fazer HTML/CSS'
     description: O Roadster da Tesla girou no ar enquanto eu redesenhava seis sites
       em cerca de um dia. Com agentes fazendo web, mobile e desktop, trabalho mecânico
@@ -16863,7 +16863,7 @@ posts:
     - frontend
     - automacao
     - carreira
-    words: 3563
+    words: 4001
     links:
     - text: segundo Elon Musk, de puxar até 2 G
       url: https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/
@@ -16952,7 +16952,7 @@ posts:
     - V0D3PuTLOZ8
     - oUPaJxk6TZ0
   en:
-    sha256: a72e372a2be4de4b7420ca141a2a6f556fa84dad88552ec9129b113c7b779aa8
+    sha256: f613b05ef48e2e87059d8aff68466ed58548dfb61f27cb387e2b6520897c4178
     title: 'We''re Living in the Future: Cars Fly and We Don''t Have to Write HTML/CSS
       Anymore'
     description: Tesla's Roadster spun in midair while I redesigned six sites in about
@@ -16964,7 +16964,7 @@ posts:
     - frontend
     - automation
     - career
-    words: 3517
+    words: 3957
     links:
     - text: according to Elon Musk, of pulling up to 2 G
       url: https://paultan.org/2026/10/16/tesla-roadster-revealed-flies-on-spacex-air-thrusters-0-96-km-h-in-0-81s-production-2028/

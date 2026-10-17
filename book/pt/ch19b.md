@@ -2,7 +2,7 @@
 id: ch19b
 chapter: "O mundo não vai esperar"
 sources:
-  - {post: 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css, sha256: "7121376e290f8b048c55d281d454ef8e3078005171aac01af7a59e81f548c370"}
+  - {post: 2026/10/16/estamos-no-futuro-carros-voam-e-nao-temos-mais-que-fazer-html-css, sha256: "de077ef703c6e8c2f78d26fb0a4a7cc7d56913b37c5d46ccb4eaa791c4120787", commit: "760caa8f77017b84661ed95fcca0f0d61b222594"}
   - {post: 2020/04/01/akitando-76-guia-definitivo-de-aprendendo-a-aprender-a-maior-bronca-da-sua-vida-rated-r, sha256: "4c8343cf9487f3e389341a2e5654a423cb2ff2cced3ecbbddb5aed5385b544c1"}
   - {post: 2021/01/06/akitando-90-o-que-os-cursos-nao-te-ensinam-sobre-mercados, sha256: "5a6b08a8fdebc6eac5511e470883960e1f763187351f8df54e684349eee446c1"}
 refs_projects: []
