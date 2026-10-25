@@ -11,7 +11,7 @@ sources:
   - {post: 2023/02/14/akitando-138-meu-comeco-de-carreira-durante-a-bolha-1997-a-2002-bug-do-milenio-crash, sha256: "79a02c73df595ddf8952c7bfbbd8023f51a3297b259610afa65901112dfe4160", commit: "b54f14bf348a68cd8529004a4743d35dbbc5590d"}
 refs_projects: []
 blog_commit: "b9c029231693369b8f895576b491c878aea3e8da"
-translated_from: {file: book/pt/index.md, sha256: "495f59b2fd67bd63c810f60f2f2948bb24076809e00e4aba646f5456d2605a83"}
+translated_from: {file: book/pt/index.md, sha256: "cd4a5e775321ab9cbe7ee80c70948bcde10eb896be7fce8c1573831eef46eef5"}
 ---
 
 # Preface {#sec-prefacio .unnumbered}

@@ -6,6 +6,9 @@ files.
 
 ## Unreleased
 
+- Fixed a missing word in the PT preface ("pronto em uma hora e meia"); the
+  English edition already read correctly. Reported in #8, fixed in #7.
+
 ## 1.0.0 — 2026-10-17
 
 First stable release of the published Brazilian Portuguese and English editions.
