@@ -45,8 +45,8 @@ class TestAudiobookText < ToolTest
     epub
   end
 
-  def narrate(epub)
-    res = fx.run("audiobook_text", epub, fx.path("out/book.txt"))
+  def narrate(epub, *flags)
+    res = fx.run("audiobook_text", *flags, epub, fx.path("out/book.txt"))
     assert_exit 0, res
     fx.read("out/book.txt").lines(chomp: true).reject(&:empty?)
   end
@@ -103,6 +103,16 @@ class TestAudiobookText < ToolTest
     HTML
     lines = narrate(epub_with([["ch001", chapter("sec-ch01", "Um", body)]]))
     assert_equal ["Seção", "Primeiro item.", "Item com parágrafo.", "Linha do tempo.", "1958. Perceptron.", "2017. Transformer."], lines.drop(3)
+  end
+
+  def test_sample_keeps_the_opening_of_the_first_four_chapters
+    pages = (1..5).map do |n|
+      ["ch00#{n}", chapter("sec-ch0#{n}", %(<span class="header-section-number">#{n}</span> Cap #{n}), "<p>A#{n}.</p><p>B#{n}.</p><p>C#{n}.</p>")]
+    end
+    lines = narrate(epub_with(pages), "--sample")
+    assert_equal ["Title: Livro de Teste", "Author: Fabio Akita",
+                  *(1..4).flat_map { ["# Capítulo #{_1}. Cap #{_1}", "A#{_1}.", "B#{_1}."] }], lines
+    assert fx.exist?("out/cover.png")
   end
 
   def test_a_paragraph_starting_with_hash_is_not_read_as_a_chapter

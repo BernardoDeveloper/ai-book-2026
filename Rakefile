@@ -12,7 +12,7 @@
 #   rake review DIR=reviews/<version>/<lang>  validate + summarise copyedit findings (scripts/review.rb)
 #   rake balance        words per unit and per source post, overlap between units (build/<lang>/balance.md)
 #   rake test           regression tests of the tools (test/, isolated fixture book)
-#   rake audiobook      read the built EPUB aloud into build/<lang>/<title>.m4b (VOICE=..., network, hours)
+#   rake audiobook      read the built EPUB aloud into build/<lang>/<title>.m4b (VOICE=..., SAMPLE=1, network, hours)
 
 require "digest"
 require "fileutils"
@@ -361,15 +361,16 @@ end
 
 # The audiobook is read by Microsoft Edge's online voices through
 # epub2tts-edge, pinned by commit and run with uv like the charts (it needs
-# Python 3.11: pydub still imports audioop). Not part of build or CI: it needs
-# the network and takes hours. The work dir is keyed by the narration text and
-# the voice, so an edited edition never reuses stale audio, and an interrupted
-# run resumes from the last finished chapter (epub2tts-edge keeps each one as
-# partN.flac).
+# Python 3.11: pydub still imports audioop). Not part of build: it needs the
+# network and takes hours. In CI only the book workflow's audiobook job runs
+# it, on release tags once the AUDIOBOOK repository variable is "true". The
+# work dir is keyed by the narration text and the voice, so an edited edition
+# never reuses stale audio, and an interrupted run resumes from the last
+# finished chapter (epub2tts-edge keeps each one as partN.flac).
 EPUB2TTS = "git+https://github.com/aedocw/epub2tts-edge@6fb7a0f125188c0ff961a8db260f10221eb32c3c"
 VOICES = { "pt" => "pt-BR-AntonioNeural", "en" => "en-US-AndrewNeural" }.freeze
 
-desc "Read the built EPUB aloud into an M4B with chapters and cover (VOICE=<edge-tts voice> optional)"
+desc "Read the built EPUB aloud into an M4B with chapters and cover (VOICE=<edge-tts voice>, SAMPLE=1 for a few minutes)"
 task :audiobook do
   epub = Dir[File.join(ROOT, "build", LANG, "*.epub")].first
   raise "run `rake build BOOK_LANG=#{LANG}` first (missing the EPUB)" unless epub
@@ -378,10 +379,13 @@ task :audiobook do
   # It names the work dir and the output file, and goes to epub2tts-edge as an argument.
   raise "VOICE must be an edge-tts voice name, like #{VOICES.fetch(LANG)}" unless voice.match?(/\A[A-Za-z]{2,3}(-[A-Za-z0-9]+)+\z/)
 
-  title = File.basename(epub, ".epub")
+  # SAMPLE=1: the opening of the first chapters, to judge the voice and the
+  # chapter marks in minutes instead of hours.
+  sample = ENV["SAMPLE"]
+  title = File.basename(epub, ".epub") + (sample ? "-sample" : "")
   staging = File.join(ROOT, "build", "audiobook", LANG)
   text = File.join(staging, "#{title}.txt")
-  ruby "scripts/audiobook_text.rb", epub, text
+  ruby "scripts/audiobook_text.rb", *("--sample" if sample), epub, text
   work = File.join(staging, "#{Digest::SHA256.file(text).hexdigest[0, 12]}-#{voice}")
   FileUtils.mkdir_p(work)
   FileUtils.cp(text, work)

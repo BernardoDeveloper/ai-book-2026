@@ -14,8 +14,10 @@
 # kept, and each table row is read as one line, so the timeline appendix
 # still makes sense out loud.
 #
-# Usage: scripts/audiobook_text.rb BOOK.epub OUT.txt
+# Usage: scripts/audiobook_text.rb [--sample] BOOK.epub OUT.txt
 #   Also writes the EPUB's cover image next to OUT.txt as cover.<ext>.
+#   --sample keeps only the opening of the first chapters: a few minutes of
+#   audio to judge the voice and the chapter marks without reading the book.
 
 require "fileutils"
 require "rexml/document"
@@ -24,6 +26,9 @@ require "tmpdir"
 # The back matter scripts/gen_back_matter.rb generates, same ids in both editions.
 SKIP_UNITS = %w[sec-fontes sec-creditos sec-glossario sec-bibliografia].freeze
 CHAPTER = { "pt" => "Capítulo", "en" => "Chapter" }.freeze
+# --sample: the front matter and the first numbered chapter, two lines each.
+SAMPLE_UNITS = 4
+SAMPLE_LINES = 2
 
 def classes(el) = el.attributes["class"].to_s.split
 
@@ -98,8 +103,9 @@ def blocks(el, out)
   end
 end
 
+sample = ARGV.delete("--sample")
 epub, out_path = ARGV.map { File.expand_path(_1) }
-abort "usage: audiobook_text.rb BOOK.epub OUT.txt" unless epub && out_path
+abort "usage: audiobook_text.rb [--sample] BOOK.epub OUT.txt" unless epub && out_path
 
 Dir.mktmpdir("audiobook-text") do |dir|
   system("unzip", "-q", epub, "-d", dir, exception: true)
@@ -116,17 +122,21 @@ Dir.mktmpdir("audiobook-text") do |dir|
   opf.root.elements.each("spine/itemref") do |ref|
     item = manifest.fetch(ref.attributes["idref"])
     next unless item.attributes["media-type"] == "application/xhtml+xml"
+    next if sample && units >= SAMPLE_UNITS
 
     page = REXML::Document.new(File.read(inside(dir, File.join(File.dirname(opf_path), item.attributes["href"]))))
     lang = page.root.attributes["lang"].to_s.start_with?("en") ? "en" : "pt"
     REXML::XPath.each(page, "//*[local-name()='section'][contains(concat(' ', @class, ' '), ' level1 ')]") do |section|
       next if SKIP_UNITS.include?(section.attributes["id"])
+      next if sample && units >= SAMPLE_UNITS
 
       h1 = section.elements["h1"] or next
       spoken = []
       blocks(section, spoken)
       lines << "# #{heading(h1, lang)}" << ""
-      spoken.reject(&:empty?).each { lines << _1 << "" }
+      spoken.reject!(&:empty?)
+      spoken = spoken.first(SAMPLE_LINES) if sample
+      spoken.each { lines << _1 << "" }
       units += 1
     end
   end
