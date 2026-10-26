@@ -375,13 +375,13 @@ task :audiobook do
   epub = Dir[File.join(ROOT, "build", LANG, "*.epub")].first
   raise "run `rake build BOOK_LANG=#{LANG}` first (missing the EPUB)" unless epub
 
-  voice = ENV.fetch("VOICE", VOICES.fetch(LANG))
+  voice = ENV.fetch("VOICE") { VOICES.fetch(LANG) }
   # It names the work dir and the output file, and goes to epub2tts-edge as an argument.
   raise "VOICE must be an edge-tts voice name, like #{VOICES.fetch(LANG)}" unless voice.match?(/\A[A-Za-z]{2,3}(-[A-Za-z0-9]+)+\z/)
 
   # SAMPLE=1: the opening of the first chapters, to judge the voice and the
   # chapter marks in minutes instead of hours.
-  sample = ENV["SAMPLE"]
+  sample = %w[1 true].include?(ENV["SAMPLE"])
   title = File.basename(epub, ".epub") + (sample ? "-sample" : "")
   staging = File.join(ROOT, "build", "audiobook", LANG)
   text = File.join(staging, "#{title}.txt")
@@ -399,7 +399,7 @@ task :audiobook do
                  %W[#{stem}.m4a #{stem}.m4b filelist.txt FFMETADATAFILE].map { File.join(work, _1) })
   # epub2tts-edge tags the cover as JPEG whatever it is; the EPUB's is a PNG.
   cover = Dir[File.join(staging, "cover.*")].first
-  sh "ffmpeg", "-y", "-loglevel", "error", "-i", cover, File.join(work, "cover.jpg") if cover
+  sh "ffmpeg", "-y", "-loglevel", "error", "-f", "image2", "-i", cover, File.join(work, "cover.jpg") if cover
   # Pauses shorter than epub2tts-edge's 1200 ms, which drag over a 15-hour book.
   cmd = ["uvx", "--quiet", "--python", "3.11", "--from", EPUB2TTS, "epub2tts-edge", File.basename(text),
          "--speaker=#{voice}", "--sentencepause", "500", "--paragraphpause", "900"]

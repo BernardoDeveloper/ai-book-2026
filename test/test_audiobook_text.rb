@@ -140,6 +140,19 @@ class TestAudiobookText < ToolTest
     refute fx.exist?("out/cover.png")
   end
 
+  def test_refuses_a_container_that_leaves_the_epub
+    epub = epub_with([["ch001", chapter("sec-ch01", "Um", "<p>Texto.</p>")]])
+    fx.write("secret.xml", CONTAINER)
+    Dir.mktmpdir do |dir|
+      FileUtils.mkdir_p(File.join(dir, "META-INF"))
+      File.symlink(fx.path("secret.xml"), File.join(dir, "META-INF", "container.xml"))
+      Dir.chdir(dir) { system("zip", "-qy", epub, "META-INF/container.xml", exception: true) }
+    end
+    res = fx.run("audiobook_text", epub, fx.path("out/book.txt"))
+    assert_exit 1, res
+    assert_includes res.err, "points outside the EPUB"
+  end
+
   def test_fails_when_the_epub_has_no_chapters
     res = fx.run("audiobook_text", epub_with([["ch001", "<p>Só página de título.</p>"]], cover: false), fx.path("out/book.txt"))
     assert_exit 1, res

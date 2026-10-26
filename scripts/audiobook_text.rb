@@ -109,7 +109,7 @@ abort "usage: audiobook_text.rb [--sample] BOOK.epub OUT.txt" unless epub && out
 
 Dir.mktmpdir("audiobook-text") do |dir|
   system("unzip", "-q", epub, "-d", dir, exception: true)
-  container = REXML::Document.new(File.read(File.join(dir, "META-INF", "container.xml")))
+  container = REXML::Document.new(File.read(inside(dir, File.join(dir, "META-INF", "container.xml"))))
   opf_path = inside(dir, File.join(dir, container.root.elements["//rootfile"].attributes["full-path"]))
   opf = REXML::Document.new(File.read(opf_path))
   manifest = opf.root.elements.to_a("manifest/item").to_h { [_1.attributes["id"], _1] }
